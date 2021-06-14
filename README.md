@@ -5,7 +5,7 @@ This is just a cute implementation of a self-dependently typed language based on
 # Self types
 
 [Open MANIFESTO]
-Before I was present to self types I was just having fun with martin-lof type theory (like Coq) and first order dependent type theory (here i am talking specially about λΠ-calculus), then after taking a time searching a dependent language which have less complexivty in your core i finnaly found the [Kind Language](https://github.com/uwu-tech/Kind). 
+Before I was present to self types I was just having fun with martin-lof type theory (like Coq) and first-order dependent type theory (here I am talking especially about λΠ-calculus), then after taking time searching a dependent language which has less complexity in your core I finally found the [Kind Language](https://github.com/uwu-tech/Kind). 
 
 ##### But why self-types?
 For me (and I am not alone lol) being minimal means less complexity and finally less susceptibility to bugs, even though having nice algorithms to make the life of a mathematician/programmer easier is a crucial feature, a humongous core can destroy the reliableness of your language. If you have a monstrous core who will have the courage to check every line of code? Nevertheless, whether you find this person or not, you will trust him/her/they?
