@@ -1,0 +1,2 @@
+nat 
+  self(P : ~ Nat -> Type) -> ~ (P Z) -> (ind : (n : nat) -> ~ (P n) -> (P (S n))) -> (P self).
