@@ -31,10 +31,10 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/Users/caotic/.cabal/bin"
-libdir     = "/Users/caotic/.cabal/lib/x86_64-osx-ghc-8.10.4/Kei2-0.1.0.0-inplace-Kei2"
-dynlibdir  = "/Users/caotic/.cabal/lib/x86_64-osx-ghc-8.10.4"
-datadir    = "/Users/caotic/.cabal/share/x86_64-osx-ghc-8.10.4/Kei2-0.1.0.0"
-libexecdir = "/Users/caotic/.cabal/libexec/x86_64-osx-ghc-8.10.4/Kei2-0.1.0.0"
+libdir     = "/Users/caotic/.cabal/lib/x86_64-osx-ghc-8.10.5/Kei2-0.1.0.0-inplace-Kei2"
+dynlibdir  = "/Users/caotic/.cabal/lib/x86_64-osx-ghc-8.10.5"
+datadir    = "/Users/caotic/.cabal/share/x86_64-osx-ghc-8.10.5/Kei2-0.1.0.0"
+libexecdir = "/Users/caotic/.cabal/libexec/x86_64-osx-ghc-8.10.5/Kei2-0.1.0.0"
 sysconfdir = "/Users/caotic/.cabal/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath

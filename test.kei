@@ -1,2 +1,15 @@
-nat 
-  self(P : ~ Nat -> Type) -> ~ (P Z) -> (ind : (n : nat) -> ~ (P n) -> (P (S n))) -> (P self).
+Static nat : *.
+Static Z : nat.
+Static S : ~ {nat :: | Z | S} ~> nat.
+
+Nat
+  {nat :: | Z | S}.
+
+test 
+  |x :: ~ Nat ~> Nat => [x of Nat
+    |(S n) => [n of Nat
+      |(S m) => (test n)
+      |Z => Z
+    ]
+    |Z => Z
+  ].

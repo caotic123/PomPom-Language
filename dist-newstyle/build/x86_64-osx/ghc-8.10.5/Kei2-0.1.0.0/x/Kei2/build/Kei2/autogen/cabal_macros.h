@@ -10,35 +10,45 @@
   (major1) == 0 && (major2) <  1 || \
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 #endif /* MIN_VERSION_Kei2 */
-/* package base-4.14.1.0 */
+/* package base-4.14.2.0 */
 #ifndef VERSION_base
-#define VERSION_base "4.14.1.0"
+#define VERSION_base "4.14.2.0"
 #endif /* VERSION_base */
 #ifndef MIN_VERSION_base
 #define MIN_VERSION_base(major1,major2,minor) (\
   (major1) <  4 || \
   (major1) == 4 && (major2) <  14 || \
-  (major1) == 4 && (major2) == 14 && (minor) <= 1)
+  (major1) == 4 && (major2) == 14 && (minor) <= 2)
 #endif /* MIN_VERSION_base */
-/* package containers-0.6.2.1 */
+/* package bimap-0.4.0 */
+#ifndef VERSION_bimap
+#define VERSION_bimap "0.4.0"
+#endif /* VERSION_bimap */
+#ifndef MIN_VERSION_bimap
+#define MIN_VERSION_bimap(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  4 || \
+  (major1) == 0 && (major2) == 4 && (minor) <= 0)
+#endif /* MIN_VERSION_bimap */
+/* package containers-0.6.4.1 */
 #ifndef VERSION_containers
-#define VERSION_containers "0.6.2.1"
+#define VERSION_containers "0.6.4.1"
 #endif /* VERSION_containers */
 #ifndef MIN_VERSION_containers
 #define MIN_VERSION_containers(major1,major2,minor) (\
   (major1) <  0 || \
   (major1) == 0 && (major2) <  6 || \
-  (major1) == 0 && (major2) == 6 && (minor) <= 2)
+  (major1) == 0 && (major2) == 6 && (minor) <= 4)
 #endif /* MIN_VERSION_containers */
-/* package ghc-8.10.4 */
+/* package ghc-8.10.5 */
 #ifndef VERSION_ghc
-#define VERSION_ghc "8.10.4"
+#define VERSION_ghc "8.10.5"
 #endif /* VERSION_ghc */
 #ifndef MIN_VERSION_ghc
 #define MIN_VERSION_ghc(major1,major2,minor) (\
   (major1) <  8 || \
   (major1) == 8 && (major2) <  10 || \
-  (major1) == 8 && (major2) == 10 && (minor) <= 4)
+  (major1) == 8 && (major2) == 10 && (minor) <= 5)
 #endif /* MIN_VERSION_ghc */
 /* package parsec-3.1.14.0 */
 #ifndef VERSION_parsec
@@ -71,35 +81,35 @@
   (major1) == 12 && (major2) <  0 || \
   (major1) == 12 && (major2) == 0 && (minor) <= 0)
 #endif /* MIN_TOOL_VERSION_gcc */
-/* tool ghc-8.10.4 */
+/* tool ghc-8.10.5 */
 #ifndef TOOL_VERSION_ghc
-#define TOOL_VERSION_ghc "8.10.4"
+#define TOOL_VERSION_ghc "8.10.5"
 #endif /* TOOL_VERSION_ghc */
 #ifndef MIN_TOOL_VERSION_ghc
 #define MIN_TOOL_VERSION_ghc(major1,major2,minor) (\
   (major1) <  8 || \
   (major1) == 8 && (major2) <  10 || \
-  (major1) == 8 && (major2) == 10 && (minor) <= 4)
+  (major1) == 8 && (major2) == 10 && (minor) <= 5)
 #endif /* MIN_TOOL_VERSION_ghc */
-/* tool ghc-pkg-8.10.4 */
+/* tool ghc-pkg-8.10.5 */
 #ifndef TOOL_VERSION_ghc_pkg
-#define TOOL_VERSION_ghc_pkg "8.10.4"
+#define TOOL_VERSION_ghc_pkg "8.10.5"
 #endif /* TOOL_VERSION_ghc_pkg */
 #ifndef MIN_TOOL_VERSION_ghc_pkg
 #define MIN_TOOL_VERSION_ghc_pkg(major1,major2,minor) (\
   (major1) <  8 || \
   (major1) == 8 && (major2) <  10 || \
-  (major1) == 8 && (major2) == 10 && (minor) <= 4)
+  (major1) == 8 && (major2) == 10 && (minor) <= 5)
 #endif /* MIN_TOOL_VERSION_ghc_pkg */
-/* tool haddock-2.24.0 */
+/* tool haddock-2.24.2 */
 #ifndef TOOL_VERSION_haddock
-#define TOOL_VERSION_haddock "2.24.0"
+#define TOOL_VERSION_haddock "2.24.2"
 #endif /* TOOL_VERSION_haddock */
 #ifndef MIN_TOOL_VERSION_haddock
 #define MIN_TOOL_VERSION_haddock(major1,major2,minor) (\
   (major1) <  2 || \
   (major1) == 2 && (major2) <  24 || \
-  (major1) == 2 && (major2) == 24 && (minor) <= 0)
+  (major1) == 2 && (major2) == 24 && (minor) <= 2)
 #endif /* MIN_TOOL_VERSION_haddock */
 /* tool hpc-0.68 */
 #ifndef TOOL_VERSION_hpc
@@ -121,15 +131,25 @@
   (major1) == 0 && (major2) <  68 || \
   (major1) == 0 && (major2) == 68 && (minor) <= 7)
 #endif /* MIN_TOOL_VERSION_hsc2hs */
-/* tool runghc-8.10.4 */
+/* tool pkg-config-0.29.2 */
+#ifndef TOOL_VERSION_pkg_config
+#define TOOL_VERSION_pkg_config "0.29.2"
+#endif /* TOOL_VERSION_pkg_config */
+#ifndef MIN_TOOL_VERSION_pkg_config
+#define MIN_TOOL_VERSION_pkg_config(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  29 || \
+  (major1) == 0 && (major2) == 29 && (minor) <= 2)
+#endif /* MIN_TOOL_VERSION_pkg_config */
+/* tool runghc-8.10.5 */
 #ifndef TOOL_VERSION_runghc
-#define TOOL_VERSION_runghc "8.10.4"
+#define TOOL_VERSION_runghc "8.10.5"
 #endif /* TOOL_VERSION_runghc */
 #ifndef MIN_TOOL_VERSION_runghc
 #define MIN_TOOL_VERSION_runghc(major1,major2,minor) (\
   (major1) <  8 || \
   (major1) == 8 && (major2) <  10 || \
-  (major1) == 8 && (major2) == 10 && (minor) <= 4)
+  (major1) == 8 && (major2) == 10 && (minor) <= 5)
 #endif /* MIN_TOOL_VERSION_runghc */
 
 #ifndef CURRENT_COMPONENT_ID

@@ -1,0 +1,67 @@
+Static ≡ : (A : *) ~> ~ A ~> ~ A ~> *.
+Static refl : (A : *) ~> (n : A) ~> (≡ A n n).
+
+Eq | Set x y :: (A : *) (x : A) (y : A) ~> *  
+  => {(≡ Set x y) :: | refl}.
+
+eq_rect
+ | h x y P H proof :: 
+                      (H : *)
+                      (x : H)
+                      (y : H)
+                      (P : (~ H ~> *))
+                      ~ (Eq H x y) ~> 
+                      ~ (P x) ~>
+                        (P y) => 
+   [
+      H of (P y)
+        |(refl _ x') => proof
+   ].
+
+
+Static nat : *.
+Static Z : nat.
+Static S : ~ {nat :: | Z | S} ~> nat.
+
+Nat
+  {nat :: | Z | S}.
+
+Static Vector : ~ * ~> (x : Nat) *.
+Static nil : (A : *) (Vector A Z).
+Static cons : (A : *) (x : Nat) (y : A) (H : {(Vector A x) :: | nil | cons}) (Vector A (S x)).
+
+
+Static unit : *.
+Static I : unit.
+
+Unit
+  {unit :: |I}.
+
+False
+  {unit :: }.
+
++ 
+ | n y :: ~ Nat ~> ~ Nat ~> Nat => [n of Nat
+  |Z => y
+  |(S x) => (S (+ x y))
+].
+
+cong
+ | h x y Prop P H  :: 
+                 (H : *)
+                 (x : H)
+                 (y : H)
+                 (Prop : *)
+                 (P : ~ H ~> Prop)
+                 (eq : {(≡ H x y) :: | refl})
+                 {(≡ Prop (P x) (P y)) :: |refl)}
+  => [
+      H of {(≡ Prop (P x) (P y)) :: |refl}
+        |(refl _ x') => (refl Prop (P x'))
+     ].
+
+zero_identity_plus' 
+  | x :: (x : Nat) ~> {(≡ nat x (+ x Z)) :: |refl} => [x of {(≡ nat x (+ x Z)) :: |refl}
+    |Z => (refl nat Z)
+    |(S x') => (cong nat x' (+ x' Z) nat S (zero_identity_plus' x'))
+   ].

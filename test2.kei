@@ -1,0 +1,373 @@
+Static nat : *.
+Static bool : *.
+Static Z : nat.
+Static S : ~ {nat :: | Z | S} ~> nat.
+
+Succ 
+  |x :: ~ Nat ~> {nat :: | S} => (S x).
+
+Static unit : *.
+Static I : unit.
+
+Unit
+  {unit :: |I}.
+
+False
+  {unit :: }.
+
+⊥ |x H :: (Prop : *) ~ False ~> Prop => [H of x].
+
+Static or : ~ * ~> ~ * ~> *.
+
+Static or_right : (x : *) (y : *) ~ x ~> (or x y).
+Static or_left : (x : *) (y : *) ~ y ~> (or x y).
+
+Or 
+  |A B :: ~ * ~> ~ * ~> * => {(or A B) :: |or_right | or_left}.
+
+Static Neg : ~ * ~> *.
+Static Not : (A : *) ~ (~ A ~> False) ~> (Neg A).
+
+Negation | A :: ~ * ~> * =>
+  {(Neg A) :: |Not}.
+
+neg_elim
+   |A H a :: (A : *) ~ (Negation A) ~> ~ A ~> False => [H of False
+      |(Not _ f) => (f a)
+   ].
+
+Static bool : *.
+Static true : bool.
+Static false : bool.
+
+Static Pair : ~ * ~> ~ * ~> *.
+Static MkPair : (A : *) (B : *) ~> ~ A ~> ~ B ~> (Pair A B).
+
+AxB
+  |A B :: ~ * ~> ~ * ~> * => {(Pair A B) :: |MkPair}.
+
+first
+  |A B pair :: (A : *) (B : *) (pair : (AxB A B)) A => [pair of A
+    |(MkPair _ _ v v') => v
+  ].
+
+second
+  |A B pair :: (A : *) (B : *) (pair : (AxB A B)) B => [pair of B
+    |(MkPair _ _ v v') => v'
+  ].
+
+Bool
+  {bool :: |true |false}.
+
+isSucc
+  |n :: ~ Nat ~> * => [n of *
+     |(S _) => Unit
+     |Z => False
+  ]. 
+
+Static ≡ : (A : *) ~> ~ A ~> ~ A ~> *.
+Static refl : (A : *) ~> (n : A) ~> (≡ A n n).
+
+
+Eq | Set x y :: (A : *) (x : A) (y : A) ~> *  
+  => {(≡ Set x y) :: |refl}.
+
+eq_rect
+ | h x y P H proof :: 
+                      (H : *)
+                      (x : H)
+                      (y : H)
+                      (P : (~ H ~> *))
+                      ~ (Eq H x y) ~> 
+                      ~ (P x) ~>
+                        (P y) => 
+   [
+      H of (P y)
+        |(refl _ x') => proof
+   ].
+
+bool_false | H :: ~ (Eq Bool true false) ~> False => 
+     def Bool→* = |b :: ~ Bool ~> * => [b of *
+        |true => Unit
+        |false => False
+     ];
+     (eq_rect Bool true false Bool→* H I).
+
+rewrite
+  | A P x y H H1 :: (A : *) (P : ~ A ~> *) (x : A) (y : A) (H : {(≡ A x y) :: | refl})
+     (H1 : (P x)) ~> (P y) => [H of (P y)
+   |(refl a' x') => H1
+].
+
+rewrite' 
+  | A x y z H H' :: (A : *) 
+                    (x : A) ~>
+                    (y : A) ~>
+                    (z : A) ~>
+                    (H : {(≡ A x y) :: |refl}) ~>
+                    (H' : {(≡ A y z) :: |refl}) ~> 
+                    {(≡ A x z) :: |refl} => 
+  [H' of {(≡ A x z) :: |refl}
+   |(refl a' x') => H
+].
+
+cong
+ | h x y Prop P H  :: 
+                 (H : *)
+                 (x : H)
+                 (y : H)
+                 (Prop : *)
+                 (P : ~ H ~> Prop)
+                 (eq : {(≡ H x y) :: | refl})
+                 {(≡ Prop (P x) (P y)) :: | refl}
+  => [
+      H of {(≡ Prop (P x) (P y)) :: |refl}
+        |(refl _ x') => (refl Prop (P x'))
+     ].
+
+symmetry
+  | h x y H :: (h : *) ~> (x : h) ~> (y : h) ~> ~ {(≡ h x y) :: | refl} ~> {(≡ h y x) :: | refl} =>
+ [H of {(≡ h y x) :: | refl}
+   |(refl _ x') => (refl h x')
+ ].
+
+
+Nat
+  {nat :: | Z | S}.
+
++ 
+ | n y :: ~ Nat ~> ~ Nat ~> Nat => [n of Nat
+  |Z => y
+  |(S x) => (S (+ x y))
+].
+
+zero_identity_plus' 
+  | x :: (x : Nat) ~> {(≡ nat x (+ x Z)) :: |refl} => [x of {(≡ nat x (+ x Z)) :: |refl}
+    |Z => (refl nat Z)
+    |(S x') => (cong nat x' (+ x' Z) nat S (zero_identity_plus' x'))
+   ].
+
+Static list : ~ * ~> *.
+Static empty : (A : *) (list A).
+Static new : (A : *) ~ A ~> ~ {(list A) :: |new |empty} ~> (list A).
+
+List
+  | A :: ~ * ~> * => {(list A) :: |new |empty }.
+
+Static Vector : ~ * ~> (x : Nat) *.
+Static nil : (A : *) (Vector A Z).
+
+Static cons : (A : *) (x : Nat) (y : A) (H : {(Vector A x) :: |nil |cons}) (Vector A (S x)).
+
+vec_specialization'
+  | A x vec :: (A : *) (n : Nat) ~ {(Vector A n) :: |cons} ~> (isSucc n) => [vec of (isSucc x)
+    |(cons A m y pred) => (I :: (isSucc x))
+  ].
+
+left_succ_nat | x y :: (x : Nat) ~> (y : Nat) ~> {(≡ nat (+ x (S y)) (S (+ x y))) :: | refl } => 
+  [x of {(≡ nat (+ x (S y)) (S (+ x y))) :: | refl}
+    |Z => (refl nat (S y))
+    |(S x') => (cong nat (+ x' (S y)) (S (+ x' y)) nat S (left_succ_nat x' y))
+  ].
+
+x+y≡y+x
+ | x y :: (x : Nat) (y : Nat) * => {(≡ nat (+ x y) (+ y x)) :: | refl}.
+
++_com 
+  | x y :: (x : Nat) (y : Nat) (x+y≡y+x x y) => [x of (x+y≡y+x x y)
+    |Z => 
+      def y≡y+0 = (zero_identity_plus' y);
+      (rewrite' nat y y (+ y Z) (refl nat y) y≡y+0)
+    |(S n) => 
+       def x≡y→x+1≡y+1 = (cong nat (+ n y) (+ y n) nat S (+_com n y));
+       def x+1+y≡x+y+1 = (symmetry nat (+ y (S n)) (S (+ y n)) (left_succ_nat y n));
+       (rewrite' nat (S (+ n y)) (S (+ y n)) (+ y (S n)) x≡y→x+1≡y+1 x+1+y≡x+y+1)
+  ].
+
+gte_or_equal
+  | x y :: ~ Nat ~> ~ Nat ~> Bool => [x of Bool
+  |Z => [
+    y of Bool
+      |Z => true
+      |(S x') => false
+  ]
+  |(S x') => [
+    y of Bool
+      |Z => true
+      |(S y') => (gte_or_equal x' y')
+  ]
+].
+
+gte 
+  | x y :: ~ Nat ~> ~ Nat ~> Bool => [x of Bool
+  |Z => [
+    y of Bool
+      |Z => false
+      |(S x') => false
+  ]
+  |(S x') => [
+    y of Bool
+      |Z => true
+      |(S y') => (gte x' y')
+  ]
+].
+
+eql 
+ | x y :: ~ Nat ~> ~ Nat ~> Bool => [x of Bool
+  |Z => [
+    y of Bool
+      |Z => true
+      |(S x') => false
+  ]
+  |(S x') => [
+    y of Bool
+      |Z => false
+      |(S y') => (eql x' y')
+  ]
+].
+
+eql_prop
+  | x y H :: (x : Nat) (y : Nat) ~ (Eq Bool (eql x y) true) ~> (Eq Nat x y) => 
+  [x of (Eq Nat x y)
+    |Z => [y of (Eq Nat x y)
+       |Z => (refl nat Z)
+       |(S n) => (⊥ (Eq Nat x y) (bool_false (symmetry Bool false true H)))
+    ]
+    |(S n) => [y of (Eq Nat x y)
+       |Z =>  (⊥ (Eq Nat x y) (bool_false (symmetry Bool false true H)))
+       |(S n') => (cong nat n n' nat S (eql_prop n n' H))
+    ]
+  ].
+
+unique_eql 
+  | x :: (x : Nat) ~> (Eq Bool (eql x x) true) =>
+    [x of (Eq Bool (eql x x) true)
+      |Z => (refl Bool true)
+      |(S n) => (unique_eql n)
+    ].
+
+eql_neg_prop
+  | x y H H1 :: (x : Nat) (y : Nat) (H : (Eq Bool (eql x y) false)) (H1 : (Eq Nat x y)) ~> False => 
+  [H1 of False
+    |(refl _ z) => (bool_false (symmetry Bool false true (rewrite' Bool false (eql z z) true (symmetry Bool (eql z z) false H) (unique_eql z))))
+  ].
+
+nat_dec
+  |x y :: (x : Nat) (y : Nat) (Or (Eq Nat x y) (Negation (Eq Nat x y))) => [
+  (eql x y) of (Or (Eq Nat x y) (Negation (Eq Nat x y)))
+    |true => (or_right (≡ Nat x y) (Negation (≡ Nat x y)) (eql_prop x y (refl Bool true)))
+    |false => (or_left (≡ Nat x y) (Negation (≡ Nat x y)) (Not (≡ Nat x y) (eql_neg_prop x y (refl Bool (eql x y)))))
+].
+
+NonEmpty 
+  |A :: ~ * ~> * => {(list A) :: |new}.
+
+insert_sort 
+ | xs v :: ~ (List Nat) ~> ~ Nat ~> (NonEmpty Nat) => 
+  [xs of (NonEmpty Nat)
+     |(empty _) => (new Nat v (empty Nat))
+     |(new _ head tail) => [(gte_or_equal head v) of (NonEmpty Nat)
+       |false => (new _ head (insert_sort tail v))
+       |true => (new _ v (new _ head tail))
+     ]
+  ].
+
+sort 
+ |xs :: ~ (List Nat) ~> (List Nat) =>
+  [xs of (List Nat)
+    |(empty _) => (empty _)
+    |(new _ head tail) => (insert_sort (sort tail) head)
+  ].
+
+or 
+  | x y :: ~ Bool ~> ~ Bool ~> Bool => [x of Bool
+    |true => true
+    |false => y
+  ].
+
+sorted 
+ |xs :: ~ (List Nat) ~> * => [xs of *
+    |(empty _) => Unit
+    |(new _ head tail) => [tail of *
+       |(empty _) => Unit
+       |(new _ head2 tail2) => (AxB (Eq Bool (gte_or_equal head2 head) true) (sorted tail))
+    ]
+  ].
+
+false≠true
+  |H :: ~ (Eq Bool true false) ~> False => 
+    def absurd_hyp = |x :: ~ Bool ~> * => [x of *
+      |true => Unit
+      |false => False
+    ];
+    (eq_rect Bool true false absurd_hyp H I).
+
+gte_or_equal_inverse 
+  | x y H :: (x : Nat) (y : Nat) ~ (Eq Bool (gte_or_equal x y) false) ~> (Eq Bool (gte_or_equal y x) true) =>
+    [x of (Eq Bool (gte_or_equal y x) true)
+      |Z => [y of (Eq Bool (gte_or_equal y x) true)
+        |Z => refl
+        |(S n) => refl
+      ]
+      |(S n) => [y of (Eq Bool (gte_or_equal y (S n)) true)
+        |Z =>  (⊥ (Eq Bool (gte_or_equal Z (S n)) true) (false≠true H))
+        |(S m) => (gte_or_equal_inverse n m H)
+      ]
+  ]. 
+
+gte_inverse'
+   | x y H H1 :: (x : Nat) (y : Nat) ~ (Eq Bool (gte x y) false) ~> ~ (Negation (Eq Nat x y)) ~> (Eq Bool (gte y x) true) => [
+   x of (Eq Bool (gte y x) true)
+     |Z => [y of (Eq Bool (gte y x) true)
+        |Z => (⊥ (Eq Bool false true) (neg_elim (Eq Nat x y) H1 (refl Nat Z)))
+        |(S n) => (refl Bool true)
+     ]
+     |(S n) => [y of (Eq Bool (gte y x) true)
+       |Z => (symmetry Bool true false H)
+       |(S n') => 
+         def neg_prop = (|A B f H2 => [
+           H2 of (Negation A)
+             |(Not _ g) => (Not A (|x => (g (f x)) :: ~A ~> False))
+         ] :: (A : *) (B : *) ~ (~ A ~> B) ~> ~ (Negation B) ~> (Negation A));
+         (gte_inverse' n n' H (neg_prop (Eq Nat n n') (Eq Nat (S n) (S n')) (cong Nat n n' Nat Succ) H1))
+     ]
+ ].
+
+ neg_eq_symmetry 
+   |A x y H :: (A : *) (x : A) (y : A) (H : (Negation (Eq A x y))) ~> (Negation (Eq A y x)) => [H of (Negation (Eq A y x))
+    |(Not _ map) => (Not (Eq A x y) (|i => 
+      def symmetric = (symmetry A x y i);
+      (map symmetric) :: ~ (Eq A x y) ~> False))
+   ].
+ 
+ sorted_pred
+   | xs v H :: (xs : (List Nat)) (v : Nat) ~ (sorted (new Nat v xs)) ~> (sorted xs) => [
+     xs of (sorted xs)
+      |(empty _) => I
+      |(new typ head tail) => [tail of (sorted xs)
+        |(empty _) => I
+        |(new typ2 x tail2) =>
+          def sort_tail = (second (Eq Bool (gte_or_equal head v) true) (sorted (new typ head tail)) H);
+          def sort_tail2 = (second (Eq Bool (gte_or_equal x head) true) (sorted (new typ2 x tail2)) sort_tail);
+          def le_tail2 = (first (Eq Bool (gte_or_equal x head) true) (sorted (new typ2 x tail2)) sort_tail);
+          def rec = (sorted_pred tail2 x sort_tail2);
+          (MkPair (Eq Bool (gte_or_equal x head) true) (sorted tail2) le_tail2 rec)
+      ]
+   ].
+
+
+ sorted_aux
+ | xs v H :: (xs : (List Nat)) (v : Nat) ~ (sorted xs) ~> (sorted (insert_sort xs v)) => 
+   [xs of (sorted (insert_sort xs v))
+    |(empty _) => (I :: Unit)
+    |(new typ head tail) => [(gte_or_equal head v) of (sorted (insert_sort xs v))
+      |true => 
+        (MkPair (Eq Bool true true) (sorted tail) (refl Bool true) (sorted_pred tail head H))
+      |false => [(insert_sort tail v) of (sorted (insert_sort xs v))
+        |(new _ head' tail') => 
+          def sorted_head' = (sorted_aux (new _ head' tail') v __);
+          def proof = (MkPair (Eq Bool (gte_or_equal head' head) true) (sorted (new typ head tail)) __ H);
+          __
+      ]
+    ]
+   ].
