@@ -186,13 +186,19 @@ do_not_work
   def list = ((empty Nat) :: (List Nat));
   (last Nat list).
 
-Static Vector : ~ * ~> (x : Nat) *.
-Static nil : (A : *) (Vector A Z).
+Static vector : ~ * ~> (x : Nat) *.
+Static nil : (A : *) (vector A Z).
+Static cons : (A : *) (x : Nat) (y : A) (H : {(vector A x) :: |nil |cons}) (vector A (S x)).
 
-Static cons : (A : *) (x : Nat) (y : A) (H : {(Vector A x) :: |nil |cons}) (Vector A (S x)).
+Vector
+ | A n :: (A : *) ~> ~ Nat ~> * => {(vector A n) :: |nil |cons}.
+
+
+concat 
+ | A n m x y :: (A : *) (n : Nat) (m : Nat) ~ (Vector A n) ~> ~ (Vector A m) ~> (Vector A (+ n m)) => __.
 
 vec_specialization'
-  | A x h vec :: (A : *) (n : Nat) (h : nat) ~ {(Vector A n) :: |cons} ~> {nat :: | S} => [vec of {nat :: | S}
+  | A x h vec :: (A : *) (n : Nat) (h : nat) ~ {(vector A n) :: |cons} ~> {nat :: | S} => [vec of {nat :: | S}
     |(cons A m y pred) => ((S m) :: {nat :: | S})
   ].
 
