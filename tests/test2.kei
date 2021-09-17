@@ -152,6 +152,40 @@ Static new : (A : *) ~ A ~> ~ {(list A) :: |new |empty} ~> (list A).
 List
   | A :: ~ * ~> * => {(list A) :: |new |empty }.
 
+NonEmpty 
+  |A :: ~ * ~> * => {(list A) :: |new}.
+
+insert_at 
+  |A ls v at :: (A : *) ~ (List A) ~> ~ A ~> ~ Nat ~> (NonEmpty A) => [at of (NonEmpty A)
+    |Z => (new A v ls)
+    |(S x) => [ls of (NonEmpty A)
+      |(empty _) => (new A v (empty A))
+      |(new _ head tail) => (new A head (insert_at A tail v x))
+    ]
+  ].
+
+length 
+  |A ls :: (A : *) ~> ~ (List A) ~> Nat => [ls of Nat
+    |(empty _) => Z
+    |(new A head tail) => (S (length A tail))
+  ].
+
+last 
+  |A ls :: (A : *) ~> ~ (NonEmpty A) ~> A => [ls of A
+    |(new A head tail) => [tail of A
+      |(empty _) => head
+      |(new A head2 tail2) => (last A (new A head2 tail2))
+    ]
+  ].
+
+works_fine
+  def my_list_not_empty = ((new Nat Z (empty Nat)) :: (NonEmpty Nat));
+  (length Nat my_list_not_empty).
+
+do_not_work
+  def list = ((empty Nat) :: (List Nat));
+  (last Nat list).
+
 Static Vector : ~ * ~> (x : Nat) *.
 Static nil : (A : *) (Vector A Z).
 
@@ -256,9 +290,6 @@ nat_dec
     |true => (or_right (≡ Nat x y) (Negation (≡ Nat x y)) (eql_prop x y (refl Bool true)))
     |false => (or_left (≡ Nat x y) (Negation (≡ Nat x y)) (Not (≡ Nat x y) (eql_neg_prop x y (refl Bool (eql x y)))))
 ].
-
-NonEmpty 
-  |A :: ~ * ~> * => {(list A) :: |new}.
 
 insert_sort 
  | xs v :: ~ (List Nat) ~> ~ Nat ~> (NonEmpty Nat) => 
