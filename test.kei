@@ -5,11 +5,8 @@ Static S : ~ {nat :: | Z | S} ~> nat.
 Nat
   {nat :: | Z | S}.
 
-test 
-  |x :: ~ Nat ~> Nat => [x of Nat
-    |(S n) => [n of Nat
-      |(S m) => (test n)
-      |Z => Z
-    ]
-    |Z => Z
-  ].
++ 
+ | n y :: ~ Nat ~> ~ Nat ~> Nat => [n of Nat
+  |Z => Z
+  |(S x) => Z
+].

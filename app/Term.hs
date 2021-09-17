@@ -286,9 +286,6 @@ name str = do
 uniqueness :: Unique Int
 uniqueness = Wrap (\state@(u, _, _) struct -> (u, state, struct))
 
-assert :: (Term, Term) -> Unique ()
-assert (term, target) = Wrap (\state struct -> ((), state, struct {context = Map.insert term target (context struct)}))
-
 substituteVarNames :: (Int,  String) -> Term -> Unique Term
 substituteVarNames (i, str) term = substitute #>=> term
   where
@@ -334,8 +331,7 @@ purefyPTerm (PLam args body type_) = do
    case type_ of {
       Just type_ -> (do
          type__purified <- purefyPTerm type_
-         assert (x, type__purified)
-         return x);
+         return (Notation x type__purified));
       Nothing -> return x;
      }
 purefyPTerm (PApp x y) = do
