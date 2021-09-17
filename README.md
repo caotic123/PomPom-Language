@@ -65,7 +65,7 @@ Static Z : nat.
 Static S : ~ nat ~> nat.
 ```
 
-Symbols do not represent any computer behavouir, in fact you can create any natural number with this definition but you cannot derive any recursion or even a predecessor function.
+Symbols do not represent any computer behaviour, in fact you can create any natural number with this definition but you cannot derive any recursion or even a predecessor function.
 
 In order to create a valid subset of natural you need to create the definition by using optional constructors :
 
