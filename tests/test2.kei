@@ -182,10 +182,6 @@ works_fine
   def my_list_not_empty = ((new Nat Z (empty Nat)) :: (NonEmpty Nat));
   (length Nat my_list_not_empty).
 
-do_not_work
-  def list = ((empty Nat) :: (List Nat));
-  (last Nat list).
-
 Static vector : ~ * ~> (x : Nat) *.
 Static nil : (A : *) (vector A Z).
 Static cons : (A : *) (x : Nat) (y : A) (H : {(vector A x) :: |nil |cons}) (vector A (S x)).
@@ -193,14 +189,12 @@ Static cons : (A : *) (x : Nat) (y : A) (H : {(vector A x) :: |nil |cons}) (vect
 Vector
  | A n :: (A : *) ~> ~ Nat ~> * => {(vector A n) :: |nil |cons}.
 
-
 concat 
- | A n m x y :: (A : *) (n : Nat) (m : Nat) ~ (Vector A n) ~> ~ (Vector A m) ~> (Vector A (+ n m)) => __.
-
-vec_specialization'
-  | A x h vec :: (A : *) (n : Nat) (h : nat) ~ {(vector A n) :: |cons} ~> {nat :: | S} => [vec of {nat :: | S}
-    |(cons A m y pred) => ((S m) :: {nat :: | S})
-  ].
+ | A n m k x y z :: (A : *) (n : Nat) (m : Nat) (k : Nat)
+    ~ (Vector A n) ~> ~ (Vector A m) ~> ~ (Vector A k) ~> (Vector A k) => [z of (Vector A k)
+   |(nil _) => (nil _)
+   |(cons A pred head tail) => (cons A pred head tail) 
+ ].
 
 left_succ_nat | x y :: (x : Nat) ~> (y : Nat) ~> {(≡ nat (+ x (S y)) (S (+ x y))) :: | refl } => 
   [x of {(≡ nat (+ x (S y)) (S (+ x y))) :: | refl}
@@ -403,23 +397,21 @@ gte_transitivy
     |(empty _) => (I :: Unit)
     |(new typ head tail) => [(gte head v) of (sorted (insert_sort xs v))
       |true => 
-        (MkPair (Eq Bool true true) (sorted tail) (refl Bool true) (sorted_pred tail head H))
+        (MkPair (Eq Bool true true) (sorted (new typ head tail)) (refl Bool true) H)
       |false => [tail of (sorted (insert_sort xs v))
         |(new _ head2 tail') => [(gte head2 v) of (sorted (insert_sort xs v))
           |true =>  
+            def v⩾head = (gte_inverse head v (refl Bool false));
             def rec = (sorted_pred tail' head2 (second (Eq Bool (gte head2 head) true) (sorted tail) H));
-            def v⩾head = (gte_inverse head v (refl Bool true));
-            def projection = (MkPair (Eq Bool true true) (sorted tail') (refl Bool true) rec);
-            (MkPair (Eq Bool (gte v head) true) (Pair (Eq Bool true true) (sorted tail')) v⩾head projection)
+            def projection = (MkPair (Eq Bool true true) (sorted (new _ head2 tail')) (refl Bool true) rec);
+            def goal = (MkPair (Eq Bool (gte v head) true) (AxB (Eq Bool true true) (sorted (new _ head2 tail'))) v⩾head projection);
+            __ 
           |false => 
-            def first_projection = (first (Eq Bool (gte head2 head) true) (sorted tail) H);
-            def rec = (sorted_pred tail' head2 (second (Eq Bool (gte head2 head) true) (sorted tail) H));
-            def rec = (sorted_aux tail' v rec);
-            (MkPair (Eq Bool (gte head2 head) true) (sorted (insert_sort tail' v)) first_projection rec)
+            __
         ]
         |(empty _) => 
           def v⩾head = (gte_inverse head v (refl Bool true));
-          (MkPair (Eq Bool (gte v head) true) Unit v⩾head I)
+          __
       ]
     ]
    ].

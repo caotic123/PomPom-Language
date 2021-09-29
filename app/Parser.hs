@@ -23,7 +23,6 @@ data PTerm =
   | PDef String PTerm PTerm
   deriving Show
 
-
 varCharacters :: [Char]
 varCharacters = [':', '(', ')', '.', '|', '~', '>', '{', '}', '=', '[', ']', ';']
 

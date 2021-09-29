@@ -211,8 +211,7 @@ checkMatchReduction = rec_match
       where
         rec_match (App x y) = rec_match x `bind` rec_match y
         rec_match (Lam x y) = rec_match y
-        rec_match (Constr type_ body) = do
-            --    let body_f = foldr (bind . rec_match) (True, True) body
+        rec_match (Constr type_ body) =
                 rec_match type_
         rec_match (Pi var type_ body) = rec_match type_ `bind` rec_match body
         rec_match (Notation term type') = rec_match term `bind` rec_match type'
@@ -223,7 +222,7 @@ checkMatchReduction = rec_match
 
 checkPredicateTypeConstructor  :: Term -> Term -> Bool
 checkPredicateTypeConstructor y k = case (y, k) of
-   (App k k', App k2 k2') -> checkPredicateTypeConstructor k k2 && checkPredicateTypeConstructor k' k2'
+   (_, App k2 k2') -> True
    (Var (VarRef "_"), _) -> True  -- On (P _) against (P' y)
    (_ , Var (VarName _)) -> True -- On (P' y) against (P c) 
    (v@(Var _), v'@(Var _)) -> v == v'
@@ -295,11 +294,9 @@ isMatch _ = False
 normalize :: Term -> ContextM Term
 normalize term = do
         (check, norm_term) <- eagerStep term
-        if check then do
-        --   t_show <- showTerm norm_term
-       --    trace (show t_show) return ()
+        if check then
            normalize norm_term
-        else do
+        else
            return norm_term
   where
     eagerStep :: Term -> ContextM (Bool, Term)
@@ -323,7 +320,7 @@ normalize term = do
           v' <- normalize v'
           let definitional_term = reduceBetaVariables (expandFunction recur v')
           let (matchs, resolvable_match) = checkMatchReduction definitional_term
-          if matchs == resolvable_match then do
+          if matchs == resolvable_match then
             return (True, definitional_term)
           else
             return (check, recur));
@@ -340,9 +337,9 @@ normalize term = do
             (checker, matchedM) <- eagerStep matched
             (checker', type'M) <- eagerStep type'
             let match = Match matchedM type'M k'
-            if checkIfUnstuck match then do
+            if checkIfUnstuck match then
                return (True, evalMatch match)
-             else do
+             else
                return (checker || checker', match)
     eagerStep (Lam abs body) = do
             (checker, bodyM) <- eagerStep body
@@ -355,7 +352,7 @@ normalize term = do
             (checker, typeM) <- eagerStep type_
             (checker', bodyM) <- eagerStep body
             return (checker || checker', Pi var typeM bodyM)
-    eagerStep (Notation term type_) = do
+    eagerStep (Notation term type_) =
             return (False, Notation term type_)
     eagerStep v = return (False, v)
 
@@ -373,18 +370,7 @@ isVarName (Var (VarName  _)) = True
 isVarName _ = False
 
 pushHoleMsg :: String -> Checker -> ContextM Checker
-pushHoleMsg error checker = do
-       -- name <- getLocalName
-       -- context <- getMapContext
-      --  stringfy_context <- mapM (\(nameT, term) -> do
-        --          name <- showTerm nameT
-          --        stringfy_term <- showTerm term
-            --      return $ name ++ " : " ++ stringfy_term)
-              --  (filter (isVarName . fst) (Map.toList context))
-      --  let sep = if not $ null stringfy_context then "\n" else ""
-       -- let context = intercalate "\n" stringfy_context
-      --  uni <- getUnifier
-        --ls <- mapM (\(a, b) -> showTerm a >>= (\a -> showTerm b >>= (\b -> return (a ++ ":" ++ b)))) (listBiLeft uni)
+pushHoleMsg error checker =
         return checker {hole_msg = error : hole_msg checker}
 
 pushLeakType :: Term -> Term -> Checker -> ContextM Checker
@@ -537,6 +523,11 @@ setType (Jugdment term type') = do
         setContextType (term, type')
         setContextType (norm_term, type')
 
+renewType :: Term -> ContextM () -- useful after a unification with no cost to typecheck the whole term
+renewType term = do
+        type_ <- getType term
+        mapM_ (setType . Jugdment term) type_
+
 matchConstructors :: String -> [Term] -> ContextM Bool
 matchConstructors name = foldr (\constr b_M -> do
         def <- getConstructor constr
@@ -561,20 +552,22 @@ constrSubtType checker pair un_norm helper = infer_constr pair
   where
     infer_constr (constructor, constrs@(Constr type' constructors)) = do
        constructor <- simpl constructor -- fix it here
+
        type_constructor <- getType constructor
        constr <- getConstructor constructor
        case constr of {
          Just (Local name term _) -> (do
-              --   checker <- assertType (Jugdment constructor type') constructor checker :: Fix it to do not give msg erros to constructors with holes
+               --  checker <- assertType (Jugdment un_norm type') constructor checker 
                  sub <- matchConstructors name constructors
-                 if sub then
-               --    case type_app_constructor of {
-                 --    Just type'' -> assertTypeEquality (type', type'') constructor constrs checker;
-                   --  Nothing -> do
-                     --        t <- showTerm constructor 
-                       --      trace t return checker;
-                  -- }
-                  return checker
+                 if sub then do
+                  type_app_constructor <- getType constructor
+             --     show_t <- mapM showTerm type_app_constructor
+           --       show_cons <- showTerm constructor
+         --         trace (show (show_t, show_cons)) return ()
+                  case type_app_constructor of {
+                     Just type'' -> assertTypeEquality (type'', type') constructor constrs checker;
+                     Nothing -> pushLeakType constructor helper checker;
+                   }
                  else do
                    stringfyConstructor <- showTerm helper
                    stringfyConstrs <- showTerm constrs
@@ -582,21 +575,14 @@ constrSubtType checker pair un_norm helper = infer_constr pair
          _ -> do
            --     checker <- typeRules checker constructor
                 case type_constructor of {
-                  Just constr@(Constr type'' constructors') -> (do
-                          checker <- assertTypeEquality (type', type'') constructor constr checker
-                           -- compare the type and type''
-                          foldr (\constructor' checkerM -> do
-                               checker <- checkerM
-                               constrSubtType checker (constructor', constrs) un_norm helper
-                           ) (return checker) constructors'
-                   );
+                  Just constr@(Constr type'' constructors') -> assertTypeEquality (constr, constrs) constructor helper checker;
                   Just type_ -> assertTypeEquality (type_, un_norm) constructor helper checker;
                   Nothing -> do
                         stringfy_constructor <- showTerm constructor
                         stringfy_type <- showTerm type'
                         if isHole constructor then do
                           strigfy_constructors <- mapM showTerm constructors
-                          if not $ null strigfy_constructors then
+                          if not $ null strigfy_constructors then do
                             pushHoleMsg ("The hole expects a constructor of " ++ intercalate " or " strigfy_constructors ++ " of type " ++ stringfy_type) checker
                           else
                             pushHoleMsg ("The hole expects a falsity of type " ++ stringfy_type) checker
@@ -614,6 +600,18 @@ simpl term = do
                subs <- checkSubs term
                if not subs then return term else simpl term
 
+debugUni :: ContextM [String]
+debugUni = do
+        uni <- getUnifier
+        mapM (\(a,b) -> do
+                a' <- getType a
+                a' <- mapM showTerm a'
+                b' <- getType b
+                b' <- mapM showTerm b'
+                a <- showTerm a
+                b <- showTerm b
+                return (a ++ " : " ++ b ++ " >> " ++ show (a', b'))) (Map.toList uni)
+
 assertTypeEquality :: (Term, Term) -> Term -> Term -> Checker -> ContextM Checker
 assertTypeEquality (origin, target) term helper checker =
         let type_error term type_ helper k = do
@@ -621,18 +619,8 @@ assertTypeEquality (origin, target) term helper checker =
                 stringfy_type_ <- simpl type_ >>= showTerm
                 stringfy_helper <- showTerm helper
                 stringfy_k <- simpl k >>= showTerm
-                --uni <- getUnifier
-               -- showUni <- mapM (\(a,b) -> do
-                 --       a' <- getType a
-                   --     a' <- mapM (\x -> do
-                         --       showTerm x) a'
-                     --   b' <- getType b
-                       -- b' <- mapM (\x -> do
-                           --     showTerm x) b'
-                        --a <- showTerm a
-                        --b <- showTerm b
-                        --return (a ++ " : " ++ b ++ " >> " ++ show (a', b'))
-                        --) (Map.toList uni)
+                uni <- getUnifier
+                showUni <- debugUni
                 return $ "The term " ++ stringfy_term ++ ":\nshould be a type : " ++ stringfy_type_ ++ "\ninstead of : " ++ stringfy_k ++ "\n where : " ++ stringfy_helper ++ " is your jugdment\n" -- ++ intercalate "\n" showUni
          in do
          let pi_eq = piEquality term helper
@@ -664,11 +652,11 @@ assertType (Jugdment term target) helper checker = do
    assert (Jugdment term constr@(Constr _ _)) = constrSubtType checker (term, constr) target helper
    assert jugde = assertExpressionType jugde helper checker
 
-inferByApplication :: Term -> Term -> Checker -> ContextM Checker
-inferByApplication k type' checker  = case k of {
+inferByApplication :: Term -> Checker -> ContextM Checker
+inferByApplication k checker  = case k of {
         app@(App x y) -> (do
-                checker <- inferByApplication x type' checker
-                checker <- inferByApplication y type' checker
+                checker <- inferByApplication x checker
+                checker <- inferByApplication y checker
                 type_ <- getType x
                 case type_ of {
                         Just pi@(Pi n term term_dependent) -> (do
@@ -687,6 +675,7 @@ inferByApplication k type' checker  = case k of {
         _ -> error "Internal error : infer can ony be derived by a application or var";
         }
 
+
 matchUnification :: Term -> Term -> Term -> Checker -> ContextM Checker
 matchUnification x u k checker = do
         type_x <- getType x
@@ -699,7 +688,10 @@ matchUnification x u k checker = do
                         let eq = x == u
                         unless eq $ unify (u, x) -- really implies the k axiom 
                         typeConstruction (removeTypeConstructors y) (removeTypeConstructors y')
+                        uni <- getUnifier
+                        mapM_ (renewType . snd) (Map.toList uni) -- renew the predicates type in the context but now with possible unification in the variables
                         assertType (Jugdment x y) term checker
+
                 );
                 _ ->  do
                       stringify_x <- showTerm x
@@ -723,7 +715,7 @@ typeConstruction x y = case (x, y) of {
 
 checkMatchBody :: Term -> Term -> (Term, Term) -> Checker -> ContextM Checker
 checkMatchBody destructed type_ (predicate, body) checker = do
-        checker <- inferByApplication predicate type_ checker
+        checker <- inferByApplication predicate checker
         matchUnification destructed predicate body checker
 
 varRule :: Checker -> Term -> ContextM Checker
@@ -781,9 +773,10 @@ absRule checker t = abs_type t
                        checker <- typeRules checker all
                        assertType (Jugdment _M _B) term checker;
                 );
-                Just _ -> (do
+                Just type' -> (do
                         t_show <- showTerm lam
-                        pushTypeError ("You have a function : " ++ t_show ++ ", but your type isn`t a PI-Type, maybe you forgot to add your arguments in your type function") checker);
+                        type'_show <- showTerm type'
+                        pushTypeError ("You have a function : " ++ t_show ++ ", but " ++ type'_show  ++ " isn`t a PI-Type, maybe you forgot to add your arguments in your type function") checker);
                 Nothing -> do
                         t_show <- showTerm t
                         term <- getTerm
@@ -835,6 +828,7 @@ appRule checker = app_typed
   where
     app_typed app@(App _M _N) = do
             type_ <- getType _M
+            type_ <- mapM simpl type_
             case type_ of {
             Just pi@(Pi x _A _B) -> (do
                     checker <- assertType (Jugdment _N _A) app checker
@@ -915,12 +909,11 @@ checkTypeClauses constr (constructors, predicates) helper checker = foldr (\term
     checkClause checker clause constr = do
        construction <- getConstructor clause
        case construction of {
-          Just (Local name term (TermInfo Static _ _ _) ) -> (do
+          Just (Local name term (TermInfo Static _ _ _) ) ->
             foldTerm (\checkerM term -> do
-              checker <- checkerM
-              checkAgainstTypeConstructors term constr helper checker
-              matchConstructorOptionalType checker name (predicates, helper) constr) (return checker) clause
-          );
+            checker <- checkerM
+            checkAgainstTypeConstructors term constr helper checker
+            matchConstructorOptionalType checker name (predicates, helper) constr) (return checker) clause;
           _ -> do
            stringfy_constructor <- showTerm clause
            stringfy_constr <- showTerm constr
@@ -953,16 +946,15 @@ constrRule checker term = constr_typed term
 notationRule :: Checker -> Term-> ContextM Checker
 notationRule checker notation@(Notation l@Lam{} type_) = do
         setType (Jugdment l type_)
-        type_ <- normalize type_
         checker <- typeRules checker type_
         typeRules checker l
 
 notationRule checker notation@(Notation body type_) = do
         uni <- getUnifier
-        clearUnifer
-        checker <- assertType (Jugdment body type_) (Notation body type_) checker
-        checker <- typeRules checker type_
         checker <- typeRules checker body
+        clearUnifer
+        checker <- typeRules checker type_
+        checker <- assertType (Jugdment body type_) (Notation body type_) checker
         setType (Jugdment notation type_) --- why we need this? idk, but we need for sure!
         setType (Jugdment body type_)
         setUnifer uni
@@ -976,7 +968,7 @@ inferMatch match@(Match _ type_ _) = setType (Jugdment match type_)
 inferMatch _ = error "Internal Error : Match inference always must be applyed to a match expression"
 
 typeRules :: Checker -> Term -> ContextM Checker
-typeRules checker term = do
+typeRules checker term =
         case term of {
            lam@(Lam k t) -> (do
                    inferLambda lam -- insert type of k on the context of the body t 
@@ -1011,7 +1003,9 @@ typeRules checker term = do
                            ) (return checker) body
             );
            constr@(Constr type' constructors) -> constrRule checker constr;
-           notation@(Notation _ _) -> notationRule checker notation;
+           Notation body type' -> do
+                   type' <- normalize type'
+                   notationRule checker (Notation body type');
         }
 
 typeCheckerLocal :: ContextM Checker
