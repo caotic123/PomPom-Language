@@ -262,12 +262,12 @@ eql_prop
   | x y H :: (x : Nat) (y : Nat) ~ (Eq Bool (eql x y) true) ~> (Eq Nat x y) => 
   [x of (Eq Nat x y)
     |Z => [y of (Eq Nat x y)
-       |Z => (refl nat Z)
+       |Z => (refl Nat Z)
        |(S n) => (⊥ (Eq Nat x y) (bool_false (symmetry Bool false true H)))
     ]
     |(S n) => [y of (Eq Nat x y)
        |Z =>  (⊥ (Eq Nat x y) (bool_false (symmetry Bool false true H)))
-       |(S n') => (cong nat n n' nat S (eql_prop n n' H))
+       |(S n') => (cong Nat n n' Nat Succ (eql_prop n n' H))
     ]
   ].
 
@@ -287,8 +287,8 @@ eql_neg_prop
 nat_dec
   |x y :: (x : Nat) (y : Nat) (Or (Eq Nat x y) (Negation (Eq Nat x y))) => [
   (eql x y) of (Or (Eq Nat x y) (Negation (Eq Nat x y)))
-    |true => (or_right (≡ Nat x y) (Negation (≡ Nat x y)) (eql_prop x y (refl Bool true)))
-    |false => (or_left (≡ Nat x y) (Negation (≡ Nat x y)) (Not (≡ Nat x y) (eql_neg_prop x y (refl Bool (eql x y)))))
+    |true => (or_right (Eq Nat x y) (Negation (Eq Nat x y)) (eql_prop x y (refl Bool true)))
+    |false => (or_left (Eq Nat x y) (Negation (Eq Nat x y)) (Not (Eq Nat x y) (eql_neg_prop x y (refl Bool (eql x y)))))
 ].
 
 insert_sort 
@@ -313,7 +313,7 @@ sort
 
 test_sort 
   def list = (new Nat 1 (new Nat (S 1) (empty Nat)));
-  def ordened_list = (new Nat 1 (new Nat (S 1) (empty Nat)));
+  def ordened_list = (sort (new Nat (S 1) (new Nat 1 (empty Nat))));
   ((refl (List Nat) (sort list)) :: (Eq (List Nat) (sort list) ordened_list)).
 
 or 
@@ -343,8 +343,8 @@ gte_inverse
   | x y H :: (x : Nat) (y : Nat) ~ (Eq Bool (gte x y) false) ~> (Eq Bool (gte y x) true) =>
     [x of (Eq Bool (gte y x) true)
       |Z => [y of (Eq Bool (gte y x) true)
-        |Z => refl
-        |(S n) => refl
+        |Z => (refl Bool true)
+        |(S n) => (refl Bool true)
       ]
       |(S n) => [y of (Eq Bool (gte y (S n)) true)
         |Z =>  (⊥ (Eq Bool (gte Z (S n)) true) (false≠true H))
@@ -373,55 +373,5 @@ gte_transitivy
 
  neg_eq_symmetry 
    |A x y H :: (A : *) (x : A) (y : A) (H : (Negation (Eq A x y))) ~> (Negation (Eq A y x)) => [H of (Negation (Eq A y x))
-    |(Not _ map) => (Not (Eq A x y) |i :: ~ (Eq A x y) ~> False => (map i))
+    |(Not _ map) => (Not (Eq A y x) |i :: ~ (Eq A y x) ~> False => (map (symmetry A y x i)))
    ].
- 
- sorted_pred
-   | xs v H :: (xs : (List Nat)) (v : Nat) ~ (sorted (new Nat v xs)) ~> (sorted xs) => [
-     xs of (sorted xs)
-      |(empty _) => I
-      |(new typ head tail) => [tail of (sorted xs)
-        |(empty _) => I
-        |(new typ2 x tail2) =>
-          def sort_tail = (second (Eq Bool (gte head v) true) (sorted (new typ head tail)) H);
-          def sort_tail2 = (second (Eq Bool (gte x head) true) (sorted (new typ2 x tail2)) sort_tail);
-          def le_tail2 = (first (Eq Bool (gte x head) true) (sorted (new typ2 x tail2)) sort_tail);
-          def rec = (sorted_pred tail2 x sort_tail2);
-          (MkPair (Eq Bool (gte x head) true) (sorted tail2) le_tail2 rec)
-      ]
-   ].
-
- sorted_aux
- | xs v H :: (xs : (List Nat)) (v : Nat) ~ (sorted xs) ~> (sorted (insert_sort xs v)) => 
-   [xs of (sorted (insert_sort xs v))
-    |(empty _) => (I :: Unit)
-    |(new typ head tail) => [(gte head v) of (sorted (insert_sort xs v))
-      |true => 
-        (MkPair (Eq Bool true true) (sorted (new typ head tail)) (refl Bool true) H)
-      |false => [tail of (sorted (insert_sort xs v))
-        |(new _ head2 tail') => [(gte head2 v) of (sorted (insert_sort xs v))
-          |true =>  
-            def v⩾head = (gte_inverse head v (refl Bool false));
-            def rec = (sorted_pred tail' head2 (second (Eq Bool (gte head2 head) true) (sorted tail) H));
-            def projection = (MkPair (Eq Bool true true) (sorted (new _ head2 tail')) (refl Bool true) rec);
-            def goal = (MkPair (Eq Bool (gte v head) true) (AxB (Eq Bool true true) (sorted (new _ head2 tail'))) v⩾head projection);
-            __ 
-          |false => 
-            __
-        ]
-        |(empty _) => 
-          def v⩾head = (gte_inverse head v (refl Bool true));
-          __
-      ]
-    ]
-   ].
-
-sorted_proof
-  | xs :: (xs : (List Nat)) ~> (sorted (sort xs)) => [xs of (sorted (sort xs))
-    |(empty _) => I
-    |(new Nat head tail) => (sorted_aux (sort tail) head (sorted_proof tail))
-  ].
-
-test_sort_proof
-  def list = (new Nat 1 (new Nat (S 1) (empty Nat)));
-  (sorted_proof list).

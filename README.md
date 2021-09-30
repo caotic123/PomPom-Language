@@ -4,16 +4,16 @@ In short : Pompom is a cute implementation of a dependently typed language.
 
 Pompom provides an easy unification algorithm, optional constructors, and a strong normalization system, which makes proving with PomPom very easy, for example proving that inserting a element in any position in a list always returns a non-empty list can be encoded like :
 
-```haskell
--- data List a = | New a (List a) | Empty 
+```js
+// data List a = | New a (List a) | Empty 
 List
-  | A :: ~ * ~> * => {(list A) :: |new |empty }. -- A list is either a new or a empty constructor
+  | A :: ~ * ~> * => {(list A) :: |new |empty }. // A list is either a new or a empty constructor
 
--- Data NonEmpty = | New a (NonEmpty a) 
+// Data NonEmpty = | New a (NonEmpty a) 
 NonEmpty 
-  |A :: ~ * ~> * => {(list A) :: |new}. -- A list non-empty is list only with new constructor
+  |A :: ~ * ~> * => {(list A) :: |new}. // A list non-empty is list only with new constructor
 
-insert_at -- A function that insert a new element in the list and returns a non-empty list 
+insert_at // A function that insert a new element in the list and returns a non-empty list 
   |A ls v at :: (A : *) ~ (List A) ~> ~ A ~> ~ Nat ~> (NonEmpty A) => [at of (NonEmpty A)
     |Z => (new A v ls)
     |(S x) => [ls of (NonEmpty A)
@@ -24,7 +24,7 @@ insert_at -- A function that insert a new element in the list and returns a non-
 ```
 Pompom identifies that function always will return a Non-empty list and accepts insert_at definition, furthermore, you might think that every function defined for a List will not work for a NonEmpty List, however, Pompom uses a subtyping system to check against the patterns, so if you define a function that works for List, it must work also for NonEmpty Lists.
 
-```haskell
+```
 length 
   |A ls :: (A : *) ~> ~ (List A) ~> Nat => [ls of Nat
     |(empty _) => Z

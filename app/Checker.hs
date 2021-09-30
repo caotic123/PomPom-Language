@@ -1016,7 +1016,7 @@ typeCheckerLocal = do
 formatTypeChecker :: [(String, ([String], [String]))] -> String
 formatTypeChecker r
   |not $ null r = do
-          let format_msg x = foldr (\c str -> if c == '\n' then "\n  " ++ str else c : str) "" ("  " ++ x)
+          let format_msg x = foldr (\c str -> if c == '\n' then "\n  " ++ str else c : str) "" (" " ++ x)
           foldr (\(name, (erros, holes)) str -> do
                   let sep = if not $ null holes then "\n\n" else ""
                   "\nDefinition " ++ name ++ ":\n" ++ format_msg (first holes) ++ sep ++ format_msg (print_erros erros)) "" r
