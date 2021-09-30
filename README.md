@@ -4,7 +4,7 @@ In short : Pompom is a cute implementation of a dependently typed language.
 
 Pompom provides an easy unification algorithm, optional constructors, and a strong normalization system, which makes proving with PomPom very easy, for example proving that inserting a element in any position in a list always returns a non-empty list can be encoded like :
 
-```js
+```coq
 // data List a = | New a (List a) | Empty 
 List
   | A :: ~ * ~> * => {(list A) :: |new |empty }. // A list is either a new or a empty constructor
