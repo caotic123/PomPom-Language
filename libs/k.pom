@@ -1,0 +1,7 @@
+import libs/equality.
+
+axiom_k 
+ |A a T p e :: (A : *) (a : A) (T : (~ (Eq A a a) ~> *)) (p : (T (refl A a))) (e : (Eq A a a)) (T e) =>
+  [e of (T e)
+     |(refl z x) => p
+  ].

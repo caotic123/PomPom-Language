@@ -1,6 +1,6 @@
 # POMPOM LANGUAGE
 
-In short: Pompom is an attractive implementation of a dependently typed language for functional programming and proving things, Pompom language is so simple that you can easily implement it yourself just by looking in the source code. Pompom is also good for people that want to learn dependent types/functional concepts.
+In short: Pompom is an attractive implementation of a dependently typed language for functional programming and proving things, Pompom language is so simple that you can easily implement it yourself just by looking in the source code. Our language is also good for people that want to learn dependent types/functional concepts.
 
 Pompom provides an easy unification algorithm, optional constructors, and a strong normalization system (sufficiently fast), which makes proving with PomPom very easy, for example proving that inserting a element in any position in a list always returns a non-empty list can be encoded like :
 

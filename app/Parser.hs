@@ -3,7 +3,7 @@ module Parser where
 
 import Prelude
 import Text.Parsec
-import Data.Char ( isAlphaNum, isSpace )
+import Data.Char ( isAlphaNum, isSpace, isAscii )
 import Data.Functor
 import Control.Monad
 
@@ -169,8 +169,20 @@ parseStatements = do
     withSpaces . string $ "."
     return (def_name, SortStatement, term)
 
+
+parseImport :: Parsec String st String
+parseImport = do
+    withSpaces $ string "import"
+    str <- withSpaces consumeVarName
+    withSpaces $ string "."
+    return str
+
 parseDefinition :: Parsec String st [PDefinitons]
 parseDefinition = many $ try parseStatic <|> parseStatements
 
-run :: String -> Either ParseError [PDefinitons]
-run = parse parseDefinition ""
+run :: String -> Either ParseError ([String], [PDefinitons])
+run = parse (do
+       imports <- many parseImport
+       definitions <- parseDefinition
+       return (imports, definitions))
+    ""

@@ -1,0 +1,164 @@
+import libs/equality.
+import libs/logic.
+import libs/bool.
+
+Static nat : *.
+Static Z : nat.
+Static S : ~ {nat :: | Z | S} ~> nat.
+
+Nat
+  {nat :: | Z | S}.
+
+Succ 
+  |x :: ~ Nat ~> {nat :: | S} => (S x).
+
+isSucc
+  |n :: ~ Nat ~> * => [n of *
+     |(S _) => Unit
+     |Z => False
+  ]. 
+
++ 
+ | n y :: ~ Nat ~> ~ Nat ~> Nat => [n of Nat
+  |Z => y
+  |(S x) => (S (+ x y))
+].
+
+
+gte
+  | x y :: ~ Nat ~> ~ Nat ~> Bool => [x of Bool
+  |Z => [
+    y of Bool
+      |Z => true
+      |(S x') => false
+  ]
+  |(S x') => [
+    y of Bool
+      |Z => true
+      |(S y') => (gte x' y')
+  ]
+].
+
+gt 
+  | x y :: ~ Nat ~> ~ Nat ~> Bool => [x of Bool
+  |Z => [
+    y of Bool
+      |Z => false
+      |(S x') => false
+  ]
+  |(S x') => [
+    y of Bool
+      |Z => true
+      |(S y') => (gt x' y')
+  ]
+].
+
+eql 
+ | x y :: ~ Nat ~> ~ Nat ~> Bool => [x of Bool
+  |Z => [
+    y of Bool
+      |Z => true
+      |(S x') => false
+  ]
+  |(S x') => [
+    y of Bool
+      |Z => false
+      |(S y') => (eql x' y')
+  ]
+].
+
+eql_prop
+  | x y H :: (x : Nat) (y : Nat) ~ (Eq Bool (eql x y) true) ~> (Eq Nat x y) => 
+  [x of (Eq Nat x y)
+    |Z => [y of (Eq Nat x y)
+       |Z => (refl Nat Z)
+       |(S n) => (⊥ (Eq Nat x y) (false≠true (symmetry Bool false true H)))
+    ]
+    |(S n) => [y of (Eq Nat x y)
+       |Z =>  (⊥ (Eq Nat x y) (false≠true (symmetry Bool false true H)))
+       |(S n') => (cong Nat n n' Nat Succ (eql_prop n n' H))
+    ]
+  ].
+
+zero_identity_plus' 
+  | x :: (x : Nat) ~> {(≡ nat x (+ x Z)) :: |refl} => [x of {(≡ nat x (+ x Z)) :: |refl}
+    |Z => (refl nat Z)
+    |(S x') => (cong nat x' (+ x' Z) nat S (zero_identity_plus' x'))
+   ].
+
+left_succ_nat | x y :: (x : Nat) ~> (y : Nat) ~> {(≡ nat (+ x (S y)) (S (+ x y))) :: | refl } => 
+  [x of {(≡ nat (+ x (S y)) (S (+ x y))) :: | refl}
+    |Z => (refl nat (S y))
+    |(S x') => (cong nat (+ x' (S y)) (S (+ x' y)) nat S (left_succ_nat x' y))
+  ].
+
+x+y≡y+x
+ | x y :: (x : Nat) (y : Nat) * => {(≡ nat (+ x y) (+ y x)) :: | refl}.
+
++_com 
+  | x y :: (x : Nat) (y : Nat) (x+y≡y+x x y) => [x of (x+y≡y+x x y)
+    |Z => 
+      def y≡y+0 = (zero_identity_plus' y);
+      (rewrite' nat y y (+ y Z) (refl nat y) y≡y+0)
+    |(S n) => 
+       def x≡y→x+1≡y+1 = (cong nat (+ n y) (+ y n) nat S (+_com n y));
+       def x+1+y≡x+y+1 = (symmetry nat (+ y (S n)) (S (+ y n)) (left_succ_nat y n));
+       (rewrite' nat (S (+ n y)) (S (+ y n)) (+ y (S n)) x≡y→x+1≡y+1 x+1+y≡x+y+1)
+  ].
+
+unique_eql 
+  | x :: (x : Nat) ~> (Eq Bool (eql x x) true) =>
+    [x of (Eq Bool (eql x x) true)
+      |Z => (refl Bool true)
+      |(S n) => (unique_eql n)
+    ].
+
+eql_neg_prop
+  | x y H H1 :: (x : Nat) (y : Nat) (H : (Eq Bool (eql x y) false)) (H1 : (Eq Nat x y)) ~> False => 
+  [H1 of False
+    |(refl _ z) => (false≠true (rewrite' Bool true (eql x x) false (symmetry Bool (eql x x) true (unique_eql x)) H))
+  ].
+
+nat_dec
+  |x y :: (x : Nat) (y : Nat) (Or (Eq Nat x y) (Negation (Eq Nat x y))) => [
+  (eql x y) of (Or (Eq Nat x y) (Negation (Eq Nat x y)))
+    |true => (or_right (Eq Nat x y) (Negation (Eq Nat x y)) (eql_prop x y (refl Bool true)))
+    |false => (or_left (Eq Nat x y) (Negation (Eq Nat x y)) (Not (Eq Nat x y) (eql_neg_prop x y (refl Bool (eql x y)))))
+].
+
+gte_transitivy
+  | x y z H H2 :: (x : Nat) (y : Nat) (z : Nat)
+     ~ (Eq Bool (gte x y) true) ~> ~ (Eq Bool (gte y z) true) ~> (Eq Bool (gte x z) true) => [x of (Eq Bool (gte x z) true)
+       |Z => [z of (Eq Bool (gte x z) true)
+         |Z => (refl Bool true)
+         |(S m) => [y of (Eq Bool (gte x z) true)
+           |Z => H2
+           |(S n) => H
+         ]
+       ]
+       |(S n) => [z of (Eq Bool (gte x z) true)
+         |Z => (refl Bool true)
+         |(S m) => [y of (Eq Bool (gte x z) true)
+           |Z => (⊥ (Eq Bool (gte x z) true) (false≠true (symmetry Bool false true H2)))
+           |(S s) => (gte_transitivy n s m H H2)
+         ]
+       ]
+     ].
+
+
+gte_inverse 
+  | x y H :: (x : Nat) (y : Nat) ~ (Eq Bool (gte x y) false) ~> (Eq Bool (gte y x) true) =>
+    [x of (Eq Bool (gte y x) true)
+      |Z => [y of (Eq Bool (gte y x) true)
+        |Z => (refl Bool true)
+        |(S n) => (refl Bool true)
+      ]
+      |(S n) => [y of (Eq Bool (gte y (S n)) true)
+        |Z =>  (⊥ (Eq Bool (gte Z (S n)) true) (false≠true H))
+        |(S m) => (gte_inverse n m H)
+      ]
+  ]. 
+
+1 
+ (S Z).
+

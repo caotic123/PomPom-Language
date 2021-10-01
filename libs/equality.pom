@@ -1,0 +1,64 @@
+import libs/logic.
+
+Static ≡ : (A : *) ~> ~ A ~> ~ A ~> *.
+Static refl : (A : *) ~> (n : A) ~> (≡ A n n).
+
+Eq | Set x y :: (A : *) (x : A) (y : A) ~> *  
+  => {(≡ Set x y) :: |refl}.
+
+eq_rect
+ | h x y P H proof :: 
+                      (H : *)
+                      (x : H)
+                      (y : H)
+                      (P : (~ H ~> *))
+                      ~ (Eq H x y) ~> 
+                      ~ (P x) ~>
+                        (P y) => 
+   [
+      H of (P y)
+        |(refl _ x') => proof
+   ].
+
+rewrite
+  | A P x y H H1 :: (A : *) (P : ~ A ~> *) (x : A) (y : A) (H : {(≡ A x y) :: | refl})
+     (H1 : (P x)) ~> (P y) => [H of (P y)
+   |(refl a' x') => H1
+].
+
+rewrite' 
+  | A x y z H H' :: (A : *) 
+                    (x : A) ~>
+                    (y : A) ~>
+                    (z : A) ~>
+                    (H : {(≡ A x y) :: |refl}) ~>
+                    (H' : {(≡ A y z) :: |refl}) ~> 
+                    {(≡ A x z) :: |refl} => 
+  [H' of {(≡ A x z) :: |refl}
+   |(refl a' x') => H
+].
+
+cong
+ | h x y Prop P H  :: 
+                 (H : *)
+                 (x : H)
+                 (y : H)
+                 (Prop : *)
+                 (P : ~ H ~> Prop)
+                 (eq : {(≡ H x y) :: | refl})
+                 {(≡ Prop (P x) (P y)) :: | refl}
+  => [
+      H of {(≡ Prop (P x) (P y)) :: |refl}
+        |(refl _ x') => (refl Prop (P x'))
+     ].
+
+symmetry
+  | h x y H :: (h : *) ~> (x : h) ~> (y : h) ~> ~ {(≡ h x y) :: | refl} ~> {(≡ h y x) :: | refl} =>
+ [H of {(≡ h y x) :: | refl}
+   |(refl _ x') => (refl h x')
+ ].
+
+neg_eq_symmetry 
+  |A x y H :: (A : *) (x : A) (y : A) (H : (Negation (Eq A x y))) ~> (Negation (Eq A y x)) => [H of (Negation (Eq A y x))
+    |(Not _ map) => (Not (Eq A y x) |i :: ~ (Eq A y x) ~> False => (map (symmetry A y x i)))
+].

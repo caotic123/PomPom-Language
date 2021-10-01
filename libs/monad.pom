@@ -1,0 +1,6 @@
+Static monad : (A : *) (F : ~ * ~> *) ~> *.
+Static pure : (A : *) ~> (F : ~ * ~> *) ~ (F A) ~> (monad A F).
+Static bind : (A : *) (B : *) ~> (F : ~ * ~> *) ~ (~ A ~> (F B)) ~> ~ (F A) ~> (monad B F).
+
+Monad
+ |kind functor :: ~ * ~> ~ (~ * ~> *) ~> * => {(monad kind functor) :: | pure | bind}.

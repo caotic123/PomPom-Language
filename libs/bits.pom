@@ -1,0 +1,53 @@
+Static bits : *.
+
+Bits
+  {bits :: |B0 |B1 | B}.
+
+Static B0 : ~ Bits ~> bits.
+Static B1 : ~ Bits ~> bits.
+Static B : bits.
+
+bits-reverse
+ | b :: ~ Bits ~> Bits => [b of Bits
+   |(B0 pred) => (B1 (bits-reverse pred))
+   |(B1 pred) => (B0 (bits-reverse pred))
+   |B => B
+ ].
+
+bits-concat
+ | b b' :: ~ Bits ~> ~ Bits ~> Bits => [b of Bits
+   |(B0 pred) => (B0 (bits-reverse pred))
+   |(B1 pred) => (B1 (bits-reverse pred))
+   |B => b'
+ ].
+
+bits-or
+ | b b' :: ~ Bits ~> ~ Bits ~> Bits => [b of Bits
+   |(B0 pred) => [b' of Bits
+     |(B0 pred') => (B0 (bits-or pred pred'))
+     |(B1 pred') => (B1 (bits-reverse pred))
+     |B => b  
+   ]
+   |(B1 pred) => [b' of Bits
+     |(B0 pred') => (B1 (bits-or pred pred'))
+     |(B1 pred') => (B1 (bits-reverse pred))
+     |B => b
+   ]
+   |B => b'
+ ].
+
+bits-and
+ | b b' :: ~ Bits ~> ~ Bits ~> Bits => [b of Bits
+   |(B0 pred) => [b' of Bits
+     |(B0 pred') => (B0 (bits-or pred pred'))
+     |(B1 pred') => (B0 (bits-reverse pred))
+     |B => b  
+   ]
+   |(B1 pred) => [b' of Bits
+     |(B0 pred') => (B0 (bits-or pred pred'))
+     |(B1 pred') => (B1 (bits-reverse pred))
+     |B => b
+   ]
+   |B => b'
+ ].
+

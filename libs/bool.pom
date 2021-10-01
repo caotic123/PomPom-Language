@@ -1,0 +1,28 @@
+import libs/logic.
+import libs/equality.
+
+Static bool : *.
+Static true : bool.
+Static false : bool.
+
+Bool
+  {bool :: |true |false}.
+
+or 
+  | x y :: ~ Bool ~> ~ Bool ~> Bool => [x of Bool
+    |true => true
+    |false => y
+  ].
+
+and 
+  | x y :: ~ Bool ~> ~ Bool ~> Bool => [x of Bool
+    |true => y
+    |false => false
+  ].
+
+false≠true | H :: (Falsity (Eq Bool true false)) => 
+     def Bool→* = |b :: ~ Bool ~> * => [b of *
+        |true => Unit
+        |false => False
+     ];
+     (eq_rect Bool true false Bool→* H I).

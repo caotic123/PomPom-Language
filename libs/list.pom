@@ -1,0 +1,52 @@
+import libs/nat.
+
+Static list : ~ * ~> *.
+Static empty : (A : *) (list A).
+Static new : (A : *) ~ A ~> ~ {(list A) :: |new |empty} ~> (list A).
+
+List
+  | A :: ~ * ~> * => {(list A) :: |new |empty }.
+
+NonEmpty 
+  |A :: ~ * ~> * => {(list A) :: |new}.
+
+insert_at 
+  |A ls v at :: (A : *) ~ (List A) ~> ~ A ~> ~ Nat ~> (NonEmpty A) => [at of (NonEmpty A)
+    |Z => (new A v ls)
+    |(S x) => [ls of (NonEmpty A)
+      |(empty _) => (new A v (empty A))
+      |(new _ head tail) => (new A head (insert_at A tail v x))
+    ]
+  ].
+
+length 
+  |A ls :: (A : *) ~> ~ (List A) ~> Nat => [ls of Nat
+    |(empty _) => Z
+    |(new A head tail) => (S (length A tail))
+  ].
+
+last 
+  |A ls :: (A : *) ~> ~ (NonEmpty A) ~> A => [ls of A
+    |(new A head tail) => [tail of A
+      |(empty _) => head
+      |(new A head2 tail2) => (last A (new A head2 tail2))
+    ]
+  ].
+
+insert_sort 
+ | xs v :: ~ (List Nat) ~> ~ Nat ~> (NonEmpty Nat) => 
+  [xs of (NonEmpty Nat)
+     |(empty _) => (new Nat v (empty Nat))
+     |(new _ head tail) => [(gte head v) of (NonEmpty Nat)
+       |false => (new _ head (insert_sort tail v))
+       |true => (new _ v (new _ head tail))
+     ]
+  ].
+
+sort 
+ |xs :: ~ (List Nat) ~> (List Nat) =>
+  [xs of (List Nat)
+    |(empty _) => (empty _)
+    |(new _ head tail) => (insert_sort (sort tail) head)
+  ].
+

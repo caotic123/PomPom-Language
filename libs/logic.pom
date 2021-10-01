@@ -1,0 +1,47 @@
+Static unit : *.
+Static I : unit.
+
+Unit
+  {unit :: |I}.
+
+False
+  {unit :: }.
+
+⊥ |x H :: (Prop : *) ~ False ~> Prop => [H of x].
+
+Static or : ~ * ~> ~ * ~> *.
+
+Static or_right : (x : *) (y : *) ~ x ~> (or x y).
+Static or_left : (x : *) (y : *) ~ y ~> (or x y).
+
+Or 
+  |A B :: ~ * ~> ~ * ~> * => {(or A B) :: |or_right | or_left}.
+
+Static Neg : ~ * ~> *.
+Static Not : (A : *) ~ (~ A ~> False) ~> (Neg A).
+
+Negation | A :: ~ * ~> * =>
+  {(Neg A) :: |Not}.
+
+neg_elim
+   |A H a :: (A : *) ~ (Negation A) ~> ~ A ~> False => [H of False
+      |(Not _ f) => (f a)
+   ].
+
+Falsity |A :: ~ * ~> Type => ~ A ~> False.
+
+Static Pair : ~ * ~> ~ * ~> *.
+Static MkPair : (A : *) (B : *) ~> ~ A ~> ~ B ~> (Pair A B).
+
+AxB
+  |A B :: ~ * ~> ~ * ~> * => {(Pair A B) :: |MkPair}.
+
+first
+  |A B pair :: (A : *) (B : *) (pair : (AxB A B)) A => [pair of A
+    |(MkPair _ _ v v') => v
+  ].
+
+second
+  |A B pair :: (A : *) (B : *) (pair : (AxB A B)) B => [pair of B
+    |(MkPair _ _ v v') => v'
+  ].
