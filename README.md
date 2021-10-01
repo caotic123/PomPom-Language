@@ -22,7 +22,8 @@ insert_at // A function that insert a new element in the list and returns a non-
     ]
   ].
 ```
-*if you want to see more about this kind of stuff, follow me on https://twitter.com/TiagoCa82822459*
+*if you want to see more about this kind of stuff, follow me on https://twitter.com/TiagoCa82822459*.
+
 Pompom identifies that function always will return a Non-empty list and accepts insert_at definition, furthermore, you might think that every function defined for a List will not work for a NonEmpty List, however, Pompom uses a subtyping system to check against the patterns, so if you define a function that works for List, it must work also for NonEmpty Lists.
 
 ```js
