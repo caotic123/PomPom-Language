@@ -139,7 +139,7 @@ x+y≡y+x // The type equilavent to the commutative property
   ].
 ```
 
-Proving is almost the same approach from other languages (like Idris), but we often represent data differently in order to enhance the power of optional constructors, for example the proof that true <> false.
+Proving is almost the same approach from other languages (like Idris), but we often represent data differently to enhance the power of optional constructors, for example, the proof that true <> false.
 
 ```js
 Static unit : *.
@@ -167,7 +167,10 @@ You can explore more examples in libs/prelude.kei.
 
 For now, we don't have a detailed tutorial of "how to do it", but just studying the code and re-implementing it would be appropriated approach (and easy). As COC, λΠ-calculus is very straightforward to implement, you only need to worry about unification and the normalization strategy. *If you have any question please submit it*
 ![Rules](https://i.imgur.com/zdBnyGI.jpg)  
-We only made a slight modification by extending the universes, Set : Type.
+
+*We only made a slight modification by extending the universes, Set : Type*.
+The unification system is "ad-hoc", you could copy from Agda unification algorithm, for example. The subtyping rules of optional constructors are something that can be detailed more with formal rules, but for now, we don't have a formal specification of it.
+
 
 # Some other details
 
