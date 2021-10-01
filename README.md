@@ -4,7 +4,6 @@ In short: Pompom is an attractive implementation of a dependently typed language
 
 Pompom provides an easy unification algorithm, optional constructors, and a strong normalization system (sufficiently fast), which makes proving with PomPom very easy, for example proving that inserting a element in any position in a list always returns a non-empty list can be encoded like :
 
-*if you want to see more about this kind of stuff, follow me on https://twitter.com/TiagoCa82822459*
 ```js
 // data List a = | New a (List a) | Empty 
 List
@@ -23,6 +22,7 @@ insert_at // A function that insert a new element in the list and returns a non-
     ]
   ].
 ```
+*if you want to see more about this kind of stuff, follow me on https://twitter.com/TiagoCa82822459*
 Pompom identifies that function always will return a Non-empty list and accepts insert_at definition, furthermore, you might think that every function defined for a List will not work for a NonEmpty List, however, Pompom uses a subtyping system to check against the patterns, so if you define a function that works for List, it must work also for NonEmpty Lists.
 
 ```js
@@ -73,6 +73,7 @@ In order to create a valid subset of natural you need to create the definition b
 ```haskell
 Nat
   {nat :: | Z | S}.
+  -- Syntax : {first the type :: |<Constructors>}
 ```
 
 We'll need also to change our definition of succ to (We need to do this change because a predecessor of a natural number also needs to be computable) :
@@ -135,6 +136,28 @@ x+y≡y+x // The type equilavent to the commutative property
        def x+1+y≡x+y+1 = (symmetry nat (+ y (S n)) (S (+ y n)) (left_succ_nat y n));
        (rewrite' nat (S (+ n y)) (S (+ y n)) (+ y (S n)) x≡y→x+1≡y+1 x+1+y≡x+y+1)
   ].
+```
+
+Proving is almost the same approach from other languages (like Idris), but we often represent data differently in order to enhance the power of optional constructors, for example the proof that true <> false.
+
+```js
+Static unit : *.
+Static I : unit.
+
+Unit
+  {unit :: |I}.
+
+False
+  {unit :: }. // A false is also a Unit type, but it don't have a constructor, it is the same that forall (x : True), x <> I in Coq for example
+
+Falsity |A :: ~ * ~> Type => ~ A ~> False.
+
+bool_false | H :: (Falsity (Eq Bool true false)) => 
+     def Bool→* = |b :: ~ Bool ~> * => [b of *
+        |true => Unit
+        |false => False
+     ];
+     (eq_rect Bool true false Bool→* H I).
 ```
 
 You can explore more examples in libs/prelude.kei.

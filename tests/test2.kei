@@ -86,7 +86,10 @@ eq_rect
         |(refl _ x') => proof
    ].
 
-bool_false | H :: ~ (Eq Bool true false) ~> False => 
+
+Falsity |A :: ~ * ~> Type => ~ A ~> False.
+
+bool_false | H :: (Falsity (Eq Bool true false)) => 
      def Bool→* = |b :: ~ Bool ~> * => [b of *
         |true => Unit
         |false => False
