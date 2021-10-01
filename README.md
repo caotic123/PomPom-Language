@@ -1,6 +1,6 @@
 # POMPOM LANGUAGE
 
-In short: Pompom is an attractive implementation of a dependently typed language, Pompom language is so simple that you can easily implement it yourself just by looking in the source code.
+In short: Pompom is an attractive implementation of a dependently typed language for functional programming and proving things, Pompom language is so simple that you can easily implement it yourself just by looking in the source code. Pompom is also good for people that want to learn dependent types/functional concepts.
 
 Pompom provides an easy unification algorithm, optional constructors, and a strong normalization system (sufficiently fast), which makes proving with PomPom very easy, for example proving that inserting a element in any position in a list always returns a non-empty list can be encoded like :
 
@@ -125,7 +125,7 @@ If you have experience with dependent types you might notice the additional type
 
 
 ```js
-x+y≡y+x // The type equilavent to the commutative property
+x+y≡y+x // The type is equivalent to commutative property
  | x y :: (x : Nat) (y : Nat) * => {(≡ nat (+ x y) (+ y x)) :: | refl}.
 
 +_com // the proof
@@ -180,3 +180,4 @@ The unification system is "ad-hoc", you could copy from Agda unification algorit
 - And yep, the design of everything can change, only for the sake of expressivity. 
 - For now, we don't offer a terminating checker either positivity checker.
 - Optional constructors are experimental.
+- If you are struggling to re-implement Pompom or have any questions, please feel free to contact me at camposferreiratiago@gmail.com.
