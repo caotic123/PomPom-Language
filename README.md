@@ -22,7 +22,7 @@ insert_at // A function that insert a new element in the list and returns a non-
     ]
   ].
 ```
-*if you want to see more about this kind of stuff, follow me on https://twitter.com/TiagoCa82822459*.
+*if you want to see more about this kind of stuff, follow me on [twitter](https://twitter.com/TiagoCa82822459)*.
 
 Pompom identifies that function always will return a Non-empty list and accepts insert_at definition, furthermore, you might think that every function defined for a List will not work for a NonEmpty List, however, Pompom uses a subtyping system to check against the patterns, so if you define a function that works for List, it must work also for NonEmpty Lists.
 
@@ -113,7 +113,8 @@ And concatenation is enconded like that :
 ```js
 concat 
  | A n m vec vec2 :: concat_type => [vec of (Vector A (+ n m))
-      |(cons _ len head tail) => ((cons A (+ len m) head (concat A len m tail vec2)) :: (Vector A (+ (S len) m)))
+      |(cons _ len head tail) => 
+        ((cons A (+ len m) head (concat A len m tail vec2)) :: (Vector A (+ (S len) m)))
       |(nil _) => (vec2 :: (Vector A (+ Z m)))
     ].
 ```
@@ -173,7 +174,7 @@ The unification system is "ad-hoc", you could copy from Agda unification algorit
 
 
 # Some other details
-
+- Pompom is actualy Kei2 from [Kei](https://github.com/caotic123/Kei)  
 - We are aware that our unification system implies in the k axiom, we would love to change for intensional type theory and be compatible with HOTT.
 - Thinking about the backend, We would love to target it in some practical use (like js or smart contracts).
 - And yep, the design of everything can change, only for the sake of expressivity. 
