@@ -1,6 +1,6 @@
 # POMPOM LANGUAGE
 
-In short: Pompom is an attractive implementation of a dependently typed language, the main reason is the Pompom language is so simple that you can easily implement it yourself just by looking in the source code.
+In short: Pompom is an attractive implementation of a dependently typed language, Pompom language is so simple that you can easily implement it yourself just by looking in the source code.
 
 Pompom provides an easy unification algorithm, optional constructors, and a strong normalization system (sufficiently fast), which makes proving with PomPom very easy, for example proving that inserting a element in any position in a list always returns a non-empty list can be encoded like :
 
@@ -142,6 +142,8 @@ You can explore more examples in libs/prelude.kei.
 # Implement it for yourself
 
 For now, we don't have a detailed tutorial of "how to do it", but just studying the code and re-implementing it would be appropriated approach (and easy). As COC, λΠ-calculus is very straightforward to implement, you only need to worry about unification and the normalization strategy. *If you have any question please submit it*
+![Rules](https://i.imgur.com/zdBnyGI.jpg)  
+We only made a slight modification by extending the universes, Set : Type.
 
 # Some other details
 
