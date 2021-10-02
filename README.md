@@ -60,7 +60,7 @@ You can read more about our optional constructor later.
 
 # Basic syntax
 
-- Definition : ```def_name : expression```, def_name can have any character expect for ```':', '(', ')', '.', '|', '~', '>', '{', '}', '=', '[', ']', ';'```
+- Definition : ```def_name : expression```, def_name can have any character except for ```':', '(', ')', '.', '|', '~', '>', '{', '}', '=', '[', ']', ';'```
 - Type :  ```(x : A) ~> B```, as a function A going to B, or ```~ A ~> B```, when x does not occur in B.
 - Lambda : | ```|x ... :: Type => Body```, being x a parameter (or more) and Type the type notation of the lambda.
 - Application : ```(f y)```
