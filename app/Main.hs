@@ -13,12 +13,13 @@ readKei file set = do
     n <- readFile (file ++ ".pom")
     case Parser.run n of
       Right x_ -> do
+        trace ("PomPom : cached " ++ file) return ()
         rec_ <- foldM (\x y -> mapM (\x -> readKei y (fst x) <&> foldDefs (Just x)) x <&> join) (pure (Data.Set.empty, [])) (fst x_)
         return $ do
           (records, imports) <- rec_
           let u_set = Data.Set.union set records
           if Data.Set.member file set then
-              trace ("PomPom : cached " ++ file) return (u_set, imports)
+              return (u_set, imports)
              else do
               trace ("PomPom : checking " ++ file ++ " ...") return (Data.Set.insert file u_set, state (snd x_) ++ imports)
       Left y_ -> do

@@ -81,7 +81,7 @@ git clone https://github.com/caotic123/PomPom-Language
 cd PomPom-Language
 cabal install 
 May take some time, and after that :
-cabal run Kei2 prelude
+cabal run Kei2 libs/prelude
 ```
 If everything works, you must see a message like : ```Kei checked your file with successful```. *if something goes wrong, submit it*
 
