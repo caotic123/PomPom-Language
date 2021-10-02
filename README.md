@@ -80,7 +80,7 @@ trivial_refl
   |x :: (x : Nat) ~> (Eq Nat (+ Z x) x) => __.
 ```
 
-The "__" is a hole that say what you need to fill, in this case the proof follows with a reflexivity, you complete [here](libs/challenges.pom) and make you pull request.
+The "__" is a hole that says what you need to fill, in this case, the proof follows with reflexivity, you can complete [here](libs/challenges.pom) and make you pull request.
 
 
 # Datatypes (Aka : Symbols)
