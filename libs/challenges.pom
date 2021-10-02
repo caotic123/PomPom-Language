@@ -1,0 +1,26 @@
+import libs/nat.
+import libs/equality.
+import libs/list.
+import libs/function.
+
+≥
+  (gte :: ~ Nat ~> ~ Nat ~> Bool).
+
+beat_it_boss
+  |xs :: (xs : (List Nat)) ~> (sorted (sort xs)) => __.
+  
+beat_it_0
+  |x :: (x : Nat) ~> (Eq Nat (+ 0 x) x) => __.
+
+beat_it_1
+  |x :: (x : Nat) ~> (Eq Nat (+ x 0) x) => __.
+
+beat_it_2
+  |x :: (x : Nat) ~> (Eq Bool (≥ (+ x x) x) true) => __.
+
+beat_it_3
+  |x :: (x : Nat) ~> (Falsity (Eq Bool (eql (+1 x) 0) true)) => __.
+
+beat_it_4
+  |x P :: (x : Nat) ~> ~ ((y : Nat) ~> (Eq Bool (gt y x) true)) ~> (Eq Nat x 0) => __.
+

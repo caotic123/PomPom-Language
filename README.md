@@ -15,10 +15,11 @@ List
 NonEmpty 
   |A :: ~ * ~> * => {(list A) :: |new}. // A list non-empty is list only with new constructor
 
-insert_at // A function that insert a new element in the list and returns a non-empty list 
+// A function that insert a new element in the list and returns a non-empty list 
+insert_at 
   |A ls v at :: (A : *) ~ (List A) ~> ~ A ~> ~ Nat ~> (NonEmpty A) => [at of (NonEmpty A)
-    |Z => (new A v ls)
-    |(S x) => [ls of (NonEmpty A)
+    |0 => (new A v ls)
+    |(+1 x) => [ls of (NonEmpty A)
       |(empty _) => (new A v (empty A))
       |(new _ head tail) => (new A head (insert_at A tail v x))
     ]
@@ -30,12 +31,12 @@ Pompom identifies that function always will return a Non-empty list and accepts 
 ```js
 length 
   |A ls :: (A : *) ~> ~ (List A) ~> Nat => [ls of Nat
-    |(empty _) => Z
-    |(new A head tail) => (S (length A tail))
+    |(empty _) => 0
+    |(new A head tail) => (+1 (length A tail))
   ].
 
 works_fine
-  def my_list_not_empty = ((new Nat Z (empty Nat)) :: (NonEmpty Nat));
+  def my_list_not_empty = ((new Nat 0 (empty Nat)) :: (NonEmpty Nat));
   (length Nat my_list_not_empty).
 ```
 
@@ -69,6 +70,19 @@ You can read more about our optional constructor later.
 - Local definition (only in parsing) : ```def def_name = expr; expr```
 - Let : we are lacking :(
 
+
+# How to prove
+
+For example, suppose that you want to prove something simple like 0 + x = x :
+
+```
+trivial_refl
+  |x :: (x : Nat) ~> (Eq Nat (+ Z x) x) => __.
+```
+
+The "__" is a hole that say what you need to fill, in this case the proof follows with a reflexivity, you complete [here](libs/challenges.pom) and make you pull request.
+
+
 # Datatypes (Aka : Symbols)
  
 Pompom uses a "stylized" version of The λΠ-calculus, which is a simple dependent type system (simple as COC), but instead of datatypes like in CIC (Coq, Agda, ...), we provide symbols as a "relaxed" way of representing data :
@@ -76,8 +90,8 @@ Pompom uses a "stylized" version of The λΠ-calculus, which is a simple depende
 ```js
 Static nat : *.
 // The "*" (Set) and Type universes stores all symbols.
-Static Z : nat.
-Static S : ~ nat ~> nat.
+Static 0 : nat.
+Static +1 : ~ {nat :: | 0 | +1} ~> nat.
 ```
 
 Symbols do not represent any computer behaviour, in fact you can create any natural number with this definition but you cannot derive any recursion or even a predecessor function.
@@ -86,14 +100,14 @@ In order to create a valid subset of natural you need to create the definition b
 
 ```haskell
 Nat
-  {nat :: | Z | S}.
+  {nat :: | 0 | +1}.
   -- Syntax : {first the type :: |<Constructors>}
 ```
 
 We'll need also to change our definition of succ to (We need to do this change because a predecessor of a natural number also needs to be computable) :
 
 ```haskell
-Static S : ~ {nat :: | Z | S} ~> nat.
+Static S : ~ {nat :: | 0 | +1} ~> nat.
 -- or  S  : ~ Nat ~> nat.
 ```
 
@@ -102,8 +116,8 @@ Now, we have unlocked recursion and pattern matching by using Nat as datatype. F
 ```js
 + 
  | n y :: ~ Nat ~> ~ Nat ~> Nat => [n of Nat
-  |Z => y
-  |(S x) => (S (+ x y))
+  |0 => y
+  |(+1 x) => (+1 (+ x y))
 ].
 ```
 
@@ -129,8 +143,8 @@ And concatenation is enconded like that :
 concat 
  | A n m vec vec2 :: concat_type => [vec of (Vector A (+ n m))
       |(cons _ len head tail) => 
-        ((cons A (+ len m) head (concat A len m tail vec2)) :: (Vector A (+ (S len) m)))
-      |(nil _) => (vec2 :: (Vector A (+ Z m)))
+        ((cons A (+ len m) head (concat A len m tail vec2)) :: (Vector A (+ (+1 len) m)))
+      |(nil _) => (vec2 :: (Vector A (+ 0 m)))
     ].
 ```
 
@@ -140,18 +154,18 @@ If you have experience with dependent types you might notice the additional type
 
 
 ```js
-x+y≡y+x // The type is equivalent to commutative property
+x+y≡y+x
  | x y :: (x : Nat) (y : Nat) * => {(≡ nat (+ x y) (+ y x)) :: | refl}.
 
-+_com // the proof
++_com 
   | x y :: (x : Nat) (y : Nat) (x+y≡y+x x y) => [x of (x+y≡y+x x y)
-    |Z => 
+    |0 => 
       def y≡y+0 = (zero_identity_plus' y);
-      (rewrite' nat y y (+ y Z) (refl nat y) y≡y+0)
-    |(S n) => 
-       def x≡y→x+1≡y+1 = (cong nat (+ n y) (+ y n) nat S (+_com n y));
-       def x+1+y≡x+y+1 = (symmetry nat (+ y (S n)) (S (+ y n)) (left_succ_nat y n));
-       (rewrite' nat (S (+ n y)) (S (+ y n)) (+ y (S n)) x≡y→x+1≡y+1 x+1+y≡x+y+1)
+      (rewrite' nat y y (+ y 0) (refl nat y) y≡y+0)
+    |(+1 n) => 
+       def x≡y→x+1≡y+1 = (cong nat (+ n y) (+ y n) nat +1 (+_com n y));
+       def x+1+y≡x+y+1 = (symmetry nat (+ y (+1 n)) (+1 (+ y n)) (left_succ_nat y n));
+       (rewrite' nat (+1 (+ n y)) (+1 (+ y n)) (+ y (+1 n)) x≡y→x+1≡y+1 x+1+y≡x+y+1)
   ].
 ```
 
@@ -192,9 +206,13 @@ Implementing λΠ-calculus would be the easiest part, some not mandatory things 
 - Do not use the same tree in the parser and the intermediate representation
 - Have fun :)
 
-The normalizer is your preference, only for the sake of simplicity is preferred to be not lazy, finally, unification is also of your preference, you could copy from the old Agda unification algorithm (you only need unification of datatype indices, do not go for circle checking or absurd., for example. The subtyping rules of optional constructors are something that can be detailed more with formal rules, but for now, we don't have a formal specification of it (But it's very straightforward, so no worries). 
+The normalizer is your preference, only for the sake of simplicity is preferred to be not lazy, finally, unification is also of your preference, you could copy from the old Agda unification algorithm (you only need unification of datatype indices, do not go for circle checking or absurd., for example). The subtyping rules of optional constructors are something that can be detailed more with formal rules, but for now, we don't have a formal specification of it (But it's very straightforward, so no worries). 
 *If you have any questions please submit it*
 
+# Contribute 
+- You can complete the proofs maintained on [libs/chalanges](libs/challenges.pom) and make your pull request 
+- You can report bugs
+- You can do anything that you want to, also :)
 
 # Some other details
 - *if you want to see more about this kind of stuff, follow me on [twitter](https://twitter.com/TiagoCa82822459)*.

@@ -1,8 +1,8 @@
 import libs/nat.
 
 Static vector : ~ * ~> (x : Nat) *.
-Static nil : (A : *) (vector A Z).
-Static cons : (A : *) (x : Nat) (y : A) (H : {(vector A x) :: |nil |cons}) (vector A (S x)).
+Static nil : (A : *) (vector A 0).
+Static cons : (A : *) (x : Nat) (y : A) (H : {(vector A x) :: |nil |cons}) (vector A (+1 x)).
 
 Vector
  | A n :: (A : *) ~> ~ Nat ~> * => {(vector A n) :: |nil |cons}.

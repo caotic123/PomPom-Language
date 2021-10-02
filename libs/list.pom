@@ -12,8 +12,8 @@ NonEmpty
 
 insert_at 
   |A ls v at :: (A : *) ~ (List A) ~> ~ A ~> ~ Nat ~> (NonEmpty A) => [at of (NonEmpty A)
-    |Z => (new A v ls)
-    |(S x) => [ls of (NonEmpty A)
+    |0 => (new A v ls)
+    |(+1 x) => [ls of (NonEmpty A)
       |(empty _) => (new A v (empty A))
       |(new _ head tail) => (new A head (insert_at A tail v x))
     ]
@@ -21,8 +21,8 @@ insert_at
 
 length 
   |A ls :: (A : *) ~> ~ (List A) ~> Nat => [ls of Nat
-    |(empty _) => Z
-    |(new A head tail) => (S (length A tail))
+    |(empty _) => 0
+    |(new A head tail) => (+1 (length A tail))
   ].
 
 last 
@@ -50,3 +50,11 @@ sort
     |(new _ head tail) => (insert_sort (sort tail) head)
   ].
 
+sorted 
+ |xs :: ~ (List Nat) ~> * => [xs of *
+    |(empty _) => Unit
+    |(new _ head tail) => [tail of *
+       |(empty _) => (sorted tail)
+       |(new _ head2 tail2) => (AxB (Eq Bool (gte head2 head) true) (sorted tail))
+    ]
+  ].
