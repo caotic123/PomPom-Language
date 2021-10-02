@@ -227,6 +227,7 @@ The normalizer is your preference, only for the sake of simplicity is preferred 
 # Contribute 
 - You can complete the proofs maintained on [libs/chalanges](libs/challenges.pom) and make your pull request 
 - You can report bugs
+- Construct a backend (?)
 - You can do anything that you want to, also :)
 
 # Some other details
