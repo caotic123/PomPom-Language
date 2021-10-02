@@ -71,6 +71,20 @@ You can read more about our optional constructor later.
 - Let : we are lacking :(
 
 
+# How to run 
+
+The only requisite is [cabal and GHC](https://www.haskell.org/cabal/)
+
+```
+in your preferred directory run :
+git clone https://github.com/caotic123/PomPom-Language
+cabal install 
+May take some time, and after that
+cabal run Kei2 prelude
+```
+If everything works, you must see a message like : ```Kei checked your file with successful```. *if something goes wrong, submit it*
+
+
 # How to prove
 
 For example, suppose that you want to prove something simple like 0 + x = x :
