@@ -107,8 +107,8 @@ Nat
 We'll need also to change our definition of succ to (We need to do this change because a predecessor of a natural number also needs to be computable) :
 
 ```haskell
-Static S : ~ {nat :: | 0 | +1} ~> nat.
--- or  S  : ~ Nat ~> nat.
+Static +1 : ~ {nat :: | 0 | +1} ~> nat.
+-- or  +1  : ~ Nat ~> nat.
 ```
 
 Now, we have unlocked recursion and pattern matching by using Nat as datatype. For example, here the definition of a sum of two natural numbers :
