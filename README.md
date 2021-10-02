@@ -80,7 +80,7 @@ in your preferred directory run :
 git clone https://github.com/caotic123/PomPom-Language
 cd PomPom-Language
 cabal install 
-May take some time, and after that
+May take some time, and after that :
 cabal run Kei2 prelude
 ```
 If everything works, you must see a message like : ```Kei checked your file with successful```. *if something goes wrong, submit it*
@@ -92,7 +92,7 @@ For example, suppose that you want to prove something simple like 0 + x = x :
 
 ```
 trivial_refl
-  |x :: (x : Nat) ~> (Eq Nat (+ Z x) x) => __.
+  |x :: (x : Nat) ~> (Eq Nat (+ 0 x) x) => __.
 ```
 
 The "__" is a hole that says what you need to fill, in this case, the proof follows with reflexivity, you can complete [here](libs/challenges.pom) and make you pull request.
