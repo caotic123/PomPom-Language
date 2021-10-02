@@ -11,7 +11,7 @@ For example proving that inserting a element in any position in a list always re
 List
   | A :: ~ * ~> * => {(list A) :: |new |empty }. // A list is either a new or a empty constructor
 
-// Data NonEmpty = | New a (NonEmpty a) 
+// Data NonEmpty = | New a (List a) 
 NonEmpty 
   |A :: ~ * ~> * => {(list A) :: |new}. // A list non-empty is list only with new constructor
 
