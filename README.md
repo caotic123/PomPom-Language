@@ -1,8 +1,10 @@
 # POMPOM LANGUAGE
 
-In short: Pompom is an attractive implementation of a dependently typed language for functional programming and proving things, Pompom language is so simple that you can easily implement it yourself just by looking in the source code. Our language is also good for people that want to learn dependent types/functional concepts.
+In short: Pompom is an attractive implementation of an extensional dependently typed language for functional programming and for people that want to have fun proving things. Pompom language is so simple that you can implement it yourself just by looking in the source code (you can think that our language is the BASIC language of proof assistants).
 
-Pompom provides an easy unification algorithm, optional constructors, and a strong normalization system (sufficiently fast), which makes proving with PomPom very easy, for example proving that inserting a element in any position in a list always returns a non-empty list can be encoded like :
+Pompom provides an easy unification algorithm, optional constructors, and a strong normalization system (sufficiently fast), which makes proving with PomPom very easy.
+
+For example proving that inserting a element in any position in a list always returns a non-empty list can be encoded like :
 
 ```js
 // data List a = | New a (List a) | Empty 
@@ -22,7 +24,6 @@ insert_at // A function that insert a new element in the list and returns a non-
     ]
   ].
 ```
-*if you want to see more about this kind of stuff, follow me on [twitter](https://twitter.com/TiagoCa82822459)*.
 
 Pompom identifies that function always will return a Non-empty list and accepts insert_at definition, furthermore, you might think that every function defined for a List will not work for a NonEmpty List, however, Pompom uses a subtyping system to check against the patterns, so if you define a function that works for List, it must work also for NonEmpty Lists.
 
@@ -55,6 +56,18 @@ do_not_work -- gives a type erros like "Constructor empty do not belongs to NonE
 ```
 
 You can read more about our optional constructor later.
+
+# Basic syntax
+
+- Definition : ```def_name : expression```, def_name can have any character expect for ```':', '(', ')', '.', '|', '~', '>', '{', '}', '=', '[', ']', ';'```
+- Type :  ```(x : A) ~> B```, as a function A going to B, or ```~ A ~> B```, when x does not occur in B.
+- Lambda : | ```|x ... :: Type => Body```, being x a parameter (or more) and Type the type notation of the lambda.
+- Application : ```(f y)```
+- Type Notation : ```(expression :: Type)```
+- Symbol : ```Static symbol_name : Type```
+- Pattern Matching : ```x of Type [ | predicate => body, ...  ]```, being Type the return type of all clauses
+- Local definition (only in parsing) : ```def def_name = expr; expr```
+- Let : we are lacking :(
 
 # Datatypes (Aka : Symbols)
  
@@ -93,6 +106,8 @@ Now, we have unlocked recursion and pattern matching by using Nat as datatype. F
   |(S x) => (S (+ x y))
 ].
 ```
+
+There is no problem representing proofs using only symbols, if you are writing a backend for example to pompom you could use it to erase data in runtime safely.
 
 # Dependent types
 
@@ -166,18 +181,32 @@ You can explore more examples in libs/prelude.kei.
 
 # Implement it for yourself
 
-For now, we don't have a detailed tutorial of "how to do it", but just studying the code and re-implementing it would be appropriated approach (and easy). As COC, λΠ-calculus is very straightforward to implement, you only need to worry about unification and the normalization strategy. *If you have any question please submit it*
+For now, we don't have a detailed tutorial of "how to do it", but just studying the code and re-implementing it would be appropriated approach (and easy). Nevertheless, we provide a little orientation of how to do it :
 ![Rules](https://i.imgur.com/zdBnyGI.jpg)  
-
 *We only made a slight modification by extending the universes, Set : Type*.
-The unification system is "ad-hoc", you could copy from Agda unification algorithm, for example. The subtyping rules of optional constructors are something that can be detailed more with formal rules, but for now, we don't have a formal specification of it.
+
+Implementing λΠ-calculus would be the easiest part, some not mandatory things can help in your implementation. :
+
+- Do not use Bruijn-index/level if you have no intention of using your implementation as a not fun tool
+- Prefer representing context as a map, instead of using type notation inside in your tree.
+- Do not use the same tree in the parser and the intermediate representation
+- Have fun :)
+
+The normalizer is your preference, only for the sake of simplicity is preferred to be not lazy, finally, unification is also of your preference, you could copy from the old Agda unification algorithm (you only need unification of datatype indices, do not go for circle checking or absurd., for example. The subtyping rules of optional constructors are something that can be detailed more with formal rules, but for now, we don't have a formal specification of it (But it's very straightforward, so no worries). 
+*If you have any questions please submit it*
 
 
 # Some other details
+- *if you want to see more about this kind of stuff, follow me on [twitter](https://twitter.com/TiagoCa82822459)*.
 - Pompom is actualy Kei2 from [Kei](https://github.com/caotic123/Kei)  
 - We are aware that our unification system implies in the k axiom, we would love to change for intensional type theory and be compatible with HOTT.
+- I think optional constructors can extend to support computations between the patterns, if this can be possible, so deriving, for example, a quotient type using only optional constructors is probably possible (Not talking about hott here).
+-  We do want to extend the expressivity to support other higher abstractions.
 - Thinking about the backend, We would love to target it in some practical use (like js or smart contracts).
 - And yep, the design of everything can change, only for the sake of expressivity. 
 - For now, we don't offer a terminating checker either positivity checker.
 - Optional constructors are experimental.
+- The purpose of this project is because I need a dependently typed language for test automation, but most languages are overcomplex, so I built it..
 - If you are struggling to re-implement Pompom or have any questions, please feel free to contact me at camposferreiratiago@gmail.com.
+
+*para o meu trabalho de TCC :(, me libera UFVJM jesus*
