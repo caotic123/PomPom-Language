@@ -24,6 +24,21 @@ isSucc
   |(+1 x) => (+1 (+ x y))
 ].
 
+half 
+ | x :: ~ Nat ~> Nat => [x of Nat
+  |0 => 0
+  |(+1 x') => [x' of Nat
+     |0 => 0
+     |(+1 x'') => (+1 (half x''))
+  ]
+].
+
+testing
+ | x :: ~ Nat~> Nat => [x of Nat
+   |0 => 0
+   |(+1 x') => (+ x' 0)
+ ].
+
 gte
   | x y :: ~ Nat ~> ~ Nat ~> Bool => [x of Bool
   |0 => [

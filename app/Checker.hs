@@ -294,7 +294,9 @@ isMatch _ = False
 normalize :: Term -> ContextM Term
 normalize term = do
         (check, norm_term) <- eagerStep term
-        if check then
+        if check then do
+           term_ <- showTerm norm_term
+           trace term_ (return ())
            normalize norm_term
         else
            return norm_term
@@ -312,15 +314,15 @@ normalize term = do
                 Var _ -> return (False, x);
                 _ -> eagerStep x
               } -- do not unfold (App (Var _) ...) for distinguish (App (Var _) _) of (Var _) in eagerStep pattern matching
-              (check_y, y_M) <- eagerStep y
-              return (check_x || check_y, App x_M y_M)
+              y_M <- normalize y
+              return (check_x, App x_M y_M)
       fun <- getFun t
       case fun of {
         Just v' -> (do
           v' <- normalize v'
           let definitional_term = reduceBetaVariables (expandFunction recur v')
           let (matchs, resolvable_match) = checkMatchReduction definitional_term
-          if matchs == resolvable_match then
+          if matchs == resolvable_match then do
             return (True, definitional_term)
           else
             return (check, recur));
@@ -337,7 +339,7 @@ normalize term = do
             (checker, matchedM) <- eagerStep matched
             (checker', type'M) <- eagerStep type'
             let match = Match matchedM type'M k'
-            if checkIfUnstuck match then
+            if checkIfUnstuck match then do
                return (True, evalMatch match)
              else
                return (checker || checker', match)

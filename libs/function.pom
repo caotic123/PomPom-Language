@@ -1,2 +1,6 @@
 flip 
   | A B C f b a :: (A : *) (B : *) (C : *) (f : ~ A ~> ~ B ~> C) ~> (~ B ~> ~ A ~> C) => (f a b).
+
+
+apply 
+  |A B f a :: (A : *) (B : *) (f : ~ A ~> B) (x : A)  
