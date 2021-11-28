@@ -21,6 +21,6 @@ even_half_mul_conserv
 even_odd_absurd
   |x H :: (x : Nat) ~> ~ (odd x) ~> (Falsity (even x)) => [
       x of (Falsity (even x))
-       |0 => __
+       |0 => |H' :: (Falsity (even x)) => __
        |(+1 x') => __
   ].

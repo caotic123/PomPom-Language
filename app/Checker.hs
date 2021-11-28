@@ -483,12 +483,12 @@ piIdentity pi = do
 
 piEquality ::  Term -> Term -> Checker -> (Term, Term) -> ContextM (Bool, Checker)
 piEquality term helper checker (origin, target) = do
-        normalized_origin <- simpl origin
-        normalized_target <- simpl target
+        normalized_origin <- piIdentity origin >>= simpl
+        normalized_target <- piIdentity target >>= simpl
         unique_origin <- piIdentity normalized_origin
         unique_target <- piIdentity normalized_target
       --  (unique_eq, checker') <- equalTerms checker term helper (unique_origin, unique_target)
-        (normalized_eq, checker) <- equalTerms checker term helper (normalized_origin, normalized_target)
+        (normalized_eq, checker) <- equalTerms checker term helper (unique_origin, unique_target)
         return (normalized_eq, checker)
 
 getType :: Term -> ContextM (Maybe Term)
