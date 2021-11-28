@@ -7,5 +7,20 @@ Static even0 : (even 0).
 Static even_succ : (x : Nat) ~ (odd x) ~> (even x).
 Static odd_succ : (x : Nat) ~ (even x) ~> (odd x).
 
+
 even_half_mul_conserv 
-  |x H :: (x : Nat) ~> ~ (even x) ~> (Eq Nat x (mul (+1 1) (half x))) => __.
+  |x H :: (x : Nat) ~> ~ (even x) ~> (Eq Nat x (mul (+1 1) (half x))) => [
+    x of (Eq Nat x (mul (+1 1) (half x)))
+      |0 => (refl Nat 0)
+      |(+1 x') => [x' of (Eq Nat x (mul (+1 1) (half x)))
+        |0 => __
+        |(+1 x'') => __
+      ]
+  ].
+
+even_odd_absurd
+  |x H :: (x : Nat) ~> ~ (odd x) ~> (Falsity (even x)) => [
+      x of (Falsity (even x))
+       |0 => __
+       |(+1 x') => __
+  ].
