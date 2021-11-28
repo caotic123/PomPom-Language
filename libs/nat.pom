@@ -33,10 +33,10 @@ half
   ]
 ].
 
-testing
- | x :: ~ Nat~> Nat => [x of Nat
+mul
+ | x y :: ~ Nat ~> ~ Nat ~> Nat => [x of Nat
    |0 => 0
-   |(+1 x') => (+ x' 0)
+   |(+1 x') => (+ y (mul x' y))
  ].
 
 gte

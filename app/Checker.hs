@@ -296,7 +296,6 @@ normalize term = do
         (check, norm_term) <- eagerStep term
         if check then do
            term_ <- showTerm norm_term
-           trace term_ (return ())
            normalize norm_term
         else
            return norm_term
@@ -314,7 +313,7 @@ normalize term = do
                 Var _ -> return (False, x);
                 _ -> eagerStep x
               } -- do not unfold (App (Var _) ...) for distinguish (App (Var _) _) of (Var _) in eagerStep pattern matching
-              y_M <- normalize y
+              y_M <- normalize y --- Attention here, maybe it's necessary use normalize instead of eagerStep on x variable of (App x y) also
               return (check_x, App x_M y_M)
       fun <- getFun t
       case fun of {

@@ -8,4 +8,4 @@ Static even_succ : (x : Nat) ~ (odd x) ~> (even x).
 Static odd_succ : (x : Nat) ~ (even x) ~> (odd x).
 
 even_half_mul_conserv 
-  |x H :: (x : Nat) ~> ~ (even x) ~> (Eq Nat x (+ x (testing (+1 0)))) => __.
+  |x H :: (x : Nat) ~> ~ (even x) ~> (Eq Nat x (mul (+1 1) (half x))) => __.
