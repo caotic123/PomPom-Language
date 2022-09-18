@@ -155,11 +155,11 @@ And concatenation is enconded like that :
 
 ```js
 concat 
- | A n m vec vec2 :: concat_type => [vec of (Vector A (+ n m))
+ | A n m vec vec2 :: (A : *) (n : Nat) (m : Nat) (vec : (Vector A n)) (vec : (Vector A m)) ~> (Vector A (+ n m)) => [vec of (Vector A (+ n m))
       |(cons _ len head tail) => 
         ((cons A (+ len m) head (concat A len m tail vec2)) :: (Vector A (+ (+1 len) m)))
       |(nil _) => (vec2 :: (Vector A (+ 0 m)))
-    ].
+  ].
 ```
 
 If you have experience with dependent types you might notice the additional type notation, which is not always demanding, In this case, because of unification direction we need to specify to the type checker. *If something is not working as you wish, you can easily appeal to type notation.*
