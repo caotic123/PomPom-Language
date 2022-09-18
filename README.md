@@ -68,8 +68,7 @@ You can read more about our optional constructor later.
 - Symbol : ```Static symbol_name : Type```
 - Pattern Matching : ```x of Type [ | predicate => body, ...  ]```, being Type the return type of all clauses
 - Local definition (only in parsing) : ```def def_name = expr; expr```
-- Let : we are lacking :(
-
+- Abs (Let by Lambda) : ```abs abs_name : Type ~> Goal = expr; expr```
 
 # How to run 
 
