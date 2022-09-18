@@ -45,3 +45,6 @@ second
   |A B pair :: (A : *) (B : *) (pair : (AxB A B)) B => [pair of B
     |(MkPair _ _ v v') => v'
   ].
+
+Static ∃ : (A : *) (P : ~ A ~> *) ~> *.
+Static exists : (A : *) (P : ~ A ~> *) (x : A) ~> ~ (P x) ~> (∃ A P).

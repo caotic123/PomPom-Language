@@ -1,0 +1,6 @@
+Static Maybe : (A : *) ~> *.
+Static Surely : (A : *) ~> ~ A ~> (Maybe A).
+Static Empty : (A : *) ~> (Maybe A).
+
+Option
+  |A :: ~ * ~> * => {(Maybe A) :: |Surely |Empty}.

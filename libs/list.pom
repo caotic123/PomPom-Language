@@ -54,7 +54,7 @@ sorted
  |xs :: ~ (List Nat) ~> * => [xs of *
     |(empty _) => Unit
     |(new _ head tail) => [tail of *
-       |(empty _) => (sorted tail)
-       |(new _ head2 tail2) => (AxB (Eq Bool (gte head2 head) true) (sorted tail))
+       |(empty z) => (sorted tail)
+       |(new s head2 tail2) => (AxB (Eq Bool (gte head2 head) true) (sorted tail))
     ]
   ].

@@ -1,6 +1,5 @@
 flip 
   | A B C f b a :: (A : *) (B : *) (C : *) (f : ~ A ~> ~ B ~> C) ~> (~ B ~> ~ A ~> C) => (f a b).
 
-
-apply 
-  |A B f a :: (A : *) (B : *) (f : ~ A ~> B) (x : A)  
+composition
+  |A B C f g :: (A : *) (B : *) (C : *) ~ (~A ~> B) ~> ~ (~B ~> C) ~> (~A ~> C) => |a :: ~ A ~> C => (g (f a)).

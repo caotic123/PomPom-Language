@@ -371,8 +371,9 @@ isVarName (Var (VarName  _)) = True
 isVarName _ = False
 
 pushHoleMsg :: String -> Checker -> ContextM Checker
-pushHoleMsg error checker =
-        return checker {hole_msg = error : hole_msg checker}
+pushHoleMsg error checker = do
+        showUni <- intercalate "\n" <$> debugUni
+        return checker {hole_msg = (error ++ "\n"  ++ "Context :" ++ "\n" ++ showUni) : hole_msg checker}
 
 pushLeakType :: Term -> Term -> Checker -> ContextM Checker
 pushLeakType bad_typed helper checker = do
@@ -443,7 +444,7 @@ equalTerms checker term helper (origin, target@(Constr type' _)) = do  -- subtyp
    stringfy_term <- showTerm term
    stringfy_helper <- showTerm helper
    stringfy_origin <- showTerm origin
-   stringfy_type' <- showTerm type'
+   stringfy_type' <- showTerm target
    checker <- pushTypeError
      ("The term " ++ stringfy_term ++ " can not be \ndowngrade to : " ++ stringfy_type' ++ "\ninstead of :" ++ stringfy_origin ++ "\nwhere : " ++ stringfy_helper ++ " is your jugdment") checker
    return (False, checker)
@@ -520,9 +521,13 @@ getType term =
 
 setType :: Jugdment -> ContextM ()
 setType (Jugdment term type') = do
+        term_type <- getType term 
         norm_term <- simpl term
+        normalized_typed <- getType norm_term
         setContextType (term, type')
-        setContextType (norm_term, type')
+        unless (isJust normalized_typed) $ do 
+          type' <- simpl type'
+          setContextType (norm_term, type')
 
 renewType :: Term -> ContextM () -- useful after a unification with no cost to typecheck the whole term
 renewType term = do
@@ -544,8 +549,10 @@ matchConstructorOptionalType checker constructor_name (constructors, type_) help
  if sub then
    return checker
  else do
+   constructors' <- mapM showTerm constructors
    stringfyConstructor <- showTerm helper
    stringfyConstrs <- showTerm type_
+  -- (show (constructor_name, constructors', stringfyConstructor)) $ return ()
    pushTypeError ("Constructor " ++ constructor_name ++ " do not belongs to " ++ stringfyConstrs ++ " in " ++ stringfyConstructor) checker;
 
 constrSubtType :: Checker -> (Term, Term) -> Term -> Term -> ContextM Checker
@@ -553,7 +560,6 @@ constrSubtType checker pair un_norm helper = infer_constr pair
   where
     infer_constr (constructor, constrs@(Constr type' constructors)) = do
        constructor <- simpl constructor -- fix it here
-
        type_constructor <- getType constructor
        constr <- getConstructor constructor
        case constr of {
@@ -562,9 +568,7 @@ constrSubtType checker pair un_norm helper = infer_constr pair
                  sub <- matchConstructors name constructors
                  if sub then do
                   type_app_constructor <- getType constructor
-             --     show_t <- mapM showTerm type_app_constructor
-           --       show_cons <- showTerm constructor
-         --         trace (show (show_t, show_cons)) return ()
+
                   case type_app_constructor of {
                      Just type'' -> assertTypeEquality (type'', type') constructor constrs checker;
                      Nothing -> pushLeakType constructor helper checker;
@@ -589,6 +593,7 @@ constrSubtType checker pair un_norm helper = infer_constr pair
                             pushHoleMsg ("The hole expects a falsity of type " ++ stringfy_type) checker
                         else
                           pushTypeError ("Impossible infer the Constructor " ++ stringfy_constructor ++ " type") checker
+
                 }
                -- pushTypeError ("Constructor " ++ stringfy_app ++ " is not a static constructor") checker
        }
@@ -605,13 +610,17 @@ debugUni :: ContextM [String]
 debugUni = do
         uni <- getUnifier
         mapM (\(a,b) -> do
-                a' <- getType a
-                a' <- mapM showTerm a'
-                b' <- getType b
-                b' <- mapM showTerm b'
-                a <- showTerm a
-                b <- showTerm b
-                return (a ++ " : " ++ b ++ " >> " ++ show (a', b'))) (Map.toList uni)
+                a' <- showTerm a
+                a_type <- join $ getType a <&> \case {
+                   Just x -> showTerm x;
+                   Nothing -> return "?";
+                }
+                b' <- showTerm b
+                b_type <- join $ getType b <&> \case {
+                   Just x -> showTerm x;
+                   Nothing -> return "?";
+                }
+                return (a' ++ " : " ++ a_type ++ " = " ++ b' ++ " : " ++ b_type)) (Map.toList uni)
 
 assertTypeEquality :: (Term, Term) -> Term -> Term -> Checker -> ContextM Checker
 assertTypeEquality (origin, target) term helper checker =
@@ -622,7 +631,7 @@ assertTypeEquality (origin, target) term helper checker =
                 stringfy_k <- simpl k >>= showTerm
                 uni <- getUnifier
                 showUni <- debugUni
-                return $ "The term " ++ stringfy_term ++ ":\nshould be a type : " ++ stringfy_type_ ++ "\ninstead of : " ++ stringfy_k ++ "\n where : " ++ stringfy_helper ++ " is your jugdment\n" -- ++ intercalate "\n" showUni
+                return $ "The term " ++ stringfy_term ++ ":\nshould be a type : " ++ stringfy_type_ ++ "\ninstead of : " ++ stringfy_k ++ "\n where :" ++ stringfy_helper ++ " is your jugdment\nContext : \n"  ++ intercalate "\n" showUni
          in do
          let pi_eq = piEquality term helper
        --  unified_k <- matchingSubs origin
@@ -688,7 +697,9 @@ matchUnification x u k checker = do
                         y' <- simpl y'
                         let eq = x == u
                         unless eq $ unify (u, x) -- really implies the k axiom 
-                        typeConstruction (removeTypeConstructors y) (removeTypeConstructors y')
+                        checker <- typeRules checker y
+                        show_t <- showTerm y
+                        checker <- typeConstruction (removeTypeConstructors y) (removeTypeConstructors y') checker
                         uni <- getUnifier
                         mapM_ (renewType . snd) (Map.toList uni) -- renew the predicates type in the context but now with possible unification in the variables
                         assertType (Jugdment x y) term checker
@@ -701,17 +712,23 @@ matchUnification x u k checker = do
                       pushTypeError ("Impossible of infer the " ++ stringify_x ++ " and " ++ stringify_u ++ " in " ++ stringify_k) checker
         }
 
-typeConstruction :: Term -> Term -> ContextM ()
-typeConstruction x y = case (x, y) of {
+typeConstruction :: Term -> Term -> Checker -> ContextM Checker
+typeConstruction x y checker = case (x, y) of {
         (App k k', App k0 k0') -> (do
+                type_k <- getType k'
+                -- case type_k of {
+                --   Just k -> setType (Jugdment k0' k);
+                --   Nothing -> trace "error" return ()
+                -- }            
                 let eq = k' == k0'
                 unless eq $ do
-                       typeConstruction k k0
+                       typeConstruction k k0 checker
                       -- typeConstruction k' k0' -- Unification is not injective
                        unify (k', k0')
+                return checker
         );
-        (v@(Var (VarName _)), v') -> return ();
-        t -> return ();
+        (v@(Var (VarName _)), v') -> return checker;
+        t -> return checker;
 }
 
 checkMatchBody :: Term -> Term -> (Term, Term) -> Checker -> ContextM Checker
@@ -832,7 +849,10 @@ appRule checker = app_typed
             type_ <- mapM simpl type_
             case type_ of {
             Just pi@(Pi x _A _B) -> (do
+                --   _N <- simpl _N
+                    checker <- typeRules checker _N
                     checker <- assertType (Jugdment _N _A) app checker
+                   -- setType (Jugdment _N _A) -- Sometimes we lose information about the subtying if we just rely on type information not based on pi types, this ensures that it will not happen
                     setType $ Jugdment app (piReduction (pi, _N))
                     return checker
                     );
@@ -979,7 +999,6 @@ typeRules checker term =
            var@(Var _) -> varRule checker var;
            app@(App x y) -> (do
                    checker <- typeRules checker x
-                   checker <- typeRules checker y
                    appRule checker app
             );
            pi@(Pi var t t') -> (do

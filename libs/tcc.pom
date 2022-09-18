@@ -4,23 +4,37 @@ Static even : ~ Nat ~> *.
 Static odd : ~ Nat ~> *.
 
 Static even0 : (even 0).
-Static even_succ : (x : Nat) ~ (odd x) ~> (even x).
-Static odd_succ : (x : Nat) ~ (even x) ~> (odd x).
+Static even_succ : (x : Nat) ~ (Odd x) ~> (even (+1 x)).
+Static odd_succ : (x : Nat) ~ (Even x) ~> (odd (+1 x)).
 
+Even
+ |x :: (x : Nat) ~> * => {(even x) :: | even0 | even_succ}.
+
+Odd
+ |x :: (x : Nat) ~> * => {(odd x) :: | odd_succ}.
+ 
 
 even_half_mul_conserv 
-  |x H :: (x : Nat) ~> ~ (even x) ~> (Eq Nat x (mul (+1 1) (half x))) => [
-    x of (Eq Nat x (mul (+1 1) (half x)))
-      |0 => (refl Nat 0)
-      |(+1 x') => [x' of (Eq Nat x (mul (+1 1) (half x)))
-        |0 => __
-        |(+1 x'') => __
-      ]
+  |x :: (x : Nat)  ~> (Even (mul x 2)) => [x of (Even (mul x 2)) 
+    |0 => even0
+    |(+1 pred) => 
+        def ind = (even_half_mul_conserv pred);
+        (even_succ (+1 (mul pred 2)) (odd_succ (mul pred 2) ind))
   ].
 
-even_odd_absurd
-  |x H :: (x : Nat) ~> ~ (odd x) ~> (Falsity (even x)) => [
-      x of (Falsity (even x))
-       |0 => |H' :: (Falsity (even x)) => __
-       |(+1 x') => __
-  ].
+even_succ_pred 
+  |x H :: (x : Nat) ~> ~ (Even (+1 (+1 x))) ~> (Even x) => [H of (Even x)
+     |even0 => 
+       def absurd = (refl Nat 0);
+       (⊥ (Even x) (0!+1 (Succ x) (refl Nat (Succ (Succ x)))))
+     |(even_succ z odd) => [odd of (Even x)
+       |(odd_succ n even_succ) => 
+       def goal = (Even x);
+       def big_n = (+1 n);
+       abs chain : ~ (Eq Nat (+1 n) z) ~> goal = (refl Nat (+1 n));
+       abs chain2 : ~ (Eq Nat z (+1 x)) ~> goal = (succ_inj z (+1 x) (refl Nat (+1 z)));
+       abs chain3 : ~ (Eq Nat n x) ~> goal = (succ_inj n x (rewrite' Nat (+1 n) z (+1 x) chain chain2));
+       def lambda = (|x :: (x : Nat) ~> * => (Even x)); 
+       (rewrite Nat lambda n x chain3 even_succ)
+     ]
+  ]. 

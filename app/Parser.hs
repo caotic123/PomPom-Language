@@ -78,7 +78,7 @@ parseUnTypedLambda = do
     args <- many1 $ withSpaces consumeVarName
     withSpaces . string $ "=>"
     body <- withSpaces parseTerm
-    return $ PLam args body Nothing 
+    return $ PLam args body Nothing
 
 parseLambda :: Parsec String st PTerm
 parseLambda = do
@@ -89,7 +89,7 @@ parseLambda = do
     body <- parseTerm
     return $ PLam args body type_
   where
-    parseLambdaType = do    
+    parseLambdaType = do
       withSpaces . string $ "::"
       term <- withSpaces parseTerm
       return $ Just term
@@ -120,6 +120,18 @@ parseDef = do
     withSpaces . string $ ";"
     PDef def_name term_head <$> parseTerm
 
+parseAbsLet :: Parsec String st PTerm
+parseAbsLet = do
+    withSpaces . string $ "abs"
+    def_name <- consumeVarName
+    withSpaces . string $ ":"
+    typedef <- parseTerm <&> Just
+    withSpaces . string $ "="
+    term_head <- parseTerm
+    withSpaces . string $ ";"
+    body <- parseTerm
+    return $ PApp (PLam [def_name] body typedef) term_head
+
 parseTactics :: Parsec String st PTerm
 parseTactics = do
     between (string "{") (string  "}") terms <&> PTatic
@@ -137,7 +149,7 @@ parseStatic = do
 
 parseTerm :: Parsec String st PTerm
 parseTerm =
-    optional_parent (choice [try parseUnTypedLambda, try parseLambda, try parseType, try parseConstructors, try parseApp, try parseTactics, try parseDef, try parseTypeNotation, try parseMatching, parseVar])
+    optional_parent (choice [try parseUnTypedLambda, try parseLambda, try parseType, try parseConstructors, try parseApp, try parseTactics, try parseAbsLet, try parseDef, try parseTypeNotation, try parseMatching, parseVar])
   where
       optional_parent term = try term <|> justParent term
 

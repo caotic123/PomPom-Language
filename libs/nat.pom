@@ -4,11 +4,11 @@ import libs/bool.
 
 Static nat : *.
 Static 0 : nat.
-Static +1 : ~ {nat :: | 0 | +1} ~> nat.
 
 Nat
   {nat :: | 0 | +1}.
 
+Static +1 : ~ Nat ~> nat.
 Succ 
   |x :: ~ Nat ~> {nat :: | +1} => (+1 x).
 
@@ -95,15 +95,15 @@ eql_prop
   ].
 
 zero_identity_plus' 
-  | x :: (x : Nat) ~> {(≡ nat x (+ x 0)) :: |refl} => [x of {(≡ nat x (+ x 0)) :: |refl}
-    |0 => (refl nat 0)
-    |(+1 x') => (cong nat x' (+ x' 0) nat +1 (zero_identity_plus' x'))
+  | x :: (x : Nat) ~> {(≡ Nat x (+ x 0)) :: |refl} => [x of {(≡ Nat x (+ x 0)) :: |refl}
+    |0 => (refl Nat 0)
+    |(+1 x') => (cong Nat x' (+ x' 0) Nat Succ (zero_identity_plus' x'))
    ].
 
-left_succ_nat | x y :: (x : Nat) ~> (y : Nat) ~> {(≡ nat (+ x (+1 y)) (+1 (+ x y))) :: | refl } => 
-  [x of {(≡ nat (+ x (+1 y)) (+1 (+ x y))) :: | refl}
-    |0 => (refl nat (+1 y))
-    |(+1 x') => (cong nat (+ x' (+1 y)) (+1 (+ x' y)) nat +1 (left_succ_nat x' y))
+left_succ_nat | x y :: (x : Nat) ~> (y : Nat) ~> (Eq Nat (+ x (+1 y)) (+1 (+ x y))) => 
+  [x of (Eq Nat (+ x (+1 y)) (+1 (+ x y)))
+    |0 => (refl Nat (+1 y))
+    |(+1 x') => (cong Nat (+ x' (+1 y)) (+1 (+ x' y)) Nat Succ (left_succ_nat x' y))
   ].
 
 x+y≡y+x
@@ -173,6 +173,27 @@ gte_inverse
       ]
   ]. 
 
+
+succ_inj
+ |x y H :: (x : Nat) (y : Nat) ~> ~ (Eq Nat (+1 x) (+1 y)) ~> (Eq Nat x y) => 
+  def pred = |x :: ~ Nat ~> Nat => [x of Nat
+    |0 => 0
+    |(+1 x') => x'
+  ];
+  (cong Nat (+1 x) (+1 y) Nat pred H).
+
+
 1 
  (+1 0).
 
+0!+1  
+| x H :: (x : Nat) ~> ~ (Eq Nat (+1 x) 0) ~> False => 
+  def unpack = |x :: ~ Nat ~> * => [
+    x of *
+      |0 => False
+      |(+1 x) => Unit
+    ];
+  (eq_rect Nat (+1 x) 0 unpack H (I :: Unit)).
+
+2 
+ (+1 1).
