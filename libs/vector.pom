@@ -8,8 +8,8 @@ Vector
  | A n :: (A : *) ~> ~ Nat ~> * => {(vector A n) :: |nil |cons}.
 
 concat 
- | A n m k x y z :: (A : *) (n : Nat) (m : Nat) (k : Nat)
-    ~ (Vector A n) ~> ~ (Vector A m) ~> ~ (Vector A k) ~> (Vector A k) => [z of (Vector A k)
-   |(nil _) => (nil _)
-   |(cons A pred head tail) => (cons A pred head tail) 
- ].
+ | A n m vec vec2 :: (A : *) (n : Nat) (m : Nat) (vec : (Vector A n)) (vec : (Vector A m)) ~> (Vector A (+ n m)) => [vec of (Vector A (+ n m))
+      |(cons _ len head tail) => 
+        ((cons A (+ len m) head (concat A len m tail vec2)) :: (Vector A (+ (+1 len) m)))
+      |(nil _) => (vec2 :: (Vector A (+ 0 m)))
+  ].
