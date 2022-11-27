@@ -2,6 +2,7 @@ module Main where
 import System.Environment
 import Parser
 import Term
+import MiniLambda
 import Debug.Trace
 import Checker
 import Control.Monad
@@ -36,6 +37,13 @@ main :: IO ()
 main = do
     x <- getArgs
     case x of
+        ["mini", file] -> do
+          n <- readFile (file ++ ".mini")
+          let read = readMiniLambda n
+          case read of {
+              Right x -> x >>= print;
+              Left y -> print y;
+          }
         [x'] -> do
             read <- readKei x' Data.Set.empty
             case read of {

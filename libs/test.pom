@@ -1,2 +1,24 @@
 import libs/nat.
 
+test
+ |x :: (x : Nat) ~> {(≡ Nat x (+ x 0)) :: |refl} => (auto :: {(≡ Nat x (+ x 0)) :: |refl}).
+
+
+Lambda-Genetic-Calculus
+
+ 
+
+Nat ~> 1
+x : Nat ~> 2
+
+
+
+(≡ Nat x (+ x 0)) 
+
+
+[0 apply x on f] .... ->
+[1 constr on f] .... ->
+[2 case on [...] [...]]
+[3 lambda on f]
+[4 return]
+[5 rec]

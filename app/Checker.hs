@@ -196,6 +196,11 @@ getFun (App b@(App _ _) a) = getFun b
 getFun (App v@(Var (VarRef ref)) _) = getRef ref
 getFun v = return Nothing
 
+getPiTail :: Term -> Term
+getPiTail (Pi _ f x) = getPiTail x
+getPiTail x@(Var _) = x
+getPiTail x = x
+
 removeTypeConstructors :: Term -> Term
 removeTypeConstructors (Constr type_ _) = type_
 removeTypeConstructors any = any
@@ -432,7 +437,11 @@ piUniquess term = case term of {
   where
           substituteVarNames (new, old_ref) term = apply (\x -> if x == old_ref then new else x) term
 
+unity_term :: Term
+unity_term = Var (VarName 0)
+
 equalTerms :: Checker -> Term -> Term -> (Term, Term) -> ContextM (Bool, Checker)
+equalTerms checker term helper (_, Var (VarName 0)) = return (True, checker)
 equalTerms checker term helper (origin@(Constr type' constructors), target@(Constr type'' predicates))  = do
             checker <- checkTypeClauses helper (constructors, predicates) origin checker  -- subtyping rule
             (b', checker) <- equalTerms checker term helper (type', type'')
@@ -983,10 +992,51 @@ notationRule checker notation@(Notation body type_) = do
 
 notationRule _ _ = error "Internal Error : Notation rule always must be applyed to a notation term"
 
-
 inferMatch:: Term -> ContextM ()
 inferMatch match@(Match _ type_ _) = setType (Jugdment match type_)
 inferMatch _ = error "Internal Error : Match inference always must be applyed to a match expression"
+
+data EtaExpansion = EtaExpansion Term (Map Term Term)
+
+eq_and_discard :: Checker -> (Term, Term) -> ContextM Bool
+eq_and_discard checker (t, t') = piEquality unity_term unity_term checker (t, t')  >>= return . fst
+
+isEtaExpansion :: Checker -> Term -> Term -> ContextM Bool
+isEtaExpansion checker term target = do
+        let term' = apply (\subs -> if isVarName subs then unity_term else subs) term
+        let target' = apply (\subs -> if isVarName subs then unity_term else subs) target
+        eq_and_discard checker (term', target')
+
+-- isAlphaEquivalent :: Term -> Term -> Term
+-- isAlphaEquivalent term target = do
+--         generalize_terms <- target
+--         return undefined
+
+getEtaTermsEqual :: Checker -> [(Term, Term)] -> Term -> ContextM [(Term, Term)]
+getEtaTermsEqual checker targets term = do
+        filterM (isEtaExpansion checker term . getPiTail . snd) targets
+
+auto :: Term -> Checker -> ContextM Term
+auto term checker = do
+        defs <- getState >>= \(Definitions map) -> mapM (\(k,  Local _ v _) -> return (Var $ VarRef k, v)) (Map.toList map) >>= getDefsType
+        context <- getMapContext
+        let world = defs ++ (Map.toList context)
+        eta_eq_terms <- getEtaTermsEqual checker world term
+        show_terms <- mapM (joinM . bimap showTerm (showTerm . getPiTail)) eta_eq_terms
+        trace (show show_terms) $ return ()
+        return term
+  where 
+    joinM (m, m') = do
+        m <- m
+        m' <- m'
+        return (m, m')
+    getDefsType ((var_name, term) : xs) = do
+        m <- getType term
+        case m of {
+          Just type' -> getDefsType xs >>= (return . (:) (var_name, type'));
+          Nothing -> getDefsType xs;
+        }
+    getDefsType [] = return []
 
 typeRules :: Checker -> Term -> ContextM Checker
 typeRules checker term =
@@ -996,6 +1046,9 @@ typeRules checker term =
                    checker <- typeRules checker k
                    checker <- typeRules checker t
                    absRule checker lam);
+           var@(Notation (Var (VarRef "auto")) type_) -> (do
+                term <- auto type_ checker
+                return checker);
            var@(Var _) -> varRule checker var;
            app@(App x y) -> (do
                    checker <- typeRules checker x
