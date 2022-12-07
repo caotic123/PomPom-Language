@@ -1,5 +1,6 @@
 module Util where
 import Data.Map
+import Control.Applicative ( Alternative((<|>)) )
 
 sLast :: [a] -> Maybe a
 sLast [] = Nothing
@@ -26,3 +27,6 @@ emptyBi = (Data.Map.empty, Data.Map.empty)
 
 listBiLeft :: (Ord k, Ord v) => Bimap k v -> [(k, v)]
 listBiLeft (a, b) = Data.Map.toList a
+
+or :: Alternative f => f a -> f a -> f a
+or x y = x <|> y

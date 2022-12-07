@@ -1,3 +1,3 @@
-x = (Sort Nat)
-f = [(x : (Sort Nat)) -> ((Eq x) y)]
-: ((Eq x) y)
+eqind = [(P : [(v : (Sort A)) -> (Sort B)]) -> [(we : ((Eq A) B)) -> [(wu : (P A)) -> (P B)]]]
+proofAtoB = [(v : (Sort A)) -> (Sort B)]
+: (proofAtoB B)
