@@ -1,3 +1,5 @@
 eqind = [(P : [(v : (Sort A)) -> (Sort B)]) -> [(we : ((Eq A) B)) -> [(wu : (P A)) -> (P B)]]]
 proofAtoB = [(v : (Sort A)) -> (Sort B)]
+pa = (proofAtoB A)
+eq = ((Eq A) B)
 : (proofAtoB B)

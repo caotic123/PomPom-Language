@@ -5,9 +5,12 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE MultiWayIf #-}
 module MiniLambda where
-import Data.Map (Map, empty, (!), insert, union, toList, lookup, member)
+import Data.Map (Map, empty, (!), insert, union, toList, lookup, member, delete)
 import Effectful
+import Control.Monad.Memo
+
 import Util
+import Data.Bifunctor
 import Control.Monad
 import Data.Maybe
 import Data.List ((++), sort)
@@ -48,7 +51,14 @@ type Rules = TreeType -> Maybe Problem
 
 type SetProblems = Map Int Problem
 type SetTypes = Map Int Int
-data Nodes = Nodes (SetProblems) (SetTypes) deriving Show
+data Nodes = Nodes (SetProblems) (SetTypes)
+
+instance Show Nodes where
+    show (Nodes problems _) = format $ Data.Map.toList problems
+       where
+        format ((k, x) : xs) = show k ++ " = " ++ show x ++ "\n" ++ format xs
+        format [] = "\n"
+
 
 consumeRef :: Parsec String st String
 consumeRef = many1 alphaNum
@@ -123,29 +133,49 @@ parseBlock = do
         many1 (char '\n')
         return decl
 
-type USearch a = Nodes -> Map String Rules -> IO (a, Nodes, Map String Rules)
+data GraphNodes = Link Int (Map Int GraphNodes) | Null
+
+-- insertOnGraph :: (Int, Int) -> GraphNodes -> GraphNodes
+-- insertOnGraph (parent, key) (Link p childrens@(x : xs)) 
+--     |p == parent = Link p (Link key [] : childrens)
+--     |otherwise = insertOnGraph (parent, key) x
+-- insertOnGraph (parent, key) Null = Link key []
+
+-- merge :: GraphNodes -> GraphNodes -> GraphNodes
+-- merge (Link p xs) (Link p' xs') = Link p (check_diff xs xs')
+--   where
+--     check_diff ((Link p xs) : graph) ((Link p' xs') : graph') = 
+--         if p == p' then
+--             (Link p (check_diff xs xs')) : graph
+--         else 
+--             (Link p (check_diff xs xs')) : check_diff graph ((Link p' xs') : graph')
+-- merge v Null = v
+
+type SearchStrategy = GraphNodes
+
+type USearch a = Nodes -> Map String Rules -> SearchStrategy -> IO (a, Nodes, Map String Rules, SearchStrategy)
 
 newtype Search a = Wrap (USearch a)
 
 instance Functor Search where
-  fmap f (Wrap serch_a) = Wrap (\nodes rules -> do
-     (a, nodes', rules') <- serch_a nodes rules
-     return (f a, nodes', rules'))
+  fmap f (Wrap serch_a) = Wrap (\nodes rules struct -> do
+     (a, nodes', rules', struct') <- serch_a nodes rules struct
+     return (f a, nodes', rules', struct'))
 
 unique :: a -> USearch a
-unique k nodes rules = return (k, nodes, rules)
+unique k nodes rules struct = return (k, nodes, rules, struct)
 
 instance Applicative Search where
   pure a = Wrap (unique a)
-  (<*>) (Wrap fab) (Wrap search_a) = Wrap (\nodes rules -> do
-    (a, nodes', rules') <- search_a nodes rules
-    (ab, nodes'', rules'') <- fab nodes' rules'
-    return (ab a, nodes'', rules''))
+  (<*>) (Wrap fab) (Wrap search_a) = Wrap (\nodes rules struct -> do
+    (a, nodes', rules', struct') <- search_a nodes rules struct
+    (ab, nodes'', rules'', struct'') <- fab nodes' rules' struct'
+    return (ab a, nodes'', rules'', struct''))
 
 bind  :: forall a b. USearch a -> (a -> USearch b) -> USearch b
-bind k f (Nodes nodes types) rules = do
-   (a, (Nodes nodes' types'), rules') <- k (Nodes nodes types) rules
-   f a (Nodes (Data.Map.union nodes' nodes) (Data.Map.union types' types)) (Data.Map.union rules' rules)
+bind k f (Nodes nodes types) rules struct = do
+   (a, (Nodes nodes' types'), rules', struct') <- k (Nodes nodes types) rules struct
+   f a (Nodes (Data.Map.union nodes' nodes) (Data.Map.union types' types)) (Data.Map.union rules' rules) struct'
 
 instance Monad Search where
   (>>=) (Wrap search_a) f = Wrap (bind search_a (\a -> do
@@ -154,25 +184,25 @@ instance Monad Search where
    ))
 
 instance MonadIO Search where
-    liftIO io = Wrap (\nodes map -> io >>= return . (, nodes, map))
+    liftIO io = Wrap (\nodes map struct -> io >>= return . (, nodes, map, struct))
 
 saveNode :: (Int, Problem) -> Search ()
-saveNode (k, x) = Wrap (\nodes@(Nodes map types) rules -> return ((), Nodes (Data.Map.insert k x map) types, rules))
+saveNode (k, x) = Wrap (\nodes@(Nodes map types) rules struct -> return ((), Nodes (Data.Map.insert k x map) types, rules, struct))
 
 saveTypePath :: (Int, Int) -> Search ()
-saveTypePath (k, x) = Wrap (\nodes@(Nodes map types) rules -> return ((), Nodes map (Data.Map.insert k x types), rules))
+saveTypePath (k, x) = Wrap (\nodes@(Nodes map types) rules struct -> return ((), Nodes map (Data.Map.insert k x types), rules, struct))
 
 getNode :: Int -> Search Problem
-getNode k = Wrap (\nodes@(Nodes map types) rules -> return (map Data.Map.! k, nodes, rules))
+getNode k = Wrap (\nodes@(Nodes map types) rules struct -> return (map Data.Map.! k, nodes, rules, struct))
 
 checkNode :: Int -> Search Bool
-checkNode k = Wrap (\nodes@(Nodes map types) rules -> return (member k map, nodes, rules))
+checkNode k = Wrap (\nodes@(Nodes map types) rules struct -> return (member k map, nodes, rules, struct))
 
 getGoal :: Problem -> TreeType
 getGoal (Problem (SearchAST goal _) _) = goal
 
 get_safe_node :: Int -> Search (Maybe Problem)
-get_safe_node k = Wrap (\nodes@(Nodes map types) rules -> return (Data.Map.lookup k map, nodes, rules))
+get_safe_node k = Wrap (\nodes@(Nodes map types) rules struct -> return (Data.Map.lookup k map, nodes, rules, struct))
 
 createProblem :: TreeType -> Vector Clause -> Search Int
 createProblem goal clauses = do
@@ -215,7 +245,11 @@ setTerm k term = do
     saveNode (k, Problem ast (Just term))
 
 getNodes :: Search Nodes
-getNodes = Wrap (\nodes@(Nodes map types) rules -> return (nodes, nodes, rules))
+getNodes = Wrap (\nodes@(Nodes map types) rules struct -> return (nodes, nodes, rules, struct))
+
+killNode :: Int -> Search ()
+killNode k = Wrap (\nodes@(Nodes map types) rules struct -> return ((), (Nodes (delete k map) types), rules, struct))
+
 
 getProblems :: Search [(Int, Problem)]
 getProblems = do
@@ -247,12 +281,34 @@ filterHeadByType v@(Var _) v'@(Var _) = v == v'
 filterHeadByType v (Pi _ type_ _) = v == type_
 filterHeadByType t t' = t == t'
 
-isEqualTailPi :: TreeType -> TreeType -> Bool 
-isEqualTailPi final_type pi'@(Pi _ _ _) = final_type == getPiFinalType pi'
-isEqualTailPi t t' = filterHeadByType t t'
+isEqualType :: TreeType -> TreeType -> Search Bool
+isEqualType (Var (Paralell k)) term' = do
+    term <- getTerm <$> getNode k
+    case term of {
+        Just (expr, term) -> isEqualType expr term';
+        Nothing -> return $ (Var (Paralell k)) == term';
+    }
+isEqualType term' (Var (Paralell k)) = do
+    term <- getTerm <$> getNode k
+    case term of {
+        Just (expr, term) -> isEqualType term' expr;
+        Nothing -> return $ term' == (Var (Paralell k));
+    }
+isEqualType (App x y) (App x' y') = do
+    b_x <- isEqualType x x'
+    b_y <- isEqualType y y'
+    return (b_x && b_y)
+isEqualType (Abs name body) (Abs name' body') = do
+    body <- (substitute (Var $ Name name, Var $ Name name') body)
+    isEqualType body body'
+isEqualType v v' = return $ v == v'
 
-selectReachablePi :: TreeType -> Vector (a, TreeType) -> Vector (a, TreeType)
-selectReachablePi term vec = Data.Vector.filter (isEqualTailPi term . snd) vec
+isEqualTailPi :: TreeType -> TreeType -> Search Bool 
+isEqualTailPi final_type pi'@(Pi _ _ _) = isEqualType final_type $ getPiFinalType pi'
+isEqualTailPi t t' = isEqualType t t'
+
+selectReachablePi :: TreeType -> Vector (a, TreeType) -> Search (Vector (a, TreeType))
+selectReachablePi term vec = Data.Vector.filterM (isEqualTailPi term . snd) vec
 
 piToList :: MiniLambda -> [MiniLambda]
 piToList pi = go pi []
@@ -272,8 +328,8 @@ selectDerivableFuncs param vec = do
             else ls
         selectPiTypes ls _ = ls
 
-betaExpand :: SearchAST -> Search Problem
-betaExpand ast@(SearchAST pi@(Pi name pi_type body) clauses) = do
+betaExpand :: SearchAST -> Int -> Search Problem
+betaExpand ast@(SearchAST pi@(Pi name pi_type body) clauses) key = do
     node_id <- createProblem body clauses
     mapNode node_id (extendContext (name, pi_type))
     return (Problem ast (Just (Abs name (Var $ Paralell node_id), pi)))
@@ -282,12 +338,12 @@ selectClauseByEmptyState :: Clause -> SearchAST -> Search Problem
 selectClauseByEmptyState (name_term, type_@(Pi _ _ _)) ast@(SearchAST goal clauses) = do
     -- term <- constructPartialApplication type_
     return (Problem ast (Just (Var $ Name name_term, type_)))
-  where
-    constructPartialApplication (Pi _ type_ body) = do
-        rec_ <- constructPartialApplication body
-        node_id <- createProblem type_ clauses
-        return $ App rec_ (Var $ Paralell node_id)
-    constructPartialApplication _ = return $ Var (Name name_term)
+--   where
+--     constructPartialApplication (Pi _ type_ body) = do
+--         rec_ <- constructPartialApplication body
+--         node_id <- createProblem type_ clauses
+--         return $ App rec_ (Var $ Paralell node_id)
+--     constructPartialApplication _ = return $ Var (Name name_term)
 
 selectClauseByEmptyState (name_term, type_) ast@(SearchAST goal clauses) = do
     return (Problem ast (Just (Var (Name name_term), type_)))
@@ -324,28 +380,19 @@ getPiHeadType :: TreeType -> TreeType
 getPiHeadType (Pi _ type_ body) = type_
 getPiHeadType _ = error "Not a pi type applied on getPiHeadType"
 
-piReduction :: (Term, Term) -> Search Term
-piReduction ((expr, type_), (function, Pi name param body)) = do
-    subs <- substitute (Var $ Name name, body) expr
-    return ((App function expr), subs)
+mapTermClauses :: Vector Clause -> (TreeType -> TreeType) -> Vector Clause
+mapTermClauses vec f = Data.Vector.map (second f) vec
 
 piHeadReduction :: Problem -> Search (Maybe Problem)
-piHeadReduction (Problem ast (Just (expr, type_))) = do
-    clause <- selectOnePertubation . searchPiReductible type_ $ ast
-    liftIO $ print clause
-    case clause of {
-        Just clause -> (do
-            term <- doAction clause (expr, type_)
-            return (Just (Problem ast (Just term))));
-        Nothing -> (return Nothing);
-    }
-  where
-    doAction :: Clause -> Term -> Search Term 
-    doAction (name, pi@(Pi _ _ _)) term = piReduction (term, (Var (Name name), pi))  
+piHeadReduction (Problem (SearchAST goal clauses) (Just (expr, Pi name type_ body))) = do
+    node_id <- createProblem type_ clauses
+    subs_type <- substitute (Var $ Name name, Var $ Paralell node_id) body
+    goal_type <- substitute (Var $ Name name, Var $ Paralell node_id) goal
+    return (Just (Problem (SearchAST goal_type clauses) (Just ((App expr $ Var $ Paralell node_id), subs_type))))
 
 expandPiReduction :: Problem -> Search (Maybe Problem)
 expandPiReduction  (Problem ast@(SearchAST goal clauses) (Just (expr, type_))) = do
-    let clausesCompatible = selectReachablePi goal clauses
+    clausesCompatible <- selectReachablePi goal clauses
     liftIO $ print (goal, clausesCompatible)
     clause <- selectOnePertubation . fromList . selectDerivableFuncs type_ $ clausesCompatible
     case clause of {
@@ -375,21 +422,59 @@ expandPiReduction  (Problem ast@(SearchAST goal clauses) (Just (expr, type_))) =
 
 tryFirstTerm :: Problem -> Search Problem
 tryFirstTerm (Problem ast@(SearchAST goal clauses) _) = do
-    clause <- selectOnePertubation clauses
+    reachableClauses <- selectReachablePi goal clauses
+    clause <- selectOnePertubation $ reachableClauses
     -- clause <- selectOnePertubation clauses
     case clause of {
         Just clause -> selectClauseByEmptyState clause ast;
-        Nothing -> return $ Problem ast Nothing
+        Nothing -> do
+            probably_bad_typed_clause <- selectOnePertubation clauses
+            case probably_bad_typed_clause of {
+                Just clause -> selectClauseByEmptyState clause ast;
+                Nothing -> return (Problem ast Nothing)
+            }
     }
 
-exploreProblem :: Problem -> Search (Maybe Problem)
-exploreProblem problem@(Problem ast@(SearchAST pi@(Pi _ _ _) _) Nothing) = do
-    Just <$> (betaExpand ast)
-exploreProblem problem@(Problem ast Nothing) = do
+exploreProblem :: Problem -> Int -> Search (Maybe Problem)
+exploreProblem problem@(Problem ast@(SearchAST pi@(Pi _ _ _) _) Nothing) key = do
+    Just <$> (betaExpand ast key)
+exploreProblem problem@(Problem ast Nothing) key = do
     Just <$> (tryFirstTerm problem)
-exploreProblem problem@(Problem ast (Just _)) = do
-    -- n <- liftIO $ randIO (1, 100)
-    piHeadReduction problem
+exploreProblem problem@(Problem ast (Just (expr, Pi _ _ _))) key = piHeadReduction problem
+exploreProblem problem@(Problem ast (Just _)) key = return Nothing
+
+
+simplifyNodes :: Int -> Search (Maybe MiniLambda)
+simplifyNodes key = do
+    node <- getNode key
+    case node of {
+        (Problem (SearchAST goal decls) Nothing) -> return Nothing;
+        (Problem (SearchAST goal decls) (Just (term, type'))) -> do
+            simplified_term <- simplifyTerm term
+            simplified_type' <- simplifyTerm type'
+            setTerm key (simplified_term, simplified_type')
+            return (Just simplified_term)
+    }
+    where
+        simplifyTerm (App x y) = do
+            x <- simplifyTerm x
+            y <- simplifyTerm y
+            return (App x y)
+        simplifyTerm (Abs name body) = do
+            body <- simplifyTerm body
+            return (Abs name body)
+        simplifyTerm (Pi name type' body) = do
+            type' <- simplifyTerm type'
+            body <- simplifyTerm body
+            return (Pi name type' body)
+        simplifyTerm v@(Var (Paralell key)) = do
+            term <- simplifyNodes key
+            case term of {
+                Just x -> return x;
+                Nothing -> return v;
+            }
+        simplifyTerm v = return v
+
 
 startNode :: SearchAST -> Search Int
 startNode ast@(SearchAST goal decls) = pushNode $ Problem ast Nothing
@@ -404,12 +489,12 @@ iterateSolutions ((key, p@(Problem _ _)) : ps) = do
     if checkIfReachGoal p then
         return ()
     else do
-        problem <- exploreProblem p
+        problem <- exploreProblem p key
         case problem of {
             Just x -> void $ updateNode key x;
-            Nothing -> return ();
+            Nothing -> return ()
          }
-        iterateSolutions ps
+    iterateSolutions ps
 
 search :: Search ()
 search = getProblems >>= iterateSolutions
@@ -423,7 +508,7 @@ iterateSearch n = do
 searchSolution :: SearchAST -> Search ()
 searchSolution ast = do
     startNode ast
-    iterateSearch 20
+    iterateSearch 200
 
 readMiniLambda :: String -> Either ParseError (IO Nodes)
 readMiniLambda str = do
@@ -431,6 +516,6 @@ readMiniLambda str = do
         Left x -> Left x;
         Right ast -> return $ do
             let (Wrap r) = searchSolution ast
-            (a, nodes, map) <- r (Nodes Data.Map.empty Data.Map.empty) Data.Map.empty
+            (a, nodes, map, strategy) <- r (Nodes Data.Map.empty Data.Map.empty) Data.Map.empty Null
             return nodes
     }
