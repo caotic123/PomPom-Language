@@ -41,7 +41,7 @@ main = do
           n <- readFile (file ++ ".mini")
           let read = readMiniLambda n
           case read of {
-              Right x -> x >>= print;
+              Right x -> x >>= putStrLn;
               Left y -> print y;
           }
         [x'] -> do

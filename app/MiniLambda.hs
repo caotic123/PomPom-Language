@@ -4,8 +4,10 @@
 {-# LANGUAGE DeriveAnyClass #-}
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE MultiWayIf #-}
+{-# LANGUAGE FlexibleContexts #-}
+{-# LANGUAGE MonoLocalBinds #-}
 module MiniLambda where
-import Data.Map (Map, empty, (!), insert, union, toList, lookup, member, delete)
+import Data.Map (Map, empty, (!), insert, union, toList, lookup, member, delete, map)
 import Effectful
 import Control.Monad.Memo
 
@@ -31,7 +33,7 @@ data MiniLambda =
 
 instance Show MiniLambda where
     show (App x y) = "(" ++ show x ++ " " ++ show y ++ ")"
-    show (Abs name y) = "λ" ++ name ++ "." ++ (show y)
+    show (Abs name y) = "(λ" ++ name ++ "." ++ (show y) ++ ")"
     show (Var (Name x)) = x
     show (Var (Paralell x)) = "[" ++ (show x) ++ "]"
     show (Pi name type' body) = "Π" ++ " (" ++ name ++ ":" ++ show type' ++ ")." ++ show body
@@ -505,17 +507,86 @@ iterateSearch n = do
     search
     iterateSearch (n - 1)
 
-searchSolution :: SearchAST -> Search ()
+searchSolution :: SearchAST -> Search MiniLambda
 searchSolution ast = do
-    startNode ast
+    node_genisis <- startNode ast
     iterateSearch 200
+    let (WrapMemo memo) = constructLambdaTerm node_genisis 
+    (term, _) <- memo Data.Map.empty 
+    return term
 
-readMiniLambda :: String -> Either ParseError (IO Nodes)
+
+type Memo m a = Monad m => (Map Int MiniLambda) -> m (a, (Map Int MiniLambda))
+
+newtype WrapMemo m a = WrapMemo (MiniLambda.Memo m a)
+
+instance Monad m => Functor (WrapMemo m) where
+  fmap f (WrapMemo memo) = WrapMemo $ \map -> do
+       (a, map') <- memo map
+       return (f a, map')
+
+instance Monad m => Applicative (WrapMemo m) where
+    pure x = WrapMemo $ \map -> return (x, map)
+    (<*>) = (<*>) 
+
+instance Monad m => Monad (WrapMemo m) where
+    (>>=) (WrapMemo memo) f = WrapMemo $ \map -> do
+        (a, map') <- memo map
+        let (WrapMemo memo') = f a
+        (b, map'') <- memo' map'
+        return (b, Data.Map.union map' map'')
+
+liftM' :: m a -> WrapMemo m a
+liftM' a = WrapMemo $ \map -> (, Data.Map.empty) <$> a
+
+memoNode :: Int -> MiniLambda -> WrapMemo m ()
+memoNode k v = WrapMemo $ \map -> return ((), Data.Map.insert k v map)
+
+remember :: Int -> WrapMemo m (Maybe MiniLambda)
+remember k = WrapMemo $ \map -> do
+     return (Data.Map.lookup k map, map)
+
+constructLambdaTerm :: Int -> WrapMemo Search MiniLambda
+constructLambdaTerm k = do
+    node <- liftM' $ getNode k
+    r <- remember k
+    liftM' $ liftIO $ print (k, r, getTerm node)
+    case (getTerm node) of {
+        Just (term, type_) -> (do
+               term <- readTerm term
+               memoNode k term
+               return term
+            );
+        Nothing -> return $ Var (Name "?")
+    }
+    where
+        readTerm (App x y) = do
+            x <- readTerm x
+            y <- readTerm y
+            return $ App x y
+        readTerm (Abs name body) = do
+            body <- readTerm body
+            return $ Abs name body
+        readTerm (Pi name type_ body) = do
+            type_ <- readTerm type_
+            body <- readTerm body
+            return $ Pi name type_ body
+        readTerm v@(Var (Name m)) = return v
+        readTerm (Var (Paralell p)) = do
+            r <- remember p
+            case r of {
+                Just term -> return term;
+                Nothing -> constructLambdaTerm p;
+            }
+            
+        
+
+readMiniLambda :: String -> Either ParseError (IO [Char])
 readMiniLambda str = do
     case (parse parseBlock "" str) of {
         Left x -> Left x;
         Right ast -> return $ do
             let (Wrap r) = searchSolution ast
             (a, nodes, map, strategy) <- r (Nodes Data.Map.empty Data.Map.empty) Data.Map.empty Null
-            return nodes
+            return (show a ++ "\n" ++ show nodes)
     }
