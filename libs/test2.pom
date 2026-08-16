@@ -1,0 +1,17 @@
+Static 1 : *.
+Static 0 : *.
+
+0'
+  {0 :: | f0}.
+
+1'
+  {1 :: | f1 | t}.
+
+Static f1 : ~ 0' ~> 1.
+
+Static f0 : ~ 1' ~> 0.
+Static t : 1.
+
+
+bloom
+    | A

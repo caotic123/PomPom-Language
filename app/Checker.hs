@@ -1039,7 +1039,7 @@ formatTypeChecker r
           let format_msg x = foldr (\c str -> if c == '\n' then "\n  " ++ str else c : str) "" (" " ++ x)
           foldr (\(name, (erros, holes)) str -> do
                   let sep = if not $ null holes then "\n\n" else ""
-                  "\nDefinition " ++ name ++ ":\n" ++ format_msg (first holes) ++ sep ++ format_msg (print_erros erros)) "" r
+                  "\nDefinition " ++ name ++ ":\n" ++ format_msg (first holes) ++ sep ++ format_msg (print_erros erros) ++ str) "" r
   |otherwise = "Kei checked your file with successful"
   where
     print_erros ls@(x : y : _) = x ++ "...\n\n" ++ last ls

@@ -6,21 +6,75 @@ import libs/function.
 ≥
   (gte :: ~ Nat ~> ~ Nat ~> Bool).
 
+insert_sort_sorted
+  |v xs H :: (v : Nat) (xs : (List Nat)) ~ (sorted xs) ~> (sorted (insert_sort xs v)) =>
+  [xs of (sorted (insert_sort xs v))
+    |(empty A) => I
+    |(new A head tail) => [(gte head v) of (sorted (insert_sort (new A head tail) v))
+      |true => (MkPair (Eq Bool (gte head v) true) (sorted (new A head tail)) (refl Bool true) H)
+      |false => [tail of (sorted (new A head (insert_sort tail v)))
+        |(empty B) =>
+          def v≥head = (gte_inverse head v (refl Bool false));
+          (MkPair (Eq Bool (gte v head) true) (sorted (new Nat v (empty Nat))) v≥head I)
+        |(new B head2 tail2) => [(gte head2 v) of (sorted (new A head (insert_sort (new B head2 tail2) v)))
+          |true =>
+            def v≥head = (gte_inverse head v (refl Bool false));
+            def sorted_tail = (second (Eq Bool (gte head2 head) true) (sorted (new B head2 tail2)) H);
+            (MkPair (Eq Bool (gte v head) true) (sorted (new B v (new B head2 tail2))) v≥head (MkPair (Eq Bool (gte head2 v) true) (sorted (new B head2 tail2)) (refl Bool true) sorted_tail))
+          |false =>
+            def head2≥head = (first (Eq Bool (gte head2 head) true) (sorted (new B head2 tail2)) H);
+            def sorted_tail = (second (Eq Bool (gte head2 head) true) (sorted (new B head2 tail2)) H);
+            (MkPair (Eq Bool (gte head2 head) true) (sorted (new B head2 (insert_sort tail2 v))) head2≥head (insert_sort_sorted v (new B head2 tail2) sorted_tail))
+        ]
+      ]
+    ]
+  ].
+
 beat_it_boss
-  |xs :: (xs : (List Nat)) ~> (sorted (sort xs)) => __.
+  |xs :: (xs : (List Nat)) ~> (sorted (sort xs)) => [xs of (sorted (sort xs))
+    |(empty A) => I
+    |(new A head tail) => (insert_sort_sorted head (sort tail) (beat_it_boss tail))
+  ].
   
 beat_it_0
-  |x :: (x : Nat) ~> (Eq Nat (+ 0 x) x) => __.
+  |x :: (x : Nat) ~> (Eq Nat (+ 0 x) x) => (refl Nat x).
 
 beat_it_1
-  |x :: (x : Nat) ~> (Eq Nat (+ x 0) x) => __.
+  |x :: (x : Nat) ~> (Eq Nat (+ x 0) x) => (symmetry Nat x (+ x 0) (zero_identity_plus' x)).
+
+gte_refl
+  |x :: (x : Nat) ~> (Eq Bool (gte x x) true) => [x of (Eq Bool (gte x x) true)
+    |0 => (refl Bool true)
+    |(+1 n) => (gte_refl n)
+  ].
+
+gte_succ_self
+  |x :: (x : Nat) ~> (Eq Bool (gte (+1 x) x) true) => [x of (Eq Bool (gte (+1 x) x) true)
+    |0 => (refl Bool true)
+    |(+1 n) => (gte_succ_self n)
+  ].
+
+gte_plus
+  |x y :: (x : Nat) (y : Nat) (Eq Bool (gte (+ x y) y) true) => [x of (Eq Bool (gte (+ x y) y) true)
+    |0 => (gte_refl y)
+    |(+1 n) => (gte_transitivy (+1 (+ n y)) (+ n y) y (gte_succ_self (+ n y)) (gte_plus n y))
+  ].
 
 beat_it_2
-  |x :: (x : Nat) ~> (Eq Bool (≥ (+ x x) x) true) => __.
+  |x :: (x : Nat) ~> (Eq Bool (≥ (+ x x) x) true) => (gte_plus x x).
 
 beat_it_3
-  |x :: (x : Nat) ~> (Falsity (Eq Bool (eql (+1 x) 0) true)) => __.
+  |x :: (x : Nat) ~> (Falsity (Eq Bool (eql (+1 x) 0) true)) => |H :: ~ (Eq Bool (eql (+1 x) 0) true) ~> False => (false≠true (symmetry Bool false true H)).
+
+gt_irrefl
+  |x :: (x : Nat) ~> (Eq Bool (gt x x) false) => [x of (Eq Bool (gt x x) false)
+    |0 => (refl Bool false)
+    |(+1 n) => (gt_irrefl n)
+  ].
 
 beat_it_4
-  |x P :: (x : Nat) ~> ~ ((y : Nat) ~> (Eq Bool (gt y x) true)) ~> (Eq Nat x 0) => __.
+  |x P :: (x : Nat) ~> ~ ((y : Nat) ~> (Eq Bool (gt y x) true)) ~> (Eq Nat x 0) =>
+    def true≡gtxx = (symmetry Bool (gt x x) true (P x));
+    def true≡false = (rewrite' Bool true (gt x x) false true≡gtxx (gt_irrefl x));
+    (⊥ (Eq Nat x 0) (false≠true true≡false)).
 

@@ -1,0 +1,59 @@
+import libs/nat.
+Static total : ~ Nat ~> *.
+
+Bigger |x y :: (x : Nat) (y : Nat) ~> * => (Eq Bool (gt x y) true).
+
+Static acc_succ : (x : Nat) ~> ~ ((y : Nat) ~> ~ (Bigger x y) ~> (total y)) ~> (total x).
+
+Total |x :: (x : Nat) ~> * => {(total x) :: | (acc_succ x)}.
+
+accesibility_less |x y y0 H H0 :: (x : Nat) (y : Nat) (y0 : Nat) ~> ~ (Bigger y y0) ~> ~ (Bigger x y) ~> (Bigger x y0) => [x of (Bigger x y0)
+        |0 => [y of (Bigger x y0)
+            |0 => (⊥ (Bigger x y0) (false≠true (symmetry Bool false true H0)))
+            |(+1 n) => (⊥ (Bigger x y0) (false≠true (symmetry Bool false true H0)))
+        ]
+        |(+1 n) => [y0 of (Bigger x y0)
+            |0 => (refl Bool true)
+            |(+1 m) => [y of (Bigger x y0)
+               |0 => (⊥ (Bigger x y0) (false≠true (symmetry Bool false true H)))
+               |(+1 n1) => (accesibility_less n n1 m H H0)
+            ]
+        ]
+].
+
+accesibility_less2 |x y y0 H H0 :: (x : Nat) (y : Nat) (y0 : Nat) ~> ~ (Bigger (+1 x) y) ~> ~ (Bigger y y0) ~> (Bigger x y0) => [y of (Bigger x y0)
+        |0 => [y0 of (Bigger x y0)
+            |0 => (⊥ (Bigger x y0) (false≠true (symmetry Bool false true H0)))
+            |(+1 n) => (⊥ (Bigger x y0) (false≠true (symmetry Bool false true H0)))
+        ]
+        |(+1 n) => [y0 of (Bigger x y0)
+            |0 => [x of (Bigger x y0)
+                |0 => [n of (Bigger x y0)
+                    |0 => H
+                    |(+1 z) => H
+                ]
+                |(+1 m) => (refl Bool true)
+            ]
+            |(+1 m) => [x of (Bigger x y0)
+                |0 => [n of (Bigger x y0)
+                    |0 => H
+                    |(+1 z) => H
+                ]
+                |(+1 b) => (accesibility_less2 b n m H H0)
+            ]
+        ]
+].
+
+recur |x y H :: (x : Nat) ~> (y : Nat) ~> ~ (Bigger x y) ~> (Total y) =>
+    [x of (Total y)
+        |0 => [y of (Total y)
+            |0 => (⊥ (Total 0) (false≠true (symmetry Bool false true H)))
+            |(+1 n) =>  (⊥ (Total y) (false≠true (symmetry Bool false true H)))
+        ]
+        |(+1 n) => (acc_succ y (|y0 H0 :: (y0 : Nat) ~> ~ (Bigger y y0) ~> (Total y0) => 
+            (recur n y0 (accesibility_less2 n y y0 H H0))
+        ))
+    ].
+
+recursion
+    |P H x' :: (P : ~ Nat ~> *) ~> ~ ((x : Nat) ~> ((y : Nat) ~> ~ (Bigger x y) ~> (P y))) ~> (x' : Nat) ~> (P x') => 

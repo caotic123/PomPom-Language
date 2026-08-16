@@ -1,0 +1,690 @@
+Resolving dependencies...
+Build profile: -w ghc-9.4.2 -O1
+In order, the following will be built (use -v for more details):
+ - Kei2-0.1.0.0 (exe:Kei2) (first run)
+Configuring executable 'Kei2' for Kei2-0.1.0.0..
+Preprocessing executable 'Kei2' for Kei2-0.1.0.0..
+Building executable 'Kei2' for Kei2-0.1.0.0..
+[1 of 7] Compiling Effectful        ( app/Effectful.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Effectful.o )
+[2 of 7] Compiling Parser           ( app/Parser.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Parser.o )
+[3 of 7] Compiling Util             ( app/Util.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Util.o )
+[4 of 7] Compiling Term             ( app/Term.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Term.o )
+[5 of 7] Compiling MiniLambda       ( app/MiniLambda.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/MiniLambda.o )
+Resolving dependencies...
+Build profile: -w ghc-9.4.2 -O1
+In order, the following will be built (use -v for more details):
+ - Kei2-0.1.0.0 (exe:Kei2) (first run)
+Configuring executable 'Kei2' for Kei2-0.1.0.0..
+Preprocessing executable 'Kei2' for Kei2-0.1.0.0..
+Building executable 'Kei2' for Kei2-0.1.0.0..
+[1 of 7] Compiling Effectful        ( app/Effectful.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Effectful.o )
+[2 of 7] Compiling Parser           ( app/Parser.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Parser.o )
+[3 of 7] Compiling Util             ( app/Util.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Util.o )
+[4 of 7] Compiling Term             ( app/Term.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Term.o )
+[5 of 7] Compiling MiniLambda       ( app/MiniLambda.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/MiniLambda.o )
+[6 of 7] Compiling Checker          ( app/Checker.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Checker.o )
+[7 of 7] Compiling Main             ( app/Main.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Main.o )
+[8 of 8] Linking /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2
+killed (((eqind [960762]) [744997]) [725627]):([960762] B) goal eq
+killed eq:((Eq A) B) goal eq
+killed eq:((Eq A) B) goal eq
+killed pa:(proofAtoB A) goal eq
+killed pa:(proofAtoB A) goal ([960762] A)
+killed (((eqind [772848]) [542534]) [745194]):([772848] B) goal eq
+killed (((eqind [544361]) [864384]) [242624]):([544361] B) goal ([960762] A)
+killed pa:(proofAtoB A) goal ([960762] A)
+killed eq:((Eq A) B) goal ([772848] A)
+killed (((eqind [180692]) [798990]) [728626]):([180692] B) goal ([544361] A)
+killed eq:((Eq A) B) goal ([544361] A)
+killed (((eqind [504603]) [891391]) [892629]):([504603] B) goal eq
+killed eq:((Eq A) B) goal (Sort A)
+killed (proofAtoB [247801]):(Sort B) goal ([516922] A)
+killed pa:(proofAtoB A) goal ([516922] A)
+killed (((eqind [612855]) [732983]) [366730]):([612855] B) goal ([544361] A)
+killed eq:((Eq A) B) goal ([516922] A)
+killed (proofAtoB [335380]):(Sort B) goal (Sort A)
+killed (proofAtoB [920103]):(Sort B) goal ([544361] A)
+killed eq:((Eq A) B) goal ([544361] A)
+killed pa:(proofAtoB A) goal (Sort A)
+killed (((eqind [278127]) [867475]) [208770]):([278127] B) goal (Sort A)
+killed eq:((Eq A) B) goal ([278127] A)
+killed eq:((Eq A) B) goal ([278127] A)
+killed eq:((Eq A) B) goal ([278127] A)
+killed (proofAtoB [856136]):(Sort B) goal ([544361] A)
+killed (((eqind [998598]) [134888]) [333124]):([998598] B) goal (Sort A)
+killed pa:(proofAtoB A) goal ([544361] A)
+killed (((eqind [735564]) [828704]) [576337]):([735564] B) goal ([516922] A)
+killed (proofAtoB [175243]):(Sort B) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed (proofAtoB [980006]):(Sort B) goal ([430325] A)
+killed (((eqind [430325]) [9818]) [14063]):([430325] B) goal ([278127] A)
+killed (proofAtoB [226448]):(Sort B) goal (Sort A)
+killed (proofAtoB [825746]):(Sort B) goal ([430325] A)
+killed pa:(proofAtoB A) goal ([430325] A)
+killed (proofAtoB [549980]):(Sort B) goal (Sort A)
+killed pa:(proofAtoB A) goal (Sort A)
+killed pa:(proofAtoB A) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed (((eqind [196326]) [290328]) [305733]):([196326] B) goal ([430325] A)
+killed pa:(proofAtoB A) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed pa:(proofAtoB A) goal (Sort A)
+killed (((eqind [625287]) [530455]) [927126]):([625287] B) goal ([430325] A)
+killed eq:((Eq A) B) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed (proofAtoB [59581]):(Sort B) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed (((eqind [244861]) [976724]) [549482]):([244861] B) goal ([430325] A)
+killed eq:((Eq A) B) goal ([430325] A)
+killed (proofAtoB [706812]):(Sort B) goal (Sort A)
+killed (proofAtoB [779623]):(Sort B) goal (Sort A)
+killed (proofAtoB [827836]):(Sort B) goal ([430325] A)
+killed (proofAtoB [209970]):(Sort B) goal (Sort A)
+killed (((eqind [934798]) [669762]) [990701]):([934798] B) goal (Sort A)
+killed (proofAtoB [56184]):(Sort B) goal ([430325] A)
+killed pa:(proofAtoB A) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed (proofAtoB [234389]):(Sort B) goal ([430325] A)
+killed pa:(proofAtoB A) goal ([430325] A)
+killed (proofAtoB [171279]):(Sort B) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed pa:(proofAtoB A) goal (Sort A)
+killed (proofAtoB [980587]):(Sort B) goal (Sort A)
+killed (((eqind [72200]) [136125]) [735002]):([72200] B) goal ([430325] A)
+killed pa:(proofAtoB A) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed (proofAtoB [588700]):(Sort B) goal ([430325] A)
+killed (proofAtoB [333905]):(Sort B) goal (Sort A)
+killed (((eqind [693793]) [806510]) [435706]):([693793] B) goal (Sort A)
+killed (proofAtoB [76229]):(Sort B) goal ([430325] A)
+killed (((eqind [946389]) [112505]) [590818]):([946389] B) goal (Sort A)
+killed (proofAtoB [985457]):(Sort B) goal (Sort A)
+killed (proofAtoB [870123]):(Sort B) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed (((eqind [471432]) [867629]) [985615]):([471432] B) goal ([430325] A)
+killed eq:((Eq A) B) goal ([430325] A)
+killed pa:(proofAtoB A) goal ([430325] A)
+killed pa:(proofAtoB A) goal ([430325] A)
+killed pa:(proofAtoB A) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed eq:((Eq A) B) goal (Sort A)
+killed (proofAtoB [337839]):(Sort B) goal (Sort A)
+killed (((eqind [568245]) [852402]) [804101]):([568245] B) goal ([430325] A)
+killed pa:(proofAtoB A) goal ([430325] A)
+killed eq:((Eq A) B) goal ([430325] A)
+killed pa:(proofAtoB A) goal ([483970] A)
+killed pa:(proofAtoB A) goal ([483970] A)
+killed (proofAtoB [774347]):(Sort B) goal ([430325] A)
+(284240,Nothing,Just ((((eqind [888919]) [888577]) [883143]),([888919] B)))
+(888919,Nothing,Just ((λv.[699015]),Π (v:(Sort A)).(Sort B)))
+(699015,Nothing,Just ((proofAtoB [147876]),(Sort B)))
+(147876,Nothing,Just (v,(Sort A)))
+(888577,Nothing,Just (eq,((Eq A) B)))
+(883143,Nothing,Just (pa,(proofAtoB A)))
+(((eqind (λv.(proofAtoB v))) eq) pa)
+9818 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+10623 = v : (Sort A) goal : (Sort A)
+
+14063 = proofAtoB : Π (v:(Sort A)).(Sort B) goal : ([430325] A)
+
+17434 = v : (Sort A) goal : (Sort A)
+
+19212 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+21822 = (proofAtoB [473164]) : (Sort B) goal : (Sort B)
+
+35600 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+37642 = eq : ((Eq A) B) goal : ([483970] A)
+
+38801 = (((eqind [48449]) [829973]) [493668]) : ([48449] B) goal : (Sort A)
+
+40326 = (((eqind [483970]) [43351]) [37642]) : ([483970] B) goal : (Sort A)
+
+42728 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+43351 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+48449 = (λv.[754172]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+56184 = (((eqind [450869]) [93531]) [397367]) : ([450869] B) goal : (Sort A)
+
+59581 = (proofAtoB [38801]) : (Sort B) goal : (Sort A)
+
+72200 = (λv.[170834]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+76185 = v : (Sort A) goal : (Sort A)
+
+76229 = (((eqind [165439]) [448368]) [94178]) : ([165439] B) goal : (Sort A)
+
+82215 = v : (Sort A) goal : (Sort A)
+
+89486 = pa : (proofAtoB A) goal : ([501178] A)
+
+93531 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+94178 = (((eqind [774750]) [557445]) [335080]) : ([774750] B) goal : ([165439] A)
+
+108796 = v : (Sort A) goal : (Sort A)
+
+110916 = (proofAtoB [810339]) : (Sort B) goal : (Sort A)
+
+112505 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+122551 = (proofAtoB [40326]) : (Sort B) goal : (Sort A)
+
+133137 = (proofAtoB [641390]) : (Sort B) goal : (Sort B)
+
+133636 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+134888 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+135503 = v : (Sort A) goal : (Sort A)
+
+136125 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+136653 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+147876 = v : (Sort A) goal : (Sort A)
+
+151926 = eq : ((Eq A) B) goal : ([230333] A)
+
+161353 = (proofAtoB [537299]) : (Sort B) goal : (Sort B)
+
+163028 = (proofAtoB [526492]) : (Sort B) goal : (Sort B)
+
+165249 = (λv.[712474]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+165399 = (λv.[21822]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+165439 = (λv.[347413]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+170834 = (proofAtoB [851497]) : (Sort B) goal : (Sort B)
+
+171279 = (proofAtoB [802710]) : (Sort B) goal : (Sort A)
+
+175243 = (((eqind [617961]) [745894]) [886347]) : ([617961] B) goal : (Sort A)
+
+180692 = (λv.[817581]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+185980 = v : (Sort A) goal : (Sort A)
+
+187591 = (proofAtoB [542125]) : (Sort B) goal : (Sort B)
+
+196326 = (λv.[443369]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+208770 = eq : ((Eq A) B) goal : ([278127] A)
+
+209970 = (proofAtoB [905905]) : (Sort B) goal : (Sort A)
+
+210293 = (proofAtoB [554406]) : (Sort B) goal : (Sort B)
+
+211696 = pa : (proofAtoB A) goal : ([572430] A)
+
+220520 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+223642 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+224665 = (λv.[850662]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+226448 = (proofAtoB [788760]) : (Sort B) goal : (Sort A)
+
+226835 = (proofAtoB [705218]) : (Sort B) goal : (Sort B)
+
+228433 = (λv.[161353]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+230333 = (λv.[293607]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+230433 = eq : ((Eq A) B) goal : ([588368] A)
+
+234389 = pa : (proofAtoB A) goal : (Sort A)
+
+242624 = (proofAtoB [791474]) : (Sort B) goal : ([544361] A)
+
+244861 = (λv.[469833]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+246848 = pa : (proofAtoB A) goal : ([516922] A)
+
+247801 = pa : (proofAtoB A) goal : (Sort A)
+
+253096 = (proofAtoB [762852]) : (Sort B) goal : (Sort B)
+
+259750 = (proofAtoB [971136]) : (Sort B) goal : (Sort A)
+
+264634 = pa : (proofAtoB A) goal : ([224665] A)
+
+278127 = (λv.[857139]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+284240 = (((eqind [888919]) [888577]) [883143]) : ([888919] B) goal : eq
+
+286062 = eq : ((Eq A) B) goal : ([348533] A)
+
+289081 = (proofAtoB [716440]) : (Sort B) goal : (Sort B)
+
+290328 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+293607 = (proofAtoB [954225]) : (Sort B) goal : (Sort B)
+
+298755 = pa : (proofAtoB A) goal : ([677947] A)
+
+302306 = (proofAtoB [821813]) : (Sort B) goal : (Sort B)
+
+305733 = (proofAtoB [945734]) : (Sort B) goal : ([196326] A)
+
+305958 = (proofAtoB [10623]) : (Sort B) goal : (Sort B)
+
+307069 = v : (Sort A) goal : (Sort A)
+
+316189 = (proofAtoB [627848]) : (Sort B) goal : (Sort A)
+
+333124 = (proofAtoB [259750]) : (Sort B) goal : ([998598] A)
+
+333905 = eq : ((Eq A) B) goal : (Sort A)
+
+335080 = (((eqind [348533]) [433419]) [286062]) : ([348533] B) goal : ([774750] A)
+
+335190 = (λv.[938600]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+335380 = pa : (proofAtoB A) goal : (Sort A)
+
+337839 = eq : ((Eq A) B) goal : (Sort A)
+
+339350 = (proofAtoB [710057]) : (Sort B) goal : (Sort B)
+
+347413 = (proofAtoB [794281]) : (Sort B) goal : (Sort B)
+
+348533 = (λv.[210293]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+352612 = pa : (proofAtoB A) goal : ([822617] A)
+
+366730 = (proofAtoB [873784]) : (Sort B) goal : ([612855] A)
+
+386634 = v : (Sort A) goal : (Sort A)
+
+397367 = pa : (proofAtoB A) goal : ([450869] A)
+
+405230 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+406853 = (proofAtoB [620143]) : (Sort B) goal : (Sort B)
+
+419375 = pa : (proofAtoB A) goal : ([165249] A)
+
+423866 = v : (Sort A) goal : (Sort A)
+
+430325 = (λv.[607565]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+433419 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+434810 = (proofAtoB [470284]) : (Sort B) goal : (Sort B)
+
+435706 = (((eqind [228433]) [943883]) [457520]) : ([228433] B) goal : ([693793] A)
+
+437279 = v : (Sort A) goal : (Sort A)
+
+443369 = (proofAtoB [926374]) : (Sort B) goal : (Sort B)
+
+446301 = (λv.[434810]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+448368 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+449923 = (λv.[509931]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+450869 = (λv.[339350]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+452067 = v : (Sort A) goal : (Sort A)
+
+452088 = pa : (proofAtoB A) goal : ([486836] A)
+
+457520 = pa : (proofAtoB A) goal : ([228433] A)
+
+459736 = v : (Sort A) goal : (Sort A)
+
+462228 = (((eqind [874782]) [136653]) [906994]) : ([874782] B) goal : (Sort A)
+
+464460 = (proofAtoB [561876]) : (Sort B) goal : (Sort B)
+
+468251 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+469833 = (proofAtoB [763231]) : (Sort B) goal : (Sort B)
+
+470284 = v : (Sort A) goal : (Sort A)
+
+470775 = v : (Sort A) goal : (Sort A)
+
+471432 = (λv.[896063]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+473164 = v : (Sort A) goal : (Sort A)
+
+477598 = v : (Sort A) goal : (Sort A)
+
+477680 = (proofAtoB [452067]) : (Sort B) goal : (Sort B)
+
+482342 = (proofAtoB [108796]) : (Sort B) goal : (Sort B)
+
+483970 = (λv.[606825]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+486836 = (λv.[723473]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+490549 = pa : (proofAtoB A) goal : (Sort A)
+
+493668 = eq : ((Eq A) B) goal : ([48449] A)
+
+493742 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+499174 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+499231 = (proofAtoB [780607]) : (Sort B) goal : (Sort B)
+
+500176 = pa : (proofAtoB A) goal : ([449923] A)
+
+501178 = (λv.[289081]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+504603 = (λv.[983828]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+509931 = (proofAtoB [600630]) : (Sort B) goal : (Sort B)
+
+515638 = (((eqind [224665]) [493742]) [264634]) : ([224665] B) goal : ([446301] A)
+
+516922 = (λv.[406853]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+523622 = eq : ((Eq A) B) goal : ([821890] A)
+
+526492 = v : (Sort A) goal : (Sort A)
+
+530455 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+537299 = v : (Sort A) goal : (Sort A)
+
+542125 = v : (Sort A) goal : (Sort A)
+
+542534 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+544361 = (λv.[690317]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+549482 = (((eqind [958644]) [468251]) [690942]) : ([958644] B) goal : ([244861] A)
+
+549980 = (proofAtoB [607846]) : (Sort B) goal : (Sort A)
+
+554406 = v : (Sort A) goal : (Sort A)
+
+557445 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+561876 = v : (Sort A) goal : (Sort A)
+
+568245 = (λv.[736408]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+572430 = (λv.[969712]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+576337 = eq : ((Eq A) B) goal : ([735564] A)
+
+588368 = (λv.[740451]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+588700 = (((eqind [588368]) [804873]) [230433]) : ([588368] B) goal : (Sort A)
+
+590818 = (((eqind [486836]) [35600]) [452088]) : ([486836] B) goal : ([946389] A)
+
+600630 = v : (Sort A) goal : (Sort A)
+
+606825 = (proofAtoB [82215]) : (Sort B) goal : (Sort B)
+
+607565 = (proofAtoB [135503]) : (Sort B) goal : (Sort B)
+
+607846 = (((eqind [821890]) [220520]) [523622]) : ([821890] B) goal : (Sort A)
+
+612855 = (λv.[253096]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+617961 = (λv.[302306]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+620143 = v : (Sort A) goal : (Sort A)
+
+625287 = (λv.[187591]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+625758 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+627848 = (proofAtoB [110916]) : (Sort B) goal : (Sort A)
+
+637554 = pa : (proofAtoB A) goal : ([165399] A)
+
+641390 = v : (Sort A) goal : (Sort A)
+
+642392 = (((eqind [572430]) [499174]) [211696]) : ([572430] B) goal : (Sort A)
+
+654426 = v : (Sort A) goal : (Sort A)
+
+659035 = v : (Sort A) goal : (Sort A)
+
+669762 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+677862 = (proofAtoB [17434]) : (Sort B) goal : (Sort B)
+
+677947 = (λv.[133137]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+690317 = (proofAtoB [659035]) : (Sort B) goal : (Sort B)
+
+690942 = eq : ((Eq A) B) goal : ([958644] A)
+
+693793 = (λv.[482342]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+699015 = (proofAtoB [147876]) : (Sort B) goal : (Sort B)
+
+705218 = v : (Sort A) goal : (Sort A)
+
+706812 = pa : (proofAtoB A) goal : (Sort A)
+
+710057 = v : (Sort A) goal : (Sort A)
+
+712474 = (proofAtoB [423866]) : (Sort B) goal : (Sort B)
+
+716440 = v : (Sort A) goal : (Sort A)
+
+717264 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+723473 = (proofAtoB [386634]) : (Sort B) goal : (Sort B)
+
+725627 = (((eqind [516922]) [405230]) [246848]) : ([516922] B) goal : ([960762] A)
+
+728626 = eq : ((Eq A) B) goal : ([180692] A)
+
+732983 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+735002 = eq : ((Eq A) B) goal : ([72200] A)
+
+735564 = (λv.[927547]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+736408 = (proofAtoB [185980]) : (Sort B) goal : (Sort B)
+
+736639 = v : (Sort A) goal : (Sort A)
+
+739470 = v : (Sort A) goal : (Sort A)
+
+740451 = (proofAtoB [477598]) : (Sort B) goal : (Sort B)
+
+741593 =  ? goal : Π (v:(Sort A)).(Sort B)
+
+744997 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+745194 = (proofAtoB [490549]) : (Sort B) goal : ([772848] A)
+
+745894 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+754172 = (proofAtoB [911395]) : (Sort B) goal : (Sort B)
+
+760198 = (proofAtoB [437279]) : (Sort B) goal : (Sort B)
+
+762852 = v : (Sort A) goal : (Sort A)
+
+763231 = v : (Sort A) goal : (Sort A)
+
+772848 = (λv.[499231]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+774347 = (eqind [741593]) : Π (we:((Eq A) B)).Π (wu:([741593] A)).([741593] B) goal : (Sort A)
+
+774750 = (λv.[477680]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+779623 = pa : (proofAtoB A) goal : (Sort A)
+
+780607 = v : (Sort A) goal : (Sort A)
+
+788760 = (((eqind [165249]) [19212]) [419375]) : ([165249] B) goal : (Sort A)
+
+791474 = (proofAtoB [642392]) : (Sort B) goal : (Sort A)
+
+794281 = v : (Sort A) goal : (Sort A)
+
+797776 = v : (Sort A) goal : (Sort A)
+
+798990 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+802710 = (proofAtoB [462228]) : (Sort B) goal : (Sort A)
+
+804101 = eq : ((Eq A) B) goal : ([568245] A)
+
+804873 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+806510 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+810339 = pa : (proofAtoB A) goal : (Sort A)
+
+817581 = (proofAtoB [853831]) : (Sort B) goal : (Sort B)
+
+821813 = v : (Sort A) goal : (Sort A)
+
+821890 = (λv.[677862]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+821969 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+822617 = (λv.[305958]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+825746 = (proofAtoB [122551]) : (Sort B) goal : (Sort A)
+
+827836 = (((eqind [230333]) [42728]) [151926]) : ([230333] B) goal : (Sort A)
+
+828704 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+829973 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+837956 = (((eqind [677947]) [902530]) [298755]) : ([677947] B) goal : ([335190] A)
+
+839889 = (proofAtoB [872091]) : (Sort B) goal : (Sort B)
+
+850662 = (proofAtoB [736639]) : (Sort B) goal : (Sort B)
+
+851497 = v : (Sort A) goal : (Sort A)
+
+852402 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+853831 = v : (Sort A) goal : (Sort A)
+
+856136 = eq : ((Eq A) B) goal : (Sort A)
+
+857139 = (proofAtoB [470775]) : (Sort B) goal : (Sort B)
+
+864384 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+867475 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+867629 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+870123 = (((eqind [501178]) [133636]) [89486]) : ([501178] B) goal : (Sort A)
+
+872091 = v : (Sort A) goal : (Sort A)
+
+873784 = eq : ((Eq A) B) goal : (Sort A)
+
+874782 = (λv.[951902]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+883143 = pa : (proofAtoB A) goal : ([888919] A)
+
+886347 = (((eqind [335190]) [223642]) [837956]) : ([335190] B) goal : ([617961] A)
+
+888577 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+888919 = (λv.[699015]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+891391 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+892629 = (proofAtoB [316189]) : (Sort B) goal : ([504603] A)
+
+896063 = (proofAtoB [459736]) : (Sort B) goal : (Sort B)
+
+902530 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+905905 = (((eqind [449923]) [717264]) [500176]) : ([449923] B) goal : (Sort A)
+
+906994 = (((eqind [165399]) [625758]) [637554]) : ([165399] B) goal : ([874782] A)
+
+911395 = v : (Sort A) goal : (Sort A)
+
+920103 = pa : (proofAtoB A) goal : (Sort A)
+
+926374 = v : (Sort A) goal : (Sort A)
+
+927126 = pa : (proofAtoB A) goal : ([625287] A)
+
+927547 = (proofAtoB [654426]) : (Sort B) goal : (Sort B)
+
+934798 = (λv.[839889]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+938600 = (proofAtoB [797776]) : (Sort B) goal : (Sort B)
+
+943883 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+945734 = (((eqind [822617]) [948030]) [352612]) : ([822617] B) goal : (Sort A)
+
+946389 = (λv.[163028]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+948030 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+951902 = (proofAtoB [739470]) : (Sort B) goal : (Sort B)
+
+954225 = v : (Sort A) goal : (Sort A)
+
+958644 = (λv.[760198]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+960762 = (λv.[464460]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+969712 = (proofAtoB [76185]) : (Sort B) goal : (Sort B)
+
+971136 = eq : ((Eq A) B) goal : (Sort A)
+
+976724 = eq : ((Eq A) B) goal : ((Eq A) B)
+
+980006 = eq : ((Eq A) B) goal : (Sort A)
+
+980587 = pa : (proofAtoB A) goal : (Sort A)
+
+983828 = (proofAtoB [307069]) : (Sort B) goal : (Sort B)
+
+985457 = (((eqind [446301]) [821969]) [515638]) : ([446301] B) goal : (Sort A)
+
+985615 = eq : ((Eq A) B) goal : ([471432] A)
+
+990701 = eq : ((Eq A) B) goal : ([934798] A)
+
+998598 = (λv.[226835]) : Π (v:(Sort A)).(Sort B) goal : Π (v:(Sort A)).(Sort B)
+
+
+
+Resolving dependencies...
+Build profile: -w ghc-9.4.2 -O1
+In order, the following will be built (use -v for more details):
+ - Kei2-0.1.0.0 (exe:Kei2) (first run)
+Configuring executable 'Kei2' for Kei2-0.1.0.0..
+Preprocessing executable 'Kei2' for Kei2-0.1.0.0..
+Building executable 'Kei2' for Kei2-0.1.0.0..
+[1 of 7] Compiling Effectful        ( app/Effectful.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Effectful.o )
+[2 of 7] Compiling Parser           ( app/Parser.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Parser.o )
+[3 of 7] Compiling Util             ( app/Util.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Util.o )
+[4 of 7] Compiling Term             ( app/Term.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Term.o )
+[5 of 7] Compiling MiniLambda       ( app/MiniLambda.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/MiniLambda.o )
+[6 of 7] Compiling Checker          ( app/Checker.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Checker.o )
+[7 of 7] Compiling Main             ( app/Main.hs, /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2-tmp/Main.o )
+[8 of 8] Linking /home/caotic/Workspace/PomPom-Language/dist-newstyle/build/x86_64-linux/ghc-9.4.2/Kei2-0.1.0.0/x/Kei2/build/Kei2/Kei2
+(352158,Nothing,Just (pa,(proofAtoB A)))
+pa
+352158 = pa : (proofAtoB A) goal : eq
+
+
+

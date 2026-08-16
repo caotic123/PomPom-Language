@@ -196,5 +196,7 @@ run :: String -> Either ParseError ([String], [PDefinitons])
 run = parse (do
        imports <- many parseImport
        definitions <- parseDefinition
+       spaces
+       eof
        return (imports, definitions))
     ""

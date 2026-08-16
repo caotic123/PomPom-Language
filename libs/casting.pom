@@ -1,0 +1,6 @@
+import libs/list.
+
+cast_list
+  |y x :: (A : *) ~> ~ (NonEmpty A) ~> (List A) => x.
+
+hall_values 
