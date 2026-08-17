@@ -134,7 +134,7 @@ unify (target, origin) = do
    case cicleTerm of {
         Nothing -> insertUnification (origin, target);
         Just k -> do
-                insertUnification (target, k);
+                when (isVarName target || isVarName k) $ insertUnification (target, k); -- only equate when a side is a unification var, never two rigid constructors
                 insertUnification (origin, target);
    }
 
@@ -985,7 +985,12 @@ notationRule _ _ = error "Internal Error : Notation rule always must be applyed 
 
 
 inferMatch:: Term -> ContextM ()
-inferMatch match@(Match _ type_ _) = setType (Jugdment match type_)
+inferMatch match@(Match _ type_ _) = do
+        norm <- simpl match
+        case norm of {
+          Match {} -> setType (Jugdment match type_); -- stuck match: safe (and needed) to alias its normal form
+          _ -> setContextType (match, type_); -- reduced match: never alias the reduct (a branch body) to the match type
+        }
 inferMatch _ = error "Internal Error : Match inference always must be applyed to a match expression"
 
 typeRules :: Checker -> Term -> ContextM Checker
