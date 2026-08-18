@@ -36,6 +36,5 @@ false≠true | H :: (Falsity (Eq Bool true false)) =>
 not_not_bool
   | x :: (x : Bool) (Eq Bool x (not (not x))) => [x of (Eq Bool x (not (not x)))
     |true => (refl Bool true)
-    |false => (refl Bool false)    
+    |false => (refl Bool false)
   ].
-  

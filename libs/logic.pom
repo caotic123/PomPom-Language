@@ -9,13 +9,13 @@ False
 
 ⊥ |x H :: (Prop : *) ~ False ~> Prop => [H of x].
 
-Static or : ~ * ~> ~ * ~> *.
+Static logical-or : ~ * ~> ~ * ~> *.
 
-Static or_right : (x : *) (y : *) ~ x ~> (or x y).
-Static or_left : (x : *) (y : *) ~ y ~> (or x y).
+Static or_right : (x : *) (y : *) ~ x ~> (logical-or x y).
+Static or_left : (x : *) (y : *) ~ y ~> (logical-or x y).
 
 Or 
-  |A B :: ~ * ~> ~ * ~> * => {(or A B) :: |or_right | or_left}.
+  |A B :: ~ * ~> ~ * ~> * => {(logical-or A B) :: |or_right | or_left}.
 
 Static Neg : ~ * ~> *.
 Static Not : (A : *) ~ (~ A ~> False) ~> (Neg A).

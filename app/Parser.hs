@@ -3,9 +3,10 @@ module Parser where
 
 import Prelude
 import Text.Parsec
-import Data.Char ( isAlphaNum, isSpace, isAscii )
+import Data.Char ( isAlphaNum, isSpace, isAscii, isPrint, ord )
 import Data.Functor
 import Control.Monad
+import Numeric ( showHex )
 
 data Sort = SortStatement | SortStatic deriving Show
 type PDefinitons = (String, Sort, PTerm)
@@ -24,7 +25,7 @@ data PTerm =
   deriving Show
 
 varCharacters :: [Char]
-varCharacters = [':', '(', ')', '.', '|', '~', '>', '{', '}', '=', '[', ']', ';']
+varCharacters = [':', '(', ')', '.', '|', '~', '>', '{', '}', '=', '[', ']', ';', '"']
 
 consumeVarName :: Parsec String st String
 consumeVarName = many1 $ satisfy (\x -> not (isSpace x) && (isAlphaNum x || notElem x varCharacters))
@@ -41,6 +42,32 @@ justParent k = between (char '(') (char ')') (withSpaces k)
 
 parseVar :: Parsec String st PTerm
 parseVar = consumeVarName <&> PVar
+
+-- Temporary literal ABI shared with libs/string.pom. String syntax should
+-- eventually be provided by a general, library-defined meta mechanism.
+parseStringLiteral :: Parsec String st PTerm
+parseStringLiteral = encodeString <$> between (char '"') (char '"') (many stringCharacter)
+  where
+    encodeString = foldr encodeCharacter (PVar "string-empty")
+    encodeCharacter character rest =
+      PApp (PApp (PVar "string-cons") (PVar (characterConstructor character))) rest
+
+    characterConstructor character = "char-u" ++ paddedHex (ord character)
+    paddedHex codepoint = replicate (4 - length hexadecimal) '0' ++ hexadecimal
+      where hexadecimal = showHex codepoint ""
+
+    stringCharacter = escapedCharacter <|> satisfy isLiteralCharacter
+    isLiteralCharacter character =
+      isAscii character && isPrint character && character /= '"' && character /= '\\'
+
+    escapedCharacter = char '\\' >> choice
+      [ char '0' >> return '\0'
+      , char 'n' >> return '\n'
+      , char 'r' >> return '\r'
+      , char 't' >> return '\t'
+      , char '"' >> return '"'
+      , char '\\' >> return '\\'
+      ]
 
 consumeArgs :: Parsec String st (String, PTerm)
 consumeArgs = consumeFreeType <|> consumeSelfType
@@ -149,7 +176,7 @@ parseStatic = do
 
 parseTerm :: Parsec String st PTerm
 parseTerm =
-    optional_parent (choice [try parseUnTypedLambda, try parseLambda, try parseType, try parseConstructors, try parseApp, try parseTactics, try parseAbsLet, try parseDef, try parseTypeNotation, try parseMatching, parseVar])
+    optional_parent (choice [parseStringLiteral, try parseUnTypedLambda, try parseLambda, try parseType, try parseConstructors, try parseApp, try parseTactics, try parseAbsLet, try parseDef, try parseTypeNotation, try parseMatching, parseVar])
   where
       optional_parent term = try term <|> justParent term
 

@@ -60,15 +60,23 @@ You can read more about our optional constructor later.
 
 # Basic syntax
 
-- Definition : ```def_name : expression```, def_name can have any character except for ```':', '(', ')', '.', '|', '~', '>', '{', '}', '=', '[', ']', ';'```
+- Definition : ```def_name : expression```, def_name can have any character except for ```':', '(', ')', '.', '|', '~', '>', '{', '}', '=', '[', ']', ';', '"'```
 - Type :  ```(x : A) ~> B```, as a function A going to B, or ```~ A ~> B```, when x does not occur in B.
 - Lambda : | ```|x ... :: Type => Body```, being x a parameter (or more) and Type the type notation of the lambda.
 - Application : ```(f y)```
 - Type Notation : ```(expression :: Type)```
 - Symbol : ```Static symbol_name : Type```
 - Pattern Matching : ```x of Type [ | predicate => body, ...  ]```, being Type the return type of all clauses
+- String literal : ```"text"```, available after importing ```libs/string```
 - Local definition (only in parsing) : ```def def_name = expr; expr```
 - Abs (Let by Lambda) : ```abs abs_name : Type ~> Goal = expr; expr```
+
+String literals are syntax sugar for the constructors from `libs/string.pom`. For
+example, `"ab"` is represented as
+`(string-cons char-u0061 (string-cons char-u0062 string-empty))`. The initial
+interface supports printable ASCII plus `\0`, `\n`, `\r`, `\t`, `\"`, and `\\`.
+The parser mapping is intentionally temporary and should eventually be replaced
+by a general library-defined literal/meta mechanism.
 
 # How to run 
 

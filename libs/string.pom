@@ -1,0 +1,224 @@
+import libs/nat.
+
+Static char : *.
+Static char-u0000 : char.
+Static char-u0009 : char.
+Static char-u000a : char.
+Static char-u000d : char.
+Static char-u0020 : char.
+Static char-u0021 : char.
+Static char-u0022 : char.
+Static char-u0023 : char.
+Static char-u0024 : char.
+Static char-u0025 : char.
+Static char-u0026 : char.
+Static char-u0027 : char.
+Static char-u0028 : char.
+Static char-u0029 : char.
+Static char-u002a : char.
+Static char-u002b : char.
+Static char-u002c : char.
+Static char-u002d : char.
+Static char-u002e : char.
+Static char-u002f : char.
+Static char-u0030 : char.
+Static char-u0031 : char.
+Static char-u0032 : char.
+Static char-u0033 : char.
+Static char-u0034 : char.
+Static char-u0035 : char.
+Static char-u0036 : char.
+Static char-u0037 : char.
+Static char-u0038 : char.
+Static char-u0039 : char.
+Static char-u003a : char.
+Static char-u003b : char.
+Static char-u003c : char.
+Static char-u003d : char.
+Static char-u003e : char.
+Static char-u003f : char.
+Static char-u0040 : char.
+Static char-u0041 : char.
+Static char-u0042 : char.
+Static char-u0043 : char.
+Static char-u0044 : char.
+Static char-u0045 : char.
+Static char-u0046 : char.
+Static char-u0047 : char.
+Static char-u0048 : char.
+Static char-u0049 : char.
+Static char-u004a : char.
+Static char-u004b : char.
+Static char-u004c : char.
+Static char-u004d : char.
+Static char-u004e : char.
+Static char-u004f : char.
+Static char-u0050 : char.
+Static char-u0051 : char.
+Static char-u0052 : char.
+Static char-u0053 : char.
+Static char-u0054 : char.
+Static char-u0055 : char.
+Static char-u0056 : char.
+Static char-u0057 : char.
+Static char-u0058 : char.
+Static char-u0059 : char.
+Static char-u005a : char.
+Static char-u005b : char.
+Static char-u005c : char.
+Static char-u005d : char.
+Static char-u005e : char.
+Static char-u005f : char.
+Static char-u0060 : char.
+Static char-u0061 : char.
+Static char-u0062 : char.
+Static char-u0063 : char.
+Static char-u0064 : char.
+Static char-u0065 : char.
+Static char-u0066 : char.
+Static char-u0067 : char.
+Static char-u0068 : char.
+Static char-u0069 : char.
+Static char-u006a : char.
+Static char-u006b : char.
+Static char-u006c : char.
+Static char-u006d : char.
+Static char-u006e : char.
+Static char-u006f : char.
+Static char-u0070 : char.
+Static char-u0071 : char.
+Static char-u0072 : char.
+Static char-u0073 : char.
+Static char-u0074 : char.
+Static char-u0075 : char.
+Static char-u0076 : char.
+Static char-u0077 : char.
+Static char-u0078 : char.
+Static char-u0079 : char.
+Static char-u007a : char.
+Static char-u007b : char.
+Static char-u007c : char.
+Static char-u007d : char.
+Static char-u007e : char.
+
+Char
+  {char ::
+  |char-u0000
+  |char-u0009
+  |char-u000a
+  |char-u000d
+  |char-u0020
+  |char-u0021
+  |char-u0022
+  |char-u0023
+  |char-u0024
+  |char-u0025
+  |char-u0026
+  |char-u0027
+  |char-u0028
+  |char-u0029
+  |char-u002a
+  |char-u002b
+  |char-u002c
+  |char-u002d
+  |char-u002e
+  |char-u002f
+  |char-u0030
+  |char-u0031
+  |char-u0032
+  |char-u0033
+  |char-u0034
+  |char-u0035
+  |char-u0036
+  |char-u0037
+  |char-u0038
+  |char-u0039
+  |char-u003a
+  |char-u003b
+  |char-u003c
+  |char-u003d
+  |char-u003e
+  |char-u003f
+  |char-u0040
+  |char-u0041
+  |char-u0042
+  |char-u0043
+  |char-u0044
+  |char-u0045
+  |char-u0046
+  |char-u0047
+  |char-u0048
+  |char-u0049
+  |char-u004a
+  |char-u004b
+  |char-u004c
+  |char-u004d
+  |char-u004e
+  |char-u004f
+  |char-u0050
+  |char-u0051
+  |char-u0052
+  |char-u0053
+  |char-u0054
+  |char-u0055
+  |char-u0056
+  |char-u0057
+  |char-u0058
+  |char-u0059
+  |char-u005a
+  |char-u005b
+  |char-u005c
+  |char-u005d
+  |char-u005e
+  |char-u005f
+  |char-u0060
+  |char-u0061
+  |char-u0062
+  |char-u0063
+  |char-u0064
+  |char-u0065
+  |char-u0066
+  |char-u0067
+  |char-u0068
+  |char-u0069
+  |char-u006a
+  |char-u006b
+  |char-u006c
+  |char-u006d
+  |char-u006e
+  |char-u006f
+  |char-u0070
+  |char-u0071
+  |char-u0072
+  |char-u0073
+  |char-u0074
+  |char-u0075
+  |char-u0076
+  |char-u0077
+  |char-u0078
+  |char-u0079
+  |char-u007a
+  |char-u007b
+  |char-u007c
+  |char-u007d
+  |char-u007e
+  }.
+
+Static string : *.
+Static string-empty : string.
+Static string-cons : ~ Char ~> ~ {string :: |string-empty |string-cons} ~> string.
+
+String
+  {string :: |string-empty |string-cons}.
+
+string-length
+  |value :: ~ String ~> Nat => [value of Nat
+    |string-empty => 0
+    |(string-cons _ tail) => (+1 (string-length tail))
+  ].
+
+string-concat
+  |left right :: ~ String ~> ~ String ~> String => [left of String
+    |string-empty => right
+    |(string-cons head tail) => (string-cons head (string-concat tail right))
+  ].

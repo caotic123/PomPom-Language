@@ -126,9 +126,35 @@ getTermUnification term = ContextM (\state l@(Local _ _ (TermInfo _ _ _ unifier)
 
 insertUnification :: (Term, Term) -> ContextM ()
 insertUnification (origin, target) =  ContextM (\state (Local def term' (TermInfo sort references types unifier)) ->
-    ((), state, Local def term' (TermInfo sort references types (if target == origin then unifier else Map.insert origin target unifier))))
+    ((), state, Local def term' (TermInfo sort references types (put unifier))))
+  where -- an equation is symmetric, so orient it: flip a self-cyclic single entry the well-founded way
+        -- (0 in (+1 0) ⇒ record (+1 0)↦0, which resolves in one step yet still lets conversion see 0 = +1 0,
+        -- needed to derive absurd), and otherwise solve the variable — map it to the value — so that q =? 0
+        -- and 0 =? q record the same q ↦ 0 (avoiding an opposite-direction pair that would cycle).
+        (key, val) | occursIn origin target && not (occursIn target origin) = (target, origin)
+                   | isVarName target && not (isVarName origin) = (target, origin)
+                   | otherwise = (origin, target)
+        put u | target == origin = u
+              -- keep the map acyclic: if the value, resolved through the other bindings, still mentions the
+              -- key, inserting would close a cycle (direct or transitive, e.g. 0↦(+1 s),s↦(+1 t),t↦0). Delete
+              -- the key's own binding first, since it is being reassigned. The equation is absurd, so skip it.
+              | occursIn key (resolveTerm (Map.delete key u) val) = u
+              | otherwise = Map.insert key val u
+
+-- a term occurs in another when it appears as one of its subterms
+occursIn :: Term -> Term -> Bool
+occursIn sub = foldTerm (\acc x -> acc || x == sub) False
+
+-- resolve a term through the (acyclic) unifier: follow each subterm's binding to a fixpoint.
+-- terminates because insertUnification keeps the map acyclic (see the occurs check there).
+resolveTerm :: Map Term Term -> Term -> Term
+resolveTerm u = go
+  where go t = case Map.lookup t u of
+                 Just v  -> go v
+                 Nothing -> case t of { Var _ -> t; _ -> go ## t }
 
 unify :: (Term, Term) -> ContextM ()
+unify (App targetF targetA, App originF originA) | targetF == originF = unify (targetA, originA) -- decompose equal-headed apps ((+1 0) =? (+1 q) becomes 0 =? q) so no whole-compound entry is recorded
 unify (target, origin) = do
    cicleTerm <- getTermUnification origin
    case cicleTerm of {
@@ -823,7 +849,8 @@ prodRule t checker = pi_typed_env t
               Just type' -> if isTypeUniverse type' || isSetUniverse type' then do
                               type_dependent <- getType term_dependent
                               case type_dependent of {
-                                Just type_dependent -> if isUniverse type_dependent then
+                                Just type_dependent -> if isUniverse type_dependent then do
+                                                         setType (Jugdment pi (if isKindUniverse type_dependent then kindUniverse else typeUniverse)) -- a Pi whose codomain lives in Kind lives in Kind, not Type
                                                          return checker
                                                       else
                                                          error_universe term_dependent ["Type", "Set", "Kind"];
@@ -919,6 +946,7 @@ clauseChecker checker match predicates term = do
         }
   where
     generalize_constructor (App x y) = App x (Var (VarRef  "__"))
+    generalize_constructor var@(Var _) = var
     generalize_constructor term = generalize_constructor ## term
 
 checkTypeClauses :: Term -> ([Term], [Term]) -> Term -> Checker -> ContextM Checker

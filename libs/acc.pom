@@ -54,6 +54,3 @@ recur |x y H :: (x : Nat) ~> (y : Nat) ~> ~ (Bigger x y) ~> (Total y) =>
             (recur n y0 (accesibility_less2 n y y0 H H0))
         ))
     ].
-
-recursion
-    |P H x' :: (P : ~ Nat ~> *) ~> ~ ((x : Nat) ~> ((y : Nat) ~> ~ (Bigger x y) ~> (P y))) ~> (x' : Nat) ~> (P x') => 
