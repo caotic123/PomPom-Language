@@ -45,6 +45,10 @@ instance Applicative ContextM where
 instance Monad ContextM where
    (>>=) (ContextM local_a) f = ContextM (Checker.bind local_a (\a -> let (ContextM local_b) = f a in local_b))
 
+assertM :: Monad m => Bool -> a -> m a -> m a
+assertM condition current onFailure =
+   if condition then return current else onFailure
+
 betaSubstitution :: (Term, Term) -> Term -> Term
 betaSubstitution tuple@(u, _) abs@(Lam x y) =
         if x == u then abs
@@ -1056,9 +1060,23 @@ typeRules checker term =
                            ) (return checker) body
             );
            constr@(Constr type' constructors) -> constrRule checker constr;
-           Notation body type' -> do
+           Notation body type' -> (do
                    type' <- normalize type'
-                   notationRule checker (Notation body type');
+                   notationRule checker (Notation body type'));
+           idata@(IData indices) -> (do
+                let isIndexUniverse type' = isTypeUniverse type' || isSetUniverse type'
+                    checkIndex checker index = do
+                       checker <- typeRules checker index
+                       inferredType <- getType index
+                       assertM (maybe False isIndexUniverse inferredType) checker $ do
+                            renderedIndex <- showTerm index
+                            pushTypeError ("Impossible to infer a Set/Type universe for the index " ++ renderedIndex) checker
+                -- >> IData now names its predicate/check action and delegates failure branching to assertM.
+                foldM checkIndex checker indices
+                setType (Jugdment idata typeUniverse)
+                return checker
+                );
+            
         }
 
 typeCheckerLocal :: ContextM Checker

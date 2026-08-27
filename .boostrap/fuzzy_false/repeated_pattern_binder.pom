@@ -1,0 +1,6 @@
+import libs/logic.
+
+fuzzy-repeated-pattern-binder
+  | A pair :: (A : *) (pair : (Pair A A)) ~> A => [pair of A
+    |(MkPair _ _ value value) => value
+  ].

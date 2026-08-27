@@ -1,0 +1,114 @@
+import boostrap/data.
+
+Static bootstrap-list-accessibility : (A : *) ~ (List A) ~> *.
+Static bootstrap-list-access-empty : (A : *) ~> (bootstrap-list-accessibility A (empty A)).
+Static bootstrap-list-access-new : (A : *) (head : A) (tail : (List A)) ~ {(bootstrap-list-accessibility A tail) :: |bootstrap-list-access-empty |bootstrap-list-access-new} ~> (bootstrap-list-accessibility A (new A head tail)).
+
+BootstrapListAccessibility
+  |A values :: (A : *) ~ (List A) ~> * =>
+    {(bootstrap-list-accessibility A values) :: |bootstrap-list-access-empty |bootstrap-list-access-new}.
+
+bootstrap-list-accessibility-instance
+  |A values :: (A : *) (values : (List A)) ~> (BootstrapListAccessibility A values) => [values of (BootstrapListAccessibility A values)
+    |(empty _) => (bootstrap-list-access-empty A)
+    |(new _ head tail) => (bootstrap-list-access-new A head tail (bootstrap-list-accessibility-instance A tail))
+  ].
+
+Static bootstrap-term-accessibility : ~ BootstrapTerm ~> *.
+Static bootstrap-term-list-accessibility : ~ (List BootstrapTerm) ~> *.
+Static bootstrap-clause-accessibility : ~ BootstrapClause ~> *.
+Static bootstrap-clause-list-accessibility : ~ (List BootstrapClause) ~> *.
+
+Static bootstrap-term-access-variable : (variable : BootstrapVar) ~> (bootstrap-term-accessibility (bootstrap-variable-term variable)).
+Static bootstrap-term-access-pi : (binder : BootstrapVar) (domain : BootstrapTerm) (body : BootstrapTerm) ~ {(bootstrap-term-accessibility domain) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> ~ {(bootstrap-term-accessibility body) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> (bootstrap-term-accessibility (bootstrap-pi-term binder domain body)).
+Static bootstrap-term-access-lambda : (binder : BootstrapVar) (body : BootstrapTerm) ~ {(bootstrap-term-accessibility body) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> (bootstrap-term-accessibility (bootstrap-lambda-term binder body)).
+Static bootstrap-term-access-application : (function : BootstrapTerm) (argument : BootstrapTerm) ~ {(bootstrap-term-accessibility function) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> ~ {(bootstrap-term-accessibility argument) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> (bootstrap-term-accessibility (bootstrap-application-term function argument)).
+Static bootstrap-term-access-constructors : (type : BootstrapTerm) (constructors : (List BootstrapTerm)) ~ {(bootstrap-term-accessibility type) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> ~ {(bootstrap-term-list-accessibility constructors) :: |bootstrap-term-list-access-empty |bootstrap-term-list-access-new} ~> (bootstrap-term-accessibility (bootstrap-constructors-term type constructors)).
+Static bootstrap-term-access-match : (scrutinee : BootstrapTerm) (type : BootstrapTerm) (clauses : (List BootstrapClause)) ~ {(bootstrap-term-accessibility scrutinee) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> ~ {(bootstrap-term-accessibility type) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> ~ {(bootstrap-clause-list-accessibility clauses) :: |bootstrap-clause-list-access-empty |bootstrap-clause-list-access-new} ~> (bootstrap-term-accessibility (bootstrap-match-term scrutinee type clauses)).
+Static bootstrap-term-access-notation : (body : BootstrapTerm) (type : BootstrapTerm) ~ {(bootstrap-term-accessibility body) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> ~ {(bootstrap-term-accessibility type) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> (bootstrap-term-accessibility (bootstrap-notation-term body type)).
+
+Static bootstrap-term-list-access-empty : (bootstrap-term-list-accessibility (empty BootstrapTerm)).
+Static bootstrap-term-list-access-new : (head : BootstrapTerm) (tail : (List BootstrapTerm)) ~ {(bootstrap-term-accessibility head) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> ~ {(bootstrap-term-list-accessibility tail) :: |bootstrap-term-list-access-empty |bootstrap-term-list-access-new} ~> (bootstrap-term-list-accessibility (new BootstrapTerm head tail)).
+
+Static bootstrap-clause-access-new : (pattern : BootstrapTerm) (body : BootstrapTerm) ~ {(bootstrap-term-accessibility pattern) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> ~ {(bootstrap-term-accessibility body) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation} ~> (bootstrap-clause-accessibility (bootstrap-clause-new pattern body)).
+
+Static bootstrap-clause-list-access-empty : (bootstrap-clause-list-accessibility (empty BootstrapClause)).
+Static bootstrap-clause-list-access-new : (head : BootstrapClause) (tail : (List BootstrapClause)) ~ {(bootstrap-clause-accessibility head) :: |bootstrap-clause-access-new} ~> ~ {(bootstrap-clause-list-accessibility tail) :: |bootstrap-clause-list-access-empty |bootstrap-clause-list-access-new} ~> (bootstrap-clause-list-accessibility (new BootstrapClause head tail)).
+
+BootstrapTermAccessibility
+  |term :: ~ BootstrapTerm ~> * =>
+    {(bootstrap-term-accessibility term) :: |bootstrap-term-access-variable |bootstrap-term-access-pi |bootstrap-term-access-lambda |bootstrap-term-access-application |bootstrap-term-access-constructors |bootstrap-term-access-match |bootstrap-term-access-notation}.
+
+BootstrapTermListAccessibility
+  |terms :: ~ (List BootstrapTerm) ~> * =>
+    {(bootstrap-term-list-accessibility terms) :: |bootstrap-term-list-access-empty |bootstrap-term-list-access-new}.
+
+BootstrapClauseAccessibility
+  |clause :: ~ BootstrapClause ~> * =>
+    {(bootstrap-clause-accessibility clause) :: |bootstrap-clause-access-new}.
+
+BootstrapClauseListAccessibility
+  |clauses :: ~ (List BootstrapClause) ~> * =>
+    {(bootstrap-clause-list-accessibility clauses) :: |bootstrap-clause-list-access-empty |bootstrap-clause-list-access-new}.
+
+bootstrap-term-accessibility-instance
+  |term :: (term : BootstrapTerm) ~> (BootstrapTermAccessibility term) => [term of (BootstrapTermAccessibility term)
+    |(bootstrap-variable-term variable) => (bootstrap-term-access-variable variable)
+    |(bootstrap-pi-term binder domain body) => (bootstrap-term-access-pi binder domain body (bootstrap-term-accessibility-instance domain) (bootstrap-term-accessibility-instance body))
+    |(bootstrap-lambda-term binder body) => (bootstrap-term-access-lambda binder body (bootstrap-term-accessibility-instance body))
+    |(bootstrap-application-term function argument) => (bootstrap-term-access-application function argument (bootstrap-term-accessibility-instance function) (bootstrap-term-accessibility-instance argument))
+    |(bootstrap-constructors-term type constructors) => (bootstrap-term-access-constructors type constructors (bootstrap-term-accessibility-instance type) (bootstrap-term-list-accessibility-instance constructors))
+    |(bootstrap-match-term scrutinee type clauses) => (bootstrap-term-access-match scrutinee type clauses (bootstrap-term-accessibility-instance scrutinee) (bootstrap-term-accessibility-instance type) (bootstrap-clause-list-accessibility-instance clauses))
+    |(bootstrap-notation-term body type) => (bootstrap-term-access-notation body type (bootstrap-term-accessibility-instance body) (bootstrap-term-accessibility-instance type))
+  ].
+
+bootstrap-term-list-accessibility-instance
+  |terms :: (terms : (List BootstrapTerm)) ~> (BootstrapTermListAccessibility terms) => [terms of (BootstrapTermListAccessibility terms)
+    |(empty _) => bootstrap-term-list-access-empty
+    |(new _ head tail) => (bootstrap-term-list-access-new head tail (bootstrap-term-accessibility-instance head) (bootstrap-term-list-accessibility-instance tail))
+  ].
+
+bootstrap-clause-accessibility-instance
+  |clause :: (clause : BootstrapClause) ~> (BootstrapClauseAccessibility clause) => [clause of (BootstrapClauseAccessibility clause)
+    |(bootstrap-clause-new pattern body) => (bootstrap-clause-access-new pattern body (bootstrap-term-accessibility-instance pattern) (bootstrap-term-accessibility-instance body))
+  ].
+
+bootstrap-clause-list-accessibility-instance
+  |clauses :: (clauses : (List BootstrapClause)) ~> (BootstrapClauseListAccessibility clauses) => [clauses of (BootstrapClauseListAccessibility clauses)
+    |(empty _) => bootstrap-clause-list-access-empty
+    |(new _ head tail) => (bootstrap-clause-list-access-new head tail (bootstrap-clause-accessibility-instance head) (bootstrap-clause-list-accessibility-instance tail))
+  ].
+
+Static bootstrap-binding-list-accessibility : ~ (List BootstrapBinding) ~> *.
+Static bootstrap-binding-list-access-empty : (bootstrap-binding-list-accessibility (empty BootstrapBinding)).
+Static bootstrap-binding-list-access-new : (head : BootstrapBinding) (tail : (List BootstrapBinding)) ~ {(bootstrap-binding-list-accessibility tail) :: |bootstrap-binding-list-access-empty |bootstrap-binding-list-access-new} ~> (bootstrap-binding-list-accessibility (new BootstrapBinding head tail)).
+
+BootstrapBindingListAccessibility
+  |bindings :: ~ (List BootstrapBinding) ~> * =>
+    {(bootstrap-binding-list-accessibility bindings) :: |bootstrap-binding-list-access-empty |bootstrap-binding-list-access-new}.
+
+bootstrap-binding-list-accessibility-instance
+  |bindings :: (bindings : (List BootstrapBinding)) ~> (BootstrapBindingListAccessibility bindings) => [bindings of (BootstrapBindingListAccessibility bindings)
+    |(empty _) => bootstrap-binding-list-access-empty
+    |(new _ head tail) => (bootstrap-binding-list-access-new head tail (bootstrap-binding-list-accessibility-instance tail))
+  ].
+
+Static bootstrap-typing-list-accessibility : ~ (List BootstrapTyping) ~> *.
+Static bootstrap-typing-list-access-empty : (bootstrap-typing-list-accessibility (empty BootstrapTyping)).
+Static bootstrap-typing-list-access-new : (head : BootstrapTyping) (tail : (List BootstrapTyping)) ~ {(bootstrap-typing-list-accessibility tail) :: |bootstrap-typing-list-access-empty |bootstrap-typing-list-access-new} ~> (bootstrap-typing-list-accessibility (new BootstrapTyping head tail)).
+
+BootstrapTypingListAccessibility
+  |typings :: ~ (List BootstrapTyping) ~> * =>
+    {(bootstrap-typing-list-accessibility typings) :: |bootstrap-typing-list-access-empty |bootstrap-typing-list-access-new}.
+
+bootstrap-typing-list-accessibility-instance
+  |typings :: (typings : (List BootstrapTyping)) ~> (BootstrapTypingListAccessibility typings) => [typings of (BootstrapTypingListAccessibility typings)
+    |(empty _) => bootstrap-typing-list-access-empty
+    |(new _ head tail) => (bootstrap-typing-list-access-new head tail (bootstrap-typing-list-accessibility-instance tail))
+  ].
+
+bootstrap-list-accessibility-proof
+  ((bootstrap-list-accessibility-instance Nat (new Nat 0 (empty Nat))) :: (BootstrapListAccessibility Nat (new Nat 0 (empty Nat)))).
+
+bootstrap-term-accessibility-proof
+  ((bootstrap-term-accessibility-instance (bootstrap-application-term (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-bound-var 1)))) :: (BootstrapTermAccessibility (bootstrap-application-term (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-bound-var 1))))).

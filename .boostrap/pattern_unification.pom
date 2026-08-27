@@ -1,0 +1,157 @@
+import boostrap/typing_helpers.
+
+bootstrap-pattern-wildcard-name
+  "5f".
+
+Static bootstrap-pattern-type-unification-work : *.
+Static bootstrap-pattern-type-unification-work-new : (pattern-type : BootstrapTerm) ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> ~ (BootstrapTermAccessibility pattern-type) ~> bootstrap-pattern-type-unification-work.
+
+BootstrapPatternTypeUnificationWork
+  {bootstrap-pattern-type-unification-work :: |bootstrap-pattern-type-unification-work-new}.
+
+Static bootstrap-pattern-bind-work : *.
+Static bootstrap-pattern-bind-work-new : ~ BootstrapVar ~> ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> bootstrap-pattern-bind-work.
+
+BootstrapPatternBindWork
+  {bootstrap-pattern-bind-work :: |bootstrap-pattern-bind-work-new}.
+
+bootstrap-pattern-bind-recur
+  |work :: ~ BootstrapPatternBindWork ~> BootstrapTypingOutput => [work of BootstrapTypingOutput
+    |(bootstrap-pattern-bind-work-new variable target environment) => [environment of BootstrapTypingOutput
+    |(bootstrap-environment-new local unifier globals bindings certificates) => [(bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new unifier (bootstrap-variable-term variable) (bootstrap-typing-list-accessibility-instance unifier))) of BootstrapTypingOutput
+      |bootstrap-no-term => (bootstrap-environment-output (bootstrap-environment-new local (new BootstrapTyping (bootstrap-typing-new (bootstrap-variable-term variable) target) unifier) globals bindings certificates))
+      |(bootstrap-some-term previous) => [(bootstrap-unify-recur (bootstrap-unification-work-new target previous (bootstrap-state-new local unifier) (bootstrap-term-accessibility-instance target))) of BootstrapTypingOutput
+        |bootstrap-no-state => bootstrap-typing-failed
+        |(bootstrap-some-state state) => [state of BootstrapTypingOutput
+          |(bootstrap-state-new new-local new-unifier) => (bootstrap-environment-output (bootstrap-environment-new new-local new-unifier globals bindings certificates))
+        ]
+      ]
+    ]
+    ]
+  ].
+
+bootstrap-pattern-bind-variable
+  |variable target environment :: ~ BootstrapVar ~> ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> BootstrapTypingOutput =>
+    (bootstrap-pattern-bind-recur (bootstrap-pattern-bind-work-new variable target environment)).
+
+bootstrap-pattern-type-unify-recur
+  |work :: ~ BootstrapPatternTypeUnificationWork ~> BootstrapTypingOutput => [work of BootstrapTypingOutput
+    |(bootstrap-pattern-type-unification-work-new pattern-type target environment accessibility) => [accessibility of BootstrapTypingOutput
+      |(bootstrap-term-access-variable pattern-variable) => [pattern-variable of BootstrapTypingOutput
+        |(bootstrap-bound-var _) => (bootstrap-pattern-bind-recur (bootstrap-pattern-bind-work-new pattern-variable target environment))
+        |(bootstrap-bound-name-var _) => (bootstrap-pattern-bind-recur (bootstrap-pattern-bind-work-new pattern-variable target environment))
+        |(bootstrap-reference-var pattern-name) => [(bootstrap-name-equal pattern-name bootstrap-pattern-wildcard-name) of BootstrapTypingOutput
+          |true => (bootstrap-environment-output environment)
+          |false => [target of BootstrapTypingOutput
+            |(bootstrap-variable-term target-variable) => [target-variable of BootstrapTypingOutput
+              |(bootstrap-bound-var _) => bootstrap-typing-failed
+              |(bootstrap-bound-name-var _) => bootstrap-typing-failed
+              |(bootstrap-reference-var target-name) => [(bootstrap-name-equal pattern-name target-name) of BootstrapTypingOutput
+                |true => (bootstrap-environment-output environment)
+                |false => bootstrap-typing-failed
+              ]
+            ]
+            |(bootstrap-pi-term _ _ _) => bootstrap-typing-failed
+            |(bootstrap-lambda-term _ _) => bootstrap-typing-failed
+            |(bootstrap-application-term _ _) => bootstrap-typing-failed
+            |(bootstrap-constructors-term _ _) => bootstrap-typing-failed
+            |(bootstrap-match-term _ _ _) => bootstrap-typing-failed
+            |(bootstrap-notation-term _ _) => bootstrap-typing-failed
+          ]
+        ]
+      ]
+      |(bootstrap-term-access-application pattern-function pattern-argument function-access argument-access) => [target of BootstrapTypingOutput
+        |(bootstrap-application-term target-function target-argument) => [(bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new pattern-function target-function environment function-access)) of BootstrapTypingOutput
+          |bootstrap-typing-failed => bootstrap-typing-failed
+          |(bootstrap-typed-output _ _) => bootstrap-typing-failed
+          |(bootstrap-environment-output function-environment) => (bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new pattern-argument target-argument function-environment argument-access))
+        ]
+        |(bootstrap-constructors-term _ _) => bootstrap-typing-failed
+        |(bootstrap-notation-term _ _) => bootstrap-typing-failed
+        |(bootstrap-variable-term _) => bootstrap-typing-failed
+        |(bootstrap-pi-term _ _ _) => bootstrap-typing-failed
+        |(bootstrap-lambda-term _ _) => bootstrap-typing-failed
+        |(bootstrap-match-term _ _ _) => bootstrap-typing-failed
+      ]
+      |(bootstrap-term-access-constructors pattern-family _ family-access _) => (bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new pattern-family target environment family-access))
+      |(bootstrap-term-access-notation pattern-body _ body-access _) => (bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new pattern-body target environment body-access))
+      |(bootstrap-term-access-pi binder domain body domain-access body-access) => [target of BootstrapTypingOutput
+        |(bootstrap-pi-term target-binder target-domain target-body) => [(bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new domain target-domain environment domain-access)) of BootstrapTypingOutput
+          |bootstrap-typing-failed => bootstrap-typing-failed
+          |(bootstrap-typed-output _ _) => bootstrap-typing-failed
+          |(bootstrap-environment-output domain-environment) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work (bootstrap-variable-term target-binder) (bootstrap-variable-term binder) target-body (bootstrap-term-accessibility-instance target-body))) of BootstrapTypingOutput
+            |bootstrap-substitution-failed => bootstrap-typing-failed
+            |(bootstrap-substitution-term-output renamed-target-body) => (bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new body renamed-target-body domain-environment body-access))
+            |(bootstrap-substitution-term-list-output _) => bootstrap-typing-failed
+            |(bootstrap-substitution-clause-list-output _) => bootstrap-typing-failed
+          ]
+        ]
+        |(bootstrap-variable-term _) => bootstrap-typing-failed
+        |(bootstrap-lambda-term _ _) => bootstrap-typing-failed
+        |(bootstrap-application-term _ _) => bootstrap-typing-failed
+        |(bootstrap-constructors-term _ _) => bootstrap-typing-failed
+        |(bootstrap-match-term _ _ _) => bootstrap-typing-failed
+        |(bootstrap-notation-term _ _) => bootstrap-typing-failed
+      ]
+      |(bootstrap-term-access-lambda _ _ _) => bootstrap-typing-failed
+      |(bootstrap-term-access-match _ _ _ _ _ _) => bootstrap-typing-failed
+    ]
+  ].
+
+Static bootstrap-pattern-finish-work : *.
+Static bootstrap-pattern-finish-work-new : ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> bootstrap-pattern-finish-work.
+
+BootstrapPatternFinishWork
+  {bootstrap-pattern-finish-work :: |bootstrap-pattern-finish-work-new}.
+
+bootstrap-pattern-finish-recur
+  |work :: ~ BootstrapPatternFinishWork ~> BootstrapTypingOutput => [work of BootstrapTypingOutput
+    |(bootstrap-pattern-finish-work-new subject inferred expected environment) => [(bootstrap-normalize-erased-recur (bootstrap-normalize-erased-work-new inferred environment)) of BootstrapTypingOutput
+      |bootstrap-no-term => bootstrap-typing-failed
+      |(bootstrap-some-term normalized-inferred) => [(bootstrap-normalize-erased-recur (bootstrap-normalize-erased-work-new expected environment)) of BootstrapTypingOutput
+        |bootstrap-no-term => bootstrap-typing-failed
+        |(bootstrap-some-term normalized-expected) => [normalized-expected of BootstrapTypingOutput
+          |(bootstrap-constructors-term family allowed) => [environment of BootstrapTypingOutput
+            |(bootstrap-environment-new _ _ _ bindings _) => [(bootstrap-constructor-membership-recur (bootstrap-constructor-membership-work-new subject allowed bindings (bootstrap-term-list-accessibility-instance allowed))) of BootstrapTypingOutput
+              |false => bootstrap-typing-failed
+              |true => [(bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new normalized-inferred family environment (bootstrap-term-accessibility-instance normalized-inferred))) of BootstrapTypingOutput
+                |bootstrap-typing-failed => bootstrap-typing-failed
+                |(bootstrap-typed-output _ _) => bootstrap-typing-failed
+                |(bootstrap-environment-output unified-environment) => (bootstrap-typed-output expected unified-environment)
+              ]
+            ]
+          ]
+          |(bootstrap-variable-term _) => [(bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new normalized-inferred normalized-expected environment (bootstrap-term-accessibility-instance normalized-inferred))) of BootstrapTypingOutput
+            |bootstrap-typing-failed => bootstrap-typing-failed
+            |(bootstrap-typed-output _ _) => bootstrap-typing-failed
+            |(bootstrap-environment-output unified-environment) => (bootstrap-typed-output expected unified-environment)
+          ]
+          |(bootstrap-pi-term _ _ _) => [(bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new normalized-inferred normalized-expected environment (bootstrap-term-accessibility-instance normalized-inferred))) of BootstrapTypingOutput
+            |bootstrap-typing-failed => bootstrap-typing-failed
+            |(bootstrap-typed-output _ _) => bootstrap-typing-failed
+            |(bootstrap-environment-output unified-environment) => (bootstrap-typed-output expected unified-environment)
+          ]
+          |(bootstrap-lambda-term _ _) => bootstrap-typing-failed
+          |(bootstrap-application-term _ _) => [(bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new normalized-inferred normalized-expected environment (bootstrap-term-accessibility-instance normalized-inferred))) of BootstrapTypingOutput
+            |bootstrap-typing-failed => bootstrap-typing-failed
+            |(bootstrap-typed-output _ _) => bootstrap-typing-failed
+            |(bootstrap-environment-output unified-environment) => (bootstrap-typed-output expected unified-environment)
+          ]
+          |(bootstrap-match-term _ _ _) => bootstrap-typing-failed
+          |(bootstrap-notation-term _ _) => bootstrap-typing-failed
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-pattern-unification-proof-environment
+  (bootstrap-empty-environment (empty BootstrapBinding) (empty BootstrapNormalizationCertificate)).
+
+bootstrap-pattern-unification-proof-pattern
+  (bootstrap-application-term (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "45")) (bootstrap-variable-term (bootstrap-bound-var 0))) (bootstrap-variable-term (bootstrap-bound-var 0))).
+
+bootstrap-pattern-unification-proof-target
+  (bootstrap-application-term (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "45")) (bootstrap-variable-term (bootstrap-bound-var 1))) (bootstrap-variable-term (bootstrap-bound-var 2))).
+
+bootstrap-pattern-unification-proof
+  ((bootstrap-pattern-type-unify-recur (bootstrap-pattern-type-unification-work-new bootstrap-pattern-unification-proof-pattern bootstrap-pattern-unification-proof-target bootstrap-pattern-unification-proof-environment (bootstrap-term-accessibility-instance bootstrap-pattern-unification-proof-pattern))) :: {bootstrap-typing-output :: |bootstrap-environment-output}).

@@ -1,0 +1,198 @@
+import boostrap/type_lookup.
+
+Static bootstrap-maybe-string : *.
+Static bootstrap-no-string : bootstrap-maybe-string.
+Static bootstrap-some-string : ~ String ~> bootstrap-maybe-string.
+
+BootstrapMaybeString
+  {bootstrap-maybe-string :: |bootstrap-no-string |bootstrap-some-string}.
+
+Static bootstrap-root-name-work : *.
+Static bootstrap-root-name-work-new : (term : BootstrapTerm) ~> ~ (BootstrapTermAccessibility term) ~> bootstrap-root-name-work.
+
+BootstrapRootNameWork
+  {bootstrap-root-name-work :: |bootstrap-root-name-work-new}.
+
+bootstrap-root-name-recur
+  |work :: ~ BootstrapRootNameWork ~> BootstrapMaybeString => [work of BootstrapMaybeString
+    |(bootstrap-root-name-work-new term accessibility) => [accessibility of BootstrapMaybeString
+      |(bootstrap-term-access-variable variable) => [variable of BootstrapMaybeString
+        |(bootstrap-bound-var _) => bootstrap-no-string
+        |(bootstrap-bound-name-var _) => bootstrap-no-string
+        |(bootstrap-reference-var name) => (bootstrap-some-string name)
+      ]
+      |(bootstrap-term-access-application function _ function-access _) => (bootstrap-root-name-recur (bootstrap-root-name-work-new function function-access))
+      |(bootstrap-term-access-constructors type _ type-access _) => (bootstrap-root-name-recur (bootstrap-root-name-work-new type type-access))
+      |(bootstrap-term-access-notation body _ body-access _) => (bootstrap-root-name-recur (bootstrap-root-name-work-new body body-access))
+      |(bootstrap-term-access-pi _ _ _ _ _) => bootstrap-no-string
+      |(bootstrap-term-access-lambda _ _ _) => bootstrap-no-string
+      |(bootstrap-term-access-match _ _ _ _ _ _) => bootstrap-no-string
+    ]
+  ].
+
+Static bootstrap-codomain-root-work : *.
+Static bootstrap-codomain-root-work-new : (term : BootstrapTerm) ~> ~ (BootstrapTermAccessibility term) ~> bootstrap-codomain-root-work.
+
+BootstrapCodomainRootWork
+  {bootstrap-codomain-root-work :: |bootstrap-codomain-root-work-new}.
+
+bootstrap-codomain-root-recur
+  |work :: ~ BootstrapCodomainRootWork ~> BootstrapMaybeString => [work of BootstrapMaybeString
+    |(bootstrap-codomain-root-work-new term accessibility) => [accessibility of BootstrapMaybeString
+      |(bootstrap-term-access-pi _ _ body _ body-access) => (bootstrap-codomain-root-recur (bootstrap-codomain-root-work-new body body-access))
+      |(bootstrap-term-access-notation body _ body-access _) => (bootstrap-codomain-root-recur (bootstrap-codomain-root-work-new body body-access))
+      |(bootstrap-term-access-variable variable) => (bootstrap-root-name-recur (bootstrap-root-name-work-new (bootstrap-variable-term variable) (bootstrap-term-access-variable variable)))
+      |(bootstrap-term-access-lambda binder body body-access) => bootstrap-no-string
+      |(bootstrap-term-access-application function argument function-access argument-access) => (bootstrap-root-name-recur (bootstrap-root-name-work-new (bootstrap-application-term function argument) (bootstrap-term-access-application function argument function-access argument-access)))
+      |(bootstrap-term-access-constructors type constructors type-access constructors-access) => (bootstrap-root-name-recur (bootstrap-root-name-work-new (bootstrap-constructors-term type constructors) (bootstrap-term-access-constructors type constructors type-access constructors-access)))
+      |(bootstrap-term-access-match scrutinee type clauses scrutinee-access type-access clauses-access) => bootstrap-no-string
+    ]
+  ].
+
+bootstrap-maybe-string-equal
+  |left right :: ~ BootstrapMaybeString ~> ~ BootstrapMaybeString ~> Bool => [left of Bool
+    |bootstrap-no-string => false
+    |(bootstrap-some-string left-name) => [right of Bool
+      |bootstrap-no-string => false
+      |(bootstrap-some-string right-name) => (bootstrap-name-equal left-name right-name)
+    ]
+  ].
+
+bootstrap-same-constructor-family
+  |constructor-type family-type :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> Bool =>
+    (bootstrap-maybe-string-equal (bootstrap-codomain-root-recur (bootstrap-codomain-root-work-new constructor-type (bootstrap-term-accessibility-instance constructor-type))) (bootstrap-root-name-recur (bootstrap-root-name-work-new family-type (bootstrap-term-accessibility-instance family-type)))).
+
+Static bootstrap-normalize-erased-work : *.
+Static bootstrap-normalize-erased-work-new : ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> bootstrap-normalize-erased-work.
+
+BootstrapNormalizeErasedWork
+  {bootstrap-normalize-erased-work :: |bootstrap-normalize-erased-work-new}.
+
+bootstrap-normalize-erased-recur
+  |work :: ~ BootstrapNormalizeErasedWork ~> BootstrapMaybeTerm => [work of BootstrapMaybeTerm
+    |(bootstrap-normalize-erased-work-new term environment) => [environment of BootstrapMaybeTerm
+      |(bootstrap-environment-new _ _ _ bindings certificates) => [(bootstrap-normalize-certified-recur (bootstrap-certified-normalization-work-new term bindings certificates)) of BootstrapMaybeTerm
+        |bootstrap-no-term => bootstrap-no-term
+        |(bootstrap-some-term normalized) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work normalized (bootstrap-term-accessibility-instance normalized))) of BootstrapMaybeTerm
+          |bootstrap-erasure-failed => bootstrap-no-term
+          |(bootstrap-erasure-term-output erased) => (bootstrap-some-term erased)
+          |(bootstrap-erasure-term-list-output _) => bootstrap-no-term
+          |(bootstrap-erasure-clause-list-output _) => bootstrap-no-term
+        ]
+      ]
+    ]
+  ].
+
+Static bootstrap-finish-typing-work : *.
+Static bootstrap-finish-typing-work-new : ~ BootstrapTerm ~> ~ BootstrapTypingMode ~> ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> bootstrap-finish-typing-work.
+
+BootstrapFinishTypingWork
+  {bootstrap-finish-typing-work :: |bootstrap-finish-typing-work-new}.
+
+bootstrap-finish-typing-recur
+  |work :: ~ BootstrapFinishTypingWork ~> BootstrapTypingOutput => [work of BootstrapTypingOutput
+    |(bootstrap-finish-typing-work-new subject mode inferred environment) => [mode of BootstrapTypingOutput
+      |bootstrap-infer-mode => (bootstrap-typed-output inferred environment)
+      |bootstrap-pattern-infer-mode => (bootstrap-typed-output inferred environment)
+      |(bootstrap-check-mode expected) => (bootstrap-finish-check-recur (bootstrap-finish-check-work-new subject inferred expected environment))
+      |(bootstrap-pattern-check-mode expected) => (bootstrap-finish-check-recur (bootstrap-finish-check-work-new subject inferred expected environment))
+    ]
+  ].
+
+Static bootstrap-finish-check-work : *.
+Static bootstrap-finish-check-work-new : ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> bootstrap-finish-check-work.
+
+BootstrapFinishCheckWork
+  {bootstrap-finish-check-work :: |bootstrap-finish-check-work-new}.
+
+bootstrap-finish-check-recur
+  |work :: ~ BootstrapFinishCheckWork ~> BootstrapTypingOutput => [work of BootstrapTypingOutput
+    |(bootstrap-finish-check-work-new subject inferred expected environment) => [environment of BootstrapTypingOutput
+      |(bootstrap-environment-new _ unifier _ _ _) => [(bootstrap-unifier-apply-recur (bootstrap-unifier-apply-work-new inferred unifier (bootstrap-typing-list-accessibility-instance unifier))) of BootstrapTypingOutput
+        |bootstrap-no-term => bootstrap-typing-failed
+        |(bootstrap-some-term resolved-inferred) => [(bootstrap-unifier-apply-recur (bootstrap-unifier-apply-work-new expected unifier (bootstrap-typing-list-accessibility-instance unifier))) of BootstrapTypingOutput
+          |bootstrap-no-term => bootstrap-typing-failed
+          |(bootstrap-some-term resolved-expected) => (bootstrap-finish-resolved-check-recur (bootstrap-finish-resolved-check-work-new subject resolved-inferred resolved-expected expected environment))
+        ]
+      ]
+    ]
+  ].
+
+Static bootstrap-finish-resolved-check-work : *.
+Static bootstrap-finish-resolved-check-work-new : ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> bootstrap-finish-resolved-check-work.
+
+BootstrapFinishResolvedCheckWork
+  {bootstrap-finish-resolved-check-work :: |bootstrap-finish-resolved-check-work-new}.
+
+bootstrap-finish-resolved-check-recur
+  |work :: ~ BootstrapFinishResolvedCheckWork ~> BootstrapTypingOutput => [work of BootstrapTypingOutput
+    |(bootstrap-finish-resolved-check-work-new subject inferred expected reported-expected environment) => [environment of BootstrapTypingOutput
+      |(bootstrap-environment-new _ _ _ bindings certificates) => [(bootstrap-normalize-erased-recur (bootstrap-normalize-erased-work-new expected environment)) of BootstrapTypingOutput
+        |bootstrap-no-term => bootstrap-typing-failed
+        |(bootstrap-some-term normalized-expected) => [normalized-expected of BootstrapTypingOutput
+          |(bootstrap-constructors-term family allowed) => [(bootstrap-get-root-binding-recur (bootstrap-root-binding-work-new subject true bindings (bootstrap-term-accessibility-instance subject))) of BootstrapTypingOutput
+            |bootstrap-no-binding => [(bootstrap-conversion-recur (bootstrap-conversion-work-new inferred expected bindings certificates)) of BootstrapTypingOutput
+              |true => (bootstrap-typed-output reported-expected environment)
+              |false => bootstrap-typing-failed
+            ]
+            |(bootstrap-some-binding _) => [(bootstrap-constructor-membership-recur (bootstrap-constructor-membership-work-new subject allowed bindings (bootstrap-term-list-accessibility-instance allowed))) of BootstrapTypingOutput
+              |false => bootstrap-typing-failed
+              |true => [(bootstrap-conversion-recur (bootstrap-conversion-work-new inferred family bindings certificates)) of BootstrapTypingOutput
+                |true => (bootstrap-typed-output reported-expected environment)
+                |false => bootstrap-typing-failed
+              ]
+            ]
+          ]
+          |(bootstrap-variable-term _) => [(bootstrap-conversion-recur (bootstrap-conversion-work-new inferred expected bindings certificates)) of BootstrapTypingOutput
+            |true => (bootstrap-typed-output reported-expected environment)
+            |false => bootstrap-typing-failed
+          ]
+          |(bootstrap-pi-term _ _ _) => [(bootstrap-conversion-recur (bootstrap-conversion-work-new inferred expected bindings certificates)) of BootstrapTypingOutput
+            |true => (bootstrap-typed-output reported-expected environment)
+            |false => bootstrap-typing-failed
+          ]
+          |(bootstrap-lambda-term _ _) => [(bootstrap-conversion-recur (bootstrap-conversion-work-new inferred expected bindings certificates)) of BootstrapTypingOutput
+            |true => (bootstrap-typed-output reported-expected environment)
+            |false => bootstrap-typing-failed
+          ]
+          |(bootstrap-application-term _ _) => [(bootstrap-conversion-recur (bootstrap-conversion-work-new inferred expected bindings certificates)) of BootstrapTypingOutput
+            |true => (bootstrap-typed-output reported-expected environment)
+            |false => bootstrap-typing-failed
+          ]
+          |(bootstrap-match-term _ _ _) => [(bootstrap-conversion-recur (bootstrap-conversion-work-new inferred expected bindings certificates)) of BootstrapTypingOutput
+            |true => (bootstrap-typed-output reported-expected environment)
+            |false => bootstrap-typing-failed
+          ]
+          |(bootstrap-notation-term _ _) => [(bootstrap-conversion-recur (bootstrap-conversion-work-new inferred expected bindings certificates)) of BootstrapTypingOutput
+            |true => (bootstrap-typed-output reported-expected environment)
+            |false => bootstrap-typing-failed
+          ]
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-same-family-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-same-constructor-family (bootstrap-pi-term (bootstrap-bound-var 0) bootstrap-set-term (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "46")) (bootstrap-variable-term (bootstrap-bound-var 0)))) (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "46")) bootstrap-set-term)) true)).
+
+bootstrap-different-family-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-same-constructor-family (bootstrap-variable-term (bootstrap-reference-var "46")) (bootstrap-variable-term (bootstrap-reference-var "47"))) false)).
+
+bootstrap-dependent-conversion-proof-x
+  (bootstrap-variable-term (bootstrap-bound-var 1)).
+
+bootstrap-dependent-conversion-proof-y
+  (bootstrap-variable-term (bootstrap-bound-var 2)).
+
+bootstrap-dependent-conversion-proof-environment
+  (bootstrap-environment-new (empty BootstrapTyping) (new BootstrapTyping (bootstrap-typing-new bootstrap-dependent-conversion-proof-x bootstrap-dependent-conversion-proof-y) (empty BootstrapTyping)) (empty BootstrapTyping) (empty BootstrapBinding) (empty BootstrapNormalizationCertificate)).
+
+bootstrap-typing-output-succeeded
+  |output :: ~ BootstrapTypingOutput ~> Bool => [output of Bool
+    |bootstrap-typing-failed => false
+    |(bootstrap-typed-output _ _) => true
+    |(bootstrap-environment-output _) => true
+  ].
+
+bootstrap-dependent-conversion-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-typing-output-succeeded (bootstrap-finish-check-recur (bootstrap-finish-check-work-new (bootstrap-variable-term (bootstrap-bound-var 3)) (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "50")) bootstrap-dependent-conversion-proof-x) (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "50")) bootstrap-dependent-conversion-proof-y) bootstrap-dependent-conversion-proof-environment))) true)).

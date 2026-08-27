@@ -42,3 +42,25 @@ executable Kei2
       bimap
     hs-source-dirs:   app
     default-language: Haskell2010
+
+executable KeiBootstrap
+    main-is:          BootstrapMain.hs
+
+    other-modules:
+      Effectful
+      Parser
+      Term
+      Util
+
+    build-depends:
+      base >=4.14 && <5,
+      parsec,
+      containers,
+      random,
+      bimap
+
+    hs-source-dirs:
+      boostrap
+      app
+
+    default-language: Haskell2010

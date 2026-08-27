@@ -1,0 +1,62 @@
+import boostrap/constructor_membership.
+
+Static bootstrap-typing-mode : *.
+Static bootstrap-infer-mode : bootstrap-typing-mode.
+Static bootstrap-check-mode : ~ BootstrapTerm ~> bootstrap-typing-mode.
+Static bootstrap-pattern-infer-mode : bootstrap-typing-mode.
+Static bootstrap-pattern-check-mode : ~ BootstrapTerm ~> bootstrap-typing-mode.
+
+BootstrapTypingMode
+  {bootstrap-typing-mode :: |bootstrap-infer-mode |bootstrap-check-mode |bootstrap-pattern-infer-mode |bootstrap-pattern-check-mode}.
+
+Static bootstrap-environment : *.
+Static bootstrap-environment-new :
+  ~ (List BootstrapTyping) ~>
+  ~ (List BootstrapTyping) ~>
+  ~ (List BootstrapTyping) ~>
+  ~ (List BootstrapBinding) ~>
+  ~ (List BootstrapNormalizationCertificate) ~>
+  bootstrap-environment.
+
+BootstrapEnvironment
+  {bootstrap-environment :: |bootstrap-environment-new}.
+
+Static bootstrap-typing-output : *.
+Static bootstrap-typing-failed : bootstrap-typing-output.
+Static bootstrap-typed-output : ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> bootstrap-typing-output.
+Static bootstrap-environment-output : ~ BootstrapEnvironment ~> bootstrap-typing-output.
+
+BootstrapTypingOutput
+  {bootstrap-typing-output :: |bootstrap-typing-failed |bootstrap-typed-output |bootstrap-environment-output}.
+
+bootstrap-empty-environment
+  |bindings certificates :: ~ (List BootstrapBinding) ~> ~ (List BootstrapNormalizationCertificate) ~> BootstrapEnvironment =>
+    (bootstrap-environment-new (empty BootstrapTyping) (empty BootstrapTyping) (empty BootstrapTyping) bindings certificates).
+
+bootstrap-environment-with-local
+  |environment local :: ~ BootstrapEnvironment ~> ~ (List BootstrapTyping) ~> BootstrapEnvironment => [environment of BootstrapEnvironment
+    |(bootstrap-environment-new _ unifier globals bindings certificates) => (bootstrap-environment-new local unifier globals bindings certificates)
+  ].
+
+bootstrap-environment-add-local
+  |environment key value :: ~ BootstrapEnvironment ~> ~ BootstrapTerm ~> ~ BootstrapTerm ~> BootstrapEnvironment => [environment of BootstrapEnvironment
+    |(bootstrap-environment-new local unifier globals bindings certificates) => (bootstrap-environment-new (new BootstrapTyping (bootstrap-typing-new key value) local) unifier globals bindings certificates)
+  ].
+
+bootstrap-environment-add-global
+  |environment key value :: ~ BootstrapEnvironment ~> ~ BootstrapTerm ~> ~ BootstrapTerm ~> BootstrapEnvironment => [environment of BootstrapEnvironment
+    |(bootstrap-environment-new local unifier globals bindings certificates) => (bootstrap-environment-new local unifier (new BootstrapTyping (bootstrap-typing-new key value) globals) bindings certificates)
+  ].
+
+bootstrap-environment-with-unifier
+  |environment unifier :: ~ BootstrapEnvironment ~> ~ (List BootstrapTyping) ~> BootstrapEnvironment => [environment of BootstrapEnvironment
+    |(bootstrap-environment-new local _ globals bindings certificates) => (bootstrap-environment-new local unifier globals bindings certificates)
+  ].
+
+bootstrap-mode-is-pattern
+  |mode :: ~ BootstrapTypingMode ~> Bool => [mode of Bool
+    |bootstrap-infer-mode => false
+    |(bootstrap-check-mode _) => false
+    |bootstrap-pattern-infer-mode => true
+    |(bootstrap-pattern-check-mode _) => true
+  ].

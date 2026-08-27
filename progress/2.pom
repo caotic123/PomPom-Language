@@ -1,0 +1,451 @@
+// GOAL PROGRAM: FIRST-CLASS SIGNATURE SUBTYPING ALGEBRA.
+//
+// The point of this file: union and disjoint union of signatures become
+// ordinary programs and theorems, by deciding constructors first, then
+// constructor lists, and finally signatures.
+//
+// Future-native constructs assumed (progress/type-rules.md):
+//
+//   UId with 'name literals                                  EID Fig. 2
+//   EnumU : *   with   nilE, consE                           EID Fig. 2
+//   EnumT : ~ EnumU ~> *   with
+//     0e  : (t : UId) (E : EnumU) ~> (EnumT (consE t E))
+//     1+e : (t : UId) (E : EnumU) ~> ~ (EnumT E) ~> (EnumT (consE t E))
+//     (written 0 / 1+ in the papers; suffixed here to avoid Nat's 0)
+//   IDesc : ~ * ~> Type   with codes 'var '1 '× 'Π 'Σ 'σ, and switch
+//   Sig Ix E := (~ (EnumT E) ~> (IDesc Ix)) × (List (Label E))
+//     formed by pairing {T :: Φ}, projections branches / labels
+//   µ and coercion-free ⊑                                    type-rules §7
+//
+// Everything below is ordinary PomPom over those constructs plus libs/.
+// A code S : (Sig Ix E) is not a type of runtime data; runtime inhabitants
+// appear only under µ, and widening/forgetting re-type the same term.
+
+import libs/logic.
+import libs/equality.
+import libs/list.
+
+
+// ---------------------------------------------------------------------------
+// 1. Decidability scaffold
+// ---------------------------------------------------------------------------
+
+Static dec : ~ * ~> *.
+Static yes : (P : *) ~ P ~> (dec P).
+Static no  : (P : *) ~ (Falsity P) ~> (dec P).
+
+Dec
+  |P :: ~ * ~> * => {(dec P) :: |yes |no}.
+
+// Extract the proof from a decision that computes to `yes`.  On a closed
+// decision the motive reduces to P, so `(from-dec P d)` is the proof itself;
+// this replaces any special proof-by-decision syntax.
+FromDec
+  |P d :: (P : *) ~> ~ (Dec P) ~> * =>
+  [d of *
+    |(yes _ _) => P
+    |(no _ _) => Unit
+  ].
+
+from-dec
+  |P d :: (P : *) (d : (Dec P)) ~> (FromDec P d) =>
+  [d of (FromDec P d)
+    |(yes _ prf) => prf
+    |(no _ _) => I
+  ].
+
+
+// ---------------------------------------------------------------------------
+// 2. Constructors are ambient positions, with decidable equality
+// ---------------------------------------------------------------------------
+
+// In the core a constructor is its position in the ambient enumeration; the
+// type is indexed by that enum, so a foreign-family constructor is
+// unrepresentable.  The printable name belongs to elaboration: a closed
+// literal such as 'new resolves through At/NoDupEnum to its position
+// (type-rules §3, §9).  The subtyping paper needs no more: "we only need to
+// decide constructor equality".
+Label
+  |E :: ~ EnumU ~> * => (EnumT E).
+
+// Decidable constructor equality, by structural induction on positions —
+// the same shape as decidable equality for Nat.
+decide-label
+  |E a b :: (E : EnumU) (a : (Label E)) (b : (Label E)) ~> (Dec (Eq (Label E) a b)) =>
+  [a of (Dec (Eq (Label E) a b))
+    |(0e t E') =>
+      [b of (Dec (Eq (Label (consE t E')) (0e t E') b))
+        |(0e _ _) => (yes (Eq (Label (consE t E')) (0e t E') (0e t E'))
+                          (refl (Label (consE t E')) (0e t E')))
+        |(1+e _ _ m) =>
+          def is-zero = |p :: ~ (Label (consE t E')) ~> * => [p of *
+            |(0e _ _) => Unit
+            |(1+e _ _ _) => False
+          ];
+          (no (Eq (Label (consE t E')) (0e t E') (1+e t E' m))
+              (|q :: ~ (Eq (Label (consE t E')) (0e t E') (1+e t E' m)) ~> False =>
+                 (eq_rect (Label (consE t E')) (0e t E') (1+e t E' m) is-zero q I)))
+      ]
+    |(1+e t E' n) =>
+      [b of (Dec (Eq (Label (consE t E')) (1+e t E' n) b))
+        |(0e _ _) =>
+          def is-succ = |p :: ~ (Label (consE t E')) ~> * => [p of *
+            |(0e _ _) => False
+            |(1+e _ _ _) => Unit
+          ];
+          (no (Eq (Label (consE t E')) (1+e t E' n) (0e t E'))
+              (|q :: ~ (Eq (Label (consE t E')) (1+e t E' n) (0e t E')) ~> False =>
+                 (eq_rect (Label (consE t E')) (1+e t E' n) (0e t E') is-succ q I)))
+        |(1+e _ _ m) =>
+          [(decide-label E' n m) of (Dec (Eq (Label (consE t E')) (1+e t E' n) (1+e t E' m)))
+            |(yes _ p) =>
+              (yes (Eq (Label (consE t E')) (1+e t E' n) (1+e t E' m))
+                   (cong (Label E') n m (Label (consE t E'))
+                         (|k :: ~ (Label E') ~> (Label (consE t E')) => (1+e t E' k)) p))
+            |(no _ f) =>
+              def pred = |p :: ~ (Label (consE t E')) ~> (Label E') => [p of (Label E')
+                |(0e _ _) => n
+                |(1+e _ _ k) => k
+              ];
+              (no (Eq (Label (consE t E')) (1+e t E' n) (1+e t E' m))
+                  (|q :: ~ (Eq (Label (consE t E')) (1+e t E' n) (1+e t E' m)) ~> False =>
+                     (f (cong (Label (consE t E')) (1+e t E' n) (1+e t E' m)
+                              (Label E') pred q))))
+          ]
+      ]
+  ].
+
+
+// ---------------------------------------------------------------------------
+// 3. Deciding constructor lists: membership, subset, disjointness
+// ---------------------------------------------------------------------------
+
+Member
+  |E c cs :: (E : EnumU) (c : (Label E)) (cs : (List (Label E))) ~> * =>
+  [cs of *
+    |(empty _) => False
+    |(new _ head tail) => (Or (Eq (Label E) c head) (Member E c tail))
+  ].
+
+Subset
+  |E small large :: (E : EnumU) (small : (List (Label E))) (large : (List (Label E))) ~> * =>
+    (c : (Label E)) ~> ~ (Member E c small) ~> (Member E c large).
+
+Disjoint
+  |E left right :: (E : EnumU) (left : (List (Label E))) (right : (List (Label E))) ~> * =>
+    (c : (Label E)) ~> ~ (Member E c left) ~> ~ (Member E c right) ~> False.
+
+decide-member
+  |E c cs :: (E : EnumU) (c : (Label E)) (cs : (List (Label E))) ~> (Dec (Member E c cs)) =>
+  [cs of (Dec (Member E c cs))
+    |(empty _) => (no False (|m :: ~ False ~> False => m))
+    |(new _ head tail) =>
+      [(decide-label E c head) of (Dec (Member E c (new (Label E) head tail)))
+        |(yes _ p) =>
+          (yes (Member E c (new (Label E) head tail))
+               (or_right (Eq (Label E) c head) (Member E c tail) p))
+        |(no _ f) =>
+          [(decide-member E c tail) of (Dec (Member E c (new (Label E) head tail)))
+            |(yes _ mt) =>
+              (yes (Member E c (new (Label E) head tail))
+                   (or_left (Eq (Label E) c head) (Member E c tail) mt))
+            |(no _ g) =>
+              (no (Member E c (new (Label E) head tail))
+                  (|m :: ~ (Member E c (new (Label E) head tail)) ~> False =>
+                     [m of False
+                       |(or_right _ _ p) => (f p)
+                       |(or_left _ _ mt) => (g mt)
+                     ]))
+          ]
+      ]
+  ].
+
+decide-subset
+  |E small large :: (E : EnumU) (small : (List (Label E))) (large : (List (Label E)))
+                    ~> (Dec (Subset E small large)) =>
+  [small of (Dec (Subset E small large))
+    |(empty _) =>
+      (yes (Subset E (empty (Label E)) large)
+           (|c m :: (c : (Label E)) ~ False ~> (Member E c large) =>
+              (⊥ (Member E c large) m)))
+    |(new _ head tail) =>
+      [(decide-member E head large) of (Dec (Subset E (new (Label E) head tail) large))
+        |(no _ f) =>
+          (no (Subset E (new (Label E) head tail) large)
+              (|sub :: ~ (Subset E (new (Label E) head tail) large) ~> False =>
+                 (f (sub head (or_right (Eq (Label E) head head) (Member E head tail)
+                                        (refl (Label E) head))))))
+        |(yes _ mh) =>
+          [(decide-subset E tail large) of (Dec (Subset E (new (Label E) head tail) large))
+            |(yes _ st) =>
+              (yes (Subset E (new (Label E) head tail) large)
+                   (|c m :: (c : (Label E)) ~ (Member E c (new (Label E) head tail)) ~>
+                            (Member E c large) =>
+                      [m of (Member E c large)
+                        |(or_right _ _ p) =>
+                          (rewrite (Label E) (|x :: ~ (Label E) ~> * => (Member E x large))
+                                   head c (symmetry (Label E) c head p) mh)
+                        |(or_left _ _ mt) => (st c mt)
+                      ]))
+            |(no _ g) =>
+              (no (Subset E (new (Label E) head tail) large)
+                  (|sub :: ~ (Subset E (new (Label E) head tail) large) ~> False =>
+                     (g (|c m :: (c : (Label E)) ~ (Member E c tail) ~> (Member E c large) =>
+                           (sub c (or_left (Eq (Label E) c head) (Member E c tail) m))))))
+          ]
+      ]
+  ].
+
+decide-disjoint
+  |E left right :: (E : EnumU) (left : (List (Label E))) (right : (List (Label E)))
+                   ~> (Dec (Disjoint E left right)) =>
+  [left of (Dec (Disjoint E left right))
+    |(empty _) =>
+      (yes (Disjoint E (empty (Label E)) right)
+           (|c m m' :: (c : (Label E)) ~ False ~> ~ (Member E c right) ~> False => m))
+    |(new _ head tail) =>
+      [(decide-member E head right) of (Dec (Disjoint E (new (Label E) head tail) right))
+        |(yes _ mh) =>
+          (no (Disjoint E (new (Label E) head tail) right)
+              (|d :: ~ (Disjoint E (new (Label E) head tail) right) ~> False =>
+                 (d head (or_right (Eq (Label E) head head) (Member E head tail)
+                                   (refl (Label E) head)) mh)))
+        |(no _ f) =>
+          [(decide-disjoint E tail right) of (Dec (Disjoint E (new (Label E) head tail) right))
+            |(yes _ dt) =>
+              (yes (Disjoint E (new (Label E) head tail) right)
+                   (|c m m' :: (c : (Label E)) ~ (Member E c (new (Label E) head tail)) ~>
+                               ~ (Member E c right) ~> False =>
+                      [m of False
+                        |(or_right _ _ p) =>
+                          (f (rewrite (Label E) (|x :: ~ (Label E) ~> * => (Member E x right))
+                                      c head p m'))
+                        |(or_left _ _ mt) => (dt c mt m')
+                      ]))
+            |(no _ g) =>
+              (no (Disjoint E (new (Label E) head tail) right)
+                  (|d :: ~ (Disjoint E (new (Label E) head tail) right) ~> False =>
+                     (g (|c m m' :: (c : (Label E)) ~ (Member E c tail) ~>
+                                    ~ (Member E c right) ~> False =>
+                           (d c (or_left (Eq (Label E) c head) (Member E c tail) m) m')))))
+          ]
+      ]
+  ].
+
+
+// ---------------------------------------------------------------------------
+// 4. Union of constructor lists, with its inclusion proofs
+// ---------------------------------------------------------------------------
+
+concat
+  |E left right :: (E : EnumU) (left : (List (Label E))) (right : (List (Label E)))
+                   ~> (List (Label E)) =>
+  [left of (List (Label E))
+    |(empty _) => right
+    |(new _ head tail) => (new (Label E) head (concat E tail right))
+  ].
+
+subset-concat-left
+  |E left right c m :: (E : EnumU) (left : (List (Label E))) (right : (List (Label E)))
+                       ~> (Subset E left (concat E left right)) =>
+  [left of (Member E c (concat E left right))
+    |(empty _) => (⊥ (Member E c right) m)
+    |(new _ head tail) =>
+      [m of (Member E c (concat E (new (Label E) head tail) right))
+        |(or_right _ _ p) =>
+          (or_right (Eq (Label E) c head) (Member E c (concat E tail right)) p)
+        |(or_left _ _ mt) =>
+          (or_left (Eq (Label E) c head) (Member E c (concat E tail right))
+                   (subset-concat-left E tail right c mt))
+      ]
+  ].
+
+subset-concat-right
+  |E left right c m :: (E : EnumU) (left : (List (Label E))) (right : (List (Label E)))
+                       ~> (Subset E right (concat E left right)) =>
+  [left of (Member E c (concat E left right))
+    |(empty _) => m
+    |(new _ head tail) =>
+      (or_left (Eq (Label E) c head) (Member E c (concat E tail right))
+               (subset-concat-right E tail right c m))
+  ].
+
+// Concatenation may duplicate a constructor enabled on both sides.  That is
+// harmless: refinement consults a list only through Member, so duplicates
+// already have set semantics.  Canonical de-duplication is routine with
+// decide-member and is omitted here.
+
+
+// ---------------------------------------------------------------------------
+// 5. Finally, signatures: union, disjoin, and subtyping
+// ---------------------------------------------------------------------------
+
+// Signature inclusion is inclusion of enabled constructors.  It is the
+// INTERNAL statement of Sig-sub's side condition: the core rule checks the
+// evaluated label spines directly (type-rules §7) and never consumes this
+// type; here it lets the algebra be stated and proved as programs.
+// Branch-family agreement is not a proof either: both operands of the
+// µ-subtyping rule must project judgmentally equal `branches`.
+SigSubset
+  |Ix E S R :: (Ix : *) (E : EnumU) (S : (Sig Ix E)) (R : (Sig Ix E)) ~> * =>
+    (Subset E (labels S) (labels R)).
+
+UnionInto
+  |Ix E S R U :: (Ix : *) (E : EnumU) (S : (Sig Ix E)) (R : (Sig Ix E)) (U : (Sig Ix E)) ~> * =>
+    (AxB (SigSubset Ix E S U) (SigSubset Ix E R U)).
+
+// Surface sugar (not an object-language function type):
+//
+//   S =>sig R =>sig U   ≡   (UnionInto S R U)
+
+// Deciding lifts from lists to signatures by projection alone.
+decide-sig-subset
+  |Ix E S R :: (Ix : *) (E : EnumU) (S : (Sig Ix E)) (R : (Sig Ix E))
+               ~> (Dec (SigSubset Ix E S R)) =>
+    (decide-subset E (labels S) (labels R)).
+
+decide-sig-disjoint
+  |Ix E S R :: (Ix : *) (E : EnumU) (S : (Sig Ix E)) (R : (Sig Ix E))
+               ~> (Dec (Disjoint E (labels S) (labels R))) =>
+    (decide-disjoint E (labels S) (labels R)).
+
+// Union consumes and produces signatures.  It keeps the left branch family;
+// under Sig-sub both operands project the same one anyway.
+union-sig
+  |Ix E S R :: (Ix : *) (E : EnumU) (S : (Sig Ix E)) (R : (Sig Ix E)) ~> (Sig Ix E) =>
+    {(branches S) :: (concat E (labels S) (labels R))}.
+
+// The union theorem: both operands include into their union.  At the
+// signature level it is exactly the list-level lemmas, because `labels`
+// computes on the pair.
+union
+  |Ix E S R :: (Ix : *) (E : EnumU) (S : (Sig Ix E)) (R : (Sig Ix E))
+               ~> (UnionInto Ix E S R (union-sig Ix E S R)) =>
+    (MkPair (SigSubset Ix E S (union-sig Ix E S R))
+            (SigSubset Ix E R (union-sig Ix E S R))
+            (subset-concat-left E (labels S) (labels R))
+            (subset-concat-right E (labels S) (labels R))).
+
+// Disjoint union is union gated by a Disjoint proof; the proof is erased.
+disjoin-sig
+  |Ix E S R sep :: (Ix : *) (E : EnumU) (S : (Sig Ix E)) (R : (Sig Ix E))
+                   ~ (Disjoint E (labels S) (labels R)) ~> (Sig Ix E) =>
+    (union-sig Ix E S R).
+
+disjoin
+  |Ix E S R sep :: (Ix : *) (E : EnumU) (S : (Sig Ix E)) (R : (Sig Ix E))
+                   ~ (Disjoint E (labels S) (labels R)) ~>
+                   (UnionInto Ix E S R (disjoin-sig Ix E S R sep)) =>
+    (union Ix E S R).
+
+// A decidable caller matches (decide-sig-disjoint Ix E S R):
+//   yes separate  -> (disjoin-sig Ix E S R separate)
+//   no  overlap   -> reject, or search the shared constructor.
+
+
+// ---------------------------------------------------------------------------
+// 6. Closed List / NonEmpty instance — decisions compute
+// ---------------------------------------------------------------------------
+
+ListE
+  | :: EnumU => (consE 'empty (consE 'new nilE)).
+
+// The elaborated positions of the source literals 'empty and 'new.  The
+// restricted signature below inherits ambient position 1+0 for 'new; nothing
+// renumbers it to a singleton 0.
+empty-label
+  | :: (Label ListE) => (0e 'empty (consE 'new nilE)).
+
+new-label
+  | :: (Label ListE) => (1+e 'empty (consE 'new nilE) (0e 'new nilE)).
+
+empty-labels
+  | :: (List (Label ListE)) => (new (Label ListE) empty-label (empty (Label ListE))).
+
+nonempty-labels
+  | :: (List (Label ListE)) => (new (Label ListE) new-label (empty (Label ListE))).
+
+list-labels
+  | :: (List (Label ListE)) =>
+    (new (Label ListE) empty-label (new (Label ListE) new-label (empty (Label ListE)))).
+
+// One complete branch function over the ambient enumeration (surface switch
+// sugar as in progress/1.pom).
+list-branches
+  |A :: (A : *) ~> ~ (EnumT ListE) ~> (IDesc Unit) =>
+    switch ListE
+      { 'empty -> '1
+      , 'new   -> ('Σ A (|value :: ~ A ~> (IDesc Unit) => ('var I)))
+      }.
+
+// Signature codes are pairs; formation is pairing, nothing else.
+list-sig
+  |A :: (A : *) ~> (Sig Unit ListE) => {(list-branches A) :: list-labels}.
+
+empty-sig
+  |A :: (A : *) ~> (Sig Unit ListE) => {(list-branches A) :: empty-labels}.
+
+nonempty-sig
+  |A :: (A : *) ~> (Sig Unit ListE) => {(list-branches A) :: nonempty-labels}.
+
+// Closed decisions compute to `yes`, and from-dec extracts the proof.
+empty-new-disjoint
+  | :: (Disjoint ListE empty-labels nonempty-labels) =>
+    (from-dec (Disjoint ListE empty-labels nonempty-labels)
+              (decide-disjoint ListE empty-labels nonempty-labels)).
+
+nonempty-is-list
+  | :: (Subset ListE nonempty-labels list-labels) =>
+    (from-dec (Subset ListE nonempty-labels list-labels)
+              (decide-subset ListE nonempty-labels list-labels)).
+
+// Union and disjoint union of the two singleton signatures agree with the
+// full signature by computation.
+union-is-list-sig
+  |A :: (A : *) ~>
+        (Eq (Sig Unit ListE) (union-sig Unit ListE (empty-sig A) (nonempty-sig A)) (list-sig A)) =>
+    (refl (Sig Unit ListE) (list-sig A)).
+
+list-union
+  |A :: (A : *) ~> (UnionInto Unit ListE (empty-sig A) (nonempty-sig A) (list-sig A)) =>
+    (union Unit ListE (empty-sig A) (nonempty-sig A)).
+
+list-disjoin
+  |A :: (A : *) ~> (UnionInto Unit ListE (empty-sig A) (nonempty-sig A) (list-sig A)) =>
+    (disjoin Unit ListE (empty-sig A) (nonempty-sig A) empty-new-disjoint).
+
+// Runtime widening is subsumption.  Sig-sub's side condition is decided by
+// the checker on these closed spines (['new] ⊆ ['empty,'new]); branch
+// families agree judgmentally — both project (list-branches A) — and the
+// term is unchanged.  There is no coercion to write.  nonempty-is-list
+// above states the same inclusion internally, witnessing that the library
+// deciders agree with the core check on closed lists.
+ListValue
+  |A :: ~ * ~> * => (µ (list-sig A)).
+
+NonEmptyValue
+  |A :: ~ * ~> * => (µ (nonempty-sig A)).
+
+forget-nonempty
+  |A xs :: (A : *) ~> ~ (NonEmptyValue A) ~> (ListValue A) => xs.
+
+// union-sig and disjoin-sig combine signature codes.  They do not merge two
+// runtime values; a value-level choice takes (Or (µ S) (µ R)) and widens the
+// chosen value into (µ (union-sig S R)) by subsumption.
+
+
+// ---------------------------------------------------------------------------
+// 7. Acceptance boundary
+// ---------------------------------------------------------------------------
+
+// The new type system must accept this file natively: pairs {T :: Φ} as
+// signatures, positions as constructors, and the algebra above as ordinary
+// programs and proofs.  The core's own enabled-label conditions (Sig-in,
+// Sig-sub, Sig-case) are meta-level checks on evaluated label spines — the
+// paper's C ∈ Φ and Φ' ⊆ Φ — and consume nothing defined in this file; the
+// file is the internal mirror of those conditions, and on closed lists the
+// two must agree: every decision procedure here computes, and from-dec
+// extracts its proof.  Open lists remain neutral terms manipulated through
+// the same Member/Subset/Disjoint proofs at the algebra level; a stuck core
+// check rejects — the checker must not guess a host set for a neutral list.
+// Exact ASCII surface spellings remain to be finalized.

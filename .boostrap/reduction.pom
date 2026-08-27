@@ -1,0 +1,174 @@
+import boostrap/matching.
+
+Static bootstrap-reduction-work : *.
+Static bootstrap-reduction-work-new : (term : BootstrapTerm) ~ (List BootstrapBinding) ~> ~ (BootstrapTermAccessibility term) ~> bootstrap-reduction-work.
+
+BootstrapReductionWork
+  {bootstrap-reduction-work :: |bootstrap-reduction-work-new}.
+
+bootstrap-reduce-once-recur
+  |work :: ~ BootstrapReductionWork ~> BootstrapStep => [work of BootstrapStep
+    |(bootstrap-reduction-work-new term bindings accessibility) => [accessibility of BootstrapStep
+      |(bootstrap-term-access-variable variable) => [variable of BootstrapStep
+        |(bootstrap-bound-var _) => (bootstrap-normal-step (bootstrap-variable-term variable))
+        |(bootstrap-bound-name-var _) => (bootstrap-normal-step (bootstrap-variable-term variable))
+        |(bootstrap-reference-var name) => [(bootstrap-get-binding-recur (bootstrap-binding-lookup-work-new bindings name (bootstrap-binding-list-accessibility-instance bindings))) of BootstrapStep
+          |bootstrap-no-binding => (bootstrap-normal-step (bootstrap-variable-term variable))
+          |(bootstrap-some-binding binding) => [binding of BootstrapStep
+            |(bootstrap-binding-new _ sort body _) => [sort of BootstrapStep
+              |bootstrap-static-sort => (bootstrap-normal-step (bootstrap-variable-term variable))
+              |bootstrap-expression-sort => (bootstrap-reduced-step body)
+            ]
+          ]
+        ]
+      ]
+      |(bootstrap-term-access-pi binder domain body domain-access body-access) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new domain bindings domain-access)) of BootstrapStep
+        |bootstrap-failed-step => bootstrap-failed-step
+        |(bootstrap-reduced-step new-domain) => (bootstrap-reduced-step (bootstrap-pi-term binder new-domain body))
+        |(bootstrap-normal-step _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new body bindings body-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-body) => (bootstrap-reduced-step (bootstrap-pi-term binder domain new-body))
+          |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-pi-term binder domain body))
+        ]
+      ]
+      |(bootstrap-term-access-lambda binder body body-access) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new body bindings body-access)) of BootstrapStep
+        |bootstrap-failed-step => bootstrap-failed-step
+        |(bootstrap-reduced-step new-body) => (bootstrap-reduced-step (bootstrap-lambda-term binder new-body))
+        |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-lambda-term binder body))
+      ]
+      |(bootstrap-term-access-application function argument function-access argument-access) => [function of BootstrapStep
+        |(bootstrap-notation-term annotated-body _) => (bootstrap-reduced-step (bootstrap-application-term annotated-body argument))
+        |(bootstrap-lambda-term binder body) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work (bootstrap-variable-term binder) argument body (bootstrap-term-accessibility-instance body))) of BootstrapStep
+          |bootstrap-substitution-failed => bootstrap-failed-step
+          |(bootstrap-substitution-term-output result) => (bootstrap-reduced-step result)
+          |(bootstrap-substitution-term-list-output _) => bootstrap-failed-step
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-failed-step
+        ]
+        |(bootstrap-variable-term _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new function bindings function-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-function) => (bootstrap-reduced-step (bootstrap-application-term new-function argument))
+          |(bootstrap-normal-step _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new argument bindings argument-access)) of BootstrapStep
+            |bootstrap-failed-step => bootstrap-failed-step
+            |(bootstrap-reduced-step new-argument) => (bootstrap-reduced-step (bootstrap-application-term function new-argument))
+            |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-application-term function argument))
+          ]
+        ]
+        |(bootstrap-pi-term _ _ _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new function bindings function-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-function) => (bootstrap-reduced-step (bootstrap-application-term new-function argument))
+          |(bootstrap-normal-step _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new argument bindings argument-access)) of BootstrapStep
+            |bootstrap-failed-step => bootstrap-failed-step
+            |(bootstrap-reduced-step new-argument) => (bootstrap-reduced-step (bootstrap-application-term function new-argument))
+            |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-application-term function argument))
+          ]
+        ]
+        |(bootstrap-application-term _ _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new function bindings function-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-function) => (bootstrap-reduced-step (bootstrap-application-term new-function argument))
+          |(bootstrap-normal-step _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new argument bindings argument-access)) of BootstrapStep
+            |bootstrap-failed-step => bootstrap-failed-step
+            |(bootstrap-reduced-step new-argument) => (bootstrap-reduced-step (bootstrap-application-term function new-argument))
+            |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-application-term function argument))
+          ]
+        ]
+        |(bootstrap-constructors-term _ _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new function bindings function-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-function) => (bootstrap-reduced-step (bootstrap-application-term new-function argument))
+          |(bootstrap-normal-step _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new argument bindings argument-access)) of BootstrapStep
+            |bootstrap-failed-step => bootstrap-failed-step
+            |(bootstrap-reduced-step new-argument) => (bootstrap-reduced-step (bootstrap-application-term function new-argument))
+            |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-application-term function argument))
+          ]
+        ]
+        |(bootstrap-match-term _ _ _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new function bindings function-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-function) => (bootstrap-reduced-step (bootstrap-application-term new-function argument))
+          |(bootstrap-normal-step _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new argument bindings argument-access)) of BootstrapStep
+            |bootstrap-failed-step => bootstrap-failed-step
+            |(bootstrap-reduced-step new-argument) => (bootstrap-reduced-step (bootstrap-application-term function new-argument))
+            |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-application-term function argument))
+          ]
+        ]
+      ]
+      |(bootstrap-term-access-constructors type constructors type-access constructors-access) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new type bindings type-access)) of BootstrapStep
+        |bootstrap-failed-step => bootstrap-failed-step
+        |(bootstrap-reduced-step new-type) => (bootstrap-reduced-step (bootstrap-constructors-term new-type constructors))
+        |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-constructors-term type constructors))
+      ]
+      |(bootstrap-term-access-match scrutinee type clauses scrutinee-access type-access clauses-access) => [scrutinee of BootstrapStep
+        |(bootstrap-notation-term body _) => (bootstrap-reduced-step (bootstrap-match-term body type clauses))
+        |(bootstrap-variable-term _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new scrutinee bindings scrutinee-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-scrutinee) => (bootstrap-reduced-step (bootstrap-match-term new-scrutinee type clauses))
+          |(bootstrap-normal-step _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new type bindings type-access)) of BootstrapStep
+            |bootstrap-failed-step => bootstrap-failed-step
+            |(bootstrap-reduced-step new-type) => (bootstrap-reduced-step (bootstrap-match-term scrutinee new-type clauses))
+            |(bootstrap-normal-step _) => [(bootstrap-select-clause-recur (bootstrap-select-clause-work-new scrutinee clauses clauses-access)) of BootstrapStep
+              |bootstrap-no-term => (bootstrap-normal-step (bootstrap-match-term scrutinee type clauses))
+              |(bootstrap-some-term selected) => (bootstrap-reduced-step selected)
+            ]
+          ]
+        ]
+        |(bootstrap-pi-term _ _ _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new scrutinee bindings scrutinee-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-scrutinee) => (bootstrap-reduced-step (bootstrap-match-term new-scrutinee type clauses))
+          |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-match-term scrutinee type clauses))
+        ]
+        |(bootstrap-lambda-term _ _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new scrutinee bindings scrutinee-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-scrutinee) => (bootstrap-reduced-step (bootstrap-match-term new-scrutinee type clauses))
+          |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-match-term scrutinee type clauses))
+        ]
+        |(bootstrap-application-term _ _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new scrutinee bindings scrutinee-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-scrutinee) => (bootstrap-reduced-step (bootstrap-match-term new-scrutinee type clauses))
+          |(bootstrap-normal-step _) => [(bootstrap-select-clause-recur (bootstrap-select-clause-work-new scrutinee clauses clauses-access)) of BootstrapStep
+            |bootstrap-no-term => (bootstrap-normal-step (bootstrap-match-term scrutinee type clauses))
+            |(bootstrap-some-term selected) => (bootstrap-reduced-step selected)
+          ]
+        ]
+        |(bootstrap-constructors-term _ _) => [(bootstrap-select-clause-recur (bootstrap-select-clause-work-new scrutinee clauses clauses-access)) of BootstrapStep
+          |bootstrap-no-term => (bootstrap-normal-step (bootstrap-match-term scrutinee type clauses))
+          |(bootstrap-some-term selected) => (bootstrap-reduced-step selected)
+        ]
+        |(bootstrap-match-term _ _ _) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new scrutinee bindings scrutinee-access)) of BootstrapStep
+          |bootstrap-failed-step => bootstrap-failed-step
+          |(bootstrap-reduced-step new-scrutinee) => (bootstrap-reduced-step (bootstrap-match-term new-scrutinee type clauses))
+          |(bootstrap-normal-step _) => (bootstrap-normal-step (bootstrap-match-term scrutinee type clauses))
+        ]
+      ]
+      |(bootstrap-term-access-notation body type body-access type-access) => (bootstrap-normal-step (bootstrap-notation-term body type))
+    ]
+  ].
+
+bootstrap-reduce-once
+  |term bindings :: ~ BootstrapTerm ~> ~ (List BootstrapBinding) ~> BootstrapStep =>
+    (bootstrap-reduce-once-recur (bootstrap-reduction-work-new term bindings (bootstrap-term-accessibility-instance term))).
+
+bootstrap-step-term-equal
+  |step expected reduced :: ~ BootstrapStep ~> ~ BootstrapTerm ~> ~ Bool ~> Bool => [step of Bool
+    |bootstrap-failed-step => false
+    |(bootstrap-normal-step term) => [reduced of Bool
+      |true => false
+      |false => (bootstrap-term-equal term expected)
+    ]
+    |(bootstrap-reduced-step term) => [reduced of Bool
+      |true => (bootstrap-term-equal term expected)
+      |false => false
+    ]
+  ].
+
+bootstrap-reduction-empty-environment
+  (empty BootstrapBinding).
+
+bootstrap-beta-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-step-term-equal (bootstrap-reduce-once (bootstrap-application-term (bootstrap-lambda-term (bootstrap-bound-var 0) (bootstrap-variable-term (bootstrap-bound-var 0))) (bootstrap-variable-term (bootstrap-reference-var "0a"))) bootstrap-reduction-empty-environment) (bootstrap-variable-term (bootstrap-reference-var "0a")) true) true)).
+
+bootstrap-unfold-proof-binding
+  (bootstrap-binding-new "0a" bootstrap-expression-sort (bootstrap-variable-term (bootstrap-reference-var "0b")) (empty BootstrapTyping)).
+
+bootstrap-unfold-proof-environment
+  (new BootstrapBinding bootstrap-unfold-proof-binding (empty BootstrapBinding)).
+
+bootstrap-unfold-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-step-term-equal (bootstrap-reduce-once (bootstrap-variable-term (bootstrap-reference-var "0a")) bootstrap-unfold-proof-environment) (bootstrap-variable-term (bootstrap-reference-var "0b")) true) true)).

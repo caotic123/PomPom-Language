@@ -1,0 +1,169 @@
+// Design-stage example: signatures as pairs {T :: Φ} over a shared ambient enum.
+// EnumU, EnumT, Sig, switch, interpretation, in, and signature-lifting µ are
+// intentionally ahead of the current parser/checker.
+// In this surface sketch, type/index `()` abbreviates Unit type `1` / value
+// `unit`, respectively.
+
+// The ambient list enumeration has two labels.
+ListE : EnumU
+ListE = consE 'empty (consE 'new nilE).
+
+// Enum-selection sugar used by the closed NonEmpty spelling below.  Its labels
+// elaborate to the same {T :: Φ} pair as `NonEmptyLabels`.  On this closed path
+// the checker resolves {'new} in the ambient enum and decides
+//
+//   Subset ['new] ['empty,'new]
+//
+// by computation.  It canonicalizes ListE first as {'empty -> 0, 'new -> 1}.
+// The restricted signature therefore inherits ambient tag 1 for 'new; it does
+// not renumber the singleton label to position 0.
+ListNonEmpty : EnumU
+ListNonEmpty = consE 'new nilE.
+
+// There is one complete branch function for the ambient enumeration.  It is an
+// ordinary expression EnumT ListE -> IDesc (), not a list of Static symbols.
+ListBranches
+  | A :: (A : *) ~> (EnumT ListE) ~> (IDesc ()) =>
+    switch ListE
+      { 'empty -> '1
+      , 'new   -> ('Σ A (λ value. 'var ()))
+      }.
+
+// A signature is an ordinary pair: the complete ambient branch function
+// together with the enabled-label list.  Formation is pairing, nothing else:
+//
+//   Sig I E   :=  (EnumT E -> IDesc I) × List (Label E)
+//   {T :: Φ}  :=  (T, Φ)          {T} := {T :: []}
+//
+// `branches` and `labels` are the pair projections, so they compute
+// judgmentally even when Φ is neutral.  The append reading is derived
+// notation on the same pair:  c \append {T :: Φ} := {T :: c :: Φ}.
+//
+// `Label E := EnumT E`: in the core a constructor is its position in the
+// ambient enumeration, so a foreign-family label is unrepresentable.  A
+// closed literal such as 'new belongs to elaboration — it resolves through
+// At/NoDupEnum to its position.
+//
+// A closed label list evaluates, so membership, subset, disjointness, and
+// coverage are decided by computation; the checker's kappa table is only a
+// name-resolution cache.  An open list remains a genuine neutral term and is
+// manipulated using ordinary Member/Subset proofs.  `progress/2.pom` defines
+// the full decision pipeline (constructors, then lists, then signatures)
+// with union, subset, and decidable-disjointness examples.
+
+// Source label lists spell names; they elaborate to positions ([0, 1+0]
+// and [1+0] respectively).
+ListLabels : List (Label ListE)
+ListLabels = ['empty, 'new].
+
+NonEmptyLabels : List (Label ListE)
+NonEmptyLabels = ['new].
+
+// The full signature enables every ambient label.
+List
+  | A :: (A : *) ~> (Sig () ListE) =>
+    {(ListBranches A) :: ListLabels}.
+
+// The restricted signature reuses the SAME complete branch function; only the
+// label list changes.  The 'empty arm in switch ListE is harmless: NonEmpty
+// enables only 'new, so coverage and constructor introduction consult the
+// enabled list, not every arm handled by the ambient switch.
+NonEmpty
+  | A :: (A : *) ~> (Sig () ListE) =>
+    {(ListBranches A) :: NonEmptyLabels}.
+
+// The earlier enum-selection spelling remains convenient surface sugar:
+//
+//   'σ ListE        (ListBranches A)  ≡ List A
+//   'σ ListNonEmpty (ListBranches A)  ≡ NonEmpty A
+//
+// Elaboration resolves the labels of the selection enum in the ambient enum of
+// the branch function and builds the same {T :: Φ} pair.  Both spellings
+// therefore construct the same signature; neither creates a parallel
+// representation.
+
+// µ uniformly lifts a signature to a head-refined type.  Recursive 'var
+// fields use the ordinary ambient ListE carrier, and subtyping is
+// coercion-free: a surface µ(List A) used recursively is accepted at the
+// carrier by subsumption, with the term unchanged.
+//
+//   ListType A     = µ (List A)
+//   NonEmptyType A = µ (NonEmpty A)
+//
+// Constructor elaboration is directed by the expected type (conceptually):
+//
+//   empty : µ (List A)
+//   empty = in 'empty unit
+//
+//   new : A -> µ (List A) -> µ (NonEmpty A)
+//   new value tail = in 'new (value, tail)
+//
+// The elaborated term stores the resolved ambient position in the term
+// itself: `in 'new payload` is core `in (1+0, payload)`.  Enabled
+// membership is the paper's C ∈ Φ side condition, checked against the
+// evaluated enabled list and stored nowhere — the refinement is a phantom
+// type, so the source/runtime representation stays compact and no side
+// table exists.
+//
+// The tail is the full list carrier, not the restricted carrier.  Therefore:
+//
+//   oneThenEmpty : µ (NonEmpty Nat)
+//   oneThenEmpty = in 'new (1, in 'empty unit)
+
+// Supplying a new head makes an arbitrary list non-empty.  The enabled 'new
+// branch has payload Σ(value : A). 'var (), and ambient-aware µ turns that
+// recursive field into the ambient carrier.  Subsumption accepts the supplied
+// surface µ(List A) tail there without changing it.
+prependNE
+  | A value tail ::
+      (A : *) ~> ~ A ~> ~ (µ (List A)) ~> (µ (NonEmpty A)) =>
+    (in 'new (value, tail)).
+
+// In particular, prepending to empty constructs a singleton.
+singletonNE
+  | A value ::
+      (A : *) ~> ~ A ~> (µ (NonEmpty A)) =>
+    (prependNE A value (in 'empty unit)).
+
+// Observation goes in the other direction: head is total only when its input
+// is already known to expose 'new.  There is exactly one enabled outer case,
+// and coverage Subset ['new] ['new] is decided by computation.
+headNE
+  | A xs ::
+      (A : *) ~> ~ (µ (NonEmpty A)) ~> A =>
+    [xs of A
+      |(in 'new (value, tail)) => value
+    ].
+
+// The payload projection itself returns the ambient carrier:
+//
+//   tailCarrierNE : µ (NonEmpty A) -> Carrier (ListS A) ()
+//
+// A surface `tailNE : µ(NonEmpty A) -> µ(List A)` additionally applies
+// `coverFull`, whose full-coverage Subset proof re-establishes the full
+// signature on every ambient tag.  Neither result is µ(NonEmpty A): the
+// one-element list has empty as its tail.
+
+// There is no total parametric conversion
+//
+//   µ (List A) -> µ (NonEmpty A)
+//
+// without also supplying a head value or successfully matching the input's
+// outer tag as 'new.  An operation that merely tests an arbitrary list must
+// return an optional result instead.
+
+// Expected lifted-signature relations:
+//
+//   µ (NonEmpty A)  ⊑  µ (List A)
+//   µ (List A)      ⋢  µ (NonEmpty A)
+//
+// The shared branch functions are compared as functions, normalizing modulo
+// alpha, beta, and eta.  For example, this eta-expanded branch expression
+// denotes the same restricted signature:
+//
+//   {(λ (e : EnumT ListE). ListBranches A e) :: NonEmptyLabels}
+
+// If µ instead took the ordinary fixed point of only ListNonEmpty, every tail
+// would also have to start with 'new and finite lists could never end in
+// empty.  The ambient-aware interpretation above is therefore part of µ's
+// contract.

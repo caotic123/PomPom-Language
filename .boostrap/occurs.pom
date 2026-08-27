@@ -1,0 +1,51 @@
+import boostrap/conversion.
+
+Static bootstrap-occurs-work : *.
+Static bootstrap-occurs-term-work : ~ BootstrapTerm ~> (term : BootstrapTerm) ~> ~ (BootstrapTermAccessibility term) ~> bootstrap-occurs-work.
+Static bootstrap-occurs-term-list-work : ~ BootstrapTerm ~> (terms : (List BootstrapTerm)) ~> ~ (BootstrapTermListAccessibility terms) ~> bootstrap-occurs-work.
+Static bootstrap-occurs-clause-list-work : ~ BootstrapTerm ~> (clauses : (List BootstrapClause)) ~> ~ (BootstrapClauseListAccessibility clauses) ~> bootstrap-occurs-work.
+
+BootstrapOccursWork
+  {bootstrap-occurs-work :: |bootstrap-occurs-term-work |bootstrap-occurs-term-list-work |bootstrap-occurs-clause-list-work}.
+
+bootstrap-occurs-recur
+  |work :: ~ BootstrapOccursWork ~> Bool => [work of Bool
+    |(bootstrap-occurs-term-work needle term accessibility) => [(bootstrap-equality-recur (bootstrap-equality-term-work needle term (bootstrap-term-accessibility-instance needle))) of Bool
+      |true => true
+      |false => [accessibility of Bool
+        |(bootstrap-term-access-variable _) => false
+        |(bootstrap-term-access-pi _ domain body domain-access body-access) => (or (bootstrap-occurs-recur (bootstrap-occurs-term-work needle domain domain-access)) (bootstrap-occurs-recur (bootstrap-occurs-term-work needle body body-access)))
+        |(bootstrap-term-access-lambda _ body body-access) => (bootstrap-occurs-recur (bootstrap-occurs-term-work needle body body-access))
+        |(bootstrap-term-access-application function argument function-access argument-access) => (or (bootstrap-occurs-recur (bootstrap-occurs-term-work needle function function-access)) (bootstrap-occurs-recur (bootstrap-occurs-term-work needle argument argument-access)))
+        |(bootstrap-term-access-constructors type constructors type-access constructors-access) => (or (bootstrap-occurs-recur (bootstrap-occurs-term-work needle type type-access)) (bootstrap-occurs-recur (bootstrap-occurs-term-list-work needle constructors constructors-access)))
+        |(bootstrap-term-access-match scrutinee type clauses scrutinee-access type-access clauses-access) => (or (bootstrap-occurs-recur (bootstrap-occurs-term-work needle scrutinee scrutinee-access)) (or (bootstrap-occurs-recur (bootstrap-occurs-term-work needle type type-access)) (bootstrap-occurs-recur (bootstrap-occurs-clause-list-work needle clauses clauses-access))))
+        |(bootstrap-term-access-notation body type body-access type-access) => (or (bootstrap-occurs-recur (bootstrap-occurs-term-work needle body body-access)) (bootstrap-occurs-recur (bootstrap-occurs-term-work needle type type-access)))
+      ]
+    ]
+    |(bootstrap-occurs-term-list-work needle terms accessibility) => [accessibility of Bool
+      |bootstrap-term-list-access-empty => false
+      |(bootstrap-term-list-access-new head tail head-access tail-access) => (or (bootstrap-occurs-recur (bootstrap-occurs-term-work needle head head-access)) (bootstrap-occurs-recur (bootstrap-occurs-term-list-work needle tail tail-access)))
+    ]
+    |(bootstrap-occurs-clause-list-work needle clauses accessibility) => [accessibility of Bool
+      |bootstrap-clause-list-access-empty => false
+      |(bootstrap-clause-list-access-new head tail head-access tail-access) => [head-access of Bool
+        |(bootstrap-clause-access-new pattern body pattern-access body-access) => (or (bootstrap-occurs-recur (bootstrap-occurs-term-work needle pattern pattern-access)) (or (bootstrap-occurs-recur (bootstrap-occurs-term-work needle body body-access)) (bootstrap-occurs-recur (bootstrap-occurs-clause-list-work needle tail tail-access))))
+      ]
+    ]
+  ].
+
+bootstrap-occurs
+  |needle term :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> Bool =>
+    (bootstrap-occurs-recur (bootstrap-occurs-term-work needle term (bootstrap-term-accessibility-instance term))).
+
+bootstrap-occurs-proof-needle
+  (bootstrap-variable-term (bootstrap-bound-var 0)).
+
+bootstrap-occurs-proof-term
+  (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "0a")) bootstrap-occurs-proof-needle).
+
+bootstrap-occurs-present-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-occurs bootstrap-occurs-proof-needle bootstrap-occurs-proof-term) true)).
+
+bootstrap-occurs-absent-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-occurs (bootstrap-variable-term (bootstrap-bound-var 1)) bootstrap-occurs-proof-term) false)).

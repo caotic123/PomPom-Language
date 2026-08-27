@@ -1,0 +1,37 @@
+import libs/acc.
+
+Static bootstrap-accessibility : (A : *) (R : ~ A ~> ~ A ~> *) ~ A ~> *.
+
+Static bootstrap-accessibility-intro :
+  (A : *)
+  (R : ~ A ~> ~ A ~> *)
+  (x : A)
+  ~ ((y : A) ~> ~ (R x y) ~> {(bootstrap-accessibility A R y) :: |(bootstrap-accessibility-intro A R y)}) ~>
+  (bootstrap-accessibility A R x).
+
+BootstrapAccessibility
+  |A R x :: (A : *) (R : ~ A ~> ~ A ~> *) (x : A) ~> * =>
+    {(bootstrap-accessibility A R x) :: |(bootstrap-accessibility-intro A R x)}.
+
+bootstrap-accessibility-recur
+  |A R P x accessibility step ::
+    (A : *)
+    (R : ~ A ~> ~ A ~> *)
+    (P : ~ A ~> *)
+    (x : A)
+    ~ (BootstrapAccessibility A R x) ~>
+    ~ ((current : A) ~> ~ ((smaller : A) ~> ~ (R current smaller) ~> (P smaller)) ~> (P current)) ~>
+    (P x) =>
+      [accessibility of (P x)
+        |(bootstrap-accessibility-intro _ _ _ descend) =>
+          (step x (|smaller witness :: (smaller : A) ~> ~ (R x smaller) ~> (P smaller) =>
+            (bootstrap-accessibility-recur A R P smaller (descend smaller witness) step)))
+      ].
+
+bootstrap-accessibility-instance-proof
+  |A R x accessibility ::
+    (A : *)
+    (R : ~ A ~> ~ A ~> *)
+    (x : A)
+    ~ (BootstrapAccessibility A R x) ~>
+    (BootstrapAccessibility A R x) => accessibility.

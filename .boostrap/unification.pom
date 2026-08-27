@@ -1,0 +1,185 @@
+import boostrap/occurs.
+
+Static bootstrap-maybe-state : *.
+Static bootstrap-no-state : bootstrap-maybe-state.
+Static bootstrap-some-state : ~ BootstrapState ~> bootstrap-maybe-state.
+
+BootstrapMaybeState
+  {bootstrap-maybe-state :: |bootstrap-no-state |bootstrap-some-state}.
+
+Static bootstrap-unifier-apply-work : *.
+Static bootstrap-unifier-apply-work-new : ~ BootstrapTerm ~> (unifier : (List BootstrapTyping)) ~> ~ (BootstrapTypingListAccessibility unifier) ~> bootstrap-unifier-apply-work.
+
+BootstrapUnifierApplyWork
+  {bootstrap-unifier-apply-work :: |bootstrap-unifier-apply-work-new}.
+
+bootstrap-unifier-apply-recur
+  |work :: ~ BootstrapUnifierApplyWork ~> BootstrapMaybeTerm => [work of BootstrapMaybeTerm
+    |(bootstrap-unifier-apply-work-new term unifier accessibility) => [accessibility of BootstrapMaybeTerm
+      |bootstrap-typing-list-access-empty => (bootstrap-some-term term)
+      |(bootstrap-typing-list-access-new typing tail tail-access) => [(bootstrap-unifier-apply-recur (bootstrap-unifier-apply-work-new term tail tail-access)) of BootstrapMaybeTerm
+        |bootstrap-no-term => bootstrap-no-term
+        |(bootstrap-some-term tail-result) => [typing of BootstrapMaybeTerm
+          |(bootstrap-typing-new key value) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work key value tail-result (bootstrap-term-accessibility-instance tail-result))) of BootstrapMaybeTerm
+            |bootstrap-substitution-failed => bootstrap-no-term
+            |(bootstrap-substitution-term-output result) => (bootstrap-some-term result)
+            |(bootstrap-substitution-term-list-output _) => bootstrap-no-term
+            |(bootstrap-substitution-clause-list-output _) => bootstrap-no-term
+          ]
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-unifier-apply
+  |term unifier :: ~ BootstrapTerm ~> ~ (List BootstrapTyping) ~> BootstrapMaybeTerm =>
+    (bootstrap-unifier-apply-recur (bootstrap-unifier-apply-work-new term unifier (bootstrap-typing-list-accessibility-instance unifier))).
+
+bootstrap-is-bound-term
+  |term :: ~ BootstrapTerm ~> Bool => [term of Bool
+    |(bootstrap-variable-term variable) => [variable of Bool
+      |(bootstrap-bound-var _) => true
+      |(bootstrap-bound-name-var _) => true
+      |(bootstrap-reference-var _) => false
+    ]
+    |(bootstrap-pi-term _ _ _) => false
+    |(bootstrap-lambda-term _ _) => false
+    |(bootstrap-application-term _ _) => false
+    |(bootstrap-constructors-term _ _) => false
+    |(bootstrap-match-term _ _ _) => false
+    |(bootstrap-notation-term _ _) => false
+  ].
+
+Static bootstrap-unifier-insert-work : *.
+Static bootstrap-unifier-insert-work-new : ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapState ~> bootstrap-unifier-insert-work.
+
+BootstrapUnifierInsertWork
+  {bootstrap-unifier-insert-work :: |bootstrap-unifier-insert-work-new}.
+
+bootstrap-unifier-insert-recur
+  |work :: ~ BootstrapUnifierInsertWork ~> BootstrapMaybeState => [work of BootstrapMaybeState
+    |(bootstrap-unifier-insert-work-new key value state) => [state of BootstrapMaybeState
+      |(bootstrap-state-new context unifier) => [(bootstrap-unifier-apply-recur (bootstrap-unifier-apply-work-new value unifier (bootstrap-typing-list-accessibility-instance unifier))) of BootstrapMaybeState
+      |bootstrap-no-term => bootstrap-no-state
+      |(bootstrap-some-term resolved-value) => [(bootstrap-occurs-recur (bootstrap-occurs-term-work key resolved-value (bootstrap-term-accessibility-instance resolved-value))) of BootstrapMaybeState
+        |true => (bootstrap-some-state state)
+        |false => (bootstrap-some-state (bootstrap-state-new context (new BootstrapTyping (bootstrap-typing-new key resolved-value) unifier)))
+      ]
+      ]
+    ]
+  ].
+
+bootstrap-unifier-insert
+  |key value state :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapState ~> BootstrapMaybeState =>
+    (bootstrap-unifier-insert-recur (bootstrap-unifier-insert-work-new key value state)).
+
+Static bootstrap-unifier-orient-work : *.
+Static bootstrap-unifier-orient-work-new : ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapState ~> bootstrap-unifier-orient-work.
+
+BootstrapUnifierOrientWork
+  {bootstrap-unifier-orient-work :: |bootstrap-unifier-orient-work-new}.
+
+bootstrap-unifier-orient-recur
+  |work :: ~ BootstrapUnifierOrientWork ~> BootstrapMaybeState => [work of BootstrapMaybeState
+    |(bootstrap-unifier-orient-work-new target origin state) => [(bootstrap-occurs-recur (bootstrap-occurs-term-work origin target (bootstrap-term-accessibility-instance target))) of BootstrapMaybeState
+    |true => [(bootstrap-occurs-recur (bootstrap-occurs-term-work target origin (bootstrap-term-accessibility-instance origin))) of BootstrapMaybeState
+      |false => (bootstrap-unifier-insert-recur (bootstrap-unifier-insert-work-new target origin state))
+      |true => (bootstrap-unifier-insert-recur (bootstrap-unifier-insert-work-new origin target state))
+    ]
+    |false => [(bootstrap-is-bound-term target) of BootstrapMaybeState
+      |true => [(bootstrap-is-bound-term origin) of BootstrapMaybeState
+        |false => (bootstrap-unifier-insert-recur (bootstrap-unifier-insert-work-new target origin state))
+        |true => (bootstrap-unifier-insert-recur (bootstrap-unifier-insert-work-new origin target state))
+      ]
+      |false => (bootstrap-unifier-insert-recur (bootstrap-unifier-insert-work-new origin target state))
+    ]
+    ]
+  ].
+
+bootstrap-unifier-orient-and-insert
+  |target origin state :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapState ~> BootstrapMaybeState =>
+    (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new target origin state)).
+
+Static bootstrap-unification-work : *.
+Static bootstrap-unification-work-new : (target : BootstrapTerm) ~ BootstrapTerm ~> ~ BootstrapState ~> ~ (BootstrapTermAccessibility target) ~> bootstrap-unification-work.
+
+BootstrapUnificationWork
+  {bootstrap-unification-work :: |bootstrap-unification-work-new}.
+
+bootstrap-unify-recur
+  |work :: ~ BootstrapUnificationWork ~> BootstrapMaybeState => [work of BootstrapMaybeState
+    |(bootstrap-unification-work-new target origin state target-access) => [(bootstrap-equality-recur (bootstrap-equality-term-work target origin target-access)) of BootstrapMaybeState
+      |true => (bootstrap-some-state state)
+      |false => [target-access of BootstrapMaybeState
+        |(bootstrap-term-access-application target-function target-argument target-function-access target-argument-access) => [origin of BootstrapMaybeState
+          |(bootstrap-application-term origin-function origin-argument) => [(bootstrap-equality-recur (bootstrap-equality-term-work target-function origin-function target-function-access)) of BootstrapMaybeState
+            |true => (bootstrap-unify-recur (bootstrap-unification-work-new target-argument origin-argument state target-argument-access))
+            |false => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-application-term target-function target-argument) origin state))
+          ]
+          |(bootstrap-variable-term _) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-application-term target-function target-argument) origin state))
+          |(bootstrap-pi-term _ _ _) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-application-term target-function target-argument) origin state))
+          |(bootstrap-lambda-term _ _) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-application-term target-function target-argument) origin state))
+          |(bootstrap-constructors-term _ _) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-application-term target-function target-argument) origin state))
+          |(bootstrap-match-term _ _ _) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-application-term target-function target-argument) origin state))
+          |(bootstrap-notation-term _ _) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-application-term target-function target-argument) origin state))
+        ]
+        |(bootstrap-term-access-variable variable) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-variable-term variable) origin state))
+        |(bootstrap-term-access-pi binder domain body domain-access body-access) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-pi-term binder domain body) origin state))
+        |(bootstrap-term-access-lambda binder body body-access) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-lambda-term binder body) origin state))
+        |(bootstrap-term-access-constructors type constructors type-access constructors-access) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-constructors-term type constructors) origin state))
+        |(bootstrap-term-access-match scrutinee type clauses scrutinee-access type-access clauses-access) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-match-term scrutinee type clauses) origin state))
+        |(bootstrap-term-access-notation body type body-access type-access) => (bootstrap-unifier-orient-recur (bootstrap-unifier-orient-work-new (bootstrap-notation-term body type) origin state))
+      ]
+    ]
+  ].
+
+bootstrap-unify
+  |target origin state :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapState ~> BootstrapMaybeState =>
+    (bootstrap-unify-recur (bootstrap-unification-work-new target origin state (bootstrap-term-accessibility-instance target))).
+
+bootstrap-unification-empty-state
+  (bootstrap-state-new (empty BootstrapTyping) (empty BootstrapTyping)).
+
+bootstrap-unification-q
+  (bootstrap-variable-term (bootstrap-bound-var 0)).
+
+bootstrap-unification-r
+  (bootstrap-variable-term (bootstrap-bound-var 1)).
+
+bootstrap-unification-zero
+  (bootstrap-variable-term (bootstrap-reference-var "30")).
+
+bootstrap-unification-function
+  (bootstrap-variable-term (bootstrap-reference-var "46")).
+
+Static bootstrap-state-unifier-observation : *.
+Static bootstrap-state-unifier-observation-new : ~ BootstrapMaybeState ~> ~ BootstrapTerm ~> ~ BootstrapTerm ~> bootstrap-state-unifier-observation.
+
+BootstrapStateUnifierObservation
+  {bootstrap-state-unifier-observation :: |bootstrap-state-unifier-observation-new}.
+
+bootstrap-state-unifier-lookup-equal-recur
+  |observation :: ~ BootstrapStateUnifierObservation ~> Bool => [observation of Bool
+    |(bootstrap-state-unifier-observation-new result key expected) => [result of Bool
+    |bootstrap-no-state => false
+    |(bootstrap-some-state state) => [state of Bool
+      |(bootstrap-state-new _ unifier) => [(bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new unifier key (bootstrap-typing-list-accessibility-instance unifier))) of Bool
+        |bootstrap-no-term => false
+        |(bootstrap-some-term actual) => (bootstrap-term-equal actual expected)
+      ]
+    ]
+    ]
+  ].
+
+bootstrap-state-unifier-lookup-equal
+  |result key expected :: ~ BootstrapMaybeState ~> ~ BootstrapTerm ~> ~ BootstrapTerm ~> Bool =>
+    (bootstrap-state-unifier-lookup-equal-recur (bootstrap-state-unifier-observation-new result key expected)).
+
+bootstrap-unification-variable-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-state-unifier-lookup-equal-recur (bootstrap-state-unifier-observation-new (bootstrap-unify-recur (bootstrap-unification-work-new bootstrap-unification-q bootstrap-unification-zero bootstrap-unification-empty-state (bootstrap-term-accessibility-instance bootstrap-unification-q))) bootstrap-unification-q bootstrap-unification-zero)) true)).
+
+bootstrap-unification-application-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-state-unifier-lookup-equal-recur (bootstrap-state-unifier-observation-new (bootstrap-unify-recur (bootstrap-unification-work-new (bootstrap-application-term bootstrap-unification-function bootstrap-unification-q) (bootstrap-application-term bootstrap-unification-function bootstrap-unification-zero) bootstrap-unification-empty-state (bootstrap-term-accessibility-instance (bootstrap-application-term bootstrap-unification-function bootstrap-unification-q)))) bootstrap-unification-q bootstrap-unification-zero)) true)).
+
+bootstrap-unification-cycle-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-state-unifier-lookup-equal-recur (bootstrap-state-unifier-observation-new (bootstrap-unify-recur (bootstrap-unification-work-new bootstrap-unification-q (bootstrap-application-term bootstrap-unification-function bootstrap-unification-q) bootstrap-unification-empty-state (bootstrap-term-accessibility-instance bootstrap-unification-q))) bootstrap-unification-q bootstrap-unification-q)) false)).

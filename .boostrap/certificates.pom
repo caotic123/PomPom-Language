@@ -1,0 +1,116 @@
+import boostrap/normalization.
+
+Static bootstrap-normalization-certificate : *.
+Static bootstrap-normalization-certificate-new : ~ String ~> ~ BootstrapTerm ~> ~ (List BootstrapTerm) ~> bootstrap-normalization-certificate.
+
+BootstrapNormalizationCertificate
+  {bootstrap-normalization-certificate :: |bootstrap-normalization-certificate-new}.
+
+Static bootstrap-maybe-normalization-certificate : *.
+Static bootstrap-no-normalization-certificate : bootstrap-maybe-normalization-certificate.
+Static bootstrap-some-normalization-certificate : ~ BootstrapNormalizationCertificate ~> bootstrap-maybe-normalization-certificate.
+
+BootstrapMaybeNormalizationCertificate
+  {bootstrap-maybe-normalization-certificate :: |bootstrap-no-normalization-certificate |bootstrap-some-normalization-certificate}.
+
+Static bootstrap-certificate-root-key-work : *.
+Static bootstrap-certificate-root-key-work-new : (term : BootstrapTerm) ~> ~ (BootstrapTermAccessibility term) ~> bootstrap-certificate-root-key-work.
+
+BootstrapCertificateRootKeyWork
+  {bootstrap-certificate-root-key-work :: |bootstrap-certificate-root-key-work-new}.
+
+bootstrap-certificate-root-key-recur
+  |work :: ~ BootstrapCertificateRootKeyWork ~> String => [work of String
+    |(bootstrap-certificate-root-key-work-new term accessibility) => [accessibility of String
+      |(bootstrap-term-access-variable variable) => [variable of String
+        |(bootstrap-bound-var _) => ""
+        |(bootstrap-bound-name-var _) => ""
+        |(bootstrap-reference-var name) => name
+      ]
+      |(bootstrap-term-access-application function _ function-access _) => (bootstrap-certificate-root-key-recur (bootstrap-certificate-root-key-work-new function function-access))
+      |(bootstrap-term-access-constructors family _ family-access _) => (bootstrap-certificate-root-key-recur (bootstrap-certificate-root-key-work-new family family-access))
+      |(bootstrap-term-access-notation body _ body-access _) => (bootstrap-certificate-root-key-recur (bootstrap-certificate-root-key-work-new body body-access))
+      |(bootstrap-term-access-pi _ _ _ _ _) => ""
+      |(bootstrap-term-access-lambda _ _ _) => ""
+      |(bootstrap-term-access-match _ _ _ _ _ _) => ""
+    ]
+  ].
+
+Static bootstrap-certificate-list-accessibility : ~ (List BootstrapNormalizationCertificate) ~> *.
+Static bootstrap-certificate-list-access-empty : (bootstrap-certificate-list-accessibility (empty BootstrapNormalizationCertificate)).
+Static bootstrap-certificate-list-access-new : (head : BootstrapNormalizationCertificate) (tail : (List BootstrapNormalizationCertificate)) ~ {(bootstrap-certificate-list-accessibility tail) :: |bootstrap-certificate-list-access-empty |bootstrap-certificate-list-access-new} ~> (bootstrap-certificate-list-accessibility (new BootstrapNormalizationCertificate head tail)).
+
+BootstrapCertificateListAccessibility
+  |certificates :: ~ (List BootstrapNormalizationCertificate) ~> * =>
+    {(bootstrap-certificate-list-accessibility certificates) :: |bootstrap-certificate-list-access-empty |bootstrap-certificate-list-access-new}.
+
+bootstrap-certificate-list-accessibility-instance
+  |certificates :: (certificates : (List BootstrapNormalizationCertificate)) ~> (BootstrapCertificateListAccessibility certificates) => [certificates of (BootstrapCertificateListAccessibility certificates)
+    |(empty _) => bootstrap-certificate-list-access-empty
+    |(new _ head tail) => (bootstrap-certificate-list-access-new head tail (bootstrap-certificate-list-accessibility-instance tail))
+  ].
+
+Static bootstrap-certificate-lookup-work : *.
+Static bootstrap-certificate-lookup-work-new : ~ BootstrapTerm ~> ~ String ~> (certificates : (List BootstrapNormalizationCertificate)) ~> ~ (BootstrapCertificateListAccessibility certificates) ~> bootstrap-certificate-lookup-work.
+
+BootstrapCertificateLookupWork
+  {bootstrap-certificate-lookup-work :: |bootstrap-certificate-lookup-work-new}.
+
+bootstrap-certificate-lookup-recur
+  |work :: ~ BootstrapCertificateLookupWork ~> BootstrapMaybeNormalizationCertificate => [work of BootstrapMaybeNormalizationCertificate
+    |(bootstrap-certificate-lookup-work-new term key certificates accessibility) => [accessibility of BootstrapMaybeNormalizationCertificate
+      |bootstrap-certificate-list-access-empty => bootstrap-no-normalization-certificate
+      |(bootstrap-certificate-list-access-new certificate tail tail-access) => [certificate of BootstrapMaybeNormalizationCertificate
+        |(bootstrap-normalization-certificate-new certificate-key start _) => [(bootstrap-name-equal key certificate-key) of BootstrapMaybeNormalizationCertificate
+          |false => (bootstrap-certificate-lookup-recur (bootstrap-certificate-lookup-work-new term key tail tail-access))
+          |true => [(bootstrap-term-equal term start) of BootstrapMaybeNormalizationCertificate
+            |true => (bootstrap-some-normalization-certificate certificate)
+            |false => (bootstrap-certificate-lookup-recur (bootstrap-certificate-lookup-work-new term key tail tail-access))
+          ]
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-certificate-lookup
+  |term certificates :: ~ BootstrapTerm ~> ~ (List BootstrapNormalizationCertificate) ~> BootstrapMaybeNormalizationCertificate =>
+    (bootstrap-certificate-lookup-recur (bootstrap-certificate-lookup-work-new term (bootstrap-certificate-root-key-recur (bootstrap-certificate-root-key-work-new term (bootstrap-term-accessibility-instance term))) certificates (bootstrap-certificate-list-accessibility-instance certificates))).
+
+Static bootstrap-certified-normalization-work : *.
+Static bootstrap-certified-normalization-work-new : ~ BootstrapTerm ~> ~ (List BootstrapBinding) ~> ~ (List BootstrapNormalizationCertificate) ~> bootstrap-certified-normalization-work.
+
+BootstrapCertifiedNormalizationWork
+  {bootstrap-certified-normalization-work :: |bootstrap-certified-normalization-work-new}.
+
+bootstrap-normalize-certified-recur
+  |work :: ~ BootstrapCertifiedNormalizationWork ~> BootstrapMaybeTerm => [work of BootstrapMaybeTerm
+    |(bootstrap-certified-normalization-work-new term bindings certificates) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new term bindings (bootstrap-term-accessibility-instance term))) of BootstrapMaybeTerm
+      |bootstrap-failed-step => bootstrap-no-term
+      |(bootstrap-normal-step normal) => (bootstrap-some-term normal)
+      |(bootstrap-reduced-step _) => [(bootstrap-certificate-lookup-recur (bootstrap-certificate-lookup-work-new term (bootstrap-certificate-root-key-recur (bootstrap-certificate-root-key-work-new term (bootstrap-term-accessibility-instance term))) certificates (bootstrap-certificate-list-accessibility-instance certificates))) of BootstrapMaybeTerm
+        |bootstrap-no-normalization-certificate => bootstrap-no-term
+        |(bootstrap-some-normalization-certificate certificate) => [certificate of BootstrapMaybeTerm
+          |(bootstrap-normalization-certificate-new _ start path) => (bootstrap-verify-normalization-recur (bootstrap-normalization-work-new start path bindings (bootstrap-term-list-accessibility-instance path)))
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-normalize-certified
+  |term bindings certificates :: ~ BootstrapTerm ~> ~ (List BootstrapBinding) ~> ~ (List BootstrapNormalizationCertificate) ~> BootstrapMaybeTerm =>
+    (bootstrap-normalize-certified-recur (bootstrap-certified-normalization-work-new term bindings certificates)).
+
+bootstrap-certificate-proof-certificate
+  (bootstrap-normalization-certificate-new "" bootstrap-normalization-proof-start bootstrap-normalization-proof-path).
+
+bootstrap-certificate-proof-list
+  (new BootstrapNormalizationCertificate bootstrap-certificate-proof-certificate (empty BootstrapNormalizationCertificate)).
+
+bootstrap-certificate-valid-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-normalization-result-equal (bootstrap-normalize-certified-recur (bootstrap-certified-normalization-work-new bootstrap-normalization-proof-start bootstrap-reduction-empty-environment bootstrap-certificate-proof-list)) bootstrap-normalization-proof-result) true)).
+
+bootstrap-certificate-normal-needs-no-path-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-normalization-result-equal (bootstrap-normalize-certified-recur (bootstrap-certified-normalization-work-new bootstrap-normalization-proof-result bootstrap-reduction-empty-environment (empty BootstrapNormalizationCertificate))) bootstrap-normalization-proof-result) true)).
+
+bootstrap-certificate-missing-proof
+  ((refl BootstrapMaybeTerm bootstrap-no-term) :: (Eq BootstrapMaybeTerm (bootstrap-normalize-certified-recur (bootstrap-certified-normalization-work-new bootstrap-normalization-proof-start bootstrap-reduction-empty-environment (empty BootstrapNormalizationCertificate))) bootstrap-no-term)).

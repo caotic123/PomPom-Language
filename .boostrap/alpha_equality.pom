@@ -1,0 +1,133 @@
+import boostrap/annotation_erasure.
+
+Static bootstrap-alpha-work : *.
+Static bootstrap-alpha-term-work : (left : BootstrapTerm) ~ BootstrapTerm ~> ~ (BootstrapTermAccessibility left) ~> bootstrap-alpha-work.
+Static bootstrap-alpha-term-list-work : (left : (List BootstrapTerm)) ~ (List BootstrapTerm) ~> ~ (BootstrapTermListAccessibility left) ~> bootstrap-alpha-work.
+Static bootstrap-alpha-clause-work : (left : BootstrapClause) ~ BootstrapClause ~> ~ (BootstrapClauseAccessibility left) ~> bootstrap-alpha-work.
+Static bootstrap-alpha-clause-list-work : (left : (List BootstrapClause)) ~ (List BootstrapClause) ~> ~ (BootstrapClauseListAccessibility left) ~> bootstrap-alpha-work.
+
+BootstrapAlphaWork
+  {bootstrap-alpha-work :: |bootstrap-alpha-term-work |bootstrap-alpha-term-list-work |bootstrap-alpha-clause-work |bootstrap-alpha-clause-list-work}.
+
+bootstrap-alpha-recur
+  |work :: ~ BootstrapAlphaWork ~> Bool => [work of Bool
+    |(bootstrap-alpha-term-work left right accessibility) => [accessibility of Bool
+      |(bootstrap-term-access-variable left-var) => [right of Bool
+        |(bootstrap-variable-term right-var) => (bootstrap-var-equal left-var right-var)
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-pi left-binder left-domain left-body domain-access body-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term right-binder right-domain right-body) => [(bootstrap-alpha-recur (bootstrap-alpha-term-work left-domain right-domain domain-access)) of Bool
+          |false => false
+          |true => [(bootstrap-substitution-recur (bootstrap-substitution-term-work (bootstrap-variable-term right-binder) (bootstrap-variable-term left-binder) right-body (bootstrap-term-accessibility-instance right-body))) of Bool
+            |bootstrap-substitution-failed => false
+            |(bootstrap-substitution-term-output renamed-body) => (bootstrap-alpha-recur (bootstrap-alpha-term-work left-body renamed-body body-access))
+            |(bootstrap-substitution-term-list-output _) => false
+            |(bootstrap-substitution-clause-list-output _) => false
+          ]
+        ]
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-lambda left-binder left-body body-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term right-binder right-body) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work (bootstrap-variable-term right-binder) (bootstrap-variable-term left-binder) right-body (bootstrap-term-accessibility-instance right-body))) of Bool
+          |bootstrap-substitution-failed => false
+          |(bootstrap-substitution-term-output renamed-body) => (bootstrap-alpha-recur (bootstrap-alpha-term-work left-body renamed-body body-access))
+          |(bootstrap-substitution-term-list-output _) => false
+          |(bootstrap-substitution-clause-list-output _) => false
+        ]
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-application left-function left-argument function-access argument-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term right-function right-argument) => (and (bootstrap-alpha-recur (bootstrap-alpha-term-work left-function right-function function-access)) (bootstrap-alpha-recur (bootstrap-alpha-term-work left-argument right-argument argument-access)))
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-constructors left-type left-constructors type-access constructors-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term right-type right-constructors) => (and (bootstrap-alpha-recur (bootstrap-alpha-term-work left-type right-type type-access)) (bootstrap-alpha-recur (bootstrap-alpha-term-list-work left-constructors right-constructors constructors-access)))
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-match left-scrutinee left-type left-clauses scrutinee-access type-access clauses-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term right-scrutinee right-type right-clauses) => (bootstrap-and3 (bootstrap-alpha-recur (bootstrap-alpha-term-work left-scrutinee right-scrutinee scrutinee-access)) (bootstrap-alpha-recur (bootstrap-alpha-term-work left-type right-type type-access)) (bootstrap-alpha-recur (bootstrap-alpha-clause-list-work left-clauses right-clauses clauses-access)))
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-notation left-body left-type body-access type-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term right-body right-type) => (and (bootstrap-alpha-recur (bootstrap-alpha-term-work left-body right-body body-access)) (bootstrap-alpha-recur (bootstrap-alpha-term-work left-type right-type type-access)))
+      ]
+    ]
+    |(bootstrap-alpha-term-list-work left right accessibility) => [accessibility of Bool
+      |bootstrap-term-list-access-empty => [right of Bool
+        |(empty _) => true
+        |(new _ _ _) => false
+      ]
+      |(bootstrap-term-list-access-new left-head left-tail head-access tail-access) => [right of Bool
+        |(empty _) => false
+        |(new _ right-head right-tail) => (and (bootstrap-alpha-recur (bootstrap-alpha-term-work left-head right-head head-access)) (bootstrap-alpha-recur (bootstrap-alpha-term-list-work left-tail right-tail tail-access)))
+      ]
+    ]
+    |(bootstrap-alpha-clause-work left right accessibility) => [accessibility of Bool
+      |(bootstrap-clause-access-new left-pattern left-body pattern-access body-access) => [right of Bool
+        |(bootstrap-clause-new right-pattern right-body) => (and (bootstrap-alpha-recur (bootstrap-alpha-term-work left-pattern right-pattern pattern-access)) (bootstrap-alpha-recur (bootstrap-alpha-term-work left-body right-body body-access)))
+      ]
+    ]
+    |(bootstrap-alpha-clause-list-work left right accessibility) => [accessibility of Bool
+      |bootstrap-clause-list-access-empty => [right of Bool
+        |(empty _) => true
+        |(new _ _ _) => false
+      ]
+      |(bootstrap-clause-list-access-new left-head left-tail head-access tail-access) => [right of Bool
+        |(empty _) => false
+        |(new _ right-head right-tail) => (and (bootstrap-alpha-recur (bootstrap-alpha-clause-work left-head right-head head-access)) (bootstrap-alpha-recur (bootstrap-alpha-clause-list-work left-tail right-tail tail-access)))
+      ]
+    ]
+  ].
+
+bootstrap-alpha-equal
+  |left right :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> Bool =>
+    (bootstrap-alpha-recur (bootstrap-alpha-term-work left right (bootstrap-term-accessibility-instance left))).
+
+bootstrap-alpha-left-proof-term
+  (bootstrap-lambda-term (bootstrap-bound-var 0) (bootstrap-variable-term (bootstrap-bound-var 0))).
+
+bootstrap-alpha-right-proof-term
+  (bootstrap-lambda-term (bootstrap-bound-var 1) (bootstrap-variable-term (bootstrap-bound-var 1))).
+
+bootstrap-alpha-renaming-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-alpha-equal bootstrap-alpha-left-proof-term bootstrap-alpha-right-proof-term) true)).
+
+bootstrap-alpha-capture-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-alpha-equal bootstrap-alpha-left-proof-term (bootstrap-lambda-term (bootstrap-bound-var 1) (bootstrap-variable-term (bootstrap-bound-var 2)))) false)).

@@ -1,0 +1,112 @@
+import boostrap/typing.
+
+Static bootstrap-driver-output : *.
+Static bootstrap-driver-failed : bootstrap-driver-output.
+Static bootstrap-driver-succeeded : ~ BootstrapEnvironment ~> bootstrap-driver-output.
+
+BootstrapDriverOutput
+  {bootstrap-driver-output :: |bootstrap-driver-failed |bootstrap-driver-succeeded}.
+
+Static bootstrap-driver-work : *.
+Static bootstrap-driver-work-new : (pending : (List BootstrapBinding)) ~ BootstrapEnvironment ~> ~ (BootstrapBindingListAccessibility pending) ~> bootstrap-driver-work.
+
+BootstrapDriverWork
+  {bootstrap-driver-work :: |bootstrap-driver-work-new}.
+
+bootstrap-driver-recur
+  |work :: ~ BootstrapDriverWork ~> BootstrapDriverOutput => [work of BootstrapDriverOutput
+    |(bootstrap-driver-work-new pending environment accessibility) => [accessibility of BootstrapDriverOutput
+      |bootstrap-binding-list-access-empty => (bootstrap-driver-succeeded environment)
+      |(bootstrap-binding-list-access-new binding tail tail-access) => [binding of BootstrapDriverOutput
+        |(bootstrap-binding-new name sort body initial-context) => [environment of BootstrapDriverOutput
+          |(bootstrap-environment-new _ _ globals bindings certificates) => [(bootstrap-typing-recur (bootstrap-typing-term-work body bootstrap-infer-mode (bootstrap-environment-new initial-context (empty BootstrapTyping) globals bindings certificates) (bootstrap-term-accessibility-instance body))) of BootstrapDriverOutput
+            |bootstrap-typing-failed => bootstrap-driver-failed
+            |(bootstrap-environment-output _) => bootstrap-driver-failed
+            |(bootstrap-typed-output inferred checked-environment) => [sort of BootstrapDriverOutput
+              |bootstrap-static-sort => [(bootstrap-universe-check-recur (bootstrap-universe-check-work-new inferred checked-environment true)) of BootstrapDriverOutput
+                |false => bootstrap-driver-failed
+                |true => [checked-environment of BootstrapDriverOutput
+                  |(bootstrap-environment-new _ _ checked-globals checked-bindings checked-certificates) => (bootstrap-driver-recur (bootstrap-driver-work-new tail (bootstrap-environment-new (empty BootstrapTyping) (empty BootstrapTyping) checked-globals checked-bindings checked-certificates) tail-access))
+                ]
+              ]
+              |bootstrap-expression-sort => [checked-environment of BootstrapDriverOutput
+                |(bootstrap-environment-new _ _ checked-globals checked-bindings checked-certificates) => (bootstrap-driver-recur (bootstrap-driver-work-new tail (bootstrap-environment-new (empty BootstrapTyping) (empty BootstrapTyping) (new BootstrapTyping (bootstrap-typing-new (bootstrap-variable-term (bootstrap-reference-var name)) inferred) checked-globals) checked-bindings checked-certificates) tail-access))
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-check-bindings
+  |bindings certificates :: ~ (List BootstrapBinding) ~> ~ (List BootstrapNormalizationCertificate) ~> BootstrapDriverOutput =>
+    (bootstrap-driver-recur (bootstrap-driver-work-new bindings (bootstrap-empty-environment bindings certificates) (bootstrap-binding-list-accessibility-instance bindings))).
+
+Static bootstrap-input-check-work : *.
+Static bootstrap-input-check-work-new : ~ BootstrapInput ~> ~ (List BootstrapNormalizationCertificate) ~> bootstrap-input-check-work.
+
+BootstrapInputCheckWork
+  {bootstrap-input-check-work :: |bootstrap-input-check-work-new}.
+
+bootstrap-check-input-recur
+  |work :: ~ BootstrapInputCheckWork ~> BootstrapVerdict => [work of BootstrapVerdict
+    |(bootstrap-input-check-work-new input certificates) => [input of BootstrapVerdict
+      |bootstrap-parse-error-input => bootstrap-reject
+      |(bootstrap-program-input bindings) => [(bootstrap-driver-recur (bootstrap-driver-work-new bindings (bootstrap-empty-environment bindings certificates) (bootstrap-binding-list-accessibility-instance bindings))) of BootstrapVerdict
+        |bootstrap-driver-failed => bootstrap-reject
+        |(bootstrap-driver-succeeded _) => bootstrap-accept
+      ]
+    ]
+  ].
+
+bootstrap-check-input
+  |input certificates :: ~ BootstrapInput ~> ~ (List BootstrapNormalizationCertificate) ~> BootstrapVerdict => [input of BootstrapVerdict
+    |bootstrap-parse-error-input => bootstrap-reject
+    |(bootstrap-program-input bindings) => [(bootstrap-check-bindings bindings certificates) of BootstrapVerdict
+      |bootstrap-driver-failed => bootstrap-reject
+      |(bootstrap-driver-succeeded _) => bootstrap-accept
+    ]
+  ].
+
+bootstrap-verdict-is-accept
+  |verdict :: ~ BootstrapVerdict ~> Bool => [verdict of Bool
+    |bootstrap-accept => true
+    |bootstrap-reject => false
+  ].
+
+bootstrap-driver-output-succeeded
+  |output :: ~ BootstrapDriverOutput ~> Bool => [output of Bool
+    |bootstrap-driver-failed => false
+    |(bootstrap-driver-succeeded _) => true
+  ].
+
+bootstrap-driver-proof-static
+  (bootstrap-binding-new "41" bootstrap-static-sort bootstrap-set-term (empty BootstrapTyping)).
+
+bootstrap-driver-proof-id-type
+  (bootstrap-pi-term (bootstrap-bound-var 0) (bootstrap-variable-term (bootstrap-reference-var "41")) (bootstrap-variable-term (bootstrap-reference-var "41"))).
+
+bootstrap-driver-proof-id-body
+  (bootstrap-notation-term (bootstrap-lambda-term (bootstrap-bound-var 1) (bootstrap-variable-term (bootstrap-bound-var 1))) bootstrap-driver-proof-id-type).
+
+bootstrap-driver-proof-id
+  (bootstrap-binding-new "6964" bootstrap-expression-sort bootstrap-driver-proof-id-body (empty BootstrapTyping)).
+
+bootstrap-driver-proof-program
+  (new BootstrapBinding bootstrap-driver-proof-static (new BootstrapBinding bootstrap-driver-proof-id (empty BootstrapBinding))).
+
+bootstrap-driver-accept-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-driver-output-succeeded (bootstrap-check-bindings bootstrap-driver-proof-program (empty BootstrapNormalizationCertificate))) true)).
+
+bootstrap-driver-invalid-binding
+  (bootstrap-binding-new "626164" bootstrap-expression-sort (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "41")) bootstrap-set-term) (empty BootstrapTyping)).
+
+bootstrap-driver-invalid-program
+  (new BootstrapBinding bootstrap-driver-proof-static (new BootstrapBinding bootstrap-driver-invalid-binding (empty BootstrapBinding))).
+
+bootstrap-driver-reject-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-driver-output-succeeded (bootstrap-check-bindings bootstrap-driver-invalid-program (empty BootstrapNormalizationCertificate))) false)).
+
+bootstrap-driver-parse-error-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-verdict-is-accept (bootstrap-check-input-recur (bootstrap-input-check-work-new bootstrap-parse-error-input (empty BootstrapNormalizationCertificate)))) false)).

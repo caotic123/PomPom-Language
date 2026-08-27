@@ -1,0 +1,138 @@
+import boostrap/name.
+import libs/list.
+
+Static bootstrap-sort : *.
+Static bootstrap-static-sort : bootstrap-sort.
+Static bootstrap-expression-sort : bootstrap-sort.
+
+BootstrapSort
+  {bootstrap-sort :: |bootstrap-static-sort |bootstrap-expression-sort}.
+
+Static bootstrap-var : *.
+Static bootstrap-bound-var : ~ Nat ~> bootstrap-var.
+Static bootstrap-bound-name-var : ~ String ~> bootstrap-var.
+Static bootstrap-reference-var : ~ String ~> bootstrap-var.
+
+BootstrapVar
+  {bootstrap-var :: |bootstrap-bound-var |bootstrap-bound-name-var |bootstrap-reference-var}.
+
+Static bootstrap-term : *.
+Static bootstrap-clause : *.
+
+Static bootstrap-variable-term : ~ BootstrapVar ~> bootstrap-term.
+Static bootstrap-pi-term : ~ BootstrapVar ~> ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> bootstrap-term.
+Static bootstrap-lambda-term : ~ BootstrapVar ~> ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> bootstrap-term.
+Static bootstrap-application-term : ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> bootstrap-term.
+Static bootstrap-constructors-term : ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> ~ (List {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term}) ~> bootstrap-term.
+Static bootstrap-match-term : ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> ~ (List {bootstrap-clause :: |bootstrap-clause-new}) ~> bootstrap-term.
+Static bootstrap-notation-term : ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> bootstrap-term.
+
+Static bootstrap-clause-new : ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> ~ {bootstrap-term :: |bootstrap-variable-term |bootstrap-pi-term |bootstrap-lambda-term |bootstrap-application-term |bootstrap-constructors-term |bootstrap-match-term |bootstrap-notation-term} ~> bootstrap-clause.
+
+BootstrapTerm
+  {bootstrap-term ::
+    |bootstrap-variable-term
+    |bootstrap-pi-term
+    |bootstrap-lambda-term
+    |bootstrap-application-term
+    |bootstrap-constructors-term
+    |bootstrap-match-term
+    |bootstrap-notation-term
+  }.
+
+BootstrapClause
+  {bootstrap-clause :: |bootstrap-clause-new}.
+
+Static bootstrap-typing : *.
+Static bootstrap-typing-new : ~ BootstrapTerm ~> ~ BootstrapTerm ~> bootstrap-typing.
+
+BootstrapTyping
+  {bootstrap-typing :: |bootstrap-typing-new}.
+
+Static bootstrap-binding : *.
+Static bootstrap-binding-new : ~ String ~> ~ BootstrapSort ~> ~ BootstrapTerm ~> ~ (List BootstrapTyping) ~> bootstrap-binding.
+
+BootstrapBinding
+  {bootstrap-binding :: |bootstrap-binding-new}.
+
+Static bootstrap-input : *.
+Static bootstrap-parse-error-input : bootstrap-input.
+Static bootstrap-program-input : ~ (List BootstrapBinding) ~> bootstrap-input.
+
+BootstrapInput
+  {bootstrap-input :: |bootstrap-parse-error-input |bootstrap-program-input}.
+
+Static bootstrap-state : *.
+Static bootstrap-state-new : ~ (List BootstrapTyping) ~> ~ (List BootstrapTyping) ~> bootstrap-state.
+
+BootstrapState
+  {bootstrap-state :: |bootstrap-state-new}.
+
+Static bootstrap-maybe-term : *.
+Static bootstrap-no-term : bootstrap-maybe-term.
+Static bootstrap-some-term : ~ BootstrapTerm ~> bootstrap-maybe-term.
+
+BootstrapMaybeTerm
+  {bootstrap-maybe-term :: |bootstrap-no-term |bootstrap-some-term}.
+
+Static bootstrap-maybe-binding : *.
+Static bootstrap-no-binding : bootstrap-maybe-binding.
+Static bootstrap-some-binding : ~ BootstrapBinding ~> bootstrap-maybe-binding.
+
+BootstrapMaybeBinding
+  {bootstrap-maybe-binding :: |bootstrap-no-binding |bootstrap-some-binding}.
+
+Static bootstrap-result : *.
+Static bootstrap-failure : bootstrap-result.
+Static bootstrap-success : ~ BootstrapTerm ~> ~ BootstrapState ~> bootstrap-result.
+
+BootstrapResult
+  {bootstrap-result :: |bootstrap-failure |bootstrap-success}.
+
+Static bootstrap-verdict : *.
+Static bootstrap-accept : bootstrap-verdict.
+Static bootstrap-reject : bootstrap-verdict.
+
+BootstrapVerdict
+  {bootstrap-verdict :: |bootstrap-accept |bootstrap-reject}.
+
+BootstrapAcceptOnly
+  {bootstrap-verdict :: |bootstrap-accept}.
+
+BootstrapRejectOnly
+  {bootstrap-verdict :: |bootstrap-reject}.
+
+bootstrap-data-accept-proof
+  (bootstrap-accept :: BootstrapAcceptOnly).
+
+bootstrap-data-reject-proof
+  (bootstrap-reject :: BootstrapRejectOnly).
+
+Static bootstrap-step : *.
+Static bootstrap-normal-step : ~ BootstrapTerm ~> bootstrap-step.
+Static bootstrap-reduced-step : ~ BootstrapTerm ~> bootstrap-step.
+Static bootstrap-failed-step : bootstrap-step.
+
+BootstrapStep
+  {bootstrap-step :: |bootstrap-normal-step |bootstrap-reduced-step |bootstrap-failed-step}.
+
+Static bootstrap-bool-result : *.
+Static bootstrap-no-bool : bootstrap-bool-result.
+Static bootstrap-some-bool : ~ Bool ~> bootstrap-bool-result.
+
+BootstrapBoolResult
+  {bootstrap-bool-result :: |bootstrap-no-bool |bootstrap-some-bool}.
+
+Static bootstrap-maybe-term-list : *.
+Static bootstrap-no-term-list : bootstrap-maybe-term-list.
+Static bootstrap-some-term-list : ~ (List BootstrapTerm) ~> bootstrap-maybe-term-list.
+
+BootstrapMaybeTermList
+  {bootstrap-maybe-term-list :: |bootstrap-no-term-list |bootstrap-some-term-list}.
+
+Static bootstrap-maybe-clause-list : *.
+Static bootstrap-no-clause-list : bootstrap-maybe-clause-list.
+Static bootstrap-some-clause-list : ~ (List BootstrapClause) ~> bootstrap-maybe-clause-list.
+
+BootstrapMaybeClauseList
+  {bootstrap-maybe-clause-list :: |bootstrap-no-clause-list |bootstrap-some-clause-list}.

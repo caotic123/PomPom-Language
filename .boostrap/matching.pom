@@ -1,0 +1,134 @@
+import boostrap/substitution.
+
+Static bootstrap-pattern-match-work : *.
+Static bootstrap-pattern-match-work-new : (pattern : BootstrapTerm) ~ BootstrapTerm ~> ~ (BootstrapTermAccessibility pattern) ~> bootstrap-pattern-match-work.
+
+BootstrapPatternMatchWork
+  {bootstrap-pattern-match-work :: |bootstrap-pattern-match-work-new}.
+
+bootstrap-pattern-match-recur
+  |work :: ~ BootstrapPatternMatchWork ~> Bool => [work of Bool
+    |(bootstrap-pattern-match-work-new pattern scrutinee accessibility) => [accessibility of Bool
+      |(bootstrap-term-access-variable pattern-variable) => [pattern-variable of Bool
+        |(bootstrap-bound-var _) => true
+        |(bootstrap-bound-name-var _) => true
+        |(bootstrap-reference-var pattern-name) => [scrutinee of Bool
+          |(bootstrap-variable-term scrutinee-variable) => [scrutinee-variable of Bool
+            |(bootstrap-bound-var _) => false
+            |(bootstrap-bound-name-var _) => false
+            |(bootstrap-reference-var scrutinee-name) => (bootstrap-name-equal pattern-name scrutinee-name)
+          ]
+          |(bootstrap-pi-term _ _ _) => false
+          |(bootstrap-lambda-term _ _) => false
+          |(bootstrap-application-term _ _) => false
+          |(bootstrap-constructors-term _ _) => false
+          |(bootstrap-match-term _ _ _) => false
+          |(bootstrap-notation-term _ _) => false
+        ]
+      ]
+      |(bootstrap-term-access-pi _ _ _ _ _) => false
+      |(bootstrap-term-access-lambda _ _ _) => false
+      |(bootstrap-term-access-application pattern-function pattern-argument function-access argument-access) => [scrutinee of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term scrutinee-function scrutinee-argument) => (and (bootstrap-pattern-match-recur (bootstrap-pattern-match-work-new pattern-function scrutinee-function function-access)) (bootstrap-pattern-match-recur (bootstrap-pattern-match-work-new pattern-argument scrutinee-argument argument-access)))
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-constructors _ _ _ _) => false
+      |(bootstrap-term-access-match _ _ _ _ _ _) => false
+      |(bootstrap-term-access-notation _ _ _ _) => false
+    ]
+  ].
+
+bootstrap-pattern-matches
+  |pattern scrutinee :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> Bool =>
+    (bootstrap-pattern-match-recur (bootstrap-pattern-match-work-new pattern scrutinee (bootstrap-term-accessibility-instance pattern))).
+
+Static bootstrap-destruct-work : *.
+Static bootstrap-destruct-work-new : (pattern : BootstrapTerm) ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ (BootstrapTermAccessibility pattern) ~> bootstrap-destruct-work.
+
+BootstrapDestructWork
+  {bootstrap-destruct-work :: |bootstrap-destruct-work-new}.
+
+bootstrap-destruct-recur
+  |work :: ~ BootstrapDestructWork ~> BootstrapMaybeTerm => [work of BootstrapMaybeTerm
+    |(bootstrap-destruct-work-new pattern scrutinee body accessibility) => [accessibility of BootstrapMaybeTerm
+      |(bootstrap-term-access-variable pattern-variable) => [pattern-variable of BootstrapMaybeTerm
+        |(bootstrap-bound-var _) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work (bootstrap-variable-term pattern-variable) scrutinee body (bootstrap-term-accessibility-instance body))) of BootstrapMaybeTerm
+          |bootstrap-substitution-failed => bootstrap-no-term
+          |(bootstrap-substitution-term-output result) => (bootstrap-some-term result)
+          |(bootstrap-substitution-term-list-output _) => bootstrap-no-term
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-no-term
+        ]
+        |(bootstrap-bound-name-var _) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work (bootstrap-variable-term pattern-variable) scrutinee body (bootstrap-term-accessibility-instance body))) of BootstrapMaybeTerm
+          |bootstrap-substitution-failed => bootstrap-no-term
+          |(bootstrap-substitution-term-output result) => (bootstrap-some-term result)
+          |(bootstrap-substitution-term-list-output _) => bootstrap-no-term
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-no-term
+        ]
+        |(bootstrap-reference-var _) => (bootstrap-some-term body)
+      ]
+      |(bootstrap-term-access-pi _ _ _ _ _) => (bootstrap-some-term body)
+      |(bootstrap-term-access-lambda _ _ _) => (bootstrap-some-term body)
+      |(bootstrap-term-access-application pattern-function pattern-argument function-access argument-access) => [scrutinee of BootstrapMaybeTerm
+        |(bootstrap-variable-term _) => bootstrap-no-term
+        |(bootstrap-pi-term _ _ _) => bootstrap-no-term
+        |(bootstrap-lambda-term _ _) => bootstrap-no-term
+        |(bootstrap-application-term scrutinee-function scrutinee-argument) => [(bootstrap-destruct-recur (bootstrap-destruct-work-new pattern-argument scrutinee-argument body argument-access)) of BootstrapMaybeTerm
+          |bootstrap-no-term => bootstrap-no-term
+          |(bootstrap-some-term argument-body) => (bootstrap-destruct-recur (bootstrap-destruct-work-new pattern-function scrutinee-function argument-body function-access))
+        ]
+        |(bootstrap-constructors-term _ _) => bootstrap-no-term
+        |(bootstrap-match-term _ _ _) => bootstrap-no-term
+        |(bootstrap-notation-term _ _) => bootstrap-no-term
+      ]
+      |(bootstrap-term-access-constructors _ _ _ _) => (bootstrap-some-term body)
+      |(bootstrap-term-access-match _ _ _ _ _ _) => (bootstrap-some-term body)
+      |(bootstrap-term-access-notation _ _ _ _) => (bootstrap-some-term body)
+    ]
+  ].
+
+bootstrap-destruct
+  |pattern scrutinee body :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ BootstrapTerm ~> BootstrapMaybeTerm =>
+    (bootstrap-destruct-recur (bootstrap-destruct-work-new pattern scrutinee body (bootstrap-term-accessibility-instance pattern))).
+
+Static bootstrap-select-clause-work : *.
+Static bootstrap-select-clause-work-new : ~ BootstrapTerm ~> (clauses : (List BootstrapClause)) ~> ~ (BootstrapClauseListAccessibility clauses) ~> bootstrap-select-clause-work.
+
+BootstrapSelectClauseWork
+  {bootstrap-select-clause-work :: |bootstrap-select-clause-work-new}.
+
+bootstrap-select-clause-recur
+  |work :: ~ BootstrapSelectClauseWork ~> BootstrapMaybeTerm => [work of BootstrapMaybeTerm
+    |(bootstrap-select-clause-work-new scrutinee clauses accessibility) => [accessibility of BootstrapMaybeTerm
+      |bootstrap-clause-list-access-empty => bootstrap-no-term
+      |(bootstrap-clause-list-access-new clause tail clause-access tail-access) => [(bootstrap-select-clause-recur (bootstrap-select-clause-work-new scrutinee tail tail-access)) of BootstrapMaybeTerm
+        |(bootstrap-some-term tail-result) => (bootstrap-some-term tail-result)
+        |bootstrap-no-term => [clause-access of BootstrapMaybeTerm
+          |(bootstrap-clause-access-new pattern body pattern-access body-access) => [(bootstrap-pattern-match-recur (bootstrap-pattern-match-work-new pattern scrutinee pattern-access)) of BootstrapMaybeTerm
+            |true => (bootstrap-destruct-recur (bootstrap-destruct-work-new pattern scrutinee body pattern-access))
+            |false => bootstrap-no-term
+          ]
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-select-clause
+  |scrutinee clauses :: ~ BootstrapTerm ~> ~ (List BootstrapClause) ~> BootstrapMaybeTerm =>
+    (bootstrap-select-clause-recur (bootstrap-select-clause-work-new scrutinee clauses (bootstrap-clause-list-accessibility-instance clauses))).
+
+bootstrap-pattern-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-pattern-matches (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "0a")) (bootstrap-variable-term (bootstrap-bound-var 0))) (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "0a")) (bootstrap-variable-term (bootstrap-reference-var "0b")))) true)).
+
+bootstrap-destruct-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-maybe-reference-name (bootstrap-destruct (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-reference-var "0b")) (bootstrap-variable-term (bootstrap-bound-var 0))) "0b") true)).
+
+bootstrap-last-clause-proof-clauses
+  (new BootstrapClause (bootstrap-clause-new (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-reference-var "0a"))) (new BootstrapClause (bootstrap-clause-new (bootstrap-variable-term (bootstrap-bound-var 1)) (bootstrap-variable-term (bootstrap-reference-var "0b"))) (empty BootstrapClause))).
+
+bootstrap-last-clause-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-maybe-reference-name (bootstrap-select-clause (bootstrap-variable-term (bootstrap-reference-var "0c")) bootstrap-last-clause-proof-clauses) "0b") true)).

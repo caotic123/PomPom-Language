@@ -1,0 +1,225 @@
+import boostrap/collections.
+
+Static bootstrap-substitution-output : *.
+Static bootstrap-substitution-failed : bootstrap-substitution-output.
+Static bootstrap-substitution-term-output : ~ BootstrapTerm ~> bootstrap-substitution-output.
+Static bootstrap-substitution-term-list-output : ~ (List BootstrapTerm) ~> bootstrap-substitution-output.
+Static bootstrap-substitution-clause-list-output : ~ (List BootstrapClause) ~> bootstrap-substitution-output.
+
+BootstrapSubstitutionOutput
+  {bootstrap-substitution-output :: |bootstrap-substitution-failed |bootstrap-substitution-term-output |bootstrap-substitution-term-list-output |bootstrap-substitution-clause-list-output}.
+
+Static bootstrap-substitution-work : *.
+Static bootstrap-substitution-term-work : ~ BootstrapTerm ~> ~ BootstrapTerm ~> (term : BootstrapTerm) ~> ~ (BootstrapTermAccessibility term) ~> bootstrap-substitution-work.
+Static bootstrap-substitution-term-list-work : ~ BootstrapTerm ~> ~ BootstrapTerm ~> (terms : (List BootstrapTerm)) ~> ~ (BootstrapTermListAccessibility terms) ~> bootstrap-substitution-work.
+Static bootstrap-substitution-clause-list-work : ~ BootstrapTerm ~> ~ BootstrapTerm ~> (clauses : (List BootstrapClause)) ~> ~ (BootstrapClauseListAccessibility clauses) ~> bootstrap-substitution-work.
+
+BootstrapSubstitutionWork
+  {bootstrap-substitution-work :: |bootstrap-substitution-term-work |bootstrap-substitution-term-list-work |bootstrap-substitution-clause-list-work}.
+
+bootstrap-substitution-recur
+  |work :: ~ BootstrapSubstitutionWork ~> BootstrapSubstitutionOutput => [work of BootstrapSubstitutionOutput
+    |(bootstrap-substitution-term-work target replacement term accessibility) => [accessibility of BootstrapSubstitutionOutput
+      |(bootstrap-term-access-variable variable) => [(bootstrap-term-equal (bootstrap-variable-term variable) target) of BootstrapSubstitutionOutput
+        |true => (bootstrap-substitution-term-output replacement)
+        |false => (bootstrap-substitution-term-output (bootstrap-variable-term variable))
+      ]
+      |(bootstrap-term-access-pi binder domain body domain-access body-access) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement domain domain-access)) of BootstrapSubstitutionOutput
+        |bootstrap-substitution-failed => bootstrap-substitution-failed
+        |(bootstrap-substitution-term-output new-domain) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement body body-access)) of BootstrapSubstitutionOutput
+          |bootstrap-substitution-failed => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-output new-body) => (bootstrap-substitution-term-output (bootstrap-pi-term binder new-domain new-body))
+          |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+        ]
+        |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+        |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+      ]
+      |(bootstrap-term-access-lambda binder body body-access) => [(bootstrap-term-equal (bootstrap-variable-term binder) target) of BootstrapSubstitutionOutput
+        |true => (bootstrap-substitution-term-output (bootstrap-lambda-term binder body))
+        |false => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement body body-access)) of BootstrapSubstitutionOutput
+          |bootstrap-substitution-failed => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-output new-body) => (bootstrap-substitution-term-output (bootstrap-lambda-term binder new-body))
+          |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+        ]
+      ]
+      |(bootstrap-term-access-application function argument function-access argument-access) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement function function-access)) of BootstrapSubstitutionOutput
+        |bootstrap-substitution-failed => bootstrap-substitution-failed
+        |(bootstrap-substitution-term-output new-function) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement argument argument-access)) of BootstrapSubstitutionOutput
+          |bootstrap-substitution-failed => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-output new-argument) => (bootstrap-substitution-term-output (bootstrap-application-term new-function new-argument))
+          |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+        ]
+        |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+        |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+      ]
+      |(bootstrap-term-access-constructors type constructors type-access constructors-access) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement type type-access)) of BootstrapSubstitutionOutput
+        |bootstrap-substitution-failed => bootstrap-substitution-failed
+        |(bootstrap-substitution-term-output new-type) => [(bootstrap-substitution-recur (bootstrap-substitution-term-list-work target replacement constructors constructors-access)) of BootstrapSubstitutionOutput
+          |bootstrap-substitution-failed => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-output _) => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-list-output new-constructors) => (bootstrap-substitution-term-output (bootstrap-constructors-term new-type new-constructors))
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+        ]
+        |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+        |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+      ]
+      |(bootstrap-term-access-match scrutinee type clauses scrutinee-access type-access clauses-access) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement scrutinee scrutinee-access)) of BootstrapSubstitutionOutput
+        |bootstrap-substitution-failed => bootstrap-substitution-failed
+        |(bootstrap-substitution-term-output new-scrutinee) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement type type-access)) of BootstrapSubstitutionOutput
+          |bootstrap-substitution-failed => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-output new-type) => [(bootstrap-substitution-recur (bootstrap-substitution-clause-list-work target replacement clauses clauses-access)) of BootstrapSubstitutionOutput
+            |bootstrap-substitution-failed => bootstrap-substitution-failed
+            |(bootstrap-substitution-term-output _) => bootstrap-substitution-failed
+            |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+            |(bootstrap-substitution-clause-list-output new-clauses) => (bootstrap-substitution-term-output (bootstrap-match-term new-scrutinee new-type new-clauses))
+          ]
+          |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+        ]
+        |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+        |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+      ]
+      |(bootstrap-term-access-notation body type body-access type-access) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement body body-access)) of BootstrapSubstitutionOutput
+        |bootstrap-substitution-failed => bootstrap-substitution-failed
+        |(bootstrap-substitution-term-output new-body) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement type type-access)) of BootstrapSubstitutionOutput
+          |bootstrap-substitution-failed => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-output new-type) => (bootstrap-substitution-term-output (bootstrap-notation-term new-body new-type))
+          |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+        ]
+        |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+        |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+      ]
+    ]
+    |(bootstrap-substitution-term-list-work target replacement terms accessibility) => [accessibility of BootstrapSubstitutionOutput
+      |bootstrap-term-list-access-empty => (bootstrap-substitution-term-list-output (empty BootstrapTerm))
+      |(bootstrap-term-list-access-new head tail head-access tail-access) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement head head-access)) of BootstrapSubstitutionOutput
+        |bootstrap-substitution-failed => bootstrap-substitution-failed
+        |(bootstrap-substitution-term-output new-head) => [(bootstrap-substitution-recur (bootstrap-substitution-term-list-work target replacement tail tail-access)) of BootstrapSubstitutionOutput
+          |bootstrap-substitution-failed => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-output _) => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-list-output new-tail) => (bootstrap-substitution-term-list-output (new BootstrapTerm new-head new-tail))
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+        ]
+        |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+        |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+      ]
+    ]
+    |(bootstrap-substitution-clause-list-work target replacement clauses accessibility) => [accessibility of BootstrapSubstitutionOutput
+      |bootstrap-clause-list-access-empty => (bootstrap-substitution-clause-list-output (empty BootstrapClause))
+      |(bootstrap-clause-list-access-new head tail head-access tail-access) => [head-access of BootstrapSubstitutionOutput
+        |(bootstrap-clause-access-new pattern body pattern-access body-access) => [(bootstrap-substitution-recur (bootstrap-substitution-term-work target replacement body body-access)) of BootstrapSubstitutionOutput
+          |bootstrap-substitution-failed => bootstrap-substitution-failed
+          |(bootstrap-substitution-term-output new-body) => [(bootstrap-substitution-recur (bootstrap-substitution-clause-list-work target replacement tail tail-access)) of BootstrapSubstitutionOutput
+            |bootstrap-substitution-failed => bootstrap-substitution-failed
+            |(bootstrap-substitution-term-output _) => bootstrap-substitution-failed
+            |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+            |(bootstrap-substitution-clause-list-output new-tail) => (bootstrap-substitution-clause-list-output (new BootstrapClause (bootstrap-clause-new pattern new-body) new-tail))
+          ]
+          |(bootstrap-substitution-term-list-output _) => bootstrap-substitution-failed
+          |(bootstrap-substitution-clause-list-output _) => bootstrap-substitution-failed
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-substitute
+  |work :: ~ BootstrapSubstitutionWork ~> BootstrapMaybeTerm => [(bootstrap-substitution-recur work) of BootstrapMaybeTerm
+    |bootstrap-substitution-failed => bootstrap-no-term
+    |(bootstrap-substitution-term-output result) => (bootstrap-some-term result)
+    |(bootstrap-substitution-term-list-output _) => bootstrap-no-term
+    |(bootstrap-substitution-clause-list-output _) => bootstrap-no-term
+  ].
+
+bootstrap-maybe-reference-name
+  |value expected-name :: ~ BootstrapMaybeTerm ~> ~ String ~> Bool => [value of Bool
+    |bootstrap-no-term => false
+    |(bootstrap-some-term term) => [term of Bool
+      |(bootstrap-variable-term variable) => [variable of Bool
+        |(bootstrap-bound-var _) => false
+        |(bootstrap-bound-name-var _) => false
+        |(bootstrap-reference-var actual-name) => (bootstrap-name-equal actual-name expected-name)
+      ]
+      |(bootstrap-pi-term _ _ _) => false
+      |(bootstrap-lambda-term _ _) => false
+      |(bootstrap-application-term _ _) => false
+      |(bootstrap-constructors-term _ _) => false
+      |(bootstrap-match-term _ _ _) => false
+      |(bootstrap-notation-term _ _) => false
+    ]
+  ].
+
+bootstrap-maybe-shadowed-lambda
+  |value expected-binder :: ~ BootstrapMaybeTerm ~> ~ BootstrapVar ~> Bool => [value of Bool
+    |bootstrap-no-term => false
+    |(bootstrap-some-term term) => [term of Bool
+      |(bootstrap-variable-term _) => false
+      |(bootstrap-pi-term _ _ _) => false
+      |(bootstrap-lambda-term binder body) => [body of Bool
+        |(bootstrap-variable-term body-variable) => (and (bootstrap-var-equal binder expected-binder) (bootstrap-var-equal body-variable expected-binder))
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-application-term _ _) => false
+      |(bootstrap-constructors-term _ _) => false
+      |(bootstrap-match-term _ _ _) => false
+      |(bootstrap-notation-term _ _) => false
+    ]
+  ].
+
+bootstrap-output-reference-name
+  |value expected-name :: ~ BootstrapSubstitutionOutput ~> ~ String ~> Bool => [value of Bool
+    |bootstrap-substitution-failed => false
+    |(bootstrap-substitution-term-output term) => [term of Bool
+      |(bootstrap-variable-term variable) => [variable of Bool
+        |(bootstrap-bound-var _) => false
+        |(bootstrap-bound-name-var _) => false
+        |(bootstrap-reference-var actual-name) => (bootstrap-name-equal actual-name expected-name)
+      ]
+      |(bootstrap-pi-term _ _ _) => false
+      |(bootstrap-lambda-term _ _) => false
+      |(bootstrap-application-term _ _) => false
+      |(bootstrap-constructors-term _ _) => false
+      |(bootstrap-match-term _ _ _) => false
+      |(bootstrap-notation-term _ _) => false
+    ]
+    |(bootstrap-substitution-term-list-output _) => false
+    |(bootstrap-substitution-clause-list-output _) => false
+  ].
+
+bootstrap-output-shadowed-lambda
+  |value expected-binder :: ~ BootstrapSubstitutionOutput ~> ~ BootstrapVar ~> Bool => [value of Bool
+    |bootstrap-substitution-failed => false
+    |(bootstrap-substitution-term-output term) => [term of Bool
+      |(bootstrap-variable-term _) => false
+      |(bootstrap-pi-term _ _ _) => false
+      |(bootstrap-lambda-term binder body) => [body of Bool
+        |(bootstrap-variable-term body-variable) => (and (bootstrap-var-equal binder expected-binder) (bootstrap-var-equal body-variable expected-binder))
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-application-term _ _) => false
+      |(bootstrap-constructors-term _ _) => false
+      |(bootstrap-match-term _ _ _) => false
+      |(bootstrap-notation-term _ _) => false
+    ]
+    |(bootstrap-substitution-term-list-output _) => false
+    |(bootstrap-substitution-clause-list-output _) => false
+  ].
+
+bootstrap-substitution-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-output-reference-name (bootstrap-substitution-recur (bootstrap-substitution-term-work (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-reference-var "0a")) (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-term-accessibility-instance (bootstrap-variable-term (bootstrap-bound-var 0))))) "0a") true)).
+
+bootstrap-shadow-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-output-shadowed-lambda (bootstrap-substitution-recur (bootstrap-substitution-term-work (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-reference-var "0a")) (bootstrap-lambda-term (bootstrap-bound-var 0) (bootstrap-variable-term (bootstrap-bound-var 0))) (bootstrap-term-accessibility-instance (bootstrap-lambda-term (bootstrap-bound-var 0) (bootstrap-variable-term (bootstrap-bound-var 0)))))) (bootstrap-bound-var 0)) true)).

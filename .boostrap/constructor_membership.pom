@@ -1,0 +1,50 @@
+import boostrap/unification.
+
+Static bootstrap-constructor-membership-work : *.
+Static bootstrap-constructor-membership-work-new : ~ BootstrapTerm ~> (allowed : (List BootstrapTerm)) ~> ~ (List BootstrapBinding) ~> ~ (BootstrapTermListAccessibility allowed) ~> bootstrap-constructor-membership-work.
+
+BootstrapConstructorMembershipWork
+  {bootstrap-constructor-membership-work :: |bootstrap-constructor-membership-work-new}.
+
+bootstrap-constructor-membership-recur
+  |work :: ~ BootstrapConstructorMembershipWork ~> Bool => [work of Bool
+    |(bootstrap-constructor-membership-work-new constructor allowed bindings accessibility) => [(bootstrap-get-root-binding-recur (bootstrap-root-binding-work-new constructor true bindings (bootstrap-term-accessibility-instance constructor))) of Bool
+      |bootstrap-no-binding => false
+      |(bootstrap-some-binding actual-binding) => [actual-binding of Bool
+        |(bootstrap-binding-new actual-name _ _ _) => [accessibility of Bool
+          |bootstrap-term-list-access-empty => false
+          |(bootstrap-term-list-access-new candidate tail candidate-access tail-access) => [(bootstrap-get-root-binding-recur (bootstrap-root-binding-work-new candidate true bindings candidate-access)) of Bool
+            |bootstrap-no-binding => (bootstrap-constructor-membership-recur (bootstrap-constructor-membership-work-new constructor tail bindings tail-access))
+            |(bootstrap-some-binding candidate-binding) => [candidate-binding of Bool
+              |(bootstrap-binding-new candidate-name _ _ _) => [(bootstrap-name-equal actual-name candidate-name) of Bool
+                |true => true
+                |false => (bootstrap-constructor-membership-recur (bootstrap-constructor-membership-work-new constructor tail bindings tail-access))
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-constructor-member
+  |constructor allowed bindings :: ~ BootstrapTerm ~> ~ (List BootstrapTerm) ~> ~ (List BootstrapBinding) ~> Bool =>
+    (bootstrap-constructor-membership-recur (bootstrap-constructor-membership-work-new constructor allowed bindings (bootstrap-term-list-accessibility-instance allowed))).
+
+bootstrap-constructor-proof-c-binding
+  (bootstrap-binding-new "43" bootstrap-static-sort (bootstrap-variable-term (bootstrap-reference-var "54")) (empty BootstrapTyping)).
+
+bootstrap-constructor-proof-d-binding
+  (bootstrap-binding-new "44" bootstrap-static-sort (bootstrap-variable-term (bootstrap-reference-var "54")) (empty BootstrapTyping)).
+
+bootstrap-constructor-proof-bindings
+  (new BootstrapBinding bootstrap-constructor-proof-c-binding (new BootstrapBinding bootstrap-constructor-proof-d-binding (empty BootstrapBinding))).
+
+bootstrap-constructor-proof-allowed
+  (new BootstrapTerm (bootstrap-variable-term (bootstrap-reference-var "43")) (empty BootstrapTerm)).
+
+bootstrap-constructor-member-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-constructor-member (bootstrap-application-term (bootstrap-variable-term (bootstrap-reference-var "43")) (bootstrap-variable-term (bootstrap-bound-var 0))) bootstrap-constructor-proof-allowed bootstrap-constructor-proof-bindings) true)).
+
+bootstrap-constructor-nonmember-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-constructor-member (bootstrap-variable-term (bootstrap-reference-var "44")) bootstrap-constructor-proof-allowed bootstrap-constructor-proof-bindings) false)).

@@ -1,0 +1,295 @@
+// GOAL PROGRAM: TYPE CLASSES BY DICTIONARY PASSING.
+//
+// PomPom needs no class feature: the EID Fig. 1 pairs that already form
+// signatures ({T :: Φ} is an ordinary pair — type-rules §6) also form
+// dictionaries.  The whole discipline is:
+//
+//   class declaration    a definition of a dictionary TYPE — a Σ-telescope
+//                        of methods, then laws (later components may depend
+//                        on earlier ones);
+//   method               a pair projection — computes judgmentally even on
+//                        a dictionary whose other components are neutral;
+//   instance             an ordinary definition of a pair of that type;
+//   overloaded program   one extra dictionary parameter;
+//   superclass           the first component, reached by projection;
+//   resolution           elaboration sugar at most (an ι table like κ),
+//                        never a core rule and never invented evidence.
+//
+// Sig I E is itself the house example: a two-field dictionary (branches,
+// labels) whose "methods" are the projections.  Nothing below extends the
+// calculus.
+//
+// Future-native constructs assumed (progress/type-rules.md §1):
+//
+//   (x : A) × B    dependent pair type         (a , b)    pairing
+//   π₀ / π₁        projections, computing judgmentally (EID Fig. 1b)
+//
+// plus the enumeration layer and the label algebra of progress/2.pom.
+// Exact ASCII surface spellings remain to be finalized, and the imports
+// below are aspirational in the same way.
+
+import libs/logic.
+import libs/equality.
+import libs/list.
+import progress/2.    // Label, Dec, yes/no, decide-label, concat, …
+
+
+// ---------------------------------------------------------------------------
+// 1. A one-method, lawless class is just its method type
+// ---------------------------------------------------------------------------
+
+// Haskell's `class Eq a` carries one member, so the dictionary degenerates
+// to the member itself and no pair ceremony arises.  Deciding propositional
+// equality is the dependently-typed reading of Eq.
+EqDec
+  |A :: ~ * ~> * => ((a : A) (b : A) ~> (Dec (Eq A a b))).
+
+// An instance is an ordinary program.  2.pom's position induction IS the
+// EqDec instance at the ambient-constructor type.
+label-eqdec
+  |E :: (E : EnumU) ~> (EqDec (Label E)) => (decide-label E).
+
+
+// ---------------------------------------------------------------------------
+// 2. Classes with several members and laws: Σ-telescopes
+// ---------------------------------------------------------------------------
+
+// The dictionary type.  Later components depend on earlier ones, so laws
+// mention methods, and a "lawful instance" is the only kind that exists —
+// an unlawful pair simply fails to check.  Monoid A stores only A-values,
+// A-functions, and Eq proofs, so it sits predicatively in *.
+Monoid
+  |A :: ~ * ~> * =>
+    ((mop : (~ A ~> ~ A ~> A)) ×
+     ((mempty : A) ×
+      ((((x : A) (y : A) (z : A) ~> (Eq A (mop x (mop y z)) (mop (mop x y) z))) ×
+        (((x : A) ~> (Eq A (mop mempty x) x)) ×
+         ((x : A) ~> (Eq A (mop x mempty) x))))))).
+
+// Methods and laws are projections.  They compute judgmentally on any
+// pair, so (op A {(f , rest)}) ≡ f even while rest is neutral — the same
+// fact that gives branches {T :: Φ} ≡ T on signatures.
+op
+  |A m :: (A : *) (m : (Monoid A)) ~> ~ A ~> ~ A ~> A => (π₀ m).
+
+mid
+  |A m :: (A : *) (m : (Monoid A)) ~> A => (π₀ (π₁ m)).
+
+massoc
+  |A m :: (A : *) (m : (Monoid A)) ~>
+          ((x : A) (y : A) (z : A) ~> (Eq A (op A m x (op A m y z)) (op A m (op A m x y) z))) =>
+    (π₀ (π₁ (π₁ m))).
+
+mid-left
+  |A m :: (A : *) (m : (Monoid A)) ~> ((x : A) ~> (Eq A (op A m (mid A m) x) x)) =>
+    (π₀ (π₁ (π₁ (π₁ m)))).
+
+mid-right
+  |A m :: (A : *) (m : (Monoid A)) ~> ((x : A) ~> (Eq A (op A m x (mid A m)) x)) =>
+    (π₁ (π₁ (π₁ (π₁ m)))).
+
+// A class over type constructors quantifies over * and therefore lives in
+// Type — the same predicative step that puts IDesc I there.  Laws are
+// stated pointwise, so no function extensionality is consumed; the
+// composition law is analogous to the identity law shown.
+Functor
+  |F :: ~ (~ * ~> *) ~> Type =>
+    ((fmap : ((A : *) (B : *) ~> ~ (~ A ~> B) ~> ~ (F A) ~> (F B))) ×
+     ((A : *) (x : (F A)) ~> (Eq (F A) (fmap A A (|a :: ~ A ~> A => a) x) x))).
+
+
+// ---------------------------------------------------------------------------
+// 3. An instance: enabled-label lists under concat
+// ---------------------------------------------------------------------------
+
+// 2.pom's union of enabled-label lists is concatenation; with identity and
+// associativity proofs it is a lawful Monoid, so signature union inherits
+// the algebra.  concat computes on its left argument, which makes the left
+// identity law refl and the other two proofs one-step list inductions.
+
+concat-assoc
+  |E xs ys zs :: (E : EnumU) (xs : (List (Label E))) (ys : (List (Label E))) (zs : (List (Label E)))
+                 ~> (Eq (List (Label E)) (concat E xs (concat E ys zs)) (concat E (concat E xs ys) zs)) =>
+  [xs of (Eq (List (Label E)) (concat E xs (concat E ys zs)) (concat E (concat E xs ys) zs))
+    |(empty _) => (refl (List (Label E)) (concat E ys zs))
+    |(new _ head tail) =>
+      (cong (List (Label E)) (concat E tail (concat E ys zs)) (concat E (concat E tail ys) zs)
+            (List (Label E)) (|l :: ~ (List (Label E)) ~> (List (Label E)) => (new (Label E) head l))
+            (concat-assoc E tail ys zs))
+  ].
+
+concat-id-right
+  |E xs :: (E : EnumU) (xs : (List (Label E)))
+           ~> (Eq (List (Label E)) (concat E xs (empty (Label E))) xs) =>
+  [xs of (Eq (List (Label E)) (concat E xs (empty (Label E))) xs)
+    |(empty _) => (refl (List (Label E)) (empty (Label E)))
+    |(new _ head tail) =>
+      (cong (List (Label E)) (concat E tail (empty (Label E))) tail
+            (List (Label E)) (|l :: ~ (List (Label E)) ~> (List (Label E)) => (new (Label E) head l))
+            (concat-id-right E tail))
+  ].
+
+label-list-monoid
+  |E :: (E : EnumU) ~> (Monoid (List (Label E))) =>
+    ((concat E) ,
+     ((empty (Label E)) ,
+      ((concat-assoc E) ,
+       ((|xs :: (xs : (List (Label E))) ~>
+                (Eq (List (Label E)) (concat E (empty (Label E)) xs) xs) =>
+           (refl (List (Label E)) xs)) ,
+        (concat-id-right E))))).
+
+// One overloaded program serves every instance; Haskell's `Monoid a => …`
+// constraint becomes an ordinary `(m : (Monoid A)) ~>` parameter.
+mconcat
+  |A m xs :: (A : *) (m : (Monoid A)) ~> ~ (List A) ~> A =>
+  [xs of A
+    |(empty _) => (mid A m)
+    |(new _ head tail) => (op A m head (mconcat A m tail))
+  ].
+
+// At the instance above, mconcat unions a whole FAMILY of enabled-label
+// sets: n-ary signature union is the generic program at one instance.
+
+
+// ---------------------------------------------------------------------------
+// 4. Overloading recovers 2.pom's specialized pipeline
+// ---------------------------------------------------------------------------
+
+// Membership in a list of ANY type with decidable equality; 2.pom's Member
+// is this at A = Label E.
+Elem
+  |A c cs :: (A : *) (c : A) (cs : (List A)) ~> * =>
+  [cs of *
+    |(empty _) => False
+    |(new _ head tail) => (Or (Eq A c head) (Elem A c tail))
+  ].
+
+decide-elem
+  |A eqd c cs :: (A : *) (eqd : (EqDec A)) (c : A) (cs : (List A)) ~> (Dec (Elem A c cs)) =>
+  [cs of (Dec (Elem A c cs))
+    |(empty _) => (no False (|m :: ~ False ~> False => m))
+    |(new _ head tail) =>
+      [(eqd c head) of (Dec (Elem A c (new A head tail)))
+        |(yes _ p) =>
+          (yes (Elem A c (new A head tail))
+               (or_right (Eq A c head) (Elem A c tail) p))
+        |(no _ f) =>
+          [(decide-elem A eqd c tail) of (Dec (Elem A c (new A head tail)))
+            |(yes _ mt) =>
+              (yes (Elem A c (new A head tail))
+                   (or_left (Eq A c head) (Elem A c tail) mt))
+            |(no _ g) =>
+              (no (Elem A c (new A head tail))
+                  (|m :: ~ (Elem A c (new A head tail)) ~> False =>
+                     [m of False
+                       |(or_right _ _ p) => (f p)
+                       |(or_left _ _ mt) => (g mt)
+                     ]))
+          ]
+      ]
+  ].
+
+// (decide-elem (Label E) (label-eqdec E)) computes exactly as 2.pom's
+// (decide-member E): the specialized pipeline is the generic program at
+// one instance.  Subset/Disjoint and their deciders generalize the same
+// way — an EqDec constraint is all the label algebra ever consumed.
+
+
+// ---------------------------------------------------------------------------
+// 5. Superclasses are components; hierarchy access is projection
+// ---------------------------------------------------------------------------
+
+// `class Monoid a => CommMonoid a` stores the superclass dictionary as its
+// first component; the commutativity law reaches the inherited method
+// through the projection, which is why the pair must be dependent.
+CommMonoid
+  |A :: ~ * ~> * =>
+    ((m : (Monoid A)) ×
+     ((x : A) (y : A) ~> (Eq A (op A m x y) (op A m y x)))).
+
+monoid-of
+  |A cm :: (A : *) (cm : (CommMonoid A)) ~> (Monoid A) => (π₀ cm).
+
+// Contrast with the signature layer: µ-widening is coercion-free ⊑ — the
+// SAME term re-typed — while class-widening is a genuine projection
+// function.  ⊑ is not extended to dictionaries: structural subtyping
+// between different payloads is exactly what type-rules §7 excludes, and
+// the encoding never needs it.
+
+
+// ---------------------------------------------------------------------------
+// 6. Instances over signature types
+// ---------------------------------------------------------------------------
+
+// Per-constructor method definitions are branch tuples: a method given
+// case-by-case over the ambient enumeration inhabits πₖ E P and is
+// dispatched by switchₖ.  1.pom's ListBranches is such a table for the
+// "payload description" method, and Sig-case's clause list is one for each
+// match.  Because coverage is Φ ⊆ Ψ (type-rules §7), one table over all
+// ambient labels serves EVERY refinement of the signature: instance reuse
+// along refinement falls out of coverage, not out of a class feature.
+//
+// Value-side reuse is subsumption.  With
+//
+//   sum : (m : (Monoid A)) ~> ~ (µ (list-sig A)) ~> A     (by iinduction)
+//   xs : (µ (nonempty-sig A))
+//
+// (sum m xs) checks because µ(NonEmpty) ⊑ µ(List) re-types xs; the
+// dictionary in play is the one resolved at the WIDE type, and the term is
+// unchanged.  The converse direction does not exist: nothing keyed at
+// µ (nonempty-sig A) applies to µ (list-sig A) values.
+//
+// Small dictionaries are ordinary data: Monoid A : * may sit in a 'Σ
+// payload of a description, so constructors can carry the algebra of their
+// contents.  Type-valued components (associated types) push the dictionary
+// up to Type instead — Sig I E, storing a function into IDesc I, is the
+// in-house example.
+
+
+// ---------------------------------------------------------------------------
+// 7. Resolution is elaboration; coherence is a table policy
+// ---------------------------------------------------------------------------
+
+// The theory is finished above: dictionaries are values, and nothing in
+// the core knows classes exist.  An elaborator MAY add the familiar sugar
+// — an implicit dictionary argument filled from a table
+//
+//   ι : (class definition, head type former) → instance definition
+//
+// exactly parallel to the name table κ (type-rules §9), under the same
+// invariants:
+//
+//   - ι is compiler metadata, never a PomPom term;
+//   - filling from ι must equal what the program would say explicitly:
+//     elaboration output is an ordinary application of a named instance;
+//   - a neutral head type resolves nothing — a stuck lookup is a
+//     diagnostic, never a guessed dictionary (the closed-fast-path rule);
+//   - overlap is rejected when ι is built; there is no backtracking search
+//     and no best match along ⊑ — subsumption happens in checking, before
+//     resolution, so widening a value never changes which instance is used.
+//
+// Global uniqueness of instances (Haskell's coherence) is therefore a
+// policy of ι, not a theorem: two Monoids on one type may coexist,
+// distinguished by name and passed explicitly wherever ι declines to
+// choose.  Laws travel inside the dictionary, so instance obligations are
+// enforced at definition, not trusted.
+//
+// Default methods and minimal complete definitions are derived programs
+// over the dictionary (mconcat above); per-instance overrides would store
+// the function as one more component — record sugar, not calculus.
+
+
+// ---------------------------------------------------------------------------
+// 8. Acceptance boundary
+// ---------------------------------------------------------------------------
+
+// The new system accepts this file once native Σ-pairs land: classes,
+// instances, methods, laws, superclasses, and overloaded programs are
+// exactly the definitions above, checked with no new judgment, former, or
+// side table.  Method projections must compute judgmentally on
+// half-neutral dictionaries ((op A (f , rest)) ≡ f with rest neutral) —
+// the same computation Sig's branches/labels already require.  Everything
+// further — implicit arguments, the ι table, record/default sugar — is
+// elaboration, constrained to agree with the explicit programs it
+// abbreviates.

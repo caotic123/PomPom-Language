@@ -1,0 +1,57 @@
+import boostrap/reduction.
+
+Static bootstrap-normalization-work : *.
+Static bootstrap-normalization-work-new : ~ BootstrapTerm ~> (path : (List BootstrapTerm)) ~ (List BootstrapBinding) ~> ~ (BootstrapTermListAccessibility path) ~> bootstrap-normalization-work.
+
+BootstrapNormalizationWork
+  {bootstrap-normalization-work :: |bootstrap-normalization-work-new}.
+
+bootstrap-verify-normalization-recur
+  |work :: ~ BootstrapNormalizationWork ~> BootstrapMaybeTerm => [work of BootstrapMaybeTerm
+    |(bootstrap-normalization-work-new current path bindings path-accessibility) => [path-accessibility of BootstrapMaybeTerm
+      |bootstrap-term-list-access-empty => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new current bindings (bootstrap-term-accessibility-instance current))) of BootstrapMaybeTerm
+        |bootstrap-failed-step => bootstrap-no-term
+        |(bootstrap-reduced-step _) => bootstrap-no-term
+        |(bootstrap-normal-step normal) => (bootstrap-some-term normal)
+      ]
+      |(bootstrap-term-list-access-new expected tail expected-access tail-access) => [(bootstrap-reduce-once-recur (bootstrap-reduction-work-new current bindings (bootstrap-term-accessibility-instance current))) of BootstrapMaybeTerm
+        |bootstrap-failed-step => bootstrap-no-term
+        |(bootstrap-normal-step _) => bootstrap-no-term
+        |(bootstrap-reduced-step actual) => [(bootstrap-equality-recur (bootstrap-equality-term-work actual expected (bootstrap-term-accessibility-instance actual))) of BootstrapMaybeTerm
+          |true => (bootstrap-verify-normalization-recur (bootstrap-normalization-work-new expected tail bindings tail-access))
+          |false => bootstrap-no-term
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-verify-normalization
+  |term path bindings :: ~ BootstrapTerm ~> ~ (List BootstrapTerm) ~> ~ (List BootstrapBinding) ~> BootstrapMaybeTerm =>
+    (bootstrap-verify-normalization-recur (bootstrap-normalization-work-new term path bindings (bootstrap-term-list-accessibility-instance path))).
+
+bootstrap-normalization-result-equal
+  |result expected :: ~ BootstrapMaybeTerm ~> ~ BootstrapTerm ~> Bool => [result of Bool
+    |bootstrap-no-term => false
+    |(bootstrap-some-term actual) => (bootstrap-term-equal actual expected)
+  ].
+
+bootstrap-normalization-proof-start
+  (bootstrap-application-term (bootstrap-lambda-term (bootstrap-bound-var 0) (bootstrap-variable-term (bootstrap-bound-var 0))) (bootstrap-variable-term (bootstrap-reference-var "0a"))).
+
+bootstrap-normalization-proof-result
+  (bootstrap-variable-term (bootstrap-reference-var "0a")).
+
+bootstrap-normalization-proof-path
+  (new BootstrapTerm bootstrap-normalization-proof-result (empty BootstrapTerm)).
+
+bootstrap-normalization-valid-path-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-normalization-result-equal (bootstrap-verify-normalization bootstrap-normalization-proof-start bootstrap-normalization-proof-path bootstrap-reduction-empty-environment) bootstrap-normalization-proof-result) true)).
+
+bootstrap-normalization-missing-edge-proof
+  ((refl BootstrapMaybeTerm bootstrap-no-term) :: (Eq BootstrapMaybeTerm (bootstrap-verify-normalization bootstrap-normalization-proof-start (empty BootstrapTerm) bootstrap-reduction-empty-environment) bootstrap-no-term)).
+
+bootstrap-normalization-invalid-edge-proof
+  ((refl BootstrapMaybeTerm bootstrap-no-term) :: (Eq BootstrapMaybeTerm (bootstrap-verify-normalization bootstrap-normalization-proof-start (new BootstrapTerm (bootstrap-variable-term (bootstrap-reference-var "0b")) (empty BootstrapTerm)) bootstrap-reduction-empty-environment) bootstrap-no-term)).
+
+bootstrap-normalization-extra-edge-proof
+  ((refl BootstrapMaybeTerm bootstrap-no-term) :: (Eq BootstrapMaybeTerm (bootstrap-verify-normalization bootstrap-normalization-proof-result (new BootstrapTerm bootstrap-normalization-proof-result (empty BootstrapTerm)) bootstrap-reduction-empty-environment) bootstrap-no-term)).

@@ -1,0 +1,106 @@
+import boostrap/alpha_equality.
+
+bootstrap-normalized-directional-equal
+  |origin target :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> Bool => [origin of Bool
+    |(bootstrap-constructors-term origin-type _) => [target of Bool
+      |(bootstrap-variable-term _) => (bootstrap-alpha-equal origin-type target)
+      |(bootstrap-pi-term _ _ _) => (bootstrap-alpha-equal origin-type target)
+      |(bootstrap-lambda-term _ _) => (bootstrap-alpha-equal origin-type target)
+      |(bootstrap-application-term _ _) => (bootstrap-alpha-equal origin-type target)
+      |(bootstrap-constructors-term target-type _) => (bootstrap-alpha-equal origin-type target-type)
+      |(bootstrap-match-term _ _ _) => (bootstrap-alpha-equal origin-type target)
+      |(bootstrap-notation-term _ _) => (bootstrap-alpha-equal origin-type target)
+    ]
+    |(bootstrap-variable-term _) => [target of Bool
+      |(bootstrap-constructors-term _ _) => false
+      |(bootstrap-variable-term _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-pi-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-lambda-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-application-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-match-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-notation-term _ _) => (bootstrap-alpha-equal origin target)
+    ]
+    |(bootstrap-pi-term _ _ _) => [target of Bool
+      |(bootstrap-constructors-term _ _) => false
+      |(bootstrap-variable-term _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-pi-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-lambda-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-application-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-match-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-notation-term _ _) => (bootstrap-alpha-equal origin target)
+    ]
+    |(bootstrap-lambda-term _ _) => [target of Bool
+      |(bootstrap-constructors-term _ _) => false
+      |(bootstrap-variable-term _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-pi-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-lambda-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-application-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-match-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-notation-term _ _) => (bootstrap-alpha-equal origin target)
+    ]
+    |(bootstrap-application-term _ _) => [target of Bool
+      |(bootstrap-constructors-term _ _) => false
+      |(bootstrap-variable-term _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-pi-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-lambda-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-application-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-match-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-notation-term _ _) => (bootstrap-alpha-equal origin target)
+    ]
+    |(bootstrap-match-term _ _ _) => [target of Bool
+      |(bootstrap-constructors-term _ _) => false
+      |(bootstrap-variable-term _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-pi-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-lambda-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-application-term _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-match-term _ _ _) => (bootstrap-alpha-equal origin target)
+      |(bootstrap-notation-term _ _) => (bootstrap-alpha-equal origin target)
+    ]
+    |(bootstrap-notation-term _ _) => (bootstrap-alpha-equal origin target)
+  ].
+
+Static bootstrap-conversion-work : *.
+Static bootstrap-conversion-work-new : ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ (List BootstrapBinding) ~> ~ (List BootstrapNormalizationCertificate) ~> bootstrap-conversion-work.
+
+BootstrapConversionWork
+  {bootstrap-conversion-work :: |bootstrap-conversion-work-new}.
+
+bootstrap-conversion-recur
+  |work :: ~ BootstrapConversionWork ~> Bool => [work of Bool
+    |(bootstrap-conversion-work-new origin target bindings certificates) => [(bootstrap-normalize-certified-recur (bootstrap-certified-normalization-work-new origin bindings certificates)) of Bool
+      |bootstrap-no-term => false
+      |(bootstrap-some-term normalized-origin) => [(bootstrap-normalize-certified-recur (bootstrap-certified-normalization-work-new target bindings certificates)) of Bool
+        |bootstrap-no-term => false
+        |(bootstrap-some-term normalized-target) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work normalized-origin (bootstrap-term-accessibility-instance normalized-origin))) of Bool
+          |bootstrap-erasure-failed => false
+          |(bootstrap-erasure-term-output erased-origin) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work normalized-target (bootstrap-term-accessibility-instance normalized-target))) of Bool
+            |bootstrap-erasure-failed => false
+            |(bootstrap-erasure-term-output erased-target) => (bootstrap-normalized-directional-equal erased-origin erased-target)
+            |(bootstrap-erasure-term-list-output _) => false
+            |(bootstrap-erasure-clause-list-output _) => false
+          ]
+          |(bootstrap-erasure-term-list-output _) => false
+          |(bootstrap-erasure-clause-list-output _) => false
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-convertible
+  |origin target bindings certificates :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ (List BootstrapBinding) ~> ~ (List BootstrapNormalizationCertificate) ~> Bool =>
+    (bootstrap-conversion-recur (bootstrap-conversion-work-new origin target bindings certificates)).
+
+bootstrap-conversion-beta-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-conversion-recur (bootstrap-conversion-work-new bootstrap-normalization-proof-start bootstrap-normalization-proof-result bootstrap-reduction-empty-environment bootstrap-certificate-proof-list)) true)).
+
+bootstrap-conversion-alpha-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-conversion-recur (bootstrap-conversion-work-new bootstrap-alpha-left-proof-term bootstrap-alpha-right-proof-term bootstrap-reduction-empty-environment (empty BootstrapNormalizationCertificate))) true)).
+
+bootstrap-conversion-downgrade-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-normalized-directional-equal (bootstrap-constructors-term (bootstrap-variable-term (bootstrap-reference-var "0a")) (empty BootstrapTerm)) (bootstrap-variable-term (bootstrap-reference-var "0a"))) true)).
+
+bootstrap-conversion-upgrade-rejected-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-normalized-directional-equal (bootstrap-variable-term (bootstrap-reference-var "0a")) (bootstrap-constructors-term (bootstrap-variable-term (bootstrap-reference-var "0a")) (empty BootstrapTerm))) false)).
+
+bootstrap-conversion-missing-certificate-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-conversion-recur (bootstrap-conversion-work-new bootstrap-normalization-proof-start bootstrap-normalization-proof-result bootstrap-reduction-empty-environment (empty BootstrapNormalizationCertificate))) false)).

@@ -1,0 +1,163 @@
+import boostrap/structure_accessibility.
+
+bootstrap-and3
+  |a b c :: ~ Bool ~> ~ Bool ~> ~ Bool ~> Bool => (and a (and b c)).
+
+bootstrap-var-equal
+  |left right :: ~ BootstrapVar ~> ~ BootstrapVar ~> Bool => [left of Bool
+    |(bootstrap-bound-var left-id) => [right of Bool
+      |(bootstrap-bound-var right-id) => (eql left-id right-id)
+      |(bootstrap-bound-name-var _) => false
+      |(bootstrap-reference-var _) => false
+    ]
+    |(bootstrap-bound-name-var left-name) => [right of Bool
+      |(bootstrap-bound-var _) => false
+      |(bootstrap-bound-name-var right-name) => (bootstrap-name-equal left-name right-name)
+      |(bootstrap-reference-var _) => false
+    ]
+    |(bootstrap-reference-var left-name) => [right of Bool
+      |(bootstrap-bound-var _) => false
+      |(bootstrap-bound-name-var _) => false
+      |(bootstrap-reference-var right-name) => (bootstrap-name-equal left-name right-name)
+    ]
+  ].
+
+Static bootstrap-equality-work : *.
+Static bootstrap-equality-term-work : (left : BootstrapTerm) ~ BootstrapTerm ~> ~ (BootstrapTermAccessibility left) ~> bootstrap-equality-work.
+Static bootstrap-equality-term-list-work : (left : (List BootstrapTerm)) ~ (List BootstrapTerm) ~> ~ (BootstrapTermListAccessibility left) ~> bootstrap-equality-work.
+Static bootstrap-equality-clause-work : (left : BootstrapClause) ~ BootstrapClause ~> ~ (BootstrapClauseAccessibility left) ~> bootstrap-equality-work.
+Static bootstrap-equality-clause-list-work : (left : (List BootstrapClause)) ~ (List BootstrapClause) ~> ~ (BootstrapClauseListAccessibility left) ~> bootstrap-equality-work.
+
+BootstrapEqualityWork
+  {bootstrap-equality-work :: |bootstrap-equality-term-work |bootstrap-equality-term-list-work |bootstrap-equality-clause-work |bootstrap-equality-clause-list-work}.
+
+bootstrap-equality-recur
+  |work :: ~ BootstrapEqualityWork ~> Bool => [work of Bool
+    |(bootstrap-equality-term-work left right accessibility) => [accessibility of Bool
+      |(bootstrap-term-access-variable left-var) => [right of Bool
+        |(bootstrap-variable-term right-var) => (bootstrap-var-equal left-var right-var)
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-pi left-var left-domain left-body domain-access body-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term right-var right-domain right-body) => (bootstrap-and3 (bootstrap-var-equal left-var right-var) (bootstrap-equality-recur (bootstrap-equality-term-work left-domain right-domain domain-access)) (bootstrap-equality-recur (bootstrap-equality-term-work left-body right-body body-access)))
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-lambda left-var left-body body-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term right-var right-body) => (and (bootstrap-var-equal left-var right-var) (bootstrap-equality-recur (bootstrap-equality-term-work left-body right-body body-access)))
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-application left-function left-argument function-access argument-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term right-function right-argument) => (and (bootstrap-equality-recur (bootstrap-equality-term-work left-function right-function function-access)) (bootstrap-equality-recur (bootstrap-equality-term-work left-argument right-argument argument-access)))
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-constructors left-type left-constructors type-access constructors-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term right-type right-constructors) => (and (bootstrap-equality-recur (bootstrap-equality-term-work left-type right-type type-access)) (bootstrap-equality-recur (bootstrap-equality-term-list-work left-constructors right-constructors constructors-access)))
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-match left-scrutinee left-type left-clauses scrutinee-access type-access clauses-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term right-scrutinee right-type right-clauses) => (bootstrap-and3 (bootstrap-equality-recur (bootstrap-equality-term-work left-scrutinee right-scrutinee scrutinee-access)) (bootstrap-equality-recur (bootstrap-equality-term-work left-type right-type type-access)) (bootstrap-equality-recur (bootstrap-equality-clause-list-work left-clauses right-clauses clauses-access)))
+        |(bootstrap-notation-term _ _) => false
+      ]
+      |(bootstrap-term-access-notation left-body left-type body-access type-access) => [right of Bool
+        |(bootstrap-variable-term _) => false
+        |(bootstrap-pi-term _ _ _) => false
+        |(bootstrap-lambda-term _ _) => false
+        |(bootstrap-application-term _ _) => false
+        |(bootstrap-constructors-term _ _) => false
+        |(bootstrap-match-term _ _ _) => false
+        |(bootstrap-notation-term right-body right-type) => (and (bootstrap-equality-recur (bootstrap-equality-term-work left-body right-body body-access)) (bootstrap-equality-recur (bootstrap-equality-term-work left-type right-type type-access)))
+      ]
+    ]
+    |(bootstrap-equality-term-list-work left right accessibility) => [accessibility of Bool
+      |bootstrap-term-list-access-empty => [right of Bool
+        |(empty _) => true
+        |(new _ _ _) => false
+      ]
+      |(bootstrap-term-list-access-new left-head left-tail head-access tail-access) => [right of Bool
+        |(empty _) => false
+        |(new _ right-head right-tail) => (and (bootstrap-equality-recur (bootstrap-equality-term-work left-head right-head head-access)) (bootstrap-equality-recur (bootstrap-equality-term-list-work left-tail right-tail tail-access)))
+      ]
+    ]
+    |(bootstrap-equality-clause-work left right accessibility) => [accessibility of Bool
+      |(bootstrap-clause-access-new left-pattern left-body pattern-access body-access) => [right of Bool
+        |(bootstrap-clause-new right-pattern right-body) => (and (bootstrap-equality-recur (bootstrap-equality-term-work left-pattern right-pattern pattern-access)) (bootstrap-equality-recur (bootstrap-equality-term-work left-body right-body body-access)))
+      ]
+    ]
+    |(bootstrap-equality-clause-list-work left right accessibility) => [accessibility of Bool
+      |bootstrap-clause-list-access-empty => [right of Bool
+        |(empty _) => true
+        |(new _ _ _) => false
+      ]
+      |(bootstrap-clause-list-access-new left-head left-tail head-access tail-access) => [right of Bool
+        |(empty _) => false
+        |(new _ right-head right-tail) => (and (bootstrap-equality-recur (bootstrap-equality-clause-work left-head right-head head-access)) (bootstrap-equality-recur (bootstrap-equality-clause-list-work left-tail right-tail tail-access)))
+      ]
+    ]
+  ].
+
+bootstrap-term-equal
+  |left right :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> Bool =>
+    (bootstrap-equality-recur (bootstrap-equality-term-work left right (bootstrap-term-accessibility-instance left))).
+
+bootstrap-term-list-equal
+  |left right :: ~ (List BootstrapTerm) ~> ~ (List BootstrapTerm) ~> Bool =>
+    (bootstrap-equality-recur (bootstrap-equality-term-list-work left right (bootstrap-term-list-accessibility-instance left))).
+
+bootstrap-clause-equal
+  |left right :: ~ BootstrapClause ~> ~ BootstrapClause ~> Bool =>
+    (bootstrap-equality-recur (bootstrap-equality-clause-work left right (bootstrap-clause-accessibility-instance left))).
+
+bootstrap-clause-list-equal
+  |left right :: ~ (List BootstrapClause) ~> ~ (List BootstrapClause) ~> Bool =>
+    (bootstrap-equality-recur (bootstrap-equality-clause-list-work left right (bootstrap-clause-list-accessibility-instance left))).
+
+bootstrap-term-equal-left
+  (bootstrap-variable-term (bootstrap-reference-var "0af")).
+
+bootstrap-term-equal-right
+  (bootstrap-variable-term (bootstrap-reference-var "0af")).
+
+bootstrap-term-equal-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-term-equal bootstrap-term-equal-left bootstrap-term-equal-right) true)).
+
+bootstrap-term-different-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-term-equal (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-bound-var 1))) false)).
+
+bootstrap-match-tail-left
+  (bootstrap-match-term (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-reference-var "00")) (new BootstrapClause (bootstrap-clause-new (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-bound-var 0))) (new BootstrapClause (bootstrap-clause-new (bootstrap-variable-term (bootstrap-bound-var 1)) (bootstrap-variable-term (bootstrap-bound-var 1))) (empty BootstrapClause)))).
+
+bootstrap-match-tail-right
+  (bootstrap-match-term (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-reference-var "00")) (new BootstrapClause (bootstrap-clause-new (bootstrap-variable-term (bootstrap-bound-var 0)) (bootstrap-variable-term (bootstrap-bound-var 0))) (new BootstrapClause (bootstrap-clause-new (bootstrap-variable-term (bootstrap-bound-var 1)) (bootstrap-variable-term (bootstrap-bound-var 0))) (empty BootstrapClause)))).
+
+bootstrap-match-tail-different-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-term-equal bootstrap-match-tail-left bootstrap-match-tail-right) false)).

@@ -1,0 +1,190 @@
+import boostrap/term_equality.
+
+bootstrap-set-name
+  "2a".
+
+bootstrap-type-name
+  "54797065".
+
+bootstrap-kind-name
+  "4b696e64".
+
+bootstrap-hole-name
+  "5f5f".
+
+bootstrap-sort-equal
+  |left right :: ~ BootstrapSort ~> ~ BootstrapSort ~> Bool => [left of Bool
+    |bootstrap-static-sort => [right of Bool
+      |bootstrap-static-sort => true
+      |bootstrap-expression-sort => false
+    ]
+    |bootstrap-expression-sort => [right of Bool
+      |bootstrap-static-sort => false
+      |bootstrap-expression-sort => true
+    ]
+  ].
+
+Static bootstrap-binding-lookup-work : *.
+Static bootstrap-binding-lookup-work-new : (bindings : (List BootstrapBinding)) ~ String ~> ~ (BootstrapBindingListAccessibility bindings) ~> bootstrap-binding-lookup-work.
+
+BootstrapBindingLookupWork
+  {bootstrap-binding-lookup-work :: |bootstrap-binding-lookup-work-new}.
+
+bootstrap-get-binding-recur
+  |work :: ~ BootstrapBindingLookupWork ~> BootstrapMaybeBinding => [work of BootstrapMaybeBinding
+    |(bootstrap-binding-lookup-work-new bindings name accessibility) => [accessibility of BootstrapMaybeBinding
+      |bootstrap-binding-list-access-empty => bootstrap-no-binding
+      |(bootstrap-binding-list-access-new binding tail tail-accessibility) => [binding of BootstrapMaybeBinding
+        |(bootstrap-binding-new binding-name _ _ _) => [(bootstrap-name-equal name binding-name) of BootstrapMaybeBinding
+          |true => (bootstrap-some-binding binding)
+          |false => (bootstrap-get-binding-recur (bootstrap-binding-lookup-work-new tail name tail-accessibility))
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-get-binding
+  |name bindings :: ~ String ~> ~ (List BootstrapBinding) ~> BootstrapMaybeBinding =>
+    (bootstrap-get-binding-recur (bootstrap-binding-lookup-work-new bindings name (bootstrap-binding-list-accessibility-instance bindings))).
+
+bootstrap-get-static-binding
+  |name bindings :: ~ String ~> ~ (List BootstrapBinding) ~> BootstrapMaybeBinding =>
+    [(bootstrap-get-binding name bindings) of BootstrapMaybeBinding
+      |bootstrap-no-binding => bootstrap-no-binding
+      |(bootstrap-some-binding binding) => [binding of BootstrapMaybeBinding
+        |(bootstrap-binding-new _ sort _ _) => [sort of BootstrapMaybeBinding
+          |bootstrap-static-sort => (bootstrap-some-binding binding)
+          |bootstrap-expression-sort => bootstrap-no-binding
+        ]
+      ]
+    ].
+
+bootstrap-get-expression-binding
+  |name bindings :: ~ String ~> ~ (List BootstrapBinding) ~> BootstrapMaybeBinding =>
+    [(bootstrap-get-binding name bindings) of BootstrapMaybeBinding
+      |bootstrap-no-binding => bootstrap-no-binding
+      |(bootstrap-some-binding binding) => [binding of BootstrapMaybeBinding
+        |(bootstrap-binding-new _ sort _ _) => [sort of BootstrapMaybeBinding
+          |bootstrap-static-sort => bootstrap-no-binding
+          |bootstrap-expression-sort => (bootstrap-some-binding binding)
+        ]
+      ]
+    ].
+
+Static bootstrap-context-lookup-work : *.
+Static bootstrap-context-lookup-work-new : (typings : (List BootstrapTyping)) ~ BootstrapTerm ~> ~ (BootstrapTypingListAccessibility typings) ~> bootstrap-context-lookup-work.
+
+BootstrapContextLookupWork
+  {bootstrap-context-lookup-work :: |bootstrap-context-lookup-work-new}.
+
+bootstrap-context-lookup-recur
+  |work :: ~ BootstrapContextLookupWork ~> BootstrapMaybeTerm => [work of BootstrapMaybeTerm
+    |(bootstrap-context-lookup-work-new typings key accessibility) => [accessibility of BootstrapMaybeTerm
+      |bootstrap-typing-list-access-empty => bootstrap-no-term
+      |(bootstrap-typing-list-access-new typing tail tail-accessibility) => [typing of BootstrapMaybeTerm
+        |(bootstrap-typing-new typing-key typing-value) => [(bootstrap-term-equal key typing-key) of BootstrapMaybeTerm
+          |true => (bootstrap-some-term typing-value)
+          |false => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new tail key tail-accessibility))
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-context-lookup
+  |key typings :: ~ BootstrapTerm ~> ~ (List BootstrapTyping) ~> BootstrapMaybeTerm =>
+    (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new typings key (bootstrap-typing-list-accessibility-instance typings))).
+
+bootstrap-context-insert
+  |key value typings :: ~ BootstrapTerm ~> ~ BootstrapTerm ~> ~ (List BootstrapTyping) ~> (List BootstrapTyping) =>
+    (new BootstrapTyping (bootstrap-typing-new key value) typings).
+
+bootstrap-annotation-or-context
+  |term context :: ~ BootstrapTerm ~> ~ (List BootstrapTyping) ~> BootstrapMaybeTerm => [term of BootstrapMaybeTerm
+    |(bootstrap-variable-term _) => (bootstrap-context-lookup term context)
+    |(bootstrap-pi-term _ _ _) => (bootstrap-context-lookup term context)
+    |(bootstrap-lambda-term _ _) => (bootstrap-context-lookup term context)
+    |(bootstrap-application-term _ _) => (bootstrap-context-lookup term context)
+    |(bootstrap-constructors-term _ _) => (bootstrap-context-lookup term context)
+    |(bootstrap-match-term _ _ _) => (bootstrap-context-lookup term context)
+    |(bootstrap-notation-term _ annotation) => (bootstrap-some-term annotation)
+  ].
+
+bootstrap-binding-type
+  |binding :: ~ BootstrapBinding ~> BootstrapMaybeTerm => [binding of BootstrapMaybeTerm
+    |(bootstrap-binding-new _ sort term context) => [sort of BootstrapMaybeTerm
+      |bootstrap-static-sort => (bootstrap-some-term term)
+      |bootstrap-expression-sort => (bootstrap-annotation-or-context term context)
+    ]
+  ].
+
+bootstrap-binding-body
+  |binding :: ~ BootstrapBinding ~> BootstrapMaybeTerm => [binding of BootstrapMaybeTerm
+    |(bootstrap-binding-new _ sort term _) => [sort of BootstrapMaybeTerm
+      |bootstrap-static-sort => bootstrap-no-term
+      |bootstrap-expression-sort => (bootstrap-some-term term)
+    ]
+  ].
+
+Static bootstrap-root-binding-work : *.
+Static bootstrap-root-binding-work-new : (term : BootstrapTerm) ~ Bool ~> ~ (List BootstrapBinding) ~> ~ (BootstrapTermAccessibility term) ~> bootstrap-root-binding-work.
+
+BootstrapRootBindingWork
+  {bootstrap-root-binding-work :: |bootstrap-root-binding-work-new}.
+
+bootstrap-get-root-binding-recur
+  |work :: ~ BootstrapRootBindingWork ~> BootstrapMaybeBinding => [work of BootstrapMaybeBinding
+    |(bootstrap-root-binding-work-new term static-only bindings accessibility) => [accessibility of BootstrapMaybeBinding
+      |(bootstrap-term-access-variable variable) => [variable of BootstrapMaybeBinding
+        |(bootstrap-bound-var _) => bootstrap-no-binding
+        |(bootstrap-bound-name-var _) => bootstrap-no-binding
+        |(bootstrap-reference-var name) => [static-only of BootstrapMaybeBinding
+          |true => [(bootstrap-get-binding-recur (bootstrap-binding-lookup-work-new bindings name (bootstrap-binding-list-accessibility-instance bindings))) of BootstrapMaybeBinding
+            |bootstrap-no-binding => bootstrap-no-binding
+            |(bootstrap-some-binding binding) => [binding of BootstrapMaybeBinding
+              |(bootstrap-binding-new _ sort _ _) => [sort of BootstrapMaybeBinding
+                |bootstrap-static-sort => (bootstrap-some-binding binding)
+                |bootstrap-expression-sort => bootstrap-no-binding
+              ]
+            ]
+          ]
+          |false => [(bootstrap-get-binding-recur (bootstrap-binding-lookup-work-new bindings name (bootstrap-binding-list-accessibility-instance bindings))) of BootstrapMaybeBinding
+            |bootstrap-no-binding => bootstrap-no-binding
+            |(bootstrap-some-binding binding) => [binding of BootstrapMaybeBinding
+              |(bootstrap-binding-new _ sort _ _) => [sort of BootstrapMaybeBinding
+                |bootstrap-static-sort => bootstrap-no-binding
+                |bootstrap-expression-sort => (bootstrap-some-binding binding)
+              ]
+            ]
+          ]
+        ]
+      ]
+      |(bootstrap-term-access-pi _ _ _ _ _) => bootstrap-no-binding
+      |(bootstrap-term-access-lambda _ _ _) => bootstrap-no-binding
+      |(bootstrap-term-access-application function _ function-accessibility _) => (bootstrap-get-root-binding-recur (bootstrap-root-binding-work-new function static-only bindings function-accessibility))
+      |(bootstrap-term-access-constructors _ _ _ _) => bootstrap-no-binding
+      |(bootstrap-term-access-match _ _ _ _ _ _) => bootstrap-no-binding
+      |(bootstrap-term-access-notation body _ body-accessibility _) => (bootstrap-get-root-binding-recur (bootstrap-root-binding-work-new body static-only bindings body-accessibility))
+    ]
+  ].
+
+bootstrap-get-root-binding
+  |static-only term bindings :: ~ Bool ~> ~ BootstrapTerm ~> ~ (List BootstrapBinding) ~> BootstrapMaybeBinding =>
+    (bootstrap-get-root-binding-recur (bootstrap-root-binding-work-new term static-only bindings (bootstrap-term-accessibility-instance term))).
+
+bootstrap-maybe-binding-found
+  |value :: ~ BootstrapMaybeBinding ~> Bool => [value of Bool
+    |bootstrap-no-binding => false
+    |(bootstrap-some-binding _) => true
+  ].
+
+bootstrap-collections-proof-binding
+  (bootstrap-binding-new "0a" bootstrap-static-sort (bootstrap-variable-term (bootstrap-reference-var "0b")) (empty BootstrapTyping)).
+
+bootstrap-collections-proof-environment
+  (new BootstrapBinding bootstrap-collections-proof-binding (empty BootstrapBinding)).
+
+bootstrap-collections-lookup-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-maybe-binding-found (bootstrap-get-binding "0a" bootstrap-collections-proof-environment)) true)).
+
+bootstrap-collections-missing-proof
+  ((refl Bool false) :: (Eq Bool (bootstrap-maybe-binding-found (bootstrap-get-binding "0c" bootstrap-collections-proof-environment)) false)).

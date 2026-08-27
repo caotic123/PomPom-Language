@@ -1,0 +1,126 @@
+import boostrap/certificates.
+
+Static bootstrap-erasure-output : *.
+Static bootstrap-erasure-failed : bootstrap-erasure-output.
+Static bootstrap-erasure-term-output : ~ BootstrapTerm ~> bootstrap-erasure-output.
+Static bootstrap-erasure-term-list-output : ~ (List BootstrapTerm) ~> bootstrap-erasure-output.
+Static bootstrap-erasure-clause-list-output : ~ (List BootstrapClause) ~> bootstrap-erasure-output.
+
+BootstrapErasureOutput
+  {bootstrap-erasure-output :: |bootstrap-erasure-failed |bootstrap-erasure-term-output |bootstrap-erasure-term-list-output |bootstrap-erasure-clause-list-output}.
+
+Static bootstrap-erasure-work : *.
+Static bootstrap-erasure-term-work : (term : BootstrapTerm) ~> ~ (BootstrapTermAccessibility term) ~> bootstrap-erasure-work.
+Static bootstrap-erasure-term-list-work : (terms : (List BootstrapTerm)) ~> ~ (BootstrapTermListAccessibility terms) ~> bootstrap-erasure-work.
+Static bootstrap-erasure-clause-list-work : (clauses : (List BootstrapClause)) ~> ~ (BootstrapClauseListAccessibility clauses) ~> bootstrap-erasure-work.
+
+BootstrapErasureWork
+  {bootstrap-erasure-work :: |bootstrap-erasure-term-work |bootstrap-erasure-term-list-work |bootstrap-erasure-clause-list-work}.
+
+bootstrap-erasure-recur
+  |work :: ~ BootstrapErasureWork ~> BootstrapErasureOutput => [work of BootstrapErasureOutput
+    |(bootstrap-erasure-term-work term accessibility) => [accessibility of BootstrapErasureOutput
+      |(bootstrap-term-access-variable variable) => (bootstrap-erasure-term-output (bootstrap-variable-term variable))
+      |(bootstrap-term-access-pi binder domain body domain-access body-access) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work domain domain-access)) of BootstrapErasureOutput
+        |bootstrap-erasure-failed => bootstrap-erasure-failed
+        |(bootstrap-erasure-term-output new-domain) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work body body-access)) of BootstrapErasureOutput
+          |bootstrap-erasure-failed => bootstrap-erasure-failed
+          |(bootstrap-erasure-term-output new-body) => (bootstrap-erasure-term-output (bootstrap-pi-term binder new-domain new-body))
+          |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+          |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+        ]
+        |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+        |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+      ]
+      |(bootstrap-term-access-lambda binder body body-access) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work body body-access)) of BootstrapErasureOutput
+        |bootstrap-erasure-failed => bootstrap-erasure-failed
+        |(bootstrap-erasure-term-output new-body) => (bootstrap-erasure-term-output (bootstrap-lambda-term binder new-body))
+        |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+        |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+      ]
+      |(bootstrap-term-access-application function argument function-access argument-access) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work function function-access)) of BootstrapErasureOutput
+        |bootstrap-erasure-failed => bootstrap-erasure-failed
+        |(bootstrap-erasure-term-output new-function) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work argument argument-access)) of BootstrapErasureOutput
+          |bootstrap-erasure-failed => bootstrap-erasure-failed
+          |(bootstrap-erasure-term-output new-argument) => (bootstrap-erasure-term-output (bootstrap-application-term new-function new-argument))
+          |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+          |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+        ]
+        |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+        |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+      ]
+      |(bootstrap-term-access-constructors type constructors type-access constructors-access) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work type type-access)) of BootstrapErasureOutput
+        |bootstrap-erasure-failed => bootstrap-erasure-failed
+        |(bootstrap-erasure-term-output new-type) => [(bootstrap-erasure-recur (bootstrap-erasure-term-list-work constructors constructors-access)) of BootstrapErasureOutput
+          |bootstrap-erasure-failed => bootstrap-erasure-failed
+          |(bootstrap-erasure-term-output _) => bootstrap-erasure-failed
+          |(bootstrap-erasure-term-list-output new-constructors) => (bootstrap-erasure-term-output (bootstrap-constructors-term new-type new-constructors))
+          |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+        ]
+        |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+        |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+      ]
+      |(bootstrap-term-access-match scrutinee type clauses scrutinee-access type-access clauses-access) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work scrutinee scrutinee-access)) of BootstrapErasureOutput
+        |bootstrap-erasure-failed => bootstrap-erasure-failed
+        |(bootstrap-erasure-term-output new-scrutinee) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work type type-access)) of BootstrapErasureOutput
+          |bootstrap-erasure-failed => bootstrap-erasure-failed
+          |(bootstrap-erasure-term-output new-type) => [(bootstrap-erasure-recur (bootstrap-erasure-clause-list-work clauses clauses-access)) of BootstrapErasureOutput
+            |bootstrap-erasure-failed => bootstrap-erasure-failed
+            |(bootstrap-erasure-term-output _) => bootstrap-erasure-failed
+            |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+            |(bootstrap-erasure-clause-list-output new-clauses) => (bootstrap-erasure-term-output (bootstrap-match-term new-scrutinee new-type new-clauses))
+          ]
+          |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+          |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+        ]
+        |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+        |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+      ]
+      |(bootstrap-term-access-notation body _ body-access _) => (bootstrap-erasure-recur (bootstrap-erasure-term-work body body-access))
+    ]
+    |(bootstrap-erasure-term-list-work terms accessibility) => [accessibility of BootstrapErasureOutput
+      |bootstrap-term-list-access-empty => (bootstrap-erasure-term-list-output (empty BootstrapTerm))
+      |(bootstrap-term-list-access-new head tail head-access tail-access) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work head head-access)) of BootstrapErasureOutput
+        |bootstrap-erasure-failed => bootstrap-erasure-failed
+        |(bootstrap-erasure-term-output new-head) => [(bootstrap-erasure-recur (bootstrap-erasure-term-list-work tail tail-access)) of BootstrapErasureOutput
+          |bootstrap-erasure-failed => bootstrap-erasure-failed
+          |(bootstrap-erasure-term-output _) => bootstrap-erasure-failed
+          |(bootstrap-erasure-term-list-output new-tail) => (bootstrap-erasure-term-list-output (new BootstrapTerm new-head new-tail))
+          |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+        ]
+        |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+        |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+      ]
+    ]
+    |(bootstrap-erasure-clause-list-work clauses accessibility) => [accessibility of BootstrapErasureOutput
+      |bootstrap-clause-list-access-empty => (bootstrap-erasure-clause-list-output (empty BootstrapClause))
+      |(bootstrap-clause-list-access-new head tail head-access tail-access) => [head-access of BootstrapErasureOutput
+        |(bootstrap-clause-access-new pattern body pattern-access body-access) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work pattern pattern-access)) of BootstrapErasureOutput
+          |bootstrap-erasure-failed => bootstrap-erasure-failed
+          |(bootstrap-erasure-term-output new-pattern) => [(bootstrap-erasure-recur (bootstrap-erasure-term-work body body-access)) of BootstrapErasureOutput
+            |bootstrap-erasure-failed => bootstrap-erasure-failed
+            |(bootstrap-erasure-term-output new-body) => [(bootstrap-erasure-recur (bootstrap-erasure-clause-list-work tail tail-access)) of BootstrapErasureOutput
+              |bootstrap-erasure-failed => bootstrap-erasure-failed
+              |(bootstrap-erasure-term-output _) => bootstrap-erasure-failed
+              |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+              |(bootstrap-erasure-clause-list-output new-tail) => (bootstrap-erasure-clause-list-output (new BootstrapClause (bootstrap-clause-new new-pattern new-body) new-tail))
+            ]
+            |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+            |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+          ]
+          |(bootstrap-erasure-term-list-output _) => bootstrap-erasure-failed
+          |(bootstrap-erasure-clause-list-output _) => bootstrap-erasure-failed
+        ]
+      ]
+    ]
+  ].
+
+bootstrap-erase-annotations
+  |term :: ~ BootstrapTerm ~> BootstrapErasureOutput =>
+    (bootstrap-erasure-recur (bootstrap-erasure-term-work term (bootstrap-term-accessibility-instance term))).
+
+bootstrap-erasure-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-output-reference-name (bootstrap-substitution-term-output (bootstrap-variable-term (bootstrap-reference-var "0a"))) "0a") true)).
+
+bootstrap-erasure-notation-proof
+  ((refl BootstrapErasureOutput (bootstrap-erasure-term-output (bootstrap-variable-term (bootstrap-reference-var "0a")))) :: (Eq BootstrapErasureOutput (bootstrap-erasure-recur (bootstrap-erasure-term-work (bootstrap-notation-term (bootstrap-notation-term (bootstrap-variable-term (bootstrap-reference-var "0a")) (bootstrap-variable-term (bootstrap-reference-var "0b"))) (bootstrap-variable-term (bootstrap-reference-var "0c"))) (bootstrap-term-accessibility-instance (bootstrap-notation-term (bootstrap-notation-term (bootstrap-variable-term (bootstrap-reference-var "0a")) (bootstrap-variable-term (bootstrap-reference-var "0b"))) (bootstrap-variable-term (bootstrap-reference-var "0c")))))) (bootstrap-erasure-term-output (bootstrap-variable-term (bootstrap-reference-var "0a"))))).

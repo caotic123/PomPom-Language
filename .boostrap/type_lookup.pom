@@ -1,0 +1,115 @@
+import boostrap/typing_data.
+
+bootstrap-is-name
+  |term name :: ~ BootstrapTerm ~> ~ String ~> Bool => [term of Bool
+    |(bootstrap-variable-term variable) => [variable of Bool
+      |(bootstrap-bound-var _) => false
+      |(bootstrap-bound-name-var _) => false
+      |(bootstrap-reference-var actual) => (bootstrap-name-equal actual name)
+    ]
+    |(bootstrap-pi-term _ _ _) => false
+    |(bootstrap-lambda-term _ _) => false
+    |(bootstrap-application-term _ _) => false
+    |(bootstrap-constructors-term _ _) => false
+    |(bootstrap-match-term _ _ _) => false
+    |(bootstrap-notation-term _ _) => false
+  ].
+
+bootstrap-set-term
+  (bootstrap-variable-term (bootstrap-reference-var bootstrap-set-name)).
+
+bootstrap-type-term
+  (bootstrap-variable-term (bootstrap-reference-var bootstrap-type-name)).
+
+bootstrap-kind-term
+  (bootstrap-variable-term (bootstrap-reference-var bootstrap-kind-name)).
+
+bootstrap-hole-term
+  (bootstrap-variable-term (bootstrap-reference-var bootstrap-hole-name)).
+
+bootstrap-is-universe
+  |term :: ~ BootstrapTerm ~> Bool =>
+    (or (bootstrap-is-name term bootstrap-set-name) (or (bootstrap-is-name term bootstrap-type-name) (bootstrap-is-name term bootstrap-kind-name))).
+
+Static bootstrap-type-lookup-work : *.
+Static bootstrap-type-lookup-work-new : ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> bootstrap-type-lookup-work.
+
+BootstrapTypeLookupWork
+  {bootstrap-type-lookup-work :: |bootstrap-type-lookup-work-new}.
+
+bootstrap-type-lookup-recur
+  |work :: ~ BootstrapTypeLookupWork ~> BootstrapMaybeTerm => [work of BootstrapMaybeTerm
+    |(bootstrap-type-lookup-work-new term environment) => [environment of BootstrapMaybeTerm
+      |(bootstrap-environment-new local unifier globals bindings certificates) => [term of BootstrapMaybeTerm
+        |(bootstrap-notation-term _ annotation) => (bootstrap-some-term annotation)
+        |(bootstrap-variable-term variable) => [variable of BootstrapMaybeTerm
+          |(bootstrap-bound-var _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new local term (bootstrap-typing-list-accessibility-instance local)))
+          |(bootstrap-bound-name-var _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new local term (bootstrap-typing-list-accessibility-instance local)))
+          |(bootstrap-reference-var name) => [(bootstrap-name-equal name bootstrap-set-name) of BootstrapMaybeTerm
+            |true => (bootstrap-some-term bootstrap-type-term)
+            |false => [(bootstrap-name-equal name bootstrap-type-name) of BootstrapMaybeTerm
+              |true => (bootstrap-some-term bootstrap-kind-term)
+              |false => [(bootstrap-get-binding-recur (bootstrap-binding-lookup-work-new bindings name (bootstrap-binding-list-accessibility-instance bindings))) of BootstrapMaybeTerm
+                |bootstrap-no-binding => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                |(bootstrap-some-binding binding) => [binding of BootstrapMaybeTerm
+                  |(bootstrap-binding-new _ sort body binding-context) => [sort of BootstrapMaybeTerm
+                    |bootstrap-static-sort => (bootstrap-some-term body)
+                    |bootstrap-expression-sort => [body of BootstrapMaybeTerm
+                      |(bootstrap-notation-term _ annotation) => (bootstrap-some-term annotation)
+                      |(bootstrap-variable-term _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                      |(bootstrap-pi-term _ _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                      |(bootstrap-lambda-term _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                      |(bootstrap-application-term _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                      |(bootstrap-constructors-term family _) => [family of BootstrapMaybeTerm
+                        |(bootstrap-variable-term family-variable) => [family-variable of BootstrapMaybeTerm
+                          |(bootstrap-bound-var _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                          |(bootstrap-bound-name-var _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                          |(bootstrap-reference-var family-name) => [(bootstrap-get-binding-recur (bootstrap-binding-lookup-work-new bindings family-name (bootstrap-binding-list-accessibility-instance bindings))) of BootstrapMaybeTerm
+                            |bootstrap-no-binding => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                            |(bootstrap-some-binding family-binding) => [family-binding of BootstrapMaybeTerm
+                              |(bootstrap-binding-new _ family-sort family-type _) => [family-sort of BootstrapMaybeTerm
+                                |bootstrap-static-sort => (bootstrap-some-term family-type)
+                                |bootstrap-expression-sort => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                              ]
+                            ]
+                          ]
+                        ]
+                        |(bootstrap-pi-term _ _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                        |(bootstrap-lambda-term _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                        |(bootstrap-application-term _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                        |(bootstrap-constructors-term _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                        |(bootstrap-match-term _ _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                        |(bootstrap-notation-term _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                      ]
+                      |(bootstrap-match-term _ _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new globals term (bootstrap-typing-list-accessibility-instance globals)))
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+        |(bootstrap-pi-term _ _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new local term (bootstrap-typing-list-accessibility-instance local)))
+        |(bootstrap-lambda-term _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new local term (bootstrap-typing-list-accessibility-instance local)))
+        |(bootstrap-application-term _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new local term (bootstrap-typing-list-accessibility-instance local)))
+        |(bootstrap-constructors-term _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new local term (bootstrap-typing-list-accessibility-instance local)))
+        |(bootstrap-match-term _ _ _) => (bootstrap-context-lookup-recur (bootstrap-context-lookup-work-new local term (bootstrap-typing-list-accessibility-instance local)))
+      ]
+    ]
+  ].
+
+bootstrap-type-lookup
+  |term environment :: ~ BootstrapTerm ~> ~ BootstrapEnvironment ~> BootstrapMaybeTerm =>
+    (bootstrap-type-lookup-recur (bootstrap-type-lookup-work-new term environment)).
+
+bootstrap-type-lookup-proof-bindings
+  (new BootstrapBinding (bootstrap-binding-new "58" bootstrap-static-sort bootstrap-set-term (empty BootstrapTyping)) (empty BootstrapBinding)).
+
+bootstrap-type-lookup-proof-environment
+  (bootstrap-empty-environment bootstrap-type-lookup-proof-bindings (empty BootstrapNormalizationCertificate)).
+
+bootstrap-type-lookup-set-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-normalization-result-equal (bootstrap-type-lookup-recur (bootstrap-type-lookup-work-new bootstrap-set-term bootstrap-type-lookup-proof-environment)) bootstrap-type-term) true)).
+
+bootstrap-type-lookup-static-proof
+  ((refl Bool true) :: (Eq Bool (bootstrap-normalization-result-equal (bootstrap-type-lookup-recur (bootstrap-type-lookup-work-new (bootstrap-variable-term (bootstrap-reference-var "58")) bootstrap-type-lookup-proof-environment)) bootstrap-set-term) true)).

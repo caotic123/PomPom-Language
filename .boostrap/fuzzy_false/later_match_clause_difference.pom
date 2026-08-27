@@ -1,0 +1,13 @@
+import libs/bool.
+
+fuzzy-later-match-clause-difference
+  | b value ::
+      (b : Bool)
+      (value : [b of *
+        |true => Unit
+        |false => Unit
+      ]) ~>
+      [b of *
+        |true => Unit
+        |false => False
+      ] => value.

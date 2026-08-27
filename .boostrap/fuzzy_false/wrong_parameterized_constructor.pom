@@ -1,0 +1,7 @@
+Static fuzzy-F : (A : *) ~> *.
+Static fuzzy-G : (A : *) ~> *.
+Static fuzzy-f : (A : *) ~> (fuzzy-F A).
+Static fuzzy-g : (A : *) ~> (fuzzy-G A).
+
+fuzzy-wrong-parameterized-constructor
+  | A :: (A : *) ~> * => {(fuzzy-F A) :: |fuzzy-g}.
