@@ -1,0 +1,161 @@
+DIGEST 5f0eaf7eb4e3b5dbe10f575e22741f1f
+F_work_cjoin
+R15:22 Progress <> <> lib
+R24:34 _tmp_epstep <> <> lib
+R36:54 _work_mixed_closure <> <> lib
+R58:74 _luna_fstep_split <> <> lib
+R104:107 Stdlib.Lists.List <> <> lib
+R109:111 Stdlib.micromega.Lia <> <> lib
+R113:120 Stdlib.Arith.PeanoNat <> <> lib
+R130:142 Stdlib.Lists.List ListNotations <> mod
+R144:152 TypeRules <> <> mod
+def 167:171 <> cjoin
+R180:183 TypeRules <> term ind
+binder 174:174 <> t:1
+binder 176:176 <> u:2
+R198:204 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R206:207 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 205:205 <> w:3
+R221:224 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R208:210 Progress <> rtc ind
+R220:220 _work_cjoin <> w:3 var
+R218:218 _work_cjoin <> t:1 var
+R212:216 _work_mixed_closure <> cstep ind
+R225:227 Progress <> rtc ind
+R237:237 _work_cjoin <> w:3 var
+R235:235 _work_cjoin <> u:2 var
+R229:233 _work_mixed_closure <> cstep ind
+prf 247:256 <> cjoin_refl
+binder 267:267 <> t:4
+R270:274 _work_cjoin <> cjoin def
+R276:276 _work_cjoin <> t:4 var
+R278:278 _work_cjoin <> t:4 var
+R321:328 Progress <> rtc_refl constr
+R321:328 Progress <> rtc_refl constr
+R321:328 Progress <> rtc_refl constr
+prf 343:351 <> cjoin_sym
+binder 362:362 <> t:5
+binder 364:364 <> u:6
+R376:379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R367:371 _work_cjoin <> cjoin def
+R373:373 _work_cjoin <> t:5 var
+R375:375 _work_cjoin <> u:6 var
+R380:384 _work_cjoin <> cjoin def
+R386:386 _work_cjoin <> u:6 var
+R388:388 _work_cjoin <> t:5 var
+prf 452:462 <> cjoin_trans
+binder 473:473 <> t:7
+binder 475:475 <> u:8
+binder 477:477 <> v:9
+R493:496 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R484:488 _work_cjoin <> cjoin def
+R490:490 _work_cjoin <> t:7 var
+R492:492 _work_cjoin <> u:8 var
+R506:509 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R497:501 _work_cjoin <> cjoin def
+R503:503 _work_cjoin <> u:8 var
+R505:505 _work_cjoin <> v:9 var
+R510:514 _work_cjoin <> cjoin def
+R516:516 _work_cjoin <> t:7 var
+R518:518 _work_cjoin <> v:9 var
+R584:598 _work_mixed_closure <> cstep_confluent thm
+R584:598 _work_mixed_closure <> cstep_confluent thm
+R659:667 Progress <> rtc_trans thm
+R659:667 Progress <> rtc_trans thm
+R659:667 Progress <> rtc_trans thm
+prf 695:711 <> cjoin_reduce_left
+binder 722:722 <> t:10
+binder 724:724 <> u:11
+binder 726:727 <> t':12
+R743:746 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R734:738 _work_cjoin <> cjoin def
+R740:740 _work_cjoin <> t:10 var
+R742:742 _work_cjoin <> u:11 var
+R761:764 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R747:749 Progress <> rtc ind
+R759:760 _work_cjoin <> t':12 var
+R757:757 _work_cjoin <> t:10 var
+R751:755 _work_mixed_closure <> cstep ind
+R765:769 _work_cjoin <> cjoin def
+R771:772 _work_cjoin <> t':12 var
+R774:774 _work_cjoin <> u:11 var
+R832:846 _work_mixed_closure <> cstep_confluent thm
+R832:846 _work_mixed_closure <> cstep_confluent thm
+R928:936 Progress <> rtc_trans thm
+R928:936 Progress <> rtc_trans thm
+prf 964:981 <> cjoin_reduce_right
+binder 992:992 <> t:13
+binder 994:994 <> u:14
+binder 996:997 <> u':15
+R1013:1016 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1004:1008 _work_cjoin <> cjoin def
+R1010:1010 _work_cjoin <> t:13 var
+R1012:1012 _work_cjoin <> u:14 var
+R1031:1034 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1017:1019 Progress <> rtc ind
+R1029:1030 _work_cjoin <> u':15 var
+R1027:1027 _work_cjoin <> u:14 var
+R1021:1025 _work_mixed_closure <> cstep ind
+R1035:1039 _work_cjoin <> cjoin def
+R1041:1041 _work_cjoin <> t:13 var
+R1043:1044 _work_cjoin <> u':15 var
+R1088:1096 _work_cjoin <> cjoin_sym thm
+R1088:1096 _work_cjoin <> cjoin_sym thm
+R1108:1124 _work_cjoin <> cjoin_reduce_left thm
+R1134:1142 _work_cjoin <> cjoin_sym thm
+R1108:1124 _work_cjoin <> cjoin_reduce_left thm
+R1134:1142 _work_cjoin <> cjoin_sym thm
+prf 1184:1194 <> fstep_cstep
+binder 1205:1205 <> t:16
+binder 1207:1207 <> u:17
+R1219:1222 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1210:1214 Progress <> fstep ind
+R1216:1216 _work_cjoin <> t:16 var
+R1218:1218 _work_cjoin <> u:17 var
+R1223:1227 _work_mixed_closure <> cstep ind
+R1229:1229 _work_cjoin <> t:16 var
+R1231:1231 _work_cjoin <> u:17 var
+R1269:1289 _luna_fstep_split <> fstep_pstep_or_epstep thm
+R1269:1289 _luna_fstep_split <> fstep_pstep_or_epstep thm
+R1322:1332 _work_mixed_closure <> pstep_cstep thm
+R1322:1332 _work_mixed_closure <> pstep_cstep thm
+R1349:1360 _work_mixed_closure <> epstep_cstep thm
+R1349:1360 _work_mixed_closure <> epstep_cstep thm
+prf 1379:1389 <> fconv_cjoin
+binder 1400:1400 <> t:18
+binder 1402:1402 <> u:19
+R1414:1417 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1405:1409 Progress <> fconv ind
+R1411:1411 _work_cjoin <> t:18 var
+R1413:1413 _work_cjoin <> u:19 var
+R1418:1422 _work_cjoin <> cjoin def
+R1424:1424 _work_cjoin <> t:18 var
+R1426:1426 _work_cjoin <> u:19 var
+R1493:1499 Progress <> rtc_one thm
+R1502:1512 _work_cjoin <> fstep_cstep thm
+R1525:1532 Progress <> rtc_refl constr
+R1493:1499 Progress <> rtc_one thm
+R1502:1512 _work_cjoin <> fstep_cstep thm
+R1525:1532 Progress <> rtc_refl constr
+R1546:1555 _work_cjoin <> cjoin_refl thm
+R1546:1555 _work_cjoin <> cjoin_refl thm
+R1568:1576 _work_cjoin <> cjoin_sym thm
+R1568:1576 _work_cjoin <> cjoin_sym thm
+R1599:1609 _work_cjoin <> cjoin_trans thm
+R1599:1609 _work_cjoin <> cjoin_trans thm
+prf 1637:1650 <> conv_phi_cjoin
+binder 1661:1661 <> t:20
+binder 1663:1663 <> u:21
+R1674:1681 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1666:1669 TypeRules <> conv ind
+R1673:1673 _work_cjoin <> u:21 var
+R1671:1671 _work_cjoin <> t:20 var
+R1682:1686 _work_cjoin <> cjoin def
+R1689:1697 Progress <> phi_erase def
+R1699:1699 _work_cjoin <> t:20 var
+R1703:1711 Progress <> phi_erase def
+R1713:1713 _work_cjoin <> u:21 var
+R1746:1756 _work_cjoin <> fconv_cjoin thm
+R1759:1772 Progress <> phi_erase_conv thm
+R1746:1756 _work_cjoin <> fconv_cjoin thm
+R1759:1772 Progress <> phi_erase_conv thm

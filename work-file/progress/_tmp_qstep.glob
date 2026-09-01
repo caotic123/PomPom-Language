@@ -1,0 +1,3151 @@
+DIGEST 2e4dd90741791983e53a311434835abd
+F_tmp_qstep
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R57:59 Stdlib.micromega.Lia <> <> lib
+R61:68 Stdlib.Arith.PeanoNat <> <> lib
+R78:90 Stdlib.Lists.List ListNotations <> mod
+R92:100 TypeRules <> <> mod
+ind 114:118 <> qstep
+constr 148:153 <> qs_var
+constr 193:199 <> qs_sort
+constr 241:245 <> qs_pi
+constr 329:334 <> qs_lam
+constr 392:397 <> qs_app
+constr 483:490 <> qs_sigma
+constr 580:586 <> qs_pair
+constr 674:679 <> qs_fst
+constr 737:742 <> qs_snd
+constr 800:807 <> qs_unitt
+constr 833:839 <> qs_unit
+constr 863:868 <> qs_uid
+constr 890:895 <> qs_tag
+constr 935:942 <> qs_enumu
+constr 968:974 <> qs_nile
+constr 998:1005 <> qs_conse
+constr 1095:1102 <> qs_enumt
+constr 1164:1171 <> qs_ezero
+constr 1197:1204 <> qs_esucc
+constr 1266:1271 <> qs_epi
+constr 1357:1365 <> qs_switch
+constr 1509:1516 <> qs_idesc
+constr 1578:1584 <> qs_ivar
+constr 1644:1648 <> qs_i1
+constr 1668:1675 <> qs_iprod
+constr 1765:1770 <> qs_ipi
+constr 1856:1862 <> qs_isig
+constr 1950:1959 <> qs_ichoice
+constr 2053:2061 <> qs_interp
+constr 2153:2158 <> qs_mui
+constr 2216:2221 <> qs_mus
+constr 2279:2283 <> qs_in
+constr 2339:2344 <> qs_ind
+constr 2506:2512 <> qs_iall
+constr 2658:2664 <> qs_hyps
+constr 2834:2840 <> qs_list
+constr 2900:2906 <> qs_lnil
+constr 2966:2973 <> qs_lcons
+constr 3091:3097 <> qs_case
+constr 3295:3301 <> qs_beta
+constr 3397:3407 <> qs_fst_pair
+constr 3491:3501 <> qs_snd_pair
+constr 3585:3594 <> qs_epi_nil
+constr 3655:3665 <> qs_epi_cons
+constr 3884:3897 <> qs_switch_zero
+constr 4087:4100 <> qs_switch_succ
+constr 4381:4393 <> qs_interp_var
+constr 4490:4502 <> qs_interp_one
+constr 4568:4581 <> qs_interp_prod
+constr 4749:4760 <> qs_interp_pi
+constr 4937:4949 <> qs_interp_sig
+constr 5130:5145 <> qs_interp_choice
+constr 5346:5356 <> qs_iall_var
+constr 5508:5518 <> qs_iall_one
+constr 5609:5620 <> qs_iall_prod
+constr 5869:5878 <> qs_iall_pi
+constr 6157:6167 <> qs_iall_sig
+constr 6385:6398 <> qs_iall_choice
+constr 6619:6629 <> qs_hyqs_var
+constr 6801:6811 <> qs_hyqs_one
+constr 6926:6937 <> qs_hyqs_prod
+constr 7201:7210 <> qs_hyqs_pi
+constr 7546:7556 <> qs_hyqs_sig
+constr 7798:7811 <> qs_hyqs_choice
+constr 8056:8065 <> qs_ind_red
+constr 8418:8428 <> qs_case_red
+constr 8739:8744 <> qs_eta
+ind 8830:8838 <> qbranches
+constr 8896:8902 <> qbs_nil
+constr 8924:8931 <> qbs_cons
+R126:129 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R122:125 TypeRules <> term ind
+R134:137 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R130:133 TypeRules <> term ind
+R8860:8863 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8842:8845 Corelib.Init.Datatypes <> list ind
+R8852:8854 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8848:8851 TypeRules <> term ind
+R8855:8858 TypeRules <> term ind
+R8882:8885 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8864:8867 Corelib.Init.Datatypes <> list ind
+R8874:8876 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R8870:8873 TypeRules <> term ind
+R8877:8880 TypeRules <> term ind
+binder 164:164 <> n:5
+R167:171 _tmp_qstep <> qstep:1 ind
+R183:186 TypeRules <> TVar constr
+R188:188 _tmp_qstep <> n:5 var
+R174:177 TypeRules <> TVar constr
+R179:179 _tmp_qstep <> n:5 var
+binder 210:210 <> k:6
+R213:217 _tmp_qstep <> qstep:1 ind
+R230:234 TypeRules <> TSort constr
+R236:236 _tmp_qstep <> k:6 var
+R220:224 TypeRules <> TSort constr
+R226:226 _tmp_qstep <> k:6 var
+binder 256:256 <> A:7
+binder 258:259 <> A':8
+binder 261:261 <> B:9
+binder 263:264 <> B':10
+R277:280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R267:271 _tmp_qstep <> qstep:1 ind
+R275:276 _tmp_qstep <> A':8 var
+R273:273 _tmp_qstep <> A:7 var
+R291:298 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R281:285 _tmp_qstep <> qstep:1 ind
+R289:290 _tmp_qstep <> B':10 var
+R287:287 _tmp_qstep <> B:9 var
+R299:303 _tmp_qstep <> qstep:1 ind
+R316:318 TypeRules <> TPi constr
+R323:324 _tmp_qstep <> B':10 var
+R320:321 _tmp_qstep <> A':8 var
+R306:308 TypeRules <> TPi constr
+R312:312 _tmp_qstep <> B:9 var
+R310:310 _tmp_qstep <> A:7 var
+binder 345:345 <> b:11
+binder 347:348 <> b':12
+R361:364 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R351:355 _tmp_qstep <> qstep:1 ind
+R359:360 _tmp_qstep <> b':12 var
+R357:357 _tmp_qstep <> b:11 var
+R365:369 _tmp_qstep <> qstep:1 ind
+R381:384 TypeRules <> TLam constr
+R386:387 _tmp_qstep <> b':12 var
+R372:375 TypeRules <> TLam constr
+R377:377 _tmp_qstep <> b:11 var
+binder 408:408 <> f:13
+binder 410:411 <> f':14
+binder 413:413 <> a:15
+binder 415:416 <> a':16
+R429:432 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R419:423 _tmp_qstep <> qstep:1 ind
+R427:428 _tmp_qstep <> f':14 var
+R425:425 _tmp_qstep <> f:13 var
+R443:450 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R433:437 _tmp_qstep <> qstep:1 ind
+R441:442 _tmp_qstep <> a':16 var
+R439:439 _tmp_qstep <> a:15 var
+R451:455 _tmp_qstep <> qstep:1 ind
+R469:472 TypeRules <> TApp constr
+R477:478 _tmp_qstep <> a':16 var
+R474:475 _tmp_qstep <> f':14 var
+R458:461 TypeRules <> TApp constr
+R465:465 _tmp_qstep <> a:15 var
+R463:463 _tmp_qstep <> f:13 var
+binder 501:501 <> A:17
+binder 503:504 <> A':18
+binder 506:506 <> B:19
+binder 508:509 <> B':20
+R522:525 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R512:516 _tmp_qstep <> qstep:1 ind
+R520:521 _tmp_qstep <> A':18 var
+R518:518 _tmp_qstep <> A:17 var
+R536:543 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R526:530 _tmp_qstep <> qstep:1 ind
+R534:535 _tmp_qstep <> B':20 var
+R532:532 _tmp_qstep <> B:19 var
+R544:548 _tmp_qstep <> qstep:1 ind
+R564:569 TypeRules <> TSigma constr
+R574:575 _tmp_qstep <> B':20 var
+R571:572 _tmp_qstep <> A':18 var
+R551:556 TypeRules <> TSigma constr
+R560:560 _tmp_qstep <> B:19 var
+R558:558 _tmp_qstep <> A:17 var
+binder 597:597 <> a:21
+binder 599:600 <> a':22
+binder 602:602 <> b:23
+binder 604:605 <> b':24
+R618:621 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R608:612 _tmp_qstep <> qstep:1 ind
+R616:617 _tmp_qstep <> a':22 var
+R614:614 _tmp_qstep <> a:21 var
+R632:639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R622:626 _tmp_qstep <> qstep:1 ind
+R630:631 _tmp_qstep <> b':24 var
+R628:628 _tmp_qstep <> b:23 var
+R640:644 _tmp_qstep <> qstep:1 ind
+R659:663 TypeRules <> TPair constr
+R668:669 _tmp_qstep <> b':24 var
+R665:666 _tmp_qstep <> a':22 var
+R647:651 TypeRules <> TPair constr
+R655:655 _tmp_qstep <> b:23 var
+R653:653 _tmp_qstep <> a:21 var
+binder 690:690 <> p:25
+binder 692:693 <> p':26
+R706:709 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R696:700 _tmp_qstep <> qstep:1 ind
+R704:705 _tmp_qstep <> p':26 var
+R702:702 _tmp_qstep <> p:25 var
+R710:714 _tmp_qstep <> qstep:1 ind
+R726:729 TypeRules <> TFst constr
+R731:732 _tmp_qstep <> p':26 var
+R717:720 TypeRules <> TFst constr
+R722:722 _tmp_qstep <> p:25 var
+binder 753:753 <> p:27
+binder 755:756 <> p':28
+R769:772 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R759:763 _tmp_qstep <> qstep:1 ind
+R767:768 _tmp_qstep <> p':28 var
+R765:765 _tmp_qstep <> p:27 var
+R773:777 _tmp_qstep <> qstep:1 ind
+R789:792 TypeRules <> TSnd constr
+R794:795 _tmp_qstep <> p':28 var
+R780:783 TypeRules <> TSnd constr
+R785:785 _tmp_qstep <> p:27 var
+R811:815 _tmp_qstep <> qstep:1 ind
+R824:829 TypeRules <> TUnitT constr
+R817:822 TypeRules <> TUnitT constr
+R843:847 _tmp_qstep <> qstep:1 ind
+R855:859 TypeRules <> TUnit constr
+R849:853 TypeRules <> TUnit constr
+R872:876 _tmp_qstep <> qstep:1 ind
+R883:886 TypeRules <> TUId constr
+R878:881 TypeRules <> TUId constr
+binder 906:906 <> s:29
+R909:913 _tmp_qstep <> qstep:1 ind
+R925:928 TypeRules <> TTag constr
+R930:930 _tmp_qstep <> s:29 var
+R916:919 TypeRules <> TTag constr
+R921:921 _tmp_qstep <> s:29 var
+R946:950 _tmp_qstep <> qstep:1 ind
+R959:964 TypeRules <> TEnumU constr
+R952:957 TypeRules <> TEnumU constr
+R978:982 _tmp_qstep <> qstep:1 ind
+R990:994 TypeRules <> TNilE constr
+R984:988 TypeRules <> TNilE constr
+binder 1016:1016 <> t:30
+binder 1018:1019 <> t':31
+binder 1021:1021 <> E:32
+binder 1023:1024 <> E':33
+R1037:1040 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1027:1031 _tmp_qstep <> qstep:1 ind
+R1035:1036 _tmp_qstep <> t':31 var
+R1033:1033 _tmp_qstep <> t:30 var
+R1051:1058 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1041:1045 _tmp_qstep <> qstep:1 ind
+R1049:1050 _tmp_qstep <> E':33 var
+R1047:1047 _tmp_qstep <> E:32 var
+R1059:1063 _tmp_qstep <> qstep:1 ind
+R1079:1084 TypeRules <> TConsE constr
+R1089:1090 _tmp_qstep <> E':33 var
+R1086:1087 _tmp_qstep <> t':31 var
+R1066:1071 TypeRules <> TConsE constr
+R1075:1075 _tmp_qstep <> E:32 var
+R1073:1073 _tmp_qstep <> t:30 var
+binder 1113:1113 <> E:34
+binder 1115:1116 <> E':35
+R1129:1132 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1119:1123 _tmp_qstep <> qstep:1 ind
+R1127:1128 _tmp_qstep <> E':35 var
+R1125:1125 _tmp_qstep <> E:34 var
+R1133:1137 _tmp_qstep <> qstep:1 ind
+R1151:1156 TypeRules <> TEnumT constr
+R1158:1159 _tmp_qstep <> E':35 var
+R1140:1145 TypeRules <> TEnumT constr
+R1147:1147 _tmp_qstep <> E:34 var
+R1175:1179 _tmp_qstep <> qstep:1 ind
+R1188:1193 TypeRules <> TEZero constr
+R1181:1186 TypeRules <> TEZero constr
+binder 1215:1215 <> n:36
+binder 1217:1218 <> n':37
+R1231:1234 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1221:1225 _tmp_qstep <> qstep:1 ind
+R1229:1230 _tmp_qstep <> n':37 var
+R1227:1227 _tmp_qstep <> n:36 var
+R1235:1239 _tmp_qstep <> qstep:1 ind
+R1253:1258 TypeRules <> TESucc constr
+R1260:1261 _tmp_qstep <> n':37 var
+R1242:1247 TypeRules <> TESucc constr
+R1249:1249 _tmp_qstep <> n:36 var
+binder 1282:1282 <> E:38
+binder 1284:1285 <> E':39
+binder 1287:1287 <> P:40
+binder 1289:1290 <> P':41
+R1303:1306 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1293:1297 _tmp_qstep <> qstep:1 ind
+R1301:1302 _tmp_qstep <> E':39 var
+R1299:1299 _tmp_qstep <> E:38 var
+R1317:1324 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1307:1311 _tmp_qstep <> qstep:1 ind
+R1315:1316 _tmp_qstep <> P':41 var
+R1313:1313 _tmp_qstep <> P:40 var
+R1325:1329 _tmp_qstep <> qstep:1 ind
+R1343:1346 TypeRules <> TEPi constr
+R1351:1352 _tmp_qstep <> P':41 var
+R1348:1349 _tmp_qstep <> E':39 var
+R1332:1335 TypeRules <> TEPi constr
+R1339:1339 _tmp_qstep <> P:40 var
+R1337:1337 _tmp_qstep <> E:38 var
+binder 1376:1376 <> E:42
+binder 1378:1379 <> E':43
+binder 1381:1381 <> P:44
+binder 1383:1384 <> P':45
+binder 1386:1386 <> p:46
+binder 1388:1389 <> p':47
+binder 1391:1391 <> e:48
+binder 1393:1394 <> e':49
+R1411:1414 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1401:1405 _tmp_qstep <> qstep:1 ind
+R1409:1410 _tmp_qstep <> E':43 var
+R1407:1407 _tmp_qstep <> E:42 var
+R1425:1428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1415:1419 _tmp_qstep <> qstep:1 ind
+R1423:1424 _tmp_qstep <> P':45 var
+R1421:1421 _tmp_qstep <> P:44 var
+R1439:1442 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1429:1433 _tmp_qstep <> qstep:1 ind
+R1437:1438 _tmp_qstep <> p':47 var
+R1435:1435 _tmp_qstep <> p:46 var
+R1453:1460 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1443:1447 _tmp_qstep <> qstep:1 ind
+R1451:1452 _tmp_qstep <> e':49 var
+R1449:1449 _tmp_qstep <> e:48 var
+R1461:1465 _tmp_qstep <> qstep:1 ind
+R1486:1492 TypeRules <> TSwitch constr
+R1503:1504 _tmp_qstep <> e':49 var
+R1500:1501 _tmp_qstep <> p':47 var
+R1497:1498 _tmp_qstep <> P':45 var
+R1494:1495 _tmp_qstep <> E':43 var
+R1468:1474 TypeRules <> TSwitch constr
+R1482:1482 _tmp_qstep <> e:48 var
+R1480:1480 _tmp_qstep <> p:46 var
+R1478:1478 _tmp_qstep <> P:44 var
+R1476:1476 _tmp_qstep <> E:42 var
+binder 1527:1527 <> I:50
+binder 1529:1530 <> I':51
+R1543:1546 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1533:1537 _tmp_qstep <> qstep:1 ind
+R1541:1542 _tmp_qstep <> I':51 var
+R1539:1539 _tmp_qstep <> I:50 var
+R1547:1551 _tmp_qstep <> qstep:1 ind
+R1565:1570 TypeRules <> TIDesc constr
+R1572:1573 _tmp_qstep <> I':51 var
+R1554:1559 TypeRules <> TIDesc constr
+R1561:1561 _tmp_qstep <> I:50 var
+binder 1595:1595 <> i:52
+binder 1597:1598 <> i':53
+R1611:1614 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1601:1605 _tmp_qstep <> qstep:1 ind
+R1609:1610 _tmp_qstep <> i':53 var
+R1607:1607 _tmp_qstep <> i:52 var
+R1615:1619 _tmp_qstep <> qstep:1 ind
+R1632:1636 TypeRules <> TIVar constr
+R1638:1639 _tmp_qstep <> i':53 var
+R1622:1626 TypeRules <> TIVar constr
+R1628:1628 _tmp_qstep <> i:52 var
+R1652:1656 _tmp_qstep <> qstep:1 ind
+R1662:1664 TypeRules <> TI1 constr
+R1658:1660 TypeRules <> TI1 constr
+binder 1686:1686 <> A:54
+binder 1688:1689 <> A':55
+binder 1691:1691 <> B:56
+binder 1693:1694 <> B':57
+R1707:1710 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1697:1701 _tmp_qstep <> qstep:1 ind
+R1705:1706 _tmp_qstep <> A':55 var
+R1703:1703 _tmp_qstep <> A:54 var
+R1721:1728 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1711:1715 _tmp_qstep <> qstep:1 ind
+R1719:1720 _tmp_qstep <> B':57 var
+R1717:1717 _tmp_qstep <> B:56 var
+R1729:1733 _tmp_qstep <> qstep:1 ind
+R1749:1754 TypeRules <> TIProd constr
+R1759:1760 _tmp_qstep <> B':57 var
+R1756:1757 _tmp_qstep <> A':55 var
+R1736:1741 TypeRules <> TIProd constr
+R1745:1745 _tmp_qstep <> B:56 var
+R1743:1743 _tmp_qstep <> A:54 var
+binder 1781:1781 <> S:58
+binder 1783:1784 <> S':59
+binder 1786:1786 <> T:60
+binder 1788:1789 <> T':61
+R1802:1805 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1792:1796 _tmp_qstep <> qstep:1 ind
+R1800:1801 _tmp_qstep <> S':59 var
+R1798:1798 _tmp_qstep <> S:58 var
+R1816:1823 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1806:1810 _tmp_qstep <> qstep:1 ind
+R1814:1815 _tmp_qstep <> T':61 var
+R1812:1812 _tmp_qstep <> T:60 var
+R1824:1828 _tmp_qstep <> qstep:1 ind
+R1842:1845 TypeRules <> TIPi constr
+R1850:1851 _tmp_qstep <> T':61 var
+R1847:1848 _tmp_qstep <> S':59 var
+R1831:1834 TypeRules <> TIPi constr
+R1838:1838 _tmp_qstep <> T:60 var
+R1836:1836 _tmp_qstep <> S:58 var
+binder 1873:1873 <> S:62
+binder 1875:1876 <> S':63
+binder 1878:1878 <> T:64
+binder 1880:1881 <> T':65
+R1894:1897 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1884:1888 _tmp_qstep <> qstep:1 ind
+R1892:1893 _tmp_qstep <> S':63 var
+R1890:1890 _tmp_qstep <> S:62 var
+R1908:1915 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1898:1902 _tmp_qstep <> qstep:1 ind
+R1906:1907 _tmp_qstep <> T':65 var
+R1904:1904 _tmp_qstep <> T:64 var
+R1916:1920 _tmp_qstep <> qstep:1 ind
+R1935:1939 TypeRules <> TISig constr
+R1944:1945 _tmp_qstep <> T':65 var
+R1941:1942 _tmp_qstep <> S':63 var
+R1923:1927 TypeRules <> TISig constr
+R1931:1931 _tmp_qstep <> T:64 var
+R1929:1929 _tmp_qstep <> S:62 var
+binder 1970:1970 <> E:66
+binder 1972:1973 <> E':67
+binder 1975:1975 <> T:68
+binder 1977:1978 <> T':69
+R1991:1994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1981:1985 _tmp_qstep <> qstep:1 ind
+R1989:1990 _tmp_qstep <> E':67 var
+R1987:1987 _tmp_qstep <> E:66 var
+R2005:2012 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1995:1999 _tmp_qstep <> qstep:1 ind
+R2003:2004 _tmp_qstep <> T':69 var
+R2001:2001 _tmp_qstep <> T:68 var
+R2013:2017 _tmp_qstep <> qstep:1 ind
+R2035:2042 TypeRules <> TIChoice constr
+R2047:2048 _tmp_qstep <> T':69 var
+R2044:2045 _tmp_qstep <> E':67 var
+R2020:2027 TypeRules <> TIChoice constr
+R2031:2031 _tmp_qstep <> T:68 var
+R2029:2029 _tmp_qstep <> E:66 var
+binder 2072:2072 <> D:70
+binder 2074:2075 <> D':71
+binder 2077:2077 <> X:72
+binder 2079:2080 <> X':73
+R2093:2096 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2083:2087 _tmp_qstep <> qstep:1 ind
+R2091:2092 _tmp_qstep <> D':71 var
+R2089:2089 _tmp_qstep <> D:70 var
+R2107:2114 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2097:2101 _tmp_qstep <> qstep:1 ind
+R2105:2106 _tmp_qstep <> X':73 var
+R2103:2103 _tmp_qstep <> X:72 var
+R2115:2119 _tmp_qstep <> qstep:1 ind
+R2136:2142 TypeRules <> TInterp constr
+R2147:2148 _tmp_qstep <> X':73 var
+R2144:2145 _tmp_qstep <> D':71 var
+R2122:2128 TypeRules <> TInterp constr
+R2132:2132 _tmp_qstep <> X:72 var
+R2130:2130 _tmp_qstep <> D:70 var
+binder 2169:2169 <> R:74
+binder 2171:2172 <> R':75
+R2185:2188 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2175:2179 _tmp_qstep <> qstep:1 ind
+R2183:2184 _tmp_qstep <> R':75 var
+R2181:2181 _tmp_qstep <> R:74 var
+R2189:2193 _tmp_qstep <> qstep:1 ind
+R2205:2208 TypeRules <> TMuI constr
+R2210:2211 _tmp_qstep <> R':75 var
+R2196:2199 TypeRules <> TMuI constr
+R2201:2201 _tmp_qstep <> R:74 var
+binder 2232:2232 <> S:76
+binder 2234:2235 <> S':77
+R2248:2251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2238:2242 _tmp_qstep <> qstep:1 ind
+R2246:2247 _tmp_qstep <> S':77 var
+R2244:2244 _tmp_qstep <> S:76 var
+R2252:2256 _tmp_qstep <> qstep:1 ind
+R2268:2271 TypeRules <> TMuS constr
+R2273:2274 _tmp_qstep <> S':77 var
+R2259:2262 TypeRules <> TMuS constr
+R2264:2264 _tmp_qstep <> S:76 var
+binder 2294:2294 <> x:78
+binder 2296:2297 <> x':79
+R2310:2313 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2300:2304 _tmp_qstep <> qstep:1 ind
+R2308:2309 _tmp_qstep <> x':79 var
+R2306:2306 _tmp_qstep <> x:78 var
+R2314:2318 _tmp_qstep <> qstep:1 ind
+R2329:2331 TypeRules <> TIn constr
+R2333:2334 _tmp_qstep <> x':79 var
+R2321:2323 TypeRules <> TIn constr
+R2325:2325 _tmp_qstep <> x:78 var
+binder 2355:2355 <> R:80
+binder 2357:2358 <> R':81
+binder 2360:2360 <> P:82
+binder 2362:2363 <> P':83
+binder 2365:2365 <> s:84
+binder 2367:2368 <> s':85
+binder 2370:2370 <> i:86
+binder 2372:2373 <> i':87
+binder 2375:2375 <> x:88
+binder 2377:2378 <> x':89
+R2395:2398 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2385:2389 _tmp_qstep <> qstep:1 ind
+R2393:2394 _tmp_qstep <> R':81 var
+R2391:2391 _tmp_qstep <> R:80 var
+R2409:2412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2399:2403 _tmp_qstep <> qstep:1 ind
+R2407:2408 _tmp_qstep <> P':83 var
+R2405:2405 _tmp_qstep <> P:82 var
+R2423:2426 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2413:2417 _tmp_qstep <> qstep:1 ind
+R2421:2422 _tmp_qstep <> s':85 var
+R2419:2419 _tmp_qstep <> s:84 var
+R2437:2440 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2427:2431 _tmp_qstep <> qstep:1 ind
+R2435:2436 _tmp_qstep <> i':87 var
+R2433:2433 _tmp_qstep <> i:86 var
+R2451:2458 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2441:2445 _tmp_qstep <> qstep:1 ind
+R2449:2450 _tmp_qstep <> x':89 var
+R2447:2447 _tmp_qstep <> x:88 var
+R2459:2463 _tmp_qstep <> qstep:1 ind
+R2483:2486 TypeRules <> TInd constr
+R2500:2501 _tmp_qstep <> x':89 var
+R2497:2498 _tmp_qstep <> i':87 var
+R2494:2495 _tmp_qstep <> s':85 var
+R2491:2492 _tmp_qstep <> P':83 var
+R2488:2489 _tmp_qstep <> R':81 var
+R2466:2469 TypeRules <> TInd constr
+R2479:2479 _tmp_qstep <> x:88 var
+R2477:2477 _tmp_qstep <> i:86 var
+R2475:2475 _tmp_qstep <> s:84 var
+R2473:2473 _tmp_qstep <> P:82 var
+R2471:2471 _tmp_qstep <> R:80 var
+binder 2523:2523 <> D:90
+binder 2525:2526 <> D':91
+binder 2528:2528 <> X:92
+binder 2530:2531 <> X':93
+binder 2533:2534 <> xs:94
+binder 2536:2538 <> xs':95
+binder 2540:2540 <> P:96
+binder 2542:2543 <> P':97
+R2560:2563 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2550:2554 _tmp_qstep <> qstep:1 ind
+R2558:2559 _tmp_qstep <> D':91 var
+R2556:2556 _tmp_qstep <> D:90 var
+R2574:2577 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2564:2568 _tmp_qstep <> qstep:1 ind
+R2572:2573 _tmp_qstep <> X':93 var
+R2570:2570 _tmp_qstep <> X:92 var
+R2590:2593 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2578:2582 _tmp_qstep <> qstep:1 ind
+R2587:2589 _tmp_qstep <> xs':95 var
+R2584:2585 _tmp_qstep <> xs:94 var
+R2604:2611 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2594:2598 _tmp_qstep <> qstep:1 ind
+R2602:2603 _tmp_qstep <> P':97 var
+R2600:2600 _tmp_qstep <> P:96 var
+R2612:2616 _tmp_qstep <> qstep:1 ind
+R2636:2640 TypeRules <> TIAll constr
+R2652:2653 _tmp_qstep <> P':97 var
+R2648:2650 _tmp_qstep <> xs':95 var
+R2645:2646 _tmp_qstep <> X':93 var
+R2642:2643 _tmp_qstep <> D':91 var
+R2619:2623 TypeRules <> TIAll constr
+R2632:2632 _tmp_qstep <> P:96 var
+R2629:2630 _tmp_qstep <> xs:94 var
+R2627:2627 _tmp_qstep <> X:92 var
+R2625:2625 _tmp_qstep <> D:90 var
+binder 2675:2675 <> D:98
+binder 2677:2678 <> D':99
+binder 2680:2680 <> X:100
+binder 2682:2683 <> X':101
+binder 2685:2685 <> P:102
+binder 2687:2688 <> P':103
+binder 2690:2690 <> h:104
+binder 2692:2693 <> h':105
+binder 2695:2696 <> xs:106
+binder 2698:2700 <> xs':107
+R2717:2720 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2707:2711 _tmp_qstep <> qstep:1 ind
+R2715:2716 _tmp_qstep <> D':99 var
+R2713:2713 _tmp_qstep <> D:98 var
+R2731:2734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2721:2725 _tmp_qstep <> qstep:1 ind
+R2729:2730 _tmp_qstep <> X':101 var
+R2727:2727 _tmp_qstep <> X:100 var
+R2745:2748 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2735:2739 _tmp_qstep <> qstep:1 ind
+R2743:2744 _tmp_qstep <> P':103 var
+R2741:2741 _tmp_qstep <> P:102 var
+R2759:2762 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2749:2753 _tmp_qstep <> qstep:1 ind
+R2757:2758 _tmp_qstep <> h':105 var
+R2755:2755 _tmp_qstep <> h:104 var
+R2775:2782 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2763:2767 _tmp_qstep <> qstep:1 ind
+R2772:2774 _tmp_qstep <> xs':107 var
+R2769:2770 _tmp_qstep <> xs:106 var
+R2783:2787 _tmp_qstep <> qstep:1 ind
+R2809:2813 TypeRules <> THyps constr
+R2827:2829 _tmp_qstep <> xs':107 var
+R2824:2825 _tmp_qstep <> h':105 var
+R2821:2822 _tmp_qstep <> P':103 var
+R2818:2819 _tmp_qstep <> X':101 var
+R2815:2816 _tmp_qstep <> D':99 var
+R2790:2794 TypeRules <> THyps constr
+R2804:2805 _tmp_qstep <> xs:106 var
+R2802:2802 _tmp_qstep <> h:104 var
+R2800:2800 _tmp_qstep <> P:102 var
+R2798:2798 _tmp_qstep <> X:100 var
+R2796:2796 _tmp_qstep <> D:98 var
+binder 2851:2851 <> A:108
+binder 2853:2854 <> A':109
+R2867:2870 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2857:2861 _tmp_qstep <> qstep:1 ind
+R2865:2866 _tmp_qstep <> A':109 var
+R2863:2863 _tmp_qstep <> A:108 var
+R2871:2875 _tmp_qstep <> qstep:1 ind
+R2888:2892 TypeRules <> TList constr
+R2894:2895 _tmp_qstep <> A':109 var
+R2878:2882 TypeRules <> TList constr
+R2884:2884 _tmp_qstep <> A:108 var
+binder 2917:2917 <> A:110
+binder 2919:2920 <> A':111
+R2933:2936 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2923:2927 _tmp_qstep <> qstep:1 ind
+R2931:2932 _tmp_qstep <> A':111 var
+R2929:2929 _tmp_qstep <> A:110 var
+R2937:2941 _tmp_qstep <> qstep:1 ind
+R2954:2958 TypeRules <> TLNil constr
+R2960:2961 _tmp_qstep <> A':111 var
+R2944:2948 TypeRules <> TLNil constr
+R2950:2950 _tmp_qstep <> A:110 var
+binder 2984:2984 <> A:112
+binder 2986:2987 <> A':113
+binder 2989:2989 <> a:114
+binder 2991:2992 <> a':115
+binder 2994:2994 <> l:116
+binder 2996:2997 <> l':117
+R3014:3017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3004:3008 _tmp_qstep <> qstep:1 ind
+R3012:3013 _tmp_qstep <> A':113 var
+R3010:3010 _tmp_qstep <> A:112 var
+R3028:3031 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3018:3022 _tmp_qstep <> qstep:1 ind
+R3026:3027 _tmp_qstep <> a':115 var
+R3024:3024 _tmp_qstep <> a:114 var
+R3042:3049 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3032:3036 _tmp_qstep <> qstep:1 ind
+R3040:3041 _tmp_qstep <> l':117 var
+R3038:3038 _tmp_qstep <> l:116 var
+R3050:3054 _tmp_qstep <> qstep:1 ind
+R3072:3077 TypeRules <> TLCons constr
+R3085:3086 _tmp_qstep <> l':117 var
+R3082:3083 _tmp_qstep <> a':115 var
+R3079:3080 _tmp_qstep <> A':113 var
+R3057:3062 TypeRules <> TLCons constr
+R3068:3068 _tmp_qstep <> l:116 var
+R3066:3066 _tmp_qstep <> a:114 var
+R3064:3064 _tmp_qstep <> A:112 var
+binder 3108:3108 <> M:118
+binder 3110:3111 <> M':119
+binder 3113:3113 <> Q:120
+binder 3115:3116 <> Q':121
+binder 3118:3119 <> bs:122
+binder 3121:3123 <> bs':123
+R3140:3143 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3130:3134 _tmp_qstep <> qstep:1 ind
+R3138:3139 _tmp_qstep <> M':119 var
+R3136:3136 _tmp_qstep <> M:118 var
+R3154:3157 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3144:3148 _tmp_qstep <> qstep:1 ind
+R3152:3153 _tmp_qstep <> Q':121 var
+R3150:3150 _tmp_qstep <> Q:120 var
+R3174:3181 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3158:3166 _tmp_qstep <> qbranches:2 ind
+R3171:3173 _tmp_qstep <> bs':123 var
+R3168:3169 _tmp_qstep <> bs:122 var
+R3182:3186 _tmp_qstep <> qstep:1 ind
+R3204:3208 TypeRules <> TCase constr
+R3216:3218 _tmp_qstep <> bs':123 var
+R3213:3214 _tmp_qstep <> Q':121 var
+R3210:3211 _tmp_qstep <> M':119 var
+R3189:3193 TypeRules <> TCase constr
+R3199:3200 _tmp_qstep <> bs:122 var
+R3197:3197 _tmp_qstep <> Q:120 var
+R3195:3195 _tmp_qstep <> M:118 var
+binder 3312:3312 <> b:124
+binder 3314:3315 <> b':125
+binder 3317:3317 <> a:126
+binder 3319:3320 <> a':127
+R3333:3336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3323:3327 _tmp_qstep <> qstep:1 ind
+R3331:3332 _tmp_qstep <> b':125 var
+R3329:3329 _tmp_qstep <> b:124 var
+R3347:3354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3337:3341 _tmp_qstep <> qstep:1 ind
+R3345:3346 _tmp_qstep <> a':127 var
+R3343:3343 _tmp_qstep <> a:126 var
+R3355:3359 _tmp_qstep <> qstep:1 ind
+R3380:3384 TypeRules <> subst def
+R3391:3392 _tmp_qstep <> b':125 var
+R3386:3387 _tmp_qstep <> a':127 var
+R3362:3365 TypeRules <> TApp constr
+R3376:3376 _tmp_qstep <> a:126 var
+R3368:3371 TypeRules <> TLam constr
+R3373:3373 _tmp_qstep <> b:124 var
+binder 3418:3418 <> a:128
+binder 3420:3421 <> a':129
+binder 3423:3423 <> b:130
+binder 3425:3426 <> b':131
+R3439:3442 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3429:3433 _tmp_qstep <> qstep:1 ind
+R3437:3438 _tmp_qstep <> a':129 var
+R3435:3435 _tmp_qstep <> a:128 var
+R3453:3460 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3443:3447 _tmp_qstep <> qstep:1 ind
+R3451:3452 _tmp_qstep <> b':131 var
+R3449:3449 _tmp_qstep <> b:130 var
+R3461:3465 _tmp_qstep <> qstep:1 ind
+R3486:3487 _tmp_qstep <> a':129 var
+R3468:3471 TypeRules <> TFst constr
+R3474:3478 TypeRules <> TPair constr
+R3482:3482 _tmp_qstep <> b:130 var
+R3480:3480 _tmp_qstep <> a:128 var
+binder 3512:3512 <> a:132
+binder 3514:3515 <> a':133
+binder 3517:3517 <> b:134
+binder 3519:3520 <> b':135
+R3533:3536 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3523:3527 _tmp_qstep <> qstep:1 ind
+R3531:3532 _tmp_qstep <> a':133 var
+R3529:3529 _tmp_qstep <> a:132 var
+R3547:3554 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3537:3541 _tmp_qstep <> qstep:1 ind
+R3545:3546 _tmp_qstep <> b':135 var
+R3543:3543 _tmp_qstep <> b:134 var
+R3555:3559 _tmp_qstep <> qstep:1 ind
+R3580:3581 _tmp_qstep <> b':135 var
+R3562:3565 TypeRules <> TSnd constr
+R3568:3572 TypeRules <> TPair constr
+R3576:3576 _tmp_qstep <> b:134 var
+R3574:3574 _tmp_qstep <> a:132 var
+binder 3605:3605 <> P:136
+binder 3607:3608 <> P':137
+R3621:3624 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3611:3615 _tmp_qstep <> qstep:1 ind
+R3619:3620 _tmp_qstep <> P':137 var
+R3617:3617 _tmp_qstep <> P:136 var
+R3625:3629 _tmp_qstep <> qstep:1 ind
+R3646:3651 TypeRules <> TUnitT constr
+R3632:3635 TypeRules <> TEPi constr
+R3643:3643 _tmp_qstep <> P:136 var
+R3637:3641 TypeRules <> TNilE constr
+binder 3676:3677 <> tg:138
+binder 3679:3681 <> tg':139
+binder 3683:3683 <> E:140
+binder 3685:3686 <> E':141
+binder 3688:3688 <> P:142
+binder 3690:3691 <> P':143
+R3710:3713 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3698:3702 _tmp_qstep <> qstep:1 ind
+R3707:3709 _tmp_qstep <> tg':139 var
+R3704:3705 _tmp_qstep <> tg:138 var
+R3724:3727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3714:3718 _tmp_qstep <> qstep:1 ind
+R3722:3723 _tmp_qstep <> E':141 var
+R3720:3720 _tmp_qstep <> E:140 var
+R3738:3745 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3728:3732 _tmp_qstep <> qstep:1 ind
+R3736:3737 _tmp_qstep <> P':143 var
+R3734:3734 _tmp_qstep <> P:142 var
+R3746:3750 _tmp_qstep <> qstep:1 ind
+R3782:3787 TypeRules <> TSigma constr
+R3815:3818 TypeRules <> lift def
+R3825:3828 TypeRules <> TEPi constr
+R3834:3837 TypeRules <> TLam constr
+R3840:3843 TypeRules <> TApp constr
+R3860:3865 TypeRules <> TESucc constr
+R3868:3871 TypeRules <> TVar constr
+R3846:3849 TypeRules <> lift def
+R3855:3856 _tmp_qstep <> P':143 var
+R3830:3831 _tmp_qstep <> E':141 var
+R3790:3793 TypeRules <> TApp constr
+R3798:3803 TypeRules <> TEZero constr
+R3795:3796 _tmp_qstep <> P':143 var
+R3753:3756 TypeRules <> TEPi constr
+R3772:3772 _tmp_qstep <> P:142 var
+R3759:3764 TypeRules <> TConsE constr
+R3769:3769 _tmp_qstep <> E:140 var
+R3766:3767 _tmp_qstep <> tg:138 var
+binder 3908:3909 <> tg:144
+binder 3911:3913 <> tg':145
+binder 3915:3915 <> E:146
+binder 3917:3918 <> E':147
+binder 3920:3920 <> P:148
+binder 3922:3923 <> P':149
+binder 3925:3926 <> p0:150
+binder 3928:3930 <> p0':151
+binder 3932:3933 <> ps:152
+binder 3935:3937 <> ps':153
+R3956:3959 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3944:3948 _tmp_qstep <> qstep:1 ind
+R3953:3955 _tmp_qstep <> tg':145 var
+R3950:3951 _tmp_qstep <> tg:144 var
+R3970:3973 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3960:3964 _tmp_qstep <> qstep:1 ind
+R3968:3969 _tmp_qstep <> E':147 var
+R3966:3966 _tmp_qstep <> E:146 var
+R3984:3991 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3974:3978 _tmp_qstep <> qstep:1 ind
+R3982:3983 _tmp_qstep <> P':149 var
+R3980:3980 _tmp_qstep <> P:148 var
+R4004:4007 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3992:3996 _tmp_qstep <> qstep:1 ind
+R4001:4003 _tmp_qstep <> p0':151 var
+R3998:3999 _tmp_qstep <> p0:150 var
+R4020:4027 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4008:4012 _tmp_qstep <> qstep:1 ind
+R4017:4019 _tmp_qstep <> ps':153 var
+R4014:4015 _tmp_qstep <> ps:152 var
+R4028:4032 _tmp_qstep <> qstep:1 ind
+R4081:4083 _tmp_qstep <> p0':151 var
+R4035:4041 TypeRules <> TSwitch constr
+R4073:4078 TypeRules <> TEZero constr
+R4060:4064 TypeRules <> TPair constr
+R4069:4070 _tmp_qstep <> ps:152 var
+R4066:4067 _tmp_qstep <> p0:150 var
+R4057:4057 _tmp_qstep <> P:148 var
+R4044:4049 TypeRules <> TConsE constr
+R4054:4054 _tmp_qstep <> E:146 var
+R4051:4052 _tmp_qstep <> tg:144 var
+binder 4111:4112 <> tg:154
+binder 4114:4116 <> tg':155
+binder 4118:4118 <> E:156
+binder 4120:4121 <> E':157
+binder 4123:4123 <> P:158
+binder 4125:4126 <> P':159
+binder 4128:4129 <> p0:160
+binder 4131:4133 <> p0':161
+binder 4135:4136 <> ps:162
+binder 4138:4140 <> ps':163
+binder 4142:4142 <> n:164
+binder 4144:4145 <> n':165
+R4164:4167 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4152:4156 _tmp_qstep <> qstep:1 ind
+R4161:4163 _tmp_qstep <> tg':155 var
+R4158:4159 _tmp_qstep <> tg:154 var
+R4178:4181 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4168:4172 _tmp_qstep <> qstep:1 ind
+R4176:4177 _tmp_qstep <> E':157 var
+R4174:4174 _tmp_qstep <> E:156 var
+R4192:4199 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4182:4186 _tmp_qstep <> qstep:1 ind
+R4190:4191 _tmp_qstep <> P':159 var
+R4188:4188 _tmp_qstep <> P:158 var
+R4212:4215 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4200:4204 _tmp_qstep <> qstep:1 ind
+R4209:4211 _tmp_qstep <> p0':161 var
+R4206:4207 _tmp_qstep <> p0:160 var
+R4228:4231 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4216:4220 _tmp_qstep <> qstep:1 ind
+R4225:4227 _tmp_qstep <> ps':163 var
+R4222:4223 _tmp_qstep <> ps:162 var
+R4242:4249 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4232:4236 _tmp_qstep <> qstep:1 ind
+R4240:4241 _tmp_qstep <> n':165 var
+R4238:4238 _tmp_qstep <> n:164 var
+R4250:4254 _tmp_qstep <> qstep:1 ind
+R4314:4320 TypeRules <> TSwitch constr
+R4375:4376 _tmp_qstep <> n':165 var
+R4371:4373 _tmp_qstep <> ps':163 var
+R4326:4329 TypeRules <> TLam constr
+R4332:4335 TypeRules <> TApp constr
+R4352:4357 TypeRules <> TESucc constr
+R4360:4363 TypeRules <> TVar constr
+R4338:4341 TypeRules <> lift def
+R4347:4348 _tmp_qstep <> P':159 var
+R4322:4323 _tmp_qstep <> E':157 var
+R4257:4263 TypeRules <> TSwitch constr
+R4296:4301 TypeRules <> TESucc constr
+R4303:4303 _tmp_qstep <> n:164 var
+R4282:4286 TypeRules <> TPair constr
+R4291:4292 _tmp_qstep <> ps:162 var
+R4288:4289 _tmp_qstep <> p0:160 var
+R4279:4279 _tmp_qstep <> P:158 var
+R4266:4271 TypeRules <> TConsE constr
+R4276:4276 _tmp_qstep <> E:156 var
+R4273:4274 _tmp_qstep <> tg:154 var
+binder 4404:4404 <> i:166
+binder 4406:4407 <> i':167
+binder 4409:4409 <> X:168
+binder 4411:4412 <> X':169
+R4425:4428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4415:4419 _tmp_qstep <> qstep:1 ind
+R4423:4424 _tmp_qstep <> i':167 var
+R4421:4421 _tmp_qstep <> i:166 var
+R4439:4446 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4429:4433 _tmp_qstep <> qstep:1 ind
+R4437:4438 _tmp_qstep <> X':169 var
+R4435:4435 _tmp_qstep <> X:168 var
+R4447:4451 _tmp_qstep <> qstep:1 ind
+R4476:4479 TypeRules <> TApp constr
+R4484:4485 _tmp_qstep <> i':167 var
+R4481:4482 _tmp_qstep <> X':169 var
+R4454:4460 TypeRules <> TInterp constr
+R4472:4472 _tmp_qstep <> X:168 var
+R4463:4467 TypeRules <> TIVar constr
+R4469:4469 _tmp_qstep <> i:166 var
+binder 4513:4513 <> X:170
+binder 4515:4516 <> X':171
+R4529:4536 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4519:4523 _tmp_qstep <> qstep:1 ind
+R4527:4528 _tmp_qstep <> X':171 var
+R4525:4525 _tmp_qstep <> X:170 var
+R4537:4541 _tmp_qstep <> qstep:1 ind
+R4559:4564 TypeRules <> TUnitT constr
+R4544:4550 TypeRules <> TInterp constr
+R4556:4556 _tmp_qstep <> X:170 var
+R4552:4554 TypeRules <> TI1 constr
+binder 4592:4592 <> A:172
+binder 4594:4595 <> A':173
+binder 4597:4597 <> B:174
+binder 4599:4600 <> B':175
+binder 4602:4602 <> X:176
+binder 4604:4605 <> X':177
+R4622:4625 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4612:4616 _tmp_qstep <> qstep:1 ind
+R4620:4621 _tmp_qstep <> A':173 var
+R4618:4618 _tmp_qstep <> A:172 var
+R4636:4639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4626:4630 _tmp_qstep <> qstep:1 ind
+R4634:4635 _tmp_qstep <> B':175 var
+R4632:4632 _tmp_qstep <> B:174 var
+R4650:4657 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4640:4644 _tmp_qstep <> qstep:1 ind
+R4648:4649 _tmp_qstep <> X':177 var
+R4646:4646 _tmp_qstep <> X:176 var
+R4658:4662 _tmp_qstep <> qstep:1 ind
+R4696:4701 TypeRules <> TSigma constr
+R4720:4723 TypeRules <> lift def
+R4730:4736 TypeRules <> TInterp constr
+R4741:4742 _tmp_qstep <> X':177 var
+R4738:4739 _tmp_qstep <> B':175 var
+R4704:4710 TypeRules <> TInterp constr
+R4715:4716 _tmp_qstep <> X':177 var
+R4712:4713 _tmp_qstep <> A':173 var
+R4665:4671 TypeRules <> TInterp constr
+R4686:4686 _tmp_qstep <> X:176 var
+R4674:4679 TypeRules <> TIProd constr
+R4683:4683 _tmp_qstep <> B:174 var
+R4681:4681 _tmp_qstep <> A:172 var
+binder 4771:4771 <> S:178
+binder 4773:4774 <> S':179
+binder 4776:4776 <> T:180
+binder 4778:4779 <> T':181
+binder 4781:4781 <> X:182
+binder 4783:4784 <> X':183
+R4801:4804 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4791:4795 _tmp_qstep <> qstep:1 ind
+R4799:4800 _tmp_qstep <> S':179 var
+R4797:4797 _tmp_qstep <> S:178 var
+R4815:4818 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4805:4809 _tmp_qstep <> qstep:1 ind
+R4813:4814 _tmp_qstep <> T':181 var
+R4811:4811 _tmp_qstep <> T:180 var
+R4829:4836 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4819:4823 _tmp_qstep <> qstep:1 ind
+R4827:4828 _tmp_qstep <> X':183 var
+R4825:4825 _tmp_qstep <> X:182 var
+R4837:4841 _tmp_qstep <> qstep:1 ind
+R4873:4875 TypeRules <> TPi constr
+R4881:4887 TypeRules <> TInterp constr
+R4920:4923 TypeRules <> lift def
+R4929:4930 _tmp_qstep <> X':183 var
+R4890:4893 TypeRules <> TApp constr
+R4910:4913 TypeRules <> TVar constr
+R4896:4899 TypeRules <> lift def
+R4905:4906 _tmp_qstep <> T':181 var
+R4877:4878 _tmp_qstep <> S':179 var
+R4844:4850 TypeRules <> TInterp constr
+R4863:4863 _tmp_qstep <> X:182 var
+R4853:4856 TypeRules <> TIPi constr
+R4860:4860 _tmp_qstep <> T:180 var
+R4858:4858 _tmp_qstep <> S:178 var
+binder 4960:4960 <> S:184
+binder 4962:4963 <> S':185
+binder 4965:4965 <> T:186
+binder 4967:4968 <> T':187
+binder 4970:4970 <> X:188
+binder 4972:4973 <> X':189
+R4990:4993 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4980:4984 _tmp_qstep <> qstep:1 ind
+R4988:4989 _tmp_qstep <> S':185 var
+R4986:4986 _tmp_qstep <> S:184 var
+R5004:5007 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4994:4998 _tmp_qstep <> qstep:1 ind
+R5002:5003 _tmp_qstep <> T':187 var
+R5000:5000 _tmp_qstep <> T:186 var
+R5018:5025 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5008:5012 _tmp_qstep <> qstep:1 ind
+R5016:5017 _tmp_qstep <> X':189 var
+R5014:5014 _tmp_qstep <> X:188 var
+R5026:5030 _tmp_qstep <> qstep:1 ind
+R5063:5068 TypeRules <> TSigma constr
+R5074:5080 TypeRules <> TInterp constr
+R5113:5116 TypeRules <> lift def
+R5122:5123 _tmp_qstep <> X':189 var
+R5083:5086 TypeRules <> TApp constr
+R5103:5106 TypeRules <> TVar constr
+R5089:5092 TypeRules <> lift def
+R5098:5099 _tmp_qstep <> T':187 var
+R5070:5071 _tmp_qstep <> S':185 var
+R5033:5039 TypeRules <> TInterp constr
+R5053:5053 _tmp_qstep <> X:188 var
+R5042:5046 TypeRules <> TISig constr
+R5050:5050 _tmp_qstep <> T:186 var
+R5048:5048 _tmp_qstep <> S:184 var
+binder 5156:5156 <> E:190
+binder 5158:5159 <> E':191
+binder 5161:5161 <> T:192
+binder 5163:5164 <> T':193
+binder 5166:5166 <> X:194
+binder 5168:5169 <> X':195
+R5186:5189 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5176:5180 _tmp_qstep <> qstep:1 ind
+R5184:5185 _tmp_qstep <> E':191 var
+R5182:5182 _tmp_qstep <> E:190 var
+R5200:5203 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5190:5194 _tmp_qstep <> qstep:1 ind
+R5198:5199 _tmp_qstep <> T':193 var
+R5196:5196 _tmp_qstep <> T:192 var
+R5214:5221 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5204:5208 _tmp_qstep <> qstep:1 ind
+R5212:5213 _tmp_qstep <> X':195 var
+R5210:5210 _tmp_qstep <> X:194 var
+R5222:5226 _tmp_qstep <> qstep:1 ind
+R5262:5267 TypeRules <> TSigma constr
+R5290:5296 TypeRules <> TInterp constr
+R5329:5332 TypeRules <> lift def
+R5338:5339 _tmp_qstep <> X':195 var
+R5299:5302 TypeRules <> TApp constr
+R5319:5322 TypeRules <> TVar constr
+R5305:5308 TypeRules <> lift def
+R5314:5315 _tmp_qstep <> T':193 var
+R5270:5275 TypeRules <> TEnumT constr
+R5277:5278 _tmp_qstep <> E':191 var
+R5229:5235 TypeRules <> TInterp constr
+R5252:5252 _tmp_qstep <> X:194 var
+R5238:5245 TypeRules <> TIChoice constr
+R5249:5249 _tmp_qstep <> T:192 var
+R5247:5247 _tmp_qstep <> E:190 var
+binder 5367:5367 <> j:196
+binder 5369:5370 <> j':197
+binder 5372:5372 <> X:198
+binder 5374:5375 <> X':199
+binder 5377:5377 <> x:200
+binder 5379:5380 <> x':201
+binder 5382:5382 <> P:202
+binder 5384:5385 <> P':203
+R5402:5405 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5392:5396 _tmp_qstep <> qstep:1 ind
+R5400:5401 _tmp_qstep <> j':197 var
+R5398:5398 _tmp_qstep <> j:196 var
+R5416:5419 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5406:5410 _tmp_qstep <> qstep:1 ind
+R5414:5415 _tmp_qstep <> X':199 var
+R5412:5412 _tmp_qstep <> X:198 var
+R5430:5433 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5420:5424 _tmp_qstep <> qstep:1 ind
+R5428:5429 _tmp_qstep <> x':201 var
+R5426:5426 _tmp_qstep <> x:200 var
+R5444:5451 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5434:5438 _tmp_qstep <> qstep:1 ind
+R5442:5443 _tmp_qstep <> P':203 var
+R5440:5440 _tmp_qstep <> P:202 var
+R5452:5456 _tmp_qstep <> qstep:1 ind
+R5483:5486 TypeRules <> TApp constr
+R5492:5496 TypeRules <> TPair constr
+R5501:5502 _tmp_qstep <> x':201 var
+R5498:5499 _tmp_qstep <> j':197 var
+R5488:5489 _tmp_qstep <> P':203 var
+R5459:5463 TypeRules <> TIAll constr
+R5479:5479 _tmp_qstep <> P:202 var
+R5477:5477 _tmp_qstep <> x:200 var
+R5475:5475 _tmp_qstep <> X:198 var
+R5466:5470 TypeRules <> TIVar constr
+R5472:5472 _tmp_qstep <> j:196 var
+binder 5529:5529 <> X:204
+binder 5531:5532 <> X':205
+binder 5534:5534 <> P:206
+binder 5536:5537 <> P':207
+R5550:5553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5540:5544 _tmp_qstep <> qstep:1 ind
+R5548:5549 _tmp_qstep <> X':205 var
+R5546:5546 _tmp_qstep <> X:204 var
+R5564:5571 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5554:5558 _tmp_qstep <> qstep:1 ind
+R5562:5563 _tmp_qstep <> P':207 var
+R5560:5560 _tmp_qstep <> P:206 var
+R5572:5576 _tmp_qstep <> qstep:1 ind
+R5600:5605 TypeRules <> TUnitT constr
+R5579:5583 TypeRules <> TIAll constr
+R5597:5597 _tmp_qstep <> P:206 var
+R5591:5595 TypeRules <> TUnit constr
+R5589:5589 _tmp_qstep <> X:204 var
+R5585:5587 TypeRules <> TI1 constr
+binder 5631:5631 <> A:208
+binder 5633:5634 <> A':209
+binder 5636:5636 <> B:210
+binder 5638:5639 <> B':211
+binder 5641:5641 <> X:212
+binder 5643:5644 <> X':213
+binder 5646:5646 <> a:214
+binder 5648:5649 <> a':215
+binder 5651:5651 <> b:216
+binder 5653:5654 <> b':217
+binder 5656:5656 <> P:218
+binder 5658:5659 <> P':219
+R5676:5679 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5666:5670 _tmp_qstep <> qstep:1 ind
+R5674:5675 _tmp_qstep <> A':209 var
+R5672:5672 _tmp_qstep <> A:208 var
+R5690:5693 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5680:5684 _tmp_qstep <> qstep:1 ind
+R5688:5689 _tmp_qstep <> B':211 var
+R5686:5686 _tmp_qstep <> B:210 var
+R5704:5711 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5694:5698 _tmp_qstep <> qstep:1 ind
+R5702:5703 _tmp_qstep <> X':213 var
+R5700:5700 _tmp_qstep <> X:212 var
+R5722:5725 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5712:5716 _tmp_qstep <> qstep:1 ind
+R5720:5721 _tmp_qstep <> a':215 var
+R5718:5718 _tmp_qstep <> a:214 var
+R5736:5739 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5726:5730 _tmp_qstep <> qstep:1 ind
+R5734:5735 _tmp_qstep <> b':217 var
+R5732:5732 _tmp_qstep <> b:216 var
+R5750:5757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5740:5744 _tmp_qstep <> qstep:1 ind
+R5748:5749 _tmp_qstep <> P':219 var
+R5746:5746 _tmp_qstep <> P:218 var
+R5758:5762 _tmp_qstep <> qstep:1 ind
+R5808:5813 TypeRules <> TSigma constr
+R5836:5839 TypeRules <> lift def
+R5846:5850 TypeRules <> TIAll constr
+R5861:5862 _tmp_qstep <> P':219 var
+R5858:5859 _tmp_qstep <> b':217 var
+R5855:5856 _tmp_qstep <> X':213 var
+R5852:5853 _tmp_qstep <> B':211 var
+R5816:5820 TypeRules <> TIAll constr
+R5831:5832 _tmp_qstep <> P':219 var
+R5828:5829 _tmp_qstep <> a':215 var
+R5825:5826 _tmp_qstep <> X':213 var
+R5822:5823 _tmp_qstep <> A':209 var
+R5765:5769 TypeRules <> TIAll constr
+R5798:5798 _tmp_qstep <> P:218 var
+R5787:5791 TypeRules <> TPair constr
+R5795:5795 _tmp_qstep <> b:216 var
+R5793:5793 _tmp_qstep <> a:214 var
+R5784:5784 _tmp_qstep <> X:212 var
+R5772:5777 TypeRules <> TIProd constr
+R5781:5781 _tmp_qstep <> B:210 var
+R5779:5779 _tmp_qstep <> A:208 var
+binder 5889:5889 <> S:220
+binder 5891:5892 <> S':221
+binder 5894:5894 <> T:222
+binder 5896:5897 <> T':223
+binder 5899:5899 <> X:224
+binder 5901:5902 <> X':225
+binder 5904:5904 <> f:226
+binder 5906:5907 <> f':227
+binder 5909:5909 <> P:228
+binder 5911:5912 <> P':229
+R5929:5932 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5919:5923 _tmp_qstep <> qstep:1 ind
+R5927:5928 _tmp_qstep <> S':221 var
+R5925:5925 _tmp_qstep <> S:220 var
+R5943:5946 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5933:5937 _tmp_qstep <> qstep:1 ind
+R5941:5942 _tmp_qstep <> T':223 var
+R5939:5939 _tmp_qstep <> T:222 var
+R5957:5960 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5947:5951 _tmp_qstep <> qstep:1 ind
+R5955:5956 _tmp_qstep <> X':225 var
+R5953:5953 _tmp_qstep <> X:224 var
+R5971:5974 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5961:5965 _tmp_qstep <> qstep:1 ind
+R5969:5970 _tmp_qstep <> f':227 var
+R5967:5967 _tmp_qstep <> f:226 var
+R5985:5992 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5975:5979 _tmp_qstep <> qstep:1 ind
+R5983:5984 _tmp_qstep <> P':229 var
+R5981:5981 _tmp_qstep <> P:228 var
+R5993:5997 _tmp_qstep <> qstep:1 ind
+R6031:6033 TypeRules <> TPi constr
+R6039:6043 TypeRules <> TIAll constr
+R6140:6143 TypeRules <> lift def
+R6149:6150 _tmp_qstep <> P':229 var
+R6110:6113 TypeRules <> TApp constr
+R6130:6133 TypeRules <> TVar constr
+R6116:6119 TypeRules <> lift def
+R6125:6126 _tmp_qstep <> f':227 var
+R6076:6079 TypeRules <> lift def
+R6085:6086 _tmp_qstep <> X':225 var
+R6046:6049 TypeRules <> TApp constr
+R6066:6069 TypeRules <> TVar constr
+R6052:6055 TypeRules <> lift def
+R6061:6062 _tmp_qstep <> T':223 var
+R6035:6036 _tmp_qstep <> S':221 var
+R6000:6004 TypeRules <> TIAll constr
+R6021:6021 _tmp_qstep <> P:228 var
+R6019:6019 _tmp_qstep <> f:226 var
+R6017:6017 _tmp_qstep <> X:224 var
+R6007:6010 TypeRules <> TIPi constr
+R6014:6014 _tmp_qstep <> T:222 var
+R6012:6012 _tmp_qstep <> S:220 var
+binder 6178:6178 <> S:230
+binder 6180:6181 <> S':231
+binder 6183:6183 <> T:232
+binder 6185:6186 <> T':233
+binder 6188:6188 <> X:234
+binder 6190:6191 <> X':235
+binder 6193:6193 <> s:236
+binder 6195:6196 <> s':237
+binder 6198:6198 <> x:238
+binder 6200:6201 <> x':239
+binder 6203:6203 <> P:240
+binder 6205:6206 <> P':241
+R6223:6226 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6213:6217 _tmp_qstep <> qstep:1 ind
+R6221:6222 _tmp_qstep <> S':231 var
+R6219:6219 _tmp_qstep <> S:230 var
+R6237:6240 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6227:6231 _tmp_qstep <> qstep:1 ind
+R6235:6236 _tmp_qstep <> T':233 var
+R6233:6233 _tmp_qstep <> T:232 var
+R6251:6258 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6241:6245 _tmp_qstep <> qstep:1 ind
+R6249:6250 _tmp_qstep <> X':235 var
+R6247:6247 _tmp_qstep <> X:234 var
+R6269:6272 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6259:6263 _tmp_qstep <> qstep:1 ind
+R6267:6268 _tmp_qstep <> s':237 var
+R6265:6265 _tmp_qstep <> s:236 var
+R6283:6286 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6273:6277 _tmp_qstep <> qstep:1 ind
+R6281:6282 _tmp_qstep <> x':239 var
+R6279:6279 _tmp_qstep <> x:238 var
+R6297:6304 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6287:6291 _tmp_qstep <> qstep:1 ind
+R6295:6296 _tmp_qstep <> P':241 var
+R6293:6293 _tmp_qstep <> P:240 var
+R6305:6309 _tmp_qstep <> qstep:1 ind
+R6354:6358 TypeRules <> TIAll constr
+R6379:6380 _tmp_qstep <> P':241 var
+R6376:6377 _tmp_qstep <> x':239 var
+R6373:6374 _tmp_qstep <> X':235 var
+R6361:6364 TypeRules <> TApp constr
+R6369:6370 _tmp_qstep <> s':237 var
+R6366:6367 _tmp_qstep <> T':233 var
+R6312:6316 TypeRules <> TIAll constr
+R6344:6344 _tmp_qstep <> P:240 var
+R6333:6337 TypeRules <> TPair constr
+R6341:6341 _tmp_qstep <> x:238 var
+R6339:6339 _tmp_qstep <> s:236 var
+R6330:6330 _tmp_qstep <> X:234 var
+R6319:6323 TypeRules <> TISig constr
+R6327:6327 _tmp_qstep <> T:232 var
+R6325:6325 _tmp_qstep <> S:230 var
+binder 6409:6409 <> E:242
+binder 6411:6412 <> E':243
+binder 6414:6414 <> T:244
+binder 6416:6417 <> T':245
+binder 6419:6419 <> X:246
+binder 6421:6422 <> X':247
+binder 6424:6424 <> e:248
+binder 6426:6427 <> e':249
+binder 6429:6429 <> x:250
+binder 6431:6432 <> x':251
+binder 6434:6434 <> P:252
+binder 6436:6437 <> P':253
+R6454:6457 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6444:6448 _tmp_qstep <> qstep:1 ind
+R6452:6453 _tmp_qstep <> E':243 var
+R6450:6450 _tmp_qstep <> E:242 var
+R6468:6471 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6458:6462 _tmp_qstep <> qstep:1 ind
+R6466:6467 _tmp_qstep <> T':245 var
+R6464:6464 _tmp_qstep <> T:244 var
+R6482:6489 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6472:6476 _tmp_qstep <> qstep:1 ind
+R6480:6481 _tmp_qstep <> X':247 var
+R6478:6478 _tmp_qstep <> X:246 var
+R6500:6503 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6490:6494 _tmp_qstep <> qstep:1 ind
+R6498:6499 _tmp_qstep <> e':249 var
+R6496:6496 _tmp_qstep <> e:248 var
+R6514:6517 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6504:6508 _tmp_qstep <> qstep:1 ind
+R6512:6513 _tmp_qstep <> x':251 var
+R6510:6510 _tmp_qstep <> x:250 var
+R6528:6535 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6518:6522 _tmp_qstep <> qstep:1 ind
+R6526:6527 _tmp_qstep <> P':253 var
+R6524:6524 _tmp_qstep <> P:252 var
+R6536:6540 _tmp_qstep <> qstep:1 ind
+R6588:6592 TypeRules <> TIAll constr
+R6613:6614 _tmp_qstep <> P':253 var
+R6610:6611 _tmp_qstep <> x':251 var
+R6607:6608 _tmp_qstep <> X':247 var
+R6595:6598 TypeRules <> TApp constr
+R6603:6604 _tmp_qstep <> e':249 var
+R6600:6601 _tmp_qstep <> T':245 var
+R6543:6547 TypeRules <> TIAll constr
+R6578:6578 _tmp_qstep <> P:252 var
+R6567:6571 TypeRules <> TPair constr
+R6575:6575 _tmp_qstep <> x:250 var
+R6573:6573 _tmp_qstep <> e:248 var
+R6564:6564 _tmp_qstep <> X:246 var
+R6550:6557 TypeRules <> TIChoice constr
+R6561:6561 _tmp_qstep <> T:244 var
+R6559:6559 _tmp_qstep <> E:242 var
+binder 6640:6640 <> j:254
+binder 6642:6643 <> j':255
+binder 6645:6645 <> X:256
+binder 6647:6648 <> X':257
+binder 6650:6650 <> P:258
+binder 6652:6653 <> P':259
+binder 6655:6655 <> h:260
+binder 6657:6658 <> h':261
+binder 6660:6660 <> x:262
+binder 6662:6663 <> x':263
+R6680:6683 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6670:6674 _tmp_qstep <> qstep:1 ind
+R6678:6679 _tmp_qstep <> j':255 var
+R6676:6676 _tmp_qstep <> j:254 var
+R6694:6697 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6684:6688 _tmp_qstep <> qstep:1 ind
+R6692:6693 _tmp_qstep <> X':257 var
+R6690:6690 _tmp_qstep <> X:256 var
+R6708:6711 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6698:6702 _tmp_qstep <> qstep:1 ind
+R6706:6707 _tmp_qstep <> P':259 var
+R6704:6704 _tmp_qstep <> P:258 var
+R6722:6725 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6712:6716 _tmp_qstep <> qstep:1 ind
+R6720:6721 _tmp_qstep <> h':261 var
+R6718:6718 _tmp_qstep <> h:260 var
+R6736:6743 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6726:6730 _tmp_qstep <> qstep:1 ind
+R6734:6735 _tmp_qstep <> x':263 var
+R6732:6732 _tmp_qstep <> x:262 var
+R6744:6748 _tmp_qstep <> qstep:1 ind
+R6777:6780 TypeRules <> TApp constr
+R6795:6796 _tmp_qstep <> x':263 var
+R6783:6786 TypeRules <> TApp constr
+R6791:6792 _tmp_qstep <> j':255 var
+R6788:6789 _tmp_qstep <> h':261 var
+R6751:6755 TypeRules <> THyps constr
+R6773:6773 _tmp_qstep <> x:262 var
+R6771:6771 _tmp_qstep <> h:260 var
+R6769:6769 _tmp_qstep <> P:258 var
+R6767:6767 _tmp_qstep <> X:256 var
+R6758:6762 TypeRules <> TIVar constr
+R6764:6764 _tmp_qstep <> j:254 var
+binder 6822:6822 <> X:264
+binder 6824:6825 <> X':265
+binder 6827:6827 <> P:266
+binder 6829:6830 <> P':267
+binder 6832:6832 <> h:268
+binder 6834:6835 <> h':269
+R6852:6855 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6842:6846 _tmp_qstep <> qstep:1 ind
+R6850:6851 _tmp_qstep <> X':265 var
+R6848:6848 _tmp_qstep <> X:264 var
+R6866:6869 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6856:6860 _tmp_qstep <> qstep:1 ind
+R6864:6865 _tmp_qstep <> P':267 var
+R6862:6862 _tmp_qstep <> P:266 var
+R6880:6887 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6870:6874 _tmp_qstep <> qstep:1 ind
+R6878:6879 _tmp_qstep <> h':269 var
+R6876:6876 _tmp_qstep <> h:268 var
+R6888:6892 _tmp_qstep <> qstep:1 ind
+R6918:6922 TypeRules <> TUnit constr
+R6895:6899 TypeRules <> THyps constr
+R6911:6915 TypeRules <> TUnit constr
+R6909:6909 _tmp_qstep <> h:268 var
+R6907:6907 _tmp_qstep <> P:266 var
+R6905:6905 _tmp_qstep <> X:264 var
+R6901:6903 TypeRules <> TI1 constr
+binder 6948:6948 <> A:270
+binder 6950:6951 <> A':271
+binder 6953:6953 <> B:272
+binder 6955:6956 <> B':273
+binder 6958:6958 <> X:274
+binder 6960:6961 <> X':275
+binder 6963:6963 <> P:276
+binder 6965:6966 <> P':277
+binder 6968:6968 <> h:278
+binder 6970:6971 <> h':279
+binder 6973:6973 <> a:280
+binder 6975:6976 <> a':281
+binder 6978:6978 <> b:282
+binder 6980:6981 <> b':283
+R6998:7001 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6988:6992 _tmp_qstep <> qstep:1 ind
+R6996:6997 _tmp_qstep <> A':271 var
+R6994:6994 _tmp_qstep <> A:270 var
+R7012:7015 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7002:7006 _tmp_qstep <> qstep:1 ind
+R7010:7011 _tmp_qstep <> B':273 var
+R7008:7008 _tmp_qstep <> B:272 var
+R7026:7029 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7016:7020 _tmp_qstep <> qstep:1 ind
+R7024:7025 _tmp_qstep <> X':275 var
+R7022:7022 _tmp_qstep <> X:274 var
+R7040:7047 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7030:7034 _tmp_qstep <> qstep:1 ind
+R7038:7039 _tmp_qstep <> P':277 var
+R7036:7036 _tmp_qstep <> P:276 var
+R7058:7061 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7048:7052 _tmp_qstep <> qstep:1 ind
+R7056:7057 _tmp_qstep <> h':279 var
+R7054:7054 _tmp_qstep <> h:278 var
+R7072:7075 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7062:7066 _tmp_qstep <> qstep:1 ind
+R7070:7071 _tmp_qstep <> a':281 var
+R7068:7068 _tmp_qstep <> a:280 var
+R7086:7093 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7076:7080 _tmp_qstep <> qstep:1 ind
+R7084:7085 _tmp_qstep <> b':283 var
+R7082:7082 _tmp_qstep <> b:282 var
+R7094:7098 _tmp_qstep <> qstep:1 ind
+R7146:7150 TypeRules <> TPair constr
+R7176:7180 TypeRules <> THyps constr
+R7194:7195 _tmp_qstep <> b':283 var
+R7191:7192 _tmp_qstep <> h':279 var
+R7188:7189 _tmp_qstep <> P':277 var
+R7185:7186 _tmp_qstep <> X':275 var
+R7182:7183 _tmp_qstep <> B':273 var
+R7153:7157 TypeRules <> THyps constr
+R7171:7172 _tmp_qstep <> a':281 var
+R7168:7169 _tmp_qstep <> h':279 var
+R7165:7166 _tmp_qstep <> P':277 var
+R7162:7163 _tmp_qstep <> X':275 var
+R7159:7160 _tmp_qstep <> A':271 var
+R7101:7105 TypeRules <> THyps constr
+R7127:7131 TypeRules <> TPair constr
+R7135:7135 _tmp_qstep <> b:282 var
+R7133:7133 _tmp_qstep <> a:280 var
+R7124:7124 _tmp_qstep <> h:278 var
+R7122:7122 _tmp_qstep <> P:276 var
+R7120:7120 _tmp_qstep <> X:274 var
+R7108:7113 TypeRules <> TIProd constr
+R7117:7117 _tmp_qstep <> B:272 var
+R7115:7115 _tmp_qstep <> A:270 var
+binder 7221:7221 <> S:284
+binder 7223:7224 <> S':285
+binder 7226:7226 <> T:286
+binder 7228:7229 <> T':287
+binder 7231:7231 <> X:288
+binder 7233:7234 <> X':289
+binder 7236:7236 <> P:290
+binder 7238:7239 <> P':291
+binder 7241:7241 <> h:292
+binder 7243:7244 <> h':293
+binder 7246:7246 <> f:294
+binder 7248:7249 <> f':295
+R7266:7269 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7256:7260 _tmp_qstep <> qstep:1 ind
+R7264:7265 _tmp_qstep <> S':285 var
+R7262:7262 _tmp_qstep <> S:284 var
+R7280:7283 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7270:7274 _tmp_qstep <> qstep:1 ind
+R7278:7279 _tmp_qstep <> T':287 var
+R7276:7276 _tmp_qstep <> T:286 var
+R7294:7297 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7284:7288 _tmp_qstep <> qstep:1 ind
+R7292:7293 _tmp_qstep <> X':289 var
+R7290:7290 _tmp_qstep <> X:288 var
+R7308:7315 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7298:7302 _tmp_qstep <> qstep:1 ind
+R7306:7307 _tmp_qstep <> P':291 var
+R7304:7304 _tmp_qstep <> P:290 var
+R7326:7329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7316:7320 _tmp_qstep <> qstep:1 ind
+R7324:7325 _tmp_qstep <> h':293 var
+R7322:7322 _tmp_qstep <> h:292 var
+R7340:7347 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7330:7334 _tmp_qstep <> qstep:1 ind
+R7338:7339 _tmp_qstep <> f':295 var
+R7336:7336 _tmp_qstep <> f:294 var
+R7348:7352 _tmp_qstep <> qstep:1 ind
+R7388:7391 TypeRules <> TLam constr
+R7394:7398 TypeRules <> THyps constr
+R7513:7516 TypeRules <> TApp constr
+R7533:7536 TypeRules <> TVar constr
+R7519:7522 TypeRules <> lift def
+R7528:7529 _tmp_qstep <> f':295 var
+R7479:7482 TypeRules <> lift def
+R7488:7489 _tmp_qstep <> h':293 var
+R7465:7468 TypeRules <> lift def
+R7474:7475 _tmp_qstep <> P':291 var
+R7431:7434 TypeRules <> lift def
+R7440:7441 _tmp_qstep <> X':289 var
+R7401:7404 TypeRules <> TApp constr
+R7421:7424 TypeRules <> TVar constr
+R7407:7410 TypeRules <> lift def
+R7416:7417 _tmp_qstep <> T':287 var
+R7355:7359 TypeRules <> THyps constr
+R7378:7378 _tmp_qstep <> f:294 var
+R7376:7376 _tmp_qstep <> h:292 var
+R7374:7374 _tmp_qstep <> P:290 var
+R7372:7372 _tmp_qstep <> X:288 var
+R7362:7365 TypeRules <> TIPi constr
+R7369:7369 _tmp_qstep <> T:286 var
+R7367:7367 _tmp_qstep <> S:284 var
+binder 7567:7567 <> S:296
+binder 7569:7570 <> S':297
+binder 7572:7572 <> T:298
+binder 7574:7575 <> T':299
+binder 7577:7577 <> X:300
+binder 7579:7580 <> X':301
+binder 7582:7582 <> P:302
+binder 7584:7585 <> P':303
+binder 7587:7587 <> h:304
+binder 7589:7590 <> h':305
+binder 7592:7592 <> s:306
+binder 7594:7595 <> s':307
+binder 7597:7597 <> x:308
+binder 7599:7600 <> x':309
+R7617:7620 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7607:7611 _tmp_qstep <> qstep:1 ind
+R7615:7616 _tmp_qstep <> S':297 var
+R7613:7613 _tmp_qstep <> S:296 var
+R7631:7634 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7621:7625 _tmp_qstep <> qstep:1 ind
+R7629:7630 _tmp_qstep <> T':299 var
+R7627:7627 _tmp_qstep <> T:298 var
+R7645:7648 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7635:7639 _tmp_qstep <> qstep:1 ind
+R7643:7644 _tmp_qstep <> X':301 var
+R7641:7641 _tmp_qstep <> X:300 var
+R7659:7666 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7649:7653 _tmp_qstep <> qstep:1 ind
+R7657:7658 _tmp_qstep <> P':303 var
+R7655:7655 _tmp_qstep <> P:302 var
+R7677:7680 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7667:7671 _tmp_qstep <> qstep:1 ind
+R7675:7676 _tmp_qstep <> h':305 var
+R7673:7673 _tmp_qstep <> h:304 var
+R7691:7694 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7681:7685 _tmp_qstep <> qstep:1 ind
+R7689:7690 _tmp_qstep <> s':307 var
+R7687:7687 _tmp_qstep <> s:306 var
+R7705:7712 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7695:7699 _tmp_qstep <> qstep:1 ind
+R7703:7704 _tmp_qstep <> x':309 var
+R7701:7701 _tmp_qstep <> x:308 var
+R7713:7717 _tmp_qstep <> qstep:1 ind
+R7764:7768 TypeRules <> THyps constr
+R7792:7793 _tmp_qstep <> x':309 var
+R7789:7790 _tmp_qstep <> h':305 var
+R7786:7787 _tmp_qstep <> P':303 var
+R7783:7784 _tmp_qstep <> X':301 var
+R7771:7774 TypeRules <> TApp constr
+R7779:7780 _tmp_qstep <> s':307 var
+R7776:7777 _tmp_qstep <> T':299 var
+R7720:7724 TypeRules <> THyps constr
+R7745:7749 TypeRules <> TPair constr
+R7753:7753 _tmp_qstep <> x:308 var
+R7751:7751 _tmp_qstep <> s:306 var
+R7742:7742 _tmp_qstep <> h:304 var
+R7740:7740 _tmp_qstep <> P:302 var
+R7738:7738 _tmp_qstep <> X:300 var
+R7727:7731 TypeRules <> TISig constr
+R7735:7735 _tmp_qstep <> T:298 var
+R7733:7733 _tmp_qstep <> S:296 var
+binder 7822:7822 <> E:310
+binder 7824:7825 <> E':311
+binder 7827:7827 <> T:312
+binder 7829:7830 <> T':313
+binder 7832:7832 <> X:314
+binder 7834:7835 <> X':315
+binder 7837:7837 <> P:316
+binder 7839:7840 <> P':317
+binder 7842:7842 <> h:318
+binder 7844:7845 <> h':319
+binder 7847:7847 <> e:320
+binder 7849:7850 <> e':321
+binder 7852:7852 <> x:322
+binder 7854:7855 <> x':323
+R7872:7875 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7862:7866 _tmp_qstep <> qstep:1 ind
+R7870:7871 _tmp_qstep <> E':311 var
+R7868:7868 _tmp_qstep <> E:310 var
+R7886:7889 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7876:7880 _tmp_qstep <> qstep:1 ind
+R7884:7885 _tmp_qstep <> T':313 var
+R7882:7882 _tmp_qstep <> T:312 var
+R7900:7903 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7890:7894 _tmp_qstep <> qstep:1 ind
+R7898:7899 _tmp_qstep <> X':315 var
+R7896:7896 _tmp_qstep <> X:314 var
+R7914:7921 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7904:7908 _tmp_qstep <> qstep:1 ind
+R7912:7913 _tmp_qstep <> P':317 var
+R7910:7910 _tmp_qstep <> P:316 var
+R7932:7935 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7922:7926 _tmp_qstep <> qstep:1 ind
+R7930:7931 _tmp_qstep <> h':319 var
+R7928:7928 _tmp_qstep <> h:318 var
+R7946:7949 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7936:7940 _tmp_qstep <> qstep:1 ind
+R7944:7945 _tmp_qstep <> e':321 var
+R7942:7942 _tmp_qstep <> e:320 var
+R7960:7967 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7950:7954 _tmp_qstep <> qstep:1 ind
+R7958:7959 _tmp_qstep <> x':323 var
+R7956:7956 _tmp_qstep <> x:322 var
+R7968:7972 _tmp_qstep <> qstep:1 ind
+R8022:8026 TypeRules <> THyps constr
+R8050:8051 _tmp_qstep <> x':323 var
+R8047:8048 _tmp_qstep <> h':319 var
+R8044:8045 _tmp_qstep <> P':317 var
+R8041:8042 _tmp_qstep <> X':315 var
+R8029:8032 TypeRules <> TApp constr
+R8037:8038 _tmp_qstep <> e':321 var
+R8034:8035 _tmp_qstep <> T':313 var
+R7975:7979 TypeRules <> THyps constr
+R8003:8007 TypeRules <> TPair constr
+R8011:8011 _tmp_qstep <> x:322 var
+R8009:8009 _tmp_qstep <> e:320 var
+R8000:8000 _tmp_qstep <> h:318 var
+R7998:7998 _tmp_qstep <> P:316 var
+R7996:7996 _tmp_qstep <> X:314 var
+R7982:7989 TypeRules <> TIChoice constr
+R7993:7993 _tmp_qstep <> T:312 var
+R7991:7991 _tmp_qstep <> E:310 var
+binder 8076:8076 <> R:324
+binder 8078:8079 <> R':325
+binder 8081:8081 <> P:326
+binder 8083:8084 <> P':327
+binder 8086:8086 <> s:328
+binder 8088:8089 <> s':329
+binder 8091:8091 <> i:330
+binder 8093:8094 <> i':331
+binder 8096:8097 <> xs:332
+binder 8099:8101 <> xs':333
+R8118:8121 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8108:8112 _tmp_qstep <> qstep:1 ind
+R8116:8117 _tmp_qstep <> R':325 var
+R8114:8114 _tmp_qstep <> R:324 var
+R8132:8135 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8122:8126 _tmp_qstep <> qstep:1 ind
+R8130:8131 _tmp_qstep <> P':327 var
+R8128:8128 _tmp_qstep <> P:326 var
+R8146:8149 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8136:8140 _tmp_qstep <> qstep:1 ind
+R8144:8145 _tmp_qstep <> s':329 var
+R8142:8142 _tmp_qstep <> s:328 var
+R8160:8163 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8150:8154 _tmp_qstep <> qstep:1 ind
+R8158:8159 _tmp_qstep <> i':331 var
+R8156:8156 _tmp_qstep <> i:330 var
+R8176:8183 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8164:8168 _tmp_qstep <> qstep:1 ind
+R8173:8175 _tmp_qstep <> xs':333 var
+R8170:8171 _tmp_qstep <> xs:332 var
+R8184:8188 _tmp_qstep <> qstep:1 ind
+R8221:8224 TypeRules <> TApp constr
+R8259:8263 TypeRules <> THyps constr
+R8410:8412 _tmp_qstep <> xs':333 var
+R8302:8305 TypeRules <> TLam constr
+R8308:8311 TypeRules <> TLam constr
+R8314:8317 TypeRules <> TInd constr
+R8399:8402 TypeRules <> TVar constr
+R8390:8393 TypeRules <> TVar constr
+R8348:8351 TypeRules <> lift def
+R8357:8358 _tmp_qstep <> s':329 var
+R8334:8337 TypeRules <> lift def
+R8343:8344 _tmp_qstep <> P':327 var
+R8320:8323 TypeRules <> lift def
+R8329:8330 _tmp_qstep <> R':325 var
+R8288:8289 _tmp_qstep <> P':327 var
+R8279:8282 TypeRules <> TMuI constr
+R8284:8285 _tmp_qstep <> R':325 var
+R8266:8269 TypeRules <> TApp constr
+R8274:8275 _tmp_qstep <> i':331 var
+R8271:8272 _tmp_qstep <> R':325 var
+R8227:8230 TypeRules <> TApp constr
+R8245:8247 _tmp_qstep <> xs':333 var
+R8233:8236 TypeRules <> TApp constr
+R8241:8242 _tmp_qstep <> i':331 var
+R8238:8239 _tmp_qstep <> s':329 var
+R8191:8194 TypeRules <> TInd constr
+R8205:8207 TypeRules <> TIn constr
+R8209:8210 _tmp_qstep <> xs:332 var
+R8202:8202 _tmp_qstep <> i:330 var
+R8200:8200 _tmp_qstep <> s:328 var
+R8198:8198 _tmp_qstep <> P:326 var
+R8196:8196 _tmp_qstep <> R:324 var
+binder 8439:8439 <> a:334
+binder 8441:8442 <> xs:335
+binder 8444:8446 <> xs':336
+binder 8448:8448 <> Q:337
+binder 8450:8451 <> bs:338
+binder 8453:8453 <> k:339
+binder 8455:8455 <> c:340
+binder 8457:8457 <> b:341
+binder 8459:8460 <> b':342
+binder 8462:8462 <> n:343
+R8496:8499 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8483:8485 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8469:8477 Stdlib.Lists.List <> nth_error def
+R8482:8482 _tmp_qstep <> k:339 var
+R8479:8480 _tmp_qstep <> bs:338 var
+R8486:8489 Corelib.Init.Datatypes <> Some constr
+R8491:8491 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8493:8493 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8495:8495 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8492:8492 _tmp_qstep <> c:340 var
+R8494:8494 _tmp_qstep <> b:341 var
+R8512:8515 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8500:8507 TypeRules <> enum_pos ind
+R8511:8511 _tmp_qstep <> n:343 var
+R8509:8509 _tmp_qstep <> c:340 var
+R8528:8535 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8516:8523 TypeRules <> enum_pos ind
+R8527:8527 _tmp_qstep <> n:343 var
+R8525:8525 _tmp_qstep <> a:334 var
+R8536:8536 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8638:8646 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8544:8544 <> j:344
+binder 8546:8547 <> cj:345
+binder 8549:8550 <> bj:346
+R8558:8561 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8554:8556 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R8553:8553 _tmp_qstep <> j:344 var
+R8557:8557 _tmp_qstep <> k:339 var
+R8591:8601 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8576:8578 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8562:8570 Stdlib.Lists.List <> nth_error def
+R8575:8575 _tmp_qstep <> j:344 var
+R8572:8573 _tmp_qstep <> bs:338 var
+R8579:8582 Corelib.Init.Datatypes <> Some constr
+R8584:8584 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8587:8587 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8590:8590 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8585:8586 _tmp_qstep <> cj:345 var
+R8588:8589 _tmp_qstep <> bj:346 var
+R8602:8608 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8611:8612 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8609:8610 <> nj:347
+R8627:8630 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8613:8620 TypeRules <> enum_pos ind
+R8625:8626 _tmp_qstep <> nj:347 var
+R8622:8623 _tmp_qstep <> cj:345 var
+R8633:8636 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8631:8632 _tmp_qstep <> nj:347 var
+R8637:8637 _tmp_qstep <> n:343 var
+R8659:8662 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8647:8651 _tmp_qstep <> qstep:1 ind
+R8656:8658 _tmp_qstep <> xs':336 var
+R8653:8654 _tmp_qstep <> xs:335 var
+R8673:8680 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8663:8667 _tmp_qstep <> qstep:1 ind
+R8671:8672 _tmp_qstep <> b':342 var
+R8669:8669 _tmp_qstep <> b:341 var
+R8681:8685 _tmp_qstep <> qstep:1 ind
+R8720:8724 TypeRules <> subst def
+R8732:8733 _tmp_qstep <> b':342 var
+R8726:8728 _tmp_qstep <> xs':336 var
+R8688:8692 TypeRules <> TCase constr
+R8715:8716 _tmp_qstep <> bs:338 var
+R8713:8713 _tmp_qstep <> Q:337 var
+R8695:8697 TypeRules <> TIn constr
+R8700:8704 TypeRules <> TPair constr
+R8708:8709 _tmp_qstep <> xs:335 var
+R8706:8706 _tmp_qstep <> a:334 var
+binder 8755:8755 <> f:348
+binder 8757:8758 <> f':349
+R8771:8778 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8761:8765 _tmp_qstep <> qstep:1 ind
+R8769:8770 _tmp_qstep <> f':349 var
+R8767:8767 _tmp_qstep <> f:348 var
+R8779:8783 _tmp_qstep <> qstep:1 ind
+R8821:8822 _tmp_qstep <> f':349 var
+R8786:8789 TypeRules <> TLam constr
+R8792:8795 TypeRules <> TApp constr
+R8811:8814 TypeRules <> TVar constr
+R8798:8801 TypeRules <> lift def
+R8807:8807 _tmp_qstep <> f:348 var
+R8906:8914 _tmp_qstep <> qbranches:2 ind
+R8919:8920 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R8916:8917 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+binder 8942:8942 <> c:350
+binder 8944:8945 <> c':351
+binder 8947:8947 <> b:352
+binder 8949:8950 <> b':353
+binder 8952:8953 <> bs:354
+binder 8955:8957 <> bs':355
+R8974:8977 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8964:8968 _tmp_qstep <> qstep:1 ind
+R8972:8973 _tmp_qstep <> c':351 var
+R8970:8970 _tmp_qstep <> c:350 var
+R8988:8991 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8978:8982 _tmp_qstep <> qstep:1 ind
+R8986:8987 _tmp_qstep <> b':353 var
+R8984:8984 _tmp_qstep <> b:352 var
+R9008:9015 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8992:9000 _tmp_qstep <> qbranches:2 ind
+R9005:9007 _tmp_qstep <> bs':355 var
+R9002:9003 _tmp_qstep <> bs:354 var
+R9016:9024 _tmp_qstep <> qbranches:2 ind
+R9046:9047 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9039:9039 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9042:9042 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9045:9045 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9040:9041 _tmp_qstep <> c':351 var
+R9043:9044 _tmp_qstep <> b':353 var
+R9048:9050 _tmp_qstep <> bs':355 var
+R9032:9033 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9027:9027 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9029:9029 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9031:9031 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9028:9028 _tmp_qstep <> c:350 var
+R9030:9030 _tmp_qstep <> b:352 var
+R9034:9035 _tmp_qstep <> bs:354 var
+scheme 114:118 <> qstep_ind
+scheme 114:118 <> qstep_sind
+scheme 8830:8838 <> qbranches_ind
+scheme 8830:8838 <> qbranches_sind
+def 9062:9071 <> qstep_ind'
+def 9111:9124 <> qbranches_ind'
+R9090:9094 _tmp_qstep <> qstep ind
+R9143:9151 _tmp_qstep <> qbranches ind
+R9205:9214 _tmp_qstep <> qstep_ind' scheme
+R9217:9230 _tmp_qstep <> qbranches_ind' scheme
+prf 9240:9249 <> qstep_refl
+binder 9260:9260 <> t:356
+R9263:9267 _tmp_qstep <> qstep ind
+R9269:9269 _tmp_qstep <> t:356 var
+R9271:9271 _tmp_qstep <> t:356 var
+R9290:9305 Progress <> tsize_strong_ind thm
+binder 9312:9312 <> t:357
+R9317:9321 _tmp_qstep <> qstep ind
+R9323:9323 _tmp_qstep <> t:357 var
+R9325:9325 _tmp_qstep <> t:357 var
+R9290:9305 Progress <> tsize_strong_ind thm
+binder 9312:9312 <> t:358
+R9317:9321 _tmp_qstep <> qstep ind
+R9323:9323 _tmp_qstep <> t:358 var
+R9325:9325 _tmp_qstep <> t:358 var
+R9377:9385 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9377:9385 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9417:9425 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9459:9467 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9501:9509 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9543:9551 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+R9585:9593 Progress <> tsize_pos thm
+binder 9728:9728 <> u:359
+R9764:9767 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9738:9740 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R9731:9735 Progress <> tsize def
+R9737:9737 _tmp_qstep <> u:359 var
+R9741:9745 Progress <> tsize def
+R9748:9752 TypeRules <> TCase constr
+R9768:9772 _tmp_qstep <> qstep ind
+R9774:9774 _tmp_qstep <> u:359 var
+R9776:9776 _tmp_qstep <> u:359 var
+binder 9728:9728 <> u:360
+R9764:9767 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9738:9740 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R9731:9735 Progress <> tsize def
+R9737:9737 _tmp_qstep <> u:360 var
+R9741:9745 Progress <> tsize def
+R9748:9752 TypeRules <> TCase constr
+R9768:9772 _tmp_qstep <> qstep ind
+R9774:9774 _tmp_qstep <> u:360 var
+R9776:9776 _tmp_qstep <> u:360 var
+R9787:9795 _tmp_qstep <> qbranches ind
+R9787:9795 _tmp_qstep <> qbranches ind
+binder 9834:9834 <> c:361
+binder 9836:9836 <> b:362
+R9850:9853 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9839:9840 Stdlib.Lists.List <> In def
+R9842:9842 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9844:9844 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9846:9846 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9843:9843 _tmp_qstep <> c:361 var
+R9845:9845 _tmp_qstep <> b:362 var
+R9863:9866 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9854:9858 _tmp_qstep <> qstep ind
+R9860:9860 _tmp_qstep <> c:361 var
+R9862:9862 _tmp_qstep <> c:361 var
+R9867:9871 _tmp_qstep <> qstep ind
+R9873:9873 _tmp_qstep <> b:362 var
+R9875:9875 _tmp_qstep <> b:362 var
+R9943:9955 Progress <> tsize_case_bs thm
+R9966:9983 Progress <> tsize_case_bs_body thm
+R10106:10110 Corelib.Init.Logic <> proj1 thm
+R10121:10129 Corelib.Init.Logic <> or_introl constr
+R10131:10137 Corelib.Init.Logic <> eq_refl constr
+R10157:10161 Corelib.Init.Logic <> proj2 thm
+R10172:10180 Corelib.Init.Logic <> or_introl constr
+R10182:10188 Corelib.Init.Logic <> eq_refl constr
+binder 9834:9834 <> c:363
+binder 9836:9836 <> b:364
+R9850:9853 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9839:9840 Stdlib.Lists.List <> In def
+R9842:9842 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9844:9844 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9846:9846 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9843:9843 _tmp_qstep <> c:363 var
+R9845:9845 _tmp_qstep <> b:364 var
+R9863:9866 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9854:9858 _tmp_qstep <> qstep ind
+R9860:9860 _tmp_qstep <> c:363 var
+R9862:9862 _tmp_qstep <> c:363 var
+R9867:9871 _tmp_qstep <> qstep ind
+R9873:9873 _tmp_qstep <> b:364 var
+R9875:9875 _tmp_qstep <> b:364 var
+R9943:9955 Progress <> tsize_case_bs thm
+R9966:9983 Progress <> tsize_case_bs_body thm
+R10106:10110 Corelib.Init.Logic <> proj1 thm
+R10121:10129 Corelib.Init.Logic <> or_introl constr
+R10131:10137 Corelib.Init.Logic <> eq_refl constr
+R10157:10161 Corelib.Init.Logic <> proj2 thm
+R10172:10180 Corelib.Init.Logic <> or_introl constr
+R10182:10188 Corelib.Init.Logic <> eq_refl constr
+prf 10270:10283 <> qstep_lift_mut
+R10289:10289 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10367:10374 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10565:10565 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 10297:10297 <> t:365
+binder 10299:10299 <> u:366
+R10306:10310 _tmp_qstep <> qstep ind
+R10312:10312 _tmp_qstep <> t:365 var
+R10314:10314 _tmp_qstep <> u:366 var
+binder 10302:10302 <> H:367
+binder 10325:10325 <> d:368
+binder 10327:10327 <> k:369
+R10336:10340 _tmp_qstep <> qstep ind
+R10343:10346 TypeRules <> lift def
+R10352:10352 _tmp_qstep <> t:365 var
+R10350:10350 _tmp_qstep <> k:369 var
+R10348:10348 _tmp_qstep <> d:368 var
+R10356:10359 TypeRules <> lift def
+R10365:10365 _tmp_qstep <> u:366 var
+R10363:10363 _tmp_qstep <> k:369 var
+R10361:10361 _tmp_qstep <> d:368 var
+binder 10382:10383 <> bs:370
+binder 10385:10387 <> bs':371
+R10394:10402 _tmp_qstep <> qbranches ind
+R10404:10405 _tmp_qstep <> bs:370 var
+R10407:10409 _tmp_qstep <> bs':371 var
+binder 10390:10390 <> H:372
+binder 10420:10420 <> d:373
+binder 10422:10422 <> k:374
+R10431:10439 _tmp_qstep <> qbranches ind
+R10450:10452 Corelib.Lists.ListDef <> map def
+R10499:10500 _tmp_qstep <> bs:370 var
+R10460:10460 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10462:10462 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10464:10464 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 10463:10463 <> b:375
+binder 10461:10461 <> c:376
+binder 10460:10464 <> pat:377
+R10469:10469 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10480:10481 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10496:10496 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10470:10473 TypeRules <> lift def
+R10479:10479 _tmp_qstep <> c:376 var
+R10477:10477 _tmp_qstep <> k:374 var
+R10475:10475 _tmp_qstep <> d:373 var
+R10482:10485 TypeRules <> lift def
+R10495:10495 _tmp_qstep <> b:375 var
+R10490:10490 Corelib.Init.Datatypes <> S constr
+R10492:10492 _tmp_qstep <> k:374 var
+R10487:10487 _tmp_qstep <> d:373 var
+R10512:10514 Corelib.Lists.ListDef <> map def
+R10561:10563 _tmp_qstep <> bs':371 var
+R10522:10522 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10524:10524 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10526:10526 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 10525:10525 <> b:378
+binder 10523:10523 <> c:379
+binder 10522:10526 <> pat:380
+R10531:10531 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10542:10543 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10558:10558 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10532:10535 TypeRules <> lift def
+R10541:10541 _tmp_qstep <> c:379 var
+R10539:10539 _tmp_qstep <> k:374 var
+R10537:10537 _tmp_qstep <> d:373 var
+R10544:10547 TypeRules <> lift def
+R10557:10557 _tmp_qstep <> b:378 var
+R10552:10552 Corelib.Init.Datatypes <> S constr
+R10554:10554 _tmp_qstep <> k:374 var
+R10549:10549 _tmp_qstep <> d:373 var
+R10583:10601 _tmp_qstep <> qstep_qbranches_ind scheme
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10583:10601 _tmp_qstep <> qstep_qbranches_ind scheme
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10657:10666 _tmp_qstep <> qstep_refl thm
+R10680:10689 _tmp_qstep <> qstep_refl thm
+R10680:10689 _tmp_qstep <> qstep_refl thm
+R10704:10723 Progress <> lift_subst_zero_comm thm
+R10704:10723 Progress <> lift_subst_zero_comm thm
+R10704:10723 Progress <> lift_subst_zero_comm thm
+R10733:10739 _tmp_qstep <> qs_beta constr
+R10733:10739 _tmp_qstep <> qs_beta constr
+R10760:10770 _tmp_qstep <> qs_fst_pair constr
+R10760:10770 _tmp_qstep <> qs_fst_pair constr
+R10791:10801 _tmp_qstep <> qs_snd_pair constr
+R10791:10801 _tmp_qstep <> qs_snd_pair constr
+R10822:10831 _tmp_qstep <> qs_epi_nil constr
+R10822:10831 _tmp_qstep <> qs_epi_nil constr
+R10861:10878 Progress <> lift_lift_one_zero thm
+R10861:10878 Progress <> lift_lift_one_zero thm
+R10861:10878 Progress <> lift_lift_one_zero thm
+R10861:10878 Progress <> lift_lift_one_zero thm
+R10908:10924 Progress <> lift_lift_one_one thm
+R10908:10924 Progress <> lift_lift_one_one thm
+R10908:10924 Progress <> lift_lift_one_one thm
+R10908:10924 Progress <> lift_lift_one_one thm
+R10954:10971 Progress <> lift_lift_one_zero thm
+R10954:10971 Progress <> lift_lift_one_zero thm
+R10954:10971 Progress <> lift_lift_one_zero thm
+R10954:10971 Progress <> lift_lift_one_zero thm
+R10992:11002 _tmp_qstep <> qs_epi_cons constr
+R10992:11002 _tmp_qstep <> qs_epi_cons constr
+R11023:11036 _tmp_qstep <> qs_switch_zero constr
+R11023:11036 _tmp_qstep <> qs_switch_zero constr
+R11066:11083 Progress <> lift_lift_one_zero thm
+R11066:11083 Progress <> lift_lift_one_zero thm
+R11066:11083 Progress <> lift_lift_one_zero thm
+R11066:11083 Progress <> lift_lift_one_zero thm
+R11104:11117 _tmp_qstep <> qs_switch_succ constr
+R11104:11117 _tmp_qstep <> qs_switch_succ constr
+R11138:11150 _tmp_qstep <> qs_interp_one constr
+R11138:11150 _tmp_qstep <> qs_interp_one constr
+R11180:11197 Progress <> lift_lift_one_zero thm
+R11180:11197 Progress <> lift_lift_one_zero thm
+R11180:11197 Progress <> lift_lift_one_zero thm
+R11180:11197 Progress <> lift_lift_one_zero thm
+R11180:11197 Progress <> lift_lift_one_zero thm
+R11180:11197 Progress <> lift_lift_one_zero thm
+R11218:11231 _tmp_qstep <> qs_interp_prod constr
+R11218:11231 _tmp_qstep <> qs_interp_prod constr
+R11261:11278 Progress <> lift_lift_one_zero thm
+R11261:11278 Progress <> lift_lift_one_zero thm
+R11261:11278 Progress <> lift_lift_one_zero thm
+R11261:11278 Progress <> lift_lift_one_zero thm
+R11261:11278 Progress <> lift_lift_one_zero thm
+R11261:11278 Progress <> lift_lift_one_zero thm
+R11299:11310 _tmp_qstep <> qs_interp_pi constr
+R11299:11310 _tmp_qstep <> qs_interp_pi constr
+R11340:11357 Progress <> lift_lift_one_zero thm
+R11340:11357 Progress <> lift_lift_one_zero thm
+R11340:11357 Progress <> lift_lift_one_zero thm
+R11340:11357 Progress <> lift_lift_one_zero thm
+R11340:11357 Progress <> lift_lift_one_zero thm
+R11340:11357 Progress <> lift_lift_one_zero thm
+R11378:11390 _tmp_qstep <> qs_interp_sig constr
+R11378:11390 _tmp_qstep <> qs_interp_sig constr
+R11420:11437 Progress <> lift_lift_one_zero thm
+R11420:11437 Progress <> lift_lift_one_zero thm
+R11420:11437 Progress <> lift_lift_one_zero thm
+R11420:11437 Progress <> lift_lift_one_zero thm
+R11420:11437 Progress <> lift_lift_one_zero thm
+R11420:11437 Progress <> lift_lift_one_zero thm
+R11458:11473 _tmp_qstep <> qs_interp_choice constr
+R11458:11473 _tmp_qstep <> qs_interp_choice constr
+R11494:11504 _tmp_qstep <> qs_iall_var constr
+R11494:11504 _tmp_qstep <> qs_iall_var constr
+R11525:11535 _tmp_qstep <> qs_iall_one constr
+R11525:11535 _tmp_qstep <> qs_iall_one constr
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11565:11582 Progress <> lift_lift_one_zero thm
+R11603:11614 _tmp_qstep <> qs_iall_prod constr
+R11603:11614 _tmp_qstep <> qs_iall_prod constr
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11644:11661 Progress <> lift_lift_one_zero thm
+R11682:11691 _tmp_qstep <> qs_iall_pi constr
+R11682:11691 _tmp_qstep <> qs_iall_pi constr
+R11712:11722 _tmp_qstep <> qs_iall_sig constr
+R11712:11722 _tmp_qstep <> qs_iall_sig constr
+R11743:11756 _tmp_qstep <> qs_iall_choice constr
+R11743:11756 _tmp_qstep <> qs_iall_choice constr
+R11777:11787 _tmp_qstep <> qs_hyqs_var constr
+R11777:11787 _tmp_qstep <> qs_hyqs_var constr
+R11808:11818 _tmp_qstep <> qs_hyqs_one constr
+R11808:11818 _tmp_qstep <> qs_hyqs_one constr
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11848:11865 Progress <> lift_lift_one_zero thm
+R11886:11895 _tmp_qstep <> qs_hyqs_pi constr
+R11886:11895 _tmp_qstep <> qs_hyqs_pi constr
+R11916:11926 _tmp_qstep <> qs_hyqs_sig constr
+R11916:11926 _tmp_qstep <> qs_hyqs_sig constr
+R11947:11960 _tmp_qstep <> qs_hyqs_choice constr
+R11947:11960 _tmp_qstep <> qs_hyqs_choice constr
+R11990:12007 Progress <> lift_lift_two_zero thm
+R11990:12007 Progress <> lift_lift_two_zero thm
+R11990:12007 Progress <> lift_lift_two_zero thm
+R11990:12007 Progress <> lift_lift_two_zero thm
+R11990:12007 Progress <> lift_lift_two_zero thm
+R11990:12007 Progress <> lift_lift_two_zero thm
+R11990:12007 Progress <> lift_lift_two_zero thm
+R11990:12007 Progress <> lift_lift_two_zero thm
+R12028:12037 _tmp_qstep <> qs_ind_red constr
+R12028:12037 _tmp_qstep <> qs_ind_red constr
+R12059:12078 Progress <> lift_subst_zero_comm thm
+R12059:12078 Progress <> lift_subst_zero_comm thm
+R12059:12078 Progress <> lift_subst_zero_comm thm
+R12126:12129 TypeRules <> lift def
+R12143:12146 TypeRules <> lift def
+R12151:12151 Corelib.Init.Datatypes <> S constr
+R12092:12102 _tmp_qstep <> qs_case_red constr
+R12126:12129 TypeRules <> lift def
+R12143:12146 TypeRules <> lift def
+R12151:12151 Corelib.Init.Datatypes <> S constr
+R12092:12102 _tmp_qstep <> qs_case_red constr
+R12181:12203 Progress <> nth_error_lift_branches thm
+R12181:12203 Progress <> nth_error_lift_branches thm
+R12230:12245 Progress <> enum_pos_lift_id thm
+R12230:12245 Progress <> enum_pos_lift_id thm
+R12230:12245 Progress <> enum_pos_lift_id thm
+R12286:12301 Progress <> enum_pos_lift_id thm
+R12286:12301 Progress <> enum_pos_lift_id thm
+R12286:12301 Progress <> enum_pos_lift_id thm
+R12371:12383 Stdlib.Lists.List <> nth_error_map thm
+R12371:12383 Stdlib.Lists.List <> nth_error_map thm
+R12371:12383 Stdlib.Lists.List <> nth_error_map thm
+R12410:12418 Stdlib.Lists.List <> nth_error def
+R12410:12418 Stdlib.Lists.List <> nth_error def
+R12627:12642 Progress <> enum_pos_lift_id thm
+R12627:12642 Progress <> enum_pos_lift_id thm
+R12627:12642 Progress <> enum_pos_lift_id thm
+R12746:12763 Progress <> lift_lift_one_zero thm
+R12746:12763 Progress <> lift_lift_one_zero thm
+R12746:12763 Progress <> lift_lift_one_zero thm
+R12746:12763 Progress <> lift_lift_one_zero thm
+R12784:12789 _tmp_qstep <> qs_eta constr
+R12784:12789 _tmp_qstep <> qs_eta constr
+prf 12815:12824 <> qstep_lift
+binder 12835:12835 <> t:381
+binder 12837:12837 <> u:382
+R12849:12852 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12840:12844 _tmp_qstep <> qstep ind
+R12846:12846 _tmp_qstep <> t:381 var
+R12848:12848 _tmp_qstep <> u:382 var
+binder 12860:12860 <> d:383
+binder 12862:12862 <> k:384
+R12869:12873 _tmp_qstep <> qstep ind
+R12876:12879 TypeRules <> lift def
+R12885:12885 _tmp_qstep <> t:381 var
+R12883:12883 _tmp_qstep <> k:384 var
+R12881:12881 _tmp_qstep <> d:383 var
+R12889:12892 TypeRules <> lift def
+R12898:12898 _tmp_qstep <> u:382 var
+R12896:12896 _tmp_qstep <> k:384 var
+R12894:12894 _tmp_qstep <> d:383 var
+R12930:12934 Corelib.Init.Logic <> proj1 thm
+R12936:12949 _tmp_qstep <> qstep_lift_mut thm
+R12930:12934 Corelib.Init.Logic <> proj1 thm
+R12936:12949 _tmp_qstep <> qstep_lift_mut thm
+prf 12975:12988 <> qbranches_lift
+binder 12999:13000 <> bs:385
+binder 13002:13004 <> bs':386
+R13023:13026 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13007:13015 _tmp_qstep <> qbranches ind
+R13017:13018 _tmp_qstep <> bs:385 var
+R13020:13022 _tmp_qstep <> bs':386 var
+binder 13034:13034 <> d:387
+binder 13036:13036 <> k:388
+R13043:13051 _tmp_qstep <> qbranches ind
+R13060:13062 Corelib.Lists.ListDef <> map def
+R13109:13110 _tmp_qstep <> bs:385 var
+R13070:13070 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13072:13072 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13074:13074 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 13073:13073 <> b:389
+binder 13071:13071 <> c:390
+binder 13070:13074 <> pat:391
+R13079:13079 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13090:13091 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13106:13106 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13080:13083 TypeRules <> lift def
+R13089:13089 _tmp_qstep <> c:390 var
+R13087:13087 _tmp_qstep <> k:388 var
+R13085:13085 _tmp_qstep <> d:387 var
+R13092:13095 TypeRules <> lift def
+R13105:13105 _tmp_qstep <> b:389 var
+R13100:13100 Corelib.Init.Datatypes <> S constr
+R13102:13102 _tmp_qstep <> k:388 var
+R13097:13097 _tmp_qstep <> d:387 var
+R13120:13122 Corelib.Lists.ListDef <> map def
+R13169:13171 _tmp_qstep <> bs':386 var
+R13130:13130 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13132:13132 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13134:13134 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 13133:13133 <> b:392
+binder 13131:13131 <> c:393
+binder 13130:13134 <> pat:394
+R13139:13139 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13150:13151 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13166:13166 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13140:13143 TypeRules <> lift def
+R13149:13149 _tmp_qstep <> c:393 var
+R13147:13147 _tmp_qstep <> k:388 var
+R13145:13145 _tmp_qstep <> d:387 var
+R13152:13155 TypeRules <> lift def
+R13165:13165 _tmp_qstep <> b:392 var
+R13160:13160 Corelib.Init.Datatypes <> S constr
+R13162:13162 _tmp_qstep <> k:388 var
+R13157:13157 _tmp_qstep <> d:387 var
+R13206:13210 Corelib.Init.Logic <> proj2 thm
+R13212:13225 _tmp_qstep <> qstep_lift_mut thm
+R13206:13210 Corelib.Init.Logic <> proj2 thm
+R13212:13225 _tmp_qstep <> qstep_lift_mut thm
+prf 13249:13263 <> qstep_subst_mut
+R13269:13269 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13370:13377 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13597:13597 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 13277:13277 <> t:395
+binder 13279:13280 <> t':396
+R13287:13291 _tmp_qstep <> qstep ind
+R13293:13293 _tmp_qstep <> t:395 var
+R13295:13296 _tmp_qstep <> t':396 var
+binder 13283:13283 <> H:397
+binder 13307:13307 <> u:398
+binder 13309:13310 <> u':399
+binder 13312:13312 <> k:400
+R13331:13334 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13321:13325 _tmp_qstep <> qstep ind
+R13327:13327 _tmp_qstep <> u:398 var
+R13329:13330 _tmp_qstep <> u':399 var
+R13335:13339 _tmp_qstep <> qstep ind
+R13342:13346 TypeRules <> subst def
+R13352:13352 _tmp_qstep <> t:395 var
+R13350:13350 _tmp_qstep <> k:400 var
+R13348:13348 _tmp_qstep <> u:398 var
+R13356:13360 TypeRules <> subst def
+R13367:13368 _tmp_qstep <> t':396 var
+R13365:13365 _tmp_qstep <> k:400 var
+R13362:13363 _tmp_qstep <> u':399 var
+binder 13385:13386 <> bs:401
+binder 13388:13390 <> bs':402
+R13397:13405 _tmp_qstep <> qbranches ind
+R13407:13408 _tmp_qstep <> bs:401 var
+R13410:13412 _tmp_qstep <> bs':402 var
+binder 13393:13393 <> H:403
+binder 13423:13423 <> u:404
+binder 13425:13426 <> u':405
+binder 13428:13428 <> k:406
+R13447:13456 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13437:13441 _tmp_qstep <> qstep ind
+R13443:13443 _tmp_qstep <> u:404 var
+R13445:13446 _tmp_qstep <> u':405 var
+R13457:13465 _tmp_qstep <> qbranches ind
+R13476:13478 Corelib.Lists.ListDef <> map def
+R13527:13528 _tmp_qstep <> bs:401 var
+R13486:13486 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13488:13488 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13490:13490 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 13489:13489 <> b:407
+binder 13487:13487 <> c:408
+binder 13486:13490 <> pat:409
+R13495:13495 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13507:13508 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13524:13524 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13496:13500 TypeRules <> subst def
+R13506:13506 _tmp_qstep <> c:408 var
+R13504:13504 _tmp_qstep <> k:406 var
+R13502:13502 _tmp_qstep <> u:404 var
+R13509:13513 TypeRules <> subst def
+R13523:13523 _tmp_qstep <> b:407 var
+R13518:13518 Corelib.Init.Datatypes <> S constr
+R13520:13520 _tmp_qstep <> k:406 var
+R13515:13515 _tmp_qstep <> u:404 var
+R13540:13542 Corelib.Lists.ListDef <> map def
+R13593:13595 _tmp_qstep <> bs':402 var
+R13550:13550 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13552:13552 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13554:13554 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 13553:13553 <> b:410
+binder 13551:13551 <> c:411
+binder 13550:13554 <> pat:412
+R13559:13559 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13572:13573 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13590:13590 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13560:13564 TypeRules <> subst def
+R13571:13571 _tmp_qstep <> c:411 var
+R13569:13569 _tmp_qstep <> k:406 var
+R13566:13567 _tmp_qstep <> u':405 var
+R13574:13578 TypeRules <> subst def
+R13589:13589 _tmp_qstep <> b:410 var
+R13584:13584 Corelib.Init.Datatypes <> S constr
+R13586:13586 _tmp_qstep <> k:406 var
+R13580:13581 _tmp_qstep <> u':405 var
+R13615:13633 _tmp_qstep <> qstep_qbranches_ind scheme
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13615:13633 _tmp_qstep <> qstep_qbranches_ind scheme
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13689:13698 _tmp_qstep <> qstep_refl thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13701:13710 _tmp_qstep <> qstep_lift thm
+R13726:13730 _tmp_qstep <> qstep ind
+R13733:13737 TypeRules <> subst def
+R13744:13747 TypeRules <> TVar constr
+R13754:13758 TypeRules <> subst def
+R13766:13769 TypeRules <> TVar constr
+R13726:13730 _tmp_qstep <> qstep ind
+R13733:13737 TypeRules <> subst def
+R13744:13747 TypeRules <> TVar constr
+R13754:13758 TypeRules <> subst def
+R13766:13769 TypeRules <> TVar constr
+R13791:13807 Stdlib.Arith.PeanoNat Nat lt_trichotomy thm
+R13791:13807 Stdlib.Arith.PeanoNat Nat lt_trichotomy thm
+R13869:13871 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13858:13864 Stdlib.Arith.PeanoNat Nat ltb def
+R13872:13875 Corelib.Init.Datatypes <> true constr
+R13888:13897 Stdlib.Arith.PeanoNat Nat ltb_lt thm
+R13869:13871 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13858:13864 Stdlib.Arith.PeanoNat Nat ltb def
+R13872:13875 Corelib.Init.Datatypes <> true constr
+R13888:13897 Stdlib.Arith.PeanoNat Nat ltb_lt thm
+R13917:13921 TypeRules <> subst def
+R13944:13953 _tmp_qstep <> qstep_refl thm
+R13944:13953 _tmp_qstep <> qstep_refl thm
+R14002:14004 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13991:13997 Stdlib.Arith.PeanoNat Nat ltb def
+R14005:14009 Corelib.Init.Datatypes <> false constr
+R14022:14031 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R14002:14004 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13991:13997 Stdlib.Arith.PeanoNat Nat ltb def
+R14005:14009 Corelib.Init.Datatypes <> false constr
+R14022:14031 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R14071:14073 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14060:14066 Stdlib.Arith.PeanoNat Nat eqb def
+R14074:14077 Corelib.Init.Datatypes <> true constr
+R14090:14099 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R14071:14073 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14060:14066 Stdlib.Arith.PeanoNat Nat eqb def
+R14074:14077 Corelib.Init.Datatypes <> true constr
+R14090:14099 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R14127:14131 TypeRules <> subst def
+R14160:14169 _tmp_qstep <> qstep_lift thm
+R14160:14169 _tmp_qstep <> qstep_lift thm
+R14212:14214 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14201:14207 Stdlib.Arith.PeanoNat Nat ltb def
+R14215:14219 Corelib.Init.Datatypes <> false constr
+R14232:14241 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R14212:14214 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14201:14207 Stdlib.Arith.PeanoNat Nat ltb def
+R14215:14219 Corelib.Init.Datatypes <> false constr
+R14232:14241 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R14281:14283 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14270:14276 Stdlib.Arith.PeanoNat Nat eqb def
+R14284:14288 Corelib.Init.Datatypes <> false constr
+R14301:14311 Stdlib.Arith.PeanoNat Nat eqb_neq thm
+R14281:14283 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14270:14276 Stdlib.Arith.PeanoNat Nat eqb def
+R14284:14288 Corelib.Init.Datatypes <> false constr
+R14301:14311 Stdlib.Arith.PeanoNat Nat eqb_neq thm
+R14331:14335 TypeRules <> subst def
+R14363:14372 _tmp_qstep <> qstep_refl thm
+R14363:14372 _tmp_qstep <> qstep_refl thm
+R14387:14407 Progress <> subst_subst_zero_comm thm
+R14387:14407 Progress <> subst_subst_zero_comm thm
+R14387:14407 Progress <> subst_subst_zero_comm thm
+R14417:14423 _tmp_qstep <> qs_beta constr
+R14417:14423 _tmp_qstep <> qs_beta constr
+R14444:14454 _tmp_qstep <> qs_fst_pair constr
+R14444:14454 _tmp_qstep <> qs_fst_pair constr
+R14475:14485 _tmp_qstep <> qs_snd_pair constr
+R14475:14485 _tmp_qstep <> qs_snd_pair constr
+R14506:14515 _tmp_qstep <> qs_epi_nil constr
+R14506:14515 _tmp_qstep <> qs_epi_nil constr
+R14545:14563 Progress <> subst_lift_one_zero thm
+R14545:14563 Progress <> subst_lift_one_zero thm
+R14545:14563 Progress <> subst_lift_one_zero thm
+R14545:14563 Progress <> subst_lift_one_zero thm
+R14594:14611 Progress <> subst_lift_one_one thm
+R14594:14611 Progress <> subst_lift_one_one thm
+R14594:14611 Progress <> subst_lift_one_one thm
+R14594:14611 Progress <> subst_lift_one_one thm
+R14642:14660 Progress <> subst_lift_one_zero thm
+R14642:14660 Progress <> subst_lift_one_zero thm
+R14642:14660 Progress <> subst_lift_one_zero thm
+R14642:14660 Progress <> subst_lift_one_zero thm
+R14682:14692 _tmp_qstep <> qs_epi_cons constr
+R14682:14692 _tmp_qstep <> qs_epi_cons constr
+R14713:14726 _tmp_qstep <> qs_switch_zero constr
+R14713:14726 _tmp_qstep <> qs_switch_zero constr
+R14756:14774 Progress <> subst_lift_one_zero thm
+R14756:14774 Progress <> subst_lift_one_zero thm
+R14756:14774 Progress <> subst_lift_one_zero thm
+R14756:14774 Progress <> subst_lift_one_zero thm
+R14796:14809 _tmp_qstep <> qs_switch_succ constr
+R14796:14809 _tmp_qstep <> qs_switch_succ constr
+R14830:14842 _tmp_qstep <> qs_interp_one constr
+R14830:14842 _tmp_qstep <> qs_interp_one constr
+R14872:14890 Progress <> subst_lift_one_zero thm
+R14872:14890 Progress <> subst_lift_one_zero thm
+R14872:14890 Progress <> subst_lift_one_zero thm
+R14872:14890 Progress <> subst_lift_one_zero thm
+R14872:14890 Progress <> subst_lift_one_zero thm
+R14872:14890 Progress <> subst_lift_one_zero thm
+R14912:14925 _tmp_qstep <> qs_interp_prod constr
+R14912:14925 _tmp_qstep <> qs_interp_prod constr
+R14955:14973 Progress <> subst_lift_one_zero thm
+R14955:14973 Progress <> subst_lift_one_zero thm
+R14955:14973 Progress <> subst_lift_one_zero thm
+R14955:14973 Progress <> subst_lift_one_zero thm
+R14955:14973 Progress <> subst_lift_one_zero thm
+R14955:14973 Progress <> subst_lift_one_zero thm
+R14995:15006 _tmp_qstep <> qs_interp_pi constr
+R14995:15006 _tmp_qstep <> qs_interp_pi constr
+R15036:15054 Progress <> subst_lift_one_zero thm
+R15036:15054 Progress <> subst_lift_one_zero thm
+R15036:15054 Progress <> subst_lift_one_zero thm
+R15036:15054 Progress <> subst_lift_one_zero thm
+R15036:15054 Progress <> subst_lift_one_zero thm
+R15036:15054 Progress <> subst_lift_one_zero thm
+R15076:15088 _tmp_qstep <> qs_interp_sig constr
+R15076:15088 _tmp_qstep <> qs_interp_sig constr
+R15118:15136 Progress <> subst_lift_one_zero thm
+R15118:15136 Progress <> subst_lift_one_zero thm
+R15118:15136 Progress <> subst_lift_one_zero thm
+R15118:15136 Progress <> subst_lift_one_zero thm
+R15118:15136 Progress <> subst_lift_one_zero thm
+R15118:15136 Progress <> subst_lift_one_zero thm
+R15158:15173 _tmp_qstep <> qs_interp_choice constr
+R15158:15173 _tmp_qstep <> qs_interp_choice constr
+R15194:15204 _tmp_qstep <> qs_iall_var constr
+R15194:15204 _tmp_qstep <> qs_iall_var constr
+R15225:15235 _tmp_qstep <> qs_iall_one constr
+R15225:15235 _tmp_qstep <> qs_iall_one constr
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15265:15283 Progress <> subst_lift_one_zero thm
+R15305:15316 _tmp_qstep <> qs_iall_prod constr
+R15305:15316 _tmp_qstep <> qs_iall_prod constr
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15346:15364 Progress <> subst_lift_one_zero thm
+R15386:15395 _tmp_qstep <> qs_iall_pi constr
+R15386:15395 _tmp_qstep <> qs_iall_pi constr
+R15416:15426 _tmp_qstep <> qs_iall_sig constr
+R15416:15426 _tmp_qstep <> qs_iall_sig constr
+R15447:15460 _tmp_qstep <> qs_iall_choice constr
+R15447:15460 _tmp_qstep <> qs_iall_choice constr
+R15481:15491 _tmp_qstep <> qs_hyqs_var constr
+R15481:15491 _tmp_qstep <> qs_hyqs_var constr
+R15512:15522 _tmp_qstep <> qs_hyqs_one constr
+R15512:15522 _tmp_qstep <> qs_hyqs_one constr
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15552:15570 Progress <> subst_lift_one_zero thm
+R15592:15601 _tmp_qstep <> qs_hyqs_pi constr
+R15592:15601 _tmp_qstep <> qs_hyqs_pi constr
+R15622:15632 _tmp_qstep <> qs_hyqs_sig constr
+R15622:15632 _tmp_qstep <> qs_hyqs_sig constr
+R15653:15666 _tmp_qstep <> qs_hyqs_choice constr
+R15653:15666 _tmp_qstep <> qs_hyqs_choice constr
+R15696:15714 Progress <> subst_lift_two_zero thm
+R15696:15714 Progress <> subst_lift_two_zero thm
+R15696:15714 Progress <> subst_lift_two_zero thm
+R15696:15714 Progress <> subst_lift_two_zero thm
+R15696:15714 Progress <> subst_lift_two_zero thm
+R15696:15714 Progress <> subst_lift_two_zero thm
+R15696:15714 Progress <> subst_lift_two_zero thm
+R15696:15714 Progress <> subst_lift_two_zero thm
+R15736:15745 _tmp_qstep <> qs_ind_red constr
+R15736:15745 _tmp_qstep <> qs_ind_red constr
+R15767:15787 Progress <> subst_subst_zero_comm thm
+R15767:15787 Progress <> subst_subst_zero_comm thm
+R15767:15787 Progress <> subst_subst_zero_comm thm
+R15835:15839 TypeRules <> subst def
+R15853:15857 TypeRules <> subst def
+R15862:15862 Corelib.Init.Datatypes <> S constr
+R15801:15811 _tmp_qstep <> qs_case_red constr
+R15835:15839 TypeRules <> subst def
+R15853:15857 TypeRules <> subst def
+R15862:15862 Corelib.Init.Datatypes <> S constr
+R15801:15811 _tmp_qstep <> qs_case_red constr
+R15892:15915 Progress <> nth_error_subst_branches thm
+R15892:15915 Progress <> nth_error_subst_branches thm
+R15942:15958 Progress <> enum_pos_subst_id thm
+R15942:15958 Progress <> enum_pos_subst_id thm
+R15942:15958 Progress <> enum_pos_subst_id thm
+R15999:16015 Progress <> enum_pos_subst_id thm
+R15999:16015 Progress <> enum_pos_subst_id thm
+R15999:16015 Progress <> enum_pos_subst_id thm
+R16085:16097 Stdlib.Lists.List <> nth_error_map thm
+R16085:16097 Stdlib.Lists.List <> nth_error_map thm
+R16085:16097 Stdlib.Lists.List <> nth_error_map thm
+R16124:16132 Stdlib.Lists.List <> nth_error def
+R16124:16132 Stdlib.Lists.List <> nth_error def
+R16341:16357 Progress <> enum_pos_subst_id thm
+R16341:16357 Progress <> enum_pos_subst_id thm
+R16341:16357 Progress <> enum_pos_subst_id thm
+R16456:16474 Progress <> subst_lift_one_zero thm
+R16456:16474 Progress <> subst_lift_one_zero thm
+R16505:16523 Progress <> subst_lift_one_zero thm
+R16505:16523 Progress <> subst_lift_one_zero thm
+R16505:16523 Progress <> subst_lift_one_zero thm
+R16505:16523 Progress <> subst_lift_one_zero thm
+R16544:16549 _tmp_qstep <> qs_eta constr
+R16544:16549 _tmp_qstep <> qs_eta constr
+prf 16575:16585 <> qstep_subst
+binder 16596:16596 <> t:413
+binder 16598:16599 <> t':414
+R16612:16615 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16602:16606 _tmp_qstep <> qstep ind
+R16608:16608 _tmp_qstep <> t:413 var
+R16610:16611 _tmp_qstep <> t':414 var
+binder 16623:16623 <> u:415
+binder 16625:16626 <> u':416
+binder 16628:16628 <> k:417
+R16645:16648 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16635:16639 _tmp_qstep <> qstep ind
+R16641:16641 _tmp_qstep <> u:415 var
+R16643:16644 _tmp_qstep <> u':416 var
+R16649:16653 _tmp_qstep <> qstep ind
+R16656:16660 TypeRules <> subst def
+R16666:16666 _tmp_qstep <> t:413 var
+R16664:16664 _tmp_qstep <> k:417 var
+R16662:16662 _tmp_qstep <> u:415 var
+R16670:16674 TypeRules <> subst def
+R16681:16682 _tmp_qstep <> t':414 var
+R16679:16679 _tmp_qstep <> k:417 var
+R16676:16677 _tmp_qstep <> u':416 var
+R16715:16719 Corelib.Init.Logic <> proj1 thm
+R16721:16735 _tmp_qstep <> qstep_subst_mut thm
+R16715:16719 Corelib.Init.Logic <> proj1 thm
+R16721:16735 _tmp_qstep <> qstep_subst_mut thm
+prf 16762:16776 <> qbranches_subst
+binder 16787:16788 <> bs:418
+binder 16790:16792 <> bs':419
+R16811:16818 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16795:16803 _tmp_qstep <> qbranches ind
+R16805:16806 _tmp_qstep <> bs:418 var
+R16808:16810 _tmp_qstep <> bs':419 var
+binder 16826:16826 <> u:420
+binder 16828:16829 <> u':421
+binder 16831:16831 <> k:422
+R16844:16851 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16834:16838 _tmp_qstep <> qstep ind
+R16840:16840 _tmp_qstep <> u:420 var
+R16842:16843 _tmp_qstep <> u':421 var
+R16852:16860 _tmp_qstep <> qbranches ind
+R16869:16871 Corelib.Lists.ListDef <> map def
+R16920:16921 _tmp_qstep <> bs:418 var
+R16879:16879 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16881:16881 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16883:16883 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 16882:16882 <> b:423
+binder 16880:16880 <> c:424
+binder 16879:16883 <> pat:425
+R16888:16888 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16900:16901 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16917:16917 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16889:16893 TypeRules <> subst def
+R16899:16899 _tmp_qstep <> c:424 var
+R16897:16897 _tmp_qstep <> k:422 var
+R16895:16895 _tmp_qstep <> u:420 var
+R16902:16906 TypeRules <> subst def
+R16916:16916 _tmp_qstep <> b:423 var
+R16911:16911 Corelib.Init.Datatypes <> S constr
+R16913:16913 _tmp_qstep <> k:422 var
+R16908:16908 _tmp_qstep <> u:420 var
+R16931:16933 Corelib.Lists.ListDef <> map def
+R16984:16986 _tmp_qstep <> bs':419 var
+R16941:16941 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16943:16943 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16945:16945 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 16944:16944 <> b:426
+binder 16942:16942 <> c:427
+binder 16941:16945 <> pat:428
+R16950:16950 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16963:16964 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16981:16981 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R16951:16955 TypeRules <> subst def
+R16962:16962 _tmp_qstep <> c:427 var
+R16960:16960 _tmp_qstep <> k:422 var
+R16957:16958 _tmp_qstep <> u':421 var
+R16965:16969 TypeRules <> subst def
+R16980:16980 _tmp_qstep <> b:426 var
+R16975:16975 Corelib.Init.Datatypes <> S constr
+R16977:16977 _tmp_qstep <> k:422 var
+R16971:16972 _tmp_qstep <> u':421 var
+R17021:17025 Corelib.Init.Logic <> proj2 thm
+R17027:17041 _tmp_qstep <> qstep_subst_mut thm
+R17021:17025 Corelib.Init.Logic <> proj2 thm
+R17027:17041 _tmp_qstep <> qstep_subst_mut thm

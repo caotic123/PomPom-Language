@@ -1,0 +1,35 @@
+DIGEST be969507e524acabb96ff5c53f4f95fb
+F_luna_eta_kfold
+R15:22 Progress <> <> lib
+R24:34 _tmp_epstep <> <> lib
+R44:52 TypeRules <> <> mod
+def 65:73 <> eta_kfold
+R80:82 Corelib.Init.Datatypes <> nat ind
+binder 76:76 <> k:1
+R90:93 TypeRules <> term ind
+binder 86:86 <> t:2
+R98:101 TypeRules <> term ind
+R114:114 _luna_eta_kfold <> k:1 var
+R130:130 _luna_eta_kfold <> t:2 var
+R136:136 Corelib.Init.Datatypes <> S constr
+R143:146 TypeRules <> TLam constr
+R149:152 TypeRules <> TApp constr
+R182:185 TypeRules <> TVar constr
+R155:158 TypeRules <> lift def
+R165:173 _luna_eta_kfold <> eta_kfold:3 def
+R177:177 _luna_eta_kfold <> t:2 var
+prf 205:220 <> epstep_eta_kfold
+binder 231:231 <> t:5
+binder 233:234 <> t':6
+binder 236:236 <> k:7
+R254:257 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R243:248 _tmp_epstep <> epstep ind
+R250:250 _luna_eta_kfold <> t:5 var
+R252:253 _luna_eta_kfold <> t':6 var
+R258:263 _tmp_epstep <> epstep ind
+R266:274 _luna_eta_kfold <> eta_kfold def
+R276:276 _luna_eta_kfold <> k:7 var
+R278:278 _luna_eta_kfold <> t:5 var
+R281:282 _luna_eta_kfold <> t':6 var
+R365:371 _tmp_epstep <> eps_eta constr
+R365:371 _tmp_epstep <> eps_eta constr

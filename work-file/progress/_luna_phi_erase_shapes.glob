@@ -1,0 +1,36 @@
+DIGEST 3d4e5c496ea713ff27d8519735e9cb16
+F_luna_phi_erase_shapes
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R65:77 Stdlib.Lists.List ListNotations <> mod
+R79:87 TypeRules <> <> mod
+prf 97:117 <> phi_erase_hshape_luna
+binder 128:128 <> t:1
+binder 130:130 <> h:2
+R147:150 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R137:142 Progress <> hshape ind
+R144:144 _luna_phi_erase_shapes <> t:1 var
+R146:146 _luna_phi_erase_shapes <> h:2 var
+R151:156 Progress <> hshape ind
+R159:167 Progress <> phi_erase def
+R169:169 _luna_phi_erase_shapes <> t:1 var
+R172:172 _luna_phi_erase_shapes <> h:2 var
+R226:234 Progress <> phi_erase def
+prf 263:281 <> phi_erase_eval_luna
+binder 292:292 <> t:3
+binder 294:294 <> u:4
+R309:312 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R301:304 TypeRules <> eval ind
+R308:308 _luna_phi_erase_shapes <> u:4 var
+R306:306 _luna_phi_erase_shapes <> t:3 var
+R313:316 TypeRules <> eval ind
+R333:341 Progress <> phi_erase def
+R343:343 _luna_phi_erase_shapes <> u:4 var
+R319:327 Progress <> phi_erase def
+R329:329 _luna_phi_erase_shapes <> t:3 var
+R401:407 TypeRules <> ev_refl constr
+R401:407 TypeRules <> ev_refl constr
+R421:427 TypeRules <> ev_step constr
+R421:427 TypeRules <> ev_step constr
+R442:455 Progress <> phi_erase_step thm
+R442:455 Progress <> phi_erase_step thm

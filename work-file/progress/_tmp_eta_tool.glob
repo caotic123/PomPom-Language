@@ -1,0 +1,35 @@
+DIGEST dc45fe2b8d0faa7d60608e11cc1004da
+F_tmp_eta_tool
+R15:22 Progress <> <> lib
+R24:34 _tmp_epstep <> <> lib
+R36:50 _tmp_epstep_inv <> <> lib
+R80:83 Stdlib.Lists.List <> <> lib
+R85:87 Stdlib.micromega.Lia <> <> lib
+R89:96 Stdlib.Arith.PeanoNat <> <> lib
+R106:118 Stdlib.Lists.List ListNotations <> mod
+R120:128 TypeRules <> <> mod
+prf 138:148 <> eta_app_inv
+binder 159:159 <> f:1
+binder 161:161 <> t:2
+R203:208 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R166:171 _tmp_epstep <> epstep ind
+R174:177 TypeRules <> TApp constr
+R193:196 TypeRules <> TVar constr
+R180:183 TypeRules <> lift def
+R189:189 _tmp_eta_tool <> f:1 var
+R202:202 _tmp_eta_tool <> t:2 var
+R209:215 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R217:218 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 216:216 <> u:3
+R249:252 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R220:222 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R219:219 _tmp_eta_tool <> t:2 var
+R223:226 TypeRules <> TApp constr
+R242:245 TypeRules <> TVar constr
+R229:232 TypeRules <> lift def
+R238:238 _tmp_eta_tool <> u:3 var
+R253:258 _tmp_epstep <> epstep ind
+R260:260 _tmp_eta_tool <> f:1 var
+R262:262 _tmp_eta_tool <> u:3 var
+R348:362 _tmp_epstep_inv <> epstep_lift_inv thm
+R348:362 _tmp_epstep_inv <> epstep_lift_inv thm

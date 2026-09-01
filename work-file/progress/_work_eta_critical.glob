@@ -1,0 +1,166 @@
+DIGEST ce2be2c39c45721181adb7daa825fc46
+F_work_eta_critical
+R15:22 Progress <> <> lib
+R24:34 _tmp_epstep <> <> lib
+R36:55 _tmp_pstep_var_rigid <> <> lib
+R57:71 _tmp_eta_cancel <> <> lib
+R75:94 _work_pstep_lift_inv <> <> lib
+R124:127 Stdlib.Lists.List <> <> lib
+R129:131 Stdlib.micromega.Lia <> <> lib
+R133:140 Stdlib.Arith.PeanoNat <> <> lib
+R150:162 Stdlib.Lists.List ListNotations <> mod
+R164:172 TypeRules <> <> mod
+def 187:193 <> eta_app
+R200:203 TypeRules <> term ind
+binder 196:196 <> f:1
+R208:211 TypeRules <> term ind
+R218:221 TypeRules <> TApp constr
+R237:240 TypeRules <> TVar constr
+R224:227 TypeRules <> lift def
+R233:233 _work_eta_critical <> f:1 var
+prf 253:271 <> pstep_eta_app_cases
+binder 282:282 <> f:2
+binder 284:284 <> q:3
+R310:317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R291:295 Progress <> pstep ind
+R298:304 _work_eta_critical <> eta_app def
+R306:306 _work_eta_critical <> f:2 var
+R309:309 _work_eta_critical <> q:3 var
+R318:318 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R355:364 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R412:412 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R319:325 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R327:328 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 326:326 <> g:4
+R342:345 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R330:332 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R329:329 _work_eta_critical <> q:3 var
+R333:339 _work_eta_critical <> eta_app def
+R341:341 _work_eta_critical <> g:4 var
+R346:350 Progress <> pstep ind
+R352:352 _work_eta_critical <> f:2 var
+R354:354 _work_eta_critical <> g:4 var
+R365:371 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R376:377 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 372:372 <> b:5
+binder 374:375 <> b':6
+R388:391 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R379:381 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R378:378 _work_eta_critical <> f:2 var
+R382:385 TypeRules <> TLam constr
+R387:387 _work_eta_critical <> b:5 var
+R398:401 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R393:395 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R392:392 _work_eta_critical <> q:3 var
+R396:397 _work_eta_critical <> b':6 var
+R402:406 Progress <> pstep ind
+R408:408 _work_eta_critical <> b:5 var
+R410:411 _work_eta_critical <> b':6 var
+R445:451 _work_eta_critical <> eta_app def
+R500:502 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R503:506 TypeRules <> TVar constr
+R522:536 _tmp_pstep_var_rigid <> pstep_var_rigid thm
+R500:502 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R503:506 TypeRules <> TVar constr
+R522:536 _tmp_pstep_var_rigid <> pstep_var_rigid thm
+R581:594 _work_pstep_lift_inv <> pstep_lift_inv thm
+R581:594 _work_pstep_lift_inv <> pstep_lift_inv thm
+R709:712 TypeRules <> lift def
+R796:798 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R799:802 TypeRules <> TVar constr
+R818:832 _tmp_pstep_var_rigid <> pstep_var_rigid thm
+R796:798 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R799:802 TypeRules <> TVar constr
+R818:832 _tmp_pstep_var_rigid <> pstep_var_rigid thm
+R877:890 _work_pstep_lift_inv <> pstep_lift_inv thm
+R877:890 _work_pstep_lift_inv <> pstep_lift_inv thm
+R945:965 _tmp_eta_cancel <> subst_eta_beta_cancel thm
+R945:965 _tmp_eta_cancel <> subst_eta_beta_cancel thm
+R945:965 _tmp_eta_cancel <> subst_eta_beta_cancel thm
+prf 1031:1044 <> rtc_epstep_lam
+binder 1055:1055 <> a:7
+binder 1057:1057 <> b:8
+R1078:1081 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1064:1066 Progress <> rtc ind
+R1077:1077 _work_eta_critical <> b:8 var
+R1075:1075 _work_eta_critical <> a:7 var
+R1068:1073 _tmp_epstep <> epstep ind
+R1082:1084 Progress <> rtc ind
+R1103:1106 TypeRules <> TLam constr
+R1108:1108 _work_eta_critical <> b:8 var
+R1094:1097 TypeRules <> TLam constr
+R1099:1099 _work_eta_critical <> a:7 var
+R1086:1091 _tmp_epstep <> epstep ind
+R1158:1165 Progress <> rtc_refl constr
+R1158:1165 Progress <> rtc_refl constr
+R1179:1186 Progress <> rtc_step constr
+R1196:1202 _tmp_epstep <> eps_lam constr
+R1179:1186 Progress <> rtc_step constr
+R1196:1202 _tmp_epstep <> eps_lam constr
+prf 1241:1263 <> eta_lambda_critical_rtc
+binder 1274:1274 <> f:9
+binder 1276:1276 <> u:10
+binder 1278:1279 <> b':11
+R1296:1303 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1286:1291 _tmp_epstep <> epstep ind
+R1293:1293 _work_eta_critical <> f:9 var
+R1295:1295 _work_eta_critical <> u:10 var
+R1304:1304 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1383:1391 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1312:1312 <> z:12
+R1335:1344 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1315:1320 _tmp_epstep <> epstep ind
+R1323:1329 _work_eta_critical <> eta_app def
+R1331:1331 _work_eta_critical <> f:9 var
+R1334:1334 _work_eta_critical <> z:12 var
+R1345:1351 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1353:1354 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1352:1352 <> q:13
+R1370:1373 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1355:1357 Progress <> rtc ind
+R1369:1369 _work_eta_critical <> q:13 var
+R1366:1367 _work_eta_critical <> b':11 var
+R1359:1364 _tmp_epstep <> epstep ind
+R1374:1378 Progress <> pstep ind
+R1380:1380 _work_eta_critical <> z:12 var
+R1382:1382 _work_eta_critical <> q:13 var
+R1392:1398 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1400:1401 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1399:1399 <> v:14
+R1424:1427 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1402:1404 Progress <> rtc ind
+R1423:1423 _work_eta_critical <> v:14 var
+R1414:1417 TypeRules <> TLam constr
+R1419:1420 _work_eta_critical <> b':11 var
+R1406:1411 _tmp_epstep <> epstep ind
+R1428:1432 Progress <> pstep ind
+R1434:1434 _work_eta_critical <> u:10 var
+R1436:1436 _work_eta_critical <> v:14 var
+R1488:1493 _tmp_epstep <> epstep ind
+R1496:1502 _work_eta_critical <> eta_app def
+R1508:1514 _work_eta_critical <> eta_app def
+R1488:1493 _tmp_epstep <> epstep ind
+R1496:1502 _work_eta_critical <> eta_app def
+R1508:1514 _work_eta_critical <> eta_app def
+R1532:1538 _work_eta_critical <> eta_app def
+R1567:1577 _tmp_epstep <> epstep_lift thm
+R1567:1577 _tmp_epstep <> epstep_lift thm
+R1666:1684 _work_eta_critical <> pstep_eta_app_cases thm
+R1666:1684 _work_eta_critical <> pstep_eta_app_cases thm
+R1810:1818 Progress <> rtc_trans thm
+R1810:1818 Progress <> rtc_trans thm
+R1833:1846 _work_eta_critical <> rtc_epstep_lam thm
+R1833:1846 _work_eta_critical <> rtc_epstep_lam thm
+R1872:1878 Progress <> rtc_one thm
+R1872:1878 Progress <> rtc_one thm
+R1888:1894 _work_eta_critical <> eta_app def
+R1903:1909 _tmp_epstep <> eps_eta constr
+R1912:1922 _tmp_epstep <> epstep_refl thm
+R1903:1909 _tmp_epstep <> eps_eta constr
+R1912:1922 _tmp_epstep <> epstep_refl thm
+R1948:1951 TypeRules <> TLam constr
+R1948:1951 TypeRules <> TLam constr
+R1980:1993 _work_eta_critical <> rtc_epstep_lam thm
+R1980:1993 _work_eta_critical <> rtc_epstep_lam thm
+R2019:2024 Progress <> ps_lam constr
+R2019:2024 Progress <> ps_lam constr

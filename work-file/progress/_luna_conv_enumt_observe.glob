@@ -1,0 +1,55 @@
+DIGEST 21eef469d3314f9e288da0e162ea7d18
+F_luna_conv_enumt_observe
+R15:22 Progress <> <> lib
+R24:34 _work_cjoin <> <> lib
+R36:57 _work_cstep_invariants <> <> lib
+R61:82 _luna_phi_erase_shapes <> <> lib
+R112:115 Stdlib.Lists.List <> <> lib
+R125:137 Stdlib.Lists.List ListNotations <> mod
+R139:147 TypeRules <> <> mod
+prf 157:178 <> conv_enumt_hshape_luna
+binder 189:190 <> E1:1
+binder 192:193 <> E2:2
+binder 195:196 <> h1:3
+binder 198:199 <> h2:4
+R234:241 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R206:209 TypeRules <> conv ind
+R224:229 TypeRules <> TEnumT constr
+R231:232 _luna_conv_enumt_observe <> E2:2 var
+R212:217 TypeRules <> TEnumT constr
+R219:220 _luna_conv_enumt_observe <> E1:1 var
+R254:257 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R242:247 Progress <> hshape ind
+R249:250 _luna_conv_enumt_observe <> E1:1 var
+R252:253 _luna_conv_enumt_observe <> h1:3 var
+R270:273 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R258:263 Progress <> hshape ind
+R265:266 _luna_conv_enumt_observe <> E2:2 var
+R268:269 _luna_conv_enumt_observe <> h2:4 var
+R276:278 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R274:275 _luna_conv_enumt_observe <> h1:3 var
+R279:280 _luna_conv_enumt_observe <> h2:4 var
+R346:359 _work_cjoin <> conv_phi_cjoin thm
+R346:359 _work_cjoin <> conv_phi_cjoin thm
+R411:429 _work_cstep_invariants <> rtc_cstep_enumt_inv thm
+R432:440 Progress <> phi_erase def
+R411:429 _work_cstep_invariants <> rtc_cstep_enumt_inv thm
+R432:440 Progress <> phi_erase def
+R494:512 _work_cstep_invariants <> rtc_cstep_enumt_inv thm
+R515:523 Progress <> phi_erase def
+R494:512 _work_cstep_invariants <> rtc_cstep_enumt_inv thm
+R515:523 Progress <> phi_erase def
+R624:640 Progress <> hshape_tag_unique thm
+R624:640 Progress <> hshape_tag_unique thm
+R691:699 Progress <> phi_erase def
+R663:678 _work_cstep_invariants <> rtc_cstep_hshape thm
+R691:699 Progress <> phi_erase def
+R663:678 _work_cstep_invariants <> rtc_cstep_hshape thm
+R739:759 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm
+R739:759 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm
+R815:823 Progress <> phi_erase def
+R787:802 _work_cstep_invariants <> rtc_cstep_hshape thm
+R815:823 Progress <> phi_erase def
+R787:802 _work_cstep_invariants <> rtc_cstep_hshape thm
+R863:883 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm
+R863:883 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm

@@ -1,0 +1,113 @@
+DIGEST 395f012758db370bc329046a81c7d581
+Ftest_size
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:40 Stdlib.micromega.Lia <> <> lib
+R50:62 Stdlib.Lists.List ListNotations <> mod
+R80:88 TypeRules <> <> lib
+R90:97 Progress <> <> lib
+prf 106:119 <> test_tsize_ind
+R141:144 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R137:140 TypeRules <> term ind
+binder 133:133 <> P:1
+R156:156 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R210:218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 164:164 <> t:2
+R167:167 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R202:206 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 175:175 <> u:3
+R195:198 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R185:187 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R178:182 Progress <> tsize def
+R184:184 test_size <> u:3 var
+R188:192 Progress <> tsize def
+R194:194 test_size <> t:2 var
+R199:199 test_size <> P:1 var
+R201:201 test_size <> u:3 var
+R207:207 test_size <> P:1 var
+R209:209 test_size <> t:2 var
+binder 226:226 <> t:4
+R229:229 test_size <> P:1 var
+R231:231 test_size <> t:4 var
+R268:289 Corelib.Init.Wf <> well_founded_induction thm
+R291:293 Corelib.Init.Datatypes <> nat ind
+R295:296 Corelib.Init.Peano <> lt def
+R298:302 Stdlib.Arith.Wf_nat <> lt_wf thm
+binder 320:320 <> n:5
+binder 332:332 <> u:6
+R346:349 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R342:344 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R335:339 Progress <> tsize def
+R341:341 test_size <> u:6 var
+R345:345 test_size <> n:5 var
+R352:352 test_size <> u:6 var
+binder 371:371 <> n:7
+binder 373:374 <> IH:8
+R394:398 Progress <> tsize def
+R405:411 Corelib.Init.Logic <> eq_refl constr
+R268:289 Corelib.Init.Wf <> well_founded_induction thm
+R291:293 Corelib.Init.Datatypes <> nat ind
+R295:296 Corelib.Init.Peano <> lt def
+R298:302 Stdlib.Arith.Wf_nat <> lt_wf thm
+binder 320:320 <> n:9
+binder 332:332 <> u:10
+R346:349 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R342:344 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R335:339 Progress <> tsize def
+R341:341 test_size <> u:10 var
+R345:345 test_size <> n:9 var
+R352:352 test_size <> u:10 var
+binder 371:371 <> n:11
+binder 373:374 <> IH:12
+R394:398 Progress <> tsize def
+R405:411 Corelib.Init.Logic <> eq_refl constr
+R479:481 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R472:476 Progress <> tsize def
+R479:481 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R472:476 Progress <> tsize def
+R506:510 Progress <> tsize def
+R521:527 Corelib.Init.Logic <> eq_refl constr
+R506:510 Progress <> tsize def
+R521:527 Corelib.Init.Logic <> eq_refl constr
+prf 542:561 <> test_tsize_case_bs_b
+binder 572:572 <> M:13
+binder 574:574 <> Q:14
+binder 576:577 <> bs:15
+binder 579:579 <> c:16
+binder 581:581 <> b:17
+R599:602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R588:589 Stdlib.Lists.List <> In def
+R597:598 test_size <> bs:15 var
+R591:591 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R593:593 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R595:595 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R592:592 test_size <> c:16 var
+R594:594 test_size <> b:17 var
+R610:612 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R603:607 Progress <> tsize def
+R609:609 test_size <> b:17 var
+R613:617 Progress <> tsize def
+R620:624 TypeRules <> TCase constr
+R630:631 test_size <> bs:15 var
+R628:628 test_size <> Q:14 var
+R626:626 test_size <> M:13 var
+R681:688 Progress <> bsize_in thm
+R681:688 Progress <> bsize_in thm
+R722:730 Progress <> tsize_pos thm
+R722:730 Progress <> tsize_pos thm
+R752:756 Progress <> tsize def
+R759:763 TypeRules <> TCase constr
+R780:780 Corelib.Init.Datatypes <> S constr
+R800:802 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R790:792 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R783:787 Progress <> tsize def
+R793:797 Progress <> tsize def
+R803:807 Progress <> bsize abbrev
+R752:756 Progress <> tsize def
+R759:763 TypeRules <> TCase constr
+R780:780 Corelib.Init.Datatypes <> S constr
+R800:802 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R790:792 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R783:787 Progress <> tsize def
+R793:797 Progress <> tsize def
+R803:807 Progress <> bsize abbrev

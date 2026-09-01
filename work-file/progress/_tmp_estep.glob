@@ -1,0 +1,1076 @@
+DIGEST f285ecaeb0aacb7837203f59a7b239ed
+F_tmp_estep
+R15:22 Progress <> <> lib
+R24:34 _tmp_epstep <> <> lib
+R36:49 _tmp_eta_shape <> <> lib
+R51:65 _tmp_epstep_inv <> <> lib
+R69:81 _tmp_eta_tool <> <> lib
+R83:99 _tmp_epstep_subst <> <> lib
+R101:119 _tmp_epstep_diamond <> <> lib
+R149:152 Stdlib.Lists.List <> <> lib
+R154:156 Stdlib.micromega.Lia <> <> lib
+R158:165 Stdlib.Arith.PeanoNat <> <> lib
+R175:187 Stdlib.Lists.List ListNotations <> mod
+R189:197 TypeRules <> <> mod
+ind 445:449 <> estep
+constr 479:484 <> es_eta
+constr 544:549 <> es_pi1
+constr 611:616 <> es_pi2
+constr 678:683 <> es_lam
+constr 741:747 <> es_app1
+constr 811:817 <> es_app2
+constr 881:889 <> es_sigma1
+constr 957:965 <> es_sigma2
+constr 1033:1040 <> es_pair1
+constr 1106:1113 <> es_pair2
+constr 1179:1184 <> es_fst
+constr 1242:1247 <> es_snd
+constr 1305:1313 <> es_conse1
+constr 1381:1389 <> es_conse2
+constr 1457:1464 <> es_enumt
+constr 1526:1533 <> es_esucc
+constr 1595:1601 <> es_epi1
+constr 1665:1671 <> es_epi2
+constr 1735:1744 <> es_switch1
+constr 1830:1839 <> es_switch2
+constr 1925:1934 <> es_switch3
+constr 2020:2029 <> es_switch4
+constr 2115:2122 <> es_idesc
+constr 2190:2196 <> es_ivar
+constr 2256:2264 <> es_iprod1
+constr 2332:2340 <> es_iprod2
+constr 2408:2414 <> es_ipi1
+constr 2478:2484 <> es_ipi2
+constr 2548:2555 <> es_isig1
+constr 2621:2628 <> es_isig2
+constr 2694:2704 <> es_ichoice1
+constr 2780:2790 <> es_ichoice2
+constr 2866:2875 <> es_interp1
+constr 2945:2954 <> es_interp2
+constr 3024:3029 <> es_mui
+constr 3087:3092 <> es_mus
+constr 3150:3154 <> es_in
+constr 3210:3216 <> es_ind1
+constr 3302:3308 <> es_ind2
+constr 3394:3400 <> es_ind3
+constr 3486:3492 <> es_ind4
+constr 3578:3584 <> es_ind5
+constr 3670:3677 <> es_iall1
+constr 3762:3769 <> es_iall2
+constr 3854:3861 <> es_iall3
+constr 3949:3956 <> es_iall4
+constr 4041:4048 <> es_hyps1
+constr 4139:4146 <> es_hyps2
+constr 4237:4244 <> es_hyps3
+constr 4335:4342 <> es_hyps4
+constr 4433:4440 <> es_hyps5
+constr 4534:4540 <> es_list
+constr 4600:4606 <> es_lnil
+constr 4666:4674 <> es_lcons1
+constr 4752:4760 <> es_lcons2
+constr 4838:4846 <> es_lcons3
+constr 4924:4931 <> es_case1
+constr 5010:5017 <> es_case2
+constr 5096:5106 <> es_case_br1
+constr 5244:5254 <> es_case_br2
+R457:460 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R453:456 TypeRules <> term ind
+R465:468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R461:464 TypeRules <> term ind
+binder 495:495 <> f:3
+R498:502 _tmp_estep <> estep:1 ind
+R540:540 _tmp_estep <> f:3 var
+R505:508 TypeRules <> TLam constr
+R511:514 TypeRules <> TApp constr
+R530:533 TypeRules <> TVar constr
+R517:520 TypeRules <> lift def
+R526:526 _tmp_estep <> f:3 var
+binder 560:560 <> A:4
+binder 562:563 <> A':5
+binder 565:565 <> B:6
+R578:581 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R568:572 _tmp_estep <> estep:1 ind
+R576:577 _tmp_estep <> A':5 var
+R574:574 _tmp_estep <> A:4 var
+R582:586 _tmp_estep <> estep:1 ind
+R599:601 TypeRules <> TPi constr
+R606:606 _tmp_estep <> B:6 var
+R603:604 _tmp_estep <> A':5 var
+R589:591 TypeRules <> TPi constr
+R595:595 _tmp_estep <> B:6 var
+R593:593 _tmp_estep <> A:4 var
+binder 627:627 <> A:7
+binder 629:629 <> B:8
+binder 631:632 <> B':9
+R645:648 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R635:639 _tmp_estep <> estep:1 ind
+R643:644 _tmp_estep <> B':9 var
+R641:641 _tmp_estep <> B:8 var
+R649:653 _tmp_estep <> estep:1 ind
+R666:668 TypeRules <> TPi constr
+R672:673 _tmp_estep <> B':9 var
+R670:670 _tmp_estep <> A:7 var
+R656:658 TypeRules <> TPi constr
+R662:662 _tmp_estep <> B:8 var
+R660:660 _tmp_estep <> A:7 var
+binder 694:694 <> b:10
+binder 696:697 <> b':11
+R710:713 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R700:704 _tmp_estep <> estep:1 ind
+R708:709 _tmp_estep <> b':11 var
+R706:706 _tmp_estep <> b:10 var
+R714:718 _tmp_estep <> estep:1 ind
+R730:733 TypeRules <> TLam constr
+R735:736 _tmp_estep <> b':11 var
+R721:724 TypeRules <> TLam constr
+R726:726 _tmp_estep <> b:10 var
+binder 758:758 <> f:12
+binder 760:761 <> f':13
+binder 763:763 <> a:14
+R776:779 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R766:770 _tmp_estep <> estep:1 ind
+R774:775 _tmp_estep <> f':13 var
+R772:772 _tmp_estep <> f:12 var
+R780:784 _tmp_estep <> estep:1 ind
+R798:801 TypeRules <> TApp constr
+R806:806 _tmp_estep <> a:14 var
+R803:804 _tmp_estep <> f':13 var
+R787:790 TypeRules <> TApp constr
+R794:794 _tmp_estep <> a:14 var
+R792:792 _tmp_estep <> f:12 var
+binder 828:828 <> f:15
+binder 830:830 <> a:16
+binder 832:833 <> a':17
+R846:849 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R836:840 _tmp_estep <> estep:1 ind
+R844:845 _tmp_estep <> a':17 var
+R842:842 _tmp_estep <> a:16 var
+R850:854 _tmp_estep <> estep:1 ind
+R868:871 TypeRules <> TApp constr
+R875:876 _tmp_estep <> a':17 var
+R873:873 _tmp_estep <> f:15 var
+R857:860 TypeRules <> TApp constr
+R864:864 _tmp_estep <> a:16 var
+R862:862 _tmp_estep <> f:15 var
+binder 900:900 <> A:18
+binder 902:903 <> A':19
+binder 905:905 <> B:20
+R918:921 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R908:912 _tmp_estep <> estep:1 ind
+R916:917 _tmp_estep <> A':19 var
+R914:914 _tmp_estep <> A:18 var
+R922:926 _tmp_estep <> estep:1 ind
+R942:947 TypeRules <> TSigma constr
+R952:952 _tmp_estep <> B:20 var
+R949:950 _tmp_estep <> A':19 var
+R929:934 TypeRules <> TSigma constr
+R938:938 _tmp_estep <> B:20 var
+R936:936 _tmp_estep <> A:18 var
+binder 976:976 <> A:21
+binder 978:978 <> B:22
+binder 980:981 <> B':23
+R994:997 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R984:988 _tmp_estep <> estep:1 ind
+R992:993 _tmp_estep <> B':23 var
+R990:990 _tmp_estep <> B:22 var
+R998:1002 _tmp_estep <> estep:1 ind
+R1018:1023 TypeRules <> TSigma constr
+R1027:1028 _tmp_estep <> B':23 var
+R1025:1025 _tmp_estep <> A:21 var
+R1005:1010 TypeRules <> TSigma constr
+R1014:1014 _tmp_estep <> B:22 var
+R1012:1012 _tmp_estep <> A:21 var
+binder 1051:1051 <> a:24
+binder 1053:1054 <> a':25
+binder 1056:1056 <> b:26
+R1069:1072 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1059:1063 _tmp_estep <> estep:1 ind
+R1067:1068 _tmp_estep <> a':25 var
+R1065:1065 _tmp_estep <> a:24 var
+R1073:1077 _tmp_estep <> estep:1 ind
+R1092:1096 TypeRules <> TPair constr
+R1101:1101 _tmp_estep <> b:26 var
+R1098:1099 _tmp_estep <> a':25 var
+R1080:1084 TypeRules <> TPair constr
+R1088:1088 _tmp_estep <> b:26 var
+R1086:1086 _tmp_estep <> a:24 var
+binder 1124:1124 <> a:27
+binder 1126:1126 <> b:28
+binder 1128:1129 <> b':29
+R1142:1145 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1132:1136 _tmp_estep <> estep:1 ind
+R1140:1141 _tmp_estep <> b':29 var
+R1138:1138 _tmp_estep <> b:28 var
+R1146:1150 _tmp_estep <> estep:1 ind
+R1165:1169 TypeRules <> TPair constr
+R1173:1174 _tmp_estep <> b':29 var
+R1171:1171 _tmp_estep <> a:27 var
+R1153:1157 TypeRules <> TPair constr
+R1161:1161 _tmp_estep <> b:28 var
+R1159:1159 _tmp_estep <> a:27 var
+binder 1195:1195 <> p:30
+binder 1197:1198 <> p':31
+R1211:1214 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1201:1205 _tmp_estep <> estep:1 ind
+R1209:1210 _tmp_estep <> p':31 var
+R1207:1207 _tmp_estep <> p:30 var
+R1215:1219 _tmp_estep <> estep:1 ind
+R1231:1234 TypeRules <> TFst constr
+R1236:1237 _tmp_estep <> p':31 var
+R1222:1225 TypeRules <> TFst constr
+R1227:1227 _tmp_estep <> p:30 var
+binder 1258:1258 <> p:32
+binder 1260:1261 <> p':33
+R1274:1277 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1264:1268 _tmp_estep <> estep:1 ind
+R1272:1273 _tmp_estep <> p':33 var
+R1270:1270 _tmp_estep <> p:32 var
+R1278:1282 _tmp_estep <> estep:1 ind
+R1294:1297 TypeRules <> TSnd constr
+R1299:1300 _tmp_estep <> p':33 var
+R1285:1288 TypeRules <> TSnd constr
+R1290:1290 _tmp_estep <> p:32 var
+binder 1324:1324 <> t:34
+binder 1326:1327 <> t':35
+binder 1329:1329 <> E:36
+R1342:1345 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1332:1336 _tmp_estep <> estep:1 ind
+R1340:1341 _tmp_estep <> t':35 var
+R1338:1338 _tmp_estep <> t:34 var
+R1346:1350 _tmp_estep <> estep:1 ind
+R1366:1371 TypeRules <> TConsE constr
+R1376:1376 _tmp_estep <> E:36 var
+R1373:1374 _tmp_estep <> t':35 var
+R1353:1358 TypeRules <> TConsE constr
+R1362:1362 _tmp_estep <> E:36 var
+R1360:1360 _tmp_estep <> t:34 var
+binder 1400:1400 <> t:37
+binder 1402:1402 <> E:38
+binder 1404:1405 <> E':39
+R1418:1421 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1408:1412 _tmp_estep <> estep:1 ind
+R1416:1417 _tmp_estep <> E':39 var
+R1414:1414 _tmp_estep <> E:38 var
+R1422:1426 _tmp_estep <> estep:1 ind
+R1442:1447 TypeRules <> TConsE constr
+R1451:1452 _tmp_estep <> E':39 var
+R1449:1449 _tmp_estep <> t:37 var
+R1429:1434 TypeRules <> TConsE constr
+R1438:1438 _tmp_estep <> E:38 var
+R1436:1436 _tmp_estep <> t:37 var
+binder 1475:1475 <> E:40
+binder 1477:1478 <> E':41
+R1491:1494 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1481:1485 _tmp_estep <> estep:1 ind
+R1489:1490 _tmp_estep <> E':41 var
+R1487:1487 _tmp_estep <> E:40 var
+R1495:1499 _tmp_estep <> estep:1 ind
+R1513:1518 TypeRules <> TEnumT constr
+R1520:1521 _tmp_estep <> E':41 var
+R1502:1507 TypeRules <> TEnumT constr
+R1509:1509 _tmp_estep <> E:40 var
+binder 1544:1544 <> n:42
+binder 1546:1547 <> n':43
+R1560:1563 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1550:1554 _tmp_estep <> estep:1 ind
+R1558:1559 _tmp_estep <> n':43 var
+R1556:1556 _tmp_estep <> n:42 var
+R1564:1568 _tmp_estep <> estep:1 ind
+R1582:1587 TypeRules <> TESucc constr
+R1589:1590 _tmp_estep <> n':43 var
+R1571:1576 TypeRules <> TESucc constr
+R1578:1578 _tmp_estep <> n:42 var
+binder 1612:1612 <> E:44
+binder 1614:1615 <> E':45
+binder 1617:1617 <> P:46
+R1630:1633 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1620:1624 _tmp_estep <> estep:1 ind
+R1628:1629 _tmp_estep <> E':45 var
+R1626:1626 _tmp_estep <> E:44 var
+R1634:1638 _tmp_estep <> estep:1 ind
+R1652:1655 TypeRules <> TEPi constr
+R1660:1660 _tmp_estep <> P:46 var
+R1657:1658 _tmp_estep <> E':45 var
+R1641:1644 TypeRules <> TEPi constr
+R1648:1648 _tmp_estep <> P:46 var
+R1646:1646 _tmp_estep <> E:44 var
+binder 1682:1682 <> E:47
+binder 1684:1684 <> P:48
+binder 1686:1687 <> P':49
+R1700:1703 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1690:1694 _tmp_estep <> estep:1 ind
+R1698:1699 _tmp_estep <> P':49 var
+R1696:1696 _tmp_estep <> P:48 var
+R1704:1708 _tmp_estep <> estep:1 ind
+R1722:1725 TypeRules <> TEPi constr
+R1729:1730 _tmp_estep <> P':49 var
+R1727:1727 _tmp_estep <> E:47 var
+R1711:1714 TypeRules <> TEPi constr
+R1718:1718 _tmp_estep <> P:48 var
+R1716:1716 _tmp_estep <> E:47 var
+binder 1755:1755 <> E:50
+binder 1757:1758 <> E':51
+binder 1760:1760 <> P:52
+binder 1762:1762 <> p:53
+binder 1764:1764 <> e:54
+R1777:1784 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1767:1771 _tmp_estep <> estep:1 ind
+R1775:1776 _tmp_estep <> E':51 var
+R1773:1773 _tmp_estep <> E:50 var
+R1785:1789 _tmp_estep <> estep:1 ind
+R1810:1816 TypeRules <> TSwitch constr
+R1825:1825 _tmp_estep <> e:54 var
+R1823:1823 _tmp_estep <> p:53 var
+R1821:1821 _tmp_estep <> P:52 var
+R1818:1819 _tmp_estep <> E':51 var
+R1792:1798 TypeRules <> TSwitch constr
+R1806:1806 _tmp_estep <> e:54 var
+R1804:1804 _tmp_estep <> p:53 var
+R1802:1802 _tmp_estep <> P:52 var
+R1800:1800 _tmp_estep <> E:50 var
+binder 1850:1850 <> E:55
+binder 1852:1852 <> P:56
+binder 1854:1855 <> P':57
+binder 1857:1857 <> p:58
+binder 1859:1859 <> e:59
+R1872:1879 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1862:1866 _tmp_estep <> estep:1 ind
+R1870:1871 _tmp_estep <> P':57 var
+R1868:1868 _tmp_estep <> P:56 var
+R1880:1884 _tmp_estep <> estep:1 ind
+R1905:1911 TypeRules <> TSwitch constr
+R1920:1920 _tmp_estep <> e:59 var
+R1918:1918 _tmp_estep <> p:58 var
+R1915:1916 _tmp_estep <> P':57 var
+R1913:1913 _tmp_estep <> E:55 var
+R1887:1893 TypeRules <> TSwitch constr
+R1901:1901 _tmp_estep <> e:59 var
+R1899:1899 _tmp_estep <> p:58 var
+R1897:1897 _tmp_estep <> P:56 var
+R1895:1895 _tmp_estep <> E:55 var
+binder 1945:1945 <> E:60
+binder 1947:1947 <> P:61
+binder 1949:1949 <> p:62
+binder 1951:1952 <> p':63
+binder 1954:1954 <> e:64
+R1967:1974 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1957:1961 _tmp_estep <> estep:1 ind
+R1965:1966 _tmp_estep <> p':63 var
+R1963:1963 _tmp_estep <> p:62 var
+R1975:1979 _tmp_estep <> estep:1 ind
+R2000:2006 TypeRules <> TSwitch constr
+R2015:2015 _tmp_estep <> e:64 var
+R2012:2013 _tmp_estep <> p':63 var
+R2010:2010 _tmp_estep <> P:61 var
+R2008:2008 _tmp_estep <> E:60 var
+R1982:1988 TypeRules <> TSwitch constr
+R1996:1996 _tmp_estep <> e:64 var
+R1994:1994 _tmp_estep <> p:62 var
+R1992:1992 _tmp_estep <> P:61 var
+R1990:1990 _tmp_estep <> E:60 var
+binder 2040:2040 <> E:65
+binder 2042:2042 <> P:66
+binder 2044:2044 <> p:67
+binder 2046:2046 <> e:68
+binder 2048:2049 <> e':69
+R2062:2069 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2052:2056 _tmp_estep <> estep:1 ind
+R2060:2061 _tmp_estep <> e':69 var
+R2058:2058 _tmp_estep <> e:68 var
+R2070:2074 _tmp_estep <> estep:1 ind
+R2095:2101 TypeRules <> TSwitch constr
+R2109:2110 _tmp_estep <> e':69 var
+R2107:2107 _tmp_estep <> p:67 var
+R2105:2105 _tmp_estep <> P:66 var
+R2103:2103 _tmp_estep <> E:65 var
+R2077:2083 TypeRules <> TSwitch constr
+R2091:2091 _tmp_estep <> e:68 var
+R2089:2089 _tmp_estep <> p:67 var
+R2087:2087 _tmp_estep <> P:66 var
+R2085:2085 _tmp_estep <> E:65 var
+binder 2133:2134 <> IT:70
+binder 2136:2138 <> IT':71
+R2153:2156 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2141:2145 _tmp_estep <> estep:1 ind
+R2150:2152 _tmp_estep <> IT':71 var
+R2147:2148 _tmp_estep <> IT:70 var
+R2157:2161 _tmp_estep <> estep:1 ind
+R2176:2181 TypeRules <> TIDesc constr
+R2183:2185 _tmp_estep <> IT':71 var
+R2164:2169 TypeRules <> TIDesc constr
+R2171:2172 _tmp_estep <> IT:70 var
+binder 2207:2207 <> i:72
+binder 2209:2210 <> i':73
+R2223:2226 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2213:2217 _tmp_estep <> estep:1 ind
+R2221:2222 _tmp_estep <> i':73 var
+R2219:2219 _tmp_estep <> i:72 var
+R2227:2231 _tmp_estep <> estep:1 ind
+R2244:2248 TypeRules <> TIVar constr
+R2250:2251 _tmp_estep <> i':73 var
+R2234:2238 TypeRules <> TIVar constr
+R2240:2240 _tmp_estep <> i:72 var
+binder 2275:2275 <> A:74
+binder 2277:2278 <> A':75
+binder 2280:2280 <> B:76
+R2293:2296 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2283:2287 _tmp_estep <> estep:1 ind
+R2291:2292 _tmp_estep <> A':75 var
+R2289:2289 _tmp_estep <> A:74 var
+R2297:2301 _tmp_estep <> estep:1 ind
+R2317:2322 TypeRules <> TIProd constr
+R2327:2327 _tmp_estep <> B:76 var
+R2324:2325 _tmp_estep <> A':75 var
+R2304:2309 TypeRules <> TIProd constr
+R2313:2313 _tmp_estep <> B:76 var
+R2311:2311 _tmp_estep <> A:74 var
+binder 2351:2351 <> A:77
+binder 2353:2353 <> B:78
+binder 2355:2356 <> B':79
+R2369:2372 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2359:2363 _tmp_estep <> estep:1 ind
+R2367:2368 _tmp_estep <> B':79 var
+R2365:2365 _tmp_estep <> B:78 var
+R2373:2377 _tmp_estep <> estep:1 ind
+R2393:2398 TypeRules <> TIProd constr
+R2402:2403 _tmp_estep <> B':79 var
+R2400:2400 _tmp_estep <> A:77 var
+R2380:2385 TypeRules <> TIProd constr
+R2389:2389 _tmp_estep <> B:78 var
+R2387:2387 _tmp_estep <> A:77 var
+binder 2425:2425 <> S:80
+binder 2427:2428 <> S':81
+binder 2430:2430 <> T:82
+R2443:2446 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2433:2437 _tmp_estep <> estep:1 ind
+R2441:2442 _tmp_estep <> S':81 var
+R2439:2439 _tmp_estep <> S:80 var
+R2447:2451 _tmp_estep <> estep:1 ind
+R2465:2468 TypeRules <> TIPi constr
+R2473:2473 _tmp_estep <> T:82 var
+R2470:2471 _tmp_estep <> S':81 var
+R2454:2457 TypeRules <> TIPi constr
+R2461:2461 _tmp_estep <> T:82 var
+R2459:2459 _tmp_estep <> S:80 var
+binder 2495:2495 <> S:83
+binder 2497:2497 <> T:84
+binder 2499:2500 <> T':85
+R2513:2516 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2503:2507 _tmp_estep <> estep:1 ind
+R2511:2512 _tmp_estep <> T':85 var
+R2509:2509 _tmp_estep <> T:84 var
+R2517:2521 _tmp_estep <> estep:1 ind
+R2535:2538 TypeRules <> TIPi constr
+R2542:2543 _tmp_estep <> T':85 var
+R2540:2540 _tmp_estep <> S:83 var
+R2524:2527 TypeRules <> TIPi constr
+R2531:2531 _tmp_estep <> T:84 var
+R2529:2529 _tmp_estep <> S:83 var
+binder 2566:2566 <> S:86
+binder 2568:2569 <> S':87
+binder 2571:2571 <> T:88
+R2584:2587 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2574:2578 _tmp_estep <> estep:1 ind
+R2582:2583 _tmp_estep <> S':87 var
+R2580:2580 _tmp_estep <> S:86 var
+R2588:2592 _tmp_estep <> estep:1 ind
+R2607:2611 TypeRules <> TISig constr
+R2616:2616 _tmp_estep <> T:88 var
+R2613:2614 _tmp_estep <> S':87 var
+R2595:2599 TypeRules <> TISig constr
+R2603:2603 _tmp_estep <> T:88 var
+R2601:2601 _tmp_estep <> S:86 var
+binder 2639:2639 <> S:89
+binder 2641:2641 <> T:90
+binder 2643:2644 <> T':91
+R2657:2660 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2647:2651 _tmp_estep <> estep:1 ind
+R2655:2656 _tmp_estep <> T':91 var
+R2653:2653 _tmp_estep <> T:90 var
+R2661:2665 _tmp_estep <> estep:1 ind
+R2680:2684 TypeRules <> TISig constr
+R2688:2689 _tmp_estep <> T':91 var
+R2686:2686 _tmp_estep <> S:89 var
+R2668:2672 TypeRules <> TISig constr
+R2676:2676 _tmp_estep <> T:90 var
+R2674:2674 _tmp_estep <> S:89 var
+binder 2715:2715 <> E:92
+binder 2717:2718 <> E':93
+binder 2720:2720 <> T:94
+R2733:2740 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2723:2727 _tmp_estep <> estep:1 ind
+R2731:2732 _tmp_estep <> E':93 var
+R2729:2729 _tmp_estep <> E:92 var
+R2741:2745 _tmp_estep <> estep:1 ind
+R2763:2770 TypeRules <> TIChoice constr
+R2775:2775 _tmp_estep <> T:94 var
+R2772:2773 _tmp_estep <> E':93 var
+R2748:2755 TypeRules <> TIChoice constr
+R2759:2759 _tmp_estep <> T:94 var
+R2757:2757 _tmp_estep <> E:92 var
+binder 2801:2801 <> E:95
+binder 2803:2803 <> T:96
+binder 2805:2806 <> T':97
+R2819:2826 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2809:2813 _tmp_estep <> estep:1 ind
+R2817:2818 _tmp_estep <> T':97 var
+R2815:2815 _tmp_estep <> T:96 var
+R2827:2831 _tmp_estep <> estep:1 ind
+R2849:2856 TypeRules <> TIChoice constr
+R2860:2861 _tmp_estep <> T':97 var
+R2858:2858 _tmp_estep <> E:95 var
+R2834:2841 TypeRules <> TIChoice constr
+R2845:2845 _tmp_estep <> T:96 var
+R2843:2843 _tmp_estep <> E:95 var
+binder 2886:2886 <> D:98
+binder 2888:2889 <> D':99
+binder 2891:2891 <> X:100
+R2904:2907 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2894:2898 _tmp_estep <> estep:1 ind
+R2902:2903 _tmp_estep <> D':99 var
+R2900:2900 _tmp_estep <> D:98 var
+R2908:2912 _tmp_estep <> estep:1 ind
+R2929:2935 TypeRules <> TInterp constr
+R2940:2940 _tmp_estep <> X:100 var
+R2937:2938 _tmp_estep <> D':99 var
+R2915:2921 TypeRules <> TInterp constr
+R2925:2925 _tmp_estep <> X:100 var
+R2923:2923 _tmp_estep <> D:98 var
+binder 2965:2965 <> D:101
+binder 2967:2967 <> X:102
+binder 2969:2970 <> X':103
+R2983:2986 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2973:2977 _tmp_estep <> estep:1 ind
+R2981:2982 _tmp_estep <> X':103 var
+R2979:2979 _tmp_estep <> X:102 var
+R2987:2991 _tmp_estep <> estep:1 ind
+R3008:3014 TypeRules <> TInterp constr
+R3018:3019 _tmp_estep <> X':103 var
+R3016:3016 _tmp_estep <> D:101 var
+R2994:3000 TypeRules <> TInterp constr
+R3004:3004 _tmp_estep <> X:102 var
+R3002:3002 _tmp_estep <> D:101 var
+binder 3040:3040 <> R:104
+binder 3042:3043 <> R':105
+R3056:3059 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3046:3050 _tmp_estep <> estep:1 ind
+R3054:3055 _tmp_estep <> R':105 var
+R3052:3052 _tmp_estep <> R:104 var
+R3060:3064 _tmp_estep <> estep:1 ind
+R3076:3079 TypeRules <> TMuI constr
+R3081:3082 _tmp_estep <> R':105 var
+R3067:3070 TypeRules <> TMuI constr
+R3072:3072 _tmp_estep <> R:104 var
+binder 3103:3103 <> S:106
+binder 3105:3106 <> S':107
+R3119:3122 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3109:3113 _tmp_estep <> estep:1 ind
+R3117:3118 _tmp_estep <> S':107 var
+R3115:3115 _tmp_estep <> S:106 var
+R3123:3127 _tmp_estep <> estep:1 ind
+R3139:3142 TypeRules <> TMuS constr
+R3144:3145 _tmp_estep <> S':107 var
+R3130:3133 TypeRules <> TMuS constr
+R3135:3135 _tmp_estep <> S:106 var
+binder 3165:3165 <> x:108
+binder 3167:3168 <> x':109
+R3181:3184 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3171:3175 _tmp_estep <> estep:1 ind
+R3179:3180 _tmp_estep <> x':109 var
+R3177:3177 _tmp_estep <> x:108 var
+R3185:3189 _tmp_estep <> estep:1 ind
+R3200:3202 TypeRules <> TIn constr
+R3204:3205 _tmp_estep <> x':109 var
+R3192:3194 TypeRules <> TIn constr
+R3196:3196 _tmp_estep <> x:108 var
+binder 3227:3227 <> R:110
+binder 3229:3230 <> R':111
+binder 3232:3232 <> P:112
+binder 3234:3234 <> s:113
+binder 3236:3236 <> i:114
+binder 3238:3238 <> x:115
+R3251:3258 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3241:3245 _tmp_estep <> estep:1 ind
+R3249:3250 _tmp_estep <> R':111 var
+R3247:3247 _tmp_estep <> R:110 var
+R3259:3263 _tmp_estep <> estep:1 ind
+R3283:3286 TypeRules <> TInd constr
+R3297:3297 _tmp_estep <> x:115 var
+R3295:3295 _tmp_estep <> i:114 var
+R3293:3293 _tmp_estep <> s:113 var
+R3291:3291 _tmp_estep <> P:112 var
+R3288:3289 _tmp_estep <> R':111 var
+R3266:3269 TypeRules <> TInd constr
+R3279:3279 _tmp_estep <> x:115 var
+R3277:3277 _tmp_estep <> i:114 var
+R3275:3275 _tmp_estep <> s:113 var
+R3273:3273 _tmp_estep <> P:112 var
+R3271:3271 _tmp_estep <> R:110 var
+binder 3319:3319 <> R:116
+binder 3321:3321 <> P:117
+binder 3323:3324 <> P':118
+binder 3326:3326 <> s:119
+binder 3328:3328 <> i:120
+binder 3330:3330 <> x:121
+R3343:3350 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3333:3337 _tmp_estep <> estep:1 ind
+R3341:3342 _tmp_estep <> P':118 var
+R3339:3339 _tmp_estep <> P:117 var
+R3351:3355 _tmp_estep <> estep:1 ind
+R3375:3378 TypeRules <> TInd constr
+R3389:3389 _tmp_estep <> x:121 var
+R3387:3387 _tmp_estep <> i:120 var
+R3385:3385 _tmp_estep <> s:119 var
+R3382:3383 _tmp_estep <> P':118 var
+R3380:3380 _tmp_estep <> R:116 var
+R3358:3361 TypeRules <> TInd constr
+R3371:3371 _tmp_estep <> x:121 var
+R3369:3369 _tmp_estep <> i:120 var
+R3367:3367 _tmp_estep <> s:119 var
+R3365:3365 _tmp_estep <> P:117 var
+R3363:3363 _tmp_estep <> R:116 var
+binder 3411:3411 <> R:122
+binder 3413:3413 <> P:123
+binder 3415:3415 <> s:124
+binder 3417:3418 <> s':125
+binder 3420:3420 <> i:126
+binder 3422:3422 <> x:127
+R3435:3442 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3425:3429 _tmp_estep <> estep:1 ind
+R3433:3434 _tmp_estep <> s':125 var
+R3431:3431 _tmp_estep <> s:124 var
+R3443:3447 _tmp_estep <> estep:1 ind
+R3467:3470 TypeRules <> TInd constr
+R3481:3481 _tmp_estep <> x:127 var
+R3479:3479 _tmp_estep <> i:126 var
+R3476:3477 _tmp_estep <> s':125 var
+R3474:3474 _tmp_estep <> P:123 var
+R3472:3472 _tmp_estep <> R:122 var
+R3450:3453 TypeRules <> TInd constr
+R3463:3463 _tmp_estep <> x:127 var
+R3461:3461 _tmp_estep <> i:126 var
+R3459:3459 _tmp_estep <> s:124 var
+R3457:3457 _tmp_estep <> P:123 var
+R3455:3455 _tmp_estep <> R:122 var
+binder 3503:3503 <> R:128
+binder 3505:3505 <> P:129
+binder 3507:3507 <> s:130
+binder 3509:3509 <> i:131
+binder 3511:3512 <> i':132
+binder 3514:3514 <> x:133
+R3527:3534 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3517:3521 _tmp_estep <> estep:1 ind
+R3525:3526 _tmp_estep <> i':132 var
+R3523:3523 _tmp_estep <> i:131 var
+R3535:3539 _tmp_estep <> estep:1 ind
+R3559:3562 TypeRules <> TInd constr
+R3573:3573 _tmp_estep <> x:133 var
+R3570:3571 _tmp_estep <> i':132 var
+R3568:3568 _tmp_estep <> s:130 var
+R3566:3566 _tmp_estep <> P:129 var
+R3564:3564 _tmp_estep <> R:128 var
+R3542:3545 TypeRules <> TInd constr
+R3555:3555 _tmp_estep <> x:133 var
+R3553:3553 _tmp_estep <> i:131 var
+R3551:3551 _tmp_estep <> s:130 var
+R3549:3549 _tmp_estep <> P:129 var
+R3547:3547 _tmp_estep <> R:128 var
+binder 3595:3595 <> R:134
+binder 3597:3597 <> P:135
+binder 3599:3599 <> s:136
+binder 3601:3601 <> i:137
+binder 3603:3603 <> x:138
+binder 3605:3606 <> x':139
+R3619:3626 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3609:3613 _tmp_estep <> estep:1 ind
+R3617:3618 _tmp_estep <> x':139 var
+R3615:3615 _tmp_estep <> x:138 var
+R3627:3631 _tmp_estep <> estep:1 ind
+R3651:3654 TypeRules <> TInd constr
+R3664:3665 _tmp_estep <> x':139 var
+R3662:3662 _tmp_estep <> i:137 var
+R3660:3660 _tmp_estep <> s:136 var
+R3658:3658 _tmp_estep <> P:135 var
+R3656:3656 _tmp_estep <> R:134 var
+R3634:3637 TypeRules <> TInd constr
+R3647:3647 _tmp_estep <> x:138 var
+R3645:3645 _tmp_estep <> i:137 var
+R3643:3643 _tmp_estep <> s:136 var
+R3641:3641 _tmp_estep <> P:135 var
+R3639:3639 _tmp_estep <> R:134 var
+binder 3688:3688 <> D:140
+binder 3690:3691 <> D':141
+binder 3693:3693 <> X:142
+binder 3695:3696 <> xs:143
+binder 3698:3698 <> P:144
+R3711:3718 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3701:3705 _tmp_estep <> estep:1 ind
+R3709:3710 _tmp_estep <> D':141 var
+R3707:3707 _tmp_estep <> D:140 var
+R3719:3723 _tmp_estep <> estep:1 ind
+R3743:3747 TypeRules <> TIAll constr
+R3757:3757 _tmp_estep <> P:144 var
+R3754:3755 _tmp_estep <> xs:143 var
+R3752:3752 _tmp_estep <> X:142 var
+R3749:3750 _tmp_estep <> D':141 var
+R3726:3730 TypeRules <> TIAll constr
+R3739:3739 _tmp_estep <> P:144 var
+R3736:3737 _tmp_estep <> xs:143 var
+R3734:3734 _tmp_estep <> X:142 var
+R3732:3732 _tmp_estep <> D:140 var
+binder 3780:3780 <> D:145
+binder 3782:3782 <> X:146
+binder 3784:3785 <> X':147
+binder 3787:3788 <> xs:148
+binder 3790:3790 <> P:149
+R3803:3810 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3793:3797 _tmp_estep <> estep:1 ind
+R3801:3802 _tmp_estep <> X':147 var
+R3799:3799 _tmp_estep <> X:146 var
+R3811:3815 _tmp_estep <> estep:1 ind
+R3835:3839 TypeRules <> TIAll constr
+R3849:3849 _tmp_estep <> P:149 var
+R3846:3847 _tmp_estep <> xs:148 var
+R3843:3844 _tmp_estep <> X':147 var
+R3841:3841 _tmp_estep <> D:145 var
+R3818:3822 TypeRules <> TIAll constr
+R3831:3831 _tmp_estep <> P:149 var
+R3828:3829 _tmp_estep <> xs:148 var
+R3826:3826 _tmp_estep <> X:146 var
+R3824:3824 _tmp_estep <> D:145 var
+binder 3872:3872 <> D:150
+binder 3874:3874 <> X:151
+binder 3876:3877 <> xs:152
+binder 3879:3881 <> xs':153
+binder 3883:3883 <> P:154
+R3898:3905 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3886:3890 _tmp_estep <> estep:1 ind
+R3895:3897 _tmp_estep <> xs':153 var
+R3892:3893 _tmp_estep <> xs:152 var
+R3906:3910 _tmp_estep <> estep:1 ind
+R3930:3934 TypeRules <> TIAll constr
+R3944:3944 _tmp_estep <> P:154 var
+R3940:3942 _tmp_estep <> xs':153 var
+R3938:3938 _tmp_estep <> X:151 var
+R3936:3936 _tmp_estep <> D:150 var
+R3913:3917 TypeRules <> TIAll constr
+R3926:3926 _tmp_estep <> P:154 var
+R3923:3924 _tmp_estep <> xs:152 var
+R3921:3921 _tmp_estep <> X:151 var
+R3919:3919 _tmp_estep <> D:150 var
+binder 3967:3967 <> D:155
+binder 3969:3969 <> X:156
+binder 3971:3972 <> xs:157
+binder 3974:3974 <> P:158
+binder 3976:3977 <> P':159
+R3990:3997 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3980:3984 _tmp_estep <> estep:1 ind
+R3988:3989 _tmp_estep <> P':159 var
+R3986:3986 _tmp_estep <> P:158 var
+R3998:4002 _tmp_estep <> estep:1 ind
+R4022:4026 TypeRules <> TIAll constr
+R4035:4036 _tmp_estep <> P':159 var
+R4032:4033 _tmp_estep <> xs:157 var
+R4030:4030 _tmp_estep <> X:156 var
+R4028:4028 _tmp_estep <> D:155 var
+R4005:4009 TypeRules <> TIAll constr
+R4018:4018 _tmp_estep <> P:158 var
+R4015:4016 _tmp_estep <> xs:157 var
+R4013:4013 _tmp_estep <> X:156 var
+R4011:4011 _tmp_estep <> D:155 var
+binder 4059:4059 <> D:160
+binder 4061:4062 <> D':161
+binder 4064:4064 <> X:162
+binder 4066:4066 <> P:163
+binder 4068:4068 <> h:164
+binder 4070:4071 <> xs:165
+R4084:4091 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4074:4078 _tmp_estep <> estep:1 ind
+R4082:4083 _tmp_estep <> D':161 var
+R4080:4080 _tmp_estep <> D:160 var
+R4092:4096 _tmp_estep <> estep:1 ind
+R4118:4122 TypeRules <> THyps constr
+R4133:4134 _tmp_estep <> xs:165 var
+R4131:4131 _tmp_estep <> h:164 var
+R4129:4129 _tmp_estep <> P:163 var
+R4127:4127 _tmp_estep <> X:162 var
+R4124:4125 _tmp_estep <> D':161 var
+R4099:4103 TypeRules <> THyps constr
+R4113:4114 _tmp_estep <> xs:165 var
+R4111:4111 _tmp_estep <> h:164 var
+R4109:4109 _tmp_estep <> P:163 var
+R4107:4107 _tmp_estep <> X:162 var
+R4105:4105 _tmp_estep <> D:160 var
+binder 4157:4157 <> D:166
+binder 4159:4159 <> X:167
+binder 4161:4162 <> X':168
+binder 4164:4164 <> P:169
+binder 4166:4166 <> h:170
+binder 4168:4169 <> xs:171
+R4182:4189 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4172:4176 _tmp_estep <> estep:1 ind
+R4180:4181 _tmp_estep <> X':168 var
+R4178:4178 _tmp_estep <> X:167 var
+R4190:4194 _tmp_estep <> estep:1 ind
+R4216:4220 TypeRules <> THyps constr
+R4231:4232 _tmp_estep <> xs:171 var
+R4229:4229 _tmp_estep <> h:170 var
+R4227:4227 _tmp_estep <> P:169 var
+R4224:4225 _tmp_estep <> X':168 var
+R4222:4222 _tmp_estep <> D:166 var
+R4197:4201 TypeRules <> THyps constr
+R4211:4212 _tmp_estep <> xs:171 var
+R4209:4209 _tmp_estep <> h:170 var
+R4207:4207 _tmp_estep <> P:169 var
+R4205:4205 _tmp_estep <> X:167 var
+R4203:4203 _tmp_estep <> D:166 var
+binder 4255:4255 <> D:172
+binder 4257:4257 <> X:173
+binder 4259:4259 <> P:174
+binder 4261:4262 <> P':175
+binder 4264:4264 <> h:176
+binder 4266:4267 <> xs:177
+R4280:4287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4270:4274 _tmp_estep <> estep:1 ind
+R4278:4279 _tmp_estep <> P':175 var
+R4276:4276 _tmp_estep <> P:174 var
+R4288:4292 _tmp_estep <> estep:1 ind
+R4314:4318 TypeRules <> THyps constr
+R4329:4330 _tmp_estep <> xs:177 var
+R4327:4327 _tmp_estep <> h:176 var
+R4324:4325 _tmp_estep <> P':175 var
+R4322:4322 _tmp_estep <> X:173 var
+R4320:4320 _tmp_estep <> D:172 var
+R4295:4299 TypeRules <> THyps constr
+R4309:4310 _tmp_estep <> xs:177 var
+R4307:4307 _tmp_estep <> h:176 var
+R4305:4305 _tmp_estep <> P:174 var
+R4303:4303 _tmp_estep <> X:173 var
+R4301:4301 _tmp_estep <> D:172 var
+binder 4353:4353 <> D:178
+binder 4355:4355 <> X:179
+binder 4357:4357 <> P:180
+binder 4359:4359 <> h:181
+binder 4361:4362 <> h':182
+binder 4364:4365 <> xs:183
+R4378:4385 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4368:4372 _tmp_estep <> estep:1 ind
+R4376:4377 _tmp_estep <> h':182 var
+R4374:4374 _tmp_estep <> h:181 var
+R4386:4390 _tmp_estep <> estep:1 ind
+R4412:4416 TypeRules <> THyps constr
+R4427:4428 _tmp_estep <> xs:183 var
+R4424:4425 _tmp_estep <> h':182 var
+R4422:4422 _tmp_estep <> P:180 var
+R4420:4420 _tmp_estep <> X:179 var
+R4418:4418 _tmp_estep <> D:178 var
+R4393:4397 TypeRules <> THyps constr
+R4407:4408 _tmp_estep <> xs:183 var
+R4405:4405 _tmp_estep <> h:181 var
+R4403:4403 _tmp_estep <> P:180 var
+R4401:4401 _tmp_estep <> X:179 var
+R4399:4399 _tmp_estep <> D:178 var
+binder 4451:4451 <> D:184
+binder 4453:4453 <> X:185
+binder 4455:4455 <> P:186
+binder 4457:4457 <> h:187
+binder 4459:4460 <> xs:188
+binder 4462:4464 <> xs':189
+R4479:4486 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4467:4471 _tmp_estep <> estep:1 ind
+R4476:4478 _tmp_estep <> xs':189 var
+R4473:4474 _tmp_estep <> xs:188 var
+R4487:4491 _tmp_estep <> estep:1 ind
+R4513:4517 TypeRules <> THyps constr
+R4527:4529 _tmp_estep <> xs':189 var
+R4525:4525 _tmp_estep <> h:187 var
+R4523:4523 _tmp_estep <> P:186 var
+R4521:4521 _tmp_estep <> X:185 var
+R4519:4519 _tmp_estep <> D:184 var
+R4494:4498 TypeRules <> THyps constr
+R4508:4509 _tmp_estep <> xs:188 var
+R4506:4506 _tmp_estep <> h:187 var
+R4504:4504 _tmp_estep <> P:186 var
+R4502:4502 _tmp_estep <> X:185 var
+R4500:4500 _tmp_estep <> D:184 var
+binder 4551:4551 <> A:190
+binder 4553:4554 <> A':191
+R4567:4570 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4557:4561 _tmp_estep <> estep:1 ind
+R4565:4566 _tmp_estep <> A':191 var
+R4563:4563 _tmp_estep <> A:190 var
+R4571:4575 _tmp_estep <> estep:1 ind
+R4588:4592 TypeRules <> TList constr
+R4594:4595 _tmp_estep <> A':191 var
+R4578:4582 TypeRules <> TList constr
+R4584:4584 _tmp_estep <> A:190 var
+binder 4617:4617 <> A:192
+binder 4619:4620 <> A':193
+R4633:4636 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4623:4627 _tmp_estep <> estep:1 ind
+R4631:4632 _tmp_estep <> A':193 var
+R4629:4629 _tmp_estep <> A:192 var
+R4637:4641 _tmp_estep <> estep:1 ind
+R4654:4658 TypeRules <> TLNil constr
+R4660:4661 _tmp_estep <> A':193 var
+R4644:4648 TypeRules <> TLNil constr
+R4650:4650 _tmp_estep <> A:192 var
+binder 4685:4685 <> A:194
+binder 4687:4688 <> A':195
+binder 4690:4690 <> a:196
+binder 4692:4692 <> l:197
+R4705:4712 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4695:4699 _tmp_estep <> estep:1 ind
+R4703:4704 _tmp_estep <> A':195 var
+R4701:4701 _tmp_estep <> A:194 var
+R4713:4717 _tmp_estep <> estep:1 ind
+R4735:4740 TypeRules <> TLCons constr
+R4747:4747 _tmp_estep <> l:197 var
+R4745:4745 _tmp_estep <> a:196 var
+R4742:4743 _tmp_estep <> A':195 var
+R4720:4725 TypeRules <> TLCons constr
+R4731:4731 _tmp_estep <> l:197 var
+R4729:4729 _tmp_estep <> a:196 var
+R4727:4727 _tmp_estep <> A:194 var
+binder 4771:4771 <> A:198
+binder 4773:4773 <> a:199
+binder 4775:4776 <> a':200
+binder 4778:4778 <> l:201
+R4791:4798 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4781:4785 _tmp_estep <> estep:1 ind
+R4789:4790 _tmp_estep <> a':200 var
+R4787:4787 _tmp_estep <> a:199 var
+R4799:4803 _tmp_estep <> estep:1 ind
+R4821:4826 TypeRules <> TLCons constr
+R4833:4833 _tmp_estep <> l:201 var
+R4830:4831 _tmp_estep <> a':200 var
+R4828:4828 _tmp_estep <> A:198 var
+R4806:4811 TypeRules <> TLCons constr
+R4817:4817 _tmp_estep <> l:201 var
+R4815:4815 _tmp_estep <> a:199 var
+R4813:4813 _tmp_estep <> A:198 var
+binder 4857:4857 <> A:202
+binder 4859:4859 <> a:203
+binder 4861:4861 <> l:204
+binder 4863:4864 <> l':205
+R4877:4884 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4867:4871 _tmp_estep <> estep:1 ind
+R4875:4876 _tmp_estep <> l':205 var
+R4873:4873 _tmp_estep <> l:204 var
+R4885:4889 _tmp_estep <> estep:1 ind
+R4907:4912 TypeRules <> TLCons constr
+R4918:4919 _tmp_estep <> l':205 var
+R4916:4916 _tmp_estep <> a:203 var
+R4914:4914 _tmp_estep <> A:202 var
+R4892:4897 TypeRules <> TLCons constr
+R4903:4903 _tmp_estep <> l:204 var
+R4901:4901 _tmp_estep <> a:203 var
+R4899:4899 _tmp_estep <> A:202 var
+binder 4942:4942 <> M:206
+binder 4944:4945 <> M':207
+binder 4947:4947 <> Q:208
+binder 4949:4950 <> bs:209
+R4963:4970 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4953:4957 _tmp_estep <> estep:1 ind
+R4961:4962 _tmp_estep <> M':207 var
+R4959:4959 _tmp_estep <> M:206 var
+R4971:4975 _tmp_estep <> estep:1 ind
+R4993:4997 TypeRules <> TCase constr
+R5004:5005 _tmp_estep <> bs:209 var
+R5002:5002 _tmp_estep <> Q:208 var
+R4999:5000 _tmp_estep <> M':207 var
+R4978:4982 TypeRules <> TCase constr
+R4988:4989 _tmp_estep <> bs:209 var
+R4986:4986 _tmp_estep <> Q:208 var
+R4984:4984 _tmp_estep <> M:206 var
+binder 5028:5028 <> M:210
+binder 5030:5030 <> Q:211
+binder 5032:5033 <> Q':212
+binder 5035:5036 <> bs:213
+R5049:5056 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5039:5043 _tmp_estep <> estep:1 ind
+R5047:5048 _tmp_estep <> Q':212 var
+R5045:5045 _tmp_estep <> Q:211 var
+R5057:5061 _tmp_estep <> estep:1 ind
+R5079:5083 TypeRules <> TCase constr
+R5090:5091 _tmp_estep <> bs:213 var
+R5087:5088 _tmp_estep <> Q':212 var
+R5085:5085 _tmp_estep <> M:210 var
+R5064:5068 TypeRules <> TCase constr
+R5074:5075 _tmp_estep <> bs:213 var
+R5072:5072 _tmp_estep <> Q:211 var
+R5070:5070 _tmp_estep <> M:210 var
+binder 5117:5117 <> M:214
+binder 5119:5119 <> Q:215
+binder 5121:5123 <> bs1:216
+binder 5125:5125 <> c:217
+binder 5127:5128 <> c':218
+binder 5130:5130 <> b:219
+binder 5132:5134 <> bs2:220
+R5147:5154 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5137:5141 _tmp_estep <> estep:1 ind
+R5145:5146 _tmp_estep <> c':218 var
+R5143:5143 _tmp_estep <> c:217 var
+R5155:5159 _tmp_estep <> estep:1 ind
+R5207:5211 TypeRules <> TCase constr
+R5221:5224 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5218:5220 _tmp_estep <> bs1:216 var
+R5232:5235 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5225:5225 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5228:5229 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5231:5231 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5226:5227 _tmp_estep <> c':218 var
+R5230:5230 _tmp_estep <> b:219 var
+R5236:5238 _tmp_estep <> bs2:220 var
+R5215:5215 _tmp_estep <> Q:215 var
+R5213:5213 _tmp_estep <> M:214 var
+R5162:5166 TypeRules <> TCase constr
+R5176:5179 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5173:5175 _tmp_estep <> bs1:216 var
+R5186:5189 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5180:5180 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5182:5183 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5185:5185 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5181:5181 _tmp_estep <> c:217 var
+R5184:5184 _tmp_estep <> b:219 var
+R5190:5192 _tmp_estep <> bs2:220 var
+R5170:5170 _tmp_estep <> Q:215 var
+R5168:5168 _tmp_estep <> M:214 var
+binder 5265:5265 <> M:221
+binder 5267:5267 <> Q:222
+binder 5269:5271 <> bs1:223
+binder 5273:5273 <> c:224
+binder 5275:5275 <> b:225
+binder 5277:5278 <> b':226
+binder 5280:5282 <> bs2:227
+R5295:5302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5285:5289 _tmp_estep <> estep:1 ind
+R5293:5294 _tmp_estep <> b':226 var
+R5291:5291 _tmp_estep <> b:225 var
+R5303:5307 _tmp_estep <> estep:1 ind
+R5355:5359 TypeRules <> TCase constr
+R5369:5372 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5366:5368 _tmp_estep <> bs1:223 var
+R5380:5383 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5373:5373 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5375:5376 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5379:5379 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5374:5374 _tmp_estep <> c:224 var
+R5377:5378 _tmp_estep <> b':226 var
+R5384:5386 _tmp_estep <> bs2:227 var
+R5363:5363 _tmp_estep <> Q:222 var
+R5361:5361 _tmp_estep <> M:221 var
+R5310:5314 TypeRules <> TCase constr
+R5324:5327 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5321:5323 _tmp_estep <> bs1:223 var
+R5334:5337 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5328:5328 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5330:5331 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5333:5333 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5329:5329 _tmp_estep <> c:224 var
+R5332:5332 _tmp_estep <> b:225 var
+R5338:5340 _tmp_estep <> bs2:227 var
+R5318:5318 _tmp_estep <> Q:222 var
+R5316:5316 _tmp_estep <> M:221 var
+scheme 445:449 <> estep_ind
+scheme 445:449 <> estep_sind

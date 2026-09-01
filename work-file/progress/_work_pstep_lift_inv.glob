@@ -1,0 +1,783 @@
+DIGEST 013c1f445059f6ebf2b799c734196a38
+F_work_pstep_lift_inv
+R15:22 Progress <> <> lib
+R24:37 _tmp_eta_shape <> <> lib
+R39:61 _luna_enum_pos_lift_inv <> <> lib
+R91:94 Stdlib.Lists.List <> <> lib
+R96:98 Stdlib.micromega.Lia <> <> lib
+R100:107 Stdlib.Arith.PeanoNat <> <> lib
+R117:129 Stdlib.Lists.List ListNotations <> mod
+R131:139 TypeRules <> <> mod
+R209:212 TypeRules <> term ind
+binder 205:205 <> x:1
+R220:222 Corelib.Init.Datatypes <> nat ind
+binder 216:216 <> q:2
+R259:268 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R246:248 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R232:235 TypeRules <> lift def
+R249:252 TypeRules <> lift def
+R258:258 _work_pstep_lift_inv <> x:1 var
+R256:256 _work_pstep_lift_inv <> q:2 var
+R269:275 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R277:278 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 276:276 <> y:3
+R299:302 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R286:288 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R289:292 TypeRules <> lift def
+R298:298 _work_pstep_lift_inv <> y:3 var
+R296:296 _work_pstep_lift_inv <> q:2 var
+R303:307 Progress <> pstep ind
+R309:309 _work_pstep_lift_inv <> x:1 var
+R311:311 _work_pstep_lift_inv <> y:3 var
+R209:212 TypeRules <> term ind
+binder 205:205 <> x:4
+R220:222 Corelib.Init.Datatypes <> nat ind
+binder 216:216 <> q:5
+R259:268 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R246:248 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R232:235 TypeRules <> lift def
+R249:252 TypeRules <> lift def
+R258:258 _work_pstep_lift_inv <> x:4 var
+R256:256 _work_pstep_lift_inv <> q:5 var
+R269:275 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R277:278 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 276:276 <> y:6
+R299:302 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R286:288 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R289:292 TypeRules <> lift def
+R298:298 _work_pstep_lift_inv <> y:6 var
+R296:296 _work_pstep_lift_inv <> q:5 var
+R303:307 Progress <> pstep ind
+R309:309 _work_pstep_lift_inv <> x:4 var
+R311:311 _work_pstep_lift_inv <> y:6 var
+R434:440 Corelib.Init.Logic <> eq_refl constr
+R566:569 Corelib.Init.Datatypes <> list ind
+R576:578 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R572:575 TypeRules <> term ind
+R579:582 TypeRules <> term ind
+binder 560:562 <> src:7
+R591:593 Corelib.Init.Datatypes <> nat ind
+binder 587:587 <> q:8
+R724:733 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R661:671 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R603:605 Corelib.Lists.ListDef <> map def
+R613:613 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R615:615 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R617:617 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 616:616 <> b:9
+binder 614:614 <> c:10
+binder 613:617 <> pat:11
+R622:622 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R635:636 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R653:653 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R623:626 TypeRules <> lift def
+R634:634 _work_pstep_lift_inv <> c:10 var
+R637:640 TypeRules <> lift def
+R652:652 _work_pstep_lift_inv <> b:9 var
+R645:645 Corelib.Init.Datatypes <> S constr
+R672:674 Corelib.Lists.ListDef <> map def
+R721:723 _work_pstep_lift_inv <> src:7 var
+R682:682 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R684:684 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R686:686 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 685:685 <> b:12
+binder 683:683 <> c:13
+binder 682:686 <> pat:14
+R691:691 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R702:703 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R718:718 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R692:695 TypeRules <> lift def
+R701:701 _work_pstep_lift_inv <> c:13 var
+R699:699 _work_pstep_lift_inv <> q:8 var
+R704:707 TypeRules <> lift def
+R717:717 _work_pstep_lift_inv <> b:12 var
+R712:712 Corelib.Init.Datatypes <> S constr
+R714:714 _work_pstep_lift_inv <> q:8 var
+R734:740 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R744:753 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 741:743 <> dst:15
+R816:827 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R761:763 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R764:766 Corelib.Lists.ListDef <> map def
+R813:815 _work_pstep_lift_inv <> dst:15 var
+R774:774 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R776:776 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R778:778 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 777:777 <> b:16
+binder 775:775 <> c:17
+binder 774:778 <> pat:18
+R783:783 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R794:795 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R810:810 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R784:787 TypeRules <> lift def
+R793:793 _work_pstep_lift_inv <> c:17 var
+R791:791 _work_pstep_lift_inv <> q:8 var
+R796:799 TypeRules <> lift def
+R809:809 _work_pstep_lift_inv <> b:16 var
+R804:804 Corelib.Init.Datatypes <> S constr
+R806:806 _work_pstep_lift_inv <> q:8 var
+R828:836 Progress <> pbranches ind
+R838:840 _work_pstep_lift_inv <> src:7 var
+R842:844 _work_pstep_lift_inv <> dst:15 var
+R566:569 Corelib.Init.Datatypes <> list ind
+R576:578 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R572:575 TypeRules <> term ind
+R579:582 TypeRules <> term ind
+binder 560:562 <> src:19
+R591:593 Corelib.Init.Datatypes <> nat ind
+binder 587:587 <> q:20
+R724:733 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R661:671 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R603:605 Corelib.Lists.ListDef <> map def
+R613:613 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R615:615 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R617:617 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 616:616 <> b:21
+binder 614:614 <> c:22
+binder 613:617 <> pat:23
+R622:622 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R635:636 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R653:653 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R623:626 TypeRules <> lift def
+R634:634 _work_pstep_lift_inv <> c:22 var
+R637:640 TypeRules <> lift def
+R652:652 _work_pstep_lift_inv <> b:21 var
+R645:645 Corelib.Init.Datatypes <> S constr
+R672:674 Corelib.Lists.ListDef <> map def
+R721:723 _work_pstep_lift_inv <> src:19 var
+R682:682 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R684:684 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R686:686 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 685:685 <> b:24
+binder 683:683 <> c:25
+binder 682:686 <> pat:26
+R691:691 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R702:703 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R718:718 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R692:695 TypeRules <> lift def
+R701:701 _work_pstep_lift_inv <> c:25 var
+R699:699 _work_pstep_lift_inv <> q:20 var
+R704:707 TypeRules <> lift def
+R717:717 _work_pstep_lift_inv <> b:24 var
+R712:712 Corelib.Init.Datatypes <> S constr
+R714:714 _work_pstep_lift_inv <> q:20 var
+R734:740 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R744:753 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 741:743 <> dst:27
+R816:827 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R761:763 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R764:766 Corelib.Lists.ListDef <> map def
+R813:815 _work_pstep_lift_inv <> dst:27 var
+R774:774 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R776:776 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R778:778 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 777:777 <> b:28
+binder 775:775 <> c:29
+binder 774:778 <> pat:30
+R783:783 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R794:795 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R810:810 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R784:787 TypeRules <> lift def
+R793:793 _work_pstep_lift_inv <> c:29 var
+R791:791 _work_pstep_lift_inv <> q:20 var
+R796:799 TypeRules <> lift def
+R809:809 _work_pstep_lift_inv <> b:28 var
+R804:804 Corelib.Init.Datatypes <> S constr
+R806:806 _work_pstep_lift_inv <> q:20 var
+R828:836 Progress <> pbranches ind
+R838:840 _work_pstep_lift_inv <> src:19 var
+R842:844 _work_pstep_lift_inv <> dst:27 var
+R981:987 Corelib.Init.Logic <> eq_refl constr
+R1094:1100 Progress <> ps_beta constr
+R1128:1138 Progress <> ps_fst_pair constr
+R1166:1176 Progress <> ps_snd_pair constr
+R1204:1213 Progress <> ps_epi_nil constr
+R1241:1251 Progress <> ps_epi_cons constr
+R1279:1292 Progress <> ps_switch_zero constr
+R1320:1333 Progress <> ps_switch_succ constr
+R1361:1373 Progress <> ps_interp_var constr
+R1401:1413 Progress <> ps_interp_one constr
+R1441:1454 Progress <> ps_interp_prod constr
+R1482:1493 Progress <> ps_interp_pi constr
+R1521:1533 Progress <> ps_interp_sig constr
+R1561:1576 Progress <> ps_interp_choice constr
+R1604:1614 Progress <> ps_iall_var constr
+R1642:1652 Progress <> ps_iall_one constr
+R1680:1691 Progress <> ps_iall_prod constr
+R1719:1728 Progress <> ps_iall_pi constr
+R1756:1766 Progress <> ps_iall_sig constr
+R1794:1807 Progress <> ps_iall_choice constr
+R1835:1845 Progress <> ps_hyps_var constr
+R1873:1883 Progress <> ps_hyps_one constr
+R1911:1922 Progress <> ps_hyps_prod constr
+R1950:1959 Progress <> ps_hyps_pi constr
+R1987:1997 Progress <> ps_hyps_sig constr
+R2025:2038 Progress <> ps_hyps_choice constr
+R2066:2075 Progress <> ps_ind_red constr
+prf 2100:2117 <> pstep_lift_inv_mut
+R2123:2123 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2231:2238 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2471:2471 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 2131:2131 <> t:31
+binder 2133:2133 <> u:32
+R2140:2144 Progress <> pstep ind
+R2146:2146 _work_pstep_lift_inv <> t:31 var
+R2148:2148 _work_pstep_lift_inv <> u:32 var
+binder 2136:2136 <> H:33
+binder 2159:2159 <> f:34
+binder 2161:2161 <> k:35
+R2184:2193 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2171:2173 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2170:2170 _work_pstep_lift_inv <> t:31 var
+R2174:2177 TypeRules <> lift def
+R2183:2183 _work_pstep_lift_inv <> f:34 var
+R2181:2181 _work_pstep_lift_inv <> k:35 var
+R2194:2200 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2202:2203 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2201:2201 <> v:36
+R2218:2221 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2205:2207 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2204:2204 _work_pstep_lift_inv <> u:32 var
+R2208:2211 TypeRules <> lift def
+R2217:2217 _work_pstep_lift_inv <> v:36 var
+R2215:2215 _work_pstep_lift_inv <> k:35 var
+R2222:2226 Progress <> pstep ind
+R2228:2228 _work_pstep_lift_inv <> f:34 var
+R2230:2230 _work_pstep_lift_inv <> v:36 var
+binder 2246:2247 <> bs:37
+binder 2249:2251 <> bs':38
+R2258:2266 Progress <> pbranches ind
+R2268:2269 _work_pstep_lift_inv <> bs:37 var
+R2271:2273 _work_pstep_lift_inv <> bs':38 var
+binder 2254:2254 <> H:39
+binder 2284:2286 <> src:40
+binder 2288:2288 <> k:41
+R2354:2363 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2299:2301 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2297:2298 _work_pstep_lift_inv <> bs:37 var
+R2302:2304 Corelib.Lists.ListDef <> map def
+R2351:2353 _work_pstep_lift_inv <> src:40 var
+R2312:2312 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2314:2314 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2316:2316 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 2315:2315 <> b:42
+binder 2313:2313 <> c:43
+binder 2312:2316 <> pat:44
+R2321:2321 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2332:2333 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2348:2348 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2322:2325 TypeRules <> lift def
+R2331:2331 _work_pstep_lift_inv <> c:43 var
+R2329:2329 _work_pstep_lift_inv <> k:41 var
+R2334:2337 TypeRules <> lift def
+R2347:2347 _work_pstep_lift_inv <> b:42 var
+R2342:2342 Corelib.Init.Datatypes <> S constr
+R2344:2344 _work_pstep_lift_inv <> k:41 var
+R2364:2370 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2374:2383 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2371:2373 <> dst:45
+R2442:2453 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2387:2389 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2384:2386 _work_pstep_lift_inv <> bs':38 var
+R2390:2392 Corelib.Lists.ListDef <> map def
+R2439:2441 _work_pstep_lift_inv <> dst:45 var
+R2400:2400 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2402:2402 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2404:2404 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 2403:2403 <> b:46
+binder 2401:2401 <> c:47
+binder 2400:2404 <> pat:48
+R2409:2409 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2420:2421 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2436:2436 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2410:2413 TypeRules <> lift def
+R2419:2419 _work_pstep_lift_inv <> c:47 var
+R2417:2417 _work_pstep_lift_inv <> k:41 var
+R2422:2425 TypeRules <> lift def
+R2435:2435 _work_pstep_lift_inv <> b:46 var
+R2430:2430 Corelib.Init.Datatypes <> S constr
+R2432:2432 _work_pstep_lift_inv <> k:41 var
+R2454:2462 Progress <> pbranches ind
+R2464:2466 _work_pstep_lift_inv <> src:40 var
+R2468:2470 _work_pstep_lift_inv <> dst:45 var
+R2489:2507 Progress <> pstep_pbranches_ind scheme
+R2489:2507 Progress <> pstep_pbranches_ind scheme
+R2563:2565 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2566:2569 TypeRules <> lift def
+R2563:2565 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2566:2569 TypeRules <> lift def
+R2610:2613 TypeRules <> lift def
+R2673:2679 Stdlib.Arith.PeanoNat Nat ltb def
+R2673:2679 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2701:2707 Stdlib.Arith.PeanoNat Nat ltb def
+R2841:2843 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2844:2846 Corelib.Lists.ListDef <> map def
+R2860:2860 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2862:2862 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2864:2864 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 2863:2863 <> b:49
+binder 2861:2861 <> c:50
+binder 2860:2864 <> pat:51
+R2869:2869 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2881:2882 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2898:2898 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2870:2873 TypeRules <> lift def
+R2880:2880 _work_pstep_lift_inv <> c:50 var
+R2883:2886 TypeRules <> lift def
+R2897:2897 _work_pstep_lift_inv <> b:49 var
+R2891:2891 Corelib.Init.Datatypes <> S constr
+R2841:2843 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2844:2846 Corelib.Lists.ListDef <> map def
+R2860:2860 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2862:2862 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2864:2864 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 2863:2863 <> b:52
+binder 2861:2861 <> c:53
+binder 2860:2864 <> pat:54
+R2869:2869 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2881:2882 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2898:2898 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2870:2873 TypeRules <> lift def
+R2880:2880 _work_pstep_lift_inv <> c:53 var
+R2883:2886 TypeRules <> lift def
+R2897:2897 _work_pstep_lift_inv <> b:52 var
+R2891:2891 Corelib.Init.Datatypes <> S constr
+R3178:3181 TypeRules <> lift def
+R3233:3235 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3222:3228 Stdlib.Arith.PeanoNat Nat ltb def
+R3233:3235 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3222:3228 Stdlib.Arith.PeanoNat Nat ltb def
+R3366:3369 TypeRules <> lift def
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3394:3413 Progress <> lift_subst_zero_comm thm
+R3438:3455 Progress <> lift_lift_one_zero thm
+R3487:3503 Progress <> lift_lift_one_one thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3535:3552 Progress <> lift_lift_two_zero thm
+R3594:3606 Stdlib.Lists.List <> nth_error_map thm
+R3594:3606 Stdlib.Lists.List <> nth_error_map thm
+R3594:3606 Stdlib.Lists.List <> nth_error_map thm
+R3626:3634 Stdlib.Lists.List <> nth_error def
+R3626:3634 Stdlib.Lists.List <> nth_error def
+R3753:3753 Corelib.Init.Datatypes <> S constr
+R3759:3765 Corelib.Init.Logic <> eq_refl constr
+R3753:3753 Corelib.Init.Datatypes <> S constr
+R3759:3765 Corelib.Init.Logic <> eq_refl constr
+R3810:3814 TypeRules <> subst def
+R3810:3814 TypeRules <> subst def
+R3844:3863 Progress <> lift_subst_zero_comm thm
+R3844:3863 Progress <> lift_subst_zero_comm thm
+R3844:3863 Progress <> lift_subst_zero_comm thm
+R3890:3900 Progress <> ps_case_red constr
+R3890:3900 Progress <> ps_case_red constr
+R3977:3998 _luna_enum_pos_lift_inv <> enum_pos_lift_inv_luna thm
+R3977:3998 _luna_enum_pos_lift_inv <> enum_pos_lift_inv_luna thm
+R4024:4045 _luna_enum_pos_lift_inv <> enum_pos_lift_inv_luna thm
+R4024:4045 _luna_enum_pos_lift_inv <> enum_pos_lift_inv_luna thm
+R4203:4215 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4123:4131 Stdlib.Lists.List <> nth_error def
+R4146:4148 Corelib.Lists.ListDef <> map def
+R4156:4156 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4158:4158 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4160:4160 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 4159:4159 <> b:55
+binder 4157:4157 <> c:56
+binder 4156:4160 <> pat:57
+R4165:4165 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4177:4178 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4194:4194 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4166:4169 TypeRules <> lift def
+R4176:4176 _work_pstep_lift_inv <> c:56 var
+R4179:4182 TypeRules <> lift def
+R4193:4193 _work_pstep_lift_inv <> b:55 var
+R4187:4187 Corelib.Init.Datatypes <> S constr
+R4216:4219 Corelib.Init.Datatypes <> Some constr
+R4221:4221 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4234:4235 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4252:4252 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4222:4225 TypeRules <> lift def
+R4236:4239 TypeRules <> lift def
+R4244:4244 Corelib.Init.Datatypes <> S constr
+R4203:4215 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4123:4131 Stdlib.Lists.List <> nth_error def
+R4146:4148 Corelib.Lists.ListDef <> map def
+R4156:4156 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4158:4158 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4160:4160 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 4159:4159 <> b:58
+binder 4157:4157 <> c:59
+binder 4156:4160 <> pat:60
+R4165:4165 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4177:4178 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4194:4194 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4166:4169 TypeRules <> lift def
+R4176:4176 _work_pstep_lift_inv <> c:59 var
+R4179:4182 TypeRules <> lift def
+R4193:4193 _work_pstep_lift_inv <> b:58 var
+R4187:4187 Corelib.Init.Datatypes <> S constr
+R4216:4219 Corelib.Init.Datatypes <> Some constr
+R4221:4221 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4234:4235 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4252:4252 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4222:4225 TypeRules <> lift def
+R4236:4239 TypeRules <> lift def
+R4244:4244 Corelib.Init.Datatypes <> S constr
+R4272:4284 Stdlib.Lists.List <> nth_error_map thm
+R4272:4284 Stdlib.Lists.List <> nth_error_map thm
+R4272:4284 Stdlib.Lists.List <> nth_error_map thm
+R4331:4334 TypeRules <> lift def
+R4346:4349 TypeRules <> lift def
+R4354:4354 Corelib.Init.Datatypes <> S constr
+R4331:4334 TypeRules <> lift def
+R4346:4349 TypeRules <> lift def
+R4354:4354 Corelib.Init.Datatypes <> S constr
+R4437:4458 _luna_enum_pos_lift_inv <> enum_pos_lift_inv_luna thm
+R4437:4458 _luna_enum_pos_lift_inv <> enum_pos_lift_inv_luna thm
+prf 4527:4540 <> pstep_lift_inv
+binder 4551:4551 <> f:61
+binder 4553:4553 <> k:62
+binder 4555:4555 <> T:63
+R4582:4589 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4562:4566 Progress <> pstep ind
+R4569:4572 TypeRules <> lift def
+R4578:4578 _work_pstep_lift_inv <> f:61 var
+R4576:4576 _work_pstep_lift_inv <> k:62 var
+R4581:4581 _work_pstep_lift_inv <> T:63 var
+R4590:4596 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4598:4599 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4597:4597 <> u:64
+R4614:4617 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4601:4603 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4600:4600 _work_pstep_lift_inv <> T:63 var
+R4604:4607 TypeRules <> lift def
+R4613:4613 _work_pstep_lift_inv <> u:64 var
+R4611:4611 _work_pstep_lift_inv <> k:62 var
+R4618:4622 Progress <> pstep ind
+R4624:4624 _work_pstep_lift_inv <> f:61 var
+R4626:4626 _work_pstep_lift_inv <> u:64 var
+R4663:4667 Corelib.Init.Logic <> proj1 thm
+R4698:4704 Corelib.Init.Logic <> eq_refl constr
+R4669:4686 _work_pstep_lift_inv <> pstep_lift_inv_mut thm
+R4663:4667 Corelib.Init.Logic <> proj1 thm
+R4698:4704 Corelib.Init.Logic <> eq_refl constr
+R4669:4686 _work_pstep_lift_inv <> pstep_lift_inv_mut thm
+prf 4724:4741 <> pbranches_lift_inv
+binder 4752:4753 <> bs:65
+binder 4755:4755 <> k:66
+binder 4757:4758 <> BS:67
+R4837:4844 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4765:4773 Progress <> pbranches ind
+R4782:4784 Corelib.Lists.ListDef <> map def
+R4831:4832 _work_pstep_lift_inv <> bs:65 var
+R4792:4792 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4794:4794 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4796:4796 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 4795:4795 <> b:68
+binder 4793:4793 <> c:69
+binder 4792:4796 <> pat:70
+R4801:4801 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4812:4813 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4828:4828 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4802:4805 TypeRules <> lift def
+R4811:4811 _work_pstep_lift_inv <> c:69 var
+R4809:4809 _work_pstep_lift_inv <> k:66 var
+R4814:4817 TypeRules <> lift def
+R4827:4827 _work_pstep_lift_inv <> b:68 var
+R4822:4822 Corelib.Init.Datatypes <> S constr
+R4824:4824 _work_pstep_lift_inv <> k:66 var
+R4835:4836 _work_pstep_lift_inv <> BS:67 var
+R4845:4851 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4854:4861 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4852:4853 <> us:71
+R4918:4927 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4864:4866 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4862:4863 _work_pstep_lift_inv <> BS:67 var
+R4867:4869 Corelib.Lists.ListDef <> map def
+R4916:4917 _work_pstep_lift_inv <> us:71 var
+R4877:4877 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4879:4879 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4881:4881 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 4880:4880 <> b:72
+binder 4878:4878 <> c:73
+binder 4877:4881 <> pat:74
+R4886:4886 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4897:4898 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4913:4913 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4887:4890 TypeRules <> lift def
+R4896:4896 _work_pstep_lift_inv <> c:73 var
+R4894:4894 _work_pstep_lift_inv <> k:66 var
+R4899:4902 TypeRules <> lift def
+R4912:4912 _work_pstep_lift_inv <> b:72 var
+R4907:4907 Corelib.Init.Datatypes <> S constr
+R4909:4909 _work_pstep_lift_inv <> k:66 var
+R4928:4936 Progress <> pbranches ind
+R4938:4939 _work_pstep_lift_inv <> bs:65 var
+R4941:4942 _work_pstep_lift_inv <> us:71 var
+R4981:4985 Corelib.Init.Logic <> proj2 thm
+R5017:5023 Corelib.Init.Logic <> eq_refl constr
+R4987:5004 _work_pstep_lift_inv <> pstep_lift_inv_mut thm
+R4981:4985 Corelib.Init.Logic <> proj2 thm
+R5017:5023 Corelib.Init.Logic <> eq_refl constr
+R4987:5004 _work_pstep_lift_inv <> pstep_lift_inv_mut thm

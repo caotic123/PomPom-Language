@@ -1,0 +1,130 @@
+DIGEST 8377114bde966cad6ca2c8eca351091b
+F_tmp_convpos
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:40 Stdlib.micromega.Lia <> <> lib
+R50:62 Stdlib.Lists.List ListNotations <> mod
+R80:88 TypeRules <> <> lib
+ind 102:105 <> rtc'
+constr 161:169 <> rtc'_refl
+constr 196:204 <> rtc'_step
+binder 108:108 <> X:1
+R124:127 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R123:123 _tmp_convpos <> X:1 var
+R129:132 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R128:128 _tmp_convpos <> X:1 var
+binder 119:119 <> R:2
+R142:145 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R147:150 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 180:180 <> x:5
+R183:186 _tmp_convpos <> rtc':3 ind
+R192:192 _tmp_convpos <> x:5 var
+R190:190 _tmp_convpos <> x:5 var
+R188:188 _tmp_convpos <> R:2 var
+binder 215:215 <> x:6
+binder 217:217 <> y:7
+binder 219:219 <> z:8
+R227:230 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R222:222 _tmp_convpos <> R:2 var
+R226:226 _tmp_convpos <> y:7 var
+R224:224 _tmp_convpos <> x:6 var
+R241:244 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R231:234 _tmp_convpos <> rtc':3 ind
+R240:240 _tmp_convpos <> z:8 var
+R238:238 _tmp_convpos <> y:7 var
+R236:236 _tmp_convpos <> R:2 var
+R245:248 _tmp_convpos <> rtc':3 ind
+R254:254 _tmp_convpos <> z:8 var
+R252:252 _tmp_convpos <> x:6 var
+R250:250 _tmp_convpos <> R:2 var
+scheme 102:105 <> rtc'_ind
+scheme 102:105 <> rtc'_sind
+prf 264:279 <> pos_step_normal'
+binder 290:290 <> c:9
+binder 292:292 <> n:10
+R307:310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R295:302 TypeRules <> enum_pos ind
+R306:306 _tmp_convpos <> n:10 var
+R304:304 _tmp_convpos <> c:9 var
+binder 318:319 <> c':11
+R322:323 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R324:327 TypeRules <> step ind
+R331:332 _tmp_convpos <> c':11 var
+R329:329 _tmp_convpos <> c:9 var
+prf 466:485 <> enum_pos_functional'
+binder 496:496 <> c:12
+binder 498:498 <> n:13
+binder 500:500 <> m:14
+R519:522 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R507:514 TypeRules <> enum_pos ind
+R518:518 _tmp_convpos <> n:13 var
+R516:516 _tmp_convpos <> c:12 var
+R535:538 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R523:530 TypeRules <> enum_pos ind
+R534:534 _tmp_convpos <> m:14 var
+R532:532 _tmp_convpos <> c:12 var
+R540:542 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R539:539 _tmp_convpos <> n:13 var
+R543:543 _tmp_convpos <> m:14 var
+prf 711:729 <> eval_enum_pos_refl'
+binder 740:740 <> c:15
+binder 742:742 <> n:16
+binder 744:744 <> v:17
+R763:766 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R751:758 TypeRules <> enum_pos ind
+R762:762 _tmp_convpos <> n:16 var
+R760:760 _tmp_convpos <> c:15 var
+R775:778 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R767:770 TypeRules <> eval ind
+R774:774 _tmp_convpos <> v:17 var
+R772:772 _tmp_convpos <> c:15 var
+R780:782 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R779:779 _tmp_convpos <> v:17 var
+R783:783 _tmp_convpos <> c:15 var
+R871:886 _tmp_convpos <> pos_step_normal' thm
+R871:886 _tmp_convpos <> pos_step_normal' thm
+ax 918:926 <> conv_join
+binder 937:937 <> t:18
+binder 939:939 <> u:19
+R950:953 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R942:945 TypeRules <> conv ind
+R949:949 _tmp_convpos <> u:19 var
+R947:947 _tmp_convpos <> t:18 var
+R954:960 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R962:963 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 961:961 <> v:20
+R972:975 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R964:967 TypeRules <> eval ind
+R971:971 _tmp_convpos <> v:20 var
+R969:969 _tmp_convpos <> t:18 var
+R976:979 TypeRules <> eval ind
+R983:983 _tmp_convpos <> v:20 var
+R981:981 _tmp_convpos <> u:19 var
+prf 993:1006 <> conv_pos_join'
+binder 1017:1017 <> c:23
+binder 1019:1019 <> d:24
+binder 1021:1021 <> n:25
+binder 1023:1023 <> m:26
+R1038:1041 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1030:1033 TypeRules <> conv ind
+R1037:1037 _tmp_convpos <> d:24 var
+R1035:1035 _tmp_convpos <> c:23 var
+R1054:1057 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1042:1049 TypeRules <> enum_pos ind
+R1053:1053 _tmp_convpos <> n:25 var
+R1051:1051 _tmp_convpos <> c:23 var
+R1070:1073 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1058:1065 TypeRules <> enum_pos ind
+R1069:1069 _tmp_convpos <> m:26 var
+R1067:1067 _tmp_convpos <> d:24 var
+R1075:1077 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1074:1074 _tmp_convpos <> n:25 var
+R1078:1078 _tmp_convpos <> m:26 var
+R1128:1136 _tmp_convpos <> conv_join defax
+R1128:1136 _tmp_convpos <> conv_join defax
+R1179:1197 _tmp_convpos <> eval_enum_pos_refl' thm
+R1179:1197 _tmp_convpos <> eval_enum_pos_refl' thm
+R1234:1252 _tmp_convpos <> eval_enum_pos_refl' thm
+R1234:1252 _tmp_convpos <> eval_enum_pos_refl' thm
+R1304:1323 _tmp_convpos <> enum_pos_functional' thm
+R1304:1323 _tmp_convpos <> enum_pos_functional' thm

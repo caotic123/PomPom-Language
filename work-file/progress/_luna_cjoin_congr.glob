@@ -1,0 +1,1893 @@
+DIGEST 64f40fc685ee341c0f4da8d5fc64b336
+F_luna_cjoin_congr
+R15:22 Progress <> <> lib
+R24:34 _tmp_epstep <> <> lib
+R36:51 _work_epstep_rtc <> <> lib
+R53:67 _luna_pstep_rtc <> <> lib
+R71:89 _work_mixed_closure <> <> lib
+R91:101 _work_cjoin <> <> lib
+R131:134 Stdlib.Lists.List <> <> lib
+R144:156 Stdlib.Lists.List ListNotations <> mod
+R158:166 TypeRules <> <> mod
+prf 271:282 <> cstep_congr1
+R302:305 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R298:301 TypeRules <> term ind
+R306:309 TypeRules <> term ind
+binder 294:294 <> F:1
+R317:317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R360:368 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 325:325 <> x:2
+binder 327:327 <> y:3
+R339:342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R330:334 Progress <> pstep ind
+R336:336 _luna_cjoin_congr <> x:2 var
+R338:338 _luna_cjoin_congr <> y:3 var
+R343:347 Progress <> pstep ind
+R350:350 _luna_cjoin_congr <> F:1 var
+R352:352 _luna_cjoin_congr <> x:2 var
+R356:356 _luna_cjoin_congr <> F:1 var
+R358:358 _luna_cjoin_congr <> y:3 var
+R369:369 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R414:422 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 377:377 <> x:4
+binder 379:379 <> y:5
+R392:395 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R382:387 _tmp_epstep <> epstep ind
+R389:389 _luna_cjoin_congr <> x:4 var
+R391:391 _luna_cjoin_congr <> y:5 var
+R396:401 _tmp_epstep <> epstep ind
+R404:404 _luna_cjoin_congr <> F:1 var
+R406:406 _luna_cjoin_congr <> x:4 var
+R410:410 _luna_cjoin_congr <> F:1 var
+R412:412 _luna_cjoin_congr <> y:5 var
+binder 430:430 <> x:6
+binder 432:432 <> y:7
+R444:447 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R435:439 _work_mixed_closure <> cstep ind
+R441:441 _luna_cjoin_congr <> x:6 var
+R443:443 _luna_cjoin_congr <> y:7 var
+R448:452 _work_mixed_closure <> cstep ind
+R455:455 _luna_cjoin_congr <> F:1 var
+R457:457 _luna_cjoin_congr <> x:6 var
+R461:461 _luna_cjoin_congr <> F:1 var
+R463:463 _luna_cjoin_congr <> y:7 var
+R547:553 _work_mixed_closure <> cs_core constr
+R547:553 _work_mixed_closure <> cs_core constr
+R563:578 _luna_pstep_rtc <> rtc_pstep_congr1 thm
+R563:578 _luna_pstep_rtc <> rtc_pstep_congr1 thm
+R604:609 _work_mixed_closure <> cs_eta constr
+R604:609 _work_mixed_closure <> cs_eta constr
+R619:635 _work_epstep_rtc <> rtc_epstep_congr1 thm
+R619:635 _work_epstep_rtc <> rtc_epstep_congr1 thm
+prf 663:678 <> rtc_cstep_congr1
+R698:701 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R694:697 TypeRules <> term ind
+R702:705 TypeRules <> term ind
+binder 690:690 <> F:8
+R713:713 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R756:764 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 721:721 <> x:9
+binder 723:723 <> y:10
+R735:738 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R726:730 Progress <> pstep ind
+R732:732 _luna_cjoin_congr <> x:9 var
+R734:734 _luna_cjoin_congr <> y:10 var
+R739:743 Progress <> pstep ind
+R746:746 _luna_cjoin_congr <> F:8 var
+R748:748 _luna_cjoin_congr <> x:9 var
+R752:752 _luna_cjoin_congr <> F:8 var
+R754:754 _luna_cjoin_congr <> y:10 var
+R765:765 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R810:818 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 773:773 <> x:11
+binder 775:775 <> y:12
+R788:791 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R778:783 _tmp_epstep <> epstep ind
+R785:785 _luna_cjoin_congr <> x:11 var
+R787:787 _luna_cjoin_congr <> y:12 var
+R792:797 _tmp_epstep <> epstep ind
+R800:800 _luna_cjoin_congr <> F:8 var
+R802:802 _luna_cjoin_congr <> x:11 var
+R806:806 _luna_cjoin_congr <> F:8 var
+R808:808 _luna_cjoin_congr <> y:12 var
+binder 826:826 <> x:13
+binder 828:828 <> y:14
+R844:847 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R831:833 Progress <> rtc ind
+R843:843 _luna_cjoin_congr <> y:14 var
+R841:841 _luna_cjoin_congr <> x:13 var
+R835:839 _work_mixed_closure <> cstep ind
+R848:850 Progress <> rtc ind
+R865:865 _luna_cjoin_congr <> F:8 var
+R867:867 _luna_cjoin_congr <> y:14 var
+R859:859 _luna_cjoin_congr <> F:8 var
+R861:861 _luna_cjoin_congr <> x:13 var
+R852:856 _work_mixed_closure <> cstep ind
+R911:921 _work_epstep_rtc <> rtc_map_rel thm
+R911:921 _work_epstep_rtc <> rtc_map_rel thm
+R963:974 _luna_cjoin_congr <> cstep_congr1 thm
+R963:974 _luna_cjoin_congr <> cstep_congr1 thm
+prf 1149:1164 <> rtc_cstep_congr2
+R1184:1187 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1180:1183 TypeRules <> term ind
+R1192:1195 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1188:1191 TypeRules <> term ind
+R1196:1199 TypeRules <> term ind
+binder 1176:1176 <> F:15
+R1207:1207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1283:1291 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1215:1215 <> a:16
+binder 1217:1218 <> a':17
+binder 1220:1220 <> b:18
+binder 1222:1223 <> b':19
+R1236:1239 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1226:1230 Progress <> pstep ind
+R1232:1232 _luna_cjoin_congr <> a:16 var
+R1234:1235 _luna_cjoin_congr <> a':17 var
+R1250:1259 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1240:1244 Progress <> pstep ind
+R1246:1246 _luna_cjoin_congr <> b:18 var
+R1248:1249 _luna_cjoin_congr <> b':19 var
+R1260:1264 Progress <> pstep ind
+R1267:1267 _luna_cjoin_congr <> F:15 var
+R1271:1271 _luna_cjoin_congr <> b:18 var
+R1269:1269 _luna_cjoin_congr <> a:16 var
+R1275:1275 _luna_cjoin_congr <> F:15 var
+R1280:1281 _luna_cjoin_congr <> b':19 var
+R1277:1278 _luna_cjoin_congr <> a':17 var
+R1292:1292 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1371:1379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1300:1300 <> a:20
+binder 1302:1303 <> a':21
+binder 1305:1305 <> b:22
+binder 1307:1308 <> b':23
+R1322:1325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1311:1316 _tmp_epstep <> epstep ind
+R1318:1318 _luna_cjoin_congr <> a:20 var
+R1320:1321 _luna_cjoin_congr <> a':21 var
+R1337:1346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1326:1331 _tmp_epstep <> epstep ind
+R1333:1333 _luna_cjoin_congr <> b:22 var
+R1335:1336 _luna_cjoin_congr <> b':23 var
+R1347:1352 _tmp_epstep <> epstep ind
+R1355:1355 _luna_cjoin_congr <> F:15 var
+R1359:1359 _luna_cjoin_congr <> b:22 var
+R1357:1357 _luna_cjoin_congr <> a:20 var
+R1363:1363 _luna_cjoin_congr <> F:15 var
+R1368:1369 _luna_cjoin_congr <> b':23 var
+R1365:1366 _luna_cjoin_congr <> a':21 var
+binder 1387:1387 <> a:24
+binder 1389:1390 <> a':25
+binder 1392:1392 <> b:26
+binder 1394:1395 <> b':27
+R1412:1415 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1398:1400 Progress <> rtc ind
+R1410:1411 _luna_cjoin_congr <> a':25 var
+R1408:1408 _luna_cjoin_congr <> a:24 var
+R1402:1406 _work_mixed_closure <> cstep ind
+R1430:1439 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1416:1418 Progress <> rtc ind
+R1428:1429 _luna_cjoin_congr <> b':27 var
+R1426:1426 _luna_cjoin_congr <> b:26 var
+R1420:1424 _work_mixed_closure <> cstep ind
+R1440:1442 Progress <> rtc ind
+R1459:1459 _luna_cjoin_congr <> F:15 var
+R1464:1465 _luna_cjoin_congr <> b':27 var
+R1461:1462 _luna_cjoin_congr <> a':25 var
+R1451:1451 _luna_cjoin_congr <> F:15 var
+R1455:1455 _luna_cjoin_congr <> b:26 var
+R1453:1453 _luna_cjoin_congr <> a:24 var
+R1444:1448 _work_mixed_closure <> cstep ind
+R1543:1547 _work_mixed_closure <> cstep ind
+R1556:1560 _work_mixed_closure <> cstep ind
+R1519:1530 _work_epstep_rtc <> rtc_map_rel2 thm
+R1543:1547 _work_mixed_closure <> cstep ind
+R1556:1560 _work_mixed_closure <> cstep ind
+R1519:1530 _work_epstep_rtc <> rtc_map_rel2 thm
+R1603:1614 _luna_cjoin_congr <> cstep_congr1 thm
+binder 1621:1621 <> q:28
+R1628:1628 _luna_cjoin_congr <> q:28 var
+R1603:1614 _luna_cjoin_congr <> cstep_congr1 thm
+binder 1621:1621 <> q:29
+R1628:1628 _luna_cjoin_congr <> q:29 var
+R1686:1695 Progress <> pstep_refl thm
+R1686:1695 Progress <> pstep_refl thm
+R1750:1760 _tmp_epstep <> epstep_refl thm
+R1750:1760 _tmp_epstep <> epstep_refl thm
+R1811:1822 _luna_cjoin_congr <> cstep_congr1 thm
+binder 1829:1829 <> q:30
+R1838:1838 _luna_cjoin_congr <> q:30 var
+R1811:1822 _luna_cjoin_congr <> cstep_congr1 thm
+binder 1829:1829 <> q:31
+R1838:1838 _luna_cjoin_congr <> q:31 var
+R1882:1891 Progress <> pstep_refl thm
+R1882:1891 Progress <> pstep_refl thm
+R1946:1956 _tmp_epstep <> epstep_refl thm
+R1946:1956 _tmp_epstep <> epstep_refl thm
+prf 2029:2044 <> rtc_cstep_congr3
+R2064:2067 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2060:2063 TypeRules <> term ind
+R2072:2075 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2068:2071 TypeRules <> term ind
+R2080:2083 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2076:2079 TypeRules <> term ind
+R2084:2087 TypeRules <> term ind
+binder 2056:2056 <> F:32
+R2095:2095 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2201:2209 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2103:2103 <> a:33
+binder 2105:2106 <> a':34
+binder 2108:2108 <> b:35
+binder 2110:2111 <> b':36
+binder 2113:2113 <> c:37
+binder 2115:2116 <> c':38
+R2135:2138 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2125:2129 Progress <> pstep ind
+R2131:2131 _luna_cjoin_congr <> a:33 var
+R2133:2134 _luna_cjoin_congr <> a':34 var
+R2149:2152 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2139:2143 Progress <> pstep ind
+R2145:2145 _luna_cjoin_congr <> b:35 var
+R2147:2148 _luna_cjoin_congr <> b':36 var
+R2163:2172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2153:2157 Progress <> pstep ind
+R2159:2159 _luna_cjoin_congr <> c:37 var
+R2161:2162 _luna_cjoin_congr <> c':38 var
+R2173:2177 Progress <> pstep ind
+R2180:2180 _luna_cjoin_congr <> F:32 var
+R2186:2186 _luna_cjoin_congr <> c:37 var
+R2184:2184 _luna_cjoin_congr <> b:35 var
+R2182:2182 _luna_cjoin_congr <> a:33 var
+R2190:2190 _luna_cjoin_congr <> F:32 var
+R2198:2199 _luna_cjoin_congr <> c':38 var
+R2195:2196 _luna_cjoin_congr <> b':36 var
+R2192:2193 _luna_cjoin_congr <> a':34 var
+R2210:2210 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2320:2328 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2218:2218 <> a:39
+binder 2220:2221 <> a':40
+binder 2223:2223 <> b:41
+binder 2225:2226 <> b':42
+binder 2228:2228 <> c:43
+binder 2230:2231 <> c':44
+R2251:2254 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2240:2245 _tmp_epstep <> epstep ind
+R2247:2247 _luna_cjoin_congr <> a:39 var
+R2249:2250 _luna_cjoin_congr <> a':40 var
+R2266:2269 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2255:2260 _tmp_epstep <> epstep ind
+R2262:2262 _luna_cjoin_congr <> b:41 var
+R2264:2265 _luna_cjoin_congr <> b':42 var
+R2281:2290 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2270:2275 _tmp_epstep <> epstep ind
+R2277:2277 _luna_cjoin_congr <> c:43 var
+R2279:2280 _luna_cjoin_congr <> c':44 var
+R2291:2296 _tmp_epstep <> epstep ind
+R2299:2299 _luna_cjoin_congr <> F:32 var
+R2305:2305 _luna_cjoin_congr <> c:43 var
+R2303:2303 _luna_cjoin_congr <> b:41 var
+R2301:2301 _luna_cjoin_congr <> a:39 var
+R2309:2309 _luna_cjoin_congr <> F:32 var
+R2317:2318 _luna_cjoin_congr <> c':44 var
+R2314:2315 _luna_cjoin_congr <> b':42 var
+R2311:2312 _luna_cjoin_congr <> a':40 var
+binder 2336:2336 <> a:45
+binder 2338:2339 <> a':46
+binder 2341:2341 <> b:47
+binder 2343:2344 <> b':48
+binder 2346:2346 <> c:49
+binder 2348:2349 <> c':50
+R2372:2375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2358:2360 Progress <> rtc ind
+R2370:2371 _luna_cjoin_congr <> a':46 var
+R2368:2368 _luna_cjoin_congr <> a:45 var
+R2362:2366 _work_mixed_closure <> cstep ind
+R2390:2393 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2376:2378 Progress <> rtc ind
+R2388:2389 _luna_cjoin_congr <> b':48 var
+R2386:2386 _luna_cjoin_congr <> b:47 var
+R2380:2384 _work_mixed_closure <> cstep ind
+R2408:2417 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2394:2396 Progress <> rtc ind
+R2406:2407 _luna_cjoin_congr <> c':50 var
+R2404:2404 _luna_cjoin_congr <> c:49 var
+R2398:2402 _work_mixed_closure <> cstep ind
+R2418:2420 Progress <> rtc ind
+R2439:2439 _luna_cjoin_congr <> F:32 var
+R2447:2448 _luna_cjoin_congr <> c':50 var
+R2444:2445 _luna_cjoin_congr <> b':48 var
+R2441:2442 _luna_cjoin_congr <> a':46 var
+R2429:2429 _luna_cjoin_congr <> F:32 var
+R2435:2435 _luna_cjoin_congr <> c:49 var
+R2433:2433 _luna_cjoin_congr <> b:47 var
+R2431:2431 _luna_cjoin_congr <> a:45 var
+R2422:2426 _work_mixed_closure <> cstep ind
+R2534:2538 _work_mixed_closure <> cstep ind
+R2547:2551 _work_mixed_closure <> cstep ind
+R2510:2521 _work_epstep_rtc <> rtc_map_rel3 thm
+R2534:2538 _work_mixed_closure <> cstep ind
+R2547:2551 _work_mixed_closure <> cstep ind
+R2510:2521 _work_epstep_rtc <> rtc_map_rel3 thm
+R2596:2607 _luna_cjoin_congr <> cstep_congr1 thm
+binder 2614:2614 <> q:51
+R2621:2621 _luna_cjoin_congr <> q:51 var
+R2596:2607 _luna_cjoin_congr <> cstep_congr1 thm
+binder 2614:2614 <> q:52
+R2621:2621 _luna_cjoin_congr <> q:52 var
+R2674:2683 Progress <> pstep_refl thm
+R2674:2683 Progress <> pstep_refl thm
+R2674:2683 Progress <> pstep_refl thm
+R2674:2683 Progress <> pstep_refl thm
+R2730:2740 _tmp_epstep <> epstep_refl thm
+R2730:2740 _tmp_epstep <> epstep_refl thm
+R2730:2740 _tmp_epstep <> epstep_refl thm
+R2730:2740 _tmp_epstep <> epstep_refl thm
+R2792:2803 _luna_cjoin_congr <> cstep_congr1 thm
+binder 2810:2810 <> q:53
+R2819:2819 _luna_cjoin_congr <> q:53 var
+R2792:2803 _luna_cjoin_congr <> cstep_congr1 thm
+binder 2810:2810 <> q:54
+R2819:2819 _luna_cjoin_congr <> q:54 var
+R2870:2879 Progress <> pstep_refl thm
+R2870:2879 Progress <> pstep_refl thm
+R2870:2879 Progress <> pstep_refl thm
+R2870:2879 Progress <> pstep_refl thm
+R2926:2936 _tmp_epstep <> epstep_refl thm
+R2926:2936 _tmp_epstep <> epstep_refl thm
+R2926:2936 _tmp_epstep <> epstep_refl thm
+R2926:2936 _tmp_epstep <> epstep_refl thm
+R2988:2999 _luna_cjoin_congr <> cstep_congr1 thm
+binder 3006:3006 <> q:55
+R3017:3017 _luna_cjoin_congr <> q:55 var
+R2988:2999 _luna_cjoin_congr <> cstep_congr1 thm
+binder 3006:3006 <> q:56
+R3017:3017 _luna_cjoin_congr <> q:56 var
+R3066:3075 Progress <> pstep_refl thm
+R3066:3075 Progress <> pstep_refl thm
+R3066:3075 Progress <> pstep_refl thm
+R3066:3075 Progress <> pstep_refl thm
+R3122:3132 _tmp_epstep <> epstep_refl thm
+R3122:3132 _tmp_epstep <> epstep_refl thm
+R3122:3132 _tmp_epstep <> epstep_refl thm
+R3122:3132 _tmp_epstep <> epstep_refl thm
+prf 3206:3221 <> rtc_cstep_congr4
+R3241:3244 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3237:3240 TypeRules <> term ind
+R3249:3252 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3245:3248 TypeRules <> term ind
+R3257:3260 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3253:3256 TypeRules <> term ind
+R3265:3268 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3261:3264 TypeRules <> term ind
+R3269:3272 TypeRules <> term ind
+binder 3233:3233 <> F:57
+R3280:3280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3410:3418 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3288:3288 <> a:58
+binder 3290:3291 <> a':59
+binder 3293:3293 <> b:60
+binder 3295:3296 <> b':61
+binder 3298:3298 <> c:62
+binder 3300:3301 <> c':63
+binder 3303:3303 <> d:64
+binder 3305:3306 <> d':65
+R3325:3328 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3315:3319 Progress <> pstep ind
+R3321:3321 _luna_cjoin_congr <> a:58 var
+R3323:3324 _luna_cjoin_congr <> a':59 var
+R3339:3342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3329:3333 Progress <> pstep ind
+R3335:3335 _luna_cjoin_congr <> b:60 var
+R3337:3338 _luna_cjoin_congr <> b':61 var
+R3353:3356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3343:3347 Progress <> pstep ind
+R3349:3349 _luna_cjoin_congr <> c:62 var
+R3351:3352 _luna_cjoin_congr <> c':63 var
+R3367:3376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3357:3361 Progress <> pstep ind
+R3363:3363 _luna_cjoin_congr <> d:64 var
+R3365:3366 _luna_cjoin_congr <> d':65 var
+R3377:3381 Progress <> pstep ind
+R3384:3384 _luna_cjoin_congr <> F:57 var
+R3392:3392 _luna_cjoin_congr <> d:64 var
+R3390:3390 _luna_cjoin_congr <> c:62 var
+R3388:3388 _luna_cjoin_congr <> b:60 var
+R3386:3386 _luna_cjoin_congr <> a:58 var
+R3396:3396 _luna_cjoin_congr <> F:57 var
+R3407:3408 _luna_cjoin_congr <> d':65 var
+R3404:3405 _luna_cjoin_congr <> c':63 var
+R3401:3402 _luna_cjoin_congr <> b':61 var
+R3398:3399 _luna_cjoin_congr <> a':59 var
+R3419:3419 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3554:3562 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3427:3427 <> a:66
+binder 3429:3430 <> a':67
+binder 3432:3432 <> b:68
+binder 3434:3435 <> b':69
+binder 3437:3437 <> c:70
+binder 3439:3440 <> c':71
+binder 3442:3442 <> d:72
+binder 3444:3445 <> d':73
+R3465:3468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3454:3459 _tmp_epstep <> epstep ind
+R3461:3461 _luna_cjoin_congr <> a:66 var
+R3463:3464 _luna_cjoin_congr <> a':67 var
+R3480:3483 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3469:3474 _tmp_epstep <> epstep ind
+R3476:3476 _luna_cjoin_congr <> b:68 var
+R3478:3479 _luna_cjoin_congr <> b':69 var
+R3495:3498 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3484:3489 _tmp_epstep <> epstep ind
+R3491:3491 _luna_cjoin_congr <> c:70 var
+R3493:3494 _luna_cjoin_congr <> c':71 var
+R3510:3519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3499:3504 _tmp_epstep <> epstep ind
+R3506:3506 _luna_cjoin_congr <> d:72 var
+R3508:3509 _luna_cjoin_congr <> d':73 var
+R3520:3525 _tmp_epstep <> epstep ind
+R3528:3528 _luna_cjoin_congr <> F:57 var
+R3536:3536 _luna_cjoin_congr <> d:72 var
+R3534:3534 _luna_cjoin_congr <> c:70 var
+R3532:3532 _luna_cjoin_congr <> b:68 var
+R3530:3530 _luna_cjoin_congr <> a:66 var
+R3540:3540 _luna_cjoin_congr <> F:57 var
+R3551:3552 _luna_cjoin_congr <> d':73 var
+R3548:3549 _luna_cjoin_congr <> c':71 var
+R3545:3546 _luna_cjoin_congr <> b':69 var
+R3542:3543 _luna_cjoin_congr <> a':67 var
+binder 3570:3570 <> a:74
+binder 3572:3573 <> a':75
+binder 3575:3575 <> b:76
+binder 3577:3578 <> b':77
+binder 3580:3580 <> c:78
+binder 3582:3583 <> c':79
+binder 3585:3585 <> d:80
+binder 3587:3588 <> d':81
+R3611:3614 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3597:3599 Progress <> rtc ind
+R3609:3610 _luna_cjoin_congr <> a':75 var
+R3607:3607 _luna_cjoin_congr <> a:74 var
+R3601:3605 _work_mixed_closure <> cstep ind
+R3629:3632 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3615:3617 Progress <> rtc ind
+R3627:3628 _luna_cjoin_congr <> b':77 var
+R3625:3625 _luna_cjoin_congr <> b:76 var
+R3619:3623 _work_mixed_closure <> cstep ind
+R3647:3656 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3633:3635 Progress <> rtc ind
+R3645:3646 _luna_cjoin_congr <> c':79 var
+R3643:3643 _luna_cjoin_congr <> c:78 var
+R3637:3641 _work_mixed_closure <> cstep ind
+R3671:3674 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3657:3659 Progress <> rtc ind
+R3669:3670 _luna_cjoin_congr <> d':81 var
+R3667:3667 _luna_cjoin_congr <> d:80 var
+R3661:3665 _work_mixed_closure <> cstep ind
+R3675:3677 Progress <> rtc ind
+R3698:3698 _luna_cjoin_congr <> F:57 var
+R3709:3710 _luna_cjoin_congr <> d':81 var
+R3706:3707 _luna_cjoin_congr <> c':79 var
+R3703:3704 _luna_cjoin_congr <> b':77 var
+R3700:3701 _luna_cjoin_congr <> a':75 var
+R3686:3686 _luna_cjoin_congr <> F:57 var
+R3694:3694 _luna_cjoin_congr <> d:80 var
+R3692:3692 _luna_cjoin_congr <> c:78 var
+R3690:3690 _luna_cjoin_congr <> b:76 var
+R3688:3688 _luna_cjoin_congr <> a:74 var
+R3679:3683 _work_mixed_closure <> cstep ind
+R3804:3808 _work_mixed_closure <> cstep ind
+R3817:3821 _work_mixed_closure <> cstep ind
+R3780:3791 _work_epstep_rtc <> rtc_map_rel4 thm
+R3804:3808 _work_mixed_closure <> cstep ind
+R3817:3821 _work_mixed_closure <> cstep ind
+R3780:3791 _work_epstep_rtc <> rtc_map_rel4 thm
+R3868:3879 _luna_cjoin_congr <> cstep_congr1 thm
+binder 3886:3886 <> u:82
+R3893:3893 _luna_cjoin_congr <> u:82 var
+R3868:3879 _luna_cjoin_congr <> cstep_congr1 thm
+binder 3886:3886 <> u:83
+R3893:3893 _luna_cjoin_congr <> u:83 var
+R3948:3957 Progress <> pstep_refl thm
+R3948:3957 Progress <> pstep_refl thm
+R3948:3957 Progress <> pstep_refl thm
+R3948:3957 Progress <> pstep_refl thm
+R3948:3957 Progress <> pstep_refl thm
+R4004:4014 _tmp_epstep <> epstep_refl thm
+R4004:4014 _tmp_epstep <> epstep_refl thm
+R4004:4014 _tmp_epstep <> epstep_refl thm
+R4004:4014 _tmp_epstep <> epstep_refl thm
+R4004:4014 _tmp_epstep <> epstep_refl thm
+R4068:4079 _luna_cjoin_congr <> cstep_congr1 thm
+binder 4086:4086 <> u:84
+R4095:4095 _luna_cjoin_congr <> u:84 var
+R4068:4079 _luna_cjoin_congr <> cstep_congr1 thm
+binder 4086:4086 <> u:85
+R4095:4095 _luna_cjoin_congr <> u:85 var
+R4148:4157 Progress <> pstep_refl thm
+R4148:4157 Progress <> pstep_refl thm
+R4148:4157 Progress <> pstep_refl thm
+R4148:4157 Progress <> pstep_refl thm
+R4148:4157 Progress <> pstep_refl thm
+R4204:4214 _tmp_epstep <> epstep_refl thm
+R4204:4214 _tmp_epstep <> epstep_refl thm
+R4204:4214 _tmp_epstep <> epstep_refl thm
+R4204:4214 _tmp_epstep <> epstep_refl thm
+R4204:4214 _tmp_epstep <> epstep_refl thm
+R4268:4279 _luna_cjoin_congr <> cstep_congr1 thm
+binder 4286:4286 <> u:86
+R4297:4297 _luna_cjoin_congr <> u:86 var
+R4268:4279 _luna_cjoin_congr <> cstep_congr1 thm
+binder 4286:4286 <> u:87
+R4297:4297 _luna_cjoin_congr <> u:87 var
+R4348:4357 Progress <> pstep_refl thm
+R4348:4357 Progress <> pstep_refl thm
+R4348:4357 Progress <> pstep_refl thm
+R4348:4357 Progress <> pstep_refl thm
+R4348:4357 Progress <> pstep_refl thm
+R4404:4414 _tmp_epstep <> epstep_refl thm
+R4404:4414 _tmp_epstep <> epstep_refl thm
+R4404:4414 _tmp_epstep <> epstep_refl thm
+R4404:4414 _tmp_epstep <> epstep_refl thm
+R4404:4414 _tmp_epstep <> epstep_refl thm
+R4468:4479 _luna_cjoin_congr <> cstep_congr1 thm
+binder 4486:4486 <> u:88
+R4499:4499 _luna_cjoin_congr <> u:88 var
+R4468:4479 _luna_cjoin_congr <> cstep_congr1 thm
+binder 4486:4486 <> u:89
+R4499:4499 _luna_cjoin_congr <> u:89 var
+R4548:4557 Progress <> pstep_refl thm
+R4548:4557 Progress <> pstep_refl thm
+R4548:4557 Progress <> pstep_refl thm
+R4548:4557 Progress <> pstep_refl thm
+R4548:4557 Progress <> pstep_refl thm
+R4604:4614 _tmp_epstep <> epstep_refl thm
+R4604:4614 _tmp_epstep <> epstep_refl thm
+R4604:4614 _tmp_epstep <> epstep_refl thm
+R4604:4614 _tmp_epstep <> epstep_refl thm
+R4604:4614 _tmp_epstep <> epstep_refl thm
+prf 4702:4717 <> rtc_cstep_congr5
+R4741:4744 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4737:4740 TypeRules <> term ind
+R4749:4752 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4745:4748 TypeRules <> term ind
+R4757:4760 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4753:4756 TypeRules <> term ind
+R4765:4768 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4761:4764 TypeRules <> term ind
+R4773:4776 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4769:4772 TypeRules <> term ind
+R4777:4780 TypeRules <> term ind
+binder 4733:4733 <> F:90
+R4788:4788 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4942:4950 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4796:4796 <> a:91
+binder 4798:4799 <> a':92
+binder 4801:4801 <> b:93
+binder 4803:4804 <> b':94
+binder 4806:4806 <> c:95
+binder 4808:4809 <> c':96
+binder 4811:4811 <> d:97
+binder 4813:4814 <> d':98
+binder 4816:4816 <> e:99
+binder 4818:4819 <> e':100
+R4838:4841 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4828:4832 Progress <> pstep ind
+R4834:4834 _luna_cjoin_congr <> a:91 var
+R4836:4837 _luna_cjoin_congr <> a':92 var
+R4852:4855 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4842:4846 Progress <> pstep ind
+R4848:4848 _luna_cjoin_congr <> b:93 var
+R4850:4851 _luna_cjoin_congr <> b':94 var
+R4866:4869 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4856:4860 Progress <> pstep ind
+R4862:4862 _luna_cjoin_congr <> c:95 var
+R4864:4865 _luna_cjoin_congr <> c':96 var
+R4880:4889 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4870:4874 Progress <> pstep ind
+R4876:4876 _luna_cjoin_congr <> d:97 var
+R4878:4879 _luna_cjoin_congr <> d':98 var
+R4900:4903 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4890:4894 Progress <> pstep ind
+R4896:4896 _luna_cjoin_congr <> e:99 var
+R4898:4899 _luna_cjoin_congr <> e':100 var
+R4904:4908 Progress <> pstep ind
+R4911:4911 _luna_cjoin_congr <> F:90 var
+R4921:4921 _luna_cjoin_congr <> e:99 var
+R4919:4919 _luna_cjoin_congr <> d:97 var
+R4917:4917 _luna_cjoin_congr <> c:95 var
+R4915:4915 _luna_cjoin_congr <> b:93 var
+R4913:4913 _luna_cjoin_congr <> a:91 var
+R4925:4925 _luna_cjoin_congr <> F:90 var
+R4939:4940 _luna_cjoin_congr <> e':100 var
+R4936:4937 _luna_cjoin_congr <> d':98 var
+R4933:4934 _luna_cjoin_congr <> c':96 var
+R4930:4931 _luna_cjoin_congr <> b':94 var
+R4927:4928 _luna_cjoin_congr <> a':92 var
+R4951:4951 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5111:5119 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4959:4959 <> a:101
+binder 4961:4962 <> a':102
+binder 4964:4964 <> b:103
+binder 4966:4967 <> b':104
+binder 4969:4969 <> c:105
+binder 4971:4972 <> c':106
+binder 4974:4974 <> d:107
+binder 4976:4977 <> d':108
+binder 4979:4979 <> e:109
+binder 4981:4982 <> e':110
+R5002:5005 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4991:4996 _tmp_epstep <> epstep ind
+R4998:4998 _luna_cjoin_congr <> a:101 var
+R5000:5001 _luna_cjoin_congr <> a':102 var
+R5017:5020 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5006:5011 _tmp_epstep <> epstep ind
+R5013:5013 _luna_cjoin_congr <> b:103 var
+R5015:5016 _luna_cjoin_congr <> b':104 var
+R5032:5035 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5021:5026 _tmp_epstep <> epstep ind
+R5028:5028 _luna_cjoin_congr <> c:105 var
+R5030:5031 _luna_cjoin_congr <> c':106 var
+R5047:5056 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5036:5041 _tmp_epstep <> epstep ind
+R5043:5043 _luna_cjoin_congr <> d:107 var
+R5045:5046 _luna_cjoin_congr <> d':108 var
+R5068:5071 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5057:5062 _tmp_epstep <> epstep ind
+R5064:5064 _luna_cjoin_congr <> e:109 var
+R5066:5067 _luna_cjoin_congr <> e':110 var
+R5072:5077 _tmp_epstep <> epstep ind
+R5080:5080 _luna_cjoin_congr <> F:90 var
+R5090:5090 _luna_cjoin_congr <> e:109 var
+R5088:5088 _luna_cjoin_congr <> d:107 var
+R5086:5086 _luna_cjoin_congr <> c:105 var
+R5084:5084 _luna_cjoin_congr <> b:103 var
+R5082:5082 _luna_cjoin_congr <> a:101 var
+R5094:5094 _luna_cjoin_congr <> F:90 var
+R5108:5109 _luna_cjoin_congr <> e':110 var
+R5105:5106 _luna_cjoin_congr <> d':108 var
+R5102:5103 _luna_cjoin_congr <> c':106 var
+R5099:5100 _luna_cjoin_congr <> b':104 var
+R5096:5097 _luna_cjoin_congr <> a':102 var
+binder 5127:5127 <> a:111
+binder 5129:5130 <> a':112
+binder 5132:5132 <> b:113
+binder 5134:5135 <> b':114
+binder 5137:5137 <> c:115
+binder 5139:5140 <> c':116
+binder 5142:5142 <> d:117
+binder 5144:5145 <> d':118
+binder 5147:5147 <> e:119
+binder 5149:5150 <> e':120
+R5173:5176 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5159:5161 Progress <> rtc ind
+R5171:5172 _luna_cjoin_congr <> a':112 var
+R5169:5169 _luna_cjoin_congr <> a:111 var
+R5163:5167 _work_mixed_closure <> cstep ind
+R5191:5194 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5177:5179 Progress <> rtc ind
+R5189:5190 _luna_cjoin_congr <> b':114 var
+R5187:5187 _luna_cjoin_congr <> b:113 var
+R5181:5185 _work_mixed_closure <> cstep ind
+R5209:5218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5195:5197 Progress <> rtc ind
+R5207:5208 _luna_cjoin_congr <> c':116 var
+R5205:5205 _luna_cjoin_congr <> c:115 var
+R5199:5203 _work_mixed_closure <> cstep ind
+R5233:5236 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5219:5221 Progress <> rtc ind
+R5231:5232 _luna_cjoin_congr <> d':118 var
+R5229:5229 _luna_cjoin_congr <> d:117 var
+R5223:5227 _work_mixed_closure <> cstep ind
+R5251:5260 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5237:5239 Progress <> rtc ind
+R5249:5250 _luna_cjoin_congr <> e':120 var
+R5247:5247 _luna_cjoin_congr <> e:119 var
+R5241:5245 _work_mixed_closure <> cstep ind
+R5261:5263 Progress <> rtc ind
+R5286:5286 _luna_cjoin_congr <> F:90 var
+R5300:5301 _luna_cjoin_congr <> e':120 var
+R5297:5298 _luna_cjoin_congr <> d':118 var
+R5294:5295 _luna_cjoin_congr <> c':116 var
+R5291:5292 _luna_cjoin_congr <> b':114 var
+R5288:5289 _luna_cjoin_congr <> a':112 var
+R5272:5272 _luna_cjoin_congr <> F:90 var
+R5282:5282 _luna_cjoin_congr <> e:119 var
+R5280:5280 _luna_cjoin_congr <> d:117 var
+R5278:5278 _luna_cjoin_congr <> c:115 var
+R5276:5276 _luna_cjoin_congr <> b:113 var
+R5274:5274 _luna_cjoin_congr <> a:111 var
+R5265:5269 _work_mixed_closure <> cstep ind
+R5404:5408 _work_mixed_closure <> cstep ind
+R5417:5421 _work_mixed_closure <> cstep ind
+R5380:5391 _work_epstep_rtc <> rtc_map_rel5 thm
+R5404:5408 _work_mixed_closure <> cstep ind
+R5417:5421 _work_mixed_closure <> cstep ind
+R5380:5391 _work_epstep_rtc <> rtc_map_rel5 thm
+R5470:5481 _luna_cjoin_congr <> cstep_congr1 thm
+binder 5488:5488 <> u:121
+R5495:5495 _luna_cjoin_congr <> u:121 var
+R5470:5481 _luna_cjoin_congr <> cstep_congr1 thm
+binder 5488:5488 <> u:122
+R5495:5495 _luna_cjoin_congr <> u:122 var
+R5552:5561 Progress <> pstep_refl thm
+R5552:5561 Progress <> pstep_refl thm
+R5552:5561 Progress <> pstep_refl thm
+R5552:5561 Progress <> pstep_refl thm
+R5552:5561 Progress <> pstep_refl thm
+R5552:5561 Progress <> pstep_refl thm
+R5608:5618 _tmp_epstep <> epstep_refl thm
+R5608:5618 _tmp_epstep <> epstep_refl thm
+R5608:5618 _tmp_epstep <> epstep_refl thm
+R5608:5618 _tmp_epstep <> epstep_refl thm
+R5608:5618 _tmp_epstep <> epstep_refl thm
+R5608:5618 _tmp_epstep <> epstep_refl thm
+R5674:5685 _luna_cjoin_congr <> cstep_congr1 thm
+binder 5692:5692 <> u:123
+R5701:5701 _luna_cjoin_congr <> u:123 var
+R5674:5685 _luna_cjoin_congr <> cstep_congr1 thm
+binder 5692:5692 <> u:124
+R5701:5701 _luna_cjoin_congr <> u:124 var
+R5756:5765 Progress <> pstep_refl thm
+R5756:5765 Progress <> pstep_refl thm
+R5756:5765 Progress <> pstep_refl thm
+R5756:5765 Progress <> pstep_refl thm
+R5756:5765 Progress <> pstep_refl thm
+R5756:5765 Progress <> pstep_refl thm
+R5812:5822 _tmp_epstep <> epstep_refl thm
+R5812:5822 _tmp_epstep <> epstep_refl thm
+R5812:5822 _tmp_epstep <> epstep_refl thm
+R5812:5822 _tmp_epstep <> epstep_refl thm
+R5812:5822 _tmp_epstep <> epstep_refl thm
+R5812:5822 _tmp_epstep <> epstep_refl thm
+R5878:5889 _luna_cjoin_congr <> cstep_congr1 thm
+binder 5896:5896 <> u:125
+R5907:5907 _luna_cjoin_congr <> u:125 var
+R5878:5889 _luna_cjoin_congr <> cstep_congr1 thm
+binder 5896:5896 <> u:126
+R5907:5907 _luna_cjoin_congr <> u:126 var
+R5960:5969 Progress <> pstep_refl thm
+R5960:5969 Progress <> pstep_refl thm
+R5960:5969 Progress <> pstep_refl thm
+R5960:5969 Progress <> pstep_refl thm
+R5960:5969 Progress <> pstep_refl thm
+R5960:5969 Progress <> pstep_refl thm
+R6016:6026 _tmp_epstep <> epstep_refl thm
+R6016:6026 _tmp_epstep <> epstep_refl thm
+R6016:6026 _tmp_epstep <> epstep_refl thm
+R6016:6026 _tmp_epstep <> epstep_refl thm
+R6016:6026 _tmp_epstep <> epstep_refl thm
+R6016:6026 _tmp_epstep <> epstep_refl thm
+R6082:6093 _luna_cjoin_congr <> cstep_congr1 thm
+binder 6100:6100 <> u:127
+R6113:6113 _luna_cjoin_congr <> u:127 var
+R6082:6093 _luna_cjoin_congr <> cstep_congr1 thm
+binder 6100:6100 <> u:128
+R6113:6113 _luna_cjoin_congr <> u:128 var
+R6164:6173 Progress <> pstep_refl thm
+R6164:6173 Progress <> pstep_refl thm
+R6164:6173 Progress <> pstep_refl thm
+R6164:6173 Progress <> pstep_refl thm
+R6164:6173 Progress <> pstep_refl thm
+R6164:6173 Progress <> pstep_refl thm
+R6220:6230 _tmp_epstep <> epstep_refl thm
+R6220:6230 _tmp_epstep <> epstep_refl thm
+R6220:6230 _tmp_epstep <> epstep_refl thm
+R6220:6230 _tmp_epstep <> epstep_refl thm
+R6220:6230 _tmp_epstep <> epstep_refl thm
+R6220:6230 _tmp_epstep <> epstep_refl thm
+R6286:6297 _luna_cjoin_congr <> cstep_congr1 thm
+binder 6304:6304 <> u:129
+R6319:6319 _luna_cjoin_congr <> u:129 var
+R6286:6297 _luna_cjoin_congr <> cstep_congr1 thm
+binder 6304:6304 <> u:130
+R6319:6319 _luna_cjoin_congr <> u:130 var
+R6368:6377 Progress <> pstep_refl thm
+R6368:6377 Progress <> pstep_refl thm
+R6368:6377 Progress <> pstep_refl thm
+R6368:6377 Progress <> pstep_refl thm
+R6368:6377 Progress <> pstep_refl thm
+R6368:6377 Progress <> pstep_refl thm
+R6424:6434 _tmp_epstep <> epstep_refl thm
+R6424:6434 _tmp_epstep <> epstep_refl thm
+R6424:6434 _tmp_epstep <> epstep_refl thm
+R6424:6434 _tmp_epstep <> epstep_refl thm
+R6424:6434 _tmp_epstep <> epstep_refl thm
+R6424:6434 _tmp_epstep <> epstep_refl thm
+prf 6628:6639 <> cjoin_congr1
+R6659:6662 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6655:6658 TypeRules <> term ind
+R6663:6666 TypeRules <> term ind
+binder 6651:6651 <> F:131
+R6674:6674 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6717:6725 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6682:6682 <> x:132
+binder 6684:6684 <> y:133
+R6696:6699 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6687:6691 Progress <> pstep ind
+R6693:6693 _luna_cjoin_congr <> x:132 var
+R6695:6695 _luna_cjoin_congr <> y:133 var
+R6700:6704 Progress <> pstep ind
+R6707:6707 _luna_cjoin_congr <> F:131 var
+R6709:6709 _luna_cjoin_congr <> x:132 var
+R6713:6713 _luna_cjoin_congr <> F:131 var
+R6715:6715 _luna_cjoin_congr <> y:133 var
+R6726:6726 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6771:6779 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6734:6734 <> x:134
+binder 6736:6736 <> y:135
+R6749:6752 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6739:6744 _tmp_epstep <> epstep ind
+R6746:6746 _luna_cjoin_congr <> x:134 var
+R6748:6748 _luna_cjoin_congr <> y:135 var
+R6753:6758 _tmp_epstep <> epstep ind
+R6761:6761 _luna_cjoin_congr <> F:131 var
+R6763:6763 _luna_cjoin_congr <> x:134 var
+R6767:6767 _luna_cjoin_congr <> F:131 var
+R6769:6769 _luna_cjoin_congr <> y:135 var
+binder 6787:6787 <> x:136
+binder 6789:6789 <> y:137
+R6801:6804 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6792:6796 _work_cjoin <> cjoin def
+R6798:6798 _luna_cjoin_congr <> x:136 var
+R6800:6800 _luna_cjoin_congr <> y:137 var
+R6805:6809 _work_cjoin <> cjoin def
+R6812:6812 _luna_cjoin_congr <> F:131 var
+R6814:6814 _luna_cjoin_congr <> x:136 var
+R6818:6818 _luna_cjoin_congr <> F:131 var
+R6820:6820 _luna_cjoin_congr <> y:137 var
+R6899:6914 _luna_cjoin_congr <> rtc_cstep_congr1 thm
+R6899:6914 _luna_cjoin_congr <> rtc_cstep_congr1 thm
+R6899:6914 _luna_cjoin_congr <> rtc_cstep_congr1 thm
+prf 6942:6953 <> cjoin_congr2
+R6973:6976 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6969:6972 TypeRules <> term ind
+R6981:6984 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6977:6980 TypeRules <> term ind
+R6985:6988 TypeRules <> term ind
+binder 6965:6965 <> F:138
+R6996:6996 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7072:7080 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7004:7004 <> a:139
+binder 7006:7007 <> a':140
+binder 7009:7009 <> b:141
+binder 7011:7012 <> b':142
+R7025:7028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7015:7019 Progress <> pstep ind
+R7021:7021 _luna_cjoin_congr <> a:139 var
+R7023:7024 _luna_cjoin_congr <> a':140 var
+R7039:7048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7029:7033 Progress <> pstep ind
+R7035:7035 _luna_cjoin_congr <> b:141 var
+R7037:7038 _luna_cjoin_congr <> b':142 var
+R7049:7053 Progress <> pstep ind
+R7056:7056 _luna_cjoin_congr <> F:138 var
+R7060:7060 _luna_cjoin_congr <> b:141 var
+R7058:7058 _luna_cjoin_congr <> a:139 var
+R7064:7064 _luna_cjoin_congr <> F:138 var
+R7069:7070 _luna_cjoin_congr <> b':142 var
+R7066:7067 _luna_cjoin_congr <> a':140 var
+R7081:7081 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7160:7168 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7089:7089 <> a:143
+binder 7091:7092 <> a':144
+binder 7094:7094 <> b:145
+binder 7096:7097 <> b':146
+R7111:7114 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7100:7105 _tmp_epstep <> epstep ind
+R7107:7107 _luna_cjoin_congr <> a:143 var
+R7109:7110 _luna_cjoin_congr <> a':144 var
+R7126:7135 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7115:7120 _tmp_epstep <> epstep ind
+R7122:7122 _luna_cjoin_congr <> b:145 var
+R7124:7125 _luna_cjoin_congr <> b':146 var
+R7136:7141 _tmp_epstep <> epstep ind
+R7144:7144 _luna_cjoin_congr <> F:138 var
+R7148:7148 _luna_cjoin_congr <> b:145 var
+R7146:7146 _luna_cjoin_congr <> a:143 var
+R7152:7152 _luna_cjoin_congr <> F:138 var
+R7157:7158 _luna_cjoin_congr <> b':146 var
+R7154:7155 _luna_cjoin_congr <> a':144 var
+binder 7176:7176 <> a:147
+binder 7178:7179 <> a':148
+binder 7181:7181 <> b:149
+binder 7183:7184 <> b':150
+R7197:7200 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7187:7191 _work_cjoin <> cjoin def
+R7193:7193 _luna_cjoin_congr <> a:147 var
+R7195:7196 _luna_cjoin_congr <> a':148 var
+R7211:7220 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7201:7205 _work_cjoin <> cjoin def
+R7207:7207 _luna_cjoin_congr <> b:149 var
+R7209:7210 _luna_cjoin_congr <> b':150 var
+R7221:7225 _work_cjoin <> cjoin def
+R7228:7228 _luna_cjoin_congr <> F:138 var
+R7232:7232 _luna_cjoin_congr <> b:149 var
+R7230:7230 _luna_cjoin_congr <> a:147 var
+R7236:7236 _luna_cjoin_congr <> F:138 var
+R7241:7242 _luna_cjoin_congr <> b':150 var
+R7238:7239 _luna_cjoin_congr <> a':148 var
+R7351:7366 _luna_cjoin_congr <> rtc_cstep_congr2 thm
+R7351:7366 _luna_cjoin_congr <> rtc_cstep_congr2 thm
+R7351:7366 _luna_cjoin_congr <> rtc_cstep_congr2 thm
+prf 7394:7405 <> cjoin_congr3
+R7425:7428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7421:7424 TypeRules <> term ind
+R7433:7436 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7429:7432 TypeRules <> term ind
+R7441:7444 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7437:7440 TypeRules <> term ind
+R7445:7448 TypeRules <> term ind
+binder 7417:7417 <> F:151
+R7456:7456 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7562:7570 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7464:7464 <> a:152
+binder 7466:7467 <> a':153
+binder 7469:7469 <> b:154
+binder 7471:7472 <> b':155
+binder 7474:7474 <> c:156
+binder 7476:7477 <> c':157
+R7496:7499 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7486:7490 Progress <> pstep ind
+R7492:7492 _luna_cjoin_congr <> a:152 var
+R7494:7495 _luna_cjoin_congr <> a':153 var
+R7510:7513 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7500:7504 Progress <> pstep ind
+R7506:7506 _luna_cjoin_congr <> b:154 var
+R7508:7509 _luna_cjoin_congr <> b':155 var
+R7524:7533 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7514:7518 Progress <> pstep ind
+R7520:7520 _luna_cjoin_congr <> c:156 var
+R7522:7523 _luna_cjoin_congr <> c':157 var
+R7534:7538 Progress <> pstep ind
+R7541:7541 _luna_cjoin_congr <> F:151 var
+R7547:7547 _luna_cjoin_congr <> c:156 var
+R7545:7545 _luna_cjoin_congr <> b:154 var
+R7543:7543 _luna_cjoin_congr <> a:152 var
+R7551:7551 _luna_cjoin_congr <> F:151 var
+R7559:7560 _luna_cjoin_congr <> c':157 var
+R7556:7557 _luna_cjoin_congr <> b':155 var
+R7553:7554 _luna_cjoin_congr <> a':153 var
+R7571:7571 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7681:7689 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7579:7579 <> a:158
+binder 7581:7582 <> a':159
+binder 7584:7584 <> b:160
+binder 7586:7587 <> b':161
+binder 7589:7589 <> c:162
+binder 7591:7592 <> c':163
+R7612:7615 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7601:7606 _tmp_epstep <> epstep ind
+R7608:7608 _luna_cjoin_congr <> a:158 var
+R7610:7611 _luna_cjoin_congr <> a':159 var
+R7627:7630 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7616:7621 _tmp_epstep <> epstep ind
+R7623:7623 _luna_cjoin_congr <> b:160 var
+R7625:7626 _luna_cjoin_congr <> b':161 var
+R7642:7651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7631:7636 _tmp_epstep <> epstep ind
+R7638:7638 _luna_cjoin_congr <> c:162 var
+R7640:7641 _luna_cjoin_congr <> c':163 var
+R7652:7657 _tmp_epstep <> epstep ind
+R7660:7660 _luna_cjoin_congr <> F:151 var
+R7666:7666 _luna_cjoin_congr <> c:162 var
+R7664:7664 _luna_cjoin_congr <> b:160 var
+R7662:7662 _luna_cjoin_congr <> a:158 var
+R7670:7670 _luna_cjoin_congr <> F:151 var
+R7678:7679 _luna_cjoin_congr <> c':163 var
+R7675:7676 _luna_cjoin_congr <> b':161 var
+R7672:7673 _luna_cjoin_congr <> a':159 var
+binder 7697:7697 <> a:164
+binder 7699:7700 <> a':165
+binder 7702:7702 <> b:166
+binder 7704:7705 <> b':167
+binder 7707:7707 <> c:168
+binder 7709:7710 <> c':169
+R7729:7732 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7719:7723 _work_cjoin <> cjoin def
+R7725:7725 _luna_cjoin_congr <> a:164 var
+R7727:7728 _luna_cjoin_congr <> a':165 var
+R7743:7746 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7733:7737 _work_cjoin <> cjoin def
+R7739:7739 _luna_cjoin_congr <> b:166 var
+R7741:7742 _luna_cjoin_congr <> b':167 var
+R7757:7766 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7747:7751 _work_cjoin <> cjoin def
+R7753:7753 _luna_cjoin_congr <> c:168 var
+R7755:7756 _luna_cjoin_congr <> c':169 var
+R7767:7771 _work_cjoin <> cjoin def
+R7774:7774 _luna_cjoin_congr <> F:151 var
+R7780:7780 _luna_cjoin_congr <> c:168 var
+R7778:7778 _luna_cjoin_congr <> b:166 var
+R7776:7776 _luna_cjoin_congr <> a:164 var
+R7784:7784 _luna_cjoin_congr <> F:151 var
+R7792:7793 _luna_cjoin_congr <> c':169 var
+R7789:7790 _luna_cjoin_congr <> b':167 var
+R7786:7787 _luna_cjoin_congr <> a':165 var
+R7932:7947 _luna_cjoin_congr <> rtc_cstep_congr3 thm
+R7932:7947 _luna_cjoin_congr <> rtc_cstep_congr3 thm
+R7932:7947 _luna_cjoin_congr <> rtc_cstep_congr3 thm
+prf 7975:7986 <> cjoin_congr4
+R8006:8009 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8002:8005 TypeRules <> term ind
+R8014:8017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8010:8013 TypeRules <> term ind
+R8022:8025 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8018:8021 TypeRules <> term ind
+R8030:8033 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8026:8029 TypeRules <> term ind
+R8034:8037 TypeRules <> term ind
+binder 7998:7998 <> F:170
+R8045:8045 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8175:8183 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8053:8053 <> a:171
+binder 8055:8056 <> a':172
+binder 8058:8058 <> b:173
+binder 8060:8061 <> b':174
+binder 8063:8063 <> c:175
+binder 8065:8066 <> c':176
+binder 8068:8068 <> d:177
+binder 8070:8071 <> d':178
+R8090:8093 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8080:8084 Progress <> pstep ind
+R8086:8086 _luna_cjoin_congr <> a:171 var
+R8088:8089 _luna_cjoin_congr <> a':172 var
+R8104:8107 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8094:8098 Progress <> pstep ind
+R8100:8100 _luna_cjoin_congr <> b:173 var
+R8102:8103 _luna_cjoin_congr <> b':174 var
+R8118:8121 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8108:8112 Progress <> pstep ind
+R8114:8114 _luna_cjoin_congr <> c:175 var
+R8116:8117 _luna_cjoin_congr <> c':176 var
+R8132:8141 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8122:8126 Progress <> pstep ind
+R8128:8128 _luna_cjoin_congr <> d:177 var
+R8130:8131 _luna_cjoin_congr <> d':178 var
+R8142:8146 Progress <> pstep ind
+R8149:8149 _luna_cjoin_congr <> F:170 var
+R8157:8157 _luna_cjoin_congr <> d:177 var
+R8155:8155 _luna_cjoin_congr <> c:175 var
+R8153:8153 _luna_cjoin_congr <> b:173 var
+R8151:8151 _luna_cjoin_congr <> a:171 var
+R8161:8161 _luna_cjoin_congr <> F:170 var
+R8172:8173 _luna_cjoin_congr <> d':178 var
+R8169:8170 _luna_cjoin_congr <> c':176 var
+R8166:8167 _luna_cjoin_congr <> b':174 var
+R8163:8164 _luna_cjoin_congr <> a':172 var
+R8184:8184 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8319:8327 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8192:8192 <> a:179
+binder 8194:8195 <> a':180
+binder 8197:8197 <> b:181
+binder 8199:8200 <> b':182
+binder 8202:8202 <> c:183
+binder 8204:8205 <> c':184
+binder 8207:8207 <> d:185
+binder 8209:8210 <> d':186
+R8230:8233 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8219:8224 _tmp_epstep <> epstep ind
+R8226:8226 _luna_cjoin_congr <> a:179 var
+R8228:8229 _luna_cjoin_congr <> a':180 var
+R8245:8248 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8234:8239 _tmp_epstep <> epstep ind
+R8241:8241 _luna_cjoin_congr <> b:181 var
+R8243:8244 _luna_cjoin_congr <> b':182 var
+R8260:8263 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8249:8254 _tmp_epstep <> epstep ind
+R8256:8256 _luna_cjoin_congr <> c:183 var
+R8258:8259 _luna_cjoin_congr <> c':184 var
+R8275:8284 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8264:8269 _tmp_epstep <> epstep ind
+R8271:8271 _luna_cjoin_congr <> d:185 var
+R8273:8274 _luna_cjoin_congr <> d':186 var
+R8285:8290 _tmp_epstep <> epstep ind
+R8293:8293 _luna_cjoin_congr <> F:170 var
+R8301:8301 _luna_cjoin_congr <> d:185 var
+R8299:8299 _luna_cjoin_congr <> c:183 var
+R8297:8297 _luna_cjoin_congr <> b:181 var
+R8295:8295 _luna_cjoin_congr <> a:179 var
+R8305:8305 _luna_cjoin_congr <> F:170 var
+R8316:8317 _luna_cjoin_congr <> d':186 var
+R8313:8314 _luna_cjoin_congr <> c':184 var
+R8310:8311 _luna_cjoin_congr <> b':182 var
+R8307:8308 _luna_cjoin_congr <> a':180 var
+binder 8335:8335 <> a:187
+binder 8337:8338 <> a':188
+binder 8340:8340 <> b:189
+binder 8342:8343 <> b':190
+binder 8345:8345 <> c:191
+binder 8347:8348 <> c':192
+binder 8350:8350 <> d:193
+binder 8352:8353 <> d':194
+R8372:8375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8362:8366 _work_cjoin <> cjoin def
+R8368:8368 _luna_cjoin_congr <> a:187 var
+R8370:8371 _luna_cjoin_congr <> a':188 var
+R8386:8389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8376:8380 _work_cjoin <> cjoin def
+R8382:8382 _luna_cjoin_congr <> b:189 var
+R8384:8385 _luna_cjoin_congr <> b':190 var
+R8400:8403 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8390:8394 _work_cjoin <> cjoin def
+R8396:8396 _luna_cjoin_congr <> c:191 var
+R8398:8399 _luna_cjoin_congr <> c':192 var
+R8414:8423 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8404:8408 _work_cjoin <> cjoin def
+R8410:8410 _luna_cjoin_congr <> d:193 var
+R8412:8413 _luna_cjoin_congr <> d':194 var
+R8424:8428 _work_cjoin <> cjoin def
+R8431:8431 _luna_cjoin_congr <> F:170 var
+R8439:8439 _luna_cjoin_congr <> d:193 var
+R8437:8437 _luna_cjoin_congr <> c:191 var
+R8435:8435 _luna_cjoin_congr <> b:189 var
+R8433:8433 _luna_cjoin_congr <> a:187 var
+R8443:8443 _luna_cjoin_congr <> F:170 var
+R8454:8455 _luna_cjoin_congr <> d':194 var
+R8451:8452 _luna_cjoin_congr <> c':192 var
+R8448:8449 _luna_cjoin_congr <> b':190 var
+R8445:8446 _luna_cjoin_congr <> a':188 var
+R8624:8639 _luna_cjoin_congr <> rtc_cstep_congr4 thm
+R8624:8639 _luna_cjoin_congr <> rtc_cstep_congr4 thm
+R8624:8639 _luna_cjoin_congr <> rtc_cstep_congr4 thm
+prf 8667:8678 <> cjoin_congr5
+R8702:8705 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8698:8701 TypeRules <> term ind
+R8710:8713 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8706:8709 TypeRules <> term ind
+R8718:8721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8714:8717 TypeRules <> term ind
+R8726:8729 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8722:8725 TypeRules <> term ind
+R8734:8737 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8730:8733 TypeRules <> term ind
+R8738:8741 TypeRules <> term ind
+binder 8694:8694 <> F:195
+R8749:8749 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8903:8911 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8757:8757 <> a:196
+binder 8759:8760 <> a':197
+binder 8762:8762 <> b:198
+binder 8764:8765 <> b':199
+binder 8767:8767 <> c:200
+binder 8769:8770 <> c':201
+binder 8772:8772 <> d:202
+binder 8774:8775 <> d':203
+binder 8777:8777 <> e:204
+binder 8779:8780 <> e':205
+R8799:8802 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8789:8793 Progress <> pstep ind
+R8795:8795 _luna_cjoin_congr <> a:196 var
+R8797:8798 _luna_cjoin_congr <> a':197 var
+R8813:8816 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8803:8807 Progress <> pstep ind
+R8809:8809 _luna_cjoin_congr <> b:198 var
+R8811:8812 _luna_cjoin_congr <> b':199 var
+R8827:8830 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8817:8821 Progress <> pstep ind
+R8823:8823 _luna_cjoin_congr <> c:200 var
+R8825:8826 _luna_cjoin_congr <> c':201 var
+R8841:8850 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8831:8835 Progress <> pstep ind
+R8837:8837 _luna_cjoin_congr <> d:202 var
+R8839:8840 _luna_cjoin_congr <> d':203 var
+R8861:8864 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8851:8855 Progress <> pstep ind
+R8857:8857 _luna_cjoin_congr <> e:204 var
+R8859:8860 _luna_cjoin_congr <> e':205 var
+R8865:8869 Progress <> pstep ind
+R8872:8872 _luna_cjoin_congr <> F:195 var
+R8882:8882 _luna_cjoin_congr <> e:204 var
+R8880:8880 _luna_cjoin_congr <> d:202 var
+R8878:8878 _luna_cjoin_congr <> c:200 var
+R8876:8876 _luna_cjoin_congr <> b:198 var
+R8874:8874 _luna_cjoin_congr <> a:196 var
+R8886:8886 _luna_cjoin_congr <> F:195 var
+R8900:8901 _luna_cjoin_congr <> e':205 var
+R8897:8898 _luna_cjoin_congr <> d':203 var
+R8894:8895 _luna_cjoin_congr <> c':201 var
+R8891:8892 _luna_cjoin_congr <> b':199 var
+R8888:8889 _luna_cjoin_congr <> a':197 var
+R8912:8912 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9072:9080 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8920:8920 <> a:206
+binder 8922:8923 <> a':207
+binder 8925:8925 <> b:208
+binder 8927:8928 <> b':209
+binder 8930:8930 <> c:210
+binder 8932:8933 <> c':211
+binder 8935:8935 <> d:212
+binder 8937:8938 <> d':213
+binder 8940:8940 <> e:214
+binder 8942:8943 <> e':215
+R8963:8966 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8952:8957 _tmp_epstep <> epstep ind
+R8959:8959 _luna_cjoin_congr <> a:206 var
+R8961:8962 _luna_cjoin_congr <> a':207 var
+R8978:8981 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8967:8972 _tmp_epstep <> epstep ind
+R8974:8974 _luna_cjoin_congr <> b:208 var
+R8976:8977 _luna_cjoin_congr <> b':209 var
+R8993:8996 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8982:8987 _tmp_epstep <> epstep ind
+R8989:8989 _luna_cjoin_congr <> c:210 var
+R8991:8992 _luna_cjoin_congr <> c':211 var
+R9008:9017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8997:9002 _tmp_epstep <> epstep ind
+R9004:9004 _luna_cjoin_congr <> d:212 var
+R9006:9007 _luna_cjoin_congr <> d':213 var
+R9029:9032 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9018:9023 _tmp_epstep <> epstep ind
+R9025:9025 _luna_cjoin_congr <> e:214 var
+R9027:9028 _luna_cjoin_congr <> e':215 var
+R9033:9038 _tmp_epstep <> epstep ind
+R9041:9041 _luna_cjoin_congr <> F:195 var
+R9051:9051 _luna_cjoin_congr <> e:214 var
+R9049:9049 _luna_cjoin_congr <> d:212 var
+R9047:9047 _luna_cjoin_congr <> c:210 var
+R9045:9045 _luna_cjoin_congr <> b:208 var
+R9043:9043 _luna_cjoin_congr <> a:206 var
+R9055:9055 _luna_cjoin_congr <> F:195 var
+R9069:9070 _luna_cjoin_congr <> e':215 var
+R9066:9067 _luna_cjoin_congr <> d':213 var
+R9063:9064 _luna_cjoin_congr <> c':211 var
+R9060:9061 _luna_cjoin_congr <> b':209 var
+R9057:9058 _luna_cjoin_congr <> a':207 var
+binder 9088:9088 <> a:216
+binder 9090:9091 <> a':217
+binder 9093:9093 <> b:218
+binder 9095:9096 <> b':219
+binder 9098:9098 <> c:220
+binder 9100:9101 <> c':221
+binder 9103:9103 <> d:222
+binder 9105:9106 <> d':223
+binder 9108:9108 <> e:224
+binder 9110:9111 <> e':225
+R9130:9133 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9120:9124 _work_cjoin <> cjoin def
+R9126:9126 _luna_cjoin_congr <> a:216 var
+R9128:9129 _luna_cjoin_congr <> a':217 var
+R9144:9147 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9134:9138 _work_cjoin <> cjoin def
+R9140:9140 _luna_cjoin_congr <> b:218 var
+R9142:9143 _luna_cjoin_congr <> b':219 var
+R9158:9161 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9148:9152 _work_cjoin <> cjoin def
+R9154:9154 _luna_cjoin_congr <> c:220 var
+R9156:9157 _luna_cjoin_congr <> c':221 var
+R9172:9181 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9162:9166 _work_cjoin <> cjoin def
+R9168:9168 _luna_cjoin_congr <> d:222 var
+R9170:9171 _luna_cjoin_congr <> d':223 var
+R9192:9195 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9182:9186 _work_cjoin <> cjoin def
+R9188:9188 _luna_cjoin_congr <> e:224 var
+R9190:9191 _luna_cjoin_congr <> e':225 var
+R9196:9200 _work_cjoin <> cjoin def
+R9203:9203 _luna_cjoin_congr <> F:195 var
+R9213:9213 _luna_cjoin_congr <> e:224 var
+R9211:9211 _luna_cjoin_congr <> d:222 var
+R9209:9209 _luna_cjoin_congr <> c:220 var
+R9207:9207 _luna_cjoin_congr <> b:218 var
+R9205:9205 _luna_cjoin_congr <> a:216 var
+R9217:9217 _luna_cjoin_congr <> F:195 var
+R9231:9232 _luna_cjoin_congr <> e':225 var
+R9228:9229 _luna_cjoin_congr <> d':223 var
+R9225:9226 _luna_cjoin_congr <> c':221 var
+R9222:9223 _luna_cjoin_congr <> b':219 var
+R9219:9220 _luna_cjoin_congr <> a':217 var
+R9427:9442 _luna_cjoin_congr <> rtc_cstep_congr5 thm
+R9427:9442 _luna_cjoin_congr <> rtc_cstep_congr5 thm
+R9427:9442 _luna_cjoin_congr <> rtc_cstep_congr5 thm
+prf 9535:9542 <> cjoin_pi
+binder 9553:9553 <> A:226
+binder 9555:9556 <> A':227
+binder 9558:9558 <> B:228
+binder 9560:9561 <> B':229
+R9574:9577 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9564:9568 _work_cjoin <> cjoin def
+R9570:9570 _luna_cjoin_congr <> A:226 var
+R9572:9573 _luna_cjoin_congr <> A':227 var
+R9588:9595 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9578:9582 _work_cjoin <> cjoin def
+R9584:9584 _luna_cjoin_congr <> B:228 var
+R9586:9587 _luna_cjoin_congr <> B':229 var
+R9596:9600 _work_cjoin <> cjoin def
+R9603:9605 TypeRules <> TPi constr
+R9609:9609 _luna_cjoin_congr <> B:228 var
+R9607:9607 _luna_cjoin_congr <> A:226 var
+R9613:9615 TypeRules <> TPi constr
+R9620:9621 _luna_cjoin_congr <> B':229 var
+R9617:9618 _luna_cjoin_congr <> A':227 var
+R9649:9660 _luna_cjoin_congr <> cjoin_congr2 thm
+R9649:9660 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 9729:9737 <> cjoin_lam
+binder 9748:9748 <> b:230
+binder 9750:9751 <> b':231
+R9764:9767 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9754:9758 _work_cjoin <> cjoin def
+R9760:9760 _luna_cjoin_congr <> b:230 var
+R9762:9763 _luna_cjoin_congr <> b':231 var
+R9768:9772 _work_cjoin <> cjoin def
+R9775:9778 TypeRules <> TLam constr
+R9780:9780 _luna_cjoin_congr <> b:230 var
+R9784:9787 TypeRules <> TLam constr
+R9789:9790 _luna_cjoin_congr <> b':231 var
+R9818:9829 _luna_cjoin_congr <> cjoin_congr1 thm
+R9818:9829 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 9898:9906 <> cjoin_app
+binder 9917:9917 <> f:232
+binder 9919:9920 <> f':233
+binder 9922:9922 <> a:234
+binder 9924:9925 <> a':235
+R9938:9941 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9928:9932 _work_cjoin <> cjoin def
+R9934:9934 _luna_cjoin_congr <> f:232 var
+R9936:9937 _luna_cjoin_congr <> f':233 var
+R9952:9959 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9942:9946 _work_cjoin <> cjoin def
+R9948:9948 _luna_cjoin_congr <> a:234 var
+R9950:9951 _luna_cjoin_congr <> a':235 var
+R9960:9964 _work_cjoin <> cjoin def
+R9967:9970 TypeRules <> TApp constr
+R9974:9974 _luna_cjoin_congr <> a:234 var
+R9972:9972 _luna_cjoin_congr <> f:232 var
+R9978:9981 TypeRules <> TApp constr
+R9986:9987 _luna_cjoin_congr <> a':235 var
+R9983:9984 _luna_cjoin_congr <> f':233 var
+R10015:10026 _luna_cjoin_congr <> cjoin_congr2 thm
+R10015:10026 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 10095:10105 <> cjoin_sigma
+binder 10116:10116 <> A:236
+binder 10118:10119 <> A':237
+binder 10121:10121 <> B:238
+binder 10123:10124 <> B':239
+R10137:10140 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10127:10131 _work_cjoin <> cjoin def
+R10133:10133 _luna_cjoin_congr <> A:236 var
+R10135:10136 _luna_cjoin_congr <> A':237 var
+R10151:10158 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10141:10145 _work_cjoin <> cjoin def
+R10147:10147 _luna_cjoin_congr <> B:238 var
+R10149:10150 _luna_cjoin_congr <> B':239 var
+R10159:10163 _work_cjoin <> cjoin def
+R10166:10171 TypeRules <> TSigma constr
+R10175:10175 _luna_cjoin_congr <> B:238 var
+R10173:10173 _luna_cjoin_congr <> A:236 var
+R10179:10184 TypeRules <> TSigma constr
+R10189:10190 _luna_cjoin_congr <> B':239 var
+R10186:10187 _luna_cjoin_congr <> A':237 var
+R10218:10229 _luna_cjoin_congr <> cjoin_congr2 thm
+R10218:10229 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 10298:10307 <> cjoin_pair
+binder 10318:10318 <> a:240
+binder 10320:10321 <> a':241
+binder 10323:10323 <> b:242
+binder 10325:10326 <> b':243
+R10339:10342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10329:10333 _work_cjoin <> cjoin def
+R10335:10335 _luna_cjoin_congr <> a:240 var
+R10337:10338 _luna_cjoin_congr <> a':241 var
+R10353:10360 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10343:10347 _work_cjoin <> cjoin def
+R10349:10349 _luna_cjoin_congr <> b:242 var
+R10351:10352 _luna_cjoin_congr <> b':243 var
+R10361:10365 _work_cjoin <> cjoin def
+R10368:10372 TypeRules <> TPair constr
+R10376:10376 _luna_cjoin_congr <> b:242 var
+R10374:10374 _luna_cjoin_congr <> a:240 var
+R10380:10384 TypeRules <> TPair constr
+R10389:10390 _luna_cjoin_congr <> b':243 var
+R10386:10387 _luna_cjoin_congr <> a':241 var
+R10418:10429 _luna_cjoin_congr <> cjoin_congr2 thm
+R10418:10429 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 10498:10506 <> cjoin_fst
+binder 10517:10517 <> p:244
+binder 10519:10520 <> p':245
+R10533:10536 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10523:10527 _work_cjoin <> cjoin def
+R10529:10529 _luna_cjoin_congr <> p:244 var
+R10531:10532 _luna_cjoin_congr <> p':245 var
+R10537:10541 _work_cjoin <> cjoin def
+R10544:10547 TypeRules <> TFst constr
+R10549:10549 _luna_cjoin_congr <> p:244 var
+R10553:10556 TypeRules <> TFst constr
+R10558:10559 _luna_cjoin_congr <> p':245 var
+R10587:10598 _luna_cjoin_congr <> cjoin_congr1 thm
+R10587:10598 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 10667:10675 <> cjoin_snd
+binder 10686:10686 <> p:246
+binder 10688:10689 <> p':247
+R10702:10705 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10692:10696 _work_cjoin <> cjoin def
+R10698:10698 _luna_cjoin_congr <> p:246 var
+R10700:10701 _luna_cjoin_congr <> p':247 var
+R10706:10710 _work_cjoin <> cjoin def
+R10713:10716 TypeRules <> TSnd constr
+R10718:10718 _luna_cjoin_congr <> p:246 var
+R10722:10725 TypeRules <> TSnd constr
+R10727:10728 _luna_cjoin_congr <> p':247 var
+R10756:10767 _luna_cjoin_congr <> cjoin_congr1 thm
+R10756:10767 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 10836:10846 <> cjoin_conse
+binder 10857:10857 <> t:248
+binder 10859:10860 <> t':249
+binder 10862:10862 <> E:250
+binder 10864:10865 <> E':251
+R10878:10881 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10868:10872 _work_cjoin <> cjoin def
+R10874:10874 _luna_cjoin_congr <> t:248 var
+R10876:10877 _luna_cjoin_congr <> t':249 var
+R10892:10899 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10882:10886 _work_cjoin <> cjoin def
+R10888:10888 _luna_cjoin_congr <> E:250 var
+R10890:10891 _luna_cjoin_congr <> E':251 var
+R10900:10904 _work_cjoin <> cjoin def
+R10907:10912 TypeRules <> TConsE constr
+R10916:10916 _luna_cjoin_congr <> E:250 var
+R10914:10914 _luna_cjoin_congr <> t:248 var
+R10920:10925 TypeRules <> TConsE constr
+R10930:10931 _luna_cjoin_congr <> E':251 var
+R10927:10928 _luna_cjoin_congr <> t':249 var
+R10959:10970 _luna_cjoin_congr <> cjoin_congr2 thm
+R10959:10970 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 11039:11049 <> cjoin_enumt
+binder 11060:11060 <> E:252
+binder 11062:11063 <> E':253
+R11076:11083 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11066:11070 _work_cjoin <> cjoin def
+R11072:11072 _luna_cjoin_congr <> E:252 var
+R11074:11075 _luna_cjoin_congr <> E':253 var
+R11084:11088 _work_cjoin <> cjoin def
+R11091:11096 TypeRules <> TEnumT constr
+R11098:11098 _luna_cjoin_congr <> E:252 var
+R11102:11107 TypeRules <> TEnumT constr
+R11109:11110 _luna_cjoin_congr <> E':253 var
+R11138:11149 _luna_cjoin_congr <> cjoin_congr1 thm
+R11138:11149 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 11218:11228 <> cjoin_esucc
+binder 11239:11239 <> n:254
+binder 11241:11242 <> n':255
+R11255:11262 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11245:11249 _work_cjoin <> cjoin def
+R11251:11251 _luna_cjoin_congr <> n:254 var
+R11253:11254 _luna_cjoin_congr <> n':255 var
+R11263:11267 _work_cjoin <> cjoin def
+R11270:11275 TypeRules <> TESucc constr
+R11277:11277 _luna_cjoin_congr <> n:254 var
+R11281:11286 TypeRules <> TESucc constr
+R11288:11289 _luna_cjoin_congr <> n':255 var
+R11317:11328 _luna_cjoin_congr <> cjoin_congr1 thm
+R11317:11328 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 11397:11405 <> cjoin_epi
+binder 11416:11416 <> E:256
+binder 11418:11419 <> E':257
+binder 11421:11421 <> P:258
+binder 11423:11424 <> P':259
+R11437:11440 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11427:11431 _work_cjoin <> cjoin def
+R11433:11433 _luna_cjoin_congr <> E:256 var
+R11435:11436 _luna_cjoin_congr <> E':257 var
+R11451:11458 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11441:11445 _work_cjoin <> cjoin def
+R11447:11447 _luna_cjoin_congr <> P:258 var
+R11449:11450 _luna_cjoin_congr <> P':259 var
+R11459:11463 _work_cjoin <> cjoin def
+R11466:11469 TypeRules <> TEPi constr
+R11473:11473 _luna_cjoin_congr <> P:258 var
+R11471:11471 _luna_cjoin_congr <> E:256 var
+R11477:11480 TypeRules <> TEPi constr
+R11485:11486 _luna_cjoin_congr <> P':259 var
+R11482:11483 _luna_cjoin_congr <> E':257 var
+R11514:11525 _luna_cjoin_congr <> cjoin_congr2 thm
+R11514:11525 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 11594:11605 <> cjoin_switch
+binder 11616:11616 <> E:260
+binder 11618:11619 <> E':261
+binder 11621:11621 <> P:262
+binder 11623:11624 <> P':263
+binder 11626:11626 <> p:264
+binder 11628:11629 <> p':265
+binder 11631:11631 <> e:266
+binder 11633:11634 <> e':267
+R11651:11654 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11641:11645 _work_cjoin <> cjoin def
+R11647:11647 _luna_cjoin_congr <> E:260 var
+R11649:11650 _luna_cjoin_congr <> E':261 var
+R11665:11668 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11655:11659 _work_cjoin <> cjoin def
+R11661:11661 _luna_cjoin_congr <> P:262 var
+R11663:11664 _luna_cjoin_congr <> P':263 var
+R11679:11682 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11669:11673 _work_cjoin <> cjoin def
+R11675:11675 _luna_cjoin_congr <> p:264 var
+R11677:11678 _luna_cjoin_congr <> p':265 var
+R11693:11700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11683:11687 _work_cjoin <> cjoin def
+R11689:11689 _luna_cjoin_congr <> e:266 var
+R11691:11692 _luna_cjoin_congr <> e':267 var
+R11701:11705 _work_cjoin <> cjoin def
+R11708:11714 TypeRules <> TSwitch constr
+R11722:11722 _luna_cjoin_congr <> e:266 var
+R11720:11720 _luna_cjoin_congr <> p:264 var
+R11718:11718 _luna_cjoin_congr <> P:262 var
+R11716:11716 _luna_cjoin_congr <> E:260 var
+R11726:11732 TypeRules <> TSwitch constr
+R11743:11744 _luna_cjoin_congr <> e':267 var
+R11740:11741 _luna_cjoin_congr <> p':265 var
+R11737:11738 _luna_cjoin_congr <> P':263 var
+R11734:11735 _luna_cjoin_congr <> E':261 var
+R11772:11783 _luna_cjoin_congr <> cjoin_congr4 thm
+R11772:11783 _luna_cjoin_congr <> cjoin_congr4 thm
+prf 11852:11862 <> cjoin_idesc
+binder 11873:11873 <> I:268
+binder 11875:11876 <> I':269
+R11889:11896 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11879:11883 _work_cjoin <> cjoin def
+R11885:11885 _luna_cjoin_congr <> I:268 var
+R11887:11888 _luna_cjoin_congr <> I':269 var
+R11897:11901 _work_cjoin <> cjoin def
+R11904:11909 TypeRules <> TIDesc constr
+R11911:11911 _luna_cjoin_congr <> I:268 var
+R11915:11920 TypeRules <> TIDesc constr
+R11922:11923 _luna_cjoin_congr <> I':269 var
+R11951:11962 _luna_cjoin_congr <> cjoin_congr1 thm
+R11951:11962 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 12031:12040 <> cjoin_ivar
+binder 12051:12051 <> i:270
+binder 12053:12054 <> i':271
+R12067:12070 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12057:12061 _work_cjoin <> cjoin def
+R12063:12063 _luna_cjoin_congr <> i:270 var
+R12065:12066 _luna_cjoin_congr <> i':271 var
+R12071:12075 _work_cjoin <> cjoin def
+R12078:12082 TypeRules <> TIVar constr
+R12084:12084 _luna_cjoin_congr <> i:270 var
+R12088:12092 TypeRules <> TIVar constr
+R12094:12095 _luna_cjoin_congr <> i':271 var
+R12123:12134 _luna_cjoin_congr <> cjoin_congr1 thm
+R12123:12134 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 12203:12213 <> cjoin_iprod
+binder 12224:12224 <> A:272
+binder 12226:12227 <> A':273
+binder 12229:12229 <> B:274
+binder 12231:12232 <> B':275
+R12245:12248 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12235:12239 _work_cjoin <> cjoin def
+R12241:12241 _luna_cjoin_congr <> A:272 var
+R12243:12244 _luna_cjoin_congr <> A':273 var
+R12259:12266 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12249:12253 _work_cjoin <> cjoin def
+R12255:12255 _luna_cjoin_congr <> B:274 var
+R12257:12258 _luna_cjoin_congr <> B':275 var
+R12267:12271 _work_cjoin <> cjoin def
+R12274:12279 TypeRules <> TIProd constr
+R12283:12283 _luna_cjoin_congr <> B:274 var
+R12281:12281 _luna_cjoin_congr <> A:272 var
+R12287:12292 TypeRules <> TIProd constr
+R12297:12298 _luna_cjoin_congr <> B':275 var
+R12294:12295 _luna_cjoin_congr <> A':273 var
+R12326:12337 _luna_cjoin_congr <> cjoin_congr2 thm
+R12326:12337 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 12406:12414 <> cjoin_ipi
+binder 12425:12425 <> S:276
+binder 12427:12428 <> S':277
+binder 12430:12430 <> T:278
+binder 12432:12433 <> T':279
+R12446:12449 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12436:12440 _work_cjoin <> cjoin def
+R12442:12442 _luna_cjoin_congr <> S:276 var
+R12444:12445 _luna_cjoin_congr <> S':277 var
+R12460:12467 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12450:12454 _work_cjoin <> cjoin def
+R12456:12456 _luna_cjoin_congr <> T:278 var
+R12458:12459 _luna_cjoin_congr <> T':279 var
+R12468:12472 _work_cjoin <> cjoin def
+R12475:12478 TypeRules <> TIPi constr
+R12482:12482 _luna_cjoin_congr <> T:278 var
+R12480:12480 _luna_cjoin_congr <> S:276 var
+R12486:12489 TypeRules <> TIPi constr
+R12494:12495 _luna_cjoin_congr <> T':279 var
+R12491:12492 _luna_cjoin_congr <> S':277 var
+R12523:12534 _luna_cjoin_congr <> cjoin_congr2 thm
+R12523:12534 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 12603:12612 <> cjoin_isig
+binder 12623:12623 <> S:280
+binder 12625:12626 <> S':281
+binder 12628:12628 <> T:282
+binder 12630:12631 <> T':283
+R12644:12647 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12634:12638 _work_cjoin <> cjoin def
+R12640:12640 _luna_cjoin_congr <> S:280 var
+R12642:12643 _luna_cjoin_congr <> S':281 var
+R12658:12665 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12648:12652 _work_cjoin <> cjoin def
+R12654:12654 _luna_cjoin_congr <> T:282 var
+R12656:12657 _luna_cjoin_congr <> T':283 var
+R12666:12670 _work_cjoin <> cjoin def
+R12673:12677 TypeRules <> TISig constr
+R12681:12681 _luna_cjoin_congr <> T:282 var
+R12679:12679 _luna_cjoin_congr <> S:280 var
+R12685:12689 TypeRules <> TISig constr
+R12694:12695 _luna_cjoin_congr <> T':283 var
+R12691:12692 _luna_cjoin_congr <> S':281 var
+R12723:12734 _luna_cjoin_congr <> cjoin_congr2 thm
+R12723:12734 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 12803:12815 <> cjoin_ichoice
+binder 12826:12826 <> E:284
+binder 12828:12829 <> E':285
+binder 12831:12831 <> T:286
+binder 12833:12834 <> T':287
+R12847:12850 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12837:12841 _work_cjoin <> cjoin def
+R12843:12843 _luna_cjoin_congr <> E:284 var
+R12845:12846 _luna_cjoin_congr <> E':285 var
+R12861:12868 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12851:12855 _work_cjoin <> cjoin def
+R12857:12857 _luna_cjoin_congr <> T:286 var
+R12859:12860 _luna_cjoin_congr <> T':287 var
+R12869:12873 _work_cjoin <> cjoin def
+R12876:12883 TypeRules <> TIChoice constr
+R12887:12887 _luna_cjoin_congr <> T:286 var
+R12885:12885 _luna_cjoin_congr <> E:284 var
+R12891:12898 TypeRules <> TIChoice constr
+R12903:12904 _luna_cjoin_congr <> T':287 var
+R12900:12901 _luna_cjoin_congr <> E':285 var
+R12932:12943 _luna_cjoin_congr <> cjoin_congr2 thm
+R12932:12943 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 13012:13023 <> cjoin_interp
+binder 13034:13034 <> D:288
+binder 13036:13037 <> D':289
+binder 13039:13039 <> X:290
+binder 13041:13042 <> X':291
+R13055:13058 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13045:13049 _work_cjoin <> cjoin def
+R13051:13051 _luna_cjoin_congr <> D:288 var
+R13053:13054 _luna_cjoin_congr <> D':289 var
+R13069:13076 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13059:13063 _work_cjoin <> cjoin def
+R13065:13065 _luna_cjoin_congr <> X:290 var
+R13067:13068 _luna_cjoin_congr <> X':291 var
+R13077:13081 _work_cjoin <> cjoin def
+R13084:13090 TypeRules <> TInterp constr
+R13094:13094 _luna_cjoin_congr <> X:290 var
+R13092:13092 _luna_cjoin_congr <> D:288 var
+R13098:13104 TypeRules <> TInterp constr
+R13109:13110 _luna_cjoin_congr <> X':291 var
+R13106:13107 _luna_cjoin_congr <> D':289 var
+R13138:13149 _luna_cjoin_congr <> cjoin_congr2 thm
+R13138:13149 _luna_cjoin_congr <> cjoin_congr2 thm
+prf 13218:13226 <> cjoin_mui
+binder 13237:13237 <> R:292
+binder 13239:13240 <> R':293
+R13253:13256 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13243:13247 _work_cjoin <> cjoin def
+R13249:13249 _luna_cjoin_congr <> R:292 var
+R13251:13252 _luna_cjoin_congr <> R':293 var
+R13257:13261 _work_cjoin <> cjoin def
+R13264:13267 TypeRules <> TMuI constr
+R13269:13269 _luna_cjoin_congr <> R:292 var
+R13273:13276 TypeRules <> TMuI constr
+R13278:13279 _luna_cjoin_congr <> R':293 var
+R13307:13318 _luna_cjoin_congr <> cjoin_congr1 thm
+R13307:13318 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 13387:13395 <> cjoin_mus
+binder 13406:13406 <> S:294
+binder 13408:13409 <> S':295
+R13422:13425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13412:13416 _work_cjoin <> cjoin def
+R13418:13418 _luna_cjoin_congr <> S:294 var
+R13420:13421 _luna_cjoin_congr <> S':295 var
+R13426:13430 _work_cjoin <> cjoin def
+R13433:13436 TypeRules <> TMuS constr
+R13438:13438 _luna_cjoin_congr <> S:294 var
+R13442:13445 TypeRules <> TMuS constr
+R13447:13448 _luna_cjoin_congr <> S':295 var
+R13476:13487 _luna_cjoin_congr <> cjoin_congr1 thm
+R13476:13487 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 13556:13563 <> cjoin_in
+binder 13574:13574 <> x:296
+binder 13576:13577 <> x':297
+R13590:13593 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13580:13584 _work_cjoin <> cjoin def
+R13586:13586 _luna_cjoin_congr <> x:296 var
+R13588:13589 _luna_cjoin_congr <> x':297 var
+R13594:13598 _work_cjoin <> cjoin def
+R13601:13603 TypeRules <> TIn constr
+R13605:13605 _luna_cjoin_congr <> x:296 var
+R13609:13611 TypeRules <> TIn constr
+R13613:13614 _luna_cjoin_congr <> x':297 var
+R13642:13653 _luna_cjoin_congr <> cjoin_congr1 thm
+R13642:13653 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 13722:13730 <> cjoin_ind
+binder 13741:13741 <> R:298
+binder 13743:13744 <> R':299
+binder 13746:13746 <> P:300
+binder 13748:13749 <> P':301
+binder 13751:13751 <> s:302
+binder 13753:13754 <> s':303
+binder 13756:13756 <> i:304
+binder 13758:13759 <> i':305
+binder 13761:13761 <> x:306
+binder 13763:13764 <> x':307
+R13781:13784 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13771:13775 _work_cjoin <> cjoin def
+R13777:13777 _luna_cjoin_congr <> R:298 var
+R13779:13780 _luna_cjoin_congr <> R':299 var
+R13795:13798 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13785:13789 _work_cjoin <> cjoin def
+R13791:13791 _luna_cjoin_congr <> P:300 var
+R13793:13794 _luna_cjoin_congr <> P':301 var
+R13809:13812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13799:13803 _work_cjoin <> cjoin def
+R13805:13805 _luna_cjoin_congr <> s:302 var
+R13807:13808 _luna_cjoin_congr <> s':303 var
+R13823:13830 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13813:13817 _work_cjoin <> cjoin def
+R13819:13819 _luna_cjoin_congr <> i:304 var
+R13821:13822 _luna_cjoin_congr <> i':305 var
+R13841:13844 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13831:13835 _work_cjoin <> cjoin def
+R13837:13837 _luna_cjoin_congr <> x:306 var
+R13839:13840 _luna_cjoin_congr <> x':307 var
+R13845:13849 _work_cjoin <> cjoin def
+R13852:13855 TypeRules <> TInd constr
+R13865:13865 _luna_cjoin_congr <> x:306 var
+R13863:13863 _luna_cjoin_congr <> i:304 var
+R13861:13861 _luna_cjoin_congr <> s:302 var
+R13859:13859 _luna_cjoin_congr <> P:300 var
+R13857:13857 _luna_cjoin_congr <> R:298 var
+R13869:13872 TypeRules <> TInd constr
+R13886:13887 _luna_cjoin_congr <> x':307 var
+R13883:13884 _luna_cjoin_congr <> i':305 var
+R13880:13881 _luna_cjoin_congr <> s':303 var
+R13877:13878 _luna_cjoin_congr <> P':301 var
+R13874:13875 _luna_cjoin_congr <> R':299 var
+R13915:13926 _luna_cjoin_congr <> cjoin_congr5 thm
+R13915:13926 _luna_cjoin_congr <> cjoin_congr5 thm
+prf 13995:14004 <> cjoin_iall
+binder 14015:14015 <> D:308
+binder 14017:14018 <> D':309
+binder 14020:14020 <> X:310
+binder 14022:14023 <> X':311
+binder 14025:14026 <> xs:312
+binder 14028:14030 <> xs':313
+binder 14032:14032 <> P:314
+binder 14034:14035 <> P':315
+R14052:14055 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14042:14046 _work_cjoin <> cjoin def
+R14048:14048 _luna_cjoin_congr <> D:308 var
+R14050:14051 _luna_cjoin_congr <> D':309 var
+R14066:14069 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14056:14060 _work_cjoin <> cjoin def
+R14062:14062 _luna_cjoin_congr <> X:310 var
+R14064:14065 _luna_cjoin_congr <> X':311 var
+R14082:14085 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14070:14074 _work_cjoin <> cjoin def
+R14076:14077 _luna_cjoin_congr <> xs:312 var
+R14079:14081 _luna_cjoin_congr <> xs':313 var
+R14096:14103 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14086:14090 _work_cjoin <> cjoin def
+R14092:14092 _luna_cjoin_congr <> P:314 var
+R14094:14095 _luna_cjoin_congr <> P':315 var
+R14104:14108 _work_cjoin <> cjoin def
+R14111:14115 TypeRules <> TIAll constr
+R14124:14124 _luna_cjoin_congr <> P:314 var
+R14121:14122 _luna_cjoin_congr <> xs:312 var
+R14119:14119 _luna_cjoin_congr <> X:310 var
+R14117:14117 _luna_cjoin_congr <> D:308 var
+R14128:14132 TypeRules <> TIAll constr
+R14144:14145 _luna_cjoin_congr <> P':315 var
+R14140:14142 _luna_cjoin_congr <> xs':313 var
+R14137:14138 _luna_cjoin_congr <> X':311 var
+R14134:14135 _luna_cjoin_congr <> D':309 var
+R14173:14184 _luna_cjoin_congr <> cjoin_congr4 thm
+R14173:14184 _luna_cjoin_congr <> cjoin_congr4 thm
+prf 14253:14262 <> cjoin_hyps
+binder 14273:14273 <> D:316
+binder 14275:14276 <> D':317
+binder 14278:14278 <> X:318
+binder 14280:14281 <> X':319
+binder 14283:14283 <> P:320
+binder 14285:14286 <> P':321
+binder 14288:14288 <> h:322
+binder 14290:14291 <> h':323
+binder 14293:14294 <> xs:324
+binder 14296:14298 <> xs':325
+R14315:14318 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14305:14309 _work_cjoin <> cjoin def
+R14311:14311 _luna_cjoin_congr <> D:316 var
+R14313:14314 _luna_cjoin_congr <> D':317 var
+R14329:14332 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14319:14323 _work_cjoin <> cjoin def
+R14325:14325 _luna_cjoin_congr <> X:318 var
+R14327:14328 _luna_cjoin_congr <> X':319 var
+R14343:14346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14333:14337 _work_cjoin <> cjoin def
+R14339:14339 _luna_cjoin_congr <> P:320 var
+R14341:14342 _luna_cjoin_congr <> P':321 var
+R14357:14364 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14347:14351 _work_cjoin <> cjoin def
+R14353:14353 _luna_cjoin_congr <> h:322 var
+R14355:14356 _luna_cjoin_congr <> h':323 var
+R14377:14380 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14365:14369 _work_cjoin <> cjoin def
+R14371:14372 _luna_cjoin_congr <> xs:324 var
+R14374:14376 _luna_cjoin_congr <> xs':325 var
+R14381:14385 _work_cjoin <> cjoin def
+R14388:14392 TypeRules <> THyps constr
+R14402:14403 _luna_cjoin_congr <> xs:324 var
+R14400:14400 _luna_cjoin_congr <> h:322 var
+R14398:14398 _luna_cjoin_congr <> P:320 var
+R14396:14396 _luna_cjoin_congr <> X:318 var
+R14394:14394 _luna_cjoin_congr <> D:316 var
+R14407:14411 TypeRules <> THyps constr
+R14425:14427 _luna_cjoin_congr <> xs':325 var
+R14422:14423 _luna_cjoin_congr <> h':323 var
+R14419:14420 _luna_cjoin_congr <> P':321 var
+R14416:14417 _luna_cjoin_congr <> X':319 var
+R14413:14414 _luna_cjoin_congr <> D':317 var
+R14455:14466 _luna_cjoin_congr <> cjoin_congr5 thm
+R14455:14466 _luna_cjoin_congr <> cjoin_congr5 thm
+prf 14535:14544 <> cjoin_list
+binder 14555:14555 <> A:326
+binder 14557:14558 <> A':327
+R14571:14574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14561:14565 _work_cjoin <> cjoin def
+R14567:14567 _luna_cjoin_congr <> A:326 var
+R14569:14570 _luna_cjoin_congr <> A':327 var
+R14575:14579 _work_cjoin <> cjoin def
+R14582:14586 TypeRules <> TList constr
+R14588:14588 _luna_cjoin_congr <> A:326 var
+R14592:14596 TypeRules <> TList constr
+R14598:14599 _luna_cjoin_congr <> A':327 var
+R14627:14638 _luna_cjoin_congr <> cjoin_congr1 thm
+R14627:14638 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 14707:14716 <> cjoin_lnil
+binder 14727:14727 <> A:328
+binder 14729:14730 <> A':329
+R14743:14746 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14733:14737 _work_cjoin <> cjoin def
+R14739:14739 _luna_cjoin_congr <> A:328 var
+R14741:14742 _luna_cjoin_congr <> A':329 var
+R14747:14751 _work_cjoin <> cjoin def
+R14754:14758 TypeRules <> TLNil constr
+R14760:14760 _luna_cjoin_congr <> A:328 var
+R14764:14768 TypeRules <> TLNil constr
+R14770:14771 _luna_cjoin_congr <> A':329 var
+R14799:14810 _luna_cjoin_congr <> cjoin_congr1 thm
+R14799:14810 _luna_cjoin_congr <> cjoin_congr1 thm
+prf 14879:14889 <> cjoin_lcons
+binder 14900:14900 <> A:330
+binder 14902:14903 <> A':331
+binder 14905:14905 <> a:332
+binder 14907:14908 <> a':333
+binder 14910:14910 <> l:334
+binder 14912:14913 <> l':335
+R14930:14933 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14920:14924 _work_cjoin <> cjoin def
+R14926:14926 _luna_cjoin_congr <> A:330 var
+R14928:14929 _luna_cjoin_congr <> A':331 var
+R14944:14947 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14934:14938 _work_cjoin <> cjoin def
+R14940:14940 _luna_cjoin_congr <> a:332 var
+R14942:14943 _luna_cjoin_congr <> a':333 var
+R14958:14965 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14948:14952 _work_cjoin <> cjoin def
+R14954:14954 _luna_cjoin_congr <> l:334 var
+R14956:14957 _luna_cjoin_congr <> l':335 var
+R14966:14970 _work_cjoin <> cjoin def
+R14973:14978 TypeRules <> TLCons constr
+R14984:14984 _luna_cjoin_congr <> l:334 var
+R14982:14982 _luna_cjoin_congr <> a:332 var
+R14980:14980 _luna_cjoin_congr <> A:330 var
+R14988:14993 TypeRules <> TLCons constr
+R15001:15002 _luna_cjoin_congr <> l':335 var
+R14998:14999 _luna_cjoin_congr <> a':333 var
+R14995:14996 _luna_cjoin_congr <> A':331 var
+R15030:15041 _luna_cjoin_congr <> cjoin_congr3 thm
+R15030:15041 _luna_cjoin_congr <> cjoin_congr3 thm
+R15122:15133 _luna_cjoin_congr <> cstep_congr1 thm
+R15154:15169 _luna_cjoin_congr <> rtc_cstep_congr5 thm
+R15190:15201 _luna_cjoin_congr <> cjoin_congr5 thm
+R15222:15230 _luna_cjoin_congr <> cjoin_ind thm
+R15251:15260 _luna_cjoin_congr <> cjoin_hyps thm

@@ -1,0 +1,117 @@
+DIGEST 373cb449df8ac5c3d606877cfa2e3867
+F_work_conv_whd_pos
+R15:22 Progress <> <> lib
+R24:42 _work_mixed_closure <> <> lib
+R44:54 _work_cjoin <> <> lib
+R56:77 _work_cstep_invariants <> <> lib
+R81:102 _luna_phi_erase_shapes <> <> lib
+R132:135 Stdlib.Lists.List <> <> lib
+R137:139 Stdlib.micromega.Lia <> <> lib
+R141:148 Stdlib.Arith.PeanoNat <> <> lib
+R158:170 Stdlib.Lists.List ListNotations <> mod
+R172:180 TypeRules <> <> mod
+prf 190:210 <> phi_erase_eval_csteps
+binder 221:221 <> t:1
+binder 223:223 <> u:2
+R234:241 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R226:229 TypeRules <> eval ind
+R233:233 _work_conv_whd_pos <> u:2 var
+R231:231 _work_conv_whd_pos <> t:1 var
+R242:244 Progress <> rtc ind
+R267:275 Progress <> phi_erase def
+R277:277 _work_conv_whd_pos <> u:2 var
+R253:261 Progress <> phi_erase def
+R263:263 _work_conv_whd_pos <> t:1 var
+R246:250 _work_mixed_closure <> cstep ind
+R312:318 Progress <> rtc_one thm
+R321:327 _work_mixed_closure <> cs_core constr
+R330:340 Progress <> eval_psteps thm
+R343:361 _luna_phi_erase_shapes <> phi_erase_eval_luna thm
+R312:318 Progress <> rtc_one thm
+R321:327 _work_mixed_closure <> cs_core constr
+R330:340 Progress <> eval_psteps thm
+R343:361 _luna_phi_erase_shapes <> phi_erase_eval_luna thm
+prf 381:395 <> conv_whd_proved
+binder 406:406 <> t:3
+binder 408:408 <> u:4
+binder 410:411 <> h1:5
+binder 413:414 <> h2:6
+R429:432 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R421:424 TypeRules <> conv ind
+R428:428 _work_conv_whd_pos <> u:4 var
+R426:426 _work_conv_whd_pos <> t:3 var
+R441:444 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R433:435 Progress <> whd def
+R437:437 _work_conv_whd_pos <> t:3 var
+R439:440 _work_conv_whd_pos <> h1:5 var
+R453:456 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R445:447 Progress <> whd def
+R449:449 _work_conv_whd_pos <> u:4 var
+R451:452 _work_conv_whd_pos <> h2:6 var
+R459:461 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R457:458 _work_conv_whd_pos <> h1:5 var
+R462:463 _work_conv_whd_pos <> h2:6 var
+R549:562 _work_cjoin <> conv_phi_cjoin thm
+R549:562 _work_cjoin <> conv_phi_cjoin thm
+R599:619 _work_conv_whd_pos <> phi_erase_eval_csteps thm
+R599:619 _work_conv_whd_pos <> phi_erase_eval_csteps thm
+R653:673 _work_conv_whd_pos <> phi_erase_eval_csteps thm
+R653:673 _work_conv_whd_pos <> phi_erase_eval_csteps thm
+R712:716 _work_cjoin <> cjoin def
+R719:727 Progress <> phi_erase def
+R734:742 Progress <> phi_erase def
+R712:716 _work_cjoin <> cjoin def
+R719:727 Progress <> phi_erase def
+R734:742 Progress <> phi_erase def
+R761:778 _work_cjoin <> cjoin_reduce_right thm
+R761:778 _work_cjoin <> cjoin_reduce_right thm
+R794:810 _work_cjoin <> cjoin_reduce_left thm
+R794:810 _work_cjoin <> cjoin_reduce_left thm
+R892:908 Progress <> hshape_tag_unique thm
+R892:908 Progress <> hshape_tag_unique thm
+R936:951 _work_cstep_invariants <> rtc_cstep_hshape thm
+R936:951 _work_cstep_invariants <> rtc_cstep_hshape thm
+R979:999 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm
+R979:999 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm
+R1022:1037 _work_cstep_invariants <> rtc_cstep_hshape thm
+R1022:1037 _work_cstep_invariants <> rtc_cstep_hshape thm
+R1065:1085 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm
+R1065:1085 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm
+prf 1111:1125 <> conv_pos_proved
+binder 1136:1136 <> c:7
+binder 1138:1138 <> d:8
+binder 1140:1140 <> n:9
+binder 1142:1142 <> m:10
+R1157:1160 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1149:1152 TypeRules <> conv ind
+R1156:1156 _work_conv_whd_pos <> d:8 var
+R1154:1154 _work_conv_whd_pos <> c:7 var
+R1173:1176 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1161:1168 TypeRules <> enum_pos ind
+R1172:1172 _work_conv_whd_pos <> n:9 var
+R1170:1170 _work_conv_whd_pos <> c:7 var
+R1189:1192 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1177:1184 TypeRules <> enum_pos ind
+R1188:1188 _work_conv_whd_pos <> m:10 var
+R1186:1186 _work_conv_whd_pos <> d:8 var
+R1194:1196 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1193:1193 _work_conv_whd_pos <> n:9 var
+R1197:1197 _work_conv_whd_pos <> m:10 var
+R1249:1262 _work_cjoin <> conv_phi_cjoin thm
+R1249:1262 _work_cjoin <> conv_phi_cjoin thm
+R1307:1324 Progress <> phi_erase_enum_pos thm
+R1307:1324 Progress <> phi_erase_enum_pos thm
+R1356:1373 Progress <> phi_erase_enum_pos thm
+R1356:1373 Progress <> phi_erase_enum_pos thm
+R1405:1425 _work_cstep_invariants <> rtc_cstep_enum_pos_id thm
+R1405:1425 _work_cstep_invariants <> rtc_cstep_enum_pos_id thm
+R1464:1484 _work_cstep_invariants <> rtc_cstep_enum_pos_id thm
+R1464:1484 _work_cstep_invariants <> rtc_cstep_enum_pos_id thm
+R1536:1538 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1525:1533 Progress <> phi_erase def
+R1539:1547 Progress <> phi_erase def
+R1536:1538 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1525:1533 Progress <> phi_erase def
+R1539:1547 Progress <> phi_erase def
+R1576:1594 Progress <> enum_pos_functional thm
+R1576:1594 Progress <> enum_pos_functional thm

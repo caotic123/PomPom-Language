@@ -1,0 +1,612 @@
+DIGEST f0a449fe5cfce675e9d685194081c250
+F_work_cstep_invariants
+R15:22 Progress <> <> lib
+R24:34 _tmp_epstep <> <> lib
+R36:54 _work_mixed_closure <> <> lib
+R56:66 _work_cjoin <> <> lib
+R70:90 _luna_parallel_hshape <> <> lib
+R92:115 _luna_rtc_epbranches_nth <> <> lib
+R145:148 Stdlib.Lists.List <> <> lib
+R150:152 Stdlib.micromega.Lia <> <> lib
+R154:161 Stdlib.Arith.PeanoNat <> <> lib
+R171:183 Stdlib.Lists.List ListNotations <> mod
+R185:193 TypeRules <> <> mod
+prf 203:218 <> rtc_pstep_hshape
+binder 229:229 <> t:1
+binder 231:231 <> u:2
+R251:254 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R238:240 Progress <> rtc ind
+R250:250 _work_cstep_invariants <> u:2 var
+R248:248 _work_cstep_invariants <> t:1 var
+R242:246 Progress <> pstep ind
+binder 262:262 <> h:3
+R275:278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R265:270 Progress <> hshape ind
+R272:272 _work_cstep_invariants <> t:1 var
+R274:274 _work_cstep_invariants <> h:3 var
+R279:284 Progress <> hshape ind
+R286:286 _work_cstep_invariants <> u:2 var
+R288:288 _work_cstep_invariants <> h:3 var
+R386:402 _luna_parallel_hshape <> pstep_hshape_luna thm
+R386:402 _luna_parallel_hshape <> pstep_hshape_luna thm
+prf 430:446 <> rtc_epstep_hshape
+binder 457:457 <> t:4
+binder 459:459 <> u:5
+R480:483 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R466:468 Progress <> rtc ind
+R479:479 _work_cstep_invariants <> u:5 var
+R477:477 _work_cstep_invariants <> t:4 var
+R470:475 _tmp_epstep <> epstep ind
+binder 491:491 <> h:6
+R504:507 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R494:499 Progress <> hshape ind
+R501:501 _work_cstep_invariants <> t:4 var
+R503:503 _work_cstep_invariants <> h:6 var
+R508:513 Progress <> hshape ind
+R515:515 _work_cstep_invariants <> u:5 var
+R517:517 _work_cstep_invariants <> h:6 var
+R615:632 _luna_parallel_hshape <> epstep_hshape_luna thm
+R615:632 _luna_parallel_hshape <> epstep_hshape_luna thm
+prf 660:671 <> cstep_hshape
+binder 682:682 <> t:7
+binder 684:684 <> u:8
+R700:703 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R691:695 _work_mixed_closure <> cstep ind
+R697:697 _work_cstep_invariants <> t:7 var
+R699:699 _work_cstep_invariants <> u:8 var
+binder 711:711 <> h:9
+R724:727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R714:719 Progress <> hshape ind
+R721:721 _work_cstep_invariants <> t:7 var
+R723:723 _work_cstep_invariants <> h:9 var
+R728:733 Progress <> hshape ind
+R735:735 _work_cstep_invariants <> u:8 var
+R737:737 _work_cstep_invariants <> h:9 var
+R795:810 _work_cstep_invariants <> rtc_pstep_hshape thm
+R795:810 _work_cstep_invariants <> rtc_pstep_hshape thm
+R837:853 _work_cstep_invariants <> rtc_epstep_hshape thm
+R837:853 _work_cstep_invariants <> rtc_epstep_hshape thm
+prf 881:896 <> rtc_cstep_hshape
+binder 907:907 <> t:10
+binder 909:909 <> u:11
+R929:932 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R916:918 Progress <> rtc ind
+R928:928 _work_cstep_invariants <> u:11 var
+R926:926 _work_cstep_invariants <> t:10 var
+R920:924 _work_mixed_closure <> cstep ind
+binder 940:940 <> h:12
+R953:956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R943:948 Progress <> hshape ind
+R950:950 _work_cstep_invariants <> t:10 var
+R952:952 _work_cstep_invariants <> h:12 var
+R957:962 Progress <> hshape ind
+R964:964 _work_cstep_invariants <> u:11 var
+R966:966 _work_cstep_invariants <> h:12 var
+R1064:1075 _work_cstep_invariants <> cstep_hshape thm
+R1064:1075 _work_cstep_invariants <> cstep_hshape thm
+prf 1103:1123 <> pstep_enumt_inv_local
+binder 1134:1134 <> E:13
+binder 1136:1136 <> u:14
+R1157:1164 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1139:1143 Progress <> pstep ind
+R1146:1151 TypeRules <> TEnumT constr
+R1153:1153 _work_cstep_invariants <> E:13 var
+R1156:1156 _work_cstep_invariants <> u:14 var
+R1165:1171 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1174:1175 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1172:1173 <> E':15
+R1189:1192 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1177:1179 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1176:1176 _work_cstep_invariants <> u:14 var
+R1180:1185 TypeRules <> TEnumT constr
+R1187:1188 _work_cstep_invariants <> E':15 var
+R1193:1197 Progress <> pstep ind
+R1199:1199 _work_cstep_invariants <> E:13 var
+R1201:1202 _work_cstep_invariants <> E':15 var
+prf 1265:1283 <> rtc_pstep_enumt_inv
+binder 1294:1294 <> E:16
+binder 1296:1296 <> u:17
+R1321:1328 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1299:1301 Progress <> rtc ind
+R1320:1320 _work_cstep_invariants <> u:17 var
+R1310:1315 TypeRules <> TEnumT constr
+R1317:1317 _work_cstep_invariants <> E:16 var
+R1303:1307 Progress <> pstep ind
+R1329:1335 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1338:1339 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1336:1337 <> E':18
+R1353:1356 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1341:1343 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1340:1340 _work_cstep_invariants <> u:17 var
+R1344:1349 TypeRules <> TEnumT constr
+R1351:1352 _work_cstep_invariants <> E':18 var
+R1357:1359 Progress <> rtc ind
+R1369:1370 _work_cstep_invariants <> E':18 var
+R1367:1367 _work_cstep_invariants <> E:16 var
+R1361:1365 Progress <> pstep ind
+R1406:1411 TypeRules <> TEnumT constr
+R1406:1411 TypeRules <> TEnumT constr
+R1519:1526 Progress <> rtc_refl constr
+R1519:1526 Progress <> rtc_refl constr
+R1544:1564 _work_cstep_invariants <> pstep_enumt_inv_local thm
+R1544:1564 _work_cstep_invariants <> pstep_enumt_inv_local thm
+R1614:1620 Corelib.Init.Logic <> eq_refl constr
+R1614:1620 Corelib.Init.Logic <> eq_refl constr
+R1685:1692 Progress <> rtc_step constr
+R1685:1692 Progress <> rtc_step constr
+prf 1721:1742 <> epstep_enumt_inv_local
+binder 1753:1753 <> E:19
+binder 1755:1755 <> u:20
+R1777:1784 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1758:1763 _tmp_epstep <> epstep ind
+R1766:1771 TypeRules <> TEnumT constr
+R1773:1773 _work_cstep_invariants <> E:19 var
+R1776:1776 _work_cstep_invariants <> u:20 var
+R1785:1791 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1794:1795 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1792:1793 <> E':21
+R1809:1812 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1797:1799 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1796:1796 _work_cstep_invariants <> u:20 var
+R1800:1805 TypeRules <> TEnumT constr
+R1807:1808 _work_cstep_invariants <> E':21 var
+R1813:1818 _tmp_epstep <> epstep ind
+R1820:1820 _work_cstep_invariants <> E:19 var
+R1822:1823 _work_cstep_invariants <> E':21 var
+prf 1886:1905 <> rtc_epstep_enumt_inv
+binder 1916:1916 <> E:22
+binder 1918:1918 <> u:23
+R1944:1951 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1921:1923 Progress <> rtc ind
+R1943:1943 _work_cstep_invariants <> u:23 var
+R1933:1938 TypeRules <> TEnumT constr
+R1940:1940 _work_cstep_invariants <> E:22 var
+R1925:1930 _tmp_epstep <> epstep ind
+R1952:1958 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1961:1962 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1959:1960 <> E':24
+R1976:1979 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1964:1966 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1963:1963 _work_cstep_invariants <> u:23 var
+R1967:1972 TypeRules <> TEnumT constr
+R1974:1975 _work_cstep_invariants <> E':24 var
+R1980:1982 Progress <> rtc ind
+R1993:1994 _work_cstep_invariants <> E':24 var
+R1991:1991 _work_cstep_invariants <> E:22 var
+R1984:1989 _tmp_epstep <> epstep ind
+R2030:2035 TypeRules <> TEnumT constr
+R2030:2035 TypeRules <> TEnumT constr
+R2143:2150 Progress <> rtc_refl constr
+R2143:2150 Progress <> rtc_refl constr
+R2168:2189 _work_cstep_invariants <> epstep_enumt_inv_local thm
+R2168:2189 _work_cstep_invariants <> epstep_enumt_inv_local thm
+R2239:2245 Corelib.Init.Logic <> eq_refl constr
+R2239:2245 Corelib.Init.Logic <> eq_refl constr
+R2310:2317 Progress <> rtc_step constr
+R2310:2317 Progress <> rtc_step constr
+prf 2346:2360 <> cstep_enumt_inv
+binder 2371:2371 <> E:25
+binder 2373:2373 <> u:26
+R2394:2401 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2376:2380 _work_mixed_closure <> cstep ind
+R2383:2388 TypeRules <> TEnumT constr
+R2390:2390 _work_cstep_invariants <> E:25 var
+R2393:2393 _work_cstep_invariants <> u:26 var
+R2402:2408 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2411:2412 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2409:2410 <> E':27
+R2426:2429 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2414:2416 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2413:2413 _work_cstep_invariants <> u:26 var
+R2417:2422 TypeRules <> TEnumT constr
+R2424:2425 _work_cstep_invariants <> E':27 var
+R2430:2434 _work_mixed_closure <> cstep ind
+R2436:2436 _work_cstep_invariants <> E:25 var
+R2438:2439 _work_cstep_invariants <> E':27 var
+R2499:2517 _work_cstep_invariants <> rtc_pstep_enumt_inv thm
+R2499:2517 _work_cstep_invariants <> rtc_pstep_enumt_inv thm
+R2588:2594 _work_mixed_closure <> cs_core constr
+R2588:2594 _work_mixed_closure <> cs_core constr
+R2617:2636 _work_cstep_invariants <> rtc_epstep_enumt_inv thm
+R2617:2636 _work_cstep_invariants <> rtc_epstep_enumt_inv thm
+R2707:2712 _work_mixed_closure <> cs_eta constr
+R2707:2712 _work_mixed_closure <> cs_eta constr
+prf 2733:2751 <> rtc_cstep_enumt_inv
+binder 2762:2762 <> E:28
+binder 2764:2764 <> u:29
+R2789:2796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2767:2769 Progress <> rtc ind
+R2788:2788 _work_cstep_invariants <> u:29 var
+R2778:2783 TypeRules <> TEnumT constr
+R2785:2785 _work_cstep_invariants <> E:28 var
+R2771:2775 _work_mixed_closure <> cstep ind
+R2797:2803 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2806:2807 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2804:2805 <> E':30
+R2821:2824 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2809:2811 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2808:2808 _work_cstep_invariants <> u:29 var
+R2812:2817 TypeRules <> TEnumT constr
+R2819:2820 _work_cstep_invariants <> E':30 var
+R2825:2827 Progress <> rtc ind
+R2837:2838 _work_cstep_invariants <> E':30 var
+R2835:2835 _work_cstep_invariants <> E:28 var
+R2829:2833 _work_mixed_closure <> cstep ind
+R2874:2879 TypeRules <> TEnumT constr
+R2874:2879 TypeRules <> TEnumT constr
+R2987:2994 Progress <> rtc_refl constr
+R2987:2994 Progress <> rtc_refl constr
+R3012:3026 _work_cstep_invariants <> cstep_enumt_inv thm
+R3012:3026 _work_cstep_invariants <> cstep_enumt_inv thm
+R3076:3082 Corelib.Init.Logic <> eq_refl constr
+R3076:3082 Corelib.Init.Logic <> eq_refl constr
+R3147:3154 Progress <> rtc_step constr
+R3147:3154 Progress <> rtc_step constr
+prf 3183:3200 <> pstep_pi_inv_local
+binder 3211:3211 <> A:31
+binder 3213:3213 <> B:32
+binder 3215:3215 <> u:33
+R3235:3242 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3218:3222 Progress <> pstep ind
+R3225:3227 TypeRules <> TPi constr
+R3231:3231 _work_cstep_invariants <> B:32 var
+R3229:3229 _work_cstep_invariants <> A:31 var
+R3234:3234 _work_cstep_invariants <> u:33 var
+R3243:3249 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3255:3256 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3250:3251 <> A':34
+binder 3253:3254 <> B':35
+R3270:3273 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3258:3260 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3257:3257 _work_cstep_invariants <> u:33 var
+R3261:3263 TypeRules <> TPi constr
+R3268:3269 _work_cstep_invariants <> B':35 var
+R3265:3266 _work_cstep_invariants <> A':34 var
+R3284:3287 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3274:3278 Progress <> pstep ind
+R3280:3280 _work_cstep_invariants <> A:31 var
+R3282:3283 _work_cstep_invariants <> A':34 var
+R3288:3292 Progress <> pstep ind
+R3294:3294 _work_cstep_invariants <> B:32 var
+R3296:3297 _work_cstep_invariants <> B':35 var
+prf 3362:3377 <> rtc_pstep_pi_inv
+binder 3388:3388 <> A:36
+binder 3390:3390 <> B:37
+binder 3392:3392 <> u:38
+R3416:3423 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3395:3397 Progress <> rtc ind
+R3415:3415 _work_cstep_invariants <> u:38 var
+R3406:3408 TypeRules <> TPi constr
+R3412:3412 _work_cstep_invariants <> B:37 var
+R3410:3410 _work_cstep_invariants <> A:36 var
+R3399:3403 Progress <> pstep ind
+R3424:3430 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3436:3437 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3431:3432 <> A':39
+binder 3434:3435 <> B':40
+R3451:3460 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3439:3441 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3438:3438 _work_cstep_invariants <> u:38 var
+R3442:3444 TypeRules <> TPi constr
+R3449:3450 _work_cstep_invariants <> B':40 var
+R3446:3447 _work_cstep_invariants <> A':39 var
+R3475:3478 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3461:3463 Progress <> rtc ind
+R3473:3474 _work_cstep_invariants <> A':39 var
+R3471:3471 _work_cstep_invariants <> A:36 var
+R3465:3469 Progress <> pstep ind
+R3479:3481 Progress <> rtc ind
+R3491:3492 _work_cstep_invariants <> B':40 var
+R3489:3489 _work_cstep_invariants <> B:37 var
+R3483:3487 Progress <> pstep ind
+R3530:3532 TypeRules <> TPi constr
+R3530:3532 TypeRules <> TPi constr
+R3641:3648 Progress <> rtc_refl constr
+R3641:3648 Progress <> rtc_refl constr
+R3641:3648 Progress <> rtc_refl constr
+R3665:3682 _work_cstep_invariants <> pstep_pi_inv_local thm
+R3665:3682 _work_cstep_invariants <> pstep_pi_inv_local thm
+R3754:3760 Corelib.Init.Logic <> eq_refl constr
+R3754:3760 Corelib.Init.Logic <> eq_refl constr
+R3843:3850 Progress <> rtc_step constr
+R3843:3850 Progress <> rtc_step constr
+R3843:3850 Progress <> rtc_step constr
+prf 3865:3883 <> epstep_pi_inv_local
+binder 3894:3894 <> A:41
+binder 3896:3896 <> B:42
+binder 3898:3898 <> u:43
+R3919:3926 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3901:3906 _tmp_epstep <> epstep ind
+R3909:3911 TypeRules <> TPi constr
+R3915:3915 _work_cstep_invariants <> B:42 var
+R3913:3913 _work_cstep_invariants <> A:41 var
+R3918:3918 _work_cstep_invariants <> u:43 var
+R3927:3933 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3939:3940 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3934:3935 <> A':44
+binder 3937:3938 <> B':45
+R3954:3957 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3942:3944 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3941:3941 _work_cstep_invariants <> u:43 var
+R3945:3947 TypeRules <> TPi constr
+R3952:3953 _work_cstep_invariants <> B':45 var
+R3949:3950 _work_cstep_invariants <> A':44 var
+R3969:3972 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3958:3963 _tmp_epstep <> epstep ind
+R3965:3965 _work_cstep_invariants <> A:41 var
+R3967:3968 _work_cstep_invariants <> A':44 var
+R3973:3978 _tmp_epstep <> epstep ind
+R3980:3980 _work_cstep_invariants <> B:42 var
+R3982:3983 _work_cstep_invariants <> B':45 var
+prf 4048:4064 <> rtc_epstep_pi_inv
+binder 4075:4075 <> A:46
+binder 4077:4077 <> B:47
+binder 4079:4079 <> u:48
+R4104:4111 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4082:4084 Progress <> rtc ind
+R4103:4103 _work_cstep_invariants <> u:48 var
+R4094:4096 TypeRules <> TPi constr
+R4100:4100 _work_cstep_invariants <> B:47 var
+R4098:4098 _work_cstep_invariants <> A:46 var
+R4086:4091 _tmp_epstep <> epstep ind
+R4112:4118 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4124:4125 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4119:4120 <> A':49
+binder 4122:4123 <> B':50
+R4139:4148 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4127:4129 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4126:4126 _work_cstep_invariants <> u:48 var
+R4130:4132 TypeRules <> TPi constr
+R4137:4138 _work_cstep_invariants <> B':50 var
+R4134:4135 _work_cstep_invariants <> A':49 var
+R4164:4167 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4149:4151 Progress <> rtc ind
+R4162:4163 _work_cstep_invariants <> A':49 var
+R4160:4160 _work_cstep_invariants <> A:46 var
+R4153:4158 _tmp_epstep <> epstep ind
+R4168:4170 Progress <> rtc ind
+R4181:4182 _work_cstep_invariants <> B':50 var
+R4179:4179 _work_cstep_invariants <> B:47 var
+R4172:4177 _tmp_epstep <> epstep ind
+R4220:4222 TypeRules <> TPi constr
+R4220:4222 TypeRules <> TPi constr
+R4331:4338 Progress <> rtc_refl constr
+R4331:4338 Progress <> rtc_refl constr
+R4331:4338 Progress <> rtc_refl constr
+R4355:4373 _work_cstep_invariants <> epstep_pi_inv_local thm
+R4355:4373 _work_cstep_invariants <> epstep_pi_inv_local thm
+R4445:4451 Corelib.Init.Logic <> eq_refl constr
+R4445:4451 Corelib.Init.Logic <> eq_refl constr
+R4534:4541 Progress <> rtc_step constr
+R4534:4541 Progress <> rtc_step constr
+R4534:4541 Progress <> rtc_step constr
+prf 4556:4567 <> cstep_pi_inv
+binder 4578:4578 <> A:51
+binder 4580:4580 <> B:52
+binder 4582:4582 <> u:53
+R4602:4609 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4585:4589 _work_mixed_closure <> cstep ind
+R4592:4594 TypeRules <> TPi constr
+R4598:4598 _work_cstep_invariants <> B:52 var
+R4596:4596 _work_cstep_invariants <> A:51 var
+R4601:4601 _work_cstep_invariants <> u:53 var
+R4610:4616 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4622:4623 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4617:4618 <> A':54
+binder 4620:4621 <> B':55
+R4637:4640 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4625:4627 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4624:4624 _work_cstep_invariants <> u:53 var
+R4628:4630 TypeRules <> TPi constr
+R4635:4636 _work_cstep_invariants <> B':55 var
+R4632:4633 _work_cstep_invariants <> A':54 var
+R4651:4654 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4641:4645 _work_mixed_closure <> cstep ind
+R4647:4647 _work_cstep_invariants <> A:51 var
+R4649:4650 _work_cstep_invariants <> A':54 var
+R4655:4659 _work_mixed_closure <> cstep ind
+R4661:4661 _work_cstep_invariants <> B:52 var
+R4663:4664 _work_cstep_invariants <> B':55 var
+R4726:4741 _work_cstep_invariants <> rtc_pstep_pi_inv thm
+R4726:4741 _work_cstep_invariants <> rtc_pstep_pi_inv thm
+R4827:4833 _work_mixed_closure <> cs_core constr
+R4827:4833 _work_mixed_closure <> cs_core constr
+R4827:4833 _work_mixed_closure <> cs_core constr
+R4862:4878 _work_cstep_invariants <> rtc_epstep_pi_inv thm
+R4862:4878 _work_cstep_invariants <> rtc_epstep_pi_inv thm
+R4964:4969 _work_mixed_closure <> cs_eta constr
+R4964:4969 _work_mixed_closure <> cs_eta constr
+R4964:4969 _work_mixed_closure <> cs_eta constr
+prf 4996:5011 <> rtc_cstep_pi_inv
+binder 5022:5022 <> A:56
+binder 5024:5024 <> B:57
+binder 5026:5026 <> u:58
+R5050:5057 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5029:5031 Progress <> rtc ind
+R5049:5049 _work_cstep_invariants <> u:58 var
+R5040:5042 TypeRules <> TPi constr
+R5046:5046 _work_cstep_invariants <> B:57 var
+R5044:5044 _work_cstep_invariants <> A:56 var
+R5033:5037 _work_mixed_closure <> cstep ind
+R5058:5064 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5070:5071 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5065:5066 <> A':59
+binder 5068:5069 <> B':60
+R5085:5094 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5073:5075 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5072:5072 _work_cstep_invariants <> u:58 var
+R5076:5078 TypeRules <> TPi constr
+R5083:5084 _work_cstep_invariants <> B':60 var
+R5080:5081 _work_cstep_invariants <> A':59 var
+R5109:5112 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5095:5097 Progress <> rtc ind
+R5107:5108 _work_cstep_invariants <> A':59 var
+R5105:5105 _work_cstep_invariants <> A:56 var
+R5099:5103 _work_mixed_closure <> cstep ind
+R5113:5115 Progress <> rtc ind
+R5125:5126 _work_cstep_invariants <> B':60 var
+R5123:5123 _work_cstep_invariants <> B:57 var
+R5117:5121 _work_mixed_closure <> cstep ind
+R5164:5166 TypeRules <> TPi constr
+R5164:5166 TypeRules <> TPi constr
+R5275:5282 Progress <> rtc_refl constr
+R5275:5282 Progress <> rtc_refl constr
+R5275:5282 Progress <> rtc_refl constr
+R5299:5310 _work_cstep_invariants <> cstep_pi_inv thm
+R5299:5310 _work_cstep_invariants <> cstep_pi_inv thm
+R5382:5388 Corelib.Init.Logic <> eq_refl constr
+R5382:5388 Corelib.Init.Logic <> eq_refl constr
+R5471:5478 Progress <> rtc_step constr
+R5471:5478 Progress <> rtc_step constr
+R5471:5478 Progress <> rtc_step constr
+prf 5493:5504 <> cjoin_pi_inv
+binder 5515:5516 <> A1:61
+binder 5518:5519 <> B1:62
+binder 5521:5522 <> A2:63
+binder 5524:5525 <> B2:64
+R5561:5568 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5532:5536 _work_cjoin <> cjoin def
+R5539:5541 TypeRules <> TPi constr
+R5546:5547 _work_cstep_invariants <> B1:62 var
+R5543:5544 _work_cstep_invariants <> A1:61 var
+R5551:5553 TypeRules <> TPi constr
+R5558:5559 _work_cstep_invariants <> B2:64 var
+R5555:5556 _work_cstep_invariants <> A2:63 var
+R5580:5583 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5569:5573 _work_cjoin <> cjoin def
+R5575:5576 _work_cstep_invariants <> A1:61 var
+R5578:5579 _work_cstep_invariants <> A2:63 var
+R5584:5588 _work_cjoin <> cjoin def
+R5590:5591 _work_cstep_invariants <> B1:62 var
+R5593:5594 _work_cstep_invariants <> B2:64 var
+R5650:5665 _work_cstep_invariants <> rtc_cstep_pi_inv thm
+R5650:5665 _work_cstep_invariants <> rtc_cstep_pi_inv thm
+R5725:5740 _work_cstep_invariants <> rtc_cstep_pi_inv thm
+R5725:5740 _work_cstep_invariants <> rtc_cstep_pi_inv thm
+R5856:5860 _work_cjoin <> cjoin def
+prf 5882:5898 <> rtc_pstep_sort_id
+binder 5909:5909 <> k:65
+binder 5911:5911 <> u:66
+R5939:5942 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5918:5920 Progress <> rtc ind
+R5938:5938 _work_cstep_invariants <> u:66 var
+R5929:5933 TypeRules <> TSort constr
+R5935:5935 _work_cstep_invariants <> k:65 var
+R5922:5926 Progress <> pstep ind
+R5944:5946 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5943:5943 _work_cstep_invariants <> u:66 var
+R5947:5951 TypeRules <> TSort constr
+R5953:5953 _work_cstep_invariants <> k:65 var
+R5989:5993 TypeRules <> TSort constr
+R5989:5993 TypeRules <> TSort constr
+prf 6110:6127 <> rtc_epstep_sort_id
+binder 6138:6138 <> k:67
+binder 6140:6140 <> u:68
+R6169:6172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6147:6149 Progress <> rtc ind
+R6168:6168 _work_cstep_invariants <> u:68 var
+R6159:6163 TypeRules <> TSort constr
+R6165:6165 _work_cstep_invariants <> k:67 var
+R6151:6156 _tmp_epstep <> epstep ind
+R6174:6176 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6173:6173 _work_cstep_invariants <> u:68 var
+R6177:6181 TypeRules <> TSort constr
+R6183:6183 _work_cstep_invariants <> k:67 var
+R6219:6223 TypeRules <> TSort constr
+R6219:6223 TypeRules <> TSort constr
+prf 6340:6352 <> cstep_sort_id
+binder 6363:6363 <> k:69
+binder 6365:6365 <> u:70
+R6385:6388 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6368:6372 _work_mixed_closure <> cstep ind
+R6375:6379 TypeRules <> TSort constr
+R6381:6381 _work_cstep_invariants <> k:69 var
+R6384:6384 _work_cstep_invariants <> u:70 var
+R6390:6392 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6389:6389 _work_cstep_invariants <> u:70 var
+R6393:6397 TypeRules <> TSort constr
+R6399:6399 _work_cstep_invariants <> k:69 var
+R6456:6472 _work_cstep_invariants <> rtc_pstep_sort_id thm
+R6456:6472 _work_cstep_invariants <> rtc_pstep_sort_id thm
+R6490:6507 _work_cstep_invariants <> rtc_epstep_sort_id thm
+R6490:6507 _work_cstep_invariants <> rtc_epstep_sort_id thm
+prf 6526:6542 <> rtc_cstep_sort_id
+binder 6553:6553 <> k:71
+binder 6555:6555 <> u:72
+R6583:6586 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6562:6564 Progress <> rtc ind
+R6582:6582 _work_cstep_invariants <> u:72 var
+R6573:6577 TypeRules <> TSort constr
+R6579:6579 _work_cstep_invariants <> k:71 var
+R6566:6570 _work_mixed_closure <> cstep ind
+R6588:6590 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6587:6587 _work_cstep_invariants <> u:72 var
+R6591:6595 TypeRules <> TSort constr
+R6597:6597 _work_cstep_invariants <> k:71 var
+R6633:6637 TypeRules <> TSort constr
+R6633:6637 TypeRules <> TSort constr
+R6723:6725 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6726:6730 TypeRules <> TSort constr
+R6746:6758 _work_cstep_invariants <> cstep_sort_id thm
+R6723:6725 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6726:6730 TypeRules <> TSort constr
+R6746:6758 _work_cstep_invariants <> cstep_sort_id thm
+prf 6826:6846 <> rtc_pstep_enum_pos_id
+binder 6857:6857 <> c:73
+binder 6859:6859 <> d:74
+binder 6861:6861 <> n:75
+R6881:6884 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6868:6870 Progress <> rtc ind
+R6880:6880 _work_cstep_invariants <> d:74 var
+R6878:6878 _work_cstep_invariants <> c:73 var
+R6872:6876 Progress <> pstep ind
+R6897:6900 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6885:6892 TypeRules <> enum_pos ind
+R6896:6896 _work_cstep_invariants <> n:75 var
+R6894:6894 _work_cstep_invariants <> c:73 var
+R6902:6904 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6901:6901 _work_cstep_invariants <> d:74 var
+R6905:6905 _work_cstep_invariants <> c:73 var
+R7007:7009 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7024:7040 Progress <> pstep_enum_pos_id thm
+R7007:7009 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7024:7040 Progress <> pstep_enum_pos_id thm
+prf 7117:7133 <> cstep_enum_pos_id
+binder 7144:7144 <> c:76
+binder 7146:7146 <> d:77
+binder 7148:7148 <> n:78
+R7164:7167 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7155:7159 _work_mixed_closure <> cstep ind
+R7161:7161 _work_cstep_invariants <> c:76 var
+R7163:7163 _work_cstep_invariants <> d:77 var
+R7180:7183 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7168:7175 TypeRules <> enum_pos ind
+R7179:7179 _work_cstep_invariants <> n:78 var
+R7177:7177 _work_cstep_invariants <> c:76 var
+R7185:7187 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7184:7184 _work_cstep_invariants <> d:77 var
+R7188:7188 _work_cstep_invariants <> c:76 var
+R7244:7264 _work_cstep_invariants <> rtc_pstep_enum_pos_id thm
+R7244:7264 _work_cstep_invariants <> rtc_pstep_enum_pos_id thm
+R7291:7317 _luna_rtc_epbranches_nth <> rtc_epstep_enum_pos_id_luna thm
+R7291:7317 _luna_rtc_epbranches_nth <> rtc_epstep_enum_pos_id_luna thm
+prf 7345:7365 <> rtc_cstep_enum_pos_id
+binder 7376:7376 <> c:79
+binder 7378:7378 <> d:80
+binder 7380:7380 <> n:81
+R7400:7403 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7387:7389 Progress <> rtc ind
+R7399:7399 _work_cstep_invariants <> d:80 var
+R7397:7397 _work_cstep_invariants <> c:79 var
+R7391:7395 _work_mixed_closure <> cstep ind
+R7416:7419 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7404:7411 TypeRules <> enum_pos ind
+R7415:7415 _work_cstep_invariants <> n:81 var
+R7413:7413 _work_cstep_invariants <> c:79 var
+R7421:7423 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7420:7420 _work_cstep_invariants <> d:80 var
+R7424:7424 _work_cstep_invariants <> c:79 var
+R7526:7528 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7543:7559 _work_cstep_invariants <> cstep_enum_pos_id thm
+R7526:7528 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7543:7559 _work_cstep_invariants <> cstep_enum_pos_id thm

@@ -1,0 +1,88 @@
+DIGEST 539b6659f8cac66525f9b09fdd8bf4c1
+F_tmp_spine2
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R65:77 Stdlib.Lists.List ListNotations <> mod
+R79:87 TypeRules <> <> mod
+prf 97:121 <> try_spine_mem_covers_join
+binder 132:132 <> a:1
+binder 134:135 <> L1:2
+R156:159 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R142:150 TypeRules <> spine_mem ind
+R154:155 _tmp_spine2 <> L1:2 var
+R152:152 _tmp_spine2 <> a:1 var
+binder 167:169 <> Psi:3
+binder 171:172 <> L2:4
+R192:195 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R179:184 TypeRules <> covers ind
+R190:191 _tmp_spine2 <> L2:4 var
+R186:188 _tmp_spine2 <> Psi:3 var
+R207:214 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R196:200 Progress <> pjoin def
+R202:203 _tmp_spine2 <> L1:2 var
+R205:206 _tmp_spine2 <> L2:4 var
+R215:221 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R223:224 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 222:222 <> d:5
+R233:236 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R225:226 Stdlib.Lists.List <> In def
+R230:232 _tmp_spine2 <> Psi:3 var
+R228:228 _tmp_spine2 <> d:5 var
+R237:240 TypeRules <> conv ind
+R244:244 _tmp_spine2 <> d:5 var
+R242:242 _tmp_spine2 <> a:1 var
+R407:421 Progress <> pjoin_eval_left thm
+R407:421 Progress <> pjoin_eval_left thm
+R407:421 Progress <> pjoin_eval_left thm
+R499:517 Progress <> no_pjoin_lcons_lnil thm
+R499:517 Progress <> no_pjoin_lcons_lnil thm
+R531:546 Progress <> pjoin_eval_right thm
+R531:546 Progress <> pjoin_eval_right thm
+R578:593 Progress <> pjoin_eval_right thm
+R578:593 Progress <> pjoin_eval_right thm
+R634:648 Progress <> pjoin_lcons_inv thm
+R634:648 Progress <> pjoin_lcons_inv thm
+R705:717 Stdlib.Lists.List <> Exists_exists thm
+R705:717 Stdlib.Lists.List <> Exists_exists thm
+R809:816 TypeRules <> cv_trans constr
+R809:816 TypeRules <> cv_trans constr
+R845:852 TypeRules <> cv_trans constr
+R862:871 Progress <> pjoin_conv thm
+R845:852 TypeRules <> cv_trans constr
+R862:871 Progress <> pjoin_conv thm
+R922:940 Progress <> no_pjoin_lcons_lnil thm
+R922:940 Progress <> no_pjoin_lcons_lnil thm
+R954:969 Progress <> pjoin_eval_right thm
+R954:969 Progress <> pjoin_eval_right thm
+R1001:1016 Progress <> pjoin_eval_right thm
+R1001:1016 Progress <> pjoin_eval_right thm
+R1057:1071 Progress <> pjoin_lcons_inv thm
+R1057:1071 Progress <> pjoin_lcons_inv thm
+prf 1157:1173 <> try_spine_covered
+binder 1184:1184 <> L:6
+binder 1186:1186 <> a:7
+binder 1188:1190 <> Psi:8
+R1210:1213 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1197:1205 TypeRules <> spine_mem ind
+R1209:1209 _tmp_spine2 <> L:6 var
+R1207:1207 _tmp_spine2 <> a:7 var
+R1226:1233 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1214:1219 TypeRules <> covers ind
+R1225:1225 _tmp_spine2 <> L:6 var
+R1221:1223 _tmp_spine2 <> Psi:8 var
+R1234:1240 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1242:1243 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1241:1241 <> d:9
+R1252:1255 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1244:1245 Stdlib.Lists.List <> In def
+R1249:1251 _tmp_spine2 <> Psi:8 var
+R1247:1247 _tmp_spine2 <> d:9 var
+R1256:1259 TypeRules <> conv ind
+R1263:1263 _tmp_spine2 <> d:9 var
+R1261:1261 _tmp_spine2 <> a:7 var
+R1310:1334 _tmp_spine2 <> try_spine_mem_covers_join thm
+R1349:1358 Progress <> pjoin_refl thm
+R1310:1334 _tmp_spine2 <> try_spine_mem_covers_join thm
+R1349:1358 Progress <> pjoin_refl thm
+R1349:1358 Progress <> pjoin_refl thm
+R1349:1358 Progress <> pjoin_refl thm

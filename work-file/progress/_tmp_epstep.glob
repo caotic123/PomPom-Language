@@ -1,0 +1,1201 @@
+DIGEST 36e9e550048a8e7baff96cdfe0b61aa6
+F_tmp_epstep
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R57:59 Stdlib.micromega.Lia <> <> lib
+R61:68 Stdlib.Arith.PeanoNat <> <> lib
+R78:90 Stdlib.Lists.List ListNotations <> mod
+R92:100 TypeRules <> <> mod
+ind 187:192 <> epstep
+constr 222:228 <> eps_var
+constr 269:276 <> eps_sort
+constr 319:324 <> eps_pi
+constr 411:417 <> eps_lam
+constr 477:483 <> eps_app
+constr 572:580 <> eps_sigma
+constr 673:680 <> eps_pair
+constr 771:777 <> eps_fst
+constr 837:843 <> eps_snd
+constr 903:911 <> eps_unitt
+constr 938:945 <> eps_unit
+constr 970:976 <> eps_uid
+constr 999:1005 <> eps_tag
+constr 1046:1054 <> eps_enumu
+constr 1081:1088 <> eps_nile
+constr 1113:1121 <> eps_conse
+constr 1214:1222 <> eps_enumt
+constr 1286:1294 <> eps_ezero
+constr 1321:1329 <> eps_esucc
+constr 1393:1399 <> eps_epi
+constr 1488:1497 <> eps_switch
+constr 1646:1654 <> eps_idesc
+constr 1718:1725 <> eps_ivar
+constr 1787:1792 <> eps_i1
+constr 1813:1821 <> eps_iprod
+constr 1914:1920 <> eps_ipi
+constr 2009:2016 <> eps_isig
+constr 2107:2117 <> eps_ichoice
+constr 2214:2223 <> eps_interp
+constr 2318:2324 <> eps_mui
+constr 2384:2390 <> eps_mus
+constr 2450:2455 <> eps_in
+constr 2513:2519 <> eps_ind
+constr 2687:2694 <> eps_iall
+constr 2845:2852 <> eps_hyps
+constr 3028:3035 <> eps_list
+constr 3097:3104 <> eps_lnil
+constr 3166:3174 <> eps_lcons
+constr 3296:3303 <> eps_case
+constr 3433:3439 <> eps_eta
+ind 3526:3535 <> epbranches
+constr 3593:3600 <> epbs_nil
+constr 3623:3631 <> epbs_cons
+R200:203 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R196:199 TypeRules <> term ind
+R208:211 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R204:207 TypeRules <> term ind
+R3557:3560 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3539:3542 Corelib.Init.Datatypes <> list ind
+R3549:3551 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3545:3548 TypeRules <> term ind
+R3552:3555 TypeRules <> term ind
+R3579:3582 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3561:3564 Corelib.Init.Datatypes <> list ind
+R3571:3573 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3567:3570 TypeRules <> term ind
+R3574:3577 TypeRules <> term ind
+binder 239:239 <> n:5
+R242:247 _tmp_epstep <> epstep:1 ind
+R259:262 TypeRules <> TVar constr
+R264:264 _tmp_epstep <> n:5 var
+R250:253 TypeRules <> TVar constr
+R255:255 _tmp_epstep <> n:5 var
+binder 287:287 <> k:6
+R290:295 _tmp_epstep <> epstep:1 ind
+R308:312 TypeRules <> TSort constr
+R314:314 _tmp_epstep <> k:6 var
+R298:302 TypeRules <> TSort constr
+R304:304 _tmp_epstep <> k:6 var
+binder 335:335 <> A:7
+binder 337:338 <> A':8
+binder 340:340 <> B:9
+binder 342:343 <> B':10
+R357:360 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R346:351 _tmp_epstep <> epstep:1 ind
+R355:356 _tmp_epstep <> A':8 var
+R353:353 _tmp_epstep <> A:7 var
+R372:379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R361:366 _tmp_epstep <> epstep:1 ind
+R370:371 _tmp_epstep <> B':10 var
+R368:368 _tmp_epstep <> B:9 var
+R380:385 _tmp_epstep <> epstep:1 ind
+R398:400 TypeRules <> TPi constr
+R405:406 _tmp_epstep <> B':10 var
+R402:403 _tmp_epstep <> A':8 var
+R388:390 TypeRules <> TPi constr
+R394:394 _tmp_epstep <> B:9 var
+R392:392 _tmp_epstep <> A:7 var
+binder 428:428 <> b:11
+binder 430:431 <> b':12
+R445:448 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R434:439 _tmp_epstep <> epstep:1 ind
+R443:444 _tmp_epstep <> b':12 var
+R441:441 _tmp_epstep <> b:11 var
+R449:454 _tmp_epstep <> epstep:1 ind
+R466:469 TypeRules <> TLam constr
+R471:472 _tmp_epstep <> b':12 var
+R457:460 TypeRules <> TLam constr
+R462:462 _tmp_epstep <> b:11 var
+binder 494:494 <> f:13
+binder 496:497 <> f':14
+binder 499:499 <> a:15
+binder 501:502 <> a':16
+R516:519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R505:510 _tmp_epstep <> epstep:1 ind
+R514:515 _tmp_epstep <> f':14 var
+R512:512 _tmp_epstep <> f:13 var
+R531:538 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R520:525 _tmp_epstep <> epstep:1 ind
+R529:530 _tmp_epstep <> a':16 var
+R527:527 _tmp_epstep <> a:15 var
+R539:544 _tmp_epstep <> epstep:1 ind
+R558:561 TypeRules <> TApp constr
+R566:567 _tmp_epstep <> a':16 var
+R563:564 _tmp_epstep <> f':14 var
+R547:550 TypeRules <> TApp constr
+R554:554 _tmp_epstep <> a:15 var
+R552:552 _tmp_epstep <> f:13 var
+binder 591:591 <> A:17
+binder 593:594 <> A':18
+binder 596:596 <> B:19
+binder 598:599 <> B':20
+R613:616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R602:607 _tmp_epstep <> epstep:1 ind
+R611:612 _tmp_epstep <> A':18 var
+R609:609 _tmp_epstep <> A:17 var
+R628:635 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R617:622 _tmp_epstep <> epstep:1 ind
+R626:627 _tmp_epstep <> B':20 var
+R624:624 _tmp_epstep <> B:19 var
+R636:641 _tmp_epstep <> epstep:1 ind
+R657:662 TypeRules <> TSigma constr
+R667:668 _tmp_epstep <> B':20 var
+R664:665 _tmp_epstep <> A':18 var
+R644:649 TypeRules <> TSigma constr
+R653:653 _tmp_epstep <> B:19 var
+R651:651 _tmp_epstep <> A:17 var
+binder 691:691 <> a:21
+binder 693:694 <> a':22
+binder 696:696 <> b:23
+binder 698:699 <> b':24
+R713:716 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R702:707 _tmp_epstep <> epstep:1 ind
+R711:712 _tmp_epstep <> a':22 var
+R709:709 _tmp_epstep <> a:21 var
+R728:735 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R717:722 _tmp_epstep <> epstep:1 ind
+R726:727 _tmp_epstep <> b':24 var
+R724:724 _tmp_epstep <> b:23 var
+R736:741 _tmp_epstep <> epstep:1 ind
+R756:760 TypeRules <> TPair constr
+R765:766 _tmp_epstep <> b':24 var
+R762:763 _tmp_epstep <> a':22 var
+R744:748 TypeRules <> TPair constr
+R752:752 _tmp_epstep <> b:23 var
+R750:750 _tmp_epstep <> a:21 var
+binder 788:788 <> p:25
+binder 790:791 <> p':26
+R805:808 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R794:799 _tmp_epstep <> epstep:1 ind
+R803:804 _tmp_epstep <> p':26 var
+R801:801 _tmp_epstep <> p:25 var
+R809:814 _tmp_epstep <> epstep:1 ind
+R826:829 TypeRules <> TFst constr
+R831:832 _tmp_epstep <> p':26 var
+R817:820 TypeRules <> TFst constr
+R822:822 _tmp_epstep <> p:25 var
+binder 854:854 <> p:27
+binder 856:857 <> p':28
+R871:874 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R860:865 _tmp_epstep <> epstep:1 ind
+R869:870 _tmp_epstep <> p':28 var
+R867:867 _tmp_epstep <> p:27 var
+R875:880 _tmp_epstep <> epstep:1 ind
+R892:895 TypeRules <> TSnd constr
+R897:898 _tmp_epstep <> p':28 var
+R883:886 TypeRules <> TSnd constr
+R888:888 _tmp_epstep <> p:27 var
+R915:920 _tmp_epstep <> epstep:1 ind
+R929:934 TypeRules <> TUnitT constr
+R922:927 TypeRules <> TUnitT constr
+R949:954 _tmp_epstep <> epstep:1 ind
+R962:966 TypeRules <> TUnit constr
+R956:960 TypeRules <> TUnit constr
+R980:985 _tmp_epstep <> epstep:1 ind
+R992:995 TypeRules <> TUId constr
+R987:990 TypeRules <> TUId constr
+binder 1016:1016 <> s:29
+R1019:1024 _tmp_epstep <> epstep:1 ind
+R1036:1039 TypeRules <> TTag constr
+R1041:1041 _tmp_epstep <> s:29 var
+R1027:1030 TypeRules <> TTag constr
+R1032:1032 _tmp_epstep <> s:29 var
+R1058:1063 _tmp_epstep <> epstep:1 ind
+R1072:1077 TypeRules <> TEnumU constr
+R1065:1070 TypeRules <> TEnumU constr
+R1092:1097 _tmp_epstep <> epstep:1 ind
+R1105:1109 TypeRules <> TNilE constr
+R1099:1103 TypeRules <> TNilE constr
+binder 1132:1132 <> t:30
+binder 1134:1135 <> t':31
+binder 1137:1137 <> E:32
+binder 1139:1140 <> E':33
+R1154:1157 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1143:1148 _tmp_epstep <> epstep:1 ind
+R1152:1153 _tmp_epstep <> t':31 var
+R1150:1150 _tmp_epstep <> t:30 var
+R1169:1176 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1158:1163 _tmp_epstep <> epstep:1 ind
+R1167:1168 _tmp_epstep <> E':33 var
+R1165:1165 _tmp_epstep <> E:32 var
+R1177:1182 _tmp_epstep <> epstep:1 ind
+R1198:1203 TypeRules <> TConsE constr
+R1208:1209 _tmp_epstep <> E':33 var
+R1205:1206 _tmp_epstep <> t':31 var
+R1185:1190 TypeRules <> TConsE constr
+R1194:1194 _tmp_epstep <> E:32 var
+R1192:1192 _tmp_epstep <> t:30 var
+binder 1233:1233 <> E:34
+binder 1235:1236 <> E':35
+R1250:1253 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1239:1244 _tmp_epstep <> epstep:1 ind
+R1248:1249 _tmp_epstep <> E':35 var
+R1246:1246 _tmp_epstep <> E:34 var
+R1254:1259 _tmp_epstep <> epstep:1 ind
+R1273:1278 TypeRules <> TEnumT constr
+R1280:1281 _tmp_epstep <> E':35 var
+R1262:1267 TypeRules <> TEnumT constr
+R1269:1269 _tmp_epstep <> E:34 var
+R1298:1303 _tmp_epstep <> epstep:1 ind
+R1312:1317 TypeRules <> TEZero constr
+R1305:1310 TypeRules <> TEZero constr
+binder 1340:1340 <> n:36
+binder 1342:1343 <> n':37
+R1357:1360 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1346:1351 _tmp_epstep <> epstep:1 ind
+R1355:1356 _tmp_epstep <> n':37 var
+R1353:1353 _tmp_epstep <> n:36 var
+R1361:1366 _tmp_epstep <> epstep:1 ind
+R1380:1385 TypeRules <> TESucc constr
+R1387:1388 _tmp_epstep <> n':37 var
+R1369:1374 TypeRules <> TESucc constr
+R1376:1376 _tmp_epstep <> n:36 var
+binder 1410:1410 <> E:38
+binder 1412:1413 <> E':39
+binder 1415:1415 <> P:40
+binder 1417:1418 <> P':41
+R1432:1435 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1421:1426 _tmp_epstep <> epstep:1 ind
+R1430:1431 _tmp_epstep <> E':39 var
+R1428:1428 _tmp_epstep <> E:38 var
+R1447:1454 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1436:1441 _tmp_epstep <> epstep:1 ind
+R1445:1446 _tmp_epstep <> P':41 var
+R1443:1443 _tmp_epstep <> P:40 var
+R1455:1460 _tmp_epstep <> epstep:1 ind
+R1474:1477 TypeRules <> TEPi constr
+R1482:1483 _tmp_epstep <> P':41 var
+R1479:1480 _tmp_epstep <> E':39 var
+R1463:1466 TypeRules <> TEPi constr
+R1470:1470 _tmp_epstep <> P:40 var
+R1468:1468 _tmp_epstep <> E:38 var
+binder 1508:1508 <> E:42
+binder 1510:1511 <> E':43
+binder 1513:1513 <> P:44
+binder 1515:1516 <> P':45
+binder 1518:1518 <> p:46
+binder 1520:1521 <> p':47
+binder 1523:1523 <> e:48
+binder 1525:1526 <> e':49
+R1544:1547 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1533:1538 _tmp_epstep <> epstep:1 ind
+R1542:1543 _tmp_epstep <> E':43 var
+R1540:1540 _tmp_epstep <> E:42 var
+R1559:1562 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1548:1553 _tmp_epstep <> epstep:1 ind
+R1557:1558 _tmp_epstep <> P':45 var
+R1555:1555 _tmp_epstep <> P:44 var
+R1574:1577 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1563:1568 _tmp_epstep <> epstep:1 ind
+R1572:1573 _tmp_epstep <> p':47 var
+R1570:1570 _tmp_epstep <> p:46 var
+R1589:1596 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1578:1583 _tmp_epstep <> epstep:1 ind
+R1587:1588 _tmp_epstep <> e':49 var
+R1585:1585 _tmp_epstep <> e:48 var
+R1597:1602 _tmp_epstep <> epstep:1 ind
+R1623:1629 TypeRules <> TSwitch constr
+R1640:1641 _tmp_epstep <> e':49 var
+R1637:1638 _tmp_epstep <> p':47 var
+R1634:1635 _tmp_epstep <> P':45 var
+R1631:1632 _tmp_epstep <> E':43 var
+R1605:1611 TypeRules <> TSwitch constr
+R1619:1619 _tmp_epstep <> e:48 var
+R1617:1617 _tmp_epstep <> p:46 var
+R1615:1615 _tmp_epstep <> P:44 var
+R1613:1613 _tmp_epstep <> E:42 var
+binder 1665:1665 <> I:50
+binder 1667:1668 <> I':51
+R1682:1685 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1671:1676 _tmp_epstep <> epstep:1 ind
+R1680:1681 _tmp_epstep <> I':51 var
+R1678:1678 _tmp_epstep <> I:50 var
+R1686:1691 _tmp_epstep <> epstep:1 ind
+R1705:1710 TypeRules <> TIDesc constr
+R1712:1713 _tmp_epstep <> I':51 var
+R1694:1699 TypeRules <> TIDesc constr
+R1701:1701 _tmp_epstep <> I:50 var
+binder 1736:1736 <> i:52
+binder 1738:1739 <> i':53
+R1753:1756 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1742:1747 _tmp_epstep <> epstep:1 ind
+R1751:1752 _tmp_epstep <> i':53 var
+R1749:1749 _tmp_epstep <> i:52 var
+R1757:1762 _tmp_epstep <> epstep:1 ind
+R1775:1779 TypeRules <> TIVar constr
+R1781:1782 _tmp_epstep <> i':53 var
+R1765:1769 TypeRules <> TIVar constr
+R1771:1771 _tmp_epstep <> i:52 var
+R1796:1801 _tmp_epstep <> epstep:1 ind
+R1807:1809 TypeRules <> TI1 constr
+R1803:1805 TypeRules <> TI1 constr
+binder 1832:1832 <> A:54
+binder 1834:1835 <> A':55
+binder 1837:1837 <> B:56
+binder 1839:1840 <> B':57
+R1854:1857 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1843:1848 _tmp_epstep <> epstep:1 ind
+R1852:1853 _tmp_epstep <> A':55 var
+R1850:1850 _tmp_epstep <> A:54 var
+R1869:1876 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1858:1863 _tmp_epstep <> epstep:1 ind
+R1867:1868 _tmp_epstep <> B':57 var
+R1865:1865 _tmp_epstep <> B:56 var
+R1877:1882 _tmp_epstep <> epstep:1 ind
+R1898:1903 TypeRules <> TIProd constr
+R1908:1909 _tmp_epstep <> B':57 var
+R1905:1906 _tmp_epstep <> A':55 var
+R1885:1890 TypeRules <> TIProd constr
+R1894:1894 _tmp_epstep <> B:56 var
+R1892:1892 _tmp_epstep <> A:54 var
+binder 1931:1931 <> S:58
+binder 1933:1934 <> S':59
+binder 1936:1936 <> T:60
+binder 1938:1939 <> T':61
+R1953:1956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1942:1947 _tmp_epstep <> epstep:1 ind
+R1951:1952 _tmp_epstep <> S':59 var
+R1949:1949 _tmp_epstep <> S:58 var
+R1968:1975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1957:1962 _tmp_epstep <> epstep:1 ind
+R1966:1967 _tmp_epstep <> T':61 var
+R1964:1964 _tmp_epstep <> T:60 var
+R1976:1981 _tmp_epstep <> epstep:1 ind
+R1995:1998 TypeRules <> TIPi constr
+R2003:2004 _tmp_epstep <> T':61 var
+R2000:2001 _tmp_epstep <> S':59 var
+R1984:1987 TypeRules <> TIPi constr
+R1991:1991 _tmp_epstep <> T:60 var
+R1989:1989 _tmp_epstep <> S:58 var
+binder 2027:2027 <> S:62
+binder 2029:2030 <> S':63
+binder 2032:2032 <> T:64
+binder 2034:2035 <> T':65
+R2049:2052 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2038:2043 _tmp_epstep <> epstep:1 ind
+R2047:2048 _tmp_epstep <> S':63 var
+R2045:2045 _tmp_epstep <> S:62 var
+R2064:2071 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2053:2058 _tmp_epstep <> epstep:1 ind
+R2062:2063 _tmp_epstep <> T':65 var
+R2060:2060 _tmp_epstep <> T:64 var
+R2072:2077 _tmp_epstep <> epstep:1 ind
+R2092:2096 TypeRules <> TISig constr
+R2101:2102 _tmp_epstep <> T':65 var
+R2098:2099 _tmp_epstep <> S':63 var
+R2080:2084 TypeRules <> TISig constr
+R2088:2088 _tmp_epstep <> T:64 var
+R2086:2086 _tmp_epstep <> S:62 var
+binder 2128:2128 <> E:66
+binder 2130:2131 <> E':67
+binder 2133:2133 <> T:68
+binder 2135:2136 <> T':69
+R2150:2153 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2139:2144 _tmp_epstep <> epstep:1 ind
+R2148:2149 _tmp_epstep <> E':67 var
+R2146:2146 _tmp_epstep <> E:66 var
+R2165:2172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2154:2159 _tmp_epstep <> epstep:1 ind
+R2163:2164 _tmp_epstep <> T':69 var
+R2161:2161 _tmp_epstep <> T:68 var
+R2173:2178 _tmp_epstep <> epstep:1 ind
+R2196:2203 TypeRules <> TIChoice constr
+R2208:2209 _tmp_epstep <> T':69 var
+R2205:2206 _tmp_epstep <> E':67 var
+R2181:2188 TypeRules <> TIChoice constr
+R2192:2192 _tmp_epstep <> T:68 var
+R2190:2190 _tmp_epstep <> E:66 var
+binder 2234:2234 <> D:70
+binder 2236:2237 <> D':71
+binder 2239:2239 <> X:72
+binder 2241:2242 <> X':73
+R2256:2259 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2245:2250 _tmp_epstep <> epstep:1 ind
+R2254:2255 _tmp_epstep <> D':71 var
+R2252:2252 _tmp_epstep <> D:70 var
+R2271:2278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2260:2265 _tmp_epstep <> epstep:1 ind
+R2269:2270 _tmp_epstep <> X':73 var
+R2267:2267 _tmp_epstep <> X:72 var
+R2279:2284 _tmp_epstep <> epstep:1 ind
+R2301:2307 TypeRules <> TInterp constr
+R2312:2313 _tmp_epstep <> X':73 var
+R2309:2310 _tmp_epstep <> D':71 var
+R2287:2293 TypeRules <> TInterp constr
+R2297:2297 _tmp_epstep <> X:72 var
+R2295:2295 _tmp_epstep <> D:70 var
+binder 2335:2335 <> R:74
+binder 2337:2338 <> R':75
+R2352:2355 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2341:2346 _tmp_epstep <> epstep:1 ind
+R2350:2351 _tmp_epstep <> R':75 var
+R2348:2348 _tmp_epstep <> R:74 var
+R2356:2361 _tmp_epstep <> epstep:1 ind
+R2373:2376 TypeRules <> TMuI constr
+R2378:2379 _tmp_epstep <> R':75 var
+R2364:2367 TypeRules <> TMuI constr
+R2369:2369 _tmp_epstep <> R:74 var
+binder 2401:2401 <> S:76
+binder 2403:2404 <> S':77
+R2418:2421 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2407:2412 _tmp_epstep <> epstep:1 ind
+R2416:2417 _tmp_epstep <> S':77 var
+R2414:2414 _tmp_epstep <> S:76 var
+R2422:2427 _tmp_epstep <> epstep:1 ind
+R2439:2442 TypeRules <> TMuS constr
+R2444:2445 _tmp_epstep <> S':77 var
+R2430:2433 TypeRules <> TMuS constr
+R2435:2435 _tmp_epstep <> S:76 var
+binder 2466:2466 <> x:78
+binder 2468:2469 <> x':79
+R2483:2486 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2472:2477 _tmp_epstep <> epstep:1 ind
+R2481:2482 _tmp_epstep <> x':79 var
+R2479:2479 _tmp_epstep <> x:78 var
+R2487:2492 _tmp_epstep <> epstep:1 ind
+R2503:2505 TypeRules <> TIn constr
+R2507:2508 _tmp_epstep <> x':79 var
+R2495:2497 TypeRules <> TIn constr
+R2499:2499 _tmp_epstep <> x:78 var
+binder 2530:2530 <> R:80
+binder 2532:2533 <> R':81
+binder 2535:2535 <> P:82
+binder 2537:2538 <> P':83
+binder 2540:2540 <> s:84
+binder 2542:2543 <> s':85
+binder 2545:2545 <> i:86
+binder 2547:2548 <> i':87
+binder 2550:2550 <> x:88
+binder 2552:2553 <> x':89
+R2571:2574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2560:2565 _tmp_epstep <> epstep:1 ind
+R2569:2570 _tmp_epstep <> R':81 var
+R2567:2567 _tmp_epstep <> R:80 var
+R2586:2589 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2575:2580 _tmp_epstep <> epstep:1 ind
+R2584:2585 _tmp_epstep <> P':83 var
+R2582:2582 _tmp_epstep <> P:82 var
+R2601:2604 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2590:2595 _tmp_epstep <> epstep:1 ind
+R2599:2600 _tmp_epstep <> s':85 var
+R2597:2597 _tmp_epstep <> s:84 var
+R2616:2619 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2605:2610 _tmp_epstep <> epstep:1 ind
+R2614:2615 _tmp_epstep <> i':87 var
+R2612:2612 _tmp_epstep <> i:86 var
+R2631:2638 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2620:2625 _tmp_epstep <> epstep:1 ind
+R2629:2630 _tmp_epstep <> x':89 var
+R2627:2627 _tmp_epstep <> x:88 var
+R2639:2644 _tmp_epstep <> epstep:1 ind
+R2664:2667 TypeRules <> TInd constr
+R2681:2682 _tmp_epstep <> x':89 var
+R2678:2679 _tmp_epstep <> i':87 var
+R2675:2676 _tmp_epstep <> s':85 var
+R2672:2673 _tmp_epstep <> P':83 var
+R2669:2670 _tmp_epstep <> R':81 var
+R2647:2650 TypeRules <> TInd constr
+R2660:2660 _tmp_epstep <> x:88 var
+R2658:2658 _tmp_epstep <> i:86 var
+R2656:2656 _tmp_epstep <> s:84 var
+R2654:2654 _tmp_epstep <> P:82 var
+R2652:2652 _tmp_epstep <> R:80 var
+binder 2705:2705 <> D:90
+binder 2707:2708 <> D':91
+binder 2710:2710 <> X:92
+binder 2712:2713 <> X':93
+binder 2715:2716 <> xs:94
+binder 2718:2720 <> xs':95
+binder 2722:2722 <> P:96
+binder 2724:2725 <> P':97
+R2743:2746 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2732:2737 _tmp_epstep <> epstep:1 ind
+R2741:2742 _tmp_epstep <> D':91 var
+R2739:2739 _tmp_epstep <> D:90 var
+R2758:2761 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2747:2752 _tmp_epstep <> epstep:1 ind
+R2756:2757 _tmp_epstep <> X':93 var
+R2754:2754 _tmp_epstep <> X:92 var
+R2775:2778 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2762:2767 _tmp_epstep <> epstep:1 ind
+R2772:2774 _tmp_epstep <> xs':95 var
+R2769:2770 _tmp_epstep <> xs:94 var
+R2790:2797 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2779:2784 _tmp_epstep <> epstep:1 ind
+R2788:2789 _tmp_epstep <> P':97 var
+R2786:2786 _tmp_epstep <> P:96 var
+R2798:2803 _tmp_epstep <> epstep:1 ind
+R2823:2827 TypeRules <> TIAll constr
+R2839:2840 _tmp_epstep <> P':97 var
+R2835:2837 _tmp_epstep <> xs':95 var
+R2832:2833 _tmp_epstep <> X':93 var
+R2829:2830 _tmp_epstep <> D':91 var
+R2806:2810 TypeRules <> TIAll constr
+R2819:2819 _tmp_epstep <> P:96 var
+R2816:2817 _tmp_epstep <> xs:94 var
+R2814:2814 _tmp_epstep <> X:92 var
+R2812:2812 _tmp_epstep <> D:90 var
+binder 2863:2863 <> D:98
+binder 2865:2866 <> D':99
+binder 2868:2868 <> X:100
+binder 2870:2871 <> X':101
+binder 2873:2873 <> P:102
+binder 2875:2876 <> P':103
+binder 2878:2878 <> h:104
+binder 2880:2881 <> h':105
+binder 2883:2884 <> xs:106
+binder 2886:2888 <> xs':107
+R2906:2909 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2895:2900 _tmp_epstep <> epstep:1 ind
+R2904:2905 _tmp_epstep <> D':99 var
+R2902:2902 _tmp_epstep <> D:98 var
+R2921:2924 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2910:2915 _tmp_epstep <> epstep:1 ind
+R2919:2920 _tmp_epstep <> X':101 var
+R2917:2917 _tmp_epstep <> X:100 var
+R2936:2939 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2925:2930 _tmp_epstep <> epstep:1 ind
+R2934:2935 _tmp_epstep <> P':103 var
+R2932:2932 _tmp_epstep <> P:102 var
+R2951:2954 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2940:2945 _tmp_epstep <> epstep:1 ind
+R2949:2950 _tmp_epstep <> h':105 var
+R2947:2947 _tmp_epstep <> h:104 var
+R2968:2975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2955:2960 _tmp_epstep <> epstep:1 ind
+R2965:2967 _tmp_epstep <> xs':107 var
+R2962:2963 _tmp_epstep <> xs:106 var
+R2976:2981 _tmp_epstep <> epstep:1 ind
+R3003:3007 TypeRules <> THyps constr
+R3021:3023 _tmp_epstep <> xs':107 var
+R3018:3019 _tmp_epstep <> h':105 var
+R3015:3016 _tmp_epstep <> P':103 var
+R3012:3013 _tmp_epstep <> X':101 var
+R3009:3010 _tmp_epstep <> D':99 var
+R2984:2988 TypeRules <> THyps constr
+R2998:2999 _tmp_epstep <> xs:106 var
+R2996:2996 _tmp_epstep <> h:104 var
+R2994:2994 _tmp_epstep <> P:102 var
+R2992:2992 _tmp_epstep <> X:100 var
+R2990:2990 _tmp_epstep <> D:98 var
+binder 3046:3046 <> A:108
+binder 3048:3049 <> A':109
+R3063:3066 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3052:3057 _tmp_epstep <> epstep:1 ind
+R3061:3062 _tmp_epstep <> A':109 var
+R3059:3059 _tmp_epstep <> A:108 var
+R3067:3072 _tmp_epstep <> epstep:1 ind
+R3085:3089 TypeRules <> TList constr
+R3091:3092 _tmp_epstep <> A':109 var
+R3075:3079 TypeRules <> TList constr
+R3081:3081 _tmp_epstep <> A:108 var
+binder 3115:3115 <> A:110
+binder 3117:3118 <> A':111
+R3132:3135 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3121:3126 _tmp_epstep <> epstep:1 ind
+R3130:3131 _tmp_epstep <> A':111 var
+R3128:3128 _tmp_epstep <> A:110 var
+R3136:3141 _tmp_epstep <> epstep:1 ind
+R3154:3158 TypeRules <> TLNil constr
+R3160:3161 _tmp_epstep <> A':111 var
+R3144:3148 TypeRules <> TLNil constr
+R3150:3150 _tmp_epstep <> A:110 var
+binder 3185:3185 <> A:112
+binder 3187:3188 <> A':113
+binder 3190:3190 <> a:114
+binder 3192:3193 <> a':115
+binder 3195:3195 <> l:116
+binder 3197:3198 <> l':117
+R3216:3219 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3205:3210 _tmp_epstep <> epstep:1 ind
+R3214:3215 _tmp_epstep <> A':113 var
+R3212:3212 _tmp_epstep <> A:112 var
+R3231:3234 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3220:3225 _tmp_epstep <> epstep:1 ind
+R3229:3230 _tmp_epstep <> a':115 var
+R3227:3227 _tmp_epstep <> a:114 var
+R3246:3253 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3235:3240 _tmp_epstep <> epstep:1 ind
+R3244:3245 _tmp_epstep <> l':117 var
+R3242:3242 _tmp_epstep <> l:116 var
+R3254:3259 _tmp_epstep <> epstep:1 ind
+R3277:3282 TypeRules <> TLCons constr
+R3290:3291 _tmp_epstep <> l':117 var
+R3287:3288 _tmp_epstep <> a':115 var
+R3284:3285 _tmp_epstep <> A':113 var
+R3262:3267 TypeRules <> TLCons constr
+R3273:3273 _tmp_epstep <> l:116 var
+R3271:3271 _tmp_epstep <> a:114 var
+R3269:3269 _tmp_epstep <> A:112 var
+binder 3314:3314 <> M:118
+binder 3316:3317 <> M':119
+binder 3319:3319 <> Q:120
+binder 3321:3322 <> Q':121
+binder 3324:3325 <> bs:122
+binder 3327:3329 <> bs':123
+R3347:3350 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3336:3341 _tmp_epstep <> epstep:1 ind
+R3345:3346 _tmp_epstep <> M':119 var
+R3343:3343 _tmp_epstep <> M:118 var
+R3362:3365 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3351:3356 _tmp_epstep <> epstep:1 ind
+R3360:3361 _tmp_epstep <> Q':121 var
+R3358:3358 _tmp_epstep <> Q:120 var
+R3383:3390 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3366:3375 _tmp_epstep <> epbranches:2 ind
+R3380:3382 _tmp_epstep <> bs':123 var
+R3377:3378 _tmp_epstep <> bs:122 var
+R3391:3396 _tmp_epstep <> epstep:1 ind
+R3414:3418 TypeRules <> TCase constr
+R3426:3428 _tmp_epstep <> bs':123 var
+R3423:3424 _tmp_epstep <> Q':121 var
+R3420:3421 _tmp_epstep <> M':119 var
+R3399:3403 TypeRules <> TCase constr
+R3409:3410 _tmp_epstep <> bs:122 var
+R3407:3407 _tmp_epstep <> Q:120 var
+R3405:3405 _tmp_epstep <> M:118 var
+binder 3450:3450 <> f:124
+binder 3452:3453 <> f':125
+R3467:3474 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3456:3461 _tmp_epstep <> epstep:1 ind
+R3465:3466 _tmp_epstep <> f':125 var
+R3463:3463 _tmp_epstep <> f:124 var
+R3475:3480 _tmp_epstep <> epstep:1 ind
+R3518:3519 _tmp_epstep <> f':125 var
+R3483:3486 TypeRules <> TLam constr
+R3489:3492 TypeRules <> TApp constr
+R3508:3511 TypeRules <> TVar constr
+R3495:3498 TypeRules <> lift def
+R3504:3504 _tmp_epstep <> f:124 var
+R3604:3613 _tmp_epstep <> epbranches:2 ind
+R3618:3619 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3615:3616 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+binder 3642:3642 <> c:126
+binder 3644:3645 <> c':127
+binder 3647:3647 <> b:128
+binder 3649:3650 <> b':129
+binder 3652:3653 <> bs:130
+binder 3655:3657 <> bs':131
+R3675:3678 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3664:3669 _tmp_epstep <> epstep:1 ind
+R3673:3674 _tmp_epstep <> c':127 var
+R3671:3671 _tmp_epstep <> c:126 var
+R3690:3693 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3679:3684 _tmp_epstep <> epstep:1 ind
+R3688:3689 _tmp_epstep <> b':129 var
+R3686:3686 _tmp_epstep <> b:128 var
+R3711:3718 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3694:3703 _tmp_epstep <> epbranches:2 ind
+R3708:3710 _tmp_epstep <> bs':131 var
+R3705:3706 _tmp_epstep <> bs:130 var
+R3719:3728 _tmp_epstep <> epbranches:2 ind
+R3750:3751 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3743:3743 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3746:3746 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3749:3749 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3744:3745 _tmp_epstep <> c':127 var
+R3747:3748 _tmp_epstep <> b':129 var
+R3752:3754 _tmp_epstep <> bs':131 var
+R3736:3737 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3731:3731 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3733:3733 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3735:3735 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3732:3732 _tmp_epstep <> c:126 var
+R3734:3734 _tmp_epstep <> b:128 var
+R3738:3739 _tmp_epstep <> bs:130 var
+scheme 187:192 <> epstep_ind
+scheme 187:192 <> epstep_sind
+scheme 3526:3535 <> epbranches_ind
+scheme 3526:3535 <> epbranches_sind
+def 3766:3776 <> epstep_ind'
+def 3817:3831 <> epbranches_ind'
+R3795:3800 _tmp_epstep <> epstep ind
+R3850:3859 _tmp_epstep <> epbranches ind
+R3915:3925 _tmp_epstep <> epstep_ind' scheme
+R3928:3942 _tmp_epstep <> epbranches_ind' scheme
+prf 3952:3962 <> epstep_refl
+binder 3973:3973 <> t:132
+R3976:3981 _tmp_epstep <> epstep ind
+R3983:3983 _tmp_epstep <> t:132 var
+R3985:3985 _tmp_epstep <> t:132 var
+R4004:4019 Progress <> tsize_strong_ind thm
+binder 4026:4026 <> t:133
+R4031:4036 _tmp_epstep <> epstep ind
+R4038:4038 _tmp_epstep <> t:133 var
+R4040:4040 _tmp_epstep <> t:133 var
+R4004:4019 Progress <> tsize_strong_ind thm
+binder 4026:4026 <> t:134
+R4031:4036 _tmp_epstep <> epstep ind
+R4038:4038 _tmp_epstep <> t:134 var
+R4040:4040 _tmp_epstep <> t:134 var
+R4092:4100 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4092:4100 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4132:4140 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4174:4182 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4216:4224 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4258:4266 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4300:4308 Progress <> tsize_pos thm
+R4492:4504 Progress <> tsize_case_bs thm
+R4492:4504 Progress <> tsize_case_bs thm
+R4547:4564 Progress <> tsize_case_bs_body thm
+R4547:4564 Progress <> tsize_case_bs_body thm
+prf 4652:4666 <> epbranches_refl
+binder 4677:4678 <> bs:135
+R4681:4690 _tmp_epstep <> epbranches ind
+R4692:4693 _tmp_epstep <> bs:135 var
+R4695:4696 _tmp_epstep <> bs:135 var
+R4769:4779 _tmp_epstep <> epstep_refl thm
+R4769:4779 _tmp_epstep <> epstep_refl thm
+R4769:4779 _tmp_epstep <> epstep_refl thm
+R4769:4779 _tmp_epstep <> epstep_refl thm
+prf 4794:4808 <> epstep_lift_mut
+R4814:4814 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4894:4901 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5094:5094 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 4822:4822 <> t:136
+binder 4824:4824 <> u:137
+R4831:4836 _tmp_epstep <> epstep ind
+R4838:4838 _tmp_epstep <> t:136 var
+R4840:4840 _tmp_epstep <> u:137 var
+binder 4827:4827 <> H:138
+binder 4851:4851 <> d:139
+binder 4853:4853 <> k:140
+R4862:4867 _tmp_epstep <> epstep ind
+R4870:4873 TypeRules <> lift def
+R4879:4879 _tmp_epstep <> t:136 var
+R4877:4877 _tmp_epstep <> k:140 var
+R4875:4875 _tmp_epstep <> d:139 var
+R4883:4886 TypeRules <> lift def
+R4892:4892 _tmp_epstep <> u:137 var
+R4890:4890 _tmp_epstep <> k:140 var
+R4888:4888 _tmp_epstep <> d:139 var
+binder 4909:4910 <> bs:141
+binder 4912:4914 <> bs':142
+R4921:4930 _tmp_epstep <> epbranches ind
+R4932:4933 _tmp_epstep <> bs:141 var
+R4935:4937 _tmp_epstep <> bs':142 var
+binder 4917:4917 <> H:143
+binder 4948:4948 <> d:144
+binder 4950:4950 <> k:145
+R4959:4968 _tmp_epstep <> epbranches ind
+R4979:4981 Corelib.Lists.ListDef <> map def
+R5028:5029 _tmp_epstep <> bs:141 var
+R4989:4989 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4991:4991 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4993:4993 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 4992:4992 <> b:146
+binder 4990:4990 <> c:147
+binder 4989:4993 <> pat:148
+R4998:4998 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5009:5010 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5025:5025 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4999:5002 TypeRules <> lift def
+R5008:5008 _tmp_epstep <> c:147 var
+R5006:5006 _tmp_epstep <> k:145 var
+R5004:5004 _tmp_epstep <> d:144 var
+R5011:5014 TypeRules <> lift def
+R5024:5024 _tmp_epstep <> b:146 var
+R5019:5019 Corelib.Init.Datatypes <> S constr
+R5021:5021 _tmp_epstep <> k:145 var
+R5016:5016 _tmp_epstep <> d:144 var
+R5041:5043 Corelib.Lists.ListDef <> map def
+R5090:5092 _tmp_epstep <> bs':142 var
+R5051:5051 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5053:5053 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5055:5055 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 5054:5054 <> b:149
+binder 5052:5052 <> c:150
+binder 5051:5055 <> pat:151
+R5060:5060 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5071:5072 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5087:5087 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5061:5064 TypeRules <> lift def
+R5070:5070 _tmp_epstep <> c:150 var
+R5068:5068 _tmp_epstep <> k:145 var
+R5066:5066 _tmp_epstep <> d:144 var
+R5073:5076 TypeRules <> lift def
+R5086:5086 _tmp_epstep <> b:149 var
+R5081:5081 Corelib.Init.Datatypes <> S constr
+R5083:5083 _tmp_epstep <> k:145 var
+R5078:5078 _tmp_epstep <> d:144 var
+R5112:5132 _tmp_epstep <> epstep_epbranches_ind scheme
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5112:5132 _tmp_epstep <> epstep_epbranches_ind scheme
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5188:5198 _tmp_epstep <> epstep_refl thm
+R5212:5222 _tmp_epstep <> epstep_refl thm
+R5212:5222 _tmp_epstep <> epstep_refl thm
+R5245:5262 Progress <> lift_lift_one_zero thm
+R5245:5262 Progress <> lift_lift_one_zero thm
+R5245:5262 Progress <> lift_lift_one_zero thm
+R5245:5262 Progress <> lift_lift_one_zero thm
+R5283:5289 _tmp_epstep <> eps_eta constr
+R5283:5289 _tmp_epstep <> eps_eta constr
+prf 5315:5325 <> epstep_lift
+binder 5336:5336 <> t:152
+binder 5338:5338 <> u:153
+R5351:5354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5341:5346 _tmp_epstep <> epstep ind
+R5348:5348 _tmp_epstep <> t:152 var
+R5350:5350 _tmp_epstep <> u:153 var
+binder 5362:5362 <> d:154
+binder 5364:5364 <> k:155
+R5371:5376 _tmp_epstep <> epstep ind
+R5379:5382 TypeRules <> lift def
+R5388:5388 _tmp_epstep <> t:152 var
+R5386:5386 _tmp_epstep <> k:155 var
+R5384:5384 _tmp_epstep <> d:154 var
+R5392:5395 TypeRules <> lift def
+R5401:5401 _tmp_epstep <> u:153 var
+R5399:5399 _tmp_epstep <> k:155 var
+R5397:5397 _tmp_epstep <> d:154 var
+R5437:5441 Corelib.Init.Logic <> proj1 thm
+R5443:5457 _tmp_epstep <> epstep_lift_mut thm
+R5437:5441 Corelib.Init.Logic <> proj1 thm
+R5443:5457 _tmp_epstep <> epstep_lift_mut thm
+prf 5487:5501 <> epbranches_lift
+binder 5512:5513 <> bs:156
+binder 5515:5517 <> bs':157
+R5537:5540 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5520:5529 _tmp_epstep <> epbranches ind
+R5531:5532 _tmp_epstep <> bs:156 var
+R5534:5536 _tmp_epstep <> bs':157 var
+binder 5548:5548 <> d:158
+binder 5550:5550 <> k:159
+R5557:5566 _tmp_epstep <> epbranches ind
+R5575:5577 Corelib.Lists.ListDef <> map def
+R5624:5625 _tmp_epstep <> bs:156 var
+R5585:5585 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5587:5587 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5589:5589 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 5588:5588 <> b:160
+binder 5586:5586 <> c:161
+binder 5585:5589 <> pat:162
+R5594:5594 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5605:5606 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5621:5621 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5595:5598 TypeRules <> lift def
+R5604:5604 _tmp_epstep <> c:161 var
+R5602:5602 _tmp_epstep <> k:159 var
+R5600:5600 _tmp_epstep <> d:158 var
+R5607:5610 TypeRules <> lift def
+R5620:5620 _tmp_epstep <> b:160 var
+R5615:5615 Corelib.Init.Datatypes <> S constr
+R5617:5617 _tmp_epstep <> k:159 var
+R5612:5612 _tmp_epstep <> d:158 var
+R5635:5637 Corelib.Lists.ListDef <> map def
+R5684:5686 _tmp_epstep <> bs':157 var
+R5645:5645 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5647:5647 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5649:5649 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 5648:5648 <> b:163
+binder 5646:5646 <> c:164
+binder 5645:5649 <> pat:165
+R5654:5654 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5665:5666 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5681:5681 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5655:5658 TypeRules <> lift def
+R5664:5664 _tmp_epstep <> c:164 var
+R5662:5662 _tmp_epstep <> k:159 var
+R5660:5660 _tmp_epstep <> d:158 var
+R5667:5670 TypeRules <> lift def
+R5680:5680 _tmp_epstep <> b:163 var
+R5675:5675 Corelib.Init.Datatypes <> S constr
+R5677:5677 _tmp_epstep <> k:159 var
+R5672:5672 _tmp_epstep <> d:158 var
+R5725:5729 Corelib.Init.Logic <> proj2 thm
+R5731:5745 _tmp_epstep <> epstep_lift_mut thm
+R5725:5729 Corelib.Init.Logic <> proj2 thm
+R5731:5745 _tmp_epstep <> epstep_lift_mut thm

@@ -1,0 +1,178 @@
+DIGEST f9d32f1bd94053e7164b74643f8c1cae
+F_tmp_deterministic
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:40 Stdlib.micromega.Lia <> <> lib
+R50:62 Stdlib.Lists.List ListNotations <> mod
+R80:88 TypeRules <> <> lib
+def 154:158 <> beta0
+R162:165 TypeRules <> term ind
+R170:173 TypeRules <> TApp constr
+R191:196 TypeRules <> TUnitT constr
+R176:179 TypeRules <> TLam constr
+R182:185 TypeRules <> TVar constr
+prf 206:215 <> beta0_step
+R219:222 TypeRules <> step ind
+R230:235 TypeRules <> TUnitT constr
+R224:228 _tmp_deterministic <> beta0 def
+R254:258 _tmp_deterministic <> beta0 def
+R269:275 TypeRules <> st_beta constr
+R269:275 TypeRules <> st_beta constr
+prf 365:378 <> pair_left_step
+R386:389 TypeRules <> step ind
+R412:416 TypeRules <> TPair constr
+R425:429 _tmp_deterministic <> beta0 def
+R418:423 TypeRules <> TUnitT constr
+R392:396 TypeRules <> TPair constr
+R404:408 _tmp_deterministic <> beta0 def
+R398:402 _tmp_deterministic <> beta0 def
+R448:455 TypeRules <> st_pair1 constr
+R448:455 TypeRules <> st_pair1 constr
+R466:475 _tmp_deterministic <> beta0_step thm
+R466:475 _tmp_deterministic <> beta0_step thm
+prf 490:504 <> pair_right_step
+R512:515 TypeRules <> step ind
+R538:542 TypeRules <> TPair constr
+R550:555 TypeRules <> TUnitT constr
+R544:548 _tmp_deterministic <> beta0 def
+R518:522 TypeRules <> TPair constr
+R530:534 _tmp_deterministic <> beta0 def
+R524:528 _tmp_deterministic <> beta0 def
+R574:581 TypeRules <> st_pair2 constr
+R574:581 TypeRules <> st_pair2 constr
+R592:601 _tmp_deterministic <> beta0_step thm
+R592:601 _tmp_deterministic <> beta0_step thm
+prf 616:636 <> pair_results_distinct
+R662:665 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R644:648 TypeRules <> TPair constr
+R657:661 _tmp_deterministic <> beta0 def
+R650:655 TypeRules <> TUnitT constr
+R666:670 TypeRules <> TPair constr
+R678:683 TypeRules <> TUnitT constr
+R672:676 _tmp_deterministic <> beta0 def
+prf 731:752 <> step_not_deterministic
+R760:766 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R772:773 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 767:767 <> t:1
+binder 769:769 <> u:2
+binder 771:771 <> v:3
+R782:785 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R774:777 TypeRules <> step ind
+R781:781 _tmp_deterministic <> u:2 var
+R779:779 _tmp_deterministic <> t:1 var
+R794:797 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R786:789 TypeRules <> step ind
+R793:793 _tmp_deterministic <> v:3 var
+R791:791 _tmp_deterministic <> t:1 var
+R799:802 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R798:798 _tmp_deterministic <> u:2 var
+R803:803 _tmp_deterministic <> v:3 var
+R823:827 TypeRules <> TPair constr
+R835:839 _tmp_deterministic <> beta0 def
+R829:833 _tmp_deterministic <> beta0 def
+R844:848 TypeRules <> TPair constr
+R857:861 _tmp_deterministic <> beta0 def
+R850:855 TypeRules <> TUnitT constr
+R866:870 TypeRules <> TPair constr
+R878:883 TypeRules <> TUnitT constr
+R872:876 _tmp_deterministic <> beta0 def
+R823:827 TypeRules <> TPair constr
+R835:839 _tmp_deterministic <> beta0 def
+R829:833 _tmp_deterministic <> beta0 def
+R844:848 TypeRules <> TPair constr
+R857:861 _tmp_deterministic <> beta0 def
+R850:855 TypeRules <> TUnitT constr
+R866:870 TypeRules <> TPair constr
+R878:883 TypeRules <> TUnitT constr
+R872:876 _tmp_deterministic <> beta0 def
+R913:926 _tmp_deterministic <> pair_left_step thm
+R913:926 _tmp_deterministic <> pair_left_step thm
+R939:953 _tmp_deterministic <> pair_right_step thm
+R939:953 _tmp_deterministic <> pair_right_step thm
+R966:986 _tmp_deterministic <> pair_results_distinct thm
+R966:986 _tmp_deterministic <> pair_results_distinct thm
+prf 1001:1022 <> eval_not_deterministic
+R1030:1036 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1042:1043 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1037:1037 <> t:4
+binder 1039:1039 <> u:5
+binder 1041:1041 <> v:6
+R1052:1055 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1044:1047 TypeRules <> eval ind
+R1051:1051 _tmp_deterministic <> u:5 var
+R1049:1049 _tmp_deterministic <> t:4 var
+R1064:1067 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1056:1059 TypeRules <> eval ind
+R1063:1063 _tmp_deterministic <> v:6 var
+R1061:1061 _tmp_deterministic <> t:4 var
+R1069:1072 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R1068:1068 _tmp_deterministic <> u:5 var
+R1073:1073 _tmp_deterministic <> v:6 var
+R1093:1097 TypeRules <> TPair constr
+R1105:1109 _tmp_deterministic <> beta0 def
+R1099:1103 _tmp_deterministic <> beta0 def
+R1114:1118 TypeRules <> TPair constr
+R1127:1131 _tmp_deterministic <> beta0 def
+R1120:1125 TypeRules <> TUnitT constr
+R1136:1140 TypeRules <> TPair constr
+R1148:1153 TypeRules <> TUnitT constr
+R1142:1146 _tmp_deterministic <> beta0 def
+R1093:1097 TypeRules <> TPair constr
+R1105:1109 _tmp_deterministic <> beta0 def
+R1099:1103 _tmp_deterministic <> beta0 def
+R1114:1118 TypeRules <> TPair constr
+R1127:1131 _tmp_deterministic <> beta0 def
+R1120:1125 TypeRules <> TUnitT constr
+R1136:1140 TypeRules <> TPair constr
+R1148:1153 TypeRules <> TUnitT constr
+R1142:1146 _tmp_deterministic <> beta0 def
+R1184:1190 TypeRules <> ev_step constr
+R1184:1190 TypeRules <> ev_step constr
+R1205:1218 _tmp_deterministic <> pair_left_step thm
+R1205:1218 _tmp_deterministic <> pair_left_step thm
+R1233:1239 TypeRules <> ev_refl constr
+R1233:1239 TypeRules <> ev_refl constr
+R1253:1259 TypeRules <> ev_step constr
+R1253:1259 TypeRules <> ev_step constr
+R1274:1288 _tmp_deterministic <> pair_right_step thm
+R1274:1288 _tmp_deterministic <> pair_right_step thm
+R1303:1309 TypeRules <> ev_refl constr
+R1303:1309 TypeRules <> ev_refl constr
+R1322:1342 _tmp_deterministic <> pair_results_distinct thm
+R1322:1342 _tmp_deterministic <> pair_results_distinct thm
+prf 1430:1460 <> no_step_deterministic_statement
+R1468:1470 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1514:1514 Corelib.Init.Logic <> ::type_scope:'~'_x not
+binder 1478:1478 <> t:7
+binder 1480:1480 <> u:8
+binder 1482:1482 <> v:9
+R1493:1496 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1485:1488 TypeRules <> step ind
+R1492:1492 _tmp_deterministic <> u:8 var
+R1490:1490 _tmp_deterministic <> t:7 var
+R1505:1508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1497:1500 TypeRules <> step ind
+R1504:1504 _tmp_deterministic <> v:9 var
+R1502:1502 _tmp_deterministic <> t:7 var
+R1510:1512 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1509:1509 _tmp_deterministic <> u:8 var
+R1513:1513 _tmp_deterministic <> v:9 var
+R1546:1567 _tmp_deterministic <> step_not_deterministic thm
+prf 1646:1676 <> no_eval_deterministic_statement
+R1684:1686 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1730:1730 Corelib.Init.Logic <> ::type_scope:'~'_x not
+binder 1694:1694 <> t:10
+binder 1696:1696 <> u:11
+binder 1698:1698 <> v:12
+R1709:1712 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1701:1704 TypeRules <> eval ind
+R1708:1708 _tmp_deterministic <> u:11 var
+R1706:1706 _tmp_deterministic <> t:10 var
+R1721:1724 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1713:1716 TypeRules <> eval ind
+R1720:1720 _tmp_deterministic <> v:12 var
+R1718:1718 _tmp_deterministic <> t:10 var
+R1726:1728 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1725:1725 _tmp_deterministic <> u:11 var
+R1729:1729 _tmp_deterministic <> v:12 var
+R1762:1783 _tmp_deterministic <> eval_not_deterministic thm

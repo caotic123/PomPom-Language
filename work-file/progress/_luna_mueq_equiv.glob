@@ -1,0 +1,105 @@
+DIGEST d57a1963c459d54166d074af4120d7a6
+F_luna_mueq_equiv
+R15:24 _luna_mueq <> <> lib
+R54:57 Stdlib.Lists.List <> <> lib
+R59:61 Stdlib.micromega.Lia <> <> lib
+R71:83 Stdlib.Lists.List ListNotations <> mod
+R85:93 TypeRules <> <> mod
+prf 103:114 <> mueq_sym_mut
+R122:122 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R155:164 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R208:208 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 130:130 <> t:1
+binder 132:132 <> u:2
+R143:146 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R135:138 _luna_mueq <> mueq ind
+R140:140 _luna_mueq_equiv <> t:1 var
+R142:142 _luna_mueq_equiv <> u:2 var
+R147:150 _luna_mueq <> mueq ind
+R152:152 _luna_mueq_equiv <> u:2 var
+R154:154 _luna_mueq_equiv <> t:1 var
+binder 172:173 <> bs:3
+binder 175:177 <> bs':4
+R192:195 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R180:184 _luna_mueq <> mubeq ind
+R186:187 _luna_mueq_equiv <> bs:3 var
+R189:191 _luna_mueq_equiv <> bs':4 var
+R196:200 _luna_mueq <> mubeq ind
+R202:204 _luna_mueq_equiv <> bs':4 var
+R206:207 _luna_mueq_equiv <> bs:3 var
+R226:239 _luna_mueq <> mueq_mubeq_ind scheme
+R226:239 _luna_mueq <> mueq_mubeq_ind scheme
+R1108:1115 _luna_mueq <> me_muapp constr
+R1125:1130 TypeRules <> cv_sym constr
+R1108:1115 _luna_mueq <> me_muapp constr
+R1125:1130 TypeRules <> cv_sym constr
+prf 1159:1166 <> mueq_sym
+binder 1177:1177 <> t:5
+binder 1179:1179 <> u:6
+R1190:1193 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1182:1185 _luna_mueq <> mueq ind
+R1187:1187 _luna_mueq_equiv <> t:5 var
+R1189:1189 _luna_mueq_equiv <> u:6 var
+R1194:1197 _luna_mueq <> mueq ind
+R1199:1199 _luna_mueq_equiv <> u:6 var
+R1201:1201 _luna_mueq_equiv <> t:5 var
+R1218:1222 Corelib.Init.Logic <> proj1 thm
+R1224:1235 _luna_mueq_equiv <> mueq_sym_mut thm
+R1218:1222 Corelib.Init.Logic <> proj1 thm
+R1224:1235 _luna_mueq_equiv <> mueq_sym_mut thm
+prf 1251:1259 <> mubeq_sym
+binder 1270:1271 <> bs:7
+binder 1273:1275 <> bs':8
+R1290:1293 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1278:1282 _luna_mueq <> mubeq ind
+R1284:1285 _luna_mueq_equiv <> bs:7 var
+R1287:1289 _luna_mueq_equiv <> bs':8 var
+R1294:1298 _luna_mueq <> mubeq ind
+R1300:1302 _luna_mueq_equiv <> bs':8 var
+R1304:1305 _luna_mueq_equiv <> bs:7 var
+R1322:1326 Corelib.Init.Logic <> proj2 thm
+R1328:1339 _luna_mueq_equiv <> mueq_sym_mut thm
+R1322:1326 Corelib.Init.Logic <> proj2 thm
+R1328:1339 _luna_mueq_equiv <> mueq_sym_mut thm
+prf 1355:1368 <> mueq_trans_mut
+R1376:1376 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1434:1443 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1522:1522 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 1384:1384 <> t:9
+binder 1386:1386 <> u:10
+R1393:1396 _luna_mueq <> mueq ind
+R1398:1398 _luna_mueq_equiv <> t:9 var
+R1400:1400 _luna_mueq_equiv <> u:10 var
+binder 1389:1389 <> h:11
+binder 1411:1411 <> v:12
+R1422:1425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1414:1417 _luna_mueq <> mueq ind
+R1419:1419 _luna_mueq_equiv <> u:10 var
+R1421:1421 _luna_mueq_equiv <> v:12 var
+R1426:1429 _luna_mueq <> mueq ind
+R1431:1431 _luna_mueq_equiv <> t:9 var
+R1433:1433 _luna_mueq_equiv <> v:12 var
+binder 1451:1452 <> bs:13
+binder 1454:1456 <> bs':14
+R1463:1467 _luna_mueq <> mubeq ind
+R1469:1470 _luna_mueq_equiv <> bs:13 var
+R1472:1474 _luna_mueq_equiv <> bs':14 var
+binder 1459:1459 <> h:15
+binder 1485:1488 <> bs'':16
+R1505:1508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1491:1495 _luna_mueq <> mubeq ind
+R1497:1499 _luna_mueq_equiv <> bs':14 var
+R1501:1504 _luna_mueq_equiv <> bs'':16 var
+R1509:1513 _luna_mueq <> mubeq ind
+R1515:1516 _luna_mueq_equiv <> bs:13 var
+R1518:1521 _luna_mueq_equiv <> bs'':16 var
+R1540:1553 _luna_mueq <> mueq_mubeq_ind scheme
+R1540:1553 _luna_mueq <> mueq_mubeq_ind scheme
+R1626:1629 _luna_mueq <> mueq ind
+R1626:1629 _luna_mueq <> mueq ind
+R1677:1680 _luna_mueq <> mueq ind
+R1677:1680 _luna_mueq <> mueq ind
+R1776:1780 _luna_mueq <> mubeq ind
+R1776:1780 _luna_mueq <> mubeq ind
+R1829:1833 _luna_mueq <> mubeq ind
+R1829:1833 _luna_mueq <> mubeq ind
