@@ -1,0 +1,201 @@
+DIGEST 86fa6dc396508207cc0ac4215b0d7ed4
+F_parent_mus_cstep_inv
+R88:95 Progress <> <> lib
+R97:107 _tmp_epstep <> <> lib
+R109:127 _work_mixed_closure <> <> lib
+R129:150 _work_cstep_invariants <> <> lib
+R180:183 Stdlib.Lists.List <> <> lib
+R193:205 Stdlib.Lists.List ListNotations <> mod
+R207:215 TypeRules <> <> mod
+prf 225:244 <> pstep_mus_inv_parent
+binder 255:255 <> S:1
+binder 257:257 <> u:2
+R280:283 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R264:268 Progress <> pstep ind
+R271:274 TypeRules <> TMuS constr
+R276:276 _parent_mus_cstep_inv <> S:1 var
+R279:279 _parent_mus_cstep_inv <> u:2 var
+R284:290 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R293:294 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 291:292 <> S':3
+R306:309 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R296:298 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R295:295 _parent_mus_cstep_inv <> u:2 var
+R299:302 TypeRules <> TMuS constr
+R304:305 _parent_mus_cstep_inv <> S':3 var
+R310:314 Progress <> pstep ind
+R316:316 _parent_mus_cstep_inv <> S:1 var
+R318:319 _parent_mus_cstep_inv <> S':3 var
+prf 424:447 <> rtc_pstep_mus_inv_parent
+binder 458:458 <> S:4
+binder 460:460 <> u:5
+R487:494 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R467:469 Progress <> rtc ind
+R486:486 _parent_mus_cstep_inv <> u:5 var
+R478:481 TypeRules <> TMuS constr
+R483:483 _parent_mus_cstep_inv <> S:4 var
+R471:475 Progress <> pstep ind
+R495:501 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R504:505 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 502:503 <> S':6
+R517:520 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R507:509 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R506:506 _parent_mus_cstep_inv <> u:5 var
+R510:513 TypeRules <> TMuS constr
+R515:516 _parent_mus_cstep_inv <> S':6 var
+R521:523 Progress <> rtc ind
+R533:534 _parent_mus_cstep_inv <> S':6 var
+R531:531 _parent_mus_cstep_inv <> S:4 var
+R525:529 Progress <> pstep ind
+R570:573 TypeRules <> TMuS constr
+R570:573 TypeRules <> TMuS constr
+R684:691 Progress <> rtc_refl constr
+R684:691 Progress <> rtc_refl constr
+R709:728 _parent_mus_cstep_inv <> pstep_mus_inv_parent thm
+R709:728 _parent_mus_cstep_inv <> pstep_mus_inv_parent thm
+R778:784 Corelib.Init.Logic <> eq_refl constr
+R778:784 Corelib.Init.Logic <> eq_refl constr
+R849:856 Progress <> rtc_step constr
+R849:856 Progress <> rtc_step constr
+prf 885:905 <> epstep_mus_inv_parent
+binder 916:916 <> S:7
+binder 918:918 <> u:8
+R942:945 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R925:930 _tmp_epstep <> epstep ind
+R933:936 TypeRules <> TMuS constr
+R938:938 _parent_mus_cstep_inv <> S:7 var
+R941:941 _parent_mus_cstep_inv <> u:8 var
+R946:952 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R955:956 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 953:954 <> S':9
+R968:971 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R958:960 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R957:957 _parent_mus_cstep_inv <> u:8 var
+R961:964 TypeRules <> TMuS constr
+R966:967 _parent_mus_cstep_inv <> S':9 var
+R972:977 _tmp_epstep <> epstep ind
+R979:979 _parent_mus_cstep_inv <> S:7 var
+R981:982 _parent_mus_cstep_inv <> S':9 var
+prf 1087:1111 <> rtc_epstep_mus_inv_parent
+binder 1122:1122 <> S:10
+binder 1124:1124 <> u:11
+R1152:1159 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1131:1133 Progress <> rtc ind
+R1151:1151 _parent_mus_cstep_inv <> u:11 var
+R1143:1146 TypeRules <> TMuS constr
+R1148:1148 _parent_mus_cstep_inv <> S:10 var
+R1135:1140 _tmp_epstep <> epstep ind
+R1160:1166 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1169:1170 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1167:1168 <> S':12
+R1182:1185 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1172:1174 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1171:1171 _parent_mus_cstep_inv <> u:11 var
+R1175:1178 TypeRules <> TMuS constr
+R1180:1181 _parent_mus_cstep_inv <> S':12 var
+R1186:1188 Progress <> rtc ind
+R1199:1200 _parent_mus_cstep_inv <> S':12 var
+R1197:1197 _parent_mus_cstep_inv <> S:10 var
+R1190:1195 _tmp_epstep <> epstep ind
+R1236:1239 TypeRules <> TMuS constr
+R1236:1239 TypeRules <> TMuS constr
+R1350:1357 Progress <> rtc_refl constr
+R1350:1357 Progress <> rtc_refl constr
+R1375:1395 _parent_mus_cstep_inv <> epstep_mus_inv_parent thm
+R1375:1395 _parent_mus_cstep_inv <> epstep_mus_inv_parent thm
+R1445:1451 Corelib.Init.Logic <> eq_refl constr
+R1445:1451 Corelib.Init.Logic <> eq_refl constr
+R1516:1523 Progress <> rtc_step constr
+R1516:1523 Progress <> rtc_step constr
+prf 1552:1571 <> cstep_mus_inv_parent
+binder 1582:1582 <> S:13
+binder 1584:1584 <> u:14
+R1607:1610 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1591:1595 _work_mixed_closure <> cstep ind
+R1598:1601 TypeRules <> TMuS constr
+R1603:1603 _parent_mus_cstep_inv <> S:13 var
+R1606:1606 _parent_mus_cstep_inv <> u:14 var
+R1611:1617 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1620:1621 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1618:1619 <> S':15
+R1633:1636 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1623:1625 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1622:1622 _parent_mus_cstep_inv <> u:14 var
+R1626:1629 TypeRules <> TMuS constr
+R1631:1632 _parent_mus_cstep_inv <> S':15 var
+R1637:1641 _work_mixed_closure <> cstep ind
+R1643:1643 _parent_mus_cstep_inv <> S:13 var
+R1645:1646 _parent_mus_cstep_inv <> S':15 var
+R1706:1729 _parent_mus_cstep_inv <> rtc_pstep_mus_inv_parent thm
+R1706:1729 _parent_mus_cstep_inv <> rtc_pstep_mus_inv_parent thm
+R1800:1806 _work_mixed_closure <> cs_core constr
+R1800:1806 _work_mixed_closure <> cs_core constr
+R1835:1859 _parent_mus_cstep_inv <> rtc_epstep_mus_inv_parent thm
+R1835:1859 _parent_mus_cstep_inv <> rtc_epstep_mus_inv_parent thm
+R1930:1935 _work_mixed_closure <> cs_eta constr
+R1930:1935 _work_mixed_closure <> cs_eta constr
+prf 1962:1985 <> rtc_cstep_mus_inv_parent
+binder 1996:1996 <> S:16
+binder 1998:1998 <> u:17
+R2025:2032 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2005:2007 Progress <> rtc ind
+R2024:2024 _parent_mus_cstep_inv <> u:17 var
+R2016:2019 TypeRules <> TMuS constr
+R2021:2021 _parent_mus_cstep_inv <> S:16 var
+R2009:2013 _work_mixed_closure <> cstep ind
+R2033:2039 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2042:2043 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2040:2041 <> S':18
+R2055:2058 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2045:2047 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2044:2044 _parent_mus_cstep_inv <> u:17 var
+R2048:2051 TypeRules <> TMuS constr
+R2053:2054 _parent_mus_cstep_inv <> S':18 var
+R2059:2061 Progress <> rtc ind
+R2071:2072 _parent_mus_cstep_inv <> S':18 var
+R2069:2069 _parent_mus_cstep_inv <> S:16 var
+R2063:2067 _work_mixed_closure <> cstep ind
+R2108:2111 TypeRules <> TMuS constr
+R2108:2111 TypeRules <> TMuS constr
+R2222:2229 Progress <> rtc_refl constr
+R2222:2229 Progress <> rtc_refl constr
+R2247:2266 _parent_mus_cstep_inv <> cstep_mus_inv_parent thm
+R2247:2266 _parent_mus_cstep_inv <> cstep_mus_inv_parent thm
+R2316:2322 Corelib.Init.Logic <> eq_refl constr
+R2316:2322 Corelib.Init.Logic <> eq_refl constr
+R2387:2394 Progress <> rtc_step constr
+R2387:2394 Progress <> rtc_step constr
+prf 2427:2455 <> rtc_cstep_mus_not_sort_parent
+binder 2466:2466 <> S:19
+binder 2468:2468 <> j:20
+R2475:2476 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2477:2479 Progress <> rtc ind
+R2497:2501 TypeRules <> TSort constr
+R2503:2503 _parent_mus_cstep_inv <> j:20 var
+R2488:2491 TypeRules <> TMuS constr
+R2493:2493 _parent_mus_cstep_inv <> S:19 var
+R2481:2485 _work_mixed_closure <> cstep ind
+R2542:2565 _parent_mus_cstep_inv <> rtc_cstep_mus_inv_parent thm
+R2542:2565 _parent_mus_cstep_inv <> rtc_cstep_mus_inv_parent thm
+prf 2627:2658 <> rtc_cstep_musapp_not_sort_parent
+binder 2669:2669 <> S:21
+binder 2671:2671 <> i:22
+binder 2673:2673 <> j:23
+R2680:2681 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2682:2684 Progress <> rtc ind
+R2711:2715 TypeRules <> TSort constr
+R2717:2717 _parent_mus_cstep_inv <> j:23 var
+R2693:2696 TypeRules <> TApp constr
+R2707:2707 _parent_mus_cstep_inv <> i:22 var
+R2699:2702 TypeRules <> TMuS constr
+R2704:2704 _parent_mus_cstep_inv <> S:21 var
+R2686:2690 _work_mixed_closure <> cstep ind
+R2760:2775 _work_cstep_invariants <> rtc_cstep_hshape thm
+R2783:2789 Progress <> HMuSApp constr
+R2792:2800 Progress <> hs_musapp constr
+R2760:2775 _work_cstep_invariants <> rtc_cstep_hshape thm
+R2783:2789 Progress <> HMuSApp constr
+R2792:2800 Progress <> hs_musapp constr
+R2863:2886 _parent_mus_cstep_inv <> rtc_cstep_mus_inv_parent thm
+R2907:2935 _parent_mus_cstep_inv <> rtc_cstep_mus_not_sort_parent thm
+R2956:2987 _parent_mus_cstep_inv <> rtc_cstep_musapp_not_sort_parent thm

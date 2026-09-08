@@ -1,0 +1,223 @@
+DIGEST 79a19151c6a4943f0f8d1a6729e2bc80
+F_luna_instance_phi_spine
+R15:22 Progress <> <> lib
+R24:41 SignatureInstances <> <> lib
+R43:61 SignatureConversion <> <> lib
+R63:86 _parent_instance_pruning <> <> lib
+R116:119 Stdlib.Lists.List <> <> lib
+R121:125 Stdlib.Arith.Arith <> <> lib
+R127:129 Stdlib.micromega.Lia <> <> lib
+R131:138 Stdlib.Arith.PeanoNat <> <> lib
+R148:160 Stdlib.Lists.List ListNotations <> mod
+R162:170 TypeRules <> <> mod
+R180:199 Progress _tmp_epstep <> mod
+R201:228 Progress _work_mixed_closure <> mod
+R232:251 Progress _work_cjoin <> mod
+R253:283 Progress _work_cstep_invariants <> mod
+prf 293:320 <> instance_translate_eval_luna
+binder 331:331 <> t:1
+binder 333:333 <> u:2
+R344:349 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R336:339 TypeRules <> eval ind
+R343:343 _luna_instance_phi_spine <> u:2 var
+R341:341 _luna_instance_phi_spine <> t:1 var
+R350:353 TypeRules <> eval ind
+R379:396 SignatureInstances <> instance_translate def
+R398:398 _luna_instance_phi_spine <> u:2 var
+R356:373 SignatureInstances <> instance_translate def
+R375:375 _luna_instance_phi_spine <> t:1 var
+R476:482 TypeRules <> ev_refl constr
+R476:482 TypeRules <> ev_refl constr
+R496:502 TypeRules <> ev_step constr
+R512:534 SignatureInstances <> instance_translate_step thm
+R496:502 TypeRules <> ev_step constr
+R512:534 SignatureInstances <> instance_translate_step thm
+prf 572:605 <> instance_translate_eval_fconv_luna
+binder 616:616 <> t:3
+binder 618:618 <> u:4
+R629:634 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R621:624 TypeRules <> eval ind
+R628:628 _luna_instance_phi_spine <> u:4 var
+R626:626 _luna_instance_phi_spine <> t:3 var
+R635:639 Progress <> fconv ind
+R642:659 SignatureInstances <> instance_translate def
+R661:661 _luna_instance_phi_spine <> t:3 var
+R665:682 SignatureInstances <> instance_translate def
+R684:684 _luna_instance_phi_spine <> u:4 var
+R762:768 Progress <> fc_refl constr
+R762:768 Progress <> fc_refl constr
+R782:789 Progress <> fc_trans constr
+R799:822 SignatureInstances <> instance_translate_fstep thm
+R831:837 Progress <> fs_step constr
+R782:789 Progress <> fc_trans constr
+R799:822 SignatureInstances <> instance_translate_fstep thm
+R831:837 Progress <> fs_step constr
+prf 875:895 <> fconv_lcons_tail_luna
+binder 906:906 <> A:5
+binder 908:908 <> c:6
+binder 910:910 <> L:7
+binder 912:913 <> L':8
+R928:931 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R918:922 Progress <> fconv ind
+R924:924 _luna_instance_phi_spine <> L:7 var
+R926:927 _luna_instance_phi_spine <> L':8 var
+R932:936 Progress <> fconv ind
+R939:944 TypeRules <> TLCons constr
+R950:950 _luna_instance_phi_spine <> L:7 var
+R948:948 _luna_instance_phi_spine <> c:6 var
+R946:946 _luna_instance_phi_spine <> A:5 var
+R954:959 TypeRules <> TLCons constr
+R965:966 _luna_instance_phi_spine <> L':8 var
+R963:963 _luna_instance_phi_spine <> c:6 var
+R961:961 _luna_instance_phi_spine <> A:5 var
+R1007:1015 Progress <> fconv_map thm
+binder 1022:1022 <> z:9
+R1027:1032 TypeRules <> TLCons constr
+R1038:1038 _luna_instance_phi_spine <> z:9 var
+R1007:1015 Progress <> fconv_map thm
+binder 1022:1022 <> z:10
+R1027:1032 TypeRules <> TLCons constr
+R1038:1038 _luna_instance_phi_spine <> z:10 var
+R1067:1075 Progress <> fs_lcons3 constr
+R1067:1075 Progress <> fs_lcons3 constr
+prf 1112:1139 <> instance_dead_translate_luna
+binder 1150:1150 <> D:11
+R1169:1172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1155:1166 TypeRules <> desc_against ind
+R1168:1168 _luna_instance_phi_spine <> D:11 var
+R1173:1185 _parent_instance_pruning <> instance_dead def
+R1188:1205 SignatureInstances <> instance_translate def
+R1207:1207 _luna_instance_phi_spine <> D:11 var
+R1273:1281 Progress <> phi_erase def
+R1273:1281 Progress <> phi_erase def
+R1304:1310 Progress <> rtc_one thm
+R1304:1310 Progress <> rtc_one thm
+R1319:1330 Progress _work_mixed_closure epstep_cstep thm
+R1319:1330 Progress _work_mixed_closure epstep_cstep thm
+R1339:1367 SignatureInstances <> instance_translate_erased_eta thm
+R1339:1367 SignatureInstances <> instance_translate_erased_eta thm
+R1380:1387 Progress <> rtc_refl constr
+R1380:1387 Progress <> rtc_refl constr
+prf 1402:1423 <> instance_phi_spine_aux
+binder 1434:1435 <> Sf:12
+binder 1437:1437 <> i:13
+binder 1439:1441 <> Phi:14
+binder 1443:1445 <> Psi:15
+R1472:1477 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1450:1458 TypeRules <> spine_phi ind
+R1469:1471 _luna_instance_phi_spine <> Psi:15 var
+R1465:1467 _luna_instance_phi_spine <> Phi:14 var
+R1463:1463 _luna_instance_phi_spine <> i:13 var
+R1460:1461 _luna_instance_phi_spine <> Sf:12 var
+R1478:1484 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1487:1492 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1485:1486 <> L0:16
+R1526:1534 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1493:1497 Progress <> fconv ind
+R1500:1517 SignatureInstances <> instance_translate def
+R1519:1521 _luna_instance_phi_spine <> Phi:14 var
+R1524:1525 _luna_instance_phi_spine <> L0:16 var
+R1535:1546 _parent_instance_pruning <> prune_labels ind
+R1555:1562 TypeRules <> branches def
+R1565:1568 TypeRules <> TApp constr
+R1595:1612 SignatureInstances <> instance_translate def
+R1614:1614 _luna_instance_phi_spine <> i:13 var
+R1571:1588 SignatureInstances <> instance_translate def
+R1590:1591 _luna_instance_phi_spine <> Sf:12 var
+R1625:1626 _luna_instance_phi_spine <> L0:16 var
+R1629:1646 SignatureInstances <> instance_translate def
+R1648:1650 _luna_instance_phi_spine <> Psi:15 var
+R1711:1728 SignatureInstances <> instance_translate def
+R1731:1735 TypeRules <> TLNil constr
+R1711:1728 SignatureInstances <> instance_translate def
+R1731:1735 TypeRules <> TLNil constr
+R1761:1794 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R1761:1794 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R1818:1824 _parent_instance_pruning <> pl_stop constr
+R1818:1824 _parent_instance_pruning <> pl_stop constr
+R1833:1847 _parent_instance_pruning <> prune_term_refl thm
+R1833:1847 _parent_instance_pruning <> prune_term_refl thm
+R1904:1909 TypeRules <> TLCons constr
+R1935:1952 SignatureInstances <> instance_translate def
+R1912:1929 SignatureInstances <> instance_translate def
+R1904:1909 TypeRules <> TLCons constr
+R1935:1952 SignatureInstances <> instance_translate def
+R1912:1929 SignatureInstances <> instance_translate def
+R1986:1993 Progress <> fc_trans constr
+R1986:1993 Progress <> fc_trans constr
+R2010:2043 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R2010:2043 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R2069:2089 _luna_instance_phi_spine <> fconv_lcons_tail_luna thm
+R2069:2089 _luna_instance_phi_spine <> fconv_lcons_tail_luna thm
+R2114:2120 _parent_instance_pruning <> pl_keep constr
+R2133:2147 _parent_instance_pruning <> prune_term_refl thm
+R2114:2120 _parent_instance_pruning <> pl_keep constr
+R2133:2147 _parent_instance_pruning <> prune_term_refl thm
+R2133:2147 _parent_instance_pruning <> prune_term_refl thm
+R2133:2147 _parent_instance_pruning <> prune_term_refl thm
+R2214:2219 TypeRules <> TLCons constr
+R2245:2262 SignatureInstances <> instance_translate def
+R2222:2239 SignatureInstances <> instance_translate def
+R2214:2219 TypeRules <> TLCons constr
+R2245:2262 SignatureInstances <> instance_translate def
+R2222:2239 SignatureInstances <> instance_translate def
+R2292:2299 Progress <> fc_trans constr
+R2292:2299 Progress <> fc_trans constr
+R2316:2349 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R2316:2349 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R2375:2395 _luna_instance_phi_spine <> fconv_lcons_tail_luna thm
+R2375:2395 _luna_instance_phi_spine <> fconv_lcons_tail_luna thm
+R2420:2426 _parent_instance_pruning <> pl_drop constr
+R2420:2426 _parent_instance_pruning <> pl_drop constr
+R2445:2457 _parent_instance_pruning <> instance_dead def
+R2460:2477 SignatureInstances <> instance_translate def
+R2480:2483 TypeRules <> TApp constr
+R2486:2493 TypeRules <> branches def
+R2496:2499 TypeRules <> TApp constr
+R2445:2457 _parent_instance_pruning <> instance_dead def
+R2460:2477 SignatureInstances <> instance_translate def
+R2480:2483 TypeRules <> TApp constr
+R2486:2493 TypeRules <> branches def
+R2496:2499 TypeRules <> TApp constr
+R2528:2555 _luna_instance_phi_spine <> instance_dead_translate_luna thm
+R2528:2555 _luna_instance_phi_spine <> instance_dead_translate_luna thm
+R2598:2615 SignatureInstances <> instance_translate def
+R2598:2615 SignatureInstances <> instance_translate def
+R2643:2676 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R2643:2676 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R2700:2706 _parent_instance_pruning <> pl_stop constr
+R2700:2706 _parent_instance_pruning <> pl_stop constr
+R2715:2729 _parent_instance_pruning <> prune_term_refl thm
+R2715:2729 _parent_instance_pruning <> prune_term_refl thm
+prf 2746:2768 <> instance_phi_spine_luna
+binder 2779:2780 <> Sf:17
+binder 2782:2782 <> i:18
+binder 2784:2786 <> Phi:19
+binder 2788:2790 <> Psi:20
+R2817:2822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2795:2803 TypeRules <> spine_phi ind
+R2814:2816 _luna_instance_phi_spine <> Psi:20 var
+R2810:2812 _luna_instance_phi_spine <> Phi:19 var
+R2808:2808 _luna_instance_phi_spine <> i:18 var
+R2805:2806 _luna_instance_phi_spine <> Sf:17 var
+R2823:2829 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2832:2833 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2830:2831 <> L0:21
+R2867:2875 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2834:2838 Progress <> fconv ind
+R2841:2858 SignatureInstances <> instance_translate def
+R2860:2862 _luna_instance_phi_spine <> Phi:19 var
+R2865:2866 _luna_instance_phi_spine <> L0:21 var
+R2876:2887 _parent_instance_pruning <> prune_labels ind
+R2890:2897 TypeRules <> branches def
+R2900:2903 TypeRules <> TApp constr
+R2930:2947 SignatureInstances <> instance_translate def
+R2949:2949 _luna_instance_phi_spine <> i:18 var
+R2906:2923 SignatureInstances <> instance_translate def
+R2925:2926 _luna_instance_phi_spine <> Sf:17 var
+R2960:2961 _luna_instance_phi_spine <> L0:21 var
+R2964:2981 SignatureInstances <> instance_translate def
+R2983:2985 _luna_instance_phi_spine <> Psi:20 var
+R3002:3023 _luna_instance_phi_spine <> instance_phi_spine_aux thm
+R3002:3023 _luna_instance_phi_spine <> instance_phi_spine_aux thm
+R3050:3072 _luna_instance_phi_spine <> instance_phi_spine_luna thm

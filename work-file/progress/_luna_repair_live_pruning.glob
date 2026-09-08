@@ -1,0 +1,140 @@
+DIGEST d59663f97783a57efb2eb75a64d9b07f
+F_luna_repair_live_pruning
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R65:77 Stdlib.Lists.List ListNotations <> mod
+R79:87 TypeRules <> <> mod
+R105:122 _luna_repair_spine <> <> lib
+prf 132:154 <> spine_phi_mem_join_live
+binder 165:165 <> c:1
+binder 167:168 <> L1:2
+R189:192 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R175:183 TypeRules <> spine_mem ind
+R187:188 _luna_repair_live_pruning <> L1:2 var
+R185:185 _luna_repair_live_pruning <> c:1 var
+binder 200:201 <> Sf:3
+binder 203:203 <> i:4
+binder 205:206 <> L2:5
+binder 208:209 <> L3:6
+R236:239 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R216:224 TypeRules <> spine_phi ind
+R234:235 _luna_repair_live_pruning <> L3:6 var
+R231:232 _luna_repair_live_pruning <> L2:5 var
+R229:229 _luna_repair_live_pruning <> i:4 var
+R226:227 _luna_repair_live_pruning <> Sf:3 var
+R251:258 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R240:244 Progress <> pjoin def
+R246:247 _luna_repair_live_pruning <> L1:2 var
+R249:250 _luna_repair_live_pruning <> L2:5 var
+R259:259 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R334:342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 267:267 <> d:7
+R278:287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R270:273 TypeRules <> conv ind
+R277:277 _luna_repair_live_pruning <> d:7 var
+R275:275 _luna_repair_live_pruning <> c:1 var
+R288:289 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R290:301 TypeRules <> desc_against ind
+R304:307 TypeRules <> TApp constr
+R332:332 _luna_repair_live_pruning <> d:7 var
+R310:317 TypeRules <> branches def
+R320:323 TypeRules <> TApp constr
+R328:328 _luna_repair_live_pruning <> i:4 var
+R325:326 _luna_repair_live_pruning <> Sf:3 var
+R343:351 TypeRules <> spine_mem ind
+R355:356 _luna_repair_live_pruning <> L3:6 var
+R353:353 _luna_repair_live_pruning <> c:1 var
+R519:533 Progress <> pjoin_eval_left thm
+R519:533 Progress <> pjoin_eval_left thm
+R519:533 Progress <> pjoin_eval_left thm
+R611:629 Progress <> no_pjoin_lcons_lnil thm
+R611:629 Progress <> no_pjoin_lcons_lnil thm
+R643:658 Progress <> pjoin_eval_right thm
+R643:658 Progress <> pjoin_eval_right thm
+R690:705 Progress <> pjoin_eval_right thm
+R690:705 Progress <> pjoin_eval_right thm
+R746:760 Progress <> pjoin_lcons_inv thm
+R746:760 Progress <> pjoin_lcons_inv thm
+R812:818 TypeRules <> sm_here constr
+R828:834 TypeRules <> ev_refl constr
+R812:818 TypeRules <> sm_here constr
+R828:834 TypeRules <> ev_refl constr
+R851:858 TypeRules <> cv_trans constr
+R880:889 Progress <> pjoin_conv thm
+R851:858 TypeRules <> cv_trans constr
+R880:889 Progress <> pjoin_conv thm
+R924:939 Progress <> pjoin_eval_right thm
+R924:939 Progress <> pjoin_eval_right thm
+R980:994 Progress <> pjoin_lcons_inv thm
+R980:994 Progress <> pjoin_lcons_inv thm
+R1085:1092 TypeRules <> cv_trans constr
+R1114:1123 Progress <> pjoin_conv thm
+R1085:1092 TypeRules <> cv_trans constr
+R1114:1123 Progress <> pjoin_conv thm
+R1163:1189 _luna_repair_spine <> luna_no_pjoin_lcons_neutral thm
+R1163:1189 _luna_repair_spine <> luna_no_pjoin_lcons_neutral thm
+R1215:1230 Progress <> pjoin_eval_right thm
+R1215:1230 Progress <> pjoin_eval_right thm
+R1266:1284 Progress <> no_pjoin_lcons_lnil thm
+R1266:1284 Progress <> no_pjoin_lcons_lnil thm
+R1298:1313 Progress <> pjoin_eval_right thm
+R1298:1313 Progress <> pjoin_eval_right thm
+R1345:1360 Progress <> pjoin_eval_right thm
+R1345:1360 Progress <> pjoin_eval_right thm
+R1401:1415 Progress <> pjoin_lcons_inv thm
+R1401:1415 Progress <> pjoin_lcons_inv thm
+R1466:1473 TypeRules <> sm_there constr
+R1483:1489 TypeRules <> ev_refl constr
+R1466:1473 TypeRules <> sm_there constr
+R1483:1489 TypeRules <> ev_refl constr
+R1539:1554 Progress <> pjoin_eval_right thm
+R1539:1554 Progress <> pjoin_eval_right thm
+R1595:1609 Progress <> pjoin_lcons_inv thm
+R1595:1609 Progress <> pjoin_lcons_inv thm
+R1698:1724 _luna_repair_spine <> luna_no_pjoin_lcons_neutral thm
+R1698:1724 _luna_repair_spine <> luna_no_pjoin_lcons_neutral thm
+R1750:1765 Progress <> pjoin_eval_right thm
+R1750:1765 Progress <> pjoin_eval_right thm
+prf 1793:1810 <> spine_phi_mem_live
+binder 1821:1822 <> Sf:8
+binder 1824:1824 <> i:9
+binder 1826:1828 <> Phi:10
+binder 1830:1832 <> Psi:11
+binder 1834:1834 <> c:12
+R1863:1866 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1841:1849 TypeRules <> spine_phi ind
+R1860:1862 _luna_repair_live_pruning <> Psi:11 var
+R1856:1858 _luna_repair_live_pruning <> Phi:10 var
+R1854:1854 _luna_repair_live_pruning <> i:9 var
+R1851:1852 _luna_repair_live_pruning <> Sf:8 var
+R1882:1889 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1867:1875 TypeRules <> spine_mem ind
+R1879:1881 _luna_repair_live_pruning <> Phi:10 var
+R1877:1877 _luna_repair_live_pruning <> c:12 var
+R1890:1890 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1965:1973 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1898:1898 <> d:13
+R1909:1918 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1901:1904 TypeRules <> conv ind
+R1908:1908 _luna_repair_live_pruning <> d:13 var
+R1906:1906 _luna_repair_live_pruning <> c:12 var
+R1919:1920 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1921:1932 TypeRules <> desc_against ind
+R1935:1938 TypeRules <> TApp constr
+R1963:1963 _luna_repair_live_pruning <> d:13 var
+R1941:1948 TypeRules <> branches def
+R1951:1954 TypeRules <> TApp constr
+R1959:1959 _luna_repair_live_pruning <> i:9 var
+R1956:1957 _luna_repair_live_pruning <> Sf:8 var
+R1974:1982 TypeRules <> spine_mem ind
+R1986:1988 _luna_repair_live_pruning <> Psi:11 var
+R1984:1984 _luna_repair_live_pruning <> c:12 var
+R2015:2037 _luna_repair_live_pruning <> spine_phi_mem_join_live thm
+R2052:2061 Progress <> pjoin_refl thm
+R2015:2037 _luna_repair_live_pruning <> spine_phi_mem_join_live thm
+R2052:2061 Progress <> pjoin_refl thm
+R2052:2061 Progress <> pjoin_refl thm
+R2052:2061 Progress <> pjoin_refl thm
+R2052:2061 Progress <> pjoin_refl thm
+R2088:2110 _luna_repair_live_pruning <> spine_phi_mem_join_live thm
+R2131:2148 _luna_repair_live_pruning <> spine_phi_mem_live thm

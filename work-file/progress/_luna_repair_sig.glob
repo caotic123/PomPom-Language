@@ -1,0 +1,88 @@
+DIGEST 23da0001c05c3c403fd602511dbfd4f3
+F_luna_repair_sig
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R65:77 Stdlib.Lists.List ListNotations <> mod
+R79:87 TypeRules <> <> mod
+prf 248:280 <> spine_phi_drop_member_obstruction
+binder 291:292 <> Sf:1
+binder 294:294 <> i:2
+binder 296:298 <> Phi:3
+binder 300:300 <> A:4
+binder 302:302 <> c:5
+binder 304:307 <> Phi':6
+R340:347 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R314:317 TypeRules <> eval ind
+R324:329 TypeRules <> TLCons constr
+R335:338 _luna_repair_sig <> Phi':6 var
+R333:333 _luna_repair_sig <> c:5 var
+R331:331 _luna_repair_sig <> A:4 var
+R319:321 _luna_repair_sig <> Phi:3 var
+R392:399 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R348:359 TypeRules <> desc_against ind
+R362:365 TypeRules <> TApp constr
+R390:390 _luna_repair_sig <> c:5 var
+R368:375 TypeRules <> branches def
+R378:381 TypeRules <> TApp constr
+R386:386 _luna_repair_sig <> i:2 var
+R383:384 _luna_repair_sig <> Sf:1 var
+R423:430 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R400:408 TypeRules <> spine_phi ind
+R419:422 _luna_repair_sig <> Phi':6 var
+R415:417 _luna_repair_sig <> Phi:3 var
+R413:413 _luna_repair_sig <> i:2 var
+R410:411 _luna_repair_sig <> Sf:1 var
+R431:439 TypeRules <> spine_mem ind
+R443:445 _luna_repair_sig <> Phi:3 var
+R441:441 _luna_repair_sig <> c:5 var
+R509:515 TypeRules <> sm_here constr
+R509:515 TypeRules <> sm_here constr
+R584:590 TypeRules <> cv_refl constr
+R584:590 TypeRules <> cv_refl constr
+prf 605:638 <> spine_phi_drop_target_can_be_empty
+binder 649:650 <> Sf:7
+binder 652:652 <> i:8
+binder 654:656 <> Phi:9
+binder 658:658 <> A:10
+binder 660:660 <> c:11
+binder 662:665 <> Phi':12
+R698:705 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R672:675 TypeRules <> eval ind
+R682:687 TypeRules <> TLCons constr
+R693:696 _luna_repair_sig <> Phi':12 var
+R691:691 _luna_repair_sig <> c:11 var
+R689:689 _luna_repair_sig <> A:10 var
+R677:679 _luna_repair_sig <> Phi:9 var
+R750:757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R706:717 TypeRules <> desc_against ind
+R720:723 TypeRules <> TApp constr
+R748:748 _luna_repair_sig <> c:11 var
+R726:733 TypeRules <> branches def
+R736:739 TypeRules <> TApp constr
+R744:744 _luna_repair_sig <> i:8 var
+R741:742 _luna_repair_sig <> Sf:7 var
+R781:788 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R758:766 TypeRules <> spine_phi ind
+R777:780 _luna_repair_sig <> Phi':12 var
+R773:775 _luna_repair_sig <> Phi:9 var
+R771:771 _luna_repair_sig <> i:8 var
+R768:769 _luna_repair_sig <> Sf:7 var
+binder 796:796 <> q:13
+R799:800 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R801:809 TypeRules <> spine_mem ind
+R814:818 TypeRules <> TLNil constr
+R820:820 _luna_repair_sig <> A:10 var
+R811:811 _luna_repair_sig <> q:13 var
+R894:902 TypeRules <> spine_mem ind
+R907:911 TypeRules <> TLNil constr
+R894:902 TypeRules <> spine_mem ind
+R907:911 TypeRules <> TLNil constr
+R988:991 TypeRules <> eval ind
+R994:998 TypeRules <> TLNil constr
+R988:991 TypeRules <> eval ind
+R994:998 TypeRules <> TLNil constr
+R1036:1050 Progress <> eval_tlnil_refl thm
+R1036:1050 Progress <> eval_tlnil_refl thm
+R1036:1050 Progress <> eval_tlnil_refl thm
+R1117:1149 _luna_repair_sig <> spine_phi_drop_member_obstruction thm
+R1170:1203 _luna_repair_sig <> spine_phi_drop_target_can_be_empty thm

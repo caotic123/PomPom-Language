@@ -32,14 +32,18 @@ refinements with no runtime reflection. No coercion terms, erasure maps, or
 coherence laws arise.
 
 ```text
-Γ ⊢ t ⇒ A    Γ ⊢ A ≡ B : Setₖ                Γ ⊢ t ⇒ A    Γ ⊢ A ⊑ B
-────────────────────────────── Conversionφ    ────────────────────────── Subsumption   [SUB]
+Γ ⊢ t ⇒ A    Γ ⊢ A ≡ B : Setₖ                Γ ⊢ t ⇐ A    Γ ⊢ A ⊑ B
+────────────────────────────── Conversion     ────────────────────────── Subsumption   [SUB]
 Γ ⊢ t ⇐ B                                    Γ ⊢ t ⇐ B
 ```
 
-`⊑` contains `≡` and is transitive.  `≡` throughout is the paper's
-`≡βηφ` — Conversionφ is the **default** checking rule (see the end of
-this section and Eq-φ in §7).
+The synthesizing application and projection rules carry the corresponding
+Π/Σ formation premise explicitly. This keeps the well-formed eliminated type
+available when a checked-only substituent replaces a synthesizing variable.
+
+`⊑` contains `≡` and is transitive. General definitional equality `≡` is
+`≡βη`. The paper's optional φ pruning is expressed by the typed `Sig-sub`
+rule in §7 instead of general untyped conversion.
 
 Use `* = Set₀` and `Type = Set₁`. Although Figure 4 prints `IDesc I : Set`,
 Figure 3 prints `Desc : Set₁` and the codes store arbitrary `S : Set₀`; the
@@ -83,12 +87,10 @@ definition unfolding, and the computation rules for `switchₖ`,
 may normalize only as far as a rule needs. Core SUB Rules 3–4 assume only
 beta-eta comparison (`T_βη`); the further computation rules are PomPom
 conversion policy and must be shown type-preserving. The subtyping paper's
-`φ` pruning is adopted as the **default**: `≡` is `≡βηφ`, the smallest
-congruence containing the relation above modulo Eq-φ (§7), and the
-checking rule is the paper's Conversionφ. A label is pruned only on
-positive evidence that its instantiated payload description is uninhabited
-— the conservative `AGAINST` analog of §7 — and a stuck description or
-index never prunes.
+optional `φ` pruning is implemented by the typed signature-subtyping rule in
+§7. A label is pruned only on positive evidence that its instantiated payload
+description is uninhabited—the conservative `AGAINST` analog of §7—and a
+stuck description or index never prunes.
 
 ## 2. Enumerations
 
@@ -370,6 +372,12 @@ For an indexed signature family, the recursive carrier is EID's ordinary
 fixed point of the full ambient description; the refinement `μˢ` restricts
 only the head constructor.
 
+The surface notation `μˢ S` carries the ambient enumeration determined by
+the family type. In the raw Rocq syntax it is represented as
+`SigMu E S := TMuS (E, S)`. Retaining `E` is required for subject reduction:
+it prevents an introduction formed at one ambient enumeration from being
+eliminated as though it belonged to an unrelated enumeration.
+
 ```text
 Γ ⊢ I : Set₀    Γ ⊢ E : EnumU    Γ ⊢ S : (i:I) → Sig I E
 ───────────────────────────────────────────────────────── Sig-mu
@@ -441,8 +449,8 @@ The branch premise is global in `i` because recursive `'var` fields of both
 sides are interpreted by their carriers, which must be convertible; for two
 families built over one shared `T` it holds by projection computation.
 `Φ₁ ⊆ Φ₂` is Rule 4's side condition read on evaluated spines: every
-exposed element of `Φ₁` occurs, up to conversion, in `Φ₂`, and a neutral
-tail of `Φ₁` must be matched by a convertible tail of `Φ₂`. A side
+exposed element of `Φ₁` occurs, up to conversion, in `Φ₂`, and an evaluated
+tail of `Φ₁` may be matched by a tail of `Φ₂` that evaluates back to it. A side
 condition that cannot be established is stuck — the rule simply does not
 apply — and stuckness is never read as a negative fact. Shared branch
 descriptions are invariant: structural
@@ -466,7 +474,7 @@ enabled labels; coverage is the same evaluated-spine side condition:
 
 ```text
 Γ ⊢ M : μˢ S i    Γ ⊢ Q : Setₖ
-Ψ = (c₁, …, cₘ)    Γ ⊢ cₖ : Label E    the cₖ pairwise distinct
+Ψ = (c₁, …, cₘ)    Γ ⊢ cₖ : Label E    the cₖ canonical and pairwise distinct
 labels (S i) ⇓ Φ      Φ ⊆ Ψ
 for each k,
   Γ, xs : ⟦branches (S i) cₖ⟧ (Carrier S) ⊢ Nₖ : Q
@@ -497,31 +505,28 @@ has a fixed result `Q`, as in Rule 7; dependent index matching still
 requires explicit transports.
 
 Pruning an enabled label whose payload is uninhabited (the paper's
-`Φok`/`AGAINST`) is the **default**, folded into conversion by Eq-φ —
-the paper's `Norm-φ` read on the pair rendition. Because a signature is a
-pair term whose projections must keep computing, φ equates the refinement
-types, never the pairs:
+`Φok`/`AGAINST`) is exposed through typed signature subtyping. Because a
+signature is a pair term whose projections must keep computing, the rule
+relates refinement types and leaves the pairs unchanged:
 
 ```text
 Γ ⊢ (λ i. branches (S₁ i)) ≡ (λ i. branches (S₂ i))
       : (i:I) → EnumT E → IDesc I
-labels (S₁ i) ⇓ Φ₁    labels (S₂ i) ⇓ Φ₂
-Φ₁ ↝φ Ψ    Φ₂ ↝φ Ψ          (at instance i)
-──────────────────────────────────────────────────── Eq-φ
-Γ ⊢ μˢ S₁ i ≡ μˢ S₂ i
+labels (S₁ i) ⇓ Φ₁    labels (S₂ i) ⇓ Φ₂    Φ₁ ⊆ Φ₂
+──────────────────────────────────────────────────── Sig-sub
+Γ ⊢ μˢ S₁ i ⊑ μˢ S₂ i
 ```
 
 `↝φ` may drop any exposed label whose instantiated payload description
 `branches (S i) c` is demonstrably uninhabited and keeps the rest; a
-neutral tail stops pruning. The `AGAINST` analog derives emptiness
+pruning may stop at the current tail; a neutral tail therefore stops it. The `AGAINST` analog derives emptiness
 positively and conservatively: a `'σ` whose enumeration spine evaluates to
 `nilE` (the paper's head-constructor clash), propagated through `'×` and
 through every branch of an exposed choice; `'var`, `'1`, `'Π`, and `'Σ`
 never prune — the paper's `⊤` "otherwise" clause. In the dependent setting
 this remains the rule: failure to normalize an index or signature never
-proves impossibility. With Conversionφ, the paper's practical choice
-`Ψ = Φok` in Rule 7 is admissible by first converting the scrutinee's type
-to the pruned refinement; Sig-case itself keeps its `Φ ⊆ Ψ` coverage.
+proves impossibility. `Sig-sub` widens a scrutinee to the pruned refinement;
+Sig-case itself keeps its `Φ ⊆ Ψ` coverage.
 
 `μˢ` supplies only this outer analysis. Recursive functions forget the
 refinement (Sig-forget) and use `iinduction` over `Carrier S`.
@@ -650,8 +655,8 @@ extends the type theory.
 - **SUB supplies** Rules 1–7 for a static constructor list: signature
   formation, forgetting, constructor introduction, subset widening, Pi
   variance, coverage-checked case analysis, the phantom-type reading, and
-  the `βηφ` pruning (`Norm-φ`/`Eq-φ`/Conversionφ), adopted here as the
-  default conversion.
+  the optional φ pruning (`Norm-φ`/`Eq-φ`), represented here by typed
+  signature subtyping.
 - **BRIDGE supplies** `Label E := EnumT E` with its decidable equality,
   the elaboration-facing `At` name-resolution family, `Sig I E` as a pair
   of EID data, and the `μˢ` rules, whose side conditions generalize the

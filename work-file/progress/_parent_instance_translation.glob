@@ -1,0 +1,295 @@
+DIGEST e85bdb4d4eb81ac97f8bdeab8d57df32
+F_parent_instance_translation
+R15:22 Progress <> <> lib
+R24:41 SignatureInstances <> <> lib
+R43:66 _parent_instance_pruning <> <> lib
+R68:92 _luna_instance_conversion <> <> lib
+R94:118 _luna_instance_step_prune <> <> lib
+R148:151 Stdlib.Lists.List <> <> lib
+R161:173 Stdlib.Lists.List ListNotations <> mod
+R175:183 TypeRules <> <> mod
+R225:230 _luna_instance_conversion <> ic_map thm
+R232:236 TypeRules <> TSort constr
+R246:251 _luna_instance_conversion <> ic_map thm
+R253:256 TypeRules <> TLam constr
+R266:271 _luna_instance_conversion <> ic_map thm
+R273:276 TypeRules <> TFst constr
+R291:296 _luna_instance_conversion <> ic_map thm
+R298:301 TypeRules <> TSnd constr
+R311:316 _luna_instance_conversion <> ic_map thm
+R318:323 TypeRules <> TEnumT constr
+R333:338 _luna_instance_conversion <> ic_map thm
+R340:345 TypeRules <> TESucc constr
+R360:365 _luna_instance_conversion <> ic_map thm
+R367:372 TypeRules <> TIDesc constr
+R382:387 _luna_instance_conversion <> ic_map thm
+R389:393 TypeRules <> TIVar constr
+R403:408 _luna_instance_conversion <> ic_map thm
+R410:413 TypeRules <> TMuI constr
+R428:433 _luna_instance_conversion <> ic_map thm
+R435:437 TypeRules <> TIn constr
+R447:452 _luna_instance_conversion <> ic_map thm
+R454:458 TypeRules <> TList constr
+R468:473 _luna_instance_conversion <> ic_map thm
+R475:479 TypeRules <> TLNil constr
+R494:500 _luna_instance_conversion <> ic_map2 thm
+R502:504 TypeRules <> TPi constr
+R514:520 _luna_instance_conversion <> ic_map2 thm
+R522:525 TypeRules <> TApp constr
+R535:541 _luna_instance_conversion <> ic_map2 thm
+R543:548 TypeRules <> TSigma constr
+R563:569 _luna_instance_conversion <> ic_map2 thm
+R571:575 TypeRules <> TPair constr
+R585:591 _luna_instance_conversion <> ic_map2 thm
+R593:598 TypeRules <> TConsE constr
+R608:614 _luna_instance_conversion <> ic_map2 thm
+R616:619 TypeRules <> TEPi constr
+R634:640 _luna_instance_conversion <> ic_map2 thm
+R642:647 TypeRules <> TIProd constr
+R657:663 _luna_instance_conversion <> ic_map2 thm
+R665:668 TypeRules <> TIPi constr
+R678:684 _luna_instance_conversion <> ic_map2 thm
+R686:690 TypeRules <> TISig constr
+R705:711 _luna_instance_conversion <> ic_map2 thm
+R713:720 TypeRules <> TIChoice constr
+R730:736 _luna_instance_conversion <> ic_map2 thm
+R738:744 TypeRules <> TInterp constr
+R754:760 _luna_instance_conversion <> ic_map3 thm
+R762:767 TypeRules <> TLCons constr
+R782:788 _luna_instance_conversion <> ic_map4 thm
+R790:796 TypeRules <> TSwitch constr
+R806:812 _luna_instance_conversion <> ic_map4 thm
+R814:818 TypeRules <> TIAll constr
+R828:834 _luna_instance_conversion <> ic_map5 thm
+R836:839 TypeRules <> TInd constr
+R849:855 _luna_instance_conversion <> ic_map5 thm
+R857:861 TypeRules <> THyps constr
+R981:995 _parent_instance_pruning <> prune_term_refl thm
+prf 1007:1036 <> instance_translate_conv_parent
+binder 1047:1047 <> t:1
+binder 1049:1049 <> u:2
+R1060:1065 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1052:1055 TypeRules <> conv ind
+R1059:1059 _parent_instance_translation <> u:2 var
+R1057:1057 _parent_instance_translation <> t:1 var
+R1066:1078 _luna_instance_conversion <> instance_conv ind
+R1081:1098 SignatureInstances <> instance_translate def
+R1100:1100 _parent_instance_translation <> t:1 var
+R1104:1121 SignatureInstances <> instance_translate def
+R1123:1123 _parent_instance_translation <> u:2 var
+R1183:1200 SignatureInstances <> instance_translate def
+R1230:1236 _luna_instance_conversion <> ic_core constr
+R1239:1245 Progress <> fc_step constr
+R1248:1254 Progress <> fs_step constr
+R1257:1279 SignatureInstances <> instance_translate_step thm
+R1230:1236 _luna_instance_conversion <> ic_core constr
+R1239:1245 Progress <> fc_step constr
+R1248:1254 Progress <> fs_step constr
+R1257:1279 SignatureInstances <> instance_translate_step thm
+R1304:1310 _luna_instance_conversion <> ic_refl constr
+R1304:1310 _luna_instance_conversion <> ic_refl constr
+R1323:1328 _luna_instance_conversion <> ic_sym constr
+R1323:1328 _luna_instance_conversion <> ic_sym constr
+R1354:1361 _luna_instance_conversion <> ic_trans constr
+R1354:1361 _luna_instance_conversion <> ic_trans constr
+R1386:1403 SignatureInstances <> instance_translate def
+R1415:1437 SignatureInstances <> instance_translate_lift thm
+R1415:1437 SignatureInstances <> instance_translate_lift thm
+R1415:1437 SignatureInstances <> instance_translate_lift thm
+R1446:1452 _luna_instance_conversion <> ic_core constr
+R1455:1461 Progress <> fc_step constr
+R1464:1469 Progress <> fs_eta constr
+R1446:1452 _luna_instance_conversion <> ic_core constr
+R1455:1461 Progress <> fc_step constr
+R1464:1469 Progress <> fs_eta constr
+R1483:1488 _luna_instance_conversion <> ic_phi thm
+R1483:1488 _luna_instance_conversion <> ic_phi thm
+R1514:1529 _luna_instance_conversion <> ic_translate_mus thm
+R1514:1529 _luna_instance_conversion <> ic_translate_mus thm
+R1553:1570 SignatureInstances <> instance_translate def
+R1581:1587 _luna_instance_conversion <> ic_map2 thm
+binder 1594:1594 <> M:3
+binder 1596:1596 <> Q:4
+R1601:1605 TypeRules <> TCase constr
+R1619:1621 Corelib.Lists.ListDef <> map def
+R1629:1629 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1631:1631 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1633:1633 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 1632:1632 <> b:5
+binder 1630:1630 <> c:6
+binder 1629:1633 <> pat:7
+R1638:1638 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1659:1660 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1681:1681 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1639:1656 SignatureInstances <> instance_translate def
+R1658:1658 _parent_instance_translation <> c:6 var
+R1661:1678 SignatureInstances <> instance_translate def
+R1680:1680 _parent_instance_translation <> b:5 var
+R1609:1609 _parent_instance_translation <> Q:4 var
+R1607:1607 _parent_instance_translation <> M:3 var
+R1581:1587 _luna_instance_conversion <> ic_map2 thm
+binder 1594:1594 <> M:8
+binder 1596:1596 <> Q:9
+R1601:1605 TypeRules <> TCase constr
+R1619:1621 Corelib.Lists.ListDef <> map def
+R1629:1629 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1631:1631 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1633:1633 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 1632:1632 <> b:10
+binder 1630:1630 <> c:11
+binder 1629:1633 <> pat:12
+R1638:1638 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1659:1660 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1681:1681 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1639:1656 SignatureInstances <> instance_translate def
+R1658:1658 _parent_instance_translation <> c:11 var
+R1661:1678 SignatureInstances <> instance_translate def
+R1680:1680 _parent_instance_translation <> b:10 var
+R1609:1609 _parent_instance_translation <> Q:9 var
+R1607:1607 _parent_instance_translation <> M:8 var
+R1733:1740 Progress <> fs_case1 constr
+R1733:1740 Progress <> fs_case1 constr
+R1767:1774 Progress <> fs_case2 constr
+R1767:1774 Progress <> fs_case2 constr
+R1801:1807 _parent_instance_pruning <> pt_case constr
+R1834:1848 _parent_instance_pruning <> prune_term_refl thm
+R1856:1874 _parent_instance_pruning <> prune_branches_refl thm
+R1801:1807 _parent_instance_pruning <> pt_case constr
+R1834:1848 _parent_instance_pruning <> prune_term_refl thm
+R1834:1848 _parent_instance_pruning <> prune_term_refl thm
+R1856:1874 _parent_instance_pruning <> prune_branches_refl thm
+R1890:1896 _parent_instance_pruning <> pt_case constr
+R1923:1937 _parent_instance_pruning <> prune_term_refl thm
+R1945:1963 _parent_instance_pruning <> prune_branches_refl thm
+R1890:1896 _parent_instance_pruning <> pt_case constr
+R1923:1937 _parent_instance_pruning <> prune_term_refl thm
+R1923:1937 _parent_instance_pruning <> prune_term_refl thm
+R1945:1963 _parent_instance_pruning <> prune_branches_refl thm
+R1976:1993 SignatureInstances <> instance_translate def
+R2006:2012 Stdlib.Lists.List <> map_app thm
+R2006:2012 Stdlib.Lists.List <> map_app thm
+R2006:2012 Stdlib.Lists.List <> map_app thm
+R2006:2012 Stdlib.Lists.List <> map_app thm
+R2006:2012 Stdlib.Lists.List <> map_app thm
+R2031:2037 _luna_instance_conversion <> ic_map2 thm
+binder 2044:2044 <> c:13
+binder 2046:2046 <> b:14
+R2051:2055 TypeRules <> TCase constr
+R2179:2191 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2111:2113 Corelib.Lists.ListDef <> map def
+R2121:2121 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2123:2123 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2125:2125 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 2124:2124 <> b:15
+binder 2122:2122 <> c:16
+binder 2121:2125 <> pat:17
+R2130:2130 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2151:2152 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2173:2173 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2131:2148 SignatureInstances <> instance_translate def
+R2150:2150 _parent_instance_translation <> c:16 var
+R2153:2170 SignatureInstances <> instance_translate def
+R2172:2172 _parent_instance_translation <> b:15 var
+R2197:2200 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2192:2192 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2194:2194 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2196:2196 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2193:2193 _parent_instance_translation <> c:13 var
+R2195:2195 _parent_instance_translation <> b:14 var
+R2201:2203 Corelib.Lists.ListDef <> map def
+R2211:2211 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2213:2213 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2215:2215 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 2214:2214 <> b:18
+binder 2212:2212 <> c:19
+binder 2211:2215 <> pat:20
+R2220:2220 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2241:2242 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2263:2263 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2221:2238 SignatureInstances <> instance_translate def
+R2240:2240 _parent_instance_translation <> c:19 var
+R2243:2260 SignatureInstances <> instance_translate def
+R2262:2262 _parent_instance_translation <> b:18 var
+R2081:2098 SignatureInstances <> instance_translate def
+R2058:2075 SignatureInstances <> instance_translate def
+R2321:2331 Progress <> fs_case_br1 constr
+R2351:2361 Progress <> fs_case_br2 constr
+R2031:2037 _luna_instance_conversion <> ic_map2 thm
+binder 2044:2044 <> c:21
+binder 2046:2046 <> b:22
+R2051:2055 TypeRules <> TCase constr
+R2179:2191 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2111:2113 Corelib.Lists.ListDef <> map def
+R2121:2121 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2123:2123 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2125:2125 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 2124:2124 <> b:23
+binder 2122:2122 <> c:24
+binder 2121:2125 <> pat:25
+R2130:2130 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2151:2152 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2173:2173 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2131:2148 SignatureInstances <> instance_translate def
+R2150:2150 _parent_instance_translation <> c:24 var
+R2153:2170 SignatureInstances <> instance_translate def
+R2172:2172 _parent_instance_translation <> b:23 var
+R2197:2200 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2192:2192 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2194:2194 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2196:2196 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2193:2193 _parent_instance_translation <> c:21 var
+R2195:2195 _parent_instance_translation <> b:22 var
+R2201:2203 Corelib.Lists.ListDef <> map def
+R2211:2211 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2213:2213 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2215:2215 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 2214:2214 <> b:26
+binder 2212:2212 <> c:27
+binder 2211:2215 <> pat:28
+R2220:2220 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2241:2242 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2263:2263 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2221:2238 SignatureInstances <> instance_translate def
+R2240:2240 _parent_instance_translation <> c:27 var
+R2243:2260 SignatureInstances <> instance_translate def
+R2262:2262 _parent_instance_translation <> b:26 var
+R2081:2098 SignatureInstances <> instance_translate def
+R2058:2075 SignatureInstances <> instance_translate def
+R2321:2331 Progress <> fs_case_br1 constr
+R2321:2331 Progress <> fs_case_br1 constr
+R2351:2361 Progress <> fs_case_br2 constr
+R2321:2331 Progress <> fs_case_br1 constr
+R2351:2361 Progress <> fs_case_br2 constr
+R2321:2331 Progress <> fs_case_br1 constr
+R2351:2361 Progress <> fs_case_br2 constr
+R2389:2395 _parent_instance_pruning <> pt_case constr
+R2408:2422 _parent_instance_pruning <> prune_term_refl thm
+R2389:2395 _parent_instance_pruning <> pt_case constr
+R2408:2422 _parent_instance_pruning <> prune_term_refl thm
+R2408:2422 _parent_instance_pruning <> prune_term_refl thm
+R2408:2422 _parent_instance_pruning <> prune_term_refl thm
+R2437:2454 _luna_instance_step_prune <> prune_branches_app thm
+R2464:2482 _parent_instance_pruning <> prune_branches_refl thm
+R2437:2454 _luna_instance_step_prune <> prune_branches_app thm
+R2464:2482 _parent_instance_pruning <> prune_branches_refl thm
+R2530:2544 _parent_instance_pruning <> prune_term_refl thm
+R2552:2570 _parent_instance_pruning <> prune_branches_refl thm
+R2530:2544 _parent_instance_pruning <> prune_term_refl thm
+R2530:2544 _parent_instance_pruning <> prune_term_refl thm
+R2552:2570 _parent_instance_pruning <> prune_branches_refl thm
+R2586:2592 _parent_instance_pruning <> pt_case constr
+R2605:2619 _parent_instance_pruning <> prune_term_refl thm
+R2586:2592 _parent_instance_pruning <> pt_case constr
+R2605:2619 _parent_instance_pruning <> prune_term_refl thm
+R2605:2619 _parent_instance_pruning <> prune_term_refl thm
+R2605:2619 _parent_instance_pruning <> prune_term_refl thm
+R2634:2651 _luna_instance_step_prune <> prune_branches_app thm
+R2661:2679 _parent_instance_pruning <> prune_branches_refl thm
+R2634:2651 _luna_instance_step_prune <> prune_branches_app thm
+R2661:2679 _parent_instance_pruning <> prune_branches_refl thm
+R2727:2741 _parent_instance_pruning <> prune_term_refl thm
+R2749:2767 _parent_instance_pruning <> prune_branches_refl thm
+R2727:2741 _parent_instance_pruning <> prune_term_refl thm
+R2727:2741 _parent_instance_pruning <> prune_term_refl thm
+R2749:2767 _parent_instance_pruning <> prune_branches_refl thm
+R2794:2823 _parent_instance_translation <> instance_translate_conv_parent thm

@@ -1,0 +1,352 @@
+DIGEST 0669708a60b09ac758e75ec0536602a6
+F_parent_muapp_sort_from_pi_sort
+R153:160 Progress <> <> lib
+R162:179 _work_conv_whd_pos <> <> lib
+R181:202 _glm_muapp_sort_origin <> <> lib
+R206:226 _glm_muapp_sort_close <> <> lib
+R228:250 _glm_muapp_sort_from_pi <> <> lib
+R254:282 _parent_phi_erase_sort_direct <> <> lib
+R312:315 Stdlib.Lists.List <> <> lib
+R317:319 Stdlib.micromega.Lia <> <> lib
+R321:328 Stdlib.Arith.PeanoNat <> <> lib
+R338:350 Stdlib.Lists.List ListNotations <> mod
+R352:360 TypeRules <> <> mod
+prf 370:409 <> pi_cod_sort_inv_intro_specialized_parent
+R456:463 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R417:455 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_compatible_parent def
+binder 471:472 <> A0:1
+binder 474:475 <> B0:2
+binder 477:477 <> j:3
+R503:506 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R486:489 TypeRules <> conv ind
+R495:499 TypeRules <> TSort constr
+R501:501 _parent_muapp_sort_from_pi_sort <> j:3 var
+R491:492 _parent_muapp_sort_from_pi_sort <> B0:2 var
+R507:525 _glm_muapp_sort_close <> pi_cod_sort_inv_glm def
+R528:530 TypeRules <> TPi constr
+R535:536 _parent_muapp_sort_from_pi_sort <> B0:2 var
+R532:533 _parent_muapp_sort_from_pi_sort <> A0:1 var
+R629:636 TypeRules <> cv_trans constr
+R629:636 TypeRules <> cv_trans constr
+R649:653 TypeRules <> cv_pi constr
+R663:669 TypeRules <> cv_refl constr
+R679:684 TypeRules <> cv_sym constr
+R649:653 TypeRules <> cv_pi constr
+R663:669 TypeRules <> cv_refl constr
+R679:684 TypeRules <> cv_sym constr
+prf 725:762 <> sub_pi_cod_sort_inv_specialized_parent
+R809:816 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R770:808 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_compatible_parent def
+binder 824:824 <> G:4
+binder 826:826 <> X:5
+binder 828:828 <> Y:6
+R846:849 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R837:839 TypeRules <> sub ind
+R845:845 _parent_muapp_sort_from_pi_sort <> Y:6 var
+R843:843 _parent_muapp_sort_from_pi_sort <> X:5 var
+R841:841 _parent_muapp_sort_from_pi_sort <> G:4 var
+R871:874 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R850:868 _glm_muapp_sort_close <> pi_cod_sort_inv_glm def
+R870:870 _parent_muapp_sort_from_pi_sort <> X:5 var
+R875:893 _glm_muapp_sort_close <> pi_cod_sort_inv_glm def
+R895:895 _parent_muapp_sort_from_pi_sort <> Y:6 var
+R1000:1007 TypeRules <> cv_trans constr
+R1000:1007 TypeRules <> cv_trans constr
+R1088:1109 _glm_muapp_sort_origin <> glm_conv_sort_pi_l_glm thm
+R1088:1109 _glm_muapp_sort_origin <> glm_conv_sort_pi_l_glm thm
+R1136:1162 _glm_muapp_sort_close <> pi_cod_sort_inv_pi_elim_glm thm
+R1136:1162 _glm_muapp_sort_close <> pi_cod_sort_inv_pi_elim_glm thm
+R1199:1226 _glm_muapp_sort_origin <> glm_sub_sort_source_conv_glm thm
+R1199:1226 _glm_muapp_sort_origin <> glm_sub_sort_source_conv_glm thm
+R1277:1316 _parent_muapp_sort_from_pi_sort <> pi_cod_sort_inv_intro_specialized_parent thm
+R1277:1316 _parent_muapp_sort_from_pi_sort <> pi_cod_sort_inv_intro_specialized_parent thm
+R1367:1392 _glm_muapp_sort_close <> glm_conv_carrierapp_pi_glm thm
+R1367:1392 _glm_muapp_sort_close <> glm_conv_carrierapp_pi_glm thm
+R1440:1461 _glm_muapp_sort_close <> glm_conv_musapp_pi_glm thm
+R1440:1461 _glm_muapp_sort_close <> glm_conv_musapp_pi_glm thm
+prf 1486:1524 <> sub_pisort0_cod_sort_specialized_parent
+R1571:1578 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1532:1570 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_compatible_parent def
+binder 1586:1586 <> G:7
+binder 1588:1589 <> IT:8
+binder 1591:1591 <> A:9
+binder 1593:1593 <> B:10
+R1636:1645 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1602:1604 TypeRules <> sub ind
+R1628:1630 TypeRules <> TPi constr
+R1634:1634 _parent_muapp_sort_from_pi_sort <> B:10 var
+R1632:1632 _parent_muapp_sort_from_pi_sort <> A:9 var
+R1609:1611 TypeRules <> TPi constr
+R1617:1621 TypeRules <> TSort constr
+R1613:1614 _parent_muapp_sort_from_pi_sort <> IT:8 var
+R1606:1606 _parent_muapp_sort_from_pi_sort <> G:7 var
+R1646:1652 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1654:1655 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1653:1653 <> j:11
+R1656:1659 TypeRules <> conv ind
+R1664:1668 TypeRules <> TSort constr
+R1670:1670 _parent_muapp_sort_from_pi_sort <> j:11 var
+R1661:1661 _parent_muapp_sort_from_pi_sort <> B:10 var
+R1721:1747 _glm_muapp_sort_close <> pi_cod_sort_inv_pi_elim_glm thm
+R1721:1747 _glm_muapp_sort_close <> pi_cod_sort_inv_pi_elim_glm thm
+R1759:1796 _parent_muapp_sort_from_pi_sort <> sub_pi_cod_sort_inv_specialized_parent thm
+R1759:1796 _parent_muapp_sort_from_pi_sort <> sub_pi_cod_sort_inv_specialized_parent thm
+R1843:1882 _parent_muapp_sort_from_pi_sort <> pi_cod_sort_inv_intro_specialized_parent thm
+R1911:1917 TypeRules <> cv_refl constr
+R1843:1882 _parent_muapp_sort_from_pi_sort <> pi_cod_sort_inv_intro_specialized_parent thm
+R1911:1917 TypeRules <> cv_refl constr
+prf 1933:1966 <> ao_chk_mui_sort_specialized_parent
+R2013:2020 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1974:2012 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_compatible_parent def
+binder 2028:2028 <> R:12
+binder 2030:2030 <> a:13
+binder 2032:2032 <> A:14
+binder 2034:2034 <> B:15
+binder 2036:2036 <> k:16
+binder 2038:2038 <> T:17
+binder 2040:2040 <> U:18
+binder 2042:2042 <> h:19
+R2079:2082 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2051:2055 TypeRules <> check ind
+R2071:2075 TypeRules <> TSort constr
+R2077:2077 _parent_muapp_sort_from_pi_sort <> k:16 var
+R2061:2063 TypeRules <> TPi constr
+R2067:2067 _parent_muapp_sort_from_pi_sort <> B:15 var
+R2065:2065 _parent_muapp_sort_from_pi_sort <> A:14 var
+R2057:2058 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2110:2119 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2083:2087 TypeRules <> check ind
+R2102:2104 TypeRules <> TPi constr
+R2108:2108 _parent_muapp_sort_from_pi_sort <> B:15 var
+R2106:2106 _parent_muapp_sort_from_pi_sort <> A:14 var
+R2093:2096 TypeRules <> TMuI constr
+R2098:2098 _parent_muapp_sort_from_pi_sort <> R:12 var
+R2089:2090 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2132:2135 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2120:2124 TypeRules <> check ind
+R2131:2131 _parent_muapp_sort_from_pi_sort <> A:14 var
+R2129:2129 _parent_muapp_sort_from_pi_sort <> a:13 var
+R2126:2127 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2158:2167 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2136:2138 TypeRules <> sub ind
+R2157:2157 _parent_muapp_sort_from_pi_sort <> T:17 var
+R2144:2148 TypeRules <> subst def
+R2154:2154 _parent_muapp_sort_from_pi_sort <> B:15 var
+R2150:2150 _parent_muapp_sort_from_pi_sort <> a:13 var
+R2140:2141 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2176:2179 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2168:2171 TypeRules <> conv ind
+R2175:2175 _parent_muapp_sort_from_pi_sort <> U:18 var
+R2173:2173 _parent_muapp_sort_from_pi_sort <> T:17 var
+R2187:2190 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2180:2182 Progress <> whd def
+R2184:2184 _parent_muapp_sort_from_pi_sort <> U:18 var
+R2186:2186 _parent_muapp_sort_from_pi_sort <> h:19 var
+R2192:2194 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2191:2191 _parent_muapp_sort_from_pi_sort <> h:19 var
+R2195:2199 Progress <> HSort constr
+R2274:2292 _glm_muapp_sort_origin <> check_mui_synth_glm thm
+R2294:2295 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2298:2301 TypeRules <> TMuI constr
+R2307:2309 TypeRules <> TPi constr
+R2321:2327 Corelib.Init.Logic <> eq_refl constr
+R2274:2292 _glm_muapp_sort_origin <> check_mui_synth_glm thm
+R2294:2295 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2298:2301 TypeRules <> TMuI constr
+R2307:2309 TypeRules <> TPi constr
+R2321:2327 Corelib.Init.Logic <> eq_refl constr
+R2370:2376 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2378:2379 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2377:2377 <> j:20
+R2380:2383 TypeRules <> conv ind
+R2400:2404 TypeRules <> TSort constr
+R2406:2406 _parent_muapp_sort_from_pi_sort <> j:20 var
+R2386:2390 TypeRules <> subst def
+R2370:2376 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2378:2379 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2377:2377 <> j:21
+R2380:2383 TypeRules <> conv ind
+R2400:2404 TypeRules <> TSort constr
+R2406:2406 _parent_muapp_sort_from_pi_sort <> j:21 var
+R2386:2390 TypeRules <> subst def
+R2469:2490 _glm_muapp_sort_from_pi <> subst0_sort_target_glm thm
+R2469:2490 _glm_muapp_sort_from_pi <> subst0_sort_target_glm thm
+R2545:2583 _parent_muapp_sort_from_pi_sort <> sub_pisort0_cod_sort_specialized_parent thm
+R2600:2601 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2545:2583 _parent_muapp_sort_from_pi_sort <> sub_pisort0_cod_sort_specialized_parent thm
+R2600:2601 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2649:2670 _glm_muapp_sort_from_pi <> subst0_sort_target_glm thm
+R2649:2670 _glm_muapp_sort_from_pi <> subst0_sort_target_glm thm
+R2694:2708 _glm_muapp_sort_origin <> ao_chk_sort_glm thm
+R2694:2708 _glm_muapp_sort_origin <> ao_chk_sort_glm thm
+prf 2736:2769 <> ao_chk_mus_sort_specialized_parent
+R2816:2823 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2777:2815 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_compatible_parent def
+binder 2831:2832 <> Sf:22
+binder 2834:2834 <> a:23
+binder 2836:2836 <> A:24
+binder 2838:2838 <> B:25
+binder 2840:2840 <> k:26
+binder 2842:2842 <> T:27
+binder 2844:2844 <> U:28
+binder 2846:2846 <> h:29
+R2883:2886 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2855:2859 TypeRules <> check ind
+R2875:2879 TypeRules <> TSort constr
+R2881:2881 _parent_muapp_sort_from_pi_sort <> k:26 var
+R2865:2867 TypeRules <> TPi constr
+R2871:2871 _parent_muapp_sort_from_pi_sort <> B:25 var
+R2869:2869 _parent_muapp_sort_from_pi_sort <> A:24 var
+R2861:2862 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2915:2924 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2887:2891 TypeRules <> check ind
+R2907:2909 TypeRules <> TPi constr
+R2913:2913 _parent_muapp_sort_from_pi_sort <> B:25 var
+R2911:2911 _parent_muapp_sort_from_pi_sort <> A:24 var
+R2897:2900 TypeRules <> TMuS constr
+R2902:2903 _parent_muapp_sort_from_pi_sort <> Sf:22 var
+R2893:2894 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2937:2940 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2925:2929 TypeRules <> check ind
+R2936:2936 _parent_muapp_sort_from_pi_sort <> A:24 var
+R2934:2934 _parent_muapp_sort_from_pi_sort <> a:23 var
+R2931:2932 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2963:2972 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2941:2943 TypeRules <> sub ind
+R2962:2962 _parent_muapp_sort_from_pi_sort <> T:27 var
+R2949:2953 TypeRules <> subst def
+R2959:2959 _parent_muapp_sort_from_pi_sort <> B:25 var
+R2955:2955 _parent_muapp_sort_from_pi_sort <> a:23 var
+R2945:2946 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2981:2984 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2973:2976 TypeRules <> conv ind
+R2980:2980 _parent_muapp_sort_from_pi_sort <> U:28 var
+R2978:2978 _parent_muapp_sort_from_pi_sort <> T:27 var
+R2992:2995 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2985:2987 Progress <> whd def
+R2989:2989 _parent_muapp_sort_from_pi_sort <> U:28 var
+R2991:2991 _parent_muapp_sort_from_pi_sort <> h:29 var
+R2997:2999 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2996:2996 _parent_muapp_sort_from_pi_sort <> h:29 var
+R3000:3004 Progress <> HSort constr
+R3080:3098 _glm_muapp_sort_origin <> check_mus_synth_glm thm
+R3100:3101 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3104:3107 TypeRules <> TMuS constr
+R3114:3116 TypeRules <> TPi constr
+R3129:3135 Corelib.Init.Logic <> eq_refl constr
+R3080:3098 _glm_muapp_sort_origin <> check_mus_synth_glm thm
+R3100:3101 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3104:3107 TypeRules <> TMuS constr
+R3114:3116 TypeRules <> TPi constr
+R3129:3135 Corelib.Init.Logic <> eq_refl constr
+R3178:3184 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3186:3187 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3185:3185 <> j:30
+R3188:3191 TypeRules <> conv ind
+R3208:3212 TypeRules <> TSort constr
+R3214:3214 _parent_muapp_sort_from_pi_sort <> j:30 var
+R3194:3198 TypeRules <> subst def
+R3178:3184 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3186:3187 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3185:3185 <> j:31
+R3188:3191 TypeRules <> conv ind
+R3208:3212 TypeRules <> TSort constr
+R3214:3214 _parent_muapp_sort_from_pi_sort <> j:31 var
+R3194:3198 TypeRules <> subst def
+R3277:3298 _glm_muapp_sort_from_pi <> subst0_sort_target_glm thm
+R3277:3298 _glm_muapp_sort_from_pi <> subst0_sort_target_glm thm
+R3353:3391 _parent_muapp_sort_from_pi_sort <> sub_pisort0_cod_sort_specialized_parent thm
+R3408:3409 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3353:3391 _parent_muapp_sort_from_pi_sort <> sub_pisort0_cod_sort_specialized_parent thm
+R3408:3409 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3457:3478 _glm_muapp_sort_from_pi <> subst0_sort_target_glm thm
+R3457:3478 _glm_muapp_sort_from_pi <> subst0_sort_target_glm thm
+R3502:3516 _glm_muapp_sort_origin <> ao_chk_sort_glm thm
+R3502:3516 _glm_muapp_sort_origin <> ao_chk_sort_glm thm
+prf 3546:3575 <> muapp_sort_from_pi_sort_parent
+R3622:3629 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3583:3621 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_compatible_parent def
+binder 3637:3637 <> f:32
+binder 3639:3639 <> a:33
+binder 3641:3641 <> T:34
+binder 3643:3643 <> U:35
+binder 3645:3645 <> h:36
+R3675:3678 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3654:3658 TypeRules <> check ind
+R3674:3674 _parent_muapp_sort_from_pi_sort <> T:34 var
+R3664:3667 TypeRules <> TApp constr
+R3671:3671 _parent_muapp_sort_from_pi_sort <> a:33 var
+R3669:3669 _parent_muapp_sort_from_pi_sort <> f:32 var
+R3660:3661 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3695:3704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3679:3683 TypeRules <> value ind
+R3686:3689 TypeRules <> TApp constr
+R3693:3693 _parent_muapp_sort_from_pi_sort <> a:33 var
+R3691:3691 _parent_muapp_sort_from_pi_sort <> f:32 var
+R3713:3716 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3705:3708 TypeRules <> conv ind
+R3712:3712 _parent_muapp_sort_from_pi_sort <> U:35 var
+R3710:3710 _parent_muapp_sort_from_pi_sort <> T:34 var
+R3724:3727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3717:3719 Progress <> whd def
+R3721:3721 _parent_muapp_sort_from_pi_sort <> U:35 var
+R3723:3723 _parent_muapp_sort_from_pi_sort <> h:36 var
+R3729:3731 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3728:3728 _parent_muapp_sort_from_pi_sort <> h:36 var
+R3732:3736 Progress <> HSort constr
+R3799:3814 Progress <> check_app_origin thm
+R3816:3817 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3820:3823 TypeRules <> TApp constr
+R3837:3843 Corelib.Init.Logic <> eq_refl constr
+R3849:3855 Corelib.Init.Logic <> eq_refl constr
+R3799:3814 Progress <> check_app_origin thm
+R3816:3817 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3820:3823 TypeRules <> TApp constr
+R3837:3843 Corelib.Init.Logic <> eq_refl constr
+R3849:3855 Corelib.Init.Logic <> eq_refl constr
+R3893:3917 _glm_muapp_sort_origin <> app_origin_sort_split_glm thm
+R3893:3917 _glm_muapp_sort_origin <> app_origin_sort_split_glm thm
+R4042:4061 _glm_muapp_sort_close <> value_app_mu_inv_glm thm
+R4042:4061 _glm_muapp_sort_close <> value_app_mu_inv_glm thm
+R4134:4167 _parent_muapp_sort_from_pi_sort <> ao_chk_mui_sort_specialized_parent thm
+R4134:4167 _parent_muapp_sort_from_pi_sort <> ao_chk_mui_sort_specialized_parent thm
+R4221:4254 _parent_muapp_sort_from_pi_sort <> ao_chk_mus_sort_specialized_parent thm
+R4221:4254 _parent_muapp_sort_from_pi_sort <> ao_chk_mus_sort_specialized_parent thm
+prf 4286:4325 <> muapp_sort_from_phi_sort_endpoint_parent
+R4371:4378 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4333:4370 _parent_phi_erase_sort_direct <> phi_erase_sort_endpoint_reflect_parent def
+binder 4386:4386 <> f:37
+binder 4388:4388 <> a:38
+binder 4390:4390 <> T:39
+binder 4392:4392 <> U:40
+binder 4394:4394 <> h:41
+R4424:4427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4403:4407 TypeRules <> check ind
+R4423:4423 _parent_muapp_sort_from_pi_sort <> T:39 var
+R4413:4416 TypeRules <> TApp constr
+R4420:4420 _parent_muapp_sort_from_pi_sort <> a:38 var
+R4418:4418 _parent_muapp_sort_from_pi_sort <> f:37 var
+R4409:4410 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R4444:4453 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4428:4432 TypeRules <> value ind
+R4435:4438 TypeRules <> TApp constr
+R4442:4442 _parent_muapp_sort_from_pi_sort <> a:38 var
+R4440:4440 _parent_muapp_sort_from_pi_sort <> f:37 var
+R4462:4465 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4454:4457 TypeRules <> conv ind
+R4461:4461 _parent_muapp_sort_from_pi_sort <> U:40 var
+R4459:4459 _parent_muapp_sort_from_pi_sort <> T:39 var
+R4473:4476 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4466:4468 Progress <> whd def
+R4470:4470 _parent_muapp_sort_from_pi_sort <> U:40 var
+R4472:4472 _parent_muapp_sort_from_pi_sort <> h:41 var
+R4478:4480 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4477:4477 _parent_muapp_sort_from_pi_sort <> h:41 var
+R4481:4485 Progress <> HSort constr
+R4515:4544 _parent_muapp_sort_from_pi_sort <> muapp_sort_from_pi_sort_parent thm
+R4515:4544 _parent_muapp_sort_from_pi_sort <> muapp_sort_from_pi_sort_parent thm
+R4556:4599 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_from_phi_direct_parent thm
+R4556:4599 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_from_phi_direct_parent thm
+R4631:4668 _parent_muapp_sort_from_pi_sort <> sub_pi_cod_sort_inv_specialized_parent thm
+R4689:4718 _parent_muapp_sort_from_pi_sort <> muapp_sort_from_pi_sort_parent thm
+R4739:4778 _parent_muapp_sort_from_pi_sort <> muapp_sort_from_phi_sort_endpoint_parent thm

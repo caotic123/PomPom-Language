@@ -1,0 +1,295 @@
+DIGEST 2bc3265cfea4946e25d5e255dce8e260
+F_parent_cstep_standardize_counterexample
+R88:95 Progress <> <> lib
+R97:107 _tmp_epstep <> <> lib
+R109:127 _work_mixed_closure <> <> lib
+R131:158 _glm_phi_erase_sort_pipeline <> <> lib
+R160:179 _tmp_pstep_var_rigid <> <> lib
+R183:205 _parent_inert_cstep_inv <> <> lib
+R235:238 Stdlib.Lists.List <> <> lib
+R248:260 Stdlib.Lists.List ListNotations <> mod
+R262:270 TypeRules <> <> mod
+def 285:299 <> std_pair_parent
+R303:306 TypeRules <> term ind
+R311:315 TypeRules <> TPair constr
+R324:328 TypeRules <> TSort constr
+R317:321 TypeRules <> TUnit constr
+def 345:358 <> std_lam_parent
+R362:365 TypeRules <> term ind
+R372:375 TypeRules <> TLam constr
+R378:381 TypeRules <> TApp constr
+R400:403 TypeRules <> TVar constr
+R383:397 _parent_cstep_standardize_counterexample <> std_pair_parent def
+def 421:437 <> std_source_parent
+R441:444 TypeRules <> term ind
+R449:452 TypeRules <> TSnd constr
+R454:467 _parent_cstep_standardize_counterexample <> std_lam_parent def
+prf 477:494 <> std_lam_eta_parent
+R498:503 _tmp_epstep <> epstep ind
+R505:518 _parent_cstep_standardize_counterexample <> std_lam_parent def
+R520:534 _parent_cstep_standardize_counterexample <> std_pair_parent def
+R553:566 _parent_cstep_standardize_counterexample <> std_lam_parent def
+R569:583 _parent_cstep_standardize_counterexample <> std_pair_parent def
+R596:601 _tmp_epstep <> epstep ind
+R608:611 TypeRules <> TLam constr
+R614:617 TypeRules <> TApp constr
+R655:658 TypeRules <> TVar constr
+R620:623 TypeRules <> lift def
+R630:634 TypeRules <> TPair constr
+R643:647 TypeRules <> TSort constr
+R636:640 TypeRules <> TUnit constr
+R670:674 TypeRules <> TPair constr
+R683:687 TypeRules <> TSort constr
+R676:680 TypeRules <> TUnit constr
+R596:601 _tmp_epstep <> epstep ind
+R608:611 TypeRules <> TLam constr
+R614:617 TypeRules <> TApp constr
+R655:658 TypeRules <> TVar constr
+R620:623 TypeRules <> lift def
+R630:634 TypeRules <> TPair constr
+R643:647 TypeRules <> TSort constr
+R636:640 TypeRules <> TUnit constr
+R670:674 TypeRules <> TPair constr
+R683:687 TypeRules <> TSort constr
+R676:680 TypeRules <> TUnit constr
+R703:709 _tmp_epstep <> eps_eta constr
+R712:722 _tmp_epstep <> epstep_refl thm
+R703:709 _tmp_epstep <> eps_eta constr
+R712:722 _tmp_epstep <> epstep_refl thm
+prf 737:757 <> std_source_eta_parent
+R765:770 _tmp_epstep <> epstep ind
+R772:788 _parent_cstep_standardize_counterexample <> std_source_parent def
+R791:794 TypeRules <> TSnd constr
+R796:810 _parent_cstep_standardize_counterexample <> std_pair_parent def
+R830:846 _parent_cstep_standardize_counterexample <> std_source_parent def
+R855:861 _tmp_epstep <> eps_snd constr
+R864:881 _parent_cstep_standardize_counterexample <> std_lam_eta_parent thm
+R855:861 _tmp_epstep <> eps_snd constr
+R864:881 _parent_cstep_standardize_counterexample <> std_lam_eta_parent thm
+prf 896:919 <> std_snd_pair_core_parent
+R927:931 Progress <> pstep ind
+R934:937 TypeRules <> TSnd constr
+R939:953 _parent_cstep_standardize_counterexample <> std_pair_parent def
+R957:961 TypeRules <> TSort constr
+R983:997 _parent_cstep_standardize_counterexample <> std_pair_parent def
+R1009:1019 Progress <> ps_snd_pair constr
+R1021:1025 TypeRules <> TUnit constr
+R1027:1031 TypeRules <> TUnit constr
+R1034:1038 TypeRules <> TSort constr
+R1044:1048 TypeRules <> TSort constr
+R1058:1067 Progress <> pstep_refl thm
+R1069:1073 TypeRules <> TUnit constr
+R1077:1086 Progress <> pstep_refl thm
+R1089:1093 TypeRules <> TSort constr
+R1009:1019 Progress <> ps_snd_pair constr
+R1021:1025 TypeRules <> TUnit constr
+R1027:1031 TypeRules <> TUnit constr
+R1034:1038 TypeRules <> TSort constr
+R1044:1048 TypeRules <> TSort constr
+R1058:1067 Progress <> pstep_refl thm
+R1069:1073 TypeRules <> TUnit constr
+R1077:1086 Progress <> pstep_refl thm
+R1089:1093 TypeRules <> TSort constr
+prf 1113:1142 <> std_source_reaches_sort_parent
+R1150:1152 Progress <> rtc ind
+R1179:1183 TypeRules <> TSort constr
+R1160:1176 _parent_cstep_standardize_counterexample <> std_source_parent def
+R1154:1158 _work_mixed_closure <> cstep ind
+R1205:1212 Progress <> rtc_step constr
+R1205:1212 Progress <> rtc_step constr
+R1225:1236 _work_mixed_closure <> epstep_cstep thm
+R1239:1259 _parent_cstep_standardize_counterexample <> std_source_eta_parent thm
+R1225:1236 _work_mixed_closure <> epstep_cstep thm
+R1239:1259 _parent_cstep_standardize_counterexample <> std_source_eta_parent thm
+R1273:1280 Progress <> rtc_step constr
+R1273:1280 Progress <> rtc_step constr
+R1295:1305 _work_mixed_closure <> pstep_cstep thm
+R1308:1331 _parent_cstep_standardize_counterexample <> std_snd_pair_core_parent thm
+R1295:1305 _work_mixed_closure <> pstep_cstep thm
+R1308:1331 _parent_cstep_standardize_counterexample <> std_snd_pair_core_parent thm
+R1346:1353 Progress <> rtc_refl constr
+R1346:1353 Progress <> rtc_refl constr
+prf 1368:1391 <> pstep_unit_id_one_parent
+binder 1402:1402 <> u:1
+R1422:1425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1409:1413 Progress <> pstep ind
+R1415:1419 TypeRules <> TUnit constr
+R1421:1421 _parent_cstep_standardize_counterexample <> u:1 var
+R1427:1429 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1426:1426 _parent_cstep_standardize_counterexample <> u:1 var
+R1430:1434 TypeRules <> TUnit constr
+prf 1494:1517 <> pstep_sort_id_one_parent
+binder 1528:1528 <> k:2
+binder 1530:1530 <> u:3
+R1554:1557 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1537:1541 Progress <> pstep ind
+R1544:1548 TypeRules <> TSort constr
+R1550:1550 _parent_cstep_standardize_counterexample <> k:2 var
+R1553:1553 _parent_cstep_standardize_counterexample <> u:3 var
+R1559:1561 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1558:1558 _parent_cstep_standardize_counterexample <> u:3 var
+R1562:1566 TypeRules <> TSort constr
+R1568:1568 _parent_cstep_standardize_counterexample <> k:2 var
+prf 1630:1653 <> pstep_std_pair_id_parent
+binder 1664:1664 <> u:4
+R1694:1697 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1671:1675 Progress <> pstep ind
+R1677:1691 _parent_cstep_standardize_counterexample <> std_pair_parent def
+R1693:1693 _parent_cstep_standardize_counterexample <> u:4 var
+R1699:1701 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1698:1698 _parent_cstep_standardize_counterexample <> u:4 var
+R1702:1716 _parent_cstep_standardize_counterexample <> std_pair_parent def
+R1752:1772 _parent_inert_cstep_inv <> pstep_pair_inv_parent thm
+R1752:1772 _parent_inert_cstep_inv <> pstep_pair_inv_parent thm
+R1821:1844 _parent_cstep_standardize_counterexample <> pstep_unit_id_one_parent thm
+R1821:1844 _parent_cstep_standardize_counterexample <> pstep_unit_id_one_parent thm
+R1821:1844 _parent_cstep_standardize_counterexample <> pstep_unit_id_one_parent thm
+R1864:1887 _parent_cstep_standardize_counterexample <> pstep_sort_id_one_parent thm
+R1864:1887 _parent_cstep_standardize_counterexample <> pstep_sort_id_one_parent thm
+R1864:1887 _parent_cstep_standardize_counterexample <> pstep_sort_id_one_parent thm
+prf 1923:1946 <> pstep_std_body_id_parent
+binder 1957:1957 <> u:5
+R2003:2010 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1964:1968 Progress <> pstep ind
+R1971:1974 TypeRules <> TApp constr
+R1993:1996 TypeRules <> TVar constr
+R1976:1990 _parent_cstep_standardize_counterexample <> std_pair_parent def
+R2002:2002 _parent_cstep_standardize_counterexample <> u:5 var
+R2012:2014 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2011:2011 _parent_cstep_standardize_counterexample <> u:5 var
+R2015:2018 TypeRules <> TApp constr
+R2037:2040 TypeRules <> TVar constr
+R2020:2034 _parent_cstep_standardize_counterexample <> std_pair_parent def
+R2098:2121 _parent_cstep_standardize_counterexample <> pstep_std_pair_id_parent thm
+R2098:2121 _parent_cstep_standardize_counterexample <> pstep_std_pair_id_parent thm
+R2098:2121 _parent_cstep_standardize_counterexample <> pstep_std_pair_id_parent thm
+R2141:2155 _tmp_pstep_var_rigid <> pstep_var_rigid thm
+R2141:2155 _tmp_pstep_var_rigid <> pstep_var_rigid thm
+R2141:2155 _tmp_pstep_var_rigid <> pstep_var_rigid thm
+prf 2191:2213 <> pstep_std_lam_id_parent
+binder 2224:2224 <> u:6
+R2253:2256 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2231:2235 Progress <> pstep ind
+R2237:2250 _parent_cstep_standardize_counterexample <> std_lam_parent def
+R2252:2252 _parent_cstep_standardize_counterexample <> u:6 var
+R2258:2260 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2257:2257 _parent_cstep_standardize_counterexample <> u:6 var
+R2261:2274 _parent_cstep_standardize_counterexample <> std_lam_parent def
+R2305:2318 _parent_cstep_standardize_counterexample <> std_lam_parent def
+R2359:2382 _parent_cstep_standardize_counterexample <> pstep_std_body_id_parent thm
+R2359:2382 _parent_cstep_standardize_counterexample <> pstep_std_body_id_parent thm
+R2359:2382 _parent_cstep_standardize_counterexample <> pstep_std_body_id_parent thm
+prf 2416:2441 <> pstep_std_source_id_parent
+binder 2452:2452 <> u:7
+R2484:2487 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2459:2463 Progress <> pstep ind
+R2465:2481 _parent_cstep_standardize_counterexample <> std_source_parent def
+R2483:2483 _parent_cstep_standardize_counterexample <> u:7 var
+R2489:2491 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2488:2488 _parent_cstep_standardize_counterexample <> u:7 var
+R2492:2508 _parent_cstep_standardize_counterexample <> std_source_parent def
+R2539:2555 _parent_cstep_standardize_counterexample <> std_source_parent def
+R2596:2618 _parent_cstep_standardize_counterexample <> pstep_std_lam_id_parent thm
+R2596:2618 _parent_cstep_standardize_counterexample <> pstep_std_lam_id_parent thm
+R2596:2618 _parent_cstep_standardize_counterexample <> pstep_std_lam_id_parent thm
+prf 2652:2681 <> rtc_pstep_std_source_id_parent
+binder 2692:2692 <> u:8
+R2728:2731 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2699:2701 Progress <> rtc ind
+R2727:2727 _parent_cstep_standardize_counterexample <> u:8 var
+R2709:2725 _parent_cstep_standardize_counterexample <> std_source_parent def
+R2703:2707 Progress <> pstep ind
+R2733:2735 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2732:2732 _parent_cstep_standardize_counterexample <> u:8 var
+R2736:2752 _parent_cstep_standardize_counterexample <> std_source_parent def
+R2785:2801 _parent_cstep_standardize_counterexample <> std_source_parent def
+R2785:2801 _parent_cstep_standardize_counterexample <> std_source_parent def
+R2869:2894 _parent_cstep_standardize_counterexample <> pstep_std_source_id_parent thm
+R2869:2894 _parent_cstep_standardize_counterexample <> pstep_std_source_id_parent thm
+prf 2957:2977 <> epstep_snd_inv_parent
+binder 2988:2988 <> p:9
+binder 2990:2990 <> u:10
+R3014:3017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2997:3002 _tmp_epstep <> epstep ind
+R3005:3008 TypeRules <> TSnd constr
+R3010:3010 _parent_cstep_standardize_counterexample <> p:9 var
+R3013:3013 _parent_cstep_standardize_counterexample <> u:10 var
+R3018:3024 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3027:3028 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3025:3026 <> p':11
+R3040:3043 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3030:3032 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3029:3029 _parent_cstep_standardize_counterexample <> u:10 var
+R3033:3036 TypeRules <> TSnd constr
+R3038:3039 _parent_cstep_standardize_counterexample <> p':11 var
+R3044:3049 _tmp_epstep <> epstep ind
+R3051:3051 _parent_cstep_standardize_counterexample <> p:9 var
+R3053:3054 _parent_cstep_standardize_counterexample <> p':11 var
+prf 3159:3183 <> rtc_epstep_snd_inv_parent
+binder 3194:3194 <> p:12
+binder 3196:3196 <> u:13
+R3224:3227 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3203:3205 Progress <> rtc ind
+R3223:3223 _parent_cstep_standardize_counterexample <> u:13 var
+R3215:3218 TypeRules <> TSnd constr
+R3220:3220 _parent_cstep_standardize_counterexample <> p:12 var
+R3207:3212 _tmp_epstep <> epstep ind
+R3228:3234 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3237:3238 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3235:3236 <> p':14
+R3240:3242 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3239:3239 _parent_cstep_standardize_counterexample <> u:13 var
+R3243:3246 TypeRules <> TSnd constr
+R3248:3249 _parent_cstep_standardize_counterexample <> p':14 var
+R3285:3288 TypeRules <> TSnd constr
+R3285:3288 TypeRules <> TSnd constr
+R3381:3401 _parent_cstep_standardize_counterexample <> epstep_snd_inv_parent thm
+R3381:3401 _parent_cstep_standardize_counterexample <> epstep_snd_inv_parent thm
+R3446:3452 Corelib.Init.Logic <> eq_refl constr
+R3446:3452 Corelib.Init.Logic <> eq_refl constr
+prf 3468:3500 <> no_epsteps_std_source_sort_parent
+binder 3511:3511 <> j:15
+R3518:3519 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R3520:3522 Progress <> rtc ind
+R3550:3554 TypeRules <> TSort constr
+R3556:3556 _parent_cstep_standardize_counterexample <> j:15 var
+R3531:3547 _parent_cstep_standardize_counterexample <> std_source_parent def
+R3524:3529 _tmp_epstep <> epstep ind
+R3588:3604 _parent_cstep_standardize_counterexample <> std_source_parent def
+R3624:3648 _parent_cstep_standardize_counterexample <> rtc_epstep_snd_inv_parent thm
+R3624:3648 _parent_cstep_standardize_counterexample <> rtc_epstep_snd_inv_parent thm
+prf 3704:3739 <> no_core_eta_factor_std_source_parent
+R3747:3748 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R3749:3755 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3757:3764 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3756:3756 <> y:16
+R3794:3797 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3765:3767 Progress <> rtc ind
+R3793:3793 _parent_cstep_standardize_counterexample <> y:16 var
+R3775:3791 _parent_cstep_standardize_counterexample <> std_source_parent def
+R3769:3773 Progress <> pstep ind
+R3798:3800 Progress <> rtc ind
+R3812:3816 TypeRules <> TSort constr
+R3809:3809 _parent_cstep_standardize_counterexample <> y:16 var
+R3802:3807 _tmp_epstep <> epstep ind
+R3867:3896 _parent_cstep_standardize_counterexample <> rtc_pstep_std_source_id_parent thm
+R3867:3896 _parent_cstep_standardize_counterexample <> rtc_pstep_std_source_id_parent thm
+R3867:3896 _parent_cstep_standardize_counterexample <> rtc_pstep_std_source_id_parent thm
+R3925:3957 _parent_cstep_standardize_counterexample <> no_epsteps_std_source_sort_parent thm
+R3925:3957 _parent_cstep_standardize_counterexample <> no_epsteps_std_source_sort_parent thm
+prf 3982:4020 <> cstep_sort_standardization_false_parent
+R4028:4029 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R4030:4059 _glm_phi_erase_sort_pipeline <> cstep_sort_standardization_glm def
+R4101:4117 _parent_cstep_standardize_counterexample <> std_source_parent def
+R4121:4150 _parent_cstep_standardize_counterexample <> std_source_reaches_sort_parent thm
+R4101:4117 _parent_cstep_standardize_counterexample <> std_source_parent def
+R4121:4150 _parent_cstep_standardize_counterexample <> std_source_reaches_sort_parent thm
+R4187:4222 _parent_cstep_standardize_counterexample <> no_core_eta_factor_std_source_parent thm
+R4229:4236 Corelib.Init.Logic <> ex_intro constr
+R4243:4246 Corelib.Init.Logic <> conj constr
+R4187:4222 _parent_cstep_standardize_counterexample <> no_core_eta_factor_std_source_parent thm
+R4229:4236 Corelib.Init.Logic <> ex_intro constr
+R4243:4246 Corelib.Init.Logic <> conj constr
+R4287:4316 _parent_cstep_standardize_counterexample <> std_source_reaches_sort_parent thm
+R4337:4372 _parent_cstep_standardize_counterexample <> no_core_eta_factor_std_source_parent thm
+R4393:4431 _parent_cstep_standardize_counterexample <> cstep_sort_standardization_false_parent thm

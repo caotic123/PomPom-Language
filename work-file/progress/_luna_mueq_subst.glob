@@ -1,4 +1,4 @@
-DIGEST 6effad2ae152cf968cdda2b4e042c3d9
+DIGEST 72e00ddcb81f40bc631ae553a926589a
 F_luna_mueq_subst
 R15:24 _luna_mueq <> <> lib
 R54:57 Stdlib.Lists.List <> <> lib
@@ -168,3 +168,117 @@ R1500:1507 _luna_mueq <> me_muapp constr
 R1500:1507 _luna_mueq <> me_muapp constr
 R1500:1507 _luna_mueq <> me_muapp constr
 R1563:1581 _luna_mueq_subst <> lift_mubeq_branches def
+R1641:1644 TypeRules <> conv ind
+R1669:1672 TypeRules <> TApp constr
+R1675:1678 TypeRules <> TMuS constr
+R1647:1650 TypeRules <> TApp constr
+R1653:1656 TypeRules <> TMuS constr
+R1641:1644 TypeRules <> conv ind
+R1669:1672 TypeRules <> TApp constr
+R1675:1678 TypeRules <> TMuS constr
+R1647:1650 TypeRules <> TApp constr
+R1653:1656 TypeRules <> TMuS constr
+R1697:1700 _luna_mueq <> mueq ind
+R1703:1706 TypeRules <> lift def
+R1715:1718 TypeRules <> TApp constr
+R1721:1724 TypeRules <> TMuS constr
+R1751:1754 TypeRules <> lift def
+R1763:1766 TypeRules <> TApp constr
+R1769:1772 TypeRules <> TMuS constr
+R1697:1700 _luna_mueq <> mueq ind
+R1703:1706 TypeRules <> lift def
+R1715:1718 TypeRules <> TApp constr
+R1721:1724 TypeRules <> TMuS constr
+R1751:1754 TypeRules <> lift def
+R1763:1766 TypeRules <> TApp constr
+R1769:1772 TypeRules <> TMuS constr
+R1802:1805 _luna_mueq <> mueq ind
+R1816:1819 TypeRules <> TApp constr
+R1843:1846 TypeRules <> lift def
+R1822:1825 TypeRules <> TMuS constr
+R1828:1831 TypeRules <> lift def
+R1866:1869 TypeRules <> TApp constr
+R1893:1896 TypeRules <> lift def
+R1872:1875 TypeRules <> TMuS constr
+R1878:1881 TypeRules <> lift def
+R1921:1928 _luna_mueq <> me_muapp constr
+R1802:1805 _luna_mueq <> mueq ind
+R1816:1819 TypeRules <> TApp constr
+R1843:1846 TypeRules <> lift def
+R1822:1825 TypeRules <> TMuS constr
+R1828:1831 TypeRules <> lift def
+R1866:1869 TypeRules <> TApp constr
+R1893:1896 TypeRules <> lift def
+R1872:1875 TypeRules <> TMuS constr
+R1878:1881 TypeRules <> lift def
+R1921:1928 _luna_mueq <> me_muapp constr
+prf 1980:1988 <> mueq_lift
+R2012:2017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1992:2011 _luna_mueq_subst <> conv_lift_compatible def
+binder 2025:2025 <> t:30
+binder 2027:2027 <> u:31
+R2038:2041 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2030:2033 _luna_mueq <> mueq ind
+R2035:2035 _luna_mueq_subst <> t:30 var
+R2037:2037 _luna_mueq_subst <> u:31 var
+binder 2049:2049 <> d:32
+binder 2051:2051 <> k:33
+R2058:2061 _luna_mueq <> mueq ind
+R2064:2067 TypeRules <> lift def
+R2073:2073 _luna_mueq_subst <> t:30 var
+R2071:2071 _luna_mueq_subst <> k:33 var
+R2069:2069 _luna_mueq_subst <> d:32 var
+R2077:2080 TypeRules <> lift def
+R2086:2086 _luna_mueq_subst <> u:31 var
+R2084:2084 _luna_mueq_subst <> k:33 var
+R2082:2082 _luna_mueq_subst <> d:32 var
+R2134:2138 Corelib.Init.Logic <> proj1 thm
+R2141:2153 _luna_mueq_subst <> mueq_lift_mut thm
+R2134:2138 Corelib.Init.Logic <> proj1 thm
+R2141:2153 _luna_mueq_subst <> mueq_lift_mut thm
+prf 2188:2197 <> mubeq_lift
+R2221:2226 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2201:2220 _luna_mueq_subst <> conv_lift_compatible def
+binder 2234:2235 <> bs:34
+binder 2237:2239 <> bs':35
+R2254:2257 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2242:2246 _luna_mueq <> mubeq ind
+R2248:2249 _luna_mueq_subst <> bs:34 var
+R2251:2253 _luna_mueq_subst <> bs':35 var
+binder 2265:2265 <> d:36
+binder 2267:2267 <> k:37
+R2274:2278 _luna_mueq <> mubeq ind
+R2281:2299 _luna_mueq_subst <> lift_mubeq_branches def
+R2301:2301 _luna_mueq_subst <> d:36 var
+R2303:2303 _luna_mueq_subst <> k:37 var
+R2305:2306 _luna_mueq_subst <> bs:34 var
+R2320:2338 _luna_mueq_subst <> lift_mubeq_branches def
+R2340:2340 _luna_mueq_subst <> d:36 var
+R2342:2342 _luna_mueq_subst <> k:37 var
+R2344:2346 _luna_mueq_subst <> bs':35 var
+R2397:2401 Corelib.Init.Logic <> proj2 thm
+R2404:2416 _luna_mueq_subst <> mueq_lift_mut thm
+R2397:2401 Corelib.Init.Logic <> proj2 thm
+R2404:2416 _luna_mueq_subst <> mueq_lift_mut thm
+prf 2454:2467 <> mueq_subst_var
+R2491:2496 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2471:2490 _luna_mueq_subst <> conv_lift_compatible def
+binder 2504:2504 <> n:38
+binder 2506:2506 <> u:39
+binder 2508:2509 <> u':40
+binder 2511:2511 <> k:41
+R2523:2530 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2514:2517 _luna_mueq <> mueq ind
+R2519:2519 _luna_mueq_subst <> u:39 var
+R2521:2522 _luna_mueq_subst <> u':40 var
+R2531:2534 _luna_mueq <> mueq ind
+R2537:2541 TypeRules <> subst def
+R2548:2551 TypeRules <> TVar constr
+R2553:2553 _luna_mueq_subst <> n:38 var
+R2545:2545 _luna_mueq_subst <> k:41 var
+R2543:2543 _luna_mueq_subst <> u:39 var
+R2558:2562 TypeRules <> subst def
+R2570:2573 TypeRules <> TVar constr
+R2575:2575 _luna_mueq_subst <> n:38 var
+R2567:2567 _luna_mueq_subst <> k:41 var
+R2564:2565 _luna_mueq_subst <> u':40 var

@@ -1,0 +1,253 @@
+DIGEST 6e8b568c3e676e0ab56ef5d37e5e258e
+F_luna_repair_sigma_join
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R65:77 Stdlib.Lists.List ListNotations <> mod
+R79:87 TypeRules <> <> mod
+R89:108 Progress _tmp_epstep <> mod
+R110:137 Progress _work_mixed_closure <> mod
+R141:160 Progress _work_cjoin <> mod
+R162:192 Progress _work_cstep_invariants <> mod
+prf 202:221 <> pstep_sigma_inv_luna
+binder 232:232 <> A:1
+binder 234:234 <> B:2
+binder 236:236 <> u:3
+R259:266 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R239:243 Progress <> pstep ind
+R246:251 TypeRules <> TSigma constr
+R255:255 _luna_repair_sigma_join <> B:2 var
+R253:253 _luna_repair_sigma_join <> A:1 var
+R258:258 _luna_repair_sigma_join <> u:3 var
+R267:273 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R279:280 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 274:275 <> A':4
+binder 277:278 <> B':5
+R297:300 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R282:284 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R281:281 _luna_repair_sigma_join <> u:3 var
+R285:290 TypeRules <> TSigma constr
+R295:296 _luna_repair_sigma_join <> B':5 var
+R292:293 _luna_repair_sigma_join <> A':4 var
+R311:314 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R301:305 Progress <> pstep ind
+R307:307 _luna_repair_sigma_join <> A:1 var
+R309:310 _luna_repair_sigma_join <> A':4 var
+R315:319 Progress <> pstep ind
+R321:321 _luna_repair_sigma_join <> B:2 var
+R323:324 _luna_repair_sigma_join <> B':5 var
+prf 389:412 <> rtc_pstep_sigma_inv_luna
+binder 423:423 <> A:6
+binder 425:425 <> B:7
+binder 427:427 <> u:8
+R454:461 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R430:432 Progress <> rtc ind
+R453:453 _luna_repair_sigma_join <> u:8 var
+R441:446 TypeRules <> TSigma constr
+R450:450 _luna_repair_sigma_join <> B:7 var
+R448:448 _luna_repair_sigma_join <> A:6 var
+R434:438 Progress <> pstep ind
+R462:468 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R474:475 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 469:470 <> A':9
+binder 472:473 <> B':10
+R492:501 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R477:479 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R476:476 _luna_repair_sigma_join <> u:8 var
+R480:485 TypeRules <> TSigma constr
+R490:491 _luna_repair_sigma_join <> B':10 var
+R487:488 _luna_repair_sigma_join <> A':9 var
+R516:519 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R502:504 Progress <> rtc ind
+R514:515 _luna_repair_sigma_join <> A':9 var
+R512:512 _luna_repair_sigma_join <> A:6 var
+R506:510 Progress <> pstep ind
+R520:522 Progress <> rtc ind
+R532:533 _luna_repair_sigma_join <> B':10 var
+R530:530 _luna_repair_sigma_join <> B:7 var
+R524:528 Progress <> pstep ind
+R571:576 TypeRules <> TSigma constr
+R571:576 TypeRules <> TSigma constr
+R685:692 Progress <> rtc_refl constr
+R685:692 Progress <> rtc_refl constr
+R685:692 Progress <> rtc_refl constr
+R709:728 _luna_repair_sigma_join <> pstep_sigma_inv_luna thm
+R709:728 _luna_repair_sigma_join <> pstep_sigma_inv_luna thm
+R800:806 Corelib.Init.Logic <> eq_refl constr
+R800:806 Corelib.Init.Logic <> eq_refl constr
+R889:896 Progress <> rtc_step constr
+R889:896 Progress <> rtc_step constr
+R889:896 Progress <> rtc_step constr
+prf 911:931 <> epstep_sigma_inv_luna
+binder 942:942 <> A:11
+binder 944:944 <> B:12
+binder 946:946 <> u:13
+R970:977 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R949:954 Progress _tmp_epstep epstep ind
+R957:962 TypeRules <> TSigma constr
+R966:966 _luna_repair_sigma_join <> B:12 var
+R964:964 _luna_repair_sigma_join <> A:11 var
+R969:969 _luna_repair_sigma_join <> u:13 var
+R978:984 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R990:991 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 985:986 <> A':14
+binder 988:989 <> B':15
+R1008:1011 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R993:995 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R992:992 _luna_repair_sigma_join <> u:13 var
+R996:1001 TypeRules <> TSigma constr
+R1006:1007 _luna_repair_sigma_join <> B':15 var
+R1003:1004 _luna_repair_sigma_join <> A':14 var
+R1023:1026 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1012:1017 Progress _tmp_epstep epstep ind
+R1019:1019 _luna_repair_sigma_join <> A:11 var
+R1021:1022 _luna_repair_sigma_join <> A':14 var
+R1027:1032 Progress _tmp_epstep epstep ind
+R1034:1034 _luna_repair_sigma_join <> B:12 var
+R1036:1037 _luna_repair_sigma_join <> B':15 var
+prf 1102:1126 <> rtc_epstep_sigma_inv_luna
+binder 1137:1137 <> A:16
+binder 1139:1139 <> B:17
+binder 1141:1141 <> u:18
+R1169:1176 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1144:1146 Progress <> rtc ind
+R1168:1168 _luna_repair_sigma_join <> u:18 var
+R1156:1161 TypeRules <> TSigma constr
+R1165:1165 _luna_repair_sigma_join <> B:17 var
+R1163:1163 _luna_repair_sigma_join <> A:16 var
+R1148:1153 Progress _tmp_epstep epstep ind
+R1177:1183 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1189:1190 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1184:1185 <> A':19
+binder 1187:1188 <> B':20
+R1207:1216 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1192:1194 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1191:1191 _luna_repair_sigma_join <> u:18 var
+R1195:1200 TypeRules <> TSigma constr
+R1205:1206 _luna_repair_sigma_join <> B':20 var
+R1202:1203 _luna_repair_sigma_join <> A':19 var
+R1232:1235 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1217:1219 Progress <> rtc ind
+R1230:1231 _luna_repair_sigma_join <> A':19 var
+R1228:1228 _luna_repair_sigma_join <> A:16 var
+R1221:1226 Progress _tmp_epstep epstep ind
+R1236:1238 Progress <> rtc ind
+R1249:1250 _luna_repair_sigma_join <> B':20 var
+R1247:1247 _luna_repair_sigma_join <> B:17 var
+R1240:1245 Progress _tmp_epstep epstep ind
+R1288:1293 TypeRules <> TSigma constr
+R1288:1293 TypeRules <> TSigma constr
+R1402:1409 Progress <> rtc_refl constr
+R1402:1409 Progress <> rtc_refl constr
+R1402:1409 Progress <> rtc_refl constr
+R1426:1446 _luna_repair_sigma_join <> epstep_sigma_inv_luna thm
+R1426:1446 _luna_repair_sigma_join <> epstep_sigma_inv_luna thm
+R1518:1524 Corelib.Init.Logic <> eq_refl constr
+R1518:1524 Corelib.Init.Logic <> eq_refl constr
+R1607:1614 Progress <> rtc_step constr
+R1607:1614 Progress <> rtc_step constr
+R1607:1614 Progress <> rtc_step constr
+prf 1629:1648 <> cstep_sigma_inv_luna
+binder 1659:1659 <> A:21
+binder 1661:1661 <> B:22
+binder 1663:1663 <> u:23
+R1686:1693 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1666:1670 Progress _work_mixed_closure cstep ind
+R1673:1678 TypeRules <> TSigma constr
+R1682:1682 _luna_repair_sigma_join <> B:22 var
+R1680:1680 _luna_repair_sigma_join <> A:21 var
+R1685:1685 _luna_repair_sigma_join <> u:23 var
+R1694:1700 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1706:1707 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1701:1702 <> A':24
+binder 1704:1705 <> B':25
+R1724:1727 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1709:1711 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1708:1708 _luna_repair_sigma_join <> u:23 var
+R1712:1717 TypeRules <> TSigma constr
+R1722:1723 _luna_repair_sigma_join <> B':25 var
+R1719:1720 _luna_repair_sigma_join <> A':24 var
+R1738:1741 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1728:1732 Progress _work_mixed_closure cstep ind
+R1734:1734 _luna_repair_sigma_join <> A:21 var
+R1736:1737 _luna_repair_sigma_join <> A':24 var
+R1742:1746 Progress _work_mixed_closure cstep ind
+R1748:1748 _luna_repair_sigma_join <> B:22 var
+R1750:1751 _luna_repair_sigma_join <> B':25 var
+R1813:1836 _luna_repair_sigma_join <> rtc_pstep_sigma_inv_luna thm
+R1813:1836 _luna_repair_sigma_join <> rtc_pstep_sigma_inv_luna thm
+R1922:1928 Progress _work_mixed_closure cs_core constr
+R1922:1928 Progress _work_mixed_closure cs_core constr
+R1922:1928 Progress _work_mixed_closure cs_core constr
+R1957:1981 _luna_repair_sigma_join <> rtc_epstep_sigma_inv_luna thm
+R1957:1981 _luna_repair_sigma_join <> rtc_epstep_sigma_inv_luna thm
+R2067:2072 Progress _work_mixed_closure cs_eta constr
+R2067:2072 Progress _work_mixed_closure cs_eta constr
+R2067:2072 Progress _work_mixed_closure cs_eta constr
+prf 2099:2122 <> rtc_cstep_sigma_inv_luna
+binder 2133:2133 <> A:26
+binder 2135:2135 <> B:27
+binder 2137:2137 <> u:28
+R2164:2171 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2140:2142 Progress <> rtc ind
+R2163:2163 _luna_repair_sigma_join <> u:28 var
+R2151:2156 TypeRules <> TSigma constr
+R2160:2160 _luna_repair_sigma_join <> B:27 var
+R2158:2158 _luna_repair_sigma_join <> A:26 var
+R2144:2148 Progress _work_mixed_closure cstep ind
+R2172:2178 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2184:2185 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2179:2180 <> A':29
+binder 2182:2183 <> B':30
+R2202:2211 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2187:2189 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2186:2186 _luna_repair_sigma_join <> u:28 var
+R2190:2195 TypeRules <> TSigma constr
+R2200:2201 _luna_repair_sigma_join <> B':30 var
+R2197:2198 _luna_repair_sigma_join <> A':29 var
+R2226:2229 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2212:2214 Progress <> rtc ind
+R2224:2225 _luna_repair_sigma_join <> A':29 var
+R2222:2222 _luna_repair_sigma_join <> A:26 var
+R2216:2220 Progress _work_mixed_closure cstep ind
+R2230:2232 Progress <> rtc ind
+R2242:2243 _luna_repair_sigma_join <> B':30 var
+R2240:2240 _luna_repair_sigma_join <> B:27 var
+R2234:2238 Progress _work_mixed_closure cstep ind
+R2281:2286 TypeRules <> TSigma constr
+R2281:2286 TypeRules <> TSigma constr
+R2395:2402 Progress <> rtc_refl constr
+R2395:2402 Progress <> rtc_refl constr
+R2395:2402 Progress <> rtc_refl constr
+R2419:2438 _luna_repair_sigma_join <> cstep_sigma_inv_luna thm
+R2419:2438 _luna_repair_sigma_join <> cstep_sigma_inv_luna thm
+R2510:2516 Corelib.Init.Logic <> eq_refl constr
+R2510:2516 Corelib.Init.Logic <> eq_refl constr
+R2599:2606 Progress <> rtc_step constr
+R2599:2606 Progress <> rtc_step constr
+R2599:2606 Progress <> rtc_step constr
+prf 2621:2640 <> cjoin_sigma_inv_luna
+binder 2651:2652 <> A1:31
+binder 2654:2655 <> B1:32
+binder 2657:2658 <> A2:33
+binder 2660:2661 <> B2:34
+R2703:2710 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2668:2672 Progress _work_cjoin cjoin def
+R2675:2680 TypeRules <> TSigma constr
+R2685:2686 _luna_repair_sigma_join <> B1:32 var
+R2682:2683 _luna_repair_sigma_join <> A1:31 var
+R2690:2695 TypeRules <> TSigma constr
+R2700:2701 _luna_repair_sigma_join <> B2:34 var
+R2697:2698 _luna_repair_sigma_join <> A2:33 var
+R2722:2725 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2711:2715 Progress _work_cjoin cjoin def
+R2717:2718 _luna_repair_sigma_join <> A1:31 var
+R2720:2721 _luna_repair_sigma_join <> A2:33 var
+R2726:2730 Progress _work_cjoin cjoin def
+R2732:2733 _luna_repair_sigma_join <> B1:32 var
+R2735:2736 _luna_repair_sigma_join <> B2:34 var
+R2792:2815 _luna_repair_sigma_join <> rtc_cstep_sigma_inv_luna thm
+R2792:2815 _luna_repair_sigma_join <> rtc_cstep_sigma_inv_luna thm
+R2875:2898 _luna_repair_sigma_join <> rtc_cstep_sigma_inv_luna thm
+R2875:2898 _luna_repair_sigma_join <> rtc_cstep_sigma_inv_luna thm
+R3014:3018 Progress _work_cjoin cjoin def
+R3052:3071 _luna_repair_sigma_join <> cjoin_sigma_inv_luna thm

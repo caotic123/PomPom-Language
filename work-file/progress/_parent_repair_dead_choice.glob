@@ -1,0 +1,265 @@
+DIGEST f9b59108ab7a6c715d6d634ac873f1e4
+F_parent_repair_dead_choice
+R15:22 Progress <> <> lib
+R24:47 _luna_repair_pair_origin <> <> lib
+R49:71 _luna_repair_sigma_join <> <> lib
+R101:104 Stdlib.Lists.List <> <> lib
+R114:126 Stdlib.Lists.List ListNotations <> mod
+R128:136 TypeRules <> <> mod
+R138:157 Progress _tmp_epstep <> mod
+R159:186 Progress _work_mixed_closure <> mod
+R190:209 Progress _work_cjoin <> mod
+R211:241 Progress _work_cstep_invariants <> mod
+prf 251:280 <> eval_interp_description_parent
+binder 291:291 <> D:1
+binder 293:294 <> D':2
+binder 296:296 <> X:3
+R310:313 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R301:304 TypeRules <> eval ind
+R308:309 _parent_repair_dead_choice <> D':2 var
+R306:306 _parent_repair_dead_choice <> D:1 var
+R314:317 TypeRules <> eval ind
+R334:340 TypeRules <> TInterp constr
+R345:345 _parent_repair_dead_choice <> X:3 var
+R342:343 _parent_repair_dead_choice <> D':2 var
+R320:326 TypeRules <> TInterp constr
+R330:330 _parent_repair_dead_choice <> X:3 var
+R328:328 _parent_repair_dead_choice <> D:1 var
+R400:406 TypeRules <> ev_refl constr
+R400:406 TypeRules <> ev_refl constr
+R420:426 TypeRules <> ev_step constr
+R436:445 TypeRules <> st_interp1 constr
+R420:426 TypeRules <> ev_step constr
+R436:445 TypeRules <> st_interp1 constr
+prf 483:508 <> empty_choice_domain_parent
+binder 519:519 <> a:4
+binder 521:521 <> b:5
+binder 523:523 <> D:6
+binder 525:525 <> X:7
+binder 527:527 <> E:8
+binder 529:529 <> F:9
+R568:573 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R534:538 TypeRules <> check ind
+R556:562 TypeRules <> TInterp constr
+R566:566 _parent_repair_dead_choice <> X:7 var
+R564:564 _parent_repair_dead_choice <> D:6 var
+R544:548 TypeRules <> TPair constr
+R552:552 _parent_repair_dead_choice <> b:5 var
+R550:550 _parent_repair_dead_choice <> a:4 var
+R540:541 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R595:598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R574:577 TypeRules <> eval ind
+R582:589 TypeRules <> TIChoice constr
+R593:593 _parent_repair_dead_choice <> F:9 var
+R591:591 _parent_repair_dead_choice <> E:8 var
+R579:579 _parent_repair_dead_choice <> D:6 var
+R611:616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R599:602 TypeRules <> eval ind
+R606:610 TypeRules <> TNilE constr
+R604:604 _parent_repair_dead_choice <> E:8 var
+R617:623 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R625:626 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 624:624 <> A:10
+R639:646 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R627:631 TypeRules <> check ind
+R638:638 _parent_repair_dead_choice <> A:10 var
+R636:636 _parent_repair_dead_choice <> a:4 var
+R633:634 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R647:651 Progress _work_cjoin cjoin def
+R654:662 Progress <> phi_erase def
+R664:664 _parent_repair_dead_choice <> A:10 var
+R668:673 TypeRules <> TEnumT constr
+R675:679 TypeRules <> TNilE constr
+R733:743 _luna_repair_pair_origin <> pair_origin thm
+R733:743 _luna_repair_pair_origin <> pair_origin thm
+R833:836 TypeRules <> conv ind
+R857:862 TypeRules <> TSigma constr
+R882:888 TypeRules <> TInterp constr
+R920:923 TypeRules <> lift def
+R891:894 TypeRules <> TApp constr
+R910:913 TypeRules <> TVar constr
+R897:900 TypeRules <> lift def
+R865:870 TypeRules <> TEnumT constr
+R839:845 TypeRules <> TInterp constr
+R833:836 TypeRules <> conv ind
+R857:862 TypeRules <> TSigma constr
+R882:888 TypeRules <> TInterp constr
+R920:923 TypeRules <> lift def
+R891:894 TypeRules <> TApp constr
+R910:913 TypeRules <> TVar constr
+R897:900 TypeRules <> lift def
+R865:870 TypeRules <> TEnumT constr
+R839:845 TypeRules <> TInterp constr
+R947:954 TypeRules <> cv_trans constr
+R947:954 TypeRules <> cv_trans constr
+R969:977 TypeRules <> cv_interp constr
+R987:998 Progress <> conv_of_eval thm
+R1018:1024 TypeRules <> cv_refl constr
+R969:977 TypeRules <> cv_interp constr
+R987:998 Progress <> conv_of_eval thm
+R1018:1024 TypeRules <> cv_refl constr
+R1040:1046 TypeRules <> cv_step constr
+R1049:1064 TypeRules <> st_interp_choice constr
+R1040:1046 TypeRules <> cv_step constr
+R1049:1064 TypeRules <> st_interp_choice constr
+R1083:1096 Progress _work_cjoin conv_phi_cjoin thm
+R1103:1110 TypeRules <> cv_trans constr
+R1083:1096 Progress _work_cjoin conv_phi_cjoin thm
+R1103:1110 TypeRules <> cv_trans constr
+R1137:1145 Progress <> phi_erase def
+R1167:1186 _luna_repair_sigma_join <> cjoin_sigma_inv_luna thm
+R1167:1186 _luna_repair_sigma_join <> cjoin_sigma_inv_luna thm
+R1223:1233 Progress _work_cjoin cjoin_trans thm
+R1223:1233 Progress _work_cjoin cjoin_trans thm
+R1263:1267 Progress _work_cjoin cjoin def
+R1270:1278 Progress <> phi_erase def
+R1281:1286 TypeRules <> TEnumT constr
+R1293:1301 Progress <> phi_erase def
+R1304:1309 TypeRules <> TEnumT constr
+R1311:1315 TypeRules <> TNilE constr
+R1263:1267 Progress _work_cjoin cjoin def
+R1270:1278 Progress <> phi_erase def
+R1281:1286 TypeRules <> TEnumT constr
+R1293:1301 Progress <> phi_erase def
+R1304:1309 TypeRules <> TEnumT constr
+R1311:1315 TypeRules <> TNilE constr
+R1329:1342 Progress _work_cjoin conv_phi_cjoin thm
+R1345:1352 TypeRules <> cv_enumt constr
+R1355:1366 Progress <> conv_of_eval thm
+R1329:1342 Progress _work_cjoin conv_phi_cjoin thm
+R1345:1352 TypeRules <> cv_enumt constr
+R1355:1366 Progress <> conv_of_eval thm
+R1397:1422 _parent_repair_dead_choice <> empty_choice_domain_parent thm
+prf 1432:1455 <> empty_choice_pair_parent
+binder 1466:1467 <> xs:11
+binder 1469:1469 <> D:12
+binder 1471:1471 <> X:13
+binder 1473:1473 <> E:14
+binder 1475:1475 <> F:15
+R1505:1508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1480:1484 TypeRules <> check ind
+R1493:1499 TypeRules <> TInterp constr
+R1503:1503 _parent_repair_dead_choice <> X:13 var
+R1501:1501 _parent_repair_dead_choice <> D:12 var
+R1489:1490 _parent_repair_dead_choice <> xs:11 var
+R1486:1487 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1517:1522 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1509:1513 TypeRules <> value ind
+R1515:1516 _parent_repair_dead_choice <> xs:11 var
+R1544:1547 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1523:1526 TypeRules <> eval ind
+R1531:1538 TypeRules <> TIChoice constr
+R1542:1542 _parent_repair_dead_choice <> F:15 var
+R1540:1540 _parent_repair_dead_choice <> E:14 var
+R1528:1528 _parent_repair_dead_choice <> D:12 var
+R1548:1554 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1558:1559 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1555:1555 <> a:16
+binder 1557:1557 <> b:17
+R1562:1564 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1560:1561 _parent_repair_dead_choice <> xs:11 var
+R1565:1569 TypeRules <> TPair constr
+R1573:1573 _parent_repair_dead_choice <> b:17 var
+R1571:1571 _parent_repair_dead_choice <> a:16 var
+R1628:1630 Progress <> whd def
+R1633:1639 TypeRules <> TInterp constr
+R1646:1651 Progress <> HSigma constr
+R1628:1630 Progress <> whd def
+R1633:1639 TypeRules <> TInterp constr
+R1646:1651 Progress <> HSigma constr
+R1688:1697 Progress <> eval_trans thm
+R1688:1697 Progress <> eval_trans thm
+R1714:1743 _parent_repair_dead_choice <> eval_interp_description_parent thm
+R1714:1743 _parent_repair_dead_choice <> eval_interp_description_parent thm
+R1771:1777 TypeRules <> ev_step constr
+R1787:1802 TypeRules <> st_interp_choice constr
+R1812:1818 TypeRules <> ev_refl constr
+R1771:1777 TypeRules <> ev_step constr
+R1787:1802 TypeRules <> st_interp_choice constr
+R1812:1818 TypeRules <> ev_refl constr
+R1852:1861 Progress <> canon_main thm
+R1863:1864 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1874:1880 Corelib.Init.Logic <> eq_refl constr
+R1887:1892 Progress <> HSigma constr
+R1895:1901 TypeRules <> cv_refl constr
+R1852:1861 Progress <> canon_main thm
+R1863:1864 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1874:1880 Corelib.Init.Logic <> eq_refl constr
+R1887:1892 Progress <> HSigma constr
+R1895:1901 TypeRules <> cv_refl constr
+R1935:1958 _parent_repair_dead_choice <> empty_choice_pair_parent thm
+R1977:2005 _luna_repair_empty_enum_check <> <> lib
+prf 2015:2045 <> dead_choice_nil_progress_parent
+binder 2056:2057 <> xs:18
+binder 2059:2059 <> D:19
+binder 2061:2061 <> X:20
+binder 2063:2063 <> E:21
+binder 2065:2065 <> F:22
+R2095:2098 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2070:2074 TypeRules <> check ind
+R2083:2089 TypeRules <> TInterp constr
+R2093:2093 _parent_repair_dead_choice <> X:20 var
+R2091:2091 _parent_repair_dead_choice <> D:19 var
+R2079:2080 _parent_repair_dead_choice <> xs:18 var
+R2076:2077 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2107:2112 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2099:2103 TypeRules <> value ind
+R2105:2106 _parent_repair_dead_choice <> xs:18 var
+R2134:2137 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2113:2116 TypeRules <> eval ind
+R2121:2128 TypeRules <> TIChoice constr
+R2132:2132 _parent_repair_dead_choice <> F:22 var
+R2130:2130 _parent_repair_dead_choice <> E:21 var
+R2118:2118 _parent_repair_dead_choice <> D:19 var
+R2150:2155 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2138:2141 TypeRules <> eval ind
+R2145:2149 TypeRules <> TNilE constr
+R2143:2143 _parent_repair_dead_choice <> E:21 var
+R2156:2156 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2241:2247 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2164:2164 <> a:23
+binder 2166:2166 <> b:24
+binder 2168:2168 <> A:25
+R2185:2188 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2173:2175 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2171:2172 _parent_repair_dead_choice <> xs:18 var
+R2176:2180 TypeRules <> TPair constr
+R2184:2184 _parent_repair_dead_choice <> b:24 var
+R2182:2182 _parent_repair_dead_choice <> a:23 var
+R2201:2209 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2189:2193 TypeRules <> check ind
+R2200:2200 _parent_repair_dead_choice <> A:25 var
+R2198:2198 _parent_repair_dead_choice <> a:23 var
+R2195:2196 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2217:2220 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2210:2214 TypeRules <> value ind
+R2216:2216 _parent_repair_dead_choice <> a:23 var
+R2221:2227 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2230:2231 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2228:2229 <> a':26
+R2232:2235 TypeRules <> step ind
+R2239:2240 _parent_repair_dead_choice <> a':26 var
+R2237:2237 _parent_repair_dead_choice <> a:23 var
+R2248:2254 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2258:2259 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2255:2257 <> xs':27
+R2260:2263 TypeRules <> step ind
+R2268:2270 _parent_repair_dead_choice <> xs':27 var
+R2265:2266 _parent_repair_dead_choice <> xs:18 var
+R2328:2351 _parent_repair_dead_choice <> empty_choice_pair_parent thm
+R2328:2351 _parent_repair_dead_choice <> empty_choice_pair_parent thm
+R2400:2425 _parent_repair_dead_choice <> empty_choice_domain_parent thm
+R2400:2425 _parent_repair_dead_choice <> empty_choice_domain_parent thm
+R2486:2492 Corelib.Init.Logic <> eq_refl constr
+R2486:2492 Corelib.Init.Logic <> eq_refl constr
+R2541:2569 _luna_repair_empty_enum_check <> erased_empty_check_value_luna thm
+R2571:2572 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2581:2587 Corelib.Init.Logic <> eq_refl constr
+R2541:2569 _luna_repair_empty_enum_check <> erased_empty_check_value_luna thm
+R2571:2572 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2581:2587 Corelib.Init.Logic <> eq_refl constr
+R2610:2614 TypeRules <> TPair constr
+R2610:2614 TypeRules <> TPair constr
+R2629:2636 TypeRules <> st_pair1 constr
+R2629:2636 TypeRules <> st_pair1 constr
+R2670:2700 _parent_repair_dead_choice <> dead_choice_nil_progress_parent thm

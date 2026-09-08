@@ -1,0 +1,4747 @@
+DIGEST f306ec1cdcc35ba0953a498a31e74188
+FTypeRulesCore
+R3984:3987 Stdlib.Lists.List <> <> lib
+R3989:3993 Stdlib.Arith.Arith <> <> lib
+R3995:4000 Stdlib.Strings.String <> <> lib
+R4010:4022 Stdlib.Lists.List ListNotations <> mod
+ind 4305:4308 <> term
+constr 4347:4350 <> TVar
+constr 4416:4420 <> TSort
+constr 4507:4509 <> TPi
+constr 4530:4533 <> TLam
+constr 4551:4554 <> TApp
+constr 4651:4656 <> TSigma
+constr 4674:4678 <> TPair
+constr 4697:4700 <> TFst
+constr 4718:4721 <> TSnd
+constr 4804:4809 <> TUnitT
+constr 4813:4817 <> TUnit
+constr 4853:4856 <> TUId
+constr 4860:4863 <> TTag
+constr 4883:4888 <> TEnumU
+constr 4892:4896 <> TNilE
+constr 4900:4905 <> TConsE
+constr 4923:4928 <> TEnumT
+constr 4944:4949 <> TEZero
+constr 4953:4958 <> TESucc
+constr 5043:5046 <> TEPi
+constr 5066:5072 <> TSwitch
+constr 5148:5153 <> TIDesc
+constr 5170:5174 <> TIVar
+constr 5191:5193 <> TI1
+constr 5197:5202 <> TIProd
+constr 5220:5223 <> TIPi
+constr 5244:5248 <> TISig
+constr 5268:5275 <> TIChoice
+constr 5314:5320 <> TInterp
+constr 5407:5410 <> TMuI
+constr 5428:5431 <> TMuS
+constr 5450:5452 <> TIn
+constr 5471:5474 <> TInd
+constr 5502:5506 <> TIAll
+constr 5530:5534 <> THyps
+constr 5608:5612 <> TList
+constr 5629:5633 <> TLNil
+constr 5650:5655 <> TLCons
+constr 5753:5757 <> TCase
+R4360:4362 Corelib.Init.Datatypes <> nat ind
+binder 4356:4356 <> n:3
+R4429:4431 Corelib.Init.Datatypes <> nat ind
+binder 4425:4425 <> k:4
+R4522:4525 TypeRulesCore <> term:1 ind
+binder 4516:4516 <> A:5
+binder 4518:4518 <> B:6
+R4543:4546 TypeRulesCore <> term:1 ind
+binder 4539:4539 <> b:7
+R4566:4569 TypeRulesCore <> term:1 ind
+binder 4560:4560 <> f:8
+binder 4562:4562 <> a:9
+R4666:4669 TypeRulesCore <> term:1 ind
+binder 4660:4660 <> A:10
+binder 4662:4662 <> B:11
+R4689:4692 TypeRulesCore <> term:1 ind
+binder 4683:4683 <> a:12
+binder 4685:4685 <> b:13
+R4710:4713 TypeRulesCore <> term:1 ind
+binder 4706:4706 <> p:14
+R4731:4734 TypeRulesCore <> term:1 ind
+binder 4727:4727 <> p:15
+R4873:4878 Stdlib.Strings.String <> string ind
+binder 4869:4869 <> s:16
+R4915:4918 TypeRulesCore <> term:1 ind
+binder 4909:4909 <> t:17
+binder 4911:4911 <> E:18
+R4936:4939 TypeRulesCore <> term:1 ind
+binder 4932:4932 <> E:19
+R4966:4969 TypeRulesCore <> term:1 ind
+binder 4962:4962 <> n:20
+R5058:5061 TypeRulesCore <> term:1 ind
+binder 5052:5052 <> E:21
+binder 5054:5054 <> P:22
+R5085:5088 TypeRulesCore <> term:1 ind
+binder 5075:5075 <> E:23
+binder 5077:5077 <> P:24
+binder 5079:5079 <> p:25
+binder 5081:5081 <> e:26
+R5162:5165 TypeRulesCore <> term:1 ind
+binder 5157:5158 <> IT:27
+R5183:5186 TypeRulesCore <> term:1 ind
+binder 5179:5179 <> i:28
+R5212:5215 TypeRulesCore <> term:1 ind
+binder 5206:5206 <> A:29
+binder 5208:5208 <> B:30
+R5236:5239 TypeRulesCore <> term:1 ind
+binder 5229:5230 <> Sd:31
+binder 5232:5232 <> T:32
+R5260:5263 TypeRulesCore <> term:1 ind
+binder 5253:5254 <> Sd:33
+binder 5256:5256 <> T:34
+R5284:5287 TypeRulesCore <> term:1 ind
+binder 5278:5278 <> E:35
+binder 5280:5280 <> T:36
+R5329:5332 TypeRulesCore <> term:1 ind
+binder 5323:5323 <> D:37
+binder 5325:5325 <> X:38
+R5420:5423 TypeRulesCore <> term:1 ind
+binder 5416:5416 <> R:39
+R5442:5445 TypeRulesCore <> term:1 ind
+binder 5437:5438 <> Sf:40
+R5463:5466 TypeRulesCore <> term:1 ind
+binder 5459:5459 <> x:41
+R5494:5497 TypeRulesCore <> term:1 ind
+binder 5480:5480 <> R:42
+binder 5482:5482 <> P:43
+binder 5484:5486 <> stp:44
+binder 5488:5488 <> i:45
+binder 5490:5490 <> x:46
+R5522:5525 TypeRulesCore <> term:1 ind
+binder 5511:5511 <> D:47
+binder 5513:5513 <> X:48
+binder 5515:5516 <> xs:49
+binder 5518:5518 <> P:50
+R5552:5555 TypeRulesCore <> term:1 ind
+binder 5539:5539 <> D:51
+binder 5541:5541 <> X:52
+binder 5543:5543 <> P:53
+binder 5545:5545 <> h:54
+binder 5547:5548 <> xs:55
+R5621:5624 TypeRulesCore <> term:1 ind
+binder 5617:5617 <> A:56
+R5642:5645 TypeRulesCore <> term:1 ind
+binder 5638:5638 <> A:57
+R5667:5670 TypeRulesCore <> term:1 ind
+binder 5659:5659 <> A:58
+binder 5661:5661 <> a:59
+binder 5663:5663 <> l:60
+R5768:5771 TypeRulesCore <> term:1 ind
+binder 5762:5762 <> M:61
+binder 5764:5764 <> Q:62
+R5780:5783 Corelib.Init.Datatypes <> list ind
+R5790:5792 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5786:5789 TypeRulesCore <> term:1 ind
+R5793:5796 TypeRulesCore <> term:1 ind
+binder 5775:5776 <> bs:63
+scheme 4305:4308 <> term_rect
+scheme 4305:4308 <> term_ind
+scheme 4305:4308 <> term_rec
+scheme 4305:4308 <> term_sind
+def 6055:6058 <> lift
+R6067:6069 Corelib.Init.Datatypes <> nat ind
+binder 6061:6061 <> d:64
+binder 6063:6063 <> k:65
+R6077:6080 TypeRulesCore <> term ind
+binder 6073:6073 <> t:66
+R6085:6088 TypeRulesCore <> term ind
+R6101:6101 TypeRulesCore <> t:66 var
+R6112:6115 TypeRulesCore <> TVar constr
+R6125:6131 Stdlib.Arith.PeanoNat Nat ltb def
+R6135:6135 TypeRulesCore <> k:65 var
+R6154:6157 TypeRulesCore <> TVar constr
+R6161:6163 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6160:6160 TypeRulesCore <> d:64 var
+R6142:6145 TypeRulesCore <> TVar constr
+R6171:6175 TypeRulesCore <> TSort constr
+R6182:6186 TypeRulesCore <> TSort constr
+R6194:6196 TypeRulesCore <> TPi constr
+R6205:6207 TypeRulesCore <> TPi constr
+R6223:6226 TypeRulesCore <> lift:67 def
+R6231:6231 Corelib.Init.Datatypes <> S constr
+R6233:6233 TypeRulesCore <> k:65 var
+R6228:6228 TypeRulesCore <> d:64 var
+R6210:6213 TypeRulesCore <> lift:67 def
+R6217:6217 TypeRulesCore <> k:65 var
+R6215:6215 TypeRulesCore <> d:64 var
+R6243:6246 TypeRulesCore <> TLam constr
+R6253:6256 TypeRulesCore <> TLam constr
+R6259:6262 TypeRulesCore <> lift:67 def
+R6267:6267 Corelib.Init.Datatypes <> S constr
+R6269:6269 TypeRulesCore <> k:65 var
+R6264:6264 TypeRulesCore <> d:64 var
+R6279:6282 TypeRulesCore <> TApp constr
+R6291:6294 TypeRulesCore <> TApp constr
+R6310:6313 TypeRulesCore <> lift:67 def
+R6317:6317 TypeRulesCore <> k:65 var
+R6315:6315 TypeRulesCore <> d:64 var
+R6297:6300 TypeRulesCore <> lift:67 def
+R6304:6304 TypeRulesCore <> k:65 var
+R6302:6302 TypeRulesCore <> d:64 var
+R6326:6331 TypeRulesCore <> TSigma constr
+R6340:6345 TypeRulesCore <> TSigma constr
+R6361:6364 TypeRulesCore <> lift:67 def
+R6369:6369 Corelib.Init.Datatypes <> S constr
+R6371:6371 TypeRulesCore <> k:65 var
+R6366:6366 TypeRulesCore <> d:64 var
+R6348:6351 TypeRulesCore <> lift:67 def
+R6355:6355 TypeRulesCore <> k:65 var
+R6353:6353 TypeRulesCore <> d:64 var
+R6381:6385 TypeRulesCore <> TPair constr
+R6394:6398 TypeRulesCore <> TPair constr
+R6414:6417 TypeRulesCore <> lift:67 def
+R6421:6421 TypeRulesCore <> k:65 var
+R6419:6419 TypeRulesCore <> d:64 var
+R6401:6404 TypeRulesCore <> lift:67 def
+R6408:6408 TypeRulesCore <> k:65 var
+R6406:6406 TypeRulesCore <> d:64 var
+R6430:6433 TypeRulesCore <> TFst constr
+R6440:6443 TypeRulesCore <> TFst constr
+R6446:6449 TypeRulesCore <> lift:67 def
+R6453:6453 TypeRulesCore <> k:65 var
+R6451:6451 TypeRulesCore <> d:64 var
+R6462:6465 TypeRulesCore <> TSnd constr
+R6472:6475 TypeRulesCore <> TSnd constr
+R6478:6481 TypeRulesCore <> lift:67 def
+R6485:6485 TypeRulesCore <> k:65 var
+R6483:6483 TypeRulesCore <> d:64 var
+R6494:6499 TypeRulesCore <> TUnitT constr
+R6504:6509 TypeRulesCore <> TUnitT constr
+R6515:6519 TypeRulesCore <> TUnit constr
+R6524:6528 TypeRulesCore <> TUnit constr
+R6534:6537 TypeRulesCore <> TUId constr
+R6542:6545 TypeRulesCore <> TUId constr
+R6551:6554 TypeRulesCore <> TTag constr
+R6561:6564 TypeRulesCore <> TTag constr
+R6572:6577 TypeRulesCore <> TEnumU constr
+R6582:6587 TypeRulesCore <> TEnumU constr
+R6593:6597 TypeRulesCore <> TNilE constr
+R6602:6606 TypeRulesCore <> TNilE constr
+R6612:6617 TypeRulesCore <> TConsE constr
+R6627:6632 TypeRulesCore <> TConsE constr
+R6649:6652 TypeRulesCore <> lift:67 def
+R6656:6656 TypeRulesCore <> k:65 var
+R6654:6654 TypeRulesCore <> d:64 var
+R6635:6638 TypeRulesCore <> lift:67 def
+R6642:6642 TypeRulesCore <> k:65 var
+R6640:6640 TypeRulesCore <> d:64 var
+R6665:6670 TypeRulesCore <> TEnumT constr
+R6677:6682 TypeRulesCore <> TEnumT constr
+R6685:6688 TypeRulesCore <> lift:67 def
+R6692:6692 TypeRulesCore <> k:65 var
+R6690:6690 TypeRulesCore <> d:64 var
+R6701:6706 TypeRulesCore <> TEZero constr
+R6711:6716 TypeRulesCore <> TEZero constr
+R6722:6727 TypeRulesCore <> TESucc constr
+R6734:6739 TypeRulesCore <> TESucc constr
+R6742:6745 TypeRulesCore <> lift:67 def
+R6749:6749 TypeRulesCore <> k:65 var
+R6747:6747 TypeRulesCore <> d:64 var
+R6758:6761 TypeRulesCore <> TEPi constr
+R6770:6773 TypeRulesCore <> TEPi constr
+R6789:6792 TypeRulesCore <> lift:67 def
+R6796:6796 TypeRulesCore <> k:65 var
+R6794:6794 TypeRulesCore <> d:64 var
+R6776:6779 TypeRulesCore <> lift:67 def
+R6783:6783 TypeRulesCore <> k:65 var
+R6781:6781 TypeRulesCore <> d:64 var
+R6805:6811 TypeRulesCore <> TSwitch constr
+R6824:6830 TypeRulesCore <> TSwitch constr
+R6872:6875 TypeRulesCore <> lift:67 def
+R6879:6879 TypeRulesCore <> k:65 var
+R6877:6877 TypeRulesCore <> d:64 var
+R6859:6862 TypeRulesCore <> lift:67 def
+R6866:6866 TypeRulesCore <> k:65 var
+R6864:6864 TypeRulesCore <> d:64 var
+R6846:6849 TypeRulesCore <> lift:67 def
+R6853:6853 TypeRulesCore <> k:65 var
+R6851:6851 TypeRulesCore <> d:64 var
+R6833:6836 TypeRulesCore <> lift:67 def
+R6840:6840 TypeRulesCore <> k:65 var
+R6838:6838 TypeRulesCore <> d:64 var
+R6888:6893 TypeRulesCore <> TIDesc constr
+R6901:6906 TypeRulesCore <> TIDesc constr
+R6909:6912 TypeRulesCore <> lift:67 def
+R6916:6916 TypeRulesCore <> k:65 var
+R6914:6914 TypeRulesCore <> d:64 var
+R6926:6930 TypeRulesCore <> TIVar constr
+R6937:6941 TypeRulesCore <> TIVar constr
+R6944:6947 TypeRulesCore <> lift:67 def
+R6951:6951 TypeRulesCore <> k:65 var
+R6949:6949 TypeRulesCore <> d:64 var
+R6960:6962 TypeRulesCore <> TI1 constr
+R6967:6969 TypeRulesCore <> TI1 constr
+R6975:6980 TypeRulesCore <> TIProd constr
+R6989:6994 TypeRulesCore <> TIProd constr
+R7010:7013 TypeRulesCore <> lift:67 def
+R7017:7017 TypeRulesCore <> k:65 var
+R7015:7015 TypeRulesCore <> d:64 var
+R6997:7000 TypeRulesCore <> lift:67 def
+R7004:7004 TypeRulesCore <> k:65 var
+R7002:7002 TypeRulesCore <> d:64 var
+R7026:7029 TypeRulesCore <> TIPi constr
+R7039:7042 TypeRulesCore <> TIPi constr
+R7059:7062 TypeRulesCore <> lift:67 def
+R7066:7066 TypeRulesCore <> k:65 var
+R7064:7064 TypeRulesCore <> d:64 var
+R7045:7048 TypeRulesCore <> lift:67 def
+R7052:7052 TypeRulesCore <> k:65 var
+R7050:7050 TypeRulesCore <> d:64 var
+R7075:7079 TypeRulesCore <> TISig constr
+R7089:7093 TypeRulesCore <> TISig constr
+R7110:7113 TypeRulesCore <> lift:67 def
+R7117:7117 TypeRulesCore <> k:65 var
+R7115:7115 TypeRulesCore <> d:64 var
+R7096:7099 TypeRulesCore <> lift:67 def
+R7103:7103 TypeRulesCore <> k:65 var
+R7101:7101 TypeRulesCore <> d:64 var
+R7126:7133 TypeRulesCore <> TIChoice constr
+R7142:7149 TypeRulesCore <> TIChoice constr
+R7165:7168 TypeRulesCore <> lift:67 def
+R7172:7172 TypeRulesCore <> k:65 var
+R7170:7170 TypeRulesCore <> d:64 var
+R7152:7155 TypeRulesCore <> lift:67 def
+R7159:7159 TypeRulesCore <> k:65 var
+R7157:7157 TypeRulesCore <> d:64 var
+R7181:7187 TypeRulesCore <> TInterp constr
+R7196:7202 TypeRulesCore <> TInterp constr
+R7218:7221 TypeRulesCore <> lift:67 def
+R7225:7225 TypeRulesCore <> k:65 var
+R7223:7223 TypeRulesCore <> d:64 var
+R7205:7208 TypeRulesCore <> lift:67 def
+R7212:7212 TypeRulesCore <> k:65 var
+R7210:7210 TypeRulesCore <> d:64 var
+R7234:7237 TypeRulesCore <> TMuI constr
+R7244:7247 TypeRulesCore <> TMuI constr
+R7250:7253 TypeRulesCore <> lift:67 def
+R7257:7257 TypeRulesCore <> k:65 var
+R7255:7255 TypeRulesCore <> d:64 var
+R7266:7269 TypeRulesCore <> TMuS constr
+R7277:7280 TypeRulesCore <> TMuS constr
+R7283:7286 TypeRulesCore <> lift:67 def
+R7290:7290 TypeRulesCore <> k:65 var
+R7288:7288 TypeRulesCore <> d:64 var
+R7300:7302 TypeRulesCore <> TIn constr
+R7309:7311 TypeRulesCore <> TIn constr
+R7314:7317 TypeRulesCore <> lift:67 def
+R7321:7321 TypeRulesCore <> k:65 var
+R7319:7319 TypeRulesCore <> d:64 var
+R7330:7333 TypeRulesCore <> TInd constr
+R7356:7359 TypeRulesCore <> TInd constr
+R7416:7419 TypeRulesCore <> lift:67 def
+R7423:7423 TypeRulesCore <> k:65 var
+R7421:7421 TypeRulesCore <> d:64 var
+R7403:7406 TypeRulesCore <> lift:67 def
+R7410:7410 TypeRulesCore <> k:65 var
+R7408:7408 TypeRulesCore <> d:64 var
+R7388:7391 TypeRulesCore <> lift:67 def
+R7395:7395 TypeRulesCore <> k:65 var
+R7393:7393 TypeRulesCore <> d:64 var
+R7375:7378 TypeRulesCore <> lift:67 def
+R7382:7382 TypeRulesCore <> k:65 var
+R7380:7380 TypeRulesCore <> d:64 var
+R7362:7365 TypeRulesCore <> lift:67 def
+R7369:7369 TypeRulesCore <> k:65 var
+R7367:7367 TypeRulesCore <> d:64 var
+R7432:7436 TypeRulesCore <> TIAll constr
+R7456:7460 TypeRulesCore <> TIAll constr
+R7503:7506 TypeRulesCore <> lift:67 def
+R7510:7510 TypeRulesCore <> k:65 var
+R7508:7508 TypeRulesCore <> d:64 var
+R7489:7492 TypeRulesCore <> lift:67 def
+R7496:7496 TypeRulesCore <> k:65 var
+R7494:7494 TypeRulesCore <> d:64 var
+R7476:7479 TypeRulesCore <> lift:67 def
+R7483:7483 TypeRulesCore <> k:65 var
+R7481:7481 TypeRulesCore <> d:64 var
+R7463:7466 TypeRulesCore <> lift:67 def
+R7470:7470 TypeRulesCore <> k:65 var
+R7468:7468 TypeRulesCore <> d:64 var
+R7519:7523 TypeRulesCore <> THyps constr
+R7545:7549 TypeRulesCore <> THyps constr
+R7604:7607 TypeRulesCore <> lift:67 def
+R7611:7611 TypeRulesCore <> k:65 var
+R7609:7609 TypeRulesCore <> d:64 var
+R7591:7594 TypeRulesCore <> lift:67 def
+R7598:7598 TypeRulesCore <> k:65 var
+R7596:7596 TypeRulesCore <> d:64 var
+R7578:7581 TypeRulesCore <> lift:67 def
+R7585:7585 TypeRulesCore <> k:65 var
+R7583:7583 TypeRulesCore <> d:64 var
+R7565:7568 TypeRulesCore <> lift:67 def
+R7572:7572 TypeRulesCore <> k:65 var
+R7570:7570 TypeRulesCore <> d:64 var
+R7552:7555 TypeRulesCore <> lift:67 def
+R7559:7559 TypeRulesCore <> k:65 var
+R7557:7557 TypeRulesCore <> d:64 var
+R7621:7625 TypeRulesCore <> TList constr
+R7632:7636 TypeRulesCore <> TList constr
+R7639:7642 TypeRulesCore <> lift:67 def
+R7646:7646 TypeRulesCore <> k:65 var
+R7644:7644 TypeRulesCore <> d:64 var
+R7655:7659 TypeRulesCore <> TLNil constr
+R7666:7670 TypeRulesCore <> TLNil constr
+R7673:7676 TypeRulesCore <> lift:67 def
+R7680:7680 TypeRulesCore <> k:65 var
+R7678:7678 TypeRulesCore <> d:64 var
+R7689:7694 TypeRulesCore <> TLCons constr
+R7705:7710 TypeRulesCore <> TLCons constr
+R7739:7742 TypeRulesCore <> lift:67 def
+R7746:7746 TypeRulesCore <> k:65 var
+R7744:7744 TypeRulesCore <> d:64 var
+R7726:7729 TypeRulesCore <> lift:67 def
+R7733:7733 TypeRulesCore <> k:65 var
+R7731:7731 TypeRulesCore <> d:64 var
+R7713:7716 TypeRulesCore <> lift:67 def
+R7720:7720 TypeRulesCore <> k:65 var
+R7718:7718 TypeRulesCore <> d:64 var
+R7755:7759 TypeRulesCore <> TCase constr
+R7777:7781 TypeRulesCore <> TCase constr
+R7822:7824 Corelib.Lists.ListDef <> map def
+R7832:7832 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7834:7835 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7837:7837 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 7836:7836 <> b:69
+binder 7833:7833 <> c:70
+binder 7832:7837 <> pat:71
+R7842:7842 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7853:7854 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7869:7869 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7843:7846 TypeRulesCore <> lift:67 def
+R7852:7852 TypeRulesCore <> c:70 var
+R7850:7850 TypeRulesCore <> k:65 var
+R7848:7848 TypeRulesCore <> d:64 var
+R7855:7858 TypeRulesCore <> lift:67 def
+R7868:7868 TypeRulesCore <> b:69 var
+R7863:7863 Corelib.Init.Datatypes <> S constr
+R7865:7865 TypeRulesCore <> k:65 var
+R7860:7860 TypeRulesCore <> d:64 var
+R7797:7800 TypeRulesCore <> lift:67 def
+R7804:7804 TypeRulesCore <> k:65 var
+R7802:7802 TypeRulesCore <> d:64 var
+R7784:7787 TypeRulesCore <> lift:67 def
+R7791:7791 TypeRulesCore <> k:65 var
+R7789:7789 TypeRulesCore <> d:64 var
+def 7893:7897 <> subst
+R7904:7907 TypeRulesCore <> term ind
+binder 7900:7900 <> u:72
+R7915:7917 Corelib.Init.Datatypes <> nat ind
+binder 7911:7911 <> k:73
+R7925:7928 TypeRulesCore <> term ind
+binder 7921:7921 <> t:74
+R7933:7936 TypeRulesCore <> term ind
+R7949:7949 TypeRulesCore <> t:74 var
+R7960:7963 TypeRulesCore <> TVar constr
+R7973:7979 Stdlib.Arith.PeanoNat Nat ltb def
+R7983:7983 TypeRulesCore <> k:73 var
+R8019:8025 Stdlib.Arith.PeanoNat Nat eqb def
+R8029:8029 TypeRulesCore <> k:73 var
+R8066:8069 TypeRulesCore <> TVar constr
+R8072:8079 Stdlib.Arith.PeanoNat Nat pred def
+R8036:8039 TypeRulesCore <> lift def
+R8045:8045 TypeRulesCore <> u:72 var
+R8041:8041 TypeRulesCore <> k:73 var
+R7990:7993 TypeRulesCore <> TVar constr
+R8088:8092 TypeRulesCore <> TSort constr
+R8099:8103 TypeRulesCore <> TSort constr
+R8111:8113 TypeRulesCore <> TPi constr
+R8122:8124 TypeRulesCore <> TPi constr
+R8141:8145 TypeRulesCore <> subst:75 def
+R8150:8150 Corelib.Init.Datatypes <> S constr
+R8152:8152 TypeRulesCore <> k:73 var
+R8147:8147 TypeRulesCore <> u:72 var
+R8127:8131 TypeRulesCore <> subst:75 def
+R8135:8135 TypeRulesCore <> k:73 var
+R8133:8133 TypeRulesCore <> u:72 var
+R8162:8165 TypeRulesCore <> TLam constr
+R8172:8175 TypeRulesCore <> TLam constr
+R8178:8182 TypeRulesCore <> subst:75 def
+R8187:8187 Corelib.Init.Datatypes <> S constr
+R8189:8189 TypeRulesCore <> k:73 var
+R8184:8184 TypeRulesCore <> u:72 var
+R8199:8202 TypeRulesCore <> TApp constr
+R8211:8214 TypeRulesCore <> TApp constr
+R8231:8235 TypeRulesCore <> subst:75 def
+R8239:8239 TypeRulesCore <> k:73 var
+R8237:8237 TypeRulesCore <> u:72 var
+R8217:8221 TypeRulesCore <> subst:75 def
+R8225:8225 TypeRulesCore <> k:73 var
+R8223:8223 TypeRulesCore <> u:72 var
+R8248:8253 TypeRulesCore <> TSigma constr
+R8262:8267 TypeRulesCore <> TSigma constr
+R8284:8288 TypeRulesCore <> subst:75 def
+R8293:8293 Corelib.Init.Datatypes <> S constr
+R8295:8295 TypeRulesCore <> k:73 var
+R8290:8290 TypeRulesCore <> u:72 var
+R8270:8274 TypeRulesCore <> subst:75 def
+R8278:8278 TypeRulesCore <> k:73 var
+R8276:8276 TypeRulesCore <> u:72 var
+R8305:8309 TypeRulesCore <> TPair constr
+R8318:8322 TypeRulesCore <> TPair constr
+R8339:8343 TypeRulesCore <> subst:75 def
+R8347:8347 TypeRulesCore <> k:73 var
+R8345:8345 TypeRulesCore <> u:72 var
+R8325:8329 TypeRulesCore <> subst:75 def
+R8333:8333 TypeRulesCore <> k:73 var
+R8331:8331 TypeRulesCore <> u:72 var
+R8356:8359 TypeRulesCore <> TFst constr
+R8366:8369 TypeRulesCore <> TFst constr
+R8372:8376 TypeRulesCore <> subst:75 def
+R8380:8380 TypeRulesCore <> k:73 var
+R8378:8378 TypeRulesCore <> u:72 var
+R8389:8392 TypeRulesCore <> TSnd constr
+R8399:8402 TypeRulesCore <> TSnd constr
+R8405:8409 TypeRulesCore <> subst:75 def
+R8413:8413 TypeRulesCore <> k:73 var
+R8411:8411 TypeRulesCore <> u:72 var
+R8422:8427 TypeRulesCore <> TUnitT constr
+R8432:8437 TypeRulesCore <> TUnitT constr
+R8443:8447 TypeRulesCore <> TUnit constr
+R8452:8456 TypeRulesCore <> TUnit constr
+R8462:8465 TypeRulesCore <> TUId constr
+R8470:8473 TypeRulesCore <> TUId constr
+R8479:8482 TypeRulesCore <> TTag constr
+R8489:8492 TypeRulesCore <> TTag constr
+R8500:8505 TypeRulesCore <> TEnumU constr
+R8510:8515 TypeRulesCore <> TEnumU constr
+R8521:8525 TypeRulesCore <> TNilE constr
+R8530:8534 TypeRulesCore <> TNilE constr
+R8540:8545 TypeRulesCore <> TConsE constr
+R8555:8560 TypeRulesCore <> TConsE constr
+R8578:8582 TypeRulesCore <> subst:75 def
+R8586:8586 TypeRulesCore <> k:73 var
+R8584:8584 TypeRulesCore <> u:72 var
+R8563:8567 TypeRulesCore <> subst:75 def
+R8571:8571 TypeRulesCore <> k:73 var
+R8569:8569 TypeRulesCore <> u:72 var
+R8595:8600 TypeRulesCore <> TEnumT constr
+R8607:8612 TypeRulesCore <> TEnumT constr
+R8615:8619 TypeRulesCore <> subst:75 def
+R8623:8623 TypeRulesCore <> k:73 var
+R8621:8621 TypeRulesCore <> u:72 var
+R8632:8637 TypeRulesCore <> TEZero constr
+R8642:8647 TypeRulesCore <> TEZero constr
+R8653:8658 TypeRulesCore <> TESucc constr
+R8665:8670 TypeRulesCore <> TESucc constr
+R8673:8677 TypeRulesCore <> subst:75 def
+R8681:8681 TypeRulesCore <> k:73 var
+R8679:8679 TypeRulesCore <> u:72 var
+R8690:8693 TypeRulesCore <> TEPi constr
+R8702:8705 TypeRulesCore <> TEPi constr
+R8722:8726 TypeRulesCore <> subst:75 def
+R8730:8730 TypeRulesCore <> k:73 var
+R8728:8728 TypeRulesCore <> u:72 var
+R8708:8712 TypeRulesCore <> subst:75 def
+R8716:8716 TypeRulesCore <> k:73 var
+R8714:8714 TypeRulesCore <> u:72 var
+R8739:8745 TypeRulesCore <> TSwitch constr
+R8758:8764 TypeRulesCore <> TSwitch constr
+R8809:8813 TypeRulesCore <> subst:75 def
+R8817:8817 TypeRulesCore <> k:73 var
+R8815:8815 TypeRulesCore <> u:72 var
+R8795:8799 TypeRulesCore <> subst:75 def
+R8803:8803 TypeRulesCore <> k:73 var
+R8801:8801 TypeRulesCore <> u:72 var
+R8781:8785 TypeRulesCore <> subst:75 def
+R8789:8789 TypeRulesCore <> k:73 var
+R8787:8787 TypeRulesCore <> u:72 var
+R8767:8771 TypeRulesCore <> subst:75 def
+R8775:8775 TypeRulesCore <> k:73 var
+R8773:8773 TypeRulesCore <> u:72 var
+R8826:8831 TypeRulesCore <> TIDesc constr
+R8839:8844 TypeRulesCore <> TIDesc constr
+R8847:8851 TypeRulesCore <> subst:75 def
+R8855:8855 TypeRulesCore <> k:73 var
+R8853:8853 TypeRulesCore <> u:72 var
+R8865:8869 TypeRulesCore <> TIVar constr
+R8876:8880 TypeRulesCore <> TIVar constr
+R8883:8887 TypeRulesCore <> subst:75 def
+R8891:8891 TypeRulesCore <> k:73 var
+R8889:8889 TypeRulesCore <> u:72 var
+R8900:8902 TypeRulesCore <> TI1 constr
+R8907:8909 TypeRulesCore <> TI1 constr
+R8915:8920 TypeRulesCore <> TIProd constr
+R8929:8934 TypeRulesCore <> TIProd constr
+R8951:8955 TypeRulesCore <> subst:75 def
+R8959:8959 TypeRulesCore <> k:73 var
+R8957:8957 TypeRulesCore <> u:72 var
+R8937:8941 TypeRulesCore <> subst:75 def
+R8945:8945 TypeRulesCore <> k:73 var
+R8943:8943 TypeRulesCore <> u:72 var
+R8968:8971 TypeRulesCore <> TIPi constr
+R8981:8984 TypeRulesCore <> TIPi constr
+R9002:9006 TypeRulesCore <> subst:75 def
+R9010:9010 TypeRulesCore <> k:73 var
+R9008:9008 TypeRulesCore <> u:72 var
+R8987:8991 TypeRulesCore <> subst:75 def
+R8995:8995 TypeRulesCore <> k:73 var
+R8993:8993 TypeRulesCore <> u:72 var
+R9019:9023 TypeRulesCore <> TISig constr
+R9033:9037 TypeRulesCore <> TISig constr
+R9055:9059 TypeRulesCore <> subst:75 def
+R9063:9063 TypeRulesCore <> k:73 var
+R9061:9061 TypeRulesCore <> u:72 var
+R9040:9044 TypeRulesCore <> subst:75 def
+R9048:9048 TypeRulesCore <> k:73 var
+R9046:9046 TypeRulesCore <> u:72 var
+R9072:9079 TypeRulesCore <> TIChoice constr
+R9088:9095 TypeRulesCore <> TIChoice constr
+R9112:9116 TypeRulesCore <> subst:75 def
+R9120:9120 TypeRulesCore <> k:73 var
+R9118:9118 TypeRulesCore <> u:72 var
+R9098:9102 TypeRulesCore <> subst:75 def
+R9106:9106 TypeRulesCore <> k:73 var
+R9104:9104 TypeRulesCore <> u:72 var
+R9129:9135 TypeRulesCore <> TInterp constr
+R9144:9150 TypeRulesCore <> TInterp constr
+R9167:9171 TypeRulesCore <> subst:75 def
+R9175:9175 TypeRulesCore <> k:73 var
+R9173:9173 TypeRulesCore <> u:72 var
+R9153:9157 TypeRulesCore <> subst:75 def
+R9161:9161 TypeRulesCore <> k:73 var
+R9159:9159 TypeRulesCore <> u:72 var
+R9184:9187 TypeRulesCore <> TMuI constr
+R9194:9197 TypeRulesCore <> TMuI constr
+R9200:9204 TypeRulesCore <> subst:75 def
+R9208:9208 TypeRulesCore <> k:73 var
+R9206:9206 TypeRulesCore <> u:72 var
+R9217:9220 TypeRulesCore <> TMuS constr
+R9228:9231 TypeRulesCore <> TMuS constr
+R9234:9238 TypeRulesCore <> subst:75 def
+R9242:9242 TypeRulesCore <> k:73 var
+R9240:9240 TypeRulesCore <> u:72 var
+R9252:9254 TypeRulesCore <> TIn constr
+R9261:9263 TypeRulesCore <> TIn constr
+R9266:9270 TypeRulesCore <> subst:75 def
+R9274:9274 TypeRulesCore <> k:73 var
+R9272:9272 TypeRulesCore <> u:72 var
+R9283:9286 TypeRulesCore <> TInd constr
+R9309:9312 TypeRulesCore <> TInd constr
+R9373:9377 TypeRulesCore <> subst:75 def
+R9381:9381 TypeRulesCore <> k:73 var
+R9379:9379 TypeRulesCore <> u:72 var
+R9359:9363 TypeRulesCore <> subst:75 def
+R9367:9367 TypeRulesCore <> k:73 var
+R9365:9365 TypeRulesCore <> u:72 var
+R9343:9347 TypeRulesCore <> subst:75 def
+R9351:9351 TypeRulesCore <> k:73 var
+R9349:9349 TypeRulesCore <> u:72 var
+R9329:9333 TypeRulesCore <> subst:75 def
+R9337:9337 TypeRulesCore <> k:73 var
+R9335:9335 TypeRulesCore <> u:72 var
+R9315:9319 TypeRulesCore <> subst:75 def
+R9323:9323 TypeRulesCore <> k:73 var
+R9321:9321 TypeRulesCore <> u:72 var
+R9390:9394 TypeRulesCore <> TIAll constr
+R9414:9418 TypeRulesCore <> TIAll constr
+R9464:9468 TypeRulesCore <> subst:75 def
+R9472:9472 TypeRulesCore <> k:73 var
+R9470:9470 TypeRulesCore <> u:72 var
+R9449:9453 TypeRulesCore <> subst:75 def
+R9457:9457 TypeRulesCore <> k:73 var
+R9455:9455 TypeRulesCore <> u:72 var
+R9435:9439 TypeRulesCore <> subst:75 def
+R9443:9443 TypeRulesCore <> k:73 var
+R9441:9441 TypeRulesCore <> u:72 var
+R9421:9425 TypeRulesCore <> subst:75 def
+R9429:9429 TypeRulesCore <> k:73 var
+R9427:9427 TypeRulesCore <> u:72 var
+R9481:9485 TypeRulesCore <> THyps constr
+R9507:9511 TypeRulesCore <> THyps constr
+R9570:9574 TypeRulesCore <> subst:75 def
+R9578:9578 TypeRulesCore <> k:73 var
+R9576:9576 TypeRulesCore <> u:72 var
+R9556:9560 TypeRulesCore <> subst:75 def
+R9564:9564 TypeRulesCore <> k:73 var
+R9562:9562 TypeRulesCore <> u:72 var
+R9542:9546 TypeRulesCore <> subst:75 def
+R9550:9550 TypeRulesCore <> k:73 var
+R9548:9548 TypeRulesCore <> u:72 var
+R9528:9532 TypeRulesCore <> subst:75 def
+R9536:9536 TypeRulesCore <> k:73 var
+R9534:9534 TypeRulesCore <> u:72 var
+R9514:9518 TypeRulesCore <> subst:75 def
+R9522:9522 TypeRulesCore <> k:73 var
+R9520:9520 TypeRulesCore <> u:72 var
+R9588:9592 TypeRulesCore <> TList constr
+R9599:9603 TypeRulesCore <> TList constr
+R9606:9610 TypeRulesCore <> subst:75 def
+R9614:9614 TypeRulesCore <> k:73 var
+R9612:9612 TypeRulesCore <> u:72 var
+R9623:9627 TypeRulesCore <> TLNil constr
+R9634:9638 TypeRulesCore <> TLNil constr
+R9641:9645 TypeRulesCore <> subst:75 def
+R9649:9649 TypeRulesCore <> k:73 var
+R9647:9647 TypeRulesCore <> u:72 var
+R9658:9663 TypeRulesCore <> TLCons constr
+R9674:9679 TypeRulesCore <> TLCons constr
+R9710:9714 TypeRulesCore <> subst:75 def
+R9718:9718 TypeRulesCore <> k:73 var
+R9716:9716 TypeRulesCore <> u:72 var
+R9696:9700 TypeRulesCore <> subst:75 def
+R9704:9704 TypeRulesCore <> k:73 var
+R9702:9702 TypeRulesCore <> u:72 var
+R9682:9686 TypeRulesCore <> subst:75 def
+R9690:9690 TypeRulesCore <> k:73 var
+R9688:9688 TypeRulesCore <> u:72 var
+R9727:9731 TypeRulesCore <> TCase constr
+R9749:9753 TypeRulesCore <> TCase constr
+R9796:9798 Corelib.Lists.ListDef <> map def
+R9806:9806 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9808:9809 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9811:9811 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 9810:9810 <> b:77
+binder 9807:9807 <> c:78
+binder 9806:9811 <> pat:79
+R9816:9816 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9828:9829 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9845:9845 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9817:9821 TypeRulesCore <> subst:75 def
+R9827:9827 TypeRulesCore <> c:78 var
+R9825:9825 TypeRulesCore <> k:73 var
+R9823:9823 TypeRulesCore <> u:72 var
+R9830:9834 TypeRulesCore <> subst:75 def
+R9844:9844 TypeRulesCore <> b:77 var
+R9839:9839 Corelib.Init.Datatypes <> S constr
+R9841:9841 TypeRulesCore <> k:73 var
+R9836:9836 TypeRulesCore <> u:72 var
+R9770:9774 TypeRulesCore <> subst:75 def
+R9778:9778 TypeRulesCore <> k:73 var
+R9776:9776 TypeRulesCore <> u:72 var
+R9756:9760 TypeRulesCore <> subst:75 def
+R9764:9764 TypeRulesCore <> k:73 var
+R9762:9762 TypeRulesCore <> u:72 var
+def 10200:10204 <> Label
+R10211:10214 TypeRulesCore <> term ind
+binder 10207:10207 <> E:80
+R10219:10222 TypeRulesCore <> term ind
+R10227:10232 TypeRulesCore <> TEnumT constr
+R10234:10234 TypeRulesCore <> E:80 var
+def 10336:10338 <> Sig
+R10348:10351 TypeRulesCore <> term ind
+binder 10341:10342 <> IT:81
+binder 10344:10344 <> E:82
+R10356:10359 TypeRulesCore <> term ind
+R10366:10371 TypeRulesCore <> TSigma constr
+R10423:10426 TypeRulesCore <> lift def
+R10433:10437 TypeRulesCore <> TList constr
+R10440:10444 TypeRulesCore <> Label def
+R10446:10446 TypeRulesCore <> E:82 var
+R10374:10376 TypeRulesCore <> TPi constr
+R10390:10395 TypeRulesCore <> TIDesc constr
+R10398:10401 TypeRulesCore <> lift def
+R10407:10408 TypeRulesCore <> IT:81 var
+R10379:10384 TypeRulesCore <> TEnumT constr
+R10386:10386 TypeRulesCore <> E:82 var
+def 10548:10555 <> sig_pair
+R10566:10569 TypeRulesCore <> term ind
+binder 10558:10558 <> T:83
+binder 10560:10562 <> Phi:84
+R10574:10577 TypeRulesCore <> term ind
+R10582:10586 TypeRulesCore <> TPair constr
+R10590:10592 TypeRulesCore <> Phi:84 var
+R10588:10588 TypeRulesCore <> T:83 var
+def 10695:10702 <> branches
+R10710:10713 TypeRulesCore <> term ind
+binder 10705:10706 <> Sg:85
+R10718:10721 TypeRulesCore <> term ind
+R10726:10729 TypeRulesCore <> TFst constr
+R10731:10732 TypeRulesCore <> Sg:85 var
+def 10746:10751 <> labels
+R10761:10764 TypeRulesCore <> term ind
+binder 10756:10757 <> Sg:86
+R10769:10772 TypeRulesCore <> term ind
+R10777:10780 TypeRulesCore <> TSnd constr
+R10782:10783 TypeRulesCore <> Sg:86 var
+def 10881:10884 <> Full
+R10894:10897 TypeRulesCore <> term ind
+binder 10887:10887 <> E:87
+binder 10889:10890 <> Sg:88
+R10902:10905 TypeRulesCore <> term ind
+R10910:10917 TypeRulesCore <> TIChoice constr
+R10922:10929 TypeRulesCore <> branches def
+R10931:10932 TypeRulesCore <> Sg:88 var
+R10919:10919 TypeRulesCore <> E:87 var
+def 11034:11040 <> Carrier
+R11050:11053 TypeRulesCore <> term ind
+binder 11043:11043 <> E:89
+binder 11045:11046 <> Sf:90
+R11058:11061 TypeRulesCore <> term ind
+R11068:11071 TypeRulesCore <> TMuI constr
+R11074:11077 TypeRulesCore <> TLam constr
+R11080:11083 TypeRulesCore <> Full def
+R11099:11102 TypeRulesCore <> TApp constr
+R11119:11122 TypeRulesCore <> TVar constr
+R11105:11108 TypeRulesCore <> lift def
+R11114:11115 TypeRulesCore <> Sf:90 var
+R11086:11089 TypeRulesCore <> lift def
+R11095:11095 TypeRulesCore <> E:89 var
+def 11370:11374 <> SigMu
+R11384:11387 TypeRulesCore <> term ind
+binder 11377:11377 <> E:91
+binder 11379:11380 <> Sf:92
+R11392:11395 TypeRulesCore <> term ind
+R11400:11403 TypeRulesCore <> TMuS constr
+R11406:11410 TypeRulesCore <> TPair constr
+R11414:11415 TypeRulesCore <> Sf:92 var
+R11412:11412 TypeRulesCore <> E:91 var
+ind 11842:11849 <> enum_pos
+constr 11878:11885 <> pos_zero
+constr 11909:11916 <> pos_succ
+R11857:11860 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11853:11856 TypeRulesCore <> term ind
+R11864:11867 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11861:11863 Corelib.Init.Datatypes <> nat ind
+R11889:11896 TypeRulesCore <> enum_pos:93 ind
+R11898:11903 TypeRulesCore <> TEZero constr
+binder 11927:11927 <> c:95
+binder 11929:11929 <> n:96
+R11944:11947 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11932:11939 TypeRulesCore <> enum_pos:93 ind
+R11943:11943 TypeRulesCore <> n:96 var
+R11941:11941 TypeRulesCore <> c:95 var
+R11948:11955 TypeRulesCore <> enum_pos:93 ind
+R11969:11969 Corelib.Init.Datatypes <> S constr
+R11971:11971 TypeRulesCore <> n:96 var
+R11958:11963 TypeRulesCore <> TESucc constr
+R11965:11965 TypeRulesCore <> c:95 var
+scheme 11842:11849 <> enum_pos_ind
+scheme 11842:11849 <> enum_pos_sind
+ind 12477:12480 <> step
+constr 12593:12599 <> st_beta
+constr 12740:12745 <> st_fst
+constr 12875:12880 <> st_snd
+constr 13011:13020 <> st_epi_nil
+constr 13156:13166 <> st_epi_cons
+constr 13425:13438 <> st_switch_zero
+constr 13616:13629 <> st_switch_succ
+constr 13875:13887 <> st_interp_var
+constr 14029:14041 <> st_interp_one
+constr 14182:14195 <> st_interp_prod
+constr 14400:14411 <> st_interp_pi
+constr 14628:14640 <> st_interp_sig
+constr 14861:14876 <> st_interp_choice
+constr 15095:15105 <> st_iall_var
+constr 15259:15269 <> st_iall_one
+constr 15405:15416 <> st_iall_prod
+constr 15634:15643 <> st_iall_pi
+constr 15920:15930 <> st_iall_sig
+constr 16111:16124 <> st_iall_choice
+constr 16305:16315 <> st_hyps_var
+constr 16476:16486 <> st_hyps_one
+constr 16624:16635 <> st_hyps_prod
+constr 16848:16857 <> st_hyps_pi
+constr 17147:17157 <> st_hyps_sig
+constr 17344:17357 <> st_hyps_choice
+constr 17688:17693 <> st_ind
+constr 18902:18908 <> st_case
+constr 19264:19270 <> st_app1
+constr 19335:19341 <> st_fst1
+constr 19400:19406 <> st_snd1
+constr 19465:19471 <> st_epi1
+constr 19536:19545 <> st_switch1
+constr 19625:19634 <> st_switch3
+constr 19714:19723 <> st_switch4
+constr 19803:19812 <> st_interp1
+constr 19880:19887 <> st_iall1
+constr 19968:19975 <> st_iall3
+constr 20059:20066 <> st_hyps1
+constr 20153:20160 <> st_hyps5
+constr 20250:20256 <> st_ind5
+constr 20345:20352 <> st_case1
+constr 20501:20511 <> st_case_lbl
+constr 20999:21007 <> st_esucc1
+constr 21148:21153 <> st_in1
+constr 21211:21218 <> st_pair1
+constr 21284:21291 <> st_pair2
+R12488:12491 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12484:12487 TypeRulesCore <> term ind
+R12496:12499 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12492:12495 TypeRulesCore <> term ind
+binder 12610:12610 <> b:99
+binder 12612:12612 <> a:100
+R12615:12618 TypeRulesCore <> step:97 ind
+R12639:12643 TypeRulesCore <> subst def
+R12649:12649 TypeRulesCore <> b:99 var
+R12645:12645 TypeRulesCore <> a:100 var
+R12621:12624 TypeRulesCore <> TApp constr
+R12635:12635 TypeRulesCore <> a:100 var
+R12627:12630 TypeRulesCore <> TLam constr
+R12632:12632 TypeRulesCore <> b:99 var
+binder 12756:12756 <> a:101
+binder 12758:12758 <> b:102
+R12761:12764 TypeRulesCore <> step:97 ind
+R12785:12785 TypeRulesCore <> a:101 var
+R12767:12770 TypeRulesCore <> TFst constr
+R12773:12777 TypeRulesCore <> TPair constr
+R12781:12781 TypeRulesCore <> b:102 var
+R12779:12779 TypeRulesCore <> a:101 var
+binder 12891:12891 <> a:103
+binder 12893:12893 <> b:104
+R12896:12899 TypeRulesCore <> step:97 ind
+R12920:12920 TypeRulesCore <> b:104 var
+R12902:12905 TypeRulesCore <> TSnd constr
+R12908:12912 TypeRulesCore <> TPair constr
+R12916:12916 TypeRulesCore <> b:104 var
+R12914:12914 TypeRulesCore <> a:103 var
+binder 13031:13031 <> P:105
+R13034:13037 TypeRulesCore <> step:97 ind
+R13054:13059 TypeRulesCore <> TUnitT constr
+R13040:13043 TypeRulesCore <> TEPi constr
+R13051:13051 TypeRulesCore <> P:105 var
+R13045:13049 TypeRulesCore <> TNilE constr
+binder 13177:13178 <> tg:106
+binder 13180:13180 <> E:107
+binder 13182:13182 <> P:108
+R13189:13192 TypeRulesCore <> step:97 ind
+R13227:13232 TypeRulesCore <> TSigma constr
+R13268:13271 TypeRulesCore <> lift def
+R13278:13281 TypeRulesCore <> TEPi constr
+R13286:13289 TypeRulesCore <> TLam constr
+R13292:13295 TypeRulesCore <> TApp constr
+R13311:13316 TypeRulesCore <> TESucc constr
+R13319:13322 TypeRulesCore <> TVar constr
+R13298:13301 TypeRulesCore <> lift def
+R13307:13307 TypeRulesCore <> P:108 var
+R13283:13283 TypeRulesCore <> E:107 var
+R13235:13238 TypeRulesCore <> TApp constr
+R13242:13247 TypeRulesCore <> TEZero constr
+R13240:13240 TypeRulesCore <> P:108 var
+R13195:13198 TypeRulesCore <> TEPi constr
+R13214:13214 TypeRulesCore <> P:108 var
+R13201:13206 TypeRulesCore <> TConsE constr
+R13211:13211 TypeRulesCore <> E:107 var
+R13208:13209 TypeRulesCore <> tg:106 var
+binder 13449:13450 <> tg:109
+binder 13452:13452 <> E:110
+binder 13454:13454 <> P:111
+binder 13456:13457 <> p0:112
+binder 13459:13460 <> ps:113
+R13467:13470 TypeRulesCore <> step:97 ind
+R13519:13520 TypeRulesCore <> p0:112 var
+R13473:13479 TypeRulesCore <> TSwitch constr
+R13511:13516 TypeRulesCore <> TEZero constr
+R13498:13502 TypeRulesCore <> TPair constr
+R13507:13508 TypeRulesCore <> ps:113 var
+R13504:13505 TypeRulesCore <> p0:112 var
+R13495:13495 TypeRulesCore <> P:111 var
+R13482:13487 TypeRulesCore <> TConsE constr
+R13492:13492 TypeRulesCore <> E:110 var
+R13489:13490 TypeRulesCore <> tg:109 var
+binder 13640:13641 <> tg:114
+binder 13643:13643 <> E:115
+binder 13645:13645 <> P:116
+binder 13647:13648 <> p0:117
+binder 13650:13651 <> ps:118
+binder 13653:13653 <> n:119
+R13660:13663 TypeRulesCore <> step:97 ind
+R13726:13732 TypeRulesCore <> TSwitch constr
+R13784:13784 TypeRulesCore <> n:119 var
+R13781:13782 TypeRulesCore <> ps:118 var
+R13737:13740 TypeRulesCore <> TLam constr
+R13743:13746 TypeRulesCore <> TApp constr
+R13762:13767 TypeRulesCore <> TESucc constr
+R13770:13773 TypeRulesCore <> TVar constr
+R13749:13752 TypeRulesCore <> lift def
+R13758:13758 TypeRulesCore <> P:116 var
+R13734:13734 TypeRulesCore <> E:115 var
+R13666:13672 TypeRulesCore <> TSwitch constr
+R13705:13710 TypeRulesCore <> TESucc constr
+R13712:13712 TypeRulesCore <> n:119 var
+R13691:13695 TypeRulesCore <> TPair constr
+R13700:13701 TypeRulesCore <> ps:118 var
+R13697:13698 TypeRulesCore <> p0:117 var
+R13688:13688 TypeRulesCore <> P:116 var
+R13675:13680 TypeRulesCore <> TConsE constr
+R13685:13685 TypeRulesCore <> E:115 var
+R13682:13683 TypeRulesCore <> tg:114 var
+binder 13898:13898 <> i:120
+binder 13900:13900 <> X:121
+R13903:13906 TypeRulesCore <> step:97 ind
+R13931:13934 TypeRulesCore <> TApp constr
+R13938:13938 TypeRulesCore <> i:120 var
+R13936:13936 TypeRulesCore <> X:121 var
+R13909:13915 TypeRulesCore <> TInterp constr
+R13927:13927 TypeRulesCore <> X:121 var
+R13918:13922 TypeRulesCore <> TIVar constr
+R13924:13924 TypeRulesCore <> i:120 var
+binder 14052:14052 <> X:122
+R14055:14058 TypeRulesCore <> step:97 ind
+R14076:14081 TypeRulesCore <> TUnitT constr
+R14061:14067 TypeRulesCore <> TInterp constr
+R14073:14073 TypeRulesCore <> X:122 var
+R14069:14071 TypeRulesCore <> TI1 constr
+binder 14206:14206 <> A:123
+binder 14208:14208 <> B:124
+binder 14210:14210 <> X:125
+R14217:14220 TypeRulesCore <> step:97 ind
+R14257:14262 TypeRulesCore <> TSigma constr
+R14279:14282 TypeRulesCore <> lift def
+R14289:14295 TypeRulesCore <> TInterp constr
+R14299:14299 TypeRulesCore <> X:125 var
+R14297:14297 TypeRulesCore <> B:124 var
+R14265:14271 TypeRulesCore <> TInterp constr
+R14275:14275 TypeRulesCore <> X:125 var
+R14273:14273 TypeRulesCore <> A:123 var
+R14223:14229 TypeRulesCore <> TInterp constr
+R14244:14244 TypeRulesCore <> X:125 var
+R14232:14237 TypeRulesCore <> TIProd constr
+R14241:14241 TypeRulesCore <> B:124 var
+R14239:14239 TypeRulesCore <> A:123 var
+binder 14422:14423 <> Sd:126
+binder 14425:14425 <> T:127
+binder 14427:14427 <> X:128
+R14434:14437 TypeRulesCore <> step:97 ind
+R14473:14475 TypeRulesCore <> TPi constr
+R14481:14487 TypeRulesCore <> TInterp constr
+R14519:14522 TypeRulesCore <> lift def
+R14528:14528 TypeRulesCore <> X:128 var
+R14490:14493 TypeRulesCore <> TApp constr
+R14509:14512 TypeRulesCore <> TVar constr
+R14496:14499 TypeRulesCore <> lift def
+R14505:14505 TypeRulesCore <> T:127 var
+R14477:14478 TypeRulesCore <> Sd:126 var
+R14440:14446 TypeRulesCore <> TInterp constr
+R14460:14460 TypeRulesCore <> X:128 var
+R14449:14452 TypeRulesCore <> TIPi constr
+R14457:14457 TypeRulesCore <> T:127 var
+R14454:14455 TypeRulesCore <> Sd:126 var
+binder 14651:14652 <> Sd:129
+binder 14654:14654 <> T:130
+binder 14656:14656 <> X:131
+R14663:14666 TypeRulesCore <> step:97 ind
+R14703:14708 TypeRulesCore <> TSigma constr
+R14714:14720 TypeRulesCore <> TInterp constr
+R14752:14755 TypeRulesCore <> lift def
+R14761:14761 TypeRulesCore <> X:131 var
+R14723:14726 TypeRulesCore <> TApp constr
+R14742:14745 TypeRulesCore <> TVar constr
+R14729:14732 TypeRulesCore <> lift def
+R14738:14738 TypeRulesCore <> T:130 var
+R14710:14711 TypeRulesCore <> Sd:129 var
+R14669:14675 TypeRulesCore <> TInterp constr
+R14690:14690 TypeRulesCore <> X:131 var
+R14678:14682 TypeRulesCore <> TISig constr
+R14687:14687 TypeRulesCore <> T:130 var
+R14684:14685 TypeRulesCore <> Sd:129 var
+binder 14887:14887 <> E:132
+binder 14889:14889 <> T:133
+binder 14891:14891 <> X:134
+R14898:14901 TypeRulesCore <> step:97 ind
+R14940:14945 TypeRulesCore <> TSigma constr
+R14959:14965 TypeRulesCore <> TInterp constr
+R14997:15000 TypeRulesCore <> lift def
+R15006:15006 TypeRulesCore <> X:134 var
+R14968:14971 TypeRulesCore <> TApp constr
+R14987:14990 TypeRulesCore <> TVar constr
+R14974:14977 TypeRulesCore <> lift def
+R14983:14983 TypeRulesCore <> T:133 var
+R14948:14953 TypeRulesCore <> TEnumT constr
+R14955:14955 TypeRulesCore <> E:132 var
+R14904:14910 TypeRulesCore <> TInterp constr
+R14927:14927 TypeRulesCore <> X:134 var
+R14913:14920 TypeRulesCore <> TIChoice constr
+R14924:14924 TypeRulesCore <> T:133 var
+R14922:14922 TypeRulesCore <> E:132 var
+binder 15116:15116 <> j:135
+binder 15118:15118 <> X:136
+binder 15120:15120 <> x:137
+binder 15122:15122 <> P:138
+R15125:15128 TypeRulesCore <> step:97 ind
+R15155:15158 TypeRulesCore <> TApp constr
+R15163:15167 TypeRulesCore <> TPair constr
+R15171:15171 TypeRulesCore <> x:137 var
+R15169:15169 TypeRulesCore <> j:135 var
+R15160:15160 TypeRulesCore <> P:138 var
+R15131:15135 TypeRulesCore <> TIAll constr
+R15151:15151 TypeRulesCore <> P:138 var
+R15149:15149 TypeRulesCore <> x:137 var
+R15147:15147 TypeRulesCore <> X:136 var
+R15138:15142 TypeRulesCore <> TIVar constr
+R15144:15144 TypeRulesCore <> j:135 var
+binder 15280:15280 <> X:139
+binder 15282:15282 <> P:140
+R15285:15288 TypeRulesCore <> step:97 ind
+R15312:15317 TypeRulesCore <> TUnitT constr
+R15291:15295 TypeRulesCore <> TIAll constr
+R15309:15309 TypeRulesCore <> P:140 var
+R15303:15307 TypeRulesCore <> TUnit constr
+R15301:15301 TypeRulesCore <> X:139 var
+R15297:15299 TypeRulesCore <> TI1 constr
+binder 15427:15427 <> A:141
+binder 15429:15429 <> B:142
+binder 15431:15431 <> X:143
+binder 15433:15433 <> a:144
+binder 15435:15435 <> b:145
+binder 15437:15437 <> P:146
+R15444:15447 TypeRulesCore <> step:97 ind
+R15496:15501 TypeRulesCore <> TSigma constr
+R15520:15523 TypeRulesCore <> lift def
+R15530:15534 TypeRulesCore <> TIAll constr
+R15542:15542 TypeRulesCore <> P:146 var
+R15540:15540 TypeRulesCore <> b:145 var
+R15538:15538 TypeRulesCore <> X:143 var
+R15536:15536 TypeRulesCore <> B:142 var
+R15504:15508 TypeRulesCore <> TIAll constr
+R15516:15516 TypeRulesCore <> P:146 var
+R15514:15514 TypeRulesCore <> a:144 var
+R15512:15512 TypeRulesCore <> X:143 var
+R15510:15510 TypeRulesCore <> A:141 var
+R15450:15454 TypeRulesCore <> TIAll constr
+R15483:15483 TypeRulesCore <> P:146 var
+R15472:15476 TypeRulesCore <> TPair constr
+R15480:15480 TypeRulesCore <> b:145 var
+R15478:15478 TypeRulesCore <> a:144 var
+R15469:15469 TypeRulesCore <> X:143 var
+R15457:15462 TypeRulesCore <> TIProd constr
+R15466:15466 TypeRulesCore <> B:142 var
+R15464:15464 TypeRulesCore <> A:141 var
+binder 15654:15655 <> Sd:147
+binder 15657:15657 <> T:148
+binder 15659:15659 <> X:149
+binder 15661:15661 <> f:150
+binder 15663:15663 <> P:151
+R15670:15673 TypeRulesCore <> step:97 ind
+R15711:15713 TypeRulesCore <> TPi constr
+R15719:15723 TypeRulesCore <> TIAll constr
+R15821:15824 TypeRulesCore <> lift def
+R15830:15830 TypeRulesCore <> P:151 var
+R15792:15795 TypeRulesCore <> TApp constr
+R15811:15814 TypeRulesCore <> TVar constr
+R15798:15801 TypeRulesCore <> lift def
+R15807:15807 TypeRulesCore <> f:150 var
+R15755:15758 TypeRulesCore <> lift def
+R15764:15764 TypeRulesCore <> X:149 var
+R15726:15729 TypeRulesCore <> TApp constr
+R15745:15748 TypeRulesCore <> TVar constr
+R15732:15735 TypeRulesCore <> lift def
+R15741:15741 TypeRulesCore <> T:148 var
+R15715:15716 TypeRulesCore <> Sd:147 var
+R15676:15680 TypeRulesCore <> TIAll constr
+R15698:15698 TypeRulesCore <> P:151 var
+R15696:15696 TypeRulesCore <> f:150 var
+R15694:15694 TypeRulesCore <> X:149 var
+R15683:15686 TypeRulesCore <> TIPi constr
+R15691:15691 TypeRulesCore <> T:148 var
+R15688:15689 TypeRulesCore <> Sd:147 var
+binder 15941:15942 <> Sd:152
+binder 15944:15944 <> T:153
+binder 15946:15946 <> X:154
+binder 15948:15948 <> s:155
+binder 15950:15950 <> x:156
+binder 15952:15952 <> P:157
+R15959:15962 TypeRulesCore <> step:97 ind
+R16002:16006 TypeRulesCore <> TIAll constr
+R16023:16023 TypeRulesCore <> P:157 var
+R16021:16021 TypeRulesCore <> x:156 var
+R16019:16019 TypeRulesCore <> X:154 var
+R16009:16012 TypeRulesCore <> TApp constr
+R16016:16016 TypeRulesCore <> s:155 var
+R16014:16014 TypeRulesCore <> T:153 var
+R15965:15969 TypeRulesCore <> TIAll constr
+R15998:15998 TypeRulesCore <> P:157 var
+R15987:15991 TypeRulesCore <> TPair constr
+R15995:15995 TypeRulesCore <> x:156 var
+R15993:15993 TypeRulesCore <> s:155 var
+R15984:15984 TypeRulesCore <> X:154 var
+R15972:15976 TypeRulesCore <> TISig constr
+R15981:15981 TypeRulesCore <> T:153 var
+R15978:15979 TypeRulesCore <> Sd:152 var
+binder 16135:16135 <> E:158
+binder 16137:16137 <> T:159
+binder 16139:16139 <> X:160
+binder 16141:16141 <> e:161
+binder 16143:16143 <> x:162
+binder 16145:16145 <> P:163
+R16152:16155 TypeRulesCore <> step:97 ind
+R16197:16201 TypeRulesCore <> TIAll constr
+R16218:16218 TypeRulesCore <> P:163 var
+R16216:16216 TypeRulesCore <> x:162 var
+R16214:16214 TypeRulesCore <> X:160 var
+R16204:16207 TypeRulesCore <> TApp constr
+R16211:16211 TypeRulesCore <> e:161 var
+R16209:16209 TypeRulesCore <> T:159 var
+R16158:16162 TypeRulesCore <> TIAll constr
+R16193:16193 TypeRulesCore <> P:163 var
+R16182:16186 TypeRulesCore <> TPair constr
+R16190:16190 TypeRulesCore <> x:162 var
+R16188:16188 TypeRulesCore <> e:161 var
+R16179:16179 TypeRulesCore <> X:160 var
+R16165:16172 TypeRulesCore <> TIChoice constr
+R16176:16176 TypeRulesCore <> T:159 var
+R16174:16174 TypeRulesCore <> E:158 var
+binder 16326:16326 <> j:164
+binder 16328:16328 <> X:165
+binder 16330:16330 <> P:166
+binder 16332:16332 <> h:167
+binder 16334:16334 <> x:168
+R16341:16344 TypeRulesCore <> step:97 ind
+R16373:16376 TypeRulesCore <> TApp constr
+R16389:16389 TypeRulesCore <> x:168 var
+R16379:16382 TypeRulesCore <> TApp constr
+R16386:16386 TypeRulesCore <> j:164 var
+R16384:16384 TypeRulesCore <> h:167 var
+R16347:16351 TypeRulesCore <> THyps constr
+R16369:16369 TypeRulesCore <> x:168 var
+R16367:16367 TypeRulesCore <> h:167 var
+R16365:16365 TypeRulesCore <> P:166 var
+R16363:16363 TypeRulesCore <> X:165 var
+R16354:16358 TypeRulesCore <> TIVar constr
+R16360:16360 TypeRulesCore <> j:164 var
+binder 16497:16497 <> X:169
+binder 16499:16499 <> P:170
+binder 16501:16501 <> h:171
+R16504:16507 TypeRulesCore <> step:97 ind
+R16533:16537 TypeRulesCore <> TUnit constr
+R16510:16514 TypeRulesCore <> THyps constr
+R16526:16530 TypeRulesCore <> TUnit constr
+R16524:16524 TypeRulesCore <> h:171 var
+R16522:16522 TypeRulesCore <> P:170 var
+R16520:16520 TypeRulesCore <> X:169 var
+R16516:16518 TypeRulesCore <> TI1 constr
+binder 16646:16646 <> A:172
+binder 16648:16648 <> B:173
+binder 16650:16650 <> X:174
+binder 16652:16652 <> P:175
+binder 16654:16654 <> h:176
+binder 16656:16656 <> a:177
+binder 16658:16658 <> b:178
+R16665:16668 TypeRulesCore <> step:97 ind
+R16719:16723 TypeRulesCore <> TPair constr
+R16744:16748 TypeRulesCore <> THyps constr
+R16758:16758 TypeRulesCore <> b:178 var
+R16756:16756 TypeRulesCore <> h:176 var
+R16754:16754 TypeRulesCore <> P:175 var
+R16752:16752 TypeRulesCore <> X:174 var
+R16750:16750 TypeRulesCore <> B:173 var
+R16726:16730 TypeRulesCore <> THyps constr
+R16740:16740 TypeRulesCore <> a:177 var
+R16738:16738 TypeRulesCore <> h:176 var
+R16736:16736 TypeRulesCore <> P:175 var
+R16734:16734 TypeRulesCore <> X:174 var
+R16732:16732 TypeRulesCore <> A:172 var
+R16671:16675 TypeRulesCore <> THyps constr
+R16697:16701 TypeRulesCore <> TPair constr
+R16705:16705 TypeRulesCore <> b:178 var
+R16703:16703 TypeRulesCore <> a:177 var
+R16694:16694 TypeRulesCore <> h:176 var
+R16692:16692 TypeRulesCore <> P:175 var
+R16690:16690 TypeRulesCore <> X:174 var
+R16678:16683 TypeRulesCore <> TIProd constr
+R16687:16687 TypeRulesCore <> B:173 var
+R16685:16685 TypeRulesCore <> A:172 var
+binder 16868:16869 <> Sd:179
+binder 16871:16871 <> T:180
+binder 16873:16873 <> X:181
+binder 16875:16875 <> P:182
+binder 16877:16877 <> h:183
+binder 16879:16879 <> f:184
+R16886:16889 TypeRulesCore <> step:97 ind
+R16929:16932 TypeRulesCore <> TLam constr
+R16935:16939 TypeRulesCore <> THyps constr
+R17032:17035 TypeRulesCore <> TApp constr
+R17051:17054 TypeRulesCore <> TVar constr
+R17038:17041 TypeRulesCore <> lift def
+R17047:17047 TypeRulesCore <> f:184 var
+R17019:17022 TypeRulesCore <> lift def
+R17028:17028 TypeRulesCore <> h:183 var
+R16984:16987 TypeRulesCore <> lift def
+R16993:16993 TypeRulesCore <> P:182 var
+R16971:16974 TypeRulesCore <> lift def
+R16980:16980 TypeRulesCore <> X:181 var
+R16942:16945 TypeRulesCore <> TApp constr
+R16961:16964 TypeRulesCore <> TVar constr
+R16948:16951 TypeRulesCore <> lift def
+R16957:16957 TypeRulesCore <> T:180 var
+R16892:16896 TypeRulesCore <> THyps constr
+R16916:16916 TypeRulesCore <> f:184 var
+R16914:16914 TypeRulesCore <> h:183 var
+R16912:16912 TypeRulesCore <> P:182 var
+R16910:16910 TypeRulesCore <> X:181 var
+R16899:16902 TypeRulesCore <> TIPi constr
+R16907:16907 TypeRulesCore <> T:180 var
+R16904:16905 TypeRulesCore <> Sd:179 var
+binder 17168:17169 <> Sd:185
+binder 17171:17171 <> T:186
+binder 17173:17173 <> X:187
+binder 17175:17175 <> P:188
+binder 17177:17177 <> h:189
+binder 17179:17179 <> s:190
+binder 17181:17181 <> x:191
+R17188:17191 TypeRulesCore <> step:97 ind
+R17233:17237 TypeRulesCore <> THyps constr
+R17256:17256 TypeRulesCore <> x:191 var
+R17254:17254 TypeRulesCore <> h:189 var
+R17252:17252 TypeRulesCore <> P:188 var
+R17250:17250 TypeRulesCore <> X:187 var
+R17240:17243 TypeRulesCore <> TApp constr
+R17247:17247 TypeRulesCore <> s:190 var
+R17245:17245 TypeRulesCore <> T:186 var
+R17194:17198 TypeRulesCore <> THyps constr
+R17220:17224 TypeRulesCore <> TPair constr
+R17228:17228 TypeRulesCore <> x:191 var
+R17226:17226 TypeRulesCore <> s:190 var
+R17217:17217 TypeRulesCore <> h:189 var
+R17215:17215 TypeRulesCore <> P:188 var
+R17213:17213 TypeRulesCore <> X:187 var
+R17201:17205 TypeRulesCore <> TISig constr
+R17210:17210 TypeRulesCore <> T:186 var
+R17207:17208 TypeRulesCore <> Sd:185 var
+binder 17368:17368 <> E:192
+binder 17370:17370 <> T:193
+binder 17372:17372 <> X:194
+binder 17374:17374 <> P:195
+binder 17376:17376 <> h:196
+binder 17378:17378 <> e:197
+binder 17380:17380 <> x:198
+R17387:17390 TypeRulesCore <> step:97 ind
+R17434:17438 TypeRulesCore <> THyps constr
+R17457:17457 TypeRulesCore <> x:198 var
+R17455:17455 TypeRulesCore <> h:196 var
+R17453:17453 TypeRulesCore <> P:195 var
+R17451:17451 TypeRulesCore <> X:194 var
+R17441:17444 TypeRulesCore <> TApp constr
+R17448:17448 TypeRulesCore <> e:197 var
+R17446:17446 TypeRulesCore <> T:193 var
+R17393:17397 TypeRulesCore <> THyps constr
+R17421:17425 TypeRulesCore <> TPair constr
+R17429:17429 TypeRulesCore <> x:198 var
+R17427:17427 TypeRulesCore <> e:197 var
+R17418:17418 TypeRulesCore <> h:196 var
+R17416:17416 TypeRulesCore <> P:195 var
+R17414:17414 TypeRulesCore <> X:194 var
+R17400:17407 TypeRulesCore <> TIChoice constr
+R17411:17411 TypeRulesCore <> T:193 var
+R17409:17409 TypeRulesCore <> E:192 var
+binder 17704:17704 <> R:199
+binder 17706:17706 <> P:200
+binder 17708:17710 <> stp:201
+binder 17712:17712 <> i:202
+binder 17714:17715 <> xs:203
+R17722:17725 TypeRulesCore <> step:97 ind
+R17763:17766 TypeRulesCore <> TApp constr
+R17807:17811 TypeRulesCore <> THyps constr
+R17999:18000 TypeRulesCore <> xs:203 var
+R17858:17861 TypeRulesCore <> TLam constr
+R17864:17867 TypeRulesCore <> TLam constr
+R17870:17873 TypeRulesCore <> TInd constr
+R17966:17969 TypeRulesCore <> TVar constr
+R17957:17960 TypeRulesCore <> TVar constr
+R17902:17905 TypeRulesCore <> lift def
+R17911:17913 TypeRulesCore <> stp:201 var
+R17889:17892 TypeRulesCore <> lift def
+R17898:17898 TypeRulesCore <> P:200 var
+R17876:17879 TypeRulesCore <> lift def
+R17885:17885 TypeRulesCore <> R:199 var
+R17833:17833 TypeRulesCore <> P:200 var
+R17825:17828 TypeRulesCore <> TMuI constr
+R17830:17830 TypeRulesCore <> R:199 var
+R17814:17817 TypeRulesCore <> TApp constr
+R17821:17821 TypeRulesCore <> i:202 var
+R17819:17819 TypeRulesCore <> R:199 var
+R17769:17772 TypeRulesCore <> TApp constr
+R17787:17788 TypeRulesCore <> xs:203 var
+R17775:17778 TypeRulesCore <> TApp constr
+R17784:17784 TypeRulesCore <> i:202 var
+R17780:17782 TypeRulesCore <> stp:201 var
+R17728:17731 TypeRulesCore <> TInd constr
+R17744:17746 TypeRulesCore <> TIn constr
+R17748:17749 TypeRulesCore <> xs:203 var
+R17741:17741 TypeRulesCore <> i:202 var
+R17737:17739 TypeRulesCore <> stp:201 var
+R17735:17735 TypeRulesCore <> P:200 var
+R17733:17733 TypeRulesCore <> R:199 var
+binder 18919:18919 <> a:204
+binder 18921:18922 <> xs:205
+binder 18924:18924 <> Q:206
+binder 18926:18927 <> bs:207
+binder 18929:18929 <> k:208
+binder 18931:18931 <> c:209
+binder 18933:18933 <> b:210
+binder 18935:18935 <> n:211
+R18970:18977 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18956:18958 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18942:18950 Stdlib.Lists.List <> nth_error def
+R18955:18955 TypeRulesCore <> k:208 var
+R18952:18953 TypeRulesCore <> bs:207 var
+R18959:18962 Corelib.Init.Datatypes <> Some constr
+R18964:18964 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18966:18967 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18969:18969 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18965:18965 TypeRulesCore <> c:209 var
+R18968:18968 TypeRulesCore <> b:210 var
+R18990:18993 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18978:18985 TypeRulesCore <> enum_pos ind
+R18989:18989 TypeRulesCore <> n:211 var
+R18987:18987 TypeRulesCore <> c:209 var
+R19006:19013 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18994:19001 TypeRulesCore <> enum_pos ind
+R19005:19005 TypeRulesCore <> n:211 var
+R19003:19003 TypeRulesCore <> a:204 var
+R19014:19014 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19118:19126 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 19022:19022 <> j:212
+binder 19024:19025 <> cj:213
+binder 19027:19028 <> bj:214
+R19036:19039 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19032:19034 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R19031:19031 TypeRulesCore <> j:212 var
+R19035:19035 TypeRulesCore <> k:208 var
+R19070:19081 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19054:19056 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R19040:19048 Stdlib.Lists.List <> nth_error def
+R19053:19053 TypeRulesCore <> j:212 var
+R19050:19051 TypeRulesCore <> bs:207 var
+R19057:19060 Corelib.Init.Datatypes <> Some constr
+R19062:19062 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19065:19066 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19069:19069 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19063:19064 TypeRulesCore <> cj:213 var
+R19067:19068 TypeRulesCore <> bj:214 var
+R19082:19088 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19091:19092 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 19089:19090 <> nj:215
+R19107:19110 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R19093:19100 TypeRulesCore <> enum_pos ind
+R19105:19106 TypeRulesCore <> nj:215 var
+R19102:19103 TypeRulesCore <> cj:213 var
+R19113:19116 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R19111:19112 TypeRulesCore <> nj:215 var
+R19117:19117 TypeRulesCore <> n:211 var
+R19127:19130 TypeRulesCore <> step:97 ind
+R19165:19169 TypeRulesCore <> subst def
+R19176:19176 TypeRulesCore <> b:210 var
+R19171:19172 TypeRulesCore <> xs:205 var
+R19133:19137 TypeRulesCore <> TCase constr
+R19160:19161 TypeRulesCore <> bs:207 var
+R19158:19158 TypeRulesCore <> Q:206 var
+R19140:19142 TypeRulesCore <> TIn constr
+R19145:19149 TypeRulesCore <> TPair constr
+R19153:19154 TypeRulesCore <> xs:205 var
+R19151:19151 TypeRulesCore <> a:204 var
+binder 19284:19284 <> f:216
+binder 19286:19287 <> f':217
+binder 19289:19289 <> a:218
+R19301:19304 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19292:19295 TypeRulesCore <> step:97 ind
+R19299:19300 TypeRulesCore <> f':217 var
+R19297:19297 TypeRulesCore <> f:216 var
+R19305:19308 TypeRulesCore <> step:97 ind
+R19322:19325 TypeRulesCore <> TApp constr
+R19330:19330 TypeRulesCore <> a:218 var
+R19327:19328 TypeRulesCore <> f':217 var
+R19311:19314 TypeRulesCore <> TApp constr
+R19318:19318 TypeRulesCore <> a:218 var
+R19316:19316 TypeRulesCore <> f:216 var
+binder 19355:19355 <> p:219
+binder 19357:19358 <> p':220
+R19370:19373 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19361:19364 TypeRulesCore <> step:97 ind
+R19368:19369 TypeRulesCore <> p':220 var
+R19366:19366 TypeRulesCore <> p:219 var
+R19374:19377 TypeRulesCore <> step:97 ind
+R19389:19392 TypeRulesCore <> TFst constr
+R19394:19395 TypeRulesCore <> p':220 var
+R19380:19383 TypeRulesCore <> TFst constr
+R19385:19385 TypeRulesCore <> p:219 var
+binder 19420:19420 <> p:221
+binder 19422:19423 <> p':222
+R19435:19438 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19426:19429 TypeRulesCore <> step:97 ind
+R19433:19434 TypeRulesCore <> p':222 var
+R19431:19431 TypeRulesCore <> p:221 var
+R19439:19442 TypeRulesCore <> step:97 ind
+R19454:19457 TypeRulesCore <> TSnd constr
+R19459:19460 TypeRulesCore <> p':222 var
+R19445:19448 TypeRulesCore <> TSnd constr
+R19450:19450 TypeRulesCore <> p:221 var
+binder 19485:19485 <> E:223
+binder 19487:19488 <> E':224
+binder 19490:19490 <> P:225
+R19502:19505 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19493:19496 TypeRulesCore <> step:97 ind
+R19500:19501 TypeRulesCore <> E':224 var
+R19498:19498 TypeRulesCore <> E:223 var
+R19506:19509 TypeRulesCore <> step:97 ind
+R19523:19526 TypeRulesCore <> TEPi constr
+R19531:19531 TypeRulesCore <> P:225 var
+R19528:19529 TypeRulesCore <> E':224 var
+R19512:19515 TypeRulesCore <> TEPi constr
+R19519:19519 TypeRulesCore <> P:225 var
+R19517:19517 TypeRulesCore <> E:223 var
+binder 19556:19556 <> E:226
+binder 19558:19559 <> E':227
+binder 19561:19561 <> P:228
+binder 19563:19563 <> p:229
+binder 19565:19565 <> e:230
+R19577:19580 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19568:19571 TypeRulesCore <> step:97 ind
+R19575:19576 TypeRulesCore <> E':227 var
+R19573:19573 TypeRulesCore <> E:226 var
+R19581:19584 TypeRulesCore <> step:97 ind
+R19605:19611 TypeRulesCore <> TSwitch constr
+R19620:19620 TypeRulesCore <> e:230 var
+R19618:19618 TypeRulesCore <> p:229 var
+R19616:19616 TypeRulesCore <> P:228 var
+R19613:19614 TypeRulesCore <> E':227 var
+R19587:19593 TypeRulesCore <> TSwitch constr
+R19601:19601 TypeRulesCore <> e:230 var
+R19599:19599 TypeRulesCore <> p:229 var
+R19597:19597 TypeRulesCore <> P:228 var
+R19595:19595 TypeRulesCore <> E:226 var
+binder 19645:19645 <> E:231
+binder 19647:19647 <> P:232
+binder 19649:19649 <> p:233
+binder 19651:19652 <> p':234
+binder 19654:19654 <> e:235
+R19666:19669 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19657:19660 TypeRulesCore <> step:97 ind
+R19664:19665 TypeRulesCore <> p':234 var
+R19662:19662 TypeRulesCore <> p:233 var
+R19670:19673 TypeRulesCore <> step:97 ind
+R19694:19700 TypeRulesCore <> TSwitch constr
+R19709:19709 TypeRulesCore <> e:235 var
+R19706:19707 TypeRulesCore <> p':234 var
+R19704:19704 TypeRulesCore <> P:232 var
+R19702:19702 TypeRulesCore <> E:231 var
+R19676:19682 TypeRulesCore <> TSwitch constr
+R19690:19690 TypeRulesCore <> e:235 var
+R19688:19688 TypeRulesCore <> p:233 var
+R19686:19686 TypeRulesCore <> P:232 var
+R19684:19684 TypeRulesCore <> E:231 var
+binder 19734:19734 <> E:236
+binder 19736:19736 <> P:237
+binder 19738:19738 <> p:238
+binder 19740:19740 <> e:239
+binder 19742:19743 <> e':240
+R19755:19758 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19746:19749 TypeRulesCore <> step:97 ind
+R19753:19754 TypeRulesCore <> e':240 var
+R19751:19751 TypeRulesCore <> e:239 var
+R19759:19762 TypeRulesCore <> step:97 ind
+R19783:19789 TypeRulesCore <> TSwitch constr
+R19797:19798 TypeRulesCore <> e':240 var
+R19795:19795 TypeRulesCore <> p:238 var
+R19793:19793 TypeRulesCore <> P:237 var
+R19791:19791 TypeRulesCore <> E:236 var
+R19765:19771 TypeRulesCore <> TSwitch constr
+R19779:19779 TypeRulesCore <> e:239 var
+R19777:19777 TypeRulesCore <> p:238 var
+R19775:19775 TypeRulesCore <> P:237 var
+R19773:19773 TypeRulesCore <> E:236 var
+binder 19823:19823 <> D:241
+binder 19825:19826 <> D':242
+binder 19828:19828 <> X:243
+R19840:19843 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19831:19834 TypeRulesCore <> step:97 ind
+R19838:19839 TypeRulesCore <> D':242 var
+R19836:19836 TypeRulesCore <> D:241 var
+R19844:19847 TypeRulesCore <> step:97 ind
+R19864:19870 TypeRulesCore <> TInterp constr
+R19875:19875 TypeRulesCore <> X:243 var
+R19872:19873 TypeRulesCore <> D':242 var
+R19850:19856 TypeRulesCore <> TInterp constr
+R19860:19860 TypeRulesCore <> X:243 var
+R19858:19858 TypeRulesCore <> D:241 var
+binder 19900:19900 <> D:244
+binder 19902:19903 <> D':245
+binder 19905:19905 <> X:246
+binder 19907:19908 <> xs:247
+binder 19910:19910 <> P:248
+R19922:19925 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19913:19916 TypeRulesCore <> step:97 ind
+R19920:19921 TypeRulesCore <> D':245 var
+R19918:19918 TypeRulesCore <> D:244 var
+R19926:19929 TypeRulesCore <> step:97 ind
+R19949:19953 TypeRulesCore <> TIAll constr
+R19963:19963 TypeRulesCore <> P:248 var
+R19960:19961 TypeRulesCore <> xs:247 var
+R19958:19958 TypeRulesCore <> X:246 var
+R19955:19956 TypeRulesCore <> D':245 var
+R19932:19936 TypeRulesCore <> TIAll constr
+R19945:19945 TypeRulesCore <> P:248 var
+R19942:19943 TypeRulesCore <> xs:247 var
+R19940:19940 TypeRulesCore <> X:246 var
+R19938:19938 TypeRulesCore <> D:244 var
+binder 19988:19988 <> D:249
+binder 19990:19990 <> X:250
+binder 19992:19993 <> xs:251
+binder 19995:19997 <> xs':252
+binder 19999:19999 <> P:253
+R20013:20016 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20002:20005 TypeRulesCore <> step:97 ind
+R20010:20012 TypeRulesCore <> xs':252 var
+R20007:20008 TypeRulesCore <> xs:251 var
+R20017:20020 TypeRulesCore <> step:97 ind
+R20040:20044 TypeRulesCore <> TIAll constr
+R20054:20054 TypeRulesCore <> P:253 var
+R20050:20052 TypeRulesCore <> xs':252 var
+R20048:20048 TypeRulesCore <> X:250 var
+R20046:20046 TypeRulesCore <> D:249 var
+R20023:20027 TypeRulesCore <> TIAll constr
+R20036:20036 TypeRulesCore <> P:253 var
+R20033:20034 TypeRulesCore <> xs:251 var
+R20031:20031 TypeRulesCore <> X:250 var
+R20029:20029 TypeRulesCore <> D:249 var
+binder 20079:20079 <> D:254
+binder 20081:20082 <> D':255
+binder 20084:20084 <> X:256
+binder 20086:20086 <> P:257
+binder 20088:20088 <> h:258
+binder 20090:20091 <> xs:259
+R20103:20106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20094:20097 TypeRulesCore <> step:97 ind
+R20101:20102 TypeRulesCore <> D':255 var
+R20099:20099 TypeRulesCore <> D:254 var
+R20107:20110 TypeRulesCore <> step:97 ind
+R20132:20136 TypeRulesCore <> THyps constr
+R20147:20148 TypeRulesCore <> xs:259 var
+R20145:20145 TypeRulesCore <> h:258 var
+R20143:20143 TypeRulesCore <> P:257 var
+R20141:20141 TypeRulesCore <> X:256 var
+R20138:20139 TypeRulesCore <> D':255 var
+R20113:20117 TypeRulesCore <> THyps constr
+R20127:20128 TypeRulesCore <> xs:259 var
+R20125:20125 TypeRulesCore <> h:258 var
+R20123:20123 TypeRulesCore <> P:257 var
+R20121:20121 TypeRulesCore <> X:256 var
+R20119:20119 TypeRulesCore <> D:254 var
+binder 20173:20173 <> D:260
+binder 20175:20175 <> X:261
+binder 20177:20177 <> P:262
+binder 20179:20179 <> h:263
+binder 20181:20182 <> xs:264
+binder 20184:20186 <> xs':265
+R20200:20203 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20189:20192 TypeRulesCore <> step:97 ind
+R20197:20199 TypeRulesCore <> xs':265 var
+R20194:20195 TypeRulesCore <> xs:264 var
+R20204:20207 TypeRulesCore <> step:97 ind
+R20229:20233 TypeRulesCore <> THyps constr
+R20243:20245 TypeRulesCore <> xs':265 var
+R20241:20241 TypeRulesCore <> h:263 var
+R20239:20239 TypeRulesCore <> P:262 var
+R20237:20237 TypeRulesCore <> X:261 var
+R20235:20235 TypeRulesCore <> D:260 var
+R20210:20214 TypeRulesCore <> THyps constr
+R20224:20225 TypeRulesCore <> xs:264 var
+R20222:20222 TypeRulesCore <> h:263 var
+R20220:20220 TypeRulesCore <> P:262 var
+R20218:20218 TypeRulesCore <> X:261 var
+R20216:20216 TypeRulesCore <> D:260 var
+binder 20270:20270 <> R:266
+binder 20272:20272 <> P:267
+binder 20274:20276 <> stp:268
+binder 20278:20278 <> i:269
+binder 20280:20280 <> x:270
+binder 20282:20283 <> x':271
+R20295:20298 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20286:20289 TypeRulesCore <> step:97 ind
+R20293:20294 TypeRulesCore <> x':271 var
+R20291:20291 TypeRulesCore <> x:270 var
+R20299:20302 TypeRulesCore <> step:97 ind
+R20324:20327 TypeRulesCore <> TInd constr
+R20339:20340 TypeRulesCore <> x':271 var
+R20337:20337 TypeRulesCore <> i:269 var
+R20333:20335 TypeRulesCore <> stp:268 var
+R20331:20331 TypeRulesCore <> P:267 var
+R20329:20329 TypeRulesCore <> R:266 var
+R20305:20308 TypeRulesCore <> TInd constr
+R20320:20320 TypeRulesCore <> x:270 var
+R20318:20318 TypeRulesCore <> i:269 var
+R20314:20316 TypeRulesCore <> stp:268 var
+R20312:20312 TypeRulesCore <> P:267 var
+R20310:20310 TypeRulesCore <> R:266 var
+binder 20365:20365 <> M:272
+binder 20367:20368 <> M':273
+binder 20370:20370 <> Q:274
+binder 20372:20373 <> bs:275
+R20385:20388 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20376:20379 TypeRulesCore <> step:97 ind
+R20383:20384 TypeRulesCore <> M':273 var
+R20381:20381 TypeRulesCore <> M:272 var
+R20389:20392 TypeRulesCore <> step:97 ind
+R20410:20414 TypeRulesCore <> TCase constr
+R20421:20422 TypeRulesCore <> bs:275 var
+R20419:20419 TypeRulesCore <> Q:274 var
+R20416:20417 TypeRulesCore <> M':273 var
+R20395:20399 TypeRulesCore <> TCase constr
+R20405:20406 TypeRulesCore <> bs:275 var
+R20403:20403 TypeRulesCore <> Q:274 var
+R20401:20401 TypeRulesCore <> M:272 var
+binder 20522:20522 <> M:276
+binder 20524:20524 <> Q:277
+binder 20526:20528 <> bs1:278
+binder 20530:20530 <> c:279
+binder 20532:20533 <> c':280
+binder 20535:20535 <> b:281
+binder 20537:20539 <> bs2:282
+R20551:20558 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20542:20545 TypeRulesCore <> step:97 ind
+R20549:20550 TypeRulesCore <> c':280 var
+R20547:20547 TypeRulesCore <> c:279 var
+R20559:20562 TypeRulesCore <> step:97 ind
+R20600:20604 TypeRulesCore <> TCase constr
+R20614:20617 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R20611:20613 TypeRulesCore <> bs1:278 var
+R20625:20628 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R20618:20618 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20621:20622 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20624:20624 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20619:20620 TypeRulesCore <> c':280 var
+R20623:20623 TypeRulesCore <> b:281 var
+R20629:20631 TypeRulesCore <> bs2:282 var
+R20608:20608 TypeRulesCore <> Q:277 var
+R20606:20606 TypeRulesCore <> M:276 var
+R20565:20569 TypeRulesCore <> TCase constr
+R20579:20582 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R20576:20578 TypeRulesCore <> bs1:278 var
+R20589:20592 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R20583:20583 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20585:20586 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20588:20588 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20584:20584 TypeRulesCore <> c:279 var
+R20587:20587 TypeRulesCore <> b:281 var
+R20593:20595 TypeRulesCore <> bs2:282 var
+R20573:20573 TypeRulesCore <> Q:277 var
+R20571:20571 TypeRulesCore <> M:276 var
+binder 21019:21019 <> n:283
+binder 21021:21022 <> n':284
+R21034:21037 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21025:21028 TypeRulesCore <> step:97 ind
+R21032:21033 TypeRulesCore <> n':284 var
+R21030:21030 TypeRulesCore <> n:283 var
+R21038:21041 TypeRulesCore <> step:97 ind
+R21055:21060 TypeRulesCore <> TESucc constr
+R21062:21063 TypeRulesCore <> n':284 var
+R21044:21049 TypeRulesCore <> TESucc constr
+R21051:21051 TypeRulesCore <> n:283 var
+binder 21168:21168 <> x:285
+binder 21170:21171 <> x':286
+R21183:21186 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21174:21177 TypeRulesCore <> step:97 ind
+R21181:21182 TypeRulesCore <> x':286 var
+R21179:21179 TypeRulesCore <> x:285 var
+R21187:21190 TypeRulesCore <> step:97 ind
+R21201:21203 TypeRulesCore <> TIn constr
+R21205:21206 TypeRulesCore <> x':286 var
+R21193:21195 TypeRulesCore <> TIn constr
+R21197:21197 TypeRulesCore <> x:285 var
+binder 21231:21231 <> a:287
+binder 21233:21234 <> a':288
+binder 21236:21236 <> b:289
+R21248:21251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21239:21242 TypeRulesCore <> step:97 ind
+R21246:21247 TypeRulesCore <> a':288 var
+R21244:21244 TypeRulesCore <> a:287 var
+R21252:21255 TypeRulesCore <> step:97 ind
+R21270:21274 TypeRulesCore <> TPair constr
+R21279:21279 TypeRulesCore <> b:289 var
+R21276:21277 TypeRulesCore <> a':288 var
+R21258:21262 TypeRulesCore <> TPair constr
+R21266:21266 TypeRulesCore <> b:289 var
+R21264:21264 TypeRulesCore <> a:287 var
+binder 21304:21304 <> a:290
+binder 21306:21306 <> b:291
+binder 21308:21309 <> b':292
+R21321:21324 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21312:21315 TypeRulesCore <> step:97 ind
+R21319:21320 TypeRulesCore <> b':292 var
+R21317:21317 TypeRulesCore <> b:291 var
+R21325:21328 TypeRulesCore <> step:97 ind
+R21343:21347 TypeRulesCore <> TPair constr
+R21351:21352 TypeRulesCore <> b':292 var
+R21349:21349 TypeRulesCore <> a:290 var
+R21331:21335 TypeRulesCore <> TPair constr
+R21339:21339 TypeRulesCore <> b:291 var
+R21337:21337 TypeRulesCore <> a:290 var
+scheme 12477:12480 <> step_ind
+scheme 12477:12480 <> step_sind
+ind 21536:21539 <> eval
+constr 21569:21575 <> ev_refl
+constr 21600:21606 <> ev_step
+R21547:21550 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21543:21546 TypeRulesCore <> term ind
+R21555:21558 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21551:21554 TypeRulesCore <> term ind
+binder 21586:21586 <> t:295
+R21589:21592 TypeRulesCore <> eval:293 ind
+R21596:21596 TypeRulesCore <> t:295 var
+R21594:21594 TypeRulesCore <> t:295 var
+binder 21617:21617 <> t:296
+binder 21619:21619 <> u:297
+binder 21621:21621 <> v:298
+R21632:21635 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21624:21627 TypeRulesCore <> step ind
+R21631:21631 TypeRulesCore <> u:297 var
+R21629:21629 TypeRulesCore <> t:296 var
+R21644:21647 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21636:21639 TypeRulesCore <> eval:293 ind
+R21643:21643 TypeRulesCore <> v:298 var
+R21641:21641 TypeRulesCore <> u:297 var
+R21648:21651 TypeRulesCore <> eval:293 ind
+R21655:21655 TypeRulesCore <> v:298 var
+R21653:21653 TypeRulesCore <> t:296 var
+scheme 21536:21539 <> eval_ind
+scheme 21536:21539 <> eval_sind
+ind 23603:23609 <> neutral
+constr 23631:23636 <> ne_var
+constr 23672:23677 <> ne_app
+constr 23730:23735 <> ne_fst
+constr 23784:23789 <> ne_snd
+constr 23838:23846 <> ne_switch
+constr 23907:23912 <> ne_ind
+constr 23981:23987 <> ne_case
+R23617:23620 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23613:23616 TypeRulesCore <> term ind
+binder 23650:23650 <> n:301
+R23653:23659 TypeRulesCore <> neutral:299 ind
+R23662:23665 TypeRulesCore <> TVar constr
+R23667:23667 TypeRulesCore <> n:301 var
+binder 23691:23691 <> f:302
+binder 23693:23693 <> a:303
+R23705:23708 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23696:23702 TypeRulesCore <> neutral:299 ind
+R23704:23704 TypeRulesCore <> f:302 var
+R23709:23715 TypeRulesCore <> neutral:299 ind
+R23718:23721 TypeRulesCore <> TApp constr
+R23725:23725 TypeRulesCore <> a:303 var
+R23723:23723 TypeRulesCore <> f:302 var
+binder 23749:23749 <> p:304
+R23761:23764 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23752:23758 TypeRulesCore <> neutral:299 ind
+R23760:23760 TypeRulesCore <> p:304 var
+R23765:23771 TypeRulesCore <> neutral:299 ind
+R23774:23777 TypeRulesCore <> TFst constr
+R23779:23779 TypeRulesCore <> p:304 var
+binder 23803:23803 <> p:305
+R23815:23818 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23806:23812 TypeRulesCore <> neutral:299 ind
+R23814:23814 TypeRulesCore <> p:305 var
+R23819:23825 TypeRulesCore <> neutral:299 ind
+R23828:23831 TypeRulesCore <> TSnd constr
+R23833:23833 TypeRulesCore <> p:305 var
+binder 23857:23857 <> E:306
+binder 23859:23859 <> P:307
+binder 23861:23861 <> p:308
+binder 23863:23863 <> e:309
+R23875:23878 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23866:23872 TypeRulesCore <> neutral:299 ind
+R23874:23874 TypeRulesCore <> e:309 var
+R23879:23885 TypeRulesCore <> neutral:299 ind
+R23888:23894 TypeRulesCore <> TSwitch constr
+R23902:23902 TypeRulesCore <> e:309 var
+R23900:23900 TypeRulesCore <> p:308 var
+R23898:23898 TypeRulesCore <> P:307 var
+R23896:23896 TypeRulesCore <> E:306 var
+binder 23926:23926 <> R:310
+binder 23928:23928 <> P:311
+binder 23930:23932 <> stp:312
+binder 23934:23934 <> i:313
+binder 23936:23936 <> x:314
+R23948:23951 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23939:23945 TypeRulesCore <> neutral:299 ind
+R23947:23947 TypeRulesCore <> x:314 var
+R23952:23958 TypeRulesCore <> neutral:299 ind
+R23961:23964 TypeRulesCore <> TInd constr
+R23976:23976 TypeRulesCore <> x:314 var
+R23974:23974 TypeRulesCore <> i:313 var
+R23970:23972 TypeRulesCore <> stp:312 var
+R23968:23968 TypeRulesCore <> P:311 var
+R23966:23966 TypeRulesCore <> R:310 var
+binder 24000:24000 <> M:315
+binder 24002:24002 <> Q:316
+binder 24004:24005 <> bs:317
+R24017:24020 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24008:24014 TypeRulesCore <> neutral:299 ind
+R24016:24016 TypeRulesCore <> M:315 var
+R24021:24027 TypeRulesCore <> neutral:299 ind
+R24030:24034 TypeRulesCore <> TCase constr
+R24040:24041 TypeRulesCore <> bs:317 var
+R24038:24038 TypeRulesCore <> Q:316 var
+R24036:24036 TypeRulesCore <> M:315 var
+scheme 23603:23609 <> neutral_ind
+scheme 23603:23609 <> neutral_sind
+ind 24304:24315 <> desc_against
+constr 24389:24401 <> ag_choice_nil
+constr 24526:24537 <> ag_prod_left
+constr 24617:24629 <> ag_prod_right
+constr 24780:24793 <> ag_choice_cons
+R24323:24326 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24319:24322 TypeRulesCore <> term ind
+binder 24412:24412 <> D:320
+binder 24414:24414 <> E:321
+binder 24416:24416 <> T:322
+R24444:24447 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24423:24426 TypeRulesCore <> eval ind
+R24431:24438 TypeRulesCore <> TIChoice constr
+R24442:24442 TypeRulesCore <> T:322 var
+R24440:24440 TypeRulesCore <> E:321 var
+R24428:24428 TypeRulesCore <> D:320 var
+R24460:24463 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24448:24451 TypeRulesCore <> eval ind
+R24455:24459 TypeRulesCore <> TNilE constr
+R24453:24453 TypeRulesCore <> E:321 var
+R24464:24475 TypeRulesCore <> desc_against:318 ind
+R24477:24477 TypeRulesCore <> D:320 var
+binder 24548:24548 <> D:323
+binder 24550:24550 <> A:324
+binder 24552:24552 <> B:325
+R24578:24581 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24559:24562 TypeRulesCore <> eval ind
+R24567:24572 TypeRulesCore <> TIProd constr
+R24576:24576 TypeRulesCore <> B:325 var
+R24574:24574 TypeRulesCore <> A:324 var
+R24564:24564 TypeRulesCore <> D:323 var
+R24596:24599 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24582:24593 TypeRulesCore <> desc_against:318 ind
+R24595:24595 TypeRulesCore <> A:324 var
+R24600:24611 TypeRulesCore <> desc_against:318 ind
+R24613:24613 TypeRulesCore <> D:323 var
+binder 24640:24640 <> D:326
+binder 24642:24642 <> A:327
+binder 24644:24644 <> B:328
+R24670:24673 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24651:24654 TypeRulesCore <> eval ind
+R24659:24664 TypeRulesCore <> TIProd constr
+R24668:24668 TypeRulesCore <> B:328 var
+R24666:24666 TypeRulesCore <> A:327 var
+R24656:24656 TypeRulesCore <> D:326 var
+R24688:24691 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24674:24685 TypeRulesCore <> desc_against:318 ind
+R24687:24687 TypeRulesCore <> B:328 var
+R24692:24703 TypeRulesCore <> desc_against:318 ind
+R24705:24705 TypeRulesCore <> D:326 var
+binder 24804:24804 <> D:329
+binder 24806:24806 <> E:330
+binder 24808:24808 <> T:331
+binder 24810:24811 <> tg:332
+binder 24813:24814 <> E':333
+R24842:24845 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24821:24824 TypeRulesCore <> eval ind
+R24829:24836 TypeRulesCore <> TIChoice constr
+R24840:24840 TypeRulesCore <> T:331 var
+R24838:24838 TypeRulesCore <> E:330 var
+R24826:24826 TypeRulesCore <> D:329 var
+R24867:24874 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24846:24849 TypeRulesCore <> eval ind
+R24854:24859 TypeRulesCore <> TConsE constr
+R24864:24865 TypeRulesCore <> E':333 var
+R24861:24862 TypeRulesCore <> tg:332 var
+R24851:24851 TypeRulesCore <> E:330 var
+R24903:24910 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24875:24886 TypeRulesCore <> desc_against:318 ind
+R24889:24892 TypeRulesCore <> TApp constr
+R24896:24901 TypeRulesCore <> TEZero constr
+R24894:24894 TypeRulesCore <> T:331 var
+R24982:24989 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24911:24922 TypeRulesCore <> desc_against:318 ind
+R24925:24932 TypeRulesCore <> TIChoice constr
+R24938:24941 TypeRulesCore <> TLam constr
+R24944:24947 TypeRulesCore <> TApp constr
+R24963:24968 TypeRulesCore <> TESucc constr
+R24971:24974 TypeRulesCore <> TVar constr
+R24950:24953 TypeRulesCore <> lift def
+R24959:24959 TypeRulesCore <> T:331 var
+R24934:24935 TypeRulesCore <> E':333 var
+R24990:25001 TypeRulesCore <> desc_against:318 ind
+R25003:25003 TypeRulesCore <> D:329 var
+scheme 24304:24315 <> desc_against_ind
+scheme 24304:24315 <> desc_against_sind
+ind 25732:25740 <> spine_phi
+constr 25784:25790 <> sph_nil
+constr 25865:25872 <> sph_keep
+constr 26007:26014 <> sph_drop
+constr 26192:26199 <> sph_tail
+R25750:25753 TypeRulesCore <> term ind
+binder 25743:25744 <> Sf:334
+binder 25746:25746 <> i:335
+R25762:25765 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25758:25761 TypeRulesCore <> term ind
+R25770:25773 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25766:25769 TypeRulesCore <> term ind
+binder 25801:25803 <> Phi:338
+binder 25805:25805 <> A:339
+R25830:25833 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25812:25815 TypeRulesCore <> eval ind
+R25822:25826 TypeRulesCore <> TLNil constr
+R25828:25828 TypeRulesCore <> A:339 var
+R25817:25819 TypeRulesCore <> Phi:338 var
+R25834:25842 TypeRulesCore <> spine_phi:336 ind
+R25854:25858 TypeRulesCore <> TLNil constr
+R25860:25860 TypeRulesCore <> A:339 var
+R25849:25851 TypeRulesCore <> Phi:338 var
+R25847:25847 TypeRulesCore <> i:335 var
+R25844:25845 TypeRulesCore <> Sf:334 var
+binder 25883:25885 <> Phi:340
+binder 25887:25887 <> A:341
+binder 25889:25889 <> c:342
+binder 25891:25894 <> Phi':343
+binder 25896:25899 <> Psi':344
+R25932:25935 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25906:25909 TypeRulesCore <> eval ind
+R25916:25921 TypeRulesCore <> TLCons constr
+R25927:25930 TypeRulesCore <> Phi':343 var
+R25925:25925 TypeRulesCore <> c:342 var
+R25923:25923 TypeRulesCore <> A:341 var
+R25911:25913 TypeRulesCore <> Phi:340 var
+R25960:25967 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25936:25944 TypeRulesCore <> spine_phi:336 ind
+R25956:25959 TypeRulesCore <> Psi':344 var
+R25951:25954 TypeRulesCore <> Phi':343 var
+R25949:25949 TypeRulesCore <> i:335 var
+R25946:25947 TypeRulesCore <> Sf:334 var
+R25968:25976 TypeRulesCore <> spine_phi:336 ind
+R25988:25993 TypeRulesCore <> TLCons constr
+R25999:26002 TypeRulesCore <> Psi':344 var
+R25997:25997 TypeRulesCore <> c:342 var
+R25995:25995 TypeRulesCore <> A:341 var
+R25983:25985 TypeRulesCore <> Phi:340 var
+R25981:25981 TypeRulesCore <> i:335 var
+R25978:25979 TypeRulesCore <> Sf:334 var
+binder 26025:26027 <> Phi:345
+binder 26029:26029 <> A:346
+binder 26031:26031 <> c:347
+binder 26033:26036 <> Phi':348
+binder 26038:26041 <> Psi':349
+R26074:26081 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R26048:26051 TypeRulesCore <> eval ind
+R26058:26063 TypeRulesCore <> TLCons constr
+R26069:26072 TypeRulesCore <> Phi':348 var
+R26067:26067 TypeRulesCore <> c:347 var
+R26065:26065 TypeRulesCore <> A:346 var
+R26053:26055 TypeRulesCore <> Phi:345 var
+R26126:26133 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R26082:26093 TypeRulesCore <> desc_against ind
+R26096:26099 TypeRulesCore <> TApp constr
+R26124:26124 TypeRulesCore <> c:347 var
+R26102:26109 TypeRulesCore <> branches def
+R26112:26115 TypeRulesCore <> TApp constr
+R26120:26120 TypeRulesCore <> i:335 var
+R26117:26118 TypeRulesCore <> Sf:334 var
+R26158:26165 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R26134:26142 TypeRulesCore <> spine_phi:336 ind
+R26154:26157 TypeRulesCore <> Psi':349 var
+R26149:26152 TypeRulesCore <> Phi':348 var
+R26147:26147 TypeRulesCore <> i:335 var
+R26144:26145 TypeRulesCore <> Sf:334 var
+R26166:26174 TypeRulesCore <> spine_phi:336 ind
+R26185:26188 TypeRulesCore <> Psi':349 var
+R26181:26183 TypeRulesCore <> Phi:345 var
+R26179:26179 TypeRulesCore <> i:335 var
+R26176:26177 TypeRulesCore <> Sf:334 var
+binder 26210:26212 <> Phi:350
+R26219:26227 TypeRulesCore <> spine_phi:336 ind
+R26238:26240 TypeRulesCore <> Phi:350 var
+R26234:26236 TypeRulesCore <> Phi:350 var
+R26232:26232 TypeRulesCore <> i:335 var
+R26229:26230 TypeRulesCore <> Sf:334 var
+scheme 25732:25740 <> spine_phi_ind
+scheme 25732:25740 <> spine_phi_sind
+ind 27072:27075 <> conv
+constr 27105:27111 <> cv_step
+constr 27151:27157 <> cv_refl
+constr 27183:27188 <> cv_sym
+constr 27229:27236 <> cv_trans
+constr 27365:27370 <> cv_eta
+constr 27512:27516 <> cv_pi
+constr 27597:27602 <> cv_lam
+constr 27661:27666 <> cv_app
+constr 27748:27755 <> cv_sigma
+constr 27839:27845 <> cv_pair
+constr 27928:27933 <> cv_fst
+constr 27992:27997 <> cv_snd
+constr 28056:28063 <> cv_conse
+constr 28147:28154 <> cv_enumt
+constr 28215:28222 <> cv_esucc
+constr 28283:28288 <> cv_epi
+constr 28370:28378 <> cv_switch
+constr 28517:28524 <> cv_idesc
+constr 28591:28597 <> cv_ivar
+constr 28657:28664 <> cv_iprod
+constr 28748:28753 <> cv_ipi
+constr 28841:28847 <> cv_isig
+constr 28936:28945 <> cv_ichoice
+constr 29031:29039 <> cv_interp
+constr 29124:29129 <> cv_mui
+constr 29188:29193 <> cv_mus
+constr 29258:29262 <> cv_in
+constr 29320:29325 <> cv_ind
+constr 29496:29502 <> cv_iall
+constr 29645:29651 <> cv_hyps
+constr 29817:29823 <> cv_list
+constr 29883:29889 <> cv_lnil
+constr 29949:29956 <> cv_lcons
+constr 30067:30073 <> cv_case
+constr 30169:30178 <> cv_case_br
+R27083:27086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27079:27082 TypeRulesCore <> term ind
+R27091:27094 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27087:27090 TypeRulesCore <> term ind
+binder 27123:27123 <> t:353
+binder 27125:27125 <> u:354
+R27136:27139 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27128:27131 TypeRulesCore <> step ind
+R27135:27135 TypeRulesCore <> u:354 var
+R27133:27133 TypeRulesCore <> t:353 var
+R27140:27143 TypeRulesCore <> conv:351 ind
+R27147:27147 TypeRulesCore <> u:354 var
+R27145:27145 TypeRulesCore <> t:353 var
+binder 27169:27169 <> t:355
+R27172:27175 TypeRulesCore <> conv:351 ind
+R27179:27179 TypeRulesCore <> t:355 var
+R27177:27177 TypeRulesCore <> t:355 var
+binder 27201:27201 <> t:356
+binder 27203:27203 <> u:357
+R27214:27217 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27206:27209 TypeRulesCore <> conv:351 ind
+R27213:27213 TypeRulesCore <> u:357 var
+R27211:27211 TypeRulesCore <> t:356 var
+R27218:27221 TypeRulesCore <> conv:351 ind
+R27225:27225 TypeRulesCore <> t:356 var
+R27223:27223 TypeRulesCore <> u:357 var
+binder 27247:27247 <> t:358
+binder 27249:27249 <> u:359
+binder 27251:27251 <> v:360
+R27262:27265 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27254:27257 TypeRulesCore <> conv:351 ind
+R27261:27261 TypeRulesCore <> u:359 var
+R27259:27259 TypeRulesCore <> t:358 var
+R27274:27277 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27266:27269 TypeRulesCore <> conv:351 ind
+R27273:27273 TypeRulesCore <> v:360 var
+R27271:27271 TypeRulesCore <> u:359 var
+R27278:27281 TypeRulesCore <> conv:351 ind
+R27285:27285 TypeRulesCore <> v:360 var
+R27283:27283 TypeRulesCore <> t:358 var
+binder 27381:27381 <> f:361
+R27384:27387 TypeRulesCore <> conv:351 ind
+R27425:27425 TypeRulesCore <> f:361 var
+R27390:27393 TypeRulesCore <> TLam constr
+R27396:27399 TypeRulesCore <> TApp constr
+R27415:27418 TypeRulesCore <> TVar constr
+R27402:27405 TypeRulesCore <> lift def
+R27411:27411 TypeRulesCore <> f:361 var
+binder 27531:27531 <> A:362
+binder 27533:27534 <> A':363
+binder 27536:27536 <> B:364
+binder 27538:27539 <> B':365
+R27551:27554 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27542:27545 TypeRulesCore <> conv:351 ind
+R27549:27550 TypeRulesCore <> A':363 var
+R27547:27547 TypeRulesCore <> A:362 var
+R27564:27567 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27555:27558 TypeRulesCore <> conv:351 ind
+R27562:27563 TypeRulesCore <> B':365 var
+R27560:27560 TypeRulesCore <> B:364 var
+R27568:27571 TypeRulesCore <> conv:351 ind
+R27584:27586 TypeRulesCore <> TPi constr
+R27591:27592 TypeRulesCore <> B':365 var
+R27588:27589 TypeRulesCore <> A':363 var
+R27574:27576 TypeRulesCore <> TPi constr
+R27580:27580 TypeRulesCore <> B:364 var
+R27578:27578 TypeRulesCore <> A:362 var
+binder 27616:27616 <> b:366
+binder 27618:27619 <> b':367
+R27631:27634 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27622:27625 TypeRulesCore <> conv:351 ind
+R27629:27630 TypeRulesCore <> b':367 var
+R27627:27627 TypeRulesCore <> b:366 var
+R27635:27638 TypeRulesCore <> conv:351 ind
+R27650:27653 TypeRulesCore <> TLam constr
+R27655:27656 TypeRulesCore <> b':367 var
+R27641:27644 TypeRulesCore <> TLam constr
+R27646:27646 TypeRulesCore <> b:366 var
+binder 27680:27680 <> f:368
+binder 27682:27683 <> f':369
+binder 27685:27685 <> a:370
+binder 27687:27688 <> a':371
+R27700:27703 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27691:27694 TypeRulesCore <> conv:351 ind
+R27698:27699 TypeRulesCore <> f':369 var
+R27696:27696 TypeRulesCore <> f:368 var
+R27713:27716 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27704:27707 TypeRulesCore <> conv:351 ind
+R27711:27712 TypeRulesCore <> a':371 var
+R27709:27709 TypeRulesCore <> a:370 var
+R27717:27720 TypeRulesCore <> conv:351 ind
+R27734:27737 TypeRulesCore <> TApp constr
+R27742:27743 TypeRulesCore <> a':371 var
+R27739:27740 TypeRulesCore <> f':369 var
+R27723:27726 TypeRulesCore <> TApp constr
+R27730:27730 TypeRulesCore <> a:370 var
+R27728:27728 TypeRulesCore <> f:368 var
+binder 27767:27767 <> A:372
+binder 27769:27770 <> A':373
+binder 27772:27772 <> B:374
+binder 27774:27775 <> B':375
+R27787:27790 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27778:27781 TypeRulesCore <> conv:351 ind
+R27785:27786 TypeRulesCore <> A':373 var
+R27783:27783 TypeRulesCore <> A:372 var
+R27800:27803 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27791:27794 TypeRulesCore <> conv:351 ind
+R27798:27799 TypeRulesCore <> B':375 var
+R27796:27796 TypeRulesCore <> B:374 var
+R27804:27807 TypeRulesCore <> conv:351 ind
+R27823:27828 TypeRulesCore <> TSigma constr
+R27833:27834 TypeRulesCore <> B':375 var
+R27830:27831 TypeRulesCore <> A':373 var
+R27810:27815 TypeRulesCore <> TSigma constr
+R27819:27819 TypeRulesCore <> B:374 var
+R27817:27817 TypeRulesCore <> A:372 var
+binder 27858:27858 <> a:376
+binder 27860:27861 <> a':377
+binder 27863:27863 <> b:378
+binder 27865:27866 <> b':379
+R27878:27881 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27869:27872 TypeRulesCore <> conv:351 ind
+R27876:27877 TypeRulesCore <> a':377 var
+R27874:27874 TypeRulesCore <> a:376 var
+R27891:27894 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27882:27885 TypeRulesCore <> conv:351 ind
+R27889:27890 TypeRulesCore <> b':379 var
+R27887:27887 TypeRulesCore <> b:378 var
+R27895:27898 TypeRulesCore <> conv:351 ind
+R27913:27917 TypeRulesCore <> TPair constr
+R27922:27923 TypeRulesCore <> b':379 var
+R27919:27920 TypeRulesCore <> a':377 var
+R27901:27905 TypeRulesCore <> TPair constr
+R27909:27909 TypeRulesCore <> b:378 var
+R27907:27907 TypeRulesCore <> a:376 var
+binder 27947:27947 <> p:380
+binder 27949:27950 <> p':381
+R27962:27965 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27953:27956 TypeRulesCore <> conv:351 ind
+R27960:27961 TypeRulesCore <> p':381 var
+R27958:27958 TypeRulesCore <> p:380 var
+R27966:27969 TypeRulesCore <> conv:351 ind
+R27981:27984 TypeRulesCore <> TFst constr
+R27986:27987 TypeRulesCore <> p':381 var
+R27972:27975 TypeRulesCore <> TFst constr
+R27977:27977 TypeRulesCore <> p:380 var
+binder 28011:28011 <> p:382
+binder 28013:28014 <> p':383
+R28026:28029 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28017:28020 TypeRulesCore <> conv:351 ind
+R28024:28025 TypeRulesCore <> p':383 var
+R28022:28022 TypeRulesCore <> p:382 var
+R28030:28033 TypeRulesCore <> conv:351 ind
+R28045:28048 TypeRulesCore <> TSnd constr
+R28050:28051 TypeRulesCore <> p':383 var
+R28036:28039 TypeRulesCore <> TSnd constr
+R28041:28041 TypeRulesCore <> p:382 var
+binder 28075:28075 <> t:384
+binder 28077:28078 <> t':385
+binder 28080:28080 <> E:386
+binder 28082:28083 <> E':387
+R28095:28098 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28086:28089 TypeRulesCore <> conv:351 ind
+R28093:28094 TypeRulesCore <> t':385 var
+R28091:28091 TypeRulesCore <> t:384 var
+R28108:28111 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28099:28102 TypeRulesCore <> conv:351 ind
+R28106:28107 TypeRulesCore <> E':387 var
+R28104:28104 TypeRulesCore <> E:386 var
+R28112:28115 TypeRulesCore <> conv:351 ind
+R28131:28136 TypeRulesCore <> TConsE constr
+R28141:28142 TypeRulesCore <> E':387 var
+R28138:28139 TypeRulesCore <> t':385 var
+R28118:28123 TypeRulesCore <> TConsE constr
+R28127:28127 TypeRulesCore <> E:386 var
+R28125:28125 TypeRulesCore <> t:384 var
+binder 28166:28166 <> E:388
+binder 28168:28169 <> E':389
+R28181:28184 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28172:28175 TypeRulesCore <> conv:351 ind
+R28179:28180 TypeRulesCore <> E':389 var
+R28177:28177 TypeRulesCore <> E:388 var
+R28185:28188 TypeRulesCore <> conv:351 ind
+R28202:28207 TypeRulesCore <> TEnumT constr
+R28209:28210 TypeRulesCore <> E':389 var
+R28191:28196 TypeRulesCore <> TEnumT constr
+R28198:28198 TypeRulesCore <> E:388 var
+binder 28234:28234 <> n:390
+binder 28236:28237 <> n':391
+R28249:28252 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28240:28243 TypeRulesCore <> conv:351 ind
+R28247:28248 TypeRulesCore <> n':391 var
+R28245:28245 TypeRulesCore <> n:390 var
+R28253:28256 TypeRulesCore <> conv:351 ind
+R28270:28275 TypeRulesCore <> TESucc constr
+R28277:28278 TypeRulesCore <> n':391 var
+R28259:28264 TypeRulesCore <> TESucc constr
+R28266:28266 TypeRulesCore <> n:390 var
+binder 28302:28302 <> E:392
+binder 28304:28305 <> E':393
+binder 28307:28307 <> P:394
+binder 28309:28310 <> P':395
+R28322:28325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28313:28316 TypeRulesCore <> conv:351 ind
+R28320:28321 TypeRulesCore <> E':393 var
+R28318:28318 TypeRulesCore <> E:392 var
+R28335:28338 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28326:28329 TypeRulesCore <> conv:351 ind
+R28333:28334 TypeRulesCore <> P':395 var
+R28331:28331 TypeRulesCore <> P:394 var
+R28339:28342 TypeRulesCore <> conv:351 ind
+R28356:28359 TypeRulesCore <> TEPi constr
+R28364:28365 TypeRulesCore <> P':395 var
+R28361:28362 TypeRulesCore <> E':393 var
+R28345:28348 TypeRulesCore <> TEPi constr
+R28352:28352 TypeRulesCore <> P:394 var
+R28350:28350 TypeRulesCore <> E:392 var
+binder 28389:28389 <> E:396
+binder 28391:28392 <> E':397
+binder 28394:28394 <> P:398
+binder 28396:28397 <> P':399
+binder 28399:28399 <> p:400
+binder 28401:28402 <> p':401
+binder 28404:28404 <> e:402
+binder 28406:28407 <> e':403
+R28423:28426 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28414:28417 TypeRulesCore <> conv:351 ind
+R28421:28422 TypeRulesCore <> E':397 var
+R28419:28419 TypeRulesCore <> E:396 var
+R28436:28439 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28427:28430 TypeRulesCore <> conv:351 ind
+R28434:28435 TypeRulesCore <> P':399 var
+R28432:28432 TypeRulesCore <> P:398 var
+R28449:28452 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28440:28443 TypeRulesCore <> conv:351 ind
+R28447:28448 TypeRulesCore <> p':401 var
+R28445:28445 TypeRulesCore <> p:400 var
+R28462:28469 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28453:28456 TypeRulesCore <> conv:351 ind
+R28460:28461 TypeRulesCore <> e':403 var
+R28458:28458 TypeRulesCore <> e:402 var
+R28470:28473 TypeRulesCore <> conv:351 ind
+R28494:28500 TypeRulesCore <> TSwitch constr
+R28511:28512 TypeRulesCore <> e':403 var
+R28508:28509 TypeRulesCore <> p':401 var
+R28505:28506 TypeRulesCore <> P':399 var
+R28502:28503 TypeRulesCore <> E':397 var
+R28476:28482 TypeRulesCore <> TSwitch constr
+R28490:28490 TypeRulesCore <> e:402 var
+R28488:28488 TypeRulesCore <> p:400 var
+R28486:28486 TypeRulesCore <> P:398 var
+R28484:28484 TypeRulesCore <> E:396 var
+binder 28536:28537 <> IT:404
+binder 28539:28541 <> IT':405
+R28555:28558 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28544:28547 TypeRulesCore <> conv:351 ind
+R28552:28554 TypeRulesCore <> IT':405 var
+R28549:28550 TypeRulesCore <> IT:404 var
+R28559:28562 TypeRulesCore <> conv:351 ind
+R28577:28582 TypeRulesCore <> TIDesc constr
+R28584:28586 TypeRulesCore <> IT':405 var
+R28565:28570 TypeRulesCore <> TIDesc constr
+R28572:28573 TypeRulesCore <> IT:404 var
+binder 28610:28610 <> i:406
+binder 28612:28613 <> i':407
+R28625:28628 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28616:28619 TypeRulesCore <> conv:351 ind
+R28623:28624 TypeRulesCore <> i':407 var
+R28621:28621 TypeRulesCore <> i:406 var
+R28629:28632 TypeRulesCore <> conv:351 ind
+R28645:28649 TypeRulesCore <> TIVar constr
+R28651:28652 TypeRulesCore <> i':407 var
+R28635:28639 TypeRulesCore <> TIVar constr
+R28641:28641 TypeRulesCore <> i:406 var
+binder 28676:28676 <> A:408
+binder 28678:28679 <> A':409
+binder 28681:28681 <> B:410
+binder 28683:28684 <> B':411
+R28696:28699 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28687:28690 TypeRulesCore <> conv:351 ind
+R28694:28695 TypeRulesCore <> A':409 var
+R28692:28692 TypeRulesCore <> A:408 var
+R28709:28712 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28700:28703 TypeRulesCore <> conv:351 ind
+R28707:28708 TypeRulesCore <> B':411 var
+R28705:28705 TypeRulesCore <> B:410 var
+R28713:28716 TypeRulesCore <> conv:351 ind
+R28732:28737 TypeRulesCore <> TIProd constr
+R28742:28743 TypeRulesCore <> B':411 var
+R28739:28740 TypeRulesCore <> A':409 var
+R28719:28724 TypeRulesCore <> TIProd constr
+R28728:28728 TypeRulesCore <> B:410 var
+R28726:28726 TypeRulesCore <> A:408 var
+binder 28767:28768 <> Sd:412
+binder 28770:28772 <> Sd':413
+binder 28774:28774 <> T:414
+binder 28776:28777 <> T':415
+R28791:28794 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28780:28783 TypeRulesCore <> conv:351 ind
+R28788:28790 TypeRulesCore <> Sd':413 var
+R28785:28786 TypeRulesCore <> Sd:412 var
+R28804:28807 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28795:28798 TypeRulesCore <> conv:351 ind
+R28802:28803 TypeRulesCore <> T':415 var
+R28800:28800 TypeRulesCore <> T:414 var
+R28808:28811 TypeRulesCore <> conv:351 ind
+R28826:28829 TypeRulesCore <> TIPi constr
+R28835:28836 TypeRulesCore <> T':415 var
+R28831:28833 TypeRulesCore <> Sd':413 var
+R28814:28817 TypeRulesCore <> TIPi constr
+R28822:28822 TypeRulesCore <> T:414 var
+R28819:28820 TypeRulesCore <> Sd:412 var
+binder 28860:28861 <> Sd:416
+binder 28863:28865 <> Sd':417
+binder 28867:28867 <> T:418
+binder 28869:28870 <> T':419
+R28884:28887 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28873:28876 TypeRulesCore <> conv:351 ind
+R28881:28883 TypeRulesCore <> Sd':417 var
+R28878:28879 TypeRulesCore <> Sd:416 var
+R28897:28900 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28888:28891 TypeRulesCore <> conv:351 ind
+R28895:28896 TypeRulesCore <> T':419 var
+R28893:28893 TypeRulesCore <> T:418 var
+R28901:28904 TypeRulesCore <> conv:351 ind
+R28920:28924 TypeRulesCore <> TISig constr
+R28930:28931 TypeRulesCore <> T':419 var
+R28926:28928 TypeRulesCore <> Sd':417 var
+R28907:28911 TypeRulesCore <> TISig constr
+R28916:28916 TypeRulesCore <> T:418 var
+R28913:28914 TypeRulesCore <> Sd:416 var
+binder 28955:28955 <> E:420
+binder 28957:28958 <> E':421
+binder 28960:28960 <> T:422
+binder 28962:28963 <> T':423
+R28975:28978 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28966:28969 TypeRulesCore <> conv:351 ind
+R28973:28974 TypeRulesCore <> E':421 var
+R28971:28971 TypeRulesCore <> E:420 var
+R28988:28991 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28979:28982 TypeRulesCore <> conv:351 ind
+R28986:28987 TypeRulesCore <> T':423 var
+R28984:28984 TypeRulesCore <> T:422 var
+R28992:28995 TypeRulesCore <> conv:351 ind
+R29013:29020 TypeRulesCore <> TIChoice constr
+R29025:29026 TypeRulesCore <> T':423 var
+R29022:29023 TypeRulesCore <> E':421 var
+R28998:29005 TypeRulesCore <> TIChoice constr
+R29009:29009 TypeRulesCore <> T:422 var
+R29007:29007 TypeRulesCore <> E:420 var
+binder 29050:29050 <> D:424
+binder 29052:29053 <> D':425
+binder 29055:29055 <> X:426
+binder 29057:29058 <> X':427
+R29070:29073 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29061:29064 TypeRulesCore <> conv:351 ind
+R29068:29069 TypeRulesCore <> D':425 var
+R29066:29066 TypeRulesCore <> D:424 var
+R29083:29086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29074:29077 TypeRulesCore <> conv:351 ind
+R29081:29082 TypeRulesCore <> X':427 var
+R29079:29079 TypeRulesCore <> X:426 var
+R29087:29090 TypeRulesCore <> conv:351 ind
+R29107:29113 TypeRulesCore <> TInterp constr
+R29118:29119 TypeRulesCore <> X':427 var
+R29115:29116 TypeRulesCore <> D':425 var
+R29093:29099 TypeRulesCore <> TInterp constr
+R29103:29103 TypeRulesCore <> X:426 var
+R29101:29101 TypeRulesCore <> D:424 var
+binder 29143:29143 <> R:428
+binder 29145:29146 <> R':429
+R29158:29161 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29149:29152 TypeRulesCore <> conv:351 ind
+R29156:29157 TypeRulesCore <> R':429 var
+R29154:29154 TypeRulesCore <> R:428 var
+R29162:29165 TypeRulesCore <> conv:351 ind
+R29177:29180 TypeRulesCore <> TMuI constr
+R29182:29183 TypeRulesCore <> R':429 var
+R29168:29171 TypeRulesCore <> TMuI constr
+R29173:29173 TypeRulesCore <> R:428 var
+binder 29207:29208 <> Sf:430
+binder 29210:29212 <> Sf':431
+R29226:29229 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29215:29218 TypeRulesCore <> conv:351 ind
+R29223:29225 TypeRulesCore <> Sf':431 var
+R29220:29221 TypeRulesCore <> Sf:430 var
+R29230:29233 TypeRulesCore <> conv:351 ind
+R29246:29249 TypeRulesCore <> TMuS constr
+R29251:29253 TypeRulesCore <> Sf':431 var
+R29236:29239 TypeRulesCore <> TMuS constr
+R29241:29242 TypeRulesCore <> Sf:430 var
+binder 29277:29277 <> x:432
+binder 29279:29280 <> x':433
+R29292:29295 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29283:29286 TypeRulesCore <> conv:351 ind
+R29290:29291 TypeRulesCore <> x':433 var
+R29288:29288 TypeRulesCore <> x:432 var
+R29296:29299 TypeRulesCore <> conv:351 ind
+R29310:29312 TypeRulesCore <> TIn constr
+R29314:29315 TypeRulesCore <> x':433 var
+R29302:29304 TypeRulesCore <> TIn constr
+R29306:29306 TypeRulesCore <> x:432 var
+binder 29339:29339 <> R:434
+binder 29341:29342 <> R':435
+binder 29344:29344 <> P:436
+binder 29346:29347 <> P':437
+binder 29349:29351 <> stp:438
+binder 29353:29356 <> stp':439
+binder 29358:29358 <> i:440
+binder 29360:29361 <> i':441
+binder 29363:29363 <> x:442
+binder 29365:29366 <> x':443
+R29382:29385 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29373:29376 TypeRulesCore <> conv:351 ind
+R29380:29381 TypeRulesCore <> R':435 var
+R29378:29378 TypeRulesCore <> R:434 var
+R29395:29398 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29386:29389 TypeRulesCore <> conv:351 ind
+R29393:29394 TypeRulesCore <> P':437 var
+R29391:29391 TypeRulesCore <> P:436 var
+R29412:29415 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29399:29402 TypeRulesCore <> conv:351 ind
+R29408:29411 TypeRulesCore <> stp':439 var
+R29404:29406 TypeRulesCore <> stp:438 var
+R29425:29428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29416:29419 TypeRulesCore <> conv:351 ind
+R29423:29424 TypeRulesCore <> i':441 var
+R29421:29421 TypeRulesCore <> i:440 var
+R29438:29445 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29429:29432 TypeRulesCore <> conv:351 ind
+R29436:29437 TypeRulesCore <> x':443 var
+R29434:29434 TypeRulesCore <> x:442 var
+R29446:29449 TypeRulesCore <> conv:351 ind
+R29471:29474 TypeRulesCore <> TInd constr
+R29490:29491 TypeRulesCore <> x':443 var
+R29487:29488 TypeRulesCore <> i':441 var
+R29482:29485 TypeRulesCore <> stp':439 var
+R29479:29480 TypeRulesCore <> P':437 var
+R29476:29477 TypeRulesCore <> R':435 var
+R29452:29455 TypeRulesCore <> TInd constr
+R29467:29467 TypeRulesCore <> x:442 var
+R29465:29465 TypeRulesCore <> i:440 var
+R29461:29463 TypeRulesCore <> stp:438 var
+R29459:29459 TypeRulesCore <> P:436 var
+R29457:29457 TypeRulesCore <> R:434 var
+binder 29515:29515 <> D:444
+binder 29517:29518 <> D':445
+binder 29520:29520 <> X:446
+binder 29522:29523 <> X':447
+binder 29525:29526 <> xs:448
+binder 29528:29530 <> xs':449
+binder 29532:29532 <> P:450
+binder 29534:29535 <> P':451
+R29551:29554 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29542:29545 TypeRulesCore <> conv:351 ind
+R29549:29550 TypeRulesCore <> D':445 var
+R29547:29547 TypeRulesCore <> D:444 var
+R29564:29567 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29555:29558 TypeRulesCore <> conv:351 ind
+R29562:29563 TypeRulesCore <> X':447 var
+R29560:29560 TypeRulesCore <> X:446 var
+R29579:29582 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29568:29571 TypeRulesCore <> conv:351 ind
+R29576:29578 TypeRulesCore <> xs':449 var
+R29573:29574 TypeRulesCore <> xs:448 var
+R29592:29599 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29583:29586 TypeRulesCore <> conv:351 ind
+R29590:29591 TypeRulesCore <> P':451 var
+R29588:29588 TypeRulesCore <> P:450 var
+R29600:29603 TypeRulesCore <> conv:351 ind
+R29623:29627 TypeRulesCore <> TIAll constr
+R29639:29640 TypeRulesCore <> P':451 var
+R29635:29637 TypeRulesCore <> xs':449 var
+R29632:29633 TypeRulesCore <> X':447 var
+R29629:29630 TypeRulesCore <> D':445 var
+R29606:29610 TypeRulesCore <> TIAll constr
+R29619:29619 TypeRulesCore <> P:450 var
+R29616:29617 TypeRulesCore <> xs:448 var
+R29614:29614 TypeRulesCore <> X:446 var
+R29612:29612 TypeRulesCore <> D:444 var
+binder 29664:29664 <> D:452
+binder 29666:29667 <> D':453
+binder 29669:29669 <> X:454
+binder 29671:29672 <> X':455
+binder 29674:29674 <> P:456
+binder 29676:29677 <> P':457
+binder 29679:29679 <> h:458
+binder 29681:29682 <> h':459
+binder 29684:29685 <> xs:460
+binder 29687:29689 <> xs':461
+R29705:29708 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29696:29699 TypeRulesCore <> conv:351 ind
+R29703:29704 TypeRulesCore <> D':453 var
+R29701:29701 TypeRulesCore <> D:452 var
+R29718:29721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29709:29712 TypeRulesCore <> conv:351 ind
+R29716:29717 TypeRulesCore <> X':455 var
+R29714:29714 TypeRulesCore <> X:454 var
+R29731:29734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29722:29725 TypeRulesCore <> conv:351 ind
+R29729:29730 TypeRulesCore <> P':457 var
+R29727:29727 TypeRulesCore <> P:456 var
+R29744:29747 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29735:29738 TypeRulesCore <> conv:351 ind
+R29742:29743 TypeRulesCore <> h':459 var
+R29740:29740 TypeRulesCore <> h:458 var
+R29759:29766 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29748:29751 TypeRulesCore <> conv:351 ind
+R29756:29758 TypeRulesCore <> xs':461 var
+R29753:29754 TypeRulesCore <> xs:460 var
+R29767:29770 TypeRulesCore <> conv:351 ind
+R29792:29796 TypeRulesCore <> THyps constr
+R29810:29812 TypeRulesCore <> xs':461 var
+R29807:29808 TypeRulesCore <> h':459 var
+R29804:29805 TypeRulesCore <> P':457 var
+R29801:29802 TypeRulesCore <> X':455 var
+R29798:29799 TypeRulesCore <> D':453 var
+R29773:29777 TypeRulesCore <> THyps constr
+R29787:29788 TypeRulesCore <> xs:460 var
+R29785:29785 TypeRulesCore <> h:458 var
+R29783:29783 TypeRulesCore <> P:456 var
+R29781:29781 TypeRulesCore <> X:454 var
+R29779:29779 TypeRulesCore <> D:452 var
+binder 29836:29836 <> A:462
+binder 29838:29839 <> A':463
+R29851:29854 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29842:29845 TypeRulesCore <> conv:351 ind
+R29849:29850 TypeRulesCore <> A':463 var
+R29847:29847 TypeRulesCore <> A:462 var
+R29855:29858 TypeRulesCore <> conv:351 ind
+R29871:29875 TypeRulesCore <> TList constr
+R29877:29878 TypeRulesCore <> A':463 var
+R29861:29865 TypeRulesCore <> TList constr
+R29867:29867 TypeRulesCore <> A:462 var
+binder 29902:29902 <> A:464
+binder 29904:29905 <> A':465
+R29917:29920 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29908:29911 TypeRulesCore <> conv:351 ind
+R29915:29916 TypeRulesCore <> A':465 var
+R29913:29913 TypeRulesCore <> A:464 var
+R29921:29924 TypeRulesCore <> conv:351 ind
+R29937:29941 TypeRulesCore <> TLNil constr
+R29943:29944 TypeRulesCore <> A':465 var
+R29927:29931 TypeRulesCore <> TLNil constr
+R29933:29933 TypeRulesCore <> A:464 var
+binder 29968:29968 <> A:466
+binder 29970:29971 <> A':467
+binder 29973:29973 <> a:468
+binder 29975:29976 <> a':469
+binder 29978:29978 <> l:470
+binder 29980:29981 <> l':471
+R29997:30000 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29988:29991 TypeRulesCore <> conv:351 ind
+R29995:29996 TypeRulesCore <> A':467 var
+R29993:29993 TypeRulesCore <> A:466 var
+R30010:30013 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30001:30004 TypeRulesCore <> conv:351 ind
+R30008:30009 TypeRulesCore <> a':469 var
+R30006:30006 TypeRulesCore <> a:468 var
+R30023:30026 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30014:30017 TypeRulesCore <> conv:351 ind
+R30021:30022 TypeRulesCore <> l':471 var
+R30019:30019 TypeRulesCore <> l:470 var
+R30027:30030 TypeRulesCore <> conv:351 ind
+R30048:30053 TypeRulesCore <> TLCons constr
+R30061:30062 TypeRulesCore <> l':471 var
+R30058:30059 TypeRulesCore <> a':469 var
+R30055:30056 TypeRulesCore <> A':467 var
+R30033:30038 TypeRulesCore <> TLCons constr
+R30044:30044 TypeRulesCore <> l:470 var
+R30042:30042 TypeRulesCore <> a:468 var
+R30040:30040 TypeRulesCore <> A:466 var
+binder 30086:30086 <> M:472
+binder 30088:30089 <> M':473
+binder 30091:30091 <> Q:474
+binder 30093:30094 <> Q':475
+binder 30096:30097 <> bs:476
+R30109:30112 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30100:30103 TypeRulesCore <> conv:351 ind
+R30107:30108 TypeRulesCore <> M':473 var
+R30105:30105 TypeRulesCore <> M:472 var
+R30122:30129 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30113:30116 TypeRulesCore <> conv:351 ind
+R30120:30121 TypeRulesCore <> Q':475 var
+R30118:30118 TypeRulesCore <> Q:474 var
+R30130:30133 TypeRulesCore <> conv:351 ind
+R30151:30155 TypeRulesCore <> TCase constr
+R30163:30164 TypeRulesCore <> bs:476 var
+R30160:30161 TypeRulesCore <> Q':475 var
+R30157:30158 TypeRulesCore <> M':473 var
+R30136:30140 TypeRulesCore <> TCase constr
+R30146:30147 TypeRulesCore <> bs:476 var
+R30144:30144 TypeRulesCore <> Q:474 var
+R30142:30142 TypeRulesCore <> M:472 var
+binder 30189:30189 <> M:477
+binder 30191:30191 <> Q:478
+binder 30193:30195 <> bs1:479
+binder 30197:30197 <> c:480
+binder 30199:30200 <> c':481
+binder 30202:30202 <> b:482
+binder 30204:30205 <> b':483
+binder 30207:30209 <> bs2:484
+R30221:30224 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30212:30215 TypeRulesCore <> conv:351 ind
+R30219:30220 TypeRulesCore <> c':481 var
+R30217:30217 TypeRulesCore <> c:480 var
+R30234:30241 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30225:30228 TypeRulesCore <> conv:351 ind
+R30232:30233 TypeRulesCore <> b':483 var
+R30230:30230 TypeRulesCore <> b:482 var
+R30242:30245 TypeRulesCore <> conv:351 ind
+R30283:30287 TypeRulesCore <> TCase constr
+R30297:30300 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R30294:30296 TypeRulesCore <> bs1:479 var
+R30309:30312 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R30301:30301 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R30304:30305 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R30308:30308 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R30302:30303 TypeRulesCore <> c':481 var
+R30306:30307 TypeRulesCore <> b':483 var
+R30313:30315 TypeRulesCore <> bs2:484 var
+R30291:30291 TypeRulesCore <> Q:478 var
+R30289:30289 TypeRulesCore <> M:477 var
+R30248:30252 TypeRulesCore <> TCase constr
+R30262:30265 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R30259:30261 TypeRulesCore <> bs1:479 var
+R30272:30275 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R30266:30266 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R30268:30269 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R30271:30271 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R30267:30267 TypeRulesCore <> c:480 var
+R30270:30270 TypeRulesCore <> b:482 var
+R30276:30278 TypeRulesCore <> bs2:484 var
+R30256:30256 TypeRulesCore <> Q:478 var
+R30254:30254 TypeRulesCore <> M:477 var
+scheme 27072:27075 <> conv_ind
+scheme 27072:27075 <> conv_sind
+ind 31161:31169 <> spine_mem
+constr 31202:31208 <> sm_here
+constr 31301:31308 <> sm_there
+R31176:31179 TypeRulesCore <> term ind
+binder 31172:31172 <> c:485
+R31188:31191 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31184:31187 TypeRulesCore <> term ind
+binder 31220:31222 <> Phi:488
+binder 31224:31224 <> A:489
+binder 31226:31227 <> c':490
+binder 31229:31232 <> Phi':491
+R31266:31269 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31239:31242 TypeRulesCore <> eval ind
+R31249:31254 TypeRulesCore <> TLCons constr
+R31261:31264 TypeRulesCore <> Phi':491 var
+R31258:31259 TypeRulesCore <> c':490 var
+R31256:31256 TypeRulesCore <> A:489 var
+R31244:31246 TypeRulesCore <> Phi:488 var
+R31279:31282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31270:31273 TypeRulesCore <> conv ind
+R31277:31278 TypeRulesCore <> c':490 var
+R31275:31275 TypeRulesCore <> c:485 var
+R31283:31291 TypeRulesCore <> spine_mem:486 ind
+R31295:31297 TypeRulesCore <> Phi:488 var
+R31293:31293 TypeRulesCore <> c:485 var
+binder 31319:31321 <> Phi:492
+binder 31323:31323 <> A:493
+binder 31325:31326 <> c':494
+binder 31328:31331 <> Phi':495
+R31365:31368 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31338:31341 TypeRulesCore <> eval ind
+R31348:31353 TypeRulesCore <> TLCons constr
+R31360:31363 TypeRulesCore <> Phi':495 var
+R31357:31358 TypeRulesCore <> c':494 var
+R31355:31355 TypeRulesCore <> A:493 var
+R31343:31345 TypeRulesCore <> Phi:492 var
+R31385:31388 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31369:31377 TypeRulesCore <> spine_mem:486 ind
+R31381:31384 TypeRulesCore <> Phi':495 var
+R31379:31379 TypeRulesCore <> c:485 var
+R31389:31397 TypeRulesCore <> spine_mem:486 ind
+R31401:31403 TypeRulesCore <> Phi:492 var
+R31399:31399 TypeRulesCore <> c:485 var
+scheme 31161:31169 <> spine_mem_ind
+scheme 31161:31169 <> spine_mem_sind
+ind 31498:31507 <> spine_tail
+constr 31542:31549 <> stl_here
+constr 31603:31611 <> stl_there
+R31516:31519 TypeRulesCore <> term ind
+binder 31510:31512 <> Phi:496
+R31528:31531 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31524:31527 TypeRulesCore <> term ind
+binder 31561:31563 <> Psi:499
+R31578:31581 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31566:31569 TypeRulesCore <> eval ind
+R31575:31577 TypeRulesCore <> Phi:496 var
+R31571:31573 TypeRulesCore <> Psi:499 var
+R31582:31591 TypeRulesCore <> spine_tail:497 ind
+R31597:31599 TypeRulesCore <> Psi:499 var
+R31593:31595 TypeRulesCore <> Phi:496 var
+binder 31622:31624 <> Psi:500
+binder 31626:31626 <> A:501
+binder 31628:31628 <> c:502
+binder 31630:31633 <> Psi':503
+R31666:31669 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31640:31643 TypeRulesCore <> eval ind
+R31650:31655 TypeRulesCore <> TLCons constr
+R31661:31664 TypeRulesCore <> Psi':503 var
+R31659:31659 TypeRulesCore <> c:502 var
+R31657:31657 TypeRulesCore <> A:501 var
+R31645:31647 TypeRulesCore <> Psi:500 var
+R31689:31692 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31670:31679 TypeRulesCore <> spine_tail:497 ind
+R31685:31688 TypeRulesCore <> Psi':503 var
+R31681:31683 TypeRulesCore <> Phi:496 var
+R31693:31702 TypeRulesCore <> spine_tail:497 ind
+R31708:31710 TypeRulesCore <> Psi:500 var
+R31704:31706 TypeRulesCore <> Phi:496 var
+scheme 31498:31507 <> spine_tail_ind
+scheme 31498:31507 <> spine_tail_sind
+ind 32084:32093 <> spine_incl
+constr 32123:32128 <> si_nil
+constr 32197:32203 <> si_cons
+constr 32336:32342 <> si_tail
+R32101:32104 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32097:32100 TypeRulesCore <> term ind
+R32109:32112 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32105:32108 TypeRulesCore <> term ind
+binder 32143:32145 <> Phi:506
+binder 32147:32149 <> Psi:507
+binder 32151:32151 <> A:508
+R32172:32175 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32154:32157 TypeRulesCore <> eval ind
+R32164:32168 TypeRulesCore <> TLNil constr
+R32170:32170 TypeRulesCore <> A:508 var
+R32159:32161 TypeRulesCore <> Phi:506 var
+R32176:32185 TypeRulesCore <> spine_incl:504 ind
+R32191:32193 TypeRulesCore <> Psi:507 var
+R32187:32189 TypeRulesCore <> Phi:506 var
+binder 32217:32219 <> Phi:509
+binder 32221:32221 <> A:510
+binder 32223:32223 <> c:511
+binder 32225:32228 <> Phi':512
+binder 32230:32232 <> Psi:513
+R32265:32268 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32239:32242 TypeRulesCore <> eval ind
+R32249:32254 TypeRulesCore <> TLCons constr
+R32260:32263 TypeRulesCore <> Phi':512 var
+R32258:32258 TypeRulesCore <> c:511 var
+R32256:32256 TypeRulesCore <> A:510 var
+R32244:32246 TypeRulesCore <> Phi:509 var
+R32284:32287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32269:32277 TypeRulesCore <> spine_mem ind
+R32281:32283 TypeRulesCore <> Psi:513 var
+R32279:32279 TypeRulesCore <> c:511 var
+R32307:32314 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32288:32297 TypeRulesCore <> spine_incl:504 ind
+R32304:32306 TypeRulesCore <> Psi:513 var
+R32299:32302 TypeRulesCore <> Phi':512 var
+R32315:32324 TypeRulesCore <> spine_incl:504 ind
+R32330:32332 TypeRulesCore <> Psi:513 var
+R32326:32328 TypeRulesCore <> Phi:509 var
+binder 32353:32355 <> Phi:514
+binder 32357:32359 <> Psi:515
+R32384:32387 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32366:32375 TypeRulesCore <> spine_tail ind
+R32381:32383 TypeRulesCore <> Psi:515 var
+R32377:32379 TypeRulesCore <> Phi:514 var
+R32388:32397 TypeRulesCore <> spine_incl:504 ind
+R32403:32405 TypeRulesCore <> Psi:515 var
+R32399:32401 TypeRulesCore <> Phi:514 var
+scheme 32084:32093 <> spine_incl_ind
+scheme 32084:32093 <> spine_incl_sind
+ind 32666:32671 <> covers
+constr 32711:32717 <> cov_nil
+constr 32775:32782 <> cov_cons
+R32680:32683 Corelib.Init.Datatypes <> list ind
+R32685:32688 TypeRulesCore <> term ind
+binder 32674:32676 <> Psi:516
+R32697:32700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32693:32696 TypeRulesCore <> term ind
+binder 32729:32731 <> Phi:519
+binder 32733:32733 <> A:520
+R32754:32757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32736:32739 TypeRulesCore <> eval ind
+R32746:32750 TypeRulesCore <> TLNil constr
+R32752:32752 TypeRulesCore <> A:520 var
+R32741:32743 TypeRulesCore <> Phi:519 var
+R32758:32763 TypeRulesCore <> covers:517 ind
+R32769:32771 TypeRulesCore <> Phi:519 var
+R32765:32767 TypeRulesCore <> Psi:516 var
+binder 32793:32795 <> Phi:521
+binder 32797:32797 <> A:522
+binder 32799:32799 <> c:523
+binder 32801:32804 <> Phi':524
+R32837:32844 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32811:32814 TypeRulesCore <> eval ind
+R32821:32826 TypeRulesCore <> TLCons constr
+R32832:32835 TypeRulesCore <> Phi':524 var
+R32830:32830 TypeRulesCore <> c:523 var
+R32828:32828 TypeRulesCore <> A:522 var
+R32816:32818 TypeRulesCore <> Phi:521 var
+R32877:32884 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32845:32850 Stdlib.Lists.List <> Exists ind
+R32874:32876 TypeRulesCore <> Psi:516 var
+binder 32857:32858 <> c':525
+R32863:32866 TypeRulesCore <> conv ind
+R32870:32871 TypeRulesCore <> c':525 var
+R32868:32868 TypeRulesCore <> c:523 var
+R32900:32903 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32885:32890 TypeRulesCore <> covers:517 ind
+R32896:32899 TypeRulesCore <> Phi':524 var
+R32892:32894 TypeRulesCore <> Psi:516 var
+R32904:32909 TypeRulesCore <> covers:517 ind
+R32915:32917 TypeRulesCore <> Phi:521 var
+R32911:32913 TypeRulesCore <> Psi:516 var
+scheme 32666:32671 <> covers_ind
+scheme 32666:32671 <> covers_sind
+ind 33321:33328 <> distinct
+constr 33355:33360 <> dt_nil
+constr 33379:33385 <> dt_cons
+R33341:33344 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33332:33335 Corelib.Init.Datatypes <> list ind
+R33337:33340 TypeRulesCore <> term ind
+R33365:33372 TypeRulesCore <> distinct:526 ind
+R33374:33375 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+binder 33396:33396 <> c:528
+binder 33398:33399 <> cs:529
+binder 33401:33401 <> n:530
+R33420:33427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33408:33415 TypeRulesCore <> enum_pos ind
+R33419:33419 TypeRulesCore <> n:530 var
+R33417:33417 TypeRulesCore <> c:528 var
+R33461:33468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33428:33433 Corelib.Lists.ListDef <> Forall ind
+R33459:33460 TypeRulesCore <> cs:529 var
+binder 33440:33441 <> c':531
+R33446:33447 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R33448:33451 TypeRulesCore <> conv ind
+R33455:33456 TypeRulesCore <> c':531 var
+R33453:33453 TypeRulesCore <> c:528 var
+R33480:33483 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33469:33476 TypeRulesCore <> distinct:526 ind
+R33478:33479 TypeRulesCore <> cs:529 var
+R33484:33491 TypeRulesCore <> distinct:526 ind
+R33495:33498 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R33494:33494 TypeRulesCore <> c:528 var
+R33499:33500 TypeRulesCore <> cs:529 var
+scheme 33321:33328 <> distinct_ind
+scheme 33321:33328 <> distinct_sind
+def 34023:34025 <> ctx
+R34030:34033 Corelib.Init.Datatypes <> list ind
+R34035:34038 TypeRulesCore <> term ind
+ind 34052:34053 <> wf
+constr 34137:34142 <> wf_nil
+constr 34265:34271 <> wf_cons
+ind 34342:34346 <> synth
+constr 34526:34531 <> sy_var
+constr 34765:34771 <> sy_sort
+constr 35075:35079 <> sy_pi
+constr 35510:35517 <> sy_sigma
+constr 35818:35823 <> sy_app
+constr 36129:36134 <> sy_fst
+constr 36378:36383 <> sy_snd
+constr 36664:36671 <> sy_unitT
+constr 36793:36799 <> sy_unit
+constr 36967:36972 <> sy_uid
+constr 37142:37149 <> sy_enumu
+constr 37384:37389 <> sy_tag
+constr 37560:37566 <> sy_nile
+constr 37786:37793 <> sy_conse
+constr 38022:38029 <> sy_enumt
+constr 38188:38193 <> sy_epi
+constr 38457:38465 <> sy_switch
+constr 38791:38798 <> sy_idesc
+constr 38960:38968 <> sy_interp
+constr 39273:39278 <> sy_mui
+constr 39558:39564 <> sy_iall
+constr 40059:40065 <> sy_hyps
+constr 40757:40762 <> sy_ind
+constr 41694:41699 <> sy_mus
+constr 42463:42469 <> sy_case
+constr 42948:42954 <> sy_list
+constr 43026:43032 <> sy_lnil
+constr 43104:43111 <> sy_lcons
+ind 43244:43248 <> check
+constr 43566:43572 <> ch_conv
+constr 44070:44075 <> ch_sub
+constr 44213:44221 <> ch_expand
+constr 44419:44424 <> ch_lam
+constr 44667:44673 <> ch_pair
+constr 45660:45665 <> ch_app
+constr 46043:46048 <> ch_fst
+constr 46407:46412 <> ch_snd
+constr 46752:46759 <> ch_ezero
+constr 47083:47090 <> ch_esucc
+constr 47379:47385 <> ch_ivar
+constr 47604:47608 <> ch_i1
+constr 47888:47895 <> ch_iprod
+constr 48240:48245 <> ch_ipi
+constr 48609:48615 <> ch_isig
+constr 48997:49006 <> ch_ichoice
+constr 49489:49497 <> ch_in_mui
+constr 50170:50178 <> ch_in_sig
+ind 50568:50581 <> check_branches
+constr 50812:50817 <> cb_nil
+constr 50873:50879 <> cb_cons
+ind 51128:51130 <> sub
+constr 51249:51255 <> su_conv
+constr 51377:51384 <> su_trans
+constr 51555:51561 <> su_sort
+constr 51849:51853 <> su_pi
+constr 52189:52197 <> su_forget
+constr 53014:53019 <> su_sig
+R34060:34063 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34057:34059 TypeRulesCore <> ctx def
+R34353:34356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34350:34352 TypeRulesCore <> ctx def
+R34361:34364 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34357:34360 TypeRulesCore <> term ind
+R34369:34372 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34365:34368 TypeRulesCore <> term ind
+R43255:43258 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43252:43254 TypeRulesCore <> ctx def
+R43263:43266 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43259:43262 TypeRulesCore <> term ind
+R43271:43274 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43267:43270 TypeRulesCore <> term ind
+R50588:50591 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50585:50587 TypeRulesCore <> ctx def
+R50596:50599 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50592:50595 TypeRulesCore <> term ind
+R50604:50607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50600:50603 TypeRulesCore <> term ind
+R50612:50615 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50608:50611 TypeRulesCore <> term ind
+R50620:50623 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50616:50619 TypeRulesCore <> term ind
+R50642:50645 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50624:50627 Corelib.Init.Datatypes <> list ind
+R50634:50636 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R50630:50633 TypeRulesCore <> term ind
+R50637:50640 TypeRulesCore <> term ind
+R51137:51140 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51134:51136 TypeRulesCore <> ctx def
+R51145:51148 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51141:51144 TypeRulesCore <> term ind
+R51153:51156 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51149:51152 TypeRulesCore <> term ind
+R34146:34147 TypeRulesCore <> wf:532 ind
+R34149:34150 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+binder 34282:34283 <> Γ:542
+binder 34285:34285 <> A:543
+binder 34287:34287 <> k:544
+R34295:34298 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34290:34291 TypeRulesCore <> wf:532 ind
+R34293:34294 TypeRulesCore <> Γ:542 var
+R34319:34322 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34299:34303 TypeRulesCore <> check:534 ind
+R34311:34315 TypeRulesCore <> TSort constr
+R34317:34317 TypeRulesCore <> k:544 var
+R34308:34308 TypeRulesCore <> A:543 var
+R34305:34306 TypeRulesCore <> Γ:542 var
+R34323:34324 TypeRulesCore <> wf:532 ind
+R34328:34331 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R34327:34327 TypeRulesCore <> A:543 var
+R34332:34333 TypeRulesCore <> Γ:542 var
+binder 34542:34543 <> Γ:545
+binder 34545:34545 <> n:546
+binder 34547:34547 <> A:547
+R34559:34562 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34554:34555 TypeRulesCore <> wf:532 ind
+R34557:34558 TypeRulesCore <> Γ:545 var
+R34586:34589 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34577:34579 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R34563:34571 Stdlib.Lists.List <> nth_error def
+R34576:34576 TypeRulesCore <> n:546 var
+R34573:34574 TypeRulesCore <> Γ:545 var
+R34580:34583 Corelib.Init.Datatypes <> Some constr
+R34585:34585 TypeRulesCore <> A:547 var
+R34590:34594 TypeRulesCore <> synth:533 ind
+R34609:34612 TypeRulesCore <> lift def
+R34622:34622 TypeRulesCore <> A:547 var
+R34615:34615 Corelib.Init.Datatypes <> S constr
+R34617:34617 TypeRulesCore <> n:546 var
+R34600:34603 TypeRulesCore <> TVar constr
+R34605:34605 TypeRulesCore <> n:546 var
+R34596:34597 TypeRulesCore <> Γ:545 var
+binder 34782:34783 <> Γ:548
+binder 34785:34785 <> k:549
+R34793:34796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34788:34789 TypeRulesCore <> wf:532 ind
+R34791:34792 TypeRulesCore <> Γ:548 var
+R34797:34801 TypeRulesCore <> synth:533 ind
+R34817:34821 TypeRulesCore <> TSort constr
+R34824:34824 Corelib.Init.Datatypes <> S constr
+R34826:34826 TypeRulesCore <> k:549 var
+R34807:34811 TypeRulesCore <> TSort constr
+R34813:34813 TypeRulesCore <> k:549 var
+R34803:34804 TypeRulesCore <> Γ:548 var
+binder 35090:35091 <> Γ:550
+binder 35093:35093 <> A:551
+binder 35095:35095 <> B:552
+binder 35097:35097 <> k:553
+R35124:35127 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35104:35108 TypeRulesCore <> check:534 ind
+R35116:35120 TypeRulesCore <> TSort constr
+R35122:35122 TypeRulesCore <> k:553 var
+R35113:35113 TypeRulesCore <> A:551 var
+R35110:35111 TypeRulesCore <> Γ:550 var
+R35155:35162 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35128:35132 TypeRulesCore <> check:534 ind
+R35147:35151 TypeRulesCore <> TSort constr
+R35153:35153 TypeRulesCore <> k:553 var
+R35144:35144 TypeRulesCore <> B:552 var
+R35136:35139 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R35135:35135 TypeRulesCore <> A:551 var
+R35140:35141 TypeRulesCore <> Γ:550 var
+R35163:35167 TypeRulesCore <> synth:533 ind
+R35183:35187 TypeRulesCore <> TSort constr
+R35189:35189 TypeRulesCore <> k:553 var
+R35173:35175 TypeRulesCore <> TPi constr
+R35179:35179 TypeRulesCore <> B:552 var
+R35177:35177 TypeRulesCore <> A:551 var
+R35169:35170 TypeRulesCore <> Γ:550 var
+binder 35528:35529 <> Γ:554
+binder 35531:35531 <> A:555
+binder 35533:35533 <> B:556
+binder 35535:35535 <> k:557
+R35562:35565 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35542:35546 TypeRulesCore <> check:534 ind
+R35554:35558 TypeRulesCore <> TSort constr
+R35560:35560 TypeRulesCore <> k:557 var
+R35551:35551 TypeRulesCore <> A:555 var
+R35548:35549 TypeRulesCore <> Γ:554 var
+R35593:35600 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35566:35570 TypeRulesCore <> check:534 ind
+R35585:35589 TypeRulesCore <> TSort constr
+R35591:35591 TypeRulesCore <> k:557 var
+R35582:35582 TypeRulesCore <> B:556 var
+R35574:35577 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R35573:35573 TypeRulesCore <> A:555 var
+R35578:35579 TypeRulesCore <> Γ:554 var
+R35601:35605 TypeRulesCore <> synth:533 ind
+R35624:35628 TypeRulesCore <> TSort constr
+R35630:35630 TypeRulesCore <> k:557 var
+R35611:35616 TypeRulesCore <> TSigma constr
+R35620:35620 TypeRulesCore <> B:556 var
+R35618:35618 TypeRulesCore <> A:555 var
+R35607:35608 TypeRulesCore <> Γ:554 var
+binder 35834:35835 <> Γ:558
+binder 35837:35837 <> f:559
+binder 35839:35839 <> a:560
+binder 35841:35841 <> C:561
+binder 35843:35843 <> A:562
+binder 35845:35845 <> B:563
+binder 35847:35847 <> k:564
+R35882:35889 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35854:35858 TypeRulesCore <> check:534 ind
+R35874:35878 TypeRulesCore <> TSort constr
+R35880:35880 TypeRulesCore <> k:564 var
+R35864:35866 TypeRulesCore <> TPi constr
+R35870:35870 TypeRulesCore <> B:563 var
+R35868:35868 TypeRulesCore <> A:562 var
+R35860:35861 TypeRulesCore <> Γ:558 var
+R35902:35905 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35890:35894 TypeRulesCore <> synth:533 ind
+R35901:35901 TypeRulesCore <> C:561 var
+R35899:35899 TypeRulesCore <> f:559 var
+R35896:35897 TypeRulesCore <> Γ:558 var
+R35922:35925 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35906:35909 TypeRulesCore <> eval ind
+R35914:35916 TypeRulesCore <> TPi constr
+R35920:35920 TypeRulesCore <> B:563 var
+R35918:35918 TypeRulesCore <> A:562 var
+R35911:35911 TypeRulesCore <> C:561 var
+R35938:35945 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35926:35930 TypeRulesCore <> check:534 ind
+R35937:35937 TypeRulesCore <> A:562 var
+R35935:35935 TypeRulesCore <> a:560 var
+R35932:35933 TypeRulesCore <> Γ:558 var
+R35946:35950 TypeRulesCore <> synth:533 ind
+R35967:35971 TypeRulesCore <> subst def
+R35977:35977 TypeRulesCore <> B:563 var
+R35973:35973 TypeRulesCore <> a:560 var
+R35956:35959 TypeRulesCore <> TApp constr
+R35963:35963 TypeRulesCore <> a:560 var
+R35961:35961 TypeRulesCore <> f:559 var
+R35952:35953 TypeRulesCore <> Γ:558 var
+binder 36145:36146 <> Γ:565
+binder 36148:36148 <> p:566
+binder 36150:36150 <> C:567
+binder 36152:36152 <> A:568
+binder 36154:36154 <> B:569
+binder 36156:36156 <> k:570
+R36194:36201 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36163:36167 TypeRulesCore <> check:534 ind
+R36186:36190 TypeRulesCore <> TSort constr
+R36192:36192 TypeRulesCore <> k:570 var
+R36173:36178 TypeRulesCore <> TSigma constr
+R36182:36182 TypeRulesCore <> B:569 var
+R36180:36180 TypeRulesCore <> A:568 var
+R36169:36170 TypeRulesCore <> Γ:565 var
+R36214:36217 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36202:36206 TypeRulesCore <> synth:533 ind
+R36213:36213 TypeRulesCore <> C:567 var
+R36211:36211 TypeRulesCore <> p:566 var
+R36208:36209 TypeRulesCore <> Γ:565 var
+R36237:36240 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36218:36221 TypeRulesCore <> eval ind
+R36226:36231 TypeRulesCore <> TSigma constr
+R36235:36235 TypeRulesCore <> B:569 var
+R36233:36233 TypeRulesCore <> A:568 var
+R36223:36223 TypeRulesCore <> C:567 var
+R36241:36245 TypeRulesCore <> synth:533 ind
+R36259:36259 TypeRulesCore <> A:568 var
+R36251:36254 TypeRulesCore <> TFst constr
+R36256:36256 TypeRulesCore <> p:566 var
+R36247:36248 TypeRulesCore <> Γ:565 var
+binder 36394:36395 <> Γ:571
+binder 36397:36397 <> p:572
+binder 36399:36399 <> C:573
+binder 36401:36401 <> A:574
+binder 36403:36403 <> B:575
+binder 36405:36405 <> k:576
+R36443:36450 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36412:36416 TypeRulesCore <> check:534 ind
+R36435:36439 TypeRulesCore <> TSort constr
+R36441:36441 TypeRulesCore <> k:576 var
+R36422:36427 TypeRulesCore <> TSigma constr
+R36431:36431 TypeRulesCore <> B:575 var
+R36429:36429 TypeRulesCore <> A:574 var
+R36418:36419 TypeRulesCore <> Γ:571 var
+R36463:36466 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36451:36455 TypeRulesCore <> synth:533 ind
+R36462:36462 TypeRulesCore <> C:573 var
+R36460:36460 TypeRulesCore <> p:572 var
+R36457:36458 TypeRulesCore <> Γ:571 var
+R36486:36493 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36467:36470 TypeRulesCore <> eval ind
+R36475:36480 TypeRulesCore <> TSigma constr
+R36484:36484 TypeRulesCore <> B:575 var
+R36482:36482 TypeRulesCore <> A:574 var
+R36472:36472 TypeRulesCore <> C:573 var
+R36494:36498 TypeRulesCore <> synth:533 ind
+R36513:36517 TypeRulesCore <> subst def
+R36530:36530 TypeRulesCore <> B:575 var
+R36520:36523 TypeRulesCore <> TFst constr
+R36525:36525 TypeRulesCore <> p:572 var
+R36504:36507 TypeRulesCore <> TSnd constr
+R36509:36509 TypeRulesCore <> p:572 var
+R36500:36501 TypeRulesCore <> Γ:571 var
+binder 36682:36683 <> Γ:577
+binder 36685:36685 <> k:578
+R36693:36696 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36688:36689 TypeRulesCore <> wf:532 ind
+R36691:36692 TypeRulesCore <> Γ:577 var
+R36697:36701 TypeRulesCore <> synth:533 ind
+R36714:36718 TypeRulesCore <> TSort constr
+R36720:36720 TypeRulesCore <> k:578 var
+R36706:36711 TypeRulesCore <> TUnitT constr
+R36703:36704 TypeRulesCore <> Γ:577 var
+binder 36810:36811 <> Γ:579
+R36819:36822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36814:36815 TypeRulesCore <> wf:532 ind
+R36817:36818 TypeRulesCore <> Γ:579 var
+R36823:36827 TypeRulesCore <> synth:533 ind
+R36838:36843 TypeRulesCore <> TUnitT constr
+R36832:36836 TypeRulesCore <> TUnit constr
+R36829:36830 TypeRulesCore <> Γ:579 var
+binder 36983:36984 <> Γ:580
+R36992:36995 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36987:36988 TypeRulesCore <> wf:532 ind
+R36990:36991 TypeRulesCore <> Γ:580 var
+R36996:37000 TypeRulesCore <> synth:533 ind
+R37011:37015 TypeRulesCore <> TSort constr
+R37005:37008 TypeRulesCore <> TUId constr
+R37002:37003 TypeRulesCore <> Γ:580 var
+binder 37160:37161 <> Γ:581
+R37169:37172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37164:37165 TypeRulesCore <> wf:532 ind
+R37167:37168 TypeRulesCore <> Γ:581 var
+R37173:37177 TypeRulesCore <> synth:533 ind
+R37190:37194 TypeRulesCore <> TSort constr
+R37182:37187 TypeRulesCore <> TEnumU constr
+R37179:37180 TypeRulesCore <> Γ:581 var
+binder 37400:37401 <> Γ:582
+binder 37403:37403 <> s:583
+R37411:37414 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37406:37407 TypeRulesCore <> wf:532 ind
+R37409:37410 TypeRulesCore <> Γ:582 var
+R37415:37419 TypeRulesCore <> synth:533 ind
+R37433:37436 TypeRulesCore <> TUId constr
+R37425:37428 TypeRulesCore <> TTag constr
+R37430:37430 TypeRulesCore <> s:583 var
+R37421:37422 TypeRulesCore <> Γ:582 var
+binder 37577:37578 <> Γ:584
+R37586:37589 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37581:37582 TypeRulesCore <> wf:532 ind
+R37584:37585 TypeRulesCore <> Γ:584 var
+R37590:37594 TypeRulesCore <> synth:533 ind
+R37605:37610 TypeRulesCore <> TEnumU constr
+R37599:37603 TypeRulesCore <> TNilE constr
+R37596:37597 TypeRulesCore <> Γ:584 var
+binder 37804:37805 <> Γ:585
+binder 37807:37808 <> tg:586
+binder 37810:37810 <> E:587
+R37833:37836 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37817:37821 TypeRulesCore <> check:534 ind
+R37829:37832 TypeRulesCore <> TUId constr
+R37826:37827 TypeRulesCore <> tg:586 var
+R37823:37824 TypeRulesCore <> Γ:585 var
+R37854:37857 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37837:37841 TypeRulesCore <> check:534 ind
+R37848:37853 TypeRulesCore <> TEnumU constr
+R37846:37846 TypeRulesCore <> E:587 var
+R37843:37844 TypeRulesCore <> Γ:585 var
+R37858:37862 TypeRulesCore <> synth:533 ind
+R37881:37886 TypeRulesCore <> TEnumU constr
+R37868:37873 TypeRulesCore <> TConsE constr
+R37878:37878 TypeRulesCore <> E:587 var
+R37875:37876 TypeRulesCore <> tg:586 var
+R37864:37865 TypeRulesCore <> Γ:585 var
+binder 38040:38041 <> Γ:588
+binder 38043:38043 <> E:589
+R38063:38066 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38046:38050 TypeRulesCore <> check:534 ind
+R38057:38062 TypeRulesCore <> TEnumU constr
+R38055:38055 TypeRulesCore <> E:589 var
+R38052:38053 TypeRulesCore <> Γ:588 var
+R38067:38071 TypeRulesCore <> synth:533 ind
+R38088:38092 TypeRulesCore <> TSort constr
+R38077:38082 TypeRulesCore <> TEnumT constr
+R38084:38084 TypeRulesCore <> E:589 var
+R38073:38074 TypeRulesCore <> Γ:588 var
+binder 38204:38205 <> Γ:590
+binder 38207:38207 <> E:591
+binder 38209:38209 <> P:592
+binder 38211:38211 <> k:593
+R38235:38238 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38218:38222 TypeRulesCore <> check:534 ind
+R38229:38234 TypeRulesCore <> TEnumU constr
+R38227:38227 TypeRulesCore <> E:591 var
+R38224:38225 TypeRulesCore <> Γ:590 var
+R38276:38283 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38239:38243 TypeRulesCore <> check:534 ind
+R38251:38253 TypeRulesCore <> TPi constr
+R38267:38271 TypeRulesCore <> TSort constr
+R38273:38273 TypeRulesCore <> k:593 var
+R38256:38261 TypeRulesCore <> TEnumT constr
+R38263:38263 TypeRulesCore <> E:591 var
+R38248:38248 TypeRulesCore <> P:592 var
+R38245:38246 TypeRulesCore <> Γ:590 var
+R38284:38288 TypeRulesCore <> synth:533 ind
+R38305:38309 TypeRulesCore <> TSort constr
+R38311:38311 TypeRulesCore <> k:593 var
+R38294:38297 TypeRulesCore <> TEPi constr
+R38301:38301 TypeRulesCore <> P:592 var
+R38299:38299 TypeRulesCore <> E:591 var
+R38290:38291 TypeRulesCore <> Γ:590 var
+binder 38476:38477 <> Γ:594
+binder 38479:38479 <> E:595
+binder 38481:38481 <> P:596
+binder 38483:38483 <> p:597
+binder 38485:38485 <> e:598
+binder 38487:38487 <> k:599
+R38511:38514 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38494:38498 TypeRulesCore <> check:534 ind
+R38505:38510 TypeRulesCore <> TEnumU constr
+R38503:38503 TypeRulesCore <> E:595 var
+R38500:38501 TypeRulesCore <> Γ:594 var
+R38552:38559 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38515:38519 TypeRulesCore <> check:534 ind
+R38527:38529 TypeRulesCore <> TPi constr
+R38543:38547 TypeRulesCore <> TSort constr
+R38549:38549 TypeRulesCore <> k:599 var
+R38532:38537 TypeRulesCore <> TEnumT constr
+R38539:38539 TypeRulesCore <> E:595 var
+R38524:38524 TypeRulesCore <> P:596 var
+R38521:38522 TypeRulesCore <> Γ:594 var
+R38581:38584 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38560:38564 TypeRulesCore <> check:534 ind
+R38572:38575 TypeRulesCore <> TEPi constr
+R38579:38579 TypeRulesCore <> P:596 var
+R38577:38577 TypeRulesCore <> E:595 var
+R38569:38569 TypeRulesCore <> p:597 var
+R38566:38567 TypeRulesCore <> Γ:594 var
+R38606:38613 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38585:38589 TypeRulesCore <> check:534 ind
+R38597:38602 TypeRulesCore <> TEnumT constr
+R38604:38604 TypeRulesCore <> E:595 var
+R38594:38594 TypeRulesCore <> e:598 var
+R38591:38592 TypeRulesCore <> Γ:594 var
+R38614:38618 TypeRulesCore <> synth:533 ind
+R38642:38645 TypeRulesCore <> TApp constr
+R38649:38649 TypeRulesCore <> e:598 var
+R38647:38647 TypeRulesCore <> P:596 var
+R38624:38630 TypeRulesCore <> TSwitch constr
+R38638:38638 TypeRulesCore <> e:598 var
+R38636:38636 TypeRulesCore <> p:597 var
+R38634:38634 TypeRulesCore <> P:596 var
+R38632:38632 TypeRulesCore <> E:595 var
+R38620:38621 TypeRulesCore <> Γ:594 var
+binder 38809:38810 <> Γ:600
+binder 38812:38813 <> IT:601
+R38837:38840 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38816:38820 TypeRulesCore <> check:534 ind
+R38829:38833 TypeRulesCore <> TSort constr
+R38825:38826 TypeRulesCore <> IT:601 var
+R38822:38823 TypeRulesCore <> Γ:600 var
+R38841:38845 TypeRulesCore <> synth:533 ind
+R38863:38867 TypeRulesCore <> TSort constr
+R38851:38856 TypeRulesCore <> TIDesc constr
+R38858:38859 TypeRulesCore <> IT:601 var
+R38847:38848 TypeRulesCore <> Γ:600 var
+binder 38979:38980 <> Γ:602
+binder 38982:38982 <> D:603
+binder 38984:38984 <> X:604
+binder 38986:38987 <> IT:605
+R39015:39018 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38994:38998 TypeRulesCore <> check:534 ind
+R39007:39011 TypeRulesCore <> TSort constr
+R39003:39004 TypeRulesCore <> IT:605 var
+R39000:39001 TypeRulesCore <> Γ:602 var
+R39041:39048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39019:39023 TypeRulesCore <> check:534 ind
+R39031:39036 TypeRulesCore <> TIDesc constr
+R39038:39039 TypeRulesCore <> IT:605 var
+R39028:39028 TypeRulesCore <> D:603 var
+R39025:39026 TypeRulesCore <> Γ:602 var
+R39078:39085 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39049:39053 TypeRulesCore <> check:534 ind
+R39061:39063 TypeRulesCore <> TPi constr
+R39069:39073 TypeRulesCore <> TSort constr
+R39065:39066 TypeRulesCore <> IT:605 var
+R39058:39058 TypeRulesCore <> X:604 var
+R39055:39056 TypeRulesCore <> Γ:602 var
+R39086:39090 TypeRulesCore <> synth:533 ind
+R39110:39114 TypeRulesCore <> TSort constr
+R39096:39102 TypeRulesCore <> TInterp constr
+R39106:39106 TypeRulesCore <> X:604 var
+R39104:39104 TypeRulesCore <> D:603 var
+R39092:39093 TypeRulesCore <> Γ:602 var
+binder 39289:39290 <> Γ:606
+binder 39292:39292 <> R:607
+binder 39294:39295 <> IT:608
+R39323:39326 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39302:39306 TypeRulesCore <> check:534 ind
+R39315:39319 TypeRulesCore <> TSort constr
+R39311:39312 TypeRulesCore <> IT:608 var
+R39308:39309 TypeRulesCore <> Γ:606 var
+R39369:39376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39327:39331 TypeRulesCore <> check:534 ind
+R39339:39341 TypeRulesCore <> TPi constr
+R39347:39352 TypeRulesCore <> TIDesc constr
+R39355:39358 TypeRulesCore <> lift def
+R39364:39365 TypeRulesCore <> IT:608 var
+R39343:39344 TypeRulesCore <> IT:608 var
+R39336:39336 TypeRulesCore <> R:607 var
+R39333:39334 TypeRulesCore <> Γ:606 var
+R39377:39381 TypeRulesCore <> synth:533 ind
+R39396:39398 TypeRulesCore <> TPi constr
+R39404:39408 TypeRulesCore <> TSort constr
+R39400:39401 TypeRulesCore <> IT:608 var
+R39387:39390 TypeRulesCore <> TMuI constr
+R39392:39392 TypeRulesCore <> R:607 var
+R39383:39384 TypeRulesCore <> Γ:606 var
+binder 39575:39576 <> Γ:609
+binder 39578:39578 <> D:610
+binder 39580:39580 <> X:611
+binder 39582:39583 <> xs:612
+binder 39585:39585 <> P:613
+binder 39587:39588 <> IT:614
+R39616:39619 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39595:39599 TypeRulesCore <> check:534 ind
+R39608:39612 TypeRulesCore <> TSort constr
+R39604:39605 TypeRulesCore <> IT:614 var
+R39601:39602 TypeRulesCore <> Γ:609 var
+R39642:39649 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39620:39624 TypeRulesCore <> check:534 ind
+R39632:39637 TypeRulesCore <> TIDesc constr
+R39639:39640 TypeRulesCore <> IT:614 var
+R39629:39629 TypeRulesCore <> D:610 var
+R39626:39627 TypeRulesCore <> Γ:609 var
+R39679:39686 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39650:39654 TypeRulesCore <> check:534 ind
+R39662:39664 TypeRulesCore <> TPi constr
+R39670:39674 TypeRulesCore <> TSort constr
+R39666:39667 TypeRulesCore <> IT:614 var
+R39659:39659 TypeRulesCore <> X:611 var
+R39656:39657 TypeRulesCore <> Γ:609 var
+R39712:39719 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39687:39691 TypeRulesCore <> check:534 ind
+R39700:39706 TypeRulesCore <> TInterp constr
+R39710:39710 TypeRulesCore <> X:611 var
+R39708:39708 TypeRulesCore <> D:610 var
+R39696:39697 TypeRulesCore <> xs:612 var
+R39693:39694 TypeRulesCore <> Γ:609 var
+R39787:39794 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39720:39724 TypeRulesCore <> check:534 ind
+R39732:39734 TypeRulesCore <> TPi constr
+R39778:39782 TypeRulesCore <> TSort constr
+R39737:39742 TypeRulesCore <> TSigma constr
+R39748:39751 TypeRulesCore <> TApp constr
+R39767:39770 TypeRulesCore <> TVar constr
+R39754:39757 TypeRulesCore <> lift def
+R39763:39763 TypeRulesCore <> X:611 var
+R39744:39745 TypeRulesCore <> IT:614 var
+R39729:39729 TypeRulesCore <> P:613 var
+R39726:39727 TypeRulesCore <> Γ:609 var
+R39795:39799 TypeRulesCore <> synth:533 ind
+R39822:39826 TypeRulesCore <> TSort constr
+R39805:39809 TypeRulesCore <> TIAll constr
+R39818:39818 TypeRulesCore <> P:613 var
+R39815:39816 TypeRulesCore <> xs:612 var
+R39813:39813 TypeRulesCore <> X:611 var
+R39811:39811 TypeRulesCore <> D:610 var
+R39801:39802 TypeRulesCore <> Γ:609 var
+binder 40076:40077 <> Γ:615
+binder 40079:40079 <> D:616
+binder 40081:40081 <> X:617
+binder 40083:40083 <> P:618
+binder 40085:40085 <> h:619
+binder 40087:40088 <> xs:620
+binder 40090:40091 <> IT:621
+R40119:40122 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40098:40102 TypeRulesCore <> check:534 ind
+R40111:40115 TypeRulesCore <> TSort constr
+R40107:40108 TypeRulesCore <> IT:621 var
+R40104:40105 TypeRulesCore <> Γ:615 var
+R40145:40152 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40123:40127 TypeRulesCore <> check:534 ind
+R40135:40140 TypeRulesCore <> TIDesc constr
+R40142:40143 TypeRulesCore <> IT:621 var
+R40132:40132 TypeRulesCore <> D:616 var
+R40129:40130 TypeRulesCore <> Γ:615 var
+R40182:40189 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40153:40157 TypeRulesCore <> check:534 ind
+R40165:40167 TypeRulesCore <> TPi constr
+R40173:40177 TypeRulesCore <> TSort constr
+R40169:40170 TypeRulesCore <> IT:621 var
+R40162:40162 TypeRulesCore <> X:617 var
+R40159:40160 TypeRulesCore <> Γ:615 var
+R40257:40264 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40190:40194 TypeRulesCore <> check:534 ind
+R40202:40204 TypeRulesCore <> TPi constr
+R40248:40252 TypeRulesCore <> TSort constr
+R40207:40212 TypeRulesCore <> TSigma constr
+R40218:40221 TypeRulesCore <> TApp constr
+R40237:40240 TypeRulesCore <> TVar constr
+R40224:40227 TypeRulesCore <> lift def
+R40233:40233 TypeRulesCore <> X:617 var
+R40214:40215 TypeRulesCore <> IT:621 var
+R40199:40199 TypeRulesCore <> P:618 var
+R40196:40197 TypeRulesCore <> Γ:615 var
+R40392:40399 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40265:40269 TypeRulesCore <> check:534 ind
+R40277:40279 TypeRulesCore <> TPi constr
+R40285:40287 TypeRulesCore <> TPi constr
+R40346:40349 TypeRulesCore <> TApp constr
+R40365:40369 TypeRulesCore <> TPair constr
+R40381:40384 TypeRulesCore <> TVar constr
+R40372:40375 TypeRulesCore <> TVar constr
+R40352:40355 TypeRulesCore <> lift def
+R40361:40361 TypeRulesCore <> P:618 var
+R40290:40293 TypeRulesCore <> TApp constr
+R40309:40312 TypeRulesCore <> TVar constr
+R40296:40299 TypeRulesCore <> lift def
+R40305:40305 TypeRulesCore <> X:617 var
+R40281:40282 TypeRulesCore <> IT:621 var
+R40274:40274 TypeRulesCore <> h:619 var
+R40271:40272 TypeRulesCore <> Γ:615 var
+R40425:40432 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40400:40404 TypeRulesCore <> check:534 ind
+R40413:40419 TypeRulesCore <> TInterp constr
+R40423:40423 TypeRulesCore <> X:617 var
+R40421:40421 TypeRulesCore <> D:616 var
+R40409:40410 TypeRulesCore <> xs:620 var
+R40406:40407 TypeRulesCore <> Γ:615 var
+R40433:40437 TypeRulesCore <> synth:533 ind
+R40462:40466 TypeRulesCore <> TIAll constr
+R40475:40475 TypeRulesCore <> P:618 var
+R40472:40473 TypeRulesCore <> xs:620 var
+R40470:40470 TypeRulesCore <> X:617 var
+R40468:40468 TypeRulesCore <> D:616 var
+R40443:40447 TypeRulesCore <> THyps constr
+R40457:40458 TypeRulesCore <> xs:620 var
+R40455:40455 TypeRulesCore <> h:619 var
+R40453:40453 TypeRulesCore <> P:618 var
+R40451:40451 TypeRulesCore <> X:617 var
+R40449:40449 TypeRulesCore <> D:616 var
+R40439:40440 TypeRulesCore <> Γ:615 var
+binder 40773:40774 <> Γ:622
+binder 40776:40776 <> R:623
+binder 40778:40778 <> P:624
+binder 40780:40782 <> stp:625
+binder 40784:40784 <> i:626
+binder 40786:40786 <> x:627
+binder 40788:40789 <> IT:628
+R40817:40824 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40796:40800 TypeRulesCore <> check:534 ind
+R40809:40813 TypeRulesCore <> TSort constr
+R40805:40806 TypeRulesCore <> IT:628 var
+R40802:40803 TypeRulesCore <> Γ:622 var
+R40867:40874 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40825:40829 TypeRulesCore <> check:534 ind
+R40837:40839 TypeRulesCore <> TPi constr
+R40845:40850 TypeRulesCore <> TIDesc constr
+R40853:40856 TypeRulesCore <> lift def
+R40862:40863 TypeRulesCore <> IT:628 var
+R40841:40842 TypeRulesCore <> IT:628 var
+R40834:40834 TypeRulesCore <> R:623 var
+R40831:40832 TypeRulesCore <> Γ:622 var
+R40949:40956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40875:40879 TypeRulesCore <> check:534 ind
+R40887:40889 TypeRulesCore <> TPi constr
+R40940:40944 TypeRulesCore <> TSort constr
+R40892:40897 TypeRulesCore <> TSigma constr
+R40903:40906 TypeRulesCore <> TApp constr
+R40929:40932 TypeRulesCore <> TVar constr
+R40909:40912 TypeRulesCore <> TMuI constr
+R40915:40918 TypeRulesCore <> lift def
+R40924:40924 TypeRulesCore <> R:623 var
+R40899:40900 TypeRulesCore <> IT:628 var
+R40884:40884 TypeRulesCore <> P:624 var
+R40881:40882 TypeRulesCore <> Γ:622 var
+R41238:41245 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40957:40961 TypeRulesCore <> check:534 ind
+R40977:40979 TypeRulesCore <> TPi constr
+R40993:40995 TypeRulesCore <> TPi constr
+R41067:41069 TypeRulesCore <> TPi constr
+R41185:41188 TypeRulesCore <> TApp constr
+R41204:41208 TypeRulesCore <> TPair constr
+R41220:41222 TypeRulesCore <> TIn constr
+R41225:41228 TypeRulesCore <> TVar constr
+R41211:41214 TypeRulesCore <> TVar constr
+R41191:41194 TypeRulesCore <> lift def
+R41200:41200 TypeRulesCore <> P:624 var
+R41072:41076 TypeRulesCore <> TIAll constr
+R41159:41162 TypeRulesCore <> lift def
+R41168:41168 TypeRulesCore <> P:624 var
+R41150:41153 TypeRulesCore <> TVar constr
+R41108:41111 TypeRulesCore <> TMuI constr
+R41114:41117 TypeRulesCore <> lift def
+R41123:41123 TypeRulesCore <> R:623 var
+R41079:41082 TypeRulesCore <> TApp constr
+R41098:41101 TypeRulesCore <> TVar constr
+R41085:41088 TypeRulesCore <> lift def
+R41094:41094 TypeRulesCore <> R:623 var
+R40998:41004 TypeRulesCore <> TInterp constr
+R41036:41039 TypeRulesCore <> TMuI constr
+R41042:41045 TypeRulesCore <> lift def
+R41051:41051 TypeRulesCore <> R:623 var
+R41007:41010 TypeRulesCore <> TApp constr
+R41026:41029 TypeRulesCore <> TVar constr
+R41013:41016 TypeRulesCore <> lift def
+R41022:41022 TypeRulesCore <> R:623 var
+R40981:40982 TypeRulesCore <> IT:628 var
+R40966:40968 TypeRulesCore <> stp:625 var
+R40963:40964 TypeRulesCore <> Γ:622 var
+R41259:41266 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41246:41250 TypeRulesCore <> check:534 ind
+R41257:41258 TypeRulesCore <> IT:628 var
+R41255:41255 TypeRulesCore <> i:626 var
+R41252:41253 TypeRulesCore <> Γ:622 var
+R41295:41302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41267:41271 TypeRulesCore <> check:534 ind
+R41279:41282 TypeRulesCore <> TApp constr
+R41293:41293 TypeRulesCore <> i:626 var
+R41285:41288 TypeRulesCore <> TMuI constr
+R41290:41290 TypeRulesCore <> R:623 var
+R41276:41276 TypeRulesCore <> x:627 var
+R41273:41274 TypeRulesCore <> Γ:622 var
+R41303:41307 TypeRulesCore <> synth:533 ind
+R41332:41335 TypeRulesCore <> TApp constr
+R41340:41344 TypeRulesCore <> TPair constr
+R41348:41348 TypeRulesCore <> x:627 var
+R41346:41346 TypeRulesCore <> i:626 var
+R41337:41337 TypeRulesCore <> P:624 var
+R41313:41316 TypeRulesCore <> TInd constr
+R41328:41328 TypeRulesCore <> x:627 var
+R41326:41326 TypeRulesCore <> i:626 var
+R41322:41324 TypeRulesCore <> stp:625 var
+R41320:41320 TypeRulesCore <> P:624 var
+R41318:41318 TypeRulesCore <> R:623 var
+R41309:41310 TypeRulesCore <> Γ:622 var
+binder 41710:41711 <> Γ:629
+binder 41713:41714 <> Sf:630
+binder 41716:41717 <> IT:631
+binder 41719:41719 <> E:632
+R41747:41750 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41726:41730 TypeRulesCore <> check:534 ind
+R41739:41743 TypeRulesCore <> TSort constr
+R41735:41736 TypeRulesCore <> IT:631 var
+R41732:41733 TypeRulesCore <> Γ:629 var
+R41768:41775 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41751:41755 TypeRulesCore <> check:534 ind
+R41762:41767 TypeRulesCore <> TEnumU constr
+R41760:41760 TypeRulesCore <> E:632 var
+R41757:41758 TypeRulesCore <> Γ:629 var
+R41829:41836 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41776:41780 TypeRulesCore <> check:534 ind
+R41789:41791 TypeRulesCore <> TPi constr
+R41797:41799 TypeRulesCore <> Sig def
+R41816:41819 TypeRulesCore <> lift def
+R41825:41825 TypeRulesCore <> E:632 var
+R41802:41805 TypeRulesCore <> lift def
+R41811:41812 TypeRulesCore <> IT:631 var
+R41793:41794 TypeRulesCore <> IT:631 var
+R41785:41786 TypeRulesCore <> Sf:630 var
+R41782:41783 TypeRulesCore <> Γ:629 var
+R41837:41841 TypeRulesCore <> synth:533 ind
+R41860:41862 TypeRulesCore <> TPi constr
+R41868:41872 TypeRulesCore <> TSort constr
+R41864:41865 TypeRulesCore <> IT:631 var
+R41847:41851 TypeRulesCore <> SigMu def
+R41855:41856 TypeRulesCore <> Sf:630 var
+R41853:41853 TypeRulesCore <> E:632 var
+R41843:41844 TypeRulesCore <> Γ:629 var
+binder 42480:42481 <> Γ:633
+binder 42483:42483 <> M:634
+binder 42485:42485 <> Q:635
+binder 42487:42488 <> bs:636
+binder 42490:42491 <> Sf:637
+binder 42493:42493 <> i:638
+binder 42495:42496 <> IT:639
+binder 42498:42498 <> E:640
+binder 42500:42500 <> k:641
+binder 42502:42504 <> Phi:642
+R42543:42550 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42511:42515 TypeRulesCore <> check:534 ind
+R42523:42526 TypeRulesCore <> TApp constr
+R42541:42541 TypeRulesCore <> i:638 var
+R42529:42533 TypeRulesCore <> SigMu def
+R42537:42538 TypeRulesCore <> Sf:637 var
+R42535:42535 TypeRulesCore <> E:640 var
+R42520:42520 TypeRulesCore <> M:634 var
+R42517:42518 TypeRulesCore <> Γ:633 var
+R42572:42575 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42551:42555 TypeRulesCore <> check:534 ind
+R42564:42568 TypeRulesCore <> TSort constr
+R42560:42561 TypeRulesCore <> IT:639 var
+R42557:42558 TypeRulesCore <> Γ:633 var
+R42593:42600 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42576:42580 TypeRulesCore <> check:534 ind
+R42587:42592 TypeRulesCore <> TEnumU constr
+R42585:42585 TypeRulesCore <> E:640 var
+R42582:42583 TypeRulesCore <> Γ:633 var
+R42654:42661 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42601:42605 TypeRulesCore <> check:534 ind
+R42614:42616 TypeRulesCore <> TPi constr
+R42622:42624 TypeRulesCore <> Sig def
+R42641:42644 TypeRulesCore <> lift def
+R42650:42650 TypeRulesCore <> E:640 var
+R42627:42630 TypeRulesCore <> lift def
+R42636:42637 TypeRulesCore <> IT:639 var
+R42618:42619 TypeRulesCore <> IT:639 var
+R42610:42611 TypeRulesCore <> Sf:637 var
+R42607:42608 TypeRulesCore <> Γ:633 var
+R42675:42682 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42662:42666 TypeRulesCore <> check:534 ind
+R42673:42674 TypeRulesCore <> IT:639 var
+R42671:42671 TypeRulesCore <> i:638 var
+R42668:42669 TypeRulesCore <> Γ:633 var
+R42703:42710 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42683:42687 TypeRulesCore <> check:534 ind
+R42695:42699 TypeRulesCore <> TSort constr
+R42701:42701 TypeRulesCore <> k:641 var
+R42692:42692 TypeRulesCore <> Q:635 var
+R42689:42690 TypeRulesCore <> Γ:633 var
+R42732:42739 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42711:42718 TypeRulesCore <> distinct ind
+R42721:42723 Corelib.Lists.ListDef <> map def
+R42729:42730 TypeRulesCore <> bs:636 var
+R42725:42727 Corelib.Init.Datatypes <> fst def
+R42769:42776 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42740:42743 TypeRulesCore <> eval ind
+R42766:42768 TypeRulesCore <> Phi:642 var
+R42746:42751 TypeRulesCore <> labels def
+R42754:42757 TypeRulesCore <> TApp constr
+R42762:42762 TypeRulesCore <> i:638 var
+R42759:42760 TypeRulesCore <> Sf:637 var
+R42800:42807 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42777:42782 TypeRulesCore <> covers ind
+R42797:42799 TypeRulesCore <> Phi:642 var
+R42785:42787 Corelib.Lists.ListDef <> map def
+R42793:42794 TypeRulesCore <> bs:636 var
+R42789:42791 Corelib.Init.Datatypes <> fst def
+R42837:42844 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42808:42821 TypeRulesCore <> check_branches:535 ind
+R42835:42836 TypeRulesCore <> bs:636 var
+R42833:42833 TypeRulesCore <> Q:635 var
+R42831:42831 TypeRulesCore <> E:640 var
+R42829:42829 TypeRulesCore <> i:638 var
+R42826:42827 TypeRulesCore <> Sf:637 var
+R42823:42824 TypeRulesCore <> Γ:633 var
+R42845:42849 TypeRulesCore <> synth:533 ind
+R42869:42869 TypeRulesCore <> Q:635 var
+R42855:42859 TypeRulesCore <> TCase constr
+R42865:42866 TypeRulesCore <> bs:636 var
+R42863:42863 TypeRulesCore <> Q:635 var
+R42861:42861 TypeRulesCore <> M:634 var
+R42851:42852 TypeRulesCore <> Γ:633 var
+binder 42965:42966 <> Γ:643
+binder 42968:42968 <> A:644
+R42991:42994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42971:42975 TypeRulesCore <> check:534 ind
+R42983:42987 TypeRulesCore <> TSort constr
+R42980:42980 TypeRulesCore <> A:644 var
+R42977:42978 TypeRulesCore <> Γ:643 var
+R42995:42999 TypeRulesCore <> synth:533 ind
+R43015:43019 TypeRulesCore <> TSort constr
+R43005:43009 TypeRulesCore <> TList constr
+R43011:43011 TypeRulesCore <> A:644 var
+R43001:43002 TypeRulesCore <> Γ:643 var
+binder 43043:43044 <> Γ:645
+binder 43046:43046 <> A:646
+R43069:43072 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43049:43053 TypeRulesCore <> check:534 ind
+R43061:43065 TypeRulesCore <> TSort constr
+R43058:43058 TypeRulesCore <> A:646 var
+R43055:43056 TypeRulesCore <> Γ:645 var
+R43073:43077 TypeRulesCore <> synth:533 ind
+R43093:43097 TypeRulesCore <> TList constr
+R43099:43099 TypeRulesCore <> A:646 var
+R43083:43087 TypeRulesCore <> TLNil constr
+R43089:43089 TypeRulesCore <> A:646 var
+R43079:43080 TypeRulesCore <> Γ:645 var
+binder 43122:43123 <> Γ:647
+binder 43125:43125 <> A:648
+binder 43127:43127 <> a:649
+binder 43129:43129 <> l:650
+R43156:43159 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43136:43140 TypeRulesCore <> check:534 ind
+R43148:43152 TypeRulesCore <> TSort constr
+R43145:43145 TypeRulesCore <> A:648 var
+R43142:43143 TypeRulesCore <> Γ:647 var
+R43172:43175 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43160:43164 TypeRulesCore <> check:534 ind
+R43171:43171 TypeRulesCore <> A:648 var
+R43169:43169 TypeRulesCore <> a:649 var
+R43166:43167 TypeRulesCore <> Γ:647 var
+R43196:43203 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43176:43180 TypeRulesCore <> check:534 ind
+R43188:43192 TypeRulesCore <> TList constr
+R43194:43194 TypeRulesCore <> A:648 var
+R43185:43185 TypeRulesCore <> l:650 var
+R43182:43183 TypeRulesCore <> Γ:647 var
+R43204:43208 TypeRulesCore <> synth:533 ind
+R43229:43233 TypeRulesCore <> TList constr
+R43235:43235 TypeRulesCore <> A:648 var
+R43214:43219 TypeRulesCore <> TLCons constr
+R43225:43225 TypeRulesCore <> l:650 var
+R43223:43223 TypeRulesCore <> a:649 var
+R43221:43221 TypeRulesCore <> A:648 var
+R43210:43211 TypeRulesCore <> Γ:647 var
+binder 43583:43584 <> Γ:651
+binder 43586:43586 <> t:652
+binder 43588:43588 <> A:653
+binder 43590:43590 <> B:654
+R43605:43608 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43593:43597 TypeRulesCore <> synth:533 ind
+R43604:43604 TypeRulesCore <> A:653 var
+R43602:43602 TypeRulesCore <> t:652 var
+R43599:43600 TypeRulesCore <> Γ:651 var
+R43617:43620 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43609:43612 TypeRulesCore <> conv ind
+R43616:43616 TypeRulesCore <> B:654 var
+R43614:43614 TypeRulesCore <> A:653 var
+R43621:43625 TypeRulesCore <> check:534 ind
+R43632:43632 TypeRulesCore <> B:654 var
+R43630:43630 TypeRulesCore <> t:652 var
+R43627:43628 TypeRulesCore <> Γ:651 var
+binder 44086:44087 <> Γ:655
+binder 44089:44089 <> t:656
+binder 44091:44091 <> A:657
+binder 44093:44093 <> B:658
+R44108:44111 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44096:44100 TypeRulesCore <> check:534 ind
+R44107:44107 TypeRulesCore <> A:657 var
+R44105:44105 TypeRulesCore <> t:656 var
+R44102:44103 TypeRulesCore <> Γ:655 var
+R44122:44125 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44112:44114 TypeRulesCore <> sub:536 ind
+R44121:44121 TypeRulesCore <> B:658 var
+R44119:44119 TypeRulesCore <> A:657 var
+R44116:44117 TypeRulesCore <> Γ:655 var
+R44126:44130 TypeRulesCore <> check:534 ind
+R44137:44137 TypeRulesCore <> B:658 var
+R44135:44135 TypeRulesCore <> t:656 var
+R44132:44133 TypeRulesCore <> Γ:655 var
+binder 44232:44233 <> Γ:659
+binder 44235:44235 <> t:660
+binder 44237:44237 <> A:661
+binder 44239:44239 <> B:662
+R44250:44253 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44242:44245 TypeRulesCore <> conv ind
+R44249:44249 TypeRulesCore <> B:662 var
+R44247:44247 TypeRulesCore <> A:661 var
+R44266:44269 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44254:44258 TypeRulesCore <> check:534 ind
+R44265:44265 TypeRulesCore <> B:662 var
+R44263:44263 TypeRulesCore <> t:660 var
+R44260:44261 TypeRulesCore <> Γ:659 var
+R44270:44274 TypeRulesCore <> check:534 ind
+R44281:44281 TypeRulesCore <> A:661 var
+R44279:44279 TypeRulesCore <> t:660 var
+R44276:44277 TypeRulesCore <> Γ:659 var
+binder 44435:44436 <> Γ:663
+binder 44438:44438 <> b:664
+binder 44440:44440 <> A:665
+binder 44442:44442 <> B:666
+R44464:44467 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44445:44449 TypeRulesCore <> check:534 ind
+R44463:44463 TypeRulesCore <> B:666 var
+R44461:44461 TypeRulesCore <> b:664 var
+R44453:44456 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R44452:44452 TypeRulesCore <> A:665 var
+R44457:44458 TypeRulesCore <> Γ:663 var
+R44468:44472 TypeRulesCore <> check:534 ind
+R44487:44489 TypeRulesCore <> TPi constr
+R44493:44493 TypeRulesCore <> B:666 var
+R44491:44491 TypeRulesCore <> A:665 var
+R44478:44481 TypeRulesCore <> TLam constr
+R44483:44483 TypeRulesCore <> b:664 var
+R44474:44475 TypeRulesCore <> Γ:663 var
+binder 44684:44685 <> Γ:667
+binder 44687:44687 <> a:668
+binder 44689:44689 <> b:669
+binder 44691:44691 <> A:670
+binder 44693:44693 <> B:671
+R44712:44715 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44700:44704 TypeRulesCore <> check:534 ind
+R44711:44711 TypeRulesCore <> A:670 var
+R44709:44709 TypeRulesCore <> a:668 var
+R44706:44707 TypeRulesCore <> Γ:667 var
+R44740:44743 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44716:44720 TypeRulesCore <> check:534 ind
+R44728:44732 TypeRulesCore <> subst def
+R44738:44738 TypeRulesCore <> B:671 var
+R44734:44734 TypeRulesCore <> a:668 var
+R44725:44725 TypeRulesCore <> b:669 var
+R44722:44723 TypeRulesCore <> Γ:667 var
+R44744:44748 TypeRulesCore <> check:534 ind
+R44766:44771 TypeRulesCore <> TSigma constr
+R44775:44775 TypeRulesCore <> B:671 var
+R44773:44773 TypeRulesCore <> A:670 var
+R44754:44758 TypeRulesCore <> TPair constr
+R44762:44762 TypeRulesCore <> b:669 var
+R44760:44760 TypeRulesCore <> a:668 var
+R44750:44751 TypeRulesCore <> Γ:667 var
+binder 45676:45677 <> Γ:672
+binder 45679:45679 <> f:673
+binder 45681:45681 <> a:674
+binder 45683:45683 <> A:675
+binder 45685:45685 <> B:676
+binder 45687:45687 <> k:677
+R45722:45729 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45694:45698 TypeRulesCore <> check:534 ind
+R45714:45718 TypeRulesCore <> TSort constr
+R45720:45720 TypeRulesCore <> k:677 var
+R45704:45706 TypeRulesCore <> TPi constr
+R45710:45710 TypeRulesCore <> B:676 var
+R45708:45708 TypeRulesCore <> A:675 var
+R45700:45701 TypeRulesCore <> Γ:672 var
+R45750:45757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45730:45734 TypeRulesCore <> check:534 ind
+R45742:45744 TypeRulesCore <> TPi constr
+R45748:45748 TypeRulesCore <> B:676 var
+R45746:45746 TypeRulesCore <> A:675 var
+R45739:45739 TypeRulesCore <> f:673 var
+R45736:45737 TypeRulesCore <> Γ:672 var
+R45770:45777 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45758:45762 TypeRulesCore <> check:534 ind
+R45769:45769 TypeRulesCore <> A:675 var
+R45767:45767 TypeRulesCore <> a:674 var
+R45764:45765 TypeRulesCore <> Γ:672 var
+R45778:45782 TypeRulesCore <> check:534 ind
+R45799:45803 TypeRulesCore <> subst def
+R45809:45809 TypeRulesCore <> B:676 var
+R45805:45805 TypeRulesCore <> a:674 var
+R45788:45791 TypeRulesCore <> TApp constr
+R45795:45795 TypeRulesCore <> a:674 var
+R45793:45793 TypeRulesCore <> f:673 var
+R45784:45785 TypeRulesCore <> Γ:672 var
+binder 46059:46060 <> Γ:678
+binder 46062:46062 <> p:679
+binder 46064:46064 <> A:680
+binder 46066:46066 <> B:681
+binder 46068:46068 <> k:682
+R46106:46113 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46075:46079 TypeRulesCore <> check:534 ind
+R46098:46102 TypeRulesCore <> TSort constr
+R46104:46104 TypeRulesCore <> k:682 var
+R46085:46090 TypeRulesCore <> TSigma constr
+R46094:46094 TypeRulesCore <> B:681 var
+R46092:46092 TypeRulesCore <> A:680 var
+R46081:46082 TypeRulesCore <> Γ:678 var
+R46137:46144 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46114:46118 TypeRulesCore <> check:534 ind
+R46126:46131 TypeRulesCore <> TSigma constr
+R46135:46135 TypeRulesCore <> B:681 var
+R46133:46133 TypeRulesCore <> A:680 var
+R46123:46123 TypeRulesCore <> p:679 var
+R46120:46121 TypeRulesCore <> Γ:678 var
+R46145:46149 TypeRulesCore <> check:534 ind
+R46163:46163 TypeRulesCore <> A:680 var
+R46155:46158 TypeRulesCore <> TFst constr
+R46160:46160 TypeRulesCore <> p:679 var
+R46151:46152 TypeRulesCore <> Γ:678 var
+binder 46423:46424 <> Γ:683
+binder 46426:46426 <> p:684
+binder 46428:46428 <> A:685
+binder 46430:46430 <> B:686
+binder 46432:46432 <> k:687
+R46470:46477 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46439:46443 TypeRulesCore <> check:534 ind
+R46462:46466 TypeRulesCore <> TSort constr
+R46468:46468 TypeRulesCore <> k:687 var
+R46449:46454 TypeRulesCore <> TSigma constr
+R46458:46458 TypeRulesCore <> B:686 var
+R46456:46456 TypeRulesCore <> A:685 var
+R46445:46446 TypeRulesCore <> Γ:683 var
+R46501:46508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46478:46482 TypeRulesCore <> check:534 ind
+R46490:46495 TypeRulesCore <> TSigma constr
+R46499:46499 TypeRulesCore <> B:686 var
+R46497:46497 TypeRulesCore <> A:685 var
+R46487:46487 TypeRulesCore <> p:684 var
+R46484:46485 TypeRulesCore <> Γ:683 var
+R46509:46513 TypeRulesCore <> check:534 ind
+R46528:46532 TypeRulesCore <> subst def
+R46545:46545 TypeRulesCore <> B:686 var
+R46535:46538 TypeRulesCore <> TFst constr
+R46540:46540 TypeRulesCore <> p:684 var
+R46519:46522 TypeRulesCore <> TSnd constr
+R46524:46524 TypeRulesCore <> p:684 var
+R46515:46516 TypeRulesCore <> Γ:683 var
+binder 46770:46771 <> Γ:688
+binder 46773:46774 <> tg:689
+binder 46776:46776 <> E:690
+R46799:46802 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46783:46787 TypeRulesCore <> check:534 ind
+R46795:46798 TypeRulesCore <> TUId constr
+R46792:46793 TypeRulesCore <> tg:689 var
+R46789:46790 TypeRulesCore <> Γ:688 var
+R46820:46827 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46803:46807 TypeRulesCore <> check:534 ind
+R46814:46819 TypeRulesCore <> TEnumU constr
+R46812:46812 TypeRulesCore <> E:690 var
+R46809:46810 TypeRulesCore <> Γ:688 var
+R46828:46832 TypeRulesCore <> check:534 ind
+R46845:46850 TypeRulesCore <> TEnumT constr
+R46853:46858 TypeRulesCore <> TConsE constr
+R46863:46863 TypeRulesCore <> E:690 var
+R46860:46861 TypeRulesCore <> tg:689 var
+R46837:46842 TypeRulesCore <> TEZero constr
+R46834:46835 TypeRulesCore <> Γ:688 var
+binder 47101:47102 <> Γ:691
+binder 47104:47105 <> tg:692
+binder 47107:47107 <> E:693
+binder 47109:47109 <> n:694
+R47132:47135 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47116:47120 TypeRulesCore <> check:534 ind
+R47128:47131 TypeRulesCore <> TUId constr
+R47125:47126 TypeRulesCore <> tg:692 var
+R47122:47123 TypeRulesCore <> Γ:691 var
+R47157:47164 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47136:47140 TypeRulesCore <> check:534 ind
+R47148:47153 TypeRulesCore <> TEnumT constr
+R47155:47155 TypeRulesCore <> E:693 var
+R47145:47145 TypeRulesCore <> n:694 var
+R47142:47143 TypeRulesCore <> Γ:691 var
+R47165:47169 TypeRulesCore <> check:534 ind
+R47186:47191 TypeRulesCore <> TEnumT constr
+R47194:47199 TypeRulesCore <> TConsE constr
+R47204:47204 TypeRulesCore <> E:693 var
+R47201:47202 TypeRulesCore <> tg:692 var
+R47175:47180 TypeRulesCore <> TESucc constr
+R47182:47182 TypeRulesCore <> n:694 var
+R47171:47172 TypeRulesCore <> Γ:691 var
+binder 47396:47397 <> Γ:695
+binder 47399:47399 <> i:696
+binder 47401:47402 <> IT:697
+R47418:47421 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47405:47409 TypeRulesCore <> check:534 ind
+R47416:47417 TypeRulesCore <> IT:697 var
+R47414:47414 TypeRulesCore <> i:696 var
+R47411:47412 TypeRulesCore <> Γ:695 var
+R47422:47426 TypeRulesCore <> check:534 ind
+R47442:47447 TypeRulesCore <> TIDesc constr
+R47449:47450 TypeRulesCore <> IT:697 var
+R47432:47436 TypeRulesCore <> TIVar constr
+R47438:47438 TypeRulesCore <> i:696 var
+R47428:47429 TypeRulesCore <> Γ:695 var
+binder 47619:47620 <> Γ:698
+binder 47622:47623 <> IT:699
+R47631:47634 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47626:47627 TypeRulesCore <> wf:532 ind
+R47629:47630 TypeRulesCore <> Γ:698 var
+R47635:47639 TypeRulesCore <> check:534 ind
+R47649:47654 TypeRulesCore <> TIDesc constr
+R47656:47657 TypeRulesCore <> IT:699 var
+R47644:47646 TypeRulesCore <> TI1 constr
+R47641:47642 TypeRulesCore <> Γ:698 var
+binder 47906:47907 <> Γ:700
+binder 47909:47909 <> A:701
+binder 47911:47911 <> B:702
+binder 47913:47914 <> IT:703
+R47943:47946 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47921:47925 TypeRulesCore <> check:534 ind
+R47933:47938 TypeRulesCore <> TIDesc constr
+R47940:47941 TypeRulesCore <> IT:703 var
+R47930:47930 TypeRulesCore <> A:701 var
+R47927:47928 TypeRulesCore <> Γ:700 var
+R47969:47976 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47947:47951 TypeRulesCore <> check:534 ind
+R47959:47964 TypeRulesCore <> TIDesc constr
+R47966:47967 TypeRulesCore <> IT:703 var
+R47956:47956 TypeRulesCore <> B:702 var
+R47953:47954 TypeRulesCore <> Γ:700 var
+R47977:47981 TypeRulesCore <> check:534 ind
+R48000:48005 TypeRulesCore <> TIDesc constr
+R48007:48008 TypeRulesCore <> IT:703 var
+R47987:47992 TypeRulesCore <> TIProd constr
+R47996:47996 TypeRulesCore <> B:702 var
+R47994:47994 TypeRulesCore <> A:701 var
+R47983:47984 TypeRulesCore <> Γ:700 var
+binder 48256:48257 <> Γ:704
+binder 48259:48260 <> Sd:705
+binder 48262:48262 <> T:706
+binder 48264:48265 <> IT:707
+R48293:48296 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48272:48276 TypeRulesCore <> check:534 ind
+R48285:48289 TypeRulesCore <> TSort constr
+R48281:48282 TypeRulesCore <> Sd:705 var
+R48278:48279 TypeRulesCore <> Γ:704 var
+R48339:48346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48297:48301 TypeRulesCore <> check:534 ind
+R48309:48311 TypeRulesCore <> TPi constr
+R48317:48322 TypeRulesCore <> TIDesc constr
+R48325:48328 TypeRulesCore <> lift def
+R48334:48335 TypeRulesCore <> IT:707 var
+R48313:48314 TypeRulesCore <> Sd:705 var
+R48306:48306 TypeRulesCore <> T:706 var
+R48303:48304 TypeRulesCore <> Γ:704 var
+R48347:48351 TypeRulesCore <> check:534 ind
+R48369:48374 TypeRulesCore <> TIDesc constr
+R48376:48377 TypeRulesCore <> IT:707 var
+R48357:48360 TypeRulesCore <> TIPi constr
+R48365:48365 TypeRulesCore <> T:706 var
+R48362:48363 TypeRulesCore <> Sd:705 var
+R48353:48354 TypeRulesCore <> Γ:704 var
+binder 48626:48627 <> Γ:708
+binder 48629:48630 <> Sd:709
+binder 48632:48632 <> T:710
+binder 48634:48635 <> IT:711
+R48663:48666 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48642:48646 TypeRulesCore <> check:534 ind
+R48655:48659 TypeRulesCore <> TSort constr
+R48651:48652 TypeRulesCore <> Sd:709 var
+R48648:48649 TypeRulesCore <> Γ:708 var
+R48709:48716 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48667:48671 TypeRulesCore <> check:534 ind
+R48679:48681 TypeRulesCore <> TPi constr
+R48687:48692 TypeRulesCore <> TIDesc constr
+R48695:48698 TypeRulesCore <> lift def
+R48704:48705 TypeRulesCore <> IT:711 var
+R48683:48684 TypeRulesCore <> Sd:709 var
+R48676:48676 TypeRulesCore <> T:710 var
+R48673:48674 TypeRulesCore <> Γ:708 var
+R48717:48721 TypeRulesCore <> check:534 ind
+R48740:48745 TypeRulesCore <> TIDesc constr
+R48747:48748 TypeRulesCore <> IT:711 var
+R48727:48731 TypeRulesCore <> TISig constr
+R48736:48736 TypeRulesCore <> T:710 var
+R48733:48734 TypeRulesCore <> Sd:709 var
+R48723:48724 TypeRulesCore <> Γ:708 var
+binder 49017:49018 <> Γ:712
+binder 49020:49020 <> E:713
+binder 49022:49022 <> T:714
+binder 49024:49025 <> IT:715
+R49049:49056 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49032:49036 TypeRulesCore <> check:534 ind
+R49043:49048 TypeRulesCore <> TEnumU constr
+R49041:49041 TypeRulesCore <> E:713 var
+R49038:49039 TypeRulesCore <> Γ:712 var
+R49107:49114 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49057:49061 TypeRulesCore <> check:534 ind
+R49069:49071 TypeRulesCore <> TPi constr
+R49085:49090 TypeRulesCore <> TIDesc constr
+R49093:49096 TypeRulesCore <> lift def
+R49102:49103 TypeRulesCore <> IT:715 var
+R49074:49079 TypeRulesCore <> TEnumT constr
+R49081:49081 TypeRulesCore <> E:713 var
+R49066:49066 TypeRulesCore <> T:714 var
+R49063:49064 TypeRulesCore <> Γ:712 var
+R49115:49119 TypeRulesCore <> check:534 ind
+R49140:49145 TypeRulesCore <> TIDesc constr
+R49147:49148 TypeRulesCore <> IT:715 var
+R49125:49132 TypeRulesCore <> TIChoice constr
+R49136:49136 TypeRulesCore <> T:714 var
+R49134:49134 TypeRulesCore <> E:713 var
+R49121:49122 TypeRulesCore <> Γ:712 var
+binder 49508:49509 <> Γ:716
+binder 49511:49512 <> xs:717
+binder 49514:49514 <> R:718
+binder 49516:49516 <> i:719
+binder 49518:49519 <> IT:720
+R49547:49554 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49526:49530 TypeRulesCore <> check:534 ind
+R49539:49543 TypeRulesCore <> TSort constr
+R49535:49536 TypeRulesCore <> IT:720 var
+R49532:49533 TypeRulesCore <> Γ:716 var
+R49597:49604 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49555:49559 TypeRulesCore <> check:534 ind
+R49567:49569 TypeRulesCore <> TPi constr
+R49575:49580 TypeRulesCore <> TIDesc constr
+R49583:49586 TypeRulesCore <> lift def
+R49592:49593 TypeRulesCore <> IT:720 var
+R49571:49572 TypeRulesCore <> IT:720 var
+R49564:49564 TypeRulesCore <> R:718 var
+R49561:49562 TypeRulesCore <> Γ:716 var
+R49618:49625 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49605:49609 TypeRulesCore <> check:534 ind
+R49616:49617 TypeRulesCore <> IT:720 var
+R49614:49614 TypeRulesCore <> i:719 var
+R49611:49612 TypeRulesCore <> Γ:716 var
+R49667:49674 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49626:49630 TypeRulesCore <> check:534 ind
+R49639:49645 TypeRulesCore <> TInterp constr
+R49659:49662 TypeRulesCore <> TMuI constr
+R49664:49664 TypeRulesCore <> R:718 var
+R49648:49651 TypeRulesCore <> TApp constr
+R49655:49655 TypeRulesCore <> i:719 var
+R49653:49653 TypeRulesCore <> R:718 var
+R49635:49636 TypeRulesCore <> xs:717 var
+R49632:49633 TypeRulesCore <> Γ:716 var
+R49675:49679 TypeRulesCore <> check:534 ind
+R49694:49697 TypeRulesCore <> TApp constr
+R49708:49708 TypeRulesCore <> i:719 var
+R49700:49703 TypeRulesCore <> TMuI constr
+R49705:49705 TypeRulesCore <> R:718 var
+R49685:49687 TypeRulesCore <> TIn constr
+R49689:49690 TypeRulesCore <> xs:717 var
+R49681:49682 TypeRulesCore <> Γ:716 var
+binder 50189:50190 <> Γ:721
+binder 50192:50192 <> c:722
+binder 50194:50195 <> xs:723
+binder 50197:50198 <> Sf:724
+binder 50200:50200 <> i:725
+binder 50202:50203 <> IT:726
+binder 50205:50205 <> E:727
+binder 50207:50209 <> Phi:728
+R50237:50240 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50216:50220 TypeRulesCore <> check:534 ind
+R50229:50233 TypeRulesCore <> TSort constr
+R50225:50226 TypeRulesCore <> IT:726 var
+R50222:50223 TypeRulesCore <> Γ:721 var
+R50258:50265 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50241:50245 TypeRulesCore <> check:534 ind
+R50252:50257 TypeRulesCore <> TEnumU constr
+R50250:50250 TypeRulesCore <> E:727 var
+R50247:50248 TypeRulesCore <> Γ:721 var
+R50319:50326 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50266:50270 TypeRulesCore <> check:534 ind
+R50279:50281 TypeRulesCore <> TPi constr
+R50287:50289 TypeRulesCore <> Sig def
+R50306:50309 TypeRulesCore <> lift def
+R50315:50315 TypeRulesCore <> E:727 var
+R50292:50295 TypeRulesCore <> lift def
+R50301:50302 TypeRulesCore <> IT:726 var
+R50283:50284 TypeRulesCore <> IT:726 var
+R50275:50276 TypeRulesCore <> Sf:724 var
+R50272:50273 TypeRulesCore <> Γ:721 var
+R50340:50347 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50327:50331 TypeRulesCore <> check:534 ind
+R50338:50339 TypeRulesCore <> IT:726 var
+R50336:50336 TypeRulesCore <> i:725 var
+R50333:50334 TypeRulesCore <> Γ:721 var
+R50368:50375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50348:50352 TypeRulesCore <> check:534 ind
+R50360:50364 TypeRulesCore <> Label def
+R50366:50366 TypeRulesCore <> E:727 var
+R50357:50357 TypeRulesCore <> c:722 var
+R50354:50355 TypeRulesCore <> Γ:721 var
+R50405:50412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50376:50379 TypeRulesCore <> eval ind
+R50402:50404 TypeRulesCore <> Phi:728 var
+R50382:50387 TypeRulesCore <> labels def
+R50390:50393 TypeRulesCore <> TApp constr
+R50398:50398 TypeRulesCore <> i:725 var
+R50395:50396 TypeRulesCore <> Sf:724 var
+R50428:50435 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50413:50421 TypeRulesCore <> spine_mem ind
+R50425:50427 TypeRulesCore <> Phi:728 var
+R50423:50423 TypeRulesCore <> c:722 var
+R50504:50511 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50436:50440 TypeRulesCore <> check:534 ind
+R50449:50455 TypeRulesCore <> TInterp constr
+R50490:50496 TypeRulesCore <> Carrier def
+R50500:50501 TypeRulesCore <> Sf:724 var
+R50498:50498 TypeRulesCore <> E:727 var
+R50458:50461 TypeRulesCore <> TApp constr
+R50486:50486 TypeRulesCore <> c:722 var
+R50464:50471 TypeRulesCore <> branches def
+R50474:50477 TypeRulesCore <> TApp constr
+R50482:50482 TypeRulesCore <> i:725 var
+R50479:50480 TypeRulesCore <> Sf:724 var
+R50445:50446 TypeRulesCore <> xs:723 var
+R50442:50443 TypeRulesCore <> Γ:721 var
+R50512:50516 TypeRulesCore <> check:534 ind
+R50541:50544 TypeRulesCore <> TApp constr
+R50559:50559 TypeRulesCore <> i:725 var
+R50547:50551 TypeRulesCore <> SigMu def
+R50555:50556 TypeRulesCore <> Sf:724 var
+R50553:50553 TypeRulesCore <> E:727 var
+R50522:50524 TypeRulesCore <> TIn constr
+R50527:50531 TypeRulesCore <> TPair constr
+R50535:50536 TypeRulesCore <> xs:723 var
+R50533:50533 TypeRulesCore <> c:722 var
+R50518:50519 TypeRulesCore <> Γ:721 var
+binder 50828:50829 <> Γ:729
+binder 50831:50832 <> Sf:730
+binder 50834:50834 <> i:731
+binder 50836:50836 <> E:732
+binder 50838:50838 <> Q:733
+R50841:50854 TypeRulesCore <> check_branches:535 ind
+R50868:50869 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R50866:50866 TypeRulesCore <> Q:733 var
+R50864:50864 TypeRulesCore <> E:732 var
+R50862:50862 TypeRulesCore <> i:731 var
+R50859:50860 TypeRulesCore <> Sf:730 var
+R50856:50857 TypeRulesCore <> Γ:729 var
+binder 50890:50891 <> Γ:734
+binder 50893:50894 <> Sf:735
+binder 50896:50896 <> i:736
+binder 50898:50898 <> E:737
+binder 50900:50900 <> Q:738
+binder 50902:50902 <> c:739
+binder 50904:50904 <> b:740
+binder 50906:50907 <> bs:741
+R50934:50941 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50914:50918 TypeRulesCore <> check:534 ind
+R50926:50930 TypeRulesCore <> Label def
+R50932:50932 TypeRulesCore <> E:737 var
+R50923:50923 TypeRulesCore <> c:739 var
+R50920:50921 TypeRulesCore <> Γ:734 var
+R51035:51042 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50942:50946 TypeRulesCore <> check:534 ind
+R51024:51027 TypeRulesCore <> lift def
+R51033:51033 TypeRulesCore <> Q:738 var
+R51021:51021 TypeRulesCore <> b:740 var
+R51003:51006 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R50949:50955 TypeRulesCore <> TInterp constr
+R50990:50996 TypeRulesCore <> Carrier def
+R51000:51001 TypeRulesCore <> Sf:735 var
+R50998:50998 TypeRulesCore <> E:737 var
+R50958:50961 TypeRulesCore <> TApp constr
+R50986:50986 TypeRulesCore <> c:739 var
+R50964:50971 TypeRulesCore <> branches def
+R50974:50977 TypeRulesCore <> TApp constr
+R50982:50982 TypeRulesCore <> i:736 var
+R50979:50980 TypeRulesCore <> Sf:735 var
+R51007:51008 TypeRulesCore <> Γ:734 var
+R51072:51079 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51043:51056 TypeRulesCore <> check_branches:535 ind
+R51070:51071 TypeRulesCore <> bs:741 var
+R51068:51068 TypeRulesCore <> Q:738 var
+R51066:51066 TypeRulesCore <> E:737 var
+R51064:51064 TypeRulesCore <> i:736 var
+R51061:51062 TypeRulesCore <> Sf:735 var
+R51058:51059 TypeRulesCore <> Γ:734 var
+R51080:51093 TypeRulesCore <> check_branches:535 ind
+R51114:51117 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R51108:51108 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R51110:51111 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R51113:51113 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R51109:51109 TypeRulesCore <> c:739 var
+R51112:51112 TypeRulesCore <> b:740 var
+R51118:51119 TypeRulesCore <> bs:741 var
+R51105:51105 TypeRulesCore <> Q:738 var
+R51103:51103 TypeRulesCore <> E:737 var
+R51101:51101 TypeRulesCore <> i:736 var
+R51098:51099 TypeRulesCore <> Sf:735 var
+R51095:51096 TypeRulesCore <> Γ:734 var
+binder 51266:51267 <> Γ:742
+binder 51269:51269 <> A:743
+binder 51271:51271 <> B:744
+R51282:51285 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51274:51277 TypeRulesCore <> conv ind
+R51281:51281 TypeRulesCore <> B:744 var
+R51279:51279 TypeRulesCore <> A:743 var
+R51286:51288 TypeRulesCore <> sub:536 ind
+R51295:51295 TypeRulesCore <> B:744 var
+R51293:51293 TypeRulesCore <> A:743 var
+R51290:51291 TypeRulesCore <> Γ:742 var
+binder 51395:51396 <> Γ:745
+binder 51398:51398 <> A:746
+binder 51400:51400 <> B:747
+binder 51402:51402 <> C:748
+R51415:51418 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51405:51407 TypeRulesCore <> sub:536 ind
+R51414:51414 TypeRulesCore <> B:747 var
+R51412:51412 TypeRulesCore <> A:746 var
+R51409:51410 TypeRulesCore <> Γ:745 var
+R51429:51432 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51419:51421 TypeRulesCore <> sub:536 ind
+R51428:51428 TypeRulesCore <> C:748 var
+R51426:51426 TypeRulesCore <> B:747 var
+R51423:51424 TypeRulesCore <> Γ:745 var
+R51433:51435 TypeRulesCore <> sub:536 ind
+R51442:51442 TypeRulesCore <> C:748 var
+R51440:51440 TypeRulesCore <> A:746 var
+R51437:51438 TypeRulesCore <> Γ:745 var
+binder 51572:51573 <> Γ:749
+binder 51575:51575 <> j:750
+binder 51577:51577 <> k:751
+R51586:51589 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51581:51584 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R51580:51580 TypeRulesCore <> j:750 var
+R51585:51585 TypeRulesCore <> k:751 var
+R51590:51592 TypeRulesCore <> sub:536 ind
+R51608:51612 TypeRulesCore <> TSort constr
+R51614:51614 TypeRulesCore <> k:751 var
+R51598:51602 TypeRulesCore <> TSort constr
+R51604:51604 TypeRulesCore <> j:750 var
+R51594:51595 TypeRulesCore <> Γ:749 var
+binder 51864:51865 <> Γ:752
+binder 51867:51867 <> A:753
+binder 51869:51870 <> A':754
+binder 51872:51872 <> B:755
+binder 51874:51875 <> B':756
+R51893:51896 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51882:51884 TypeRulesCore <> sub:536 ind
+R51892:51892 TypeRulesCore <> A:753 var
+R51889:51890 TypeRulesCore <> A':754 var
+R51886:51887 TypeRulesCore <> Γ:752 var
+R51916:51919 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R51897:51899 TypeRulesCore <> sub:536 ind
+R51914:51915 TypeRulesCore <> B':756 var
+R51912:51912 TypeRulesCore <> B:755 var
+R51904:51907 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R51902:51903 TypeRulesCore <> A':754 var
+R51908:51909 TypeRulesCore <> Γ:752 var
+R51920:51922 TypeRulesCore <> sub:536 ind
+R51938:51940 TypeRulesCore <> TPi constr
+R51945:51946 TypeRulesCore <> B':756 var
+R51942:51943 TypeRulesCore <> A':754 var
+R51928:51930 TypeRulesCore <> TPi constr
+R51934:51934 TypeRulesCore <> B:755 var
+R51932:51932 TypeRulesCore <> A:753 var
+R51924:51925 TypeRulesCore <> Γ:752 var
+binder 52208:52209 <> Γ:757
+binder 52211:52212 <> Sf:758
+binder 52214:52214 <> i:759
+binder 52216:52217 <> IT:760
+binder 52219:52219 <> E:761
+R52247:52250 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R52226:52230 TypeRulesCore <> check:534 ind
+R52239:52243 TypeRulesCore <> TSort constr
+R52235:52236 TypeRulesCore <> IT:760 var
+R52232:52233 TypeRulesCore <> Γ:757 var
+R52268:52275 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R52251:52255 TypeRulesCore <> check:534 ind
+R52262:52267 TypeRulesCore <> TEnumU constr
+R52260:52260 TypeRulesCore <> E:761 var
+R52257:52258 TypeRulesCore <> Γ:757 var
+R52329:52336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R52276:52280 TypeRulesCore <> check:534 ind
+R52289:52291 TypeRulesCore <> TPi constr
+R52297:52299 TypeRulesCore <> Sig def
+R52316:52319 TypeRulesCore <> lift def
+R52325:52325 TypeRulesCore <> E:761 var
+R52302:52305 TypeRulesCore <> lift def
+R52311:52312 TypeRulesCore <> IT:760 var
+R52293:52294 TypeRulesCore <> IT:760 var
+R52285:52286 TypeRulesCore <> Sf:758 var
+R52282:52283 TypeRulesCore <> Γ:757 var
+R52350:52357 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R52337:52341 TypeRulesCore <> check:534 ind
+R52348:52349 TypeRulesCore <> IT:760 var
+R52346:52346 TypeRulesCore <> i:759 var
+R52343:52344 TypeRulesCore <> Γ:757 var
+R52358:52360 TypeRulesCore <> sub:536 ind
+R52388:52391 TypeRulesCore <> TApp constr
+R52408:52408 TypeRulesCore <> i:759 var
+R52394:52400 TypeRulesCore <> Carrier def
+R52404:52405 TypeRulesCore <> Sf:758 var
+R52402:52402 TypeRulesCore <> E:761 var
+R52366:52369 TypeRulesCore <> TApp constr
+R52384:52384 TypeRulesCore <> i:759 var
+R52372:52376 TypeRulesCore <> SigMu def
+R52380:52381 TypeRulesCore <> Sf:758 var
+R52378:52378 TypeRulesCore <> E:761 var
+R52362:52363 TypeRulesCore <> Γ:757 var
+binder 53030:53031 <> Γ:762
+binder 53033:53034 <> S1:763
+binder 53036:53037 <> S2:764
+binder 53039:53039 <> i:765
+binder 53041:53042 <> IT:766
+binder 53044:53044 <> E:767
+binder 53046:53049 <> Phi1:768
+binder 53051:53054 <> Phi2:769
+R53082:53085 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53061:53065 TypeRulesCore <> check:534 ind
+R53074:53078 TypeRulesCore <> TSort constr
+R53070:53071 TypeRulesCore <> IT:766 var
+R53067:53068 TypeRulesCore <> Γ:762 var
+R53103:53110 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53086:53090 TypeRulesCore <> check:534 ind
+R53097:53102 TypeRulesCore <> TEnumU constr
+R53095:53095 TypeRulesCore <> E:767 var
+R53092:53093 TypeRulesCore <> Γ:762 var
+R53164:53171 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53111:53115 TypeRulesCore <> check:534 ind
+R53124:53126 TypeRulesCore <> TPi constr
+R53132:53134 TypeRulesCore <> Sig def
+R53151:53154 TypeRulesCore <> lift def
+R53160:53160 TypeRulesCore <> E:767 var
+R53137:53140 TypeRulesCore <> lift def
+R53146:53147 TypeRulesCore <> IT:766 var
+R53128:53129 TypeRulesCore <> IT:766 var
+R53120:53121 TypeRulesCore <> S1:763 var
+R53117:53118 TypeRulesCore <> Γ:762 var
+R53225:53232 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53172:53176 TypeRulesCore <> check:534 ind
+R53185:53187 TypeRulesCore <> TPi constr
+R53193:53195 TypeRulesCore <> Sig def
+R53212:53215 TypeRulesCore <> lift def
+R53221:53221 TypeRulesCore <> E:767 var
+R53198:53201 TypeRulesCore <> lift def
+R53207:53208 TypeRulesCore <> IT:766 var
+R53189:53190 TypeRulesCore <> IT:766 var
+R53181:53182 TypeRulesCore <> S2:764 var
+R53178:53179 TypeRulesCore <> Γ:762 var
+R53342:53349 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53233:53236 TypeRulesCore <> conv ind
+R53296:53299 TypeRulesCore <> TLam constr
+R53302:53309 TypeRulesCore <> branches def
+R53312:53315 TypeRulesCore <> TApp constr
+R53332:53335 TypeRulesCore <> TVar constr
+R53318:53321 TypeRulesCore <> lift def
+R53327:53328 TypeRulesCore <> S2:764 var
+R53239:53242 TypeRulesCore <> TLam constr
+R53245:53252 TypeRulesCore <> branches def
+R53255:53258 TypeRulesCore <> TApp constr
+R53275:53278 TypeRulesCore <> TVar constr
+R53261:53264 TypeRulesCore <> lift def
+R53270:53271 TypeRulesCore <> S1:763 var
+R53380:53387 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53350:53353 TypeRulesCore <> eval ind
+R53376:53379 TypeRulesCore <> Phi1:768 var
+R53356:53361 TypeRulesCore <> labels def
+R53364:53367 TypeRulesCore <> TApp constr
+R53372:53372 TypeRulesCore <> i:765 var
+R53369:53370 TypeRulesCore <> S1:763 var
+R53418:53425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53388:53391 TypeRulesCore <> eval ind
+R53414:53417 TypeRulesCore <> Phi2:769 var
+R53394:53399 TypeRulesCore <> labels def
+R53402:53405 TypeRulesCore <> TApp constr
+R53410:53410 TypeRulesCore <> i:765 var
+R53407:53408 TypeRulesCore <> S2:764 var
+R53446:53453 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53426:53435 TypeRulesCore <> spine_incl ind
+R53442:53445 TypeRulesCore <> Phi2:769 var
+R53437:53440 TypeRulesCore <> Phi1:768 var
+R53467:53474 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53454:53458 TypeRulesCore <> check:534 ind
+R53465:53466 TypeRulesCore <> IT:766 var
+R53463:53463 TypeRulesCore <> i:765 var
+R53460:53461 TypeRulesCore <> Γ:762 var
+R53475:53477 TypeRulesCore <> sub:536 ind
+R53505:53508 TypeRulesCore <> TApp constr
+R53523:53523 TypeRulesCore <> i:765 var
+R53511:53515 TypeRulesCore <> SigMu def
+R53519:53520 TypeRulesCore <> S2:764 var
+R53517:53517 TypeRulesCore <> E:767 var
+R53483:53486 TypeRulesCore <> TApp constr
+R53501:53501 TypeRulesCore <> i:765 var
+R53489:53493 TypeRulesCore <> SigMu def
+R53497:53498 TypeRulesCore <> S1:763 var
+R53495:53495 TypeRulesCore <> E:767 var
+R53479:53480 TypeRulesCore <> Γ:762 var
+scheme 34052:34053 <> wf_ind
+scheme 34052:34053 <> wf_sind
+scheme 34342:34346 <> synth_ind
+scheme 34342:34346 <> synth_sind
+scheme 43244:43248 <> check_ind
+scheme 43244:43248 <> check_sind
+scheme 50568:50581 <> check_branches_ind
+scheme 50568:50581 <> check_branches_sind
+scheme 51128:51130 <> sub_ind
+scheme 51128:51130 <> sub_sind
+ind 53941:53945 <> value
+constr 53967:53972 <> v_sort
+constr 54006:54009 <> v_pi
+constr 54047:54051 <> v_lam
+constr 54085:54091 <> v_sigma
+constr 54129:54134 <> v_pair
+constr 54172:54178 <> v_unitT
+constr 54198:54203 <> v_unit
+constr 54223:54227 <> v_uid
+constr 54247:54251 <> v_tag
+constr 54285:54291 <> v_enumu
+constr 54311:54316 <> v_nile
+constr 54336:54342 <> v_conse
+constr 54382:54388 <> v_enumt
+constr 54422:54428 <> v_ezero
+constr 54448:54454 <> v_esucc
+constr 54488:54494 <> v_idesc
+constr 54530:54535 <> v_ivar
+constr 54569:54572 <> v_i1
+constr 54592:54598 <> v_iprod
+constr 54636:54640 <> v_ipi
+constr 54680:54685 <> v_isig
+constr 54725:54733 <> v_ichoice
+constr 54771:54775 <> v_mui
+constr 54809:54813 <> v_mus
+constr 54849:54857 <> v_mui_app
+constr 54898:54906 <> v_mus_app
+constr 54949:54952 <> v_in
+constr 54986:54991 <> v_list
+constr 55025:55030 <> v_lnil
+constr 55064:55070 <> v_lcons
+R53953:53956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R53949:53952 TypeRulesCore <> term ind
+binder 53985:53985 <> k:772
+R53988:53992 TypeRulesCore <> value:770 ind
+R53995:53999 TypeRulesCore <> TSort constr
+R54001:54001 TypeRulesCore <> k:772 var
+binder 54024:54024 <> A:773
+binder 54026:54026 <> B:774
+R54029:54033 TypeRulesCore <> value:770 ind
+R54036:54038 TypeRulesCore <> TPi constr
+R54042:54042 TypeRulesCore <> B:774 var
+R54040:54040 TypeRulesCore <> A:773 var
+binder 54065:54065 <> b:775
+R54068:54072 TypeRulesCore <> value:770 ind
+R54075:54078 TypeRulesCore <> TLam constr
+R54080:54080 TypeRulesCore <> b:775 var
+binder 54103:54103 <> A:776
+binder 54105:54105 <> B:777
+R54108:54112 TypeRulesCore <> value:770 ind
+R54115:54120 TypeRulesCore <> TSigma constr
+R54124:54124 TypeRulesCore <> B:777 var
+R54122:54122 TypeRulesCore <> A:776 var
+binder 54147:54147 <> a:778
+binder 54149:54149 <> b:779
+R54152:54156 TypeRulesCore <> value:770 ind
+R54159:54163 TypeRulesCore <> TPair constr
+R54167:54167 TypeRulesCore <> b:779 var
+R54165:54165 TypeRulesCore <> a:778 var
+R54183:54187 TypeRulesCore <> value:770 ind
+R54189:54194 TypeRulesCore <> TUnitT constr
+R54209:54213 TypeRulesCore <> value:770 ind
+R54215:54219 TypeRulesCore <> TUnit constr
+R54234:54238 TypeRulesCore <> value:770 ind
+R54240:54243 TypeRulesCore <> TUId constr
+binder 54265:54265 <> s:780
+R54268:54272 TypeRulesCore <> value:770 ind
+R54275:54278 TypeRulesCore <> TTag constr
+R54280:54280 TypeRulesCore <> s:780 var
+R54296:54300 TypeRulesCore <> value:770 ind
+R54302:54307 TypeRulesCore <> TEnumU constr
+R54322:54326 TypeRulesCore <> value:770 ind
+R54328:54332 TypeRulesCore <> TNilE constr
+binder 54354:54355 <> tg:781
+binder 54357:54357 <> E:782
+R54360:54364 TypeRulesCore <> value:770 ind
+R54367:54372 TypeRulesCore <> TConsE constr
+R54377:54377 TypeRulesCore <> E:782 var
+R54374:54375 TypeRulesCore <> tg:781 var
+binder 54400:54400 <> E:783
+R54403:54407 TypeRulesCore <> value:770 ind
+R54410:54415 TypeRulesCore <> TEnumT constr
+R54417:54417 TypeRulesCore <> E:783 var
+R54433:54437 TypeRulesCore <> value:770 ind
+R54439:54444 TypeRulesCore <> TEZero constr
+binder 54466:54466 <> n:784
+R54469:54473 TypeRulesCore <> value:770 ind
+R54476:54481 TypeRulesCore <> TESucc constr
+R54483:54483 TypeRulesCore <> n:784 var
+binder 54506:54507 <> IT:785
+R54510:54514 TypeRulesCore <> value:770 ind
+R54517:54522 TypeRulesCore <> TIDesc constr
+R54524:54525 TypeRulesCore <> IT:785 var
+binder 54548:54548 <> i:786
+R54551:54555 TypeRulesCore <> value:770 ind
+R54558:54562 TypeRulesCore <> TIVar constr
+R54564:54564 TypeRulesCore <> i:786 var
+R54580:54584 TypeRulesCore <> value:770 ind
+R54586:54588 TypeRulesCore <> TI1 constr
+binder 54610:54610 <> A:787
+binder 54612:54612 <> B:788
+R54615:54619 TypeRulesCore <> value:770 ind
+R54622:54627 TypeRulesCore <> TIProd constr
+R54631:54631 TypeRulesCore <> B:788 var
+R54629:54629 TypeRulesCore <> A:787 var
+binder 54654:54655 <> Sd:789
+binder 54657:54657 <> T:790
+R54660:54664 TypeRulesCore <> value:770 ind
+R54667:54670 TypeRulesCore <> TIPi constr
+R54675:54675 TypeRulesCore <> T:790 var
+R54672:54673 TypeRulesCore <> Sd:789 var
+binder 54698:54699 <> Sd:791
+binder 54701:54701 <> T:792
+R54704:54708 TypeRulesCore <> value:770 ind
+R54711:54715 TypeRulesCore <> TISig constr
+R54720:54720 TypeRulesCore <> T:792 var
+R54717:54718 TypeRulesCore <> Sd:791 var
+binder 54743:54743 <> E:793
+binder 54745:54745 <> T:794
+R54748:54752 TypeRulesCore <> value:770 ind
+R54755:54762 TypeRulesCore <> TIChoice constr
+R54766:54766 TypeRulesCore <> T:794 var
+R54764:54764 TypeRulesCore <> E:793 var
+binder 54789:54789 <> R:795
+R54792:54796 TypeRulesCore <> value:770 ind
+R54799:54802 TypeRulesCore <> TMuI constr
+R54804:54804 TypeRulesCore <> R:795 var
+binder 54827:54828 <> Sf:796
+R54831:54835 TypeRulesCore <> value:770 ind
+R54838:54841 TypeRulesCore <> TMuS constr
+R54843:54844 TypeRulesCore <> Sf:796 var
+binder 54867:54867 <> R:797
+binder 54869:54869 <> i:798
+R54872:54876 TypeRulesCore <> value:770 ind
+R54879:54882 TypeRulesCore <> TApp constr
+R54893:54893 TypeRulesCore <> i:798 var
+R54885:54888 TypeRulesCore <> TMuI constr
+R54890:54890 TypeRulesCore <> R:797 var
+binder 54916:54917 <> Sf:799
+binder 54919:54919 <> i:800
+R54922:54926 TypeRulesCore <> value:770 ind
+R54929:54932 TypeRulesCore <> TApp constr
+R54944:54944 TypeRulesCore <> i:800 var
+R54935:54938 TypeRulesCore <> TMuS constr
+R54940:54941 TypeRulesCore <> Sf:799 var
+binder 54967:54967 <> x:801
+R54970:54974 TypeRulesCore <> value:770 ind
+R54977:54979 TypeRulesCore <> TIn constr
+R54981:54981 TypeRulesCore <> x:801 var
+binder 55004:55004 <> A:802
+R55007:55011 TypeRulesCore <> value:770 ind
+R55014:55018 TypeRulesCore <> TList constr
+R55020:55020 TypeRulesCore <> A:802 var
+binder 55043:55043 <> A:803
+R55046:55050 TypeRulesCore <> value:770 ind
+R55053:55057 TypeRulesCore <> TLNil constr
+R55059:55059 TypeRulesCore <> A:803 var
+binder 55082:55082 <> A:804
+binder 55084:55084 <> a:805
+binder 55086:55086 <> l:806
+R55089:55093 TypeRulesCore <> value:770 ind
+R55096:55101 TypeRulesCore <> TLCons constr
+R55107:55107 TypeRulesCore <> l:806 var
+R55105:55105 TypeRulesCore <> a:805 var
+R55103:55103 TypeRulesCore <> A:804 var
+scheme 53941:53945 <> value_ind
+scheme 53941:53945 <> value_sind
+def 55157:55159 <> Bot
+R55163:55166 TypeRulesCore <> term ind
+R55171:55173 TypeRulesCore <> TPi constr
+R55186:55189 TypeRulesCore <> TVar constr
+R55176:55180 TypeRulesCore <> TSort constr

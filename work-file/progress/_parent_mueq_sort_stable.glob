@@ -1,0 +1,75 @@
+DIGEST 83c200cf47ef49c5fe239d806ce3e5b7
+F_parent_mueq_sort_stable
+R96:103 Progress <> <> lib
+R105:115 _tmp_epstep <> <> lib
+R117:135 _work_mixed_closure <> <> lib
+R139:160 _work_cstep_invariants <> <> lib
+R162:171 _luna_mueq <> <> lib
+R201:204 Stdlib.Lists.List <> <> lib
+R214:226 Stdlib.Lists.List ListNotations <> mod
+R228:236 TypeRules <> <> mod
+prf 248:280 <> mueq_sort_transport_hshape_parent
+binder 291:291 <> t:1
+binder 293:293 <> u:2
+binder 295:295 <> j:3
+binder 297:297 <> h:4
+R314:317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R304:309 Progress <> hshape ind
+R311:311 _parent_mueq_sort_stable <> t:1 var
+R313:313 _parent_mueq_sort_stable <> h:4 var
+R326:329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R318:321 _luna_mueq <> mueq ind
+R323:323 _parent_mueq_sort_stable <> t:1 var
+R325:325 _parent_mueq_sort_stable <> u:2 var
+R351:358 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R330:332 Progress <> rtc ind
+R343:347 TypeRules <> TSort constr
+R349:349 _parent_mueq_sort_stable <> j:3 var
+R340:340 _parent_mueq_sort_stable <> t:1 var
+R334:338 _work_mixed_closure <> cstep ind
+R359:361 Progress <> rtc ind
+R372:376 TypeRules <> TSort constr
+R378:378 _parent_mueq_sort_stable <> j:3 var
+R369:369 _parent_mueq_sort_stable <> u:2 var
+R363:367 _work_mixed_closure <> cstep ind
+R436:451 _work_cstep_invariants <> rtc_cstep_hshape thm
+R436:451 _work_cstep_invariants <> rtc_cstep_hshape thm
+R576:592 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R576:592 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R635:642 Progress <> rtc_refl constr
+R635:642 Progress <> rtc_refl constr
+prf 657:684 <> cstep_root_to_nonsort_parent
+binder 695:695 <> t:5
+binder 697:697 <> q:6
+binder 699:699 <> h:7
+R719:722 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R706:708 Progress <> rtc ind
+R718:718 _parent_mueq_sort_stable <> q:6 var
+R716:716 _parent_mueq_sort_stable <> t:5 var
+R710:714 _work_mixed_closure <> cstep ind
+R733:736 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R723:728 Progress <> hshape ind
+R730:730 _parent_mueq_sort_stable <> q:6 var
+R732:732 _parent_mueq_sort_stable <> h:7 var
+R747:754 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R738:741 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R737:737 _parent_mueq_sort_stable <> h:7 var
+R742:746 Progress <> HSort constr
+binder 762:762 <> j:8
+R765:766 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R767:769 Progress <> rtc ind
+R780:784 TypeRules <> TSort constr
+R786:786 _parent_mueq_sort_stable <> j:8 var
+R777:777 _parent_mueq_sort_stable <> t:5 var
+R771:775 _work_mixed_closure <> cstep ind
+R851:865 _work_mixed_closure <> cstep_confluent thm
+R851:865 _work_mixed_closure <> cstep_confluent thm
+R915:931 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R915:931 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R915:931 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R964:979 _work_cstep_invariants <> rtc_cstep_hshape thm
+R964:979 _work_cstep_invariants <> rtc_cstep_hshape thm
+R1045:1051 Corelib.Init.Logic <> eq_refl constr
+R1045:1051 Corelib.Init.Logic <> eq_refl constr
+R1079:1111 _parent_mueq_sort_stable <> mueq_sort_transport_hshape_parent thm
+R1132:1159 _parent_mueq_sort_stable <> cstep_root_to_nonsort_parent thm

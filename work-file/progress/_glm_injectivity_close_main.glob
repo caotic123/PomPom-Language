@@ -1,0 +1,152 @@
+DIGEST ca3750c6838e3a8be84ac9bd1d49be39
+F_glm_injectivity_close_main
+R3384:3391 Progress <> <> lib
+R3409:3419 _work_cjoin <> <> lib
+R3421:3442 _work_cstep_invariants <> <> lib
+R3444:3453 _luna_mueq <> <> lib
+R3470:3483 _glm_qconv_def <> <> lib
+R3485:3499 _glm_qconv_main <> <> lib
+R3516:3541 _glm_injectivity_close_rep <> <> lib
+R3571:3574 Stdlib.Lists.List <> <> lib
+R3584:3596 Stdlib.Lists.List ListNotations <> mod
+R3598:3606 TypeRules <> <> mod
+prf 3700:3736 <> conv_enumt_inj_from_component_sim_glm
+R3769:3776 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3744:3768 _glm_injectivity_close_rep <> mueq_enumt_sim_components def
+binder 3784:3785 <> E1:1
+binder 3787:3788 <> E2:2
+R3819:3822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3791:3794 TypeRules <> conv ind
+R3809:3814 TypeRules <> TEnumT constr
+R3816:3817 _glm_injectivity_close_main <> E2:2 var
+R3797:3802 TypeRules <> TEnumT constr
+R3804:3805 _glm_injectivity_close_main <> E1:1 var
+R3823:3826 TypeRules <> conv ind
+R3831:3832 _glm_injectivity_close_main <> E2:2 var
+R3828:3829 _glm_injectivity_close_main <> E1:1 var
+R3948:3956 _glm_injectivity_close_rep <> enumt_rep def
+R3959:3964 TypeRules <> TEnumT constr
+R3983:3992 _work_cjoin <> cjoin_refl thm
+R3948:3956 _glm_injectivity_close_rep <> enumt_rep def
+R3959:3964 TypeRules <> TEnumT constr
+R3983:3992 _work_cjoin <> cjoin_refl thm
+R4147:4172 _glm_injectivity_close_rep <> enumt_rep_qconv_components thm
+R4179:4184 TypeRules <> TEnumT constr
+R4191:4196 TypeRules <> TEnumT constr
+R4217:4230 _glm_qconv_main <> conv_qconv_glm thm
+R4147:4172 _glm_injectivity_close_rep <> enumt_rep_qconv_components thm
+R4179:4184 TypeRules <> TEnumT constr
+R4191:4196 TypeRules <> TEnumT constr
+R4217:4230 _glm_qconv_main <> conv_qconv_glm thm
+R4356:4374 _glm_injectivity_close_rep <> cjoin_enumt_inv_glm thm
+R4356:4374 _glm_injectivity_close_rep <> cjoin_enumt_inv_glm thm
+R4502:4511 _glm_injectivity_close_rep <> qconv_conv thm
+R4502:4511 _glm_injectivity_close_rep <> qconv_conv thm
+R4521:4531 _glm_qconv_def <> qconv_trans thm
+R4521:4531 _glm_qconv_def <> qconv_trans thm
+R4558:4566 _glm_qconv_def <> qconv_sym thm
+R4558:4566 _glm_qconv_def <> qconv_sym thm
+R4575:4585 _glm_qconv_def <> cjoin_qconv thm
+R4575:4585 _glm_qconv_def <> cjoin_qconv thm
+prf 4695:4728 <> conv_pi_inj_from_component_sim_glm
+R4758:4765 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4736:4757 _glm_injectivity_close_rep <> mueq_pi_sim_components def
+binder 4773:4774 <> A0:3
+binder 4776:4777 <> B0:4
+binder 4779:4780 <> A1:5
+binder 4782:4783 <> B1:6
+R4820:4823 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4792:4795 TypeRules <> conv ind
+R4810:4812 TypeRules <> TPi constr
+R4817:4818 _glm_injectivity_close_main <> B1:6 var
+R4814:4815 _glm_injectivity_close_main <> A1:5 var
+R4798:4800 TypeRules <> TPi constr
+R4805:4806 _glm_injectivity_close_main <> B0:4 var
+R4802:4803 _glm_injectivity_close_main <> A0:3 var
+R4834:4837 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4824:4827 TypeRules <> conv ind
+R4832:4833 _glm_injectivity_close_main <> A1:5 var
+R4829:4830 _glm_injectivity_close_main <> A0:3 var
+R4838:4841 TypeRules <> conv ind
+R4846:4847 _glm_injectivity_close_main <> B1:6 var
+R4843:4844 _glm_injectivity_close_main <> B0:4 var
+R4906:4911 _glm_injectivity_close_rep <> pi_rep def
+R4914:4916 TypeRules <> TPi constr
+R4941:4950 _work_cjoin <> cjoin_refl thm
+R4906:4911 _glm_injectivity_close_rep <> pi_rep def
+R4914:4916 TypeRules <> TPi constr
+R4941:4950 _work_cjoin <> cjoin_refl thm
+R4965:4987 _glm_injectivity_close_rep <> pi_rep_qconv_components thm
+R4994:4996 TypeRules <> TPi constr
+R5006:5008 TypeRules <> TPi constr
+R5032:5045 _glm_qconv_main <> conv_qconv_glm thm
+R4965:4987 _glm_injectivity_close_rep <> pi_rep_qconv_components thm
+R4994:4996 TypeRules <> TPi constr
+R5006:5008 TypeRules <> TPi constr
+R5032:5045 _glm_qconv_main <> conv_qconv_glm thm
+R5191:5202 _work_cstep_invariants <> cjoin_pi_inv thm
+R5191:5202 _work_cstep_invariants <> cjoin_pi_inv thm
+R5249:5258 _glm_injectivity_close_rep <> qconv_conv thm
+R5249:5258 _glm_injectivity_close_rep <> qconv_conv thm
+R5268:5278 _glm_qconv_def <> qconv_trans thm
+R5268:5278 _glm_qconv_def <> qconv_trans thm
+R5307:5315 _glm_qconv_def <> qconv_sym thm
+R5307:5315 _glm_qconv_def <> qconv_sym thm
+R5324:5334 _glm_qconv_def <> cjoin_qconv thm
+R5324:5334 _glm_qconv_def <> cjoin_qconv thm
+R5357:5366 _glm_injectivity_close_rep <> qconv_conv thm
+R5357:5366 _glm_injectivity_close_rep <> qconv_conv thm
+R5376:5386 _glm_qconv_def <> qconv_trans thm
+R5376:5386 _glm_qconv_def <> qconv_trans thm
+R5415:5423 _glm_qconv_def <> qconv_sym thm
+R5415:5423 _glm_qconv_def <> qconv_sym thm
+R5432:5442 _glm_qconv_def <> cjoin_qconv thm
+R5432:5442 _glm_qconv_def <> cjoin_qconv thm
+prf 6118:6144 <> conv_enumt_inj_from_sim_glm
+R6166:6173 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6152:6165 _glm_injectivity_close_rep <> mueq_enumt_sim def
+binder 6181:6182 <> E1:7
+binder 6184:6185 <> E2:8
+R6216:6219 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6188:6191 TypeRules <> conv ind
+R6206:6211 TypeRules <> TEnumT constr
+R6213:6214 _glm_injectivity_close_main <> E2:8 var
+R6194:6199 TypeRules <> TEnumT constr
+R6201:6202 _glm_injectivity_close_main <> E1:7 var
+R6220:6223 TypeRules <> conv ind
+R6228:6229 _glm_injectivity_close_main <> E2:8 var
+R6225:6226 _glm_injectivity_close_main <> E1:7 var
+R6259:6295 _glm_injectivity_close_main <> conv_enumt_inj_from_component_sim_glm thm
+R6259:6295 _glm_injectivity_close_main <> conv_enumt_inj_from_component_sim_glm thm
+R6306:6326 _glm_injectivity_close_rep <> mueq_enumt_sim_subset thm
+R6306:6326 _glm_injectivity_close_rep <> mueq_enumt_sim_subset thm
+prf 6354:6377 <> conv_pi_inj_from_sim_glm
+R6396:6403 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6385:6395 _glm_injectivity_close_rep <> mueq_pi_sim def
+binder 6411:6412 <> A0:9
+binder 6414:6415 <> B0:10
+binder 6417:6418 <> A1:11
+binder 6420:6421 <> B1:12
+R6458:6461 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6430:6433 TypeRules <> conv ind
+R6448:6450 TypeRules <> TPi constr
+R6455:6456 _glm_injectivity_close_main <> B1:12 var
+R6452:6453 _glm_injectivity_close_main <> A1:11 var
+R6436:6438 TypeRules <> TPi constr
+R6443:6444 _glm_injectivity_close_main <> B0:10 var
+R6440:6441 _glm_injectivity_close_main <> A0:9 var
+R6472:6475 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6462:6465 TypeRules <> conv ind
+R6470:6471 _glm_injectivity_close_main <> A1:11 var
+R6467:6468 _glm_injectivity_close_main <> A0:9 var
+R6476:6479 TypeRules <> conv ind
+R6484:6485 _glm_injectivity_close_main <> B1:12 var
+R6481:6482 _glm_injectivity_close_main <> B0:10 var
+R6515:6548 _glm_injectivity_close_main <> conv_pi_inj_from_component_sim_glm thm
+R6515:6548 _glm_injectivity_close_main <> conv_pi_inj_from_component_sim_glm thm
+R6559:6576 _glm_injectivity_close_rep <> mueq_pi_sim_subset thm
+R6559:6576 _glm_injectivity_close_rep <> mueq_pi_sim_subset thm
+R6614:6650 _glm_injectivity_close_main <> conv_enumt_inj_from_component_sim_glm thm
+R6671:6704 _glm_injectivity_close_main <> conv_pi_inj_from_component_sim_glm thm
+R6725:6751 _glm_injectivity_close_main <> conv_enumt_inj_from_sim_glm thm
+R6772:6795 _glm_injectivity_close_main <> conv_pi_inj_from_sim_glm thm

@@ -1,0 +1,478 @@
+DIGEST 443f11b301af444a8f41aff77750a62f
+F_glm_mueq_sim_subst
+R891:898 Progress <> <> lib
+R928:931 Stdlib.Lists.List <> <> lib
+R933:937 Stdlib.Arith.Arith <> <> lib
+R939:941 Stdlib.micromega.Lia <> <> lib
+R951:963 Stdlib.Lists.List ListNotations <> mod
+R965:973 TypeRules <> <> mod
+R991:1000 _luna_mueq <> <> lib
+R1002:1017 _luna_mueq_equiv <> <> lib
+R1035:1052 _glm_mueq_sim_lift <> <> lib
+def 1288:1308 <> conv_subst_compatible
+binder 1329:1329 <> t:1
+binder 1331:1332 <> t':2
+binder 1334:1334 <> u:3
+binder 1336:1337 <> u':4
+R1349:1352 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1340:1343 TypeRules <> conv ind
+R1347:1348 _glm_mueq_sim_subst <> t':2 var
+R1345:1345 _glm_mueq_sim_subst <> t:1 var
+R1362:1365 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1353:1356 TypeRules <> conv ind
+R1360:1361 _glm_mueq_sim_subst <> u':4 var
+R1358:1358 _glm_mueq_sim_subst <> u:3 var
+binder 1373:1373 <> k:5
+R1380:1383 TypeRules <> conv ind
+R1400:1404 TypeRules <> subst def
+R1411:1412 _glm_mueq_sim_subst <> t':2 var
+R1409:1409 _glm_mueq_sim_subst <> k:5 var
+R1406:1407 _glm_mueq_sim_subst <> u':4 var
+R1386:1390 TypeRules <> subst def
+R1396:1396 _glm_mueq_sim_subst <> t:1 var
+R1394:1394 _glm_mueq_sim_subst <> k:5 var
+R1392:1392 _glm_mueq_sim_subst <> u:3 var
+def 1487:1508 <> mueq_subst_premise_glm
+R1520:1540 _glm_mueq_sim_subst <> conv_subst_compatible def
+def 1555:1574 <> subst_mubeq_branches
+R1581:1584 TypeRules <> term ind
+binder 1577:1577 <> u:6
+R1592:1594 Corelib.Init.Datatypes <> nat ind
+binder 1588:1588 <> k:7
+R1607:1610 Corelib.Init.Datatypes <> list ind
+R1617:1619 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1613:1616 TypeRules <> term ind
+R1620:1623 TypeRules <> term ind
+binder 1602:1603 <> bs:8
+R1629:1632 Corelib.Init.Datatypes <> list ind
+R1639:1641 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1635:1638 TypeRules <> term ind
+R1642:1645 TypeRules <> term ind
+R1653:1655 Corelib.Lists.ListDef <> map def
+R1704:1705 _glm_mueq_sim_subst <> bs:8 var
+R1663:1663 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1665:1665 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1667:1667 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 1666:1666 <> b:9
+binder 1664:1664 <> c:10
+binder 1663:1667 <> pat:11
+R1672:1672 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1684:1685 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1701:1701 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1673:1677 TypeRules <> subst def
+R1683:1683 _glm_mueq_sim_subst <> c:10 var
+R1681:1681 _glm_mueq_sim_subst <> k:7 var
+R1679:1679 _glm_mueq_sim_subst <> u:6 var
+R1686:1690 TypeRules <> subst def
+R1700:1700 _glm_mueq_sim_subst <> b:9 var
+R1695:1695 Corelib.Init.Datatypes <> S constr
+R1697:1697 _glm_mueq_sim_subst <> k:7 var
+R1692:1692 _glm_mueq_sim_subst <> u:6 var
+prf 1715:1732 <> mueq_subst_var_glm
+binder 1743:1743 <> n:12
+binder 1745:1745 <> u:13
+binder 1747:1748 <> u':14
+binder 1750:1750 <> k:15
+R1762:1769 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1753:1756 _luna_mueq <> mueq ind
+R1758:1758 _glm_mueq_sim_subst <> u:13 var
+R1760:1761 _glm_mueq_sim_subst <> u':14 var
+R1770:1773 _luna_mueq <> mueq ind
+R1776:1780 TypeRules <> subst def
+R1787:1790 TypeRules <> TVar constr
+R1792:1792 _glm_mueq_sim_subst <> n:12 var
+R1784:1784 _glm_mueq_sim_subst <> k:15 var
+R1782:1782 _glm_mueq_sim_subst <> u:13 var
+R1797:1801 TypeRules <> subst def
+R1809:1812 TypeRules <> TVar constr
+R1814:1814 _glm_mueq_sim_subst <> n:12 var
+R1806:1806 _glm_mueq_sim_subst <> k:15 var
+R1803:1804 _glm_mueq_sim_subst <> u':14 var
+R1862:1878 Stdlib.Arith.PeanoNat Nat lt_trichotomy thm
+R1862:1878 Stdlib.Arith.PeanoNat Nat lt_trichotomy thm
+R1938:1940 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1927:1933 Stdlib.Arith.PeanoNat Nat ltb def
+R1941:1944 Corelib.Init.Datatypes <> true constr
+R1957:1966 Stdlib.Arith.PeanoNat Nat ltb_lt thm
+R1938:1940 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1927:1933 Stdlib.Arith.PeanoNat Nat ltb def
+R1941:1944 Corelib.Init.Datatypes <> true constr
+R1957:1966 Stdlib.Arith.PeanoNat Nat ltb_lt thm
+R1984:1988 TypeRules <> subst def
+R2060:2062 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2049:2055 Stdlib.Arith.PeanoNat Nat ltb def
+R2063:2067 Corelib.Init.Datatypes <> false constr
+R2080:2089 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R2060:2062 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2049:2055 Stdlib.Arith.PeanoNat Nat ltb def
+R2063:2067 Corelib.Init.Datatypes <> false constr
+R2080:2089 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R2127:2129 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2116:2122 Stdlib.Arith.PeanoNat Nat eqb def
+R2130:2133 Corelib.Init.Datatypes <> true constr
+R2146:2155 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R2127:2129 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2116:2122 Stdlib.Arith.PeanoNat Nat eqb def
+R2130:2133 Corelib.Init.Datatypes <> true constr
+R2146:2155 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R2181:2185 TypeRules <> subst def
+R2218:2230 _glm_mueq_sim_lift <> mueq_lift_glm thm
+R2218:2230 _glm_mueq_sim_lift <> mueq_lift_glm thm
+R2269:2271 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2258:2264 Stdlib.Arith.PeanoNat Nat ltb def
+R2272:2276 Corelib.Init.Datatypes <> false constr
+R2289:2298 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R2269:2271 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2258:2264 Stdlib.Arith.PeanoNat Nat ltb def
+R2272:2276 Corelib.Init.Datatypes <> false constr
+R2289:2298 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R2336:2338 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2325:2331 Stdlib.Arith.PeanoNat Nat eqb def
+R2339:2343 Corelib.Init.Datatypes <> false constr
+R2356:2366 Stdlib.Arith.PeanoNat Nat eqb_neq thm
+R2336:2338 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2325:2331 Stdlib.Arith.PeanoNat Nat eqb def
+R2339:2343 Corelib.Init.Datatypes <> false constr
+R2356:2366 Stdlib.Arith.PeanoNat Nat eqb_neq thm
+R2384:2388 TypeRules <> subst def
+prf 2435:2448 <> mueq_subst_mut
+R2475:2481 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2737:2737 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2454:2474 _glm_mueq_sim_subst <> conv_subst_compatible def
+R2482:2482 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2577:2585 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2736:2736 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 2490:2490 <> t:16
+binder 2492:2493 <> t':17
+R2505:2508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2496:2499 _luna_mueq <> mueq ind
+R2501:2501 _glm_mueq_sim_subst <> t:16 var
+R2503:2504 _glm_mueq_sim_subst <> t':17 var
+binder 2516:2516 <> u:18
+binder 2518:2519 <> u':19
+binder 2521:2521 <> k:20
+R2539:2542 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2530:2533 _luna_mueq <> mueq ind
+R2535:2535 _glm_mueq_sim_subst <> u:18 var
+R2537:2538 _glm_mueq_sim_subst <> u':19 var
+R2543:2546 _luna_mueq <> mueq ind
+R2549:2553 TypeRules <> subst def
+R2559:2559 _glm_mueq_sim_subst <> t:16 var
+R2557:2557 _glm_mueq_sim_subst <> k:20 var
+R2555:2555 _glm_mueq_sim_subst <> u:18 var
+R2563:2567 TypeRules <> subst def
+R2574:2575 _glm_mueq_sim_subst <> t':17 var
+R2572:2572 _glm_mueq_sim_subst <> k:20 var
+R2569:2570 _glm_mueq_sim_subst <> u':19 var
+binder 2593:2594 <> bs:21
+binder 2596:2598 <> bs':22
+R2613:2616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2601:2605 _luna_mueq <> mubeq ind
+R2607:2608 _glm_mueq_sim_subst <> bs:21 var
+R2610:2612 _glm_mueq_sim_subst <> bs':22 var
+binder 2624:2624 <> u:23
+binder 2626:2627 <> u':24
+binder 2629:2629 <> k:25
+R2647:2656 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2638:2641 _luna_mueq <> mueq ind
+R2643:2643 _glm_mueq_sim_subst <> u:23 var
+R2645:2646 _glm_mueq_sim_subst <> u':24 var
+R2657:2661 _luna_mueq <> mubeq ind
+R2664:2683 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R2685:2685 _glm_mueq_sim_subst <> u:23 var
+R2687:2687 _glm_mueq_sim_subst <> k:25 var
+R2689:2690 _glm_mueq_sim_subst <> bs:21 var
+R2706:2725 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R2727:2728 _glm_mueq_sim_subst <> u':24 var
+R2730:2730 _glm_mueq_sim_subst <> k:25 var
+R2732:2734 _glm_mueq_sim_subst <> bs':22 var
+R2773:2793 _glm_mueq_sim_subst <> conv_subst_compatible def
+R2815:2828 _luna_mueq <> mueq_mubeq_ind scheme
+R2847:2850 TypeRules <> term ind
+binder 2840:2840 <> t:26
+binder 2842:2843 <> t':27
+R2858:2861 _luna_mueq <> mueq ind
+R2863:2863 _glm_mueq_sim_subst <> t:26 var
+R2865:2866 _glm_mueq_sim_subst <> t':27 var
+R2893:2896 TypeRules <> term ind
+binder 2886:2886 <> u:28
+binder 2888:2889 <> u':29
+R2904:2906 Corelib.Init.Datatypes <> nat ind
+binder 2900:2900 <> k:30
+R2919:2930 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2910:2913 _luna_mueq <> mueq ind
+R2915:2915 _glm_mueq_sim_subst <> u:28 var
+R2917:2918 _glm_mueq_sim_subst <> u':29 var
+R2931:2934 _luna_mueq <> mueq ind
+R2937:2941 TypeRules <> subst def
+R2947:2947 _glm_mueq_sim_subst <> t:26 var
+R2945:2945 _glm_mueq_sim_subst <> k:30 var
+R2943:2943 _glm_mueq_sim_subst <> u:28 var
+R2951:2955 TypeRules <> subst def
+R2962:2963 _glm_mueq_sim_subst <> t':27 var
+R2960:2960 _glm_mueq_sim_subst <> k:30 var
+R2957:2958 _glm_mueq_sim_subst <> u':29 var
+R2986:2989 Corelib.Init.Datatypes <> list ind
+R2996:2998 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2992:2995 TypeRules <> term ind
+R2999:3002 TypeRules <> term ind
+binder 2977:2978 <> bs:31
+binder 2980:2982 <> bs':32
+R3011:3015 _luna_mueq <> mubeq ind
+R3017:3018 _glm_mueq_sim_subst <> bs:31 var
+R3020:3022 _glm_mueq_sim_subst <> bs':32 var
+R3049:3052 TypeRules <> term ind
+binder 3042:3042 <> u:33
+binder 3044:3045 <> u':34
+R3060:3062 Corelib.Init.Datatypes <> nat ind
+binder 3056:3056 <> k:35
+R3075:3086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3066:3069 _luna_mueq <> mueq ind
+R3071:3071 _glm_mueq_sim_subst <> u:33 var
+R3073:3074 _glm_mueq_sim_subst <> u':34 var
+R3087:3091 _luna_mueq <> mubeq ind
+R3094:3113 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R3115:3115 _glm_mueq_sim_subst <> u:33 var
+R3117:3117 _glm_mueq_sim_subst <> k:35 var
+R3119:3120 _glm_mueq_sim_subst <> bs:31 var
+R3138:3157 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R3159:3160 _glm_mueq_sim_subst <> u':34 var
+R3162:3162 _glm_mueq_sim_subst <> k:35 var
+R3164:3166 _glm_mueq_sim_subst <> bs':32 var
+R3181:3200 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R2815:2828 _luna_mueq <> mueq_mubeq_ind scheme
+R2847:2850 TypeRules <> term ind
+binder 2840:2840 <> t:36
+binder 2842:2843 <> t':37
+R2858:2861 _luna_mueq <> mueq ind
+R2863:2863 _glm_mueq_sim_subst <> t:36 var
+R2865:2866 _glm_mueq_sim_subst <> t':37 var
+R2893:2896 TypeRules <> term ind
+binder 2886:2886 <> u:38
+binder 2888:2889 <> u':39
+R2904:2906 Corelib.Init.Datatypes <> nat ind
+binder 2900:2900 <> k:40
+R2919:2930 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2910:2913 _luna_mueq <> mueq ind
+R2915:2915 _glm_mueq_sim_subst <> u:38 var
+R2917:2918 _glm_mueq_sim_subst <> u':39 var
+R2931:2934 _luna_mueq <> mueq ind
+R2937:2941 TypeRules <> subst def
+R2947:2947 _glm_mueq_sim_subst <> t:36 var
+R2945:2945 _glm_mueq_sim_subst <> k:40 var
+R2943:2943 _glm_mueq_sim_subst <> u:38 var
+R2951:2955 TypeRules <> subst def
+R2962:2963 _glm_mueq_sim_subst <> t':37 var
+R2960:2960 _glm_mueq_sim_subst <> k:40 var
+R2957:2958 _glm_mueq_sim_subst <> u':39 var
+R2986:2989 Corelib.Init.Datatypes <> list ind
+R2996:2998 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2992:2995 TypeRules <> term ind
+R2999:3002 TypeRules <> term ind
+binder 2977:2978 <> bs:41
+binder 2980:2982 <> bs':42
+R3011:3015 _luna_mueq <> mubeq ind
+R3017:3018 _glm_mueq_sim_subst <> bs:41 var
+R3020:3022 _glm_mueq_sim_subst <> bs':42 var
+R3049:3052 TypeRules <> term ind
+binder 3042:3042 <> u:43
+binder 3044:3045 <> u':44
+R3060:3062 Corelib.Init.Datatypes <> nat ind
+binder 3056:3056 <> k:45
+R3075:3086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3066:3069 _luna_mueq <> mueq ind
+R3071:3071 _glm_mueq_sim_subst <> u:43 var
+R3073:3074 _glm_mueq_sim_subst <> u':44 var
+R3087:3091 _luna_mueq <> mubeq ind
+R3094:3113 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R3115:3115 _glm_mueq_sim_subst <> u:43 var
+R3117:3117 _glm_mueq_sim_subst <> k:45 var
+R3119:3120 _glm_mueq_sim_subst <> bs:41 var
+R3138:3157 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R3159:3160 _glm_mueq_sim_subst <> u':44 var
+R3162:3162 _glm_mueq_sim_subst <> k:45 var
+R3164:3166 _glm_mueq_sim_subst <> bs':42 var
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3237:3254 _glm_mueq_sim_subst <> mueq_subst_var_glm thm
+R3290:3309 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R3317:3319 Corelib.Lists.ListDef <> map def
+R3465:3468 _luna_mueq <> mueq ind
+R3465:3468 _luna_mueq <> mueq ind
+R3491:3494 TypeRules <> conv ind
+R3519:3522 TypeRules <> TApp constr
+R3525:3528 TypeRules <> TMuS constr
+R3497:3500 TypeRules <> TApp constr
+R3503:3506 TypeRules <> TMuS constr
+R3491:3494 TypeRules <> conv ind
+R3519:3522 TypeRules <> TApp constr
+R3525:3528 TypeRules <> TMuS constr
+R3497:3500 TypeRules <> TApp constr
+R3503:3506 TypeRules <> TMuS constr
+R3552:3554 Corelib.Init.Datatypes <> nat ind
+R3552:3554 Corelib.Init.Datatypes <> nat ind
+R3580:3587 _luna_mueq <> me_muapp constr
+R3617:3625 _luna_mueq <> mueq_conv thm
+R3580:3587 _luna_mueq <> me_muapp constr
+R3617:3625 _luna_mueq <> mueq_conv thm
+prf 3662:3675 <> mueq_subst_glm
+R3700:3705 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3679:3699 _glm_mueq_sim_subst <> conv_subst_compatible def
+binder 3713:3713 <> t:46
+binder 3715:3716 <> t':47
+binder 3718:3718 <> u:48
+binder 3720:3721 <> u':49
+binder 3723:3723 <> k:50
+R3735:3738 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3726:3729 _luna_mueq <> mueq ind
+R3731:3731 _glm_mueq_sim_subst <> t:46 var
+R3733:3734 _glm_mueq_sim_subst <> t':47 var
+R3748:3755 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3739:3742 _luna_mueq <> mueq ind
+R3744:3744 _glm_mueq_sim_subst <> u:48 var
+R3746:3747 _glm_mueq_sim_subst <> u':49 var
+R3756:3759 _luna_mueq <> mueq ind
+R3762:3766 TypeRules <> subst def
+R3772:3772 _glm_mueq_sim_subst <> t:46 var
+R3770:3770 _glm_mueq_sim_subst <> k:50 var
+R3768:3768 _glm_mueq_sim_subst <> u:48 var
+R3776:3780 TypeRules <> subst def
+R3787:3788 _glm_mueq_sim_subst <> t':47 var
+R3785:3785 _glm_mueq_sim_subst <> k:50 var
+R3782:3783 _glm_mueq_sim_subst <> u':49 var
+R3847:3851 Corelib.Init.Logic <> proj1 thm
+R3854:3867 _glm_mueq_sim_subst <> mueq_subst_mut thm
+R3847:3851 Corelib.Init.Logic <> proj1 thm
+R3854:3867 _glm_mueq_sim_subst <> mueq_subst_mut thm
+prf 3913:3927 <> mubeq_subst_glm
+R3952:3957 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3931:3951 _glm_mueq_sim_subst <> conv_subst_compatible def
+binder 3965:3966 <> bs:51
+binder 3968:3970 <> bs':52
+binder 3972:3972 <> u:53
+binder 3974:3975 <> u':54
+binder 3977:3977 <> k:55
+R3992:3995 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3980:3984 _luna_mueq <> mubeq ind
+R3986:3987 _glm_mueq_sim_subst <> bs:51 var
+R3989:3991 _glm_mueq_sim_subst <> bs':52 var
+R4005:4012 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3996:3999 _luna_mueq <> mueq ind
+R4001:4001 _glm_mueq_sim_subst <> u:53 var
+R4003:4004 _glm_mueq_sim_subst <> u':54 var
+R4013:4017 _luna_mueq <> mubeq ind
+R4020:4039 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R4041:4041 _glm_mueq_sim_subst <> u:53 var
+R4043:4043 _glm_mueq_sim_subst <> k:55 var
+R4045:4046 _glm_mueq_sim_subst <> bs:51 var
+R4060:4079 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R4081:4082 _glm_mueq_sim_subst <> u':54 var
+R4084:4084 _glm_mueq_sim_subst <> k:55 var
+R4086:4088 _glm_mueq_sim_subst <> bs':52 var
+R4148:4152 Corelib.Init.Logic <> proj2 thm
+R4155:4168 _glm_mueq_sim_subst <> mueq_subst_mut thm
+R4148:4152 Corelib.Init.Logic <> proj2 thm
+R4155:4168 _glm_mueq_sim_subst <> mueq_subst_mut thm
+prf 4286:4304 <> mueq_case_subst_glm
+R4329:4334 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4308:4328 _glm_mueq_sim_subst <> conv_subst_compatible def
+binder 4342:4342 <> M:56
+binder 4344:4345 <> M':57
+binder 4347:4347 <> Q:58
+binder 4349:4350 <> Q':59
+binder 4352:4353 <> bs:60
+binder 4355:4357 <> bs':61
+binder 4359:4359 <> u:62
+binder 4361:4362 <> u':63
+binder 4364:4364 <> k:64
+R4380:4383 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4371:4374 _luna_mueq <> mueq ind
+R4376:4376 _glm_mueq_sim_subst <> M:56 var
+R4378:4379 _glm_mueq_sim_subst <> M':57 var
+R4393:4396 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4384:4387 _luna_mueq <> mueq ind
+R4389:4389 _glm_mueq_sim_subst <> Q:58 var
+R4391:4392 _glm_mueq_sim_subst <> Q':59 var
+R4409:4412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4397:4401 _luna_mueq <> mubeq ind
+R4403:4404 _glm_mueq_sim_subst <> bs:60 var
+R4406:4408 _glm_mueq_sim_subst <> bs':61 var
+R4422:4429 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4413:4416 _luna_mueq <> mueq ind
+R4418:4418 _glm_mueq_sim_subst <> u:62 var
+R4420:4421 _glm_mueq_sim_subst <> u':63 var
+R4430:4433 _luna_mueq <> mueq ind
+R4436:4440 TypeRules <> TCase constr
+R4471:4490 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R4492:4492 _glm_mueq_sim_subst <> u:62 var
+R4494:4494 _glm_mueq_sim_subst <> k:64 var
+R4496:4497 _glm_mueq_sim_subst <> bs:60 var
+R4457:4461 TypeRules <> subst def
+R4467:4467 _glm_mueq_sim_subst <> Q:58 var
+R4465:4465 _glm_mueq_sim_subst <> k:64 var
+R4463:4463 _glm_mueq_sim_subst <> u:62 var
+R4443:4447 TypeRules <> subst def
+R4453:4453 _glm_mueq_sim_subst <> M:56 var
+R4451:4451 _glm_mueq_sim_subst <> k:64 var
+R4449:4449 _glm_mueq_sim_subst <> u:62 var
+R4511:4515 TypeRules <> TCase constr
+R4550:4569 _glm_mueq_sim_subst <> subst_mubeq_branches def
+R4571:4572 _glm_mueq_sim_subst <> u':63 var
+R4574:4574 _glm_mueq_sim_subst <> k:64 var
+R4576:4578 _glm_mueq_sim_subst <> bs':61 var
+R4534:4538 TypeRules <> subst def
+R4545:4546 _glm_mueq_sim_subst <> Q':59 var
+R4543:4543 _glm_mueq_sim_subst <> k:64 var
+R4540:4541 _glm_mueq_sim_subst <> u':63 var
+R4518:4522 TypeRules <> subst def
+R4529:4530 _glm_mueq_sim_subst <> M':57 var
+R4527:4527 _glm_mueq_sim_subst <> k:64 var
+R4524:4525 _glm_mueq_sim_subst <> u':63 var
+R4653:4659 _luna_mueq <> me_case constr
+R4674:4687 _glm_mueq_sim_subst <> mueq_subst_glm thm
+R4726:4739 _glm_mueq_sim_subst <> mueq_subst_glm thm
+R4778:4792 _glm_mueq_sim_subst <> mubeq_subst_glm thm
+R4653:4659 _luna_mueq <> me_case constr
+R4674:4687 _glm_mueq_sim_subst <> mueq_subst_glm thm
+R4726:4739 _glm_mueq_sim_subst <> mueq_subst_glm thm
+R4778:4792 _glm_mueq_sim_subst <> mubeq_subst_glm thm

@@ -1,0 +1,149 @@
+DIGEST 3de74852abdae10c29f3007023cc590b
+F_glm_final_from_sim_glm
+R3301:3308 Progress <> <> lib
+R3326:3336 _tmp_epstep <> <> lib
+R3353:3371 _work_mixed_closure <> <> lib
+R3373:3383 _work_cjoin <> <> lib
+R3385:3406 _work_cstep_invariants <> <> lib
+R3423:3432 _luna_mueq <> <> lib
+R3434:3449 _luna_mueq_equiv <> <> lib
+R3466:3479 _glm_qconv_def <> <> lib
+R3481:3495 _glm_qconv_main <> <> lib
+R3512:3537 _glm_injectivity_close_rep <> <> lib
+R3539:3565 _glm_injectivity_close_main <> <> lib
+R3582:3604 _glm_mueq_sim_close_rep <> <> lib
+R3606:3629 _glm_mueq_sim_close_sort <> <> lib
+R3646:3666 _glm_cjoin_subst_main <> <> lib
+R3683:3703 _glm_muapp_sort_close <> <> lib
+R3705:3731 _glm_muapp_sort_specialized <> <> lib
+R3761:3764 Stdlib.Lists.List <> <> lib
+R3774:3786 Stdlib.Lists.List ListNotations <> mod
+R3788:3796 TypeRules <> <> mod
+prf 4050:4081 <> cstep_sim_from_narrow_bridge_glm
+R4107:4110 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4089:4106 _glm_mueq_sim_close_rep <> mueq_pstep_sim_glm def
+R4130:4133 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4111:4129 _glm_mueq_sim_close_rep <> mueq_epstep_sim_glm def
+R4134:4151 _glm_mueq_sim_close_rep <> mueq_cstep_sim_glm def
+R4167:4196 _glm_mueq_sim_close_rep <> mueq_cstep_sim_glm_from_narrow thm
+R4167:4196 _glm_mueq_sim_close_rep <> mueq_cstep_sim_glm_from_narrow thm
+prf 4457:4490 <> conv_enumt_inj_from_narrow_sim_glm
+R4516:4519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4498:4515 _glm_mueq_sim_close_rep <> mueq_pstep_sim_glm def
+R4539:4546 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4520:4538 _glm_mueq_sim_close_rep <> mueq_epstep_sim_glm def
+binder 4554:4555 <> E1:1
+binder 4557:4558 <> E2:2
+R4589:4592 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4561:4564 TypeRules <> conv ind
+R4579:4584 TypeRules <> TEnumT constr
+R4586:4587 _glm_final_from_sim_glm <> E2:2 var
+R4567:4572 TypeRules <> TEnumT constr
+R4574:4575 _glm_final_from_sim_glm <> E1:1 var
+R4593:4596 TypeRules <> conv ind
+R4601:4602 _glm_final_from_sim_glm <> E2:2 var
+R4598:4599 _glm_final_from_sim_glm <> E1:1 var
+R4636:4672 _glm_injectivity_close_main <> conv_enumt_inj_from_component_sim_glm thm
+R4636:4672 _glm_injectivity_close_main <> conv_enumt_inj_from_component_sim_glm thm
+R4683:4726 _glm_mueq_sim_close_rep <> mueq_enumt_sim_components_from_cstep_sim_glm thm
+R4683:4726 _glm_mueq_sim_close_rep <> mueq_enumt_sim_components_from_cstep_sim_glm thm
+R4737:4768 _glm_final_from_sim_glm <> cstep_sim_from_narrow_bridge_glm thm
+R4737:4768 _glm_final_from_sim_glm <> cstep_sim_from_narrow_bridge_glm thm
+prf 5041:5071 <> conv_pi_inj_from_narrow_sim_glm
+R5097:5100 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5079:5096 _glm_mueq_sim_close_rep <> mueq_pstep_sim_glm def
+R5120:5127 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5101:5119 _glm_mueq_sim_close_rep <> mueq_epstep_sim_glm def
+binder 5135:5136 <> A0:3
+binder 5138:5139 <> B0:4
+binder 5141:5142 <> A1:5
+binder 5144:5145 <> B1:6
+R5182:5185 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5154:5157 TypeRules <> conv ind
+R5172:5174 TypeRules <> TPi constr
+R5179:5180 _glm_final_from_sim_glm <> B1:6 var
+R5176:5177 _glm_final_from_sim_glm <> A1:5 var
+R5160:5162 TypeRules <> TPi constr
+R5167:5168 _glm_final_from_sim_glm <> B0:4 var
+R5164:5165 _glm_final_from_sim_glm <> A0:3 var
+R5196:5199 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5186:5189 TypeRules <> conv ind
+R5194:5195 _glm_final_from_sim_glm <> A1:5 var
+R5191:5192 _glm_final_from_sim_glm <> A0:3 var
+R5200:5203 TypeRules <> conv ind
+R5208:5209 _glm_final_from_sim_glm <> B1:6 var
+R5205:5206 _glm_final_from_sim_glm <> B0:4 var
+R5243:5276 _glm_injectivity_close_main <> conv_pi_inj_from_component_sim_glm thm
+R5243:5276 _glm_injectivity_close_main <> conv_pi_inj_from_component_sim_glm thm
+R5287:5327 _glm_mueq_sim_close_rep <> mueq_pi_sim_components_from_cstep_sim_glm thm
+R5287:5327 _glm_mueq_sim_close_rep <> mueq_pi_sim_components_from_cstep_sim_glm thm
+R5338:5369 _glm_final_from_sim_glm <> cstep_sim_from_narrow_bridge_glm thm
+R5338:5369 _glm_final_from_sim_glm <> cstep_sim_from_narrow_bridge_glm thm
+prf 5642:5683 <> conv_subst_sort_target_from_narrow_sim_glm
+R5709:5712 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5691:5708 _glm_mueq_sim_close_rep <> mueq_pstep_sim_glm def
+R5732:5739 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5713:5731 _glm_mueq_sim_close_rep <> mueq_epstep_sim_glm def
+binder 5747:5747 <> B:7
+binder 5749:5749 <> j:8
+R5768:5775 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5752:5755 TypeRules <> conv ind
+R5760:5764 TypeRules <> TSort constr
+R5766:5766 _glm_final_from_sim_glm <> j:8 var
+R5757:5757 _glm_final_from_sim_glm <> B:7 var
+binder 5783:5783 <> a:9
+binder 5785:5785 <> k:10
+R5788:5791 TypeRules <> conv ind
+R5808:5812 TypeRules <> TSort constr
+R5814:5814 _glm_final_from_sim_glm <> j:8 var
+R5794:5798 TypeRules <> subst def
+R5804:5804 _glm_final_from_sim_glm <> B:7 var
+R5802:5802 _glm_final_from_sim_glm <> k:10 var
+R5800:5800 _glm_final_from_sim_glm <> a:9 var
+R5849:5889 _glm_mueq_sim_close_sort <> conv_subst_sort_target_from_cstep_sim_glm thm
+R5849:5889 _glm_mueq_sim_close_sort <> conv_subst_sort_target_from_cstep_sim_glm thm
+R5900:5931 _glm_final_from_sim_glm <> cstep_sim_from_narrow_bridge_glm thm
+R5900:5931 _glm_final_from_sim_glm <> cstep_sim_from_narrow_bridge_glm thm
+prf 6446:6475 <> muapp_sort_from_narrow_sim_glm
+R6501:6504 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6483:6500 _glm_mueq_sim_close_rep <> mueq_pstep_sim_glm def
+R6524:6531 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6505:6523 _glm_mueq_sim_close_rep <> mueq_epstep_sim_glm def
+binder 6539:6539 <> f:11
+binder 6541:6541 <> a:12
+binder 6543:6543 <> T:13
+binder 6545:6545 <> U:14
+binder 6547:6547 <> h:15
+R6577:6580 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6556:6560 TypeRules <> check ind
+R6576:6576 _glm_final_from_sim_glm <> T:13 var
+R6566:6569 TypeRules <> TApp constr
+R6573:6573 _glm_final_from_sim_glm <> a:12 var
+R6571:6571 _glm_final_from_sim_glm <> f:11 var
+R6562:6563 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R6597:6606 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6581:6585 TypeRules <> value ind
+R6588:6591 TypeRules <> TApp constr
+R6595:6595 _glm_final_from_sim_glm <> a:12 var
+R6593:6593 _glm_final_from_sim_glm <> f:11 var
+R6615:6618 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6607:6610 TypeRules <> conv ind
+R6614:6614 _glm_final_from_sim_glm <> U:14 var
+R6612:6612 _glm_final_from_sim_glm <> T:13 var
+R6626:6629 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6619:6621 Progress <> whd def
+R6623:6623 _glm_final_from_sim_glm <> U:14 var
+R6625:6625 _glm_final_from_sim_glm <> h:15 var
+R6631:6633 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6630:6630 _glm_final_from_sim_glm <> h:15 var
+R6634:6638 Progress <> HSort constr
+R6672:6709 _glm_muapp_sort_specialized <> muapp_sort_from_specialized_compat_glm thm
+R6672:6709 _glm_muapp_sort_specialized <> muapp_sort_from_specialized_compat_glm thm
+R6831:6861 _glm_final_from_sim_glm <> conv_pi_inj_from_narrow_sim_glm thm
+R6831:6861 _glm_final_from_sim_glm <> conv_pi_inj_from_narrow_sim_glm thm
+R7016:7057 _glm_final_from_sim_glm <> conv_subst_sort_target_from_narrow_sim_glm thm
+R7016:7057 _glm_final_from_sim_glm <> conv_subst_sort_target_from_narrow_sim_glm thm
+R7430:7463 _glm_final_from_sim_glm <> conv_enumt_inj_from_narrow_sim_glm thm
+R7484:7514 _glm_final_from_sim_glm <> conv_pi_inj_from_narrow_sim_glm thm
+R7535:7576 _glm_final_from_sim_glm <> conv_subst_sort_target_from_narrow_sim_glm thm
+R7597:7626 _glm_final_from_sim_glm <> muapp_sort_from_narrow_sim_glm thm

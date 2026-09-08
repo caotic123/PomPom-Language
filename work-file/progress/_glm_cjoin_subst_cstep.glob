@@ -1,0 +1,154 @@
+DIGEST 123e501ad7db8d51d313099c5fa1eed6
+F_glm_cjoin_subst_cstep
+R141:148 Progress <> <> lib
+R150:160 _tmp_epstep <> <> lib
+R162:180 _work_mixed_closure <> <> lib
+R184:205 _glm_cjoin_subst_pstep <> <> lib
+R207:229 _glm_cjoin_subst_epstep <> <> lib
+R259:262 Stdlib.Lists.List <> <> lib
+R264:268 Stdlib.Arith.Arith <> <> lib
+R270:272 Stdlib.micromega.Lia <> <> lib
+R274:281 Stdlib.Arith.PeanoNat <> <> lib
+R291:303 Stdlib.Lists.List ListNotations <> mod
+R305:313 TypeRules <> <> mod
+prf 323:339 <> rtc_map_cstep_glm
+R359:362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R355:358 TypeRules <> term ind
+R363:366 TypeRules <> term ind
+binder 351:351 <> F:1
+R374:374 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R417:425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 382:382 <> x:2
+binder 384:384 <> y:3
+R396:399 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R387:391 _work_mixed_closure <> cstep ind
+R393:393 _glm_cjoin_subst_cstep <> x:2 var
+R395:395 _glm_cjoin_subst_cstep <> y:3 var
+R400:404 _work_mixed_closure <> cstep ind
+R407:407 _glm_cjoin_subst_cstep <> F:1 var
+R409:409 _glm_cjoin_subst_cstep <> x:2 var
+R413:413 _glm_cjoin_subst_cstep <> F:1 var
+R415:415 _glm_cjoin_subst_cstep <> y:3 var
+binder 433:433 <> x:4
+binder 435:435 <> y:5
+R451:454 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R438:440 Progress <> rtc ind
+R450:450 _glm_cjoin_subst_cstep <> y:5 var
+R448:448 _glm_cjoin_subst_cstep <> x:4 var
+R442:446 _work_mixed_closure <> cstep ind
+R455:457 Progress <> rtc ind
+R472:472 _glm_cjoin_subst_cstep <> F:1 var
+R474:474 _glm_cjoin_subst_cstep <> y:5 var
+R466:466 _glm_cjoin_subst_cstep <> F:1 var
+R468:468 _glm_cjoin_subst_cstep <> x:4 var
+R459:463 _work_mixed_closure <> cstep ind
+R529:536 Progress <> rtc_refl constr
+R529:536 Progress <> rtc_refl constr
+R550:557 Progress <> rtc_step constr
+R550:557 Progress <> rtc_step constr
+prf 607:630 <> rtc_pstep_subst_same_glm
+binder 641:641 <> t:6
+binder 643:643 <> v:7
+R659:662 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R646:648 Progress <> rtc ind
+R658:658 _glm_cjoin_subst_cstep <> v:7 var
+R656:656 _glm_cjoin_subst_cstep <> t:6 var
+R650:654 Progress <> pstep ind
+binder 670:670 <> u:8
+binder 672:672 <> k:9
+R679:681 Progress <> rtc ind
+R704:708 TypeRules <> subst def
+R714:714 _glm_cjoin_subst_cstep <> v:7 var
+R712:712 _glm_cjoin_subst_cstep <> k:9 var
+R710:710 _glm_cjoin_subst_cstep <> u:8 var
+R690:694 TypeRules <> subst def
+R700:700 _glm_cjoin_subst_cstep <> t:6 var
+R698:698 _glm_cjoin_subst_cstep <> k:9 var
+R696:696 _glm_cjoin_subst_cstep <> u:8 var
+R683:687 Progress <> pstep ind
+R768:775 Progress <> rtc_refl constr
+R768:775 Progress <> rtc_refl constr
+R789:796 Progress <> rtc_step constr
+R806:825 _glm_cjoin_subst_pstep <> pstep_subst_same_glm thm
+R789:796 Progress <> rtc_step constr
+R806:825 _glm_cjoin_subst_pstep <> pstep_subst_same_glm thm
+prf 864:888 <> rtc_epstep_subst_same_glm
+binder 899:899 <> t:10
+binder 901:901 <> v:11
+R918:921 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R904:906 Progress <> rtc ind
+R917:917 _glm_cjoin_subst_cstep <> v:11 var
+R915:915 _glm_cjoin_subst_cstep <> t:10 var
+R908:913 _tmp_epstep <> epstep ind
+binder 929:929 <> u:12
+binder 931:931 <> k:13
+R938:940 Progress <> rtc ind
+R964:968 TypeRules <> subst def
+R974:974 _glm_cjoin_subst_cstep <> v:11 var
+R972:972 _glm_cjoin_subst_cstep <> k:13 var
+R970:970 _glm_cjoin_subst_cstep <> u:12 var
+R950:954 TypeRules <> subst def
+R960:960 _glm_cjoin_subst_cstep <> t:10 var
+R958:958 _glm_cjoin_subst_cstep <> k:13 var
+R956:956 _glm_cjoin_subst_cstep <> u:12 var
+R942:947 _tmp_epstep <> epstep ind
+R1028:1035 Progress <> rtc_refl constr
+R1028:1035 Progress <> rtc_refl constr
+R1049:1056 Progress <> rtc_step constr
+R1066:1086 _glm_cjoin_subst_epstep <> epstep_subst_same_glm thm
+R1049:1056 Progress <> rtc_step constr
+R1066:1086 _glm_cjoin_subst_epstep <> epstep_subst_same_glm thm
+prf 1125:1144 <> cstep_subst_same_glm
+binder 1155:1155 <> t:14
+binder 1157:1157 <> v:15
+R1169:1172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1160:1164 _work_mixed_closure <> cstep ind
+R1166:1166 _glm_cjoin_subst_cstep <> t:14 var
+R1168:1168 _glm_cjoin_subst_cstep <> v:15 var
+binder 1180:1180 <> u:16
+binder 1182:1182 <> k:17
+R1189:1193 _work_mixed_closure <> cstep ind
+R1196:1200 TypeRules <> subst def
+R1206:1206 _glm_cjoin_subst_cstep <> t:14 var
+R1204:1204 _glm_cjoin_subst_cstep <> k:17 var
+R1202:1202 _glm_cjoin_subst_cstep <> u:16 var
+R1210:1214 TypeRules <> subst def
+R1220:1220 _glm_cjoin_subst_cstep <> v:15 var
+R1218:1218 _glm_cjoin_subst_cstep <> k:17 var
+R1216:1216 _glm_cjoin_subst_cstep <> u:16 var
+R1294:1300 _work_mixed_closure <> cs_core constr
+R1294:1300 _work_mixed_closure <> cs_core constr
+R1309:1332 _glm_cjoin_subst_cstep <> rtc_pstep_subst_same_glm thm
+R1309:1332 _glm_cjoin_subst_cstep <> rtc_pstep_subst_same_glm thm
+R1355:1360 _work_mixed_closure <> cs_eta constr
+R1355:1360 _work_mixed_closure <> cs_eta constr
+R1369:1393 _glm_cjoin_subst_cstep <> rtc_epstep_subst_same_glm thm
+R1369:1393 _glm_cjoin_subst_cstep <> rtc_epstep_subst_same_glm thm
+prf 1418:1441 <> rtc_cstep_subst_same_glm
+binder 1452:1452 <> t:18
+binder 1454:1454 <> v:19
+R1470:1473 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1457:1459 Progress <> rtc ind
+R1469:1469 _glm_cjoin_subst_cstep <> v:19 var
+R1467:1467 _glm_cjoin_subst_cstep <> t:18 var
+R1461:1465 _work_mixed_closure <> cstep ind
+binder 1481:1481 <> u:20
+binder 1483:1483 <> k:21
+R1490:1492 Progress <> rtc ind
+R1515:1519 TypeRules <> subst def
+R1525:1525 _glm_cjoin_subst_cstep <> v:19 var
+R1523:1523 _glm_cjoin_subst_cstep <> k:21 var
+R1521:1521 _glm_cjoin_subst_cstep <> u:20 var
+R1501:1505 TypeRules <> subst def
+R1511:1511 _glm_cjoin_subst_cstep <> t:18 var
+R1509:1509 _glm_cjoin_subst_cstep <> k:21 var
+R1507:1507 _glm_cjoin_subst_cstep <> u:20 var
+R1494:1498 _work_mixed_closure <> cstep ind
+R1579:1586 Progress <> rtc_refl constr
+R1579:1586 Progress <> rtc_refl constr
+R1600:1607 Progress <> rtc_step constr
+R1617:1636 _glm_cjoin_subst_cstep <> cstep_subst_same_glm thm
+R1600:1607 Progress <> rtc_step constr
+R1617:1636 _glm_cjoin_subst_cstep <> cstep_subst_same_glm thm
+R1687:1706 _glm_cjoin_subst_cstep <> cstep_subst_same_glm thm
+R1727:1750 _glm_cjoin_subst_cstep <> rtc_cstep_subst_same_glm thm

@@ -1,0 +1,273 @@
+DIGEST 92a2c451f8a0af6925b4617d22fc9b15
+F_glm_phi_erase_reflect_close_muapp
+R1800:1807 Progress <> <> lib
+R1809:1819 _tmp_epstep <> <> lib
+R1821:1839 _work_mixed_closure <> <> lib
+R1841:1851 _work_cjoin <> <> lib
+R1855:1876 _work_cstep_invariants <> <> lib
+R1878:1903 _glm_injectivity_close_rep <> <> lib
+R1907:1924 _work_conv_whd_pos <> <> lib
+R1926:1947 _glm_muapp_sort_origin <> <> lib
+R1949:1969 _glm_muapp_sort_close <> <> lib
+R1973:1988 _glm_conv_subst0 <> <> lib
+R1992:2027 _glm_phi_erase_reflect_close_reflect <> <> lib
+R2029:2065 _glm_phi_erase_reflect_close_codomain <> <> lib
+R2095:2098 Stdlib.Lists.List <> <> lib
+R2100:2102 Stdlib.micromega.Lia <> <> lib
+R2104:2111 Stdlib.Arith.PeanoNat <> <> lib
+R2121:2133 Stdlib.Lists.List ListNotations <> mod
+R2135:2143 TypeRules <> <> mod
+prf 2397:2424 <> subst0_sort_target_erase_glm
+binder 2435:2435 <> a:1
+binder 2437:2437 <> B:2
+binder 2439:2439 <> j:3
+R2462:2465 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2446:2449 TypeRules <> conv ind
+R2454:2458 TypeRules <> TSort constr
+R2460:2460 _glm_phi_erase_reflect_close_muapp <> j:3 var
+R2451:2451 _glm_phi_erase_reflect_close_muapp <> B:2 var
+R2466:2469 TypeRules <> conv ind
+R2486:2490 TypeRules <> TSort constr
+R2492:2492 _glm_phi_erase_reflect_close_muapp <> j:3 var
+R2472:2476 TypeRules <> subst def
+R2482:2482 _glm_phi_erase_reflect_close_muapp <> B:2 var
+R2478:2478 _glm_phi_erase_reflect_close_muapp <> a:1 var
+R2536:2550 _glm_conv_subst0 <> conv_subst0_glm thm
+R2555:2559 TypeRules <> TSort constr
+R2572:2578 TypeRules <> cv_refl constr
+R2536:2550 _glm_conv_subst0 <> conv_subst0_glm thm
+R2555:2559 TypeRules <> TSort constr
+R2572:2578 TypeRules <> cv_refl constr
+R2597:2601 TypeRules <> subst def
+prf 2875:2899 <> ao_chk_mui_sort_erase_glm
+R2924:2927 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2905:2923 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R2948:2953 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2928:2947 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 2961:2961 <> R:4
+binder 2963:2963 <> a:5
+binder 2965:2965 <> A:6
+binder 2967:2967 <> B:7
+binder 2969:2969 <> k:8
+binder 2971:2971 <> T:9
+binder 2973:2973 <> U:10
+binder 2975:2975 <> h:11
+R3010:3013 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2982:2986 TypeRules <> check ind
+R3002:3006 TypeRules <> TSort constr
+R3008:3008 _glm_phi_erase_reflect_close_muapp <> k:8 var
+R2992:2994 TypeRules <> TPi constr
+R2998:2998 _glm_phi_erase_reflect_close_muapp <> B:7 var
+R2996:2996 _glm_phi_erase_reflect_close_muapp <> A:6 var
+R2988:2989 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3041:3048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3014:3018 TypeRules <> check ind
+R3033:3035 TypeRules <> TPi constr
+R3039:3039 _glm_phi_erase_reflect_close_muapp <> B:7 var
+R3037:3037 _glm_phi_erase_reflect_close_muapp <> A:6 var
+R3024:3027 TypeRules <> TMuI constr
+R3029:3029 _glm_phi_erase_reflect_close_muapp <> R:4 var
+R3020:3021 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3061:3064 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3049:3053 TypeRules <> check ind
+R3060:3060 _glm_phi_erase_reflect_close_muapp <> A:6 var
+R3058:3058 _glm_phi_erase_reflect_close_muapp <> a:5 var
+R3055:3056 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3087:3090 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3065:3067 TypeRules <> sub ind
+R3086:3086 _glm_phi_erase_reflect_close_muapp <> T:9 var
+R3073:3077 TypeRules <> subst def
+R3083:3083 _glm_phi_erase_reflect_close_muapp <> B:7 var
+R3079:3079 _glm_phi_erase_reflect_close_muapp <> a:5 var
+R3069:3070 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3099:3102 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3091:3094 TypeRules <> conv ind
+R3098:3098 _glm_phi_erase_reflect_close_muapp <> U:10 var
+R3096:3096 _glm_phi_erase_reflect_close_muapp <> T:9 var
+R3110:3117 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3103:3105 Progress <> whd def
+R3107:3107 _glm_phi_erase_reflect_close_muapp <> U:10 var
+R3109:3109 _glm_phi_erase_reflect_close_muapp <> h:11 var
+R3119:3121 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3118:3118 _glm_phi_erase_reflect_close_muapp <> h:11 var
+R3122:3126 Progress <> HSort constr
+R3200:3218 _glm_muapp_sort_origin <> check_mui_synth_glm thm
+R3220:3221 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3224:3227 TypeRules <> TMuI constr
+R3233:3235 TypeRules <> TPi constr
+R3247:3253 Corelib.Init.Logic <> eq_refl constr
+R3200:3218 _glm_muapp_sort_origin <> check_mui_synth_glm thm
+R3220:3221 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3224:3227 TypeRules <> TMuI constr
+R3233:3235 TypeRules <> TPi constr
+R3247:3253 Corelib.Init.Logic <> eq_refl constr
+R3296:3302 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3304:3305 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3303:3303 <> j:12
+R3306:3309 TypeRules <> conv ind
+R3326:3330 TypeRules <> TSort constr
+R3332:3332 _glm_phi_erase_reflect_close_muapp <> j:12 var
+R3312:3316 TypeRules <> subst def
+R3296:3302 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3304:3305 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3303:3303 <> j:13
+R3306:3309 TypeRules <> conv ind
+R3326:3330 TypeRules <> TSort constr
+R3332:3332 _glm_phi_erase_reflect_close_muapp <> j:13 var
+R3312:3316 TypeRules <> subst def
+R3473:3500 _glm_phi_erase_reflect_close_muapp <> subst0_sort_target_erase_glm thm
+R3473:3500 _glm_phi_erase_reflect_close_muapp <> subst0_sort_target_erase_glm thm
+R3516:3558 _glm_phi_erase_reflect_close_codomain <> conv_pisort_codomain_from_erase_reflect_glm thm
+R3516:3558 _glm_phi_erase_reflect_close_codomain <> conv_pisort_codomain_from_erase_reflect_glm thm
+R3663:3692 _glm_phi_erase_reflect_close_codomain <> sub_pisort0_cod_sort_erase_glm thm
+R3700:3701 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3663:3692 _glm_phi_erase_reflect_close_codomain <> sub_pisort0_cod_sort_erase_glm thm
+R3700:3701 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3758:3785 _glm_phi_erase_reflect_close_muapp <> subst0_sort_target_erase_glm thm
+R3758:3785 _glm_phi_erase_reflect_close_muapp <> subst0_sort_target_erase_glm thm
+R3809:3823 _glm_muapp_sort_origin <> ao_chk_sort_glm thm
+R3809:3823 _glm_muapp_sort_origin <> ao_chk_sort_glm thm
+prf 3851:3875 <> ao_chk_mus_sort_erase_glm
+R3900:3903 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3881:3899 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R3924:3929 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3904:3923 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 3937:3938 <> Sf:14
+binder 3940:3940 <> a:15
+binder 3942:3942 <> A:16
+binder 3944:3944 <> B:17
+binder 3946:3946 <> k:18
+binder 3948:3948 <> T:19
+binder 3950:3950 <> U:20
+binder 3952:3952 <> h:21
+R3987:3990 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3959:3963 TypeRules <> check ind
+R3979:3983 TypeRules <> TSort constr
+R3985:3985 _glm_phi_erase_reflect_close_muapp <> k:18 var
+R3969:3971 TypeRules <> TPi constr
+R3975:3975 _glm_phi_erase_reflect_close_muapp <> B:17 var
+R3973:3973 _glm_phi_erase_reflect_close_muapp <> A:16 var
+R3965:3966 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R4019:4026 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3991:3995 TypeRules <> check ind
+R4011:4013 TypeRules <> TPi constr
+R4017:4017 _glm_phi_erase_reflect_close_muapp <> B:17 var
+R4015:4015 _glm_phi_erase_reflect_close_muapp <> A:16 var
+R4001:4004 TypeRules <> TMuS constr
+R4006:4007 _glm_phi_erase_reflect_close_muapp <> Sf:14 var
+R3997:3998 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R4039:4042 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4027:4031 TypeRules <> check ind
+R4038:4038 _glm_phi_erase_reflect_close_muapp <> A:16 var
+R4036:4036 _glm_phi_erase_reflect_close_muapp <> a:15 var
+R4033:4034 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R4065:4068 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4043:4045 TypeRules <> sub ind
+R4064:4064 _glm_phi_erase_reflect_close_muapp <> T:19 var
+R4051:4055 TypeRules <> subst def
+R4061:4061 _glm_phi_erase_reflect_close_muapp <> B:17 var
+R4057:4057 _glm_phi_erase_reflect_close_muapp <> a:15 var
+R4047:4048 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R4077:4080 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4069:4072 TypeRules <> conv ind
+R4076:4076 _glm_phi_erase_reflect_close_muapp <> U:20 var
+R4074:4074 _glm_phi_erase_reflect_close_muapp <> T:19 var
+R4088:4095 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4081:4083 Progress <> whd def
+R4085:4085 _glm_phi_erase_reflect_close_muapp <> U:20 var
+R4087:4087 _glm_phi_erase_reflect_close_muapp <> h:21 var
+R4097:4099 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4096:4096 _glm_phi_erase_reflect_close_muapp <> h:21 var
+R4100:4104 Progress <> HSort constr
+R4179:4197 _glm_muapp_sort_origin <> check_mus_synth_glm thm
+R4199:4200 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R4203:4206 TypeRules <> TMuS constr
+R4213:4215 TypeRules <> TPi constr
+R4228:4234 Corelib.Init.Logic <> eq_refl constr
+R4179:4197 _glm_muapp_sort_origin <> check_mus_synth_glm thm
+R4199:4200 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R4203:4206 TypeRules <> TMuS constr
+R4213:4215 TypeRules <> TPi constr
+R4228:4234 Corelib.Init.Logic <> eq_refl constr
+R4277:4283 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4285:4286 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4284:4284 <> j:22
+R4287:4290 TypeRules <> conv ind
+R4307:4311 TypeRules <> TSort constr
+R4313:4313 _glm_phi_erase_reflect_close_muapp <> j:22 var
+R4293:4297 TypeRules <> subst def
+R4277:4283 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4285:4286 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4284:4284 <> j:23
+R4287:4290 TypeRules <> conv ind
+R4307:4311 TypeRules <> TSort constr
+R4313:4313 _glm_phi_erase_reflect_close_muapp <> j:23 var
+R4293:4297 TypeRules <> subst def
+R4377:4404 _glm_phi_erase_reflect_close_muapp <> subst0_sort_target_erase_glm thm
+R4377:4404 _glm_phi_erase_reflect_close_muapp <> subst0_sort_target_erase_glm thm
+R4420:4462 _glm_phi_erase_reflect_close_codomain <> conv_pisort_codomain_from_erase_reflect_glm thm
+R4420:4462 _glm_phi_erase_reflect_close_codomain <> conv_pisort_codomain_from_erase_reflect_glm thm
+R4494:4523 _glm_phi_erase_reflect_close_codomain <> sub_pisort0_cod_sort_erase_glm thm
+R4531:4532 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R4494:4523 _glm_phi_erase_reflect_close_codomain <> sub_pisort0_cod_sort_erase_glm thm
+R4531:4532 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R4589:4616 _glm_phi_erase_reflect_close_muapp <> subst0_sort_target_erase_glm thm
+R4589:4616 _glm_phi_erase_reflect_close_muapp <> subst0_sort_target_erase_glm thm
+R4640:4654 _glm_muapp_sort_origin <> ao_chk_sort_glm thm
+R4640:4654 _glm_muapp_sort_origin <> ao_chk_sort_glm thm
+prf 4928:4960 <> muapp_sort_from_erase_reflect_glm
+R4985:4988 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4966:4984 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R5009:5014 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4989:5008 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 5022:5022 <> f:24
+binder 5024:5024 <> a:25
+binder 5026:5026 <> T:26
+binder 5028:5028 <> U:27
+binder 5030:5030 <> h:28
+R5058:5061 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5037:5041 TypeRules <> check ind
+R5057:5057 _glm_phi_erase_reflect_close_muapp <> T:26 var
+R5047:5050 TypeRules <> TApp constr
+R5054:5054 _glm_phi_erase_reflect_close_muapp <> a:25 var
+R5052:5052 _glm_phi_erase_reflect_close_muapp <> f:24 var
+R5043:5044 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R5078:5085 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5062:5066 TypeRules <> value ind
+R5069:5072 TypeRules <> TApp constr
+R5076:5076 _glm_phi_erase_reflect_close_muapp <> a:25 var
+R5074:5074 _glm_phi_erase_reflect_close_muapp <> f:24 var
+R5094:5097 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5086:5089 TypeRules <> conv ind
+R5093:5093 _glm_phi_erase_reflect_close_muapp <> U:27 var
+R5091:5091 _glm_phi_erase_reflect_close_muapp <> T:26 var
+R5105:5108 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5098:5100 Progress <> whd def
+R5102:5102 _glm_phi_erase_reflect_close_muapp <> U:27 var
+R5104:5104 _glm_phi_erase_reflect_close_muapp <> h:28 var
+R5110:5112 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5109:5109 _glm_phi_erase_reflect_close_muapp <> h:28 var
+R5113:5117 Progress <> HSort constr
+R5179:5194 Progress <> check_app_origin thm
+R5196:5197 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R5200:5203 TypeRules <> TApp constr
+R5217:5223 Corelib.Init.Logic <> eq_refl constr
+R5229:5235 Corelib.Init.Logic <> eq_refl constr
+R5179:5194 Progress <> check_app_origin thm
+R5196:5197 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R5200:5203 TypeRules <> TApp constr
+R5217:5223 Corelib.Init.Logic <> eq_refl constr
+R5229:5235 Corelib.Init.Logic <> eq_refl constr
+R5273:5297 _glm_muapp_sort_origin <> app_origin_sort_split_glm thm
+R5273:5297 _glm_muapp_sort_origin <> app_origin_sort_split_glm thm
+R5542:5561 _glm_muapp_sort_close <> value_app_mu_inv_glm thm
+R5542:5561 _glm_muapp_sort_close <> value_app_mu_inv_glm thm
+R5634:5658 _glm_phi_erase_reflect_close_muapp <> ao_chk_mui_sort_erase_glm thm
+R5634:5658 _glm_phi_erase_reflect_close_muapp <> ao_chk_mui_sort_erase_glm thm
+R5712:5736 _glm_phi_erase_reflect_close_muapp <> ao_chk_mus_sort_erase_glm thm
+R5712:5736 _glm_phi_erase_reflect_close_muapp <> ao_chk_mus_sort_erase_glm thm
+R5776:5800 _glm_phi_erase_reflect_close_muapp <> ao_chk_mui_sort_erase_glm thm
+R5821:5845 _glm_phi_erase_reflect_close_muapp <> ao_chk_mus_sort_erase_glm thm
+R5866:5898 _glm_phi_erase_reflect_close_muapp <> muapp_sort_from_erase_reflect_glm thm
+R5919:5961 _glm_phi_erase_reflect_close_codomain <> conv_pisort_codomain_from_erase_reflect_glm thm
+R5982:6010 _glm_phi_erase_reflect_close_reflect <> stable_sort_erase_reflect_glm thm

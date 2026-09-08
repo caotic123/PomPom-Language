@@ -1,0 +1,98 @@
+DIGEST 8fe35a5a677a6f5025f55cf727419611
+F_glm_cjoin_subst_main
+R121:128 Progress <> <> lib
+R130:140 _tmp_epstep <> <> lib
+R142:160 _work_mixed_closure <> <> lib
+R162:172 _work_cjoin <> <> lib
+R176:197 _glm_cjoin_subst_pstep <> <> lib
+R199:221 _glm_cjoin_subst_epstep <> <> lib
+R223:244 _glm_cjoin_subst_cstep <> <> lib
+R274:277 Stdlib.Lists.List <> <> lib
+R279:283 Stdlib.Arith.Arith <> <> lib
+R285:287 Stdlib.micromega.Lia <> <> lib
+R289:296 Stdlib.Arith.PeanoNat <> <> lib
+R306:318 Stdlib.Lists.List ListNotations <> mod
+R320:328 TypeRules <> <> mod
+prf 340:354 <> cjoin_subst_glm
+binder 365:365 <> t:1
+binder 367:367 <> u:2
+R379:382 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R370:374 _work_cjoin <> cjoin def
+R376:376 _glm_cjoin_subst_main <> t:1 var
+R378:378 _glm_cjoin_subst_main <> u:2 var
+binder 390:390 <> a:3
+binder 392:392 <> k:4
+R399:403 _work_cjoin <> cjoin def
+R406:410 TypeRules <> subst def
+R416:416 _glm_cjoin_subst_main <> t:1 var
+R414:414 _glm_cjoin_subst_main <> k:4 var
+R412:412 _glm_cjoin_subst_main <> a:3 var
+R420:424 TypeRules <> subst def
+R430:430 _glm_cjoin_subst_main <> u:2 var
+R428:428 _glm_cjoin_subst_main <> k:4 var
+R426:426 _glm_cjoin_subst_main <> a:3 var
+R483:487 TypeRules <> subst def
+R483:487 TypeRules <> subst def
+R514:537 _glm_cjoin_subst_cstep <> rtc_cstep_subst_same_glm thm
+R514:537 _glm_cjoin_subst_cstep <> rtc_cstep_subst_same_glm thm
+R561:584 _glm_cjoin_subst_cstep <> rtc_cstep_subst_same_glm thm
+R561:584 _glm_cjoin_subst_cstep <> rtc_cstep_subst_same_glm thm
+prf 612:631 <> cjoin_subst_sort_glm
+binder 642:642 <> B:5
+binder 644:644 <> j:6
+R664:667 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R647:651 _work_cjoin <> cjoin def
+R653:653 _glm_cjoin_subst_main <> B:5 var
+R656:660 TypeRules <> TSort constr
+R662:662 _glm_cjoin_subst_main <> j:6 var
+binder 675:675 <> a:7
+binder 677:677 <> k:8
+R684:688 _work_cjoin <> cjoin def
+R691:695 TypeRules <> subst def
+R701:701 _glm_cjoin_subst_main <> B:5 var
+R699:699 _glm_cjoin_subst_main <> k:8 var
+R697:697 _glm_cjoin_subst_main <> a:7 var
+R705:709 TypeRules <> TSort constr
+R711:711 _glm_cjoin_subst_main <> j:6 var
+R756:770 _glm_cjoin_subst_main <> cjoin_subst_glm thm
+R775:779 TypeRules <> TSort constr
+R756:770 _glm_cjoin_subst_main <> cjoin_subst_glm thm
+R775:779 TypeRules <> TSort constr
+R805:809 TypeRules <> subst def
+R853:867 _glm_cjoin_subst_main <> cjoin_subst_glm thm
+R888:907 _glm_cjoin_subst_main <> cjoin_subst_sort_glm thm
+binder 944:944 <> t:9
+binder 946:946 <> u:10
+R958:961 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R949:953 _work_cjoin <> cjoin def
+R955:955 _glm_cjoin_subst_main <> t:9 var
+R957:957 _glm_cjoin_subst_main <> u:10 var
+binder 969:969 <> a:11
+binder 971:971 <> k:12
+R978:982 _work_cjoin <> cjoin def
+R985:989 TypeRules <> subst def
+R995:995 _glm_cjoin_subst_main <> t:9 var
+R993:993 _glm_cjoin_subst_main <> k:12 var
+R991:991 _glm_cjoin_subst_main <> a:11 var
+R999:1003 TypeRules <> subst def
+R1009:1009 _glm_cjoin_subst_main <> u:10 var
+R1007:1007 _glm_cjoin_subst_main <> k:12 var
+R1005:1005 _glm_cjoin_subst_main <> a:11 var
+R917:931 _glm_cjoin_subst_main <> cjoin_subst_glm thm
+binder 1051:1051 <> B:13
+binder 1053:1053 <> j:14
+R1073:1076 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1056:1060 _work_cjoin <> cjoin def
+R1062:1062 _glm_cjoin_subst_main <> B:13 var
+R1065:1069 TypeRules <> TSort constr
+R1071:1071 _glm_cjoin_subst_main <> j:14 var
+binder 1084:1084 <> a:15
+binder 1086:1086 <> k:16
+R1093:1097 _work_cjoin <> cjoin def
+R1100:1104 TypeRules <> subst def
+R1110:1110 _glm_cjoin_subst_main <> B:13 var
+R1108:1108 _glm_cjoin_subst_main <> k:16 var
+R1106:1106 _glm_cjoin_subst_main <> a:15 var
+R1114:1118 TypeRules <> TSort constr
+R1120:1120 _glm_cjoin_subst_main <> j:14 var
+R1019:1038 _glm_cjoin_subst_main <> cjoin_subst_sort_glm thm

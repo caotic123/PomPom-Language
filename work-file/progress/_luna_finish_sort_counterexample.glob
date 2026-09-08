@@ -1,0 +1,71 @@
+DIGEST e932d058798db6f4124da61b4e0e4248
+F_luna_finish_sort_counterexample
+R15:22 Progress <> <> lib
+R24:34 _tmp_epstep <> <> lib
+R36:46 _work_cjoin <> <> lib
+R48:69 _work_cstep_invariants <> <> lib
+R73:91 _work_mixed_closure <> <> lib
+R93:121 _parent_phi_erase_sort_factor <> <> lib
+R123:151 _parent_phi_erase_sort_direct <> <> lib
+R155:181 _parent_finish_branch_sound <> <> lib
+R183:207 _luna_finish_branch_rigid <> <> lib
+R211:235 _luna_finish_branch_erase <> <> lib
+R237:257 _luna_finish_eta_sort <> <> lib
+R287:290 Stdlib.Lists.List <> <> lib
+R300:312 Stdlib.Lists.List ListNotations <> mod
+R314:322 TypeRules <> <> mod
+prf 332:348 <> bad_not_conv_sort
+binder 359:359 <> j:1
+R362:363 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R364:367 TypeRules <> conv ind
+R376:380 TypeRules <> TSort constr
+R382:382 _luna_finish_sort_counterexample <> j:1 var
+R369:373 _luna_finish_eta_sort <> bad_t def
+R422:438 _parent_finish_branch_sound <> branch_erase_conv thm
+R440:444 _luna_finish_eta_sort <> bad_t def
+R447:451 TypeRules <> TSort constr
+R422:438 _parent_finish_branch_sound <> branch_erase_conv thm
+R440:444 _luna_finish_eta_sort <> bad_t def
+R447:451 TypeRules <> TSort constr
+R480:490 _work_cjoin <> fconv_cjoin thm
+R480:490 _work_cjoin <> fconv_cjoin thm
+R533:555 _luna_finish_branch_rigid <> branch_bad_rtc_cstep_id thm
+R533:555 _luna_finish_branch_rigid <> branch_bad_rtc_cstep_id thm
+R589:600 _luna_finish_branch_erase <> branch_erase def
+R625:641 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R625:641 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R670:683 _luna_finish_branch_rigid <> branch_bad_def thm
+R670:683 _luna_finish_branch_rigid <> branch_bad_def thm
+R670:683 _luna_finish_branch_rigid <> branch_bad_def thm
+prf 725:744 <> bad_erased_sort_path
+R748:750 Progress <> rtc ind
+R777:781 TypeRules <> TSort constr
+R759:767 Progress <> phi_erase def
+R769:773 _luna_finish_eta_sort <> bad_t def
+R752:756 _work_mixed_closure <> cstep ind
+R803:810 Progress <> rtc_step constr
+R803:810 Progress <> rtc_step constr
+R823:834 _work_mixed_closure <> epstep_cstep thm
+R823:834 _work_mixed_closure <> epstep_cstep thm
+R843:848 _luna_finish_eta_sort <> bad_ep thm
+R843:848 _luna_finish_eta_sort <> bad_ep thm
+R862:869 Progress <> rtc_step constr
+R862:869 Progress <> rtc_step constr
+R884:894 _work_mixed_closure <> pstep_cstep thm
+R884:894 _work_mixed_closure <> pstep_cstep thm
+R903:912 _luna_finish_eta_sort <> bad_u_sort thm
+R903:912 _luna_finish_eta_sort <> bad_u_sort thm
+R927:934 Progress <> rtc_refl constr
+R927:934 Progress <> rtc_refl constr
+prf 951:989 <> phi_erase_sort_endpoint_not_reflectable
+R997:998 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R999:1036 _parent_phi_erase_sort_direct <> phi_erase_sort_endpoint_reflect_parent def
+R1073:1077 _luna_finish_eta_sort <> bad_t def
+R1081:1100 _luna_finish_sort_counterexample <> bad_erased_sort_path thm
+R1073:1077 _luna_finish_eta_sort <> bad_t def
+R1081:1100 _luna_finish_sort_counterexample <> bad_erased_sort_path thm
+R1121:1137 _luna_finish_sort_counterexample <> bad_not_conv_sort thm
+R1121:1137 _luna_finish_sort_counterexample <> bad_not_conv_sort thm
+R1172:1188 _luna_finish_sort_counterexample <> bad_not_conv_sort thm
+R1209:1228 _luna_finish_sort_counterexample <> bad_erased_sort_path thm
+R1249:1287 _luna_finish_sort_counterexample <> phi_erase_sort_endpoint_not_reflectable thm

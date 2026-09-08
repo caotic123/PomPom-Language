@@ -1,0 +1,121 @@
+DIGEST 448c8bee65b07af456887d6e61408099
+F_parent_instance_observations
+R15:22 Progress <> <> lib
+R24:42 SignatureConversion <> <> lib
+R44:61 SignatureInstances <> <> lib
+R63:86 _parent_instance_pruning <> <> lib
+R90:114 _luna_instance_membership <> <> lib
+R144:147 Stdlib.Lists.List <> <> lib
+R157:169 Stdlib.Lists.List ListNotations <> mod
+R171:179 TypeRules <> <> mod
+R181:200 Progress _work_cjoin <> mod
+R202:232 Progress _work_cstep_invariants <> mod
+R235:261 Progress _work_conv_whd_pos <> mod
+R263:282 Progress _tmp_epstep <> mod
+R284:311 Progress _work_mixed_closure <> mod
+prf 321:336 <> spine_mem_joined
+binder 347:347 <> c:1
+binder 349:349 <> L:2
+R365:370 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R352:360 TypeRules <> spine_mem ind
+R364:364 _parent_instance_observations <> L:2 var
+R362:362 _parent_instance_observations <> c:1 var
+R371:380 _luna_instance_membership <> joined_mem ind
+R383:391 Progress <> phi_erase def
+R393:393 _parent_instance_observations <> c:1 var
+R397:405 Progress <> phi_erase def
+R407:407 _parent_instance_observations <> L:2 var
+R475:483 Progress <> phi_erase def
+R492:500 Progress <> phi_erase def
+R510:518 Progress <> phi_erase def
+R458:464 _luna_instance_membership <> jm_here constr
+R535:548 Progress _work_cjoin conv_phi_cjoin thm
+R555:566 Progress <> conv_of_eval thm
+R475:483 Progress <> phi_erase def
+R492:500 Progress <> phi_erase def
+R510:518 Progress <> phi_erase def
+R458:464 _luna_instance_membership <> jm_here constr
+R535:548 Progress _work_cjoin conv_phi_cjoin thm
+R555:566 Progress <> conv_of_eval thm
+R589:602 Progress _work_cjoin conv_phi_cjoin thm
+R589:602 Progress _work_cjoin conv_phi_cjoin thm
+R644:652 Progress <> phi_erase def
+R661:669 Progress <> phi_erase def
+R679:687 Progress <> phi_erase def
+R626:633 _luna_instance_membership <> jm_there constr
+R704:717 Progress _work_cjoin conv_phi_cjoin thm
+R724:735 Progress <> conv_of_eval thm
+R644:652 Progress <> phi_erase def
+R661:669 Progress <> phi_erase def
+R679:687 Progress <> phi_erase def
+R626:633 _luna_instance_membership <> jm_there constr
+R704:717 Progress _work_cjoin conv_phi_cjoin thm
+R724:735 Progress <> conv_of_eval thm
+prf 777:796 <> instance_erased_join
+binder 807:807 <> t:3
+R811:815 Progress _work_cjoin cjoin def
+R818:826 Progress <> phi_erase def
+R829:846 SignatureInstances <> instance_translate def
+R848:848 _parent_instance_observations <> t:3 var
+R853:861 Progress <> phi_erase def
+R863:863 _parent_instance_observations <> t:3 var
+R893:901 Progress <> phi_erase def
+R893:901 Progress <> phi_erase def
+R921:927 Progress <> rtc_one thm
+R930:935 Progress _work_mixed_closure cs_eta constr
+R938:944 Progress <> rtc_one thm
+R947:975 SignatureInstances <> instance_translate_erased_eta thm
+R983:990 Progress <> rtc_refl constr
+R921:927 Progress <> rtc_one thm
+R930:935 Progress _work_mixed_closure cs_eta constr
+R938:944 Progress <> rtc_one thm
+R947:975 SignatureInstances <> instance_translate_erased_eta thm
+R983:990 Progress <> rtc_refl constr
+prf 1006:1024 <> joined_tag_position
+binder 1035:1035 <> c:4
+binder 1037:1037 <> n:5
+binder 1039:1040 <> bs:6
+binder 1042:1042 <> d:7
+R1058:1061 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1046:1053 TypeRules <> enum_pos ind
+R1057:1057 _parent_instance_observations <> n:5 var
+R1055:1055 _parent_instance_observations <> c:4 var
+R1105:1109 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1062:1067 Corelib.Lists.ListDef <> Forall ind
+R1103:1104 _parent_instance_observations <> bs:6 var
+binder 1074:1074 <> d:8
+R1079:1085 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1087:1088 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1086:1086 <> m:9
+R1089:1096 TypeRules <> enum_pos ind
+R1100:1100 _parent_instance_observations <> m:9 var
+R1098:1098 _parent_instance_observations <> d:8 var
+R1117:1120 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1110:1111 Stdlib.Lists.List <> In def
+R1115:1116 _parent_instance_observations <> bs:6 var
+R1113:1113 _parent_instance_observations <> d:7 var
+R1154:1157 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1121:1125 Progress _work_cjoin cjoin def
+R1128:1136 Progress <> phi_erase def
+R1138:1138 _parent_instance_observations <> c:4 var
+R1142:1150 Progress <> phi_erase def
+R1152:1152 _parent_instance_observations <> d:7 var
+R1158:1165 TypeRules <> enum_pos ind
+R1169:1169 _parent_instance_observations <> n:5 var
+R1167:1167 _parent_instance_observations <> d:7 var
+R1222:1234 Stdlib.Lists.List <> Forall_forall thm
+R1222:1234 Stdlib.Lists.List <> Forall_forall thm
+R1222:1234 Stdlib.Lists.List <> Forall_forall thm
+R1290:1307 Progress <> phi_erase_enum_pos thm
+R1290:1307 Progress <> phi_erase_enum_pos thm
+R1339:1356 Progress <> phi_erase_enum_pos thm
+R1339:1356 Progress <> phi_erase_enum_pos thm
+R1422:1442 Progress _work_cstep_invariants rtc_cstep_enum_pos_id thm
+R1422:1442 Progress _work_cstep_invariants rtc_cstep_enum_pos_id thm
+R1481:1501 Progress _work_cstep_invariants rtc_cstep_enum_pos_id thm
+R1481:1501 Progress _work_cstep_invariants rtc_cstep_enum_pos_id thm
+R1552:1554 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1552:1554 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1570:1588 Progress <> enum_pos_functional thm
+R1570:1588 Progress <> enum_pos_functional thm
+R1679:1698 _parent_instance_observations <> instance_erased_join thm

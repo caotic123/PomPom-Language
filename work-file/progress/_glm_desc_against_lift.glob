@@ -1,0 +1,105 @@
+DIGEST 0b1a26527de54690e4ae2afd11ea67d5
+F_glm_desc_against_lift
+R15:23 TypeRules <> <> lib
+R25:32 Progress <> <> lib
+def 289:312 <> eval_lift_compatible_glm
+R340:342 Corelib.Init.Datatypes <> nat ind
+binder 334:334 <> d:1
+binder 336:336 <> k:2
+R352:355 TypeRules <> term ind
+binder 346:346 <> t:3
+binder 348:348 <> u:4
+R371:374 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R363:366 TypeRules <> eval ind
+R370:370 _glm_desc_against_lift <> u:4 var
+R368:368 _glm_desc_against_lift <> t:3 var
+R375:378 TypeRules <> eval ind
+R394:397 TypeRules <> lift def
+R403:403 _glm_desc_against_lift <> u:4 var
+R401:401 _glm_desc_against_lift <> k:2 var
+R399:399 _glm_desc_against_lift <> d:1 var
+R381:384 TypeRules <> lift def
+R390:390 _glm_desc_against_lift <> t:3 var
+R388:388 _glm_desc_against_lift <> k:2 var
+R386:386 _glm_desc_against_lift <> d:1 var
+sec 416:433 <> DescAgainstLiftGlm
+var 448:463 DescAgainstLiftGlm eval_lift_compat
+R467:490 _glm_desc_against_lift <> eval_lift_compatible_glm def
+prf 500:520 <> desc_against_lift_glm
+binder 533:533 <> D:7
+R550:553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R536:547 TypeRules <> desc_against ind
+R549:549 _glm_desc_against_lift <> D:7 var
+binder 561:561 <> d:8
+binder 563:563 <> k:9
+R566:577 TypeRules <> desc_against ind
+R580:583 TypeRules <> lift def
+R589:589 _glm_desc_against_lift <> D:7 var
+R587:587 _glm_desc_against_lift <> k:9 var
+R585:585 _glm_desc_against_lift <> d:8 var
+R833:845 TypeRules <> ag_choice_nil constr
+R848:851 TypeRules <> lift def
+R862:865 TypeRules <> lift def
+R875:878 TypeRules <> lift def
+R833:845 TypeRules <> ag_choice_nil constr
+R848:851 TypeRules <> lift def
+R862:865 TypeRules <> lift def
+R875:878 TypeRules <> lift def
+R902:917 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R902:917 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R947:962 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R947:962 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R1016:1027 TypeRules <> ag_prod_left constr
+R1030:1033 TypeRules <> lift def
+R1044:1047 TypeRules <> lift def
+R1057:1060 TypeRules <> lift def
+R1016:1027 TypeRules <> ag_prod_left constr
+R1030:1033 TypeRules <> lift def
+R1044:1047 TypeRules <> lift def
+R1057:1060 TypeRules <> lift def
+R1084:1099 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R1084:1099 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R1181:1193 TypeRules <> ag_prod_right constr
+R1196:1199 TypeRules <> lift def
+R1210:1213 TypeRules <> lift def
+R1223:1226 TypeRules <> lift def
+R1181:1193 TypeRules <> ag_prod_right constr
+R1196:1199 TypeRules <> lift def
+R1210:1213 TypeRules <> lift def
+R1223:1226 TypeRules <> lift def
+R1250:1265 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R1250:1265 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R1348:1361 TypeRules <> ag_choice_cons constr
+R1364:1367 TypeRules <> lift def
+R1378:1381 TypeRules <> lift def
+R1391:1394 TypeRules <> lift def
+R1431:1434 TypeRules <> lift def
+R1445:1448 TypeRules <> lift def
+R1348:1361 TypeRules <> ag_choice_cons constr
+R1364:1367 TypeRules <> lift def
+R1378:1381 TypeRules <> lift def
+R1391:1394 TypeRules <> lift def
+R1431:1434 TypeRules <> lift def
+R1445:1448 TypeRules <> lift def
+R1473:1488 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R1473:1488 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R1517:1532 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R1517:1532 _glm_desc_against_lift <> DescAgainstLiftGlm.eval_lift_compat var
+R1595:1612 Progress <> lift_lift_one_zero thm
+R1595:1612 Progress <> lift_lift_one_zero thm
+R1595:1612 Progress <> lift_lift_one_zero thm
+R1652:1669 _glm_desc_against_lift DescAgainstLiftGlm <> sec
+R1729:1734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1705:1728 _glm_desc_against_lift <> eval_lift_compatible_glm def
+binder 1742:1742 <> D:10
+R1759:1762 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1745:1756 TypeRules <> desc_against ind
+R1758:1758 _glm_desc_against_lift <> D:10 var
+binder 1770:1770 <> d:11
+binder 1772:1772 <> k:12
+R1775:1786 TypeRules <> desc_against ind
+R1789:1792 TypeRules <> lift def
+R1798:1798 _glm_desc_against_lift <> D:10 var
+R1796:1796 _glm_desc_against_lift <> k:12 var
+R1794:1794 _glm_desc_against_lift <> d:11 var
+R1679:1699 _glm_desc_against_lift <> desc_against_lift_glm thm

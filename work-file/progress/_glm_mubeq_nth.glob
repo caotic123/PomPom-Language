@@ -1,0 +1,99 @@
+DIGEST 03b783bf66e91c04701b03ac3a83189f
+F_glm_mubeq_nth
+R15:24 _luna_mueq <> <> lib
+R26:41 _luna_mueq_equiv <> <> lib
+R71:74 Stdlib.Lists.List <> <> lib
+prf 84:102 <> mubeq_nth_error_fwd
+binder 115:116 <> bs:1
+binder 118:120 <> bs':2
+R135:142 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R123:127 _luna_mueq <> mubeq ind
+R129:130 _glm_mubeq_nth <> bs:1 var
+R132:134 _glm_mubeq_nth <> bs':2 var
+binder 150:150 <> k:3
+binder 152:152 <> x:4
+binder 154:154 <> y:5
+R185:192 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R171:173 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R157:165 Stdlib.Lists.List <> nth_error def
+R170:170 _glm_mubeq_nth <> k:3 var
+R167:168 _glm_mubeq_nth <> bs:1 var
+R174:177 Corelib.Init.Datatypes <> Some constr
+R179:179 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R181:182 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R184:184 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R180:180 _glm_mubeq_nth <> x:4 var
+R183:183 _glm_mubeq_nth <> y:5 var
+R193:199 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R205:206 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 200:201 <> x':6
+binder 203:204 <> y':7
+R238:241 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R222:224 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R207:215 Stdlib.Lists.List <> nth_error def
+R221:221 _glm_mubeq_nth <> k:3 var
+R217:219 _glm_mubeq_nth <> bs':2 var
+R225:228 Corelib.Init.Datatypes <> Some constr
+R230:230 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R233:234 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R237:237 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R231:232 _glm_mubeq_nth <> x':6 var
+R235:236 _glm_mubeq_nth <> y':7 var
+R251:254 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R242:245 _luna_mueq <> mueq ind
+R247:247 _glm_mubeq_nth <> x:4 var
+R249:250 _glm_mubeq_nth <> x':6 var
+R255:258 _luna_mueq <> mueq ind
+R260:260 _glm_mubeq_nth <> y:5 var
+R262:263 _glm_mubeq_nth <> y':7 var
+prf 618:636 <> mubeq_nth_error_bwd
+binder 649:650 <> bs:8
+binder 652:654 <> bs':9
+R669:676 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R657:661 _luna_mueq <> mubeq ind
+R663:664 _glm_mubeq_nth <> bs:8 var
+R666:668 _glm_mubeq_nth <> bs':9 var
+binder 684:684 <> k:10
+binder 686:687 <> x':11
+binder 689:690 <> y':12
+R724:731 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R708:710 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R693:701 Stdlib.Lists.List <> nth_error def
+R707:707 _glm_mubeq_nth <> k:10 var
+R703:705 _glm_mubeq_nth <> bs':9 var
+R711:714 Corelib.Init.Datatypes <> Some constr
+R716:716 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R719:720 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R723:723 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R717:718 _glm_mubeq_nth <> x':11 var
+R721:722 _glm_mubeq_nth <> y':12 var
+R732:738 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R742:743 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 739:739 <> x:13
+binder 741:741 <> y:14
+R772:775 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R758:760 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R744:752 Stdlib.Lists.List <> nth_error def
+R757:757 _glm_mubeq_nth <> k:10 var
+R754:755 _glm_mubeq_nth <> bs:8 var
+R761:764 Corelib.Init.Datatypes <> Some constr
+R766:766 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R768:769 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R771:771 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R767:767 _glm_mubeq_nth <> x:13 var
+R770:770 _glm_mubeq_nth <> y:14 var
+R785:788 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R776:779 _luna_mueq <> mueq ind
+R781:781 _glm_mubeq_nth <> x:13 var
+R783:784 _glm_mubeq_nth <> x':11 var
+R789:792 _luna_mueq <> mueq ind
+R794:794 _glm_mubeq_nth <> y:14 var
+R796:797 _glm_mubeq_nth <> y':12 var
+R834:842 _luna_mueq_equiv <> mubeq_sym thm
+R834:842 _luna_mueq_equiv <> mubeq_sym thm
+R883:901 _glm_mubeq_nth <> mubeq_nth_error_fwd thm
+R883:901 _glm_mubeq_nth <> mubeq_nth_error_fwd thm
+R996:1003 _luna_mueq_equiv <> mueq_sym thm
+R996:1003 _luna_mueq_equiv <> mueq_sym thm
+R996:1003 _luna_mueq_equiv <> mueq_sym thm
+R996:1003 _luna_mueq_equiv <> mueq_sym thm

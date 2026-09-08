@@ -1,0 +1,188 @@
+DIGEST 4ac91754102de452b5389b8af727ad23
+F_luna_instance_observer
+R15:22 Progress <> <> lib
+R24:41 SignatureInstances <> <> lib
+R43:61 SignatureConversion <> <> lib
+R63:83 _parent_instance_join <> <> lib
+R87:110 _parent_instance_pruning <> <> lib
+R112:131 _luna_instance_shape <> <> lib
+R141:149 TypeRules <> <> mod
+R151:170 Progress _tmp_epstep <> mod
+R172:191 Progress _work_cjoin <> mod
+sec 203:210 <> Observer
+var 222:223 Observer B0
+R227:230 TypeRules <> term ind
+var 242:242 Observer O
+R250:253 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R246:249 TypeRules <> term ind
+var 269:273 Observer Hcore
+binder 284:284 <> L:5
+binder 286:287 <> L':6
+R324:327 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R290:294 Progress _work_cjoin cjoin def
+R297:305 Progress <> phi_erase def
+R307:307 _luna_instance_observer <> L:5 var
+R311:319 Progress <> phi_erase def
+R321:322 _luna_instance_observer <> L':6 var
+R331:334 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R328:328 _luna_instance_observer <> Observer.O var
+R330:330 _luna_instance_observer <> L:5 var
+R335:335 _luna_instance_observer <> Observer.O var
+R337:338 _luna_instance_observer <> L':6 var
+var 350:355 Observer Hprune
+binder 366:366 <> B:9
+binder 368:368 <> L:10
+binder 370:371 <> L':11
+R408:413 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R374:378 Progress _work_cjoin cjoin def
+R381:389 Progress <> phi_erase def
+R391:392 _luna_instance_observer <> Observer.B0 var
+R396:404 Progress <> phi_erase def
+R406:406 _luna_instance_observer <> B:9 var
+R433:436 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R414:425 _parent_instance_pruning <> prune_labels ind
+R427:427 _luna_instance_observer <> B:9 var
+R429:429 _luna_instance_observer <> L:10 var
+R431:432 _luna_instance_observer <> L':11 var
+R440:443 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R437:437 _luna_instance_observer <> Observer.O var
+R439:439 _luna_instance_observer <> L:10 var
+R444:444 _luna_instance_observer <> Observer.O var
+R446:447 _luna_instance_observer <> L':11 var
+def 462:481 <> instance_observation
+R488:491 TypeRules <> term ind
+binder 484:484 <> t:14
+R506:512 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R518:519 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 513:513 <> B:15
+binder 515:515 <> L:16
+binder 517:517 <> i:17
+R548:555 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R521:523 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R520:520 _luna_instance_observer <> t:14 var
+R524:541 SignatureInstances <> signature_instance def
+R543:543 _luna_instance_observer <> B:15 var
+R545:545 _luna_instance_observer <> L:16 var
+R547:547 _luna_instance_observer <> i:17 var
+R590:593 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R556:560 Progress _work_cjoin cjoin def
+R563:571 Progress <> phi_erase def
+R573:574 _luna_instance_observer <> Observer.B0 var
+R578:586 Progress <> phi_erase def
+R588:588 _luna_instance_observer <> B:15 var
+R594:594 _luna_instance_observer <> Observer.O var
+R596:596 _luna_instance_observer <> L:16 var
+prf 606:622 <> fstep_observation
+binder 633:633 <> t:18
+binder 635:635 <> u:19
+R649:652 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R640:644 Progress <> fstep ind
+R646:646 _luna_instance_observer <> t:18 var
+R648:648 _luna_instance_observer <> u:19 var
+R675:678 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R653:672 _luna_instance_observer <> instance_observation def
+R674:674 _luna_instance_observer <> t:18 var
+R679:698 _luna_instance_observer <> instance_observation def
+R700:700 _luna_instance_observer <> u:19 var
+R766:783 _luna_instance_shape <> fstep_instance_inv thm
+R766:783 _luna_instance_shape <> fstep_instance_inv thm
+R915:925 Progress _work_cjoin cjoin_trans thm
+R944:957 Progress _work_cjoin conv_phi_cjoin thm
+R966:975 Progress <> fstep_conv thm
+R915:925 Progress _work_cjoin cjoin_trans thm
+R944:957 Progress _work_cjoin conv_phi_cjoin thm
+R966:975 Progress <> fstep_conv thm
+R1078:1082 _luna_instance_observer <> Observer.Hcore var
+R1123:1136 Progress _work_cjoin conv_phi_cjoin thm
+R1145:1154 Progress <> fstep_conv thm
+R1078:1082 _luna_instance_observer <> Observer.Hcore var
+R1123:1136 Progress _work_cjoin conv_phi_cjoin thm
+R1145:1154 Progress <> fstep_conv thm
+prf 1235:1251 <> prune_observation
+binder 1262:1262 <> t:20
+binder 1264:1264 <> u:21
+R1283:1286 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1269:1278 _parent_instance_pruning <> prune_term ind
+R1280:1280 _luna_instance_observer <> t:20 var
+R1282:1282 _luna_instance_observer <> u:21 var
+R1309:1312 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1287:1306 _luna_instance_observer <> instance_observation def
+R1308:1308 _luna_instance_observer <> t:20 var
+R1313:1332 _luna_instance_observer <> instance_observation def
+R1334:1334 _luna_instance_observer <> u:21 var
+R1399:1416 _luna_instance_shape <> prune_instance_inv thm
+R1399:1416 _luna_instance_shape <> prune_instance_inv thm
+R1535:1545 _parent_instance_pruning <> prune_erase thm
+R1535:1545 _parent_instance_pruning <> prune_erase thm
+R1535:1545 _parent_instance_pruning <> prune_erase thm
+R1585:1590 _luna_instance_observer <> Observer.Hprune var
+R1585:1590 _luna_instance_observer <> Observer.Hprune var
+prf 1651:1675 <> instance_path_observation
+binder 1686:1686 <> t:22
+binder 1688:1688 <> u:23
+R1716:1719 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1693:1695 Progress <> rtc ind
+R1715:1715 _luna_instance_observer <> u:23 var
+R1713:1713 _luna_instance_observer <> t:22 var
+R1697:1711 _parent_instance_join <> instance_reduce def
+R1742:1745 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1720:1739 _luna_instance_observer <> instance_observation def
+R1741:1741 _luna_instance_observer <> t:22 var
+R1746:1765 _luna_instance_observer <> instance_observation def
+R1767:1767 _luna_instance_observer <> u:23 var
+binder 1799:1799 <> t:24
+binder 1801:1801 <> u:25
+R1817:1826 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1804:1806 Progress <> rtc ind
+R1816:1816 _luna_instance_observer <> u:25 var
+R1814:1814 _luna_instance_observer <> t:24 var
+R1808:1812 Progress <> fstep ind
+R1849:1852 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1827:1846 _luna_instance_observer <> instance_observation def
+R1848:1848 _luna_instance_observer <> t:24 var
+R1853:1872 _luna_instance_observer <> instance_observation def
+R1874:1874 _luna_instance_observer <> u:25 var
+binder 1799:1799 <> t:26
+binder 1801:1801 <> u:27
+R1817:1826 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1804:1806 Progress <> rtc ind
+R1816:1816 _luna_instance_observer <> u:27 var
+R1814:1814 _luna_instance_observer <> t:26 var
+R1808:1812 Progress <> fstep ind
+R1849:1852 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1827:1846 _luna_instance_observer <> instance_observation def
+R1848:1848 _luna_instance_observer <> t:26 var
+R1853:1872 _luna_instance_observer <> instance_observation def
+R1874:1874 _luna_instance_observer <> u:27 var
+R1985:2001 _luna_instance_observer <> fstep_observation thm
+R1985:2001 _luna_instance_observer <> fstep_observation thm
+binder 2040:2040 <> t:28
+binder 2042:2042 <> u:29
+R2063:2072 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2045:2047 Progress <> rtc ind
+R2062:2062 _luna_instance_observer <> u:29 var
+R2060:2060 _luna_instance_observer <> t:28 var
+R2049:2058 _parent_instance_pruning <> prune_term ind
+R2095:2098 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2073:2092 _luna_instance_observer <> instance_observation def
+R2094:2094 _luna_instance_observer <> t:28 var
+R2099:2118 _luna_instance_observer <> instance_observation def
+R2120:2120 _luna_instance_observer <> u:29 var
+binder 2040:2040 <> t:30
+binder 2042:2042 <> u:31
+R2063:2072 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2045:2047 Progress <> rtc ind
+R2062:2062 _luna_instance_observer <> u:31 var
+R2060:2060 _luna_instance_observer <> t:30 var
+R2049:2058 _parent_instance_pruning <> prune_term ind
+R2095:2098 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2073:2092 _luna_instance_observer <> instance_observation def
+R2094:2094 _luna_instance_observer <> t:30 var
+R2099:2118 _luna_instance_observer <> instance_observation def
+R2120:2120 _luna_instance_observer <> u:31 var
+R2231:2247 _luna_instance_observer <> prune_observation thm
+R2231:2247 _luna_instance_observer <> prune_observation thm
+R2471:2478 _luna_instance_observer Observer <> sec
+R2500:2516 _luna_instance_observer <> fstep_observation thm
+R2537:2553 _luna_instance_observer <> prune_observation thm
+R2574:2598 _luna_instance_observer <> instance_path_observation thm

@@ -1,0 +1,22 @@
+DIGEST 75503a69c34a33583f7a0202a4c8fa5b
+FNormalization
+R87:99 TypeRulesCore <> <> lib
+R129:132 Stdlib.Lists.List <> <> lib
+R142:154 Stdlib.Lists.List ListNotations <> mod
+ax 169:181 <> normalization
+binder 192:192 <> t:1
+binder 194:194 <> A:2
+R213:216 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R201:205 TypeRulesCore <> check ind
+R212:212 Normalization <> A:2 var
+R210:210 Normalization <> t:1 var
+R207:208 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R217:223 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R225:226 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 224:224 <> v:3
+R235:238 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R227:230 TypeRulesCore <> eval ind
+R234:234 Normalization <> v:3 var
+R232:232 Normalization <> t:1 var
+R239:243 TypeRulesCore <> value ind
+R245:245 Normalization <> v:3 var

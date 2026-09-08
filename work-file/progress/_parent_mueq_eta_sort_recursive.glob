@@ -1,0 +1,326 @@
+DIGEST 13482600daac62143be03cde3a019aa9
+F_parent_mueq_eta_sort_recursive
+R81:88 Progress <> <> lib
+R90:100 _tmp_epstep <> <> lib
+R102:120 _work_mixed_closure <> <> lib
+R122:143 _work_cstep_invariants <> <> lib
+R147:156 _luna_mueq <> <> lib
+R158:176 _glm_mueq_eta_shape <> <> lib
+R178:194 _luna_cjoin_congr <> <> lib
+R198:218 _parent_mus_cstep_inv <> <> lib
+R248:251 Stdlib.Lists.List <> <> lib
+R253:255 Stdlib.micromega.Lia <> <> lib
+R265:277 Stdlib.Lists.List ListNotations <> mod
+R279:287 TypeRules <> <> mod
+def 302:333 <> mueq_sort_transport_below_parent
+R340:342 Corelib.Init.Datatypes <> nat ind
+binder 336:336 <> N:1
+binder 364:364 <> t:2
+binder 366:366 <> u:3
+binder 368:368 <> j:4
+R386:389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R382:384 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R375:379 Progress <> tsize def
+R381:381 _parent_mueq_eta_sort_recursive <> t:2 var
+R385:385 _parent_mueq_eta_sort_recursive <> N:1 var
+R398:401 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R390:393 _luna_mueq <> mueq ind
+R395:395 _parent_mueq_eta_sort_recursive <> t:2 var
+R397:397 _parent_mueq_eta_sort_recursive <> u:3 var
+R423:430 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R402:404 Progress <> rtc ind
+R415:419 TypeRules <> TSort constr
+R421:421 _parent_mueq_eta_sort_recursive <> j:4 var
+R412:412 _parent_mueq_eta_sort_recursive <> t:2 var
+R406:410 _work_mixed_closure <> cstep ind
+R431:433 Progress <> rtc ind
+R444:448 TypeRules <> TSort constr
+R450:450 _parent_mueq_eta_sort_recursive <> j:4 var
+R441:441 _parent_mueq_eta_sort_recursive <> u:3 var
+R435:439 _work_mixed_closure <> cstep ind
+prf 461:481 <> rtc_cstep_lift_parent
+binder 492:492 <> t:5
+binder 494:494 <> u:6
+R514:517 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R501:503 Progress <> rtc ind
+R513:513 _parent_mueq_eta_sort_recursive <> u:6 var
+R511:511 _parent_mueq_eta_sort_recursive <> t:5 var
+R505:509 _work_mixed_closure <> cstep ind
+binder 525:525 <> d:7
+binder 527:527 <> k:8
+R534:536 Progress <> rtc ind
+R558:561 TypeRules <> lift def
+R567:567 _parent_mueq_eta_sort_recursive <> u:6 var
+R565:565 _parent_mueq_eta_sort_recursive <> k:8 var
+R563:563 _parent_mueq_eta_sort_recursive <> d:7 var
+R545:548 TypeRules <> lift def
+R554:554 _parent_mueq_eta_sort_recursive <> t:5 var
+R552:552 _parent_mueq_eta_sort_recursive <> k:8 var
+R550:550 _parent_mueq_eta_sort_recursive <> d:7 var
+R538:542 _work_mixed_closure <> cstep ind
+binder 639:639 <> q:9
+R644:647 TypeRules <> lift def
+R653:653 _parent_mueq_eta_sort_recursive <> q:9 var
+R607:622 _luna_cjoin_congr <> rtc_cstep_congr1 thm
+binder 639:639 <> q:10
+R644:647 TypeRules <> lift def
+R653:653 _parent_mueq_eta_sort_recursive <> q:10 var
+R607:622 _luna_cjoin_congr <> rtc_cstep_congr1 thm
+R684:693 Progress <> pstep_lift thm
+R684:693 Progress <> pstep_lift thm
+R736:746 _tmp_epstep <> epstep_lift thm
+R736:746 _tmp_epstep <> epstep_lift thm
+prf 787:814 <> rtc_cstep_eta_context_parent
+binder 825:825 <> f:11
+binder 827:827 <> j:12
+R855:862 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R834:836 Progress <> rtc ind
+R847:851 TypeRules <> TSort constr
+R853:853 _parent_mueq_eta_sort_recursive <> j:12 var
+R844:844 _parent_mueq_eta_sort_recursive <> f:11 var
+R838:842 _work_mixed_closure <> cstep ind
+R863:865 Progress <> rtc ind
+R911:914 TypeRules <> TLam constr
+R917:920 TypeRules <> TApp constr
+R933:936 TypeRules <> TVar constr
+R923:927 TypeRules <> TSort constr
+R929:929 _parent_mueq_eta_sort_recursive <> j:12 var
+R880:883 TypeRules <> TLam constr
+R886:889 TypeRules <> TApp constr
+R894:897 TypeRules <> TVar constr
+R891:891 _parent_mueq_eta_sort_recursive <> f:11 var
+R867:871 _work_mixed_closure <> cstep ind
+binder 1012:1012 <> q:13
+R1017:1020 TypeRules <> TLam constr
+R1023:1026 TypeRules <> TApp constr
+R1031:1034 TypeRules <> TVar constr
+R1028:1028 _parent_mueq_eta_sort_recursive <> q:13 var
+R976:991 _luna_cjoin_congr <> rtc_cstep_congr1 thm
+binder 1012:1012 <> q:14
+R1017:1020 TypeRules <> TLam constr
+R1023:1026 TypeRules <> TApp constr
+R1031:1034 TypeRules <> TVar constr
+R1028:1028 _parent_mueq_eta_sort_recursive <> q:14 var
+R976:991 _luna_cjoin_congr <> rtc_cstep_congr1 thm
+R1068:1073 Progress <> ps_lam constr
+R1076:1081 Progress <> ps_app constr
+R1068:1073 Progress <> ps_lam constr
+R1076:1081 Progress <> ps_app constr
+R1113:1122 Progress <> pstep_refl thm
+R1113:1122 Progress <> pstep_refl thm
+R1151:1157 _tmp_epstep <> eps_lam constr
+R1160:1166 _tmp_epstep <> eps_app constr
+R1151:1157 _tmp_epstep <> eps_lam constr
+R1160:1166 _tmp_epstep <> eps_app constr
+R1198:1208 _tmp_epstep <> epstep_refl thm
+R1198:1208 _tmp_epstep <> epstep_refl thm
+prf 1236:1259 <> eta_sort_contract_parent
+binder 1270:1270 <> j:15
+R1277:1281 _work_mixed_closure <> cstep ind
+R1284:1287 TypeRules <> TLam constr
+R1290:1293 TypeRules <> TApp constr
+R1306:1309 TypeRules <> TVar constr
+R1296:1300 TypeRules <> TSort constr
+R1302:1302 _parent_mueq_eta_sort_recursive <> j:15 var
+R1317:1321 TypeRules <> TSort constr
+R1323:1323 _parent_mueq_eta_sort_recursive <> j:15 var
+R1352:1357 _work_mixed_closure <> cs_eta constr
+R1360:1366 Progress <> rtc_one thm
+R1352:1357 _work_mixed_closure <> cs_eta constr
+R1360:1366 Progress <> rtc_one thm
+R1379:1384 _tmp_epstep <> epstep ind
+R1387:1390 TypeRules <> TLam constr
+R1393:1396 TypeRules <> TApp constr
+R1420:1423 TypeRules <> TVar constr
+R1399:1402 TypeRules <> lift def
+R1409:1413 TypeRules <> TSort constr
+R1431:1435 TypeRules <> TSort constr
+R1379:1384 _tmp_epstep <> epstep ind
+R1387:1390 TypeRules <> TLam constr
+R1393:1396 TypeRules <> TApp constr
+R1420:1423 TypeRules <> TVar constr
+R1399:1402 TypeRules <> lift def
+R1409:1413 TypeRules <> TSort constr
+R1431:1435 TypeRules <> TSort constr
+R1450:1456 _tmp_epstep <> eps_eta constr
+R1459:1469 _tmp_epstep <> epstep_refl thm
+R1450:1456 _tmp_epstep <> eps_eta constr
+R1459:1469 _tmp_epstep <> epstep_refl thm
+prf 1484:1517 <> eta_contractum_reaches_sort_parent
+binder 1528:1528 <> f:16
+binder 1530:1530 <> j:17
+R1604:1611 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1537:1539 Progress <> rtc ind
+R1596:1600 TypeRules <> TSort constr
+R1602:1602 _parent_mueq_eta_sort_recursive <> j:17 var
+R1554:1557 TypeRules <> TLam constr
+R1560:1563 TypeRules <> TApp constr
+R1579:1582 TypeRules <> TVar constr
+R1566:1569 TypeRules <> lift def
+R1575:1575 _parent_mueq_eta_sort_recursive <> f:16 var
+R1541:1545 _work_mixed_closure <> cstep ind
+R1612:1614 Progress <> rtc ind
+R1625:1629 TypeRules <> TSort constr
+R1631:1631 _parent_mueq_eta_sort_recursive <> j:17 var
+R1622:1622 _parent_mueq_eta_sort_recursive <> f:16 var
+R1616:1620 _work_mixed_closure <> cstep ind
+R1679:1681 Progress <> rtc ind
+R1696:1699 TypeRules <> TLam constr
+R1702:1705 TypeRules <> TApp constr
+R1721:1724 TypeRules <> TVar constr
+R1708:1711 TypeRules <> lift def
+R1683:1687 _work_mixed_closure <> cstep ind
+R1679:1681 Progress <> rtc ind
+R1696:1699 TypeRules <> TLam constr
+R1702:1705 TypeRules <> TApp constr
+R1721:1724 TypeRules <> TVar constr
+R1708:1711 TypeRules <> lift def
+R1683:1687 _work_mixed_closure <> cstep ind
+R1745:1751 Progress <> rtc_one thm
+R1754:1765 _work_mixed_closure <> epstep_cstep thm
+R1768:1774 _tmp_epstep <> eps_eta constr
+R1777:1787 _tmp_epstep <> epstep_refl thm
+R1745:1751 Progress <> rtc_one thm
+R1754:1765 _work_mixed_closure <> epstep_cstep thm
+R1768:1774 _tmp_epstep <> eps_eta constr
+R1777:1787 _tmp_epstep <> epstep_refl thm
+R1804:1818 _work_mixed_closure <> cstep_confluent thm
+R1804:1818 _work_mixed_closure <> cstep_confluent thm
+R1867:1883 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R1867:1883 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R1867:1883 _work_cstep_invariants <> rtc_cstep_sort_id thm
+prf 1927:1961 <> mueq_eta_root_sort_recursive_parent
+binder 1972:1972 <> f:18
+binder 1974:1974 <> u:19
+binder 1976:1976 <> j:20
+R2065:2072 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1983:2014 _parent_mueq_eta_sort_recursive <> mueq_sort_transport_below_parent def
+R2023:2027 Progress <> tsize def
+R2030:2033 TypeRules <> TLam constr
+R2036:2039 TypeRules <> TApp constr
+R2055:2058 TypeRules <> TVar constr
+R2042:2045 TypeRules <> lift def
+R2051:2051 _parent_mueq_eta_sort_recursive <> f:18 var
+R2115:2122 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2073:2076 _luna_mueq <> mueq ind
+R2079:2082 TypeRules <> TLam constr
+R2085:2088 TypeRules <> TApp constr
+R2104:2107 TypeRules <> TVar constr
+R2091:2094 TypeRules <> lift def
+R2100:2100 _parent_mueq_eta_sort_recursive <> f:18 var
+R2114:2114 _parent_mueq_eta_sort_recursive <> u:19 var
+R2144:2151 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2123:2125 Progress <> rtc ind
+R2136:2140 TypeRules <> TSort constr
+R2142:2142 _parent_mueq_eta_sort_recursive <> j:20 var
+R2133:2133 _parent_mueq_eta_sort_recursive <> f:18 var
+R2127:2131 _work_mixed_closure <> cstep ind
+R2152:2154 Progress <> rtc ind
+R2165:2169 TypeRules <> TSort constr
+R2171:2171 _parent_mueq_eta_sort_recursive <> j:20 var
+R2162:2162 _parent_mueq_eta_sort_recursive <> u:19 var
+R2156:2160 _work_mixed_closure <> cstep ind
+R2222:2237 _glm_mueq_eta_shape <> mueq_lam_inv_glm thm
+R2222:2237 _glm_mueq_eta_shape <> mueq_lam_inv_glm thm
+R2287:2303 _glm_mueq_eta_shape <> mueq_tapp_inv_glm thm
+R2306:2309 TypeRules <> lift def
+R2319:2322 TypeRules <> TVar constr
+R2287:2303 _glm_mueq_eta_shape <> mueq_tapp_inv_glm thm
+R2306:2309 TypeRules <> lift def
+R2319:2322 TypeRules <> TVar constr
+R2431:2453 _glm_mueq_eta_shape <> lift1_tmus_head_inv_glm thm
+R2431:2453 _glm_mueq_eta_shape <> lift1_tmus_head_inv_glm thm
+R2508:2536 _parent_mus_cstep_inv <> rtc_cstep_mus_not_sort_parent thm
+R2508:2536 _parent_mus_cstep_inv <> rtc_cstep_mus_not_sort_parent thm
+R2578:2594 _glm_mueq_eta_shape <> mueq_var0_inv_glm thm
+R2578:2594 _glm_mueq_eta_shape <> mueq_var0_inv_glm thm
+R2578:2594 _glm_mueq_eta_shape <> mueq_var0_inv_glm thm
+R2624:2626 Progress <> rtc ind
+R2648:2652 TypeRules <> TSort constr
+R2635:2638 TypeRules <> lift def
+R2628:2632 _work_mixed_closure <> cstep ind
+R2624:2626 Progress <> rtc ind
+R2648:2652 TypeRules <> TSort constr
+R2635:2638 TypeRules <> lift def
+R2628:2632 _work_mixed_closure <> cstep ind
+R2673:2675 Progress <> rtc ind
+R2697:2700 TypeRules <> lift def
+R2707:2711 TypeRules <> TSort constr
+R2684:2687 TypeRules <> lift def
+R2677:2681 _work_mixed_closure <> cstep ind
+R2673:2675 Progress <> rtc ind
+R2697:2700 TypeRules <> lift def
+R2707:2711 TypeRules <> TSort constr
+R2684:2687 TypeRules <> lift def
+R2677:2681 _work_mixed_closure <> cstep ind
+R2732:2752 _parent_mueq_eta_sort_recursive <> rtc_cstep_lift_parent thm
+R2732:2752 _parent_mueq_eta_sort_recursive <> rtc_cstep_lift_parent thm
+R2815:2823 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R2797:2801 Progress <> tsize def
+R2804:2807 TypeRules <> lift def
+R2824:2828 Progress <> tsize def
+R2831:2834 TypeRules <> TLam constr
+R2837:2840 TypeRules <> TApp constr
+R2856:2859 TypeRules <> TVar constr
+R2843:2846 TypeRules <> lift def
+R2815:2823 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R2797:2801 Progress <> tsize def
+R2804:2807 TypeRules <> lift def
+R2824:2828 Progress <> tsize def
+R2831:2834 TypeRules <> TLam constr
+R2837:2840 TypeRules <> TApp constr
+R2856:2859 TypeRules <> TVar constr
+R2843:2846 TypeRules <> lift def
+R2879:2883 Progress <> tsize def
+R2914:2917 TypeRules <> lift def
+R2914:2917 TypeRules <> lift def
+R2972:2980 Progress <> rtc_trans thm
+R2972:2980 Progress <> rtc_trans thm
+R2996:3023 _parent_mueq_eta_sort_recursive <> rtc_cstep_eta_context_parent thm
+R2996:3023 _parent_mueq_eta_sort_recursive <> rtc_cstep_eta_context_parent thm
+R3052:3058 Progress <> rtc_one thm
+R3061:3084 _parent_mueq_eta_sort_recursive <> eta_sort_contract_parent thm
+R3052:3058 Progress <> rtc_one thm
+R3061:3084 _parent_mueq_eta_sort_recursive <> eta_sort_contract_parent thm
+prf 3103:3138 <> mueq_eta_redex_sort_recursive_parent
+binder 3149:3149 <> f:21
+binder 3151:3151 <> u:22
+binder 3153:3153 <> j:23
+R3242:3249 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3160:3191 _parent_mueq_eta_sort_recursive <> mueq_sort_transport_below_parent def
+R3200:3204 Progress <> tsize def
+R3207:3210 TypeRules <> TLam constr
+R3213:3216 TypeRules <> TApp constr
+R3232:3235 TypeRules <> TVar constr
+R3219:3222 TypeRules <> lift def
+R3228:3228 _parent_mueq_eta_sort_recursive <> f:21 var
+R3292:3299 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3250:3253 _luna_mueq <> mueq ind
+R3256:3259 TypeRules <> TLam constr
+R3262:3265 TypeRules <> TApp constr
+R3281:3284 TypeRules <> TVar constr
+R3268:3271 TypeRules <> lift def
+R3277:3277 _parent_mueq_eta_sort_recursive <> f:21 var
+R3291:3291 _parent_mueq_eta_sort_recursive <> u:22 var
+R3355:3362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3300:3302 Progress <> rtc ind
+R3347:3351 TypeRules <> TSort constr
+R3353:3353 _parent_mueq_eta_sort_recursive <> j:23 var
+R3311:3314 TypeRules <> TLam constr
+R3317:3320 TypeRules <> TApp constr
+R3336:3339 TypeRules <> TVar constr
+R3323:3326 TypeRules <> lift def
+R3332:3332 _parent_mueq_eta_sort_recursive <> f:21 var
+R3304:3308 _work_mixed_closure <> cstep ind
+R3363:3365 Progress <> rtc ind
+R3376:3380 TypeRules <> TSort constr
+R3382:3382 _parent_mueq_eta_sort_recursive <> j:23 var
+R3373:3373 _parent_mueq_eta_sort_recursive <> u:22 var
+R3367:3371 _work_mixed_closure <> cstep ind
+R3430:3464 _parent_mueq_eta_sort_recursive <> mueq_eta_root_sort_recursive_parent thm
+R3430:3464 _parent_mueq_eta_sort_recursive <> mueq_eta_root_sort_recursive_parent thm
+R3501:3534 _parent_mueq_eta_sort_recursive <> eta_contractum_reaches_sort_parent thm
+R3501:3534 _parent_mueq_eta_sort_recursive <> eta_contractum_reaches_sort_parent thm
+R3574:3594 _parent_mueq_eta_sort_recursive <> rtc_cstep_lift_parent thm
+R3615:3649 _parent_mueq_eta_sort_recursive <> mueq_eta_root_sort_recursive_parent thm
+R3670:3705 _parent_mueq_eta_sort_recursive <> mueq_eta_redex_sort_recursive_parent thm

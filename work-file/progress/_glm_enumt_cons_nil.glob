@@ -1,0 +1,69 @@
+DIGEST ee4e06856d932dbb0c0ab11a4962133f
+F_glm_enumt_cons_nil
+R907:914 Progress <> <> lib
+R932:942 _tmp_epstep <> <> lib
+R944:962 _work_mixed_closure <> <> lib
+R964:974 _work_cjoin <> <> lib
+R978:999 _work_cstep_invariants <> <> lib
+R1001:1026 _glm_injectivity_close_rep <> <> lib
+R1056:1059 Stdlib.Lists.List <> <> lib
+R1069:1081 Stdlib.Lists.List ListNotations <> mod
+R1083:1091 TypeRules <> <> mod
+prf 1101:1130 <> conv_enumt_cons_nil_absurd_glm
+binder 1143:1144 <> tg:1
+binder 1146:1146 <> E:2
+R1195:1198 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1153:1156 TypeRules <> conv ind
+R1182:1187 TypeRules <> TEnumT constr
+R1189:1193 TypeRules <> TNilE constr
+R1159:1164 TypeRules <> TEnumT constr
+R1167:1172 TypeRules <> TConsE constr
+R1177:1177 _glm_enumt_cons_nil <> E:2 var
+R1174:1175 _glm_enumt_cons_nil <> tg:1 var
+R1199:1203 Corelib.Init.Logic <> False ind
+R1376:1380 _work_cjoin <> cjoin def
+R1383:1388 TypeRules <> TConsE constr
+R1406:1414 Progress <> phi_erase def
+R1391:1399 Progress <> phi_erase def
+R1420:1424 TypeRules <> TNilE constr
+R1376:1380 _work_cjoin <> cjoin def
+R1383:1388 TypeRules <> TConsE constr
+R1406:1414 Progress <> phi_erase def
+R1391:1399 Progress <> phi_erase def
+R1420:1424 TypeRules <> TNilE constr
+R1439:1457 _glm_injectivity_close_rep <> cjoin_enumt_inv_glm thm
+R1439:1457 _glm_injectivity_close_rep <> cjoin_enumt_inv_glm thm
+R1481:1494 _work_cjoin <> conv_phi_cjoin thm
+R1481:1494 _work_cjoin <> conv_phi_cjoin thm
+R1680:1695 _work_cstep_invariants <> rtc_cstep_hshape thm
+R1704:1709 Progress <> HConsE constr
+R1712:1719 Progress <> hs_conse constr
+R1680:1695 _work_cstep_invariants <> rtc_cstep_hshape thm
+R1704:1709 Progress <> HConsE constr
+R1712:1719 Progress <> hs_conse constr
+R1749:1764 _work_cstep_invariants <> rtc_cstep_hshape thm
+R1773:1777 Progress <> HNilE constr
+R1779:1785 Progress <> hs_nile constr
+R1749:1764 _work_cstep_invariants <> rtc_cstep_hshape thm
+R1773:1777 Progress <> HNilE constr
+R1779:1785 Progress <> hs_nile constr
+R1810:1826 Progress <> hshape_tag_unique thm
+R1810:1826 Progress <> hshape_tag_unique thm
+prf 1881:1910 <> conv_enumt_nil_cons_absurd_glm
+binder 1923:1924 <> tg:3
+binder 1926:1926 <> E:4
+R1975:1978 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1933:1936 TypeRules <> conv ind
+R1954:1959 TypeRules <> TEnumT constr
+R1962:1967 TypeRules <> TConsE constr
+R1972:1972 _glm_enumt_cons_nil <> E:4 var
+R1969:1970 _glm_enumt_cons_nil <> tg:3 var
+R1939:1944 TypeRules <> TEnumT constr
+R1946:1950 TypeRules <> TNilE constr
+R1979:1983 Corelib.Init.Logic <> False ind
+R2020:2049 _glm_enumt_cons_nil <> conv_enumt_cons_nil_absurd_glm thm
+R2020:2049 _glm_enumt_cons_nil <> conv_enumt_cons_nil_absurd_glm thm
+R2066:2071 TypeRules <> cv_sym constr
+R2066:2071 TypeRules <> cv_sym constr
+R2108:2137 _glm_enumt_cons_nil <> conv_enumt_cons_nil_absurd_glm thm
+R2158:2187 _glm_enumt_cons_nil <> conv_enumt_nil_cons_absurd_glm thm

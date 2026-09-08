@@ -1,0 +1,246 @@
+DIGEST 9a3a5f24e123498dd1a11833df0a08ad
+F_glm_spine_phi_lift
+R15:23 TypeRules <> <> lib
+R25:32 Progress <> <> lib
+R50:66 _glm_neutral_lift <> <> lib
+R68:89 _glm_desc_against_lift <> <> lib
+prf 258:276 <> lift_branch_app_glm
+R294:296 Corelib.Init.Datatypes <> nat ind
+binder 288:288 <> d:1
+binder 290:290 <> k:2
+R309:312 TypeRules <> term ind
+binder 300:301 <> Sf:3
+binder 303:303 <> i:4
+binder 305:305 <> c:5
+R380:384 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R318:321 TypeRules <> TApp constr
+R369:372 TypeRules <> lift def
+R378:378 _glm_spine_phi_lift <> c:5 var
+R376:376 _glm_spine_phi_lift <> k:2 var
+R374:374 _glm_spine_phi_lift <> d:1 var
+R324:331 TypeRules <> branches def
+R334:337 TypeRules <> TApp constr
+R354:357 TypeRules <> lift def
+R363:363 _glm_spine_phi_lift <> i:4 var
+R361:361 _glm_spine_phi_lift <> k:2 var
+R359:359 _glm_spine_phi_lift <> d:1 var
+R340:343 TypeRules <> lift def
+R349:350 _glm_spine_phi_lift <> Sf:3 var
+R347:347 _glm_spine_phi_lift <> k:2 var
+R345:345 _glm_spine_phi_lift <> d:1 var
+R385:388 TypeRules <> lift def
+R395:398 TypeRules <> TApp constr
+R423:423 _glm_spine_phi_lift <> c:5 var
+R401:408 TypeRules <> branches def
+R411:414 TypeRules <> TApp constr
+R419:419 _glm_spine_phi_lift <> i:4 var
+R416:417 _glm_spine_phi_lift <> Sf:3 var
+R392:392 _glm_spine_phi_lift <> k:2 var
+R390:390 _glm_spine_phi_lift <> d:1 var
+sec 482:496 <> SpinePhiLiftGlm
+var 511:526 SpinePhiLiftGlm eval_lift_compat
+R530:553 _glm_desc_against_lift <> eval_lift_compatible_glm def
+prf 563:580 <> eval_lift_lnil_glm
+R598:600 Corelib.Init.Datatypes <> nat ind
+binder 592:592 <> d:8
+binder 594:594 <> k:9
+R612:615 TypeRules <> term ind
+binder 604:606 <> Phi:10
+binder 608:608 <> A:11
+R639:644 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R621:624 TypeRules <> eval ind
+R631:635 TypeRules <> TLNil constr
+R637:637 _glm_spine_phi_lift <> A:11 var
+R626:628 _glm_spine_phi_lift <> Phi:10 var
+R645:648 TypeRules <> eval ind
+R666:670 TypeRules <> TLNil constr
+R673:676 TypeRules <> lift def
+R682:682 _glm_spine_phi_lift <> A:11 var
+R680:680 _glm_spine_phi_lift <> k:9 var
+R678:678 _glm_spine_phi_lift <> d:8 var
+R651:654 TypeRules <> lift def
+R660:662 _glm_spine_phi_lift <> Phi:10 var
+R658:658 _glm_spine_phi_lift <> k:9 var
+R656:656 _glm_spine_phi_lift <> d:8 var
+R726:741 _glm_spine_phi_lift <> SpinePhiLiftGlm.eval_lift_compat var
+R752:756 TypeRules <> TLNil constr
+R726:741 _glm_spine_phi_lift <> SpinePhiLiftGlm.eval_lift_compat var
+R752:756 TypeRules <> TLNil constr
+prf 778:796 <> eval_lift_lcons_glm
+R814:816 Corelib.Init.Datatypes <> nat ind
+binder 808:808 <> d:12
+binder 810:810 <> k:13
+R835:838 TypeRules <> term ind
+binder 820:822 <> Phi:14
+binder 824:824 <> A:15
+binder 826:826 <> c:16
+binder 828:831 <> Phi':17
+R870:875 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R844:847 TypeRules <> eval ind
+R854:859 TypeRules <> TLCons constr
+R865:868 _glm_spine_phi_lift <> Phi':17 var
+R863:863 _glm_spine_phi_lift <> c:16 var
+R861:861 _glm_spine_phi_lift <> A:15 var
+R849:851 _glm_spine_phi_lift <> Phi:14 var
+R876:879 TypeRules <> eval ind
+R897:902 TypeRules <> TLCons constr
+R931:934 TypeRules <> lift def
+R940:943 _glm_spine_phi_lift <> Phi':17 var
+R938:938 _glm_spine_phi_lift <> k:13 var
+R936:936 _glm_spine_phi_lift <> d:12 var
+R918:921 TypeRules <> lift def
+R927:927 _glm_spine_phi_lift <> c:16 var
+R925:925 _glm_spine_phi_lift <> k:13 var
+R923:923 _glm_spine_phi_lift <> d:12 var
+R905:908 TypeRules <> lift def
+R914:914 _glm_spine_phi_lift <> A:15 var
+R912:912 _glm_spine_phi_lift <> k:13 var
+R910:910 _glm_spine_phi_lift <> d:12 var
+R882:885 TypeRules <> lift def
+R891:893 _glm_spine_phi_lift <> Phi:14 var
+R889:889 _glm_spine_phi_lift <> k:13 var
+R887:887 _glm_spine_phi_lift <> d:12 var
+R994:1009 _glm_spine_phi_lift <> SpinePhiLiftGlm.eval_lift_compat var
+R1020:1025 TypeRules <> TLCons constr
+R994:1009 _glm_spine_phi_lift <> SpinePhiLiftGlm.eval_lift_compat var
+R1020:1025 TypeRules <> TLCons constr
+prf 1056:1073 <> spine_phi_lift_glm
+R1102:1105 TypeRules <> term ind
+binder 1087:1088 <> Sf:18
+binder 1090:1090 <> i:19
+binder 1092:1094 <> Phi:20
+binder 1096:1098 <> Psi:21
+R1135:1142 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1113:1121 TypeRules <> spine_phi ind
+R1132:1134 _glm_spine_phi_lift <> Psi:21 var
+R1128:1130 _glm_spine_phi_lift <> Phi:20 var
+R1126:1126 _glm_spine_phi_lift <> i:19 var
+R1123:1124 _glm_spine_phi_lift <> Sf:18 var
+binder 1150:1150 <> d:22
+binder 1152:1152 <> k:23
+R1155:1163 TypeRules <> spine_phi ind
+R1208:1211 TypeRules <> lift def
+R1217:1219 _glm_spine_phi_lift <> Psi:21 var
+R1215:1215 _glm_spine_phi_lift <> k:23 var
+R1213:1213 _glm_spine_phi_lift <> d:22 var
+R1193:1196 TypeRules <> lift def
+R1202:1204 _glm_spine_phi_lift <> Phi:20 var
+R1200:1200 _glm_spine_phi_lift <> k:23 var
+R1198:1198 _glm_spine_phi_lift <> d:22 var
+R1180:1183 TypeRules <> lift def
+R1189:1189 _glm_spine_phi_lift <> i:19 var
+R1187:1187 _glm_spine_phi_lift <> k:23 var
+R1185:1185 _glm_spine_phi_lift <> d:22 var
+R1166:1169 TypeRules <> lift def
+R1175:1176 _glm_spine_phi_lift <> Sf:18 var
+R1173:1173 _glm_spine_phi_lift <> k:23 var
+R1171:1171 _glm_spine_phi_lift <> d:22 var
+R1427:1433 TypeRules <> sph_nil constr
+R1436:1439 TypeRules <> lift def
+R1450:1453 TypeRules <> lift def
+R1463:1466 TypeRules <> lift def
+R1479:1482 TypeRules <> lift def
+R1427:1433 TypeRules <> sph_nil constr
+R1436:1439 TypeRules <> lift def
+R1450:1453 TypeRules <> lift def
+R1463:1466 TypeRules <> lift def
+R1479:1482 TypeRules <> lift def
+R1504:1521 _glm_spine_phi_lift <> eval_lift_lnil_glm thm
+R1504:1521 _glm_spine_phi_lift <> eval_lift_lnil_glm thm
+R1554:1561 TypeRules <> sph_keep constr
+R1564:1567 TypeRules <> lift def
+R1578:1581 TypeRules <> lift def
+R1591:1594 TypeRules <> lift def
+R1628:1631 TypeRules <> lift def
+R1641:1644 TypeRules <> lift def
+R1654:1657 TypeRules <> lift def
+R1670:1673 TypeRules <> lift def
+R1554:1561 TypeRules <> sph_keep constr
+R1564:1567 TypeRules <> lift def
+R1578:1581 TypeRules <> lift def
+R1591:1594 TypeRules <> lift def
+R1628:1631 TypeRules <> lift def
+R1641:1644 TypeRules <> lift def
+R1654:1657 TypeRules <> lift def
+R1670:1673 TypeRules <> lift def
+R1700:1718 _glm_spine_phi_lift <> eval_lift_lcons_glm thm
+R1700:1718 _glm_spine_phi_lift <> eval_lift_lcons_glm thm
+R1780:1787 TypeRules <> sph_drop constr
+R1790:1793 TypeRules <> lift def
+R1804:1807 TypeRules <> lift def
+R1817:1820 TypeRules <> lift def
+R1854:1857 TypeRules <> lift def
+R1867:1870 TypeRules <> lift def
+R1880:1883 TypeRules <> lift def
+R1896:1899 TypeRules <> lift def
+R1780:1787 TypeRules <> sph_drop constr
+R1790:1793 TypeRules <> lift def
+R1804:1807 TypeRules <> lift def
+R1817:1820 TypeRules <> lift def
+R1854:1857 TypeRules <> lift def
+R1867:1870 TypeRules <> lift def
+R1880:1883 TypeRules <> lift def
+R1896:1899 TypeRules <> lift def
+R1926:1944 _glm_spine_phi_lift <> eval_lift_lcons_glm thm
+R1926:1944 _glm_spine_phi_lift <> eval_lift_lcons_glm thm
+R1986:2004 _glm_spine_phi_lift <> lift_branch_app_glm thm
+R1986:2004 _glm_spine_phi_lift <> lift_branch_app_glm thm
+R1986:2004 _glm_spine_phi_lift <> lift_branch_app_glm thm
+R2020:2040 _glm_desc_against_lift <> desc_against_lift_glm thm
+R2075:2078 TypeRules <> TApp constr
+R2081:2088 TypeRules <> branches def
+R2091:2094 TypeRules <> TApp constr
+R2042:2057 _glm_spine_phi_lift <> SpinePhiLiftGlm.eval_lift_compat var
+R2020:2040 _glm_desc_against_lift <> desc_against_lift_glm thm
+R2075:2078 TypeRules <> TApp constr
+R2081:2088 TypeRules <> branches def
+R2091:2094 TypeRules <> TApp constr
+R2042:2057 _glm_spine_phi_lift <> SpinePhiLiftGlm.eval_lift_compat var
+R2152:2162 TypeRules <> sph_neutral constr
+R2165:2168 TypeRules <> lift def
+R2179:2182 TypeRules <> lift def
+R2192:2195 TypeRules <> lift def
+R2208:2211 TypeRules <> lift def
+R2152:2162 TypeRules <> sph_neutral constr
+R2165:2168 TypeRules <> lift def
+R2179:2182 TypeRules <> lift def
+R2192:2195 TypeRules <> lift def
+R2208:2211 TypeRules <> lift def
+R2238:2253 _glm_spine_phi_lift <> SpinePhiLiftGlm.eval_lift_compat var
+R2238:2253 _glm_spine_phi_lift <> SpinePhiLiftGlm.eval_lift_compat var
+R2290:2305 _glm_neutral_lift <> neutral_lift_glm thm
+R2290:2305 _glm_neutral_lift <> neutral_lift_glm thm
+R2333:2347 _glm_spine_phi_lift SpinePhiLiftGlm <> sec
+R2404:2409 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2380:2403 _glm_desc_against_lift <> eval_lift_compatible_glm def
+R2432:2435 TypeRules <> term ind
+binder 2417:2418 <> Sf:24
+binder 2420:2420 <> i:25
+binder 2422:2424 <> Phi:26
+binder 2426:2428 <> Psi:27
+R2464:2471 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2442:2450 TypeRules <> spine_phi ind
+R2461:2463 _glm_spine_phi_lift <> Psi:27 var
+R2457:2459 _glm_spine_phi_lift <> Phi:26 var
+R2455:2455 _glm_spine_phi_lift <> i:25 var
+R2452:2453 _glm_spine_phi_lift <> Sf:24 var
+binder 2479:2479 <> d:28
+binder 2481:2481 <> k:29
+R2484:2492 TypeRules <> spine_phi ind
+R2537:2540 TypeRules <> lift def
+R2546:2548 _glm_spine_phi_lift <> Psi:27 var
+R2544:2544 _glm_spine_phi_lift <> k:29 var
+R2542:2542 _glm_spine_phi_lift <> d:28 var
+R2522:2525 TypeRules <> lift def
+R2531:2533 _glm_spine_phi_lift <> Phi:26 var
+R2529:2529 _glm_spine_phi_lift <> k:29 var
+R2527:2527 _glm_spine_phi_lift <> d:28 var
+R2509:2512 TypeRules <> lift def
+R2518:2518 _glm_spine_phi_lift <> i:25 var
+R2516:2516 _glm_spine_phi_lift <> k:29 var
+R2514:2514 _glm_spine_phi_lift <> d:28 var
+R2495:2498 TypeRules <> lift def
+R2504:2505 _glm_spine_phi_lift <> Sf:24 var
+R2502:2502 _glm_spine_phi_lift <> k:29 var
+R2500:2500 _glm_spine_phi_lift <> d:28 var
+R2357:2374 _glm_spine_phi_lift <> spine_phi_lift_glm thm

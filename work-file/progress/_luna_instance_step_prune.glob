@@ -1,0 +1,177 @@
+DIGEST 6683f2d8b6532430009c8bdbe4e85c37
+F_luna_instance_step_prune
+R15:22 Progress <> <> lib
+R24:47 _parent_instance_pruning <> <> lib
+R77:80 Stdlib.Lists.List <> <> lib
+R82:84 Stdlib.micromega.Lia <> <> lib
+R86:93 Stdlib.Arith.PeanoNat <> <> lib
+R103:115 Stdlib.Lists.List ListNotations <> mod
+R117:125 TypeRules <> <> mod
+prf 135:156 <> prune_branches_nth_fwd
+binder 167:168 <> bs:1
+binder 170:172 <> bs':2
+binder 174:174 <> k:3
+binder 176:176 <> c:4
+binder 178:178 <> b:5
+R204:207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R183:196 _parent_instance_pruning <> prune_branches ind
+R198:199 _luna_instance_step_prune <> bs:1 var
+R201:203 _luna_instance_step_prune <> bs':2 var
+R235:240 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R222:224 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R208:216 Stdlib.Lists.List <> nth_error def
+R221:221 _luna_instance_step_prune <> k:3 var
+R218:219 _luna_instance_step_prune <> bs:1 var
+R225:228 Corelib.Init.Datatypes <> Some constr
+R230:230 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R232:232 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R234:234 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R231:231 _luna_instance_step_prune <> c:4 var
+R233:233 _luna_instance_step_prune <> b:5 var
+R241:247 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R253:254 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 248:249 <> c':6
+binder 251:252 <> b':7
+R285:292 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R270:272 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R255:263 Stdlib.Lists.List <> nth_error def
+R269:269 _luna_instance_step_prune <> k:3 var
+R265:267 _luna_instance_step_prune <> bs':2 var
+R273:276 Corelib.Init.Datatypes <> Some constr
+R278:278 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R281:281 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R284:284 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R279:280 _luna_instance_step_prune <> c':6 var
+R282:283 _luna_instance_step_prune <> b':7 var
+R308:311 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R293:302 _parent_instance_pruning <> prune_term ind
+R304:304 _luna_instance_step_prune <> c:4 var
+R306:307 _luna_instance_step_prune <> c':6 var
+R312:321 _parent_instance_pruning <> prune_term ind
+R323:323 _luna_instance_step_prune <> b:5 var
+R325:326 _luna_instance_step_prune <> b':7 var
+prf 653:674 <> prune_branches_nth_bwd
+binder 685:686 <> bs:8
+binder 688:690 <> bs':9
+binder 692:692 <> k:10
+binder 694:695 <> c':11
+binder 697:698 <> b':12
+R724:727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R703:716 _parent_instance_pruning <> prune_branches ind
+R718:719 _luna_instance_step_prune <> bs:8 var
+R721:723 _luna_instance_step_prune <> bs':9 var
+R758:763 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R743:745 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R728:736 Stdlib.Lists.List <> nth_error def
+R742:742 _luna_instance_step_prune <> k:10 var
+R738:740 _luna_instance_step_prune <> bs':9 var
+R746:749 Corelib.Init.Datatypes <> Some constr
+R751:751 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R754:754 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R757:757 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R752:753 _luna_instance_step_prune <> c':11 var
+R755:756 _luna_instance_step_prune <> b':12 var
+R764:770 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R774:775 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 771:771 <> c:13
+binder 773:773 <> b:14
+R803:810 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R790:792 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R776:784 Stdlib.Lists.List <> nth_error def
+R789:789 _luna_instance_step_prune <> k:10 var
+R786:787 _luna_instance_step_prune <> bs:8 var
+R793:796 Corelib.Init.Datatypes <> Some constr
+R798:798 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R800:800 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R802:802 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R799:799 _luna_instance_step_prune <> c:13 var
+R801:801 _luna_instance_step_prune <> b:14 var
+R826:829 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R811:820 _parent_instance_pruning <> prune_term ind
+R822:822 _luna_instance_step_prune <> c:13 var
+R824:825 _luna_instance_step_prune <> c':11 var
+R830:839 _parent_instance_pruning <> prune_term ind
+R841:841 _luna_instance_step_prune <> b:14 var
+R843:844 _luna_instance_step_prune <> b':12 var
+prf 1175:1196 <> prune_branches_app_inv
+binder 1207:1209 <> pre:15
+binder 1211:1213 <> suf:16
+binder 1215:1217 <> out:17
+R1253:1258 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1222:1235 _parent_instance_pruning <> prune_branches ind
+R1241:1244 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1238:1240 _luna_instance_step_prune <> pre:15 var
+R1245:1247 _luna_instance_step_prune <> suf:16 var
+R1250:1252 _luna_instance_step_prune <> out:17 var
+R1259:1265 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1275:1276 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1266:1269 <> pre':18
+binder 1271:1274 <> suf':19
+R1295:1302 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1280:1282 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1277:1279 _luna_instance_step_prune <> out:17 var
+R1287:1290 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1283:1286 _luna_instance_step_prune <> pre':18 var
+R1291:1294 _luna_instance_step_prune <> suf':19 var
+R1326:1329 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1303:1316 _parent_instance_pruning <> prune_branches ind
+R1318:1320 _luna_instance_step_prune <> pre:15 var
+R1322:1325 _luna_instance_step_prune <> pre':18 var
+R1330:1343 _parent_instance_pruning <> prune_branches ind
+R1345:1347 _luna_instance_step_prune <> suf:16 var
+R1349:1352 _luna_instance_step_prune <> suf':19 var
+R1439:1440 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1439:1440 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1485:1490 _parent_instance_pruning <> pb_nil constr
+R1485:1490 _parent_instance_pruning <> pb_nil constr
+R1652:1653 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1645:1645 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1648:1648 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1651:1651 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1652:1653 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1645:1645 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1648:1648 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1651:1651 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+prf 1727:1744 <> prune_branches_app
+binder 1755:1757 <> pre:20
+binder 1759:1762 <> pre':21
+binder 1764:1766 <> suf:22
+binder 1768:1771 <> suf':23
+R1799:1802 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1776:1789 _parent_instance_pruning <> prune_branches ind
+R1791:1793 _luna_instance_step_prune <> pre:20 var
+R1795:1798 _luna_instance_step_prune <> pre':21 var
+R1826:1831 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1803:1816 _parent_instance_pruning <> prune_branches ind
+R1818:1820 _luna_instance_step_prune <> suf:22 var
+R1822:1825 _luna_instance_step_prune <> suf':23 var
+R1832:1845 _parent_instance_pruning <> prune_branches ind
+R1851:1854 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1848:1850 _luna_instance_step_prune <> pre:20 var
+R1855:1857 _luna_instance_step_prune <> suf:22 var
+R1865:1868 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1861:1864 _luna_instance_step_prune <> pre':21 var
+R1869:1872 _luna_instance_step_prune <> suf':23 var
+R1954:1967 _parent_instance_pruning <> prune_branches ind
+R1954:1967 _parent_instance_pruning <> prune_branches ind
+R1954:1967 _parent_instance_pruning <> prune_branches ind
+prf 1982:1995 <> prune_enum_pos
+binder 2006:2006 <> c:24
+binder 2008:2008 <> n:25
+binder 2010:2010 <> d:26
+R2027:2030 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2015:2022 TypeRules <> enum_pos ind
+R2026:2026 _luna_instance_step_prune <> n:25 var
+R2024:2024 _luna_instance_step_prune <> c:24 var
+R2045:2048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2031:2040 _parent_instance_pruning <> prune_term ind
+R2042:2042 _luna_instance_step_prune <> c:24 var
+R2044:2044 _luna_instance_step_prune <> d:26 var
+R2050:2052 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2049:2049 _luna_instance_step_prune <> d:26 var
+R2053:2053 _luna_instance_step_prune <> c:24 var
+R2247:2268 _luna_instance_step_prune <> prune_branches_nth_fwd thm
+R2289:2310 _luna_instance_step_prune <> prune_branches_nth_bwd thm
+R2331:2352 _luna_instance_step_prune <> prune_branches_app_inv thm
+R2373:2390 _luna_instance_step_prune <> prune_branches_app thm
+R2411:2424 _luna_instance_step_prune <> prune_enum_pos thm

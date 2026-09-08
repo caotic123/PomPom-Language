@@ -4,6 +4,16 @@ Revision of `progress/type-rules.md`, `context.md`, `progress/1.pom`,
 `progress/2.pom` (2026-08-23). Source of truth: EID Figures 1–4 and the
 constructor-subtyping paper, Rules 1–7.
 
+## Preservation closure (2026-09-06)
+
+- The paper's optional Eq-φ choice is no longer part of the general untyped
+  definitional equality. General conversion is `≡βη`; typed refinement
+  pruning remains available through `Sig-sub` (`su_sig`). This prevents φ
+  equations from being transported through arbitrary beta/eta term contexts
+  while retaining the signature-subtyping behavior used by the language.
+- The raw signature fixed point remains packed as `SigMu E S`, so its ambient
+  enumeration cannot be changed between introduction and elimination.
+
 ## Type-theory holes found and fixed (critical)
 
 1. **Universe violation in `SameAmbient`.** It was declared
@@ -33,6 +43,13 @@ constructor-subtyping paper, Rules 1–7.
    subject reduction. Fixed structurally: subtyping is now coercion-free
    (the paper's actual discipline — signatures are phantom refinements),
    so every coherence law is trivially `t = t` and the hole cannot exist.
+7. **The raw signature fixed point erased its ambient enumeration.** Writing
+   the internal type as `TMuS Sf` allowed the same raw term to be formed with
+   unrelated enumeration codes. An introduction could therefore use one
+   `E` while a case rule used another, invalidating payload preservation.
+   Fixed by retaining the index in the raw representation:
+   `SigMu E Sf := TMuS (E, Sf)`. Formation, introduction, elimination,
+   forgetting, signature subtyping, and Eq-phi now all use this packed form.
 
 ## Simplifications
 
@@ -301,6 +318,44 @@ the promised spine_mem is impossible.  Fix: the statement now carries
 `Γ ⊢ i ⇐ I` alongside the other formation premises — completing the
 sketch's suppressed-well-formedness policy for the μˢ type's data.  No
 type or evaluation rule changed.
+
+## TypeRulesCore.v: branch distinctness made substitution-stable (2026-09-05)
+
+The preservation proof exposed an open-term counterexample to the original
+`distinct` side condition.  It accepted the clause labels `[x; 0]` under a
+label-typed variable because `~ conv x 0`, but beta-substituting `0` for `x`
+produced the duplicate labels `[0; 0]`.  Thus typing substitution, and hence
+subject reduction for a case nested below a lambda, was false.  The core now
+records that every elaborated clause label is a canonical ambient position in
+`distinct`.  Canonical positions are unchanged by lifting and substitution,
+matching the core boundary where printed labels have already been resolved.
+
+The same audit found that `spine_incl`'s old neutral-tail constructor was not
+substitution-stable: the reflexive inclusion of a neutral variable ceased to
+have a derivation when that variable was instantiated by `unit`.  Its tail
+constructor now accepts any evaluated tail related by `spine_tail`.  This is
+the direct semantic inclusion rule (the right spine may have a prefix ending
+in a convertible copy of the left tail), and both premises commute with
+substitution.
+
+Finally, declarative subsumption now consumes a checking derivation.  The old
+bidirectional presentation required the subject to synthesize, but several
+stated computation rules expose checked-only introductions (`lambda`, pairs,
+and `in`).  Making the already-declarative relation closed under subtyping
+lets subsumption commute directly with reduction and substitution instead of
+requiring a second, constructor-by-constructor admissibility theorem.
+
+`spine_phi` received the analogous substitution-stable identity-tail rule:
+an evaluated tail may be retained unchanged whether or not it is syntactically
+neutral.  Retaining a concrete tail is semantically the ordinary no-pruning
+choice, and removing the neutral guard makes conversion substitution close by
+direct induction rather than an indirect eta/confluence detour.
+
+The synthesizing App/Fst/Snd rules now expose the same Π/Σ formation premise
+as their declarative checking counterparts. Without it, substitution of a
+checked-only lambda or pair could no longer reconstruct the eliminator, and
+deriving formation was circular with preservation. The premise is the
+sketch's suppressed well-formedness invariant made structural.
 
 ## Progress proved relative to a named interface (2026-08-27)
 

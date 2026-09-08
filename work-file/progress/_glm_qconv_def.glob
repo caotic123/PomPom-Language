@@ -1,0 +1,244 @@
+DIGEST d1ec47d401127b60b73f833f9aa75f8d
+F_glm_qconv_def
+R978:985 Progress <> <> lib
+R1003:1013 _work_cjoin <> <> lib
+R1015:1024 _luna_mueq <> <> lib
+R1026:1041 _luna_mueq_equiv <> <> lib
+R1071:1074 Stdlib.Lists.List <> <> lib
+R1084:1096 Stdlib.Lists.List ListNotations <> mod
+R1098:1106 TypeRules <> <> mod
+def 1121:1125 <> qlink
+R1134:1137 TypeRules <> term ind
+binder 1128:1128 <> t:1
+binder 1130:1130 <> u:2
+R1159:1162 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1150:1154 _work_cjoin <> cjoin def
+R1156:1156 _glm_qconv_def <> t:1 var
+R1158:1158 _glm_qconv_def <> u:2 var
+R1163:1166 _luna_mueq <> mueq ind
+R1168:1168 _glm_qconv_def <> t:1 var
+R1170:1170 _glm_qconv_def <> u:2 var
+def 1185:1189 <> qconv
+R1198:1201 TypeRules <> term ind
+binder 1192:1192 <> t:3
+binder 1194:1194 <> u:4
+R1214:1216 Progress <> rtc ind
+R1226:1226 _glm_qconv_def <> u:4 var
+R1224:1224 _glm_qconv_def <> t:3 var
+R1218:1222 _glm_qconv_def <> qlink def
+prf 1318:1326 <> qlink_sym
+binder 1337:1337 <> t:5
+binder 1339:1339 <> u:6
+R1351:1354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1342:1346 _glm_qconv_def <> qlink def
+R1348:1348 _glm_qconv_def <> t:5 var
+R1350:1350 _glm_qconv_def <> u:6 var
+R1355:1359 _glm_qconv_def <> qlink def
+R1361:1361 _glm_qconv_def <> u:6 var
+R1363:1363 _glm_qconv_def <> t:5 var
+R1411:1419 _work_cjoin <> cjoin_sym thm
+R1411:1419 _work_cjoin <> cjoin_sym thm
+R1442:1449 _luna_mueq_equiv <> mueq_sym thm
+R1442:1449 _luna_mueq_equiv <> mueq_sym thm
+prf 1467:1476 <> qlink_refl
+binder 1487:1487 <> t:7
+R1490:1494 _glm_qconv_def <> qlink def
+R1496:1496 _glm_qconv_def <> t:7 var
+R1498:1498 _glm_qconv_def <> t:7 var
+R1530:1539 _work_cjoin <> cjoin_refl thm
+R1530:1539 _work_cjoin <> cjoin_refl thm
+prf 1554:1563 <> qconv_refl
+binder 1574:1574 <> t:8
+R1577:1581 _glm_qconv_def <> qconv def
+R1583:1583 _glm_qconv_def <> t:8 var
+R1585:1585 _glm_qconv_def <> t:8 var
+R1611:1618 Progress <> rtc_refl constr
+R1611:1618 Progress <> rtc_refl constr
+prf 1633:1641 <> qconv_sym
+binder 1652:1652 <> t:9
+binder 1654:1654 <> u:10
+R1666:1669 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1657:1661 _glm_qconv_def <> qconv def
+R1663:1663 _glm_qconv_def <> t:9 var
+R1665:1665 _glm_qconv_def <> u:10 var
+R1670:1674 _glm_qconv_def <> qconv def
+R1676:1676 _glm_qconv_def <> u:10 var
+R1678:1678 _glm_qconv_def <> t:9 var
+R1727:1734 Progress <> rtc_refl constr
+R1727:1734 Progress <> rtc_refl constr
+R1748:1756 Progress <> rtc_trans thm
+R1780:1786 Progress <> rtc_one thm
+R1789:1797 _glm_qconv_def <> qlink_sym thm
+R1748:1756 Progress <> rtc_trans thm
+R1780:1786 Progress <> rtc_one thm
+R1789:1797 _glm_qconv_def <> qlink_sym thm
+prf 1816:1826 <> qconv_trans
+binder 1837:1837 <> t:11
+binder 1839:1839 <> u:12
+binder 1841:1841 <> v:13
+R1853:1856 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1844:1848 _glm_qconv_def <> qconv def
+R1850:1850 _glm_qconv_def <> t:11 var
+R1852:1852 _glm_qconv_def <> u:12 var
+R1866:1869 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1857:1861 _glm_qconv_def <> qconv def
+R1863:1863 _glm_qconv_def <> u:12 var
+R1865:1865 _glm_qconv_def <> v:13 var
+R1870:1874 _glm_qconv_def <> qconv def
+R1876:1876 _glm_qconv_def <> t:11 var
+R1878:1878 _glm_qconv_def <> v:13 var
+R1915:1923 Progress <> rtc_trans thm
+R1915:1923 Progress <> rtc_trans thm
+prf 2033:2043 <> cjoin_qconv
+binder 2054:2054 <> t:14
+binder 2056:2056 <> u:15
+R2068:2071 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2059:2063 _work_cjoin <> cjoin def
+R2065:2065 _glm_qconv_def <> t:14 var
+R2067:2067 _glm_qconv_def <> u:15 var
+R2072:2076 _glm_qconv_def <> qconv def
+R2078:2078 _glm_qconv_def <> t:14 var
+R2080:2080 _glm_qconv_def <> u:15 var
+R2110:2116 Progress <> rtc_one thm
+R2110:2116 Progress <> rtc_one thm
+prf 2146:2155 <> mueq_qconv
+binder 2166:2166 <> t:16
+binder 2168:2168 <> u:17
+R2179:2182 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2171:2174 _luna_mueq <> mueq ind
+R2176:2176 _glm_qconv_def <> t:16 var
+R2178:2178 _glm_qconv_def <> u:17 var
+R2183:2187 _glm_qconv_def <> qconv def
+R2189:2189 _glm_qconv_def <> t:16 var
+R2191:2191 _glm_qconv_def <> u:17 var
+R2221:2227 Progress <> rtc_one thm
+R2221:2227 Progress <> rtc_one thm
+prf 2340:2349 <> step_cjoin
+binder 2360:2360 <> t:18
+binder 2362:2362 <> u:19
+R2373:2376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2365:2368 TypeRules <> step ind
+R2372:2372 _glm_qconv_def <> u:19 var
+R2370:2370 _glm_qconv_def <> t:18 var
+R2377:2381 _work_cjoin <> cjoin def
+R2383:2383 _glm_qconv_def <> t:18 var
+R2385:2385 _glm_qconv_def <> u:19 var
+R2439:2445 Progress <> rtc_one thm
+R2448:2458 _work_cjoin <> fstep_cstep thm
+R2461:2467 Progress <> fs_step constr
+R2480:2487 Progress <> rtc_refl constr
+R2439:2445 Progress <> rtc_one thm
+R2448:2458 _work_cjoin <> fstep_cstep thm
+R2461:2467 Progress <> fs_step constr
+R2480:2487 Progress <> rtc_refl constr
+prf 2503:2511 <> eta_cjoin
+binder 2522:2522 <> f:20
+R2525:2529 _work_cjoin <> cjoin def
+R2532:2535 TypeRules <> TLam constr
+R2538:2541 TypeRules <> TApp constr
+R2557:2560 TypeRules <> TVar constr
+R2544:2547 TypeRules <> lift def
+R2553:2553 _glm_qconv_def <> f:20 var
+R2567:2567 _glm_qconv_def <> f:20 var
+R2617:2623 Progress <> rtc_one thm
+R2626:2636 _work_cjoin <> fstep_cstep thm
+R2639:2644 Progress <> fs_eta constr
+R2654:2661 Progress <> rtc_refl constr
+R2617:2623 Progress <> rtc_one thm
+R2626:2636 _work_cjoin <> fstep_cstep thm
+R2639:2644 Progress <> fs_eta constr
+R2654:2661 Progress <> rtc_refl constr
+prf 2677:2686 <> step_qconv
+binder 2697:2697 <> t:21
+binder 2699:2699 <> u:22
+R2710:2713 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2702:2705 TypeRules <> step ind
+R2709:2709 _glm_qconv_def <> u:22 var
+R2707:2707 _glm_qconv_def <> t:21 var
+R2714:2718 _glm_qconv_def <> qconv def
+R2720:2720 _glm_qconv_def <> t:21 var
+R2722:2722 _glm_qconv_def <> u:22 var
+R2752:2762 _glm_qconv_def <> cjoin_qconv thm
+R2765:2774 _glm_qconv_def <> step_cjoin thm
+R2752:2762 _glm_qconv_def <> cjoin_qconv thm
+R2765:2774 _glm_qconv_def <> step_cjoin thm
+prf 2792:2800 <> eta_qconv
+binder 2811:2811 <> f:23
+R2814:2818 _glm_qconv_def <> qconv def
+R2821:2824 TypeRules <> TLam constr
+R2827:2830 TypeRules <> TApp constr
+R2846:2849 TypeRules <> TVar constr
+R2833:2836 TypeRules <> lift def
+R2842:2842 _glm_qconv_def <> f:23 var
+R2856:2856 _glm_qconv_def <> f:23 var
+R2882:2892 _glm_qconv_def <> cjoin_qconv thm
+R2895:2903 _glm_qconv_def <> eta_cjoin thm
+R2882:2892 _glm_qconv_def <> cjoin_qconv thm
+R2895:2903 _glm_qconv_def <> eta_cjoin thm
+prf 3245:3253 <> phi_qconv
+binder 3264:3265 <> S1:24
+binder 3267:3268 <> S2:25
+binder 3270:3270 <> i:26
+binder 3272:3275 <> Phi1:27
+binder 3277:3280 <> Phi2:28
+binder 3282:3285 <> Psi1:29
+binder 3287:3290 <> Psi2:30
+R3406:3413 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3297:3300 TypeRules <> conv ind
+R3360:3363 TypeRules <> TLam constr
+R3366:3373 TypeRules <> branches def
+R3376:3379 TypeRules <> TApp constr
+R3396:3399 TypeRules <> TVar constr
+R3382:3385 TypeRules <> lift def
+R3391:3392 _glm_qconv_def <> S2:25 var
+R3303:3306 TypeRules <> TLam constr
+R3309:3316 TypeRules <> branches def
+R3319:3322 TypeRules <> TApp constr
+R3339:3342 TypeRules <> TVar constr
+R3325:3328 TypeRules <> lift def
+R3334:3335 _glm_qconv_def <> S1:24 var
+R3444:3451 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3414:3417 TypeRules <> eval ind
+R3440:3443 _glm_qconv_def <> Phi1:27 var
+R3420:3425 TypeRules <> labels def
+R3428:3431 TypeRules <> TApp constr
+R3436:3436 _glm_qconv_def <> i:26 var
+R3433:3434 _glm_qconv_def <> S1:24 var
+R3482:3489 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3452:3455 TypeRules <> eval ind
+R3478:3481 _glm_qconv_def <> Phi2:28 var
+R3458:3463 TypeRules <> labels def
+R3466:3469 TypeRules <> TApp constr
+R3474:3474 _glm_qconv_def <> i:26 var
+R3471:3472 _glm_qconv_def <> S2:25 var
+R3514:3521 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3490:3498 TypeRules <> spine_phi ind
+R3510:3513 _glm_qconv_def <> Psi1:29 var
+R3505:3508 _glm_qconv_def <> Phi1:27 var
+R3503:3503 _glm_qconv_def <> i:26 var
+R3500:3501 _glm_qconv_def <> S1:24 var
+R3546:3553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3522:3530 TypeRules <> spine_phi ind
+R3542:3545 _glm_qconv_def <> Psi2:30 var
+R3537:3540 _glm_qconv_def <> Phi2:28 var
+R3535:3535 _glm_qconv_def <> i:26 var
+R3532:3533 _glm_qconv_def <> S2:25 var
+R3568:3575 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3554:3557 TypeRules <> conv ind
+R3564:3567 _glm_qconv_def <> Psi2:30 var
+R3559:3562 _glm_qconv_def <> Psi1:29 var
+R3576:3580 _glm_qconv_def <> qconv def
+R3583:3586 TypeRules <> TApp constr
+R3598:3598 _glm_qconv_def <> i:26 var
+R3589:3592 TypeRules <> TMuS constr
+R3594:3595 _glm_qconv_def <> S1:24 var
+R3602:3605 TypeRules <> TApp constr
+R3617:3617 _glm_qconv_def <> i:26 var
+R3608:3611 TypeRules <> TMuS constr
+R3613:3614 _glm_qconv_def <> S2:25 var
+R3699:3708 _glm_qconv_def <> mueq_qconv thm
+R3699:3708 _glm_qconv_def <> mueq_qconv thm
+R3717:3724 _luna_mueq <> me_muapp constr
+R3717:3724 _luna_mueq <> me_muapp constr
+R3736:3741 TypeRules <> cv_phi constr
+R3736:3741 TypeRules <> cv_phi constr

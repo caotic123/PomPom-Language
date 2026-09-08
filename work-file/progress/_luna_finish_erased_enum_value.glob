@@ -1,0 +1,314 @@
+DIGEST 4882e3124c1049dcf1e1da61a136f1dc
+F_luna_finish_erased_enum_value
+R15:22 Progress <> <> lib
+R40:54 SignatureLemmas <> <> lib
+R84:87 Stdlib.Lists.List <> <> lib
+R89:91 Stdlib.micromega.Lia <> <> lib
+R101:113 Stdlib.Lists.List ListNotations <> mod
+R115:123 TypeRules <> <> mod
+R125:144 Progress _tmp_epstep <> mod
+R146:173 Progress _work_mixed_closure <> mod
+R177:196 Progress _work_cjoin <> mod
+R198:228 Progress _work_cstep_invariants <> mod
+prf 238:256 <> enum_cjoin_tag_luna
+binder 267:267 <> t:1
+binder 269:269 <> u:2
+binder 271:271 <> h:3
+binder 273:273 <> k:4
+R289:292 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R280:284 Progress _work_cjoin cjoin def
+R286:286 _luna_finish_erased_enum_value <> t:1 var
+R288:288 _luna_finish_erased_enum_value <> u:2 var
+R303:306 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R293:298 Progress <> hshape ind
+R300:300 _luna_finish_erased_enum_value <> t:1 var
+R302:302 _luna_finish_erased_enum_value <> h:3 var
+R317:320 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R307:312 Progress <> hshape ind
+R314:314 _luna_finish_erased_enum_value <> u:2 var
+R316:316 _luna_finish_erased_enum_value <> k:4 var
+R322:324 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R321:321 _luna_finish_erased_enum_value <> h:3 var
+R325:325 _luna_finish_erased_enum_value <> k:4 var
+R385:400 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R385:400 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R436:451 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R436:451 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R482:498 Progress <> hshape_tag_unique thm
+R482:498 Progress <> hshape_tag_unique thm
+prf 526:544 <> enum_cjoin_inv_luna
+binder 555:556 <> E1:5
+binder 558:559 <> E2:6
+R595:598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R566:570 Progress _work_cjoin cjoin def
+R573:578 TypeRules <> TEnumT constr
+R580:581 _luna_finish_erased_enum_value <> E1:5 var
+R585:590 TypeRules <> TEnumT constr
+R592:593 _luna_finish_erased_enum_value <> E2:6 var
+R599:603 Progress _work_cjoin cjoin def
+R605:606 _luna_finish_erased_enum_value <> E1:5 var
+R608:609 _luna_finish_erased_enum_value <> E2:6 var
+R659:677 Progress _work_cstep_invariants rtc_cstep_enumt_inv thm
+R659:677 Progress _work_cstep_invariants rtc_cstep_enumt_inv thm
+R718:736 Progress _work_cstep_invariants rtc_cstep_enumt_inv thm
+R718:736 Progress _work_cstep_invariants rtc_cstep_enumt_inv thm
+prf 856:879 <> enum_cjoin_sub_back_luna
+binder 890:890 <> G:7
+binder 892:892 <> X:8
+binder 894:894 <> Y:9
+R910:913 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R901:903 TypeRules <> sub ind
+R909:909 _luna_finish_erased_enum_value <> Y:9 var
+R907:907 _luna_finish_erased_enum_value <> X:8 var
+R905:905 _luna_finish_erased_enum_value <> G:7 var
+binder 921:921 <> E:10
+R958:965 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R928:932 Progress _work_cjoin cjoin def
+R935:943 Progress <> phi_erase def
+R945:945 _luna_finish_erased_enum_value <> Y:9 var
+R949:954 TypeRules <> TEnumT constr
+R956:956 _luna_finish_erased_enum_value <> E:10 var
+R966:970 Progress _work_cjoin cjoin def
+R973:981 Progress <> phi_erase def
+R983:983 _luna_finish_erased_enum_value <> X:8 var
+R987:992 TypeRules <> TEnumT constr
+R994:994 _luna_finish_erased_enum_value <> E:10 var
+R1067:1077 Progress _work_cjoin cjoin_trans thm
+R1087:1100 Progress _work_cjoin conv_phi_cjoin thm
+R1067:1077 Progress _work_cjoin cjoin_trans thm
+R1087:1100 Progress _work_cjoin conv_phi_cjoin thm
+R1189:1207 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1227:1233 Progress <> hs_sort constr
+R1239:1246 Progress <> hs_enumt constr
+R1189:1207 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1227:1233 Progress <> hs_sort constr
+R1239:1246 Progress <> hs_enumt constr
+R1299:1317 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1337:1341 Progress <> hs_pi constr
+R1349:1356 Progress <> hs_enumt constr
+R1299:1317 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1337:1341 Progress <> hs_pi constr
+R1349:1356 Progress <> hs_enumt constr
+R1409:1427 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1447:1455 Progress <> hs_muiapp constr
+R1463:1470 Progress <> hs_enumt constr
+R1409:1427 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1447:1455 Progress <> hs_muiapp constr
+R1463:1470 Progress <> hs_enumt constr
+R1523:1541 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1561:1569 Progress <> hs_musapp constr
+R1577:1584 Progress <> hs_enumt constr
+R1523:1541 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1561:1569 Progress <> hs_musapp constr
+R1577:1584 Progress <> hs_enumt constr
+R1636:1654 _luna_finish_erased_enum_value <> enum_cjoin_inv_luna thm
+R1675:1698 _luna_finish_erased_enum_value <> enum_cjoin_sub_back_luna thm
+prf 1708:1722 <> clash_enum_luna
+binder 1733:1733 <> T:11
+binder 1735:1735 <> E:12
+binder 1737:1737 <> h:13
+R1774:1781 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1744:1748 Progress _work_cjoin cjoin def
+R1751:1759 Progress <> phi_erase def
+R1761:1761 _luna_finish_erased_enum_value <> T:11 var
+R1765:1770 TypeRules <> TEnumT constr
+R1772:1772 _luna_finish_erased_enum_value <> E:12 var
+R1804:1807 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1782:1787 Progress <> hshape ind
+R1790:1798 Progress <> phi_erase def
+R1800:1800 _luna_finish_erased_enum_value <> T:11 var
+R1803:1803 _luna_finish_erased_enum_value <> h:13 var
+R1819:1822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1809:1812 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R1808:1808 _luna_finish_erased_enum_value <> h:13 var
+R1813:1818 Progress <> HEnumT constr
+R1823:1827 Corelib.Init.Logic <> False ind
+R1878:1896 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1913:1920 Progress <> hs_enumt constr
+R1878:1896 _luna_finish_erased_enum_value <> enum_cjoin_tag_luna thm
+R1913:1920 Progress <> hs_enumt constr
+prf 1962:1995 <> enum_cjoin_synth_value_absurd_luna
+binder 2006:2006 <> t:14
+binder 2008:2008 <> T:15
+R2027:2030 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2015:2019 TypeRules <> synth ind
+R2026:2026 _luna_finish_erased_enum_value <> T:15 var
+R2024:2024 _luna_finish_erased_enum_value <> t:14 var
+R2021:2022 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2038:2041 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2031:2035 TypeRules <> value ind
+R2037:2037 _luna_finish_erased_enum_value <> t:14 var
+binder 2049:2049 <> E:16
+R2086:2089 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2056:2060 Progress _work_cjoin cjoin def
+R2063:2071 Progress <> phi_erase def
+R2073:2073 _luna_finish_erased_enum_value <> T:15 var
+R2077:2082 TypeRules <> TEnumT constr
+R2084:2084 _luna_finish_erased_enum_value <> E:16 var
+R2090:2094 Corelib.Init.Logic <> False ind
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2245:2253 Progress <> phi_erase def
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2207:2221 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2301:2320 Progress <> value_app_synth_sort thm
+R2301:2320 Progress <> value_app_synth_sort thm
+R2379:2393 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2414:2420 Progress <> hs_sort constr
+R2379:2393 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R2414:2420 Progress <> hs_sort constr
+R2463:2496 _luna_finish_erased_enum_value <> enum_cjoin_synth_value_absurd_luna thm
+prf 2506:2540 <> erased_enum_check_value_origin_luna
+binder 2551:2551 <> G:17
+binder 2553:2553 <> t:18
+binder 2555:2555 <> T:19
+R2573:2576 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2562:2566 TypeRules <> check ind
+R2572:2572 _luna_finish_erased_enum_value <> T:19 var
+R2570:2570 _luna_finish_erased_enum_value <> t:18 var
+R2568:2568 _luna_finish_erased_enum_value <> G:17 var
+R2583:2586 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2578:2580 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2577:2577 _luna_finish_erased_enum_value <> G:17 var
+R2581:2582 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2594:2597 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2587:2591 TypeRules <> value ind
+R2593:2593 _luna_finish_erased_enum_value <> t:18 var
+binder 2605:2605 <> E:20
+R2642:2649 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2612:2616 Progress _work_cjoin cjoin def
+R2619:2627 Progress <> phi_erase def
+R2629:2629 _luna_finish_erased_enum_value <> T:19 var
+R2633:2638 TypeRules <> TEnumT constr
+R2640:2640 _luna_finish_erased_enum_value <> E:20 var
+R2650:2650 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2732:2741 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2853:2853 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2651:2657 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2663:2664 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2658:2659 <> tg:21
+binder 2661:2662 <> E0:22
+R2675:2685 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2666:2668 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2665:2665 _luna_finish_erased_enum_value <> t:18 var
+R2669:2674 TypeRules <> TEZero constr
+R2686:2690 Progress _work_cjoin cjoin def
+R2693:2698 TypeRules <> TConsE constr
+R2716:2724 Progress <> phi_erase def
+R2726:2727 _luna_finish_erased_enum_value <> E0:22 var
+R2701:2709 Progress <> phi_erase def
+R2711:2712 _luna_finish_erased_enum_value <> tg:21 var
+R2731:2731 _luna_finish_erased_enum_value <> E:20 var
+R2742:2748 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2756:2757 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2749:2749 <> n:23
+binder 2751:2752 <> tg:24
+binder 2754:2755 <> E0:25
+R2770:2773 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2759:2761 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2758:2758 _luna_finish_erased_enum_value <> t:18 var
+R2762:2767 TypeRules <> TESucc constr
+R2769:2769 _luna_finish_erased_enum_value <> n:23 var
+R2796:2806 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2774:2778 TypeRules <> check ind
+R2786:2791 TypeRules <> TEnumT constr
+R2793:2794 _luna_finish_erased_enum_value <> E0:25 var
+R2783:2783 _luna_finish_erased_enum_value <> n:23 var
+R2780:2781 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2807:2811 Progress _work_cjoin cjoin def
+R2814:2819 TypeRules <> TConsE constr
+R2837:2845 Progress <> phi_erase def
+R2847:2848 _luna_finish_erased_enum_value <> E0:25 var
+R2822:2830 Progress <> phi_erase def
+R2832:2833 _luna_finish_erased_enum_value <> tg:24 var
+R2852:2852 _luna_finish_erased_enum_value <> E:20 var
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3038:3046 Progress <> phi_erase def
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3000:3014 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3100:3133 _luna_finish_erased_enum_value <> enum_cjoin_synth_value_absurd_luna thm
+R3100:3133 _luna_finish_erased_enum_value <> enum_cjoin_synth_value_absurd_luna thm
+R3177:3187 Progress _work_cjoin cjoin_trans thm
+R3197:3210 Progress _work_cjoin conv_phi_cjoin thm
+R3177:3187 Progress _work_cjoin cjoin_trans thm
+R3197:3210 Progress _work_cjoin conv_phi_cjoin thm
+R3255:3288 _luna_finish_erased_enum_value <> enum_cjoin_synth_value_absurd_luna thm
+R3255:3288 _luna_finish_erased_enum_value <> enum_cjoin_synth_value_absurd_luna thm
+R3332:3355 _luna_finish_erased_enum_value <> enum_cjoin_sub_back_luna thm
+R3332:3355 _luna_finish_erased_enum_value <> enum_cjoin_sub_back_luna thm
+R3401:3407 Corelib.Init.Logic <> eq_refl constr
+R3401:3407 Corelib.Init.Logic <> eq_refl constr
+R3428:3438 Progress _work_cjoin cjoin_trans thm
+R3448:3461 Progress _work_cjoin conv_phi_cjoin thm
+R3464:3469 TypeRules <> cv_sym constr
+R3428:3438 Progress _work_cjoin cjoin_trans thm
+R3448:3461 Progress _work_cjoin conv_phi_cjoin thm
+R3464:3469 TypeRules <> cv_sym constr
+R3513:3517 TypeRules <> check ind
+R3534:3538 TypeRules <> subst def
+R3523:3526 TypeRules <> TApp constr
+R3519:3520 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3513:3517 TypeRules <> check ind
+R3534:3538 TypeRules <> subst def
+R3523:3526 TypeRules <> TApp constr
+R3519:3520 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3562:3567 TypeRules <> ch_app constr
+R3562:3567 TypeRules <> ch_app constr
+R3599:3640 SignatureLemmas <> luna_check_app_erased_sort thm
+R3653:3657 TypeRules <> subst def
+R3599:3640 SignatureLemmas <> luna_check_app_erased_sort thm
+R3653:3657 TypeRules <> subst def
+R3705:3709 Progress _work_cjoin cjoin def
+R3712:3716 TypeRules <> TSort constr
+R3722:3727 TypeRules <> TEnumT constr
+R3705:3709 Progress _work_cjoin cjoin def
+R3712:3716 TypeRules <> TSort constr
+R3722:3727 TypeRules <> TEnumT constr
+R3748:3758 Progress _work_cjoin cjoin_trans thm
+R3768:3776 Progress _work_cjoin cjoin_sym thm
+R3748:3758 Progress _work_cjoin cjoin_trans thm
+R3768:3776 Progress _work_cjoin cjoin_sym thm
+R3824:3838 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3841:3845 TypeRules <> TSort constr
+R3853:3857 Progress <> HSort constr
+R3886:3892 Progress <> hs_sort constr
+R3824:3838 _luna_finish_erased_enum_value <> clash_enum_luna thm
+R3841:3845 TypeRules <> TSort constr
+R3853:3857 Progress <> HSort constr
+R3886:3892 Progress <> hs_sort constr
+R3972:3980 Progress <> phi_erase def
+R3997:4015 _luna_finish_erased_enum_value <> enum_cjoin_inv_luna thm
+R3997:4015 _luna_finish_erased_enum_value <> enum_cjoin_inv_luna thm
+R4115:4123 Progress <> phi_erase def
+R4140:4158 _luna_finish_erased_enum_value <> enum_cjoin_inv_luna thm
+R4140:4158 _luna_finish_erased_enum_value <> enum_cjoin_inv_luna thm
+R4195:4229 _luna_finish_erased_enum_value <> erased_enum_check_value_origin_luna thm

@@ -1,0 +1,674 @@
+DIGEST fe9f49ce0c457c36e23e62fc2fb36089
+F_luna_finish_erased_coverage
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R65:77 Stdlib.Lists.List ListNotations <> mod
+R79:87 TypeRules <> <> mod
+R89:108 Progress _tmp_epstep <> mod
+R110:137 Progress _work_mixed_closure <> mod
+R141:160 Progress _work_cjoin <> mod
+R162:192 Progress _work_cstep_invariants <> mod
+R196:222 Progress _work_conv_whd_pos <> mod
+prf 232:251 <> pstep_lcons_inv_luna
+binder 262:262 <> A:1
+binder 264:264 <> c:2
+binder 266:266 <> L:3
+binder 268:268 <> u:4
+R293:298 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R271:275 Progress <> pstep ind
+R278:283 TypeRules <> TLCons constr
+R289:289 _luna_finish_erased_coverage <> L:3 var
+R287:287 _luna_finish_erased_coverage <> c:2 var
+R285:285 _luna_finish_erased_coverage <> A:1 var
+R292:292 _luna_finish_erased_coverage <> u:4 var
+R299:305 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R314:315 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 306:307 <> A':5
+binder 309:310 <> c':6
+binder 312:313 <> L':7
+R335:338 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R317:319 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R316:316 _luna_finish_erased_coverage <> u:4 var
+R320:325 TypeRules <> TLCons constr
+R333:334 _luna_finish_erased_coverage <> L':7 var
+R330:331 _luna_finish_erased_coverage <> c':6 var
+R327:328 _luna_finish_erased_coverage <> A':5 var
+R349:352 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R339:343 Progress <> pstep ind
+R345:345 _luna_finish_erased_coverage <> A:1 var
+R347:348 _luna_finish_erased_coverage <> A':5 var
+R363:366 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R353:357 Progress <> pstep ind
+R359:359 _luna_finish_erased_coverage <> c:2 var
+R361:362 _luna_finish_erased_coverage <> c':6 var
+R367:371 Progress <> pstep ind
+R373:373 _luna_finish_erased_coverage <> L:3 var
+R375:376 _luna_finish_erased_coverage <> L':7 var
+prf 493:516 <> rtc_pstep_lcons_inv_luna
+binder 527:527 <> A:8
+binder 529:529 <> c:9
+binder 531:531 <> L:10
+binder 533:533 <> u:11
+R562:567 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R536:538 Progress <> rtc ind
+R561:561 _luna_finish_erased_coverage <> u:11 var
+R547:552 TypeRules <> TLCons constr
+R558:558 _luna_finish_erased_coverage <> L:10 var
+R556:556 _luna_finish_erased_coverage <> c:9 var
+R554:554 _luna_finish_erased_coverage <> A:8 var
+R540:544 Progress <> pstep ind
+R568:574 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R583:584 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 575:576 <> A':12
+binder 578:579 <> c':13
+binder 581:582 <> L':14
+R604:607 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R586:588 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R585:585 _luna_finish_erased_coverage <> u:11 var
+R589:594 TypeRules <> TLCons constr
+R602:603 _luna_finish_erased_coverage <> L':14 var
+R599:600 _luna_finish_erased_coverage <> c':13 var
+R596:597 _luna_finish_erased_coverage <> A':12 var
+R622:625 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R608:610 Progress <> rtc ind
+R620:621 _luna_finish_erased_coverage <> A':12 var
+R618:618 _luna_finish_erased_coverage <> A:8 var
+R612:616 Progress <> pstep ind
+R640:643 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R626:628 Progress <> rtc ind
+R638:639 _luna_finish_erased_coverage <> c':13 var
+R636:636 _luna_finish_erased_coverage <> c:9 var
+R630:634 Progress <> pstep ind
+R644:646 Progress <> rtc ind
+R656:657 _luna_finish_erased_coverage <> L':14 var
+R654:654 _luna_finish_erased_coverage <> L:10 var
+R648:652 Progress <> pstep ind
+R696:701 TypeRules <> TLCons constr
+R696:701 TypeRules <> TLCons constr
+R802:809 Progress <> rtc_refl constr
+R802:809 Progress <> rtc_refl constr
+R802:809 Progress <> rtc_refl constr
+R802:809 Progress <> rtc_refl constr
+R825:844 _luna_finish_erased_coverage <> pstep_lcons_inv_luna thm
+R825:844 _luna_finish_erased_coverage <> pstep_lcons_inv_luna thm
+R920:926 Corelib.Init.Logic <> eq_refl constr
+R920:926 Corelib.Init.Logic <> eq_refl constr
+R1013:1020 Progress <> rtc_step constr
+R1013:1020 Progress <> rtc_step constr
+R1013:1020 Progress <> rtc_step constr
+R1013:1020 Progress <> rtc_step constr
+prf 1034:1054 <> epstep_lcons_inv_luna
+binder 1065:1065 <> A:15
+binder 1067:1067 <> c:16
+binder 1069:1069 <> L:17
+binder 1071:1071 <> u:18
+R1097:1102 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1074:1079 Progress _tmp_epstep epstep ind
+R1082:1087 TypeRules <> TLCons constr
+R1093:1093 _luna_finish_erased_coverage <> L:17 var
+R1091:1091 _luna_finish_erased_coverage <> c:16 var
+R1089:1089 _luna_finish_erased_coverage <> A:15 var
+R1096:1096 _luna_finish_erased_coverage <> u:18 var
+R1103:1109 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1118:1119 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1110:1111 <> A':19
+binder 1113:1114 <> c':20
+binder 1116:1117 <> L':21
+R1139:1142 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1121:1123 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1120:1120 _luna_finish_erased_coverage <> u:18 var
+R1124:1129 TypeRules <> TLCons constr
+R1137:1138 _luna_finish_erased_coverage <> L':21 var
+R1134:1135 _luna_finish_erased_coverage <> c':20 var
+R1131:1132 _luna_finish_erased_coverage <> A':19 var
+R1154:1157 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1143:1148 Progress _tmp_epstep epstep ind
+R1150:1150 _luna_finish_erased_coverage <> A:15 var
+R1152:1153 _luna_finish_erased_coverage <> A':19 var
+R1169:1172 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1158:1163 Progress _tmp_epstep epstep ind
+R1165:1165 _luna_finish_erased_coverage <> c:16 var
+R1167:1168 _luna_finish_erased_coverage <> c':20 var
+R1173:1178 Progress _tmp_epstep epstep ind
+R1180:1180 _luna_finish_erased_coverage <> L:17 var
+R1182:1183 _luna_finish_erased_coverage <> L':21 var
+prf 1300:1324 <> rtc_epstep_lcons_inv_luna
+binder 1335:1335 <> A:22
+binder 1337:1337 <> c:23
+binder 1339:1339 <> L:24
+binder 1341:1341 <> u:25
+R1371:1376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1344:1346 Progress <> rtc ind
+R1370:1370 _luna_finish_erased_coverage <> u:25 var
+R1356:1361 TypeRules <> TLCons constr
+R1367:1367 _luna_finish_erased_coverage <> L:24 var
+R1365:1365 _luna_finish_erased_coverage <> c:23 var
+R1363:1363 _luna_finish_erased_coverage <> A:22 var
+R1348:1353 Progress _tmp_epstep epstep ind
+R1377:1383 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1392:1393 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1384:1385 <> A':26
+binder 1387:1388 <> c':27
+binder 1390:1391 <> L':28
+R1413:1416 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1395:1397 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1394:1394 _luna_finish_erased_coverage <> u:25 var
+R1398:1403 TypeRules <> TLCons constr
+R1411:1412 _luna_finish_erased_coverage <> L':28 var
+R1408:1409 _luna_finish_erased_coverage <> c':27 var
+R1405:1406 _luna_finish_erased_coverage <> A':26 var
+R1432:1435 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1417:1419 Progress <> rtc ind
+R1430:1431 _luna_finish_erased_coverage <> A':26 var
+R1428:1428 _luna_finish_erased_coverage <> A:22 var
+R1421:1426 Progress _tmp_epstep epstep ind
+R1451:1454 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1436:1438 Progress <> rtc ind
+R1449:1450 _luna_finish_erased_coverage <> c':27 var
+R1447:1447 _luna_finish_erased_coverage <> c:23 var
+R1440:1445 Progress _tmp_epstep epstep ind
+R1455:1457 Progress <> rtc ind
+R1468:1469 _luna_finish_erased_coverage <> L':28 var
+R1466:1466 _luna_finish_erased_coverage <> L:24 var
+R1459:1464 Progress _tmp_epstep epstep ind
+R1508:1513 TypeRules <> TLCons constr
+R1508:1513 TypeRules <> TLCons constr
+R1614:1621 Progress <> rtc_refl constr
+R1614:1621 Progress <> rtc_refl constr
+R1614:1621 Progress <> rtc_refl constr
+R1614:1621 Progress <> rtc_refl constr
+R1637:1657 _luna_finish_erased_coverage <> epstep_lcons_inv_luna thm
+R1637:1657 _luna_finish_erased_coverage <> epstep_lcons_inv_luna thm
+R1733:1739 Corelib.Init.Logic <> eq_refl constr
+R1733:1739 Corelib.Init.Logic <> eq_refl constr
+R1826:1833 Progress <> rtc_step constr
+R1826:1833 Progress <> rtc_step constr
+R1826:1833 Progress <> rtc_step constr
+R1826:1833 Progress <> rtc_step constr
+prf 1847:1866 <> cstep_lcons_inv_luna
+binder 1877:1877 <> A:29
+binder 1879:1879 <> c:30
+binder 1881:1881 <> L:31
+binder 1883:1883 <> u:32
+R1908:1913 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1886:1890 Progress _work_mixed_closure cstep ind
+R1893:1898 TypeRules <> TLCons constr
+R1904:1904 _luna_finish_erased_coverage <> L:31 var
+R1902:1902 _luna_finish_erased_coverage <> c:30 var
+R1900:1900 _luna_finish_erased_coverage <> A:29 var
+R1907:1907 _luna_finish_erased_coverage <> u:32 var
+R1914:1920 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1929:1930 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1921:1922 <> A':33
+binder 1924:1925 <> c':34
+binder 1927:1928 <> L':35
+R1950:1953 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1932:1934 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1931:1931 _luna_finish_erased_coverage <> u:32 var
+R1935:1940 TypeRules <> TLCons constr
+R1948:1949 _luna_finish_erased_coverage <> L':35 var
+R1945:1946 _luna_finish_erased_coverage <> c':34 var
+R1942:1943 _luna_finish_erased_coverage <> A':33 var
+R1964:1967 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1954:1958 Progress _work_mixed_closure cstep ind
+R1960:1960 _luna_finish_erased_coverage <> A:29 var
+R1962:1963 _luna_finish_erased_coverage <> A':33 var
+R1978:1981 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1968:1972 Progress _work_mixed_closure cstep ind
+R1974:1974 _luna_finish_erased_coverage <> c:30 var
+R1976:1977 _luna_finish_erased_coverage <> c':34 var
+R1982:1986 Progress _work_mixed_closure cstep ind
+R1988:1988 _luna_finish_erased_coverage <> L:31 var
+R1990:1991 _luna_finish_erased_coverage <> L':35 var
+R2043:2066 _luna_finish_erased_coverage <> rtc_pstep_lcons_inv_luna thm
+R2043:2066 _luna_finish_erased_coverage <> rtc_pstep_lcons_inv_luna thm
+R2157:2163 Progress _work_mixed_closure cs_core constr
+R2157:2163 Progress _work_mixed_closure cs_core constr
+R2157:2163 Progress _work_mixed_closure cs_core constr
+R2157:2163 Progress _work_mixed_closure cs_core constr
+R2191:2215 _luna_finish_erased_coverage <> rtc_epstep_lcons_inv_luna thm
+R2191:2215 _luna_finish_erased_coverage <> rtc_epstep_lcons_inv_luna thm
+R2306:2311 Progress _work_mixed_closure cs_eta constr
+R2306:2311 Progress _work_mixed_closure cs_eta constr
+R2306:2311 Progress _work_mixed_closure cs_eta constr
+R2306:2311 Progress _work_mixed_closure cs_eta constr
+prf 2337:2360 <> rtc_cstep_lcons_inv_luna
+binder 2371:2371 <> A:36
+binder 2373:2373 <> c:37
+binder 2375:2375 <> L:38
+binder 2377:2377 <> u:39
+R2406:2411 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2380:2382 Progress <> rtc ind
+R2405:2405 _luna_finish_erased_coverage <> u:39 var
+R2391:2396 TypeRules <> TLCons constr
+R2402:2402 _luna_finish_erased_coverage <> L:38 var
+R2400:2400 _luna_finish_erased_coverage <> c:37 var
+R2398:2398 _luna_finish_erased_coverage <> A:36 var
+R2384:2388 Progress _work_mixed_closure cstep ind
+R2412:2418 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2427:2428 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2419:2420 <> A':40
+binder 2422:2423 <> c':41
+binder 2425:2426 <> L':42
+R2448:2451 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2430:2432 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2429:2429 _luna_finish_erased_coverage <> u:39 var
+R2433:2438 TypeRules <> TLCons constr
+R2446:2447 _luna_finish_erased_coverage <> L':42 var
+R2443:2444 _luna_finish_erased_coverage <> c':41 var
+R2440:2441 _luna_finish_erased_coverage <> A':40 var
+R2466:2469 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2452:2454 Progress <> rtc ind
+R2464:2465 _luna_finish_erased_coverage <> A':40 var
+R2462:2462 _luna_finish_erased_coverage <> A:36 var
+R2456:2460 Progress _work_mixed_closure cstep ind
+R2484:2487 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2470:2472 Progress <> rtc ind
+R2482:2483 _luna_finish_erased_coverage <> c':41 var
+R2480:2480 _luna_finish_erased_coverage <> c:37 var
+R2474:2478 Progress _work_mixed_closure cstep ind
+R2488:2490 Progress <> rtc ind
+R2500:2501 _luna_finish_erased_coverage <> L':42 var
+R2498:2498 _luna_finish_erased_coverage <> L:38 var
+R2492:2496 Progress _work_mixed_closure cstep ind
+R2540:2545 TypeRules <> TLCons constr
+R2540:2545 TypeRules <> TLCons constr
+R2646:2653 Progress <> rtc_refl constr
+R2646:2653 Progress <> rtc_refl constr
+R2646:2653 Progress <> rtc_refl constr
+R2646:2653 Progress <> rtc_refl constr
+R2669:2688 _luna_finish_erased_coverage <> cstep_lcons_inv_luna thm
+R2669:2688 _luna_finish_erased_coverage <> cstep_lcons_inv_luna thm
+R2764:2770 Corelib.Init.Logic <> eq_refl constr
+R2764:2770 Corelib.Init.Logic <> eq_refl constr
+R2857:2864 Progress <> rtc_step constr
+R2857:2864 Progress <> rtc_step constr
+R2857:2864 Progress <> rtc_step constr
+R2857:2864 Progress <> rtc_step constr
+prf 2878:2904 <> cjoin_lcons_inv_erased_luna
+binder 2915:2915 <> A:43
+binder 2917:2917 <> c:44
+binder 2919:2919 <> L:45
+binder 2921:2921 <> B:46
+binder 2923:2923 <> d:47
+binder 2925:2925 <> R:48
+R2964:2967 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2929:2933 Progress _work_cjoin cjoin def
+R2936:2941 TypeRules <> TLCons constr
+R2947:2947 _luna_finish_erased_coverage <> L:45 var
+R2945:2945 _luna_finish_erased_coverage <> c:44 var
+R2943:2943 _luna_finish_erased_coverage <> A:43 var
+R2951:2956 TypeRules <> TLCons constr
+R2962:2962 _luna_finish_erased_coverage <> R:48 var
+R2960:2960 _luna_finish_erased_coverage <> d:47 var
+R2958:2958 _luna_finish_erased_coverage <> B:46 var
+R2977:2980 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2968:2972 Progress _work_cjoin cjoin def
+R2974:2974 _luna_finish_erased_coverage <> A:43 var
+R2976:2976 _luna_finish_erased_coverage <> B:46 var
+R2990:2993 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2981:2985 Progress _work_cjoin cjoin def
+R2987:2987 _luna_finish_erased_coverage <> c:44 var
+R2989:2989 _luna_finish_erased_coverage <> d:47 var
+R2994:2998 Progress _work_cjoin cjoin def
+R3000:3000 _luna_finish_erased_coverage <> L:45 var
+R3002:3002 _luna_finish_erased_coverage <> R:48 var
+R3056:3079 _luna_finish_erased_coverage <> rtc_cstep_lcons_inv_luna thm
+R3056:3079 _luna_finish_erased_coverage <> rtc_cstep_lcons_inv_luna thm
+R3165:3188 _luna_finish_erased_coverage <> rtc_cstep_lcons_inv_luna thm
+R3197:3202 TypeRules <> TLCons constr
+R3165:3188 _luna_finish_erased_coverage <> rtc_cstep_lcons_inv_luna thm
+R3197:3202 TypeRules <> TLCons constr
+R3312:3316 Progress _work_cjoin cjoin def
+R3349:3375 _luna_finish_erased_coverage <> cjoin_lcons_inv_erased_luna thm
+prf 3385:3403 <> pstep_lnil_inv_luna
+binder 3414:3414 <> B:49
+binder 3416:3416 <> u:50
+R3436:3441 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3419:3423 Progress <> pstep ind
+R3426:3430 TypeRules <> TLNil constr
+R3432:3432 _luna_finish_erased_coverage <> B:49 var
+R3435:3435 _luna_finish_erased_coverage <> u:50 var
+R3442:3448 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3451:3452 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3449:3450 <> B':51
+R3465:3468 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3454:3456 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3453:3453 _luna_finish_erased_coverage <> u:50 var
+R3457:3461 TypeRules <> TLNil constr
+R3463:3464 _luna_finish_erased_coverage <> B':51 var
+R3469:3473 Progress <> pstep ind
+R3475:3475 _luna_finish_erased_coverage <> B:49 var
+R3477:3478 _luna_finish_erased_coverage <> B':51 var
+prf 3579:3601 <> rtc_pstep_lnil_inv_luna
+binder 3612:3612 <> B:52
+binder 3614:3614 <> u:53
+R3638:3643 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3617:3619 Progress <> rtc ind
+R3637:3637 _luna_finish_erased_coverage <> u:53 var
+R3628:3632 TypeRules <> TLNil constr
+R3634:3634 _luna_finish_erased_coverage <> B:52 var
+R3621:3625 Progress <> pstep ind
+R3644:3650 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3653:3654 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3651:3652 <> B':54
+R3667:3670 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3656:3658 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3655:3655 _luna_finish_erased_coverage <> u:53 var
+R3659:3663 TypeRules <> TLNil constr
+R3665:3666 _luna_finish_erased_coverage <> B':54 var
+R3671:3673 Progress <> rtc ind
+R3683:3684 _luna_finish_erased_coverage <> B':54 var
+R3681:3681 _luna_finish_erased_coverage <> B:52 var
+R3675:3679 Progress <> pstep ind
+R3719:3723 TypeRules <> TLNil constr
+R3719:3723 TypeRules <> TLNil constr
+R3818:3825 Progress <> rtc_refl constr
+R3818:3825 Progress <> rtc_refl constr
+R3842:3860 _luna_finish_erased_coverage <> pstep_lnil_inv_luna thm
+R3842:3860 _luna_finish_erased_coverage <> pstep_lnil_inv_luna thm
+R3907:3913 Corelib.Init.Logic <> eq_refl constr
+R3907:3913 Corelib.Init.Logic <> eq_refl constr
+R3978:3985 Progress <> rtc_step constr
+R3978:3985 Progress <> rtc_step constr
+prf 4000:4019 <> epstep_lnil_inv_luna
+binder 4030:4030 <> B:55
+binder 4032:4032 <> u:56
+R4053:4058 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4035:4040 Progress _tmp_epstep epstep ind
+R4043:4047 TypeRules <> TLNil constr
+R4049:4049 _luna_finish_erased_coverage <> B:55 var
+R4052:4052 _luna_finish_erased_coverage <> u:56 var
+R4059:4065 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4068:4069 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4066:4067 <> B':57
+R4082:4085 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4071:4073 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4070:4070 _luna_finish_erased_coverage <> u:56 var
+R4074:4078 TypeRules <> TLNil constr
+R4080:4081 _luna_finish_erased_coverage <> B':57 var
+R4086:4091 Progress _tmp_epstep epstep ind
+R4093:4093 _luna_finish_erased_coverage <> B:55 var
+R4095:4096 _luna_finish_erased_coverage <> B':57 var
+prf 4197:4220 <> rtc_epstep_lnil_inv_luna
+binder 4231:4231 <> B:58
+binder 4233:4233 <> u:59
+R4258:4263 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4236:4238 Progress <> rtc ind
+R4257:4257 _luna_finish_erased_coverage <> u:59 var
+R4248:4252 TypeRules <> TLNil constr
+R4254:4254 _luna_finish_erased_coverage <> B:58 var
+R4240:4245 Progress _tmp_epstep epstep ind
+R4264:4270 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4273:4274 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4271:4272 <> B':60
+R4287:4290 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4276:4278 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4275:4275 _luna_finish_erased_coverage <> u:59 var
+R4279:4283 TypeRules <> TLNil constr
+R4285:4286 _luna_finish_erased_coverage <> B':60 var
+R4291:4293 Progress <> rtc ind
+R4304:4305 _luna_finish_erased_coverage <> B':60 var
+R4302:4302 _luna_finish_erased_coverage <> B:58 var
+R4295:4300 Progress _tmp_epstep epstep ind
+R4340:4344 TypeRules <> TLNil constr
+R4340:4344 TypeRules <> TLNil constr
+R4439:4446 Progress <> rtc_refl constr
+R4439:4446 Progress <> rtc_refl constr
+R4463:4482 _luna_finish_erased_coverage <> epstep_lnil_inv_luna thm
+R4463:4482 _luna_finish_erased_coverage <> epstep_lnil_inv_luna thm
+R4529:4535 Corelib.Init.Logic <> eq_refl constr
+R4529:4535 Corelib.Init.Logic <> eq_refl constr
+R4600:4607 Progress <> rtc_step constr
+R4600:4607 Progress <> rtc_step constr
+prf 4622:4640 <> cstep_lnil_inv_luna
+binder 4651:4651 <> B:61
+binder 4653:4653 <> u:62
+R4673:4678 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4656:4660 Progress _work_mixed_closure cstep ind
+R4663:4667 TypeRules <> TLNil constr
+R4669:4669 _luna_finish_erased_coverage <> B:61 var
+R4672:4672 _luna_finish_erased_coverage <> u:62 var
+R4679:4685 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4688:4689 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4686:4687 <> B':63
+R4702:4705 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4691:4693 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4690:4690 _luna_finish_erased_coverage <> u:62 var
+R4694:4698 TypeRules <> TLNil constr
+R4700:4701 _luna_finish_erased_coverage <> B':63 var
+R4706:4710 Progress _work_mixed_closure cstep ind
+R4712:4712 _luna_finish_erased_coverage <> B:61 var
+R4714:4715 _luna_finish_erased_coverage <> B':63 var
+R4773:4795 _luna_finish_erased_coverage <> rtc_pstep_lnil_inv_luna thm
+R4860:4866 Progress _work_mixed_closure cs_core constr
+R4773:4795 _luna_finish_erased_coverage <> rtc_pstep_lnil_inv_luna thm
+R4860:4866 Progress _work_mixed_closure cs_core constr
+R4894:4917 _luna_finish_erased_coverage <> rtc_epstep_lnil_inv_luna thm
+R4982:4987 Progress _work_mixed_closure cs_eta constr
+R4894:4917 _luna_finish_erased_coverage <> rtc_epstep_lnil_inv_luna thm
+R4982:4987 Progress _work_mixed_closure cs_eta constr
+prf 5013:5032 <> rtc_cstep_lnil_shape
+binder 5043:5043 <> B:64
+binder 5045:5045 <> u:65
+R5069:5074 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5048:5050 Progress <> rtc ind
+R5068:5068 _luna_finish_erased_coverage <> u:65 var
+R5059:5063 TypeRules <> TLNil constr
+R5065:5065 _luna_finish_erased_coverage <> B:64 var
+R5052:5056 Progress _work_mixed_closure cstep ind
+R5075:5081 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5084:5085 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5082:5083 <> B':66
+R5087:5089 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5086:5086 _luna_finish_erased_coverage <> u:65 var
+R5090:5094 TypeRules <> TLNil constr
+R5096:5097 _luna_finish_erased_coverage <> B':66 var
+R5132:5136 TypeRules <> TLNil constr
+R5132:5136 TypeRules <> TLNil constr
+R5231:5249 _luna_finish_erased_coverage <> cstep_lnil_inv_luna thm
+R5231:5249 _luna_finish_erased_coverage <> cstep_lnil_inv_luna thm
+R5296:5302 Corelib.Init.Logic <> eq_refl constr
+R5296:5302 Corelib.Init.Logic <> eq_refl constr
+prf 5352:5375 <> no_cjoin_lcons_lnil_luna
+binder 5386:5386 <> A:67
+binder 5388:5388 <> c:68
+binder 5390:5390 <> L:69
+binder 5392:5392 <> B:70
+R5397:5398 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R5399:5403 Progress _work_cjoin cjoin def
+R5406:5411 TypeRules <> TLCons constr
+R5417:5417 _luna_finish_erased_coverage <> L:69 var
+R5415:5415 _luna_finish_erased_coverage <> c:68 var
+R5413:5413 _luna_finish_erased_coverage <> A:67 var
+R5421:5425 TypeRules <> TLNil constr
+R5427:5427 _luna_finish_erased_coverage <> B:70 var
+R5478:5501 _luna_finish_erased_coverage <> rtc_cstep_lcons_inv_luna thm
+R5478:5501 _luna_finish_erased_coverage <> rtc_cstep_lcons_inv_luna thm
+R5553:5572 _luna_finish_erased_coverage <> rtc_cstep_lnil_shape thm
+R5553:5572 _luna_finish_erased_coverage <> rtc_cstep_lnil_shape thm
+R5657:5680 _luna_finish_erased_coverage <> no_cjoin_lcons_lnil_luna thm
+prf 5690:5709 <> erased_spine_covered
+binder 5720:5720 <> c:71
+binder 5722:5723 <> L1:72
+R5742:5745 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5728:5736 TypeRules <> spine_mem ind
+R5740:5741 _luna_finish_erased_coverage <> L1:72 var
+R5738:5738 _luna_finish_erased_coverage <> c:71 var
+binder 5753:5754 <> L2:73
+binder 5756:5757 <> bs:74
+R5772:5777 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5760:5765 TypeRules <> covers ind
+R5770:5771 _luna_finish_erased_coverage <> L2:73 var
+R5767:5768 _luna_finish_erased_coverage <> bs:74 var
+R5813:5818 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5778:5782 Progress _work_cjoin cjoin def
+R5785:5793 Progress <> phi_erase def
+R5795:5796 _luna_finish_erased_coverage <> L1:72 var
+R5800:5808 Progress <> phi_erase def
+R5810:5811 _luna_finish_erased_coverage <> L2:73 var
+R5819:5825 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5827:5828 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5826:5826 <> d:75
+R5836:5839 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5829:5830 Stdlib.Lists.List <> In def
+R5834:5835 _luna_finish_erased_coverage <> bs:74 var
+R5832:5832 _luna_finish_erased_coverage <> d:75 var
+R5840:5844 Progress _work_cjoin cjoin def
+R5847:5855 Progress <> phi_erase def
+R5857:5857 _luna_finish_erased_coverage <> c:71 var
+R5861:5869 Progress <> phi_erase def
+R5871:5871 _luna_finish_erased_coverage <> d:75 var
+R6025:6045 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R6025:6045 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R6082:6098 Progress _work_cjoin cjoin_reduce_left thm
+R6082:6098 Progress _work_cjoin cjoin_reduce_left thm
+R6197:6217 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R6197:6217 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R6253:6270 Progress _work_cjoin cjoin_reduce_right thm
+R6279:6286 Corelib.Init.Logic <> ex_intro constr
+R6293:6296 Corelib.Init.Logic <> conj constr
+R6253:6270 Progress _work_cjoin cjoin_reduce_right thm
+R6279:6286 Corelib.Init.Logic <> ex_intro constr
+R6293:6296 Corelib.Init.Logic <> conj constr
+R6370:6393 _luna_finish_erased_coverage <> no_cjoin_lcons_lnil_luna thm
+R6396:6404 Progress <> phi_erase def
+R6410:6418 Progress <> phi_erase def
+R6433:6441 Progress <> phi_erase def
+R6450:6458 Progress <> phi_erase def
+R6370:6393 _luna_finish_erased_coverage <> no_cjoin_lcons_lnil_luna thm
+R6396:6404 Progress <> phi_erase def
+R6410:6418 Progress <> phi_erase def
+R6433:6441 Progress <> phi_erase def
+R6450:6458 Progress <> phi_erase def
+R6479:6486 Corelib.Init.Logic <> ex_intro constr
+R6493:6496 Corelib.Init.Logic <> conj constr
+R6479:6486 Corelib.Init.Logic <> ex_intro constr
+R6493:6496 Corelib.Init.Logic <> conj constr
+R6527:6547 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R6527:6547 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R6583:6600 Progress _work_cjoin cjoin_reduce_right thm
+R6609:6616 Corelib.Init.Logic <> ex_intro constr
+R6623:6626 Corelib.Init.Logic <> conj constr
+R6583:6600 Progress _work_cjoin cjoin_reduce_right thm
+R6609:6616 Corelib.Init.Logic <> ex_intro constr
+R6623:6626 Corelib.Init.Logic <> conj constr
+R6688:6714 _luna_finish_erased_coverage <> cjoin_lcons_inv_erased_luna thm
+R6729:6736 Corelib.Init.Logic <> ex_intro constr
+R6743:6746 Corelib.Init.Logic <> conj constr
+R6688:6714 _luna_finish_erased_coverage <> cjoin_lcons_inv_erased_luna thm
+R6729:6736 Corelib.Init.Logic <> ex_intro constr
+R6743:6746 Corelib.Init.Logic <> conj constr
+R6795:6807 Stdlib.Lists.List <> Exists_exists thm
+R6795:6807 Stdlib.Lists.List <> Exists_exists thm
+R6896:6906 Progress _work_cjoin cjoin_trans thm
+R6916:6929 Progress _work_cjoin conv_phi_cjoin thm
+R6896:6906 Progress _work_cjoin cjoin_trans thm
+R6916:6929 Progress _work_cjoin conv_phi_cjoin thm
+R6958:6968 Progress _work_cjoin cjoin_trans thm
+R6958:6968 Progress _work_cjoin cjoin_trans thm
+R6997:7010 Progress _work_cjoin conv_phi_cjoin thm
+R6997:7010 Progress _work_cjoin conv_phi_cjoin thm
+R7042:7062 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R7042:7062 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R7099:7115 Progress _work_cjoin cjoin_reduce_left thm
+R7099:7115 Progress _work_cjoin cjoin_reduce_left thm
+R7214:7234 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R7214:7234 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R7270:7287 Progress _work_cjoin cjoin_reduce_right thm
+R7296:7303 Corelib.Init.Logic <> ex_intro constr
+R7310:7313 Corelib.Init.Logic <> conj constr
+R7270:7287 Progress _work_cjoin cjoin_reduce_right thm
+R7296:7303 Corelib.Init.Logic <> ex_intro constr
+R7310:7313 Corelib.Init.Logic <> conj constr
+R7387:7410 _luna_finish_erased_coverage <> no_cjoin_lcons_lnil_luna thm
+R7413:7421 Progress <> phi_erase def
+R7427:7435 Progress <> phi_erase def
+R7450:7458 Progress <> phi_erase def
+R7467:7475 Progress <> phi_erase def
+R7387:7410 _luna_finish_erased_coverage <> no_cjoin_lcons_lnil_luna thm
+R7413:7421 Progress <> phi_erase def
+R7427:7435 Progress <> phi_erase def
+R7450:7458 Progress <> phi_erase def
+R7467:7475 Progress <> phi_erase def
+R7496:7503 Corelib.Init.Logic <> ex_intro constr
+R7510:7513 Corelib.Init.Logic <> conj constr
+R7496:7503 Corelib.Init.Logic <> ex_intro constr
+R7510:7513 Corelib.Init.Logic <> conj constr
+R7544:7564 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R7544:7564 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R7600:7617 Progress _work_cjoin cjoin_reduce_right thm
+R7626:7633 Corelib.Init.Logic <> ex_intro constr
+R7640:7643 Corelib.Init.Logic <> conj constr
+R7600:7617 Progress _work_cjoin cjoin_reduce_right thm
+R7626:7633 Corelib.Init.Logic <> ex_intro constr
+R7640:7643 Corelib.Init.Logic <> conj constr
+R7705:7731 _luna_finish_erased_coverage <> cjoin_lcons_inv_erased_luna thm
+R7746:7753 Corelib.Init.Logic <> ex_intro constr
+R7760:7763 Corelib.Init.Logic <> conj constr
+R7705:7731 _luna_finish_erased_coverage <> cjoin_lcons_inv_erased_luna thm
+R7746:7753 Corelib.Init.Logic <> ex_intro constr
+R7760:7763 Corelib.Init.Logic <> conj constr
+R7860:7879 _luna_finish_erased_coverage <> erased_spine_covered thm
+prf 7889:7912 <> erased_spine_covered_pos
+binder 7923:7923 <> c:76
+binder 7925:7925 <> n:77
+binder 7927:7928 <> L1:78
+binder 7930:7931 <> L2:79
+binder 7933:7934 <> bs:80
+R7951:7956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7939:7946 TypeRules <> enum_pos ind
+R7950:7950 _luna_finish_erased_coverage <> n:77 var
+R7948:7948 _luna_finish_erased_coverage <> c:76 var
+R8000:8005 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7957:7962 Corelib.Lists.ListDef <> Forall ind
+R7998:7999 _luna_finish_erased_coverage <> bs:80 var
+binder 7969:7969 <> d:81
+R7974:7980 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7982:7983 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7981:7981 <> m:82
+R7984:7991 TypeRules <> enum_pos ind
+R7995:7995 _luna_finish_erased_coverage <> m:82 var
+R7993:7993 _luna_finish_erased_coverage <> d:81 var
+R8020:8023 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8006:8014 TypeRules <> spine_mem ind
+R8018:8019 _luna_finish_erased_coverage <> L1:78 var
+R8016:8016 _luna_finish_erased_coverage <> c:76 var
+R8036:8039 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8024:8029 TypeRules <> covers ind
+R8034:8035 _luna_finish_erased_coverage <> L2:79 var
+R8031:8032 _luna_finish_erased_coverage <> bs:80 var
+R8050:8055 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8040:8043 TypeRules <> conv ind
+R8048:8049 _luna_finish_erased_coverage <> L2:79 var
+R8045:8046 _luna_finish_erased_coverage <> L1:78 var
+R8056:8062 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8064:8065 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8063:8063 <> d:83
+R8073:8076 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8066:8067 Stdlib.Lists.List <> In def
+R8071:8072 _luna_finish_erased_coverage <> bs:80 var
+R8069:8069 _luna_finish_erased_coverage <> d:83 var
+R8077:8084 TypeRules <> enum_pos ind
+R8088:8088 _luna_finish_erased_coverage <> n:77 var
+R8086:8086 _luna_finish_erased_coverage <> d:83 var
+R8156:8175 _luna_finish_erased_coverage <> erased_spine_covered thm
+R8205:8218 Progress _work_cjoin conv_phi_cjoin thm
+R8156:8175 _luna_finish_erased_coverage <> erased_spine_covered thm
+R8205:8218 Progress _work_cjoin conv_phi_cjoin thm
+R8259:8271 Stdlib.Lists.List <> Forall_forall thm
+R8259:8271 Stdlib.Lists.List <> Forall_forall thm
+R8259:8271 Stdlib.Lists.List <> Forall_forall thm
+R8329:8346 Progress <> phi_erase_enum_pos thm
+R8329:8346 Progress <> phi_erase_enum_pos thm
+R8378:8395 Progress <> phi_erase_enum_pos thm
+R8378:8395 Progress <> phi_erase_enum_pos thm
+R8461:8481 Progress _work_cstep_invariants rtc_cstep_enum_pos_id thm
+R8461:8481 Progress _work_cstep_invariants rtc_cstep_enum_pos_id thm
+R8520:8540 Progress _work_cstep_invariants rtc_cstep_enum_pos_id thm
+R8520:8540 Progress _work_cstep_invariants rtc_cstep_enum_pos_id thm
+R8625:8627 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8625:8627 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8643:8661 Progress <> enum_pos_functional thm
+R8643:8661 Progress <> enum_pos_functional thm
+R8758:8781 _luna_finish_erased_coverage <> erased_spine_covered_pos thm

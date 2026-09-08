@@ -1,0 +1,87 @@
+DIGEST 1397f2bf84b0a699b27ae90db7283f86
+F_parent_epi_nonsort
+R86:93 Progress <> <> lib
+R95:105 _tmp_epstep <> <> lib
+R107:125 _work_mixed_closure <> <> lib
+R129:152 _parent_mueq_sort_stable <> <> lib
+R182:185 Stdlib.Lists.List <> <> lib
+R195:207 Stdlib.Lists.List ListNotations <> mod
+R209:217 TypeRules <> <> mod
+prf 227:249 <> epi_nil_not_sort_parent
+binder 260:260 <> P:1
+binder 262:262 <> j:2
+R269:270 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R271:273 Progress <> rtc ind
+R297:301 TypeRules <> TSort constr
+R303:303 _parent_epi_nonsort <> j:2 var
+R282:285 TypeRules <> TEPi constr
+R293:293 _parent_epi_nonsort <> P:1 var
+R287:291 TypeRules <> TNilE constr
+R275:279 _work_mixed_closure <> cstep ind
+R377:382 TypeRules <> TUnitT constr
+R391:396 Progress <> HUnitT constr
+R337:364 _parent_mueq_sort_stable <> cstep_root_to_nonsort_parent thm
+R377:382 TypeRules <> TUnitT constr
+R391:396 Progress <> HUnitT constr
+R337:364 _parent_mueq_sort_stable <> cstep_root_to_nonsort_parent thm
+R410:416 Progress <> rtc_one thm
+R419:429 _work_mixed_closure <> pstep_cstep thm
+R410:416 Progress <> rtc_one thm
+R419:429 _work_mixed_closure <> pstep_cstep thm
+R443:452 Progress <> ps_epi_nil constr
+R459:468 Progress <> pstep_refl thm
+R443:452 Progress <> ps_epi_nil constr
+R459:468 Progress <> pstep_refl thm
+prf 522:545 <> epi_cons_not_sort_parent
+binder 556:557 <> tg:3
+binder 559:559 <> E:4
+binder 561:561 <> P:5
+binder 563:563 <> j:6
+R570:571 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R572:574 Progress <> rtc ind
+R606:610 TypeRules <> TSort constr
+R612:612 _parent_epi_nonsort <> j:6 var
+R583:586 TypeRules <> TEPi constr
+R602:602 _parent_epi_nonsort <> P:5 var
+R589:594 TypeRules <> TConsE constr
+R599:599 _parent_epi_nonsort <> E:4 var
+R596:597 _parent_epi_nonsort <> tg:3 var
+R576:580 _work_mixed_closure <> cstep ind
+R695:700 TypeRules <> TSigma constr
+R725:728 TypeRules <> lift def
+R735:738 TypeRules <> TEPi constr
+R743:746 TypeRules <> TLam constr
+R749:752 TypeRules <> TApp constr
+R768:773 TypeRules <> TESucc constr
+R776:779 TypeRules <> TVar constr
+R755:758 TypeRules <> lift def
+R703:706 TypeRules <> TApp constr
+R710:715 TypeRules <> TEZero constr
+R800:805 Progress <> HSigma constr
+R651:678 _parent_mueq_sort_stable <> cstep_root_to_nonsort_parent thm
+R695:700 TypeRules <> TSigma constr
+R725:728 TypeRules <> lift def
+R735:738 TypeRules <> TEPi constr
+R743:746 TypeRules <> TLam constr
+R749:752 TypeRules <> TApp constr
+R768:773 TypeRules <> TESucc constr
+R776:779 TypeRules <> TVar constr
+R755:758 TypeRules <> lift def
+R703:706 TypeRules <> TApp constr
+R710:715 TypeRules <> TEZero constr
+R800:805 Progress <> HSigma constr
+R651:678 _parent_mueq_sort_stable <> cstep_root_to_nonsort_parent thm
+R819:825 Progress <> rtc_one thm
+R828:838 _work_mixed_closure <> pstep_cstep thm
+R819:825 Progress <> rtc_one thm
+R828:838 _work_mixed_closure <> pstep_cstep thm
+R852:862 Progress <> ps_epi_cons constr
+R885:894 Progress <> pstep_refl thm
+R901:910 Progress <> pstep_refl thm
+R916:925 Progress <> pstep_refl thm
+R852:862 Progress <> ps_epi_cons constr
+R885:894 Progress <> pstep_refl thm
+R901:910 Progress <> pstep_refl thm
+R916:925 Progress <> pstep_refl thm
+R991:1013 _parent_epi_nonsort <> epi_nil_not_sort_parent thm
+R1034:1057 _parent_epi_nonsort <> epi_cons_not_sort_parent thm

@@ -1,0 +1,72 @@
+DIGEST 2b1779efa844c9c2cbf594975ae3da6e
+F_glm_conv_lift_bundle_spine
+R178:186 TypeRules <> <> lib
+R188:195 Progress <> <> lib
+R213:229 _glm_neutral_lift <> <> lib
+R231:252 _glm_desc_against_lift <> <> lib
+R254:272 _glm_spine_phi_lift <> <> lib
+R289:314 _glm_conv_lift_bundle_eval <> <> lib
+prf 326:350 <> spine_phi_lift_glm_closed
+binder 363:364 <> Sf:1
+binder 366:366 <> i:2
+binder 368:370 <> Phi:3
+binder 372:374 <> Psi:4
+R399:402 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R377:385 TypeRules <> spine_phi ind
+R396:398 _glm_conv_lift_bundle_spine <> Psi:4 var
+R392:394 _glm_conv_lift_bundle_spine <> Phi:3 var
+R390:390 _glm_conv_lift_bundle_spine <> i:2 var
+R387:388 _glm_conv_lift_bundle_spine <> Sf:1 var
+binder 410:410 <> d:5
+binder 412:412 <> k:6
+R419:427 TypeRules <> spine_phi ind
+R472:475 TypeRules <> lift def
+R481:483 _glm_conv_lift_bundle_spine <> Psi:4 var
+R479:479 _glm_conv_lift_bundle_spine <> k:6 var
+R477:477 _glm_conv_lift_bundle_spine <> d:5 var
+R457:460 TypeRules <> lift def
+R466:468 _glm_conv_lift_bundle_spine <> Phi:3 var
+R464:464 _glm_conv_lift_bundle_spine <> k:6 var
+R462:462 _glm_conv_lift_bundle_spine <> d:5 var
+R444:447 TypeRules <> lift def
+R453:453 _glm_conv_lift_bundle_spine <> i:2 var
+R451:451 _glm_conv_lift_bundle_spine <> k:6 var
+R449:449 _glm_conv_lift_bundle_spine <> d:5 var
+R430:433 TypeRules <> lift def
+R439:440 _glm_conv_lift_bundle_spine <> Sf:1 var
+R437:437 _glm_conv_lift_bundle_spine <> k:6 var
+R435:435 _glm_conv_lift_bundle_spine <> d:5 var
+R503:520 _glm_spine_phi_lift <> spine_phi_lift_glm thm
+R522:552 _glm_conv_lift_bundle_eval <> eval_lift_compatible_glm_proved thm
+R503:520 _glm_spine_phi_lift <> spine_phi_lift_glm thm
+R522:552 _glm_conv_lift_bundle_eval <> eval_lift_compatible_glm_proved thm
+binder 605:606 <> Sf:7
+binder 608:608 <> i:8
+binder 610:612 <> Phi:9
+binder 614:616 <> Psi:10
+R641:644 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R619:627 TypeRules <> spine_phi ind
+R638:640 _glm_conv_lift_bundle_spine <> Psi:10 var
+R634:636 _glm_conv_lift_bundle_spine <> Phi:9 var
+R632:632 _glm_conv_lift_bundle_spine <> i:8 var
+R629:630 _glm_conv_lift_bundle_spine <> Sf:7 var
+binder 652:652 <> d:11
+binder 654:654 <> k:12
+R661:669 TypeRules <> spine_phi ind
+R714:717 TypeRules <> lift def
+R723:725 _glm_conv_lift_bundle_spine <> Psi:10 var
+R721:721 _glm_conv_lift_bundle_spine <> k:12 var
+R719:719 _glm_conv_lift_bundle_spine <> d:11 var
+R699:702 TypeRules <> lift def
+R708:710 _glm_conv_lift_bundle_spine <> Phi:9 var
+R706:706 _glm_conv_lift_bundle_spine <> k:12 var
+R704:704 _glm_conv_lift_bundle_spine <> d:11 var
+R686:689 TypeRules <> lift def
+R695:695 _glm_conv_lift_bundle_spine <> i:8 var
+R693:693 _glm_conv_lift_bundle_spine <> k:12 var
+R691:691 _glm_conv_lift_bundle_spine <> d:11 var
+R672:675 TypeRules <> lift def
+R681:682 _glm_conv_lift_bundle_spine <> Sf:7 var
+R679:679 _glm_conv_lift_bundle_spine <> k:12 var
+R677:677 _glm_conv_lift_bundle_spine <> d:11 var
+R568:592 _glm_conv_lift_bundle_spine <> spine_phi_lift_glm_closed thm

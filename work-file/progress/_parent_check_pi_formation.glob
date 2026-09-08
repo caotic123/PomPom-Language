@@ -1,0 +1,40 @@
+DIGEST 473c59e072830ab8b35f9bd50dc52f87
+F_parent_check_pi_formation
+R81:88 Progress <> <> lib
+R118:121 Stdlib.Lists.List <> <> lib
+R131:143 Stdlib.Lists.List ListNotations <> mod
+R145:153 TypeRules <> <> mod
+prf 163:187 <> check_pi_formation_parent
+binder 198:198 <> G:1
+binder 200:200 <> t:2
+binder 202:202 <> T:3
+R220:227 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R209:213 TypeRules <> check ind
+R219:219 _parent_check_pi_formation <> T:3 var
+R217:217 _parent_check_pi_formation <> t:2 var
+R215:215 _parent_check_pi_formation <> G:1 var
+binder 235:235 <> A:4
+binder 237:237 <> B:5
+R251:260 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R241:243 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R240:240 _parent_check_pi_formation <> t:2 var
+R244:246 TypeRules <> TPi constr
+R250:250 _parent_check_pi_formation <> B:5 var
+R248:248 _parent_check_pi_formation <> A:4 var
+R261:267 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R269:278 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 268:268 <> k:6
+R298:301 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R279:283 TypeRules <> check ind
+R290:294 TypeRules <> TSort constr
+R296:296 _parent_check_pi_formation <> k:6 var
+R287:287 _parent_check_pi_formation <> A:4 var
+R285:285 _parent_check_pi_formation <> G:1 var
+R302:306 TypeRules <> check ind
+R320:324 TypeRules <> TSort constr
+R326:326 _parent_check_pi_formation <> k:6 var
+R317:317 _parent_check_pi_formation <> B:5 var
+R310:313 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R309:309 _parent_check_pi_formation <> A:4 var
+R314:314 _parent_check_pi_formation <> G:1 var
+R585:609 _parent_check_pi_formation <> check_pi_formation_parent thm

@@ -1,0 +1,422 @@
+DIGEST 46d034904f76690656b8a15f78ae8639
+F_glm_mueq_eta_shape
+R15:22 Progress <> <> lib
+R24:33 _luna_mueq <> <> lib
+R35:45 _tmp_epstep <> <> lib
+R75:78 Stdlib.Lists.List <> <> lib
+R80:82 Stdlib.micromega.Lia <> <> lib
+R92:104 Stdlib.Lists.List ListNotations <> mod
+R106:114 TypeRules <> <> mod
+def 821:842 <> mueq_lift1_descent_glm
+binder 863:863 <> f:1
+binder 865:865 <> g:2
+R887:894 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R868:871 _luna_mueq <> mueq ind
+R874:877 TypeRules <> lift def
+R883:883 _glm_mueq_eta_shape <> f:1 var
+R886:886 _glm_mueq_eta_shape <> g:2 var
+R895:901 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R904:905 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 902:903 <> g0:3
+R921:924 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R907:909 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R906:906 _glm_mueq_eta_shape <> g:2 var
+R910:913 TypeRules <> lift def
+R919:920 _glm_mueq_eta_shape <> g0:3 var
+R925:928 _luna_mueq <> mueq ind
+R930:930 _glm_mueq_eta_shape <> f:1 var
+R932:933 _glm_mueq_eta_shape <> g0:3 var
+prf 1298:1313 <> mueq_lam_inv_glm
+binder 1324:1324 <> b:4
+binder 1326:1326 <> t:5
+R1348:1351 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1333:1336 _luna_mueq <> mueq ind
+R1339:1342 TypeRules <> TLam constr
+R1344:1344 _glm_mueq_eta_shape <> b:4 var
+R1347:1347 _glm_mueq_eta_shape <> t:5 var
+R1352:1358 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1361:1362 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1359:1360 <> b':6
+R1374:1377 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1364:1366 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1363:1363 _glm_mueq_eta_shape <> t:5 var
+R1367:1370 TypeRules <> TLam constr
+R1372:1373 _glm_mueq_eta_shape <> b':6 var
+R1378:1381 _luna_mueq <> mueq ind
+R1383:1383 _glm_mueq_eta_shape <> b:4 var
+R1385:1386 _glm_mueq_eta_shape <> b':6 var
+prf 1544:1560 <> mueq_var0_inv_glm
+binder 1571:1571 <> t:7
+R1589:1592 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1574:1577 _luna_mueq <> mueq ind
+R1580:1583 TypeRules <> TVar constr
+R1588:1588 _glm_mueq_eta_shape <> t:7 var
+R1594:1596 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1593:1593 _glm_mueq_eta_shape <> t:7 var
+R1597:1600 TypeRules <> TVar constr
+prf 1925:1941 <> mueq_tapp_inv_glm
+binder 1952:1953 <> f1:8
+binder 1955:1956 <> a1:9
+binder 1958:1958 <> t:10
+R1984:1991 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1965:1968 _luna_mueq <> mueq ind
+R1971:1974 TypeRules <> TApp constr
+R1979:1980 _glm_mueq_eta_shape <> a1:9 var
+R1976:1977 _glm_mueq_eta_shape <> f1:8 var
+R1983:1983 _glm_mueq_eta_shape <> t:10 var
+R1992:1992 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2125:2134 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2191:2191 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1993:1999 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2011:2020 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2000:2001 <> S1:11
+binder 2003:2004 <> S2:12
+binder 2006:2007 <> i1:13
+binder 2009:2010 <> i2:14
+R2033:2036 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2023:2025 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2021:2022 _glm_mueq_eta_shape <> f1:8 var
+R2026:2029 TypeRules <> TMuS constr
+R2031:2032 _glm_mueq_eta_shape <> S1:11 var
+R2044:2047 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2039:2041 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2037:2038 _glm_mueq_eta_shape <> a1:9 var
+R2042:2043 _glm_mueq_eta_shape <> i1:13 var
+R2069:2080 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2049:2051 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2048:2048 _glm_mueq_eta_shape <> t:10 var
+R2052:2055 TypeRules <> TApp constr
+R2067:2068 _glm_mueq_eta_shape <> i2:14 var
+R2058:2061 TypeRules <> TMuS constr
+R2063:2064 _glm_mueq_eta_shape <> S2:12 var
+R2081:2084 TypeRules <> conv ind
+R2107:2110 TypeRules <> TApp constr
+R2122:2123 _glm_mueq_eta_shape <> i2:14 var
+R2113:2116 TypeRules <> TMuS constr
+R2118:2119 _glm_mueq_eta_shape <> S2:12 var
+R2087:2090 TypeRules <> TApp constr
+R2102:2103 _glm_mueq_eta_shape <> i1:13 var
+R2093:2096 TypeRules <> TMuS constr
+R2098:2099 _glm_mueq_eta_shape <> S1:11 var
+R2135:2141 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2147:2148 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2142:2143 <> f2:15
+binder 2145:2146 <> a2:16
+R2163:2166 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2150:2152 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2149:2149 _glm_mueq_eta_shape <> t:10 var
+R2153:2156 TypeRules <> TApp constr
+R2161:2162 _glm_mueq_eta_shape <> a2:16 var
+R2158:2159 _glm_mueq_eta_shape <> f2:15 var
+R2177:2180 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2167:2170 _luna_mueq <> mueq ind
+R2172:2173 _glm_mueq_eta_shape <> f1:8 var
+R2175:2176 _glm_mueq_eta_shape <> f2:15 var
+R2181:2184 _luna_mueq <> mueq ind
+R2186:2187 _glm_mueq_eta_shape <> a1:9 var
+R2189:2190 _glm_mueq_eta_shape <> a2:16 var
+prf 2565:2586 <> mueq_tapp_inv_nomu_glm
+binder 2597:2598 <> f1:17
+binder 2600:2601 <> a1:18
+binder 2603:2603 <> t:19
+R2610:2610 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2635:2643 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2618:2619 <> S1:20
+R2624:2627 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2622:2623 _glm_mueq_eta_shape <> f1:17 var
+R2628:2631 TypeRules <> TMuS constr
+R2633:2634 _glm_mueq_eta_shape <> S1:20 var
+R2663:2670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2644:2647 _luna_mueq <> mueq ind
+R2650:2653 TypeRules <> TApp constr
+R2658:2659 _glm_mueq_eta_shape <> a1:18 var
+R2655:2656 _glm_mueq_eta_shape <> f1:17 var
+R2662:2662 _glm_mueq_eta_shape <> t:19 var
+R2671:2677 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2683:2684 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2678:2679 <> f2:21
+binder 2681:2682 <> a2:22
+R2699:2702 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2686:2688 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2685:2685 _glm_mueq_eta_shape <> t:19 var
+R2689:2692 TypeRules <> TApp constr
+R2697:2698 _glm_mueq_eta_shape <> a2:22 var
+R2694:2695 _glm_mueq_eta_shape <> f2:21 var
+R2713:2716 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2703:2706 _luna_mueq <> mueq ind
+R2708:2709 _glm_mueq_eta_shape <> f1:17 var
+R2711:2712 _glm_mueq_eta_shape <> f2:21 var
+R2717:2720 _luna_mueq <> mueq ind
+R2722:2723 _glm_mueq_eta_shape <> a1:18 var
+R2725:2726 _glm_mueq_eta_shape <> a2:22 var
+R2774:2790 _glm_mueq_eta_shape <> mueq_tapp_inv_glm thm
+R2774:2790 _glm_mueq_eta_shape <> mueq_tapp_inv_glm thm
+prf 3361:3383 <> lift1_tmus_head_inv_glm
+binder 3394:3394 <> f:23
+binder 3396:3397 <> S1:24
+R3424:3427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3414:3416 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3404:3407 TypeRules <> lift def
+R3413:3413 _glm_mueq_eta_shape <> f:23 var
+R3417:3420 TypeRules <> TMuS constr
+R3422:3423 _glm_mueq_eta_shape <> S1:24 var
+R3428:3434 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3437:3438 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3435:3436 <> S0:25
+R3440:3442 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3439:3439 _glm_mueq_eta_shape <> f:23 var
+R3443:3446 TypeRules <> TMuS constr
+R3448:3449 _glm_mueq_eta_shape <> S0:25 var
+R3493:3496 TypeRules <> lift def
+R3552:3558 Corelib.Init.Nat <> ltb def
+R3552:3558 Corelib.Init.Nat <> ltb def
+prf 3912:3933 <> lift1_zero_no_var0_glm
+binder 3944:3944 <> t:26
+R3957:3960 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3947:3950 TypeRules <> lift def
+R3956:3956 _glm_mueq_eta_shape <> t:26 var
+R3961:3964 TypeRules <> TVar constr
+R4007:4010 TypeRules <> lift def
+prf 4289:4306 <> epstep_rtc_one_glm
+binder 4317:4317 <> a:27
+binder 4319:4319 <> b:28
+R4332:4335 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4322:4327 _tmp_epstep <> epstep ind
+R4329:4329 _glm_mueq_eta_shape <> a:27 var
+R4331:4331 _glm_mueq_eta_shape <> b:28 var
+R4336:4338 Progress <> rtc ind
+R4349:4349 _glm_mueq_eta_shape <> b:28 var
+R4347:4347 _glm_mueq_eta_shape <> a:27 var
+R4340:4345 _tmp_epstep <> epstep ind
+R4382:4389 Progress <> rtc_step constr
+R4409:4416 Progress <> rtc_refl constr
+R4382:4389 Progress <> rtc_step constr
+R4409:4416 Progress <> rtc_refl constr
+prf 4432:4450 <> epstep_rtc_refl_glm
+binder 4461:4461 <> a:29
+R4464:4466 Progress <> rtc ind
+R4477:4477 _glm_mueq_eta_shape <> a:29 var
+R4475:4475 _glm_mueq_eta_shape <> a:29 var
+R4468:4473 _tmp_epstep <> epstep ind
+R4503:4510 Progress <> rtc_refl constr
+R4503:4510 Progress <> rtc_refl constr
+prf 4525:4544 <> epstep_rtc_trans_glm
+binder 4555:4555 <> a:30
+binder 4557:4557 <> b:31
+binder 4559:4559 <> c:32
+R4580:4583 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4566:4568 Progress <> rtc ind
+R4579:4579 _glm_mueq_eta_shape <> b:31 var
+R4577:4577 _glm_mueq_eta_shape <> a:30 var
+R4570:4575 _tmp_epstep <> epstep ind
+R4598:4601 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4584:4586 Progress <> rtc ind
+R4597:4597 _glm_mueq_eta_shape <> c:32 var
+R4595:4595 _glm_mueq_eta_shape <> b:31 var
+R4588:4593 _tmp_epstep <> epstep ind
+R4602:4604 Progress <> rtc ind
+R4615:4615 _glm_mueq_eta_shape <> c:32 var
+R4613:4613 _glm_mueq_eta_shape <> a:30 var
+R4606:4611 _tmp_epstep <> epstep ind
+R4654:4662 Progress <> rtc_trans thm
+R4654:4662 Progress <> rtc_trans thm
+prf 5284:5322 <> mueq_eta_root_sim_from_lift_descent_glm
+R5352:5359 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5330:5351 _glm_mueq_eta_shape <> mueq_lift1_descent_glm def
+binder 5367:5367 <> f:33
+binder 5369:5369 <> u:34
+R5420:5429 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5378:5381 _luna_mueq <> mueq ind
+R5384:5387 TypeRules <> TLam constr
+R5390:5393 TypeRules <> TApp constr
+R5409:5412 TypeRules <> TVar constr
+R5396:5399 TypeRules <> lift def
+R5405:5405 _glm_mueq_eta_shape <> f:33 var
+R5419:5419 _glm_mueq_eta_shape <> u:34 var
+R5430:5430 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5463:5473 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5438:5439 <> S1:35
+R5452:5455 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5442:5445 TypeRules <> lift def
+R5451:5451 _glm_mueq_eta_shape <> f:33 var
+R5456:5459 TypeRules <> TMuS constr
+R5461:5462 _glm_mueq_eta_shape <> S1:35 var
+R5474:5480 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5483:5484 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5481:5482 <> u':36
+R5496:5499 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5485:5490 _tmp_epstep <> epstep ind
+R5492:5492 _glm_mueq_eta_shape <> u:34 var
+R5494:5495 _glm_mueq_eta_shape <> u':36 var
+R5500:5503 _luna_mueq <> mueq ind
+R5505:5505 _glm_mueq_eta_shape <> f:33 var
+R5507:5508 _glm_mueq_eta_shape <> u':36 var
+R5551:5566 _glm_mueq_eta_shape <> mueq_lam_inv_glm thm
+R5551:5566 _glm_mueq_eta_shape <> mueq_lam_inv_glm thm
+R5624:5640 _glm_mueq_eta_shape <> mueq_tapp_inv_glm thm
+R5643:5646 TypeRules <> lift def
+R5656:5659 TypeRules <> TVar constr
+R5624:5640 _glm_mueq_eta_shape <> mueq_tapp_inv_glm thm
+R5643:5646 TypeRules <> lift def
+R5656:5659 TypeRules <> TVar constr
+R5921:5937 _glm_mueq_eta_shape <> mueq_var0_inv_glm thm
+R5921:5937 _glm_mueq_eta_shape <> mueq_var0_inv_glm thm
+R6059:6065 _tmp_epstep <> eps_eta constr
+R6059:6065 _tmp_epstep <> eps_eta constr
+R6081:6091 _tmp_epstep <> epstep_refl thm
+R6081:6091 _tmp_epstep <> epstep_refl thm
+prf 6128:6170 <> mueq_eta_root_sim_rtc_from_lift_descent_glm
+R6200:6207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6178:6199 _glm_mueq_eta_shape <> mueq_lift1_descent_glm def
+binder 6215:6215 <> f:37
+binder 6217:6217 <> u:38
+R6268:6277 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6226:6229 _luna_mueq <> mueq ind
+R6232:6235 TypeRules <> TLam constr
+R6238:6241 TypeRules <> TApp constr
+R6257:6260 TypeRules <> TVar constr
+R6244:6247 TypeRules <> lift def
+R6253:6253 _glm_mueq_eta_shape <> f:37 var
+R6267:6267 _glm_mueq_eta_shape <> u:38 var
+R6278:6278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6311:6321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6286:6287 <> S1:39
+R6300:6303 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6290:6293 TypeRules <> lift def
+R6299:6299 _glm_mueq_eta_shape <> f:37 var
+R6304:6307 TypeRules <> TMuS constr
+R6309:6310 _glm_mueq_eta_shape <> S1:39 var
+R6322:6328 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6331:6332 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6329:6330 <> u':40
+R6348:6351 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6333:6335 Progress <> rtc ind
+R6346:6347 _glm_mueq_eta_shape <> u':40 var
+R6344:6344 _glm_mueq_eta_shape <> u:38 var
+R6337:6342 _tmp_epstep <> epstep ind
+R6352:6355 _luna_mueq <> mueq ind
+R6357:6357 _glm_mueq_eta_shape <> f:37 var
+R6359:6360 _glm_mueq_eta_shape <> u':40 var
+R6407:6445 _glm_mueq_eta_shape <> mueq_eta_root_sim_from_lift_descent_glm thm
+R6407:6445 _glm_mueq_eta_shape <> mueq_eta_root_sim_from_lift_descent_glm thm
+R6515:6532 _glm_mueq_eta_shape <> epstep_rtc_one_glm thm
+R6515:6532 _glm_mueq_eta_shape <> epstep_rtc_one_glm thm
+prf 6872:6892 <> conv_var_beta_exp_glm
+binder 6903:6903 <> k:41
+R6910:6913 TypeRules <> conv ind
+R6925:6928 TypeRules <> TApp constr
+R6947:6950 TypeRules <> TVar constr
+R6952:6952 _glm_mueq_eta_shape <> k:41 var
+R6931:6934 TypeRules <> TLam constr
+R6937:6940 TypeRules <> TVar constr
+R6916:6919 TypeRules <> TVar constr
+R6921:6921 _glm_mueq_eta_shape <> k:41 var
+R6982:6987 TypeRules <> cv_sym constr
+R6982:6987 TypeRules <> cv_sym constr
+R6997:7003 TypeRules <> cv_step constr
+R6997:7003 TypeRules <> cv_step constr
+R7015:7021 TypeRules <> st_beta constr
+R7033:7036 TypeRules <> TVar constr
+R7024:7027 TypeRules <> TVar constr
+R7015:7021 TypeRules <> st_beta constr
+R7033:7036 TypeRules <> TVar constr
+R7024:7027 TypeRules <> TVar constr
+prf 7549:7578 <> mueq_eta_muapp_obstruction_glm
+binder 7589:7589 <> X:42
+R7718:7725 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7596:7599 _luna_mueq <> mueq ind
+R7602:7605 TypeRules <> TLam constr
+R7608:7611 TypeRules <> TApp constr
+R7634:7637 TypeRules <> TVar constr
+R7614:7617 TypeRules <> lift def
+R7624:7627 TypeRules <> TMuS constr
+R7629:7629 _glm_mueq_eta_shape <> X:42 var
+R7654:7657 TypeRules <> TLam constr
+R7660:7663 TypeRules <> TApp constr
+R7686:7689 TypeRules <> TApp constr
+R7708:7711 TypeRules <> TVar constr
+R7692:7695 TypeRules <> TLam constr
+R7698:7701 TypeRules <> TVar constr
+R7666:7669 TypeRules <> TMuS constr
+R7672:7675 TypeRules <> lift def
+R7681:7681 _glm_mueq_eta_shape <> X:42 var
+R7726:7728 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7881:7881 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7729:7735 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7738:7748 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7736:7737 <> u':43
+R7852:7864 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7749:7754 _tmp_epstep <> epstep ind
+R7757:7760 TypeRules <> TLam constr
+R7763:7766 TypeRules <> TApp constr
+R7817:7820 TypeRules <> TApp constr
+R7839:7842 TypeRules <> TVar constr
+R7823:7826 TypeRules <> TLam constr
+R7829:7832 TypeRules <> TVar constr
+R7769:7772 TypeRules <> TMuS constr
+R7775:7778 TypeRules <> lift def
+R7784:7784 _glm_mueq_eta_shape <> X:42 var
+R7850:7851 _glm_mueq_eta_shape <> u':43 var
+R7865:7868 _luna_mueq <> mueq ind
+R7871:7874 TypeRules <> TMuS constr
+R7876:7876 _glm_mueq_eta_shape <> X:42 var
+R7879:7880 _glm_mueq_eta_shape <> u':43 var
+R7921:7926 _luna_mueq <> me_lam constr
+R7929:7932 TypeRules <> TApp constr
+R7955:7958 TypeRules <> TVar constr
+R7935:7938 TypeRules <> TMuS constr
+R7941:7944 TypeRules <> lift def
+R7983:7986 TypeRules <> TApp constr
+R8009:8012 TypeRules <> TApp constr
+R8031:8034 TypeRules <> TVar constr
+R8015:8018 TypeRules <> TLam constr
+R8021:8024 TypeRules <> TVar constr
+R7989:7992 TypeRules <> TMuS constr
+R7995:7998 TypeRules <> lift def
+R7921:7926 _luna_mueq <> me_lam constr
+R7929:7932 TypeRules <> TApp constr
+R7955:7958 TypeRules <> TVar constr
+R7935:7938 TypeRules <> TMuS constr
+R7941:7944 TypeRules <> lift def
+R7983:7986 TypeRules <> TApp constr
+R8009:8012 TypeRules <> TApp constr
+R8031:8034 TypeRules <> TVar constr
+R8015:8018 TypeRules <> TLam constr
+R8021:8024 TypeRules <> TVar constr
+R7989:7992 TypeRules <> TMuS constr
+R7995:7998 TypeRules <> lift def
+R8054:8061 _luna_mueq <> me_muapp constr
+R8064:8067 TypeRules <> lift def
+R8077:8080 TypeRules <> lift def
+R8090:8093 TypeRules <> TVar constr
+R8119:8122 TypeRules <> TApp constr
+R8141:8144 TypeRules <> TVar constr
+R8125:8128 TypeRules <> TLam constr
+R8131:8134 TypeRules <> TVar constr
+R8054:8061 _luna_mueq <> me_muapp constr
+R8064:8067 TypeRules <> lift def
+R8077:8080 TypeRules <> lift def
+R8090:8093 TypeRules <> TVar constr
+R8119:8122 TypeRules <> TApp constr
+R8141:8144 TypeRules <> TVar constr
+R8125:8128 TypeRules <> TLam constr
+R8131:8134 TypeRules <> TVar constr
+R8162:8167 TypeRules <> cv_app constr
+R8177:8183 TypeRules <> cv_refl constr
+R8193:8213 _glm_mueq_eta_shape <> conv_var_beta_exp_glm thm
+R8162:8167 TypeRules <> cv_app constr
+R8177:8183 TypeRules <> cv_refl constr
+R8193:8213 _glm_mueq_eta_shape <> conv_var_beta_exp_glm thm
+R8307:8322 _glm_mueq_eta_shape <> mueq_lam_inv_glm thm
+R8343:8359 _glm_mueq_eta_shape <> mueq_var0_inv_glm thm
+R8380:8396 _glm_mueq_eta_shape <> mueq_tapp_inv_glm thm
+R8417:8438 _glm_mueq_eta_shape <> mueq_tapp_inv_nomu_glm thm
+R8459:8481 _glm_mueq_eta_shape <> lift1_tmus_head_inv_glm thm
+R8502:8523 _glm_mueq_eta_shape <> lift1_zero_no_var0_glm thm
+R8544:8561 _glm_mueq_eta_shape <> epstep_rtc_one_glm thm
+R8582:8600 _glm_mueq_eta_shape <> epstep_rtc_refl_glm thm
+R8621:8640 _glm_mueq_eta_shape <> epstep_rtc_trans_glm thm
+R8661:8699 _glm_mueq_eta_shape <> mueq_eta_root_sim_from_lift_descent_glm thm
+R8720:8762 _glm_mueq_eta_shape <> mueq_eta_root_sim_rtc_from_lift_descent_glm thm
+R8783:8803 _glm_mueq_eta_shape <> conv_var_beta_exp_glm thm
+R8824:8853 _glm_mueq_eta_shape <> mueq_eta_muapp_obstruction_glm thm

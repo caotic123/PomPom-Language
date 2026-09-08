@@ -1,0 +1,168 @@
+DIGEST 0ce353fb28bf7f112ed409922a3bef23
+F_glm_conv_subst_algebra
+R980:988 TypeRules <> <> lib
+R990:997 Progress <> <> lib
+R1028:1031 Stdlib.Lists.List <> <> lib
+R1033:1037 Stdlib.Arith.Arith <> <> lib
+R1039:1041 Stdlib.micromega.Lia <> <> lib
+R1051:1063 Stdlib.Lists.List ListNotations <> mod
+prf 1555:1574 <> subst_eta_branch_glm
+R1593:1596 TypeRules <> term ind
+binder 1586:1587 <> S0:1
+binder 1589:1589 <> u:2
+R1604:1606 Corelib.Init.Datatypes <> nat ind
+binder 1600:1600 <> k:3
+R1671:1677 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1614:1618 TypeRules <> subst def
+R1625:1628 TypeRules <> TLam constr
+R1631:1638 TypeRules <> branches def
+R1641:1644 TypeRules <> TApp constr
+R1661:1664 TypeRules <> TVar constr
+R1647:1650 TypeRules <> lift def
+R1656:1657 _glm_conv_subst_algebra <> S0:1 var
+R1622:1622 _glm_conv_subst_algebra <> k:3 var
+R1620:1620 _glm_conv_subst_algebra <> u:2 var
+R1678:1681 TypeRules <> TLam constr
+R1684:1691 TypeRules <> branches def
+R1694:1697 TypeRules <> TApp constr
+R1726:1729 TypeRules <> TVar constr
+R1700:1703 TypeRules <> lift def
+R1710:1714 TypeRules <> subst def
+R1720:1721 _glm_conv_subst_algebra <> S0:1 var
+R1718:1718 _glm_conv_subst_algebra <> k:3 var
+R1716:1716 _glm_conv_subst_algebra <> u:2 var
+R1766:1770 TypeRules <> subst def
+R1772:1779 TypeRules <> branches def
+R1793:1811 Progress <> subst_lift_one_zero thm
+R1793:1811 Progress <> subst_lift_one_zero thm
+R1793:1811 Progress <> subst_lift_one_zero thm
+prf 2076:2094 <> subst_eta_shape_glm
+R2112:2115 TypeRules <> term ind
+binder 2106:2106 <> f:4
+binder 2108:2108 <> u:5
+R2123:2125 Corelib.Init.Datatypes <> nat ind
+binder 2119:2119 <> k:6
+R2178:2184 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2133:2137 TypeRules <> subst def
+R2144:2147 TypeRules <> TLam constr
+R2150:2153 TypeRules <> TApp constr
+R2169:2172 TypeRules <> TVar constr
+R2156:2159 TypeRules <> lift def
+R2165:2165 _glm_conv_subst_algebra <> f:4 var
+R2141:2141 _glm_conv_subst_algebra <> k:6 var
+R2139:2139 _glm_conv_subst_algebra <> u:5 var
+R2185:2188 TypeRules <> TLam constr
+R2191:2194 TypeRules <> TApp constr
+R2222:2225 TypeRules <> TVar constr
+R2197:2200 TypeRules <> lift def
+R2207:2211 TypeRules <> subst def
+R2217:2217 _glm_conv_subst_algebra <> f:4 var
+R2215:2215 _glm_conv_subst_algebra <> k:6 var
+R2213:2213 _glm_conv_subst_algebra <> u:5 var
+R2260:2264 TypeRules <> subst def
+R2278:2296 Progress <> subst_lift_one_zero thm
+R2278:2296 Progress <> subst_lift_one_zero thm
+R2278:2296 Progress <> subst_lift_one_zero thm
+prf 2564:2582 <> eta_branch_lift_glm
+R2599:2602 TypeRules <> term ind
+binder 2594:2595 <> S0:7
+R2612:2614 Corelib.Init.Datatypes <> nat ind
+binder 2606:2606 <> d:8
+binder 2608:2608 <> k:9
+R2678:2684 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2622:2625 TypeRules <> lift def
+R2632:2635 TypeRules <> TLam constr
+R2638:2645 TypeRules <> branches def
+R2648:2651 TypeRules <> TApp constr
+R2668:2671 TypeRules <> TVar constr
+R2654:2657 TypeRules <> lift def
+R2663:2664 _glm_conv_subst_algebra <> S0:7 var
+R2629:2629 _glm_conv_subst_algebra <> k:9 var
+R2627:2627 _glm_conv_subst_algebra <> d:8 var
+R2685:2688 TypeRules <> TLam constr
+R2691:2698 TypeRules <> branches def
+R2701:2704 TypeRules <> TApp constr
+R2732:2735 TypeRules <> TVar constr
+R2707:2710 TypeRules <> lift def
+R2717:2720 TypeRules <> lift def
+R2726:2727 _glm_conv_subst_algebra <> S0:7 var
+R2724:2724 _glm_conv_subst_algebra <> k:9 var
+R2722:2722 _glm_conv_subst_algebra <> d:8 var
+R2772:2775 TypeRules <> lift def
+R2777:2784 TypeRules <> branches def
+R2798:2815 Progress <> lift_lift_one_zero thm
+R2798:2815 Progress <> lift_lift_one_zero thm
+R2798:2815 Progress <> lift_lift_one_zero thm
+R2882:2885 TypeRules <> term ind
+binder 2875:2876 <> S0:10
+binder 2878:2878 <> u:11
+R2899:2901 Corelib.Init.Datatypes <> nat ind
+binder 2895:2895 <> k:12
+R2965:2971 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2908:2912 TypeRules <> subst def
+R2919:2922 TypeRules <> TLam constr
+R2925:2932 TypeRules <> branches def
+R2935:2938 TypeRules <> TApp constr
+R2955:2958 TypeRules <> TVar constr
+R2941:2944 TypeRules <> lift def
+R2950:2951 _glm_conv_subst_algebra <> S0:10 var
+R2916:2916 _glm_conv_subst_algebra <> k:12 var
+R2914:2914 _glm_conv_subst_algebra <> u:11 var
+R2972:2975 TypeRules <> TLam constr
+R2978:2985 TypeRules <> branches def
+R2988:2991 TypeRules <> TApp constr
+R3020:3023 TypeRules <> TVar constr
+R2994:2997 TypeRules <> lift def
+R3004:3008 TypeRules <> subst def
+R3014:3015 _glm_conv_subst_algebra <> S0:10 var
+R3012:3012 _glm_conv_subst_algebra <> k:12 var
+R3010:3010 _glm_conv_subst_algebra <> u:11 var
+R2843:2862 _glm_conv_subst_algebra <> subst_eta_branch_glm thm
+R3074:3077 TypeRules <> term ind
+binder 3068:3068 <> f:13
+binder 3070:3070 <> u:14
+R3091:3093 Corelib.Init.Datatypes <> nat ind
+binder 3087:3087 <> k:15
+R3145:3151 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3100:3104 TypeRules <> subst def
+R3111:3114 TypeRules <> TLam constr
+R3117:3120 TypeRules <> TApp constr
+R3136:3139 TypeRules <> TVar constr
+R3123:3126 TypeRules <> lift def
+R3132:3132 _glm_conv_subst_algebra <> f:13 var
+R3108:3108 _glm_conv_subst_algebra <> k:15 var
+R3106:3106 _glm_conv_subst_algebra <> u:14 var
+R3152:3155 TypeRules <> TLam constr
+R3158:3161 TypeRules <> TApp constr
+R3189:3192 TypeRules <> TVar constr
+R3164:3167 TypeRules <> lift def
+R3174:3178 TypeRules <> subst def
+R3184:3184 _glm_conv_subst_algebra <> f:13 var
+R3182:3182 _glm_conv_subst_algebra <> k:15 var
+R3180:3180 _glm_conv_subst_algebra <> u:14 var
+R3037:3055 _glm_conv_subst_algebra <> subst_eta_shape_glm thm
+R3241:3244 TypeRules <> term ind
+binder 3236:3237 <> S0:16
+R3260:3262 Corelib.Init.Datatypes <> nat ind
+binder 3254:3254 <> d:17
+binder 3256:3256 <> k:18
+R3325:3331 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3269:3272 TypeRules <> lift def
+R3279:3282 TypeRules <> TLam constr
+R3285:3292 TypeRules <> branches def
+R3295:3298 TypeRules <> TApp constr
+R3315:3318 TypeRules <> TVar constr
+R3301:3304 TypeRules <> lift def
+R3310:3311 _glm_conv_subst_algebra <> S0:16 var
+R3276:3276 _glm_conv_subst_algebra <> k:18 var
+R3274:3274 _glm_conv_subst_algebra <> d:17 var
+R3332:3335 TypeRules <> TLam constr
+R3338:3345 TypeRules <> branches def
+R3348:3351 TypeRules <> TApp constr
+R3379:3382 TypeRules <> TVar constr
+R3354:3357 TypeRules <> lift def
+R3364:3367 TypeRules <> lift def
+R3373:3374 _glm_conv_subst_algebra <> S0:16 var
+R3371:3371 _glm_conv_subst_algebra <> k:18 var
+R3369:3369 _glm_conv_subst_algebra <> d:17 var
+R3205:3223 _glm_conv_subst_algebra <> eta_branch_lift_glm thm

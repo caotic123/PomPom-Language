@@ -1,0 +1,73 @@
+DIGEST ef345746fc88b0b0ecd2033e6133d71b
+F_parent_phi_erase_sort_direct
+R164:171 Progress <> <> lib
+R173:183 _tmp_epstep <> <> lib
+R185:203 _work_mixed_closure <> <> lib
+R205:215 _work_cjoin <> <> lib
+R219:240 _work_cstep_invariants <> <> lib
+R242:267 _glm_injectivity_close_rep <> <> lib
+R297:300 Stdlib.Lists.List <> <> lib
+R310:322 Stdlib.Lists.List ListNotations <> mod
+R324:332 TypeRules <> <> mod
+def 347:384 <> phi_erase_sort_endpoint_reflect_parent
+binder 405:405 <> B:1
+binder 407:407 <> j:2
+R447:450 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R414:416 Progress <> rtc ind
+R439:443 TypeRules <> TSort constr
+R445:445 _parent_phi_erase_sort_direct <> j:2 var
+R425:433 Progress <> phi_erase def
+R435:435 _parent_phi_erase_sort_direct <> B:1 var
+R418:422 _work_mixed_closure <> cstep ind
+R451:454 TypeRules <> conv ind
+R459:463 TypeRules <> TSort constr
+R465:465 _parent_phi_erase_sort_direct <> j:2 var
+R456:456 _parent_phi_erase_sort_direct <> B:1 var
+def 481:519 <> conv_pi_sort_codomain_compatible_parent
+binder 540:541 <> A0:3
+binder 543:544 <> A1:4
+binder 546:547 <> B1:5
+binder 549:549 <> j:6
+R591:594 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R556:559 TypeRules <> conv ind
+R581:583 TypeRules <> TPi constr
+R588:589 _parent_phi_erase_sort_direct <> B1:5 var
+R585:586 _parent_phi_erase_sort_direct <> A1:4 var
+R562:564 TypeRules <> TPi constr
+R570:574 TypeRules <> TSort constr
+R576:576 _parent_phi_erase_sort_direct <> j:6 var
+R566:567 _parent_phi_erase_sort_direct <> A0:3 var
+R595:598 TypeRules <> conv ind
+R604:608 TypeRules <> TSort constr
+R610:610 _parent_phi_erase_sort_direct <> j:6 var
+R600:601 _parent_phi_erase_sort_direct <> B1:5 var
+prf 621:651 <> cjoin_erased_sort_direct_parent
+R697:704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R659:696 _parent_phi_erase_sort_direct <> phi_erase_sort_endpoint_reflect_parent def
+binder 712:712 <> B:7
+binder 714:714 <> j:8
+R746:749 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R717:721 _work_cjoin <> cjoin def
+R724:728 TypeRules <> TSort constr
+R730:730 _parent_phi_erase_sort_direct <> j:8 var
+R734:742 Progress <> phi_erase def
+R744:744 _parent_phi_erase_sort_direct <> B:7 var
+R750:753 TypeRules <> conv ind
+R758:762 TypeRules <> TSort constr
+R764:764 _parent_phi_erase_sort_direct <> j:8 var
+R755:755 _parent_phi_erase_sort_direct <> B:7 var
+R821:837 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R821:837 _work_cstep_invariants <> rtc_cstep_sort_id thm
+prf 892:935 <> conv_pi_sort_codomain_from_phi_direct_parent
+R981:988 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R943:980 _parent_phi_erase_sort_direct <> phi_erase_sort_endpoint_reflect_parent def
+R989:1027 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_compatible_parent def
+R1082:1095 _work_cjoin <> conv_phi_cjoin thm
+R1082:1095 _work_cjoin <> conv_phi_cjoin thm
+R1125:1133 Progress <> phi_erase def
+R1158:1169 _work_cstep_invariants <> cjoin_pi_inv thm
+R1158:1169 _work_cstep_invariants <> cjoin_pi_inv thm
+R1206:1236 _parent_phi_erase_sort_direct <> cjoin_erased_sort_direct_parent thm
+R1206:1236 _parent_phi_erase_sort_direct <> cjoin_erased_sort_direct_parent thm
+R1285:1315 _parent_phi_erase_sort_direct <> cjoin_erased_sort_direct_parent thm
+R1336:1379 _parent_phi_erase_sort_direct <> conv_pi_sort_codomain_from_phi_direct_parent thm

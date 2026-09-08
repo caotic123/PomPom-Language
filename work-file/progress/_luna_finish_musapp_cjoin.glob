@@ -1,0 +1,318 @@
+DIGEST e76a02afcebcf327ce2788148c422791
+F_luna_finish_musapp_cjoin
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R65:77 Stdlib.Lists.List ListNotations <> mod
+R79:87 TypeRules <> <> mod
+R89:108 Progress _tmp_epstep <> mod
+R110:137 Progress _work_mixed_closure <> mod
+R141:160 Progress _work_cjoin <> mod
+R162:192 Progress _work_cstep_invariants <> mod
+prf 202:219 <> pstep_mus_inv_luna
+binder 230:230 <> S:1
+binder 232:232 <> u:2
+R251:256 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R235:239 Progress <> pstep ind
+R242:245 TypeRules <> TMuS constr
+R247:247 _luna_finish_musapp_cjoin <> S:1 var
+R250:250 _luna_finish_musapp_cjoin <> u:2 var
+R257:263 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R266:267 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 264:265 <> S':3
+R279:282 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R269:271 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R268:268 _luna_finish_musapp_cjoin <> u:2 var
+R272:275 TypeRules <> TMuS constr
+R277:278 _luna_finish_musapp_cjoin <> S':3 var
+R283:287 Progress <> pstep ind
+R289:289 _luna_finish_musapp_cjoin <> S:1 var
+R291:292 _luna_finish_musapp_cjoin <> S':3 var
+prf 384:402 <> epstep_mus_inv_luna
+binder 413:413 <> S:4
+binder 415:415 <> u:5
+R435:440 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R418:423 Progress _tmp_epstep epstep ind
+R426:429 TypeRules <> TMuS constr
+R431:431 _luna_finish_musapp_cjoin <> S:4 var
+R434:434 _luna_finish_musapp_cjoin <> u:5 var
+R441:447 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R450:451 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 448:449 <> S':6
+R463:466 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R453:455 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R452:452 _luna_finish_musapp_cjoin <> u:5 var
+R456:459 TypeRules <> TMuS constr
+R461:462 _luna_finish_musapp_cjoin <> S':6 var
+R467:472 Progress _tmp_epstep epstep ind
+R474:474 _luna_finish_musapp_cjoin <> S:4 var
+R476:477 _luna_finish_musapp_cjoin <> S':6 var
+prf 570:590 <> pstep_musapp_inv_luna
+binder 601:601 <> S:7
+binder 603:603 <> i:8
+binder 605:605 <> u:9
+R633:638 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R608:612 Progress <> pstep ind
+R615:618 TypeRules <> TApp constr
+R629:629 _luna_finish_musapp_cjoin <> i:8 var
+R621:624 TypeRules <> TMuS constr
+R626:626 _luna_finish_musapp_cjoin <> S:7 var
+R632:632 _luna_finish_musapp_cjoin <> u:9 var
+R639:645 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R651:652 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 646:647 <> S':10
+binder 649:650 <> i':11
+R674:677 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R654:656 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R653:653 _luna_finish_musapp_cjoin <> u:9 var
+R657:660 TypeRules <> TApp constr
+R672:673 _luna_finish_musapp_cjoin <> i':11 var
+R663:666 TypeRules <> TMuS constr
+R668:669 _luna_finish_musapp_cjoin <> S':10 var
+R688:691 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R678:682 Progress <> pstep ind
+R684:684 _luna_finish_musapp_cjoin <> S:7 var
+R686:687 _luna_finish_musapp_cjoin <> S':10 var
+R692:696 Progress <> pstep ind
+R698:698 _luna_finish_musapp_cjoin <> i:8 var
+R700:701 _luna_finish_musapp_cjoin <> i':11 var
+R759:776 _luna_finish_musapp_cjoin <> pstep_mus_inv_luna thm
+R759:776 _luna_finish_musapp_cjoin <> pstep_mus_inv_luna thm
+prf 858:882 <> rtc_pstep_musapp_inv_luna
+binder 893:893 <> S:12
+binder 895:895 <> i:13
+binder 897:897 <> u:14
+R929:934 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R900:902 Progress <> rtc ind
+R928:928 _luna_finish_musapp_cjoin <> u:14 var
+R911:914 TypeRules <> TApp constr
+R925:925 _luna_finish_musapp_cjoin <> i:13 var
+R917:920 TypeRules <> TMuS constr
+R922:922 _luna_finish_musapp_cjoin <> S:12 var
+R904:908 Progress <> pstep ind
+R935:941 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R947:948 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 942:943 <> S':15
+binder 945:946 <> i':16
+R970:973 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R950:952 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R949:949 _luna_finish_musapp_cjoin <> u:14 var
+R953:956 TypeRules <> TApp constr
+R968:969 _luna_finish_musapp_cjoin <> i':16 var
+R959:962 TypeRules <> TMuS constr
+R964:965 _luna_finish_musapp_cjoin <> S':15 var
+R988:991 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R974:976 Progress <> rtc ind
+R986:987 _luna_finish_musapp_cjoin <> S':15 var
+R984:984 _luna_finish_musapp_cjoin <> S:12 var
+R978:982 Progress <> pstep ind
+R992:994 Progress <> rtc ind
+R1004:1005 _luna_finish_musapp_cjoin <> i':16 var
+R1002:1002 _luna_finish_musapp_cjoin <> i:13 var
+R996:1000 Progress <> pstep ind
+R1042:1045 TypeRules <> TApp constr
+R1048:1051 TypeRules <> TMuS constr
+R1042:1045 TypeRules <> TApp constr
+R1048:1051 TypeRules <> TMuS constr
+R1122:1122 Corelib.Init.Datatypes <> S constr
+R1147:1154 Progress <> rtc_refl constr
+R1147:1154 Progress <> rtc_refl constr
+R1147:1154 Progress <> rtc_refl constr
+R1170:1190 _luna_finish_musapp_cjoin <> pstep_musapp_inv_luna thm
+R1170:1190 _luna_finish_musapp_cjoin <> pstep_musapp_inv_luna thm
+R1251:1257 Corelib.Init.Logic <> eq_refl constr
+R1251:1257 Corelib.Init.Logic <> eq_refl constr
+R1330:1337 Progress <> rtc_step constr
+R1330:1337 Progress <> rtc_step constr
+R1330:1337 Progress <> rtc_step constr
+prf 1351:1372 <> epstep_musapp_inv_luna
+binder 1383:1383 <> S:17
+binder 1385:1385 <> i:18
+binder 1387:1387 <> u:19
+R1416:1421 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1390:1395 Progress _tmp_epstep epstep ind
+R1398:1401 TypeRules <> TApp constr
+R1412:1412 _luna_finish_musapp_cjoin <> i:18 var
+R1404:1407 TypeRules <> TMuS constr
+R1409:1409 _luna_finish_musapp_cjoin <> S:17 var
+R1415:1415 _luna_finish_musapp_cjoin <> u:19 var
+R1422:1428 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1434:1435 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1429:1430 <> S':20
+binder 1432:1433 <> i':21
+R1457:1460 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1437:1439 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1436:1436 _luna_finish_musapp_cjoin <> u:19 var
+R1440:1443 TypeRules <> TApp constr
+R1455:1456 _luna_finish_musapp_cjoin <> i':21 var
+R1446:1449 TypeRules <> TMuS constr
+R1451:1452 _luna_finish_musapp_cjoin <> S':20 var
+R1472:1475 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1461:1466 Progress _tmp_epstep epstep ind
+R1468:1468 _luna_finish_musapp_cjoin <> S:17 var
+R1470:1471 _luna_finish_musapp_cjoin <> S':20 var
+R1476:1481 Progress _tmp_epstep epstep ind
+R1483:1483 _luna_finish_musapp_cjoin <> i:18 var
+R1485:1486 _luna_finish_musapp_cjoin <> i':21 var
+R1544:1562 _luna_finish_musapp_cjoin <> epstep_mus_inv_luna thm
+R1544:1562 _luna_finish_musapp_cjoin <> epstep_mus_inv_luna thm
+prf 1644:1669 <> rtc_epstep_musapp_inv_luna
+binder 1680:1680 <> S:22
+binder 1682:1682 <> i:23
+binder 1684:1684 <> u:24
+R1717:1722 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1687:1689 Progress <> rtc ind
+R1716:1716 _luna_finish_musapp_cjoin <> u:24 var
+R1699:1702 TypeRules <> TApp constr
+R1713:1713 _luna_finish_musapp_cjoin <> i:23 var
+R1705:1708 TypeRules <> TMuS constr
+R1710:1710 _luna_finish_musapp_cjoin <> S:22 var
+R1691:1696 Progress _tmp_epstep epstep ind
+R1723:1729 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1735:1736 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1730:1731 <> S':25
+binder 1733:1734 <> i':26
+R1758:1761 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1738:1740 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1737:1737 _luna_finish_musapp_cjoin <> u:24 var
+R1741:1744 TypeRules <> TApp constr
+R1756:1757 _luna_finish_musapp_cjoin <> i':26 var
+R1747:1750 TypeRules <> TMuS constr
+R1752:1753 _luna_finish_musapp_cjoin <> S':25 var
+R1777:1780 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1762:1764 Progress <> rtc ind
+R1775:1776 _luna_finish_musapp_cjoin <> S':25 var
+R1773:1773 _luna_finish_musapp_cjoin <> S:22 var
+R1766:1771 Progress _tmp_epstep epstep ind
+R1781:1783 Progress <> rtc ind
+R1794:1795 _luna_finish_musapp_cjoin <> i':26 var
+R1792:1792 _luna_finish_musapp_cjoin <> i:23 var
+R1785:1790 Progress _tmp_epstep epstep ind
+R1832:1835 TypeRules <> TApp constr
+R1838:1841 TypeRules <> TMuS constr
+R1832:1835 TypeRules <> TApp constr
+R1838:1841 TypeRules <> TMuS constr
+R1912:1912 Corelib.Init.Datatypes <> S constr
+R1937:1944 Progress <> rtc_refl constr
+R1937:1944 Progress <> rtc_refl constr
+R1937:1944 Progress <> rtc_refl constr
+R1960:1981 _luna_finish_musapp_cjoin <> epstep_musapp_inv_luna thm
+R1960:1981 _luna_finish_musapp_cjoin <> epstep_musapp_inv_luna thm
+R2042:2048 Corelib.Init.Logic <> eq_refl constr
+R2042:2048 Corelib.Init.Logic <> eq_refl constr
+R2121:2128 Progress <> rtc_step constr
+R2121:2128 Progress <> rtc_step constr
+R2121:2128 Progress <> rtc_step constr
+prf 2142:2162 <> cstep_musapp_inv_luna
+binder 2173:2173 <> S:27
+binder 2175:2175 <> i:28
+binder 2177:2177 <> u:29
+R2205:2210 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2180:2184 Progress _work_mixed_closure cstep ind
+R2187:2190 TypeRules <> TApp constr
+R2201:2201 _luna_finish_musapp_cjoin <> i:28 var
+R2193:2196 TypeRules <> TMuS constr
+R2198:2198 _luna_finish_musapp_cjoin <> S:27 var
+R2204:2204 _luna_finish_musapp_cjoin <> u:29 var
+R2211:2217 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2223:2224 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2218:2219 <> S':30
+binder 2221:2222 <> i':31
+R2246:2249 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2226:2228 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2225:2225 _luna_finish_musapp_cjoin <> u:29 var
+R2229:2232 TypeRules <> TApp constr
+R2244:2245 _luna_finish_musapp_cjoin <> i':31 var
+R2235:2238 TypeRules <> TMuS constr
+R2240:2241 _luna_finish_musapp_cjoin <> S':30 var
+R2260:2263 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2250:2254 Progress _work_mixed_closure cstep ind
+R2256:2256 _luna_finish_musapp_cjoin <> S:27 var
+R2258:2259 _luna_finish_musapp_cjoin <> S':30 var
+R2264:2268 Progress _work_mixed_closure cstep ind
+R2270:2270 _luna_finish_musapp_cjoin <> i:28 var
+R2272:2273 _luna_finish_musapp_cjoin <> i':31 var
+R2333:2357 _luna_finish_musapp_cjoin <> rtc_pstep_musapp_inv_luna thm
+R2333:2357 _luna_finish_musapp_cjoin <> rtc_pstep_musapp_inv_luna thm
+R2433:2439 Progress _work_mixed_closure cs_core constr
+R2433:2439 Progress _work_mixed_closure cs_core constr
+R2433:2439 Progress _work_mixed_closure cs_core constr
+R2467:2492 _luna_finish_musapp_cjoin <> rtc_epstep_musapp_inv_luna thm
+R2467:2492 _luna_finish_musapp_cjoin <> rtc_epstep_musapp_inv_luna thm
+R2568:2573 Progress _work_mixed_closure cs_eta constr
+R2568:2573 Progress _work_mixed_closure cs_eta constr
+R2568:2573 Progress _work_mixed_closure cs_eta constr
+prf 2599:2623 <> rtc_cstep_musapp_inv_luna
+binder 2634:2634 <> S:32
+binder 2636:2636 <> i:33
+binder 2638:2638 <> u:34
+R2670:2675 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2641:2643 Progress <> rtc ind
+R2669:2669 _luna_finish_musapp_cjoin <> u:34 var
+R2652:2655 TypeRules <> TApp constr
+R2666:2666 _luna_finish_musapp_cjoin <> i:33 var
+R2658:2661 TypeRules <> TMuS constr
+R2663:2663 _luna_finish_musapp_cjoin <> S:32 var
+R2645:2649 Progress _work_mixed_closure cstep ind
+R2676:2682 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2688:2689 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2683:2684 <> S':35
+binder 2686:2687 <> i':36
+R2711:2714 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2691:2693 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2690:2690 _luna_finish_musapp_cjoin <> u:34 var
+R2694:2697 TypeRules <> TApp constr
+R2709:2710 _luna_finish_musapp_cjoin <> i':36 var
+R2700:2703 TypeRules <> TMuS constr
+R2705:2706 _luna_finish_musapp_cjoin <> S':35 var
+R2729:2732 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2715:2717 Progress <> rtc ind
+R2727:2728 _luna_finish_musapp_cjoin <> S':35 var
+R2725:2725 _luna_finish_musapp_cjoin <> S:32 var
+R2719:2723 Progress _work_mixed_closure cstep ind
+R2733:2735 Progress <> rtc ind
+R2745:2746 _luna_finish_musapp_cjoin <> i':36 var
+R2743:2743 _luna_finish_musapp_cjoin <> i:33 var
+R2737:2741 Progress _work_mixed_closure cstep ind
+R2783:2786 TypeRules <> TApp constr
+R2789:2792 TypeRules <> TMuS constr
+R2783:2786 TypeRules <> TApp constr
+R2789:2792 TypeRules <> TMuS constr
+R2863:2863 Corelib.Init.Datatypes <> S constr
+R2888:2895 Progress <> rtc_refl constr
+R2888:2895 Progress <> rtc_refl constr
+R2888:2895 Progress <> rtc_refl constr
+R2911:2931 _luna_finish_musapp_cjoin <> cstep_musapp_inv_luna thm
+R2911:2931 _luna_finish_musapp_cjoin <> cstep_musapp_inv_luna thm
+R2992:2998 Corelib.Init.Logic <> eq_refl constr
+R2992:2998 Corelib.Init.Logic <> eq_refl constr
+R3071:3078 Progress <> rtc_step constr
+R3071:3078 Progress <> rtc_step constr
+R3071:3078 Progress <> rtc_step constr
+prf 3092:3112 <> cjoin_musapp_inv_luna
+binder 3123:3124 <> S1:37
+binder 3126:3127 <> S2:38
+binder 3129:3130 <> i1:39
+binder 3132:3133 <> i2:40
+R3183:3188 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3138:3142 Progress _work_cjoin cjoin def
+R3145:3148 TypeRules <> TApp constr
+R3160:3161 _luna_finish_musapp_cjoin <> i1:39 var
+R3151:3154 TypeRules <> TMuS constr
+R3156:3157 _luna_finish_musapp_cjoin <> S1:37 var
+R3165:3168 TypeRules <> TApp constr
+R3180:3181 _luna_finish_musapp_cjoin <> i2:40 var
+R3171:3174 TypeRules <> TMuS constr
+R3176:3177 _luna_finish_musapp_cjoin <> S2:38 var
+R3200:3203 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3189:3193 Progress _work_cjoin cjoin def
+R3195:3196 _luna_finish_musapp_cjoin <> S1:37 var
+R3198:3199 _luna_finish_musapp_cjoin <> S2:38 var
+R3204:3208 Progress _work_cjoin cjoin def
+R3210:3211 _luna_finish_musapp_cjoin <> i1:39 var
+R3213:3214 _luna_finish_musapp_cjoin <> i2:40 var
+R3268:3292 _luna_finish_musapp_cjoin <> rtc_cstep_musapp_inv_luna thm
+R3268:3292 _luna_finish_musapp_cjoin <> rtc_cstep_musapp_inv_luna thm
+R3367:3391 _luna_finish_musapp_cjoin <> rtc_cstep_musapp_inv_luna thm
+R3367:3391 _luna_finish_musapp_cjoin <> rtc_cstep_musapp_inv_luna thm
+R3487:3491 Progress _work_cjoin cjoin def
+R3524:3544 _luna_finish_musapp_cjoin <> cjoin_musapp_inv_luna thm

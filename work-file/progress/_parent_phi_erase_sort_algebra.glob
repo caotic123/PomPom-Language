@@ -1,0 +1,74 @@
+DIGEST 425ac175afc196698b0c2ab23355db2d
+F_parent_phi_erase_sort_algebra
+R82:89 Progress <> <> lib
+R119:122 Stdlib.Lists.List <> <> lib
+R124:126 Stdlib.micromega.Lia <> <> lib
+R128:135 Stdlib.Arith.PeanoNat <> <> lib
+R145:157 Stdlib.Lists.List ListNotations <> mod
+R159:167 TypeRules <> <> mod
+prf 177:206 <> phi_erase_sort_preimage_parent
+binder 217:217 <> t:1
+binder 219:219 <> j:2
+R247:250 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R237:239 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R226:234 Progress <> phi_erase def
+R236:236 _parent_phi_erase_sort_algebra <> t:1 var
+R240:244 TypeRules <> TSort constr
+R246:246 _parent_phi_erase_sort_algebra <> j:2 var
+R252:254 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R251:251 _parent_phi_erase_sort_algebra <> t:1 var
+R255:259 TypeRules <> TSort constr
+R261:261 _parent_phi_erase_sort_algebra <> j:2 var
+prf 351:379 <> phi_erase_var_preimage_parent
+binder 390:390 <> t:3
+binder 392:396 <> index:4
+R427:430 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R414:416 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R403:411 Progress <> phi_erase def
+R413:413 _parent_phi_erase_sort_algebra <> t:3 var
+R417:420 TypeRules <> TVar constr
+R422:426 _parent_phi_erase_sort_algebra <> index:4 var
+R432:434 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R431:431 _parent_phi_erase_sort_algebra <> t:3 var
+R435:438 TypeRules <> TVar constr
+R440:444 _parent_phi_erase_sort_algebra <> index:4 var
+prf 538:564 <> subst0_sort_preimage_parent
+binder 575:575 <> u:5
+binder 577:577 <> t:6
+binder 579:579 <> j:7
+R607:614 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R597:599 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R586:590 TypeRules <> subst def
+R596:596 _parent_phi_erase_sort_algebra <> t:6 var
+R592:592 _parent_phi_erase_sort_algebra <> u:5 var
+R600:604 TypeRules <> TSort constr
+R606:606 _parent_phi_erase_sort_algebra <> j:7 var
+R626:630 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R656:656 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R616:618 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R615:615 _parent_phi_erase_sort_algebra <> t:6 var
+R619:623 TypeRules <> TSort constr
+R625:625 _parent_phi_erase_sort_algebra <> j:7 var
+R641:644 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R632:634 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R631:631 _parent_phi_erase_sort_algebra <> t:6 var
+R635:638 TypeRules <> TVar constr
+R646:648 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R645:645 _parent_phi_erase_sort_algebra <> u:5 var
+R649:653 TypeRules <> TSort constr
+R655:655 _parent_phi_erase_sort_algebra <> j:7 var
+prf 925:957 <> phi_erase_enum_pos_reflect_parent
+binder 968:968 <> t:8
+binder 970:970 <> n:9
+R1001:1004 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R977:984 TypeRules <> enum_pos ind
+R1000:1000 _parent_phi_erase_sort_algebra <> n:9 var
+R987:995 Progress <> phi_erase def
+R997:997 _parent_phi_erase_sort_algebra <> t:8 var
+R1005:1012 TypeRules <> enum_pos ind
+R1016:1016 _parent_phi_erase_sort_algebra <> n:9 var
+R1014:1014 _parent_phi_erase_sort_algebra <> t:8 var
+R1054:1062 Progress <> phi_erase def
+R1054:1062 Progress <> phi_erase def
+R1275:1301 _parent_phi_erase_sort_algebra <> subst0_sort_preimage_parent thm
+R1322:1354 _parent_phi_erase_sort_algebra <> phi_erase_enum_pos_reflect_parent thm

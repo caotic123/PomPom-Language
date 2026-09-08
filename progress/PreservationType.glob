@@ -1,0 +1,29 @@
+DIGEST bc78e717ea25a59219af250011eab485
+FPreservationType
+R78:90 TypeRulesCore <> <> lib
+R120:123 Stdlib.Lists.List <> <> lib
+R133:145 Stdlib.Lists.List ListNotations <> mod
+prf 155:171 <> preservation_type
+binder 182:183 <> Γ:1
+binder 185:185 <> t:2
+binder 187:187 <> A:3
+binder 189:190 <> A':4
+R209:212 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R197:201 TypeRulesCore <> check ind
+R208:208 PreservationType <> A:3 var
+R206:206 PreservationType <> t:2 var
+R203:204 PreservationType <> Γ:1 var
+R222:225 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R213:216 TypeRulesCore <> step ind
+R220:221 PreservationType <> A':4 var
+R218:218 PreservationType <> A:3 var
+R226:230 TypeRulesCore <> check ind
+R237:238 PreservationType <> A':4 var
+R235:235 PreservationType <> t:2 var
+R232:233 PreservationType <> Γ:1 var
+R282:290 TypeRulesCore <> ch_expand constr
+R282:290 TypeRulesCore <> ch_expand constr
+R303:308 TypeRulesCore <> cv_sym constr
+R303:308 TypeRulesCore <> cv_sym constr
+R318:324 TypeRulesCore <> cv_step constr
+R318:324 TypeRulesCore <> cv_step constr

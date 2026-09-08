@@ -1,0 +1,288 @@
+DIGEST d0d448641782263bb8f59ee720a57422
+F_glm_phi_erase_epstep_counterexample
+R1263:1270 Progress <> <> lib
+R1288:1298 _tmp_epstep <> <> lib
+R1328:1331 Stdlib.Lists.List <> <> lib
+R1333:1335 Stdlib.micromega.Lia <> <> lib
+R1337:1344 Stdlib.Arith.PeanoNat <> <> lib
+R1354:1366 Stdlib.Lists.List ListNotations <> mod
+R1368:1376 TypeRules <> <> mod
+def 1416:1431 <> counterexample_t
+R1435:1438 TypeRules <> term ind
+R1445:1448 TypeRules <> TLam constr
+R1451:1454 TypeRules <> TApp constr
+R1473:1476 TypeRules <> TVar constr
+R1457:1460 TypeRules <> TMuS constr
+R1463:1466 TypeRules <> TVar constr
+prf 1878:1899 <> lift_1_0_neq_tvar0_glm
+binder 1910:1910 <> x:1
+R1923:1926 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R1913:1916 TypeRules <> lift def
+R1922:1922 _glm_phi_erase_epstep_counterexample <> x:1 var
+R1927:1930 TypeRules <> TVar constr
+prf 2093:2118 <> lift_1_0_neq_mus_tvar0_glm
+binder 2129:2129 <> f:2
+R2142:2145 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2132:2135 TypeRules <> lift def
+R2141:2141 _glm_phi_erase_epstep_counterexample <> f:2 var
+R2146:2149 TypeRules <> TMuS constr
+R2152:2155 TypeRules <> TVar constr
+R2255:2276 _glm_phi_erase_epstep_counterexample <> lift_1_0_neq_tvar0_glm thm
+R2255:2276 _glm_phi_erase_epstep_counterexample <> lift_1_0_neq_tvar0_glm thm
+prf 3027:3045 <> epstep_tvar_inv_glm
+binder 3056:3056 <> n:3
+binder 3058:3058 <> u:4
+R3082:3085 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3065:3070 _tmp_epstep <> epstep ind
+R3073:3076 TypeRules <> TVar constr
+R3078:3078 _glm_phi_erase_epstep_counterexample <> n:3 var
+R3081:3081 _glm_phi_erase_epstep_counterexample <> u:4 var
+R3087:3089 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3086:3086 _glm_phi_erase_epstep_counterexample <> u:4 var
+R3090:3093 TypeRules <> TVar constr
+R3095:3095 _glm_phi_erase_epstep_counterexample <> n:3 var
+prf 3166:3183 <> epstep_mus_inv_glm
+binder 3194:3194 <> s:5
+binder 3196:3196 <> u:6
+R3220:3223 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3203:3208 _tmp_epstep <> epstep ind
+R3211:3214 TypeRules <> TMuS constr
+R3216:3216 _glm_phi_erase_epstep_counterexample <> s:5 var
+R3219:3219 _glm_phi_erase_epstep_counterexample <> u:6 var
+R3224:3230 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3233:3234 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3231:3232 <> s':7
+R3246:3249 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3236:3238 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3235:3235 _glm_phi_erase_epstep_counterexample <> u:6 var
+R3239:3242 TypeRules <> TMuS constr
+R3244:3245 _glm_phi_erase_epstep_counterexample <> s':7 var
+R3250:3255 _tmp_epstep <> epstep ind
+R3257:3257 _glm_phi_erase_epstep_counterexample <> s:5 var
+R3259:3260 _glm_phi_erase_epstep_counterexample <> s':7 var
+prf 3365:3383 <> epstep_tapp_inv_glm
+binder 3394:3394 <> f:8
+binder 3396:3396 <> a:9
+binder 3398:3398 <> u:10
+R3424:3431 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3405:3410 _tmp_epstep <> epstep ind
+R3413:3416 TypeRules <> TApp constr
+R3420:3420 _glm_phi_erase_epstep_counterexample <> a:9 var
+R3418:3418 _glm_phi_erase_epstep_counterexample <> f:8 var
+R3423:3423 _glm_phi_erase_epstep_counterexample <> u:10 var
+R3432:3438 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3444:3445 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3439:3440 <> f':11
+binder 3442:3443 <> a':12
+R3460:3463 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3447:3449 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3446:3446 _glm_phi_erase_epstep_counterexample <> u:10 var
+R3450:3453 TypeRules <> TApp constr
+R3458:3459 _glm_phi_erase_epstep_counterexample <> a':12 var
+R3455:3456 _glm_phi_erase_epstep_counterexample <> f':11 var
+R3475:3478 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3464:3469 _tmp_epstep <> epstep ind
+R3471:3471 _glm_phi_erase_epstep_counterexample <> f:8 var
+R3473:3474 _glm_phi_erase_epstep_counterexample <> f':11 var
+R3479:3484 _tmp_epstep <> epstep ind
+R3486:3486 _glm_phi_erase_epstep_counterexample <> a:9 var
+R3488:3489 _glm_phi_erase_epstep_counterexample <> a':12 var
+prf 3609:3626 <> epstep_lam_inv_glm
+binder 3637:3637 <> b:13
+binder 3639:3639 <> u:14
+R3663:3670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3646:3651 _tmp_epstep <> epstep ind
+R3654:3657 TypeRules <> TLam constr
+R3659:3659 _glm_phi_erase_epstep_counterexample <> b:13 var
+R3662:3662 _glm_phi_erase_epstep_counterexample <> u:14 var
+R3671:3671 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3709:3718 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3773:3773 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3672:3678 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3681:3682 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3679:3680 <> b':15
+R3694:3697 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3684:3686 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3683:3683 _glm_phi_erase_epstep_counterexample <> u:14 var
+R3687:3690 TypeRules <> TLam constr
+R3692:3693 _glm_phi_erase_epstep_counterexample <> b':15 var
+R3698:3703 _tmp_epstep <> epstep ind
+R3705:3705 _glm_phi_erase_epstep_counterexample <> b:13 var
+R3707:3708 _glm_phi_erase_epstep_counterexample <> b':15 var
+R3719:3725 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3727:3728 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3726:3726 <> f:16
+R3759:3762 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3730:3732 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3729:3729 _glm_phi_erase_epstep_counterexample <> b:13 var
+R3733:3736 TypeRules <> TApp constr
+R3752:3755 TypeRules <> TVar constr
+R3739:3742 TypeRules <> lift def
+R3748:3748 _glm_phi_erase_epstep_counterexample <> f:16 var
+R3763:3768 _tmp_epstep <> epstep ind
+R3770:3770 _glm_phi_erase_epstep_counterexample <> f:16 var
+R3772:3772 _glm_phi_erase_epstep_counterexample <> u:14 var
+prf 4315:4346 <> phi_erase_t_epsteps_mus_unit_glm
+R4354:4359 _tmp_epstep <> epstep ind
+R4362:4370 Progress <> phi_erase def
+R4372:4387 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R4391:4394 TypeRules <> TMuS constr
+R4396:4400 TypeRules <> TUnit constr
+R4418:4433 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R4435:4443 Progress <> phi_erase def
+R4456:4462 _tmp_epstep <> eps_eta constr
+R4465:4468 TypeRules <> TMuS constr
+R4470:4474 TypeRules <> TUnit constr
+R4478:4481 TypeRules <> TMuS constr
+R4483:4487 TypeRules <> TUnit constr
+R4456:4462 _tmp_epstep <> eps_eta constr
+R4465:4468 TypeRules <> TMuS constr
+R4470:4474 TypeRules <> TUnit constr
+R4478:4481 TypeRules <> TMuS constr
+R4483:4487 TypeRules <> TUnit constr
+R4500:4510 _tmp_epstep <> epstep_refl thm
+R4500:4510 _tmp_epstep <> epstep_refl thm
+prf 4574:4616 <> phi_erase_counterexample_t_neq_mus_unit_glm
+R4650:4653 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R4624:4632 Progress <> phi_erase def
+R4634:4649 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R4654:4657 TypeRules <> TMuS constr
+R4659:4663 TypeRules <> TUnit constr
+R4692:4707 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R4709:4717 Progress <> phi_erase def
+prf 5000:5030 <> epstep_counterexample_t_inv_glm
+binder 5041:5042 <> t':17
+R5075:5082 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5049:5054 _tmp_epstep <> epstep ind
+R5056:5071 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R5073:5074 _glm_phi_erase_epstep_counterexample <> t':17 var
+R5085:5087 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5083:5084 _glm_phi_erase_epstep_counterexample <> t':17 var
+R5088:5103 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R5135:5150 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R5170:5187 _glm_phi_erase_epstep_counterexample <> epstep_lam_inv_glm thm
+R5170:5187 _glm_phi_erase_epstep_counterexample <> epstep_lam_inv_glm thm
+R5423:5441 _glm_phi_erase_epstep_counterexample <> epstep_tapp_inv_glm thm
+R5423:5441 _glm_phi_erase_epstep_counterexample <> epstep_tapp_inv_glm thm
+R5528:5545 _glm_phi_erase_epstep_counterexample <> epstep_mus_inv_glm thm
+R5528:5545 _glm_phi_erase_epstep_counterexample <> epstep_mus_inv_glm thm
+R5604:5622 _glm_phi_erase_epstep_counterexample <> epstep_tvar_inv_glm thm
+R5604:5622 _glm_phi_erase_epstep_counterexample <> epstep_tvar_inv_glm thm
+R5646:5664 _glm_phi_erase_epstep_counterexample <> epstep_tvar_inv_glm thm
+R5646:5664 _glm_phi_erase_epstep_counterexample <> epstep_tvar_inv_glm thm
+R5795:5797 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5782:5785 TypeRules <> TMuS constr
+R5788:5791 TypeRules <> TVar constr
+R5798:5801 TypeRules <> lift def
+R5795:5797 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5782:5785 TypeRules <> TMuS constr
+R5788:5791 TypeRules <> TVar constr
+R5798:5801 TypeRules <> lift def
+R5836:5861 _glm_phi_erase_epstep_counterexample <> lift_1_0_neq_mus_tvar0_glm thm
+R5836:5861 _glm_phi_erase_epstep_counterexample <> lift_1_0_neq_mus_tvar0_glm thm
+prf 6147:6171 <> no_epstep_to_mus_unit_glm
+binder 6182:6183 <> t':18
+R6216:6223 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6190:6195 _tmp_epstep <> epstep ind
+R6197:6212 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R6214:6215 _glm_phi_erase_epstep_counterexample <> t':18 var
+R6236:6239 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6224:6232 Progress <> phi_erase def
+R6234:6235 _glm_phi_erase_epstep_counterexample <> t':18 var
+R6240:6243 TypeRules <> TMuS constr
+R6245:6249 TypeRules <> TUnit constr
+R6293:6323 _glm_phi_erase_epstep_counterexample <> epstep_counterexample_t_inv_glm thm
+R6293:6323 _glm_phi_erase_epstep_counterexample <> epstep_counterexample_t_inv_glm thm
+R6293:6323 _glm_phi_erase_epstep_counterexample <> epstep_counterexample_t_inv_glm thm
+R6352:6394 _glm_phi_erase_epstep_counterexample <> phi_erase_counterexample_t_neq_mus_unit_glm thm
+R6352:6394 _glm_phi_erase_epstep_counterexample <> phi_erase_counterexample_t_neq_mus_unit_glm thm
+prf 6521:6551 <> no_epstep_preimage_mus_unit_glm
+R6559:6560 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R6561:6567 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6569:6570 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6568:6568 <> u:19
+R6596:6599 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6571:6576 _tmp_epstep <> epstep ind
+R6578:6593 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R6595:6595 _glm_phi_erase_epstep_counterexample <> u:19 var
+R6611:6613 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6600:6608 Progress <> phi_erase def
+R6610:6610 _glm_phi_erase_epstep_counterexample <> u:19 var
+R6614:6617 TypeRules <> TMuS constr
+R6619:6623 TypeRules <> TUnit constr
+R6663:6687 _glm_phi_erase_epstep_counterexample <> no_epstep_to_mus_unit_glm thm
+R6663:6687 _glm_phi_erase_epstep_counterexample <> no_epstep_to_mus_unit_glm thm
+prf 6992:7033 <> phi_erase_epstep_counterexample_strong_glm
+R7089:7096 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7041:7046 _tmp_epstep <> epstep ind
+R7049:7057 Progress <> phi_erase def
+R7059:7074 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R7078:7081 TypeRules <> TMuS constr
+R7083:7087 TypeRules <> TUnit constr
+R7097:7097 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7157:7165 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 7105:7105 <> u:20
+R7133:7136 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7108:7113 _tmp_epstep <> epstep ind
+R7115:7130 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R7132:7132 _glm_phi_erase_epstep_counterexample <> u:20 var
+R7138:7140 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7137:7137 _glm_phi_erase_epstep_counterexample <> u:20 var
+R7141:7156 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R7166:7168 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7232:7232 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7169:7175 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7177:7178 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7176:7176 <> u:21
+R7204:7207 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7179:7184 _tmp_epstep <> epstep ind
+R7186:7201 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R7203:7203 _glm_phi_erase_epstep_counterexample <> u:21 var
+R7219:7221 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7208:7216 Progress <> phi_erase def
+R7218:7218 _glm_phi_erase_epstep_counterexample <> u:21 var
+R7222:7225 TypeRules <> TMuS constr
+R7227:7231 TypeRules <> TUnit constr
+R7272:7303 _glm_phi_erase_epstep_counterexample <> phi_erase_t_epsteps_mus_unit_glm thm
+R7272:7303 _glm_phi_erase_epstep_counterexample <> phi_erase_t_epsteps_mus_unit_glm thm
+R7316:7346 _glm_phi_erase_epstep_counterexample <> epstep_counterexample_t_inv_glm thm
+R7316:7346 _glm_phi_erase_epstep_counterexample <> epstep_counterexample_t_inv_glm thm
+R7359:7389 _glm_phi_erase_epstep_counterexample <> no_epstep_preimage_mus_unit_glm thm
+R7359:7389 _glm_phi_erase_epstep_counterexample <> no_epstep_preimage_mus_unit_glm thm
+def 7838:7868 <> phi_erase_epstep_reflection_glm
+binder 7889:7889 <> t:22
+binder 7891:7891 <> u:23
+R7920:7927 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7898:7903 _tmp_epstep <> epstep ind
+R7906:7914 Progress <> phi_erase def
+R7916:7916 _glm_phi_erase_epstep_counterexample <> t:22 var
+R7919:7919 _glm_phi_erase_epstep_counterexample <> u:23 var
+R7928:7934 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7937:7938 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7935:7936 <> t':24
+R7950:7953 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7939:7944 _tmp_epstep <> epstep ind
+R7946:7946 _glm_phi_erase_epstep_counterexample <> t:22 var
+R7948:7949 _glm_phi_erase_epstep_counterexample <> t':24 var
+R7966:7968 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7954:7962 Progress <> phi_erase def
+R7964:7965 _glm_phi_erase_epstep_counterexample <> t':24 var
+R7969:7969 _glm_phi_erase_epstep_counterexample <> u:23 var
+prf 7983:8024 <> phi_erase_epstep_no_general_reflection_glm
+R8032:8033 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R8034:8064 _glm_phi_erase_epstep_counterexample <> phi_erase_epstep_reflection_glm def
+R8100:8115 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R8118:8121 TypeRules <> TMuS constr
+R8123:8127 TypeRules <> TUnit constr
+R8144:8175 _glm_phi_erase_epstep_counterexample <> phi_erase_t_epsteps_mus_unit_glm thm
+R8100:8115 _glm_phi_erase_epstep_counterexample <> counterexample_t def
+R8118:8121 TypeRules <> TMuS constr
+R8123:8127 TypeRules <> TUnit constr
+R8144:8175 _glm_phi_erase_epstep_counterexample <> phi_erase_t_epsteps_mus_unit_glm thm
+R8209:8233 _glm_phi_erase_epstep_counterexample <> no_epstep_to_mus_unit_glm thm
+R8209:8233 _glm_phi_erase_epstep_counterexample <> no_epstep_to_mus_unit_glm thm
+R8271:8302 _glm_phi_erase_epstep_counterexample <> phi_erase_t_epsteps_mus_unit_glm thm
+R8323:8353 _glm_phi_erase_epstep_counterexample <> epstep_counterexample_t_inv_glm thm
+R8374:8404 _glm_phi_erase_epstep_counterexample <> no_epstep_preimage_mus_unit_glm thm
+R8425:8466 _glm_phi_erase_epstep_counterexample <> phi_erase_epstep_counterexample_strong_glm thm
+R8487:8528 _glm_phi_erase_epstep_counterexample <> phi_erase_epstep_no_general_reflection_glm thm

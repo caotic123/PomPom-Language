@@ -1,0 +1,130 @@
+DIGEST 5246c6cfb9d61f9eb3b361906a76d687
+F_parent_instance_join
+R15:22 Progress <> <> lib
+R24:47 _parent_instance_pruning <> <> lib
+R49:71 _parent_pruning_diamond <> <> lib
+R75:97 _parent_pruning_commute <> <> lib
+R99:123 _luna_instance_core_paths <> <> lib
+R125:144 _luna_instance_union <> <> lib
+R148:172 _luna_instance_conversion <> <> lib
+R182:190 TypeRules <> <> mod
+def 205:219 <> instance_reduce
+R224:234 _luna_instance_union <> block_union ind
+R236:239 TypeRules <> term ind
+R241:245 Progress <> fstep ind
+R247:256 _parent_instance_pruning <> prune_term ind
+def 270:282 <> instance_join
+binder 284:284 <> t:1
+binder 286:286 <> u:2
+R291:297 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R299:300 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 298:298 <> w:3
+R324:327 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R301:303 Progress <> rtc ind
+R323:323 _parent_instance_join <> w:3 var
+R321:321 _parent_instance_join <> t:1 var
+R305:319 _parent_instance_join <> instance_reduce def
+R328:330 Progress <> rtc ind
+R350:350 _parent_instance_join <> w:3 var
+R348:348 _parent_instance_join <> u:2 var
+R332:346 _parent_instance_join <> instance_reduce def
+prf 360:384 <> instance_reduce_confluent
+R388:396 Progress <> confluent def
+R398:412 _parent_instance_join <> instance_reduce def
+R430:450 _luna_instance_union <> block_union_confluent thm
+R460:483 _luna_instance_core_paths <> fstep_confluent_instance thm
+R496:515 _parent_pruning_diamond <> prune_term_confluent thm
+R523:541 _parent_pruning_commute <> fstep_prune_commute thm
+R430:450 _luna_instance_union <> block_union_confluent thm
+R460:483 _luna_instance_core_paths <> fstep_confluent_instance thm
+R496:515 _parent_pruning_diamond <> prune_term_confluent thm
+R523:541 _parent_pruning_commute <> fstep_prune_commute thm
+prf 556:573 <> instance_join_refl
+binder 584:584 <> t:4
+R587:599 _parent_instance_join <> instance_join def
+R601:601 _parent_instance_join <> t:4 var
+R603:603 _parent_instance_join <> t:4 var
+R645:652 Progress <> rtc_refl constr
+R645:652 Progress <> rtc_refl constr
+R645:652 Progress <> rtc_refl constr
+prf 666:682 <> instance_join_sym
+binder 693:693 <> t:5
+binder 695:695 <> u:6
+R715:718 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R698:710 _parent_instance_join <> instance_join def
+R712:712 _parent_instance_join <> t:5 var
+R714:714 _parent_instance_join <> u:6 var
+R719:731 _parent_instance_join <> instance_join def
+R733:733 _parent_instance_join <> u:6 var
+R735:735 _parent_instance_join <> t:5 var
+prf 796:814 <> instance_join_trans
+binder 825:825 <> t:7
+binder 827:827 <> u:8
+binder 829:829 <> v:9
+R851:854 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R834:846 _parent_instance_join <> instance_join def
+R848:848 _parent_instance_join <> t:7 var
+R850:850 _parent_instance_join <> u:8 var
+R872:875 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R855:867 _parent_instance_join <> instance_join def
+R869:869 _parent_instance_join <> u:8 var
+R871:871 _parent_instance_join <> v:9 var
+R876:888 _parent_instance_join <> instance_join def
+R890:890 _parent_instance_join <> t:7 var
+R892:892 _parent_instance_join <> v:9 var
+R958:982 _parent_instance_join <> instance_reduce_confluent thm
+R958:982 _parent_instance_join <> instance_reduce_confluent thm
+R1043:1051 Progress <> rtc_trans thm
+R1043:1051 Progress <> rtc_trans thm
+R1043:1051 Progress <> rtc_trans thm
+prf 1078:1096 <> fconv_instance_join
+binder 1107:1107 <> t:10
+binder 1109:1109 <> u:11
+R1121:1124 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1112:1116 Progress <> fconv ind
+R1118:1118 _parent_instance_join <> t:10 var
+R1120:1120 _parent_instance_join <> u:11 var
+R1125:1137 _parent_instance_join <> instance_join def
+R1139:1139 _parent_instance_join <> t:10 var
+R1141:1141 _parent_instance_join <> u:11 var
+R1208:1214 Progress <> rtc_one thm
+R1217:1223 _luna_instance_union <> bu_left constr
+R1226:1232 Progress <> rtc_one thm
+R1249:1256 Progress <> rtc_refl constr
+R1208:1214 Progress <> rtc_one thm
+R1217:1223 _luna_instance_union <> bu_left constr
+R1226:1232 Progress <> rtc_one thm
+R1249:1256 Progress <> rtc_refl constr
+R1270:1287 _parent_instance_join <> instance_join_refl thm
+R1270:1287 _parent_instance_join <> instance_join_refl thm
+R1300:1316 _parent_instance_join <> instance_join_sym thm
+R1300:1316 _parent_instance_join <> instance_join_sym thm
+R1342:1360 _parent_instance_join <> instance_join_trans thm
+R1342:1360 _parent_instance_join <> instance_join_trans thm
+prf 1387:1404 <> instance_conv_join
+binder 1415:1415 <> t:12
+binder 1417:1417 <> u:13
+R1437:1440 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1420:1432 _luna_instance_conversion <> instance_conv ind
+R1434:1434 _parent_instance_join <> t:12 var
+R1436:1436 _parent_instance_join <> u:13 var
+R1441:1453 _parent_instance_join <> instance_join def
+R1455:1455 _parent_instance_join <> t:12 var
+R1457:1457 _parent_instance_join <> u:13 var
+R1506:1524 _parent_instance_join <> fconv_instance_join thm
+R1506:1524 _parent_instance_join <> fconv_instance_join thm
+R1567:1573 Progress <> rtc_one thm
+R1576:1583 _luna_instance_union <> bu_right constr
+R1586:1592 Progress <> rtc_one thm
+R1609:1616 Progress <> rtc_refl constr
+R1567:1573 Progress <> rtc_one thm
+R1576:1583 _luna_instance_union <> bu_right constr
+R1586:1592 Progress <> rtc_one thm
+R1609:1616 Progress <> rtc_refl constr
+R1630:1647 _parent_instance_join <> instance_join_refl thm
+R1630:1647 _parent_instance_join <> instance_join_refl thm
+R1660:1676 _parent_instance_join <> instance_join_sym thm
+R1660:1676 _parent_instance_join <> instance_join_sym thm
+R1702:1720 _parent_instance_join <> instance_join_trans thm
+R1702:1720 _parent_instance_join <> instance_join_trans thm
+R1759:1776 _parent_instance_join <> instance_conv_join thm

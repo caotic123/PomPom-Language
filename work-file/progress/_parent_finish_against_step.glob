@@ -1,0 +1,799 @@
+DIGEST c2e240f459570adb5ed2378db4d24cc3
+F_parent_finish_against_step
+R15:22 Progress <> <> lib
+R24:38 SignatureLemmas <> <> lib
+R41:71 _luna_finish_erased_sigma_value <> <> lib
+R73:102 _luna_finish_erased_enum_value <> <> lib
+R105:135 _luna_finish_interp_pair_origin <> <> lib
+R137:164 _parent_finish_cjoin_context <> <> lib
+R194:197 Stdlib.Lists.List <> <> lib
+R199:201 Stdlib.micromega.Lia <> <> lib
+R211:223 Stdlib.Lists.List ListNotations <> mod
+R225:233 TypeRules <> <> mod
+R235:254 Progress _tmp_epstep <> mod
+R256:283 Progress _work_mixed_closure <> mod
+R286:305 Progress _work_cjoin <> mod
+R307:337 Progress _work_cstep_invariants <> mod
+R339:365 Progress _work_conv_whd_pos <> mod
+R368:393 Progress MuApplicationSort <> mod
+def 408:430 <> bounded_progress_parent
+binder 432:432 <> N:1
+binder 444:444 <> t:2
+binder 446:446 <> T:3
+R462:465 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R457:460 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R450:454 Progress <> tsize def
+R456:456 _parent_finish_against_step <> t:2 var
+R461:461 _parent_finish_against_step <> N:1 var
+R478:481 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R466:470 TypeRules <> check ind
+R477:477 _parent_finish_against_step <> T:3 var
+R475:475 _parent_finish_against_step <> t:2 var
+R472:473 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R489:492 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R482:486 TypeRules <> value ind
+R488:488 _parent_finish_against_step <> t:2 var
+R493:499 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R502:503 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 500:501 <> t':4
+R504:507 TypeRules <> step ind
+R511:512 _parent_finish_against_step <> t':4 var
+R509:509 _parent_finish_against_step <> t:2 var
+def 526:548 <> erased_dead_step_parent
+binder 550:550 <> N:5
+binder 552:552 <> D:6
+binder 564:565 <> xs:7
+binder 567:567 <> T:8
+binder 569:569 <> X:9
+R586:589 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R581:584 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R573:577 Progress <> tsize def
+R579:580 _parent_finish_against_step <> xs:7 var
+R585:585 _parent_finish_against_step <> N:5 var
+R603:607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R590:594 TypeRules <> check ind
+R602:602 _parent_finish_against_step <> T:8 var
+R599:600 _parent_finish_against_step <> xs:7 var
+R596:597 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R650:653 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R608:612 Progress _work_cjoin cjoin def
+R614:622 Progress <> phi_erase def
+R624:624 _parent_finish_against_step <> T:8 var
+R627:635 Progress <> phi_erase def
+R637:643 TypeRules <> TInterp constr
+R647:647 _parent_finish_against_step <> X:9 var
+R645:645 _parent_finish_against_step <> D:6 var
+R654:660 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R664:664 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 661:663 <> xs':10
+R665:668 TypeRules <> step ind
+R673:675 _parent_finish_against_step <> xs':10 var
+R670:671 _parent_finish_against_step <> xs:7 var
+prf 685:707 <> interp_prod_join_parent
+binder 718:718 <> D:11
+binder 720:720 <> X:12
+binder 722:722 <> A:13
+binder 724:724 <> B:14
+R744:747 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R726:729 TypeRules <> eval ind
+R733:738 TypeRules <> TIProd constr
+R742:742 _parent_finish_against_step <> B:14 var
+R740:740 _parent_finish_against_step <> A:13 var
+R731:731 _parent_finish_against_step <> D:11 var
+R748:752 Progress _work_cjoin cjoin def
+R754:762 Progress <> phi_erase def
+R764:770 TypeRules <> TInterp constr
+R774:774 _parent_finish_against_step <> X:12 var
+R772:772 _parent_finish_against_step <> D:11 var
+R780:788 Progress <> phi_erase def
+R790:795 TypeRules <> TSigma constr
+R810:813 TypeRules <> lift def
+R819:825 TypeRules <> TInterp constr
+R829:829 _parent_finish_against_step <> X:12 var
+R827:827 _parent_finish_against_step <> B:14 var
+R797:803 TypeRules <> TInterp constr
+R807:807 _parent_finish_against_step <> X:12 var
+R805:805 _parent_finish_against_step <> A:13 var
+R858:871 Progress _work_cjoin conv_phi_cjoin thm
+R858:871 Progress _work_cjoin conv_phi_cjoin thm
+R881:888 TypeRules <> cv_trans constr
+R881:888 TypeRules <> cv_trans constr
+R900:908 TypeRules <> cv_interp constr
+R918:929 Progress <> conv_of_eval thm
+R947:953 TypeRules <> cv_refl constr
+R900:908 TypeRules <> cv_interp constr
+R918:929 Progress <> conv_of_eval thm
+R947:953 TypeRules <> cv_refl constr
+R966:972 TypeRules <> cv_step constr
+R974:987 TypeRules <> st_interp_prod constr
+R966:972 TypeRules <> cv_step constr
+R974:987 TypeRules <> st_interp_prod constr
+prf 1001:1025 <> interp_choice_join_parent
+binder 1036:1036 <> D:15
+binder 1038:1038 <> X:16
+binder 1040:1040 <> E:17
+binder 1042:1042 <> F:18
+R1064:1067 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1044:1047 TypeRules <> eval ind
+R1051:1058 TypeRules <> TIChoice constr
+R1062:1062 _parent_finish_against_step <> F:18 var
+R1060:1060 _parent_finish_against_step <> E:17 var
+R1049:1049 _parent_finish_against_step <> D:15 var
+R1068:1072 Progress _work_cjoin cjoin def
+R1074:1082 Progress <> phi_erase def
+R1084:1090 TypeRules <> TInterp constr
+R1094:1094 _parent_finish_against_step <> X:16 var
+R1092:1092 _parent_finish_against_step <> D:15 var
+R1100:1108 Progress <> phi_erase def
+R1110:1115 TypeRules <> TSigma constr
+R1127:1133 TypeRules <> TInterp constr
+R1161:1164 TypeRules <> lift def
+R1170:1170 _parent_finish_against_step <> X:16 var
+R1135:1138 TypeRules <> TApp constr
+R1152:1155 TypeRules <> TVar constr
+R1140:1143 TypeRules <> lift def
+R1149:1149 _parent_finish_against_step <> F:18 var
+R1117:1122 TypeRules <> TEnumT constr
+R1124:1124 _parent_finish_against_step <> E:17 var
+R1199:1212 Progress _work_cjoin conv_phi_cjoin thm
+R1199:1212 Progress _work_cjoin conv_phi_cjoin thm
+R1222:1229 TypeRules <> cv_trans constr
+R1222:1229 TypeRules <> cv_trans constr
+R1241:1249 TypeRules <> cv_interp constr
+R1259:1270 Progress <> conv_of_eval thm
+R1288:1294 TypeRules <> cv_refl constr
+R1241:1249 TypeRules <> cv_interp constr
+R1259:1270 Progress <> conv_of_eval thm
+R1288:1294 TypeRules <> cv_refl constr
+R1307:1313 TypeRules <> cv_step constr
+R1315:1330 TypeRules <> st_interp_choice constr
+R1307:1313 TypeRules <> cv_step constr
+R1315:1330 TypeRules <> st_interp_choice constr
+prf 1345:1367 <> against_nil_step_parent
+binder 1378:1378 <> N:19
+binder 1380:1380 <> D:20
+binder 1382:1382 <> E:21
+binder 1384:1384 <> F:22
+R1413:1416 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1388:1410 _parent_finish_against_step <> bounded_progress_parent def
+R1412:1412 _parent_finish_against_step <> N:19 var
+R1437:1439 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1417:1420 TypeRules <> eval ind
+R1424:1431 TypeRules <> TIChoice constr
+R1435:1435 _parent_finish_against_step <> F:22 var
+R1433:1433 _parent_finish_against_step <> E:21 var
+R1422:1422 _parent_finish_against_step <> D:20 var
+R1452:1456 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1440:1443 TypeRules <> eval ind
+R1447:1451 TypeRules <> TNilE constr
+R1445:1445 _parent_finish_against_step <> E:21 var
+R1457:1479 _parent_finish_against_step <> erased_dead_step_parent def
+R1481:1481 _parent_finish_against_step <> N:19 var
+R1483:1483 _parent_finish_against_step <> D:20 var
+R1609:1619 Progress _work_cjoin cjoin_trans thm
+R1631:1655 _parent_finish_against_step <> interp_choice_join_parent thm
+R1609:1619 Progress _work_cjoin cjoin_trans thm
+R1631:1655 _parent_finish_against_step <> interp_choice_join_parent thm
+R1688:1716 _luna_finish_erased_sigma_value <> erased_sigma_check_value_pair thm
+R1718:1719 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1729:1735 Corelib.Init.Logic <> eq_refl constr
+R1688:1716 _luna_finish_erased_sigma_value <> erased_sigma_check_value_pair thm
+R1718:1719 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1729:1735 Corelib.Init.Logic <> eq_refl constr
+R1775:1806 _luna_finish_interp_pair_origin <> erased_pair_interp_choice_origin thm
+R1775:1806 _luna_finish_interp_pair_origin <> erased_pair_interp_choice_origin thm
+R1887:1888 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1880:1884 Progress <> tsize def
+R1887:1888 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1880:1884 Progress <> tsize def
+R1983:2011 SignatureLemmas <> erased_empty_check_value_luna thm
+R2013:2014 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2024:2030 Corelib.Init.Logic <> eq_refl constr
+R1983:2011 SignatureLemmas <> erased_empty_check_value_luna thm
+R2013:2014 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2024:2030 Corelib.Init.Logic <> eq_refl constr
+R2048:2058 Progress _work_cjoin cjoin_trans thm
+R2048:2058 Progress _work_cjoin cjoin_trans thm
+R2087:2091 Progress _work_cjoin cjoin def
+R2093:2101 Progress <> phi_erase def
+R2103:2108 TypeRules <> TEnumT constr
+R2114:2122 Progress <> phi_erase def
+R2124:2129 TypeRules <> TEnumT constr
+R2131:2135 TypeRules <> TNilE constr
+R2087:2091 Progress _work_cjoin cjoin def
+R2093:2101 Progress <> phi_erase def
+R2103:2108 TypeRules <> TEnumT constr
+R2114:2122 Progress <> phi_erase def
+R2124:2129 TypeRules <> TEnumT constr
+R2131:2135 TypeRules <> TNilE constr
+R2150:2163 Progress _work_cjoin conv_phi_cjoin thm
+R2165:2172 TypeRules <> cv_enumt constr
+R2174:2185 Progress <> conv_of_eval thm
+R2150:2163 Progress _work_cjoin conv_phi_cjoin thm
+R2165:2172 TypeRules <> cv_enumt constr
+R2174:2185 Progress <> conv_of_eval thm
+R2201:2205 TypeRules <> TPair constr
+R2201:2205 TypeRules <> TPair constr
+R2220:2227 TypeRules <> st_pair1 constr
+R2220:2227 TypeRules <> st_pair1 constr
+prf 2248:2276 <> against_prod_left_step_parent
+binder 2287:2287 <> N:23
+binder 2289:2289 <> D:24
+binder 2291:2291 <> A:25
+binder 2293:2293 <> B:26
+R2322:2325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2297:2319 _parent_finish_against_step <> bounded_progress_parent def
+R2321:2321 _parent_finish_against_step <> N:23 var
+R2344:2348 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2326:2329 TypeRules <> eval ind
+R2333:2338 TypeRules <> TIProd constr
+R2342:2342 _parent_finish_against_step <> B:26 var
+R2340:2340 _parent_finish_against_step <> A:25 var
+R2331:2331 _parent_finish_against_step <> D:24 var
+R2376:2378 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2349:2371 _parent_finish_against_step <> erased_dead_step_parent def
+R2373:2373 _parent_finish_against_step <> N:23 var
+R2375:2375 _parent_finish_against_step <> A:25 var
+R2379:2401 _parent_finish_against_step <> erased_dead_step_parent def
+R2403:2403 _parent_finish_against_step <> N:23 var
+R2405:2405 _parent_finish_against_step <> D:24 var
+R2531:2541 Progress _work_cjoin cjoin_trans thm
+R2553:2575 _parent_finish_against_step <> interp_prod_join_parent thm
+R2531:2541 Progress _work_cjoin cjoin_trans thm
+R2553:2575 _parent_finish_against_step <> interp_prod_join_parent thm
+R2608:2636 _luna_finish_erased_sigma_value <> erased_sigma_check_value_pair thm
+R2638:2639 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2649:2655 Corelib.Init.Logic <> eq_refl constr
+R2608:2636 _luna_finish_erased_sigma_value <> erased_sigma_check_value_pair thm
+R2638:2639 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2649:2655 Corelib.Init.Logic <> eq_refl constr
+R2695:2724 _luna_finish_interp_pair_origin <> erased_pair_interp_prod_origin thm
+R2695:2724 _luna_finish_interp_pair_origin <> erased_pair_interp_prod_origin thm
+R2805:2806 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R2798:2802 Progress <> tsize def
+R2805:2806 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R2798:2802 Progress <> tsize def
+R2884:2888 TypeRules <> TPair constr
+R2884:2888 TypeRules <> TPair constr
+R2903:2910 TypeRules <> st_pair1 constr
+R2903:2910 TypeRules <> st_pair1 constr
+prf 2927:2956 <> against_prod_right_step_parent
+binder 2967:2967 <> N:27
+binder 2969:2969 <> D:28
+binder 2971:2971 <> A:29
+binder 2973:2973 <> B:30
+R3002:3005 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2977:2999 _parent_finish_against_step <> bounded_progress_parent def
+R3001:3001 _parent_finish_against_step <> N:27 var
+R3024:3028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3006:3009 TypeRules <> eval ind
+R3013:3018 TypeRules <> TIProd constr
+R3022:3022 _parent_finish_against_step <> B:30 var
+R3020:3020 _parent_finish_against_step <> A:29 var
+R3011:3011 _parent_finish_against_step <> D:28 var
+R3056:3058 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3029:3051 _parent_finish_against_step <> erased_dead_step_parent def
+R3053:3053 _parent_finish_against_step <> N:27 var
+R3055:3055 _parent_finish_against_step <> B:30 var
+R3059:3081 _parent_finish_against_step <> erased_dead_step_parent def
+R3083:3083 _parent_finish_against_step <> N:27 var
+R3085:3085 _parent_finish_against_step <> D:28 var
+R3211:3221 Progress _work_cjoin cjoin_trans thm
+R3233:3255 _parent_finish_against_step <> interp_prod_join_parent thm
+R3211:3221 Progress _work_cjoin cjoin_trans thm
+R3233:3255 _parent_finish_against_step <> interp_prod_join_parent thm
+R3288:3316 _luna_finish_erased_sigma_value <> erased_sigma_check_value_pair thm
+R3318:3319 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3329:3335 Corelib.Init.Logic <> eq_refl constr
+R3288:3316 _luna_finish_erased_sigma_value <> erased_sigma_check_value_pair thm
+R3318:3319 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3329:3335 Corelib.Init.Logic <> eq_refl constr
+R3375:3404 _luna_finish_interp_pair_origin <> erased_pair_interp_prod_origin thm
+R3375:3404 _luna_finish_interp_pair_origin <> erased_pair_interp_prod_origin thm
+R3485:3486 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R3478:3482 Progress <> tsize def
+R3485:3486 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R3478:3482 Progress <> tsize def
+R3564:3568 TypeRules <> TPair constr
+R3564:3568 TypeRules <> TPair constr
+R3583:3590 TypeRules <> st_pair2 constr
+R3583:3590 TypeRules <> st_pair2 constr
+def 3613:3637 <> erased_choice_step_parent
+binder 3639:3639 <> N:31
+binder 3641:3641 <> E:32
+binder 3643:3643 <> F:33
+binder 3655:3655 <> a:34
+binder 3657:3657 <> b:35
+binder 3659:3660 <> TA:36
+binder 3662:3663 <> TB:37
+binder 3665:3665 <> X:38
+R3688:3690 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3685:3686 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R3669:3673 Progress <> tsize def
+R3675:3679 TypeRules <> TPair constr
+R3683:3683 _parent_finish_against_step <> b:35 var
+R3681:3681 _parent_finish_against_step <> a:34 var
+R3687:3687 _parent_finish_against_step <> N:31 var
+R3704:3706 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3691:3695 TypeRules <> check ind
+R3702:3703 _parent_finish_against_step <> TA:36 var
+R3700:3700 _parent_finish_against_step <> a:34 var
+R3697:3698 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3720:3724 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3707:3711 TypeRules <> check ind
+R3718:3719 _parent_finish_against_step <> TB:37 var
+R3716:3716 _parent_finish_against_step <> b:35 var
+R3713:3714 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3765:3769 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3725:3729 Progress _work_cjoin cjoin def
+R3731:3739 Progress <> phi_erase def
+R3741:3742 _parent_finish_against_step <> TA:36 var
+R3745:3753 Progress <> phi_erase def
+R3755:3760 TypeRules <> TEnumT constr
+R3762:3762 _parent_finish_against_step <> E:32 var
+R3820:3824 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3770:3774 Progress _work_cjoin cjoin def
+R3776:3784 Progress <> phi_erase def
+R3786:3787 _parent_finish_against_step <> TB:37 var
+R3790:3798 Progress <> phi_erase def
+R3800:3806 TypeRules <> TInterp constr
+R3817:3817 _parent_finish_against_step <> X:38 var
+R3808:3811 TypeRules <> TApp constr
+R3815:3815 _parent_finish_against_step <> a:34 var
+R3813:3813 _parent_finish_against_step <> F:33 var
+R3825:3831 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3833:3833 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3832:3832 <> p:39
+R3834:3837 TypeRules <> step ind
+R3849:3849 _parent_finish_against_step <> p:39 var
+R3839:3843 TypeRules <> TPair constr
+R3847:3847 _parent_finish_against_step <> b:35 var
+R3845:3845 _parent_finish_against_step <> a:34 var
+prf 3859:3893 <> erased_choice_step_transport_parent
+binder 3904:3904 <> N:40
+binder 3906:3906 <> E:41
+binder 3908:3908 <> F:42
+binder 3910:3911 <> E':43
+binder 3913:3914 <> F':44
+R3949:3953 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3918:3942 _parent_finish_against_step <> erased_choice_step_parent def
+R3944:3944 _parent_finish_against_step <> N:40 var
+R3946:3946 _parent_finish_against_step <> E:41 var
+R3948:3948 _parent_finish_against_step <> F:42 var
+R3986:3988 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3954:3958 Progress _work_cjoin cjoin def
+R3960:3968 Progress <> phi_erase def
+R3970:3970 _parent_finish_against_step <> E:41 var
+R3973:3981 Progress <> phi_erase def
+R3983:3984 _parent_finish_against_step <> E':43 var
+R4021:4025 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3989:3993 Progress _work_cjoin cjoin def
+R3995:4003 Progress <> phi_erase def
+R4005:4005 _parent_finish_against_step <> F:42 var
+R4008:4016 Progress <> phi_erase def
+R4018:4019 _parent_finish_against_step <> F':44 var
+R4026:4050 _parent_finish_against_step <> erased_choice_step_parent def
+R4052:4052 _parent_finish_against_step <> N:40 var
+R4054:4055 _parent_finish_against_step <> E':43 var
+R4057:4058 _parent_finish_against_step <> F':44 var
+R4172:4182 Progress _work_cjoin cjoin_trans thm
+R4172:4182 Progress _work_cjoin cjoin_trans thm
+R4204:4221 _parent_finish_cjoin_context <> cjoin_enumt_parent thm
+R4223:4231 Progress _work_cjoin cjoin_sym thm
+R4204:4221 _parent_finish_cjoin_context <> cjoin_enumt_parent thm
+R4223:4231 Progress _work_cjoin cjoin_sym thm
+R4247:4257 Progress _work_cjoin cjoin_trans thm
+R4247:4257 Progress _work_cjoin cjoin_trans thm
+R4280:4288 Progress <> phi_erase def
+R4298:4316 _parent_finish_cjoin_context <> cjoin_interp_parent thm
+R4326:4335 Progress _work_cjoin cjoin_refl thm
+R4298:4316 _parent_finish_cjoin_context <> cjoin_interp_parent thm
+R4326:4335 Progress _work_cjoin cjoin_refl thm
+R4348:4363 _parent_finish_cjoin_context <> cjoin_app_parent thm
+R4372:4380 Progress _work_cjoin cjoin_sym thm
+R4397:4406 Progress _work_cjoin cjoin_refl thm
+R4348:4363 _parent_finish_cjoin_context <> cjoin_app_parent thm
+R4372:4380 Progress _work_cjoin cjoin_sym thm
+R4397:4406 Progress _work_cjoin cjoin_refl thm
+prf 4422:4461 <> erased_choice_step_eval_transport_parent
+binder 4472:4472 <> N:45
+binder 4474:4474 <> D:46
+binder 4476:4476 <> E:47
+binder 4478:4478 <> F:48
+R4513:4515 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4482:4506 _parent_finish_against_step <> erased_choice_step_parent def
+R4508:4508 _parent_finish_against_step <> N:45 var
+R4510:4510 _parent_finish_against_step <> E:47 var
+R4512:4512 _parent_finish_against_step <> F:48 var
+R4536:4540 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4516:4519 TypeRules <> eval ind
+R4523:4530 TypeRules <> TIChoice constr
+R4534:4534 _parent_finish_against_step <> F:48 var
+R4532:4532 _parent_finish_against_step <> E:47 var
+R4521:4521 _parent_finish_against_step <> D:46 var
+binder 4548:4549 <> E':49
+binder 4551:4552 <> F':50
+R4576:4577 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4554:4557 TypeRules <> eval ind
+R4561:4568 TypeRules <> TIChoice constr
+R4573:4574 _parent_finish_against_step <> F':50 var
+R4570:4571 _parent_finish_against_step <> E':49 var
+R4559:4559 _parent_finish_against_step <> D:46 var
+R4578:4602 _parent_finish_against_step <> erased_choice_step_parent def
+R4604:4604 _parent_finish_against_step <> N:45 var
+R4606:4607 _parent_finish_against_step <> E':49 var
+R4609:4610 _parent_finish_against_step <> F':50 var
+R4665:4678 Progress _work_cjoin conv_phi_cjoin thm
+R4685:4703 Progress <> conv_of_common_eval thm
+R4665:4678 Progress _work_cjoin conv_phi_cjoin thm
+R4685:4703 Progress <> conv_of_common_eval thm
+R4737:4760 _parent_finish_cjoin_context <> cjoin_ichoice_inv_parent thm
+R4737:4760 _parent_finish_cjoin_context <> cjoin_ichoice_inv_parent thm
+R4794:4828 _parent_finish_against_step <> erased_choice_step_transport_parent thm
+R4794:4828 _parent_finish_against_step <> erased_choice_step_transport_parent thm
+prf 4855:4887 <> erased_choice_step_to_dead_parent
+binder 4898:4898 <> N:51
+binder 4900:4900 <> D:52
+binder 4902:4902 <> E:53
+binder 4904:4904 <> F:54
+R4933:4935 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4908:4930 _parent_finish_against_step <> bounded_progress_parent def
+R4932:4932 _parent_finish_against_step <> N:51 var
+R4956:4959 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4936:4939 TypeRules <> eval ind
+R4943:4950 TypeRules <> TIChoice constr
+R4954:4954 _parent_finish_against_step <> F:54 var
+R4952:4952 _parent_finish_against_step <> E:53 var
+R4941:4941 _parent_finish_against_step <> D:52 var
+R4991:4993 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4960:4984 _parent_finish_against_step <> erased_choice_step_parent def
+R4986:4986 _parent_finish_against_step <> N:51 var
+R4988:4988 _parent_finish_against_step <> E:53 var
+R4990:4990 _parent_finish_against_step <> F:54 var
+R4994:5016 _parent_finish_against_step <> erased_dead_step_parent def
+R5018:5018 _parent_finish_against_step <> N:51 var
+R5020:5020 _parent_finish_against_step <> D:52 var
+R5135:5145 Progress _work_cjoin cjoin_trans thm
+R5156:5180 _parent_finish_against_step <> interp_choice_join_parent thm
+R5135:5145 Progress _work_cjoin cjoin_trans thm
+R5156:5180 _parent_finish_against_step <> interp_choice_join_parent thm
+R5216:5244 _luna_finish_erased_sigma_value <> erased_sigma_check_value_pair thm
+R5246:5247 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R5257:5263 Corelib.Init.Logic <> eq_refl constr
+R5216:5244 _luna_finish_erased_sigma_value <> erased_sigma_check_value_pair thm
+R5246:5247 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R5257:5263 Corelib.Init.Logic <> eq_refl constr
+R5305:5336 _luna_finish_interp_pair_origin <> erased_pair_interp_choice_origin thm
+R5305:5336 _luna_finish_interp_pair_origin <> erased_pair_interp_choice_origin thm
+prf 5447:5475 <> erased_choice_nil_step_parent
+binder 5486:5486 <> N:55
+binder 5488:5488 <> E:56
+binder 5490:5490 <> F:57
+R5519:5521 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5494:5516 _parent_finish_against_step <> bounded_progress_parent def
+R5518:5518 _parent_finish_against_step <> N:55 var
+R5534:5535 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5522:5525 TypeRules <> eval ind
+R5529:5533 TypeRules <> TNilE constr
+R5527:5527 _parent_finish_against_step <> E:56 var
+R5536:5560 _parent_finish_against_step <> erased_choice_step_parent def
+R5562:5562 _parent_finish_against_step <> N:55 var
+R5564:5564 _parent_finish_against_step <> E:56 var
+R5566:5566 _parent_finish_against_step <> F:57 var
+R5646:5647 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R5639:5643 Progress <> tsize def
+R5646:5647 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R5639:5643 Progress <> tsize def
+R5733:5761 SignatureLemmas <> erased_empty_check_value_luna thm
+R5763:5764 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R5774:5780 Corelib.Init.Logic <> eq_refl constr
+R5733:5761 SignatureLemmas <> erased_empty_check_value_luna thm
+R5763:5764 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R5774:5780 Corelib.Init.Logic <> eq_refl constr
+R5797:5807 Progress _work_cjoin cjoin_trans thm
+R5797:5807 Progress _work_cjoin cjoin_trans thm
+R5833:5837 Progress _work_cjoin cjoin def
+R5839:5847 Progress <> phi_erase def
+R5849:5854 TypeRules <> TEnumT constr
+R5860:5868 Progress <> phi_erase def
+R5870:5875 TypeRules <> TEnumT constr
+R5877:5881 TypeRules <> TNilE constr
+R5833:5837 Progress _work_cjoin cjoin def
+R5839:5847 Progress <> phi_erase def
+R5849:5854 TypeRules <> TEnumT constr
+R5860:5868 Progress <> phi_erase def
+R5870:5875 TypeRules <> TEnumT constr
+R5877:5881 TypeRules <> TNilE constr
+R5896:5909 Progress _work_cjoin conv_phi_cjoin thm
+R5911:5918 TypeRules <> cv_enumt constr
+R5920:5931 Progress <> conv_of_eval thm
+R5896:5909 Progress _work_cjoin conv_phi_cjoin thm
+R5911:5918 TypeRules <> cv_enumt constr
+R5920:5931 Progress <> conv_of_eval thm
+R5947:5951 TypeRules <> TPair constr
+R5947:5951 TypeRules <> TPair constr
+R5966:5973 TypeRules <> st_pair1 constr
+R5966:5973 TypeRules <> st_pair1 constr
+prf 5991:6021 <> interp_prod_choice_clash_parent
+binder 6032:6032 <> D:58
+binder 6034:6034 <> A:59
+binder 6036:6036 <> B:60
+binder 6038:6038 <> E:61
+binder 6040:6040 <> F:62
+R6062:6063 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6044:6047 TypeRules <> eval ind
+R6051:6056 TypeRules <> TIProd constr
+R6060:6060 _parent_finish_against_step <> B:60 var
+R6058:6058 _parent_finish_against_step <> A:59 var
+R6049:6049 _parent_finish_against_step <> D:58 var
+R6084:6085 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6064:6067 TypeRules <> eval ind
+R6071:6078 TypeRules <> TIChoice constr
+R6082:6082 _parent_finish_against_step <> F:62 var
+R6080:6080 _parent_finish_against_step <> E:61 var
+R6069:6069 _parent_finish_against_step <> D:58 var
+R6086:6090 Corelib.Init.Logic <> False ind
+R6116:6144 _parent_finish_cjoin_context <> no_cjoin_iprod_ichoice_parent thm
+R6116:6144 _parent_finish_cjoin_context <> no_cjoin_iprod_ichoice_parent thm
+R6154:6167 Progress _work_cjoin conv_phi_cjoin thm
+R6174:6192 Progress <> conv_of_common_eval thm
+R6154:6167 Progress _work_cjoin conv_phi_cjoin thm
+R6174:6192 Progress <> conv_of_common_eval thm
+prf 6220:6245 <> shifted_choice_beta_parent
+binder 6256:6256 <> F:63
+binder 6258:6258 <> n:64
+R6262:6265 TypeRules <> conv ind
+R6320:6323 TypeRules <> TApp constr
+R6327:6332 TypeRules <> TESucc constr
+R6334:6334 _parent_finish_against_step <> n:64 var
+R6325:6325 _parent_finish_against_step <> F:63 var
+R6267:6270 TypeRules <> TApp constr
+R6311:6311 _parent_finish_against_step <> n:64 var
+R6272:6275 TypeRules <> TLam constr
+R6277:6280 TypeRules <> TApp constr
+R6294:6299 TypeRules <> TESucc constr
+R6301:6304 TypeRules <> TVar constr
+R6282:6285 TypeRules <> lift def
+R6291:6291 _parent_finish_against_step <> F:63 var
+R6415:6415 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6372:6376 TypeRules <> subst def
+R6382:6385 TypeRules <> TApp constr
+R6399:6404 TypeRules <> TESucc constr
+R6406:6409 TypeRules <> TVar constr
+R6387:6390 TypeRules <> lift def
+R6416:6419 TypeRules <> TApp constr
+R6423:6428 TypeRules <> TESucc constr
+R6415:6415 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6372:6376 TypeRules <> subst def
+R6382:6385 TypeRules <> TApp constr
+R6399:6404 TypeRules <> TESucc constr
+R6406:6409 TypeRules <> TVar constr
+R6387:6390 TypeRules <> lift def
+R6416:6419 TypeRules <> TApp constr
+R6423:6428 TypeRules <> TESucc constr
+R6442:6446 TypeRules <> subst def
+R6458:6472 Progress <> subst_lift_zero thm
+R6474:6513 Progress _tmp_commute lift_zero_id_local thm
+R6458:6472 Progress <> subst_lift_zero thm
+R6458:6472 Progress <> subst_lift_zero thm
+R6474:6513 Progress _tmp_commute lift_zero_id_local thm
+R6474:6513 Progress _tmp_commute lift_zero_id_local thm
+R6557:6563 TypeRules <> cv_step constr
+R6565:6571 TypeRules <> st_beta constr
+R6557:6563 TypeRules <> cv_step constr
+R6565:6571 TypeRules <> st_beta constr
+prf 6585:6605 <> pair_step_succ_parent
+binder 6616:6616 <> a:65
+binder 6618:6618 <> b:66
+binder 6620:6620 <> p:67
+R6638:6642 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6622:6625 TypeRules <> step ind
+R6637:6637 _parent_finish_against_step <> p:67 var
+R6627:6631 TypeRules <> TPair constr
+R6635:6635 _parent_finish_against_step <> b:66 var
+R6633:6633 _parent_finish_against_step <> a:65 var
+R6643:6649 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6651:6651 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6650:6650 <> q:68
+R6652:6655 TypeRules <> step ind
+R6674:6674 _parent_finish_against_step <> q:68 var
+R6657:6661 TypeRules <> TPair constr
+R6672:6672 _parent_finish_against_step <> b:66 var
+R6663:6668 TypeRules <> TESucc constr
+R6670:6670 _parent_finish_against_step <> a:65 var
+R6737:6744 TypeRules <> st_pair1 constr
+R6746:6754 TypeRules <> st_esucc1 constr
+R6737:6744 TypeRules <> st_pair1 constr
+R6746:6754 TypeRules <> st_esucc1 constr
+R6787:6794 TypeRules <> st_pair2 constr
+R6787:6794 TypeRules <> st_pair2 constr
+prf 6821:6850 <> erased_choice_cons_step_parent
+binder 6861:6861 <> N:69
+binder 6863:6863 <> E:70
+binder 6865:6865 <> F:71
+binder 6867:6868 <> tg:72
+binder 6870:6871 <> E':73
+R6900:6902 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6875:6897 _parent_finish_against_step <> bounded_progress_parent def
+R6899:6899 _parent_finish_against_step <> N:69 var
+R6923:6927 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6903:6906 TypeRules <> eval ind
+R6910:6915 TypeRules <> TConsE constr
+R6920:6921 _parent_finish_against_step <> E':73 var
+R6917:6918 _parent_finish_against_step <> tg:72 var
+R6908:6908 _parent_finish_against_step <> E:70 var
+R6968:6972 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6928:6950 _parent_finish_against_step <> erased_dead_step_parent def
+R6952:6952 _parent_finish_against_step <> N:69 var
+R6954:6957 TypeRules <> TApp constr
+R6961:6966 TypeRules <> TEZero constr
+R6959:6959 _parent_finish_against_step <> F:71 var
+R7044:7048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6973:6997 _parent_finish_against_step <> erased_choice_step_parent def
+R6999:6999 _parent_finish_against_step <> N:69 var
+R7001:7002 _parent_finish_against_step <> E':73 var
+R7005:7008 TypeRules <> TLam constr
+R7010:7013 TypeRules <> TApp constr
+R7027:7032 TypeRules <> TESucc constr
+R7034:7037 TypeRules <> TVar constr
+R7015:7018 TypeRules <> lift def
+R7024:7024 _parent_finish_against_step <> F:71 var
+R7049:7073 _parent_finish_against_step <> erased_choice_step_parent def
+R7075:7075 _parent_finish_against_step <> N:69 var
+R7077:7077 _parent_finish_against_step <> E:70 var
+R7079:7079 _parent_finish_against_step <> F:71 var
+R7176:7177 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7169:7173 Progress <> tsize def
+R7176:7177 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7169:7173 Progress <> tsize def
+R7257:7261 TypeRules <> TPair constr
+R7257:7261 TypeRules <> TPair constr
+R7276:7283 TypeRules <> st_pair1 constr
+R7276:7283 TypeRules <> st_pair1 constr
+R7301:7335 _luna_finish_erased_enum_value <> erased_enum_check_value_origin_luna thm
+R7337:7338 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R7348:7354 Corelib.Init.Logic <> eq_refl constr
+R7364:7372 Progress <> phi_erase def
+R7301:7335 _luna_finish_erased_enum_value <> erased_enum_check_value_origin_luna thm
+R7337:7338 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R7348:7354 Corelib.Init.Logic <> eq_refl constr
+R7364:7372 Progress <> phi_erase def
+R7453:7454 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7446:7450 Progress <> tsize def
+R7453:7454 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7446:7450 Progress <> tsize def
+R7535:7539 TypeRules <> TPair constr
+R7541:7546 TypeRules <> TEZero constr
+R7535:7539 TypeRules <> TPair constr
+R7541:7546 TypeRules <> TEZero constr
+R7559:7566 TypeRules <> st_pair2 constr
+R7559:7566 TypeRules <> st_pair2 constr
+R7586:7603 Progress _work_cjoin cjoin_reduce_right thm
+R7615:7635 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R7586:7603 Progress _work_cjoin cjoin_reduce_right thm
+R7615:7635 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R7666:7687 _parent_finish_cjoin_context <> cjoin_conse_inv_parent thm
+R7666:7687 _parent_finish_cjoin_context <> cjoin_conse_inv_parent thm
+R7746:7747 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7730:7734 Progress <> tsize def
+R7736:7740 TypeRules <> TPair constr
+R7746:7747 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7730:7734 Progress <> tsize def
+R7736:7740 TypeRules <> TPair constr
+R7783:7787 Progress _work_cjoin cjoin def
+R7789:7797 Progress <> phi_erase def
+R7799:7804 TypeRules <> TEnumT constr
+R7811:7819 Progress <> phi_erase def
+R7821:7826 TypeRules <> TEnumT constr
+R7783:7787 Progress _work_cjoin cjoin def
+R7789:7797 Progress <> phi_erase def
+R7799:7804 TypeRules <> TEnumT constr
+R7811:7819 Progress <> phi_erase def
+R7821:7826 TypeRules <> TEnumT constr
+R7846:7863 _parent_finish_cjoin_context <> cjoin_enumt_parent thm
+R7846:7863 _parent_finish_cjoin_context <> cjoin_enumt_parent thm
+R7888:7892 Progress _work_cjoin cjoin def
+R7894:7902 Progress <> phi_erase def
+R7913:7921 Progress <> phi_erase def
+R7923:7929 TypeRules <> TInterp constr
+R7931:7934 TypeRules <> TApp constr
+R7936:7939 TypeRules <> TLam constr
+R7941:7944 TypeRules <> TApp constr
+R7958:7963 TypeRules <> TESucc constr
+R7965:7968 TypeRules <> TVar constr
+R7946:7949 TypeRules <> lift def
+R7888:7892 Progress _work_cjoin cjoin def
+R7894:7902 Progress <> phi_erase def
+R7913:7921 Progress <> phi_erase def
+R7923:7929 TypeRules <> TInterp constr
+R7931:7934 TypeRules <> TApp constr
+R7936:7939 TypeRules <> TLam constr
+R7941:7944 TypeRules <> TApp constr
+R7958:7963 TypeRules <> TESucc constr
+R7965:7968 TypeRules <> TVar constr
+R7946:7949 TypeRules <> lift def
+R7995:8005 Progress _work_cjoin cjoin_trans thm
+R7995:8005 Progress _work_cjoin cjoin_trans thm
+R8032:8045 Progress _work_cjoin conv_phi_cjoin thm
+R8047:8055 TypeRules <> cv_interp constr
+R8064:8069 TypeRules <> cv_sym constr
+R8071:8096 _parent_finish_against_step <> shifted_choice_beta_parent thm
+R8104:8110 TypeRules <> cv_refl constr
+R8032:8045 Progress _work_cjoin conv_phi_cjoin thm
+R8047:8055 TypeRules <> cv_interp constr
+R8064:8069 TypeRules <> cv_sym constr
+R8071:8096 _parent_finish_against_step <> shifted_choice_beta_parent thm
+R8104:8110 TypeRules <> cv_refl constr
+R8140:8145 TypeRules <> TEnumT constr
+R8140:8145 TypeRules <> TEnumT constr
+R8196:8216 _parent_finish_against_step <> pair_step_succ_parent thm
+R8196:8216 _parent_finish_against_step <> pair_step_succ_parent thm
+prf 8242:8276 <> desc_against_erased_step_mut_parent
+binder 8287:8287 <> N:74
+R8316:8318 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8291:8313 _parent_finish_against_step <> bounded_progress_parent def
+R8315:8315 _parent_finish_against_step <> N:74 var
+binder 8326:8326 <> D:75
+R8342:8346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8328:8339 TypeRules <> desc_against ind
+R8341:8341 _parent_finish_against_step <> D:75 var
+R8374:8379 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8444:8444 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8347:8369 _parent_finish_against_step <> erased_dead_step_parent def
+R8371:8371 _parent_finish_against_step <> N:74 var
+R8373:8373 _parent_finish_against_step <> D:75 var
+binder 8387:8387 <> E:76
+binder 8389:8389 <> F:77
+R8411:8412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8391:8394 TypeRules <> eval ind
+R8398:8405 TypeRules <> TIChoice constr
+R8409:8409 _parent_finish_against_step <> F:77 var
+R8407:8407 _parent_finish_against_step <> E:76 var
+R8396:8396 _parent_finish_against_step <> D:75 var
+R8413:8437 _parent_finish_against_step <> erased_choice_step_parent def
+R8439:8439 _parent_finish_against_step <> N:74 var
+R8441:8441 _parent_finish_against_step <> E:76 var
+R8443:8443 _parent_finish_against_step <> F:77 var
+R8499:8523 _parent_finish_against_step <> erased_choice_step_parent def
+R8499:8523 _parent_finish_against_step <> erased_choice_step_parent def
+R8545:8573 _parent_finish_against_step <> erased_choice_nil_step_parent thm
+R8545:8573 _parent_finish_against_step <> erased_choice_nil_step_parent thm
+R8612:8644 _parent_finish_against_step <> erased_choice_step_to_dead_parent thm
+R8612:8644 _parent_finish_against_step <> erased_choice_step_to_dead_parent thm
+R8671:8710 _parent_finish_against_step <> erased_choice_step_eval_transport_parent thm
+R8671:8710 _parent_finish_against_step <> erased_choice_step_eval_transport_parent thm
+R8772:8800 _parent_finish_against_step <> against_prod_left_step_parent thm
+R8772:8800 _parent_finish_against_step <> against_prod_left_step_parent thm
+R8851:8881 _parent_finish_against_step <> interp_prod_choice_clash_parent thm
+R8851:8881 _parent_finish_against_step <> interp_prod_choice_clash_parent thm
+R8943:8972 _parent_finish_against_step <> against_prod_right_step_parent thm
+R8943:8972 _parent_finish_against_step <> against_prod_right_step_parent thm
+R9023:9053 _parent_finish_against_step <> interp_prod_choice_clash_parent thm
+R9023:9053 _parent_finish_against_step <> interp_prod_choice_clash_parent thm
+R9141:9165 _parent_finish_against_step <> erased_choice_step_parent def
+R9141:9165 _parent_finish_against_step <> erased_choice_step_parent def
+R9187:9216 _parent_finish_against_step <> erased_choice_cons_step_parent thm
+R9187:9216 _parent_finish_against_step <> erased_choice_cons_step_parent thm
+R9268:9274 TypeRules <> ev_refl constr
+R9268:9274 TypeRules <> ev_refl constr
+R9301:9333 _parent_finish_against_step <> erased_choice_step_to_dead_parent thm
+R9301:9333 _parent_finish_against_step <> erased_choice_step_to_dead_parent thm
+R9360:9399 _parent_finish_against_step <> erased_choice_step_eval_transport_parent thm
+R9360:9399 _parent_finish_against_step <> erased_choice_step_eval_transport_parent thm
+prf 9427:9457 <> desc_against_erased_step_parent
+binder 9468:9468 <> N:78
+R9497:9499 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9472:9494 _parent_finish_against_step <> bounded_progress_parent def
+R9496:9496 _parent_finish_against_step <> N:78 var
+binder 9507:9507 <> D:79
+R9523:9527 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9509:9520 TypeRules <> desc_against ind
+R9522:9522 _parent_finish_against_step <> D:79 var
+R9528:9550 _parent_finish_against_step <> erased_dead_step_parent def
+R9552:9552 _parent_finish_against_step <> N:78 var
+R9554:9554 _parent_finish_against_step <> D:79 var
+R9588:9592 Corelib.Init.Logic <> proj1 thm
+R9594:9628 _parent_finish_against_step <> desc_against_erased_step_mut_parent thm
+R9588:9592 Corelib.Init.Logic <> proj1 thm
+R9594:9628 _parent_finish_against_step <> desc_against_erased_step_mut_parent thm
+R9666:9696 _parent_finish_against_step <> desc_against_erased_step_parent thm

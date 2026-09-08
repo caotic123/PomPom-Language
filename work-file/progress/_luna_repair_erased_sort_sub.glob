@@ -1,0 +1,146 @@
+DIGEST f98796e320f21f1a6e8d1ce986379566
+F_luna_repair_erased_sort_sub
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R57:59 Stdlib.micromega.Lia <> <> lib
+R61:68 Stdlib.Arith.PeanoNat <> <> lib
+R78:90 Stdlib.Lists.List ListNotations <> mod
+R92:100 TypeRules <> <> mod
+R110:118 TypeRules <> <> mod
+R120:139 Progress _tmp_epstep <> mod
+R141:168 Progress _work_mixed_closure <> mod
+R172:191 Progress _work_cjoin <> mod
+R193:223 Progress _work_cstep_invariants <> mod
+R227:253 Progress _work_conv_whd_pos <> mod
+R255:285 Progress _luna_phi_erase_shapes <> mod
+def 300:310 <> erased_sort
+R317:320 TypeRules <> term ind
+binder 313:313 <> T:1
+R335:341 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R343:344 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 342:342 <> j:2
+R345:349 Progress _work_cjoin cjoin def
+R352:360 Progress <> phi_erase def
+R362:362 _luna_repair_erased_sort_sub <> T:1 var
+R366:370 TypeRules <> TSort constr
+R372:372 _luna_repair_erased_sort_sub <> j:2 var
+prf 383:397 <> erased_sort_sub
+binder 408:408 <> G:3
+binder 410:410 <> T:4
+binder 412:412 <> U:5
+R424:431 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R415:417 TypeRules <> sub ind
+R423:423 _luna_repair_erased_sort_sub <> U:5 var
+R421:421 _luna_repair_erased_sort_sub <> T:4 var
+R419:419 _luna_repair_erased_sort_sub <> G:3 var
+R445:448 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R432:442 _luna_repair_erased_sort_sub <> erased_sort def
+R444:444 _luna_repair_erased_sort_sub <> T:4 var
+R449:459 _luna_repair_erased_sort_sub <> erased_sort def
+R461:461 _luna_repair_erased_sort_sub <> U:5 var
+R565:575 Progress _work_cjoin cjoin_trans thm
+R565:575 Progress _work_cjoin cjoin_trans thm
+R590:598 Progress _work_cjoin cjoin_sym thm
+R590:598 Progress _work_cjoin cjoin_sym thm
+R607:620 Progress _work_cjoin conv_phi_cjoin thm
+R607:620 Progress _work_cjoin conv_phi_cjoin thm
+R762:771 Progress _work_cjoin cjoin_refl thm
+R762:771 Progress _work_cjoin cjoin_refl thm
+R881:886 Progress <> hshape ind
+R890:892 Progress <> HPi constr
+R881:886 Progress <> hshape ind
+R890:892 Progress <> HPi constr
+R909:924 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R909:924 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R954:974 Progress _luna_phi_erase_shapes phi_erase_hshape_luna thm
+R954:974 Progress _luna_phi_erase_shapes phi_erase_hshape_luna thm
+R1009:1014 Progress <> hshape ind
+R1018:1022 Progress <> HSort constr
+R1009:1014 Progress <> hshape ind
+R1018:1022 Progress <> HSort constr
+R1039:1054 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1039:1054 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1103:1119 Progress <> hshape_tag_unique thm
+R1103:1119 Progress <> hshape_tag_unique thm
+R1257:1262 Progress <> hshape ind
+R1266:1272 Progress <> HMuSApp constr
+R1257:1262 Progress <> hshape ind
+R1266:1272 Progress <> HMuSApp constr
+R1289:1304 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1289:1304 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1334:1354 Progress _luna_phi_erase_shapes phi_erase_hshape_luna thm
+R1334:1354 Progress _luna_phi_erase_shapes phi_erase_hshape_luna thm
+R1389:1394 Progress <> hshape ind
+R1398:1402 Progress <> HSort constr
+R1389:1394 Progress <> hshape ind
+R1398:1402 Progress <> HSort constr
+R1419:1434 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1419:1434 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1483:1499 Progress <> hshape_tag_unique thm
+R1483:1499 Progress <> hshape_tag_unique thm
+R1630:1635 Progress <> hshape ind
+R1639:1645 Progress <> HMuSApp constr
+R1630:1635 Progress <> hshape ind
+R1639:1645 Progress <> HMuSApp constr
+R1662:1677 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1662:1677 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1707:1727 Progress _luna_phi_erase_shapes phi_erase_hshape_luna thm
+R1707:1727 Progress _luna_phi_erase_shapes phi_erase_hshape_luna thm
+R1762:1767 Progress <> hshape ind
+R1771:1775 Progress <> HSort constr
+R1762:1767 Progress <> hshape ind
+R1771:1775 Progress <> HSort constr
+R1792:1807 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1792:1807 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R1856:1872 Progress <> hshape_tag_unique thm
+R1856:1872 Progress <> hshape_tag_unique thm
+prf 1921:1935 <> erased_sort_whd
+binder 1946:1946 <> T:6
+binder 1948:1948 <> U:7
+binder 1950:1950 <> h:8
+R1970:1973 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1957:1967 _luna_repair_erased_sort_sub <> erased_sort def
+R1969:1969 _luna_repair_erased_sort_sub <> T:6 var
+R1982:1985 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1974:1977 TypeRules <> conv ind
+R1981:1981 _luna_repair_erased_sort_sub <> U:7 var
+R1979:1979 _luna_repair_erased_sort_sub <> T:6 var
+R1993:1996 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1986:1988 Progress <> whd def
+R1990:1990 _luna_repair_erased_sort_sub <> U:7 var
+R1992:1992 _luna_repair_erased_sort_sub <> h:8 var
+R1998:2000 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1997:1997 _luna_repair_erased_sort_sub <> h:8 var
+R2001:2005 Progress <> HSort constr
+R2077:2090 Progress _work_cjoin conv_phi_cjoin thm
+R2077:2090 Progress _work_cjoin conv_phi_cjoin thm
+R2125:2145 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R2125:2145 Progress _work_conv_whd_pos phi_erase_eval_csteps thm
+R2177:2194 Progress _work_cjoin cjoin_reduce_right thm
+R2177:2194 Progress _work_cjoin cjoin_reduce_right thm
+R2311:2327 Progress _work_cjoin cjoin_reduce_left thm
+R2311:2327 Progress _work_cjoin cjoin_reduce_left thm
+R2376:2392 Progress _work_cstep_invariants rtc_cstep_sort_id thm
+R2376:2392 Progress _work_cstep_invariants rtc_cstep_sort_id thm
+R2425:2430 Progress <> hshape ind
+R2433:2437 TypeRules <> TSort constr
+R2442:2446 Progress <> HSort constr
+R2425:2430 Progress <> hshape ind
+R2433:2437 TypeRules <> TSort constr
+R2442:2446 Progress <> HSort constr
+R2481:2486 Progress <> hshape ind
+R2489:2493 TypeRules <> TSort constr
+R2481:2486 Progress <> hshape ind
+R2489:2493 TypeRules <> TSort constr
+R2513:2528 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R2539:2547 Progress <> rtc_trans thm
+R2513:2528 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R2539:2547 Progress <> rtc_trans thm
+R2588:2608 Progress _luna_phi_erase_shapes phi_erase_hshape_luna thm
+R2588:2608 Progress _luna_phi_erase_shapes phi_erase_hshape_luna thm
+R2636:2652 Progress <> hshape_tag_unique thm
+R2655:2659 TypeRules <> TSort constr
+R2636:2652 Progress <> hshape_tag_unique thm
+R2655:2659 TypeRules <> TSort constr
+R2763:2777 _luna_repair_erased_sort_sub <> erased_sort_sub thm
+R2798:2812 _luna_repair_erased_sort_sub <> erased_sort_whd thm

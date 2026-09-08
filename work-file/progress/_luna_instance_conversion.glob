@@ -1,0 +1,1695 @@
+DIGEST 229ccc29bb066e97d6a57a8a98a35336
+F_luna_instance_conversion
+R15:22 Progress <> <> lib
+R24:41 SignatureInstances <> <> lib
+R43:61 SignatureConversion <> <> lib
+R63:83 ErasureCounterexample <> <> lib
+R85:108 _parent_instance_pruning <> <> lib
+R110:133 _luna_instance_phi_spine <> <> lib
+R163:166 Stdlib.Lists.List <> <> lib
+R168:172 Stdlib.Arith.Arith <> <> lib
+R174:176 Stdlib.micromega.Lia <> <> lib
+R178:185 Stdlib.Arith.PeanoNat <> <> lib
+R195:207 Stdlib.Lists.List ListNotations <> mod
+R209:217 TypeRules <> <> mod
+R227:246 Progress _tmp_epstep <> mod
+R248:275 Progress _work_mixed_closure <> mod
+R279:298 Progress _work_cjoin <> mod
+R300:330 Progress _work_cstep_invariants <> mod
+ind 344:356 <> instance_conv
+constr 386:392 <> ic_core
+constr 441:448 <> ic_prune
+constr 502:508 <> ic_refl
+constr 542:547 <> ic_sym
+constr 604:611 <> ic_trans
+R364:367 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R360:363 TypeRules <> term ind
+R372:375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R368:371 TypeRules <> term ind
+binder 403:403 <> t:3
+binder 405:405 <> u:4
+R417:420 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R408:412 Progress <> fconv ind
+R414:414 _luna_instance_conversion <> t:3 var
+R416:416 _luna_instance_conversion <> u:4 var
+R421:433 _luna_instance_conversion <> instance_conv:1 ind
+R437:437 _luna_instance_conversion <> u:4 var
+R435:435 _luna_instance_conversion <> t:3 var
+binder 459:459 <> t:5
+binder 461:461 <> u:6
+R478:481 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R464:473 _parent_instance_pruning <> prune_term ind
+R475:475 _luna_instance_conversion <> t:5 var
+R477:477 _luna_instance_conversion <> u:6 var
+R482:494 _luna_instance_conversion <> instance_conv:1 ind
+R498:498 _luna_instance_conversion <> u:6 var
+R496:496 _luna_instance_conversion <> t:5 var
+binder 519:519 <> t:7
+R522:534 _luna_instance_conversion <> instance_conv:1 ind
+R538:538 _luna_instance_conversion <> t:7 var
+R536:536 _luna_instance_conversion <> t:7 var
+binder 558:558 <> t:8
+binder 560:560 <> u:9
+R580:583 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R563:575 _luna_instance_conversion <> instance_conv:1 ind
+R579:579 _luna_instance_conversion <> u:9 var
+R577:577 _luna_instance_conversion <> t:8 var
+R584:596 _luna_instance_conversion <> instance_conv:1 ind
+R600:600 _luna_instance_conversion <> t:8 var
+R598:598 _luna_instance_conversion <> u:9 var
+binder 622:622 <> t:10
+binder 624:624 <> u:11
+binder 626:626 <> v:12
+R646:649 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R629:641 _luna_instance_conversion <> instance_conv:1 ind
+R645:645 _luna_instance_conversion <> u:11 var
+R643:643 _luna_instance_conversion <> t:10 var
+R667:670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R650:662 _luna_instance_conversion <> instance_conv:1 ind
+R666:666 _luna_instance_conversion <> v:12 var
+R664:664 _luna_instance_conversion <> u:11 var
+R671:683 _luna_instance_conversion <> instance_conv:1 ind
+R687:687 _luna_instance_conversion <> v:12 var
+R685:685 _luna_instance_conversion <> t:10 var
+scheme 344:356 <> instance_conv_ind
+scheme 344:356 <> instance_conv_sind
+prf 697:702 <> ic_map
+R722:725 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R718:721 TypeRules <> term ind
+R726:729 TypeRules <> term ind
+binder 714:714 <> F:13
+R735:735 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R778:784 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 743:743 <> x:14
+binder 745:745 <> y:15
+R757:760 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R748:752 Progress <> fstep ind
+R754:754 _luna_instance_conversion <> x:14 var
+R756:756 _luna_instance_conversion <> y:15 var
+R761:765 Progress <> fstep ind
+R768:768 _luna_instance_conversion <> F:13 var
+R770:770 _luna_instance_conversion <> x:14 var
+R774:774 _luna_instance_conversion <> F:13 var
+R776:776 _luna_instance_conversion <> y:15 var
+R785:785 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R838:844 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 793:793 <> x:16
+binder 795:795 <> y:17
+R812:815 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R798:807 _parent_instance_pruning <> prune_term ind
+R809:809 _luna_instance_conversion <> x:16 var
+R811:811 _luna_instance_conversion <> y:17 var
+R816:825 _parent_instance_pruning <> prune_term ind
+R828:828 _luna_instance_conversion <> F:13 var
+R830:830 _luna_instance_conversion <> x:16 var
+R834:834 _luna_instance_conversion <> F:13 var
+R836:836 _luna_instance_conversion <> y:17 var
+binder 852:852 <> x:18
+binder 854:854 <> y:19
+R874:877 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R857:869 _luna_instance_conversion <> instance_conv ind
+R871:871 _luna_instance_conversion <> x:18 var
+R873:873 _luna_instance_conversion <> y:19 var
+R878:890 _luna_instance_conversion <> instance_conv ind
+R893:893 _luna_instance_conversion <> F:13 var
+R895:895 _luna_instance_conversion <> x:18 var
+R899:899 _luna_instance_conversion <> F:13 var
+R901:901 _luna_instance_conversion <> y:19 var
+R959:965 _luna_instance_conversion <> ic_core constr
+R959:965 _luna_instance_conversion <> ic_core constr
+R975:983 Progress <> fconv_map thm
+R975:983 Progress <> fconv_map thm
+R1018:1025 _luna_instance_conversion <> ic_prune constr
+R1018:1025 _luna_instance_conversion <> ic_prune constr
+R1045:1051 _luna_instance_conversion <> ic_refl constr
+R1045:1051 _luna_instance_conversion <> ic_refl constr
+R1064:1069 _luna_instance_conversion <> ic_sym constr
+R1064:1069 _luna_instance_conversion <> ic_sym constr
+R1106:1113 _luna_instance_conversion <> ic_trans constr
+R1106:1113 _luna_instance_conversion <> ic_trans constr
+prf 1135:1141 <> ic_map2
+R1161:1164 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1157:1160 TypeRules <> term ind
+R1169:1172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1165:1168 TypeRules <> term ind
+R1173:1176 TypeRules <> term ind
+binder 1153:1153 <> F:20
+R1182:1182 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1231:1237 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1190:1190 <> x:21
+binder 1192:1192 <> y:22
+binder 1194:1194 <> z:23
+R1206:1209 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1197:1201 Progress <> fstep ind
+R1203:1203 _luna_instance_conversion <> x:21 var
+R1205:1205 _luna_instance_conversion <> y:22 var
+R1210:1214 Progress <> fstep ind
+R1217:1217 _luna_instance_conversion <> F:20 var
+R1221:1221 _luna_instance_conversion <> z:23 var
+R1219:1219 _luna_instance_conversion <> x:21 var
+R1225:1225 _luna_instance_conversion <> F:20 var
+R1229:1229 _luna_instance_conversion <> z:23 var
+R1227:1227 _luna_instance_conversion <> y:22 var
+R1238:1238 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1287:1293 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1246:1246 <> z:24
+binder 1248:1248 <> x:25
+binder 1250:1250 <> y:26
+R1262:1265 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1253:1257 Progress <> fstep ind
+R1259:1259 _luna_instance_conversion <> x:25 var
+R1261:1261 _luna_instance_conversion <> y:26 var
+R1266:1270 Progress <> fstep ind
+R1273:1273 _luna_instance_conversion <> F:20 var
+R1277:1277 _luna_instance_conversion <> x:25 var
+R1275:1275 _luna_instance_conversion <> z:24 var
+R1281:1281 _luna_instance_conversion <> F:20 var
+R1285:1285 _luna_instance_conversion <> y:26 var
+R1283:1283 _luna_instance_conversion <> z:24 var
+R1294:1294 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1353:1359 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1302:1302 <> x:27
+binder 1304:1304 <> y:28
+binder 1306:1306 <> z:29
+R1323:1326 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1309:1318 _parent_instance_pruning <> prune_term ind
+R1320:1320 _luna_instance_conversion <> x:27 var
+R1322:1322 _luna_instance_conversion <> y:28 var
+R1327:1336 _parent_instance_pruning <> prune_term ind
+R1339:1339 _luna_instance_conversion <> F:20 var
+R1343:1343 _luna_instance_conversion <> z:29 var
+R1341:1341 _luna_instance_conversion <> x:27 var
+R1347:1347 _luna_instance_conversion <> F:20 var
+R1351:1351 _luna_instance_conversion <> z:29 var
+R1349:1349 _luna_instance_conversion <> y:28 var
+R1360:1360 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1419:1425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1368:1368 <> z:30
+binder 1370:1370 <> x:31
+binder 1372:1372 <> y:32
+R1389:1392 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1375:1384 _parent_instance_pruning <> prune_term ind
+R1386:1386 _luna_instance_conversion <> x:31 var
+R1388:1388 _luna_instance_conversion <> y:32 var
+R1393:1402 _parent_instance_pruning <> prune_term ind
+R1405:1405 _luna_instance_conversion <> F:20 var
+R1409:1409 _luna_instance_conversion <> x:31 var
+R1407:1407 _luna_instance_conversion <> z:30 var
+R1413:1413 _luna_instance_conversion <> F:20 var
+R1417:1417 _luna_instance_conversion <> y:32 var
+R1415:1415 _luna_instance_conversion <> z:30 var
+binder 1433:1433 <> x:33
+binder 1435:1436 <> x':34
+binder 1438:1438 <> y:35
+binder 1440:1441 <> y':36
+R1462:1465 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1444:1456 _luna_instance_conversion <> instance_conv ind
+R1458:1458 _luna_instance_conversion <> x:33 var
+R1460:1461 _luna_instance_conversion <> x':34 var
+R1484:1491 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1466:1478 _luna_instance_conversion <> instance_conv ind
+R1480:1480 _luna_instance_conversion <> y:35 var
+R1482:1483 _luna_instance_conversion <> y':36 var
+R1492:1504 _luna_instance_conversion <> instance_conv ind
+R1507:1507 _luna_instance_conversion <> F:20 var
+R1511:1511 _luna_instance_conversion <> y:35 var
+R1509:1509 _luna_instance_conversion <> x:33 var
+R1515:1515 _luna_instance_conversion <> F:20 var
+R1520:1521 _luna_instance_conversion <> y':36 var
+R1517:1518 _luna_instance_conversion <> x':34 var
+R1585:1592 _luna_instance_conversion <> ic_trans constr
+R1585:1592 _luna_instance_conversion <> ic_trans constr
+R1607:1612 _luna_instance_conversion <> ic_map thm
+binder 1619:1619 <> z:37
+R1626:1626 _luna_instance_conversion <> z:37 var
+binder 1644:1644 <> a:38
+binder 1646:1646 <> b:39
+binder 1648:1648 <> H:40
+R1657:1657 _luna_instance_conversion <> a:38 var
+R1659:1659 _luna_instance_conversion <> b:39 var
+R1663:1663 _luna_instance_conversion <> H:40 var
+binder 1679:1679 <> a:41
+binder 1681:1681 <> b:42
+binder 1683:1683 <> H:43
+R1692:1692 _luna_instance_conversion <> a:41 var
+R1694:1694 _luna_instance_conversion <> b:42 var
+R1698:1698 _luna_instance_conversion <> H:43 var
+R1607:1612 _luna_instance_conversion <> ic_map thm
+binder 1619:1619 <> z:44
+R1626:1626 _luna_instance_conversion <> z:44 var
+binder 1644:1644 <> a:45
+binder 1646:1646 <> b:46
+binder 1648:1648 <> H:47
+R1657:1657 _luna_instance_conversion <> a:45 var
+R1659:1659 _luna_instance_conversion <> b:46 var
+R1663:1663 _luna_instance_conversion <> H:47 var
+binder 1679:1679 <> a:48
+binder 1681:1681 <> b:49
+binder 1683:1683 <> H:50
+R1692:1692 _luna_instance_conversion <> a:48 var
+R1694:1694 _luna_instance_conversion <> b:49 var
+R1698:1698 _luna_instance_conversion <> H:50 var
+R1725:1730 _luna_instance_conversion <> ic_map thm
+binder 1737:1737 <> z:51
+R1747:1747 _luna_instance_conversion <> z:51 var
+binder 1763:1763 <> a:52
+binder 1765:1765 <> b:53
+binder 1767:1767 <> H:54
+R1779:1779 _luna_instance_conversion <> a:52 var
+R1781:1781 _luna_instance_conversion <> b:53 var
+R1783:1783 _luna_instance_conversion <> H:54 var
+binder 1799:1799 <> a:55
+binder 1801:1801 <> b:56
+binder 1803:1803 <> H:57
+R1815:1815 _luna_instance_conversion <> a:55 var
+R1817:1817 _luna_instance_conversion <> b:56 var
+R1819:1819 _luna_instance_conversion <> H:57 var
+R1725:1730 _luna_instance_conversion <> ic_map thm
+binder 1737:1737 <> z:58
+R1747:1747 _luna_instance_conversion <> z:58 var
+binder 1763:1763 <> a:59
+binder 1765:1765 <> b:60
+binder 1767:1767 <> H:61
+R1779:1779 _luna_instance_conversion <> a:59 var
+R1781:1781 _luna_instance_conversion <> b:60 var
+R1783:1783 _luna_instance_conversion <> H:61 var
+binder 1799:1799 <> a:62
+binder 1801:1801 <> b:63
+binder 1803:1803 <> H:64
+R1815:1815 _luna_instance_conversion <> a:62 var
+R1817:1817 _luna_instance_conversion <> b:63 var
+R1819:1819 _luna_instance_conversion <> H:64 var
+prf 1846:1852 <> ic_lift
+binder 1863:1863 <> t:65
+binder 1865:1865 <> u:66
+R1885:1888 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1868:1880 _luna_instance_conversion <> instance_conv ind
+R1882:1882 _luna_instance_conversion <> t:65 var
+R1884:1884 _luna_instance_conversion <> u:66 var
+binder 1896:1896 <> d:67
+binder 1898:1898 <> k:68
+R1903:1915 _luna_instance_conversion <> instance_conv ind
+R1918:1921 TypeRules <> lift def
+R1927:1927 _luna_instance_conversion <> t:65 var
+R1925:1925 _luna_instance_conversion <> k:68 var
+R1923:1923 _luna_instance_conversion <> d:67 var
+R1931:1934 TypeRules <> lift def
+R1940:1940 _luna_instance_conversion <> u:66 var
+R1938:1938 _luna_instance_conversion <> k:68 var
+R1936:1936 _luna_instance_conversion <> d:67 var
+R2002:2008 _luna_instance_conversion <> ic_core constr
+R2002:2008 _luna_instance_conversion <> ic_core constr
+R2017:2033 ErasureCounterexample <> fconv_lift_parent thm
+R2017:2033 ErasureCounterexample <> fconv_lift_parent thm
+R2055:2062 _luna_instance_conversion <> ic_prune constr
+R2055:2062 _luna_instance_conversion <> ic_prune constr
+R2071:2080 _parent_instance_pruning <> prune_lift thm
+R2071:2080 _parent_instance_pruning <> prune_lift thm
+R2102:2108 _luna_instance_conversion <> ic_refl constr
+R2102:2108 _luna_instance_conversion <> ic_refl constr
+R2121:2126 _luna_instance_conversion <> ic_sym constr
+R2121:2126 _luna_instance_conversion <> ic_sym constr
+R2169:2176 _luna_instance_conversion <> ic_trans constr
+R2169:2176 _luna_instance_conversion <> ic_trans constr
+R2264:2269 _luna_instance_conversion <> ic_map thm
+R2290:2296 _luna_instance_conversion <> ic_map2 thm
+R2317:2323 _luna_instance_conversion <> ic_lift thm
+prf 2333:2350 <> ic_signature_prune
+binder 2361:2362 <> Sf:69
+binder 2364:2364 <> i:70
+binder 2366:2368 <> Phi:71
+binder 2370:2372 <> Psi:72
+R2406:2411 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2377:2380 TypeRules <> eval ind
+R2403:2405 _luna_instance_conversion <> Phi:71 var
+R2383:2388 TypeRules <> labels def
+R2391:2394 TypeRules <> TApp constr
+R2399:2399 _luna_instance_conversion <> i:70 var
+R2396:2397 _luna_instance_conversion <> Sf:69 var
+R2434:2439 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2412:2420 TypeRules <> spine_phi ind
+R2431:2433 _luna_instance_conversion <> Psi:72 var
+R2427:2429 _luna_instance_conversion <> Phi:71 var
+R2425:2425 _luna_instance_conversion <> i:70 var
+R2422:2423 _luna_instance_conversion <> Sf:69 var
+R2440:2452 _luna_instance_conversion <> instance_conv ind
+R2455:2472 SignatureInstances <> instance_translate def
+R2475:2478 TypeRules <> TApp constr
+R2490:2490 _luna_instance_conversion <> i:70 var
+R2481:2484 TypeRules <> TMuS constr
+R2486:2487 _luna_instance_conversion <> Sf:69 var
+R2499:2516 SignatureInstances <> signature_instance def
+R2525:2532 TypeRules <> branches def
+R2535:2538 TypeRules <> TApp constr
+R2565:2582 SignatureInstances <> instance_translate def
+R2584:2584 _luna_instance_conversion <> i:70 var
+R2541:2558 SignatureInstances <> instance_translate def
+R2560:2561 _luna_instance_conversion <> Sf:69 var
+R2596:2613 SignatureInstances <> instance_translate def
+R2615:2617 _luna_instance_conversion <> Psi:72 var
+R2621:2638 SignatureInstances <> instance_translate def
+R2640:2640 _luna_instance_conversion <> i:70 var
+R2697:2719 _luna_instance_phi_spine <> instance_phi_spine_luna thm
+R2697:2719 _luna_instance_phi_spine <> instance_phi_spine_luna thm
+R2775:2799 SignatureInstances <> instance_translate_musapp thm
+R2775:2799 SignatureInstances <> instance_translate_musapp thm
+R2835:2847 _luna_instance_conversion <> instance_conv ind
+R2856:2873 SignatureInstances <> instance_translate def
+R2876:2879 TypeRules <> TApp constr
+R2882:2885 TypeRules <> TMuS constr
+R2902:2919 SignatureInstances <> signature_instance def
+R2930:2937 TypeRules <> branches def
+R2940:2943 TypeRules <> TApp constr
+R2970:2987 SignatureInstances <> instance_translate def
+R2946:2963 SignatureInstances <> instance_translate def
+R3003:3008 TypeRules <> labels def
+R3011:3014 TypeRules <> TApp constr
+R3041:3058 SignatureInstances <> instance_translate def
+R3017:3034 SignatureInstances <> instance_translate def
+R3074:3091 SignatureInstances <> instance_translate def
+R2835:2847 _luna_instance_conversion <> instance_conv ind
+R2856:2873 SignatureInstances <> instance_translate def
+R2876:2879 TypeRules <> TApp constr
+R2882:2885 TypeRules <> TMuS constr
+R2902:2919 SignatureInstances <> signature_instance def
+R2930:2937 TypeRules <> branches def
+R2940:2943 TypeRules <> TApp constr
+R2970:2987 SignatureInstances <> instance_translate def
+R2946:2963 SignatureInstances <> instance_translate def
+R3003:3008 TypeRules <> labels def
+R3011:3014 TypeRules <> TApp constr
+R3041:3058 SignatureInstances <> instance_translate def
+R3017:3034 SignatureInstances <> instance_translate def
+R3074:3091 SignatureInstances <> instance_translate def
+R3109:3115 _luna_instance_conversion <> ic_core constr
+R3109:3115 _luna_instance_conversion <> ic_core constr
+R3124:3130 Progress <> fc_step constr
+R3124:3130 Progress <> fc_step constr
+R3139:3145 Progress <> fs_step constr
+R3139:3145 Progress <> fs_step constr
+R3187:3191 Progress <> fconv ind
+R3200:3205 TypeRules <> labels def
+R3208:3211 TypeRules <> TApp constr
+R3238:3255 SignatureInstances <> instance_translate def
+R3214:3231 SignatureInstances <> instance_translate def
+R3269:3286 SignatureInstances <> instance_translate def
+R3187:3191 Progress <> fconv ind
+R3200:3205 TypeRules <> labels def
+R3208:3211 TypeRules <> TApp constr
+R3238:3255 SignatureInstances <> instance_translate def
+R3214:3231 SignatureInstances <> instance_translate def
+R3269:3286 SignatureInstances <> instance_translate def
+R3311:3344 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R3311:3344 _luna_instance_phi_spine <> instance_translate_eval_fconv_luna thm
+R3375:3392 SignatureInstances <> instance_translate def
+R3438:3450 _luna_instance_conversion <> instance_conv ind
+R3459:3476 SignatureInstances <> signature_instance def
+R3487:3494 TypeRules <> branches def
+R3497:3500 TypeRules <> TApp constr
+R3527:3544 SignatureInstances <> instance_translate def
+R3503:3520 SignatureInstances <> instance_translate def
+R3560:3565 TypeRules <> labels def
+R3568:3571 TypeRules <> TApp constr
+R3598:3615 SignatureInstances <> instance_translate def
+R3574:3591 SignatureInstances <> instance_translate def
+R3631:3648 SignatureInstances <> instance_translate def
+R3661:3678 SignatureInstances <> signature_instance def
+R3689:3696 TypeRules <> branches def
+R3699:3702 TypeRules <> TApp constr
+R3729:3746 SignatureInstances <> instance_translate def
+R3705:3722 SignatureInstances <> instance_translate def
+R3765:3782 SignatureInstances <> instance_translate def
+R3438:3450 _luna_instance_conversion <> instance_conv ind
+R3459:3476 SignatureInstances <> signature_instance def
+R3487:3494 TypeRules <> branches def
+R3497:3500 TypeRules <> TApp constr
+R3527:3544 SignatureInstances <> instance_translate def
+R3503:3520 SignatureInstances <> instance_translate def
+R3560:3565 TypeRules <> labels def
+R3568:3571 TypeRules <> TApp constr
+R3598:3615 SignatureInstances <> instance_translate def
+R3574:3591 SignatureInstances <> instance_translate def
+R3631:3648 SignatureInstances <> instance_translate def
+R3661:3678 SignatureInstances <> signature_instance def
+R3689:3696 TypeRules <> branches def
+R3699:3702 TypeRules <> TApp constr
+R3729:3746 SignatureInstances <> instance_translate def
+R3705:3722 SignatureInstances <> instance_translate def
+R3765:3782 SignatureInstances <> instance_translate def
+R3801:3806 _luna_instance_conversion <> ic_map thm
+binder 3819:3819 <> z:73
+R3824:3841 SignatureInstances <> signature_instance def
+R3852:3859 TypeRules <> branches def
+R3862:3865 TypeRules <> TApp constr
+R3892:3909 SignatureInstances <> instance_translate def
+R3868:3885 SignatureInstances <> instance_translate def
+R3924:3924 _luna_instance_conversion <> z:73 var
+R3927:3944 SignatureInstances <> instance_translate def
+R3801:3806 _luna_instance_conversion <> ic_map thm
+binder 3819:3819 <> z:74
+R3824:3841 SignatureInstances <> signature_instance def
+R3852:3859 TypeRules <> branches def
+R3862:3865 TypeRules <> TApp constr
+R3892:3909 SignatureInstances <> instance_translate def
+R3868:3885 SignatureInstances <> instance_translate def
+R3924:3924 _luna_instance_conversion <> z:74 var
+R3927:3944 SignatureInstances <> instance_translate def
+R3980:3986 Progress <> fs_app1 constr
+R3980:3986 Progress <> fs_app1 constr
+R3995:4000 Progress <> fs_mus constr
+R3995:4000 Progress <> fs_mus constr
+R4009:4016 Progress <> fs_pair2 constr
+R4009:4016 Progress <> fs_pair2 constr
+R4058:4063 _parent_instance_pruning <> pt_app constr
+R4058:4063 _parent_instance_pruning <> pt_app constr
+R4080:4085 _parent_instance_pruning <> pt_mus constr
+R4080:4085 _parent_instance_pruning <> pt_mus constr
+R4094:4100 _parent_instance_pruning <> pt_pair constr
+R4110:4124 _parent_instance_pruning <> prune_term_refl thm
+R4094:4100 _parent_instance_pruning <> pt_pair constr
+R4110:4124 _parent_instance_pruning <> prune_term_refl thm
+R4155:4169 _parent_instance_pruning <> prune_term_refl thm
+R4155:4169 _parent_instance_pruning <> prune_term_refl thm
+R4188:4195 _luna_instance_conversion <> ic_trans constr
+R4188:4195 _luna_instance_conversion <> ic_trans constr
+R4212:4218 _luna_instance_conversion <> ic_core constr
+R4212:4218 _luna_instance_conversion <> ic_core constr
+R4254:4260 _luna_instance_conversion <> ic_core constr
+R4254:4260 _luna_instance_conversion <> ic_core constr
+R4294:4306 _luna_instance_conversion <> instance_conv ind
+R4315:4332 SignatureInstances <> signature_instance def
+R4343:4350 TypeRules <> branches def
+R4353:4356 TypeRules <> TApp constr
+R4383:4400 SignatureInstances <> instance_translate def
+R4359:4376 SignatureInstances <> instance_translate def
+R4419:4436 SignatureInstances <> instance_translate def
+R4449:4466 SignatureInstances <> signature_instance def
+R4477:4484 TypeRules <> branches def
+R4487:4490 TypeRules <> TApp constr
+R4517:4534 SignatureInstances <> instance_translate def
+R4493:4510 SignatureInstances <> instance_translate def
+R4550:4567 SignatureInstances <> instance_translate def
+R4575:4592 SignatureInstances <> instance_translate def
+R4294:4306 _luna_instance_conversion <> instance_conv ind
+R4315:4332 SignatureInstances <> signature_instance def
+R4343:4350 TypeRules <> branches def
+R4353:4356 TypeRules <> TApp constr
+R4383:4400 SignatureInstances <> instance_translate def
+R4359:4376 SignatureInstances <> instance_translate def
+R4419:4436 SignatureInstances <> instance_translate def
+R4449:4466 SignatureInstances <> signature_instance def
+R4477:4484 TypeRules <> branches def
+R4487:4490 TypeRules <> TApp constr
+R4517:4534 SignatureInstances <> instance_translate def
+R4493:4510 SignatureInstances <> instance_translate def
+R4550:4567 SignatureInstances <> instance_translate def
+R4575:4592 SignatureInstances <> instance_translate def
+R4610:4617 _luna_instance_conversion <> ic_prune constr
+R4610:4617 _luna_instance_conversion <> ic_prune constr
+R4626:4631 _parent_instance_pruning <> pt_app constr
+R4626:4631 _parent_instance_pruning <> pt_app constr
+R4646:4656 _parent_instance_pruning <> pt_instance constr
+R4666:4680 _parent_instance_pruning <> prune_term_refl thm
+R4646:4656 _parent_instance_pruning <> pt_instance constr
+R4666:4680 _parent_instance_pruning <> prune_term_refl thm
+R4708:4722 _parent_instance_pruning <> prune_term_refl thm
+R4708:4722 _parent_instance_pruning <> prune_term_refl thm
+R4736:4743 _luna_instance_conversion <> ic_trans constr
+R4736:4743 _luna_instance_conversion <> ic_trans constr
+R4771:4778 _luna_instance_conversion <> ic_trans constr
+R4771:4778 _luna_instance_conversion <> ic_trans constr
+R4835:4852 _luna_instance_conversion <> ic_signature_prune thm
+prf 4863:4882 <> instance_branch_beta
+binder 4893:4893 <> S:75
+binder 4895:4895 <> i:76
+R4900:4904 Progress <> fconv ind
+R4911:4914 TypeRules <> TApp constr
+R4997:5014 SignatureInstances <> instance_translate def
+R5016:5016 _luna_instance_conversion <> i:76 var
+R4917:4934 SignatureInstances <> instance_translate def
+R4943:4946 TypeRules <> TLam constr
+R4949:4956 TypeRules <> branches def
+R4959:4962 TypeRules <> TApp constr
+R4978:4981 TypeRules <> TVar constr
+R4965:4968 TypeRules <> lift def
+R4974:4974 _luna_instance_conversion <> S:75 var
+R5025:5032 TypeRules <> branches def
+R5035:5038 TypeRules <> TApp constr
+R5064:5081 SignatureInstances <> instance_translate def
+R5083:5083 _luna_instance_conversion <> i:76 var
+R5041:5058 SignatureInstances <> instance_translate def
+R5060:5060 _luna_instance_conversion <> S:75 var
+R5117:5134 SignatureInstances <> instance_translate def
+R5136:5143 TypeRules <> branches def
+R5157:5179 SignatureInstances <> instance_translate_lift thm
+R5157:5179 SignatureInstances <> instance_translate_lift thm
+R5157:5179 SignatureInstances <> instance_translate_lift thm
+R5196:5202 TypeRules <> st_beta constr
+R5270:5287 SignatureInstances <> instance_translate def
+R5209:5212 TypeRules <> TFst constr
+R5215:5218 TypeRules <> TApp constr
+R5255:5258 TypeRules <> TVar constr
+R5221:5224 TypeRules <> lift def
+R5231:5248 SignatureInstances <> instance_translate def
+R5196:5202 TypeRules <> st_beta constr
+R5270:5287 SignatureInstances <> instance_translate def
+R5209:5212 TypeRules <> TFst constr
+R5215:5218 TypeRules <> TApp constr
+R5255:5258 TypeRules <> TVar constr
+R5221:5224 TypeRules <> lift def
+R5231:5248 SignatureInstances <> instance_translate def
+R5306:5310 TypeRules <> subst def
+R5329:5343 Progress <> subst_lift_zero thm
+R5329:5343 Progress <> subst_lift_zero thm
+R5329:5343 Progress <> subst_lift_zero thm
+R5361:5400 Progress _tmp_commute lift_zero_id_local thm
+R5361:5400 Progress _tmp_commute lift_zero_id_local thm
+R5361:5400 Progress _tmp_commute lift_zero_id_local thm
+R5416:5422 Progress <> fc_step constr
+R5416:5422 Progress <> fc_step constr
+R5431:5437 Progress <> fs_step constr
+R5431:5437 Progress <> fs_step constr
+R5473:5492 _luna_instance_conversion <> instance_branch_beta thm
+prf 5502:5507 <> ic_phi
+binder 5518:5519 <> S1:77
+binder 5521:5522 <> S2:78
+binder 5524:5524 <> i:79
+binder 5526:5529 <> Phi1:80
+binder 5531:5534 <> Phi2:81
+binder 5536:5539 <> Psi1:82
+binder 5541:5544 <> Psi2:83
+R5708:5713 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5549:5561 _luna_instance_conversion <> instance_conv ind
+R5568:5585 SignatureInstances <> instance_translate def
+R5588:5591 TypeRules <> TLam constr
+R5594:5601 TypeRules <> branches def
+R5604:5607 TypeRules <> TApp constr
+R5624:5627 TypeRules <> TVar constr
+R5610:5613 TypeRules <> lift def
+R5619:5620 _luna_instance_conversion <> S1:77 var
+R5641:5658 SignatureInstances <> instance_translate def
+R5661:5664 TypeRules <> TLam constr
+R5667:5674 TypeRules <> branches def
+R5677:5680 TypeRules <> TApp constr
+R5697:5700 TypeRules <> TVar constr
+R5683:5686 TypeRules <> lift def
+R5692:5693 _luna_instance_conversion <> S2:78 var
+R5744:5749 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5714:5717 TypeRules <> eval ind
+R5740:5743 _luna_instance_conversion <> Phi1:80 var
+R5720:5725 TypeRules <> labels def
+R5728:5731 TypeRules <> TApp constr
+R5736:5736 _luna_instance_conversion <> i:79 var
+R5733:5734 _luna_instance_conversion <> S1:77 var
+R5780:5785 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5750:5753 TypeRules <> eval ind
+R5776:5779 _luna_instance_conversion <> Phi2:81 var
+R5756:5761 TypeRules <> labels def
+R5764:5767 TypeRules <> TApp constr
+R5772:5772 _luna_instance_conversion <> i:79 var
+R5769:5770 _luna_instance_conversion <> S2:78 var
+R5810:5815 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5786:5794 TypeRules <> spine_phi ind
+R5806:5809 _luna_instance_conversion <> Psi1:82 var
+R5801:5804 _luna_instance_conversion <> Phi1:80 var
+R5799:5799 _luna_instance_conversion <> i:79 var
+R5796:5797 _luna_instance_conversion <> S1:77 var
+R5840:5845 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5816:5824 TypeRules <> spine_phi ind
+R5836:5839 _luna_instance_conversion <> Psi2:83 var
+R5831:5834 _luna_instance_conversion <> Phi2:81 var
+R5829:5829 _luna_instance_conversion <> i:79 var
+R5826:5827 _luna_instance_conversion <> S2:78 var
+R5911:5916 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5846:5858 _luna_instance_conversion <> instance_conv ind
+R5861:5878 SignatureInstances <> instance_translate def
+R5880:5883 _luna_instance_conversion <> Psi1:82 var
+R5887:5904 SignatureInstances <> instance_translate def
+R5906:5909 _luna_instance_conversion <> Psi2:83 var
+R5917:5929 _luna_instance_conversion <> instance_conv ind
+R5932:5949 SignatureInstances <> instance_translate def
+R5952:5955 TypeRules <> TApp constr
+R5967:5967 _luna_instance_conversion <> i:79 var
+R5958:5961 TypeRules <> TMuS constr
+R5963:5964 _luna_instance_conversion <> S1:77 var
+R5976:5993 SignatureInstances <> instance_translate def
+R5996:5999 TypeRules <> TApp constr
+R6011:6011 _luna_instance_conversion <> i:79 var
+R6002:6005 TypeRules <> TMuS constr
+R6007:6008 _luna_instance_conversion <> S2:78 var
+R6104:6121 _luna_instance_conversion <> ic_signature_prune thm
+R6104:6121 _luna_instance_conversion <> ic_signature_prune thm
+R6171:6188 _luna_instance_conversion <> ic_signature_prune thm
+R6171:6188 _luna_instance_conversion <> ic_signature_prune thm
+R6240:6252 _luna_instance_conversion <> instance_conv ind
+R6261:6268 TypeRules <> branches def
+R6271:6274 TypeRules <> TApp constr
+R6301:6318 SignatureInstances <> instance_translate def
+R6277:6294 SignatureInstances <> instance_translate def
+R6332:6339 TypeRules <> branches def
+R6342:6345 TypeRules <> TApp constr
+R6372:6389 SignatureInstances <> instance_translate def
+R6348:6365 SignatureInstances <> instance_translate def
+R6240:6252 _luna_instance_conversion <> instance_conv ind
+R6261:6268 TypeRules <> branches def
+R6271:6274 TypeRules <> TApp constr
+R6301:6318 SignatureInstances <> instance_translate def
+R6277:6294 SignatureInstances <> instance_translate def
+R6332:6339 TypeRules <> branches def
+R6342:6345 TypeRules <> TApp constr
+R6372:6389 SignatureInstances <> instance_translate def
+R6348:6365 SignatureInstances <> instance_translate def
+R6409:6416 _luna_instance_conversion <> ic_trans constr
+R6409:6416 _luna_instance_conversion <> ic_trans constr
+R6431:6436 _luna_instance_conversion <> ic_sym constr
+R6431:6436 _luna_instance_conversion <> ic_sym constr
+R6445:6451 _luna_instance_conversion <> ic_core constr
+R6445:6451 _luna_instance_conversion <> ic_core constr
+R6460:6479 _luna_instance_conversion <> instance_branch_beta thm
+R6460:6479 _luna_instance_conversion <> instance_branch_beta thm
+R6495:6502 _luna_instance_conversion <> ic_trans constr
+R6495:6502 _luna_instance_conversion <> ic_trans constr
+R6520:6525 _luna_instance_conversion <> ic_map thm
+binder 6532:6532 <> z:84
+R6537:6540 TypeRules <> TApp constr
+R6545:6562 SignatureInstances <> instance_translate def
+R6542:6542 _luna_instance_conversion <> z:84 var
+R6520:6525 _luna_instance_conversion <> ic_map thm
+binder 6532:6532 <> z:85
+R6537:6540 TypeRules <> TApp constr
+R6545:6562 SignatureInstances <> instance_translate def
+R6542:6542 _luna_instance_conversion <> z:85 var
+R6602:6608 Progress <> fs_app1 constr
+R6602:6608 Progress <> fs_app1 constr
+R6654:6659 _parent_instance_pruning <> pt_app constr
+R6679:6693 _parent_instance_pruning <> prune_term_refl thm
+R6654:6659 _parent_instance_pruning <> pt_app constr
+R6679:6693 _parent_instance_pruning <> prune_term_refl thm
+R6736:6742 _luna_instance_conversion <> ic_core constr
+R6736:6742 _luna_instance_conversion <> ic_core constr
+R6751:6770 _luna_instance_conversion <> instance_branch_beta thm
+R6751:6770 _luna_instance_conversion <> instance_branch_beta thm
+R6792:6804 _luna_instance_conversion <> instance_conv ind
+R6813:6830 SignatureInstances <> signature_instance def
+R6841:6848 TypeRules <> branches def
+R6851:6854 TypeRules <> TApp constr
+R6881:6898 SignatureInstances <> instance_translate def
+R6857:6874 SignatureInstances <> instance_translate def
+R6914:6931 SignatureInstances <> instance_translate def
+R6940:6957 SignatureInstances <> instance_translate def
+R6970:6987 SignatureInstances <> signature_instance def
+R6998:7005 TypeRules <> branches def
+R7008:7011 TypeRules <> TApp constr
+R7038:7055 SignatureInstances <> instance_translate def
+R7014:7031 SignatureInstances <> instance_translate def
+R7071:7088 SignatureInstances <> instance_translate def
+R7097:7114 SignatureInstances <> instance_translate def
+R6792:6804 _luna_instance_conversion <> instance_conv ind
+R6813:6830 SignatureInstances <> signature_instance def
+R6841:6848 TypeRules <> branches def
+R6851:6854 TypeRules <> TApp constr
+R6881:6898 SignatureInstances <> instance_translate def
+R6857:6874 SignatureInstances <> instance_translate def
+R6914:6931 SignatureInstances <> instance_translate def
+R6940:6957 SignatureInstances <> instance_translate def
+R6970:6987 SignatureInstances <> signature_instance def
+R6998:7005 TypeRules <> branches def
+R7008:7011 TypeRules <> TApp constr
+R7038:7055 SignatureInstances <> instance_translate def
+R7014:7031 SignatureInstances <> instance_translate def
+R7071:7088 SignatureInstances <> instance_translate def
+R7097:7114 SignatureInstances <> instance_translate def
+R7133:7139 _luna_instance_conversion <> ic_map2 thm
+binder 7146:7146 <> B:86
+binder 7148:7148 <> L:87
+R7153:7170 SignatureInstances <> signature_instance def
+R7172:7172 _luna_instance_conversion <> B:86 var
+R7174:7174 _luna_instance_conversion <> L:87 var
+R7177:7194 SignatureInstances <> instance_translate def
+R7133:7139 _luna_instance_conversion <> ic_map2 thm
+binder 7146:7146 <> B:88
+binder 7148:7148 <> L:89
+R7153:7170 SignatureInstances <> signature_instance def
+R7172:7172 _luna_instance_conversion <> B:88 var
+R7174:7174 _luna_instance_conversion <> L:89 var
+R7177:7194 SignatureInstances <> instance_translate def
+R7232:7238 Progress <> fs_app1 constr
+R7232:7238 Progress <> fs_app1 constr
+R7247:7252 Progress <> fs_mus constr
+R7247:7252 Progress <> fs_mus constr
+R7261:7268 Progress <> fs_pair1 constr
+R7261:7268 Progress <> fs_pair1 constr
+R7312:7318 Progress <> fs_app1 constr
+R7312:7318 Progress <> fs_app1 constr
+R7327:7332 Progress <> fs_mus constr
+R7327:7332 Progress <> fs_mus constr
+R7341:7348 Progress <> fs_pair2 constr
+R7341:7348 Progress <> fs_pair2 constr
+R7392:7397 _parent_instance_pruning <> pt_app constr
+R7392:7397 _parent_instance_pruning <> pt_app constr
+R7414:7419 _parent_instance_pruning <> pt_mus constr
+R7414:7419 _parent_instance_pruning <> pt_mus constr
+R7428:7434 _parent_instance_pruning <> pt_pair constr
+R7428:7434 _parent_instance_pruning <> pt_pair constr
+R7475:7489 _parent_instance_pruning <> prune_term_refl thm
+R7475:7489 _parent_instance_pruning <> prune_term_refl thm
+R7510:7524 _parent_instance_pruning <> prune_term_refl thm
+R7510:7524 _parent_instance_pruning <> prune_term_refl thm
+R7560:7565 _parent_instance_pruning <> pt_app constr
+R7560:7565 _parent_instance_pruning <> pt_app constr
+R7582:7587 _parent_instance_pruning <> pt_mus constr
+R7582:7587 _parent_instance_pruning <> pt_mus constr
+R7596:7602 _parent_instance_pruning <> pt_pair constr
+R7596:7602 _parent_instance_pruning <> pt_pair constr
+R7622:7636 _parent_instance_pruning <> prune_term_refl thm
+R7622:7636 _parent_instance_pruning <> prune_term_refl thm
+R7678:7692 _parent_instance_pruning <> prune_term_refl thm
+R7678:7692 _parent_instance_pruning <> prune_term_refl thm
+R7743:7750 _luna_instance_conversion <> ic_trans constr
+R7743:7750 _luna_instance_conversion <> ic_trans constr
+R7778:7785 _luna_instance_conversion <> ic_trans constr
+R7778:7785 _luna_instance_conversion <> ic_trans constr
+R7811:7816 _luna_instance_conversion <> ic_sym constr
+R7811:7816 _luna_instance_conversion <> ic_sym constr
+R7857:7862 _luna_instance_conversion <> ic_phi thm
+prf 7873:7879 <> ic_map3
+R7899:7902 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7895:7898 TypeRules <> term ind
+R7907:7910 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7903:7906 TypeRules <> term ind
+R7915:7918 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7911:7914 TypeRules <> term ind
+R7919:7922 TypeRules <> term ind
+binder 7891:7891 <> F:90
+R7927:7927 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7982:7987 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7935:7935 <> x:91
+binder 7937:7937 <> y:92
+binder 7939:7939 <> z:93
+binder 7941:7941 <> q:94
+R7953:7956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7944:7948 Progress <> fstep ind
+R7950:7950 _luna_instance_conversion <> x:91 var
+R7952:7952 _luna_instance_conversion <> y:92 var
+R7957:7961 Progress <> fstep ind
+R7964:7964 _luna_instance_conversion <> F:90 var
+R7970:7970 _luna_instance_conversion <> q:94 var
+R7968:7968 _luna_instance_conversion <> z:93 var
+R7966:7966 _luna_instance_conversion <> x:91 var
+R7974:7974 _luna_instance_conversion <> F:90 var
+R7980:7980 _luna_instance_conversion <> q:94 var
+R7978:7978 _luna_instance_conversion <> z:93 var
+R7976:7976 _luna_instance_conversion <> y:92 var
+R7988:7988 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8043:8048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7996:7996 <> z:95
+binder 7998:7998 <> x:96
+binder 8000:8000 <> y:97
+binder 8002:8002 <> q:98
+R8014:8017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8005:8009 Progress <> fstep ind
+R8011:8011 _luna_instance_conversion <> x:96 var
+R8013:8013 _luna_instance_conversion <> y:97 var
+R8018:8022 Progress <> fstep ind
+R8025:8025 _luna_instance_conversion <> F:90 var
+R8031:8031 _luna_instance_conversion <> q:98 var
+R8029:8029 _luna_instance_conversion <> x:96 var
+R8027:8027 _luna_instance_conversion <> z:95 var
+R8035:8035 _luna_instance_conversion <> F:90 var
+R8041:8041 _luna_instance_conversion <> q:98 var
+R8039:8039 _luna_instance_conversion <> y:97 var
+R8037:8037 _luna_instance_conversion <> z:95 var
+R8049:8049 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8104:8109 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8057:8057 <> z:99
+binder 8059:8059 <> q:100
+binder 8061:8061 <> x:101
+binder 8063:8063 <> y:102
+R8075:8078 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8066:8070 Progress <> fstep ind
+R8072:8072 _luna_instance_conversion <> x:101 var
+R8074:8074 _luna_instance_conversion <> y:102 var
+R8079:8083 Progress <> fstep ind
+R8086:8086 _luna_instance_conversion <> F:90 var
+R8092:8092 _luna_instance_conversion <> x:101 var
+R8090:8090 _luna_instance_conversion <> q:100 var
+R8088:8088 _luna_instance_conversion <> z:99 var
+R8096:8096 _luna_instance_conversion <> F:90 var
+R8102:8102 _luna_instance_conversion <> y:102 var
+R8100:8100 _luna_instance_conversion <> q:100 var
+R8098:8098 _luna_instance_conversion <> z:99 var
+R8110:8110 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8175:8180 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8118:8118 <> x:103
+binder 8120:8120 <> y:104
+binder 8122:8122 <> z:105
+binder 8124:8124 <> q:106
+R8141:8144 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8127:8136 _parent_instance_pruning <> prune_term ind
+R8138:8138 _luna_instance_conversion <> x:103 var
+R8140:8140 _luna_instance_conversion <> y:104 var
+R8145:8154 _parent_instance_pruning <> prune_term ind
+R8157:8157 _luna_instance_conversion <> F:90 var
+R8163:8163 _luna_instance_conversion <> q:106 var
+R8161:8161 _luna_instance_conversion <> z:105 var
+R8159:8159 _luna_instance_conversion <> x:103 var
+R8167:8167 _luna_instance_conversion <> F:90 var
+R8173:8173 _luna_instance_conversion <> q:106 var
+R8171:8171 _luna_instance_conversion <> z:105 var
+R8169:8169 _luna_instance_conversion <> y:104 var
+R8181:8181 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8246:8251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8189:8189 <> z:107
+binder 8191:8191 <> x:108
+binder 8193:8193 <> y:109
+binder 8195:8195 <> q:110
+R8212:8215 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8198:8207 _parent_instance_pruning <> prune_term ind
+R8209:8209 _luna_instance_conversion <> x:108 var
+R8211:8211 _luna_instance_conversion <> y:109 var
+R8216:8225 _parent_instance_pruning <> prune_term ind
+R8228:8228 _luna_instance_conversion <> F:90 var
+R8234:8234 _luna_instance_conversion <> q:110 var
+R8232:8232 _luna_instance_conversion <> x:108 var
+R8230:8230 _luna_instance_conversion <> z:107 var
+R8238:8238 _luna_instance_conversion <> F:90 var
+R8244:8244 _luna_instance_conversion <> q:110 var
+R8242:8242 _luna_instance_conversion <> y:109 var
+R8240:8240 _luna_instance_conversion <> z:107 var
+R8252:8252 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8317:8322 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8260:8260 <> z:111
+binder 8262:8262 <> q:112
+binder 8264:8264 <> x:113
+binder 8266:8266 <> y:114
+R8283:8286 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8269:8278 _parent_instance_pruning <> prune_term ind
+R8280:8280 _luna_instance_conversion <> x:113 var
+R8282:8282 _luna_instance_conversion <> y:114 var
+R8287:8296 _parent_instance_pruning <> prune_term ind
+R8299:8299 _luna_instance_conversion <> F:90 var
+R8305:8305 _luna_instance_conversion <> x:113 var
+R8303:8303 _luna_instance_conversion <> q:112 var
+R8301:8301 _luna_instance_conversion <> z:111 var
+R8309:8309 _luna_instance_conversion <> F:90 var
+R8315:8315 _luna_instance_conversion <> y:114 var
+R8313:8313 _luna_instance_conversion <> q:112 var
+R8311:8311 _luna_instance_conversion <> z:111 var
+binder 8330:8330 <> x:115
+binder 8332:8333 <> x':116
+binder 8335:8335 <> y:117
+binder 8337:8338 <> y':118
+binder 8340:8340 <> z:119
+binder 8342:8343 <> z':120
+R8364:8367 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8346:8358 _luna_instance_conversion <> instance_conv ind
+R8360:8360 _luna_instance_conversion <> x:115 var
+R8362:8363 _luna_instance_conversion <> x':116 var
+R8386:8389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8368:8380 _luna_instance_conversion <> instance_conv ind
+R8382:8382 _luna_instance_conversion <> y:117 var
+R8384:8385 _luna_instance_conversion <> y':118 var
+R8408:8412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8390:8402 _luna_instance_conversion <> instance_conv ind
+R8404:8404 _luna_instance_conversion <> z:119 var
+R8406:8407 _luna_instance_conversion <> z':120 var
+R8413:8425 _luna_instance_conversion <> instance_conv ind
+R8428:8428 _luna_instance_conversion <> F:90 var
+R8434:8434 _luna_instance_conversion <> z:119 var
+R8432:8432 _luna_instance_conversion <> y:117 var
+R8430:8430 _luna_instance_conversion <> x:115 var
+R8438:8438 _luna_instance_conversion <> F:90 var
+R8446:8447 _luna_instance_conversion <> z':120 var
+R8443:8444 _luna_instance_conversion <> y':118 var
+R8440:8441 _luna_instance_conversion <> x':116 var
+R8519:8526 _luna_instance_conversion <> ic_trans constr
+R8519:8526 _luna_instance_conversion <> ic_trans constr
+R8540:8545 _luna_instance_conversion <> ic_map thm
+binder 8552:8552 <> a:121
+R8559:8559 _luna_instance_conversion <> a:121 var
+R8540:8545 _luna_instance_conversion <> ic_map thm
+binder 8552:8552 <> a:122
+R8559:8559 _luna_instance_conversion <> a:122 var
+R8640:8647 _luna_instance_conversion <> ic_trans constr
+R8640:8647 _luna_instance_conversion <> ic_trans constr
+R8663:8668 _luna_instance_conversion <> ic_map thm
+binder 8675:8675 <> b:123
+R8685:8685 _luna_instance_conversion <> b:123 var
+R8663:8668 _luna_instance_conversion <> ic_map thm
+binder 8675:8675 <> b:124
+R8685:8685 _luna_instance_conversion <> b:124 var
+R8767:8772 _luna_instance_conversion <> ic_map thm
+binder 8779:8779 <> c:125
+R8792:8792 _luna_instance_conversion <> c:125 var
+R8767:8772 _luna_instance_conversion <> ic_map thm
+binder 8779:8779 <> c:126
+R8792:8792 _luna_instance_conversion <> c:126 var
+prf 8871:8877 <> ic_map4
+R8897:8900 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8893:8896 TypeRules <> term ind
+R8905:8908 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8901:8904 TypeRules <> term ind
+R8913:8916 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8909:8912 TypeRules <> term ind
+R8921:8924 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8917:8920 TypeRules <> term ind
+R8925:8928 TypeRules <> term ind
+binder 8889:8889 <> F:127
+R8933:8933 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8994:8999 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8941:8941 <> x:128
+binder 8943:8943 <> y:129
+binder 8945:8945 <> a:130
+binder 8947:8947 <> b:131
+binder 8949:8949 <> q:132
+R8961:8964 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8952:8956 Progress <> fstep ind
+R8958:8958 _luna_instance_conversion <> x:128 var
+R8960:8960 _luna_instance_conversion <> y:129 var
+R8965:8969 Progress <> fstep ind
+R8972:8972 _luna_instance_conversion <> F:127 var
+R8980:8980 _luna_instance_conversion <> q:132 var
+R8978:8978 _luna_instance_conversion <> b:131 var
+R8976:8976 _luna_instance_conversion <> a:130 var
+R8974:8974 _luna_instance_conversion <> x:128 var
+R8984:8984 _luna_instance_conversion <> F:127 var
+R8992:8992 _luna_instance_conversion <> q:132 var
+R8990:8990 _luna_instance_conversion <> b:131 var
+R8988:8988 _luna_instance_conversion <> a:130 var
+R8986:8986 _luna_instance_conversion <> y:129 var
+R9000:9000 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9061:9066 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 9008:9008 <> a:133
+binder 9010:9010 <> x:134
+binder 9012:9012 <> y:135
+binder 9014:9014 <> b:136
+binder 9016:9016 <> q:137
+R9028:9031 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9019:9023 Progress <> fstep ind
+R9025:9025 _luna_instance_conversion <> x:134 var
+R9027:9027 _luna_instance_conversion <> y:135 var
+R9032:9036 Progress <> fstep ind
+R9039:9039 _luna_instance_conversion <> F:127 var
+R9047:9047 _luna_instance_conversion <> q:137 var
+R9045:9045 _luna_instance_conversion <> b:136 var
+R9043:9043 _luna_instance_conversion <> x:134 var
+R9041:9041 _luna_instance_conversion <> a:133 var
+R9051:9051 _luna_instance_conversion <> F:127 var
+R9059:9059 _luna_instance_conversion <> q:137 var
+R9057:9057 _luna_instance_conversion <> b:136 var
+R9055:9055 _luna_instance_conversion <> y:135 var
+R9053:9053 _luna_instance_conversion <> a:133 var
+R9067:9067 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9128:9133 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 9075:9075 <> a:138
+binder 9077:9077 <> b:139
+binder 9079:9079 <> x:140
+binder 9081:9081 <> y:141
+binder 9083:9083 <> q:142
+R9095:9098 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9086:9090 Progress <> fstep ind
+R9092:9092 _luna_instance_conversion <> x:140 var
+R9094:9094 _luna_instance_conversion <> y:141 var
+R9099:9103 Progress <> fstep ind
+R9106:9106 _luna_instance_conversion <> F:127 var
+R9114:9114 _luna_instance_conversion <> q:142 var
+R9112:9112 _luna_instance_conversion <> x:140 var
+R9110:9110 _luna_instance_conversion <> b:139 var
+R9108:9108 _luna_instance_conversion <> a:138 var
+R9118:9118 _luna_instance_conversion <> F:127 var
+R9126:9126 _luna_instance_conversion <> q:142 var
+R9124:9124 _luna_instance_conversion <> y:141 var
+R9122:9122 _luna_instance_conversion <> b:139 var
+R9120:9120 _luna_instance_conversion <> a:138 var
+R9134:9134 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9195:9200 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 9142:9142 <> a:143
+binder 9144:9144 <> b:144
+binder 9146:9146 <> q:145
+binder 9148:9148 <> x:146
+binder 9150:9150 <> y:147
+R9162:9165 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9153:9157 Progress <> fstep ind
+R9159:9159 _luna_instance_conversion <> x:146 var
+R9161:9161 _luna_instance_conversion <> y:147 var
+R9166:9170 Progress <> fstep ind
+R9173:9173 _luna_instance_conversion <> F:127 var
+R9181:9181 _luna_instance_conversion <> x:146 var
+R9179:9179 _luna_instance_conversion <> q:145 var
+R9177:9177 _luna_instance_conversion <> b:144 var
+R9175:9175 _luna_instance_conversion <> a:143 var
+R9185:9185 _luna_instance_conversion <> F:127 var
+R9193:9193 _luna_instance_conversion <> y:147 var
+R9191:9191 _luna_instance_conversion <> q:145 var
+R9189:9189 _luna_instance_conversion <> b:144 var
+R9187:9187 _luna_instance_conversion <> a:143 var
+R9201:9201 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9272:9277 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 9209:9209 <> x:148
+binder 9211:9211 <> y:149
+binder 9213:9213 <> a:150
+binder 9215:9215 <> b:151
+binder 9217:9217 <> q:152
+R9234:9237 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9220:9229 _parent_instance_pruning <> prune_term ind
+R9231:9231 _luna_instance_conversion <> x:148 var
+R9233:9233 _luna_instance_conversion <> y:149 var
+R9238:9247 _parent_instance_pruning <> prune_term ind
+R9250:9250 _luna_instance_conversion <> F:127 var
+R9258:9258 _luna_instance_conversion <> q:152 var
+R9256:9256 _luna_instance_conversion <> b:151 var
+R9254:9254 _luna_instance_conversion <> a:150 var
+R9252:9252 _luna_instance_conversion <> x:148 var
+R9262:9262 _luna_instance_conversion <> F:127 var
+R9270:9270 _luna_instance_conversion <> q:152 var
+R9268:9268 _luna_instance_conversion <> b:151 var
+R9266:9266 _luna_instance_conversion <> a:150 var
+R9264:9264 _luna_instance_conversion <> y:149 var
+R9278:9278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9349:9354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 9286:9286 <> a:153
+binder 9288:9288 <> x:154
+binder 9290:9290 <> y:155
+binder 9292:9292 <> b:156
+binder 9294:9294 <> q:157
+R9311:9314 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9297:9306 _parent_instance_pruning <> prune_term ind
+R9308:9308 _luna_instance_conversion <> x:154 var
+R9310:9310 _luna_instance_conversion <> y:155 var
+R9315:9324 _parent_instance_pruning <> prune_term ind
+R9327:9327 _luna_instance_conversion <> F:127 var
+R9335:9335 _luna_instance_conversion <> q:157 var
+R9333:9333 _luna_instance_conversion <> b:156 var
+R9331:9331 _luna_instance_conversion <> x:154 var
+R9329:9329 _luna_instance_conversion <> a:153 var
+R9339:9339 _luna_instance_conversion <> F:127 var
+R9347:9347 _luna_instance_conversion <> q:157 var
+R9345:9345 _luna_instance_conversion <> b:156 var
+R9343:9343 _luna_instance_conversion <> y:155 var
+R9341:9341 _luna_instance_conversion <> a:153 var
+R9355:9355 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9426:9431 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 9363:9363 <> a:158
+binder 9365:9365 <> b:159
+binder 9367:9367 <> x:160
+binder 9369:9369 <> y:161
+binder 9371:9371 <> q:162
+R9388:9391 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9374:9383 _parent_instance_pruning <> prune_term ind
+R9385:9385 _luna_instance_conversion <> x:160 var
+R9387:9387 _luna_instance_conversion <> y:161 var
+R9392:9401 _parent_instance_pruning <> prune_term ind
+R9404:9404 _luna_instance_conversion <> F:127 var
+R9412:9412 _luna_instance_conversion <> q:162 var
+R9410:9410 _luna_instance_conversion <> x:160 var
+R9408:9408 _luna_instance_conversion <> b:159 var
+R9406:9406 _luna_instance_conversion <> a:158 var
+R9416:9416 _luna_instance_conversion <> F:127 var
+R9424:9424 _luna_instance_conversion <> q:162 var
+R9422:9422 _luna_instance_conversion <> y:161 var
+R9420:9420 _luna_instance_conversion <> b:159 var
+R9418:9418 _luna_instance_conversion <> a:158 var
+R9432:9432 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9503:9508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 9440:9440 <> a:163
+binder 9442:9442 <> b:164
+binder 9444:9444 <> q:165
+binder 9446:9446 <> x:166
+binder 9448:9448 <> y:167
+R9465:9468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9451:9460 _parent_instance_pruning <> prune_term ind
+R9462:9462 _luna_instance_conversion <> x:166 var
+R9464:9464 _luna_instance_conversion <> y:167 var
+R9469:9478 _parent_instance_pruning <> prune_term ind
+R9481:9481 _luna_instance_conversion <> F:127 var
+R9489:9489 _luna_instance_conversion <> x:166 var
+R9487:9487 _luna_instance_conversion <> q:165 var
+R9485:9485 _luna_instance_conversion <> b:164 var
+R9483:9483 _luna_instance_conversion <> a:163 var
+R9493:9493 _luna_instance_conversion <> F:127 var
+R9501:9501 _luna_instance_conversion <> y:167 var
+R9499:9499 _luna_instance_conversion <> q:165 var
+R9497:9497 _luna_instance_conversion <> b:164 var
+R9495:9495 _luna_instance_conversion <> a:163 var
+binder 9516:9516 <> a:168
+binder 9518:9519 <> a':169
+binder 9521:9521 <> b:170
+binder 9523:9524 <> b':171
+binder 9526:9526 <> c:172
+binder 9528:9529 <> c':173
+binder 9531:9531 <> d:174
+binder 9533:9534 <> d':175
+R9555:9558 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9537:9549 _luna_instance_conversion <> instance_conv ind
+R9551:9551 _luna_instance_conversion <> a:168 var
+R9553:9554 _luna_instance_conversion <> a':169 var
+R9577:9580 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9559:9571 _luna_instance_conversion <> instance_conv ind
+R9573:9573 _luna_instance_conversion <> b:170 var
+R9575:9576 _luna_instance_conversion <> b':171 var
+R9599:9602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9581:9593 _luna_instance_conversion <> instance_conv ind
+R9595:9595 _luna_instance_conversion <> c:172 var
+R9597:9598 _luna_instance_conversion <> c':173 var
+R9621:9625 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9603:9615 _luna_instance_conversion <> instance_conv ind
+R9617:9617 _luna_instance_conversion <> d:174 var
+R9619:9620 _luna_instance_conversion <> d':175 var
+R9626:9638 _luna_instance_conversion <> instance_conv ind
+R9641:9641 _luna_instance_conversion <> F:127 var
+R9649:9649 _luna_instance_conversion <> d:174 var
+R9647:9647 _luna_instance_conversion <> c:172 var
+R9645:9645 _luna_instance_conversion <> b:170 var
+R9643:9643 _luna_instance_conversion <> a:168 var
+R9653:9653 _luna_instance_conversion <> F:127 var
+R9664:9665 _luna_instance_conversion <> d':175 var
+R9661:9662 _luna_instance_conversion <> c':173 var
+R9658:9659 _luna_instance_conversion <> b':171 var
+R9655:9656 _luna_instance_conversion <> a':169 var
+R9751:9758 _luna_instance_conversion <> ic_trans constr
+R9751:9758 _luna_instance_conversion <> ic_trans constr
+R9772:9777 _luna_instance_conversion <> ic_map thm
+binder 9784:9784 <> x:176
+R9791:9791 _luna_instance_conversion <> x:176 var
+R9772:9777 _luna_instance_conversion <> ic_map thm
+binder 9784:9784 <> x:177
+R9791:9791 _luna_instance_conversion <> x:177 var
+R9874:9881 _luna_instance_conversion <> ic_trans constr
+R9874:9881 _luna_instance_conversion <> ic_trans constr
+R9897:9902 _luna_instance_conversion <> ic_map thm
+binder 9909:9909 <> x:178
+R9919:9919 _luna_instance_conversion <> x:178 var
+R9897:9902 _luna_instance_conversion <> ic_map thm
+binder 9909:9909 <> x:179
+R9919:9919 _luna_instance_conversion <> x:179 var
+R10002:10009 _luna_instance_conversion <> ic_trans constr
+R10002:10009 _luna_instance_conversion <> ic_trans constr
+R10027:10032 _luna_instance_conversion <> ic_map thm
+binder 10039:10039 <> x:180
+R10052:10052 _luna_instance_conversion <> x:180 var
+R10027:10032 _luna_instance_conversion <> ic_map thm
+binder 10039:10039 <> x:181
+R10052:10052 _luna_instance_conversion <> x:181 var
+R10136:10141 _luna_instance_conversion <> ic_map thm
+binder 10148:10148 <> x:182
+R10164:10164 _luna_instance_conversion <> x:182 var
+R10136:10141 _luna_instance_conversion <> ic_map thm
+binder 10148:10148 <> x:183
+R10164:10164 _luna_instance_conversion <> x:183 var
+prf 10243:10249 <> ic_map5
+R10269:10272 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10265:10268 TypeRules <> term ind
+R10277:10280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10273:10276 TypeRules <> term ind
+R10285:10288 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10281:10284 TypeRules <> term ind
+R10293:10296 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10289:10292 TypeRules <> term ind
+R10301:10304 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10297:10300 TypeRules <> term ind
+R10305:10308 TypeRules <> term ind
+binder 10261:10261 <> F:184
+R10313:10313 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10380:10385 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10321:10321 <> x:185
+binder 10323:10323 <> y:186
+binder 10325:10325 <> a:187
+binder 10327:10327 <> b:188
+binder 10329:10329 <> c:189
+binder 10331:10331 <> q:190
+R10343:10346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10334:10338 Progress <> fstep ind
+R10340:10340 _luna_instance_conversion <> x:185 var
+R10342:10342 _luna_instance_conversion <> y:186 var
+R10347:10351 Progress <> fstep ind
+R10354:10354 _luna_instance_conversion <> F:184 var
+R10364:10364 _luna_instance_conversion <> q:190 var
+R10362:10362 _luna_instance_conversion <> c:189 var
+R10360:10360 _luna_instance_conversion <> b:188 var
+R10358:10358 _luna_instance_conversion <> a:187 var
+R10356:10356 _luna_instance_conversion <> x:185 var
+R10368:10368 _luna_instance_conversion <> F:184 var
+R10378:10378 _luna_instance_conversion <> q:190 var
+R10376:10376 _luna_instance_conversion <> c:189 var
+R10374:10374 _luna_instance_conversion <> b:188 var
+R10372:10372 _luna_instance_conversion <> a:187 var
+R10370:10370 _luna_instance_conversion <> y:186 var
+R10386:10386 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10453:10458 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10394:10394 <> a:191
+binder 10396:10396 <> x:192
+binder 10398:10398 <> y:193
+binder 10400:10400 <> b:194
+binder 10402:10402 <> c:195
+binder 10404:10404 <> q:196
+R10416:10419 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10407:10411 Progress <> fstep ind
+R10413:10413 _luna_instance_conversion <> x:192 var
+R10415:10415 _luna_instance_conversion <> y:193 var
+R10420:10424 Progress <> fstep ind
+R10427:10427 _luna_instance_conversion <> F:184 var
+R10437:10437 _luna_instance_conversion <> q:196 var
+R10435:10435 _luna_instance_conversion <> c:195 var
+R10433:10433 _luna_instance_conversion <> b:194 var
+R10431:10431 _luna_instance_conversion <> x:192 var
+R10429:10429 _luna_instance_conversion <> a:191 var
+R10441:10441 _luna_instance_conversion <> F:184 var
+R10451:10451 _luna_instance_conversion <> q:196 var
+R10449:10449 _luna_instance_conversion <> c:195 var
+R10447:10447 _luna_instance_conversion <> b:194 var
+R10445:10445 _luna_instance_conversion <> y:193 var
+R10443:10443 _luna_instance_conversion <> a:191 var
+R10459:10459 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10526:10531 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10467:10467 <> a:197
+binder 10469:10469 <> b:198
+binder 10471:10471 <> x:199
+binder 10473:10473 <> y:200
+binder 10475:10475 <> c:201
+binder 10477:10477 <> q:202
+R10489:10492 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10480:10484 Progress <> fstep ind
+R10486:10486 _luna_instance_conversion <> x:199 var
+R10488:10488 _luna_instance_conversion <> y:200 var
+R10493:10497 Progress <> fstep ind
+R10500:10500 _luna_instance_conversion <> F:184 var
+R10510:10510 _luna_instance_conversion <> q:202 var
+R10508:10508 _luna_instance_conversion <> c:201 var
+R10506:10506 _luna_instance_conversion <> x:199 var
+R10504:10504 _luna_instance_conversion <> b:198 var
+R10502:10502 _luna_instance_conversion <> a:197 var
+R10514:10514 _luna_instance_conversion <> F:184 var
+R10524:10524 _luna_instance_conversion <> q:202 var
+R10522:10522 _luna_instance_conversion <> c:201 var
+R10520:10520 _luna_instance_conversion <> y:200 var
+R10518:10518 _luna_instance_conversion <> b:198 var
+R10516:10516 _luna_instance_conversion <> a:197 var
+R10532:10532 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10599:10604 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10540:10540 <> a:203
+binder 10542:10542 <> b:204
+binder 10544:10544 <> c:205
+binder 10546:10546 <> x:206
+binder 10548:10548 <> y:207
+binder 10550:10550 <> q:208
+R10562:10565 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10553:10557 Progress <> fstep ind
+R10559:10559 _luna_instance_conversion <> x:206 var
+R10561:10561 _luna_instance_conversion <> y:207 var
+R10566:10570 Progress <> fstep ind
+R10573:10573 _luna_instance_conversion <> F:184 var
+R10583:10583 _luna_instance_conversion <> q:208 var
+R10581:10581 _luna_instance_conversion <> x:206 var
+R10579:10579 _luna_instance_conversion <> c:205 var
+R10577:10577 _luna_instance_conversion <> b:204 var
+R10575:10575 _luna_instance_conversion <> a:203 var
+R10587:10587 _luna_instance_conversion <> F:184 var
+R10597:10597 _luna_instance_conversion <> q:208 var
+R10595:10595 _luna_instance_conversion <> y:207 var
+R10593:10593 _luna_instance_conversion <> c:205 var
+R10591:10591 _luna_instance_conversion <> b:204 var
+R10589:10589 _luna_instance_conversion <> a:203 var
+R10605:10605 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10672:10677 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10613:10613 <> a:209
+binder 10615:10615 <> b:210
+binder 10617:10617 <> c:211
+binder 10619:10619 <> q:212
+binder 10621:10621 <> x:213
+binder 10623:10623 <> y:214
+R10635:10638 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10626:10630 Progress <> fstep ind
+R10632:10632 _luna_instance_conversion <> x:213 var
+R10634:10634 _luna_instance_conversion <> y:214 var
+R10639:10643 Progress <> fstep ind
+R10646:10646 _luna_instance_conversion <> F:184 var
+R10656:10656 _luna_instance_conversion <> x:213 var
+R10654:10654 _luna_instance_conversion <> q:212 var
+R10652:10652 _luna_instance_conversion <> c:211 var
+R10650:10650 _luna_instance_conversion <> b:210 var
+R10648:10648 _luna_instance_conversion <> a:209 var
+R10660:10660 _luna_instance_conversion <> F:184 var
+R10670:10670 _luna_instance_conversion <> y:214 var
+R10668:10668 _luna_instance_conversion <> q:212 var
+R10666:10666 _luna_instance_conversion <> c:211 var
+R10664:10664 _luna_instance_conversion <> b:210 var
+R10662:10662 _luna_instance_conversion <> a:209 var
+R10678:10678 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10755:10760 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10686:10686 <> x:215
+binder 10688:10688 <> y:216
+binder 10690:10690 <> a:217
+binder 10692:10692 <> b:218
+binder 10694:10694 <> c:219
+binder 10696:10696 <> q:220
+R10713:10716 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10699:10708 _parent_instance_pruning <> prune_term ind
+R10710:10710 _luna_instance_conversion <> x:215 var
+R10712:10712 _luna_instance_conversion <> y:216 var
+R10717:10726 _parent_instance_pruning <> prune_term ind
+R10729:10729 _luna_instance_conversion <> F:184 var
+R10739:10739 _luna_instance_conversion <> q:220 var
+R10737:10737 _luna_instance_conversion <> c:219 var
+R10735:10735 _luna_instance_conversion <> b:218 var
+R10733:10733 _luna_instance_conversion <> a:217 var
+R10731:10731 _luna_instance_conversion <> x:215 var
+R10743:10743 _luna_instance_conversion <> F:184 var
+R10753:10753 _luna_instance_conversion <> q:220 var
+R10751:10751 _luna_instance_conversion <> c:219 var
+R10749:10749 _luna_instance_conversion <> b:218 var
+R10747:10747 _luna_instance_conversion <> a:217 var
+R10745:10745 _luna_instance_conversion <> y:216 var
+R10761:10761 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10838:10843 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10769:10769 <> a:221
+binder 10771:10771 <> x:222
+binder 10773:10773 <> y:223
+binder 10775:10775 <> b:224
+binder 10777:10777 <> c:225
+binder 10779:10779 <> q:226
+R10796:10799 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10782:10791 _parent_instance_pruning <> prune_term ind
+R10793:10793 _luna_instance_conversion <> x:222 var
+R10795:10795 _luna_instance_conversion <> y:223 var
+R10800:10809 _parent_instance_pruning <> prune_term ind
+R10812:10812 _luna_instance_conversion <> F:184 var
+R10822:10822 _luna_instance_conversion <> q:226 var
+R10820:10820 _luna_instance_conversion <> c:225 var
+R10818:10818 _luna_instance_conversion <> b:224 var
+R10816:10816 _luna_instance_conversion <> x:222 var
+R10814:10814 _luna_instance_conversion <> a:221 var
+R10826:10826 _luna_instance_conversion <> F:184 var
+R10836:10836 _luna_instance_conversion <> q:226 var
+R10834:10834 _luna_instance_conversion <> c:225 var
+R10832:10832 _luna_instance_conversion <> b:224 var
+R10830:10830 _luna_instance_conversion <> y:223 var
+R10828:10828 _luna_instance_conversion <> a:221 var
+R10844:10844 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10921:10926 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10852:10852 <> a:227
+binder 10854:10854 <> b:228
+binder 10856:10856 <> x:229
+binder 10858:10858 <> y:230
+binder 10860:10860 <> c:231
+binder 10862:10862 <> q:232
+R10879:10882 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10865:10874 _parent_instance_pruning <> prune_term ind
+R10876:10876 _luna_instance_conversion <> x:229 var
+R10878:10878 _luna_instance_conversion <> y:230 var
+R10883:10892 _parent_instance_pruning <> prune_term ind
+R10895:10895 _luna_instance_conversion <> F:184 var
+R10905:10905 _luna_instance_conversion <> q:232 var
+R10903:10903 _luna_instance_conversion <> c:231 var
+R10901:10901 _luna_instance_conversion <> x:229 var
+R10899:10899 _luna_instance_conversion <> b:228 var
+R10897:10897 _luna_instance_conversion <> a:227 var
+R10909:10909 _luna_instance_conversion <> F:184 var
+R10919:10919 _luna_instance_conversion <> q:232 var
+R10917:10917 _luna_instance_conversion <> c:231 var
+R10915:10915 _luna_instance_conversion <> y:230 var
+R10913:10913 _luna_instance_conversion <> b:228 var
+R10911:10911 _luna_instance_conversion <> a:227 var
+R10927:10927 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11004:11009 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10935:10935 <> a:233
+binder 10937:10937 <> b:234
+binder 10939:10939 <> c:235
+binder 10941:10941 <> x:236
+binder 10943:10943 <> y:237
+binder 10945:10945 <> q:238
+R10962:10965 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10948:10957 _parent_instance_pruning <> prune_term ind
+R10959:10959 _luna_instance_conversion <> x:236 var
+R10961:10961 _luna_instance_conversion <> y:237 var
+R10966:10975 _parent_instance_pruning <> prune_term ind
+R10978:10978 _luna_instance_conversion <> F:184 var
+R10988:10988 _luna_instance_conversion <> q:238 var
+R10986:10986 _luna_instance_conversion <> x:236 var
+R10984:10984 _luna_instance_conversion <> c:235 var
+R10982:10982 _luna_instance_conversion <> b:234 var
+R10980:10980 _luna_instance_conversion <> a:233 var
+R10992:10992 _luna_instance_conversion <> F:184 var
+R11002:11002 _luna_instance_conversion <> q:238 var
+R11000:11000 _luna_instance_conversion <> y:237 var
+R10998:10998 _luna_instance_conversion <> c:235 var
+R10996:10996 _luna_instance_conversion <> b:234 var
+R10994:10994 _luna_instance_conversion <> a:233 var
+R11010:11010 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11087:11092 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 11018:11018 <> a:239
+binder 11020:11020 <> b:240
+binder 11022:11022 <> c:241
+binder 11024:11024 <> q:242
+binder 11026:11026 <> x:243
+binder 11028:11028 <> y:244
+R11045:11048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11031:11040 _parent_instance_pruning <> prune_term ind
+R11042:11042 _luna_instance_conversion <> x:243 var
+R11044:11044 _luna_instance_conversion <> y:244 var
+R11049:11058 _parent_instance_pruning <> prune_term ind
+R11061:11061 _luna_instance_conversion <> F:184 var
+R11071:11071 _luna_instance_conversion <> x:243 var
+R11069:11069 _luna_instance_conversion <> q:242 var
+R11067:11067 _luna_instance_conversion <> c:241 var
+R11065:11065 _luna_instance_conversion <> b:240 var
+R11063:11063 _luna_instance_conversion <> a:239 var
+R11075:11075 _luna_instance_conversion <> F:184 var
+R11085:11085 _luna_instance_conversion <> y:244 var
+R11083:11083 _luna_instance_conversion <> q:242 var
+R11081:11081 _luna_instance_conversion <> c:241 var
+R11079:11079 _luna_instance_conversion <> b:240 var
+R11077:11077 _luna_instance_conversion <> a:239 var
+binder 11100:11100 <> a:245
+binder 11102:11103 <> a':246
+binder 11105:11105 <> b:247
+binder 11107:11108 <> b':248
+binder 11110:11110 <> c:249
+binder 11112:11113 <> c':250
+binder 11115:11115 <> d:251
+binder 11117:11118 <> d':252
+binder 11120:11120 <> e:253
+binder 11122:11123 <> e':254
+R11144:11147 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11126:11138 _luna_instance_conversion <> instance_conv ind
+R11140:11140 _luna_instance_conversion <> a:245 var
+R11142:11143 _luna_instance_conversion <> a':246 var
+R11166:11169 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11148:11160 _luna_instance_conversion <> instance_conv ind
+R11162:11162 _luna_instance_conversion <> b:247 var
+R11164:11165 _luna_instance_conversion <> b':248 var
+R11188:11191 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11170:11182 _luna_instance_conversion <> instance_conv ind
+R11184:11184 _luna_instance_conversion <> c:249 var
+R11186:11187 _luna_instance_conversion <> c':250 var
+R11210:11213 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11192:11204 _luna_instance_conversion <> instance_conv ind
+R11206:11206 _luna_instance_conversion <> d:251 var
+R11208:11209 _luna_instance_conversion <> d':252 var
+R11232:11236 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11214:11226 _luna_instance_conversion <> instance_conv ind
+R11228:11228 _luna_instance_conversion <> e:253 var
+R11230:11231 _luna_instance_conversion <> e':254 var
+R11237:11249 _luna_instance_conversion <> instance_conv ind
+R11252:11252 _luna_instance_conversion <> F:184 var
+R11262:11262 _luna_instance_conversion <> e:253 var
+R11260:11260 _luna_instance_conversion <> d:251 var
+R11258:11258 _luna_instance_conversion <> c:249 var
+R11256:11256 _luna_instance_conversion <> b:247 var
+R11254:11254 _luna_instance_conversion <> a:245 var
+R11266:11266 _luna_instance_conversion <> F:184 var
+R11280:11281 _luna_instance_conversion <> e':254 var
+R11277:11278 _luna_instance_conversion <> d':252 var
+R11274:11275 _luna_instance_conversion <> c':250 var
+R11271:11272 _luna_instance_conversion <> b':248 var
+R11268:11269 _luna_instance_conversion <> a':246 var
+R11381:11388 _luna_instance_conversion <> ic_trans constr
+R11381:11388 _luna_instance_conversion <> ic_trans constr
+R11402:11407 _luna_instance_conversion <> ic_map thm
+binder 11414:11414 <> x:255
+R11421:11421 _luna_instance_conversion <> x:255 var
+R11402:11407 _luna_instance_conversion <> ic_map thm
+binder 11414:11414 <> x:256
+R11421:11421 _luna_instance_conversion <> x:256 var
+R11506:11513 _luna_instance_conversion <> ic_trans constr
+R11506:11513 _luna_instance_conversion <> ic_trans constr
+R11529:11534 _luna_instance_conversion <> ic_map thm
+binder 11541:11541 <> x:257
+R11551:11551 _luna_instance_conversion <> x:257 var
+R11529:11534 _luna_instance_conversion <> ic_map thm
+binder 11541:11541 <> x:258
+R11551:11551 _luna_instance_conversion <> x:258 var
+R11636:11643 _luna_instance_conversion <> ic_trans constr
+R11636:11643 _luna_instance_conversion <> ic_trans constr
+R11661:11666 _luna_instance_conversion <> ic_map thm
+binder 11673:11673 <> x:259
+R11686:11686 _luna_instance_conversion <> x:259 var
+R11661:11666 _luna_instance_conversion <> ic_map thm
+binder 11673:11673 <> x:260
+R11686:11686 _luna_instance_conversion <> x:260 var
+R11771:11778 _luna_instance_conversion <> ic_trans constr
+R11771:11778 _luna_instance_conversion <> ic_trans constr
+R11799:11804 _luna_instance_conversion <> ic_map thm
+binder 11811:11811 <> x:261
+R11827:11827 _luna_instance_conversion <> x:261 var
+R11799:11804 _luna_instance_conversion <> ic_map thm
+binder 11811:11811 <> x:262
+R11827:11827 _luna_instance_conversion <> x:262 var
+R11914:11919 _luna_instance_conversion <> ic_map thm
+binder 11926:11926 <> x:263
+R11945:11945 _luna_instance_conversion <> x:263 var
+R11914:11919 _luna_instance_conversion <> ic_map thm
+binder 11926:11926 <> x:264
+R11945:11945 _luna_instance_conversion <> x:264 var
+R12036:12042 _luna_instance_conversion <> ic_map3 thm
+R12063:12069 _luna_instance_conversion <> ic_map4 thm
+R12090:12096 _luna_instance_conversion <> ic_map5 thm
+prf 12106:12121 <> ic_translate_mus
+binder 12132:12132 <> S:265
+binder 12134:12135 <> S':266
+R12200:12205 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12140:12152 _luna_instance_conversion <> instance_conv ind
+R12155:12172 SignatureInstances <> instance_translate def
+R12174:12174 _luna_instance_conversion <> S:265 var
+R12178:12195 SignatureInstances <> instance_translate def
+R12197:12198 _luna_instance_conversion <> S':266 var
+R12206:12218 _luna_instance_conversion <> instance_conv ind
+R12221:12238 SignatureInstances <> instance_translate def
+R12241:12244 TypeRules <> TMuS constr
+R12246:12246 _luna_instance_conversion <> S:265 var
+R12251:12268 SignatureInstances <> instance_translate def
+R12271:12274 TypeRules <> TMuS constr
+R12276:12277 _luna_instance_conversion <> S':266 var
+R12313:12330 SignatureInstances <> instance_translate def
+R12348:12354 _luna_instance_conversion <> ic_lift thm
+R12348:12354 _luna_instance_conversion <> ic_lift thm
+R12389:12401 _luna_instance_conversion <> instance_conv ind
+R12410:12414 TypeRules <> TPair constr
+R12490:12493 TypeRules <> TSnd constr
+R12496:12499 TypeRules <> TApp constr
+R12536:12539 TypeRules <> TVar constr
+R12502:12505 TypeRules <> lift def
+R12512:12529 SignatureInstances <> instance_translate def
+R12425:12428 TypeRules <> TFst constr
+R12431:12434 TypeRules <> TApp constr
+R12471:12474 TypeRules <> TVar constr
+R12437:12440 TypeRules <> lift def
+R12447:12464 SignatureInstances <> instance_translate def
+R12554:12558 TypeRules <> TPair constr
+R12635:12638 TypeRules <> TSnd constr
+R12641:12644 TypeRules <> TApp constr
+R12682:12685 TypeRules <> TVar constr
+R12647:12650 TypeRules <> lift def
+R12657:12674 SignatureInstances <> instance_translate def
+R12569:12572 TypeRules <> TFst constr
+R12575:12578 TypeRules <> TApp constr
+R12616:12619 TypeRules <> TVar constr
+R12581:12584 TypeRules <> lift def
+R12591:12608 SignatureInstances <> instance_translate def
+R12389:12401 _luna_instance_conversion <> instance_conv ind
+R12410:12414 TypeRules <> TPair constr
+R12490:12493 TypeRules <> TSnd constr
+R12496:12499 TypeRules <> TApp constr
+R12536:12539 TypeRules <> TVar constr
+R12502:12505 TypeRules <> lift def
+R12512:12529 SignatureInstances <> instance_translate def
+R12425:12428 TypeRules <> TFst constr
+R12431:12434 TypeRules <> TApp constr
+R12471:12474 TypeRules <> TVar constr
+R12437:12440 TypeRules <> lift def
+R12447:12464 SignatureInstances <> instance_translate def
+R12554:12558 TypeRules <> TPair constr
+R12635:12638 TypeRules <> TSnd constr
+R12641:12644 TypeRules <> TApp constr
+R12682:12685 TypeRules <> TVar constr
+R12647:12650 TypeRules <> lift def
+R12657:12674 SignatureInstances <> instance_translate def
+R12569:12572 TypeRules <> TFst constr
+R12575:12578 TypeRules <> TApp constr
+R12616:12619 TypeRules <> TVar constr
+R12581:12584 TypeRules <> lift def
+R12591:12608 SignatureInstances <> instance_translate def
+R12706:12712 _luna_instance_conversion <> ic_map2 thm
+binder 12719:12719 <> a:267
+binder 12721:12721 <> b:268
+R12726:12730 TypeRules <> TPair constr
+R12766:12769 TypeRules <> TSnd constr
+R12772:12775 TypeRules <> TApp constr
+R12780:12783 TypeRules <> TVar constr
+R12777:12777 _luna_instance_conversion <> b:268 var
+R12741:12744 TypeRules <> TFst constr
+R12747:12750 TypeRules <> TApp constr
+R12755:12758 TypeRules <> TVar constr
+R12752:12752 _luna_instance_conversion <> a:267 var
+R12706:12712 _luna_instance_conversion <> ic_map2 thm
+binder 12719:12719 <> a:269
+binder 12721:12721 <> b:270
+R12726:12730 TypeRules <> TPair constr
+R12766:12769 TypeRules <> TSnd constr
+R12772:12775 TypeRules <> TApp constr
+R12780:12783 TypeRules <> TVar constr
+R12777:12777 _luna_instance_conversion <> b:270 var
+R12741:12744 TypeRules <> TFst constr
+R12747:12750 TypeRules <> TApp constr
+R12755:12758 TypeRules <> TVar constr
+R12752:12752 _luna_instance_conversion <> a:269 var
+R12823:12830 Progress <> fs_pair1 constr
+R12823:12830 Progress <> fs_pair1 constr
+R12839:12844 Progress <> fs_fst constr
+R12839:12844 Progress <> fs_fst constr
+R12853:12859 Progress <> fs_app1 constr
+R12853:12859 Progress <> fs_app1 constr
+R12903:12910 Progress <> fs_pair2 constr
+R12903:12910 Progress <> fs_pair2 constr
+R12919:12924 Progress <> fs_snd constr
+R12919:12924 Progress <> fs_snd constr
+R12933:12939 Progress <> fs_app1 constr
+R12933:12939 Progress <> fs_app1 constr
+R12983:12989 _parent_instance_pruning <> pt_pair constr
+R12983:12989 _parent_instance_pruning <> pt_pair constr
+R13006:13011 _parent_instance_pruning <> pt_fst constr
+R13006:13011 _parent_instance_pruning <> pt_fst constr
+R13020:13025 _parent_instance_pruning <> pt_app constr
+R13020:13025 _parent_instance_pruning <> pt_app constr
+R13066:13080 _parent_instance_pruning <> prune_term_refl thm
+R13066:13080 _parent_instance_pruning <> prune_term_refl thm
+R13101:13115 _parent_instance_pruning <> prune_term_refl thm
+R13101:13115 _parent_instance_pruning <> prune_term_refl thm
+R13151:13157 _parent_instance_pruning <> pt_pair constr
+R13151:13157 _parent_instance_pruning <> pt_pair constr
+R13175:13189 _parent_instance_pruning <> prune_term_refl thm
+R13175:13189 _parent_instance_pruning <> prune_term_refl thm
+R13209:13214 _parent_instance_pruning <> pt_snd constr
+R13209:13214 _parent_instance_pruning <> pt_snd constr
+R13223:13228 _parent_instance_pruning <> pt_app constr
+R13223:13228 _parent_instance_pruning <> pt_app constr
+R13269:13283 _parent_instance_pruning <> prune_term_refl thm
+R13269:13283 _parent_instance_pruning <> prune_term_refl thm
+R13328:13333 _luna_instance_conversion <> ic_map thm
+binder 13340:13340 <> p:271
+R13345:13348 TypeRules <> TLam constr
+R13351:13354 TypeRules <> TApp constr
+R13366:13369 TypeRules <> TVar constr
+R13357:13360 TypeRules <> TMuS constr
+R13362:13362 _luna_instance_conversion <> p:271 var
+R13328:13333 _luna_instance_conversion <> ic_map thm
+binder 13340:13340 <> p:272
+R13345:13348 TypeRules <> TLam constr
+R13351:13354 TypeRules <> TApp constr
+R13366:13369 TypeRules <> TVar constr
+R13357:13360 TypeRules <> TMuS constr
+R13362:13362 _luna_instance_conversion <> p:272 var
+R13404:13409 Progress <> fs_lam constr
+R13404:13409 Progress <> fs_lam constr
+R13418:13424 Progress <> fs_app1 constr
+R13418:13424 Progress <> fs_app1 constr
+R13433:13438 Progress <> fs_mus constr
+R13433:13438 Progress <> fs_mus constr
+R13478:13483 _parent_instance_pruning <> pt_lam constr
+R13478:13483 _parent_instance_pruning <> pt_lam constr
+R13492:13497 _parent_instance_pruning <> pt_app constr
+R13492:13497 _parent_instance_pruning <> pt_app constr
+R13512:13517 _parent_instance_pruning <> pt_mus constr
+R13512:13517 _parent_instance_pruning <> pt_mus constr
+R13544:13558 _parent_instance_pruning <> prune_term_refl thm
+R13544:13558 _parent_instance_pruning <> prune_term_refl thm
+R13602:13617 _luna_instance_conversion <> ic_translate_mus thm

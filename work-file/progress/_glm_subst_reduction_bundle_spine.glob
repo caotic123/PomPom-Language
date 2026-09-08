@@ -1,0 +1,184 @@
+DIGEST 8313bc73f5c51d0159429c6108bf900f
+F_glm_subst_reduction_bundle_spine
+R503:511 TypeRules <> <> lib
+R513:520 Progress <> <> lib
+R538:569 _glm_subst_reduction_bundle_step <> <> lib
+R571:602 _glm_subst_reduction_bundle_eval <> <> lib
+R619:649 _glm_subst_reduction_bundle_sem <> <> lib
+R680:683 Stdlib.Lists.List <> <> lib
+R685:689 Stdlib.Arith.Arith <> <> lib
+R691:693 Stdlib.micromega.Lia <> <> lib
+R703:715 Stdlib.Lists.List ListNotations <> mod
+prf 887:906 <> subst_branch_app_glm
+R922:925 TypeRules <> term ind
+binder 918:918 <> u:1
+R933:935 Corelib.Init.Datatypes <> nat ind
+binder 929:929 <> k:2
+R948:951 TypeRules <> term ind
+binder 939:940 <> Sf:3
+binder 942:942 <> i:4
+binder 944:944 <> c:5
+R1022:1026 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R957:960 TypeRules <> TApp constr
+R1010:1014 TypeRules <> subst def
+R1020:1020 _glm_subst_reduction_bundle_spine <> c:5 var
+R1018:1018 _glm_subst_reduction_bundle_spine <> k:2 var
+R1016:1016 _glm_subst_reduction_bundle_spine <> u:1 var
+R963:970 TypeRules <> branches def
+R973:976 TypeRules <> TApp constr
+R994:998 TypeRules <> subst def
+R1004:1004 _glm_subst_reduction_bundle_spine <> i:4 var
+R1002:1002 _glm_subst_reduction_bundle_spine <> k:2 var
+R1000:1000 _glm_subst_reduction_bundle_spine <> u:1 var
+R979:983 TypeRules <> subst def
+R989:990 _glm_subst_reduction_bundle_spine <> Sf:3 var
+R987:987 _glm_subst_reduction_bundle_spine <> k:2 var
+R985:985 _glm_subst_reduction_bundle_spine <> u:1 var
+R1027:1031 TypeRules <> subst def
+R1038:1041 TypeRules <> TApp constr
+R1066:1066 _glm_subst_reduction_bundle_spine <> c:5 var
+R1044:1051 TypeRules <> branches def
+R1054:1057 TypeRules <> TApp constr
+R1062:1062 _glm_subst_reduction_bundle_spine <> i:4 var
+R1059:1060 _glm_subst_reduction_bundle_spine <> Sf:3 var
+R1035:1035 _glm_subst_reduction_bundle_spine <> k:2 var
+R1033:1033 _glm_subst_reduction_bundle_spine <> u:1 var
+prf 1125:1143 <> spine_phi_subst_glm
+R1172:1175 TypeRules <> term ind
+binder 1157:1158 <> Sf:6
+binder 1160:1160 <> i:7
+binder 1162:1164 <> Phi:8
+binder 1166:1168 <> Psi:9
+R1205:1212 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1183:1191 TypeRules <> spine_phi ind
+R1202:1204 _glm_subst_reduction_bundle_spine <> Psi:9 var
+R1198:1200 _glm_subst_reduction_bundle_spine <> Phi:8 var
+R1196:1196 _glm_subst_reduction_bundle_spine <> i:7 var
+R1193:1194 _glm_subst_reduction_bundle_spine <> Sf:6 var
+R1225:1228 TypeRules <> term ind
+binder 1221:1221 <> u:10
+R1236:1238 Corelib.Init.Datatypes <> nat ind
+binder 1232:1232 <> k:11
+R1257:1266 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1248:1254 TypeRules <> neutral ind
+R1256:1256 _glm_subst_reduction_bundle_spine <> u:10 var
+R1267:1275 TypeRules <> spine_phi ind
+R1323:1327 TypeRules <> subst def
+R1333:1335 _glm_subst_reduction_bundle_spine <> Psi:9 var
+R1331:1331 _glm_subst_reduction_bundle_spine <> k:11 var
+R1329:1329 _glm_subst_reduction_bundle_spine <> u:10 var
+R1307:1311 TypeRules <> subst def
+R1317:1319 _glm_subst_reduction_bundle_spine <> Phi:8 var
+R1315:1315 _glm_subst_reduction_bundle_spine <> k:11 var
+R1313:1313 _glm_subst_reduction_bundle_spine <> u:10 var
+R1293:1297 TypeRules <> subst def
+R1303:1303 _glm_subst_reduction_bundle_spine <> i:7 var
+R1301:1301 _glm_subst_reduction_bundle_spine <> k:11 var
+R1299:1299 _glm_subst_reduction_bundle_spine <> u:10 var
+R1278:1282 TypeRules <> subst def
+R1288:1289 _glm_subst_reduction_bundle_spine <> Sf:6 var
+R1286:1286 _glm_subst_reduction_bundle_spine <> k:11 var
+R1284:1284 _glm_subst_reduction_bundle_spine <> u:10 var
+R1564:1570 TypeRules <> sph_nil constr
+R1573:1577 TypeRules <> subst def
+R1588:1592 TypeRules <> subst def
+R1622:1626 TypeRules <> subst def
+R1639:1643 TypeRules <> subst def
+R1564:1570 TypeRules <> sph_nil constr
+R1573:1577 TypeRules <> subst def
+R1588:1592 TypeRules <> subst def
+R1622:1626 TypeRules <> subst def
+R1639:1643 TypeRules <> subst def
+R1665:1678 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R1665:1678 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R1727:1734 TypeRules <> sph_keep constr
+R1737:1741 TypeRules <> subst def
+R1752:1756 TypeRules <> subst def
+R1766:1770 TypeRules <> subst def
+R1804:1808 TypeRules <> subst def
+R1818:1822 TypeRules <> subst def
+R1832:1836 TypeRules <> subst def
+R1870:1874 TypeRules <> subst def
+R1727:1734 TypeRules <> sph_keep constr
+R1737:1741 TypeRules <> subst def
+R1752:1756 TypeRules <> subst def
+R1766:1770 TypeRules <> subst def
+R1804:1808 TypeRules <> subst def
+R1818:1822 TypeRules <> subst def
+R1832:1836 TypeRules <> subst def
+R1870:1874 TypeRules <> subst def
+R1901:1914 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R1901:1914 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R1988:1995 TypeRules <> sph_drop constr
+R1998:2002 TypeRules <> subst def
+R2013:2017 TypeRules <> subst def
+R2027:2031 TypeRules <> subst def
+R2065:2069 TypeRules <> subst def
+R2079:2083 TypeRules <> subst def
+R2093:2097 TypeRules <> subst def
+R2131:2135 TypeRules <> subst def
+R1988:1995 TypeRules <> sph_drop constr
+R1998:2002 TypeRules <> subst def
+R2013:2017 TypeRules <> subst def
+R2027:2031 TypeRules <> subst def
+R2065:2069 TypeRules <> subst def
+R2079:2083 TypeRules <> subst def
+R2093:2097 TypeRules <> subst def
+R2131:2135 TypeRules <> subst def
+R2162:2175 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2162:2175 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2207:2226 _glm_subst_reduction_bundle_spine <> subst_branch_app_glm thm
+R2207:2226 _glm_subst_reduction_bundle_spine <> subst_branch_app_glm thm
+R2207:2226 _glm_subst_reduction_bundle_spine <> subst_branch_app_glm thm
+R2242:2263 _glm_subst_reduction_bundle_sem <> desc_against_subst_glm thm
+R2242:2263 _glm_subst_reduction_bundle_sem <> desc_against_subst_glm thm
+R2338:2348 TypeRules <> sph_neutral constr
+R2351:2355 TypeRules <> subst def
+R2366:2370 TypeRules <> subst def
+R2404:2408 TypeRules <> subst def
+R2421:2425 TypeRules <> subst def
+R2338:2348 TypeRules <> sph_neutral constr
+R2351:2355 TypeRules <> subst def
+R2366:2370 TypeRules <> subst def
+R2404:2408 TypeRules <> subst def
+R2421:2425 TypeRules <> subst def
+R2452:2465 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2452:2465 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2496:2512 _glm_subst_reduction_bundle_sem <> neutral_subst_glm thm
+R2496:2512 _glm_subst_reduction_bundle_sem <> neutral_subst_glm thm
+R2588:2591 TypeRules <> term ind
+binder 2573:2574 <> Sf:12
+binder 2576:2576 <> i:13
+binder 2578:2580 <> Phi:14
+binder 2582:2584 <> Psi:15
+R2620:2627 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2598:2606 TypeRules <> spine_phi ind
+R2617:2619 _glm_subst_reduction_bundle_spine <> Psi:15 var
+R2613:2615 _glm_subst_reduction_bundle_spine <> Phi:14 var
+R2611:2611 _glm_subst_reduction_bundle_spine <> i:13 var
+R2608:2609 _glm_subst_reduction_bundle_spine <> Sf:12 var
+R2640:2643 TypeRules <> term ind
+binder 2636:2636 <> u:16
+R2651:2653 Corelib.Init.Datatypes <> nat ind
+binder 2647:2647 <> k:17
+R2672:2681 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2663:2669 TypeRules <> neutral ind
+R2671:2671 _glm_subst_reduction_bundle_spine <> u:16 var
+R2682:2690 TypeRules <> spine_phi ind
+R2738:2742 TypeRules <> subst def
+R2748:2750 _glm_subst_reduction_bundle_spine <> Psi:15 var
+R2746:2746 _glm_subst_reduction_bundle_spine <> k:17 var
+R2744:2744 _glm_subst_reduction_bundle_spine <> u:16 var
+R2722:2726 TypeRules <> subst def
+R2732:2734 _glm_subst_reduction_bundle_spine <> Phi:14 var
+R2730:2730 _glm_subst_reduction_bundle_spine <> k:17 var
+R2728:2728 _glm_subst_reduction_bundle_spine <> u:16 var
+R2708:2712 TypeRules <> subst def
+R2718:2718 _glm_subst_reduction_bundle_spine <> i:13 var
+R2716:2716 _glm_subst_reduction_bundle_spine <> k:17 var
+R2714:2714 _glm_subst_reduction_bundle_spine <> u:16 var
+R2693:2697 TypeRules <> subst def
+R2703:2704 _glm_subst_reduction_bundle_spine <> Sf:12 var
+R2701:2701 _glm_subst_reduction_bundle_spine <> k:17 var
+R2699:2699 _glm_subst_reduction_bundle_spine <> u:16 var
+R2542:2560 _glm_subst_reduction_bundle_spine <> spine_phi_subst_glm thm

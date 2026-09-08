@@ -1,0 +1,123 @@
+DIGEST eccb40fd55217bbda8b9d1b7c6c91fe3
+F_parent_phi_erase_sort_factor
+R144:151 Progress <> <> lib
+R153:163 _tmp_epstep <> <> lib
+R165:183 _work_mixed_closure <> <> lib
+R185:195 _work_cjoin <> <> lib
+R199:220 _work_cstep_invariants <> <> lib
+R222:247 _glm_injectivity_close_rep <> <> lib
+R251:280 _parent_phi_erase_sort_algebra <> <> lib
+R282:310 _parent_phi_erase_sort_direct <> <> lib
+R340:343 Stdlib.Lists.List <> <> lib
+R353:365 Stdlib.Lists.List ListNotations <> mod
+R367:375 TypeRules <> <> mod
+def 390:419 <> phi_erase_pstep_reflect_parent
+binder 440:440 <> t:1
+binder 442:442 <> u:2
+R466:473 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R445:449 Progress <> pstep ind
+R452:460 Progress <> phi_erase def
+R462:462 _parent_phi_erase_sort_factor <> t:1 var
+R465:465 _parent_phi_erase_sort_factor <> u:2 var
+R474:480 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R483:484 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 481:482 <> t':3
+R495:498 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R485:489 Progress <> pstep ind
+R491:491 _parent_phi_erase_sort_factor <> t:1 var
+R493:494 _parent_phi_erase_sort_factor <> t':3 var
+R511:513 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R499:507 Progress <> phi_erase def
+R509:510 _parent_phi_erase_sort_factor <> t':3 var
+R514:514 _parent_phi_erase_sort_factor <> u:2 var
+def 529:567 <> phi_erase_eta_step_sort_backward_parent
+binder 588:588 <> t:4
+binder 590:590 <> u:5
+binder 592:592 <> j:6
+R621:624 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R599:604 _tmp_epstep <> epstep ind
+R607:615 Progress <> phi_erase def
+R617:617 _parent_phi_erase_sort_factor <> t:4 var
+R620:620 _parent_phi_erase_sort_factor <> u:5 var
+R641:648 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R625:628 TypeRules <> conv ind
+R633:637 TypeRules <> TSort constr
+R639:639 _parent_phi_erase_sort_factor <> j:6 var
+R630:630 _parent_phi_erase_sort_factor <> u:5 var
+R649:652 TypeRules <> conv ind
+R657:661 TypeRules <> TSort constr
+R663:663 _parent_phi_erase_sort_factor <> j:6 var
+R654:654 _parent_phi_erase_sort_factor <> t:4 var
+prf 674:707 <> rtc_pstep_phi_erase_reflect_parent
+R745:752 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R715:744 _parent_phi_erase_sort_factor <> phi_erase_pstep_reflect_parent def
+binder 760:760 <> t:7
+binder 762:762 <> u:8
+R790:797 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R765:767 Progress <> rtc ind
+R789:789 _parent_phi_erase_sort_factor <> u:8 var
+R776:784 Progress <> phi_erase def
+R786:786 _parent_phi_erase_sort_factor <> t:7 var
+R769:773 Progress <> pstep ind
+R798:804 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R807:808 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 805:806 <> t':9
+R823:826 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R809:811 Progress <> rtc ind
+R821:822 _parent_phi_erase_sort_factor <> t':9 var
+R819:819 _parent_phi_erase_sort_factor <> t:7 var
+R813:817 Progress <> pstep ind
+R839:841 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R827:835 Progress <> phi_erase def
+R837:838 _parent_phi_erase_sort_factor <> t':9 var
+R842:842 _parent_phi_erase_sort_factor <> u:8 var
+R884:892 Progress <> phi_erase def
+R884:892 Progress <> phi_erase def
+R1005:1012 Progress <> rtc_refl constr
+R1005:1012 Progress <> rtc_refl constr
+R1056:1060 Progress <> pstep ind
+R1063:1071 Progress <> phi_erase def
+R1056:1060 Progress <> pstep ind
+R1063:1071 Progress <> phi_erase def
+R1182:1187 Corelib.Init.Logic <> eq_sym thm
+R1182:1187 Corelib.Init.Logic <> eq_sym thm
+R1244:1251 Progress <> rtc_step constr
+R1244:1251 Progress <> rtc_step constr
+prf 1294:1335 <> phi_erase_sort_endpoint_from_factor_parent
+R1373:1380 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1343:1372 _parent_phi_erase_sort_factor <> phi_erase_pstep_reflect_parent def
+R1420:1427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1381:1419 _parent_phi_erase_sort_factor <> phi_erase_eta_step_sort_backward_parent def
+R1428:1465 _parent_phi_erase_sort_direct <> phi_erase_sort_endpoint_reflect_parent def
+R1517:1525 Progress <> phi_erase def
+R1517:1525 Progress <> phi_erase def
+R1555:1559 TypeRules <> TSort constr
+R1555:1559 TypeRules <> TSort constr
+R1693:1695 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1682:1690 Progress <> phi_erase def
+R1696:1700 TypeRules <> TSort constr
+R1693:1695 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1682:1690 Progress <> phi_erase def
+R1696:1700 TypeRules <> TSort constr
+R1719:1726 Corelib.Init.Logic <> eq_trans thm
+R1736:1741 Corelib.Init.Logic <> eq_sym thm
+R1719:1726 Corelib.Init.Logic <> eq_trans thm
+R1736:1741 Corelib.Init.Logic <> eq_sym thm
+R1784:1813 _parent_phi_erase_sort_algebra <> phi_erase_sort_preimage_parent thm
+R1784:1813 _parent_phi_erase_sort_algebra <> phi_erase_sort_preimage_parent thm
+R1854:1860 TypeRules <> cv_refl constr
+R1854:1860 TypeRules <> cv_refl constr
+R1950:1983 _parent_phi_erase_sort_factor <> rtc_pstep_phi_erase_reflect_parent thm
+R1950:1983 _parent_phi_erase_sort_factor <> rtc_pstep_phi_erase_reflect_parent thm
+R2041:2048 TypeRules <> cv_trans constr
+R2041:2048 TypeRules <> cv_trans constr
+R2065:2078 _glm_injectivity_close_rep <> rtc_pstep_conv thm
+R2065:2078 _glm_injectivity_close_rep <> rtc_pstep_conv thm
+R2319:2326 TypeRules <> cv_trans constr
+R2319:2326 TypeRules <> cv_trans constr
+R2346:2360 _glm_injectivity_close_rep <> rtc_epstep_conv thm
+R2346:2360 _glm_injectivity_close_rep <> rtc_epstep_conv thm
+R2393:2406 _glm_injectivity_close_rep <> rtc_cstep_conv thm
+R2393:2406 _glm_injectivity_close_rep <> rtc_cstep_conv thm
+R2444:2477 _parent_phi_erase_sort_factor <> rtc_pstep_phi_erase_reflect_parent thm
+R2498:2539 _parent_phi_erase_sort_factor <> phi_erase_sort_endpoint_from_factor_parent thm

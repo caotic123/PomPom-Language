@@ -1,0 +1,58 @@
+DIGEST 7ba7c0d33c42ad3fb79267085f26063e
+F_glm_subst_reduction_bundle_eval
+R178:186 TypeRules <> <> lib
+R188:195 Progress <> <> lib
+R213:244 _glm_subst_reduction_bundle_step <> <> lib
+R275:278 Stdlib.Lists.List <> <> lib
+R280:284 Stdlib.Arith.Arith <> <> lib
+R286:288 Stdlib.micromega.Lia <> <> lib
+R298:310 Stdlib.Lists.List ListNotations <> mod
+prf 322:335 <> eval_subst_glm
+binder 346:346 <> t:1
+binder 348:348 <> v:2
+R359:362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R351:354 TypeRules <> eval ind
+R358:358 _glm_subst_reduction_bundle_eval <> v:2 var
+R356:356 _glm_subst_reduction_bundle_eval <> t:1 var
+binder 370:370 <> u:3
+binder 372:372 <> k:4
+R379:382 TypeRules <> eval ind
+R399:403 TypeRules <> subst def
+R409:409 _glm_subst_reduction_bundle_eval <> v:2 var
+R407:407 _glm_subst_reduction_bundle_eval <> k:4 var
+R405:405 _glm_subst_reduction_bundle_eval <> u:3 var
+R385:389 TypeRules <> subst def
+R395:395 _glm_subst_reduction_bundle_eval <> t:1 var
+R393:393 _glm_subst_reduction_bundle_eval <> k:4 var
+R391:391 _glm_subst_reduction_bundle_eval <> u:3 var
+R519:525 TypeRules <> ev_refl constr
+R519:525 TypeRules <> ev_refl constr
+R557:563 TypeRules <> ev_step constr
+R557:563 TypeRules <> ev_step constr
+R579:592 _glm_subst_reduction_bundle_step <> step_subst_glm thm
+R579:592 _glm_subst_reduction_bundle_step <> step_subst_glm thm
+def 726:750 <> eval_subst_compatible_glm
+R776:779 TypeRules <> term ind
+binder 772:772 <> u:5
+R787:789 Corelib.Init.Datatypes <> nat ind
+binder 783:783 <> k:6
+R799:802 TypeRules <> term ind
+binder 793:793 <> t:7
+binder 795:795 <> v:8
+R818:821 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R810:813 TypeRules <> eval ind
+R817:817 _glm_subst_reduction_bundle_eval <> v:8 var
+R815:815 _glm_subst_reduction_bundle_eval <> t:7 var
+R822:825 TypeRules <> eval ind
+R842:846 TypeRules <> subst def
+R852:852 _glm_subst_reduction_bundle_eval <> v:8 var
+R850:850 _glm_subst_reduction_bundle_eval <> k:6 var
+R848:848 _glm_subst_reduction_bundle_eval <> u:5 var
+R828:832 TypeRules <> subst def
+R838:838 _glm_subst_reduction_bundle_eval <> t:7 var
+R836:836 _glm_subst_reduction_bundle_eval <> k:6 var
+R834:834 _glm_subst_reduction_bundle_eval <> u:5 var
+prf 865:895 <> eval_subst_compatible_glm_holds
+R899:923 _glm_subst_reduction_bundle_eval <> eval_subst_compatible_glm def
+R960:973 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R960:973 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm

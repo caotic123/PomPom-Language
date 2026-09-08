@@ -1,0 +1,38 @@
+DIGEST 0282ee8e873e6978661184bd51125021
+F_glm_mueq_inv
+R27:30 Stdlib.Lists.List <> <> lib
+R48:57 _luna_mueq <> <> lib
+R67:79 Stdlib.Lists.List ListNotations <> mod
+R81:89 TypeRules <> <> mod
+prf 99:116 <> mueq_enumt_inv_glm
+binder 127:127 <> E:1
+binder 129:130 <> E':2
+R164:167 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R137:140 _luna_mueq <> mueq ind
+R143:148 TypeRules <> TEnumT constr
+R150:150 _glm_mueq_inv <> E:1 var
+R154:159 TypeRules <> TEnumT constr
+R161:162 _glm_mueq_inv <> E':2 var
+R168:171 _luna_mueq <> mueq ind
+R173:173 _glm_mueq_inv <> E:1 var
+R175:176 _glm_mueq_inv <> E':2 var
+prf 247:261 <> mueq_pi_inv_glm
+binder 272:272 <> A:3
+binder 274:275 <> A':4
+binder 277:277 <> B:5
+binder 279:280 <> B':6
+R313:316 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R287:290 _luna_mueq <> mueq ind
+R293:295 TypeRules <> TPi constr
+R299:299 _glm_mueq_inv <> B:5 var
+R297:297 _glm_mueq_inv <> A:3 var
+R303:305 TypeRules <> TPi constr
+R310:311 _glm_mueq_inv <> B':6 var
+R307:308 _glm_mueq_inv <> A':4 var
+R326:329 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R317:320 _luna_mueq <> mueq ind
+R322:322 _glm_mueq_inv <> A:3 var
+R324:325 _glm_mueq_inv <> A':4 var
+R330:333 _luna_mueq <> mueq ind
+R335:335 _glm_mueq_inv <> B:5 var
+R337:338 _glm_mueq_inv <> B':6 var

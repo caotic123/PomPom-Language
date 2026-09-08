@@ -1,0 +1,215 @@
+DIGEST 3fc9e2dbbd26d92d2d0409a76737215d
+F_parent_finish_phi_step
+R15:22 Progress <> <> lib
+R24:38 SignatureLemmas <> <> lib
+R41:68 _parent_finish_cjoin_context <> <> lib
+R70:96 _parent_finish_against_step <> <> lib
+R99:131 _luna_finish_mus_branch_transport <> <> lib
+R133:157 _luna_finish_prune_mem_or <> <> lib
+R160:187 _luna_finish_pruned_coverage <> <> lib
+R189:216 _luna_finish_erased_coverage <> <> lib
+R246:249 Stdlib.Lists.List <> <> lib
+R251:253 Stdlib.micromega.Lia <> <> lib
+R263:275 Stdlib.Lists.List ListNotations <> mod
+R277:285 TypeRules <> <> mod
+R287:306 Progress _work_cjoin <> mod
+R308:338 Progress _work_cstep_invariants <> mod
+prf 348:389 <> converted_branch_dead_payload_steps_parent
+binder 400:400 <> N:1
+binder 402:403 <> S0:2
+binder 405:406 <> i0:3
+binder 408:409 <> S1:4
+binder 411:412 <> i1:5
+binder 414:414 <> c:6
+binder 416:416 <> d:7
+binder 418:419 <> xs:8
+binder 421:421 <> X:9
+R450:452 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R425:447 _parent_finish_against_step <> bounded_progress_parent def
+R449:449 _parent_finish_phi_step <> N:1 var
+R464:468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R461:462 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R453:457 Progress <> tsize def
+R459:460 _parent_finish_phi_step <> xs:8 var
+R463:463 _parent_finish_phi_step <> N:1 var
+R519:523 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R469:473 TypeRules <> check ind
+R481:487 TypeRules <> TInterp constr
+R517:517 _parent_finish_phi_step <> X:9 var
+R489:492 TypeRules <> TApp constr
+R515:515 _parent_finish_phi_step <> c:6 var
+R494:501 TypeRules <> branches def
+R503:506 TypeRules <> TApp constr
+R511:512 _parent_finish_phi_step <> i0:3 var
+R508:509 _parent_finish_phi_step <> S0:2 var
+R478:479 _parent_finish_phi_step <> xs:8 var
+R475:476 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R562:566 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R524:527 TypeRules <> conv ind
+R546:549 TypeRules <> TApp constr
+R559:560 _parent_finish_phi_step <> i1:5 var
+R551:554 TypeRules <> TMuS constr
+R556:557 _parent_finish_phi_step <> S1:4 var
+R529:532 TypeRules <> TApp constr
+R542:543 _parent_finish_phi_step <> i0:3 var
+R534:537 TypeRules <> TMuS constr
+R539:540 _parent_finish_phi_step <> S0:2 var
+R598:602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R567:571 Progress _work_cjoin cjoin def
+R573:581 Progress <> phi_erase def
+R583:583 _parent_finish_phi_step <> c:6 var
+R586:594 Progress <> phi_erase def
+R596:596 _parent_finish_phi_step <> d:7 var
+R644:648 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R603:614 TypeRules <> desc_against ind
+R616:619 TypeRules <> TApp constr
+R642:642 _parent_finish_phi_step <> d:7 var
+R621:628 TypeRules <> branches def
+R630:633 TypeRules <> TApp constr
+R638:639 _parent_finish_phi_step <> i1:5 var
+R635:636 _parent_finish_phi_step <> S1:4 var
+R649:655 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R659:659 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 656:658 <> xs':10
+R660:663 TypeRules <> step ind
+R668:670 _parent_finish_phi_step <> xs':10 var
+R665:666 _parent_finish_phi_step <> xs:8 var
+R743:773 _parent_finish_against_step <> desc_against_erased_step_parent thm
+R743:773 _parent_finish_against_step <> desc_against_erased_step_parent thm
+R806:814 Progress <> phi_erase def
+R824:842 _parent_finish_cjoin_context <> cjoin_interp_parent thm
+R852:861 Progress _work_cjoin cjoin_refl thm
+R824:842 _parent_finish_cjoin_context <> cjoin_interp_parent thm
+R852:861 Progress _work_cjoin cjoin_refl thm
+R873:883 Progress _work_cjoin cjoin_trans thm
+R873:883 Progress _work_cjoin cjoin_trans thm
+R895:919 _luna_finish_mus_branch_transport <> mus_branch_transport_luna thm
+R895:919 _luna_finish_mus_branch_transport <> mus_branch_transport_luna thm
+R952:967 _parent_finish_cjoin_context <> cjoin_app_parent thm
+R976:985 Progress _work_cjoin cjoin_refl thm
+R952:967 _parent_finish_cjoin_context <> cjoin_app_parent thm
+R976:985 Progress _work_cjoin cjoin_refl thm
+prf 1013:1044 <> direct_phi_spine_progress_parent
+binder 1055:1055 <> N:11
+binder 1057:1058 <> S0:12
+binder 1060:1061 <> i0:13
+binder 1063:1064 <> S1:14
+binder 1066:1067 <> S2:15
+binder 1069:1069 <> i:16
+binder 1071:1071 <> c:17
+binder 1073:1073 <> n:18
+binder 1075:1076 <> xs:19
+binder 1078:1078 <> X:20
+binder 1081:1084 <> Phi1:21
+binder 1086:1089 <> Phi2:22
+binder 1091:1094 <> Psi1:23
+binder 1096:1099 <> Psi2:24
+binder 1101:1102 <> bs:25
+R1131:1133 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1106:1128 _parent_finish_against_step <> bounded_progress_parent def
+R1130:1130 _parent_finish_phi_step <> N:11 var
+R1145:1149 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1142:1143 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1134:1138 Progress <> tsize def
+R1140:1141 _parent_finish_phi_step <> xs:19 var
+R1144:1144 _parent_finish_phi_step <> N:11 var
+R1200:1204 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1150:1154 TypeRules <> check ind
+R1162:1168 TypeRules <> TInterp constr
+R1198:1198 _parent_finish_phi_step <> X:20 var
+R1170:1173 TypeRules <> TApp constr
+R1196:1196 _parent_finish_phi_step <> c:17 var
+R1175:1182 TypeRules <> branches def
+R1184:1187 TypeRules <> TApp constr
+R1192:1193 _parent_finish_phi_step <> i0:13 var
+R1189:1190 _parent_finish_phi_step <> S0:12 var
+R1159:1160 _parent_finish_phi_step <> xs:19 var
+R1156:1157 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1242:1246 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1205:1208 TypeRules <> conv ind
+R1227:1230 TypeRules <> TApp constr
+R1240:1240 _parent_finish_phi_step <> i:16 var
+R1232:1235 TypeRules <> TMuS constr
+R1237:1238 _parent_finish_phi_step <> S1:14 var
+R1210:1213 TypeRules <> TApp constr
+R1223:1224 _parent_finish_phi_step <> i0:13 var
+R1215:1218 TypeRules <> TMuS constr
+R1220:1221 _parent_finish_phi_step <> S0:12 var
+R1259:1261 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1247:1254 TypeRules <> enum_pos ind
+R1258:1258 _parent_finish_phi_step <> n:18 var
+R1256:1256 _parent_finish_phi_step <> c:17 var
+R1300:1304 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1262:1267 Corelib.Lists.ListDef <> Forall ind
+R1298:1299 _parent_finish_phi_step <> bs:25 var
+binder 1273:1273 <> d:26
+R1276:1282 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1284:1284 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1283:1283 <> m:27
+R1285:1292 TypeRules <> enum_pos ind
+R1296:1296 _parent_finish_phi_step <> m:27 var
+R1294:1294 _parent_finish_phi_step <> d:26 var
+R1321:1323 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1305:1313 TypeRules <> spine_mem ind
+R1317:1320 _parent_finish_phi_step <> Phi1:21 var
+R1315:1315 _parent_finish_phi_step <> c:17 var
+R1348:1352 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1324:1332 TypeRules <> spine_phi ind
+R1344:1347 _parent_finish_phi_step <> Psi1:23 var
+R1339:1342 _parent_finish_phi_step <> Phi1:21 var
+R1337:1337 _parent_finish_phi_step <> i:16 var
+R1334:1335 _parent_finish_phi_step <> S1:14 var
+R1377:1379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1353:1361 TypeRules <> spine_phi ind
+R1373:1376 _parent_finish_phi_step <> Psi2:24 var
+R1368:1371 _parent_finish_phi_step <> Phi2:22 var
+R1366:1366 _parent_finish_phi_step <> i:16 var
+R1363:1364 _parent_finish_phi_step <> S2:15 var
+R1394:1396 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1380:1383 TypeRules <> conv ind
+R1390:1393 _parent_finish_phi_step <> Psi2:24 var
+R1385:1388 _parent_finish_phi_step <> Psi1:23 var
+R1411:1415 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1397:1402 TypeRules <> covers ind
+R1407:1410 _parent_finish_phi_step <> Phi2:22 var
+R1404:1405 _parent_finish_phi_step <> bs:25 var
+R1416:1416 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1448:1451 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1417:1423 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1425:1425 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1424:1424 <> d:28
+R1433:1435 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1426:1427 Stdlib.Lists.List <> In def
+R1431:1432 _parent_finish_phi_step <> bs:25 var
+R1429:1429 _parent_finish_phi_step <> d:28 var
+R1436:1443 TypeRules <> enum_pos ind
+R1447:1447 _parent_finish_phi_step <> n:18 var
+R1445:1445 _parent_finish_phi_step <> d:28 var
+R1452:1458 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1462:1462 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1459:1461 <> xs':29
+R1463:1466 TypeRules <> step ind
+R1471:1473 _parent_finish_phi_step <> xs':29 var
+R1468:1469 _parent_finish_phi_step <> xs:19 var
+R1603:1623 _luna_finish_prune_mem_or <> spine_phi_mem_or_luna thm
+R1656:1662 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1666:1666 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1663:1665 <> xs':30
+R1667:1670 TypeRules <> step ind
+R1675:1677 _parent_finish_phi_step <> xs':30 var
+R1603:1623 _luna_finish_prune_mem_or <> spine_phi_mem_or_luna thm
+R1656:1662 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1666:1666 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1663:1665 <> xs':31
+R1667:1670 TypeRules <> step ind
+R1675:1677 _parent_finish_phi_step <> xs':31 var
+R1723:1764 _parent_finish_phi_step <> converted_branch_dead_payload_steps_parent thm
+R1819:1832 Progress _work_cjoin conv_phi_cjoin thm
+R1723:1764 _parent_finish_phi_step <> converted_branch_dead_payload_steps_parent thm
+R1819:1832 Progress _work_cjoin conv_phi_cjoin thm
+R1871:1894 _luna_finish_erased_coverage <> erased_spine_covered_pos thm
+R1871:1894 _luna_finish_erased_coverage <> erased_spine_covered_pos thm
+R1958:1973 _luna_finish_pruned_coverage <> spine_phi_covers thm
+R1958:1973 _luna_finish_pruned_coverage <> spine_phi_covers thm
+R2031:2072 _parent_finish_phi_step <> converted_branch_dead_payload_steps_parent thm
+R2093:2124 _parent_finish_phi_step <> direct_phi_spine_progress_parent thm

@@ -1,0 +1,78 @@
+DIGEST 0bf20cad3de68cafce9babafd9a97059
+F_luna_repair_dead_payload
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R57:59 Stdlib.micromega.Lia <> <> lib
+R69:81 Stdlib.Lists.List ListNotations <> mod
+R83:91 TypeRules <> <> mod
+R93:112 Progress _tmp_epstep <> mod
+R114:141 Progress _work_mixed_closure <> mod
+R145:164 Progress _work_cjoin <> mod
+R166:196 Progress _work_cstep_invariants <> mod
+R215:237 _luna_repair_sigma_join <> <> lib
+R239:262 _luna_repair_pair_origin <> <> lib
+prf 272:305 <> erased_sigma_cjoin_components_luna
+binder 316:316 <> A:1
+binder 318:318 <> B:2
+binder 320:321 <> A':3
+binder 323:324 <> B':4
+R388:395 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R331:335 Progress _work_cjoin cjoin def
+R338:346 Progress <> phi_erase def
+R349:354 TypeRules <> TSigma constr
+R358:358 _luna_repair_dead_payload <> B:2 var
+R356:356 _luna_repair_dead_payload <> A:1 var
+R363:371 Progress <> phi_erase def
+R374:379 TypeRules <> TSigma constr
+R384:385 _luna_repair_dead_payload <> B':4 var
+R381:382 _luna_repair_dead_payload <> A':3 var
+R430:437 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R396:400 Progress _work_cjoin cjoin def
+R403:411 Progress <> phi_erase def
+R413:413 _luna_repair_dead_payload <> A:1 var
+R417:425 Progress <> phi_erase def
+R427:428 _luna_repair_dead_payload <> A':3 var
+R438:442 Progress _work_cjoin cjoin def
+R445:453 Progress <> phi_erase def
+R455:455 _luna_repair_dead_payload <> B:2 var
+R459:467 Progress <> phi_erase def
+R469:470 _luna_repair_dead_payload <> B':4 var
+R510:518 Progress <> phi_erase def
+R535:554 _luna_repair_sigma_join <> cjoin_sigma_inv_luna thm
+R535:554 _luna_repair_sigma_join <> cjoin_sigma_inv_luna thm
+prf 578:607 <> checked_pair_sigma_origin_luna
+binder 618:618 <> a:5
+binder 620:620 <> b:6
+binder 622:622 <> T:7
+R651:658 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R629:633 TypeRules <> check ind
+R650:650 _luna_repair_dead_payload <> T:7 var
+R639:643 TypeRules <> TPair constr
+R647:647 _luna_repair_dead_payload <> b:6 var
+R645:645 _luna_repair_dead_payload <> a:5 var
+R635:636 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R659:665 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R669:670 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 666:666 <> A:8
+binder 668:668 <> B:9
+R683:686 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R671:675 TypeRules <> check ind
+R682:682 _luna_repair_dead_payload <> A:8 var
+R680:680 _luna_repair_dead_payload <> a:5 var
+R677:678 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R711:720 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R687:691 TypeRules <> check ind
+R699:703 TypeRules <> subst def
+R709:709 _luna_repair_dead_payload <> B:9 var
+R705:705 _luna_repair_dead_payload <> a:5 var
+R696:696 _luna_repair_dead_payload <> b:6 var
+R693:694 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R721:724 TypeRules <> conv ind
+R739:739 _luna_repair_dead_payload <> T:7 var
+R727:732 TypeRules <> TSigma constr
+R736:736 _luna_repair_dead_payload <> B:9 var
+R734:734 _luna_repair_dead_payload <> A:8 var
+R763:773 _luna_repair_pair_origin <> pair_origin thm
+R763:773 _luna_repair_pair_origin <> pair_origin thm
+R812:845 _luna_repair_dead_payload <> erased_sigma_cjoin_components_luna thm
+R866:895 _luna_repair_dead_payload <> checked_pair_sigma_origin_luna thm

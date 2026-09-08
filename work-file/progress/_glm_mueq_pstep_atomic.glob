@@ -1,0 +1,280 @@
+DIGEST 93326152534d3aa745046bf634dea2c8
+F_glm_mueq_pstep_atomic
+R1312:1319 Progress <> <> lib
+R1337:1346 _luna_mueq <> <> lib
+R1376:1379 Stdlib.Lists.List <> <> lib
+R1381:1383 Stdlib.micromega.Lia <> <> lib
+R1385:1392 Stdlib.Arith.PeanoNat <> <> lib
+R1402:1414 Stdlib.Lists.List ListNotations <> mod
+R1416:1424 TypeRules <> <> mod
+prf 1898:1914 <> pstep_muapp_shape
+binder 1929:1929 <> S:1
+binder 1931:1931 <> i:2
+binder 1933:1934 <> t':3
+R1963:1972 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1937:1941 Progress <> pstep ind
+R1944:1947 TypeRules <> TApp constr
+R1958:1958 _glm_mueq_pstep_atomic <> i:2 var
+R1950:1953 TypeRules <> TMuS constr
+R1955:1955 _glm_mueq_pstep_atomic <> S:1 var
+R1961:1962 _glm_mueq_pstep_atomic <> t':3 var
+R1973:1979 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1985:1986 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1980:1981 <> S':4
+binder 1983:1984 <> i':5
+R2009:2012 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1989:1991 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1987:1988 _glm_mueq_pstep_atomic <> t':3 var
+R1992:1995 TypeRules <> TApp constr
+R2007:2008 _glm_mueq_pstep_atomic <> i':5 var
+R1998:2001 TypeRules <> TMuS constr
+R2003:2004 _glm_mueq_pstep_atomic <> S':4 var
+R2023:2026 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2013:2017 Progress <> pstep ind
+R2019:2019 _glm_mueq_pstep_atomic <> S:1 var
+R2021:2022 _glm_mueq_pstep_atomic <> S':4 var
+R2027:2031 Progress <> pstep ind
+R2033:2033 _glm_mueq_pstep_atomic <> i:2 var
+R2035:2036 _glm_mueq_pstep_atomic <> i':5 var
+R2174:2178 Progress <> pstep ind
+R2181:2184 TypeRules <> TMuS constr
+R2174:2178 Progress <> pstep ind
+R2181:2184 TypeRules <> TMuS constr
+prf 2589:2605 <> pstep_conv_closed
+binder 2616:2616 <> t:6
+binder 2618:2618 <> u:7
+R2630:2633 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2621:2625 Progress <> pstep ind
+R2627:2627 _glm_mueq_pstep_atomic <> t:6 var
+R2629:2629 _glm_mueq_pstep_atomic <> u:7 var
+R2634:2637 TypeRules <> conv ind
+R2641:2641 _glm_mueq_pstep_atomic <> u:7 var
+R2639:2639 _glm_mueq_pstep_atomic <> t:6 var
+R2657:2666 Progress <> pstep_conv thm
+R2657:2666 Progress <> pstep_conv thm
+prf 2997:3012 <> me_muapp_pstep_l
+binder 3027:3028 <> S1:8
+binder 3030:3031 <> i1:9
+binder 3033:3034 <> S2:10
+binder 3036:3037 <> i2:11
+binder 3039:3040 <> t':12
+R3093:3102 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3049:3052 TypeRules <> conv ind
+R3075:3078 TypeRules <> TApp constr
+R3090:3091 _glm_mueq_pstep_atomic <> i2:11 var
+R3081:3084 TypeRules <> TMuS constr
+R3086:3087 _glm_mueq_pstep_atomic <> S2:10 var
+R3055:3058 TypeRules <> TApp constr
+R3070:3071 _glm_mueq_pstep_atomic <> i1:9 var
+R3061:3064 TypeRules <> TMuS constr
+R3066:3067 _glm_mueq_pstep_atomic <> S1:8 var
+R3131:3140 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3103:3107 Progress <> pstep ind
+R3110:3113 TypeRules <> TApp constr
+R3125:3126 _glm_mueq_pstep_atomic <> i1:9 var
+R3116:3119 TypeRules <> TMuS constr
+R3121:3122 _glm_mueq_pstep_atomic <> S1:8 var
+R3129:3130 _glm_mueq_pstep_atomic <> t':12 var
+R3141:3144 _luna_mueq <> mueq ind
+R3146:3147 _glm_mueq_pstep_atomic <> t':12 var
+R3150:3153 TypeRules <> TApp constr
+R3165:3166 _glm_mueq_pstep_atomic <> i2:11 var
+R3156:3159 TypeRules <> TMuS constr
+R3161:3162 _glm_mueq_pstep_atomic <> S2:10 var
+R3226:3242 _glm_mueq_pstep_atomic <> pstep_muapp_shape thm
+R3226:3242 _glm_mueq_pstep_atomic <> pstep_muapp_shape thm
+R3310:3317 _luna_mueq <> me_muapp constr
+R3310:3317 _luna_mueq <> me_muapp constr
+R3329:3336 TypeRules <> cv_trans constr
+R3344:3347 TypeRules <> TApp constr
+R3350:3353 TypeRules <> TMuS constr
+R3329:3336 TypeRules <> cv_trans constr
+R3344:3347 TypeRules <> TApp constr
+R3350:3353 TypeRules <> TMuS constr
+R3375:3380 TypeRules <> cv_app constr
+R3375:3380 TypeRules <> cv_app constr
+R3395:3400 TypeRules <> cv_sym constr
+R3395:3400 TypeRules <> cv_sym constr
+R3409:3414 TypeRules <> cv_mus constr
+R3409:3414 TypeRules <> cv_mus constr
+R3423:3439 _glm_mueq_pstep_atomic <> pstep_conv_closed thm
+R3423:3439 _glm_mueq_pstep_atomic <> pstep_conv_closed thm
+R3466:3471 TypeRules <> cv_sym constr
+R3466:3471 TypeRules <> cv_sym constr
+R3480:3496 _glm_mueq_pstep_atomic <> pstep_conv_closed thm
+R3480:3496 _glm_mueq_pstep_atomic <> pstep_conv_closed thm
+prf 3614:3629 <> me_muapp_pstep_r
+binder 3644:3645 <> S1:13
+binder 3647:3648 <> i1:14
+binder 3650:3651 <> S2:15
+binder 3653:3654 <> i2:16
+binder 3656:3657 <> t':17
+R3710:3719 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3666:3669 TypeRules <> conv ind
+R3692:3695 TypeRules <> TApp constr
+R3707:3708 _glm_mueq_pstep_atomic <> i2:16 var
+R3698:3701 TypeRules <> TMuS constr
+R3703:3704 _glm_mueq_pstep_atomic <> S2:15 var
+R3672:3675 TypeRules <> TApp constr
+R3687:3688 _glm_mueq_pstep_atomic <> i1:14 var
+R3678:3681 TypeRules <> TMuS constr
+R3683:3684 _glm_mueq_pstep_atomic <> S1:13 var
+R3748:3757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3720:3724 Progress <> pstep ind
+R3727:3730 TypeRules <> TApp constr
+R3742:3743 _glm_mueq_pstep_atomic <> i2:16 var
+R3733:3736 TypeRules <> TMuS constr
+R3738:3739 _glm_mueq_pstep_atomic <> S2:15 var
+R3746:3747 _glm_mueq_pstep_atomic <> t':17 var
+R3758:3761 _luna_mueq <> mueq ind
+R3764:3767 TypeRules <> TApp constr
+R3779:3780 _glm_mueq_pstep_atomic <> i1:14 var
+R3770:3773 TypeRules <> TMuS constr
+R3775:3776 _glm_mueq_pstep_atomic <> S1:13 var
+R3783:3784 _glm_mueq_pstep_atomic <> t':17 var
+R3843:3859 _glm_mueq_pstep_atomic <> pstep_muapp_shape thm
+R3843:3859 _glm_mueq_pstep_atomic <> pstep_muapp_shape thm
+R3927:3934 _luna_mueq <> me_muapp constr
+R3927:3934 _luna_mueq <> me_muapp constr
+R3946:3953 TypeRules <> cv_trans constr
+R3961:3964 TypeRules <> TApp constr
+R3967:3970 TypeRules <> TMuS constr
+R3946:3953 TypeRules <> cv_trans constr
+R3961:3964 TypeRules <> TApp constr
+R3967:3970 TypeRules <> TMuS constr
+R4009:4014 TypeRules <> cv_app constr
+R4009:4014 TypeRules <> cv_app constr
+R4029:4034 TypeRules <> cv_mus constr
+R4029:4034 TypeRules <> cv_mus constr
+R4043:4059 _glm_mueq_pstep_atomic <> pstep_conv_closed thm
+R4043:4059 _glm_mueq_pstep_atomic <> pstep_conv_closed thm
+R4086:4102 _glm_mueq_pstep_atomic <> pstep_conv_closed thm
+R4086:4102 _glm_mueq_pstep_atomic <> pstep_conv_closed thm
+prf 4672:4689 <> me_muapp_pstep_sim
+binder 4704:4705 <> S1:18
+binder 4707:4708 <> i1:19
+binder 4710:4711 <> S2:20
+binder 4713:4714 <> i2:21
+binder 4716:4717 <> t':22
+R4770:4779 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4726:4729 _luna_mueq <> mueq ind
+R4732:4735 TypeRules <> TApp constr
+R4747:4748 _glm_mueq_pstep_atomic <> i1:19 var
+R4738:4741 TypeRules <> TMuS constr
+R4743:4744 _glm_mueq_pstep_atomic <> S1:18 var
+R4752:4755 TypeRules <> TApp constr
+R4767:4768 _glm_mueq_pstep_atomic <> i2:21 var
+R4758:4761 TypeRules <> TMuS constr
+R4763:4764 _glm_mueq_pstep_atomic <> S2:20 var
+R4808:4817 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4780:4784 Progress <> pstep ind
+R4787:4790 TypeRules <> TApp constr
+R4802:4803 _glm_mueq_pstep_atomic <> i1:19 var
+R4793:4796 TypeRules <> TMuS constr
+R4798:4799 _glm_mueq_pstep_atomic <> S1:18 var
+R4806:4807 _glm_mueq_pstep_atomic <> t':22 var
+R4818:4824 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4827:4828 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4825:4826 <> u':23
+R4861:4864 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4829:4831 Progress <> rtc ind
+R4859:4860 _glm_mueq_pstep_atomic <> u':23 var
+R4840:4843 TypeRules <> TApp constr
+R4855:4856 _glm_mueq_pstep_atomic <> i2:21 var
+R4846:4849 TypeRules <> TMuS constr
+R4851:4852 _glm_mueq_pstep_atomic <> S2:20 var
+R4833:4837 Progress <> pstep ind
+R4865:4868 _luna_mueq <> mueq ind
+R4870:4871 _glm_mueq_pstep_atomic <> t':22 var
+R4873:4874 _glm_mueq_pstep_atomic <> u':23 var
+R4931:4934 TypeRules <> TApp constr
+R4937:4940 TypeRules <> TMuS constr
+R4931:4934 TypeRules <> TApp constr
+R4937:4940 TypeRules <> TMuS constr
+R4970:4977 Progress <> rtc_refl constr
+R4970:4977 Progress <> rtc_refl constr
+R4990:5005 _glm_mueq_pstep_atomic <> me_muapp_pstep_l thm
+R4990:5005 _glm_mueq_pstep_atomic <> me_muapp_pstep_l thm
+R5047:5055 _luna_mueq <> mueq_conv thm
+R5047:5055 _luna_mueq <> mueq_conv thm
+prf 5306:5329 <> me_muapp_rtc_pstep_r_gen
+binder 5344:5345 <> t0:24
+binder 5347:5348 <> t':25
+R5366:5369 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5351:5353 Progress <> rtc ind
+R5364:5365 _glm_mueq_pstep_atomic <> t':25 var
+R5361:5362 _glm_mueq_pstep_atomic <> t0:24 var
+R5355:5359 Progress <> pstep ind
+binder 5377:5378 <> S1:26
+binder 5380:5381 <> i1:27
+binder 5383:5384 <> S2:28
+binder 5386:5387 <> i2:29
+R5418:5427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5398:5400 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5396:5397 _glm_mueq_pstep_atomic <> t0:24 var
+R5401:5404 TypeRules <> TApp constr
+R5416:5417 _glm_mueq_pstep_atomic <> i2:29 var
+R5407:5410 TypeRules <> TMuS constr
+R5412:5413 _glm_mueq_pstep_atomic <> S2:28 var
+R5455:5464 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5428:5431 TypeRules <> conv ind
+R5453:5454 _glm_mueq_pstep_atomic <> t0:24 var
+R5434:5437 TypeRules <> TApp constr
+R5449:5450 _glm_mueq_pstep_atomic <> i1:27 var
+R5440:5443 TypeRules <> TMuS constr
+R5445:5446 _glm_mueq_pstep_atomic <> S1:26 var
+R5465:5468 _luna_mueq <> mueq ind
+R5471:5474 TypeRules <> TApp constr
+R5486:5487 _glm_mueq_pstep_atomic <> i1:27 var
+R5477:5480 TypeRules <> TMuS constr
+R5482:5483 _glm_mueq_pstep_atomic <> S1:26 var
+R5490:5491 _glm_mueq_pstep_atomic <> t':25 var
+R5621:5628 _luna_mueq <> me_muapp constr
+R5621:5628 _luna_mueq <> me_muapp constr
+R5671:5687 _glm_mueq_pstep_atomic <> pstep_muapp_shape thm
+R5671:5687 _glm_mueq_pstep_atomic <> pstep_muapp_shape thm
+R5802:5810 _luna_mueq <> mueq_conv thm
+R5802:5810 _luna_mueq <> mueq_conv thm
+R5826:5841 _glm_mueq_pstep_atomic <> me_muapp_pstep_r thm
+R5826:5841 _glm_mueq_pstep_atomic <> me_muapp_pstep_r thm
+prf 5913:5932 <> me_muapp_rtc_pstep_r
+binder 5947:5948 <> S1:30
+binder 5950:5951 <> i1:31
+binder 5953:5954 <> S2:32
+binder 5956:5957 <> i2:33
+binder 5959:5960 <> t':34
+R6013:6022 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5969:5972 TypeRules <> conv ind
+R5995:5998 TypeRules <> TApp constr
+R6010:6011 _glm_mueq_pstep_atomic <> i2:33 var
+R6001:6004 TypeRules <> TMuS constr
+R6006:6007 _glm_mueq_pstep_atomic <> S2:32 var
+R5975:5978 TypeRules <> TApp constr
+R5990:5991 _glm_mueq_pstep_atomic <> i1:31 var
+R5981:5984 TypeRules <> TMuS constr
+R5986:5987 _glm_mueq_pstep_atomic <> S1:30 var
+R6055:6064 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6023:6025 Progress <> rtc ind
+R6053:6054 _glm_mueq_pstep_atomic <> t':34 var
+R6034:6037 TypeRules <> TApp constr
+R6049:6050 _glm_mueq_pstep_atomic <> i2:33 var
+R6040:6043 TypeRules <> TMuS constr
+R6045:6046 _glm_mueq_pstep_atomic <> S2:32 var
+R6027:6031 Progress <> pstep ind
+R6065:6068 _luna_mueq <> mueq ind
+R6071:6074 TypeRules <> TApp constr
+R6086:6087 _glm_mueq_pstep_atomic <> i1:31 var
+R6077:6080 TypeRules <> TMuS constr
+R6082:6083 _glm_mueq_pstep_atomic <> S1:30 var
+R6090:6091 _glm_mueq_pstep_atomic <> t':34 var
+R6146:6169 _glm_mueq_pstep_atomic <> me_muapp_rtc_pstep_r_gen thm
+R6192:6198 Corelib.Init.Logic <> eq_refl constr
+R6146:6169 _glm_mueq_pstep_atomic <> me_muapp_rtc_pstep_r_gen thm
+R6192:6198 Corelib.Init.Logic <> eq_refl constr
+R6273:6289 _glm_mueq_pstep_atomic <> pstep_muapp_shape thm
+R6310:6326 _glm_mueq_pstep_atomic <> pstep_conv_closed thm
+R6347:6362 _glm_mueq_pstep_atomic <> me_muapp_pstep_l thm
+R6383:6398 _glm_mueq_pstep_atomic <> me_muapp_pstep_r thm
+R6419:6436 _glm_mueq_pstep_atomic <> me_muapp_pstep_sim thm
+R6457:6480 _glm_mueq_pstep_atomic <> me_muapp_rtc_pstep_r_gen thm
+R6501:6520 _glm_mueq_pstep_atomic <> me_muapp_rtc_pstep_r thm

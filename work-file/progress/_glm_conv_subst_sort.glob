@@ -1,0 +1,43 @@
+DIGEST 194f7ebfb1a1286d23a1fbbb88c322d9
+F_glm_conv_subst_sort
+R2259:2267 TypeRules <> <> lib
+R2269:2276 Progress <> <> lib
+R2294:2325 _glm_subst_reduction_bundle_step <> <> lib
+R2327:2347 _glm_conv_subst_rigid <> <> lib
+R2378:2381 Stdlib.Lists.List <> <> lib
+R2383:2387 Stdlib.Arith.Arith <> <> lib
+R2389:2391 Stdlib.micromega.Lia <> <> lib
+R2401:2413 Stdlib.Lists.List ListNotations <> mod
+prf 2722:2744 <> conv_subst_sort_gen_glm
+R2763:2766 TypeRules <> term ind
+binder 2757:2757 <> B:1
+binder 2759:2759 <> v:2
+R2777:2784 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2769:2772 TypeRules <> conv ind
+R2776:2776 _glm_conv_subst_sort <> v:2 var
+R2774:2774 _glm_conv_subst_sort <> B:1 var
+R2796:2798 Corelib.Init.Datatypes <> nat ind
+binder 2792:2792 <> j:3
+R2812:2821 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2802:2804 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2801:2801 _glm_conv_subst_sort <> v:2 var
+R2805:2809 TypeRules <> TSort constr
+R2811:2811 _glm_conv_subst_sort <> j:3 var
+R2834:2837 TypeRules <> term ind
+binder 2830:2830 <> a:4
+R2845:2847 Corelib.Init.Datatypes <> nat ind
+binder 2841:2841 <> k:5
+R2851:2854 TypeRules <> conv ind
+R2871:2875 TypeRules <> TSort constr
+R2877:2877 _glm_conv_subst_sort <> j:3 var
+R2857:2861 TypeRules <> subst def
+R2867:2867 _glm_conv_subst_sort <> B:1 var
+R2865:2865 _glm_conv_subst_sort <> k:5 var
+R2863:2863 _glm_conv_subst_sort <> a:4 var
+R2948:2952 TypeRules <> subst def
+R3152:3159 TypeRules <> cv_trans constr
+R3152:3159 TypeRules <> cv_trans constr
+R3174:3180 TypeRules <> cv_step constr
+R3174:3180 TypeRules <> cv_step constr
+R3190:3203 _glm_subst_reduction_bundle_step <> step_subst_glm thm
+R3190:3203 _glm_subst_reduction_bundle_step <> step_subst_glm thm

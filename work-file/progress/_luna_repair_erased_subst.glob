@@ -1,0 +1,147 @@
+DIGEST 88a07eb1d202cf483a32b80b1a51ef8b
+F_luna_repair_erased_subst
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R65:77 Stdlib.Lists.List ListNotations <> mod
+R79:87 TypeRules <> <> mod
+R89:108 Progress _tmp_epstep <> mod
+R110:137 Progress _work_mixed_closure <> mod
+R141:166 Progress _tmp_epstep_subst <> mod
+R168:187 Progress _work_cjoin <> mod
+R189:219 Progress _work_cstep_invariants <> mod
+prf 229:249 <> rtc_epstep_subst_luna
+binder 260:260 <> t:1
+binder 262:263 <> t':2
+binder 265:265 <> a:3
+binder 267:267 <> k:4
+R289:296 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R274:276 Progress <> rtc ind
+R287:288 _luna_repair_erased_subst <> t':2 var
+R285:285 _luna_repair_erased_subst <> t:1 var
+R278:283 Progress _tmp_epstep epstep ind
+R297:299 Progress <> rtc ind
+R323:327 TypeRules <> subst def
+R333:334 _luna_repair_erased_subst <> t':2 var
+R331:331 _luna_repair_erased_subst <> k:4 var
+R329:329 _luna_repair_erased_subst <> a:3 var
+R309:313 TypeRules <> subst def
+R319:319 _luna_repair_erased_subst <> t:1 var
+R317:317 _luna_repair_erased_subst <> k:4 var
+R315:315 _luna_repair_erased_subst <> a:3 var
+R301:306 Progress _tmp_epstep epstep ind
+R417:424 Progress <> rtc_refl constr
+R417:424 Progress <> rtc_refl constr
+R438:445 Progress <> rtc_step constr
+R438:445 Progress <> rtc_step constr
+R461:472 Progress _tmp_epstep_subst epstep_subst thm
+R494:504 Progress _tmp_epstep epstep_refl thm
+R461:472 Progress _tmp_epstep_subst epstep_subst thm
+R494:504 Progress _tmp_epstep epstep_refl thm
+prf 536:555 <> rtc_pstep_subst_luna
+binder 566:566 <> t:5
+binder 568:569 <> t':6
+binder 571:571 <> a:7
+binder 573:573 <> k:8
+R594:601 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R580:582 Progress <> rtc ind
+R592:593 _luna_repair_erased_subst <> t':6 var
+R590:590 _luna_repair_erased_subst <> t:5 var
+R584:588 Progress <> pstep ind
+R602:604 Progress <> rtc ind
+R627:631 TypeRules <> subst def
+R637:638 _luna_repair_erased_subst <> t':6 var
+R635:635 _luna_repair_erased_subst <> k:8 var
+R633:633 _luna_repair_erased_subst <> a:7 var
+R613:617 TypeRules <> subst def
+R623:623 _luna_repair_erased_subst <> t:5 var
+R621:621 _luna_repair_erased_subst <> k:8 var
+R619:619 _luna_repair_erased_subst <> a:7 var
+R606:610 Progress <> pstep ind
+R721:728 Progress <> rtc_refl constr
+R721:728 Progress <> rtc_refl constr
+R742:749 Progress <> rtc_step constr
+R760:770 Progress <> pstep_subst thm
+R792:801 Progress <> pstep_refl thm
+R742:749 Progress <> rtc_step constr
+R760:770 Progress <> pstep_subst thm
+R792:801 Progress <> pstep_refl thm
+prf 829:848 <> rtc_cstep_subst_luna
+binder 859:859 <> t:9
+binder 861:862 <> t':10
+binder 864:864 <> a:11
+binder 866:866 <> k:12
+R887:894 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R873:875 Progress <> rtc ind
+R885:886 _luna_repair_erased_subst <> t':10 var
+R883:883 _luna_repair_erased_subst <> t:9 var
+R877:881 Progress _work_mixed_closure cstep ind
+R895:897 Progress <> rtc ind
+R920:924 TypeRules <> subst def
+R930:931 _luna_repair_erased_subst <> t':10 var
+R928:928 _luna_repair_erased_subst <> k:12 var
+R926:926 _luna_repair_erased_subst <> a:11 var
+R906:910 TypeRules <> subst def
+R916:916 _luna_repair_erased_subst <> t:9 var
+R914:914 _luna_repair_erased_subst <> k:12 var
+R912:912 _luna_repair_erased_subst <> a:11 var
+R899:903 Progress _work_mixed_closure cstep ind
+R1014:1021 Progress <> rtc_refl constr
+R1014:1021 Progress <> rtc_refl constr
+R1035:1042 Progress <> rtc_step constr
+R1035:1042 Progress <> rtc_step constr
+R1092:1098 Progress _work_mixed_closure cs_core constr
+R1092:1098 Progress _work_mixed_closure cs_core constr
+R1108:1127 _luna_repair_erased_subst <> rtc_pstep_subst_luna thm
+R1108:1127 _luna_repair_erased_subst <> rtc_pstep_subst_luna thm
+R1153:1158 Progress _work_mixed_closure cs_eta constr
+R1153:1158 Progress _work_mixed_closure cs_eta constr
+R1168:1188 _luna_repair_erased_subst <> rtc_epstep_subst_luna thm
+R1168:1188 _luna_repair_erased_subst <> rtc_epstep_subst_luna thm
+prf 1228:1255 <> erased_sort_cjoin_subst_luna
+binder 1266:1266 <> B:13
+binder 1268:1268 <> a:14
+binder 1270:1270 <> j:15
+R1306:1313 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1277:1281 Progress _work_cjoin cjoin def
+R1284:1292 Progress <> phi_erase def
+R1294:1294 _luna_repair_erased_subst <> B:13 var
+R1298:1302 TypeRules <> TSort constr
+R1304:1304 _luna_repair_erased_subst <> j:15 var
+R1314:1318 Progress _work_cjoin cjoin def
+R1321:1329 Progress <> phi_erase def
+R1332:1336 TypeRules <> subst def
+R1342:1342 _luna_repair_erased_subst <> B:13 var
+R1338:1338 _luna_repair_erased_subst <> a:14 var
+R1347:1351 TypeRules <> TSort constr
+R1353:1353 _luna_repair_erased_subst <> j:15 var
+R1406:1422 Progress _work_cstep_invariants rtc_cstep_sort_id thm
+R1406:1422 Progress _work_cstep_invariants rtc_cstep_sort_id thm
+R1449:1463 Progress <> phi_erase_subst thm
+R1449:1463 Progress <> phi_erase_subst thm
+R1449:1463 Progress <> phi_erase_subst thm
+R1481:1483 Progress <> rtc ind
+R1542:1546 TypeRules <> subst def
+R1565:1569 TypeRules <> TSort constr
+R1549:1557 Progress <> phi_erase def
+R1498:1502 TypeRules <> subst def
+R1521:1529 Progress <> phi_erase def
+R1505:1513 Progress <> phi_erase def
+R1485:1489 Progress _work_mixed_closure cstep ind
+R1481:1483 Progress <> rtc ind
+R1542:1546 TypeRules <> subst def
+R1565:1569 TypeRules <> TSort constr
+R1549:1557 Progress <> phi_erase def
+R1498:1502 TypeRules <> subst def
+R1521:1529 Progress <> phi_erase def
+R1505:1513 Progress <> phi_erase def
+R1485:1489 Progress _work_mixed_closure cstep ind
+R1588:1607 _luna_repair_erased_subst <> rtc_cstep_subst_luna thm
+R1588:1607 _luna_repair_erased_subst <> rtc_cstep_subst_luna thm
+R1629:1633 TypeRules <> subst def
+R1653:1657 TypeRules <> TSort constr
+R1653:1657 TypeRules <> TSort constr
+R1688:1695 Progress <> rtc_refl constr
+R1688:1695 Progress <> rtc_refl constr
+R1723:1742 _luna_repair_erased_subst <> rtc_pstep_subst_luna thm
+R1763:1782 _luna_repair_erased_subst <> rtc_cstep_subst_luna thm
+R1803:1830 _luna_repair_erased_subst <> erased_sort_cjoin_subst_luna thm

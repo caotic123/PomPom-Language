@@ -1,0 +1,42 @@
+DIGEST 1c3b119b3f37e04662767f10c7a6dc59
+F_glm_mueq_pos
+R15:22 Progress <> <> lib
+R40:49 _luna_mueq <> <> lib
+R67:82 _luna_mueq_equiv <> <> lib
+R112:115 Stdlib.Lists.List <> <> lib
+R125:137 Stdlib.Lists.List ListNotations <> mod
+R139:147 TypeRules <> <> mod
+prf 157:179 <> mueq_enum_pos_right_glm
+binder 190:190 <> c:1
+binder 192:192 <> d:2
+binder 194:194 <> n:3
+R213:216 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R201:208 TypeRules <> enum_pos ind
+R212:212 _glm_mueq_pos <> n:3 var
+R210:210 _glm_mueq_pos <> c:1 var
+R225:228 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R217:220 _luna_mueq <> mueq ind
+R222:222 _glm_mueq_pos <> c:1 var
+R224:224 _glm_mueq_pos <> d:2 var
+R230:232 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R229:229 _glm_mueq_pos <> d:2 var
+R233:233 _glm_mueq_pos <> c:1 var
+prf 393:414 <> mueq_enum_pos_left_glm
+binder 425:425 <> c:4
+binder 427:427 <> d:5
+binder 429:429 <> n:6
+R448:451 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R436:443 TypeRules <> enum_pos ind
+R447:447 _glm_mueq_pos <> n:6 var
+R445:445 _glm_mueq_pos <> d:5 var
+R460:463 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R452:455 _luna_mueq <> mueq ind
+R457:457 _glm_mueq_pos <> c:4 var
+R459:459 _glm_mueq_pos <> d:5 var
+R465:467 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R464:464 _glm_mueq_pos <> c:4 var
+R468:468 _glm_mueq_pos <> d:5 var
+R514:536 _glm_mueq_pos <> mueq_enum_pos_right_glm thm
+R514:536 _glm_mueq_pos <> mueq_enum_pos_right_glm thm
+R559:566 _luna_mueq_equiv <> mueq_sym thm
+R559:566 _luna_mueq_equiv <> mueq_sym thm

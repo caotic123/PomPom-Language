@@ -1,0 +1,49 @@
+DIGEST 6b5816de8ccaff39ea92d16e4f92865d
+F_parent_mueq_eta_sort_root
+R85:92 Progress <> <> lib
+R94:104 _tmp_epstep <> <> lib
+R106:124 _work_mixed_closure <> <> lib
+R128:137 _luna_mueq <> <> lib
+R139:157 _glm_mueq_eta_shape <> <> lib
+R159:179 _parent_mus_cstep_inv <> <> lib
+R209:212 Stdlib.Lists.List <> <> lib
+R222:234 Stdlib.Lists.List ListNotations <> mod
+R236:244 TypeRules <> <> mod
+prf 256:284 <> mueq_eta_root_sort_sim_parent
+R314:321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R292:313 _glm_mueq_eta_shape <> mueq_lift1_descent_glm def
+binder 329:329 <> f:1
+binder 331:331 <> u:2
+binder 333:333 <> j:3
+R384:393 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R342:345 _luna_mueq <> mueq ind
+R348:351 TypeRules <> TLam constr
+R354:357 TypeRules <> TApp constr
+R373:376 TypeRules <> TVar constr
+R360:363 TypeRules <> lift def
+R369:369 _parent_mueq_eta_sort_root <> f:1 var
+R383:383 _parent_mueq_eta_sort_root <> u:2 var
+R415:424 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R394:396 Progress <> rtc ind
+R407:411 TypeRules <> TSort constr
+R413:413 _parent_mueq_eta_sort_root <> j:3 var
+R404:404 _parent_mueq_eta_sort_root <> f:1 var
+R398:402 _work_mixed_closure <> cstep ind
+R425:431 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R434:435 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 432:433 <> u':4
+R451:454 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R436:438 Progress <> rtc ind
+R449:450 _parent_mueq_eta_sort_root <> u':4 var
+R447:447 _parent_mueq_eta_sort_root <> u:2 var
+R440:445 _tmp_epstep <> epstep ind
+R455:458 _luna_mueq <> mueq ind
+R460:460 _parent_mueq_eta_sort_root <> f:1 var
+R462:463 _parent_mueq_eta_sort_root <> u':4 var
+R516:558 _glm_mueq_eta_shape <> mueq_eta_root_sim_rtc_from_lift_descent_glm thm
+R516:558 _glm_mueq_eta_shape <> mueq_eta_root_sim_rtc_from_lift_descent_glm thm
+R627:649 _glm_mueq_eta_shape <> lift1_tmus_head_inv_glm thm
+R627:649 _glm_mueq_eta_shape <> lift1_tmus_head_inv_glm thm
+R693:721 _parent_mus_cstep_inv <> rtc_cstep_mus_not_sort_parent thm
+R693:721 _parent_mus_cstep_inv <> rtc_cstep_mus_not_sort_parent thm
+R760:788 _parent_mueq_eta_sort_root <> mueq_eta_root_sort_sim_parent thm

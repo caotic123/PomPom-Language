@@ -1,0 +1,260 @@
+DIGEST 981cb074f1b939791054f5d9c272a3e6
+F_glm_phi_erase_reflect_close_reflect
+R2288:2295 Progress <> <> lib
+R2297:2307 _tmp_epstep <> <> lib
+R2309:2327 _work_mixed_closure <> <> lib
+R2329:2339 _work_cjoin <> <> lib
+R2343:2364 _work_cstep_invariants <> <> lib
+R2366:2391 _glm_injectivity_close_rep <> <> lib
+R2421:2424 Stdlib.Lists.List <> <> lib
+R2426:2428 Stdlib.micromega.Lia <> <> lib
+R2430:2437 Stdlib.Arith.PeanoNat <> <> lib
+R2447:2459 Stdlib.Lists.List ListNotations <> mod
+R2461:2469 TypeRules <> <> mod
+def 2728:2746 <> erase_pstep_reflect
+binder 2767:2767 <> t:1
+binder 2769:2769 <> u:2
+R2793:2800 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2772:2776 Progress <> pstep ind
+R2779:2787 Progress <> phi_erase def
+R2789:2789 _glm_phi_erase_reflect_close_reflect <> t:1 var
+R2792:2792 _glm_phi_erase_reflect_close_reflect <> u:2 var
+R2801:2807 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2810:2811 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2808:2809 <> t':3
+R2822:2825 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2812:2816 Progress <> pstep ind
+R2818:2818 _glm_phi_erase_reflect_close_reflect <> t:1 var
+R2820:2821 _glm_phi_erase_reflect_close_reflect <> t':3 var
+R2838:2840 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2826:2834 Progress <> phi_erase def
+R2836:2837 _glm_phi_erase_reflect_close_reflect <> t':3 var
+R2841:2841 _glm_phi_erase_reflect_close_reflect <> u:2 var
+def 2856:2875 <> erase_epstep_reflect
+binder 2896:2896 <> t:4
+binder 2898:2898 <> u:5
+R2923:2930 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2901:2906 _tmp_epstep <> epstep ind
+R2909:2917 Progress <> phi_erase def
+R2919:2919 _glm_phi_erase_reflect_close_reflect <> t:4 var
+R2922:2922 _glm_phi_erase_reflect_close_reflect <> u:5 var
+R2931:2937 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2940:2941 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2938:2939 <> t':6
+R2953:2956 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2942:2947 _tmp_epstep <> epstep ind
+R2949:2949 _glm_phi_erase_reflect_close_reflect <> t:4 var
+R2951:2952 _glm_phi_erase_reflect_close_reflect <> t':6 var
+R2969:2971 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2957:2965 Progress <> phi_erase def
+R2967:2968 _glm_phi_erase_reflect_close_reflect <> t':6 var
+R2972:2972 _glm_phi_erase_reflect_close_reflect <> u:5 var
+prf 3448:3468 <> rtc_erase_reflect_gen
+R3490:3493 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3486:3489 TypeRules <> term ind
+R3498:3501 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3494:3497 TypeRules <> term ind
+binder 3482:3482 <> R:7
+R3513:3513 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3591:3599 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3521:3521 <> t:8
+binder 3523:3523 <> u:9
+R3543:3553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3526:3526 _glm_phi_erase_reflect_close_reflect <> R:7 var
+R3542:3542 _glm_phi_erase_reflect_close_reflect <> u:9 var
+R3529:3537 Progress <> phi_erase def
+R3539:3539 _glm_phi_erase_reflect_close_reflect <> t:8 var
+R3554:3560 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3563:3564 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3561:3562 <> t':10
+R3571:3574 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3565:3565 _glm_phi_erase_reflect_close_reflect <> R:7 var
+R3569:3570 _glm_phi_erase_reflect_close_reflect <> t':10 var
+R3567:3567 _glm_phi_erase_reflect_close_reflect <> t:8 var
+R3587:3589 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3575:3583 Progress <> phi_erase def
+R3585:3586 _glm_phi_erase_reflect_close_reflect <> t':10 var
+R3590:3590 _glm_phi_erase_reflect_close_reflect <> u:9 var
+binder 3607:3607 <> t:11
+binder 3609:3609 <> u:12
+R3633:3640 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3612:3614 Progress <> rtc ind
+R3632:3632 _glm_phi_erase_reflect_close_reflect <> u:12 var
+R3619:3627 Progress <> phi_erase def
+R3629:3629 _glm_phi_erase_reflect_close_reflect <> t:11 var
+R3616:3616 _glm_phi_erase_reflect_close_reflect <> R:7 var
+R3641:3647 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3650:3651 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3648:3649 <> t':13
+R3662:3665 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3652:3654 Progress <> rtc ind
+R3660:3661 _glm_phi_erase_reflect_close_reflect <> t':13 var
+R3658:3658 _glm_phi_erase_reflect_close_reflect <> t:11 var
+R3656:3656 _glm_phi_erase_reflect_close_reflect <> R:7 var
+R3678:3680 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3666:3674 Progress <> phi_erase def
+R3676:3677 _glm_phi_erase_reflect_close_reflect <> t':13 var
+R3681:3681 _glm_phi_erase_reflect_close_reflect <> u:12 var
+R3726:3734 Progress <> phi_erase def
+R3726:3734 Progress <> phi_erase def
+R3930:3937 Progress <> rtc_refl constr
+R3930:3937 Progress <> rtc_refl constr
+R4058:4066 Progress <> phi_erase def
+R4058:4066 Progress <> phi_erase def
+R4174:4179 Corelib.Init.Logic <> eq_sym thm
+R4174:4179 Corelib.Init.Logic <> eq_sym thm
+R4241:4248 Progress <> rtc_step constr
+R4241:4248 Progress <> rtc_step constr
+prf 4305:4331 <> rtc_pstep_erase_reflect_glm
+R4356:4361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4337:4355 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+binder 4369:4369 <> t:14
+binder 4371:4371 <> u:15
+R4399:4404 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4374:4376 Progress <> rtc ind
+R4398:4398 _glm_phi_erase_reflect_close_reflect <> u:15 var
+R4385:4393 Progress <> phi_erase def
+R4395:4395 _glm_phi_erase_reflect_close_reflect <> t:14 var
+R4378:4382 Progress <> pstep ind
+R4405:4411 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4414:4415 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4412:4413 <> t':16
+R4430:4433 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4416:4418 Progress <> rtc ind
+R4428:4429 _glm_phi_erase_reflect_close_reflect <> t':16 var
+R4426:4426 _glm_phi_erase_reflect_close_reflect <> t:14 var
+R4420:4424 Progress <> pstep ind
+R4446:4448 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4434:4442 Progress <> phi_erase def
+R4444:4445 _glm_phi_erase_reflect_close_reflect <> t':16 var
+R4449:4449 _glm_phi_erase_reflect_close_reflect <> u:15 var
+R4477:4497 _glm_phi_erase_reflect_close_reflect <> rtc_erase_reflect_gen thm
+R4477:4497 _glm_phi_erase_reflect_close_reflect <> rtc_erase_reflect_gen thm
+prf 4522:4549 <> rtc_epstep_erase_reflect_glm
+R4575:4580 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4555:4574 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 4588:4588 <> t:17
+binder 4590:4590 <> u:18
+R4619:4624 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4593:4595 Progress <> rtc ind
+R4618:4618 _glm_phi_erase_reflect_close_reflect <> u:18 var
+R4605:4613 Progress <> phi_erase def
+R4615:4615 _glm_phi_erase_reflect_close_reflect <> t:17 var
+R4597:4602 _tmp_epstep <> epstep ind
+R4625:4631 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4634:4635 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4632:4633 <> t':19
+R4651:4654 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4636:4638 Progress <> rtc ind
+R4649:4650 _glm_phi_erase_reflect_close_reflect <> t':19 var
+R4647:4647 _glm_phi_erase_reflect_close_reflect <> t:17 var
+R4640:4645 _tmp_epstep <> epstep ind
+R4667:4669 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4655:4663 Progress <> phi_erase def
+R4665:4666 _glm_phi_erase_reflect_close_reflect <> t':19 var
+R4670:4670 _glm_phi_erase_reflect_close_reflect <> u:18 var
+R4698:4718 _glm_phi_erase_reflect_close_reflect <> rtc_erase_reflect_gen thm
+R4698:4718 _glm_phi_erase_reflect_close_reflect <> rtc_erase_reflect_gen thm
+prf 4987:5013 <> cstep_erase_reflect_one_glm
+R5038:5041 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5019:5037 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R5062:5067 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5042:5061 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 5075:5075 <> t:20
+binder 5077:5077 <> u:21
+R5101:5106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5080:5084 _work_mixed_closure <> cstep ind
+R5087:5095 Progress <> phi_erase def
+R5097:5097 _glm_phi_erase_reflect_close_reflect <> t:20 var
+R5100:5100 _glm_phi_erase_reflect_close_reflect <> u:21 var
+R5107:5113 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5116:5117 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5114:5115 <> t':22
+R5128:5131 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5118:5122 _work_mixed_closure <> cstep ind
+R5124:5124 _glm_phi_erase_reflect_close_reflect <> t:20 var
+R5126:5127 _glm_phi_erase_reflect_close_reflect <> t':22 var
+R5144:5146 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5132:5140 Progress <> phi_erase def
+R5142:5143 _glm_phi_erase_reflect_close_reflect <> t':22 var
+R5147:5147 _glm_phi_erase_reflect_close_reflect <> u:21 var
+R5213:5239 _glm_phi_erase_reflect_close_reflect <> rtc_pstep_erase_reflect_glm thm
+R5213:5239 _glm_phi_erase_reflect_close_reflect <> rtc_pstep_erase_reflect_glm thm
+R5300:5306 _work_mixed_closure <> cs_core constr
+R5300:5306 _work_mixed_closure <> cs_core constr
+R5347:5374 _glm_phi_erase_reflect_close_reflect <> rtc_epstep_erase_reflect_glm thm
+R5347:5374 _glm_phi_erase_reflect_close_reflect <> rtc_epstep_erase_reflect_glm thm
+R5435:5440 _work_mixed_closure <> cs_eta constr
+R5435:5440 _work_mixed_closure <> cs_eta constr
+prf 5479:5505 <> rtc_cstep_erase_reflect_glm
+R5530:5533 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5511:5529 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R5554:5559 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5534:5553 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 5567:5567 <> t:23
+binder 5569:5569 <> u:24
+R5597:5602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5572:5574 Progress <> rtc ind
+R5596:5596 _glm_phi_erase_reflect_close_reflect <> u:24 var
+R5583:5591 Progress <> phi_erase def
+R5593:5593 _glm_phi_erase_reflect_close_reflect <> t:23 var
+R5576:5580 _work_mixed_closure <> cstep ind
+R5603:5609 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5612:5613 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5610:5611 <> t':25
+R5628:5631 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5614:5616 Progress <> rtc ind
+R5626:5627 _glm_phi_erase_reflect_close_reflect <> t':25 var
+R5624:5624 _glm_phi_erase_reflect_close_reflect <> t:23 var
+R5618:5622 _work_mixed_closure <> cstep ind
+R5644:5646 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5632:5640 Progress <> phi_erase def
+R5642:5643 _glm_phi_erase_reflect_close_reflect <> t':25 var
+R5647:5647 _glm_phi_erase_reflect_close_reflect <> u:24 var
+R5680:5700 _glm_phi_erase_reflect_close_reflect <> rtc_erase_reflect_gen thm
+R5680:5700 _glm_phi_erase_reflect_close_reflect <> rtc_erase_reflect_gen thm
+R5729:5755 _glm_phi_erase_reflect_close_reflect <> cstep_erase_reflect_one_glm thm
+R5729:5755 _glm_phi_erase_reflect_close_reflect <> cstep_erase_reflect_one_glm thm
+prf 6176:6197 <> phi_erase_sort_inv_glm
+binder 6208:6208 <> t:26
+binder 6210:6210 <> j:27
+R6234:6237 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6224:6226 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6213:6221 Progress <> phi_erase def
+R6223:6223 _glm_phi_erase_reflect_close_reflect <> t:26 var
+R6227:6231 TypeRules <> TSort constr
+R6233:6233 _glm_phi_erase_reflect_close_reflect <> j:27 var
+R6239:6241 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6238:6238 _glm_phi_erase_reflect_close_reflect <> t:26 var
+R6242:6246 TypeRules <> TSort constr
+R6248:6248 _glm_phi_erase_reflect_close_reflect <> j:27 var
+prf 6485:6513 <> stable_sort_erase_reflect_glm
+R6538:6541 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6519:6537 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R6562:6567 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6542:6561 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 6575:6575 <> B:28
+binder 6577:6577 <> j:29
+R6613:6616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6580:6582 Progress <> rtc ind
+R6605:6609 TypeRules <> TSort constr
+R6611:6611 _glm_phi_erase_reflect_close_reflect <> j:29 var
+R6591:6599 Progress <> phi_erase def
+R6601:6601 _glm_phi_erase_reflect_close_reflect <> B:28 var
+R6584:6588 _work_mixed_closure <> cstep ind
+R6617:6620 TypeRules <> conv ind
+R6625:6629 TypeRules <> TSort constr
+R6631:6631 _glm_phi_erase_reflect_close_reflect <> j:29 var
+R6622:6622 _glm_phi_erase_reflect_close_reflect <> B:28 var
+R6676:6702 _glm_phi_erase_reflect_close_reflect <> rtc_cstep_erase_reflect_glm thm
+R6676:6702 _glm_phi_erase_reflect_close_reflect <> rtc_cstep_erase_reflect_glm thm
+R6755:6757 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6758:6762 TypeRules <> TSort constr
+R6778:6799 _glm_phi_erase_reflect_close_reflect <> phi_erase_sort_inv_glm thm
+R6755:6757 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6758:6762 TypeRules <> TSort constr
+R6778:6799 _glm_phi_erase_reflect_close_reflect <> phi_erase_sort_inv_glm thm
+R6832:6845 _glm_injectivity_close_rep <> rtc_cstep_conv thm
+R6832:6845 _glm_injectivity_close_rep <> rtc_cstep_conv thm
+R6883:6911 _glm_phi_erase_reflect_close_reflect <> stable_sort_erase_reflect_glm thm
+R6932:6958 _glm_phi_erase_reflect_close_reflect <> rtc_cstep_erase_reflect_glm thm

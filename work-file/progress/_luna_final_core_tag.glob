@@ -1,0 +1,91 @@
+DIGEST 989e3d2fa959eb6cfd5028ea2966dc92
+F_luna_final_core_tag
+R15:22 Progress <> <> lib
+R24:42 SignatureConversion <> <> lib
+R72:75 Stdlib.Lists.List <> <> lib
+R85:97 Stdlib.Lists.List ListNotations <> mod
+R99:107 TypeRules <> <> mod
+R117:136 Progress _work_cjoin <> mod
+prf 146:178 <> signature_live_tag_transport_luna
+binder 189:190 <> S0:1
+binder 192:193 <> i0:2
+binder 195:196 <> S1:3
+binder 198:199 <> i1:4
+binder 201:201 <> c:5
+binder 203:203 <> n:6
+binder 205:206 <> bs:7
+R258:265 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R213:217 Progress <> fconv ind
+R220:223 TypeRules <> TApp constr
+R235:236 _luna_final_core_tag <> i0:2 var
+R226:229 TypeRules <> TMuS constr
+R231:232 _luna_final_core_tag <> S0:1 var
+R240:243 TypeRules <> TApp constr
+R255:256 _luna_final_core_tag <> i1:4 var
+R246:249 TypeRules <> TMuS constr
+R251:252 _luna_final_core_tag <> S1:3 var
+R278:285 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R266:273 TypeRules <> enum_pos ind
+R277:277 _luna_final_core_tag <> n:6 var
+R275:275 _luna_final_core_tag <> c:5 var
+R329:336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R286:291 Corelib.Lists.ListDef <> Forall ind
+R327:328 _luna_final_core_tag <> bs:7 var
+binder 298:298 <> d:8
+R303:309 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R311:312 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 310:310 <> m:9
+R313:320 TypeRules <> enum_pos ind
+R324:324 _luna_final_core_tag <> m:9 var
+R322:322 _luna_final_core_tag <> d:8 var
+R370:377 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R337:345 TypeRules <> spine_mem ind
+R350:355 TypeRules <> labels def
+R358:361 TypeRules <> TApp constr
+R366:367 _luna_final_core_tag <> i0:2 var
+R363:364 _luna_final_core_tag <> S0:1 var
+R347:347 _luna_final_core_tag <> c:5 var
+R409:416 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R378:383 TypeRules <> covers ind
+R389:394 TypeRules <> labels def
+R397:400 TypeRules <> TApp constr
+R405:406 _luna_final_core_tag <> i1:4 var
+R402:403 _luna_final_core_tag <> S1:3 var
+R385:386 _luna_final_core_tag <> bs:7 var
+R417:423 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R425:426 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 424:424 <> d:10
+R434:437 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R427:428 Stdlib.Lists.List <> In def
+R432:433 _luna_final_core_tag <> bs:7 var
+R430:430 _luna_final_core_tag <> d:10 var
+R438:445 TypeRules <> enum_pos ind
+R449:449 _luna_final_core_tag <> n:6 var
+R447:447 _luna_final_core_tag <> d:10 var
+R522:532 Progress _work_cjoin fconv_cjoin thm
+R522:532 Progress _work_cjoin fconv_cjoin thm
+R570:590 SignatureConversion <> cjoin_musapp_inv_luna thm
+R601:608 Corelib.Init.Logic <> ex_intro constr
+R615:618 Corelib.Init.Logic <> conj constr
+R570:590 SignatureConversion <> cjoin_musapp_inv_luna thm
+R601:608 Corelib.Init.Logic <> ex_intro constr
+R615:618 Corelib.Init.Logic <> conj constr
+R659:675 SignatureConversion <> cjoin_conv_bridge thm
+R659:675 SignatureConversion <> cjoin_conv_bridge thm
+R707:723 SignatureConversion <> cjoin_conv_bridge thm
+R707:723 SignatureConversion <> cjoin_conv_bridge thm
+R790:795 TypeRules <> labels def
+R798:801 TypeRules <> TApp constr
+R818:823 TypeRules <> labels def
+R826:829 TypeRules <> TApp constr
+R749:772 SignatureConversion <> erased_spine_covered_pos thm
+R790:795 TypeRules <> labels def
+R798:801 TypeRules <> TApp constr
+R818:823 TypeRules <> labels def
+R826:829 TypeRules <> TApp constr
+R749:772 SignatureConversion <> erased_spine_covered_pos thm
+R947:952 TypeRules <> cv_snd constr
+R955:960 TypeRules <> cv_app constr
+R947:952 TypeRules <> cv_snd constr
+R955:960 TypeRules <> cv_app constr
+R997:1029 _luna_final_core_tag <> signature_live_tag_transport_luna thm

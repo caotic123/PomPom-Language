@@ -1,0 +1,1154 @@
+DIGEST eb103051605c0186c37897338dc4489c
+F_glm_conv_subst_main
+R2554:2562 TypeRules <> <> lib
+R2564:2571 Progress <> <> lib
+R2589:2620 _glm_subst_reduction_bundle_step <> <> lib
+R2622:2653 _glm_subst_reduction_bundle_eval <> <> lib
+R2670:2702 _glm_subst_reduction_bundle_spine <> <> lib
+R2719:2741 _glm_conv_subst_algebra <> <> lib
+R2743:2763 _glm_conv_subst_rigid <> <> lib
+R2780:2807 _glm_conv_subst_same_neutral <> <> lib
+R2809:2836 _glm_conv_subst_neutral_pair <> <> lib
+R2867:2870 Stdlib.Lists.List <> <> lib
+R2872:2876 Stdlib.Arith.Arith <> <> lib
+R2878:2880 Stdlib.micromega.Lia <> <> lib
+R2890:2902 Stdlib.Lists.List ListNotations <> mod
+def 2976:3000 <> conv_subst_compatible_glm
+binder 3021:3021 <> t:1
+binder 3023:3024 <> t':2
+binder 3026:3026 <> u:3
+binder 3028:3029 <> u':4
+R3041:3044 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3032:3035 TypeRules <> conv ind
+R3039:3040 _glm_conv_subst_main <> t':2 var
+R3037:3037 _glm_conv_subst_main <> t:1 var
+R3054:3057 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3045:3048 TypeRules <> conv ind
+R3052:3053 _glm_conv_subst_main <> u':4 var
+R3050:3050 _glm_conv_subst_main <> u:3 var
+binder 3065:3065 <> k:5
+R3072:3075 TypeRules <> conv ind
+R3092:3096 TypeRules <> subst def
+R3103:3104 _glm_conv_subst_main <> t':2 var
+R3101:3101 _glm_conv_subst_main <> k:5 var
+R3098:3099 _glm_conv_subst_main <> u':4 var
+R3078:3082 TypeRules <> subst def
+R3088:3088 _glm_conv_subst_main <> t:1 var
+R3086:3086 _glm_conv_subst_main <> k:5 var
+R3084:3084 _glm_conv_subst_main <> u:3 var
+def 3278:3307 <> conv_subst_cv_phi_residual_glm
+R3363:3366 TypeRules <> term ind
+binder 3328:3329 <> S1:6
+binder 3331:3332 <> S2:7
+binder 3334:3334 <> i:8
+binder 3336:3339 <> Phi1:9
+binder 3341:3344 <> Phi2:10
+binder 3346:3349 <> Psi1:11
+binder 3351:3354 <> Psi2:12
+binder 3356:3356 <> u:13
+binder 3358:3359 <> u':14
+R3380:3382 Corelib.Init.Datatypes <> nat ind
+binder 3376:3376 <> k:15
+R3398:3405 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3389:3392 TypeRules <> conv ind
+R3396:3397 _glm_conv_subst_main <> u':14 var
+R3394:3394 _glm_conv_subst_main <> u:13 var
+R3515:3522 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3406:3409 TypeRules <> conv ind
+R3469:3472 TypeRules <> TLam constr
+R3475:3482 TypeRules <> branches def
+R3485:3488 TypeRules <> TApp constr
+R3505:3508 TypeRules <> TVar constr
+R3491:3494 TypeRules <> lift def
+R3500:3501 _glm_conv_subst_main <> S2:7 var
+R3412:3415 TypeRules <> TLam constr
+R3418:3425 TypeRules <> branches def
+R3428:3431 TypeRules <> TApp constr
+R3448:3451 TypeRules <> TVar constr
+R3434:3437 TypeRules <> lift def
+R3443:3444 _glm_conv_subst_main <> S1:6 var
+R3553:3560 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3523:3526 TypeRules <> eval ind
+R3549:3552 _glm_conv_subst_main <> Phi1:9 var
+R3529:3534 TypeRules <> labels def
+R3537:3540 TypeRules <> TApp constr
+R3545:3545 _glm_conv_subst_main <> i:8 var
+R3542:3543 _glm_conv_subst_main <> S1:6 var
+R3591:3598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3561:3564 TypeRules <> eval ind
+R3587:3590 _glm_conv_subst_main <> Phi2:10 var
+R3567:3572 TypeRules <> labels def
+R3575:3578 TypeRules <> TApp constr
+R3583:3583 _glm_conv_subst_main <> i:8 var
+R3580:3581 _glm_conv_subst_main <> S2:7 var
+R3623:3630 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3599:3607 TypeRules <> spine_phi ind
+R3619:3622 _glm_conv_subst_main <> Psi1:11 var
+R3614:3617 _glm_conv_subst_main <> Phi1:9 var
+R3612:3612 _glm_conv_subst_main <> i:8 var
+R3609:3610 _glm_conv_subst_main <> S1:6 var
+R3655:3662 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3631:3639 TypeRules <> spine_phi ind
+R3651:3654 _glm_conv_subst_main <> Psi2:12 var
+R3646:3649 _glm_conv_subst_main <> Phi2:10 var
+R3644:3644 _glm_conv_subst_main <> i:8 var
+R3641:3642 _glm_conv_subst_main <> S2:7 var
+R3677:3684 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3663:3666 TypeRules <> conv ind
+R3673:3676 _glm_conv_subst_main <> Psi2:12 var
+R3668:3671 _glm_conv_subst_main <> Psi1:11 var
+R3685:3688 TypeRules <> conv ind
+R3743:3746 TypeRules <> TApp constr
+R3772:3776 TypeRules <> subst def
+R3783:3783 _glm_conv_subst_main <> i:8 var
+R3781:3781 _glm_conv_subst_main <> k:15 var
+R3778:3779 _glm_conv_subst_main <> u':14 var
+R3749:3752 TypeRules <> TMuS constr
+R3755:3759 TypeRules <> subst def
+R3766:3767 _glm_conv_subst_main <> S2:7 var
+R3764:3764 _glm_conv_subst_main <> k:15 var
+R3761:3762 _glm_conv_subst_main <> u':14 var
+R3691:3694 TypeRules <> TApp constr
+R3719:3723 TypeRules <> subst def
+R3729:3729 _glm_conv_subst_main <> i:8 var
+R3727:3727 _glm_conv_subst_main <> k:15 var
+R3725:3725 _glm_conv_subst_main <> u:13 var
+R3697:3700 TypeRules <> TMuS constr
+R3703:3707 TypeRules <> subst def
+R3713:3714 _glm_conv_subst_main <> S1:6 var
+R3711:3711 _glm_conv_subst_main <> k:15 var
+R3709:3709 _glm_conv_subst_main <> u:13 var
+prf 4115:4141 <> conv_case_branches_full_glm
+R4165:4168 Corelib.Init.Datatypes <> list ind
+R4175:4177 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4171:4174 TypeRules <> term ind
+R4178:4181 TypeRules <> term ind
+binder 4155:4157 <> bs1:16
+binder 4159:4161 <> bs2:17
+R4207:4210 TypeRules <> term ind
+binder 4186:4186 <> M:18
+binder 4188:4188 <> Q:19
+binder 4190:4190 <> c:20
+binder 4192:4193 <> c':21
+binder 4195:4195 <> b:22
+binder 4197:4198 <> b':23
+binder 4200:4200 <> u:24
+binder 4202:4203 <> u':25
+R4218:4220 Corelib.Init.Datatypes <> nat ind
+binder 4214:4214 <> k:26
+R4237:4244 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4228:4231 TypeRules <> conv ind
+R4235:4236 _glm_conv_subst_main <> u':25 var
+R4233:4233 _glm_conv_subst_main <> u:24 var
+R4279:4286 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4245:4248 TypeRules <> conv ind
+R4265:4269 TypeRules <> subst def
+R4276:4277 _glm_conv_subst_main <> c':21 var
+R4274:4274 _glm_conv_subst_main <> k:26 var
+R4271:4272 _glm_conv_subst_main <> u':25 var
+R4251:4255 TypeRules <> subst def
+R4261:4261 _glm_conv_subst_main <> c:20 var
+R4259:4259 _glm_conv_subst_main <> k:26 var
+R4257:4257 _glm_conv_subst_main <> u:24 var
+R4329:4336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4287:4290 TypeRules <> conv ind
+R4311:4315 TypeRules <> subst def
+R4326:4327 _glm_conv_subst_main <> b':23 var
+R4321:4321 Corelib.Init.Datatypes <> S constr
+R4323:4323 _glm_conv_subst_main <> k:26 var
+R4317:4318 _glm_conv_subst_main <> u':25 var
+R4293:4297 TypeRules <> subst def
+R4307:4307 _glm_conv_subst_main <> b:22 var
+R4302:4302 Corelib.Init.Datatypes <> S constr
+R4304:4304 _glm_conv_subst_main <> k:26 var
+R4299:4299 _glm_conv_subst_main <> u:24 var
+R4348:4351 Corelib.Init.Datatypes <> list ind
+R4358:4360 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4354:4357 TypeRules <> term ind
+R4361:4364 TypeRules <> term ind
+binder 4344:4344 <> L:27
+R4372:4375 TypeRules <> conv ind
+R4515:4519 TypeRules <> TCase constr
+R4527:4530 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4526:4526 _glm_conv_subst_main <> L:27 var
+R4531:4533 Corelib.Lists.ListDef <> map def
+R4623:4626 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4620:4622 _glm_conv_subst_main <> bs1:16 var
+R4635:4638 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4627:4627 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4630:4631 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4634:4634 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4628:4629 _glm_conv_subst_main <> c':21 var
+R4632:4633 _glm_conv_subst_main <> b':23 var
+R4639:4641 _glm_conv_subst_main <> bs2:17 var
+R4541:4541 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4544:4545 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4548:4548 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 4546:4547 <> b0:28
+binder 4542:4543 <> c0:29
+binder 4541:4548 <> pat:30
+R4553:4553 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4567:4568 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4586:4586 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4554:4558 TypeRules <> subst def
+R4565:4566 _glm_conv_subst_main <> c0:29 var
+R4563:4563 _glm_conv_subst_main <> k:26 var
+R4560:4561 _glm_conv_subst_main <> u':25 var
+R4569:4573 TypeRules <> subst def
+R4584:4585 _glm_conv_subst_main <> b0:28 var
+R4579:4579 Corelib.Init.Datatypes <> S constr
+R4581:4581 _glm_conv_subst_main <> k:26 var
+R4575:4576 _glm_conv_subst_main <> u':25 var
+R4523:4523 _glm_conv_subst_main <> Q:19 var
+R4521:4521 _glm_conv_subst_main <> M:18 var
+R4378:4382 TypeRules <> TCase constr
+R4390:4393 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4389:4389 _glm_conv_subst_main <> L:27 var
+R4394:4396 Corelib.Lists.ListDef <> map def
+R4484:4487 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4481:4483 _glm_conv_subst_main <> bs1:16 var
+R4494:4497 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4488:4488 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4490:4491 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4493:4493 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4489:4489 _glm_conv_subst_main <> c:20 var
+R4492:4492 _glm_conv_subst_main <> b:22 var
+R4498:4500 _glm_conv_subst_main <> bs2:17 var
+R4404:4404 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4407:4408 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4411:4411 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 4409:4410 <> b0:31
+binder 4405:4406 <> c0:32
+binder 4404:4411 <> pat:33
+R4416:4416 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4429:4430 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4447:4447 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4417:4421 TypeRules <> subst def
+R4427:4428 _glm_conv_subst_main <> c0:32 var
+R4425:4425 _glm_conv_subst_main <> k:26 var
+R4423:4423 _glm_conv_subst_main <> u:24 var
+R4431:4435 TypeRules <> subst def
+R4445:4446 _glm_conv_subst_main <> b0:31 var
+R4440:4440 Corelib.Init.Datatypes <> S constr
+R4442:4442 _glm_conv_subst_main <> k:26 var
+R4437:4437 _glm_conv_subst_main <> u:24 var
+R4386:4386 _glm_conv_subst_main <> Q:19 var
+R4384:4384 _glm_conv_subst_main <> M:18 var
+binder 4725:4726 <> c0:34
+binder 4728:4729 <> b0:35
+R4756:4765 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4732:4733 Stdlib.Lists.List <> In def
+R4748:4751 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4735:4735 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4738:4739 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4742:4742 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4736:4737 _glm_conv_subst_main <> c0:34 var
+R4740:4741 _glm_conv_subst_main <> b0:35 var
+R4801:4810 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4766:4769 TypeRules <> conv ind
+R4787:4791 TypeRules <> subst def
+R4798:4799 _glm_conv_subst_main <> c0:34 var
+R4772:4776 TypeRules <> subst def
+R4782:4783 _glm_conv_subst_main <> c0:34 var
+R4811:4814 TypeRules <> conv ind
+R4836:4840 TypeRules <> subst def
+R4851:4852 _glm_conv_subst_main <> b0:35 var
+R4846:4846 Corelib.Init.Datatypes <> S constr
+R4817:4821 TypeRules <> subst def
+R4831:4832 _glm_conv_subst_main <> b0:35 var
+R4826:4826 Corelib.Init.Datatypes <> S constr
+binder 4725:4726 <> c0:36
+binder 4728:4729 <> b0:37
+R4756:4765 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4732:4733 Stdlib.Lists.List <> In def
+R4748:4751 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4735:4735 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4738:4739 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4742:4742 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4736:4737 _glm_conv_subst_main <> c0:36 var
+R4740:4741 _glm_conv_subst_main <> b0:37 var
+R4801:4810 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4766:4769 TypeRules <> conv ind
+R4787:4791 TypeRules <> subst def
+R4798:4799 _glm_conv_subst_main <> c0:36 var
+R4772:4776 TypeRules <> subst def
+R4782:4783 _glm_conv_subst_main <> c0:36 var
+R4811:4814 TypeRules <> conv ind
+R4836:4840 TypeRules <> subst def
+R4851:4852 _glm_conv_subst_main <> b0:37 var
+R4846:4846 Corelib.Init.Datatypes <> S constr
+R4817:4821 TypeRules <> subst def
+R4831:4832 _glm_conv_subst_main <> b0:37 var
+R4826:4826 Corelib.Init.Datatypes <> S constr
+R4899:4918 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R4899:4918 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R4948:4967 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R4981:4981 Corelib.Init.Datatypes <> S constr
+R4948:4967 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R4981:4981 Corelib.Init.Datatypes <> S constr
+R5049:5055 Stdlib.Lists.List <> map_app thm
+R5063:5065 Corelib.Lists.ListDef <> map def
+R5049:5055 Stdlib.Lists.List <> map_app thm
+R5049:5055 Stdlib.Lists.List <> map_app thm
+R5049:5055 Stdlib.Lists.List <> map_app thm
+R5049:5055 Stdlib.Lists.List <> map_app thm
+R5049:5055 Stdlib.Lists.List <> map_app thm
+R5049:5055 Stdlib.Lists.List <> map_app thm
+R5049:5055 Stdlib.Lists.List <> map_app thm
+R5049:5055 Stdlib.Lists.List <> map_app thm
+R5101:5108 TypeRules <> cv_trans constr
+R5101:5108 TypeRules <> cv_trans constr
+R5125:5134 TypeRules <> cv_case_br constr
+R5143:5147 TypeRules <> subst def
+R5157:5161 TypeRules <> subst def
+R5187:5191 TypeRules <> subst def
+R5196:5196 Corelib.Init.Datatypes <> S constr
+R5205:5209 TypeRules <> subst def
+R5215:5215 Corelib.Init.Datatypes <> S constr
+R5239:5241 Corelib.Lists.ListDef <> map def
+R5249:5249 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5252:5253 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5256:5256 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 5254:5255 <> b1:38
+binder 5250:5251 <> c1:39
+binder 5249:5256 <> pat:40
+R5261:5261 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5274:5275 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5292:5292 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5262:5266 TypeRules <> subst def
+R5272:5273 _glm_conv_subst_main <> c1:39 var
+R5276:5280 TypeRules <> subst def
+R5290:5291 _glm_conv_subst_main <> b1:38 var
+R5285:5285 Corelib.Init.Datatypes <> S constr
+R5125:5134 TypeRules <> cv_case_br constr
+R5143:5147 TypeRules <> subst def
+R5157:5161 TypeRules <> subst def
+R5187:5191 TypeRules <> subst def
+R5196:5196 Corelib.Init.Datatypes <> S constr
+R5205:5209 TypeRules <> subst def
+R5215:5215 Corelib.Init.Datatypes <> S constr
+R5239:5241 Corelib.Lists.ListDef <> map def
+R5249:5249 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5252:5253 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5256:5256 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 5254:5255 <> b1:41
+binder 5250:5251 <> c1:42
+binder 5249:5256 <> pat:43
+R5261:5261 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5274:5275 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5292:5292 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5262:5266 TypeRules <> subst def
+R5272:5273 _glm_conv_subst_main <> c1:42 var
+R5276:5280 TypeRules <> subst def
+R5290:5291 _glm_conv_subst_main <> b1:41 var
+R5285:5285 Corelib.Init.Datatypes <> S constr
+R5358:5388 _glm_conv_subst_rigid <> conv_case_branch_map_prefix_glm thm
+binder 5432:5433 <> c1:44
+binder 5435:5436 <> b1:45
+binder 5438:5440 <> HIn:46
+R5449:5450 _glm_conv_subst_main <> c1:44 var
+R5452:5453 _glm_conv_subst_main <> b1:45 var
+R5455:5457 _glm_conv_subst_main <> HIn:46 var
+R5484:5487 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5522:5525 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5488:5488 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5502:5503 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5521:5521 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5489:5493 TypeRules <> subst def
+R5504:5508 TypeRules <> subst def
+R5514:5514 Corelib.Init.Datatypes <> S constr
+R5526:5528 Corelib.Init.Datatypes <> nil constr
+R5358:5388 _glm_conv_subst_rigid <> conv_case_branch_map_prefix_glm thm
+binder 5432:5433 <> c1:47
+binder 5435:5436 <> b1:48
+binder 5438:5440 <> HIn:49
+R5449:5450 _glm_conv_subst_main <> c1:47 var
+R5452:5453 _glm_conv_subst_main <> b1:48 var
+R5455:5457 _glm_conv_subst_main <> HIn:49 var
+R5484:5487 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5522:5525 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5488:5488 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5502:5503 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5521:5521 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5489:5493 TypeRules <> subst def
+R5504:5508 TypeRules <> subst def
+R5514:5514 Corelib.Init.Datatypes <> S constr
+R5526:5528 Corelib.Init.Datatypes <> nil constr
+R5551:5559 Stdlib.Lists.List <> app_assoc thm
+R5551:5559 Stdlib.Lists.List <> app_assoc thm
+R5551:5559 Stdlib.Lists.List <> app_assoc thm
+R5551:5559 Stdlib.Lists.List <> app_assoc thm
+R5551:5559 Stdlib.Lists.List <> app_assoc thm
+R5573:5575 Corelib.Init.Datatypes <> app def
+R5628:5635 TypeRules <> cv_trans constr
+R5628:5635 TypeRules <> cv_trans constr
+R5652:5661 TypeRules <> cv_case_br constr
+R5670:5674 TypeRules <> subst def
+R5685:5689 TypeRules <> subst def
+R5715:5719 TypeRules <> subst def
+R5724:5724 Corelib.Init.Datatypes <> S constr
+R5734:5738 TypeRules <> subst def
+R5744:5744 Corelib.Init.Datatypes <> S constr
+R5828:5846 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5768:5770 Corelib.Lists.ListDef <> map def
+R5778:5778 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5781:5782 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5785:5785 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 5783:5784 <> b1:50
+binder 5779:5780 <> c1:51
+binder 5778:5785 <> pat:52
+R5790:5790 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5803:5804 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5821:5821 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5791:5795 TypeRules <> subst def
+R5801:5802 _glm_conv_subst_main <> c1:51 var
+R5805:5809 TypeRules <> subst def
+R5819:5820 _glm_conv_subst_main <> b1:50 var
+R5814:5814 Corelib.Init.Datatypes <> S constr
+R5877:5895 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5847:5847 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5859:5860 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5876:5876 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5848:5852 TypeRules <> subst def
+R5861:5865 TypeRules <> subst def
+R5870:5870 Corelib.Init.Datatypes <> S constr
+R5896:5898 Corelib.Lists.ListDef <> map def
+R5906:5906 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5909:5910 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5913:5913 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 5911:5912 <> b1:53
+binder 5907:5908 <> c1:54
+binder 5906:5913 <> pat:55
+R5918:5918 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5931:5932 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5949:5949 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5919:5923 TypeRules <> subst def
+R5929:5930 _glm_conv_subst_main <> c1:54 var
+R5933:5937 TypeRules <> subst def
+R5947:5948 _glm_conv_subst_main <> b1:53 var
+R5942:5942 Corelib.Init.Datatypes <> S constr
+R5652:5661 TypeRules <> cv_case_br constr
+R5670:5674 TypeRules <> subst def
+R5685:5689 TypeRules <> subst def
+R5715:5719 TypeRules <> subst def
+R5724:5724 Corelib.Init.Datatypes <> S constr
+R5734:5738 TypeRules <> subst def
+R5744:5744 Corelib.Init.Datatypes <> S constr
+R5828:5846 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5768:5770 Corelib.Lists.ListDef <> map def
+R5778:5778 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5781:5782 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5785:5785 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 5783:5784 <> b1:56
+binder 5779:5780 <> c1:57
+binder 5778:5785 <> pat:58
+R5790:5790 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5803:5804 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5821:5821 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5791:5795 TypeRules <> subst def
+R5801:5802 _glm_conv_subst_main <> c1:57 var
+R5805:5809 TypeRules <> subst def
+R5819:5820 _glm_conv_subst_main <> b1:56 var
+R5814:5814 Corelib.Init.Datatypes <> S constr
+R5877:5895 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5847:5847 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5859:5860 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5876:5876 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5848:5852 TypeRules <> subst def
+R5861:5865 TypeRules <> subst def
+R5870:5870 Corelib.Init.Datatypes <> S constr
+R5896:5898 Corelib.Lists.ListDef <> map def
+R5906:5906 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5909:5910 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5913:5913 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 5911:5912 <> b1:59
+binder 5907:5908 <> c1:60
+binder 5906:5913 <> pat:61
+R5918:5918 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5931:5932 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5949:5949 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5919:5923 TypeRules <> subst def
+R5929:5930 _glm_conv_subst_main <> c1:60 var
+R5933:5937 TypeRules <> subst def
+R5947:5948 _glm_conv_subst_main <> b1:59 var
+R5942:5942 Corelib.Init.Datatypes <> S constr
+R5974:5978 Corelib.Init.Logic <> proj1 thm
+R5992:6000 Stdlib.Lists.List <> in_or_app thm
+R6059:6067 Corelib.Init.Logic <> or_introl constr
+R6070:6074 Stdlib.Lists.List <> in_eq thm
+R6076:6076 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6079:6080 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6083:6083 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6025:6025 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6028:6029 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6032:6032 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6011:6014 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6003:6003 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6006:6007 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6010:6010 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5974:5978 Corelib.Init.Logic <> proj1 thm
+R5992:6000 Stdlib.Lists.List <> in_or_app thm
+R6059:6067 Corelib.Init.Logic <> or_introl constr
+R6070:6074 Stdlib.Lists.List <> in_eq thm
+R6076:6076 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6079:6080 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6083:6083 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6025:6025 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6028:6029 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6032:6032 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6011:6014 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6003:6003 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6006:6007 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6010:6010 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6111:6115 Corelib.Init.Logic <> proj2 thm
+R6129:6137 Stdlib.Lists.List <> in_or_app thm
+R6196:6204 Corelib.Init.Logic <> or_introl constr
+R6207:6211 Stdlib.Lists.List <> in_eq thm
+R6213:6213 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6216:6217 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6220:6220 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6162:6162 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6165:6166 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6169:6169 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6148:6151 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6140:6140 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6143:6144 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6147:6147 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6111:6115 Corelib.Init.Logic <> proj2 thm
+R6129:6137 Stdlib.Lists.List <> in_or_app thm
+R6196:6204 Corelib.Init.Logic <> or_introl constr
+R6207:6211 Stdlib.Lists.List <> in_eq thm
+R6213:6213 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6216:6217 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6220:6220 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6162:6162 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6165:6166 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6169:6169 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6148:6151 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6140:6140 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6143:6144 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6147:6147 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 6259:6260 <> c1:62
+binder 6262:6263 <> b1:63
+binder 6265:6267 <> HIn:64
+R6300:6301 _glm_conv_subst_main <> c1:62 var
+R6303:6304 _glm_conv_subst_main <> b1:63 var
+R6307:6313 Stdlib.Lists.List <> in_cons thm
+R6347:6349 _glm_conv_subst_main <> HIn:64 var
+R6338:6341 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6324:6324 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6327:6328 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6331:6331 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6325:6326 _glm_conv_subst_main <> c1:62 var
+R6329:6330 _glm_conv_subst_main <> b1:63 var
+R6315:6315 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6318:6319 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6322:6322 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6376:6379 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6414:6417 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6380:6380 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6394:6395 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6413:6413 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6381:6385 TypeRules <> subst def
+R6396:6400 TypeRules <> subst def
+R6406:6406 Corelib.Init.Datatypes <> S constr
+R6418:6420 Corelib.Init.Datatypes <> nil constr
+binder 6259:6260 <> c1:65
+binder 6262:6263 <> b1:66
+binder 6265:6267 <> HIn:67
+R6300:6301 _glm_conv_subst_main <> c1:65 var
+R6303:6304 _glm_conv_subst_main <> b1:66 var
+R6307:6313 Stdlib.Lists.List <> in_cons thm
+R6347:6349 _glm_conv_subst_main <> HIn:67 var
+R6338:6341 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6324:6324 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6327:6328 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6331:6331 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6325:6326 _glm_conv_subst_main <> c1:65 var
+R6329:6330 _glm_conv_subst_main <> b1:66 var
+R6315:6315 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6318:6319 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6322:6322 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6376:6379 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6414:6417 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6380:6380 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6394:6395 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6413:6413 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6381:6385 TypeRules <> subst def
+R6396:6400 TypeRules <> subst def
+R6406:6406 Corelib.Init.Datatypes <> S constr
+R6418:6420 Corelib.Init.Datatypes <> nil constr
+R6440:6446 Stdlib.Lists.List <> map_app thm
+R6440:6446 Stdlib.Lists.List <> map_app thm
+R6440:6446 Stdlib.Lists.List <> map_app thm
+R6440:6446 Stdlib.Lists.List <> map_app thm
+R6440:6446 Stdlib.Lists.List <> map_app thm
+R6460:6462 Corelib.Lists.ListDef <> map def
+R6490:6498 Stdlib.Lists.List <> app_assoc thm
+R6490:6498 Stdlib.Lists.List <> app_assoc thm
+R6490:6498 Stdlib.Lists.List <> app_assoc thm
+R6490:6498 Stdlib.Lists.List <> app_assoc thm
+R6490:6498 Stdlib.Lists.List <> app_assoc thm
+R6512:6514 Corelib.Init.Datatypes <> app def
+prf 6863:6880 <> conv_subst_ind_glm
+R6916:6921 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6886:6915 _glm_conv_subst_main <> conv_subst_cv_phi_residual_glm def
+R6936:6939 TypeRules <> term ind
+binder 6929:6929 <> t:68
+binder 6931:6932 <> t':69
+R6951:6956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6942:6945 TypeRules <> conv ind
+R6949:6950 _glm_conv_subst_main <> t':69 var
+R6947:6947 _glm_conv_subst_main <> t:68 var
+R6971:6974 TypeRules <> term ind
+binder 6964:6964 <> u:70
+binder 6966:6967 <> u':71
+R6986:6989 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6977:6980 TypeRules <> conv ind
+R6984:6985 _glm_conv_subst_main <> u':71 var
+R6982:6982 _glm_conv_subst_main <> u:70 var
+R7001:7003 Corelib.Init.Datatypes <> nat ind
+binder 6997:6997 <> k:72
+R7010:7013 TypeRules <> conv ind
+R7030:7034 TypeRules <> subst def
+R7041:7042 _glm_conv_subst_main <> t':69 var
+R7039:7039 _glm_conv_subst_main <> k:72 var
+R7036:7037 _glm_conv_subst_main <> u':71 var
+R7016:7020 TypeRules <> subst def
+R7026:7026 _glm_conv_subst_main <> t:68 var
+R7024:7024 _glm_conv_subst_main <> k:72 var
+R7022:7022 _glm_conv_subst_main <> u:70 var
+R7145:7152 TypeRules <> cv_trans constr
+R7145:7152 TypeRules <> cv_trans constr
+R7167:7173 TypeRules <> cv_step constr
+R7167:7173 TypeRules <> cv_step constr
+R7183:7196 _glm_subst_reduction_bundle_step <> step_subst_glm thm
+R7183:7196 _glm_subst_reduction_bundle_step <> step_subst_glm thm
+R7225:7244 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R7225:7244 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R7292:7299 TypeRules <> cv_trans constr
+R7292:7299 TypeRules <> cv_trans constr
+R7314:7320 TypeRules <> cv_refl constr
+R7314:7320 TypeRules <> cv_refl constr
+R7336:7355 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R7336:7355 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R7397:7402 TypeRules <> cv_sym constr
+R7397:7402 TypeRules <> cv_sym constr
+R7427:7432 TypeRules <> cv_sym constr
+R7427:7432 TypeRules <> cv_sym constr
+R7473:7480 TypeRules <> cv_trans constr
+R7551:7557 TypeRules <> cv_refl constr
+R7473:7480 TypeRules <> cv_trans constr
+R7551:7557 TypeRules <> cv_refl constr
+R7597:7615 Progress <> subst_lift_one_zero thm
+R7597:7615 Progress <> subst_lift_one_zero thm
+R7597:7615 Progress <> subst_lift_one_zero thm
+R7629:7636 TypeRules <> cv_trans constr
+R7629:7636 TypeRules <> cv_trans constr
+R7651:7656 TypeRules <> cv_eta constr
+R7651:7656 TypeRules <> cv_eta constr
+R7672:7691 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R7672:7691 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R7842:7846 TypeRules <> cv_pi constr
+R7842:7846 TypeRules <> cv_pi constr
+R7879:7884 TypeRules <> cv_lam constr
+R7879:7884 TypeRules <> cv_lam constr
+R7912:7912 Corelib.Init.Datatypes <> S constr
+R7912:7912 Corelib.Init.Datatypes <> S constr
+R7943:7948 TypeRules <> cv_app constr
+R7943:7948 TypeRules <> cv_app constr
+R7983:7990 TypeRules <> cv_sigma constr
+R7983:7990 TypeRules <> cv_sigma constr
+R8024:8030 TypeRules <> cv_pair constr
+R8024:8030 TypeRules <> cv_pair constr
+R8063:8068 TypeRules <> cv_fst constr
+R8063:8068 TypeRules <> cv_fst constr
+R8123:8128 TypeRules <> cv_snd constr
+R8123:8128 TypeRules <> cv_snd constr
+R8185:8192 TypeRules <> cv_conse constr
+R8185:8192 TypeRules <> cv_conse constr
+R8227:8234 TypeRules <> cv_enumt constr
+R8227:8234 TypeRules <> cv_enumt constr
+R8291:8298 TypeRules <> cv_esucc constr
+R8291:8298 TypeRules <> cv_esucc constr
+R8353:8358 TypeRules <> cv_epi constr
+R8353:8358 TypeRules <> cv_epi constr
+R8394:8402 TypeRules <> cv_switch constr
+R8394:8402 TypeRules <> cv_switch constr
+R8437:8444 TypeRules <> cv_idesc constr
+R8437:8444 TypeRules <> cv_idesc constr
+R8500:8506 TypeRules <> cv_ivar constr
+R8500:8506 TypeRules <> cv_ivar constr
+R8563:8570 TypeRules <> cv_iprod constr
+R8563:8570 TypeRules <> cv_iprod constr
+R8603:8608 TypeRules <> cv_ipi constr
+R8603:8608 TypeRules <> cv_ipi constr
+R8642:8648 TypeRules <> cv_isig constr
+R8642:8648 TypeRules <> cv_isig constr
+R8685:8694 TypeRules <> cv_ichoice constr
+R8685:8694 TypeRules <> cv_ichoice constr
+R8730:8738 TypeRules <> cv_interp constr
+R8730:8738 TypeRules <> cv_interp constr
+R8771:8776 TypeRules <> cv_mui constr
+R8771:8776 TypeRules <> cv_mui constr
+R8831:8836 TypeRules <> cv_mus constr
+R8831:8836 TypeRules <> cv_mus constr
+R8890:8894 TypeRules <> cv_in constr
+R8890:8894 TypeRules <> cv_in constr
+R8949:8954 TypeRules <> cv_ind constr
+R8949:8954 TypeRules <> cv_ind constr
+R8988:8994 TypeRules <> cv_iall constr
+R8988:8994 TypeRules <> cv_iall constr
+R9028:9034 TypeRules <> cv_hyps constr
+R9028:9034 TypeRules <> cv_hyps constr
+R9068:9074 TypeRules <> cv_list constr
+R9068:9074 TypeRules <> cv_list constr
+R9130:9136 TypeRules <> cv_lnil constr
+R9130:9136 TypeRules <> cv_lnil constr
+R9193:9200 TypeRules <> cv_lcons constr
+R9193:9200 TypeRules <> cv_lcons constr
+R9239:9246 TypeRules <> cv_trans constr
+R9239:9246 TypeRules <> cv_trans constr
+R9263:9269 TypeRules <> cv_case constr
+R9272:9276 TypeRules <> subst def
+R9288:9292 TypeRules <> subst def
+R9328:9332 TypeRules <> subst def
+R9344:9348 TypeRules <> subst def
+R9384:9386 Corelib.Lists.ListDef <> map def
+R9394:9394 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9397:9398 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9401:9401 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 9399:9400 <> b0:73
+binder 9395:9396 <> c0:74
+binder 9394:9401 <> pat:75
+R9406:9406 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9421:9422 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9441:9441 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9407:9411 TypeRules <> subst def
+R9419:9420 _glm_conv_subst_main <> c0:74 var
+R9423:9427 TypeRules <> subst def
+R9439:9440 _glm_conv_subst_main <> b0:73 var
+R9433:9433 Corelib.Init.Datatypes <> S constr
+R9263:9269 TypeRules <> cv_case constr
+R9272:9276 TypeRules <> subst def
+R9288:9292 TypeRules <> subst def
+R9328:9332 TypeRules <> subst def
+R9344:9348 TypeRules <> subst def
+R9384:9386 Corelib.Lists.ListDef <> map def
+R9394:9394 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9397:9398 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9401:9401 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 9399:9400 <> b0:76
+binder 9395:9396 <> c0:77
+binder 9394:9401 <> pat:78
+R9406:9406 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9421:9422 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9441:9441 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9407:9411 TypeRules <> subst def
+R9419:9420 _glm_conv_subst_main <> c0:77 var
+R9423:9427 TypeRules <> subst def
+R9439:9440 _glm_conv_subst_main <> b0:76 var
+R9433:9433 Corelib.Init.Datatypes <> S constr
+R9546:9576 _glm_conv_subst_rigid <> conv_case_branch_map_prefix_glm thm
+R9582:9586 TypeRules <> subst def
+R9623:9627 TypeRules <> subst def
+binder 9678:9678 <> c:79
+binder 9680:9680 <> b:80
+R9712:9715 Corelib.Init.Logic <> conj constr
+R9786:9805 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R9817:9817 _glm_conv_subst_main <> b:80 var
+R9820:9820 Corelib.Init.Datatypes <> S constr
+R9718:9737 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R9749:9749 _glm_conv_subst_main <> c:79 var
+R9828:9829 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R9546:9576 _glm_conv_subst_rigid <> conv_case_branch_map_prefix_glm thm
+R9582:9586 TypeRules <> subst def
+R9623:9627 TypeRules <> subst def
+binder 9678:9678 <> c:81
+binder 9680:9680 <> b:82
+R9712:9715 Corelib.Init.Logic <> conj constr
+R9786:9805 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R9817:9817 _glm_conv_subst_main <> b:82 var
+R9820:9820 Corelib.Init.Datatypes <> S constr
+R9718:9737 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R9749:9749 _glm_conv_subst_main <> c:81 var
+R9828:9829 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R9844:9846 Corelib.Init.Datatypes <> app def
+R9898:9905 TypeRules <> cv_trans constr
+R9898:9905 TypeRules <> cv_trans constr
+R9922:9928 TypeRules <> cv_case constr
+R9931:9935 TypeRules <> subst def
+R9947:9951 TypeRules <> subst def
+R9986:9990 TypeRules <> subst def
+R10002:10006 TypeRules <> subst def
+R10041:10043 Corelib.Lists.ListDef <> map def
+R10132:10135 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10142:10145 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10136:10136 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10138:10139 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10141:10141 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10051:10051 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10054:10055 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10058:10058 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 10056:10057 <> b0:83
+binder 10052:10053 <> c0:84
+binder 10051:10058 <> pat:85
+R10063:10063 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10078:10079 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10098:10098 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10064:10068 TypeRules <> subst def
+R10076:10077 _glm_conv_subst_main <> c0:84 var
+R10080:10084 TypeRules <> subst def
+R10096:10097 _glm_conv_subst_main <> b0:83 var
+R10090:10090 Corelib.Init.Datatypes <> S constr
+R9922:9928 TypeRules <> cv_case constr
+R9931:9935 TypeRules <> subst def
+R9947:9951 TypeRules <> subst def
+R9986:9990 TypeRules <> subst def
+R10002:10006 TypeRules <> subst def
+R10041:10043 Corelib.Lists.ListDef <> map def
+R10132:10135 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10142:10145 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10136:10136 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10138:10139 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10141:10141 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10051:10051 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10054:10055 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10058:10058 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 10056:10057 <> b0:86
+binder 10052:10053 <> c0:87
+binder 10051:10058 <> pat:88
+R10063:10063 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10078:10079 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10098:10098 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10064:10068 TypeRules <> subst def
+R10076:10077 _glm_conv_subst_main <> c0:87 var
+R10080:10084 TypeRules <> subst def
+R10096:10097 _glm_conv_subst_main <> b0:86 var
+R10090:10090 Corelib.Init.Datatypes <> S constr
+R10169:10188 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R10169:10188 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R10222:10241 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R10222:10241 _glm_conv_subst_rigid <> conv_subst_rigid_glm thm
+R10273:10299 _glm_conv_subst_main <> conv_case_branches_full_glm thm
+R10310:10314 TypeRules <> subst def
+R10327:10331 TypeRules <> subst def
+R10441:10441 Corelib.Init.Datatypes <> S constr
+R10448:10449 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R10273:10299 _glm_conv_subst_main <> conv_case_branches_full_glm thm
+R10310:10314 TypeRules <> subst def
+R10327:10331 TypeRules <> subst def
+R10441:10441 Corelib.Init.Datatypes <> S constr
+R10448:10449 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+prf 10519:10555 <> conv_subst_compatible_glm_of_residual
+R10591:10594 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10561:10590 _glm_conv_subst_main <> conv_subst_cv_phi_residual_glm def
+R10595:10619 _glm_conv_subst_main <> conv_subst_compatible_glm def
+R10670:10687 _glm_conv_subst_main <> conv_subst_ind_glm thm
+R10670:10687 _glm_conv_subst_main <> conv_subst_ind_glm thm
+prf 10793:10833 <> conv_subst_compatible_neutral_pair_proved
+R10858:10861 TypeRules <> term ind
+binder 10846:10846 <> t:89
+binder 10848:10849 <> t':90
+binder 10851:10851 <> u:91
+binder 10853:10854 <> u':92
+R10873:10876 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10864:10867 TypeRules <> conv ind
+R10871:10872 _glm_conv_subst_main <> t':90 var
+R10869:10869 _glm_conv_subst_main <> t:89 var
+R10886:10893 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10877:10880 TypeRules <> conv ind
+R10884:10885 _glm_conv_subst_main <> u':92 var
+R10882:10882 _glm_conv_subst_main <> u:91 var
+R10903:10906 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10894:10900 TypeRules <> neutral ind
+R10902:10902 _glm_conv_subst_main <> u:91 var
+R10917:10924 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10907:10913 TypeRules <> neutral ind
+R10915:10916 _glm_conv_subst_main <> u':92 var
+R10936:10938 Corelib.Init.Datatypes <> nat ind
+binder 10932:10932 <> k:93
+R10941:10944 TypeRules <> conv ind
+R10961:10965 TypeRules <> subst def
+R10972:10973 _glm_conv_subst_main <> t':90 var
+R10970:10970 _glm_conv_subst_main <> k:93 var
+R10967:10968 _glm_conv_subst_main <> u':92 var
+R10947:10951 TypeRules <> subst def
+R10957:10957 _glm_conv_subst_main <> t:89 var
+R10955:10955 _glm_conv_subst_main <> k:93 var
+R10953:10953 _glm_conv_subst_main <> u:91 var
+R10990:11016 _glm_conv_subst_neutral_pair <> conv_subst_neutral_pair_glm thm
+R10990:11016 _glm_conv_subst_neutral_pair <> conv_subst_neutral_pair_glm thm
+prf 11193:11232 <> conv_subst_compatible_one_neutral_proved
+R11257:11260 TypeRules <> term ind
+binder 11245:11245 <> t:94
+binder 11247:11248 <> t':95
+binder 11250:11250 <> u:96
+binder 11252:11253 <> u':97
+R11272:11275 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11263:11266 TypeRules <> conv ind
+R11270:11271 _glm_conv_subst_main <> t':95 var
+R11268:11268 _glm_conv_subst_main <> t:94 var
+R11285:11292 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11276:11279 TypeRules <> conv ind
+R11283:11284 _glm_conv_subst_main <> u':97 var
+R11281:11281 _glm_conv_subst_main <> u:96 var
+R11293:11293 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11332:11340 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11294:11300 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11309:11310 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11305:11308 TypeRules <> term ind
+binder 11301:11301 <> n:98
+R11320:11323 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11311:11317 TypeRules <> neutral ind
+R11319:11319 _glm_conv_subst_main <> n:98 var
+R11324:11327 TypeRules <> conv ind
+R11331:11331 _glm_conv_subst_main <> n:98 var
+R11329:11329 _glm_conv_subst_main <> u:96 var
+R11352:11354 Corelib.Init.Datatypes <> nat ind
+binder 11348:11348 <> k:99
+R11357:11360 TypeRules <> conv ind
+R11377:11381 TypeRules <> subst def
+R11388:11389 _glm_conv_subst_main <> t':95 var
+R11386:11386 _glm_conv_subst_main <> k:99 var
+R11383:11384 _glm_conv_subst_main <> u':97 var
+R11363:11367 TypeRules <> subst def
+R11373:11373 _glm_conv_subst_main <> t:94 var
+R11371:11371 _glm_conv_subst_main <> k:99 var
+R11369:11369 _glm_conv_subst_main <> u:96 var
+R11406:11431 _glm_conv_subst_neutral_pair <> conv_subst_one_neutral_glm thm
+R11406:11431 _glm_conv_subst_neutral_pair <> conv_subst_one_neutral_glm thm
+prf 11605:11635 <> cv_phi_residual_one_neutral_glm
+R11683:11686 TypeRules <> term ind
+binder 11648:11649 <> S1:100
+binder 11651:11652 <> S2:101
+binder 11654:11654 <> i:102
+binder 11656:11659 <> Phi1:103
+binder 11661:11664 <> Phi2:104
+binder 11666:11669 <> Psi1:105
+binder 11671:11674 <> Psi2:106
+binder 11676:11676 <> u:107
+binder 11678:11679 <> u':108
+R11700:11702 Corelib.Init.Datatypes <> nat ind
+binder 11696:11696 <> k:109
+R11718:11725 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11709:11712 TypeRules <> conv ind
+R11716:11717 _glm_conv_subst_main <> u':108 var
+R11714:11714 _glm_conv_subst_main <> u:107 var
+R11726:11726 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11765:11773 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11727:11733 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11742:11743 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11738:11741 TypeRules <> term ind
+binder 11734:11734 <> n:110
+R11753:11756 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11744:11750 TypeRules <> neutral ind
+R11752:11752 _glm_conv_subst_main <> n:110 var
+R11757:11760 TypeRules <> conv ind
+R11764:11764 _glm_conv_subst_main <> n:110 var
+R11762:11762 _glm_conv_subst_main <> u:107 var
+R11883:11890 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11774:11777 TypeRules <> conv ind
+R11837:11840 TypeRules <> TLam constr
+R11843:11850 TypeRules <> branches def
+R11853:11856 TypeRules <> TApp constr
+R11873:11876 TypeRules <> TVar constr
+R11859:11862 TypeRules <> lift def
+R11868:11869 _glm_conv_subst_main <> S2:101 var
+R11780:11783 TypeRules <> TLam constr
+R11786:11793 TypeRules <> branches def
+R11796:11799 TypeRules <> TApp constr
+R11816:11819 TypeRules <> TVar constr
+R11802:11805 TypeRules <> lift def
+R11811:11812 _glm_conv_subst_main <> S1:100 var
+R11921:11928 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11891:11894 TypeRules <> eval ind
+R11917:11920 _glm_conv_subst_main <> Phi1:103 var
+R11897:11902 TypeRules <> labels def
+R11905:11908 TypeRules <> TApp constr
+R11913:11913 _glm_conv_subst_main <> i:102 var
+R11910:11911 _glm_conv_subst_main <> S1:100 var
+R11959:11966 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11929:11932 TypeRules <> eval ind
+R11955:11958 _glm_conv_subst_main <> Phi2:104 var
+R11935:11940 TypeRules <> labels def
+R11943:11946 TypeRules <> TApp constr
+R11951:11951 _glm_conv_subst_main <> i:102 var
+R11948:11949 _glm_conv_subst_main <> S2:101 var
+R11991:11998 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11967:11975 TypeRules <> spine_phi ind
+R11987:11990 _glm_conv_subst_main <> Psi1:105 var
+R11982:11985 _glm_conv_subst_main <> Phi1:103 var
+R11980:11980 _glm_conv_subst_main <> i:102 var
+R11977:11978 _glm_conv_subst_main <> S1:100 var
+R12023:12030 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11999:12007 TypeRules <> spine_phi ind
+R12019:12022 _glm_conv_subst_main <> Psi2:106 var
+R12014:12017 _glm_conv_subst_main <> Phi2:104 var
+R12012:12012 _glm_conv_subst_main <> i:102 var
+R12009:12010 _glm_conv_subst_main <> S2:101 var
+R12045:12052 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12031:12034 TypeRules <> conv ind
+R12041:12044 _glm_conv_subst_main <> Psi2:106 var
+R12036:12039 _glm_conv_subst_main <> Psi1:105 var
+R12053:12056 TypeRules <> conv ind
+R12111:12114 TypeRules <> TApp constr
+R12140:12144 TypeRules <> subst def
+R12151:12151 _glm_conv_subst_main <> i:102 var
+R12149:12149 _glm_conv_subst_main <> k:109 var
+R12146:12147 _glm_conv_subst_main <> u':108 var
+R12117:12120 TypeRules <> TMuS constr
+R12123:12127 TypeRules <> subst def
+R12134:12135 _glm_conv_subst_main <> S2:101 var
+R12132:12132 _glm_conv_subst_main <> k:109 var
+R12129:12130 _glm_conv_subst_main <> u':108 var
+R12059:12062 TypeRules <> TApp constr
+R12087:12091 TypeRules <> subst def
+R12097:12097 _glm_conv_subst_main <> i:102 var
+R12095:12095 _glm_conv_subst_main <> k:109 var
+R12093:12093 _glm_conv_subst_main <> u:107 var
+R12065:12068 TypeRules <> TMuS constr
+R12071:12075 TypeRules <> subst def
+R12081:12082 _glm_conv_subst_main <> S1:100 var
+R12079:12079 _glm_conv_subst_main <> k:109 var
+R12077:12077 _glm_conv_subst_main <> u:107 var
+R12265:12268 TypeRules <> conv ind
+R12290:12293 TypeRules <> TApp constr
+R12296:12299 TypeRules <> TMuS constr
+R12271:12274 TypeRules <> TApp constr
+R12277:12280 TypeRules <> TMuS constr
+R12265:12268 TypeRules <> conv ind
+R12290:12293 TypeRules <> TApp constr
+R12296:12299 TypeRules <> TMuS constr
+R12271:12274 TypeRules <> TApp constr
+R12277:12280 TypeRules <> TMuS constr
+R12322:12327 TypeRules <> cv_phi constr
+R12322:12327 TypeRules <> cv_phi constr
+R12396:12421 _glm_conv_subst_neutral_pair <> conv_subst_one_neutral_glm thm
+R12424:12427 TypeRules <> TApp constr
+R12430:12433 TypeRules <> TMuS constr
+R12443:12446 TypeRules <> TApp constr
+R12449:12452 TypeRules <> TMuS constr
+R12396:12421 _glm_conv_subst_neutral_pair <> conv_subst_one_neutral_glm thm
+R12424:12427 TypeRules <> TApp constr
+R12430:12433 TypeRules <> TMuS constr
+R12443:12446 TypeRules <> TApp constr
+R12449:12452 TypeRules <> TMuS constr
+prf 12606:12637 <> cv_phi_residual_neutral_pair_glm
+R12685:12688 TypeRules <> term ind
+binder 12650:12651 <> S1:111
+binder 12653:12654 <> S2:112
+binder 12656:12656 <> i:113
+binder 12658:12661 <> Phi1:114
+binder 12663:12666 <> Phi2:115
+binder 12668:12671 <> Psi1:116
+binder 12673:12676 <> Psi2:117
+binder 12678:12678 <> u:118
+binder 12680:12681 <> u':119
+R12702:12704 Corelib.Init.Datatypes <> nat ind
+binder 12698:12698 <> k:120
+R12720:12723 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12711:12714 TypeRules <> conv ind
+R12718:12719 _glm_conv_subst_main <> u':119 var
+R12716:12716 _glm_conv_subst_main <> u:118 var
+R12733:12736 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12724:12730 TypeRules <> neutral ind
+R12732:12732 _glm_conv_subst_main <> u:118 var
+R12747:12754 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12737:12743 TypeRules <> neutral ind
+R12745:12746 _glm_conv_subst_main <> u':119 var
+R12864:12871 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12755:12758 TypeRules <> conv ind
+R12818:12821 TypeRules <> TLam constr
+R12824:12831 TypeRules <> branches def
+R12834:12837 TypeRules <> TApp constr
+R12854:12857 TypeRules <> TVar constr
+R12840:12843 TypeRules <> lift def
+R12849:12850 _glm_conv_subst_main <> S2:112 var
+R12761:12764 TypeRules <> TLam constr
+R12767:12774 TypeRules <> branches def
+R12777:12780 TypeRules <> TApp constr
+R12797:12800 TypeRules <> TVar constr
+R12783:12786 TypeRules <> lift def
+R12792:12793 _glm_conv_subst_main <> S1:111 var
+R12902:12909 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12872:12875 TypeRules <> eval ind
+R12898:12901 _glm_conv_subst_main <> Phi1:114 var
+R12878:12883 TypeRules <> labels def
+R12886:12889 TypeRules <> TApp constr
+R12894:12894 _glm_conv_subst_main <> i:113 var
+R12891:12892 _glm_conv_subst_main <> S1:111 var
+R12940:12947 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12910:12913 TypeRules <> eval ind
+R12936:12939 _glm_conv_subst_main <> Phi2:115 var
+R12916:12921 TypeRules <> labels def
+R12924:12927 TypeRules <> TApp constr
+R12932:12932 _glm_conv_subst_main <> i:113 var
+R12929:12930 _glm_conv_subst_main <> S2:112 var
+R12972:12979 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12948:12956 TypeRules <> spine_phi ind
+R12968:12971 _glm_conv_subst_main <> Psi1:116 var
+R12963:12966 _glm_conv_subst_main <> Phi1:114 var
+R12961:12961 _glm_conv_subst_main <> i:113 var
+R12958:12959 _glm_conv_subst_main <> S1:111 var
+R13004:13011 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12980:12988 TypeRules <> spine_phi ind
+R13000:13003 _glm_conv_subst_main <> Psi2:117 var
+R12995:12998 _glm_conv_subst_main <> Phi2:115 var
+R12993:12993 _glm_conv_subst_main <> i:113 var
+R12990:12991 _glm_conv_subst_main <> S2:112 var
+R13026:13033 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13012:13015 TypeRules <> conv ind
+R13022:13025 _glm_conv_subst_main <> Psi2:117 var
+R13017:13020 _glm_conv_subst_main <> Psi1:116 var
+R13034:13037 TypeRules <> conv ind
+R13092:13095 TypeRules <> TApp constr
+R13121:13125 TypeRules <> subst def
+R13132:13132 _glm_conv_subst_main <> i:113 var
+R13130:13130 _glm_conv_subst_main <> k:120 var
+R13127:13128 _glm_conv_subst_main <> u':119 var
+R13098:13101 TypeRules <> TMuS constr
+R13104:13108 TypeRules <> subst def
+R13115:13116 _glm_conv_subst_main <> S2:112 var
+R13113:13113 _glm_conv_subst_main <> k:120 var
+R13110:13111 _glm_conv_subst_main <> u':119 var
+R13040:13043 TypeRules <> TApp constr
+R13068:13072 TypeRules <> subst def
+R13078:13078 _glm_conv_subst_main <> i:113 var
+R13076:13076 _glm_conv_subst_main <> k:120 var
+R13074:13074 _glm_conv_subst_main <> u:118 var
+R13046:13049 TypeRules <> TMuS constr
+R13052:13056 TypeRules <> subst def
+R13062:13063 _glm_conv_subst_main <> S1:111 var
+R13060:13060 _glm_conv_subst_main <> k:120 var
+R13058:13058 _glm_conv_subst_main <> u:118 var
+R13253:13256 TypeRules <> conv ind
+R13278:13281 TypeRules <> TApp constr
+R13284:13287 TypeRules <> TMuS constr
+R13259:13262 TypeRules <> TApp constr
+R13265:13268 TypeRules <> TMuS constr
+R13253:13256 TypeRules <> conv ind
+R13278:13281 TypeRules <> TApp constr
+R13284:13287 TypeRules <> TMuS constr
+R13259:13262 TypeRules <> TApp constr
+R13265:13268 TypeRules <> TMuS constr
+R13310:13315 TypeRules <> cv_phi constr
+R13310:13315 TypeRules <> cv_phi constr
+R13384:13410 _glm_conv_subst_neutral_pair <> conv_subst_neutral_pair_glm thm
+R13413:13416 TypeRules <> TApp constr
+R13419:13422 TypeRules <> TMuS constr
+R13432:13435 TypeRules <> TApp constr
+R13438:13441 TypeRules <> TMuS constr
+R13384:13410 _glm_conv_subst_neutral_pair <> conv_subst_neutral_pair_glm thm
+R13413:13416 TypeRules <> TApp constr
+R13419:13422 TypeRules <> TMuS constr
+R13432:13435 TypeRules <> TApp constr
+R13438:13441 TypeRules <> TMuS constr
+R13546:13582 _glm_conv_subst_main <> conv_subst_compatible_glm_of_residual thm
+R13603:13643 _glm_conv_subst_main <> conv_subst_compatible_neutral_pair_proved thm
+R13664:13703 _glm_conv_subst_main <> conv_subst_compatible_one_neutral_proved thm
+R13724:13754 _glm_conv_subst_main <> cv_phi_residual_one_neutral_glm thm
+R13836:13839 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13806:13835 _glm_conv_subst_main <> conv_subst_cv_phi_residual_glm def
+R13840:13864 _glm_conv_subst_main <> conv_subst_compatible_glm def
+R13764:13800 _glm_conv_subst_main <> conv_subst_compatible_glm_of_residual thm

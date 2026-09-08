@@ -1,0 +1,26 @@
+DIGEST b9e6761f14428a328b91dbd3318319bf
+FPreservationEval
+R82:94 TypeRulesCore <> <> lib
+R112:123 Preservation <> <> lib
+R153:156 Stdlib.Lists.List <> <> lib
+R166:178 Stdlib.Lists.List ListNotations <> mod
+prf 188:204 <> preservation_eval
+binder 215:216 <> Γ:1
+binder 218:218 <> t:2
+binder 220:221 <> t':3
+binder 223:223 <> A:4
+R242:245 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R230:234 TypeRulesCore <> check ind
+R241:241 PreservationEval <> A:4 var
+R239:239 PreservationEval <> t:2 var
+R236:237 PreservationEval <> Γ:1 var
+R255:258 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R246:249 TypeRulesCore <> eval ind
+R253:254 PreservationEval <> t':3 var
+R251:251 PreservationEval <> t:2 var
+R259:263 TypeRulesCore <> check ind
+R271:271 PreservationEval <> A:4 var
+R268:269 PreservationEval <> t':3 var
+R265:266 PreservationEval <> Γ:1 var
+R382:393 Preservation <> preservation thm
+R382:393 Preservation <> preservation thm

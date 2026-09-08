@@ -1,0 +1,471 @@
+DIGEST eda1c52b832cb4baf119b5d9afa551ac
+F_glm_mueq_pstep_conditional_inv
+R1298:1305 Progress <> <> lib
+R1323:1332 _luna_mueq <> <> lib
+R1334:1351 _glm_mueq_sim_lift <> <> lib
+R1353:1367 _luna_pstep_rtc <> <> lib
+R1397:1400 Stdlib.Lists.List <> <> lib
+R1410:1422 Stdlib.Lists.List ListNotations <> mod
+R1424:1432 TypeRules <> <> mod
+prf 1686:1701 <> mueq_lam_inv_glm
+binder 1712:1712 <> b:1
+binder 1714:1714 <> u:2
+R1736:1739 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1721:1724 _luna_mueq <> mueq ind
+R1727:1730 TypeRules <> TLam constr
+R1732:1732 _glm_mueq_pstep_conditional_inv <> b:1 var
+R1735:1735 _glm_mueq_pstep_conditional_inv <> u:2 var
+R1740:1746 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1749:1750 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1747:1748 <> b':3
+R1762:1765 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1752:1754 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1751:1751 _glm_mueq_pstep_conditional_inv <> u:2 var
+R1755:1758 TypeRules <> TLam constr
+R1760:1761 _glm_mueq_pstep_conditional_inv <> b':3 var
+R1766:1769 _luna_mueq <> mueq ind
+R1771:1771 _glm_mueq_pstep_conditional_inv <> b:1 var
+R1773:1774 _glm_mueq_pstep_conditional_inv <> b':3 var
+prf 1875:1891 <> mueq_pair_inv_glm
+binder 1902:1902 <> a:4
+binder 1904:1904 <> b:5
+binder 1906:1906 <> u:6
+R1931:1938 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1913:1916 _luna_mueq <> mueq ind
+R1919:1923 TypeRules <> TPair constr
+R1927:1927 _glm_mueq_pstep_conditional_inv <> b:5 var
+R1925:1925 _glm_mueq_pstep_conditional_inv <> a:4 var
+R1930:1930 _glm_mueq_pstep_conditional_inv <> u:6 var
+R1939:1945 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1951:1952 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1946:1947 <> a':7
+binder 1949:1950 <> b':8
+R1968:1971 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1954:1956 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1953:1953 _glm_mueq_pstep_conditional_inv <> u:6 var
+R1957:1961 TypeRules <> TPair constr
+R1966:1967 _glm_mueq_pstep_conditional_inv <> b':8 var
+R1963:1964 _glm_mueq_pstep_conditional_inv <> a':7 var
+R1981:1984 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1972:1975 _luna_mueq <> mueq ind
+R1977:1977 _glm_mueq_pstep_conditional_inv <> a:4 var
+R1979:1980 _glm_mueq_pstep_conditional_inv <> a':7 var
+R1985:1988 _luna_mueq <> mueq ind
+R1990:1990 _glm_mueq_pstep_conditional_inv <> b:5 var
+R1992:1993 _glm_mueq_pstep_conditional_inv <> b':8 var
+prf 2116:2133 <> mueq_conse_inv_glm
+binder 2144:2144 <> t:9
+binder 2146:2146 <> E:10
+binder 2148:2148 <> u:11
+R2174:2181 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2155:2158 _luna_mueq <> mueq ind
+R2161:2166 TypeRules <> TConsE constr
+R2170:2170 _glm_mueq_pstep_conditional_inv <> E:10 var
+R2168:2168 _glm_mueq_pstep_conditional_inv <> t:9 var
+R2173:2173 _glm_mueq_pstep_conditional_inv <> u:11 var
+R2182:2188 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2194:2195 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2189:2190 <> t':12
+binder 2192:2193 <> E':13
+R2212:2215 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2197:2199 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2196:2196 _glm_mueq_pstep_conditional_inv <> u:11 var
+R2200:2205 TypeRules <> TConsE constr
+R2210:2211 _glm_mueq_pstep_conditional_inv <> E':13 var
+R2207:2208 _glm_mueq_pstep_conditional_inv <> t':12 var
+R2225:2228 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2216:2219 _luna_mueq <> mueq ind
+R2221:2221 _glm_mueq_pstep_conditional_inv <> t:9 var
+R2223:2224 _glm_mueq_pstep_conditional_inv <> t':12 var
+R2229:2232 _luna_mueq <> mueq ind
+R2234:2234 _glm_mueq_pstep_conditional_inv <> E:10 var
+R2236:2237 _glm_mueq_pstep_conditional_inv <> E':13 var
+prf 2360:2374 <> mueq_in_inv_glm
+binder 2385:2385 <> x:14
+binder 2387:2387 <> u:15
+R2408:2411 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2394:2397 _luna_mueq <> mueq ind
+R2400:2402 TypeRules <> TIn constr
+R2404:2404 _glm_mueq_pstep_conditional_inv <> x:14 var
+R2407:2407 _glm_mueq_pstep_conditional_inv <> u:15 var
+R2412:2418 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2421:2422 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2419:2420 <> x':16
+R2433:2436 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2424:2426 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2423:2423 _glm_mueq_pstep_conditional_inv <> u:15 var
+R2427:2429 TypeRules <> TIn constr
+R2431:2432 _glm_mueq_pstep_conditional_inv <> x':16 var
+R2437:2440 _luna_mueq <> mueq ind
+R2442:2442 _glm_mueq_pstep_conditional_inv <> x:14 var
+R2444:2445 _glm_mueq_pstep_conditional_inv <> x':16 var
+prf 2546:2562 <> mueq_ivar_inv_glm
+binder 2573:2573 <> i:17
+binder 2575:2575 <> u:18
+R2598:2601 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2582:2585 _luna_mueq <> mueq ind
+R2588:2592 TypeRules <> TIVar constr
+R2594:2594 _glm_mueq_pstep_conditional_inv <> i:17 var
+R2597:2597 _glm_mueq_pstep_conditional_inv <> u:18 var
+R2602:2608 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2611:2612 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2609:2610 <> i':19
+R2625:2628 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2614:2616 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2613:2613 _glm_mueq_pstep_conditional_inv <> u:18 var
+R2617:2621 TypeRules <> TIVar constr
+R2623:2624 _glm_mueq_pstep_conditional_inv <> i':19 var
+R2629:2632 _luna_mueq <> mueq ind
+R2634:2634 _glm_mueq_pstep_conditional_inv <> i:17 var
+R2636:2637 _glm_mueq_pstep_conditional_inv <> i':19 var
+prf 2738:2755 <> mueq_esucc_inv_glm
+binder 2766:2766 <> n:20
+binder 2768:2768 <> u:21
+R2792:2795 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2775:2778 _luna_mueq <> mueq ind
+R2781:2786 TypeRules <> TESucc constr
+R2788:2788 _glm_mueq_pstep_conditional_inv <> n:20 var
+R2791:2791 _glm_mueq_pstep_conditional_inv <> u:21 var
+R2796:2802 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2805:2806 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2803:2804 <> n':22
+R2820:2823 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2808:2810 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2807:2807 _glm_mueq_pstep_conditional_inv <> u:21 var
+R2811:2816 TypeRules <> TESucc constr
+R2818:2819 _glm_mueq_pstep_conditional_inv <> n':22 var
+R2824:2827 _luna_mueq <> mueq ind
+R2829:2829 _glm_mueq_pstep_conditional_inv <> n:20 var
+R2831:2832 _glm_mueq_pstep_conditional_inv <> n':22 var
+prf 2933:2950 <> mueq_iprod_inv_glm
+binder 2961:2961 <> A:23
+binder 2963:2963 <> B:24
+binder 2965:2965 <> u:25
+R2991:2998 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2972:2975 _luna_mueq <> mueq ind
+R2978:2983 TypeRules <> TIProd constr
+R2987:2987 _glm_mueq_pstep_conditional_inv <> B:24 var
+R2985:2985 _glm_mueq_pstep_conditional_inv <> A:23 var
+R2990:2990 _glm_mueq_pstep_conditional_inv <> u:25 var
+R2999:3005 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3011:3012 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3006:3007 <> A':26
+binder 3009:3010 <> B':27
+R3029:3032 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3014:3016 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3013:3013 _glm_mueq_pstep_conditional_inv <> u:25 var
+R3017:3022 TypeRules <> TIProd constr
+R3027:3028 _glm_mueq_pstep_conditional_inv <> B':27 var
+R3024:3025 _glm_mueq_pstep_conditional_inv <> A':26 var
+R3042:3045 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3033:3036 _luna_mueq <> mueq ind
+R3038:3038 _glm_mueq_pstep_conditional_inv <> A:23 var
+R3040:3041 _glm_mueq_pstep_conditional_inv <> A':26 var
+R3046:3049 _luna_mueq <> mueq ind
+R3051:3051 _glm_mueq_pstep_conditional_inv <> B:24 var
+R3053:3054 _glm_mueq_pstep_conditional_inv <> B':27 var
+prf 3177:3192 <> mueq_ipi_inv_glm
+binder 3203:3203 <> S:28
+binder 3205:3205 <> T:29
+binder 3207:3207 <> u:30
+R3231:3238 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3214:3217 _luna_mueq <> mueq ind
+R3220:3223 TypeRules <> TIPi constr
+R3227:3227 _glm_mueq_pstep_conditional_inv <> T:29 var
+R3225:3225 _glm_mueq_pstep_conditional_inv <> S:28 var
+R3230:3230 _glm_mueq_pstep_conditional_inv <> u:30 var
+R3239:3245 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3251:3252 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3246:3247 <> S':31
+binder 3249:3250 <> T':32
+R3267:3270 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3254:3256 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3253:3253 _glm_mueq_pstep_conditional_inv <> u:30 var
+R3257:3260 TypeRules <> TIPi constr
+R3265:3266 _glm_mueq_pstep_conditional_inv <> T':32 var
+R3262:3263 _glm_mueq_pstep_conditional_inv <> S':31 var
+R3280:3283 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3271:3274 _luna_mueq <> mueq ind
+R3276:3276 _glm_mueq_pstep_conditional_inv <> S:28 var
+R3278:3279 _glm_mueq_pstep_conditional_inv <> S':31 var
+R3284:3287 _luna_mueq <> mueq ind
+R3289:3289 _glm_mueq_pstep_conditional_inv <> T:29 var
+R3291:3292 _glm_mueq_pstep_conditional_inv <> T':32 var
+prf 3415:3431 <> mueq_isig_inv_glm
+binder 3442:3442 <> S:33
+binder 3444:3444 <> T:34
+binder 3446:3446 <> u:35
+R3471:3478 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3453:3456 _luna_mueq <> mueq ind
+R3459:3463 TypeRules <> TISig constr
+R3467:3467 _glm_mueq_pstep_conditional_inv <> T:34 var
+R3465:3465 _glm_mueq_pstep_conditional_inv <> S:33 var
+R3470:3470 _glm_mueq_pstep_conditional_inv <> u:35 var
+R3479:3485 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3491:3492 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3486:3487 <> S':36
+binder 3489:3490 <> T':37
+R3508:3511 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3494:3496 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3493:3493 _glm_mueq_pstep_conditional_inv <> u:35 var
+R3497:3501 TypeRules <> TISig constr
+R3506:3507 _glm_mueq_pstep_conditional_inv <> T':37 var
+R3503:3504 _glm_mueq_pstep_conditional_inv <> S':36 var
+R3521:3524 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3512:3515 _luna_mueq <> mueq ind
+R3517:3517 _glm_mueq_pstep_conditional_inv <> S:33 var
+R3519:3520 _glm_mueq_pstep_conditional_inv <> S':36 var
+R3525:3528 _luna_mueq <> mueq ind
+R3530:3530 _glm_mueq_pstep_conditional_inv <> T:34 var
+R3532:3533 _glm_mueq_pstep_conditional_inv <> T':37 var
+prf 3656:3675 <> mueq_ichoice_inv_glm
+binder 3686:3686 <> E:38
+binder 3688:3688 <> T:39
+binder 3690:3690 <> u:40
+R3718:3725 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3697:3700 _luna_mueq <> mueq ind
+R3703:3710 TypeRules <> TIChoice constr
+R3714:3714 _glm_mueq_pstep_conditional_inv <> T:39 var
+R3712:3712 _glm_mueq_pstep_conditional_inv <> E:38 var
+R3717:3717 _glm_mueq_pstep_conditional_inv <> u:40 var
+R3726:3732 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3738:3739 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3733:3734 <> E':41
+binder 3736:3737 <> T':42
+R3758:3761 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3741:3743 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3740:3740 _glm_mueq_pstep_conditional_inv <> u:40 var
+R3744:3751 TypeRules <> TIChoice constr
+R3756:3757 _glm_mueq_pstep_conditional_inv <> T':42 var
+R3753:3754 _glm_mueq_pstep_conditional_inv <> E':41 var
+R3771:3774 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3762:3765 _luna_mueq <> mueq ind
+R3767:3767 _glm_mueq_pstep_conditional_inv <> E:38 var
+R3769:3770 _glm_mueq_pstep_conditional_inv <> E':41 var
+R3775:3778 _luna_mueq <> mueq ind
+R3780:3780 _glm_mueq_pstep_conditional_inv <> T:39 var
+R3782:3783 _glm_mueq_pstep_conditional_inv <> T':42 var
+prf 3906:3922 <> mueq_nile_inv_glm
+binder 3933:3933 <> u:43
+R3948:3951 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3936:3939 _luna_mueq <> mueq ind
+R3941:3945 TypeRules <> TNilE constr
+R3947:3947 _glm_mueq_pstep_conditional_inv <> u:43 var
+R3953:3955 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3952:3952 _glm_mueq_pstep_conditional_inv <> u:43 var
+R3956:3960 TypeRules <> TNilE constr
+prf 4027:4044 <> mueq_ezero_inv_glm
+binder 4055:4055 <> u:44
+R4071:4074 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4058:4061 _luna_mueq <> mueq ind
+R4063:4068 TypeRules <> TEZero constr
+R4070:4070 _glm_mueq_pstep_conditional_inv <> u:44 var
+R4076:4078 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4075:4075 _glm_mueq_pstep_conditional_inv <> u:44 var
+R4079:4084 TypeRules <> TEZero constr
+prf 4151:4165 <> mueq_i1_inv_glm
+binder 4176:4176 <> u:45
+R4189:4192 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4179:4182 _luna_mueq <> mueq ind
+R4184:4186 TypeRules <> TI1 constr
+R4188:4188 _glm_mueq_pstep_conditional_inv <> u:45 var
+R4194:4196 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4193:4193 _glm_mueq_pstep_conditional_inv <> u:45 var
+R4197:4199 TypeRules <> TI1 constr
+prf 4266:4282 <> mueq_unit_inv_glm
+binder 4293:4293 <> u:46
+R4308:4311 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4296:4299 _luna_mueq <> mueq ind
+R4301:4305 TypeRules <> TUnit constr
+R4307:4307 _glm_mueq_pstep_conditional_inv <> u:46 var
+R4313:4315 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4312:4312 _glm_mueq_pstep_conditional_inv <> u:46 var
+R4316:4320 TypeRules <> TUnit constr
+prf 4631:4647 <> mueq_enum_pos_glm
+binder 4658:4658 <> c:47
+binder 4660:4660 <> u:48
+binder 4662:4662 <> n:49
+R4673:4676 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4665:4668 _luna_mueq <> mueq ind
+R4670:4670 _glm_mueq_pstep_conditional_inv <> c:47 var
+R4672:4672 _glm_mueq_pstep_conditional_inv <> u:48 var
+R4689:4692 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4677:4684 TypeRules <> enum_pos ind
+R4688:4688 _glm_mueq_pstep_conditional_inv <> n:49 var
+R4686:4686 _glm_mueq_pstep_conditional_inv <> c:47 var
+R4693:4700 TypeRules <> enum_pos ind
+R4704:4704 _glm_mueq_pstep_conditional_inv <> n:49 var
+R4702:4702 _glm_mueq_pstep_conditional_inv <> u:48 var
+prf 5362:5383 <> rtc_pbranches_case_glm
+binder 5394:5395 <> bs:50
+binder 5397:5399 <> bs':51
+binder 5401:5401 <> M:52
+binder 5403:5403 <> Q:53
+R5430:5433 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5410:5412 Progress <> rtc ind
+R5427:5429 _glm_mueq_pstep_conditional_inv <> bs':51 var
+R5424:5425 _glm_mueq_pstep_conditional_inv <> bs:50 var
+R5414:5422 Progress <> pbranches ind
+R5434:5436 Progress <> rtc ind
+R5460:5464 TypeRules <> TCase constr
+R5470:5472 _glm_mueq_pstep_conditional_inv <> bs':51 var
+R5468:5468 _glm_mueq_pstep_conditional_inv <> Q:53 var
+R5466:5466 _glm_mueq_pstep_conditional_inv <> M:52 var
+R5445:5449 TypeRules <> TCase constr
+R5455:5456 _glm_mueq_pstep_conditional_inv <> bs:50 var
+R5453:5453 _glm_mueq_pstep_conditional_inv <> Q:53 var
+R5451:5451 _glm_mueq_pstep_conditional_inv <> M:52 var
+R5438:5442 Progress <> pstep ind
+R5516:5532 _luna_pstep_rtc <> rtc_map_rel_pstep thm
+R5535:5538 Corelib.Init.Datatypes <> list ind
+R5545:5547 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5541:5544 TypeRules <> term ind
+R5548:5551 TypeRules <> term ind
+R5555:5558 TypeRules <> term ind
+R5560:5568 Progress <> pbranches ind
+R5570:5574 Progress <> pstep ind
+binder 5593:5594 <> xs:54
+R5599:5603 TypeRules <> TCase constr
+R5609:5610 _glm_mueq_pstep_conditional_inv <> xs:54 var
+R5516:5532 _luna_pstep_rtc <> rtc_map_rel_pstep thm
+R5535:5538 Corelib.Init.Datatypes <> list ind
+R5545:5547 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5541:5544 TypeRules <> term ind
+R5548:5551 TypeRules <> term ind
+R5555:5558 TypeRules <> term ind
+R5560:5568 Progress <> pbranches ind
+R5570:5574 Progress <> pstep ind
+binder 5593:5594 <> xs:55
+R5599:5603 TypeRules <> TCase constr
+R5609:5610 _glm_mueq_pstep_conditional_inv <> xs:55 var
+R5653:5659 Progress <> ps_case constr
+R5673:5682 Progress <> pstep_refl thm
+R5692:5701 Progress <> pstep_refl thm
+R5653:5659 Progress <> ps_case constr
+R5673:5682 Progress <> pstep_refl thm
+R5692:5701 Progress <> pstep_refl thm
+prf 5874:5896 <> rtc_pstep_case_cong_glm
+binder 5907:5907 <> M:56
+binder 5909:5910 <> M':57
+binder 5912:5912 <> Q:58
+binder 5914:5915 <> Q':59
+binder 5917:5918 <> bs:60
+binder 5920:5922 <> bs':61
+R5943:5946 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5929:5931 Progress <> rtc ind
+R5941:5942 _glm_mueq_pstep_conditional_inv <> M':57 var
+R5939:5939 _glm_mueq_pstep_conditional_inv <> M:56 var
+R5933:5937 Progress <> pstep ind
+R5961:5964 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5947:5949 Progress <> rtc ind
+R5959:5960 _glm_mueq_pstep_conditional_inv <> Q':59 var
+R5957:5957 _glm_mueq_pstep_conditional_inv <> Q:58 var
+R5951:5955 Progress <> pstep ind
+R5985:5992 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5965:5967 Progress <> rtc ind
+R5982:5984 _glm_mueq_pstep_conditional_inv <> bs':61 var
+R5979:5980 _glm_mueq_pstep_conditional_inv <> bs:60 var
+R5969:5977 Progress <> pbranches ind
+R5993:5995 Progress <> rtc ind
+R6019:6023 TypeRules <> TCase constr
+R6031:6033 _glm_mueq_pstep_conditional_inv <> bs':61 var
+R6028:6029 _glm_mueq_pstep_conditional_inv <> Q':59 var
+R6025:6026 _glm_mueq_pstep_conditional_inv <> M':57 var
+R6004:6008 TypeRules <> TCase constr
+R6014:6015 _glm_mueq_pstep_conditional_inv <> bs:60 var
+R6012:6012 _glm_mueq_pstep_conditional_inv <> Q:58 var
+R6010:6010 _glm_mueq_pstep_conditional_inv <> M:56 var
+R5997:6001 Progress <> pstep ind
+R6090:6098 Progress <> rtc_trans thm
+R6090:6098 Progress <> rtc_trans thm
+R6113:6129 _luna_pstep_rtc <> rtc_map_rel_pstep thm
+R6131:6134 TypeRules <> term ind
+R6136:6139 TypeRules <> term ind
+R6141:6145 Progress <> pstep ind
+R6147:6151 Progress <> pstep ind
+binder 6158:6158 <> m:62
+R6163:6167 TypeRules <> TCase constr
+R6169:6169 _glm_mueq_pstep_conditional_inv <> m:62 var
+R6113:6129 _luna_pstep_rtc <> rtc_map_rel_pstep thm
+R6131:6134 TypeRules <> term ind
+R6136:6139 TypeRules <> term ind
+R6141:6145 Progress <> pstep ind
+R6147:6151 Progress <> pstep ind
+binder 6158:6158 <> m:63
+R6163:6167 TypeRules <> TCase constr
+R6169:6169 _glm_mueq_pstep_conditional_inv <> m:63 var
+R6226:6232 Progress <> ps_case constr
+R6260:6269 Progress <> pstep_refl thm
+R6279:6292 Progress <> pbranches_refl thm
+R6226:6232 Progress <> ps_case constr
+R6260:6269 Progress <> pstep_refl thm
+R6279:6292 Progress <> pbranches_refl thm
+R6307:6315 Progress <> rtc_trans thm
+R6307:6315 Progress <> rtc_trans thm
+R6332:6348 _luna_pstep_rtc <> rtc_map_rel_pstep thm
+R6350:6353 TypeRules <> term ind
+R6355:6358 TypeRules <> term ind
+R6360:6364 Progress <> pstep ind
+R6366:6370 Progress <> pstep ind
+binder 6377:6377 <> q:64
+R6382:6386 TypeRules <> TCase constr
+R6391:6391 _glm_mueq_pstep_conditional_inv <> q:64 var
+R6332:6348 _luna_pstep_rtc <> rtc_map_rel_pstep thm
+R6350:6353 TypeRules <> term ind
+R6355:6358 TypeRules <> term ind
+R6360:6364 Progress <> pstep ind
+R6366:6370 Progress <> pstep ind
+binder 6377:6377 <> q:65
+R6382:6386 TypeRules <> TCase constr
+R6391:6391 _glm_mueq_pstep_conditional_inv <> q:65 var
+R6450:6456 Progress <> ps_case constr
+R6474:6483 Progress <> pstep_refl thm
+R6505:6518 Progress <> pbranches_refl thm
+R6450:6456 Progress <> ps_case constr
+R6474:6483 Progress <> pstep_refl thm
+R6505:6518 Progress <> pbranches_refl thm
+R6536:6552 _luna_pstep_rtc <> rtc_map_rel_pstep thm
+R6555:6558 Corelib.Init.Datatypes <> list ind
+R6565:6567 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6561:6564 TypeRules <> term ind
+R6568:6571 TypeRules <> term ind
+R6575:6578 TypeRules <> term ind
+R6580:6588 Progress <> pbranches ind
+R6590:6594 Progress <> pstep ind
+binder 6617:6618 <> xs:66
+R6623:6627 TypeRules <> TCase constr
+R6635:6636 _glm_mueq_pstep_conditional_inv <> xs:66 var
+R6536:6552 _luna_pstep_rtc <> rtc_map_rel_pstep thm
+R6555:6558 Corelib.Init.Datatypes <> list ind
+R6565:6567 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6561:6564 TypeRules <> term ind
+R6568:6571 TypeRules <> term ind
+R6575:6578 TypeRules <> term ind
+R6580:6588 Progress <> pbranches ind
+R6590:6594 Progress <> pstep ind
+binder 6617:6618 <> xs:67
+R6623:6627 TypeRules <> TCase constr
+R6635:6636 _glm_mueq_pstep_conditional_inv <> xs:67 var
+R6685:6691 Progress <> ps_case constr
+R6709:6718 Progress <> pstep_refl thm
+R6728:6737 Progress <> pstep_refl thm
+R6685:6691 Progress <> ps_case constr
+R6709:6718 Progress <> pstep_refl thm
+R6728:6737 Progress <> pstep_refl thm
+R7021:7036 _glm_mueq_pstep_conditional_inv <> mueq_lam_inv_glm thm
+R7057:7073 _glm_mueq_pstep_conditional_inv <> mueq_pair_inv_glm thm
+R7094:7111 _glm_mueq_pstep_conditional_inv <> mueq_conse_inv_glm thm
+R7132:7146 _glm_mueq_pstep_conditional_inv <> mueq_in_inv_glm thm
+R7167:7183 _glm_mueq_pstep_conditional_inv <> mueq_ivar_inv_glm thm
+R7204:7221 _glm_mueq_pstep_conditional_inv <> mueq_esucc_inv_glm thm
+R7242:7259 _glm_mueq_pstep_conditional_inv <> mueq_iprod_inv_glm thm
+R7280:7295 _glm_mueq_pstep_conditional_inv <> mueq_ipi_inv_glm thm
+R7316:7332 _glm_mueq_pstep_conditional_inv <> mueq_isig_inv_glm thm
+R7353:7372 _glm_mueq_pstep_conditional_inv <> mueq_ichoice_inv_glm thm
+R7393:7409 _glm_mueq_pstep_conditional_inv <> mueq_nile_inv_glm thm
+R7430:7447 _glm_mueq_pstep_conditional_inv <> mueq_ezero_inv_glm thm
+R7468:7482 _glm_mueq_pstep_conditional_inv <> mueq_i1_inv_glm thm
+R7503:7519 _glm_mueq_pstep_conditional_inv <> mueq_unit_inv_glm thm
+R7540:7556 _glm_mueq_pstep_conditional_inv <> mueq_enum_pos_glm thm
+R7577:7598 _glm_mueq_pstep_conditional_inv <> rtc_pbranches_case_glm thm
+R7619:7641 _glm_mueq_pstep_conditional_inv <> rtc_pstep_case_cong_glm thm

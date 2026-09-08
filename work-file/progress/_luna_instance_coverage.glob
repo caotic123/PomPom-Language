@@ -1,0 +1,274 @@
+DIGEST a580ac18781d43755e92c60272840d0a
+F_luna_instance_coverage
+R15:22 Progress <> <> lib
+R24:42 SignatureConversion <> <> lib
+R44:67 _parent_instance_pruning <> <> lib
+R69:93 _luna_instance_membership <> <> lib
+R123:126 Stdlib.Lists.List <> <> lib
+R128:130 Stdlib.micromega.Lia <> <> lib
+R140:152 Stdlib.Lists.List ListNotations <> mod
+R154:162 TypeRules <> <> mod
+R172:191 Progress _work_cjoin <> mod
+R193:223 Progress _work_cstep_invariants <> mod
+ind 237:249 <> joined_covers
+constr 288:293 <> jc_nil
+constr 351:357 <> jc_cons
+R257:260 Corelib.Init.Datatypes <> list ind
+R262:265 TypeRules <> term ind
+binder 252:253 <> bs:1
+R274:277 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R270:273 TypeRules <> term ind
+binder 304:304 <> L:4
+binder 306:306 <> A:5
+R326:329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R309:313 Progress _work_cjoin cjoin def
+R315:315 _luna_instance_coverage <> L:4 var
+R318:322 TypeRules <> TLNil constr
+R324:324 _luna_instance_coverage <> A:5 var
+R330:342 _luna_instance_coverage <> joined_covers:2 ind
+R347:347 _luna_instance_coverage <> L:4 var
+R344:345 _luna_instance_coverage <> bs:1 var
+binder 368:368 <> L:6
+binder 370:370 <> A:7
+binder 372:372 <> d:8
+binder 374:374 <> R:9
+R403:410 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R381:385 Progress _work_cjoin cjoin def
+R387:387 _luna_instance_coverage <> L:6 var
+R390:395 TypeRules <> TLCons constr
+R401:401 _luna_instance_coverage <> R:9 var
+R399:399 _luna_instance_coverage <> d:8 var
+R397:397 _luna_instance_coverage <> A:7 var
+R411:411 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R454:462 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R412:418 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R420:421 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 419:419 <> b:10
+R429:432 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R422:423 Stdlib.Lists.List <> In def
+R427:428 _luna_instance_coverage <> bs:1 var
+R425:425 _luna_instance_coverage <> b:10 var
+R433:437 Progress _work_cjoin cjoin def
+R440:448 Progress <> phi_erase def
+R450:450 _luna_instance_coverage <> b:10 var
+R453:453 _luna_instance_coverage <> d:8 var
+R481:484 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R463:475 _luna_instance_coverage <> joined_covers:2 ind
+R480:480 _luna_instance_coverage <> R:9 var
+R477:478 _luna_instance_coverage <> bs:1 var
+R485:497 _luna_instance_coverage <> joined_covers:2 ind
+R502:502 _luna_instance_coverage <> L:6 var
+R499:500 _luna_instance_coverage <> bs:1 var
+scheme 237:249 <> joined_covers_ind
+scheme 237:249 <> joined_covers_sind
+prf 512:534 <> joined_covers_transport
+binder 545:546 <> bs:11
+binder 548:549 <> L1:12
+R573:576 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R554:566 _luna_instance_coverage <> joined_covers ind
+R568:569 _luna_instance_coverage <> bs:11 var
+R571:572 _luna_instance_coverage <> L1:12 var
+binder 584:585 <> L2:13
+R599:602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R588:592 Progress _work_cjoin cjoin def
+R594:595 _luna_instance_coverage <> L1:12 var
+R597:598 _luna_instance_coverage <> L2:13 var
+R603:615 _luna_instance_coverage <> joined_covers ind
+R617:618 _luna_instance_coverage <> bs:11 var
+R620:621 _luna_instance_coverage <> L2:13 var
+R720:725 _luna_instance_coverage <> jc_nil constr
+R720:725 _luna_instance_coverage <> jc_nil constr
+R747:757 Progress _work_cjoin cjoin_trans thm
+R767:775 Progress _work_cjoin cjoin_sym thm
+R747:757 Progress _work_cjoin cjoin_trans thm
+R767:775 Progress _work_cjoin cjoin_sym thm
+R808:814 _luna_instance_coverage <> jc_cons constr
+R808:814 _luna_instance_coverage <> jc_cons constr
+R855:865 Progress _work_cjoin cjoin_trans thm
+R875:883 Progress _work_cjoin cjoin_sym thm
+R855:865 Progress _work_cjoin cjoin_trans thm
+R875:883 Progress _work_cjoin cjoin_sym thm
+prf 952:973 <> joined_covers_cons_inv
+binder 984:985 <> bs:14
+binder 987:987 <> A:15
+binder 989:989 <> d:16
+binder 991:991 <> R:17
+R1027:1032 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R996:1008 _luna_instance_coverage <> joined_covers ind
+R1010:1011 _luna_instance_coverage <> bs:14 var
+R1014:1019 TypeRules <> TLCons constr
+R1025:1025 _luna_instance_coverage <> R:17 var
+R1023:1023 _luna_instance_coverage <> d:16 var
+R1021:1021 _luna_instance_coverage <> A:15 var
+R1033:1033 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1076:1080 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1034:1040 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1042:1043 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1041:1041 <> b:18
+R1051:1054 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1044:1045 Stdlib.Lists.List <> In def
+R1049:1050 _luna_instance_coverage <> bs:14 var
+R1047:1047 _luna_instance_coverage <> b:18 var
+R1055:1059 Progress _work_cjoin cjoin def
+R1062:1070 Progress <> phi_erase def
+R1072:1072 _luna_instance_coverage <> b:18 var
+R1075:1075 _luna_instance_coverage <> d:16 var
+R1081:1093 _luna_instance_coverage <> joined_covers ind
+R1095:1096 _luna_instance_coverage <> bs:14 var
+R1098:1098 _luna_instance_coverage <> R:17 var
+R1209:1232 SignatureConversion <> no_cjoin_lcons_lnil_luna thm
+R1209:1232 SignatureConversion <> no_cjoin_lcons_lnil_luna thm
+R1261:1287 SignatureConversion <> cjoin_lcons_inv_erased_luna thm
+R1261:1287 SignatureConversion <> cjoin_lcons_inv_erased_luna thm
+R1423:1433 Progress _work_cjoin cjoin_trans thm
+R1454:1462 Progress _work_cjoin cjoin_sym thm
+R1423:1433 Progress _work_cjoin cjoin_trans thm
+R1454:1462 Progress _work_cjoin cjoin_sym thm
+R1490:1512 _luna_instance_coverage <> joined_covers_transport thm
+R1534:1542 Progress _work_cjoin cjoin_sym thm
+R1490:1512 _luna_instance_coverage <> joined_covers_transport thm
+R1534:1542 Progress _work_cjoin cjoin_sym thm
+prf 1570:1595 <> prune_labels_joined_covers
+binder 1606:1606 <> B:19
+binder 1608:1608 <> L:20
+binder 1610:1611 <> L':21
+binder 1613:1614 <> bs:22
+R1638:1641 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1619:1630 _parent_instance_pruning <> prune_labels ind
+R1632:1632 _luna_instance_coverage <> B:19 var
+R1634:1634 _luna_instance_coverage <> L:20 var
+R1636:1637 _luna_instance_coverage <> L':21 var
+R1672:1677 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1642:1654 _luna_instance_coverage <> joined_covers ind
+R1656:1657 _luna_instance_coverage <> bs:22 var
+R1660:1668 Progress <> phi_erase def
+R1670:1670 _luna_instance_coverage <> L:20 var
+R1678:1690 _luna_instance_coverage <> joined_covers ind
+R1692:1693 _luna_instance_coverage <> bs:22 var
+R1696:1704 Progress <> phi_erase def
+R1706:1707 _luna_instance_coverage <> L':21 var
+R1868:1878 _parent_instance_pruning <> prune_erase thm
+R1868:1878 _parent_instance_pruning <> prune_erase thm
+R1868:1878 _parent_instance_pruning <> prune_erase thm
+R1913:1934 _luna_instance_coverage <> joined_covers_cons_inv thm
+R1913:1934 _luna_instance_coverage <> joined_covers_cons_inv thm
+R1992:2000 Progress <> phi_erase def
+R2010:2018 Progress <> phi_erase def
+R2028:2036 Progress <> phi_erase def
+R1975:1981 _luna_instance_coverage <> jc_cons constr
+R1992:2000 Progress <> phi_erase def
+R2010:2018 Progress <> phi_erase def
+R2028:2036 Progress <> phi_erase def
+R1975:1981 _luna_instance_coverage <> jc_cons constr
+R2055:2064 Progress _work_cjoin cjoin_refl thm
+R2055:2064 Progress _work_cjoin cjoin_refl thm
+R2084:2094 _parent_instance_pruning <> prune_erase thm
+R2084:2094 _parent_instance_pruning <> prune_erase thm
+R2084:2094 _parent_instance_pruning <> prune_erase thm
+R2154:2175 _luna_instance_coverage <> joined_covers_cons_inv thm
+R2154:2175 _luna_instance_coverage <> joined_covers_cons_inv thm
+prf 2236:2248 <> covers_joined
+binder 2259:2260 <> bs:23
+binder 2262:2262 <> L:24
+R2276:2279 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2265:2270 TypeRules <> covers ind
+R2275:2275 _luna_instance_coverage <> L:24 var
+R2272:2273 _luna_instance_coverage <> bs:23 var
+R2280:2292 _luna_instance_coverage <> joined_covers ind
+R2294:2295 _luna_instance_coverage <> bs:23 var
+R2298:2306 Progress <> phi_erase def
+R2308:2308 _luna_instance_coverage <> L:24 var
+R2373:2381 Progress <> phi_erase def
+R2357:2362 _luna_instance_coverage <> jc_nil constr
+R2373:2381 Progress <> phi_erase def
+R2357:2362 _luna_instance_coverage <> jc_nil constr
+R2402:2413 Progress <> conv_of_eval thm
+R2420:2424 TypeRules <> TLNil constr
+R2402:2413 Progress <> conv_of_eval thm
+R2420:2424 TypeRules <> TLNil constr
+R2449:2462 Progress _work_cjoin conv_phi_cjoin thm
+R2449:2462 Progress _work_cjoin conv_phi_cjoin thm
+R2499:2507 Progress <> phi_erase def
+R2516:2524 Progress <> phi_erase def
+R2533:2541 Progress <> phi_erase def
+R2482:2488 _luna_instance_coverage <> jc_cons constr
+R2499:2507 Progress <> phi_erase def
+R2516:2524 Progress <> phi_erase def
+R2533:2541 Progress <> phi_erase def
+R2482:2488 _luna_instance_coverage <> jc_cons constr
+R2567:2578 Progress <> conv_of_eval thm
+R2585:2590 TypeRules <> TLCons constr
+R2567:2578 Progress <> conv_of_eval thm
+R2585:2590 TypeRules <> TLCons constr
+R2624:2637 Progress _work_cjoin conv_phi_cjoin thm
+R2624:2637 Progress _work_cjoin conv_phi_cjoin thm
+R2659:2671 Stdlib.Lists.List <> Exists_exists thm
+R2659:2671 Stdlib.Lists.List <> Exists_exists thm
+R2751:2761 Progress _work_cjoin cjoin_trans thm
+R2771:2779 Progress _work_cjoin cjoin_sym thm
+R2788:2801 Progress _work_cjoin conv_phi_cjoin thm
+R2820:2829 Progress _work_cjoin cjoin_refl thm
+R2751:2761 Progress _work_cjoin cjoin_trans thm
+R2771:2779 Progress _work_cjoin cjoin_sym thm
+R2788:2801 Progress _work_cjoin conv_phi_cjoin thm
+R2820:2829 Progress _work_cjoin cjoin_refl thm
+R2879:2901 _luna_instance_coverage <> joined_covers_transport thm
+R2922:2943 _luna_instance_coverage <> joined_covers_cons_inv thm
+R2964:2989 _luna_instance_coverage <> prune_labels_joined_covers thm
+R3010:3022 _luna_instance_coverage <> covers_joined thm
+prf 3032:3052 <> joined_mem_nil_absurd
+binder 3063:3063 <> c:25
+binder 3065:3065 <> A:26
+R3092:3095 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3070:3079 _luna_instance_membership <> joined_mem ind
+R3081:3081 _luna_instance_coverage <> c:25 var
+R3084:3088 TypeRules <> TLNil constr
+R3090:3090 _luna_instance_coverage <> A:26 var
+R3096:3100 Corelib.Init.Logic <> False ind
+R3189:3212 SignatureConversion <> no_cjoin_lcons_lnil_luna thm
+R3189:3212 SignatureConversion <> no_cjoin_lcons_lnil_luna thm
+R3231:3239 Progress _work_cjoin cjoin_sym thm
+R3231:3239 Progress _work_cjoin cjoin_sym thm
+R3262:3285 SignatureConversion <> no_cjoin_lcons_lnil_luna thm
+R3262:3285 SignatureConversion <> no_cjoin_lcons_lnil_luna thm
+R3304:3312 Progress _work_cjoin cjoin_sym thm
+R3304:3312 Progress _work_cjoin cjoin_sym thm
+prf 3337:3354 <> joined_mem_covered
+binder 3365:3365 <> c:27
+binder 3367:3367 <> L:28
+binder 3369:3370 <> bs:29
+R3389:3392 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3375:3384 _luna_instance_membership <> joined_mem ind
+R3386:3386 _luna_instance_coverage <> c:27 var
+R3388:3388 _luna_instance_coverage <> L:28 var
+R3411:3416 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3393:3405 _luna_instance_coverage <> joined_covers ind
+R3407:3408 _luna_instance_coverage <> bs:29 var
+R3410:3410 _luna_instance_coverage <> L:28 var
+R3417:3423 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3425:3426 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3424:3424 <> d:30
+R3434:3437 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3427:3428 Stdlib.Lists.List <> In def
+R3432:3433 _luna_instance_coverage <> bs:29 var
+R3430:3430 _luna_instance_coverage <> d:30 var
+R3438:3442 Progress _work_cjoin cjoin def
+R3444:3444 _luna_instance_coverage <> c:27 var
+R3447:3455 Progress <> phi_erase def
+R3457:3457 _luna_instance_coverage <> d:30 var
+R3598:3618 _luna_instance_coverage <> joined_mem_nil_absurd thm
+R3598:3618 _luna_instance_coverage <> joined_mem_nil_absurd thm
+R3650:3669 _luna_instance_membership <> joined_mem_transport thm
+R3650:3669 _luna_instance_membership <> joined_mem_transport thm
+R3708:3727 _luna_instance_membership <> joined_mem_transport thm
+R3737:3742 TypeRules <> TLCons constr
+R3708:3727 _luna_instance_membership <> joined_mem_transport thm
+R3737:3742 TypeRules <> TLCons constr
+R3776:3794 _luna_instance_membership <> joined_mem_cons_inv thm
+R3776:3794 _luna_instance_membership <> joined_mem_cons_inv thm
+R3870:3880 Progress _work_cjoin cjoin_trans thm
+R3900:3908 Progress _work_cjoin cjoin_sym thm
+R3870:3880 Progress _work_cjoin cjoin_trans thm
+R3900:3908 Progress _work_cjoin cjoin_sym thm
+R3968:3988 _luna_instance_coverage <> joined_mem_nil_absurd thm
+R4009:4026 _luna_instance_coverage <> joined_mem_covered thm

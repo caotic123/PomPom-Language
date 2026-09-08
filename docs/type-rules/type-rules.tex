@@ -1,0 +1,252 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,stmaryrd,mathpartir,booktabs,longtable}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks,linkcolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\hypersetup{pdftitle={PomPom: Typing Rules and Metatheory},pdfauthor={PomPom formalization},pdfsubject={Typing rules, computation, and theorem statements}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small PomPom: typing rules and metatheory}\fancyhead[R]{\small\thepage}
+\setlength{\headheight}{14pt}
+\newcommand{\Set}{\mathsf{Set}}
+\newcommand{\sy}[3]{#1\vdash #2\Rightarrow #3}
+\newcommand{\chk}[3]{#1\vdash #2\Leftarrow #3}
+\newcommand{\sub}[3]{#1\vdash #2\sqsubseteq #3}
+\newcommand{\wf}[1]{#1\;\mathsf{valid}}
+\newcommand{\op}[1]{\mathsf{#1}}
+\newcommand{\interp}[2]{\llbracket #1\rrbracket\,#2}
+\newcommand{\code}[1]{\mathsf{#1}}
+\newcommand{\src}[1]{\par\smallskip{\footnotesize\raggedright\textit{Source:}\space\texttt{\detokenize{#1}}.\par}}
+\newcommand{\ruleof}[3]{\inferrule*[right=\textsc{#1}]{#2}{#3}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\allowdisplaybreaks
+\title{PomPom\\[3mm]\Large Typing Rules and Metatheory}
+\author{A mathematical presentation of the repository formalization}
+\date{Source snapshot: 5 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This document presents the minimal PomPom calculus using mathematical inference rules: dependent functions and pairs, enumerations, indexed descriptions, inductive families, and signature refinements. It also states the principal metatheoretic results and the outstanding proof obligations. The authoritative source in this checkout is the Rocq/Coq development \texttt{progress/TypeRules.v} and its companion proof modules; no Lean source is present. The notation is adapted for reading, while synthesis, checking, reduction, and assumptions remain distinct.
+\end{abstract}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\newpage
+\section{Notation and scope}
+Contexts $\Gamma$ contain variable declarations. We write named binders for readability; the implementation uses de Bruijn indices. Thus $B[a/x]$ denotes capture-avoiding substitution, and weakening beneath a binder is implicit in named notation. In the implementation, variable $n$ with stored type $A$ has type $\operatorname{lift}(n+1,0,A)$.
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Notation & Meaning in the formalization\\\midrule
+$\sy{\Gamma}{t}{A}$ & \texttt{synth}: synthesize a type\\
+$\chk{\Gamma}{t}{A}$ & \texttt{check}: check against a type\\
+$\sub{\Gamma}{A}{B}$ & \texttt{sub}: coercion-free subtyping\\
+$t\equiv u$ & \texttt{conv}: untyped conversion, including $\varphi$\\
+$t\longmapsto u$ & \texttt{step}: computation with inspected-position congruence\\
+$t\Downarrow u$ & \texttt{eval}: zero or more computation steps\\
+$\operatorname{Val}(t)$ & \texttt{value}: designated weak-head value forms\\
+\bottomrule
+\end{tabular}
+\end{center}
+Here $t\Downarrow u$ does not assert that $u$ is a normal form. Moreover, a designated value can still step inside a pair or constructor. Progress is consequently an inclusive disjunction.
+
+Universes are predicative: $* = \Set_0$, $\mathsf{Type}=\Set_1$. Functions and pairs exist at every level; subtyping includes cumulativity. $A\to B$ and $A\times B$ abbreviate nondependent products. In particular, $\op{IDesc}\,I:\Set_1$ stores codes with small parameter types, while their interpretations live in $\Set_0$.
+
+Rules below retain the premises of the inductive definitions, including places where no separate formation premise is imposed. Conversion is a relation on raw terms; it is not a typed equality judgment. Rule names identify the corresponding source constructors. The notation $\pi_k$ and $\op{switch}_k$ records their typing universe; their raw syntax stores no $k$.
+\src{progress/TypeRules.v: term, lift, subst, wf, synth, check, sub}
+
+\section{Contexts, functions, and pairs}
+\begin{mathpar}
+\ruleof{wf-nil}{ }{\wf{\varnothing}}
+\and
+\ruleof{wf-cons}{\wf{\Gamma}\\\chk{\Gamma}{A}{\Set_k}}{\wf{\Gamma,x:A}}
+\and
+\ruleof{sy-var}{\wf{\Gamma}\\x:A\in\Gamma}{\sy{\Gamma}{x}{A}}
+\and
+\ruleof{sy-sort}{\wf{\Gamma}}{\sy{\Gamma}{\Set_k}{\Set_{k+1}}}
+\and
+\ruleof{sy-pi}{\chk{\Gamma}{A}{\Set_k}\\\chk{\Gamma,x:A}{B}{\Set_k}}{\sy{\Gamma}{\Pi x:A.\,B}{\Set_k}}
+\and
+\ruleof{sy-sigma}{\chk{\Gamma}{A}{\Set_k}\\\chk{\Gamma,x:A}{B}{\Set_k}}{\sy{\Gamma}{\Sigma x:A.\,B}{\Set_k}}
+\and
+\ruleof{ch-lam}{\chk{\Gamma,x:A}{b}{B}}{\chk{\Gamma}{\lambda x.b}{\Pi x:A.\,B}}
+\and
+\ruleof{ch-pair}{\chk{\Gamma}{a}{A}\\\chk{\Gamma}{b}{B[a/x]}}{\chk{\Gamma}{(a,b)}{\Sigma x:A.\,B}}
+\end{mathpar}
+Synthesis exposes a function or pair type by evaluation before elimination.
+\begin{mathpar}
+\ruleof{sy-app}{\sy{\Gamma}{f}{C}\\C\Downarrow\Pi x:A.B\\\chk{\Gamma}{a}{A}}{\sy{\Gamma}{f\,a}{B[a/x]}}
+\and
+\ruleof{sy-fst}{\sy{\Gamma}{p}{C}\\C\Downarrow\Sigma x:A.B}{\sy{\Gamma}{\pi_0p}{A}}
+\and
+\ruleof{sy-snd}{\sy{\Gamma}{p}{C}\\C\Downarrow\Sigma x:A.B}{\sy{\Gamma}{\pi_1p}{B[\pi_0p/x]}}
+\end{mathpar}
+Checking also has declarative elimination rules. The eliminated type is chosen as part of the derivation and must be well formed. These rules allow elimination of checked-only terms such as a literal lambda or pair.
+\begin{mathpar}
+\ruleof{ch-app}{\chk{\Gamma}{\Pi x:A.B}{\Set_k}\\\chk{\Gamma}{f}{\Pi x:A.B}\\\chk{\Gamma}{a}{A}}{\chk{\Gamma}{f\,a}{B[a/x]}}
+\and
+\ruleof{ch-fst}{\chk{\Gamma}{\Sigma x:A.B}{\Set_k}\\\chk{\Gamma}{p}{\Sigma x:A.B}}{\chk{\Gamma}{\pi_0p}{A}}
+\and
+\ruleof{ch-snd}{\chk{\Gamma}{\Sigma x:A.B}{\Set_k}\\\chk{\Gamma}{p}{\Sigma x:A.B}}{\chk{\Gamma}{\pi_1p}{B[\pi_0p/x]}}
+\end{mathpar}
+\subsection{Conversion and subsumption}
+\begin{mathpar}
+\ruleof{ch-conv}{\sy{\Gamma}{t}{A}\\A\equiv B}{\chk{\Gamma}{t}{B}}
+\and
+\ruleof{ch-sub}{\sy{\Gamma}{t}{A}\\\sub{\Gamma}{A}{B}}{\chk{\Gamma}{t}{B}}
+\and
+\ruleof{ch-expand}{A\equiv B\\\chk{\Gamma}{t}{B}}{\chk{\Gamma}{t}{A}}
+\end{mathpar}
+These rules retype the same term; no runtime coercion is inserted. In particular, \textsc{ch-conv} does not add a separate premise asserting that $B$ inhabits a universe.
+\src{progress/TypeRules.v: wf_nil through sy_snd; ch_conv through ch_snd}
+
+\section{Unit, enumerations, and lists}
+\begin{mathpar}
+\ruleof{sy-unitT}{\wf{\Gamma}}{\sy{\Gamma}{\mathbf1}{\Set_k}}
+\and
+\ruleof{sy-unit}{\wf{\Gamma}}{\sy{\Gamma}{\op{unit}}{\mathbf1}}
+\and
+\ruleof{sy-uid}{\wf{\Gamma}}{\sy{\Gamma}{\op{UId}}{\Set_0}}
+\and
+\ruleof{sy-enumu}{\wf{\Gamma}}{\sy{\Gamma}{\op{EnumU}}{\Set_0}}
+\and
+\ruleof{sy-tag}{\wf{\Gamma}}{\sy{\Gamma}{\texttt{'s}}{\op{UId}}}
+\and
+\ruleof{sy-nile}{\wf{\Gamma}}{\sy{\Gamma}{\op{nilE}}{\op{EnumU}}}
+\and
+\ruleof{sy-conse}{\chk{\Gamma}{\ell}{\op{UId}}\\\chk{\Gamma}{E}{\op{EnumU}}}{\sy{\Gamma}{\op{consE}\,\ell\,E}{\op{EnumU}}}
+\and
+\ruleof{sy-enumt}{\chk{\Gamma}{E}{\op{EnumU}}}{\sy{\Gamma}{\op{EnumT}\,E}{\Set_0}}
+\and
+\ruleof{ch-ezero}{\chk{\Gamma}{\ell}{\op{UId}}\\\chk{\Gamma}{E}{\op{EnumU}}}{\chk{\Gamma}{0_E}{\op{EnumT}(\op{consE}\,\ell\,E)}}
+\and
+\ruleof{ch-esucc}{\chk{\Gamma}{\ell}{\op{UId}}\\\chk{\Gamma}{n}{\op{EnumT}\,E}}{\chk{\Gamma}{1_E+n}{\op{EnumT}(\op{consE}\,\ell\,E)}}
+\end{mathpar}
+Every source string $s$ yields a tag; the core imposes no identifier-validation premise. Constructor labels are ambient positions: $\op{Label}\,E:=\op{EnumT}\,E$. Printable-name resolution belongs to elaboration.
+\begin{mathpar}
+\ruleof{sy-epi}{\chk{\Gamma}{E}{\op{EnumU}}\\\chk{\Gamma}{P}{\op{EnumT}\,E\to\Set_k}}{\sy{\Gamma}{\pi_k\,E\,P}{\Set_k}}
+\and
+\ruleof{sy-switch}{\chk{\Gamma}{E}{\op{EnumU}}\\\chk{\Gamma}{P}{\op{EnumT}\,E\to\Set_k}\\\chk{\Gamma}{p}{\pi_k\,E\,P}\\\chk{\Gamma}{e}{\op{EnumT}\,E}}{\sy{\Gamma}{\op{switch}_k\,E\,P\,p\,e}{P\,e}}
+\and
+\ruleof{sy-list}{\chk{\Gamma}{A}{\Set_0}}{\sy{\Gamma}{\op{List}\,A}{\Set_0}}
+\and
+\ruleof{sy-lnil}{\chk{\Gamma}{A}{\Set_0}}{\sy{\Gamma}{[\,]_A}{\op{List}\,A}}
+\and
+\ruleof{sy-lcons}{\chk{\Gamma}{A}{\Set_0}\\\chk{\Gamma}{a}{A}\\\chk{\Gamma}{l}{\op{List}\,A}}{\sy{\Gamma}{a::_A l}{\op{List}\,A}}
+\end{mathpar}
+Lists are primitive stand-ins for library datatypes in this minimal specification. Unit formation at every level accommodates the reduction $\pi_k\,\op{nilE}\,P\longmapsto\mathbf1$.
+\src{progress/TypeRules.v: sy_unitT through sy_switch; sy_list, sy_lnil, sy_lcons; ch_ezero, ch_esucc}
+
+\section{Indexed descriptions and inductive families}
+\subsection{Codes and interpretation}
+Description codes describe one layer of an indexed inductive family. Quoted constructors distinguish codes from the types they denote.
+\begin{mathpar}
+\ruleof{sy-idesc}{\chk{\Gamma}{I}{\Set_0}}{\sy{\Gamma}{\op{IDesc}\,I}{\Set_1}}
+\and
+\ruleof{ch-ivar}{\chk{\Gamma}{i}{I}}{\chk{\Gamma}{\code{'var}\,i}{\op{IDesc}\,I}}
+\and
+\ruleof{ch-i1}{\wf{\Gamma}}{\chk{\Gamma}{\code{'1}}{\op{IDesc}\,I}}
+\and
+\ruleof{ch-iprod}{\chk{\Gamma}{D}{\op{IDesc}\,I}\\\chk{\Gamma}{D'}{\op{IDesc}\,I}}{\chk{\Gamma}{D\mathbin{'\times}D'}{\op{IDesc}\,I}}
+\and
+\ruleof{ch-ipi}{\chk{\Gamma}{A}{\Set_0}\\\chk{\Gamma}{T}{A\to\op{IDesc}\,I}}{\chk{\Gamma}{'\Pi\,A\,T}{\op{IDesc}\,I}}
+\and
+\ruleof{ch-isig}{\chk{\Gamma}{A}{\Set_0}\\\chk{\Gamma}{T}{A\to\op{IDesc}\,I}}{\chk{\Gamma}{'\Sigma\,A\,T}{\op{IDesc}\,I}}
+\and
+\ruleof{ch-ichoice}{\chk{\Gamma}{E}{\op{EnumU}}\\\chk{\Gamma}{T}{\op{EnumT}\,E\to\op{IDesc}\,I}}{\chk{\Gamma}{'\sigma\,E\,T}{\op{IDesc}\,I}}
+\and
+\ruleof{sy-interp}{\chk{\Gamma}{I}{\Set_0}\\\chk{\Gamma}{D}{\op{IDesc}\,I}\\\chk{\Gamma}{X}{I\to\Set_0}}{\sy{\Gamma}{\interp{D}{X}}{\Set_0}}
+\end{mathpar}
+\subsection{Fixed points and induction}
+For compactness, the following abbreviations stand for the displayed checking premises, not additional judgments of the calculus:
+\begin{align*}
+\mathcal R_\Gamma(I,R)&:\!\iff
+ \chk{\Gamma}{I}{\Set_0}\ \land\ \chk{\Gamma}{R}{I\to\op{IDesc}\,I},\\
+\mathcal D_\Gamma(I,D,X)&:\!\iff
+ \chk{\Gamma}{I}{\Set_0}\ \land\ \chk{\Gamma}{D}{\op{IDesc}\,I}
+ \ \land\ \chk{\Gamma}{X}{I\to\Set_0}.
+\end{align*}
+\begin{mathpar}
+\ruleof{sy-mui}{\mathcal R_\Gamma(I,R)}{\sy{\Gamma}{\mu^I R}{I\to\Set_0}}
+\and
+\ruleof{ch-in-mui}{\mathcal R_\Gamma(I,R)\\\chk{\Gamma}{i}{I}\\\chk{\Gamma}{xs}{\interp{R\,i}{(\mu^I R)}}}{\chk{\Gamma}{\op{in}\,xs}{\mu^I R\,i}}
+\end{mathpar}
+Define the motive type and the type of a family of induction hypotheses by
+\[
+ \mathcal P(I,X):=(\Sigma i:I.\,X\,i)\to\Set_0,
+ \qquad H(I,X,P):=\Pi i:I.\,\Pi x:X\,i.\,P(i,x).
+\]
+\begin{mathpar}
+\ruleof{sy-iall}{\mathcal D_\Gamma(I,D,X)\\\chk{\Gamma}{xs}{\interp{D}{X}}\\\chk{\Gamma}{P}{\mathcal P(I,X)}}{\sy{\Gamma}{\op{iAll}\,D\,X\,xs\,P}{\Set_0}}
+\and
+\ruleof{sy-hyps}{\mathcal D_\Gamma(I,D,X)\\\chk{\Gamma}{P}{\mathcal P(I,X)}\\\chk{\Gamma}{h}{H(I,X,P)}\\\chk{\Gamma}{xs}{\interp{D}{X}}}{\sy{\Gamma}{\op{hyps}\,D\,X\,P\,h\,xs}{\op{iAll}\,D\,X\,xs\,P}}
+\end{mathpar}
+The induction-step type is
+\[
+ \mathcal S(I,R,P):=\Pi i:I.\,\Pi xs:\interp{R\,i}{(\mu^I R)}.\,
+ \op{iAll}\,(R\,i)\,(\mu^I R)\,xs\,P\to P(i,\op{in}\,xs).
+\]
+\begin{mathpar}
+\ruleof{sy-ind}{\mathcal R_\Gamma(I,R)\\\chk{\Gamma}{P}{\mathcal P(I,\mu^I R)}\\\chk{\Gamma}{s}{\mathcal S(I,R,P)}\\\chk{\Gamma}{i}{I}\\\chk{\Gamma}{x}{\mu^I R\,i}}{\sy{\Gamma}{\op{iinduction}\,R\,P\,s\,i\,x}{P(i,x)}}
+\end{mathpar}
+\src{progress/TypeRules.v: sy_idesc through sy_ind; ch_ivar through ch_in_mui}
+
+\section{Signature refinements and subtyping}
+\subsection{Signatures as ordinary pairs}
+A signature packages a branch-description function together with enabled labels:
+\begin{align*}
+\op{Sig}\,I\,E&:=(\op{EnumT}\,E\to\op{IDesc}\,I)\times\op{List}(\op{Label}\,E),\\
+\{T::\Phi\}&:=(T,\Phi),\\
+\op{branches}(s)&:=\pi_0s, &\op{labels}(s)&:=\pi_1s,\\
+\op{Full}_E(s)&:='\sigma\,E\,(\op{branches}(s)),\\
+\op{Carrier}_E(S)&:=\mu^I(\lambda i.\,\op{Full}_E(S\,i)).
+\end{align*}
+Write $B_S(i,c):=\op{branches}(S\,i)\,c$ and $L_S(i):=\op{labels}(S\,i)$. The family-formation abbreviation is
+\[
+\mathcal F_\Gamma(I,E,S):\!\iff
+\chk{\Gamma}{I}{\Set_0}\ \land\ \chk{\Gamma}{E}{\op{EnumU}}\ \land\
+\chk{\Gamma}{S}{\Pi i:I.\,\op{Sig}\,I\,E}.
+\]
+\begin{mathpar}
+\ruleof{sy-mus}{\mathcal F_\Gamma(I,E,S)}{\sy{\Gamma}{\mu^s S}{I\to\Set_0}}
+\and
+\ruleof{ch-in-sig}{\mathcal F_\Gamma(I,E,S)\\\chk{\Gamma}{i}{I}\\\chk{\Gamma}{c}{\op{Label}\,E}\\ L_S(i)\Downarrow\Phi\\c\in_s\Phi\\\chk{\Gamma}{xs}{\interp{B_S(i,c)}{(\op{Carrier}_E(S))}}}{\chk{\Gamma}{\op{in}(c,xs)}{\mu^s S\,i}}
+\end{mathpar}
+The recursive payload uses the full carrier. The enabled list restricts the outer constructor; no membership evidence is stored in the term.
+
+\subsection{Subtyping}
+\begin{mathpar}
+\ruleof{su-conv}{A\equiv B}{\sub{\Gamma}{A}{B}}
+\and
+\ruleof{su-trans}{\sub{\Gamma}{A}{B}\\\sub{\Gamma}{B}{C}}{\sub{\Gamma}{A}{C}}
+\and
+\ruleof{su-sort}{j\le k}{\sub{\Gamma}{\Set_j}{\Set_k}}
+\and
+\ruleof{su-pi}{\sub{\Gamma}{A'}{A}\\\sub{\Gamma,x:A'}{B}{B'}}{\sub{\Gamma}{\Pi x:A.B}{\Pi x:A'.B'}}
+\and
+\ruleof{su-forget}{\mathcal F_\Gamma(I,E,S)\\\chk{\Gamma}{i}{I}}{\sub{\Gamma}{\mu^s S\,i}{\op{Carrier}_E(S)\,i}}
+\and
+\ruleof{su-sig}{\mathcal F_\Gamma(I,E,S_1)\\\mathcal F_\Gamma(I,E,S_2)\\\chk{\Gamma}{i}{I}\\
+ (\lambda j.\op{branches}(S_1j))\equiv(\lambda j.\op{branches}(S_2j))\\
+ L_{S_1}(i)\Downarrow\Phi_1\\L_{S_2}(i)\Downarrow\Phi_2\\\Phi_1\subseteq_s\Phi_2}{\sub{\Gamma}{\mu^s S_1\,i}{\mu^s S_2\,i}}
+\end{mathpar}
+In \textsc{su-sig}, the shared branch descriptions are invariant up to conversion. Inclusion of enabled labels alone does not permit changing their payload types. The duplicated formation premises in the abbreviation refer to the same $I$ and $E$.
+
+\subsection{Case analysis}
+Let $bs=[(c_1,N_1),\ldots,(c_m,N_m)]$ and $\Psi=[c_1,\ldots,c_m]$. Each branch body binds exactly one payload variable. The result type $Q$ is independent of that variable.
+\begin{mathpar}
+\ruleof{sy-case}{\mathcal F_\Gamma(I,E,S)\\\chk{\Gamma}{i}{I}\\\chk{\Gamma}{M}{\mu^s S\,i}\\\chk{\Gamma}{Q}{\Set_k}\\
+ \operatorname{distinct}_{\equiv}(\Psi)\\L_S(i)\Downarrow\Phi\\\operatorname{covers}(\Psi,\Phi)\\
+ \forall r,\quad\chk{\Gamma}{c_r}{\op{Label}\,E}\\
+ \forall r,\quad\chk{\Gamma,xs:\interp{B_S(i,c_r)}{(\op{Carrier}_E(S))}}{N_r}{Q}
+}{\sy{\Gamma}{\op{case}\ M\ \op{of}\ Q\ \{c_r\,xs\Rightarrow N_r\}_{r=1}^m}{Q}}
+\end{mathpar}
+Coverage requires every enabled label to occur among the clauses. Additional distinct clauses are allowed: reverse inclusion is not a typing premise. For zero clauses the two per-clause premises are vacuous. In de Bruijn notation the branch result is $\operatorname{lift}(1,0,Q)$.
+\src{progress/TypeRules.v: Sig, Carrier, sy_mus, sy_case, ch_in_sig, check_branches, sub}
+\input{side-conditions}
+\input{computation}
+\input{theorems}
+\end{document}

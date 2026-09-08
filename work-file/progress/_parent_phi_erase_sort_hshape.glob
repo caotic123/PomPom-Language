@@ -1,0 +1,46 @@
+DIGEST 3ee38f41b7401361f67c25547cd61849
+F_parent_phi_erase_sort_hshape
+R94:101 Progress <> <> lib
+R103:113 _tmp_epstep <> <> lib
+R115:133 _work_mixed_closure <> <> lib
+R137:158 _work_cstep_invariants <> <> lib
+R160:181 _luna_phi_erase_shapes <> <> lib
+R185:213 _parent_phi_erase_sort_direct <> <> lib
+R243:246 Stdlib.Lists.List <> <> lib
+R256:268 Stdlib.Lists.List ListNotations <> mod
+R270:278 TypeRules <> <> mod
+prf 290:325 <> phi_erase_sort_reflect_hshape_parent
+binder 336:336 <> t:1
+binder 338:338 <> h:2
+binder 340:340 <> j:3
+R357:360 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R347:352 Progress <> hshape ind
+R354:354 _parent_phi_erase_sort_hshape <> t:1 var
+R356:356 _parent_phi_erase_sort_hshape <> h:2 var
+R394:401 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R361:363 Progress <> rtc ind
+R386:390 TypeRules <> TSort constr
+R392:392 _parent_phi_erase_sort_hshape <> j:3 var
+R372:380 Progress <> phi_erase def
+R382:382 _parent_phi_erase_sort_hshape <> t:1 var
+R365:369 _work_mixed_closure <> cstep ind
+R402:405 TypeRules <> conv ind
+R410:414 TypeRules <> TSort constr
+R416:416 _parent_phi_erase_sort_hshape <> j:3 var
+R407:407 _parent_phi_erase_sort_hshape <> t:1 var
+R469:484 _work_cstep_invariants <> rtc_cstep_hshape thm
+R487:495 Progress <> phi_erase def
+R501:505 TypeRules <> TSort constr
+R522:542 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm
+R469:484 _work_cstep_invariants <> rtc_cstep_hshape thm
+R487:495 Progress <> phi_erase def
+R501:505 TypeRules <> TSort constr
+R522:542 _luna_phi_erase_shapes <> phi_erase_hshape_luna thm
+R629:637 Progress <> phi_erase def
+R663:679 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R685:689 TypeRules <> TSort constr
+R663:679 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R685:689 TypeRules <> TSort constr
+R731:737 TypeRules <> cv_refl constr
+R731:737 TypeRules <> cv_refl constr
+R764:799 _parent_phi_erase_sort_hshape <> phi_erase_sort_reflect_hshape_parent thm

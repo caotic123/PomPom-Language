@@ -1,0 +1,259 @@
+DIGEST ba5fdf8734bc8303dbf9a40ab71695f8
+F_parent_mueq_projection_sort_recursive
+R92:99 Progress <> <> lib
+R101:111 _tmp_epstep <> <> lib
+R113:131 _work_mixed_closure <> <> lib
+R135:156 _work_cstep_invariants <> <> lib
+R158:167 _luna_mueq <> <> lib
+R169:199 _glm_mueq_pstep_conditional_inv <> <> lib
+R203:233 _parent_mueq_eta_sort_recursive <> <> lib
+R263:266 Stdlib.Lists.List <> <> lib
+R268:270 Stdlib.micromega.Lia <> <> lib
+R280:292 Stdlib.Lists.List ListNotations <> mod
+R294:302 TypeRules <> <> mod
+prf 312:330 <> mueq_fst_inv_parent
+binder 341:341 <> p:1
+binder 343:343 <> u:2
+R365:368 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R350:353 _luna_mueq <> mueq ind
+R356:359 TypeRules <> TFst constr
+R361:361 _parent_mueq_projection_sort_recursive <> p:1 var
+R364:364 _parent_mueq_projection_sort_recursive <> u:2 var
+R369:375 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R378:379 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 376:377 <> p':3
+R391:394 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R381:383 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R380:380 _parent_mueq_projection_sort_recursive <> u:2 var
+R384:387 TypeRules <> TFst constr
+R389:390 _parent_mueq_projection_sort_recursive <> p':3 var
+R395:398 _luna_mueq <> mueq ind
+R400:400 _parent_mueq_projection_sort_recursive <> p:1 var
+R402:403 _parent_mueq_projection_sort_recursive <> p':3 var
+prf 508:526 <> mueq_snd_inv_parent
+binder 537:537 <> p:4
+binder 539:539 <> u:5
+R561:564 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R546:549 _luna_mueq <> mueq ind
+R552:555 TypeRules <> TSnd constr
+R557:557 _parent_mueq_projection_sort_recursive <> p:4 var
+R560:560 _parent_mueq_projection_sort_recursive <> u:5 var
+R565:571 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R574:575 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 572:573 <> p':6
+R587:590 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R577:579 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R576:576 _parent_mueq_projection_sort_recursive <> u:5 var
+R580:583 TypeRules <> TSnd constr
+R585:586 _parent_mueq_projection_sort_recursive <> p':6 var
+R591:594 _luna_mueq <> mueq ind
+R596:596 _parent_mueq_projection_sort_recursive <> p:4 var
+R598:599 _parent_mueq_projection_sort_recursive <> p':6 var
+prf 704:737 <> fst_contractum_reaches_sort_parent
+binder 748:748 <> a:7
+binder 750:750 <> b:8
+binder 752:752 <> j:9
+R797:804 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R759:761 Progress <> rtc ind
+R789:793 TypeRules <> TSort constr
+R795:795 _parent_mueq_projection_sort_recursive <> j:9 var
+R770:773 TypeRules <> TFst constr
+R776:780 TypeRules <> TPair constr
+R784:784 _parent_mueq_projection_sort_recursive <> b:8 var
+R782:782 _parent_mueq_projection_sort_recursive <> a:7 var
+R763:767 _work_mixed_closure <> cstep ind
+R805:807 Progress <> rtc ind
+R818:822 TypeRules <> TSort constr
+R824:824 _parent_mueq_projection_sort_recursive <> j:9 var
+R815:815 _parent_mueq_projection_sort_recursive <> a:7 var
+R809:813 _work_mixed_closure <> cstep ind
+R875:877 Progress <> rtc ind
+R886:889 TypeRules <> TFst constr
+R892:896 TypeRules <> TPair constr
+R879:883 _work_mixed_closure <> cstep ind
+R875:877 Progress <> rtc ind
+R886:889 TypeRules <> TFst constr
+R892:896 TypeRules <> TPair constr
+R879:883 _work_mixed_closure <> cstep ind
+R918:924 Progress <> rtc_one thm
+R927:937 _work_mixed_closure <> pstep_cstep thm
+R918:924 Progress <> rtc_one thm
+R927:937 _work_mixed_closure <> pstep_cstep thm
+R951:961 Progress <> ps_fst_pair constr
+R972:981 Progress <> pstep_refl thm
+R987:996 Progress <> pstep_refl thm
+R951:961 Progress <> ps_fst_pair constr
+R972:981 Progress <> pstep_refl thm
+R987:996 Progress <> pstep_refl thm
+R1017:1031 _work_mixed_closure <> cstep_confluent thm
+R1017:1031 _work_mixed_closure <> cstep_confluent thm
+R1081:1097 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R1081:1097 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R1081:1097 _work_cstep_invariants <> rtc_cstep_sort_id thm
+prf 1139:1172 <> snd_contractum_reaches_sort_parent
+binder 1183:1183 <> a:10
+binder 1185:1185 <> b:11
+binder 1187:1187 <> j:12
+R1232:1239 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1194:1196 Progress <> rtc ind
+R1224:1228 TypeRules <> TSort constr
+R1230:1230 _parent_mueq_projection_sort_recursive <> j:12 var
+R1205:1208 TypeRules <> TSnd constr
+R1211:1215 TypeRules <> TPair constr
+R1219:1219 _parent_mueq_projection_sort_recursive <> b:11 var
+R1217:1217 _parent_mueq_projection_sort_recursive <> a:10 var
+R1198:1202 _work_mixed_closure <> cstep ind
+R1240:1242 Progress <> rtc ind
+R1253:1257 TypeRules <> TSort constr
+R1259:1259 _parent_mueq_projection_sort_recursive <> j:12 var
+R1250:1250 _parent_mueq_projection_sort_recursive <> b:11 var
+R1244:1248 _work_mixed_closure <> cstep ind
+R1310:1312 Progress <> rtc ind
+R1321:1324 TypeRules <> TSnd constr
+R1327:1331 TypeRules <> TPair constr
+R1314:1318 _work_mixed_closure <> cstep ind
+R1310:1312 Progress <> rtc ind
+R1321:1324 TypeRules <> TSnd constr
+R1327:1331 TypeRules <> TPair constr
+R1314:1318 _work_mixed_closure <> cstep ind
+R1353:1359 Progress <> rtc_one thm
+R1362:1372 _work_mixed_closure <> pstep_cstep thm
+R1353:1359 Progress <> rtc_one thm
+R1362:1372 _work_mixed_closure <> pstep_cstep thm
+R1386:1396 Progress <> ps_snd_pair constr
+R1407:1416 Progress <> pstep_refl thm
+R1422:1431 Progress <> pstep_refl thm
+R1386:1396 Progress <> ps_snd_pair constr
+R1407:1416 Progress <> pstep_refl thm
+R1422:1431 Progress <> pstep_refl thm
+R1452:1466 _work_mixed_closure <> cstep_confluent thm
+R1452:1466 _work_mixed_closure <> cstep_confluent thm
+R1516:1532 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R1516:1532 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R1516:1532 _work_cstep_invariants <> rtc_cstep_sort_id thm
+prf 1576:1610 <> mueq_fst_pair_sort_recursive_parent
+binder 1621:1621 <> a:13
+binder 1623:1623 <> b:14
+binder 1625:1625 <> u:15
+binder 1627:1627 <> j:16
+R1693:1700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1634:1665 _parent_mueq_eta_sort_recursive <> mueq_sort_transport_below_parent def
+R1668:1672 Progress <> tsize def
+R1675:1678 TypeRules <> TFst constr
+R1681:1685 TypeRules <> TPair constr
+R1689:1689 _parent_mueq_projection_sort_recursive <> b:14 var
+R1687:1687 _parent_mueq_projection_sort_recursive <> a:13 var
+R1726:1733 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1701:1704 _luna_mueq <> mueq ind
+R1707:1710 TypeRules <> TFst constr
+R1713:1717 TypeRules <> TPair constr
+R1721:1721 _parent_mueq_projection_sort_recursive <> b:14 var
+R1719:1719 _parent_mueq_projection_sort_recursive <> a:13 var
+R1725:1725 _parent_mueq_projection_sort_recursive <> u:15 var
+R1772:1779 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1734:1736 Progress <> rtc ind
+R1764:1768 TypeRules <> TSort constr
+R1770:1770 _parent_mueq_projection_sort_recursive <> j:16 var
+R1745:1748 TypeRules <> TFst constr
+R1751:1755 TypeRules <> TPair constr
+R1759:1759 _parent_mueq_projection_sort_recursive <> b:14 var
+R1757:1757 _parent_mueq_projection_sort_recursive <> a:13 var
+R1738:1742 _work_mixed_closure <> cstep ind
+R1780:1782 Progress <> rtc ind
+R1793:1797 TypeRules <> TSort constr
+R1799:1799 _parent_mueq_projection_sort_recursive <> j:16 var
+R1790:1790 _parent_mueq_projection_sort_recursive <> u:15 var
+R1784:1788 _work_mixed_closure <> cstep ind
+R1852:1870 _parent_mueq_projection_sort_recursive <> mueq_fst_inv_parent thm
+R1852:1870 _parent_mueq_projection_sort_recursive <> mueq_fst_inv_parent thm
+R1909:1925 _glm_mueq_pstep_conditional_inv <> mueq_pair_inv_glm thm
+R1909:1925 _glm_mueq_pstep_conditional_inv <> mueq_pair_inv_glm thm
+R1978:2011 _parent_mueq_projection_sort_recursive <> fst_contractum_reaches_sort_parent thm
+R1978:2011 _parent_mueq_projection_sort_recursive <> fst_contractum_reaches_sort_parent thm
+R2063:2065 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R2056:2060 Progress <> tsize def
+R2066:2070 Progress <> tsize def
+R2073:2076 TypeRules <> TFst constr
+R2079:2083 TypeRules <> TPair constr
+R2063:2065 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R2056:2060 Progress <> tsize def
+R2066:2070 Progress <> tsize def
+R2073:2076 TypeRules <> TFst constr
+R2079:2083 TypeRules <> TPair constr
+R2109:2117 Progress <> tsize_pos thm
+R2109:2117 Progress <> tsize_pos thm
+R2128:2132 Progress <> tsize def
+R2206:2213 Progress <> rtc_step constr
+R2206:2213 Progress <> rtc_step constr
+R2226:2236 _work_mixed_closure <> pstep_cstep thm
+R2226:2236 _work_mixed_closure <> pstep_cstep thm
+R2250:2260 Progress <> ps_fst_pair constr
+R2275:2284 Progress <> pstep_refl thm
+R2291:2300 Progress <> pstep_refl thm
+R2250:2260 Progress <> ps_fst_pair constr
+R2275:2284 Progress <> pstep_refl thm
+R2291:2300 Progress <> pstep_refl thm
+prf 2341:2375 <> mueq_snd_pair_sort_recursive_parent
+binder 2386:2386 <> a:17
+binder 2388:2388 <> b:18
+binder 2390:2390 <> u:19
+binder 2392:2392 <> j:20
+R2458:2465 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2399:2430 _parent_mueq_eta_sort_recursive <> mueq_sort_transport_below_parent def
+R2433:2437 Progress <> tsize def
+R2440:2443 TypeRules <> TSnd constr
+R2446:2450 TypeRules <> TPair constr
+R2454:2454 _parent_mueq_projection_sort_recursive <> b:18 var
+R2452:2452 _parent_mueq_projection_sort_recursive <> a:17 var
+R2491:2498 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2466:2469 _luna_mueq <> mueq ind
+R2472:2475 TypeRules <> TSnd constr
+R2478:2482 TypeRules <> TPair constr
+R2486:2486 _parent_mueq_projection_sort_recursive <> b:18 var
+R2484:2484 _parent_mueq_projection_sort_recursive <> a:17 var
+R2490:2490 _parent_mueq_projection_sort_recursive <> u:19 var
+R2537:2544 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2499:2501 Progress <> rtc ind
+R2529:2533 TypeRules <> TSort constr
+R2535:2535 _parent_mueq_projection_sort_recursive <> j:20 var
+R2510:2513 TypeRules <> TSnd constr
+R2516:2520 TypeRules <> TPair constr
+R2524:2524 _parent_mueq_projection_sort_recursive <> b:18 var
+R2522:2522 _parent_mueq_projection_sort_recursive <> a:17 var
+R2503:2507 _work_mixed_closure <> cstep ind
+R2545:2547 Progress <> rtc ind
+R2558:2562 TypeRules <> TSort constr
+R2564:2564 _parent_mueq_projection_sort_recursive <> j:20 var
+R2555:2555 _parent_mueq_projection_sort_recursive <> u:19 var
+R2549:2553 _work_mixed_closure <> cstep ind
+R2617:2635 _parent_mueq_projection_sort_recursive <> mueq_snd_inv_parent thm
+R2617:2635 _parent_mueq_projection_sort_recursive <> mueq_snd_inv_parent thm
+R2674:2690 _glm_mueq_pstep_conditional_inv <> mueq_pair_inv_glm thm
+R2674:2690 _glm_mueq_pstep_conditional_inv <> mueq_pair_inv_glm thm
+R2743:2776 _parent_mueq_projection_sort_recursive <> snd_contractum_reaches_sort_parent thm
+R2743:2776 _parent_mueq_projection_sort_recursive <> snd_contractum_reaches_sort_parent thm
+R2828:2830 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R2821:2825 Progress <> tsize def
+R2831:2835 Progress <> tsize def
+R2838:2841 TypeRules <> TSnd constr
+R2844:2848 TypeRules <> TPair constr
+R2828:2830 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R2821:2825 Progress <> tsize def
+R2831:2835 Progress <> tsize def
+R2838:2841 TypeRules <> TSnd constr
+R2844:2848 TypeRules <> TPair constr
+R2874:2882 Progress <> tsize_pos thm
+R2874:2882 Progress <> tsize_pos thm
+R2893:2897 Progress <> tsize def
+R2971:2978 Progress <> rtc_step constr
+R2971:2978 Progress <> rtc_step constr
+R2991:3001 _work_mixed_closure <> pstep_cstep thm
+R2991:3001 _work_mixed_closure <> pstep_cstep thm
+R3015:3025 Progress <> ps_snd_pair constr
+R3040:3049 Progress <> pstep_refl thm
+R3056:3065 Progress <> pstep_refl thm
+R3015:3025 Progress <> ps_snd_pair constr
+R3040:3049 Progress <> pstep_refl thm
+R3056:3065 Progress <> pstep_refl thm
+R3116:3150 _parent_mueq_projection_sort_recursive <> mueq_fst_pair_sort_recursive_parent thm
+R3171:3205 _parent_mueq_projection_sort_recursive <> mueq_snd_pair_sort_recursive_parent thm

@@ -1,0 +1,176 @@
+DIGEST c580b949aa73af50d3b96778e852782b
+F_parent_pi_sort_rep_consumer
+R291:298 Progress <> <> lib
+R300:310 _tmp_epstep <> <> lib
+R312:330 _work_mixed_closure <> <> lib
+R332:342 _work_cjoin <> <> lib
+R346:367 _work_cstep_invariants <> <> lib
+R369:378 _luna_mueq <> <> lib
+R380:393 _glm_qconv_def <> <> lib
+R395:409 _glm_qconv_main <> <> lib
+R413:438 _glm_injectivity_close_rep <> <> lib
+R468:471 Stdlib.Lists.List <> <> lib
+R481:493 Stdlib.Lists.List ListNotations <> mod
+R495:503 TypeRules <> <> mod
+def 518:550 <> mueq_pi_sort_rep_transport_parent
+binder 571:571 <> t:1
+binder 573:573 <> u:2
+binder 575:575 <> A:3
+binder 577:577 <> B:4
+binder 579:579 <> j:5
+R594:597 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R586:589 _luna_mueq <> mueq ind
+R591:591 _parent_pi_sort_rep_consumer <> t:1 var
+R593:593 _parent_pi_sort_rep_consumer <> u:2 var
+R610:613 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R598:603 _glm_injectivity_close_rep <> pi_rep def
+R605:605 _parent_pi_sort_rep_consumer <> t:1 var
+R607:607 _parent_pi_sort_rep_consumer <> A:3 var
+R609:609 _parent_pi_sort_rep_consumer <> B:4 var
+R635:642 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R614:616 Progress <> rtc ind
+R627:631 TypeRules <> TSort constr
+R633:633 _parent_pi_sort_rep_consumer <> j:5 var
+R624:624 _parent_pi_sort_rep_consumer <> B:4 var
+R618:622 _work_mixed_closure <> cstep ind
+R643:649 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R655:656 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 650:651 <> A':6
+binder 653:654 <> B':7
+R671:674 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R657:662 _glm_injectivity_close_rep <> pi_rep def
+R664:664 _parent_pi_sort_rep_consumer <> u:2 var
+R666:667 _parent_pi_sort_rep_consumer <> A':6 var
+R669:670 _parent_pi_sort_rep_consumer <> B':7 var
+R675:677 Progress <> rtc ind
+R689:693 TypeRules <> TSort constr
+R695:695 _parent_pi_sort_rep_consumer <> j:5 var
+R685:686 _parent_pi_sort_rep_consumer <> B':7 var
+R679:683 _work_mixed_closure <> cstep ind
+prf 706:739 <> pi_sort_rep_qconv_transport_parent
+R780:787 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R747:779 _parent_pi_sort_rep_consumer <> mueq_pi_sort_rep_transport_parent def
+binder 795:795 <> t:8
+binder 797:797 <> u:9
+R809:812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R800:804 _glm_qconv_def <> qconv def
+R806:806 _parent_pi_sort_rep_consumer <> t:8 var
+R808:808 _parent_pi_sort_rep_consumer <> u:9 var
+binder 820:820 <> A:10
+binder 822:822 <> B:11
+binder 824:824 <> j:12
+R845:848 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R833:838 _glm_injectivity_close_rep <> pi_rep def
+R840:840 _parent_pi_sort_rep_consumer <> t:8 var
+R842:842 _parent_pi_sort_rep_consumer <> A:10 var
+R844:844 _parent_pi_sort_rep_consumer <> B:11 var
+R870:879 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R849:851 Progress <> rtc ind
+R862:866 TypeRules <> TSort constr
+R868:868 _parent_pi_sort_rep_consumer <> j:12 var
+R859:859 _parent_pi_sort_rep_consumer <> B:11 var
+R853:857 _work_mixed_closure <> cstep ind
+R880:886 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R892:893 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 887:888 <> A':13
+binder 890:891 <> B':14
+R908:911 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R894:899 _glm_injectivity_close_rep <> pi_rep def
+R901:901 _parent_pi_sort_rep_consumer <> u:9 var
+R903:904 _parent_pi_sort_rep_consumer <> A':13 var
+R906:907 _parent_pi_sort_rep_consumer <> B':14 var
+R912:914 Progress <> rtc ind
+R926:930 TypeRules <> TSort constr
+R932:932 _parent_pi_sort_rep_consumer <> j:12 var
+R922:923 _parent_pi_sort_rep_consumer <> B':14 var
+R916:920 _work_mixed_closure <> cstep ind
+R1138:1143 _glm_injectivity_close_rep <> pi_rep def
+R1166:1176 _work_cjoin <> cjoin_trans thm
+R1186:1194 _work_cjoin <> cjoin_sym thm
+R1166:1176 _work_cjoin <> cjoin_trans thm
+R1186:1194 _work_cjoin <> cjoin_sym thm
+prf 1378:1411 <> pi_sort_codomain_from_qconv_parent
+R1452:1459 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1419:1451 _parent_pi_sort_rep_consumer <> mueq_pi_sort_rep_transport_parent def
+binder 1467:1468 <> A0:15
+binder 1470:1471 <> A1:16
+binder 1473:1474 <> B1:17
+binder 1476:1476 <> j:18
+R1521:1530 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1485:1489 _glm_qconv_def <> qconv def
+R1492:1494 TypeRules <> TPi constr
+R1500:1504 TypeRules <> TSort constr
+R1506:1506 _parent_pi_sort_rep_consumer <> j:18 var
+R1496:1497 _parent_pi_sort_rep_consumer <> A0:15 var
+R1511:1513 TypeRules <> TPi constr
+R1518:1519 _parent_pi_sort_rep_consumer <> B1:17 var
+R1515:1516 _parent_pi_sort_rep_consumer <> A1:16 var
+R1531:1534 TypeRules <> conv ind
+R1540:1544 TypeRules <> TSort constr
+R1546:1546 _parent_pi_sort_rep_consumer <> j:18 var
+R1536:1537 _parent_pi_sort_rep_consumer <> B1:17 var
+R1603:1608 _glm_injectivity_close_rep <> pi_rep def
+R1611:1613 TypeRules <> TPi constr
+R1619:1623 TypeRules <> TSort constr
+R1633:1637 TypeRules <> TSort constr
+R1603:1608 _glm_injectivity_close_rep <> pi_rep def
+R1611:1613 TypeRules <> TPi constr
+R1619:1623 TypeRules <> TSort constr
+R1633:1637 TypeRules <> TSort constr
+R1655:1660 _glm_injectivity_close_rep <> pi_rep def
+R1669:1678 _work_cjoin <> cjoin_refl thm
+R1669:1678 _work_cjoin <> cjoin_refl thm
+R1695:1728 _parent_pi_sort_rep_consumer <> pi_sort_rep_qconv_transport_parent thm
+R1741:1743 TypeRules <> TPi constr
+R1749:1753 TypeRules <> TSort constr
+R1760:1762 TypeRules <> TPi constr
+R1778:1782 TypeRules <> TSort constr
+R1803:1810 Progress <> rtc_refl constr
+R1812:1815 TypeRules <> term ind
+R1817:1821 _work_mixed_closure <> cstep ind
+R1824:1828 TypeRules <> TSort constr
+R1695:1728 _parent_pi_sort_rep_consumer <> pi_sort_rep_qconv_transport_parent thm
+R1741:1743 TypeRules <> TPi constr
+R1749:1753 TypeRules <> TSort constr
+R1760:1762 TypeRules <> TPi constr
+R1778:1782 TypeRules <> TSort constr
+R1803:1810 Progress <> rtc_refl constr
+R1812:1815 TypeRules <> term ind
+R1817:1821 _work_mixed_closure <> cstep ind
+R1824:1828 TypeRules <> TSort constr
+R1875:1880 _glm_injectivity_close_rep <> pi_rep def
+R1903:1914 _work_cstep_invariants <> cjoin_pi_inv thm
+R1903:1914 _work_cstep_invariants <> cjoin_pi_inv thm
+R1954:1961 TypeRules <> cv_trans constr
+R1954:1961 TypeRules <> cv_trans constr
+R1974:1983 _glm_injectivity_close_rep <> cjoin_conv thm
+R1974:1983 _glm_injectivity_close_rep <> cjoin_conv thm
+R2006:2019 _glm_injectivity_close_rep <> rtc_cstep_conv thm
+R2006:2019 _glm_injectivity_close_rep <> rtc_cstep_conv thm
+prf 2051:2092 <> conv_pi_sort_codomain_from_endpoint_parent
+R2133:2140 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2100:2132 _parent_pi_sort_rep_consumer <> mueq_pi_sort_rep_transport_parent def
+binder 2148:2149 <> A0:19
+binder 2151:2152 <> A1:20
+binder 2154:2155 <> B1:21
+binder 2157:2157 <> j:22
+R2201:2210 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2166:2169 TypeRules <> conv ind
+R2191:2193 TypeRules <> TPi constr
+R2198:2199 _parent_pi_sort_rep_consumer <> B1:21 var
+R2195:2196 _parent_pi_sort_rep_consumer <> A1:20 var
+R2172:2174 TypeRules <> TPi constr
+R2180:2184 TypeRules <> TSort constr
+R2186:2186 _parent_pi_sort_rep_consumer <> j:22 var
+R2176:2177 _parent_pi_sort_rep_consumer <> A0:19 var
+R2211:2214 TypeRules <> conv ind
+R2220:2224 TypeRules <> TSort constr
+R2226:2226 _parent_pi_sort_rep_consumer <> j:22 var
+R2216:2217 _parent_pi_sort_rep_consumer <> B1:21 var
+R2277:2310 _parent_pi_sort_rep_consumer <> pi_sort_codomain_from_qconv_parent thm
+R2277:2310 _parent_pi_sort_rep_consumer <> pi_sort_codomain_from_qconv_parent thm
+R2337:2350 _glm_qconv_main <> conv_qconv_glm thm
+R2337:2350 _glm_qconv_main <> conv_qconv_glm thm
+R2390:2423 _parent_pi_sort_rep_consumer <> pi_sort_rep_qconv_transport_parent thm
+R2444:2477 _parent_pi_sort_rep_consumer <> pi_sort_codomain_from_qconv_parent thm
+R2498:2539 _parent_pi_sort_rep_consumer <> conv_pi_sort_codomain_from_endpoint_parent thm

@@ -1,0 +1,34 @@
+DIGEST bff95dd059951c7e5f9c3f6dcf9375a3
+F_parent_phi_erase_fixed_sort
+R141:148 Progress <> <> lib
+R150:160 _tmp_epstep <> <> lib
+R162:180 _work_mixed_closure <> <> lib
+R182:192 _work_cjoin <> <> lib
+R196:217 _work_cstep_invariants <> <> lib
+R247:250 Stdlib.Lists.List <> <> lib
+R260:272 Stdlib.Lists.List ListNotations <> mod
+R274:282 TypeRules <> <> mod
+prf 292:325 <> phi_fixed_conv_sort_reduces_parent
+binder 336:336 <> t:1
+binder 338:338 <> j:2
+R360:363 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R356:358 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R345:353 Progress <> phi_erase def
+R355:355 _parent_phi_erase_fixed_sort <> t:1 var
+R359:359 _parent_phi_erase_fixed_sort <> t:1 var
+R380:387 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R364:367 TypeRules <> conv ind
+R372:376 TypeRules <> TSort constr
+R378:378 _parent_phi_erase_fixed_sort <> j:2 var
+R369:369 _parent_phi_erase_fixed_sort <> t:1 var
+R388:390 Progress <> rtc ind
+R401:405 TypeRules <> TSort constr
+R407:407 _parent_phi_erase_fixed_sort <> j:2 var
+R398:398 _parent_phi_erase_fixed_sort <> t:1 var
+R392:396 _work_mixed_closure <> cstep ind
+R457:470 _work_cjoin <> conv_phi_cjoin thm
+R457:470 _work_cjoin <> conv_phi_cjoin thm
+R508:516 Progress <> phi_erase def
+R564:580 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R564:580 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R635:668 _parent_phi_erase_fixed_sort <> phi_fixed_conv_sort_reduces_parent thm

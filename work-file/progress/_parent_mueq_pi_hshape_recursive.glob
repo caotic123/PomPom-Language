@@ -1,0 +1,94 @@
+DIGEST 60508c0a095437f1ec15669c2aff3993
+F_parent_mueq_pi_hshape_recursive
+R238:245 Progress <> <> lib
+R247:257 _tmp_epstep <> <> lib
+R259:277 _work_mixed_closure <> <> lib
+R281:302 _work_cstep_invariants <> <> lib
+R304:313 _luna_mueq <> <> lib
+R315:337 _glm_mueq_sim_close_rep <> <> lib
+R341:371 _parent_mueq_eta_sort_recursive <> <> lib
+R373:401 _parent_pi_sort_rep_normalize <> <> lib
+R431:434 Stdlib.Lists.List <> <> lib
+R436:438 Stdlib.micromega.Lia <> <> lib
+R448:460 Stdlib.Lists.List ListNotations <> mod
+R462:470 TypeRules <> <> mod
+prf 482:521 <> mueq_pi_endpoint_hshape_recursive_parent
+binder 536:536 <> t:1
+binder 538:538 <> u:2
+binder 540:540 <> A:3
+binder 542:542 <> B:4
+binder 544:544 <> j:5
+binder 546:546 <> h:6
+R597:606 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R555:586 _parent_mueq_eta_sort_recursive <> mueq_sort_transport_below_parent def
+R589:593 Progress <> tsize def
+R595:595 _parent_mueq_pi_hshape_recursive <> t:1 var
+R617:620 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R607:612 Progress <> hshape ind
+R614:614 _parent_mueq_pi_hshape_recursive <> t:1 var
+R616:616 _parent_mueq_pi_hshape_recursive <> h:6 var
+R629:638 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R621:624 _luna_mueq <> mueq ind
+R626:626 _parent_mueq_pi_hshape_recursive <> t:1 var
+R628:628 _parent_mueq_pi_hshape_recursive <> u:2 var
+R660:663 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R639:641 Progress <> rtc ind
+R652:654 TypeRules <> TPi constr
+R658:658 _parent_mueq_pi_hshape_recursive <> B:4 var
+R656:656 _parent_mueq_pi_hshape_recursive <> A:3 var
+R649:649 _parent_mueq_pi_hshape_recursive <> t:1 var
+R643:647 _work_mixed_closure <> cstep ind
+R685:694 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R664:666 Progress <> rtc ind
+R677:681 TypeRules <> TSort constr
+R683:683 _parent_mueq_pi_hshape_recursive <> j:5 var
+R674:674 _parent_mueq_pi_hshape_recursive <> B:4 var
+R668:672 _work_mixed_closure <> cstep ind
+R695:701 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R707:716 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 702:703 <> A':7
+binder 705:706 <> B':8
+R740:743 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R717:719 Progress <> rtc ind
+R730:732 TypeRules <> TPi constr
+R737:738 _parent_mueq_pi_hshape_recursive <> B':8 var
+R734:735 _parent_mueq_pi_hshape_recursive <> A':7 var
+R727:727 _parent_mueq_pi_hshape_recursive <> u:2 var
+R721:725 _work_mixed_closure <> cstep ind
+R744:746 Progress <> rtc ind
+R758:762 TypeRules <> TSort constr
+R764:764 _parent_mueq_pi_hshape_recursive <> j:5 var
+R754:755 _parent_mueq_pi_hshape_recursive <> B':8 var
+R748:752 _work_mixed_closure <> cstep ind
+R834:849 _work_cstep_invariants <> rtc_cstep_hshape thm
+R854:856 TypeRules <> TPi constr
+R834:849 _work_cstep_invariants <> rtc_cstep_hshape thm
+R854:856 TypeRules <> TPi constr
+R954:974 _glm_mueq_sim_close_rep <> mueq_pi_shape_inv_glm thm
+R954:974 _glm_mueq_sim_close_rep <> mueq_pi_shape_inv_glm thm
+R1031:1046 _work_cstep_invariants <> rtc_cstep_pi_inv thm
+R1055:1057 TypeRules <> TPi constr
+R1031:1046 _work_cstep_invariants <> rtc_cstep_pi_inv thm
+R1055:1057 TypeRules <> TPi constr
+R1150:1152 Progress <> rtc ind
+R1164:1168 TypeRules <> TSort constr
+R1154:1158 _work_mixed_closure <> cstep ind
+R1150:1152 Progress <> rtc ind
+R1164:1168 TypeRules <> TSort constr
+R1154:1158 _work_mixed_closure <> cstep ind
+R1186:1194 Progress <> rtc_trans thm
+R1186:1194 Progress <> rtc_trans thm
+R1252:1254 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1244:1248 Progress <> tsize def
+R1255:1259 Progress <> tsize def
+R1262:1264 TypeRules <> TPi constr
+R1252:1254 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1244:1248 Progress <> tsize def
+R1255:1259 Progress <> tsize def
+R1262:1264 TypeRules <> TPi constr
+R1291:1299 Progress <> tsize_pos thm
+R1291:1299 Progress <> tsize_pos thm
+R1311:1315 Progress <> tsize def
+R1415:1422 Progress <> rtc_refl constr
+R1415:1422 Progress <> rtc_refl constr
+R1467:1506 _parent_mueq_pi_hshape_recursive <> mueq_pi_endpoint_hshape_recursive_parent thm

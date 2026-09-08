@@ -1,0 +1,84 @@
+\section{Label side conditions and conversion}
+The enabled labels are terms representing lists. The relations below inspect those lists by evaluation; they are meta-level relations, not library propositions stored in programs. Type annotations $A$ on list constructors are implicit when immaterial.
+\subsection{Membership, inclusion, and coverage}
+\begin{mathpar}
+\ruleof{sm-here}{\Phi\Downarrow c'::\Phi'\\c\equiv c'}{c\in_s\Phi}
+\and
+\ruleof{sm-there}{\Phi\Downarrow c'::\Phi'\\c\in_s\Phi'}{c\in_s\Phi}
+\and
+\ruleof{stl-here}{\Phi\equiv\Psi}{\operatorname{tail}(\Phi,\Psi)}
+\and
+\ruleof{stl-there}{\Psi\Downarrow c::\Psi'\\\operatorname{tail}(\Phi,\Psi')}{\operatorname{tail}(\Phi,\Psi)}
+\and
+\ruleof{si-nil}{\Phi\Downarrow[\,]_A}{\Phi\subseteq_s\Psi}
+\and
+\ruleof{si-cons}{\Phi\Downarrow c::\Phi'\\c\in_s\Psi\\\Phi'\subseteq_s\Psi}{\Phi\subseteq_s\Psi}
+\and
+\ruleof{si-neutral}{\Phi\Downarrow\Phi_n\\\operatorname{neutral}(\Phi_n)\\\operatorname{tail}(\Phi_n,\Psi)}{\Phi\subseteq_s\Psi}
+\and
+\ruleof{cov-nil}{\Phi\Downarrow[\,]_A}{\operatorname{covers}(\Psi,\Phi)}
+\and
+\ruleof{cov-cons}{\Phi\Downarrow c::\Phi'\\\exists d\in\Psi,\ c\equiv d\\\operatorname{covers}(\Psi,\Phi')}{\operatorname{covers}(\Psi,\Phi)}
+\and
+\ruleof{dt-nil}{ }{\operatorname{distinct}_{\equiv}([\,])}
+\and
+\ruleof{dt-cons}{\forall d\in cs,\ \neg(c\equiv d)\\\operatorname{distinct}_{\equiv}(cs)}{\operatorname{distinct}_{\equiv}(c::cs)}
+\end{mathpar}
+Coverage has no neutral-tail rule. A list that cannot expose the required constructors supplies no evidence of coverage. The source's neutral forms are exactly
+\[
+ n::=x\mid n\,a\mid\pi_0n\mid\pi_1n\mid
+ \op{switch}_k\,E\,P\,p\,n\mid
+ \op{iinduction}\,R\,P\,s\,i\,n\mid
+ \op{case}\ n\ \op{of}\ Q\ bs.
+\]
+\src{progress/TypeRules.v: neutral, spine_mem, spine_tail, spine_incl, covers, distinct}
+
+\subsection{Positive evidence of a dead description}
+Write $\operatorname{Dead}(D)$ for \texttt{desc\_against D}, the conservative syntactic predicate used for pruning. Its intended uninhabitedness interpretation remains a metatheoretic obligation. Put $T^+:=\lambda e.\,T(1_E+e)$.
+\begin{mathpar}
+\ruleof{ag-choice-nil}{D\Downarrow '\sigma\,E\,T\\E\Downarrow\op{nilE}}{\operatorname{Dead}(D)}
+\and
+\ruleof{ag-prod-left}{D\Downarrow A\mathbin{'\times}B\\\operatorname{Dead}(A)}{\operatorname{Dead}(D)}
+\and
+\ruleof{ag-prod-right}{D\Downarrow A\mathbin{'\times}B\\\operatorname{Dead}(B)}{\operatorname{Dead}(D)}
+\and
+\ruleof{ag-choice-cons}{D\Downarrow '\sigma\,E\,T\\E\Downarrow\op{consE}\,\ell\,E'\\\operatorname{Dead}(T\,0_E)\\\operatorname{Dead}('\sigma\,E'\,T^+)}{\operatorname{Dead}(D)}
+\end{mathpar}
+There is no dead-description constructor for $\code{'var}$, $\code{'1}$, $'\Pi$, or $'\Sigma$. Failure to evaluate is never evidence of emptiness.
+
+\subsection{Pruning enabled labels}
+Write $\Phi\rightsquigarrow_{S,i}\Psi$ for \texttt{spine\_phi S i Phi Psi}.
+\begin{mathpar}
+\ruleof{sph-nil}{\Phi\Downarrow[\,]_A}{\Phi\rightsquigarrow_{S,i}[\,]_A}
+\and
+\ruleof{sph-keep}{\Phi\Downarrow c::_A\Phi'\\\Phi'\rightsquigarrow_{S,i}\Psi'}{\Phi\rightsquigarrow_{S,i}c::_A\Psi'}
+\and
+\ruleof{sph-drop}{\Phi\Downarrow c::_A\Phi'\\\operatorname{Dead}(B_S(i,c))\\\Phi'\rightsquigarrow_{S,i}\Psi'}{\Phi\rightsquigarrow_{S,i}\Psi'}
+\and
+\ruleof{sph-neutral}{\Phi\Downarrow\Phi_n\\\operatorname{neutral}(\Phi_n)}{\Phi\rightsquigarrow_{S,i}\Phi_n}
+\end{mathpar}
+Pruning can retain a dead label, so it need not be exhaustive. A neutral tail is retained.
+
+\subsection{Definitional conversion}
+Conversion is the smallest equivalence and congruence containing computation, function eta, and the signature rule below. Congruence applies to every term former, including case labels and bodies.
+\begin{mathpar}
+\ruleof{cv-step}{t\longmapsto u}{t\equiv u}
+\and
+\ruleof{cv-refl}{ }{t\equiv t}
+\and
+\ruleof{cv-sym}{t\equiv u}{u\equiv t}
+\and
+\ruleof{cv-trans}{t\equiv u\\u\equiv v}{t\equiv v}
+\and
+\ruleof{cv-eta}{x\notin\operatorname{FV}(f)}{(\lambda x.f\,x)\equiv f}
+\and
+\ruleof{congruence}{t_1\equiv u_1\\\cdots\\t_m\equiv u_m}{F(t_1,\ldots,t_m)\equiv F(u_1,\ldots,u_m)}
+\and
+\ruleof{cv-phi}{
+ (\lambda j.\op{branches}(S_1j))\equiv(\lambda j.\op{branches}(S_2j))\\
+ L_{S_1}(i)\Downarrow\Phi_1\\L_{S_2}(i)\Downarrow\Phi_2\\
+ \Phi_1\rightsquigarrow_{S_1,i}\Psi_1\\\Phi_2\rightsquigarrow_{S_2,i}\Psi_2\\\Psi_1\equiv\Psi_2
+}{\mu^s S_1\,i\equiv\mu^s S_2\,i}
+\end{mathpar}
+The congruence schema abbreviates the individual \texttt{cv\_*} constructors, with binding structure preserved. Eq-$\varphi$ equates refinement types at an instance; it does not identify the signature pairs themselves. Consequently their label projections remain observable as ordinary terms. There are no context or typing premises on \textsc{cv-phi} in the raw relation.
+\src{progress/TypeRules.v: desc_against, spine_phi, conv}

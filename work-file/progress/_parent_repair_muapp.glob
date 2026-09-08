@@ -1,0 +1,258 @@
+DIGEST a87d6d058afe4c83bbd9bed66e315486
+F_parent_repair_muapp
+R15:22 Progress <> <> lib
+R24:51 _luna_repair_erased_sort_sub <> <> lib
+R55:79 _luna_repair_erased_subst <> <> lib
+R81:103 _luna_repair_app_origin <> <> lib
+R133:136 Stdlib.Lists.List <> <> lib
+R138:140 Stdlib.micromega.Lia <> <> lib
+R150:162 Stdlib.Lists.List ListNotations <> mod
+R164:172 TypeRules <> <> mod
+R174:193 Progress _tmp_epstep <> mod
+R197:224 Progress _work_mixed_closure <> mod
+R226:245 Progress _work_cjoin <> mod
+R249:279 Progress _work_cstep_invariants <> mod
+R281:311 Progress _luna_phi_erase_shapes <> mod
+prf 321:344 <> cjoin_hshape_tags_parent
+binder 355:355 <> t:1
+binder 357:357 <> u:2
+binder 359:359 <> h:3
+binder 361:361 <> k:4
+R375:378 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R366:370 Progress _work_cjoin cjoin def
+R372:372 _parent_repair_muapp <> t:1 var
+R374:374 _parent_repair_muapp <> u:2 var
+R389:392 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R379:384 Progress <> hshape ind
+R386:386 _parent_repair_muapp <> t:1 var
+R388:388 _parent_repair_muapp <> h:3 var
+R403:406 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R393:398 Progress <> hshape ind
+R400:400 _parent_repair_muapp <> u:2 var
+R402:402 _parent_repair_muapp <> k:4 var
+R408:410 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R407:407 _parent_repair_muapp <> h:3 var
+R411:411 _parent_repair_muapp <> k:4 var
+R466:482 Progress <> hshape_tag_unique thm
+R466:482 Progress <> hshape_tag_unique thm
+R508:523 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R508:523 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R560:575 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R560:575 Progress _work_cstep_invariants rtc_cstep_hshape thm
+def 618:631 <> erased_pi_sort
+R638:641 TypeRules <> term ind
+binder 634:634 <> T:5
+binder 663:663 <> A:6
+binder 665:665 <> B:7
+R697:704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R668:672 Progress _work_cjoin cjoin def
+R675:683 Progress <> phi_erase def
+R685:685 _parent_repair_muapp <> T:5 var
+R689:691 TypeRules <> TPi constr
+R695:695 _parent_repair_muapp <> B:7 var
+R693:693 _parent_repair_muapp <> A:6 var
+R705:711 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R713:714 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 712:712 <> j:8
+R715:719 Progress _work_cjoin cjoin def
+R721:721 _parent_repair_muapp <> B:7 var
+R724:728 TypeRules <> TSort constr
+R730:730 _parent_repair_muapp <> j:8 var
+prf 741:760 <> erased_pi_sort_intro
+binder 771:771 <> A:9
+binder 773:773 <> B:10
+R791:794 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R778:788 _luna_repair_erased_sort_sub <> erased_sort def
+R790:790 _parent_repair_muapp <> B:10 var
+R795:808 _parent_repair_muapp <> erased_pi_sort def
+R811:813 TypeRules <> TPi constr
+R817:817 _parent_repair_muapp <> B:10 var
+R815:815 _parent_repair_muapp <> A:9 var
+R866:874 Progress <> phi_erase def
+R897:908 Progress _work_cstep_invariants cjoin_pi_inv thm
+R897:908 Progress _work_cstep_invariants cjoin_pi_inv thm
+R953:963 Progress _work_cjoin cjoin_trans thm
+R973:981 Progress _work_cjoin cjoin_sym thm
+R953:963 Progress _work_cjoin cjoin_trans thm
+R973:981 Progress _work_cjoin cjoin_sym thm
+prf 1018:1035 <> erased_pi_sort_sub
+binder 1046:1046 <> G:11
+binder 1048:1048 <> T:12
+binder 1050:1050 <> U:13
+R1064:1067 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1055:1057 TypeRules <> sub ind
+R1063:1063 _parent_repair_muapp <> U:13 var
+R1061:1061 _parent_repair_muapp <> T:12 var
+R1059:1059 _parent_repair_muapp <> G:11 var
+R1084:1087 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1068:1081 _parent_repair_muapp <> erased_pi_sort def
+R1083:1083 _parent_repair_muapp <> T:12 var
+R1088:1101 _parent_repair_muapp <> erased_pi_sort def
+R1103:1103 _parent_repair_muapp <> U:13 var
+R1202:1212 Progress _work_cjoin cjoin_trans thm
+R1222:1235 Progress _work_cjoin conv_phi_cjoin thm
+R1202:1212 Progress _work_cjoin cjoin_trans thm
+R1222:1235 Progress _work_cjoin conv_phi_cjoin thm
+R1334:1357 _parent_repair_muapp <> cjoin_hshape_tags_parent thm
+R1371:1377 Progress <> hs_sort constr
+R1383:1387 Progress <> hs_pi constr
+R1334:1357 _parent_repair_muapp <> cjoin_hshape_tags_parent thm
+R1371:1377 Progress <> hs_sort constr
+R1383:1387 Progress <> hs_pi constr
+R1424:1443 _parent_repair_muapp <> erased_pi_sort_intro thm
+R1424:1443 _parent_repair_muapp <> erased_pi_sort_intro thm
+R1457:1471 _luna_repair_erased_sort_sub <> erased_sort_sub thm
+R1457:1471 _luna_repair_erased_sort_sub <> erased_sort_sub thm
+R1499:1507 Progress <> phi_erase def
+R1513:1521 Progress <> phi_erase def
+R1499:1507 Progress <> phi_erase def
+R1513:1521 Progress <> phi_erase def
+R1534:1543 Progress _work_cjoin cjoin_refl thm
+R1534:1543 Progress _work_cjoin cjoin_refl thm
+R1591:1596 Progress <> hshape ind
+R1599:1607 Progress <> phi_erase def
+R1610:1613 TypeRules <> TApp constr
+R1616:1622 TypeRules <> Carrier def
+R1634:1640 Progress <> HMuIApp constr
+R1591:1596 Progress <> hshape ind
+R1599:1607 Progress <> phi_erase def
+R1610:1613 TypeRules <> TApp constr
+R1616:1622 TypeRules <> Carrier def
+R1634:1640 Progress <> HMuIApp constr
+R1655:1661 TypeRules <> Carrier def
+R1663:1671 Progress <> phi_erase def
+R1706:1729 _parent_repair_muapp <> cjoin_hshape_tags_parent thm
+R1746:1750 Progress <> hs_pi constr
+R1706:1729 _parent_repair_muapp <> cjoin_hshape_tags_parent thm
+R1746:1750 Progress <> hs_pi constr
+R1822:1827 Progress <> hshape ind
+R1830:1838 Progress <> phi_erase def
+R1841:1844 TypeRules <> TApp constr
+R1847:1850 TypeRules <> TMuS constr
+R1860:1866 Progress <> HMuSApp constr
+R1822:1827 Progress <> hshape ind
+R1830:1838 Progress <> phi_erase def
+R1841:1844 TypeRules <> TApp constr
+R1847:1850 TypeRules <> TMuS constr
+R1860:1866 Progress <> HMuSApp constr
+R1881:1889 Progress <> phi_erase def
+R1924:1947 _parent_repair_muapp <> cjoin_hshape_tags_parent thm
+R1964:1968 Progress <> hs_pi constr
+R1924:1947 _parent_repair_muapp <> cjoin_hshape_tags_parent thm
+R1964:1968 Progress <> hs_pi constr
+prf 2007:2036 <> sub_mu_pi_erased_codomain_sort
+binder 2047:2047 <> G:14
+binder 2049:2050 <> IT:15
+binder 2052:2052 <> A:16
+binder 2054:2054 <> B:17
+R2093:2096 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2059:2061 TypeRules <> sub ind
+R2085:2087 TypeRules <> TPi constr
+R2091:2091 _parent_repair_muapp <> B:17 var
+R2089:2089 _parent_repair_muapp <> A:16 var
+R2066:2068 TypeRules <> TPi constr
+R2074:2078 TypeRules <> TSort constr
+R2070:2071 _parent_repair_muapp <> IT:15 var
+R2063:2063 _parent_repair_muapp <> G:14 var
+R2097:2107 _luna_repair_erased_sort_sub <> erased_sort def
+R2109:2109 _parent_repair_muapp <> B:17 var
+R2156:2169 _parent_repair_muapp <> erased_pi_sort def
+R2172:2174 TypeRules <> TPi constr
+R2180:2184 TypeRules <> TSort constr
+R2156:2169 _parent_repair_muapp <> erased_pi_sort def
+R2172:2174 TypeRules <> TPi constr
+R2180:2184 TypeRules <> TSort constr
+R2202:2221 _parent_repair_muapp <> erased_pi_sort_intro thm
+R2202:2221 _parent_repair_muapp <> erased_pi_sort_intro thm
+R2240:2249 Progress _work_cjoin cjoin_refl thm
+R2240:2249 Progress _work_cjoin cjoin_refl thm
+R2263:2280 _parent_repair_muapp <> erased_pi_sort_sub thm
+R2299:2307 Progress <> phi_erase def
+R2313:2321 Progress <> phi_erase def
+R2327:2336 Progress _work_cjoin cjoin_refl thm
+R2263:2280 _parent_repair_muapp <> erased_pi_sort_sub thm
+R2299:2307 Progress <> phi_erase def
+R2313:2321 Progress <> phi_erase def
+R2327:2336 Progress _work_cjoin cjoin_refl thm
+prf 2357:2380 <> muapp_sort_erased_proved
+binder 2391:2391 <> f:18
+binder 2393:2393 <> a:19
+binder 2395:2395 <> T:20
+binder 2397:2397 <> U:21
+binder 2399:2399 <> h:22
+R2425:2428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2404:2408 TypeRules <> check ind
+R2424:2424 _parent_repair_muapp <> T:20 var
+R2414:2417 TypeRules <> TApp constr
+R2421:2421 _parent_repair_muapp <> a:19 var
+R2419:2419 _parent_repair_muapp <> f:18 var
+R2410:2411 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2445:2450 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2429:2433 TypeRules <> value ind
+R2436:2439 TypeRules <> TApp constr
+R2443:2443 _parent_repair_muapp <> a:19 var
+R2441:2441 _parent_repair_muapp <> f:18 var
+R2459:2462 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2451:2454 TypeRules <> conv ind
+R2458:2458 _parent_repair_muapp <> U:21 var
+R2456:2456 _parent_repair_muapp <> T:20 var
+R2470:2473 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2463:2465 Progress <> whd def
+R2467:2467 _parent_repair_muapp <> U:21 var
+R2469:2469 _parent_repair_muapp <> h:22 var
+R2475:2477 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2474:2474 _parent_repair_muapp <> h:22 var
+R2478:2482 Progress <> HSort constr
+R2539:2554 Progress <> check_app_origin thm
+R2565:2571 Corelib.Init.Logic <> eq_refl constr
+R2577:2583 Corelib.Init.Logic <> eq_refl constr
+R2539:2554 Progress <> check_app_origin thm
+R2565:2571 Corelib.Init.Logic <> eq_refl constr
+R2577:2583 Corelib.Init.Logic <> eq_refl constr
+R2615:2629 _luna_repair_erased_sort_sub <> erased_sort_whd thm
+R2615:2629 _luna_repair_erased_sort_sub <> erased_sort_whd thm
+R2673:2687 _luna_repair_erased_sort_sub <> erased_sort_sub thm
+R2673:2687 _luna_repair_erased_sort_sub <> erased_sort_sub thm
+R2768:2787 Progress <> value_app_synth_sort thm
+R2768:2787 Progress <> value_app_synth_sort thm
+R2831:2840 Progress _work_cjoin cjoin_refl thm
+R2831:2840 Progress _work_cjoin cjoin_refl thm
+R2865:2865 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2886:2891 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2914:2914 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2866:2872 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2874:2875 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2873:2873 <> R:23
+R2877:2879 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2880:2883 TypeRules <> TMuI constr
+R2885:2885 _parent_repair_muapp <> R:23 var
+R2892:2898 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2901:2902 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2899:2900 <> Sf:24
+R2904:2906 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2907:2910 TypeRules <> TMuS constr
+R2912:2913 _parent_repair_muapp <> Sf:24 var
+R2865:2865 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2886:2891 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2914:2914 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2866:2872 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2874:2875 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2873:2873 <> R:25
+R2877:2879 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2880:2883 TypeRules <> TMuI constr
+R2885:2885 _parent_repair_muapp <> R:25 var
+R2892:2898 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2901:2902 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2899:2900 <> Sf:26
+R2904:2906 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2907:2910 TypeRules <> TMuS constr
+R2912:2913 _parent_repair_muapp <> Sf:26 var
+R2968:3006 _luna_repair_app_origin <> mu_former_checked_erased_pi_origin_luna thm
+R3008:3009 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2968:3006 _luna_repair_app_origin <> mu_former_checked_erased_pi_origin_luna thm
+R3008:3009 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3062:3091 _parent_repair_muapp <> sub_mu_pi_erased_codomain_sort thm
+R3062:3091 _parent_repair_muapp <> sub_mu_pi_erased_codomain_sort thm
+R3137:3164 _luna_repair_erased_subst <> erased_sort_cjoin_subst_luna thm
+R3137:3164 _luna_repair_erased_subst <> erased_sort_cjoin_subst_luna thm
+R3195:3218 _parent_repair_muapp <> muapp_sort_erased_proved thm

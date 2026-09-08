@@ -1,0 +1,86 @@
+DIGEST 2897cda7fa73332cc9094b290886a60e
+F_glm_conv_subst0
+R1529:1537 TypeRules <> <> lib
+R1539:1546 Progress <> <> lib
+R1577:1580 Stdlib.Lists.List <> <> lib
+R1582:1586 Stdlib.Arith.Arith <> <> lib
+R1588:1590 Stdlib.micromega.Lia <> <> lib
+prf 1661:1675 <> conv_subst0_glm
+binder 1688:1688 <> t:1
+binder 1690:1691 <> t':2
+binder 1693:1693 <> a:3
+binder 1695:1696 <> a':4
+R1712:1715 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1703:1706 TypeRules <> conv ind
+R1710:1711 _glm_conv_subst0 <> t':2 var
+R1708:1708 _glm_conv_subst0 <> t:1 var
+R1725:1732 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1716:1719 TypeRules <> conv ind
+R1723:1724 _glm_conv_subst0 <> a':4 var
+R1721:1721 _glm_conv_subst0 <> a:3 var
+R1733:1736 TypeRules <> conv ind
+R1753:1757 TypeRules <> subst def
+R1764:1765 _glm_conv_subst0 <> t':2 var
+R1759:1760 _glm_conv_subst0 <> a':4 var
+R1739:1743 TypeRules <> subst def
+R1749:1749 _glm_conv_subst0 <> t:1 var
+R1745:1745 _glm_conv_subst0 <> a:3 var
+R1868:1875 TypeRules <> cv_trans constr
+R1868:1875 TypeRules <> cv_trans constr
+R1888:1893 TypeRules <> cv_sym constr
+R1888:1893 TypeRules <> cv_sym constr
+R1906:1912 TypeRules <> cv_step constr
+R1906:1912 TypeRules <> cv_step constr
+R1925:1931 TypeRules <> st_beta constr
+R1925:1931 TypeRules <> st_beta constr
+R2016:2023 TypeRules <> cv_trans constr
+R2016:2023 TypeRules <> cv_trans constr
+R2038:2043 TypeRules <> cv_app constr
+R2038:2043 TypeRules <> cv_app constr
+R2060:2065 TypeRules <> cv_lam constr
+R2060:2065 TypeRules <> cv_lam constr
+R2180:2186 TypeRules <> cv_step constr
+R2180:2186 TypeRules <> cv_step constr
+R2201:2207 TypeRules <> st_beta constr
+R2201:2207 TypeRules <> st_beta constr
+prf 2386:2411 <> conv_subst0_same_subst_glm
+binder 2424:2424 <> t:5
+binder 2426:2427 <> t':6
+binder 2429:2429 <> a:7
+R2445:2452 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2436:2439 TypeRules <> conv ind
+R2443:2444 _glm_conv_subst0 <> t':6 var
+R2441:2441 _glm_conv_subst0 <> t:5 var
+R2453:2456 TypeRules <> conv ind
+R2473:2477 TypeRules <> subst def
+R2483:2484 _glm_conv_subst0 <> t':6 var
+R2479:2479 _glm_conv_subst0 <> a:7 var
+R2459:2463 TypeRules <> subst def
+R2469:2469 _glm_conv_subst0 <> t:5 var
+R2465:2465 _glm_conv_subst0 <> a:7 var
+R2524:2538 _glm_conv_subst0 <> conv_subst0_glm thm
+R2524:2538 _glm_conv_subst0 <> conv_subst0_glm thm
+R2575:2581 TypeRules <> cv_refl constr
+R2575:2581 TypeRules <> cv_refl constr
+prf 2839:2865 <> conv_subst0_sort_target_glm
+binder 2878:2878 <> s:8
+binder 2880:2880 <> t:9
+binder 2882:2883 <> t':10
+R2899:2906 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2890:2893 TypeRules <> conv ind
+R2897:2898 _glm_conv_subst0 <> t':10 var
+R2895:2895 _glm_conv_subst0 <> t:9 var
+R2907:2910 TypeRules <> conv ind
+R2935:2939 TypeRules <> subst def
+R2953:2954 _glm_conv_subst0 <> t':10 var
+R2942:2946 TypeRules <> TSort constr
+R2948:2948 _glm_conv_subst0 <> s:8 var
+R2913:2917 TypeRules <> subst def
+R2931:2931 _glm_conv_subst0 <> t:9 var
+R2920:2924 TypeRules <> TSort constr
+R2926:2926 _glm_conv_subst0 <> s:8 var
+R2993:3018 _glm_conv_subst0 <> conv_subst0_same_subst_glm thm
+R2993:3018 _glm_conv_subst0 <> conv_subst0_same_subst_glm thm
+R3057:3071 _glm_conv_subst0 <> conv_subst0_glm thm
+R3092:3117 _glm_conv_subst0 <> conv_subst0_same_subst_glm thm
+R3138:3164 _glm_conv_subst0 <> conv_subst0_sort_target_glm thm

@@ -1,0 +1,378 @@
+DIGEST 3cadd0b24693fa66ba8b54bd22939158
+F_parent_pruning_diamond
+R15:22 Progress <> <> lib
+R24:42 SignatureConversion <> <> lib
+R44:61 SignatureInstances <> <> lib
+R63:86 _parent_instance_pruning <> <> lib
+R116:119 Stdlib.Lists.List <> <> lib
+R121:125 Stdlib.Arith.Arith <> <> lib
+R127:129 Stdlib.micromega.Lia <> <> lib
+R131:138 Stdlib.Arith.PeanoNat <> <> lib
+R148:160 Stdlib.Lists.List ListNotations <> mod
+R162:170 TypeRules <> <> mod
+R172:191 Progress _work_cjoin <> mod
+def 206:221 <> prune_diamond_at
+binder 223:223 <> t:1
+binder 235:235 <> u:2
+binder 237:237 <> v:3
+R256:259 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R242:251 _parent_instance_pruning <> prune_term ind
+R253:253 _parent_pruning_diamond <> t:1 var
+R255:255 _parent_pruning_diamond <> u:2 var
+R274:279 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R260:269 _parent_instance_pruning <> prune_term ind
+R271:271 _parent_pruning_diamond <> t:1 var
+R273:273 _parent_pruning_diamond <> v:3 var
+R280:286 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R288:289 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 287:287 <> w:4
+R304:307 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R290:299 _parent_instance_pruning <> prune_term ind
+R301:301 _parent_pruning_diamond <> u:2 var
+R303:303 _parent_pruning_diamond <> w:4 var
+R308:317 _parent_instance_pruning <> prune_term ind
+R319:319 _parent_pruning_diamond <> v:3 var
+R321:321 _parent_pruning_diamond <> w:4 var
+def 335:348 <> prune_cross_at
+binder 350:350 <> t:5
+binder 362:362 <> B:6
+binder 364:364 <> u:7
+binder 366:366 <> v:8
+R389:392 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R371:382 _parent_instance_pruning <> prune_labels ind
+R384:384 _parent_pruning_diamond <> B:6 var
+R386:386 _parent_pruning_diamond <> t:5 var
+R388:388 _parent_pruning_diamond <> u:7 var
+R407:412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R393:402 _parent_instance_pruning <> prune_term ind
+R404:404 _parent_pruning_diamond <> t:5 var
+R406:406 _parent_pruning_diamond <> v:8 var
+R413:419 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R421:422 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 420:420 <> w:9
+R437:440 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R423:432 _parent_instance_pruning <> prune_term ind
+R434:434 _parent_pruning_diamond <> u:7 var
+R436:436 _parent_pruning_diamond <> w:9 var
+R441:452 _parent_instance_pruning <> prune_labels ind
+R454:454 _parent_pruning_diamond <> B:6 var
+R456:456 _parent_pruning_diamond <> v:8 var
+R458:458 _parent_pruning_diamond <> w:9 var
+def 472:488 <> labels_diamond_at
+binder 490:490 <> t:10
+binder 502:502 <> B:11
+binder 504:504 <> u:12
+binder 506:506 <> v:13
+R529:532 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R511:522 _parent_instance_pruning <> prune_labels ind
+R524:524 _parent_pruning_diamond <> B:11 var
+R526:526 _parent_pruning_diamond <> t:10 var
+R528:528 _parent_pruning_diamond <> u:12 var
+R551:556 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R533:544 _parent_instance_pruning <> prune_labels ind
+R546:546 _parent_pruning_diamond <> B:11 var
+R548:548 _parent_pruning_diamond <> t:10 var
+R550:550 _parent_pruning_diamond <> v:13 var
+R557:563 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R565:566 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 564:564 <> w:14
+R585:588 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R567:578 _parent_instance_pruning <> prune_labels ind
+R580:580 _parent_pruning_diamond <> B:11 var
+R582:582 _parent_pruning_diamond <> u:12 var
+R584:584 _parent_pruning_diamond <> w:14 var
+R589:600 _parent_instance_pruning <> prune_labels ind
+R602:602 _parent_pruning_diamond <> B:11 var
+R604:604 _parent_pruning_diamond <> v:13 var
+R606:606 _parent_pruning_diamond <> w:14 var
+prf 616:642 <> prune_branches_diamond_from
+binder 653:654 <> bs:15
+R659:659 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R727:733 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 667:667 <> c:16
+binder 669:669 <> b:17
+R683:686 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R672:673 Stdlib.Lists.List <> In def
+R681:682 _parent_pruning_diamond <> bs:15 var
+R675:675 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R677:677 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R679:679 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R676:676 _parent_pruning_diamond <> c:16 var
+R678:678 _parent_pruning_diamond <> b:17 var
+R705:708 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R687:702 _parent_pruning_diamond <> prune_diamond_at def
+R704:704 _parent_pruning_diamond <> c:16 var
+R709:724 _parent_pruning_diamond <> prune_diamond_at def
+R726:726 _parent_pruning_diamond <> b:17 var
+binder 741:742 <> us:18
+binder 744:745 <> vs:19
+R768:771 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R748:761 _parent_instance_pruning <> prune_branches ind
+R763:764 _parent_pruning_diamond <> bs:15 var
+R766:767 _parent_pruning_diamond <> us:18 var
+R792:797 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R772:785 _parent_instance_pruning <> prune_branches ind
+R787:788 _parent_pruning_diamond <> bs:15 var
+R790:791 _parent_pruning_diamond <> vs:19 var
+R798:804 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R807:808 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 805:806 <> ws:20
+R829:832 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R809:822 _parent_instance_pruning <> prune_branches ind
+R824:825 _parent_pruning_diamond <> us:18 var
+R827:828 _parent_pruning_diamond <> ws:20 var
+R833:846 _parent_instance_pruning <> prune_branches ind
+R848:849 _parent_pruning_diamond <> vs:19 var
+R851:852 _parent_pruning_diamond <> ws:20 var
+R976:977 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R976:977 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1022:1030 Corelib.Init.Logic <> or_introl constr
+R1032:1038 Corelib.Init.Logic <> eq_refl constr
+R1022:1030 Corelib.Init.Logic <> or_introl constr
+R1032:1038 Corelib.Init.Logic <> eq_refl constr
+R1065:1080 _parent_pruning_diamond <> prune_diamond_at def
+binder 1214:1215 <> cx:21
+binder 1217:1218 <> bx:22
+R1234:1243 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1221:1222 Stdlib.Lists.List <> In def
+R1224:1224 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1227:1227 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1230:1230 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1225:1226 _parent_pruning_diamond <> cx:21 var
+R1228:1229 _parent_pruning_diamond <> bx:22 var
+R1263:1266 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1244:1259 _parent_pruning_diamond <> prune_diamond_at def
+R1261:1262 _parent_pruning_diamond <> cx:21 var
+R1267:1282 _parent_pruning_diamond <> prune_diamond_at def
+R1284:1285 _parent_pruning_diamond <> bx:22 var
+binder 1214:1215 <> cx:23
+binder 1217:1218 <> bx:24
+R1234:1243 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1221:1222 Stdlib.Lists.List <> In def
+R1224:1224 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1227:1227 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1230:1230 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1225:1226 _parent_pruning_diamond <> cx:23 var
+R1228:1229 _parent_pruning_diamond <> bx:24 var
+R1263:1266 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1244:1259 _parent_pruning_diamond <> prune_diamond_at def
+R1261:1262 _parent_pruning_diamond <> cx:23 var
+R1267:1282 _parent_pruning_diamond <> prune_diamond_at def
+R1284:1285 _parent_pruning_diamond <> bx:24 var
+R1416:1417 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1409:1409 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1412:1412 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1415:1415 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1416:1417 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1409:1409 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1412:1412 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1415:1415 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1560:1569 _parent_instance_pruning <> prune_term ind
+R1560:1569 _parent_instance_pruning <> prune_term ind
+R1583:1592 _parent_instance_pruning <> prune_term ind
+R1583:1592 _parent_instance_pruning <> prune_term ind
+R1769:1773 Corelib.Init.Logic <> proj1 thm
+prf 2074:2091 <> prune_diamonds_mut
+binder 2102:2102 <> t:25
+R2125:2128 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2107:2122 _parent_pruning_diamond <> prune_diamond_at def
+R2124:2124 _parent_pruning_diamond <> t:25 var
+R2145:2148 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2129:2142 _parent_pruning_diamond <> prune_cross_at def
+R2144:2144 _parent_pruning_diamond <> t:25 var
+R2149:2165 _parent_pruning_diamond <> labels_diamond_at def
+R2167:2167 _parent_pruning_diamond <> t:25 var
+R2186:2201 Progress <> tsize_strong_ind thm
+binder 2208:2208 <> t:26
+R2235:2238 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2217:2232 _parent_pruning_diamond <> prune_diamond_at def
+R2234:2234 _parent_pruning_diamond <> t:26 var
+R2255:2258 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2239:2252 _parent_pruning_diamond <> prune_cross_at def
+R2254:2254 _parent_pruning_diamond <> t:26 var
+R2259:2275 _parent_pruning_diamond <> labels_diamond_at def
+R2277:2277 _parent_pruning_diamond <> t:26 var
+R2186:2201 Progress <> tsize_strong_ind thm
+binder 2208:2208 <> t:27
+R2235:2238 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2217:2232 _parent_pruning_diamond <> prune_diamond_at def
+R2234:2234 _parent_pruning_diamond <> t:27 var
+R2255:2258 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2239:2252 _parent_pruning_diamond <> prune_cross_at def
+R2254:2254 _parent_pruning_diamond <> t:27 var
+R2259:2275 _parent_pruning_diamond <> labels_diamond_at def
+R2277:2277 _parent_pruning_diamond <> t:27 var
+R2312:2327 _parent_pruning_diamond <> prune_diamond_at def
+R2312:2327 _parent_pruning_diamond <> prune_diamond_at def
+R2344:2359 _parent_pruning_diamond <> prune_diamond_at def
+R2569:2586 _parent_instance_pruning <> prune_mus_pair_inv thm
+R2569:2586 _parent_instance_pruning <> prune_mus_pair_inv thm
+R2643:2660 _parent_instance_pruning <> prune_mus_pair_inv thm
+R2643:2660 _parent_instance_pruning <> prune_mus_pair_inv thm
+R2717:2721 Corelib.Init.Logic <> proj1 thm
+R2717:2721 Corelib.Init.Logic <> proj1 thm
+R2805:2809 Corelib.Init.Logic <> proj2 thm
+R2812:2816 Corelib.Init.Logic <> proj2 thm
+R2805:2809 Corelib.Init.Logic <> proj2 thm
+R2812:2816 Corelib.Init.Logic <> proj2 thm
+R2902:2905 TypeRules <> TMuS constr
+R2908:2912 TypeRules <> TPair constr
+R2902:2905 TypeRules <> TMuS constr
+R2908:2912 TypeRules <> TPair constr
+R2936:2946 _parent_instance_pruning <> pt_instance constr
+R2936:2946 _parent_instance_pruning <> pt_instance constr
+R2936:2946 _parent_instance_pruning <> pt_instance constr
+R2980:2998 _parent_instance_pruning <> prune_labels_rebase thm
+R2980:2998 _parent_instance_pruning <> prune_labels_rebase thm
+R3033:3043 _parent_instance_pruning <> prune_erase thm
+R3033:3043 _parent_instance_pruning <> prune_erase thm
+R3033:3043 _parent_instance_pruning <> prune_erase thm
+R3061:3070 Progress _work_cjoin cjoin_refl thm
+R3061:3070 Progress _work_cjoin cjoin_refl thm
+R3088:3106 _parent_instance_pruning <> prune_labels_rebase thm
+R3088:3106 _parent_instance_pruning <> prune_labels_rebase thm
+R3141:3151 _parent_instance_pruning <> prune_erase thm
+R3141:3151 _parent_instance_pruning <> prune_erase thm
+R3141:3151 _parent_instance_pruning <> prune_erase thm
+R3169:3178 Progress _work_cjoin cjoin_refl thm
+R3169:3178 Progress _work_cjoin cjoin_refl thm
+binder 3352:3352 <> c:28
+binder 3354:3354 <> b:29
+R3368:3379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3357:3358 Stdlib.Lists.List <> In def
+R3360:3360 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3362:3362 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3364:3364 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3361:3361 _parent_pruning_diamond <> c:28 var
+R3363:3363 _parent_pruning_diamond <> b:29 var
+R3398:3401 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3380:3395 _parent_pruning_diamond <> prune_diamond_at def
+R3397:3397 _parent_pruning_diamond <> c:28 var
+R3402:3417 _parent_pruning_diamond <> prune_diamond_at def
+R3419:3419 _parent_pruning_diamond <> b:29 var
+binder 3352:3352 <> c:30
+binder 3354:3354 <> b:31
+R3368:3379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3357:3358 Stdlib.Lists.List <> In def
+R3360:3360 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3362:3362 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3364:3364 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3361:3361 _parent_pruning_diamond <> c:30 var
+R3363:3363 _parent_pruning_diamond <> b:31 var
+R3398:3401 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3380:3395 _parent_pruning_diamond <> prune_diamond_at def
+R3397:3397 _parent_pruning_diamond <> c:30 var
+R3402:3417 _parent_pruning_diamond <> prune_diamond_at def
+R3419:3419 _parent_pruning_diamond <> b:31 var
+R3471:3475 Corelib.Init.Logic <> proj1 thm
+R3496:3508 Progress <> tsize_case_bs thm
+R3471:3475 Corelib.Init.Logic <> proj1 thm
+R3496:3508 Progress <> tsize_case_bs thm
+R3496:3508 Progress <> tsize_case_bs thm
+R3542:3546 Corelib.Init.Logic <> proj1 thm
+R3567:3584 Progress <> tsize_case_bs_body thm
+R3542:3546 Corelib.Init.Logic <> proj1 thm
+R3567:3584 Progress <> tsize_case_bs_body thm
+R3567:3584 Progress <> tsize_case_bs_body thm
+R3619:3645 _parent_pruning_diamond <> prune_branches_diamond_from thm
+R3619:3645 _parent_pruning_diamond <> prune_branches_diamond_from thm
+R3705:3709 TypeRules <> TCase constr
+R3705:3709 TypeRules <> TCase constr
+R3771:3784 _parent_pruning_diamond <> prune_cross_at def
+R3771:3784 _parent_pruning_diamond <> prune_cross_at def
+R3801:3814 _parent_pruning_diamond <> prune_cross_at def
+R3966:3972 _parent_instance_pruning <> pl_stop constr
+R3966:3972 _parent_instance_pruning <> pl_stop constr
+R4040:4044 Corelib.Init.Logic <> proj1 thm
+R4040:4044 Corelib.Init.Logic <> proj1 thm
+R4122:4126 Corelib.Init.Logic <> proj1 thm
+R4122:4126 Corelib.Init.Logic <> proj1 thm
+R4205:4209 Corelib.Init.Logic <> proj1 thm
+R4212:4216 Corelib.Init.Logic <> proj2 thm
+R4205:4209 Corelib.Init.Logic <> proj1 thm
+R4212:4216 Corelib.Init.Logic <> proj2 thm
+R4296:4301 TypeRules <> TLCons constr
+R4296:4301 TypeRules <> TLCons constr
+R4328:4335 _parent_instance_pruning <> pt_lcons constr
+R4343:4349 _parent_instance_pruning <> pl_keep constr
+R4328:4335 _parent_instance_pruning <> pt_lcons constr
+R4343:4349 _parent_instance_pruning <> pl_keep constr
+R4418:4422 Corelib.Init.Logic <> proj1 thm
+R4425:4429 Corelib.Init.Logic <> proj2 thm
+R4418:4422 Corelib.Init.Logic <> proj1 thm
+R4425:4429 Corelib.Init.Logic <> proj2 thm
+R4539:4545 _parent_instance_pruning <> pl_drop constr
+R4539:4545 _parent_instance_pruning <> pl_drop constr
+R4575:4592 _parent_instance_pruning <> instance_dead_join thm
+R4575:4592 _parent_instance_pruning <> instance_dead_join thm
+R4627:4637 _parent_instance_pruning <> prune_erase thm
+R4627:4637 _parent_instance_pruning <> prune_erase thm
+R4627:4637 _parent_instance_pruning <> prune_erase thm
+R4654:4663 Progress _work_cjoin cjoin_refl thm
+R4654:4663 Progress _work_cjoin cjoin_refl thm
+R4719:4735 _parent_pruning_diamond <> labels_diamond_at def
+R4880:4886 _parent_instance_pruning <> pl_stop constr
+R4880:4886 _parent_instance_pruning <> pl_stop constr
+R5019:5025 _parent_instance_pruning <> pl_stop constr
+R5019:5025 _parent_instance_pruning <> pl_stop constr
+R5064:5068 Corelib.Init.Logic <> proj1 thm
+R5064:5068 Corelib.Init.Logic <> proj1 thm
+R5146:5150 Corelib.Init.Logic <> proj1 thm
+R5146:5150 Corelib.Init.Logic <> proj1 thm
+R5230:5234 Corelib.Init.Logic <> proj2 thm
+R5237:5241 Corelib.Init.Logic <> proj2 thm
+R5230:5234 Corelib.Init.Logic <> proj2 thm
+R5237:5241 Corelib.Init.Logic <> proj2 thm
+R5322:5327 TypeRules <> TLCons constr
+R5322:5327 TypeRules <> TLCons constr
+R5353:5359 _parent_instance_pruning <> pl_keep constr
+R5353:5359 _parent_instance_pruning <> pl_keep constr
+R5353:5359 _parent_instance_pruning <> pl_keep constr
+R5390:5394 Corelib.Init.Logic <> proj2 thm
+R5397:5401 Corelib.Init.Logic <> proj2 thm
+R5390:5394 Corelib.Init.Logic <> proj2 thm
+R5397:5401 Corelib.Init.Logic <> proj2 thm
+R5512:5518 _parent_instance_pruning <> pl_drop constr
+R5512:5518 _parent_instance_pruning <> pl_drop constr
+R5548:5565 _parent_instance_pruning <> instance_dead_join thm
+R5548:5565 _parent_instance_pruning <> instance_dead_join thm
+R5601:5611 _parent_instance_pruning <> prune_erase thm
+R5601:5611 _parent_instance_pruning <> prune_erase thm
+R5601:5611 _parent_instance_pruning <> prune_erase thm
+R5628:5637 Progress _work_cjoin cjoin_refl thm
+R5628:5637 Progress _work_cjoin cjoin_refl thm
+R5759:5765 _parent_instance_pruning <> pl_stop constr
+R5759:5765 _parent_instance_pruning <> pl_stop constr
+R5804:5808 Corelib.Init.Logic <> proj2 thm
+R5811:5815 Corelib.Init.Logic <> proj2 thm
+R5804:5808 Corelib.Init.Logic <> proj2 thm
+R5811:5815 Corelib.Init.Logic <> proj2 thm
+R5926:5932 _parent_instance_pruning <> pl_drop constr
+R5926:5932 _parent_instance_pruning <> pl_drop constr
+R5962:5979 _parent_instance_pruning <> instance_dead_join thm
+R5962:5979 _parent_instance_pruning <> instance_dead_join thm
+R6014:6024 _parent_instance_pruning <> prune_erase thm
+R6014:6024 _parent_instance_pruning <> prune_erase thm
+R6014:6024 _parent_instance_pruning <> prune_erase thm
+R6041:6050 Progress _work_cjoin cjoin_refl thm
+R6041:6050 Progress _work_cjoin cjoin_refl thm
+R6066:6070 Corelib.Init.Logic <> proj2 thm
+R6073:6077 Corelib.Init.Logic <> proj2 thm
+R6066:6070 Corelib.Init.Logic <> proj2 thm
+R6073:6077 Corelib.Init.Logic <> proj2 thm
+prf 6131:6148 <> prune_term_diamond
+R6152:6158 Progress <> diamond def
+R6160:6169 _parent_instance_pruning <> prune_term ind
+R6206:6210 Corelib.Init.Logic <> proj1 thm
+R6213:6230 _parent_pruning_diamond <> prune_diamonds_mut thm
+R6206:6210 Corelib.Init.Logic <> proj1 thm
+R6213:6230 _parent_pruning_diamond <> prune_diamonds_mut thm
+prf 6260:6279 <> prune_term_confluent
+R6283:6291 Progress <> confluent def
+R6293:6302 _parent_instance_pruning <> prune_term ind
+R6318:6338 Progress <> diamond_rtc_confluent thm
+R6341:6358 _parent_pruning_diamond <> prune_term_diamond thm
+R6318:6338 Progress <> diamond_rtc_confluent thm
+R6341:6358 _parent_pruning_diamond <> prune_term_diamond thm
+R6385:6402 _parent_pruning_diamond <> prune_term_diamond thm
+R6423:6442 _parent_pruning_diamond <> prune_term_confluent thm

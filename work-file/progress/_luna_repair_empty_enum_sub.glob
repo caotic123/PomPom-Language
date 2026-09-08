@@ -1,0 +1,146 @@
+DIGEST 5f3b756b28cf7f3f36bf6ebc4f094a57
+F_luna_repair_empty_enum_sub
+R15:22 Progress <> <> lib
+R32:42 Progress _work_cjoin <> mod
+R44:65 Progress _work_cstep_invariants <> mod
+R95:98 Stdlib.Lists.List <> <> lib
+R108:120 Stdlib.Lists.List ListNotations <> mod
+R122:130 TypeRules <> <> mod
+def 145:161 <> erased_empty_enum
+R168:171 TypeRules <> term ind
+binder 164:164 <> T:1
+R186:190 Progress _work_cjoin cjoin def
+R193:201 Progress <> phi_erase def
+R203:203 _luna_repair_empty_enum_sub <> T:1 var
+R207:212 TypeRules <> TEnumT constr
+R214:218 TypeRules <> TNilE constr
+prf 229:249 <> luna_cjoin_hshape_tag
+binder 260:260 <> t:2
+binder 262:262 <> u:3
+binder 264:265 <> h1:4
+binder 267:268 <> h2:5
+R284:287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R275:279 Progress _work_cjoin cjoin def
+R281:281 _luna_repair_empty_enum_sub <> t:2 var
+R283:283 _luna_repair_empty_enum_sub <> u:3 var
+R299:302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R288:293 Progress <> hshape ind
+R295:295 _luna_repair_empty_enum_sub <> t:2 var
+R297:298 _luna_repair_empty_enum_sub <> h1:4 var
+R314:317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R303:308 Progress <> hshape ind
+R310:310 _luna_repair_empty_enum_sub <> u:3 var
+R312:313 _luna_repair_empty_enum_sub <> h2:5 var
+R320:322 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R318:319 _luna_repair_empty_enum_sub <> h1:4 var
+R323:324 _luna_repair_empty_enum_sub <> h2:5 var
+R396:411 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R396:411 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R454:469 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R454:469 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R507:523 Progress <> hshape_tag_unique thm
+R507:523 Progress <> hshape_tag_unique thm
+prf 551:569 <> luna_phi_erase_sort
+binder 580:580 <> k:6
+R583:588 Progress <> hshape ind
+R591:599 Progress <> phi_erase def
+R602:606 TypeRules <> TSort constr
+R608:608 _luna_repair_empty_enum_sub <> k:6 var
+R612:616 Progress <> HSort constr
+prf 664:680 <> luna_phi_erase_pi
+binder 691:691 <> A:7
+binder 693:693 <> B:8
+R700:705 Progress <> hshape ind
+R708:716 Progress <> phi_erase def
+R719:721 TypeRules <> TPi constr
+R725:725 _luna_repair_empty_enum_sub <> B:8 var
+R723:723 _luna_repair_empty_enum_sub <> A:7 var
+R729:731 Progress <> HPi constr
+prf 779:800 <> luna_phi_erase_carrier
+binder 811:811 <> E:9
+binder 813:814 <> Sf:10
+binder 816:816 <> i:11
+R823:828 Progress <> hshape ind
+R831:839 Progress <> phi_erase def
+R842:845 TypeRules <> TApp constr
+R862:862 _luna_repair_empty_enum_sub <> i:11 var
+R848:854 TypeRules <> Carrier def
+R858:859 _luna_repair_empty_enum_sub <> Sf:10 var
+R856:856 _luna_repair_empty_enum_sub <> E:9 var
+R866:872 Progress <> HMuIApp constr
+R895:903 Progress <> phi_erase def
+R905:911 TypeRules <> Carrier def
+prf 940:960 <> luna_phi_erase_musapp
+binder 971:972 <> Sf:12
+binder 974:974 <> i:13
+R981:986 Progress <> hshape ind
+R989:997 Progress <> phi_erase def
+R1000:1003 TypeRules <> TApp constr
+R1015:1015 _luna_repair_empty_enum_sub <> i:13 var
+R1006:1009 TypeRules <> TMuS constr
+R1011:1012 _luna_repair_empty_enum_sub <> Sf:12 var
+R1019:1025 Progress <> HMuSApp constr
+prf 1073:1098 <> erased_empty_enum_sub_back
+binder 1109:1109 <> G:14
+binder 1111:1111 <> A:15
+binder 1113:1113 <> B:16
+R1129:1132 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1120:1122 TypeRules <> sub ind
+R1128:1128 _luna_repair_empty_enum_sub <> B:16 var
+R1126:1126 _luna_repair_empty_enum_sub <> A:15 var
+R1124:1124 _luna_repair_empty_enum_sub <> G:14 var
+R1152:1155 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1133:1149 _luna_repair_empty_enum_sub <> erased_empty_enum def
+R1151:1151 _luna_repair_empty_enum_sub <> B:16 var
+R1156:1172 _luna_repair_empty_enum_sub <> erased_empty_enum def
+R1174:1174 _luna_repair_empty_enum_sub <> A:15 var
+R1246:1262 _luna_repair_empty_enum_sub <> erased_empty_enum def
+R1277:1287 Progress _work_cjoin cjoin_trans thm
+R1303:1316 Progress _work_cjoin conv_phi_cjoin thm
+R1277:1287 Progress _work_cjoin cjoin_trans thm
+R1303:1316 Progress _work_cjoin conv_phi_cjoin thm
+R1393:1409 _luna_repair_empty_enum_sub <> erased_empty_enum def
+R1454:1456 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1449:1453 Progress <> HSort constr
+R1457:1462 Progress <> HEnumT constr
+R1454:1456 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1449:1453 Progress <> HSort constr
+R1457:1462 Progress <> HEnumT constr
+R1480:1500 _luna_repair_empty_enum_sub <> luna_cjoin_hshape_tag thm
+R1480:1500 _luna_repair_empty_enum_sub <> luna_cjoin_hshape_tag thm
+R1533:1551 _luna_repair_empty_enum_sub <> luna_phi_erase_sort thm
+R1533:1551 _luna_repair_empty_enum_sub <> luna_phi_erase_sort thm
+R1610:1626 _luna_repair_empty_enum_sub <> erased_empty_enum def
+R1669:1671 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1666:1668 Progress <> HPi constr
+R1672:1677 Progress <> HEnumT constr
+R1669:1671 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1666:1668 Progress <> HPi constr
+R1672:1677 Progress <> HEnumT constr
+R1695:1715 _luna_repair_empty_enum_sub <> luna_cjoin_hshape_tag thm
+R1695:1715 _luna_repair_empty_enum_sub <> luna_cjoin_hshape_tag thm
+R1748:1764 _luna_repair_empty_enum_sub <> luna_phi_erase_pi thm
+R1748:1764 _luna_repair_empty_enum_sub <> luna_phi_erase_pi thm
+R1823:1839 _luna_repair_empty_enum_sub <> erased_empty_enum def
+R1886:1888 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1879:1885 Progress <> HMuIApp constr
+R1889:1894 Progress <> HEnumT constr
+R1886:1888 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1879:1885 Progress <> HMuIApp constr
+R1889:1894 Progress <> HEnumT constr
+R1912:1932 _luna_repair_empty_enum_sub <> luna_cjoin_hshape_tag thm
+R1912:1932 _luna_repair_empty_enum_sub <> luna_cjoin_hshape_tag thm
+R1965:1986 _luna_repair_empty_enum_sub <> luna_phi_erase_carrier thm
+R1965:1986 _luna_repair_empty_enum_sub <> luna_phi_erase_carrier thm
+R2045:2061 _luna_repair_empty_enum_sub <> erased_empty_enum def
+R2108:2110 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2101:2107 Progress <> HMuSApp constr
+R2111:2116 Progress <> HEnumT constr
+R2108:2110 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2101:2107 Progress <> HMuSApp constr
+R2111:2116 Progress <> HEnumT constr
+R2134:2154 _luna_repair_empty_enum_sub <> luna_cjoin_hshape_tag thm
+R2134:2154 _luna_repair_empty_enum_sub <> luna_cjoin_hshape_tag thm
+R2187:2207 _luna_repair_empty_enum_sub <> luna_phi_erase_musapp thm
+R2187:2207 _luna_repair_empty_enum_sub <> luna_phi_erase_musapp thm
+R2279:2304 _luna_repair_empty_enum_sub <> erased_empty_enum_sub_back thm

@@ -1,0 +1,69 @@
+DIGEST 3c3141e98c131d293804fddd64707f2e
+F_parent_phi_erase_eta_root_sort
+R775:782 Progress <> <> lib
+R784:794 _tmp_epstep <> <> lib
+R798:832 _glm_phi_erase_pstep_reflect_shapes <> <> lib
+R834:863 _parent_phi_erase_sort_algebra <> <> lib
+R893:896 Stdlib.Lists.List <> <> lib
+R906:918 Stdlib.Lists.List ListNotations <> mod
+R920:928 TypeRules <> <> mod
+def 943:954 <> is_eta_redex
+R963:966 TypeRules <> term ind
+binder 957:957 <> a:1
+binder 959:959 <> b:2
+R981:987 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R989:990 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 988:988 <> k:3
+R1036:1039 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R992:994 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R991:991 _parent_phi_erase_eta_root_sort <> a:1 var
+R995:998 TypeRules <> TLam constr
+R1001:1004 TypeRules <> TApp constr
+R1028:1031 TypeRules <> TVar constr
+R1007:1010 TypeRules <> lift def
+R1017:1021 TypeRules <> TSort constr
+R1023:1023 _parent_phi_erase_eta_root_sort <> k:3 var
+R1041:1043 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1040:1040 _parent_phi_erase_eta_root_sort <> b:2 var
+R1044:1048 TypeRules <> TSort constr
+R1050:1050 _parent_phi_erase_eta_root_sort <> k:3 var
+prf 1062:1092 <> phi_erase_eta_root_backward_glm
+binder 1103:1103 <> t:4
+binder 1105:1105 <> u:5
+binder 1107:1107 <> j:6
+R1134:1137 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1112:1117 _tmp_epstep <> epstep ind
+R1120:1128 Progress <> phi_erase def
+R1130:1130 _parent_phi_erase_eta_root_sort <> t:4 var
+R1133:1133 _parent_phi_erase_eta_root_sort <> u:5 var
+R1154:1159 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1138:1141 TypeRules <> conv ind
+R1146:1150 TypeRules <> TSort constr
+R1152:1152 _parent_phi_erase_eta_root_sort <> j:6 var
+R1143:1143 _parent_phi_erase_eta_root_sort <> u:5 var
+R1160:1160 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1189:1193 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1161:1172 _parent_phi_erase_eta_root_sort <> is_eta_redex def
+R1175:1183 Progress <> phi_erase def
+R1185:1185 _parent_phi_erase_eta_root_sort <> t:4 var
+R1188:1188 _parent_phi_erase_eta_root_sort <> u:5 var
+R1194:1197 TypeRules <> conv ind
+R1202:1206 TypeRules <> TSort constr
+R1208:1208 _parent_phi_erase_eta_root_sort <> j:6 var
+R1199:1199 _parent_phi_erase_eta_root_sort <> t:4 var
+R1309:1327 _glm_phi_erase_pstep_reflect_shapes <> erase_shape_lam_glm thm
+R1309:1327 _glm_phi_erase_pstep_reflect_shapes <> erase_shape_lam_glm thm
+R1375:1378 TypeRules <> lift def
+R1401:1419 _glm_phi_erase_pstep_reflect_shapes <> erase_shape_app_glm thm
+R1401:1419 _glm_phi_erase_pstep_reflect_shapes <> erase_shape_app_glm thm
+R1489:1518 _parent_phi_erase_sort_algebra <> phi_erase_sort_preimage_parent thm
+R1489:1518 _parent_phi_erase_sort_algebra <> phi_erase_sort_preimage_parent thm
+R1550:1578 _parent_phi_erase_sort_algebra <> phi_erase_var_preimage_parent thm
+R1550:1578 _parent_phi_erase_sort_algebra <> phi_erase_var_preimage_parent thm
+R1627:1634 TypeRules <> cv_trans constr
+R1627:1634 TypeRules <> cv_trans constr
+R1648:1653 TypeRules <> cv_eta constr
+R1656:1660 TypeRules <> TSort constr
+R1648:1653 TypeRules <> cv_eta constr
+R1656:1660 TypeRules <> TSort constr
+R1708:1738 _parent_phi_erase_eta_root_sort <> phi_erase_eta_root_backward_glm thm

@@ -1,0 +1,325 @@
+DIGEST 301022eca4fdc14d1f821395af27d0cc
+F_luna_finish_erased_sigma_value
+R15:22 Progress <> <> lib
+R40:54 SignatureLemmas <> <> lib
+R84:87 Stdlib.Lists.List <> <> lib
+R89:91 Stdlib.micromega.Lia <> <> lib
+R101:113 Stdlib.Lists.List ListNotations <> mod
+R115:123 TypeRules <> <> mod
+R125:144 Progress _tmp_epstep <> mod
+R146:173 Progress _work_mixed_closure <> mod
+R177:196 Progress _work_cjoin <> mod
+R198:228 Progress _work_cstep_invariants <> mod
+prf 238:264 <> sigma_cjoin_hshape_tag_luna
+binder 275:275 <> t:1
+binder 277:277 <> u:2
+binder 279:280 <> h1:3
+binder 282:283 <> h2:4
+R299:302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R290:294 Progress _work_cjoin cjoin def
+R296:296 _luna_finish_erased_sigma_value <> t:1 var
+R298:298 _luna_finish_erased_sigma_value <> u:2 var
+R314:317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R303:308 Progress <> hshape ind
+R310:310 _luna_finish_erased_sigma_value <> t:1 var
+R312:313 _luna_finish_erased_sigma_value <> h1:3 var
+R329:332 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R318:323 Progress <> hshape ind
+R325:325 _luna_finish_erased_sigma_value <> u:2 var
+R327:328 _luna_finish_erased_sigma_value <> h2:4 var
+R335:337 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R333:334 _luna_finish_erased_sigma_value <> h1:3 var
+R338:339 _luna_finish_erased_sigma_value <> h2:4 var
+R411:426 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R411:426 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R469:484 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R469:484 Progress _work_cstep_invariants rtc_cstep_hshape thm
+R522:538 Progress <> hshape_tag_unique thm
+R522:538 Progress <> hshape_tag_unique thm
+prf 566:590 <> sigma_phi_erase_sort_luna
+binder 601:601 <> k:5
+R604:609 Progress <> hshape ind
+R612:620 Progress <> phi_erase def
+R623:627 TypeRules <> TSort constr
+R629:629 _luna_finish_erased_sigma_value <> k:5 var
+R633:637 Progress <> HSort constr
+prf 685:707 <> sigma_phi_erase_pi_luna
+binder 718:718 <> A:6
+binder 720:720 <> B:7
+R727:732 Progress <> hshape ind
+R735:743 Progress <> phi_erase def
+R746:748 TypeRules <> TPi constr
+R752:752 _luna_finish_erased_sigma_value <> B:7 var
+R750:750 _luna_finish_erased_sigma_value <> A:6 var
+R756:758 Progress <> HPi constr
+prf 806:833 <> sigma_phi_erase_carrier_luna
+binder 844:844 <> E:8
+binder 846:847 <> Sf:9
+binder 849:849 <> i:10
+R856:861 Progress <> hshape ind
+R864:872 Progress <> phi_erase def
+R875:878 TypeRules <> TApp constr
+R895:895 _luna_finish_erased_sigma_value <> i:10 var
+R881:887 TypeRules <> Carrier def
+R891:892 _luna_finish_erased_sigma_value <> Sf:9 var
+R889:889 _luna_finish_erased_sigma_value <> E:8 var
+R899:905 Progress <> HMuIApp constr
+R928:936 Progress <> phi_erase def
+R938:944 TypeRules <> Carrier def
+prf 973:999 <> sigma_phi_erase_musapp_luna
+binder 1010:1011 <> Sf:11
+binder 1013:1013 <> i:12
+R1020:1025 Progress <> hshape ind
+R1028:1036 Progress <> phi_erase def
+R1039:1042 TypeRules <> TApp constr
+R1054:1054 _luna_finish_erased_sigma_value <> i:12 var
+R1045:1048 TypeRules <> TMuS constr
+R1050:1051 _luna_finish_erased_sigma_value <> Sf:11 var
+R1058:1064 Progress <> HMuSApp constr
+R1087:1095 Progress <> phi_erase def
+prf 1124:1144 <> erased_sigma_sub_back
+binder 1155:1155 <> G:13
+binder 1157:1157 <> X:14
+binder 1159:1159 <> Y:15
+R1175:1178 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1166:1168 TypeRules <> sub ind
+R1174:1174 _luna_finish_erased_sigma_value <> Y:15 var
+R1172:1172 _luna_finish_erased_sigma_value <> X:14 var
+R1170:1170 _luna_finish_erased_sigma_value <> G:13 var
+binder 1186:1186 <> A:16
+binder 1188:1188 <> B:17
+R1227:1234 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1195:1199 Progress _work_cjoin cjoin def
+R1202:1210 Progress <> phi_erase def
+R1212:1212 _luna_finish_erased_sigma_value <> Y:15 var
+R1216:1221 TypeRules <> TSigma constr
+R1225:1225 _luna_finish_erased_sigma_value <> B:17 var
+R1223:1223 _luna_finish_erased_sigma_value <> A:16 var
+R1235:1239 Progress _work_cjoin cjoin def
+R1242:1250 Progress <> phi_erase def
+R1252:1252 _luna_finish_erased_sigma_value <> X:14 var
+R1256:1261 TypeRules <> TSigma constr
+R1265:1265 _luna_finish_erased_sigma_value <> B:17 var
+R1263:1263 _luna_finish_erased_sigma_value <> A:16 var
+R1344:1354 Progress _work_cjoin cjoin_trans thm
+R1364:1377 Progress _work_cjoin conv_phi_cjoin thm
+R1344:1354 Progress _work_cjoin cjoin_trans thm
+R1364:1377 Progress _work_cjoin conv_phi_cjoin thm
+R1485:1487 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1480:1484 Progress <> HSort constr
+R1488:1493 Progress <> HSigma constr
+R1485:1487 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1480:1484 Progress <> HSort constr
+R1488:1493 Progress <> HSigma constr
+R1511:1537 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R1511:1537 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R1569:1593 _luna_finish_erased_sigma_value <> sigma_phi_erase_sort_luna thm
+R1569:1593 _luna_finish_erased_sigma_value <> sigma_phi_erase_sort_luna thm
+R1671:1673 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1668:1670 Progress <> HPi constr
+R1674:1679 Progress <> HSigma constr
+R1671:1673 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1668:1670 Progress <> HPi constr
+R1674:1679 Progress <> HSigma constr
+R1697:1723 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R1697:1723 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R1755:1777 _luna_finish_erased_sigma_value <> sigma_phi_erase_pi_luna thm
+R1755:1777 _luna_finish_erased_sigma_value <> sigma_phi_erase_pi_luna thm
+R1859:1861 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1852:1858 Progress <> HMuIApp constr
+R1862:1867 Progress <> HSigma constr
+R1859:1861 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1852:1858 Progress <> HMuIApp constr
+R1862:1867 Progress <> HSigma constr
+R1885:1911 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R1885:1911 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R1943:1970 _luna_finish_erased_sigma_value <> sigma_phi_erase_carrier_luna thm
+R1943:1970 _luna_finish_erased_sigma_value <> sigma_phi_erase_carrier_luna thm
+R2052:2054 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2045:2051 Progress <> HMuSApp constr
+R2055:2060 Progress <> HSigma constr
+R2052:2054 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2045:2051 Progress <> HMuSApp constr
+R2055:2060 Progress <> HSigma constr
+R2078:2104 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R2078:2104 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R2136:2162 _luna_finish_erased_sigma_value <> sigma_phi_erase_musapp_luna thm
+R2136:2162 _luna_finish_erased_sigma_value <> sigma_phi_erase_musapp_luna thm
+R2234:2254 _luna_finish_erased_sigma_value <> erased_sigma_sub_back thm
+prf 2264:2279 <> clash_sigma_luna
+binder 2290:2290 <> T:18
+binder 2292:2292 <> A:19
+binder 2294:2294 <> B:20
+binder 2296:2296 <> h:21
+R2335:2342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2303:2307 Progress _work_cjoin cjoin def
+R2310:2318 Progress <> phi_erase def
+R2320:2320 _luna_finish_erased_sigma_value <> T:18 var
+R2324:2329 TypeRules <> TSigma constr
+R2333:2333 _luna_finish_erased_sigma_value <> B:20 var
+R2331:2331 _luna_finish_erased_sigma_value <> A:19 var
+R2365:2368 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2343:2348 Progress <> hshape ind
+R2351:2359 Progress <> phi_erase def
+R2361:2361 _luna_finish_erased_sigma_value <> T:18 var
+R2364:2364 _luna_finish_erased_sigma_value <> h:21 var
+R2380:2383 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2370:2373 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2369:2369 _luna_finish_erased_sigma_value <> h:21 var
+R2374:2379 Progress <> HSigma constr
+R2384:2388 Corelib.Init.Logic <> False ind
+R2441:2467 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R2488:2495 Progress <> hs_sigma constr
+R2441:2467 _luna_finish_erased_sigma_value <> sigma_cjoin_hshape_tag_luna thm
+R2488:2495 Progress <> hs_sigma constr
+prf 2539:2569 <> erased_sigma_synth_value_absurd
+binder 2580:2580 <> t:22
+binder 2582:2582 <> T:23
+R2601:2604 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2589:2593 TypeRules <> synth ind
+R2600:2600 _luna_finish_erased_sigma_value <> T:23 var
+R2598:2598 _luna_finish_erased_sigma_value <> t:22 var
+R2595:2596 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2612:2615 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2605:2609 TypeRules <> value ind
+R2611:2611 _luna_finish_erased_sigma_value <> t:22 var
+binder 2623:2623 <> A:24
+binder 2625:2625 <> B:25
+R2664:2667 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2632:2636 Progress _work_cjoin cjoin def
+R2639:2647 Progress <> phi_erase def
+R2649:2649 _luna_finish_erased_sigma_value <> T:23 var
+R2653:2658 TypeRules <> TSigma constr
+R2662:2662 _luna_finish_erased_sigma_value <> B:25 var
+R2660:2660 _luna_finish_erased_sigma_value <> A:24 var
+R2668:2672 Corelib.Init.Logic <> False ind
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2827:2835 Progress <> phi_erase def
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2792:2807 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2884:2903 Progress <> value_app_synth_sort thm
+R2884:2903 Progress <> value_app_synth_sort thm
+R2962:2977 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2998:3022 _luna_finish_erased_sigma_value <> sigma_phi_erase_sort_luna thm
+R2962:2977 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R2998:3022 _luna_finish_erased_sigma_value <> sigma_phi_erase_sort_luna thm
+R3065:3095 _luna_finish_erased_sigma_value <> erased_sigma_synth_value_absurd thm
+prf 3105:3133 <> erased_sigma_check_value_pair
+binder 3144:3144 <> G:26
+binder 3146:3146 <> t:27
+binder 3148:3148 <> T:28
+R3166:3169 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3155:3159 TypeRules <> check ind
+R3165:3165 _luna_finish_erased_sigma_value <> T:28 var
+R3163:3163 _luna_finish_erased_sigma_value <> t:27 var
+R3161:3161 _luna_finish_erased_sigma_value <> G:26 var
+R3176:3179 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3171:3173 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3170:3170 _luna_finish_erased_sigma_value <> G:26 var
+R3174:3175 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3187:3190 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3180:3184 TypeRules <> value ind
+R3186:3186 _luna_finish_erased_sigma_value <> t:27 var
+binder 3198:3198 <> A:29
+binder 3200:3200 <> B:30
+R3239:3242 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3207:3211 Progress _work_cjoin cjoin def
+R3214:3222 Progress <> phi_erase def
+R3224:3224 _luna_finish_erased_sigma_value <> T:28 var
+R3228:3233 TypeRules <> TSigma constr
+R3237:3237 _luna_finish_erased_sigma_value <> B:30 var
+R3235:3235 _luna_finish_erased_sigma_value <> A:29 var
+R3243:3249 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3253:3254 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3250:3250 <> a:31
+binder 3252:3252 <> b:32
+R3256:3258 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3255:3255 _luna_finish_erased_sigma_value <> t:27 var
+R3259:3263 TypeRules <> TPair constr
+R3267:3267 _luna_finish_erased_sigma_value <> b:32 var
+R3265:3265 _luna_finish_erased_sigma_value <> a:31 var
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3456:3464 Progress <> phi_erase def
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3417:3432 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R3518:3548 _luna_finish_erased_sigma_value <> erased_sigma_synth_value_absurd thm
+R3518:3548 _luna_finish_erased_sigma_value <> erased_sigma_synth_value_absurd thm
+R3586:3596 Progress _work_cjoin cjoin_trans thm
+R3606:3619 Progress _work_cjoin conv_phi_cjoin thm
+R3586:3596 Progress _work_cjoin cjoin_trans thm
+R3606:3619 Progress _work_cjoin conv_phi_cjoin thm
+R3664:3694 _luna_finish_erased_sigma_value <> erased_sigma_synth_value_absurd thm
+R3664:3694 _luna_finish_erased_sigma_value <> erased_sigma_synth_value_absurd thm
+R3732:3752 _luna_finish_erased_sigma_value <> erased_sigma_sub_back thm
+R3732:3752 _luna_finish_erased_sigma_value <> erased_sigma_sub_back thm
+R3798:3804 Corelib.Init.Logic <> eq_refl constr
+R3798:3804 Corelib.Init.Logic <> eq_refl constr
+R3828:3838 Progress _work_cjoin cjoin_trans thm
+R3848:3861 Progress _work_cjoin conv_phi_cjoin thm
+R3864:3869 TypeRules <> cv_sym constr
+R3828:3838 Progress _work_cjoin cjoin_trans thm
+R3848:3861 Progress _work_cjoin conv_phi_cjoin thm
+R3864:3869 TypeRules <> cv_sym constr
+R3948:3952 TypeRules <> check ind
+R3969:3973 TypeRules <> subst def
+R3958:3961 TypeRules <> TApp constr
+R3954:3955 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3948:3952 TypeRules <> check ind
+R3969:3973 TypeRules <> subst def
+R3958:3961 TypeRules <> TApp constr
+R3954:3955 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3997:4002 TypeRules <> ch_app constr
+R3997:4002 TypeRules <> ch_app constr
+R4034:4075 SignatureLemmas <> luna_check_app_erased_sort thm
+R4088:4092 TypeRules <> subst def
+R4034:4075 SignatureLemmas <> luna_check_app_erased_sort thm
+R4088:4092 TypeRules <> subst def
+R4140:4144 Progress _work_cjoin cjoin def
+R4147:4151 TypeRules <> TSort constr
+R4157:4162 TypeRules <> TSigma constr
+R4140:4144 Progress _work_cjoin cjoin def
+R4147:4151 TypeRules <> TSort constr
+R4157:4162 TypeRules <> TSigma constr
+R4186:4196 Progress _work_cjoin cjoin_trans thm
+R4206:4214 Progress _work_cjoin cjoin_sym thm
+R4186:4196 Progress _work_cjoin cjoin_trans thm
+R4206:4214 Progress _work_cjoin cjoin_sym thm
+R4262:4277 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R4280:4284 TypeRules <> TSort constr
+R4295:4299 Progress <> HSort constr
+R4328:4334 Progress <> hs_sort constr
+R4262:4277 _luna_finish_erased_sigma_value <> clash_sigma_luna thm
+R4280:4284 TypeRules <> TSort constr
+R4295:4299 Progress <> HSort constr
+R4328:4334 Progress <> hs_sort constr
+R4377:4405 _luna_finish_erased_sigma_value <> erased_sigma_check_value_pair thm

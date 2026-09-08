@@ -1,0 +1,114 @@
+DIGEST 6f9a1d41b2b489c6a997e12b614d11a2
+F_glm_subst_reduction_bundle_sem
+R572:580 TypeRules <> <> lib
+R582:589 Progress <> <> lib
+R607:638 _glm_subst_reduction_bundle_step <> <> lib
+R640:671 _glm_subst_reduction_bundle_eval <> <> lib
+R689:705 _glm_neutral_lift <> <> lib
+R736:739 Stdlib.Lists.List <> <> lib
+R741:745 Stdlib.Arith.Arith <> <> lib
+R747:749 Stdlib.micromega.Lia <> <> lib
+R759:771 Stdlib.Lists.List ListNotations <> mod
+prf 783:799 <> neutral_subst_glm
+binder 810:810 <> t:1
+R822:825 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R813:819 TypeRules <> neutral ind
+R821:821 _glm_subst_reduction_bundle_sem <> t:1 var
+binder 833:833 <> u:2
+binder 835:835 <> k:3
+R851:854 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R842:848 TypeRules <> neutral ind
+R850:850 _glm_subst_reduction_bundle_sem <> u:2 var
+R855:861 TypeRules <> neutral ind
+R864:868 TypeRules <> subst def
+R874:874 _glm_subst_reduction_bundle_sem <> t:1 var
+R872:872 _glm_subst_reduction_bundle_sem <> k:3 var
+R870:870 _glm_subst_reduction_bundle_sem <> u:2 var
+R1060:1064 TypeRules <> subst def
+R1099:1105 Stdlib.Arith.PeanoNat Nat ltb def
+R1128:1133 TypeRules <> ne_var constr
+R1099:1105 Stdlib.Arith.PeanoNat Nat ltb def
+R1128:1133 TypeRules <> ne_var constr
+R1153:1159 Stdlib.Arith.PeanoNat Nat eqb def
+R1153:1159 Stdlib.Arith.PeanoNat Nat eqb def
+R1187:1196 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R1187:1196 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R1228:1243 _glm_neutral_lift <> neutral_lift_glm thm
+R1228:1243 _glm_neutral_lift <> neutral_lift_glm thm
+R1268:1273 TypeRules <> ne_var constr
+R1268:1273 TypeRules <> ne_var constr
+R1286:1291 TypeRules <> ne_app constr
+R1286:1291 TypeRules <> ne_app constr
+R1310:1315 TypeRules <> ne_fst constr
+R1310:1315 TypeRules <> ne_fst constr
+R1334:1339 TypeRules <> ne_snd constr
+R1334:1339 TypeRules <> ne_snd constr
+R1358:1366 TypeRules <> ne_switch constr
+R1358:1366 TypeRules <> ne_switch constr
+R1385:1390 TypeRules <> ne_ind constr
+R1385:1390 TypeRules <> ne_ind constr
+R1409:1415 TypeRules <> ne_case constr
+R1409:1415 TypeRules <> ne_case constr
+prf 1438:1459 <> desc_against_subst_glm
+binder 1470:1470 <> D:4
+R1487:1490 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1473:1484 TypeRules <> desc_against ind
+R1486:1486 _glm_subst_reduction_bundle_sem <> D:4 var
+binder 1498:1498 <> u:5
+binder 1500:1500 <> k:6
+R1507:1518 TypeRules <> desc_against ind
+R1521:1525 TypeRules <> subst def
+R1531:1531 _glm_subst_reduction_bundle_sem <> D:4 var
+R1529:1529 _glm_subst_reduction_bundle_sem <> k:6 var
+R1527:1527 _glm_subst_reduction_bundle_sem <> u:5 var
+R1780:1792 TypeRules <> ag_choice_nil constr
+R1795:1799 TypeRules <> subst def
+R1810:1814 TypeRules <> subst def
+R1824:1828 TypeRules <> subst def
+R1780:1792 TypeRules <> ag_choice_nil constr
+R1795:1799 TypeRules <> subst def
+R1810:1814 TypeRules <> subst def
+R1824:1828 TypeRules <> subst def
+R1852:1865 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R1852:1865 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R1895:1908 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R1895:1908 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R1962:1973 TypeRules <> ag_prod_left constr
+R1976:1980 TypeRules <> subst def
+R1991:1995 TypeRules <> subst def
+R2005:2009 TypeRules <> subst def
+R1962:1973 TypeRules <> ag_prod_left constr
+R1976:1980 TypeRules <> subst def
+R1991:1995 TypeRules <> subst def
+R2005:2009 TypeRules <> subst def
+R2033:2046 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2033:2046 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2128:2140 TypeRules <> ag_prod_right constr
+R2143:2147 TypeRules <> subst def
+R2158:2162 TypeRules <> subst def
+R2172:2176 TypeRules <> subst def
+R2128:2140 TypeRules <> ag_prod_right constr
+R2143:2147 TypeRules <> subst def
+R2158:2162 TypeRules <> subst def
+R2172:2176 TypeRules <> subst def
+R2200:2213 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2200:2213 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2296:2309 TypeRules <> ag_choice_cons constr
+R2312:2316 TypeRules <> subst def
+R2327:2331 TypeRules <> subst def
+R2341:2345 TypeRules <> subst def
+R2383:2387 TypeRules <> subst def
+R2398:2402 TypeRules <> subst def
+R2296:2309 TypeRules <> ag_choice_cons constr
+R2312:2316 TypeRules <> subst def
+R2327:2331 TypeRules <> subst def
+R2341:2345 TypeRules <> subst def
+R2383:2387 TypeRules <> subst def
+R2398:2402 TypeRules <> subst def
+R2427:2440 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2427:2440 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2469:2482 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2469:2482 _glm_subst_reduction_bundle_eval <> eval_subst_glm thm
+R2545:2563 Progress <> subst_lift_one_zero thm
+R2545:2563 Progress <> subst_lift_one_zero thm
+R2545:2563 Progress <> subst_lift_one_zero thm

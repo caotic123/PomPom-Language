@@ -1,0 +1,125 @@
+DIGEST ad02875ff804fbc4e665b4b580fc4612
+F_luna_finish_pruned_coverage
+R15:22 Progress <> <> lib
+R24:38 SignatureLemmas <> <> lib
+R68:71 Stdlib.Lists.List <> <> lib
+R81:93 Stdlib.Lists.List ListNotations <> mod
+R95:103 TypeRules <> <> mod
+prf 113:138 <> no_pjoin_lnil_neutral_luna
+binder 149:149 <> A:1
+binder 151:151 <> n:2
+R165:168 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R156:162 TypeRules <> neutral ind
+R164:164 _luna_finish_pruned_coverage <> n:2 var
+R169:170 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R171:175 Progress <> pjoin def
+R178:182 TypeRules <> TLNil constr
+R184:184 _luna_finish_pruned_coverage <> A:1 var
+R187:187 _luna_finish_pruned_coverage <> n:2 var
+R238:252 Progress <> psteps_lnil_inv thm
+R238:252 Progress <> psteps_lnil_inv thm
+R292:310 SignatureLemmas <> luna_neutral_psteps thm
+R292:310 SignatureLemmas <> luna_neutral_psteps thm
+prf 376:396 <> spine_phi_covers_join
+binder 407:407 <> S:3
+binder 409:409 <> i:4
+binder 411:412 <> L1:5
+binder 414:415 <> L3:6
+R439:442 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R420:428 TypeRules <> spine_phi ind
+R437:438 _luna_finish_pruned_coverage <> L3:6 var
+R434:435 _luna_finish_pruned_coverage <> L1:5 var
+R432:432 _luna_finish_pruned_coverage <> i:4 var
+R430:430 _luna_finish_pruned_coverage <> S:3 var
+binder 450:451 <> L2:7
+binder 453:454 <> bs:8
+R469:474 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R457:462 TypeRules <> covers ind
+R467:468 _luna_finish_pruned_coverage <> L2:7 var
+R464:465 _luna_finish_pruned_coverage <> bs:8 var
+R486:489 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R475:479 Progress <> pjoin def
+R481:482 _luna_finish_pruned_coverage <> L1:5 var
+R484:485 _luna_finish_pruned_coverage <> L2:7 var
+R490:495 TypeRules <> covers ind
+R500:501 _luna_finish_pruned_coverage <> L3:6 var
+R497:498 _luna_finish_pruned_coverage <> bs:8 var
+R587:593 TypeRules <> cov_nil constr
+R587:593 TypeRules <> cov_nil constr
+R614:620 TypeRules <> ev_refl constr
+R614:620 TypeRules <> ev_refl constr
+R639:653 Progress <> pjoin_eval_left thm
+R639:653 Progress <> pjoin_eval_left thm
+R729:747 Progress <> no_pjoin_lcons_lnil thm
+R757:772 Progress <> pjoin_eval_right thm
+R729:747 Progress <> no_pjoin_lcons_lnil thm
+R757:772 Progress <> pjoin_eval_right thm
+R806:821 Progress <> pjoin_eval_right thm
+R806:821 Progress <> pjoin_eval_right thm
+R865:879 Progress <> pjoin_lcons_inv thm
+R865:879 Progress <> pjoin_lcons_inv thm
+R956:961 TypeRules <> TLCons constr
+R936:943 TypeRules <> cov_cons constr
+R1008:1014 TypeRules <> ev_refl constr
+R956:961 TypeRules <> TLCons constr
+R936:943 TypeRules <> cov_cons constr
+R1008:1014 TypeRules <> ev_refl constr
+R1035:1047 Stdlib.Lists.List <> Exists_exists thm
+R1035:1047 Stdlib.Lists.List <> Exists_exists thm
+R1099:1111 Stdlib.Lists.List <> Exists_exists thm
+R1099:1111 Stdlib.Lists.List <> Exists_exists thm
+R1159:1166 TypeRules <> cv_trans constr
+R1176:1185 Progress <> pjoin_conv thm
+R1159:1166 TypeRules <> cv_trans constr
+R1176:1185 Progress <> pjoin_conv thm
+R1265:1279 Progress <> pjoin_eval_left thm
+R1265:1279 Progress <> pjoin_eval_left thm
+R1355:1373 Progress <> no_pjoin_lcons_lnil thm
+R1383:1398 Progress <> pjoin_eval_right thm
+R1355:1373 Progress <> no_pjoin_lcons_lnil thm
+R1383:1398 Progress <> pjoin_eval_right thm
+R1432:1447 Progress <> pjoin_eval_right thm
+R1432:1447 Progress <> pjoin_eval_right thm
+R1491:1505 Progress <> pjoin_lcons_inv thm
+R1491:1505 Progress <> pjoin_lcons_inv thm
+R1595:1609 Progress <> pjoin_eval_left thm
+R1595:1609 Progress <> pjoin_eval_left thm
+R1696:1711 Progress <> pjoin_eval_right thm
+R1696:1711 Progress <> pjoin_eval_right thm
+R1752:1777 _luna_finish_pruned_coverage <> no_pjoin_lnil_neutral_luna thm
+R1752:1777 _luna_finish_pruned_coverage <> no_pjoin_lnil_neutral_luna thm
+R1803:1811 Progress <> pjoin_sym thm
+R1803:1811 Progress <> pjoin_sym thm
+R1849:1875 SignatureLemmas <> luna_no_pjoin_lcons_neutral thm
+R1849:1875 SignatureLemmas <> luna_no_pjoin_lcons_neutral thm
+R1909:1924 Progress <> pjoin_eval_right thm
+R1909:1924 Progress <> pjoin_eval_right thm
+R1964:1972 Progress <> pjoin_sym thm
+R1964:1972 Progress <> pjoin_sym thm
+prf 2000:2015 <> spine_phi_covers
+binder 2026:2026 <> S:9
+binder 2028:2028 <> i:10
+binder 2030:2032 <> Phi:11
+binder 2034:2036 <> Psi:12
+binder 2038:2039 <> bs:13
+R2065:2068 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2044:2052 TypeRules <> spine_phi ind
+R2062:2064 _luna_finish_pruned_coverage <> Psi:12 var
+R2058:2060 _luna_finish_pruned_coverage <> Phi:11 var
+R2056:2056 _luna_finish_pruned_coverage <> i:10 var
+R2054:2054 _luna_finish_pruned_coverage <> S:9 var
+R2082:2085 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2069:2074 TypeRules <> covers ind
+R2079:2081 _luna_finish_pruned_coverage <> Phi:11 var
+R2076:2077 _luna_finish_pruned_coverage <> bs:13 var
+R2086:2091 TypeRules <> covers ind
+R2096:2098 _luna_finish_pruned_coverage <> Psi:12 var
+R2093:2094 _luna_finish_pruned_coverage <> bs:13 var
+R2123:2143 _luna_finish_pruned_coverage <> spine_phi_covers_join thm
+R2158:2167 Progress <> pjoin_refl thm
+R2123:2143 _luna_finish_pruned_coverage <> spine_phi_covers_join thm
+R2158:2167 Progress <> pjoin_refl thm
+R2158:2167 Progress <> pjoin_refl thm
+R2158:2167 Progress <> pjoin_refl thm
+R2194:2214 _luna_finish_pruned_coverage <> spine_phi_covers_join thm
+R2235:2250 _luna_finish_pruned_coverage <> spine_phi_covers thm

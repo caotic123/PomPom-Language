@@ -1,0 +1,970 @@
+DIGEST c57daf7733804ce6cdf1bec88b561ece
+F_parent_phi_erase_eta_congr_sort
+R468:475 Progress <> <> lib
+R477:487 _tmp_epstep <> <> lib
+R489:507 _work_mixed_closure <> <> lib
+R509:519 _work_cjoin <> <> lib
+R523:544 _work_cstep_invariants <> <> lib
+R546:571 _glm_injectivity_close_rep <> <> lib
+R573:590 _work_conv_whd_pos <> <> lib
+R594:614 _parent_mus_cstep_inv <> <> lib
+R616:638 _parent_inert_cstep_inv <> <> lib
+R640:658 _parent_epi_nonsort <> <> lib
+R662:690 _parent_phi_erase_sort_hshape <> <> lib
+R692:726 _glm_phi_erase_pstep_reflect_shapes <> <> lib
+R730:761 _parent_phi_erase_epstep_forward <> <> lib
+R763:792 _parent_phi_erase_sort_algebra <> <> lib
+R796:817 _parent_phi_erase_idem <> <> lib
+R819:838 _tmp_pstep_var_rigid <> <> lib
+R868:871 Stdlib.Lists.List <> <> lib
+R873:875 Stdlib.micromega.Lia <> <> lib
+R877:884 Stdlib.Arith.PeanoNat <> <> lib
+R886:891 Stdlib.Strings.String <> <> lib
+R901:913 Stdlib.Lists.List ListNotations <> mod
+R915:923 TypeRules <> <> mod
+prf 989:1008 <> rtc_pstep_tag_id_glm
+binder 1019:1019 <> s:1
+binder 1021:1021 <> u:2
+R1040:1043 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1024:1028 Progress <> pstep ind
+R1031:1034 TypeRules <> TTag constr
+R1036:1036 _parent_phi_erase_eta_congr_sort <> s:1 var
+R1039:1039 _parent_phi_erase_eta_congr_sort <> u:2 var
+R1045:1047 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1044:1044 _parent_phi_erase_eta_congr_sort <> u:2 var
+R1048:1051 TypeRules <> TTag constr
+R1053:1053 _parent_phi_erase_eta_congr_sort <> s:1 var
+prf 1146:1166 <> rtc_epstep_tag_id_glm
+binder 1177:1177 <> s:3
+binder 1179:1179 <> u:4
+R1199:1202 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1182:1187 _tmp_epstep <> epstep ind
+R1190:1193 TypeRules <> TTag constr
+R1195:1195 _parent_phi_erase_eta_congr_sort <> s:3 var
+R1198:1198 _parent_phi_erase_eta_congr_sort <> u:4 var
+R1204:1206 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1203:1203 _parent_phi_erase_eta_congr_sort <> u:4 var
+R1207:1210 TypeRules <> TTag constr
+R1212:1212 _parent_phi_erase_eta_congr_sort <> s:3 var
+prf 1305:1325 <> rtc_pstep_tag_rtc_glm
+binder 1336:1336 <> s:5
+binder 1338:1338 <> u:6
+R1361:1364 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1341:1343 Progress <> rtc ind
+R1360:1360 _parent_phi_erase_eta_congr_sort <> u:6 var
+R1352:1355 TypeRules <> TTag constr
+R1357:1357 _parent_phi_erase_eta_congr_sort <> s:5 var
+R1345:1349 Progress <> pstep ind
+R1366:1368 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1365:1365 _parent_phi_erase_eta_congr_sort <> u:6 var
+R1369:1372 TypeRules <> TTag constr
+R1374:1374 _parent_phi_erase_eta_congr_sort <> s:5 var
+R1418:1421 TypeRules <> TTag constr
+R1418:1421 TypeRules <> TTag constr
+R1601:1620 _parent_phi_erase_eta_congr_sort <> rtc_pstep_tag_id_glm thm
+R1601:1620 _parent_phi_erase_eta_congr_sort <> rtc_pstep_tag_id_glm thm
+prf 1719:1740 <> rtc_epstep_tag_rtc_glm
+binder 1751:1751 <> s:7
+binder 1753:1753 <> u:8
+R1777:1780 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1756:1758 Progress <> rtc ind
+R1776:1776 _parent_phi_erase_eta_congr_sort <> u:8 var
+R1768:1771 TypeRules <> TTag constr
+R1773:1773 _parent_phi_erase_eta_congr_sort <> s:7 var
+R1760:1765 _tmp_epstep <> epstep ind
+R1782:1784 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1781:1781 _parent_phi_erase_eta_congr_sort <> u:8 var
+R1785:1788 TypeRules <> TTag constr
+R1790:1790 _parent_phi_erase_eta_congr_sort <> s:7 var
+R1834:1837 TypeRules <> TTag constr
+R1834:1837 TypeRules <> TTag constr
+R2017:2037 _parent_phi_erase_eta_congr_sort <> rtc_epstep_tag_id_glm thm
+R2017:2037 _parent_phi_erase_eta_congr_sort <> rtc_epstep_tag_id_glm thm
+prf 2136:2151 <> cstep_tag_id_glm
+binder 2162:2162 <> s:9
+binder 2164:2164 <> u:10
+R2183:2186 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2167:2171 _work_mixed_closure <> cstep ind
+R2174:2177 TypeRules <> TTag constr
+R2179:2179 _parent_phi_erase_eta_congr_sort <> s:9 var
+R2182:2182 _parent_phi_erase_eta_congr_sort <> u:10 var
+R2188:2190 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2187:2187 _parent_phi_erase_eta_congr_sort <> u:10 var
+R2191:2194 TypeRules <> TTag constr
+R2196:2196 _parent_phi_erase_eta_congr_sort <> s:9 var
+R2302:2322 _parent_phi_erase_eta_congr_sort <> rtc_pstep_tag_rtc_glm thm
+R2302:2322 _parent_phi_erase_eta_congr_sort <> rtc_pstep_tag_rtc_glm thm
+R2373:2394 _parent_phi_erase_eta_congr_sort <> rtc_epstep_tag_rtc_glm thm
+R2373:2394 _parent_phi_erase_eta_congr_sort <> rtc_epstep_tag_rtc_glm thm
+prf 2436:2455 <> rtc_cstep_tag_id_glm
+binder 2466:2466 <> s:11
+binder 2468:2468 <> u:12
+R2491:2494 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2471:2473 Progress <> rtc ind
+R2490:2490 _parent_phi_erase_eta_congr_sort <> u:12 var
+R2482:2485 TypeRules <> TTag constr
+R2487:2487 _parent_phi_erase_eta_congr_sort <> s:11 var
+R2475:2479 _work_mixed_closure <> cstep ind
+R2496:2498 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2495:2495 _parent_phi_erase_eta_congr_sort <> u:12 var
+R2499:2502 TypeRules <> TTag constr
+R2504:2504 _parent_phi_erase_eta_congr_sort <> s:11 var
+R2548:2551 TypeRules <> TTag constr
+R2548:2551 TypeRules <> TTag constr
+R2731:2746 _parent_phi_erase_eta_congr_sort <> cstep_tag_id_glm thm
+R2731:2746 _parent_phi_erase_eta_congr_sort <> cstep_tag_id_glm thm
+prf 2845:2870 <> rtc_cstep_tag_not_sort_glm
+binder 2881:2881 <> s:13
+binder 2883:2883 <> j:14
+R2886:2887 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2888:2890 Progress <> rtc ind
+R2908:2912 TypeRules <> TSort constr
+R2914:2914 _parent_phi_erase_eta_congr_sort <> j:14 var
+R2899:2902 TypeRules <> TTag constr
+R2904:2904 _parent_phi_erase_eta_congr_sort <> s:13 var
+R2892:2896 _work_mixed_closure <> cstep ind
+R2961:2980 _parent_phi_erase_eta_congr_sort <> rtc_cstep_tag_id_glm thm
+R2985:2989 TypeRules <> TSort constr
+R2961:2980 _parent_phi_erase_eta_congr_sort <> rtc_cstep_tag_id_glm thm
+R2985:2989 TypeRules <> TSort constr
+prf 3049:3070 <> rtc_pstep_ezero_id_glm
+binder 3081:3081 <> u:15
+R3098:3101 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3084:3088 Progress <> pstep ind
+R3090:3095 TypeRules <> TEZero constr
+R3097:3097 _parent_phi_erase_eta_congr_sort <> u:15 var
+R3103:3105 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3102:3102 _parent_phi_erase_eta_congr_sort <> u:15 var
+R3106:3111 TypeRules <> TEZero constr
+prf 3202:3224 <> rtc_epstep_ezero_id_glm
+binder 3235:3235 <> u:16
+R3253:3256 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3238:3243 _tmp_epstep <> epstep ind
+R3245:3250 TypeRules <> TEZero constr
+R3252:3252 _parent_phi_erase_eta_congr_sort <> u:16 var
+R3258:3260 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3257:3257 _parent_phi_erase_eta_congr_sort <> u:16 var
+R3261:3266 TypeRules <> TEZero constr
+prf 3357:3379 <> rtc_pstep_ezero_rtc_glm
+binder 3390:3390 <> u:17
+R3411:3414 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3393:3395 Progress <> rtc ind
+R3410:3410 _parent_phi_erase_eta_congr_sort <> u:17 var
+R3403:3408 TypeRules <> TEZero constr
+R3397:3401 Progress <> pstep ind
+R3416:3418 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3415:3415 _parent_phi_erase_eta_congr_sort <> u:17 var
+R3419:3424 TypeRules <> TEZero constr
+R3465:3470 TypeRules <> TEZero constr
+R3465:3470 TypeRules <> TEZero constr
+R3647:3668 _parent_phi_erase_eta_congr_sort <> rtc_pstep_ezero_id_glm thm
+R3647:3668 _parent_phi_erase_eta_congr_sort <> rtc_pstep_ezero_id_glm thm
+prf 3765:3788 <> rtc_epstep_ezero_rtc_glm
+binder 3799:3799 <> u:18
+R3821:3824 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3802:3804 Progress <> rtc ind
+R3820:3820 _parent_phi_erase_eta_congr_sort <> u:18 var
+R3813:3818 TypeRules <> TEZero constr
+R3806:3811 _tmp_epstep <> epstep ind
+R3826:3828 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3825:3825 _parent_phi_erase_eta_congr_sort <> u:18 var
+R3829:3834 TypeRules <> TEZero constr
+R3875:3880 TypeRules <> TEZero constr
+R3875:3880 TypeRules <> TEZero constr
+R4057:4079 _parent_phi_erase_eta_congr_sort <> rtc_epstep_ezero_id_glm thm
+R4057:4079 _parent_phi_erase_eta_congr_sort <> rtc_epstep_ezero_id_glm thm
+prf 4176:4193 <> cstep_ezero_id_glm
+binder 4204:4204 <> u:19
+R4221:4224 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4207:4211 _work_mixed_closure <> cstep ind
+R4213:4218 TypeRules <> TEZero constr
+R4220:4220 _parent_phi_erase_eta_congr_sort <> u:19 var
+R4226:4228 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4225:4225 _parent_phi_erase_eta_congr_sort <> u:19 var
+R4229:4234 TypeRules <> TEZero constr
+R4338:4360 _parent_phi_erase_eta_congr_sort <> rtc_pstep_ezero_rtc_glm thm
+R4338:4360 _parent_phi_erase_eta_congr_sort <> rtc_pstep_ezero_rtc_glm thm
+R4411:4434 _parent_phi_erase_eta_congr_sort <> rtc_epstep_ezero_rtc_glm thm
+R4411:4434 _parent_phi_erase_eta_congr_sort <> rtc_epstep_ezero_rtc_glm thm
+prf 4476:4497 <> rtc_cstep_ezero_id_glm
+binder 4508:4508 <> u:20
+R4529:4532 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4511:4513 Progress <> rtc ind
+R4528:4528 _parent_phi_erase_eta_congr_sort <> u:20 var
+R4521:4526 TypeRules <> TEZero constr
+R4515:4519 _work_mixed_closure <> cstep ind
+R4534:4536 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4533:4533 _parent_phi_erase_eta_congr_sort <> u:20 var
+R4537:4542 TypeRules <> TEZero constr
+R4583:4588 TypeRules <> TEZero constr
+R4583:4588 TypeRules <> TEZero constr
+R4765:4782 _parent_phi_erase_eta_congr_sort <> cstep_ezero_id_glm thm
+R4765:4782 _parent_phi_erase_eta_congr_sort <> cstep_ezero_id_glm thm
+prf 4879:4906 <> rtc_cstep_ezero_not_sort_glm
+binder 4917:4917 <> j:21
+R4920:4921 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R4922:4924 Progress <> rtc ind
+R4940:4944 TypeRules <> TSort constr
+R4946:4946 _parent_phi_erase_eta_congr_sort <> j:21 var
+R4932:4937 TypeRules <> TEZero constr
+R4926:4930 _work_mixed_closure <> cstep ind
+R4991:5012 _parent_phi_erase_eta_congr_sort <> rtc_cstep_ezero_id_glm thm
+R5015:5019 TypeRules <> TSort constr
+R4991:5012 _parent_phi_erase_eta_congr_sort <> rtc_cstep_ezero_id_glm thm
+R5015:5019 TypeRules <> TSort constr
+prf 5079:5097 <> rtc_pstep_i1_id_glm
+binder 5108:5108 <> u:22
+R5122:5125 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5111:5115 Progress <> pstep ind
+R5117:5119 TypeRules <> TI1 constr
+R5121:5121 _parent_phi_erase_eta_congr_sort <> u:22 var
+R5127:5129 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5126:5126 _parent_phi_erase_eta_congr_sort <> u:22 var
+R5130:5132 TypeRules <> TI1 constr
+prf 5223:5242 <> rtc_epstep_i1_id_glm
+binder 5253:5253 <> u:23
+R5268:5271 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5256:5261 _tmp_epstep <> epstep ind
+R5263:5265 TypeRules <> TI1 constr
+R5267:5267 _parent_phi_erase_eta_congr_sort <> u:23 var
+R5273:5275 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5272:5272 _parent_phi_erase_eta_congr_sort <> u:23 var
+R5276:5278 TypeRules <> TI1 constr
+prf 5369:5388 <> rtc_pstep_i1_rtc_glm
+binder 5399:5399 <> u:24
+R5417:5420 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5402:5404 Progress <> rtc ind
+R5416:5416 _parent_phi_erase_eta_congr_sort <> u:24 var
+R5412:5414 TypeRules <> TI1 constr
+R5406:5410 Progress <> pstep ind
+R5422:5424 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5421:5421 _parent_phi_erase_eta_congr_sort <> u:24 var
+R5425:5427 TypeRules <> TI1 constr
+R5468:5470 TypeRules <> TI1 constr
+R5468:5470 TypeRules <> TI1 constr
+R5647:5665 _parent_phi_erase_eta_congr_sort <> rtc_pstep_i1_id_glm thm
+R5647:5665 _parent_phi_erase_eta_congr_sort <> rtc_pstep_i1_id_glm thm
+prf 5762:5782 <> rtc_epstep_i1_rtc_glm
+binder 5793:5793 <> u:25
+R5812:5815 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5796:5798 Progress <> rtc ind
+R5811:5811 _parent_phi_erase_eta_congr_sort <> u:25 var
+R5807:5809 TypeRules <> TI1 constr
+R5800:5805 _tmp_epstep <> epstep ind
+R5817:5819 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5816:5816 _parent_phi_erase_eta_congr_sort <> u:25 var
+R5820:5822 TypeRules <> TI1 constr
+R5863:5865 TypeRules <> TI1 constr
+R5863:5865 TypeRules <> TI1 constr
+R6042:6061 _parent_phi_erase_eta_congr_sort <> rtc_epstep_i1_id_glm thm
+R6042:6061 _parent_phi_erase_eta_congr_sort <> rtc_epstep_i1_id_glm thm
+prf 6158:6172 <> cstep_i1_id_glm
+binder 6183:6183 <> u:26
+R6197:6200 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6186:6190 _work_mixed_closure <> cstep ind
+R6192:6194 TypeRules <> TI1 constr
+R6196:6196 _parent_phi_erase_eta_congr_sort <> u:26 var
+R6202:6204 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6201:6201 _parent_phi_erase_eta_congr_sort <> u:26 var
+R6205:6207 TypeRules <> TI1 constr
+R6311:6330 _parent_phi_erase_eta_congr_sort <> rtc_pstep_i1_rtc_glm thm
+R6311:6330 _parent_phi_erase_eta_congr_sort <> rtc_pstep_i1_rtc_glm thm
+R6381:6401 _parent_phi_erase_eta_congr_sort <> rtc_epstep_i1_rtc_glm thm
+R6381:6401 _parent_phi_erase_eta_congr_sort <> rtc_epstep_i1_rtc_glm thm
+prf 6443:6461 <> rtc_cstep_i1_id_glm
+binder 6472:6472 <> u:27
+R6490:6493 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6475:6477 Progress <> rtc ind
+R6489:6489 _parent_phi_erase_eta_congr_sort <> u:27 var
+R6485:6487 TypeRules <> TI1 constr
+R6479:6483 _work_mixed_closure <> cstep ind
+R6495:6497 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6494:6494 _parent_phi_erase_eta_congr_sort <> u:27 var
+R6498:6500 TypeRules <> TI1 constr
+R6541:6543 TypeRules <> TI1 constr
+R6541:6543 TypeRules <> TI1 constr
+R6720:6734 _parent_phi_erase_eta_congr_sort <> cstep_i1_id_glm thm
+R6720:6734 _parent_phi_erase_eta_congr_sort <> cstep_i1_id_glm thm
+prf 6831:6855 <> rtc_cstep_i1_not_sort_glm
+binder 6866:6866 <> j:28
+R6869:6870 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R6871:6873 Progress <> rtc ind
+R6886:6890 TypeRules <> TSort constr
+R6892:6892 _parent_phi_erase_eta_congr_sort <> j:28 var
+R6881:6883 TypeRules <> TI1 constr
+R6875:6879 _work_mixed_closure <> cstep ind
+R6937:6955 _parent_phi_erase_eta_congr_sort <> rtc_cstep_i1_id_glm thm
+R6958:6962 TypeRules <> TSort constr
+R6937:6955 _parent_phi_erase_eta_congr_sort <> rtc_cstep_i1_id_glm thm
+R6958:6962 TypeRules <> TSort constr
+prf 7079:7097 <> pstep_esucc_inv_glm
+binder 7108:7108 <> n:29
+binder 7110:7110 <> u:30
+R7131:7136 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7113:7117 Progress <> pstep ind
+R7120:7125 TypeRules <> TESucc constr
+R7127:7127 _parent_phi_erase_eta_congr_sort <> n:29 var
+R7130:7130 _parent_phi_erase_eta_congr_sort <> u:30 var
+R7137:7143 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7146:7147 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7144:7145 <> n':31
+R7161:7164 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7149:7151 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7148:7148 _parent_phi_erase_eta_congr_sort <> u:30 var
+R7152:7157 TypeRules <> TESucc constr
+R7159:7160 _parent_phi_erase_eta_congr_sort <> n':31 var
+R7165:7169 Progress <> pstep ind
+R7171:7171 _parent_phi_erase_eta_congr_sort <> n:29 var
+R7173:7174 _parent_phi_erase_eta_congr_sort <> n':31 var
+prf 7324:7346 <> rtc_pstep_esucc_inv_glm
+binder 7357:7357 <> n:32
+binder 7359:7359 <> u:33
+R7384:7389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7362:7364 Progress <> rtc ind
+R7383:7383 _parent_phi_erase_eta_congr_sort <> u:33 var
+R7373:7378 TypeRules <> TESucc constr
+R7380:7380 _parent_phi_erase_eta_congr_sort <> n:32 var
+R7366:7370 Progress <> pstep ind
+R7390:7396 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7399:7400 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7397:7398 <> n':34
+R7414:7417 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7402:7404 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7401:7401 _parent_phi_erase_eta_congr_sort <> u:33 var
+R7405:7410 TypeRules <> TESucc constr
+R7412:7413 _parent_phi_erase_eta_congr_sort <> n':34 var
+R7418:7420 Progress <> rtc ind
+R7430:7431 _parent_phi_erase_eta_congr_sort <> n':34 var
+R7428:7428 _parent_phi_erase_eta_congr_sort <> n:32 var
+R7422:7426 Progress <> pstep ind
+R7475:7480 TypeRules <> TESucc constr
+R7475:7480 TypeRules <> TESucc constr
+R7679:7686 Progress <> rtc_refl constr
+R7679:7686 Progress <> rtc_refl constr
+R7719:7737 _parent_phi_erase_eta_congr_sort <> pstep_esucc_inv_glm thm
+R7719:7737 _parent_phi_erase_eta_congr_sort <> pstep_esucc_inv_glm thm
+R7792:7798 Corelib.Init.Logic <> eq_refl constr
+R7792:7798 Corelib.Init.Logic <> eq_refl constr
+R7901:7908 Progress <> rtc_step constr
+R7901:7908 Progress <> rtc_step constr
+prf 7979:7998 <> epstep_esucc_inv_glm
+binder 8009:8009 <> n:35
+binder 8011:8011 <> u:36
+R8033:8038 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8014:8019 _tmp_epstep <> epstep ind
+R8022:8027 TypeRules <> TESucc constr
+R8029:8029 _parent_phi_erase_eta_congr_sort <> n:35 var
+R8032:8032 _parent_phi_erase_eta_congr_sort <> u:36 var
+R8039:8045 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8048:8049 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8046:8047 <> n':37
+R8063:8066 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8051:8053 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8050:8050 _parent_phi_erase_eta_congr_sort <> u:36 var
+R8054:8059 TypeRules <> TESucc constr
+R8061:8062 _parent_phi_erase_eta_congr_sort <> n':37 var
+R8067:8072 _tmp_epstep <> epstep ind
+R8074:8074 _parent_phi_erase_eta_congr_sort <> n:35 var
+R8076:8077 _parent_phi_erase_eta_congr_sort <> n':37 var
+prf 8227:8250 <> rtc_epstep_esucc_inv_glm
+binder 8261:8261 <> n:38
+binder 8263:8263 <> u:39
+R8289:8294 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8266:8268 Progress <> rtc ind
+R8288:8288 _parent_phi_erase_eta_congr_sort <> u:39 var
+R8278:8283 TypeRules <> TESucc constr
+R8285:8285 _parent_phi_erase_eta_congr_sort <> n:38 var
+R8270:8275 _tmp_epstep <> epstep ind
+R8295:8301 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8304:8305 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8302:8303 <> n':40
+R8319:8322 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8307:8309 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8306:8306 _parent_phi_erase_eta_congr_sort <> u:39 var
+R8310:8315 TypeRules <> TESucc constr
+R8317:8318 _parent_phi_erase_eta_congr_sort <> n':40 var
+R8323:8325 Progress <> rtc ind
+R8336:8337 _parent_phi_erase_eta_congr_sort <> n':40 var
+R8334:8334 _parent_phi_erase_eta_congr_sort <> n:38 var
+R8327:8332 _tmp_epstep <> epstep ind
+R8381:8386 TypeRules <> TESucc constr
+R8381:8386 TypeRules <> TESucc constr
+R8585:8592 Progress <> rtc_refl constr
+R8585:8592 Progress <> rtc_refl constr
+R8625:8644 _parent_phi_erase_eta_congr_sort <> epstep_esucc_inv_glm thm
+R8625:8644 _parent_phi_erase_eta_congr_sort <> epstep_esucc_inv_glm thm
+R8699:8705 Corelib.Init.Logic <> eq_refl constr
+R8699:8705 Corelib.Init.Logic <> eq_refl constr
+R8808:8815 Progress <> rtc_step constr
+R8808:8815 Progress <> rtc_step constr
+prf 8886:8904 <> cstep_esucc_inv_glm
+binder 8915:8915 <> n:41
+binder 8917:8917 <> u:42
+R8938:8943 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8920:8924 _work_mixed_closure <> cstep ind
+R8927:8932 TypeRules <> TESucc constr
+R8934:8934 _parent_phi_erase_eta_congr_sort <> n:41 var
+R8937:8937 _parent_phi_erase_eta_congr_sort <> u:42 var
+R8944:8950 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8953:8954 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8951:8952 <> n':43
+R8956:8958 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8955:8955 _parent_phi_erase_eta_congr_sort <> u:42 var
+R8959:8964 TypeRules <> TESucc constr
+R8966:8967 _parent_phi_erase_eta_congr_sort <> n':43 var
+R9076:9098 _parent_phi_erase_eta_congr_sort <> rtc_pstep_esucc_inv_glm thm
+R9076:9098 _parent_phi_erase_eta_congr_sort <> rtc_pstep_esucc_inv_glm thm
+R9197:9220 _parent_phi_erase_eta_congr_sort <> rtc_epstep_esucc_inv_glm thm
+R9197:9220 _parent_phi_erase_eta_congr_sort <> rtc_epstep_esucc_inv_glm thm
+prf 9307:9329 <> rtc_cstep_esucc_inv_glm
+binder 9340:9340 <> n:44
+binder 9342:9342 <> u:45
+R9367:9372 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9345:9347 Progress <> rtc ind
+R9366:9366 _parent_phi_erase_eta_congr_sort <> u:45 var
+R9356:9361 TypeRules <> TESucc constr
+R9363:9363 _parent_phi_erase_eta_congr_sort <> n:44 var
+R9349:9353 _work_mixed_closure <> cstep ind
+R9373:9379 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9382:9383 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9380:9381 <> n':46
+R9385:9387 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9384:9384 _parent_phi_erase_eta_congr_sort <> u:45 var
+R9388:9393 TypeRules <> TESucc constr
+R9395:9396 _parent_phi_erase_eta_congr_sort <> n':46 var
+R9440:9445 TypeRules <> TESucc constr
+R9440:9445 TypeRules <> TESucc constr
+R9635:9653 _parent_phi_erase_eta_congr_sort <> cstep_esucc_inv_glm thm
+R9635:9653 _parent_phi_erase_eta_congr_sort <> cstep_esucc_inv_glm thm
+R9699:9705 Corelib.Init.Logic <> eq_refl constr
+R9699:9705 Corelib.Init.Logic <> eq_refl constr
+prf 9731:9758 <> rtc_cstep_esucc_not_sort_glm
+binder 9769:9769 <> n:47
+binder 9771:9771 <> j:48
+R9776:9777 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R9778:9780 Progress <> rtc ind
+R9800:9804 TypeRules <> TSort constr
+R9806:9806 _parent_phi_erase_eta_congr_sort <> j:48 var
+R9789:9794 TypeRules <> TESucc constr
+R9796:9796 _parent_phi_erase_eta_congr_sort <> n:47 var
+R9782:9786 _work_mixed_closure <> cstep ind
+R9851:9873 _parent_phi_erase_eta_congr_sort <> rtc_cstep_esucc_inv_glm thm
+R9851:9873 _parent_phi_erase_eta_congr_sort <> rtc_cstep_esucc_inv_glm thm
+prf 9939:9956 <> pstep_ivar_inv_glm
+binder 9967:9967 <> i:49
+binder 9969:9969 <> u:50
+R9989:9994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9972:9976 Progress <> pstep ind
+R9979:9983 TypeRules <> TIVar constr
+R9985:9985 _parent_phi_erase_eta_congr_sort <> i:49 var
+R9988:9988 _parent_phi_erase_eta_congr_sort <> u:50 var
+R9995:10001 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10004:10005 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10002:10003 <> i':51
+R10018:10021 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10007:10009 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10006:10006 _parent_phi_erase_eta_congr_sort <> u:50 var
+R10010:10014 TypeRules <> TIVar constr
+R10016:10017 _parent_phi_erase_eta_congr_sort <> i':51 var
+R10022:10026 Progress <> pstep ind
+R10028:10028 _parent_phi_erase_eta_congr_sort <> i:49 var
+R10030:10031 _parent_phi_erase_eta_congr_sort <> i':51 var
+prf 10181:10202 <> rtc_pstep_ivar_inv_glm
+binder 10213:10213 <> i:52
+binder 10215:10215 <> u:53
+R10239:10244 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10218:10220 Progress <> rtc ind
+R10238:10238 _parent_phi_erase_eta_congr_sort <> u:53 var
+R10229:10233 TypeRules <> TIVar constr
+R10235:10235 _parent_phi_erase_eta_congr_sort <> i:52 var
+R10222:10226 Progress <> pstep ind
+R10245:10251 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10254:10255 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10252:10253 <> i':54
+R10268:10271 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10257:10259 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10256:10256 _parent_phi_erase_eta_congr_sort <> u:53 var
+R10260:10264 TypeRules <> TIVar constr
+R10266:10267 _parent_phi_erase_eta_congr_sort <> i':54 var
+R10272:10274 Progress <> rtc ind
+R10284:10285 _parent_phi_erase_eta_congr_sort <> i':54 var
+R10282:10282 _parent_phi_erase_eta_congr_sort <> i:52 var
+R10276:10280 Progress <> pstep ind
+R10329:10333 TypeRules <> TIVar constr
+R10329:10333 TypeRules <> TIVar constr
+R10532:10539 Progress <> rtc_refl constr
+R10532:10539 Progress <> rtc_refl constr
+R10572:10589 _parent_phi_erase_eta_congr_sort <> pstep_ivar_inv_glm thm
+R10572:10589 _parent_phi_erase_eta_congr_sort <> pstep_ivar_inv_glm thm
+R10644:10650 Corelib.Init.Logic <> eq_refl constr
+R10644:10650 Corelib.Init.Logic <> eq_refl constr
+R10753:10760 Progress <> rtc_step constr
+R10753:10760 Progress <> rtc_step constr
+prf 10831:10849 <> epstep_ivar_inv_glm
+binder 10860:10860 <> i:55
+binder 10862:10862 <> u:56
+R10883:10888 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10865:10870 _tmp_epstep <> epstep ind
+R10873:10877 TypeRules <> TIVar constr
+R10879:10879 _parent_phi_erase_eta_congr_sort <> i:55 var
+R10882:10882 _parent_phi_erase_eta_congr_sort <> u:56 var
+R10889:10895 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10898:10899 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10896:10897 <> i':57
+R10912:10915 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10901:10903 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10900:10900 _parent_phi_erase_eta_congr_sort <> u:56 var
+R10904:10908 TypeRules <> TIVar constr
+R10910:10911 _parent_phi_erase_eta_congr_sort <> i':57 var
+R10916:10921 _tmp_epstep <> epstep ind
+R10923:10923 _parent_phi_erase_eta_congr_sort <> i:55 var
+R10925:10926 _parent_phi_erase_eta_congr_sort <> i':57 var
+prf 11076:11098 <> rtc_epstep_ivar_inv_glm
+binder 11109:11109 <> i:58
+binder 11111:11111 <> u:59
+R11136:11141 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11114:11116 Progress <> rtc ind
+R11135:11135 _parent_phi_erase_eta_congr_sort <> u:59 var
+R11126:11130 TypeRules <> TIVar constr
+R11132:11132 _parent_phi_erase_eta_congr_sort <> i:58 var
+R11118:11123 _tmp_epstep <> epstep ind
+R11142:11148 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11151:11152 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 11149:11150 <> i':60
+R11165:11168 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11154:11156 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11153:11153 _parent_phi_erase_eta_congr_sort <> u:59 var
+R11157:11161 TypeRules <> TIVar constr
+R11163:11164 _parent_phi_erase_eta_congr_sort <> i':60 var
+R11169:11171 Progress <> rtc ind
+R11182:11183 _parent_phi_erase_eta_congr_sort <> i':60 var
+R11180:11180 _parent_phi_erase_eta_congr_sort <> i:58 var
+R11173:11178 _tmp_epstep <> epstep ind
+R11227:11231 TypeRules <> TIVar constr
+R11227:11231 TypeRules <> TIVar constr
+R11430:11437 Progress <> rtc_refl constr
+R11430:11437 Progress <> rtc_refl constr
+R11470:11488 _parent_phi_erase_eta_congr_sort <> epstep_ivar_inv_glm thm
+R11470:11488 _parent_phi_erase_eta_congr_sort <> epstep_ivar_inv_glm thm
+R11543:11549 Corelib.Init.Logic <> eq_refl constr
+R11543:11549 Corelib.Init.Logic <> eq_refl constr
+R11652:11659 Progress <> rtc_step constr
+R11652:11659 Progress <> rtc_step constr
+prf 11730:11747 <> cstep_ivar_inv_glm
+binder 11758:11758 <> i:61
+binder 11760:11760 <> u:62
+R11780:11785 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11763:11767 _work_mixed_closure <> cstep ind
+R11770:11774 TypeRules <> TIVar constr
+R11776:11776 _parent_phi_erase_eta_congr_sort <> i:61 var
+R11779:11779 _parent_phi_erase_eta_congr_sort <> u:62 var
+R11786:11792 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11795:11796 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 11793:11794 <> i':63
+R11798:11800 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11797:11797 _parent_phi_erase_eta_congr_sort <> u:62 var
+R11801:11805 TypeRules <> TIVar constr
+R11807:11808 _parent_phi_erase_eta_congr_sort <> i':63 var
+R11917:11938 _parent_phi_erase_eta_congr_sort <> rtc_pstep_ivar_inv_glm thm
+R11917:11938 _parent_phi_erase_eta_congr_sort <> rtc_pstep_ivar_inv_glm thm
+R12037:12059 _parent_phi_erase_eta_congr_sort <> rtc_epstep_ivar_inv_glm thm
+R12037:12059 _parent_phi_erase_eta_congr_sort <> rtc_epstep_ivar_inv_glm thm
+prf 12146:12167 <> rtc_cstep_ivar_inv_glm
+binder 12178:12178 <> i:64
+binder 12180:12180 <> u:65
+R12204:12209 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12183:12185 Progress <> rtc ind
+R12203:12203 _parent_phi_erase_eta_congr_sort <> u:65 var
+R12194:12198 TypeRules <> TIVar constr
+R12200:12200 _parent_phi_erase_eta_congr_sort <> i:64 var
+R12187:12191 _work_mixed_closure <> cstep ind
+R12210:12216 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12219:12220 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12217:12218 <> i':66
+R12222:12224 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12221:12221 _parent_phi_erase_eta_congr_sort <> u:65 var
+R12225:12229 TypeRules <> TIVar constr
+R12231:12232 _parent_phi_erase_eta_congr_sort <> i':66 var
+R12276:12280 TypeRules <> TIVar constr
+R12276:12280 TypeRules <> TIVar constr
+R12470:12487 _parent_phi_erase_eta_congr_sort <> cstep_ivar_inv_glm thm
+R12470:12487 _parent_phi_erase_eta_congr_sort <> cstep_ivar_inv_glm thm
+R12533:12539 Corelib.Init.Logic <> eq_refl constr
+R12533:12539 Corelib.Init.Logic <> eq_refl constr
+prf 12565:12591 <> rtc_cstep_ivar_not_sort_glm
+binder 12602:12602 <> i:67
+binder 12604:12604 <> j:68
+R12609:12610 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R12611:12613 Progress <> rtc ind
+R12632:12636 TypeRules <> TSort constr
+R12638:12638 _parent_phi_erase_eta_congr_sort <> j:68 var
+R12622:12626 TypeRules <> TIVar constr
+R12628:12628 _parent_phi_erase_eta_congr_sort <> i:67 var
+R12615:12619 _work_mixed_closure <> cstep ind
+R12683:12704 _parent_phi_erase_eta_congr_sort <> rtc_cstep_ivar_inv_glm thm
+R12683:12704 _parent_phi_erase_eta_congr_sort <> rtc_cstep_ivar_inv_glm thm
+prf 12770:12786 <> pstep_mui_inv_glm
+binder 12797:12797 <> R:69
+binder 12799:12799 <> u:70
+R12818:12823 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12802:12806 Progress <> pstep ind
+R12809:12812 TypeRules <> TMuI constr
+R12814:12814 _parent_phi_erase_eta_congr_sort <> R:69 var
+R12817:12817 _parent_phi_erase_eta_congr_sort <> u:70 var
+R12824:12830 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12833:12834 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12831:12832 <> R':71
+R12846:12849 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12836:12838 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12835:12835 _parent_phi_erase_eta_congr_sort <> u:70 var
+R12839:12842 TypeRules <> TMuI constr
+R12844:12845 _parent_phi_erase_eta_congr_sort <> R':71 var
+R12850:12854 Progress <> pstep ind
+R12856:12856 _parent_phi_erase_eta_congr_sort <> R:69 var
+R12858:12859 _parent_phi_erase_eta_congr_sort <> R':71 var
+prf 13009:13029 <> rtc_pstep_mui_inv_glm
+binder 13040:13040 <> R:72
+binder 13042:13042 <> u:73
+R13065:13070 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13045:13047 Progress <> rtc ind
+R13064:13064 _parent_phi_erase_eta_congr_sort <> u:73 var
+R13056:13059 TypeRules <> TMuI constr
+R13061:13061 _parent_phi_erase_eta_congr_sort <> R:72 var
+R13049:13053 Progress <> pstep ind
+R13071:13077 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R13080:13081 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 13078:13079 <> R':74
+R13093:13096 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13083:13085 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13082:13082 _parent_phi_erase_eta_congr_sort <> u:73 var
+R13086:13089 TypeRules <> TMuI constr
+R13091:13092 _parent_phi_erase_eta_congr_sort <> R':74 var
+R13097:13099 Progress <> rtc ind
+R13109:13110 _parent_phi_erase_eta_congr_sort <> R':74 var
+R13107:13107 _parent_phi_erase_eta_congr_sort <> R:72 var
+R13101:13105 Progress <> pstep ind
+R13154:13157 TypeRules <> TMuI constr
+R13154:13157 TypeRules <> TMuI constr
+R13356:13363 Progress <> rtc_refl constr
+R13356:13363 Progress <> rtc_refl constr
+R13396:13412 _parent_phi_erase_eta_congr_sort <> pstep_mui_inv_glm thm
+R13396:13412 _parent_phi_erase_eta_congr_sort <> pstep_mui_inv_glm thm
+R13467:13473 Corelib.Init.Logic <> eq_refl constr
+R13467:13473 Corelib.Init.Logic <> eq_refl constr
+R13576:13583 Progress <> rtc_step constr
+R13576:13583 Progress <> rtc_step constr
+prf 13654:13671 <> epstep_mui_inv_glm
+binder 13682:13682 <> R:75
+binder 13684:13684 <> u:76
+R13704:13709 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13687:13692 _tmp_epstep <> epstep ind
+R13695:13698 TypeRules <> TMuI constr
+R13700:13700 _parent_phi_erase_eta_congr_sort <> R:75 var
+R13703:13703 _parent_phi_erase_eta_congr_sort <> u:76 var
+R13710:13716 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R13719:13720 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 13717:13718 <> R':77
+R13732:13735 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13722:13724 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13721:13721 _parent_phi_erase_eta_congr_sort <> u:76 var
+R13725:13728 TypeRules <> TMuI constr
+R13730:13731 _parent_phi_erase_eta_congr_sort <> R':77 var
+R13736:13741 _tmp_epstep <> epstep ind
+R13743:13743 _parent_phi_erase_eta_congr_sort <> R:75 var
+R13745:13746 _parent_phi_erase_eta_congr_sort <> R':77 var
+prf 13896:13917 <> rtc_epstep_mui_inv_glm
+binder 13928:13928 <> R:78
+binder 13930:13930 <> u:79
+R13954:13959 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13933:13935 Progress <> rtc ind
+R13953:13953 _parent_phi_erase_eta_congr_sort <> u:79 var
+R13945:13948 TypeRules <> TMuI constr
+R13950:13950 _parent_phi_erase_eta_congr_sort <> R:78 var
+R13937:13942 _tmp_epstep <> epstep ind
+R13960:13966 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R13969:13970 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 13967:13968 <> R':80
+R13982:13985 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13972:13974 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13971:13971 _parent_phi_erase_eta_congr_sort <> u:79 var
+R13975:13978 TypeRules <> TMuI constr
+R13980:13981 _parent_phi_erase_eta_congr_sort <> R':80 var
+R13986:13988 Progress <> rtc ind
+R13999:14000 _parent_phi_erase_eta_congr_sort <> R':80 var
+R13997:13997 _parent_phi_erase_eta_congr_sort <> R:78 var
+R13990:13995 _tmp_epstep <> epstep ind
+R14044:14047 TypeRules <> TMuI constr
+R14044:14047 TypeRules <> TMuI constr
+R14246:14253 Progress <> rtc_refl constr
+R14246:14253 Progress <> rtc_refl constr
+R14286:14303 _parent_phi_erase_eta_congr_sort <> epstep_mui_inv_glm thm
+R14286:14303 _parent_phi_erase_eta_congr_sort <> epstep_mui_inv_glm thm
+R14358:14364 Corelib.Init.Logic <> eq_refl constr
+R14358:14364 Corelib.Init.Logic <> eq_refl constr
+R14467:14474 Progress <> rtc_step constr
+R14467:14474 Progress <> rtc_step constr
+prf 14545:14561 <> cstep_mui_inv_glm
+binder 14572:14572 <> R:81
+binder 14574:14574 <> u:82
+R14593:14598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14577:14581 _work_mixed_closure <> cstep ind
+R14584:14587 TypeRules <> TMuI constr
+R14589:14589 _parent_phi_erase_eta_congr_sort <> R:81 var
+R14592:14592 _parent_phi_erase_eta_congr_sort <> u:82 var
+R14599:14605 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R14608:14609 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 14606:14607 <> R':83
+R14611:14613 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14610:14610 _parent_phi_erase_eta_congr_sort <> u:82 var
+R14614:14617 TypeRules <> TMuI constr
+R14619:14620 _parent_phi_erase_eta_congr_sort <> R':83 var
+R14729:14749 _parent_phi_erase_eta_congr_sort <> rtc_pstep_mui_inv_glm thm
+R14729:14749 _parent_phi_erase_eta_congr_sort <> rtc_pstep_mui_inv_glm thm
+R14848:14869 _parent_phi_erase_eta_congr_sort <> rtc_epstep_mui_inv_glm thm
+R14848:14869 _parent_phi_erase_eta_congr_sort <> rtc_epstep_mui_inv_glm thm
+prf 14956:14976 <> rtc_cstep_mui_inv_glm
+binder 14987:14987 <> R:84
+binder 14989:14989 <> u:85
+R15012:15017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14992:14994 Progress <> rtc ind
+R15011:15011 _parent_phi_erase_eta_congr_sort <> u:85 var
+R15003:15006 TypeRules <> TMuI constr
+R15008:15008 _parent_phi_erase_eta_congr_sort <> R:84 var
+R14996:15000 _work_mixed_closure <> cstep ind
+R15018:15024 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15027:15028 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 15025:15026 <> R':86
+R15030:15032 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R15029:15029 _parent_phi_erase_eta_congr_sort <> u:85 var
+R15033:15036 TypeRules <> TMuI constr
+R15038:15039 _parent_phi_erase_eta_congr_sort <> R':86 var
+R15083:15086 TypeRules <> TMuI constr
+R15083:15086 TypeRules <> TMuI constr
+R15276:15292 _parent_phi_erase_eta_congr_sort <> cstep_mui_inv_glm thm
+R15276:15292 _parent_phi_erase_eta_congr_sort <> cstep_mui_inv_glm thm
+R15338:15344 Corelib.Init.Logic <> eq_refl constr
+R15338:15344 Corelib.Init.Logic <> eq_refl constr
+prf 15370:15395 <> rtc_cstep_mui_not_sort_glm
+binder 15406:15406 <> R:87
+binder 15408:15408 <> j:88
+R15413:15414 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R15415:15417 Progress <> rtc ind
+R15435:15439 TypeRules <> TSort constr
+R15441:15441 _parent_phi_erase_eta_congr_sort <> j:88 var
+R15426:15429 TypeRules <> TMuI constr
+R15431:15431 _parent_phi_erase_eta_congr_sort <> R:87 var
+R15419:15423 _work_mixed_closure <> cstep ind
+R15486:15506 _parent_phi_erase_eta_congr_sort <> rtc_cstep_mui_inv_glm thm
+R15486:15506 _parent_phi_erase_eta_congr_sort <> rtc_cstep_mui_inv_glm thm
+prf 15572:15588 <> pstep_tin_inv_glm
+binder 15599:15599 <> x:89
+binder 15601:15601 <> u:90
+R15619:15624 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15604:15608 Progress <> pstep ind
+R15611:15613 TypeRules <> TIn constr
+R15615:15615 _parent_phi_erase_eta_congr_sort <> x:89 var
+R15618:15618 _parent_phi_erase_eta_congr_sort <> u:90 var
+R15625:15631 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15634:15635 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 15632:15633 <> x':91
+R15646:15649 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15637:15639 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R15636:15636 _parent_phi_erase_eta_congr_sort <> u:90 var
+R15640:15642 TypeRules <> TIn constr
+R15644:15645 _parent_phi_erase_eta_congr_sort <> x':91 var
+R15650:15654 Progress <> pstep ind
+R15656:15656 _parent_phi_erase_eta_congr_sort <> x:89 var
+R15658:15659 _parent_phi_erase_eta_congr_sort <> x':91 var
+prf 15809:15829 <> rtc_pstep_tin_inv_glm
+binder 15840:15840 <> x:92
+binder 15842:15842 <> u:93
+R15864:15869 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15845:15847 Progress <> rtc ind
+R15863:15863 _parent_phi_erase_eta_congr_sort <> u:93 var
+R15856:15858 TypeRules <> TIn constr
+R15860:15860 _parent_phi_erase_eta_congr_sort <> x:92 var
+R15849:15853 Progress <> pstep ind
+R15870:15876 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15879:15880 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 15877:15878 <> x':94
+R15891:15894 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15882:15884 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R15881:15881 _parent_phi_erase_eta_congr_sort <> u:93 var
+R15885:15887 TypeRules <> TIn constr
+R15889:15890 _parent_phi_erase_eta_congr_sort <> x':94 var
+R15895:15897 Progress <> rtc ind
+R15907:15908 _parent_phi_erase_eta_congr_sort <> x':94 var
+R15905:15905 _parent_phi_erase_eta_congr_sort <> x:92 var
+R15899:15903 Progress <> pstep ind
+R15952:15954 TypeRules <> TIn constr
+R15952:15954 TypeRules <> TIn constr
+R16154:16161 Progress <> rtc_refl constr
+R16154:16161 Progress <> rtc_refl constr
+R16194:16210 _parent_phi_erase_eta_congr_sort <> pstep_tin_inv_glm thm
+R16194:16210 _parent_phi_erase_eta_congr_sort <> pstep_tin_inv_glm thm
+R16266:16272 Corelib.Init.Logic <> eq_refl constr
+R16266:16272 Corelib.Init.Logic <> eq_refl constr
+R16375:16382 Progress <> rtc_step constr
+R16375:16382 Progress <> rtc_step constr
+prf 16453:16470 <> epstep_tin_inv_glm
+binder 16481:16481 <> x:95
+binder 16483:16483 <> u:96
+R16502:16507 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16486:16491 _tmp_epstep <> epstep ind
+R16494:16496 TypeRules <> TIn constr
+R16498:16498 _parent_phi_erase_eta_congr_sort <> x:95 var
+R16501:16501 _parent_phi_erase_eta_congr_sort <> u:96 var
+R16508:16514 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16517:16518 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 16515:16516 <> x':97
+R16529:16532 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16520:16522 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R16519:16519 _parent_phi_erase_eta_congr_sort <> u:96 var
+R16523:16525 TypeRules <> TIn constr
+R16527:16528 _parent_phi_erase_eta_congr_sort <> x':97 var
+R16533:16538 _tmp_epstep <> epstep ind
+R16540:16540 _parent_phi_erase_eta_congr_sort <> x:95 var
+R16542:16543 _parent_phi_erase_eta_congr_sort <> x':97 var
+prf 16693:16714 <> rtc_epstep_tin_inv_glm
+binder 16725:16725 <> x:98
+binder 16727:16727 <> u:99
+R16750:16755 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16730:16732 Progress <> rtc ind
+R16749:16749 _parent_phi_erase_eta_congr_sort <> u:99 var
+R16742:16744 TypeRules <> TIn constr
+R16746:16746 _parent_phi_erase_eta_congr_sort <> x:98 var
+R16734:16739 _tmp_epstep <> epstep ind
+R16756:16762 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16765:16766 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 16763:16764 <> x':100
+R16777:16780 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16768:16770 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R16767:16767 _parent_phi_erase_eta_congr_sort <> u:99 var
+R16771:16773 TypeRules <> TIn constr
+R16775:16776 _parent_phi_erase_eta_congr_sort <> x':100 var
+R16781:16783 Progress <> rtc ind
+R16794:16795 _parent_phi_erase_eta_congr_sort <> x':100 var
+R16792:16792 _parent_phi_erase_eta_congr_sort <> x:98 var
+R16785:16790 _tmp_epstep <> epstep ind
+R16839:16841 TypeRules <> TIn constr
+R16839:16841 TypeRules <> TIn constr
+R17041:17048 Progress <> rtc_refl constr
+R17041:17048 Progress <> rtc_refl constr
+R17081:17098 _parent_phi_erase_eta_congr_sort <> epstep_tin_inv_glm thm
+R17081:17098 _parent_phi_erase_eta_congr_sort <> epstep_tin_inv_glm thm
+R17154:17160 Corelib.Init.Logic <> eq_refl constr
+R17154:17160 Corelib.Init.Logic <> eq_refl constr
+R17263:17270 Progress <> rtc_step constr
+R17263:17270 Progress <> rtc_step constr
+prf 17341:17357 <> cstep_tin_inv_glm
+binder 17368:17368 <> x:101
+binder 17370:17370 <> u:102
+R17388:17393 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17373:17377 _work_mixed_closure <> cstep ind
+R17380:17382 TypeRules <> TIn constr
+R17384:17384 _parent_phi_erase_eta_congr_sort <> x:101 var
+R17387:17387 _parent_phi_erase_eta_congr_sort <> u:102 var
+R17394:17400 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R17403:17404 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 17401:17402 <> x':103
+R17406:17408 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R17405:17405 _parent_phi_erase_eta_congr_sort <> u:102 var
+R17409:17411 TypeRules <> TIn constr
+R17413:17414 _parent_phi_erase_eta_congr_sort <> x':103 var
+R17523:17543 _parent_phi_erase_eta_congr_sort <> rtc_pstep_tin_inv_glm thm
+R17523:17543 _parent_phi_erase_eta_congr_sort <> rtc_pstep_tin_inv_glm thm
+R17642:17663 _parent_phi_erase_eta_congr_sort <> rtc_epstep_tin_inv_glm thm
+R17642:17663 _parent_phi_erase_eta_congr_sort <> rtc_epstep_tin_inv_glm thm
+prf 17750:17770 <> rtc_cstep_tin_inv_glm
+binder 17781:17781 <> x:104
+binder 17783:17783 <> u:105
+R17805:17810 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17786:17788 Progress <> rtc ind
+R17804:17804 _parent_phi_erase_eta_congr_sort <> u:105 var
+R17797:17799 TypeRules <> TIn constr
+R17801:17801 _parent_phi_erase_eta_congr_sort <> x:104 var
+R17790:17794 _work_mixed_closure <> cstep ind
+R17811:17817 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R17820:17821 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 17818:17819 <> x':106
+R17823:17825 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R17822:17822 _parent_phi_erase_eta_congr_sort <> u:105 var
+R17826:17828 TypeRules <> TIn constr
+R17830:17831 _parent_phi_erase_eta_congr_sort <> x':106 var
+R17875:17877 TypeRules <> TIn constr
+R17875:17877 TypeRules <> TIn constr
+R18068:18084 _parent_phi_erase_eta_congr_sort <> cstep_tin_inv_glm thm
+R18068:18084 _parent_phi_erase_eta_congr_sort <> cstep_tin_inv_glm thm
+R18131:18137 Corelib.Init.Logic <> eq_refl constr
+R18131:18137 Corelib.Init.Logic <> eq_refl constr
+prf 18163:18188 <> rtc_cstep_tin_not_sort_glm
+binder 18199:18199 <> x:107
+binder 18201:18201 <> j:108
+R18206:18207 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R18208:18210 Progress <> rtc ind
+R18227:18231 TypeRules <> TSort constr
+R18233:18233 _parent_phi_erase_eta_congr_sort <> j:108 var
+R18219:18221 TypeRules <> TIn constr
+R18223:18223 _parent_phi_erase_eta_congr_sort <> x:107 var
+R18212:18216 _work_mixed_closure <> cstep ind
+R18278:18298 _parent_phi_erase_eta_congr_sort <> rtc_cstep_tin_inv_glm thm
+R18278:18298 _parent_phi_erase_eta_congr_sort <> rtc_cstep_tin_inv_glm thm
+prf 18422:18440 <> pstep_iprod_inv_glm
+binder 18451:18451 <> A:109
+binder 18453:18453 <> B:110
+binder 18455:18455 <> u:111
+R18478:18483 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18458:18462 Progress <> pstep ind
+R18465:18470 TypeRules <> TIProd constr
+R18474:18474 _parent_phi_erase_eta_congr_sort <> B:110 var
+R18472:18472 _parent_phi_erase_eta_congr_sort <> A:109 var
+R18477:18477 _parent_phi_erase_eta_congr_sort <> u:111 var
+R18484:18490 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R18496:18497 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 18491:18492 <> A':112
+binder 18494:18495 <> B':113
+R18514:18517 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R18499:18501 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18498:18498 _parent_phi_erase_eta_congr_sort <> u:111 var
+R18502:18507 TypeRules <> TIProd constr
+R18512:18513 _parent_phi_erase_eta_congr_sort <> B':113 var
+R18509:18510 _parent_phi_erase_eta_congr_sort <> A':112 var
+R18528:18531 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R18518:18522 Progress <> pstep ind
+R18524:18524 _parent_phi_erase_eta_congr_sort <> A:109 var
+R18526:18527 _parent_phi_erase_eta_congr_sort <> A':112 var
+R18532:18536 Progress <> pstep ind
+R18538:18538 _parent_phi_erase_eta_congr_sort <> B:110 var
+R18540:18541 _parent_phi_erase_eta_congr_sort <> B':113 var
+prf 18689:18711 <> rtc_pstep_iprod_inv_glm
+binder 18722:18722 <> A:114
+binder 18724:18724 <> B:115
+binder 18726:18726 <> u:116
+R18753:18758 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18729:18731 Progress <> rtc ind
+R18752:18752 _parent_phi_erase_eta_congr_sort <> u:116 var
+R18740:18745 TypeRules <> TIProd constr
+R18749:18749 _parent_phi_erase_eta_congr_sort <> B:115 var
+R18747:18747 _parent_phi_erase_eta_congr_sort <> A:114 var
+R18733:18737 Progress <> pstep ind
+R18759:18765 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R18771:18772 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 18766:18767 <> A':117
+binder 18769:18770 <> B':118
+R18789:18792 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R18774:18776 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18773:18773 _parent_phi_erase_eta_congr_sort <> u:116 var
+R18777:18782 TypeRules <> TIProd constr
+R18787:18788 _parent_phi_erase_eta_congr_sort <> B':118 var
+R18784:18785 _parent_phi_erase_eta_congr_sort <> A':117 var
+R18807:18810 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R18793:18795 Progress <> rtc ind
+R18805:18806 _parent_phi_erase_eta_congr_sort <> A':117 var
+R18803:18803 _parent_phi_erase_eta_congr_sort <> A:114 var
+R18797:18801 Progress <> pstep ind
+R18811:18813 Progress <> rtc ind
+R18823:18824 _parent_phi_erase_eta_congr_sort <> B':118 var
+R18821:18821 _parent_phi_erase_eta_congr_sort <> B:115 var
+R18815:18819 Progress <> pstep ind
+R18870:18875 TypeRules <> TIProd constr
+R18870:18875 TypeRules <> TIProd constr

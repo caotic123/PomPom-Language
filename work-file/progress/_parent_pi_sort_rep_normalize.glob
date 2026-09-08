@@ -1,0 +1,193 @@
+DIGEST cf5afdd7abea0a71adfc0eddba72c2d0
+F_parent_pi_sort_rep_normalize
+R176:183 Progress <> <> lib
+R185:195 _tmp_epstep <> <> lib
+R197:215 _work_mixed_closure <> <> lib
+R217:227 _work_cjoin <> <> lib
+R231:252 _work_cstep_invariants <> <> lib
+R254:263 _luna_mueq <> <> lib
+R265:290 _glm_injectivity_close_rep <> <> lib
+R294:321 _parent_pi_sort_rep_consumer <> <> lib
+R351:354 Stdlib.Lists.List <> <> lib
+R364:376 Stdlib.Lists.List ListNotations <> mod
+R378:386 TypeRules <> <> mod
+prf 396:425 <> pi_sort_rep_to_endpoint_parent
+binder 436:436 <> t:1
+binder 438:438 <> A:2
+binder 440:440 <> B:3
+binder 442:442 <> j:4
+R461:464 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R449:454 _glm_injectivity_close_rep <> pi_rep def
+R456:456 _parent_pi_sort_rep_normalize <> t:1 var
+R458:458 _parent_pi_sort_rep_normalize <> A:2 var
+R460:460 _parent_pi_sort_rep_normalize <> B:3 var
+R486:493 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R465:467 Progress <> rtc ind
+R478:482 TypeRules <> TSort constr
+R484:484 _parent_pi_sort_rep_normalize <> j:4 var
+R475:475 _parent_pi_sort_rep_normalize <> B:3 var
+R469:473 _work_mixed_closure <> cstep ind
+R494:500 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R506:513 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 501:502 <> A':5
+binder 504:505 <> B':6
+R537:540 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R514:516 Progress <> rtc ind
+R527:529 TypeRules <> TPi constr
+R534:535 _parent_pi_sort_rep_normalize <> B':6 var
+R531:532 _parent_pi_sort_rep_normalize <> A':5 var
+R524:524 _parent_pi_sort_rep_normalize <> t:1 var
+R518:522 _work_mixed_closure <> cstep ind
+R541:543 Progress <> rtc ind
+R555:559 TypeRules <> TSort constr
+R561:561 _parent_pi_sort_rep_normalize <> j:4 var
+R551:552 _parent_pi_sort_rep_normalize <> B':6 var
+R545:549 _work_mixed_closure <> cstep ind
+R623:638 _work_cstep_invariants <> rtc_cstep_pi_inv thm
+R623:638 _work_cstep_invariants <> rtc_cstep_pi_inv thm
+R706:720 _work_mixed_closure <> cstep_confluent thm
+R728:732 TypeRules <> TSort constr
+R706:720 _work_mixed_closure <> cstep_confluent thm
+R728:732 TypeRules <> TSort constr
+R785:801 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R785:801 _work_cstep_invariants <> rtc_cstep_sort_id thm
+prf 867:896 <> pi_sort_endpoint_to_rep_parent
+binder 907:907 <> t:7
+binder 909:909 <> A:8
+binder 911:911 <> B:9
+binder 913:913 <> j:10
+R941:944 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R920:922 Progress <> rtc ind
+R933:935 TypeRules <> TPi constr
+R939:939 _parent_pi_sort_rep_normalize <> B:9 var
+R937:937 _parent_pi_sort_rep_normalize <> A:8 var
+R930:930 _parent_pi_sort_rep_normalize <> t:7 var
+R924:928 _work_mixed_closure <> cstep ind
+R966:973 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R945:947 Progress <> rtc ind
+R958:962 TypeRules <> TSort constr
+R964:964 _parent_pi_sort_rep_normalize <> j:10 var
+R955:955 _parent_pi_sort_rep_normalize <> B:9 var
+R949:953 _work_mixed_closure <> cstep ind
+R986:989 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R974:979 _glm_injectivity_close_rep <> pi_rep def
+R981:981 _parent_pi_sort_rep_normalize <> t:7 var
+R983:983 _parent_pi_sort_rep_normalize <> A:8 var
+R985:985 _parent_pi_sort_rep_normalize <> B:9 var
+R990:992 Progress <> rtc ind
+R1003:1007 TypeRules <> TSort constr
+R1009:1009 _parent_pi_sort_rep_normalize <> j:10 var
+R1000:1000 _parent_pi_sort_rep_normalize <> B:9 var
+R994:998 _work_mixed_closure <> cstep ind
+R1080:1085 _glm_injectivity_close_rep <> pi_rep def
+R1096:1098 TypeRules <> TPi constr
+R1096:1098 TypeRules <> TPi constr
+R1132:1139 Progress <> rtc_refl constr
+R1132:1139 Progress <> rtc_refl constr
+def 1160:1197 <> mueq_pi_sort_endpoint_transport_parent
+binder 1218:1218 <> t:11
+binder 1220:1220 <> u:12
+binder 1222:1222 <> A:13
+binder 1224:1224 <> B:14
+binder 1226:1226 <> j:15
+R1241:1248 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1233:1236 _luna_mueq <> mueq ind
+R1238:1238 _parent_pi_sort_rep_normalize <> t:11 var
+R1240:1240 _parent_pi_sort_rep_normalize <> u:12 var
+R1270:1273 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1249:1251 Progress <> rtc ind
+R1262:1264 TypeRules <> TPi constr
+R1268:1268 _parent_pi_sort_rep_normalize <> B:14 var
+R1266:1266 _parent_pi_sort_rep_normalize <> A:13 var
+R1259:1259 _parent_pi_sort_rep_normalize <> t:11 var
+R1253:1257 _work_mixed_closure <> cstep ind
+R1295:1302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1274:1276 Progress <> rtc ind
+R1287:1291 TypeRules <> TSort constr
+R1293:1293 _parent_pi_sort_rep_normalize <> j:15 var
+R1284:1284 _parent_pi_sort_rep_normalize <> B:14 var
+R1278:1282 _work_mixed_closure <> cstep ind
+R1303:1309 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1315:1322 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1310:1311 <> A':16
+binder 1313:1314 <> B':17
+R1346:1349 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1323:1325 Progress <> rtc ind
+R1336:1338 TypeRules <> TPi constr
+R1343:1344 _parent_pi_sort_rep_normalize <> B':17 var
+R1340:1341 _parent_pi_sort_rep_normalize <> A':16 var
+R1333:1333 _parent_pi_sort_rep_normalize <> u:12 var
+R1327:1331 _work_mixed_closure <> cstep ind
+R1350:1352 Progress <> rtc ind
+R1364:1368 TypeRules <> TSort constr
+R1370:1370 _parent_pi_sort_rep_normalize <> j:15 var
+R1360:1361 _parent_pi_sort_rep_normalize <> B':17 var
+R1354:1358 _work_mixed_closure <> cstep ind
+def 1386:1419 <> mueq_pi_sort_endpoint_below_parent
+R1426:1428 Corelib.Init.Datatypes <> nat ind
+binder 1422:1422 <> N:18
+binder 1450:1450 <> t:19
+binder 1452:1452 <> u:20
+binder 1454:1454 <> A:21
+binder 1456:1456 <> B:22
+binder 1458:1458 <> j:23
+R1476:1479 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1472:1474 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1465:1469 Progress <> tsize def
+R1471:1471 _parent_pi_sort_rep_normalize <> t:19 var
+R1475:1475 _parent_pi_sort_rep_normalize <> N:18 var
+R1488:1495 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1480:1483 _luna_mueq <> mueq ind
+R1485:1485 _parent_pi_sort_rep_normalize <> t:19 var
+R1487:1487 _parent_pi_sort_rep_normalize <> u:20 var
+R1517:1520 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1496:1498 Progress <> rtc ind
+R1509:1511 TypeRules <> TPi constr
+R1515:1515 _parent_pi_sort_rep_normalize <> B:22 var
+R1513:1513 _parent_pi_sort_rep_normalize <> A:21 var
+R1506:1506 _parent_pi_sort_rep_normalize <> t:19 var
+R1500:1504 _work_mixed_closure <> cstep ind
+R1542:1549 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1521:1523 Progress <> rtc ind
+R1534:1538 TypeRules <> TSort constr
+R1540:1540 _parent_pi_sort_rep_normalize <> j:23 var
+R1531:1531 _parent_pi_sort_rep_normalize <> B:22 var
+R1525:1529 _work_mixed_closure <> cstep ind
+R1550:1556 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1562:1569 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1557:1558 <> A':24
+binder 1560:1561 <> B':25
+R1593:1596 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1570:1572 Progress <> rtc ind
+R1583:1585 TypeRules <> TPi constr
+R1590:1591 _parent_pi_sort_rep_normalize <> B':25 var
+R1587:1588 _parent_pi_sort_rep_normalize <> A':24 var
+R1580:1580 _parent_pi_sort_rep_normalize <> u:20 var
+R1574:1578 _work_mixed_closure <> cstep ind
+R1597:1599 Progress <> rtc ind
+R1611:1615 TypeRules <> TSort constr
+R1617:1617 _parent_pi_sort_rep_normalize <> j:23 var
+R1607:1608 _parent_pi_sort_rep_normalize <> B':25 var
+R1601:1605 _work_mixed_closure <> cstep ind
+prf 1630:1674 <> pi_sort_endpoint_transport_implies_rep_parent
+R1720:1727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1682:1719 _parent_pi_sort_rep_normalize <> mueq_pi_sort_endpoint_transport_parent def
+R1728:1760 _parent_pi_sort_rep_consumer <> mueq_pi_sort_rep_transport_parent def
+R1820:1849 _parent_pi_sort_rep_normalize <> pi_sort_rep_to_endpoint_parent thm
+R1820:1849 _parent_pi_sort_rep_normalize <> pi_sort_rep_to_endpoint_parent thm
+R2017:2021 Corelib.Init.Logic <> proj1 thm
+R2024:2053 _parent_pi_sort_rep_normalize <> pi_sort_endpoint_to_rep_parent thm
+R2017:2021 Corelib.Init.Logic <> proj1 thm
+R2024:2053 _parent_pi_sort_rep_normalize <> pi_sort_endpoint_to_rep_parent thm
+prf 2091:2135 <> pi_sort_rep_transport_implies_endpoint_parent
+R2176:2183 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2143:2175 _parent_pi_sort_rep_consumer <> mueq_pi_sort_rep_transport_parent def
+R2184:2221 _parent_pi_sort_rep_normalize <> mueq_pi_sort_endpoint_transport_parent def
+R2283:2312 _parent_pi_sort_rep_normalize <> pi_sort_endpoint_to_rep_parent thm
+R2283:2312 _parent_pi_sort_rep_normalize <> pi_sort_endpoint_to_rep_parent thm
+R2431:2460 _parent_pi_sort_rep_normalize <> pi_sort_rep_to_endpoint_parent thm
+R2431:2460 _parent_pi_sort_rep_normalize <> pi_sort_rep_to_endpoint_parent thm
+R2508:2537 _parent_pi_sort_rep_normalize <> pi_sort_rep_to_endpoint_parent thm
+R2558:2587 _parent_pi_sort_rep_normalize <> pi_sort_endpoint_to_rep_parent thm
+R2608:2652 _parent_pi_sort_rep_normalize <> pi_sort_endpoint_transport_implies_rep_parent thm
+R2673:2717 _parent_pi_sort_rep_normalize <> pi_sort_rep_transport_implies_endpoint_parent thm

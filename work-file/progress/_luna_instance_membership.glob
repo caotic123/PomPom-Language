@@ -1,0 +1,211 @@
+DIGEST 0d208f6a1a597ab34f42bb8ded3ba0b2
+F_luna_instance_membership
+R15:22 Progress <> <> lib
+R24:42 SignatureConversion <> <> lib
+R44:67 _parent_instance_pruning <> <> lib
+R97:100 Stdlib.Lists.List <> <> lib
+R102:104 Stdlib.micromega.Lia <> <> lib
+R114:126 Stdlib.Lists.List ListNotations <> mod
+R128:136 TypeRules <> <> mod
+R146:165 Progress _work_cjoin <> mod
+R167:197 Progress _work_cstep_invariants <> mod
+ind 211:220 <> joined_mem
+constr 253:259 <> jm_here
+constr 339:346 <> jm_there
+R227:230 TypeRules <> term ind
+binder 223:223 <> c:1
+R239:242 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R235:238 TypeRules <> term ind
+binder 270:270 <> L:4
+binder 272:272 <> A:5
+binder 274:274 <> d:6
+binder 276:276 <> R:7
+R305:308 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R283:287 Progress _work_cjoin cjoin def
+R289:289 _luna_instance_membership <> L:4 var
+R292:297 TypeRules <> TLCons constr
+R303:303 _luna_instance_membership <> R:7 var
+R301:301 _luna_instance_membership <> d:6 var
+R299:299 _luna_instance_membership <> A:5 var
+R318:321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R309:313 Progress _work_cjoin cjoin def
+R315:315 _luna_instance_membership <> c:1 var
+R317:317 _luna_instance_membership <> d:6 var
+R322:331 _luna_instance_membership <> joined_mem:2 ind
+R335:335 _luna_instance_membership <> L:4 var
+R333:333 _luna_instance_membership <> c:1 var
+binder 357:357 <> L:8
+binder 359:359 <> A:9
+binder 361:361 <> d:10
+binder 363:363 <> R:11
+R392:395 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R370:374 Progress _work_cjoin cjoin def
+R376:376 _luna_instance_membership <> L:8 var
+R379:384 TypeRules <> TLCons constr
+R390:390 _luna_instance_membership <> R:11 var
+R388:388 _luna_instance_membership <> d:10 var
+R386:386 _luna_instance_membership <> A:9 var
+R410:413 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R396:405 _luna_instance_membership <> joined_mem:2 ind
+R409:409 _luna_instance_membership <> R:11 var
+R407:407 _luna_instance_membership <> c:1 var
+R414:423 _luna_instance_membership <> joined_mem:2 ind
+R427:427 _luna_instance_membership <> L:8 var
+R425:425 _luna_instance_membership <> c:1 var
+scheme 211:220 <> joined_mem_ind
+scheme 211:220 <> joined_mem_sind
+prf 437:456 <> joined_mem_transport
+binder 467:467 <> c:12
+binder 469:470 <> L1:13
+R490:493 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R475:484 _luna_instance_membership <> joined_mem ind
+R486:486 _luna_instance_membership <> c:12 var
+R488:489 _luna_instance_membership <> L1:13 var
+binder 501:502 <> L2:14
+R516:519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R505:509 Progress _work_cjoin cjoin def
+R511:512 _luna_instance_membership <> L1:13 var
+R514:515 _luna_instance_membership <> L2:14 var
+R520:529 _luna_instance_membership <> joined_mem ind
+R531:531 _luna_instance_membership <> c:12 var
+R533:534 _luna_instance_membership <> L2:14 var
+R640:646 _luna_instance_membership <> jm_here constr
+R640:646 _luna_instance_membership <> jm_here constr
+R704:714 Progress _work_cjoin cjoin_trans thm
+R724:732 Progress _work_cjoin cjoin_sym thm
+R704:714 Progress _work_cjoin cjoin_trans thm
+R724:732 Progress _work_cjoin cjoin_sym thm
+R782:789 _luna_instance_membership <> jm_there constr
+R782:789 _luna_instance_membership <> jm_there constr
+R847:857 Progress _work_cjoin cjoin_trans thm
+R867:875 Progress _work_cjoin cjoin_sym thm
+R847:857 Progress _work_cjoin cjoin_trans thm
+R867:875 Progress _work_cjoin cjoin_sym thm
+R918:922 Progress _work_cjoin cjoin def
+R928:933 TypeRules <> TLCons constr
+R918:922 Progress _work_cjoin cjoin def
+R928:933 TypeRules <> TLCons constr
+R959:969 Progress _work_cjoin cjoin_trans thm
+R979:987 Progress _work_cjoin cjoin_sym thm
+R959:969 Progress _work_cjoin cjoin_trans thm
+R979:987 Progress _work_cjoin cjoin_sym thm
+prf 1044:1062 <> joined_mem_cons_inv
+binder 1073:1073 <> c:15
+binder 1075:1075 <> A:16
+binder 1077:1077 <> d:17
+binder 1079:1079 <> R:18
+R1111:1116 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1084:1093 _luna_instance_membership <> joined_mem ind
+R1095:1095 _luna_instance_membership <> c:15 var
+R1098:1103 TypeRules <> TLCons constr
+R1109:1109 _luna_instance_membership <> R:18 var
+R1107:1107 _luna_instance_membership <> d:17 var
+R1105:1105 _luna_instance_membership <> A:16 var
+R1126:1129 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1117:1121 Progress _work_cjoin cjoin def
+R1123:1123 _luna_instance_membership <> c:15 var
+R1125:1125 _luna_instance_membership <> d:17 var
+R1130:1139 _luna_instance_membership <> joined_mem ind
+R1141:1141 _luna_instance_membership <> c:15 var
+R1143:1143 _luna_instance_membership <> R:18 var
+R1217:1243 SignatureConversion <> cjoin_lcons_inv_erased_luna thm
+R1217:1243 SignatureConversion <> cjoin_lcons_inv_erased_luna thm
+R1288:1298 Progress _work_cjoin cjoin_trans thm
+R1317:1325 Progress _work_cjoin cjoin_sym thm
+R1288:1298 Progress _work_cjoin cjoin_trans thm
+R1317:1325 Progress _work_cjoin cjoin_sym thm
+R1365:1391 SignatureConversion <> cjoin_lcons_inv_erased_luna thm
+R1365:1391 SignatureConversion <> cjoin_lcons_inv_erased_luna thm
+R1436:1455 _luna_instance_membership <> joined_mem_transport thm
+R1474:1482 Progress _work_cjoin cjoin_sym thm
+R1436:1455 _luna_instance_membership <> joined_mem_transport thm
+R1474:1482 Progress _work_cjoin cjoin_sym thm
+prf 1509:1531 <> prune_labels_joined_mem
+binder 1542:1542 <> B:19
+binder 1544:1544 <> L:20
+binder 1546:1547 <> L':21
+R1571:1574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1552:1563 _parent_instance_pruning <> prune_labels ind
+R1565:1565 _luna_instance_membership <> B:19 var
+R1567:1567 _luna_instance_membership <> L:20 var
+R1569:1570 _luna_instance_membership <> L':21 var
+binder 1582:1582 <> c:22
+binder 1584:1584 <> P:23
+R1627:1632 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1589:1598 _luna_instance_membership <> joined_mem ind
+R1601:1609 Progress <> phi_erase def
+R1611:1611 _luna_instance_membership <> c:22 var
+R1615:1623 Progress <> phi_erase def
+R1625:1625 _luna_instance_membership <> L:20 var
+R1633:1633 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1714:1720 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1641:1641 <> d:24
+R1677:1684 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1644:1648 Progress _work_cjoin cjoin def
+R1651:1659 Progress <> phi_erase def
+R1661:1661 _luna_instance_membership <> c:22 var
+R1665:1673 Progress <> phi_erase def
+R1675:1675 _luna_instance_membership <> d:24 var
+R1709:1712 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1685:1697 _parent_instance_pruning <> instance_dead def
+R1700:1703 TypeRules <> TApp constr
+R1707:1707 _luna_instance_membership <> d:24 var
+R1705:1705 _luna_instance_membership <> B:19 var
+R1713:1713 _luna_instance_membership <> P:23 var
+R1760:1763 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1721:1730 _luna_instance_membership <> joined_mem ind
+R1733:1741 Progress <> phi_erase def
+R1743:1743 _luna_instance_membership <> c:22 var
+R1747:1755 Progress <> phi_erase def
+R1757:1758 _luna_instance_membership <> L':21 var
+R1764:1764 _luna_instance_membership <> P:23 var
+R1843:1862 _luna_instance_membership <> joined_mem_transport thm
+R1843:1862 _luna_instance_membership <> joined_mem_transport thm
+R1909:1911 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1898:1906 Progress <> phi_erase def
+R1912:1920 Progress <> phi_erase def
+R1942:1952 _parent_instance_pruning <> prune_erase thm
+R1909:1911 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1898:1906 Progress <> phi_erase def
+R1912:1920 Progress <> phi_erase def
+R1942:1952 _parent_instance_pruning <> prune_erase thm
+R1991:2000 Progress _work_cjoin cjoin_refl thm
+R1991:2000 Progress _work_cjoin cjoin_refl thm
+R2017:2035 _luna_instance_membership <> joined_mem_cons_inv thm
+R2017:2035 _luna_instance_membership <> joined_mem_cons_inv thm
+R2083:2087 Progress _work_cjoin cjoin def
+R2090:2098 Progress <> phi_erase def
+R2104:2112 Progress <> phi_erase def
+R2083:2087 Progress _work_cjoin cjoin def
+R2090:2098 Progress <> phi_erase def
+R2104:2112 Progress <> phi_erase def
+R2143:2153 _parent_instance_pruning <> prune_erase thm
+R2143:2153 _parent_instance_pruning <> prune_erase thm
+R2143:2153 _parent_instance_pruning <> prune_erase thm
+R2210:2218 Progress <> phi_erase def
+R2221:2226 TypeRules <> TLCons constr
+R2253:2261 Progress <> phi_erase def
+R2273:2281 Progress <> phi_erase def
+R2293:2301 Progress <> phi_erase def
+R2191:2197 _luna_instance_membership <> jm_here constr
+R2210:2218 Progress <> phi_erase def
+R2221:2226 TypeRules <> TLCons constr
+R2253:2261 Progress <> phi_erase def
+R2273:2281 Progress <> phi_erase def
+R2293:2301 Progress <> phi_erase def
+R2191:2197 _luna_instance_membership <> jm_here constr
+R2322:2331 Progress _work_cjoin cjoin_refl thm
+R2322:2331 Progress _work_cjoin cjoin_refl thm
+R2349:2359 Progress _work_cjoin cjoin_trans thm
+R2349:2359 Progress _work_cjoin cjoin_trans thm
+R2392:2401 Progress _work_cjoin cjoin_refl thm
+R2392:2401 Progress _work_cjoin cjoin_refl thm
+R2482:2489 _luna_instance_membership <> jm_there constr
+R2499:2508 Progress _work_cjoin cjoin_refl thm
+R2482:2489 _luna_instance_membership <> jm_there constr
+R2499:2508 Progress _work_cjoin cjoin_refl thm
+R2560:2578 _luna_instance_membership <> joined_mem_cons_inv thm
+R2560:2578 _luna_instance_membership <> joined_mem_cons_inv thm
+R2800:2819 _luna_instance_membership <> joined_mem_transport thm
+R2840:2858 _luna_instance_membership <> joined_mem_cons_inv thm
+R2879:2901 _luna_instance_membership <> prune_labels_joined_mem thm

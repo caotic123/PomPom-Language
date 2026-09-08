@@ -1,0 +1,2189 @@
+DIGEST 0858cb057dbf998b0f9c8b89a5fb85cf
+FPayloadInversion
+R27:42 Stdlib.Program.Equality <> <> lib
+R44:47 Stdlib.Lists.List <> <> lib
+R49:53 Stdlib.Arith.Arith <> <> lib
+R55:57 Stdlib.micromega.Lia <> <> lib
+R59:66 Stdlib.Arith.PeanoNat <> <> lib
+R76:88 Stdlib.Lists.List ListNotations <> mod
+R106:118 TypeRulesCore <> <> lib
+R120:127 Progress <> <> lib
+R129:147 ConversionInversion <> <> lib
+R149:166 TypingSubstitution <> <> lib
+R176:188 Stdlib.Lists.List ListNotations <> mod
+R190:202 TypeRulesCore <> <> mod
+ind 216:223 <> mu_state
+constr 274:279 <> ms_mui
+constr 383:388 <> ms_mus
+R230:232 TypeRulesCore <> ctx def
+binder 226:226 <> G:1
+R240:243 TypeRulesCore <> term ind
+binder 236:236 <> c:2
+R252:255 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R248:251 TypeRulesCore <> term ind
+R260:263 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R256:259 TypeRulesCore <> term ind
+binder 290:290 <> R:5
+binder 292:292 <> i:6
+binder 294:294 <> z:7
+R340:347 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R301:305 TypeRulesCore <> check ind
+R312:318 TypeRulesCore <> TInterp constr
+R332:335 TypeRulesCore <> TMuI constr
+R337:337 PayloadInversion <> R:5 var
+R321:324 TypeRulesCore <> TApp constr
+R328:328 PayloadInversion <> i:6 var
+R326:326 PayloadInversion <> R:5 var
+R309:309 PayloadInversion <> z:7 var
+R307:307 PayloadInversion <> G:1 var
+R348:355 PayloadInversion <> mu_state:3 ind
+R379:379 PayloadInversion <> z:7 var
+R362:365 TypeRulesCore <> TApp constr
+R376:376 PayloadInversion <> i:6 var
+R368:371 TypeRulesCore <> TMuI constr
+R373:373 PayloadInversion <> R:5 var
+R359:359 PayloadInversion <> c:2 var
+R357:357 PayloadInversion <> G:1 var
+binder 399:399 <> E:8
+binder 401:402 <> Sf:9
+binder 404:404 <> i:10
+binder 406:407 <> ys:11
+R433:440 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R414:418 TypeRulesCore <> check ind
+R425:429 TypeRulesCore <> Label def
+R431:431 PayloadInversion <> E:8 var
+R422:422 PayloadInversion <> c:2 var
+R420:420 PayloadInversion <> G:1 var
+R508:515 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R441:445 TypeRulesCore <> check ind
+R453:459 TypeRulesCore <> TInterp constr
+R494:500 TypeRulesCore <> Carrier def
+R504:505 PayloadInversion <> Sf:9 var
+R502:502 PayloadInversion <> E:8 var
+R462:465 TypeRulesCore <> TApp constr
+R490:490 PayloadInversion <> c:2 var
+R468:475 TypeRulesCore <> branches def
+R478:481 TypeRulesCore <> TApp constr
+R486:486 PayloadInversion <> i:10 var
+R483:484 PayloadInversion <> Sf:9 var
+R449:450 PayloadInversion <> ys:11 var
+R447:447 PayloadInversion <> G:1 var
+R516:523 PayloadInversion <> mu_state:3 ind
+R551:552 PayloadInversion <> ys:11 var
+R530:533 TypeRulesCore <> TApp constr
+R548:548 PayloadInversion <> i:10 var
+R536:540 TypeRulesCore <> SigMu def
+R544:545 PayloadInversion <> Sf:9 var
+R542:542 PayloadInversion <> E:8 var
+R527:527 PayloadInversion <> c:2 var
+R525:525 PayloadInversion <> G:1 var
+scheme 216:223 <> mu_state_ind
+scheme 216:223 <> mu_state_sind
+prf 562:584 <> conv_mui_mus_absurd_tmp
+binder 595:595 <> R:12
+binder 597:597 <> i:13
+binder 599:599 <> E:14
+binder 601:602 <> Sf:15
+binder 604:604 <> j:16
+R653:656 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R609:612 TypeRulesCore <> conv ind
+R633:636 TypeRulesCore <> TApp constr
+R651:651 PayloadInversion <> j:16 var
+R639:643 TypeRulesCore <> SigMu def
+R647:648 PayloadInversion <> Sf:15 var
+R645:645 PayloadInversion <> E:14 var
+R615:618 TypeRulesCore <> TApp constr
+R629:629 PayloadInversion <> i:13 var
+R621:624 TypeRulesCore <> TMuI constr
+R626:626 PayloadInversion <> R:12 var
+R657:661 Corelib.Init.Logic <> False ind
+R714:716 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R707:713 Progress <> HMuIApp constr
+R717:723 Progress <> HMuSApp constr
+R714:716 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R707:713 Progress <> HMuIApp constr
+R717:723 Progress <> HMuSApp constr
+R737:744 Progress <> conv_whd thm
+R762:770 Progress <> whd_shape thm
+R790:798 Progress <> whd_shape thm
+R737:744 Progress <> conv_whd thm
+R762:770 Progress <> whd_shape thm
+R790:798 Progress <> whd_shape thm
+prf 846:868 <> conv_mus_mui_absurd_tmp
+binder 879:879 <> E:17
+binder 881:882 <> Sf:18
+binder 884:884 <> j:19
+binder 886:886 <> R:20
+binder 888:888 <> i:21
+R937:940 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R893:896 TypeRulesCore <> conv ind
+R921:924 TypeRulesCore <> TApp constr
+R935:935 PayloadInversion <> i:21 var
+R927:930 TypeRulesCore <> TMuI constr
+R932:932 PayloadInversion <> R:20 var
+R899:902 TypeRulesCore <> TApp constr
+R917:917 PayloadInversion <> j:19 var
+R905:909 TypeRulesCore <> SigMu def
+R913:914 PayloadInversion <> Sf:18 var
+R911:911 PayloadInversion <> E:17 var
+R941:945 Corelib.Init.Logic <> False ind
+R998:1000 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R991:997 Progress <> HMuSApp constr
+R1001:1007 Progress <> HMuIApp constr
+R998:1000 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R991:997 Progress <> HMuSApp constr
+R1001:1007 Progress <> HMuIApp constr
+R1021:1028 Progress <> conv_whd thm
+R1046:1054 Progress <> whd_shape thm
+R1074:1082 Progress <> whd_shape thm
+R1021:1028 Progress <> conv_whd thm
+R1046:1054 Progress <> whd_shape thm
+R1074:1082 Progress <> whd_shape thm
+ind 1135:1140 <> mu_rep
+constr 1162:1167 <> mr_mui
+constr 1210:1215 <> mr_mus
+constr 1265:1274 <> mr_carrier
+R1148:1151 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1144:1147 TypeRulesCore <> term ind
+binder 1178:1178 <> R:24
+binder 1180:1180 <> i:25
+R1183:1188 PayloadInversion <> mu_rep:22 ind
+R1191:1194 TypeRulesCore <> TApp constr
+R1205:1205 PayloadInversion <> i:25 var
+R1197:1200 TypeRulesCore <> TMuI constr
+R1202:1202 PayloadInversion <> R:24 var
+binder 1226:1226 <> E:26
+binder 1228:1229 <> Sf:27
+binder 1231:1231 <> i:28
+R1234:1239 PayloadInversion <> mu_rep:22 ind
+R1242:1245 TypeRulesCore <> TApp constr
+R1260:1260 PayloadInversion <> i:28 var
+R1248:1252 TypeRulesCore <> SigMu def
+R1256:1257 PayloadInversion <> Sf:27 var
+R1254:1254 PayloadInversion <> E:26 var
+binder 1285:1285 <> E:29
+binder 1287:1288 <> Sf:30
+binder 1290:1290 <> i:31
+R1293:1298 PayloadInversion <> mu_rep:22 ind
+R1301:1304 TypeRulesCore <> TApp constr
+R1321:1321 PayloadInversion <> i:31 var
+R1307:1313 TypeRulesCore <> Carrier def
+R1317:1318 PayloadInversion <> Sf:30 var
+R1315:1315 PayloadInversion <> E:29 var
+scheme 1135:1140 <> mu_rep_ind
+scheme 1135:1140 <> mu_rep_sind
+ind 1336:1342 <> mu_path
+constr 1382:1388 <> mp_conv
+constr 1456:1464 <> mp_forget
+constr 1676:1681 <> mp_sig
+constr 2177:2184 <> mp_trans
+R1349:1351 TypeRulesCore <> ctx def
+binder 1345:1345 <> G:32
+R1360:1363 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1356:1359 TypeRulesCore <> term ind
+R1368:1371 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1364:1367 TypeRulesCore <> term ind
+binder 1399:1399 <> A:35
+binder 1401:1401 <> B:36
+R1412:1415 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1404:1409 PayloadInversion <> mu_rep ind
+R1411:1411 PayloadInversion <> A:35 var
+R1424:1427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1416:1421 PayloadInversion <> mu_rep ind
+R1423:1423 PayloadInversion <> B:36 var
+R1436:1439 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1428:1431 TypeRulesCore <> conv ind
+R1435:1435 PayloadInversion <> B:36 var
+R1433:1433 PayloadInversion <> A:35 var
+R1440:1446 PayloadInversion <> mu_path:33 ind
+R1452:1452 PayloadInversion <> B:36 var
+R1450:1450 PayloadInversion <> A:35 var
+R1448:1448 PayloadInversion <> G:32 var
+binder 1475:1475 <> E:37
+binder 1477:1478 <> Sf:38
+binder 1480:1480 <> i:39
+binder 1482:1483 <> IT:40
+R1510:1513 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1490:1494 TypeRulesCore <> check ind
+R1502:1506 TypeRulesCore <> TSort constr
+R1498:1499 PayloadInversion <> IT:40 var
+R1496:1496 PayloadInversion <> G:32 var
+R1530:1537 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1514:1518 TypeRulesCore <> check ind
+R1524:1529 TypeRulesCore <> TEnumU constr
+R1522:1522 PayloadInversion <> E:37 var
+R1520:1520 PayloadInversion <> G:32 var
+R1590:1597 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1538:1542 TypeRulesCore <> check ind
+R1550:1552 TypeRulesCore <> TPi constr
+R1558:1560 TypeRulesCore <> Sig def
+R1577:1580 TypeRulesCore <> lift def
+R1586:1586 PayloadInversion <> E:37 var
+R1563:1566 TypeRulesCore <> lift def
+R1572:1573 PayloadInversion <> IT:40 var
+R1554:1555 PayloadInversion <> IT:40 var
+R1546:1547 PayloadInversion <> Sf:38 var
+R1544:1544 PayloadInversion <> G:32 var
+R1610:1617 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1598:1602 TypeRulesCore <> check ind
+R1608:1609 PayloadInversion <> IT:40 var
+R1606:1606 PayloadInversion <> i:39 var
+R1604:1604 PayloadInversion <> G:32 var
+R1618:1624 PayloadInversion <> mu_path:33 ind
+R1651:1654 TypeRulesCore <> TApp constr
+R1671:1671 PayloadInversion <> i:39 var
+R1657:1663 TypeRulesCore <> Carrier def
+R1667:1668 PayloadInversion <> Sf:38 var
+R1665:1665 PayloadInversion <> E:37 var
+R1629:1632 TypeRulesCore <> TApp constr
+R1647:1647 PayloadInversion <> i:39 var
+R1635:1639 TypeRulesCore <> SigMu def
+R1643:1644 PayloadInversion <> Sf:38 var
+R1641:1641 PayloadInversion <> E:37 var
+R1626:1626 PayloadInversion <> G:32 var
+binder 1692:1693 <> S1:41
+binder 1695:1696 <> S2:42
+binder 1698:1698 <> i:43
+binder 1700:1701 <> IT:44
+binder 1703:1703 <> E:45
+binder 1705:1708 <> Phi1:46
+binder 1710:1713 <> Phi2:47
+R1740:1743 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1720:1724 TypeRulesCore <> check ind
+R1732:1736 TypeRulesCore <> TSort constr
+R1728:1729 PayloadInversion <> IT:44 var
+R1726:1726 PayloadInversion <> G:32 var
+R1760:1767 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1744:1748 TypeRulesCore <> check ind
+R1754:1759 TypeRulesCore <> TEnumU constr
+R1752:1752 PayloadInversion <> E:45 var
+R1750:1750 PayloadInversion <> G:32 var
+R1820:1827 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1768:1772 TypeRulesCore <> check ind
+R1780:1782 TypeRulesCore <> TPi constr
+R1788:1790 TypeRulesCore <> Sig def
+R1807:1810 TypeRulesCore <> lift def
+R1816:1816 PayloadInversion <> E:45 var
+R1793:1796 TypeRulesCore <> lift def
+R1802:1803 PayloadInversion <> IT:44 var
+R1784:1785 PayloadInversion <> IT:44 var
+R1776:1777 PayloadInversion <> S1:41 var
+R1774:1774 PayloadInversion <> G:32 var
+R1880:1887 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1828:1832 TypeRulesCore <> check ind
+R1840:1842 TypeRulesCore <> TPi constr
+R1848:1850 TypeRulesCore <> Sig def
+R1867:1870 TypeRulesCore <> lift def
+R1876:1876 PayloadInversion <> E:45 var
+R1853:1856 TypeRulesCore <> lift def
+R1862:1863 PayloadInversion <> IT:44 var
+R1844:1845 PayloadInversion <> IT:44 var
+R1836:1837 PayloadInversion <> S2:42 var
+R1834:1834 PayloadInversion <> G:32 var
+R1997:2004 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1888:1891 TypeRulesCore <> conv ind
+R1951:1954 TypeRulesCore <> TLam constr
+R1957:1964 TypeRulesCore <> branches def
+R1967:1970 TypeRulesCore <> TApp constr
+R1987:1990 TypeRulesCore <> TVar constr
+R1973:1976 TypeRulesCore <> lift def
+R1982:1983 PayloadInversion <> S2:42 var
+R1894:1897 TypeRulesCore <> TLam constr
+R1900:1907 TypeRulesCore <> branches def
+R1910:1913 TypeRulesCore <> TApp constr
+R1930:1933 TypeRulesCore <> TVar constr
+R1916:1919 TypeRulesCore <> lift def
+R1925:1926 PayloadInversion <> S1:41 var
+R2035:2038 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2005:2008 TypeRulesCore <> eval ind
+R2031:2034 PayloadInversion <> Phi1:46 var
+R2011:2016 TypeRulesCore <> labels def
+R2019:2022 TypeRulesCore <> TApp constr
+R2027:2027 PayloadInversion <> i:43 var
+R2024:2025 PayloadInversion <> S1:41 var
+R2069:2076 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2039:2042 TypeRulesCore <> eval ind
+R2065:2068 PayloadInversion <> Phi2:47 var
+R2045:2050 TypeRulesCore <> labels def
+R2053:2056 TypeRulesCore <> TApp constr
+R2061:2061 PayloadInversion <> i:43 var
+R2058:2059 PayloadInversion <> S2:42 var
+R2097:2100 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2077:2086 TypeRulesCore <> spine_incl ind
+R2093:2096 PayloadInversion <> Phi2:47 var
+R2088:2091 PayloadInversion <> Phi1:46 var
+R2113:2120 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2101:2105 TypeRulesCore <> check ind
+R2111:2112 PayloadInversion <> IT:44 var
+R2109:2109 PayloadInversion <> i:43 var
+R2107:2107 PayloadInversion <> G:32 var
+R2121:2127 PayloadInversion <> mu_path:33 ind
+R2154:2157 TypeRulesCore <> TApp constr
+R2172:2172 PayloadInversion <> i:43 var
+R2160:2164 TypeRulesCore <> SigMu def
+R2168:2169 PayloadInversion <> S2:42 var
+R2166:2166 PayloadInversion <> E:45 var
+R2132:2135 TypeRulesCore <> TApp constr
+R2150:2150 PayloadInversion <> i:43 var
+R2138:2142 TypeRulesCore <> SigMu def
+R2146:2147 PayloadInversion <> S1:41 var
+R2144:2144 PayloadInversion <> E:45 var
+R2129:2129 PayloadInversion <> G:32 var
+binder 2195:2195 <> A:48
+binder 2197:2197 <> B:49
+binder 2199:2199 <> C:50
+R2215:2218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2202:2208 PayloadInversion <> mu_path:33 ind
+R2214:2214 PayloadInversion <> B:49 var
+R2212:2212 PayloadInversion <> A:48 var
+R2210:2210 PayloadInversion <> G:32 var
+R2232:2235 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2219:2225 PayloadInversion <> mu_path:33 ind
+R2231:2231 PayloadInversion <> C:50 var
+R2229:2229 PayloadInversion <> B:49 var
+R2227:2227 PayloadInversion <> G:32 var
+R2236:2242 PayloadInversion <> mu_path:33 ind
+R2248:2248 PayloadInversion <> C:50 var
+R2246:2246 PayloadInversion <> A:48 var
+R2244:2244 PayloadInversion <> G:32 var
+scheme 1336:1342 <> mu_path_ind
+scheme 1336:1342 <> mu_path_sind
+prf 2258:2282 <> mui_payload_transport_tmp
+binder 2293:2293 <> G:51
+binder 2295:2296 <> R0:52
+binder 2298:2299 <> R1:53
+binder 2301:2302 <> i0:54
+binder 2304:2305 <> i1:55
+binder 2307:2308 <> xs:56
+R2356:2361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2313:2317 TypeRulesCore <> check ind
+R2325:2331 TypeRulesCore <> TInterp constr
+R2347:2350 TypeRulesCore <> TMuI constr
+R2352:2353 PayloadInversion <> R0:52 var
+R2334:2337 TypeRulesCore <> TApp constr
+R2342:2343 PayloadInversion <> i0:54 var
+R2339:2340 PayloadInversion <> R0:52 var
+R2321:2322 PayloadInversion <> xs:56 var
+R2319:2319 PayloadInversion <> G:51 var
+R2372:2375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2362:2365 TypeRulesCore <> conv ind
+R2370:2371 PayloadInversion <> R1:53 var
+R2367:2368 PayloadInversion <> R0:52 var
+R2386:2391 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2376:2379 TypeRulesCore <> conv ind
+R2384:2385 PayloadInversion <> i1:55 var
+R2381:2382 PayloadInversion <> i0:54 var
+R2392:2396 TypeRulesCore <> check ind
+R2404:2410 TypeRulesCore <> TInterp constr
+R2426:2429 TypeRulesCore <> TMuI constr
+R2431:2432 PayloadInversion <> R1:53 var
+R2413:2416 TypeRulesCore <> TApp constr
+R2421:2422 PayloadInversion <> i1:55 var
+R2418:2419 PayloadInversion <> R1:53 var
+R2400:2401 PayloadInversion <> xs:56 var
+R2398:2398 PayloadInversion <> G:51 var
+R2487:2495 TypeRulesCore <> ch_expand constr
+R2487:2495 TypeRulesCore <> ch_expand constr
+R2507:2512 TypeRulesCore <> cv_sym constr
+R2515:2523 TypeRulesCore <> cv_interp constr
+R2507:2512 TypeRulesCore <> cv_sym constr
+R2515:2523 TypeRulesCore <> cv_interp constr
+R2537:2542 TypeRulesCore <> cv_app constr
+R2537:2542 TypeRulesCore <> cv_app constr
+R2577:2582 TypeRulesCore <> cv_mui constr
+R2577:2582 TypeRulesCore <> cv_mui constr
+prf 2621:2633 <> mu_factor_tmp
+binder 2644:2644 <> G:57
+binder 2646:2646 <> A:58
+binder 2648:2648 <> B:59
+R2660:2663 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2651:2653 TypeRulesCore <> sub ind
+R2659:2659 PayloadInversion <> B:59 var
+R2657:2657 PayloadInversion <> A:58 var
+R2655:2655 PayloadInversion <> G:57 var
+binder 2671:2671 <> U:60
+R2682:2685 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2674:2679 PayloadInversion <> mu_rep ind
+R2681:2681 PayloadInversion <> U:60 var
+R2694:2698 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2686:2689 TypeRulesCore <> conv ind
+R2693:2693 PayloadInversion <> U:60 var
+R2691:2691 PayloadInversion <> B:59 var
+R2699:2705 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2707:2708 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2706:2706 <> V:61
+R2717:2720 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2709:2714 PayloadInversion <> mu_rep ind
+R2716:2716 PayloadInversion <> V:61 var
+R2729:2732 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2721:2724 TypeRulesCore <> conv ind
+R2728:2728 PayloadInversion <> V:61 var
+R2726:2726 PayloadInversion <> A:58 var
+R2733:2739 PayloadInversion <> mu_path ind
+R2741:2741 PayloadInversion <> G:57 var
+R2743:2743 PayloadInversion <> V:61 var
+R2745:2745 PayloadInversion <> U:60 var
+R2860:2867 TypeRulesCore <> cv_trans constr
+R2860:2867 TypeRulesCore <> cv_trans constr
+R2894:2900 PayloadInversion <> mp_conv constr
+R2928:2934 TypeRulesCore <> cv_refl constr
+R2894:2900 PayloadInversion <> mp_conv constr
+R2928:2934 TypeRulesCore <> cv_refl constr
+R3105:3112 PayloadInversion <> mp_trans constr
+R3105:3112 PayloadInversion <> mp_trans constr
+R3212:3214 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3207:3211 Progress <> HSort constr
+R3215:3221 Progress <> HMuIApp constr
+R3212:3214 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3207:3211 Progress <> HSort constr
+R3215:3221 Progress <> HMuIApp constr
+R3239:3246 Progress <> conv_whd thm
+R3266:3274 Progress <> whd_shape thm
+R3295:3303 Progress <> whd_shape thm
+R3239:3246 Progress <> conv_whd thm
+R3266:3274 Progress <> whd_shape thm
+R3295:3303 Progress <> whd_shape thm
+R3369:3371 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3364:3368 Progress <> HSort constr
+R3372:3378 Progress <> HMuSApp constr
+R3369:3371 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3364:3368 Progress <> HSort constr
+R3372:3378 Progress <> HMuSApp constr
+R3396:3403 Progress <> conv_whd thm
+R3423:3431 Progress <> whd_shape thm
+R3452:3460 Progress <> whd_shape thm
+R3396:3403 Progress <> conv_whd thm
+R3423:3431 Progress <> whd_shape thm
+R3452:3460 Progress <> whd_shape thm
+R3526:3528 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3521:3525 Progress <> HSort constr
+R3529:3535 Progress <> HMuIApp constr
+R3526:3528 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3521:3525 Progress <> HSort constr
+R3529:3535 Progress <> HMuIApp constr
+R3553:3560 Progress <> conv_whd thm
+R3580:3588 Progress <> whd_shape thm
+R3610:3616 TypeRulesCore <> Carrier def
+R3625:3633 Progress <> whd_shape thm
+R3553:3560 Progress <> conv_whd thm
+R3580:3588 Progress <> whd_shape thm
+R3625:3633 Progress <> whd_shape thm
+R3757:3759 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3754:3756 Progress <> HPi constr
+R3760:3766 Progress <> HMuIApp constr
+R3757:3759 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3754:3756 Progress <> HPi constr
+R3760:3766 Progress <> HMuIApp constr
+R3784:3791 Progress <> conv_whd thm
+R3811:3819 Progress <> whd_shape thm
+R3840:3848 Progress <> whd_shape thm
+R3784:3791 Progress <> conv_whd thm
+R3811:3819 Progress <> whd_shape thm
+R3840:3848 Progress <> whd_shape thm
+R3912:3914 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3909:3911 Progress <> HPi constr
+R3915:3921 Progress <> HMuSApp constr
+R3912:3914 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3909:3911 Progress <> HPi constr
+R3915:3921 Progress <> HMuSApp constr
+R3939:3946 Progress <> conv_whd thm
+R3966:3974 Progress <> whd_shape thm
+R3995:4003 Progress <> whd_shape thm
+R3939:3946 Progress <> conv_whd thm
+R3966:3974 Progress <> whd_shape thm
+R3995:4003 Progress <> whd_shape thm
+R4067:4069 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4064:4066 Progress <> HPi constr
+R4070:4076 Progress <> HMuIApp constr
+R4067:4069 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4064:4066 Progress <> HPi constr
+R4070:4076 Progress <> HMuIApp constr
+R4094:4101 Progress <> conv_whd thm
+R4121:4129 Progress <> whd_shape thm
+R4151:4157 TypeRulesCore <> Carrier def
+R4166:4174 Progress <> whd_shape thm
+R4094:4101 Progress <> conv_whd thm
+R4121:4129 Progress <> whd_shape thm
+R4166:4174 Progress <> whd_shape thm
+R4227:4230 TypeRulesCore <> TApp constr
+R4233:4237 TypeRulesCore <> SigMu def
+R4227:4230 TypeRulesCore <> TApp constr
+R4233:4237 TypeRulesCore <> SigMu def
+R4263:4268 PayloadInversion <> mr_mus constr
+R4263:4268 PayloadInversion <> mr_mus constr
+R4287:4293 TypeRulesCore <> cv_refl constr
+R4287:4293 TypeRulesCore <> cv_refl constr
+R4308:4315 PayloadInversion <> mp_trans constr
+R4308:4315 PayloadInversion <> mp_trans constr
+R4329:4337 PayloadInversion <> mp_forget constr
+R4329:4337 PayloadInversion <> mp_forget constr
+R4377:4383 PayloadInversion <> mp_conv constr
+R4393:4402 PayloadInversion <> mr_carrier constr
+R4377:4383 PayloadInversion <> mp_conv constr
+R4393:4402 PayloadInversion <> mr_carrier constr
+R4436:4439 TypeRulesCore <> TApp constr
+R4442:4446 TypeRulesCore <> SigMu def
+R4436:4439 TypeRulesCore <> TApp constr
+R4442:4446 TypeRulesCore <> SigMu def
+R4472:4477 PayloadInversion <> mr_mus constr
+R4472:4477 PayloadInversion <> mr_mus constr
+R4496:4502 TypeRulesCore <> cv_refl constr
+R4496:4502 TypeRulesCore <> cv_refl constr
+R4517:4524 PayloadInversion <> mp_trans constr
+R4517:4524 PayloadInversion <> mp_trans constr
+R4538:4543 PayloadInversion <> mp_sig constr
+R4538:4543 PayloadInversion <> mp_sig constr
+R4749:4755 PayloadInversion <> mp_conv constr
+R4765:4770 PayloadInversion <> mr_mus constr
+R4749:4755 PayloadInversion <> mp_conv constr
+R4765:4770 PayloadInversion <> mr_mus constr
+prf 4805:4827 <> sig_to_carrier_pair_tmp
+binder 4838:4838 <> G:62
+binder 4840:4840 <> E:63
+binder 4842:4843 <> Sf:64
+binder 4845:4845 <> i:65
+binder 4847:4847 <> c:66
+binder 4849:4850 <> xs:67
+binder 4852:4853 <> IT:68
+R4878:4881 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4858:4862 TypeRulesCore <> check ind
+R4870:4874 TypeRulesCore <> TSort constr
+R4866:4867 PayloadInversion <> IT:68 var
+R4864:4864 PayloadInversion <> G:62 var
+R4898:4903 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4882:4886 TypeRulesCore <> check ind
+R4892:4897 TypeRulesCore <> TEnumU constr
+R4890:4890 PayloadInversion <> E:63 var
+R4888:4888 PayloadInversion <> G:62 var
+R4956:4961 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4904:4908 TypeRulesCore <> check ind
+R4916:4918 TypeRulesCore <> TPi constr
+R4924:4926 TypeRulesCore <> Sig def
+R4943:4946 TypeRulesCore <> lift def
+R4952:4952 PayloadInversion <> E:63 var
+R4929:4932 TypeRulesCore <> lift def
+R4938:4939 PayloadInversion <> IT:68 var
+R4920:4921 PayloadInversion <> IT:68 var
+R4912:4913 PayloadInversion <> Sf:64 var
+R4910:4910 PayloadInversion <> G:62 var
+R4974:4977 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4962:4966 TypeRulesCore <> check ind
+R4972:4973 PayloadInversion <> IT:68 var
+R4970:4970 PayloadInversion <> i:65 var
+R4968:4968 PayloadInversion <> G:62 var
+R4997:5002 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4978:4982 TypeRulesCore <> check ind
+R4989:4993 TypeRulesCore <> Label def
+R4995:4995 PayloadInversion <> E:63 var
+R4986:4986 PayloadInversion <> c:66 var
+R4984:4984 PayloadInversion <> G:62 var
+R5070:5075 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5003:5007 TypeRulesCore <> check ind
+R5015:5021 TypeRulesCore <> TInterp constr
+R5056:5062 TypeRulesCore <> Carrier def
+R5066:5067 PayloadInversion <> Sf:64 var
+R5064:5064 PayloadInversion <> E:63 var
+R5024:5027 TypeRulesCore <> TApp constr
+R5052:5052 PayloadInversion <> c:66 var
+R5030:5037 TypeRulesCore <> branches def
+R5040:5043 TypeRulesCore <> TApp constr
+R5048:5048 PayloadInversion <> i:65 var
+R5045:5046 PayloadInversion <> Sf:64 var
+R5011:5012 PayloadInversion <> xs:67 var
+R5009:5009 PayloadInversion <> G:62 var
+R5076:5080 TypeRulesCore <> check ind
+R5102:5108 TypeRulesCore <> TInterp constr
+R5197:5200 TypeRulesCore <> TMuI constr
+R5203:5206 TypeRulesCore <> TLam constr
+R5209:5212 TypeRulesCore <> Full def
+R5236:5239 TypeRulesCore <> TApp constr
+R5256:5259 TypeRulesCore <> TVar constr
+R5242:5245 TypeRulesCore <> lift def
+R5251:5252 PayloadInversion <> Sf:64 var
+R5215:5218 TypeRulesCore <> lift def
+R5224:5224 PayloadInversion <> E:63 var
+R5117:5120 TypeRulesCore <> TApp constr
+R5187:5187 PayloadInversion <> i:65 var
+R5123:5126 TypeRulesCore <> TLam constr
+R5129:5132 TypeRulesCore <> Full def
+R5156:5159 TypeRulesCore <> TApp constr
+R5176:5179 TypeRulesCore <> TVar constr
+R5162:5165 TypeRulesCore <> lift def
+R5171:5172 PayloadInversion <> Sf:64 var
+R5135:5138 TypeRulesCore <> lift def
+R5144:5144 PayloadInversion <> E:63 var
+R5085:5089 TypeRulesCore <> TPair constr
+R5093:5094 PayloadInversion <> xs:67 var
+R5091:5091 PayloadInversion <> c:66 var
+R5082:5082 PayloadInversion <> G:62 var
+R5337:5340 TypeRulesCore <> TLam constr
+R5343:5346 TypeRulesCore <> Full def
+R5366:5369 TypeRulesCore <> TApp constr
+R5386:5389 TypeRulesCore <> TVar constr
+R5372:5375 TypeRulesCore <> lift def
+R5349:5352 TypeRulesCore <> lift def
+R5337:5340 TypeRulesCore <> TLam constr
+R5343:5346 TypeRulesCore <> Full def
+R5366:5369 TypeRulesCore <> TApp constr
+R5386:5389 TypeRulesCore <> TVar constr
+R5372:5375 TypeRulesCore <> lift def
+R5349:5352 TypeRulesCore <> lift def
+R5415:5418 TypeRulesCore <> conv ind
+R5463:5468 TypeRulesCore <> TSigma constr
+R5490:5496 TypeRulesCore <> TInterp constr
+R5559:5562 TypeRulesCore <> lift def
+R5569:5575 TypeRulesCore <> Carrier def
+R5499:5502 TypeRulesCore <> TApp constr
+R5539:5542 TypeRulesCore <> TVar constr
+R5505:5508 TypeRulesCore <> lift def
+R5515:5522 TypeRulesCore <> branches def
+R5525:5528 TypeRulesCore <> TApp constr
+R5471:5476 TypeRulesCore <> TEnumT constr
+R5427:5433 TypeRulesCore <> TInterp constr
+R5447:5450 TypeRulesCore <> TMuI constr
+R5436:5439 TypeRulesCore <> TApp constr
+R5415:5418 TypeRulesCore <> conv ind
+R5463:5468 TypeRulesCore <> TSigma constr
+R5490:5496 TypeRulesCore <> TInterp constr
+R5559:5562 TypeRulesCore <> lift def
+R5569:5575 TypeRulesCore <> Carrier def
+R5499:5502 TypeRulesCore <> TApp constr
+R5539:5542 TypeRulesCore <> TVar constr
+R5505:5508 TypeRulesCore <> lift def
+R5515:5522 TypeRulesCore <> branches def
+R5525:5528 TypeRulesCore <> TApp constr
+R5471:5476 TypeRulesCore <> TEnumT constr
+R5427:5433 TypeRulesCore <> TInterp constr
+R5447:5450 TypeRulesCore <> TMuI constr
+R5436:5439 TypeRulesCore <> TApp constr
+R5623:5626 TypeRulesCore <> conv ind
+R5721:5728 TypeRulesCore <> TIChoice constr
+R5733:5740 TypeRulesCore <> branches def
+R5743:5746 TypeRulesCore <> TApp constr
+R5637:5640 TypeRulesCore <> TApp constr
+R5643:5646 TypeRulesCore <> TLam constr
+R5649:5652 TypeRulesCore <> Full def
+R5678:5681 TypeRulesCore <> TApp constr
+R5698:5701 TypeRulesCore <> TVar constr
+R5684:5687 TypeRulesCore <> lift def
+R5655:5658 TypeRulesCore <> lift def
+R5623:5626 TypeRulesCore <> conv ind
+R5721:5728 TypeRulesCore <> TIChoice constr
+R5733:5740 TypeRulesCore <> branches def
+R5743:5746 TypeRulesCore <> TApp constr
+R5637:5640 TypeRulesCore <> TApp constr
+R5643:5646 TypeRulesCore <> TLam constr
+R5649:5652 TypeRulesCore <> Full def
+R5678:5681 TypeRulesCore <> TApp constr
+R5698:5701 TypeRulesCore <> TVar constr
+R5684:5687 TypeRulesCore <> lift def
+R5655:5658 TypeRulesCore <> lift def
+R5771:5778 TypeRulesCore <> cv_trans constr
+R5788:5794 TypeRulesCore <> cv_step constr
+R5797:5803 TypeRulesCore <> st_beta constr
+R5771:5778 TypeRulesCore <> cv_trans constr
+R5788:5794 TypeRulesCore <> cv_step constr
+R5797:5803 TypeRulesCore <> st_beta constr
+R5820:5823 TypeRulesCore <> Full def
+R5825:5829 TypeRulesCore <> subst def
+R5831:5838 TypeRulesCore <> branches def
+R5856:5878 Stdlib.Arith.PeanoNat Nat ltb_irrefl thm
+R5881:5901 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R5856:5878 Stdlib.Arith.PeanoNat Nat ltb_irrefl thm
+R5856:5878 Stdlib.Arith.PeanoNat Nat ltb_irrefl thm
+R5881:5901 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R5881:5901 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R5918:5948 Progress _tmp_commute lift_zero_id_local thm
+R5918:5948 Progress _tmp_commute lift_zero_id_local thm
+R5918:5948 Progress _tmp_commute lift_zero_id_local thm
+R5972:5986 Progress <> subst_lift_zero thm
+R5972:5986 Progress <> subst_lift_zero thm
+R5972:5986 Progress <> subst_lift_zero thm
+R5972:5986 Progress <> subst_lift_zero thm
+R5972:5986 Progress <> subst_lift_zero thm
+R5972:5986 Progress <> subst_lift_zero thm
+R5995:6001 TypeRulesCore <> cv_refl constr
+R5995:6001 TypeRulesCore <> cv_refl constr
+R6017:6024 TypeRulesCore <> cv_trans constr
+R6017:6024 TypeRulesCore <> cv_trans constr
+R6039:6047 TypeRulesCore <> cv_interp constr
+R6072:6078 TypeRulesCore <> cv_refl constr
+R6039:6047 TypeRulesCore <> cv_interp constr
+R6072:6078 TypeRulesCore <> cv_refl constr
+R6094:6100 TypeRulesCore <> cv_step constr
+R6103:6118 TypeRulesCore <> st_interp_choice constr
+R6094:6100 TypeRulesCore <> cv_step constr
+R6103:6118 TypeRulesCore <> st_interp_choice constr
+R6132:6140 TypeRulesCore <> ch_expand constr
+R6132:6140 TypeRulesCore <> ch_expand constr
+R6186:6191 TypeRulesCore <> TEnumT constr
+R6206:6212 TypeRulesCore <> TInterp constr
+R6278:6281 TypeRulesCore <> lift def
+R6288:6294 TypeRulesCore <> Carrier def
+R6215:6218 TypeRulesCore <> TApp constr
+R6255:6258 TypeRulesCore <> TVar constr
+R6221:6224 TypeRulesCore <> lift def
+R6231:6238 TypeRulesCore <> branches def
+R6241:6244 TypeRulesCore <> TApp constr
+R6167:6173 TypeRulesCore <> ch_pair constr
+R6186:6191 TypeRulesCore <> TEnumT constr
+R6206:6212 TypeRulesCore <> TInterp constr
+R6278:6281 TypeRulesCore <> lift def
+R6288:6294 TypeRulesCore <> Carrier def
+R6215:6218 TypeRulesCore <> TApp constr
+R6255:6258 TypeRulesCore <> TVar constr
+R6221:6224 TypeRulesCore <> lift def
+R6231:6238 TypeRulesCore <> branches def
+R6241:6244 TypeRulesCore <> TApp constr
+R6167:6173 TypeRulesCore <> ch_pair constr
+R6328:6332 TypeRulesCore <> subst def
+R6334:6341 TypeRulesCore <> branches def
+R6357:6379 Stdlib.Arith.PeanoNat Nat ltb_irrefl thm
+R6382:6402 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R6357:6379 Stdlib.Arith.PeanoNat Nat ltb_irrefl thm
+R6357:6379 Stdlib.Arith.PeanoNat Nat ltb_irrefl thm
+R6382:6402 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R6382:6402 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R6417:6447 Progress _tmp_commute lift_zero_id_local thm
+R6417:6447 Progress _tmp_commute lift_zero_id_local thm
+R6417:6447 Progress _tmp_commute lift_zero_id_local thm
+R6469:6483 Progress <> subst_lift_zero thm
+R6469:6483 Progress <> subst_lift_zero thm
+R6469:6483 Progress <> subst_lift_zero thm
+R6469:6483 Progress <> subst_lift_zero thm
+R6469:6483 Progress <> subst_lift_zero thm
+R6469:6483 Progress <> subst_lift_zero thm
+prf 6509:6536 <> sigmu_edge_payload_typed_tmp
+binder 6547:6547 <> G:69
+binder 6549:6549 <> E:70
+binder 6551:6552 <> S1:71
+binder 6554:6555 <> S2:72
+binder 6557:6557 <> i:73
+binder 6559:6560 <> IT:74
+binder 6562:6565 <> Phi1:75
+binder 6567:6570 <> Phi2:76
+binder 6572:6572 <> c:77
+binder 6574:6575 <> xs:78
+R6600:6603 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6580:6584 TypeRulesCore <> check ind
+R6592:6596 TypeRulesCore <> TSort constr
+R6588:6589 PayloadInversion <> IT:74 var
+R6586:6586 PayloadInversion <> G:69 var
+R6620:6625 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6604:6608 TypeRulesCore <> check ind
+R6614:6619 TypeRulesCore <> TEnumU constr
+R6612:6612 PayloadInversion <> E:70 var
+R6610:6610 PayloadInversion <> G:69 var
+R6678:6683 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6626:6630 TypeRulesCore <> check ind
+R6638:6640 TypeRulesCore <> TPi constr
+R6646:6648 TypeRulesCore <> Sig def
+R6665:6668 TypeRulesCore <> lift def
+R6674:6674 PayloadInversion <> E:70 var
+R6651:6654 TypeRulesCore <> lift def
+R6660:6661 PayloadInversion <> IT:74 var
+R6642:6643 PayloadInversion <> IT:74 var
+R6634:6635 PayloadInversion <> S1:71 var
+R6632:6632 PayloadInversion <> G:69 var
+R6736:6741 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6684:6688 TypeRulesCore <> check ind
+R6696:6698 TypeRulesCore <> TPi constr
+R6704:6706 TypeRulesCore <> Sig def
+R6723:6726 TypeRulesCore <> lift def
+R6732:6732 PayloadInversion <> E:70 var
+R6709:6712 TypeRulesCore <> lift def
+R6718:6719 PayloadInversion <> IT:74 var
+R6700:6701 PayloadInversion <> IT:74 var
+R6692:6693 PayloadInversion <> S2:72 var
+R6690:6690 PayloadInversion <> G:69 var
+R6849:6854 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6742:6745 TypeRulesCore <> conv ind
+R6803:6806 TypeRulesCore <> TLam constr
+R6809:6816 TypeRulesCore <> branches def
+R6819:6822 TypeRulesCore <> TApp constr
+R6839:6842 TypeRulesCore <> TVar constr
+R6825:6828 TypeRulesCore <> lift def
+R6834:6835 PayloadInversion <> S2:72 var
+R6748:6751 TypeRulesCore <> TLam constr
+R6754:6761 TypeRulesCore <> branches def
+R6764:6767 TypeRulesCore <> TApp constr
+R6784:6787 TypeRulesCore <> TVar constr
+R6770:6773 TypeRulesCore <> lift def
+R6779:6780 PayloadInversion <> S1:71 var
+R6885:6888 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6855:6858 TypeRulesCore <> eval ind
+R6881:6884 PayloadInversion <> Phi1:75 var
+R6861:6866 TypeRulesCore <> labels def
+R6869:6872 TypeRulesCore <> TApp constr
+R6877:6877 PayloadInversion <> i:73 var
+R6874:6875 PayloadInversion <> S1:71 var
+R6919:6924 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6889:6892 TypeRulesCore <> eval ind
+R6915:6918 PayloadInversion <> Phi2:76 var
+R6895:6900 TypeRulesCore <> labels def
+R6903:6906 TypeRulesCore <> TApp constr
+R6911:6911 PayloadInversion <> i:73 var
+R6908:6909 PayloadInversion <> S2:72 var
+R6945:6948 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6925:6934 TypeRulesCore <> spine_incl ind
+R6941:6944 PayloadInversion <> Phi2:76 var
+R6936:6939 PayloadInversion <> Phi1:75 var
+R6961:6966 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6949:6953 TypeRulesCore <> check ind
+R6959:6960 PayloadInversion <> IT:74 var
+R6957:6957 PayloadInversion <> i:73 var
+R6955:6955 PayloadInversion <> G:69 var
+R7034:7039 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6967:6971 TypeRulesCore <> check ind
+R6979:6985 TypeRulesCore <> TInterp constr
+R7020:7026 TypeRulesCore <> Carrier def
+R7030:7031 PayloadInversion <> S1:71 var
+R7028:7028 PayloadInversion <> E:70 var
+R6988:6991 TypeRulesCore <> TApp constr
+R7016:7016 PayloadInversion <> c:77 var
+R6994:7001 TypeRulesCore <> branches def
+R7004:7007 TypeRulesCore <> TApp constr
+R7012:7012 PayloadInversion <> i:73 var
+R7009:7010 PayloadInversion <> S1:71 var
+R6975:6976 PayloadInversion <> xs:78 var
+R6973:6973 PayloadInversion <> G:69 var
+R7040:7044 TypeRulesCore <> check ind
+R7052:7058 TypeRulesCore <> TInterp constr
+R7093:7099 TypeRulesCore <> Carrier def
+R7103:7104 PayloadInversion <> S2:72 var
+R7101:7101 PayloadInversion <> E:70 var
+R7061:7064 TypeRulesCore <> TApp constr
+R7089:7089 PayloadInversion <> c:77 var
+R7067:7074 TypeRulesCore <> branches def
+R7077:7080 TypeRulesCore <> TApp constr
+R7085:7085 PayloadInversion <> i:73 var
+R7082:7083 PayloadInversion <> S2:72 var
+R7048:7049 PayloadInversion <> xs:78 var
+R7046:7046 PayloadInversion <> G:69 var
+R7219:7222 TypeRulesCore <> conv ind
+R7248:7255 TypeRulesCore <> branches def
+R7258:7261 TypeRulesCore <> TApp constr
+R7225:7232 TypeRulesCore <> branches def
+R7235:7238 TypeRulesCore <> TApp constr
+R7219:7222 TypeRulesCore <> conv ind
+R7248:7255 TypeRulesCore <> branches def
+R7258:7261 TypeRulesCore <> TApp constr
+R7225:7232 TypeRulesCore <> branches def
+R7235:7238 TypeRulesCore <> TApp constr
+R7289:7292 TypeRulesCore <> conv ind
+R7368:7375 TypeRulesCore <> branches def
+R7378:7381 TypeRulesCore <> TApp constr
+R7303:7306 TypeRulesCore <> TApp constr
+R7309:7312 TypeRulesCore <> TLam constr
+R7315:7322 TypeRulesCore <> branches def
+R7325:7328 TypeRulesCore <> TApp constr
+R7345:7348 TypeRulesCore <> TVar constr
+R7331:7334 TypeRulesCore <> lift def
+R7289:7292 TypeRulesCore <> conv ind
+R7368:7375 TypeRulesCore <> branches def
+R7378:7381 TypeRulesCore <> TApp constr
+R7303:7306 TypeRulesCore <> TApp constr
+R7309:7312 TypeRulesCore <> TLam constr
+R7315:7322 TypeRulesCore <> branches def
+R7325:7328 TypeRulesCore <> TApp constr
+R7345:7348 TypeRulesCore <> TVar constr
+R7331:7334 TypeRulesCore <> lift def
+R7405:7412 TypeRulesCore <> cv_trans constr
+R7422:7428 TypeRulesCore <> cv_step constr
+R7431:7437 TypeRulesCore <> st_beta constr
+R7405:7412 TypeRulesCore <> cv_trans constr
+R7422:7428 TypeRulesCore <> cv_step constr
+R7431:7437 TypeRulesCore <> st_beta constr
+R7453:7457 TypeRulesCore <> subst def
+R7459:7462 TypeRulesCore <> lift def
+R7464:7471 TypeRulesCore <> branches def
+R7483:7497 Progress <> subst_lift_zero thm
+R7483:7497 Progress <> subst_lift_zero thm
+R7483:7497 Progress <> subst_lift_zero thm
+R7514:7544 Progress _tmp_commute lift_zero_id_local thm
+R7514:7544 Progress _tmp_commute lift_zero_id_local thm
+R7514:7544 Progress _tmp_commute lift_zero_id_local thm
+R7553:7559 TypeRulesCore <> cv_refl constr
+R7553:7559 TypeRulesCore <> cv_refl constr
+R7581:7584 TypeRulesCore <> conv ind
+R7660:7667 TypeRulesCore <> branches def
+R7670:7673 TypeRulesCore <> TApp constr
+R7595:7598 TypeRulesCore <> TApp constr
+R7601:7604 TypeRulesCore <> TLam constr
+R7607:7614 TypeRulesCore <> branches def
+R7617:7620 TypeRulesCore <> TApp constr
+R7637:7640 TypeRulesCore <> TVar constr
+R7623:7626 TypeRulesCore <> lift def
+R7581:7584 TypeRulesCore <> conv ind
+R7660:7667 TypeRulesCore <> branches def
+R7670:7673 TypeRulesCore <> TApp constr
+R7595:7598 TypeRulesCore <> TApp constr
+R7601:7604 TypeRulesCore <> TLam constr
+R7607:7614 TypeRulesCore <> branches def
+R7617:7620 TypeRulesCore <> TApp constr
+R7637:7640 TypeRulesCore <> TVar constr
+R7623:7626 TypeRulesCore <> lift def
+R7697:7704 TypeRulesCore <> cv_trans constr
+R7714:7720 TypeRulesCore <> cv_step constr
+R7723:7729 TypeRulesCore <> st_beta constr
+R7697:7704 TypeRulesCore <> cv_trans constr
+R7714:7720 TypeRulesCore <> cv_step constr
+R7723:7729 TypeRulesCore <> st_beta constr
+R7745:7749 TypeRulesCore <> subst def
+R7751:7754 TypeRulesCore <> lift def
+R7756:7763 TypeRulesCore <> branches def
+R7775:7789 Progress <> subst_lift_zero thm
+R7775:7789 Progress <> subst_lift_zero thm
+R7775:7789 Progress <> subst_lift_zero thm
+R7806:7836 Progress _tmp_commute lift_zero_id_local thm
+R7806:7836 Progress _tmp_commute lift_zero_id_local thm
+R7806:7836 Progress _tmp_commute lift_zero_id_local thm
+R7845:7851 TypeRulesCore <> cv_refl constr
+R7845:7851 TypeRulesCore <> cv_refl constr
+R7867:7874 TypeRulesCore <> cv_trans constr
+R7884:7889 TypeRulesCore <> cv_sym constr
+R7867:7874 TypeRulesCore <> cv_trans constr
+R7884:7889 TypeRulesCore <> cv_sym constr
+R7915:7922 TypeRulesCore <> cv_trans constr
+R7932:7937 TypeRulesCore <> cv_app constr
+R7956:7962 TypeRulesCore <> cv_refl constr
+R7915:7922 TypeRulesCore <> cv_trans constr
+R7932:7937 TypeRulesCore <> cv_app constr
+R7956:7962 TypeRulesCore <> cv_refl constr
+R7999:8002 TypeRulesCore <> conv ind
+R8020:8026 TypeRulesCore <> Carrier def
+R8005:8011 TypeRulesCore <> Carrier def
+R7999:8002 TypeRulesCore <> conv ind
+R8020:8026 TypeRulesCore <> Carrier def
+R8005:8011 TypeRulesCore <> Carrier def
+R8047:8053 TypeRulesCore <> Carrier def
+R8056:8059 TypeRulesCore <> Full def
+R8068:8073 TypeRulesCore <> cv_mui constr
+R8076:8081 TypeRulesCore <> cv_lam constr
+R8084:8093 TypeRulesCore <> cv_ichoice constr
+R8068:8073 TypeRulesCore <> cv_mui constr
+R8076:8081 TypeRulesCore <> cv_lam constr
+R8084:8093 TypeRulesCore <> cv_ichoice constr
+R8108:8114 TypeRulesCore <> cv_refl constr
+R8108:8114 TypeRulesCore <> cv_refl constr
+R8140:8143 TypeRulesCore <> conv ind
+R8225:8228 TypeRulesCore <> lift def
+R8235:8238 TypeRulesCore <> TLam constr
+R8241:8248 TypeRulesCore <> branches def
+R8251:8254 TypeRulesCore <> TApp constr
+R8271:8274 TypeRulesCore <> TVar constr
+R8257:8260 TypeRulesCore <> lift def
+R8156:8159 TypeRulesCore <> lift def
+R8166:8169 TypeRulesCore <> TLam constr
+R8172:8179 TypeRulesCore <> branches def
+R8182:8185 TypeRulesCore <> TApp constr
+R8202:8205 TypeRulesCore <> TVar constr
+R8188:8191 TypeRulesCore <> lift def
+R8140:8143 TypeRulesCore <> conv ind
+R8225:8228 TypeRulesCore <> lift def
+R8235:8238 TypeRulesCore <> TLam constr
+R8241:8248 TypeRulesCore <> branches def
+R8251:8254 TypeRulesCore <> TApp constr
+R8271:8274 TypeRulesCore <> TVar constr
+R8257:8260 TypeRulesCore <> lift def
+R8156:8159 TypeRulesCore <> lift def
+R8166:8169 TypeRulesCore <> TLam constr
+R8172:8179 TypeRulesCore <> branches def
+R8182:8185 TypeRulesCore <> TApp constr
+R8202:8205 TypeRulesCore <> TVar constr
+R8188:8191 TypeRulesCore <> lift def
+R8299:8314 TypingSubstitution <> conv_lift_typing thm
+R8299:8314 TypingSubstitution <> conv_lift_typing thm
+R8351:8354 TypeRulesCore <> conv ind
+R8418:8425 TypeRulesCore <> branches def
+R8428:8431 TypeRulesCore <> TApp constr
+R8448:8451 TypeRulesCore <> TVar constr
+R8434:8437 TypeRulesCore <> lift def
+R8367:8374 TypeRulesCore <> branches def
+R8377:8380 TypeRulesCore <> TApp constr
+R8397:8400 TypeRulesCore <> TVar constr
+R8383:8386 TypeRulesCore <> lift def
+R8351:8354 TypeRulesCore <> conv ind
+R8418:8425 TypeRulesCore <> branches def
+R8428:8431 TypeRulesCore <> TApp constr
+R8448:8451 TypeRulesCore <> TVar constr
+R8434:8437 TypeRulesCore <> lift def
+R8367:8374 TypeRulesCore <> branches def
+R8377:8380 TypeRulesCore <> TApp constr
+R8397:8400 TypeRulesCore <> TVar constr
+R8383:8386 TypeRulesCore <> lift def
+R8475:8482 TypeRulesCore <> cv_trans constr
+R8475:8482 TypeRulesCore <> cv_trans constr
+R8501:8506 TypeRulesCore <> cv_sym constr
+R8501:8506 TypeRulesCore <> cv_sym constr
+R8516:8523 TypeRulesCore <> cv_trans constr
+R8533:8539 TypeRulesCore <> cv_step constr
+R8542:8548 TypeRulesCore <> st_beta constr
+R8516:8523 TypeRulesCore <> cv_trans constr
+R8533:8539 TypeRulesCore <> cv_step constr
+R8542:8548 TypeRulesCore <> st_beta constr
+R8571:8611 Progress _tmp_eta_cancel subst_eta_beta_cancel_gen thm
+R8620:8626 TypeRulesCore <> cv_refl constr
+R8571:8611 Progress _tmp_eta_cancel subst_eta_beta_cancel_gen thm
+R8571:8611 Progress _tmp_eta_cancel subst_eta_beta_cancel_gen thm
+R8620:8626 TypeRulesCore <> cv_refl constr
+R8646:8653 TypeRulesCore <> cv_trans constr
+R8663:8668 TypeRulesCore <> cv_app constr
+R8691:8697 TypeRulesCore <> cv_refl constr
+R8646:8653 TypeRulesCore <> cv_trans constr
+R8663:8668 TypeRulesCore <> cv_app constr
+R8691:8697 TypeRulesCore <> cv_refl constr
+R8720:8727 TypeRulesCore <> cv_trans constr
+R8737:8743 TypeRulesCore <> cv_step constr
+R8746:8752 TypeRulesCore <> st_beta constr
+R8720:8727 TypeRulesCore <> cv_trans constr
+R8737:8743 TypeRulesCore <> cv_step constr
+R8746:8752 TypeRulesCore <> st_beta constr
+R8775:8815 Progress _tmp_eta_cancel subst_eta_beta_cancel_gen thm
+R8824:8830 TypeRulesCore <> cv_refl constr
+R8775:8815 Progress _tmp_eta_cancel subst_eta_beta_cancel_gen thm
+R8775:8815 Progress _tmp_eta_cancel subst_eta_beta_cancel_gen thm
+R8824:8830 TypeRulesCore <> cv_refl constr
+R8865:8873 TypeRulesCore <> ch_expand constr
+R8865:8873 TypeRulesCore <> ch_expand constr
+R8886:8891 TypeRulesCore <> cv_sym constr
+R8894:8902 TypeRulesCore <> cv_interp constr
+R8912:8917 TypeRulesCore <> cv_app constr
+R8941:8947 TypeRulesCore <> cv_refl constr
+R8886:8891 TypeRulesCore <> cv_sym constr
+R8894:8902 TypeRulesCore <> cv_interp constr
+R8912:8917 TypeRulesCore <> cv_app constr
+R8941:8947 TypeRulesCore <> cv_refl constr
+prf 8994:9010 <> in_origin_aux_tmp
+binder 9021:9021 <> G:79
+binder 9023:9023 <> t:80
+binder 9025:9025 <> T:81
+R9039:9042 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9028:9032 TypeRulesCore <> check ind
+R9038:9038 PayloadInversion <> T:81 var
+R9036:9036 PayloadInversion <> t:80 var
+R9034:9034 PayloadInversion <> G:79 var
+binder 9050:9050 <> x:82
+R9062:9067 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9054:9056 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9053:9053 PayloadInversion <> t:80 var
+R9057:9059 TypeRulesCore <> TIn constr
+R9061:9061 PayloadInversion <> x:82 var
+R9068:9068 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R9262:9269 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R9648:9648 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R9069:9075 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9082:9088 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9076:9076 <> R:83
+binder 9078:9078 <> i:84
+binder 9080:9081 <> IT:85
+R9109:9117 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9089:9093 TypeRulesCore <> check ind
+R9101:9105 TypeRulesCore <> TSort constr
+R9097:9098 PayloadInversion <> IT:85 var
+R9095:9095 PayloadInversion <> G:79 var
+R9159:9167 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9118:9122 TypeRulesCore <> check ind
+R9129:9131 TypeRulesCore <> TPi constr
+R9137:9142 TypeRulesCore <> TIDesc constr
+R9145:9148 TypeRulesCore <> lift def
+R9154:9155 PayloadInversion <> IT:85 var
+R9133:9134 PayloadInversion <> IT:85 var
+R9126:9126 PayloadInversion <> R:83 var
+R9124:9124 PayloadInversion <> G:79 var
+R9180:9188 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9168:9172 TypeRulesCore <> check ind
+R9178:9179 PayloadInversion <> IT:85 var
+R9176:9176 PayloadInversion <> i:84 var
+R9174:9174 PayloadInversion <> G:79 var
+R9228:9236 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9189:9193 TypeRulesCore <> check ind
+R9200:9206 TypeRulesCore <> TInterp constr
+R9220:9223 TypeRulesCore <> TMuI constr
+R9225:9225 PayloadInversion <> R:83 var
+R9209:9212 TypeRulesCore <> TApp constr
+R9216:9216 PayloadInversion <> i:84 var
+R9214:9214 PayloadInversion <> R:83 var
+R9197:9197 PayloadInversion <> x:82 var
+R9195:9195 PayloadInversion <> G:79 var
+R9237:9239 TypeRulesCore <> sub ind
+R9261:9261 PayloadInversion <> T:81 var
+R9244:9247 TypeRulesCore <> TApp constr
+R9258:9258 PayloadInversion <> i:84 var
+R9250:9253 TypeRulesCore <> TMuI constr
+R9255:9255 PayloadInversion <> R:83 var
+R9241:9241 PayloadInversion <> G:79 var
+R9270:9276 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9295:9301 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9277:9278 <> Sf:86
+binder 9280:9280 <> i:87
+binder 9282:9283 <> IT:88
+binder 9285:9285 <> E:89
+binder 9287:9289 <> Phi:90
+binder 9291:9291 <> c:91
+binder 9293:9294 <> xs:92
+R9316:9324 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9303:9305 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9302:9302 PayloadInversion <> x:82 var
+R9306:9310 TypeRulesCore <> TPair constr
+R9314:9315 PayloadInversion <> xs:92 var
+R9312:9312 PayloadInversion <> c:91 var
+R9345:9348 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9325:9329 TypeRulesCore <> check ind
+R9337:9341 TypeRulesCore <> TSort constr
+R9333:9334 PayloadInversion <> IT:88 var
+R9331:9331 PayloadInversion <> G:79 var
+R9365:9373 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9349:9353 TypeRulesCore <> check ind
+R9359:9364 TypeRulesCore <> TEnumU constr
+R9357:9357 PayloadInversion <> E:89 var
+R9355:9355 PayloadInversion <> G:79 var
+R9426:9434 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9374:9378 TypeRulesCore <> check ind
+R9386:9388 TypeRulesCore <> TPi constr
+R9394:9396 TypeRulesCore <> Sig def
+R9413:9416 TypeRulesCore <> lift def
+R9422:9422 PayloadInversion <> E:89 var
+R9399:9402 TypeRulesCore <> lift def
+R9408:9409 PayloadInversion <> IT:88 var
+R9390:9391 PayloadInversion <> IT:88 var
+R9382:9383 PayloadInversion <> Sf:86 var
+R9380:9380 PayloadInversion <> G:79 var
+R9447:9450 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9435:9439 TypeRulesCore <> check ind
+R9445:9446 PayloadInversion <> IT:88 var
+R9443:9443 PayloadInversion <> i:87 var
+R9441:9441 PayloadInversion <> G:79 var
+R9470:9478 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9451:9455 TypeRulesCore <> check ind
+R9462:9466 TypeRulesCore <> Label def
+R9468:9468 PayloadInversion <> E:89 var
+R9459:9459 PayloadInversion <> c:91 var
+R9457:9457 PayloadInversion <> G:79 var
+R9508:9511 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9479:9482 TypeRulesCore <> eval ind
+R9505:9507 PayloadInversion <> Phi:90 var
+R9485:9490 TypeRulesCore <> labels def
+R9493:9496 TypeRulesCore <> TApp constr
+R9501:9501 PayloadInversion <> i:87 var
+R9498:9499 PayloadInversion <> Sf:86 var
+R9527:9535 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9512:9520 TypeRulesCore <> spine_mem ind
+R9524:9526 PayloadInversion <> Phi:90 var
+R9522:9522 PayloadInversion <> c:91 var
+R9610:9618 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9536:9540 TypeRulesCore <> check ind
+R9548:9554 TypeRulesCore <> TInterp constr
+R9596:9602 TypeRulesCore <> Carrier def
+R9606:9607 PayloadInversion <> Sf:86 var
+R9604:9604 PayloadInversion <> E:89 var
+R9557:9560 TypeRulesCore <> TApp constr
+R9585:9585 PayloadInversion <> c:91 var
+R9563:9570 TypeRulesCore <> branches def
+R9573:9576 TypeRulesCore <> TApp constr
+R9581:9581 PayloadInversion <> i:87 var
+R9578:9579 PayloadInversion <> Sf:86 var
+R9544:9545 PayloadInversion <> xs:92 var
+R9542:9542 PayloadInversion <> G:79 var
+R9619:9621 TypeRulesCore <> sub ind
+R9647:9647 PayloadInversion <> T:81 var
+R9626:9629 TypeRulesCore <> TApp constr
+R9644:9644 PayloadInversion <> i:87 var
+R9632:9636 TypeRulesCore <> SigMu def
+R9640:9641 PayloadInversion <> Sf:86 var
+R9638:9638 PayloadInversion <> E:89 var
+R9623:9623 PayloadInversion <> G:79 var
+R9783:9789 Corelib.Init.Logic <> eq_refl constr
+R9921:9928 TypeRulesCore <> su_trans constr
+R10127:10134 TypeRulesCore <> su_trans constr
+R9783:9789 Corelib.Init.Logic <> eq_refl constr
+R9921:9928 TypeRulesCore <> su_trans constr
+R10127:10134 TypeRulesCore <> su_trans constr
+R10173:10179 Corelib.Init.Logic <> eq_refl constr
+R10311:10318 TypeRulesCore <> su_trans constr
+R10339:10345 TypeRulesCore <> su_conv constr
+R10355:10360 TypeRulesCore <> cv_sym constr
+R10550:10557 TypeRulesCore <> su_trans constr
+R10578:10584 TypeRulesCore <> su_conv constr
+R10594:10599 TypeRulesCore <> cv_sym constr
+R10173:10179 Corelib.Init.Logic <> eq_refl constr
+R10311:10318 TypeRulesCore <> su_trans constr
+R10339:10345 TypeRulesCore <> su_conv constr
+R10355:10360 TypeRulesCore <> cv_sym constr
+R10550:10557 TypeRulesCore <> su_trans constr
+R10578:10584 TypeRulesCore <> su_conv constr
+R10594:10599 TypeRulesCore <> cv_sym constr
+R10658:10664 TypeRulesCore <> su_conv constr
+R10667:10673 TypeRulesCore <> cv_refl constr
+R10658:10664 TypeRulesCore <> su_conv constr
+R10658:10664 TypeRulesCore <> su_conv constr
+R10658:10664 TypeRulesCore <> su_conv constr
+R10658:10664 TypeRulesCore <> su_conv constr
+R10658:10664 TypeRulesCore <> su_conv constr
+R10667:10673 TypeRulesCore <> cv_refl constr
+R10667:10673 TypeRulesCore <> cv_refl constr
+R10667:10673 TypeRulesCore <> cv_refl constr
+R10667:10673 TypeRulesCore <> cv_refl constr
+R10667:10673 TypeRulesCore <> cv_refl constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10740:10746 TypeRulesCore <> su_conv constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+R10749:10755 TypeRulesCore <> cv_refl constr
+prf 10784:10805 <> tin_synth_absurd_nophi
+binder 10816:10816 <> G:93
+binder 10818:10818 <> x:94
+binder 10820:10820 <> A:95
+R10840:10843 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10823:10827 TypeRulesCore <> synth ind
+R10839:10839 PayloadInversion <> A:95 var
+R10832:10834 TypeRulesCore <> TIn constr
+R10836:10836 PayloadInversion <> x:94 var
+R10829:10829 PayloadInversion <> G:93 var
+R10844:10848 Corelib.Init.Logic <> False ind
+prf 10935:10948 <> mui_edge_nophi
+binder 10959:10959 <> G:96
+binder 10961:10962 <> R0:97
+binder 10964:10965 <> R1:98
+binder 10967:10968 <> i0:99
+binder 10970:10971 <> i1:100
+binder 10973:10973 <> z:101
+R11022:11027 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10978:10981 TypeRulesCore <> conv ind
+R11004:11007 TypeRulesCore <> TApp constr
+R11019:11020 PayloadInversion <> i1:100 var
+R11010:11013 TypeRulesCore <> TMuI constr
+R11015:11016 PayloadInversion <> R1:98 var
+R10984:10987 TypeRulesCore <> TApp constr
+R10999:11000 PayloadInversion <> i0:99 var
+R10990:10993 TypeRulesCore <> TMuI constr
+R10995:10996 PayloadInversion <> R0:97 var
+R11070:11075 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11028:11032 TypeRulesCore <> check ind
+R11039:11045 TypeRulesCore <> TInterp constr
+R11061:11064 TypeRulesCore <> TMuI constr
+R11066:11067 PayloadInversion <> R0:97 var
+R11048:11051 TypeRulesCore <> TApp constr
+R11056:11057 PayloadInversion <> i0:99 var
+R11053:11054 PayloadInversion <> R0:97 var
+R11036:11036 PayloadInversion <> z:101 var
+R11034:11034 PayloadInversion <> G:96 var
+R11076:11080 TypeRulesCore <> check ind
+R11087:11093 TypeRulesCore <> TInterp constr
+R11109:11112 TypeRulesCore <> TMuI constr
+R11114:11115 PayloadInversion <> R1:98 var
+R11096:11099 TypeRulesCore <> TApp constr
+R11104:11105 PayloadInversion <> i1:100 var
+R11101:11102 PayloadInversion <> R1:98 var
+R11084:11084 PayloadInversion <> z:101 var
+R11082:11082 PayloadInversion <> G:96 var
+R11170:11191 ConversionInversion <> conv_muiapp_components thm
+R11170:11191 ConversionInversion <> conv_muiapp_components thm
+R11225:11249 PayloadInversion <> mui_payload_transport_tmp thm
+R11225:11249 PayloadInversion <> mui_payload_transport_tmp thm
+prf 11277:11298 <> lift_branch_conv_nophi
+binder 11309:11310 <> S0:102
+binder 11312:11313 <> S1:103
+binder 11315:11316 <> i0:104
+binder 11318:11319 <> i1:105
+R11334:11337 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11324:11327 TypeRulesCore <> conv ind
+R11332:11333 PayloadInversion <> S1:103 var
+R11329:11330 PayloadInversion <> S0:102 var
+R11348:11353 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11338:11341 TypeRulesCore <> conv ind
+R11346:11347 PayloadInversion <> i1:105 var
+R11343:11344 PayloadInversion <> i0:104 var
+R11354:11357 TypeRulesCore <> conv ind
+R11384:11391 TypeRulesCore <> branches def
+R11394:11397 TypeRulesCore <> TApp constr
+R11402:11403 PayloadInversion <> i1:105 var
+R11399:11400 PayloadInversion <> S1:103 var
+R11360:11367 TypeRulesCore <> branches def
+R11370:11373 TypeRulesCore <> TApp constr
+R11378:11379 PayloadInversion <> i0:104 var
+R11375:11376 PayloadInversion <> S0:102 var
+R11432:11439 TypeRulesCore <> branches def
+R11448:11453 TypeRulesCore <> cv_fst constr
+R11456:11461 TypeRulesCore <> cv_app constr
+R11448:11453 TypeRulesCore <> cv_fst constr
+R11456:11461 TypeRulesCore <> cv_app constr
+prf 11488:11518 <> lifted_branch_family_conv_nophi
+binder 11529:11530 <> S0:106
+binder 11532:11533 <> S1:107
+R11548:11553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11538:11541 TypeRulesCore <> conv ind
+R11546:11547 PayloadInversion <> S1:107 var
+R11543:11544 PayloadInversion <> S0:106 var
+R11554:11557 TypeRulesCore <> conv ind
+R11615:11618 TypeRulesCore <> TLam constr
+R11621:11628 TypeRulesCore <> branches def
+R11631:11634 TypeRulesCore <> TApp constr
+R11651:11654 TypeRulesCore <> TVar constr
+R11637:11640 TypeRulesCore <> lift def
+R11646:11647 PayloadInversion <> S1:107 var
+R11560:11563 TypeRulesCore <> TLam constr
+R11566:11573 TypeRulesCore <> branches def
+R11576:11579 TypeRulesCore <> TApp constr
+R11596:11599 TypeRulesCore <> TVar constr
+R11582:11585 TypeRulesCore <> lift def
+R11591:11592 PayloadInversion <> S0:106 var
+R11697:11702 TypeRulesCore <> cv_lam constr
+R11705:11710 TypeRulesCore <> cv_fst constr
+R11713:11718 TypeRulesCore <> cv_app constr
+R11697:11702 TypeRulesCore <> cv_lam constr
+R11705:11710 TypeRulesCore <> cv_fst constr
+R11713:11718 TypeRulesCore <> cv_app constr
+R11731:11740 Progress <> fconv_conv thm
+R11743:11781 Progress ErasureCounterexample fconv_lift_parent thm
+R11784:11793 ConversionInversion <> conv_fconv thm
+R11731:11740 Progress <> fconv_conv thm
+R11743:11781 Progress ErasureCounterexample fconv_lift_parent thm
+R11784:11793 ConversionInversion <> conv_fconv thm
+R11816:11822 TypeRulesCore <> cv_refl constr
+R11816:11822 TypeRulesCore <> cv_refl constr
+prf 11837:11854 <> carrier_conv_nophi
+binder 11865:11866 <> E0:108
+binder 11868:11869 <> E1:109
+binder 11871:11872 <> S0:110
+binder 11874:11875 <> S1:111
+R11890:11893 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11880:11883 TypeRulesCore <> conv ind
+R11888:11889 PayloadInversion <> E1:109 var
+R11885:11886 PayloadInversion <> E0:108 var
+R11904:11907 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11894:11897 TypeRulesCore <> conv ind
+R11902:11903 PayloadInversion <> S1:111 var
+R11899:11900 PayloadInversion <> S0:110 var
+R11908:11911 TypeRulesCore <> conv ind
+R11930:11936 TypeRulesCore <> Carrier def
+R11941:11942 PayloadInversion <> S1:111 var
+R11938:11939 PayloadInversion <> E1:109 var
+R11914:11920 TypeRulesCore <> Carrier def
+R11925:11926 PayloadInversion <> S0:110 var
+R11922:11923 PayloadInversion <> E0:108 var
+R11990:11996 TypeRulesCore <> Carrier def
+R11999:12002 TypeRulesCore <> Full def
+R12013:12018 TypeRulesCore <> cv_mui constr
+R12021:12026 TypeRulesCore <> cv_lam constr
+R12029:12038 TypeRulesCore <> cv_ichoice constr
+R12013:12018 TypeRulesCore <> cv_mui constr
+R12021:12026 TypeRulesCore <> cv_lam constr
+R12029:12038 TypeRulesCore <> cv_ichoice constr
+R12051:12060 Progress <> fconv_conv thm
+R12063:12101 Progress ErasureCounterexample fconv_lift_parent thm
+R12104:12113 ConversionInversion <> conv_fconv thm
+R12051:12060 Progress <> fconv_conv thm
+R12063:12101 Progress ErasureCounterexample fconv_lift_parent thm
+R12104:12113 ConversionInversion <> conv_fconv thm
+R12136:12141 TypeRulesCore <> cv_fst constr
+R12144:12149 TypeRulesCore <> cv_app constr
+R12136:12141 TypeRulesCore <> cv_fst constr
+R12144:12149 TypeRulesCore <> cv_app constr
+R12164:12173 Progress <> fconv_conv thm
+R12176:12214 Progress ErasureCounterexample fconv_lift_parent thm
+R12217:12226 ConversionInversion <> conv_fconv thm
+R12164:12173 Progress <> fconv_conv thm
+R12176:12214 Progress ErasureCounterexample fconv_lift_parent thm
+R12217:12226 ConversionInversion <> conv_fconv thm
+R12251:12257 TypeRulesCore <> cv_refl constr
+R12251:12257 TypeRulesCore <> cv_refl constr
+prf 12272:12293 <> sig_payload_conv_nophi
+binder 12304:12305 <> E0:112
+binder 12307:12308 <> E1:113
+binder 12310:12311 <> S0:114
+binder 12313:12314 <> S1:115
+binder 12316:12317 <> i0:116
+binder 12319:12320 <> i1:117
+binder 12322:12322 <> c:118
+R12337:12340 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12327:12330 TypeRulesCore <> conv ind
+R12335:12336 PayloadInversion <> E1:113 var
+R12332:12333 PayloadInversion <> E0:112 var
+R12351:12354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12341:12344 TypeRulesCore <> conv ind
+R12349:12350 PayloadInversion <> S1:115 var
+R12346:12347 PayloadInversion <> S0:114 var
+R12365:12370 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12355:12358 TypeRulesCore <> conv ind
+R12363:12364 PayloadInversion <> i1:117 var
+R12360:12361 PayloadInversion <> i0:116 var
+R12371:12374 TypeRulesCore <> conv ind
+R12443:12449 TypeRulesCore <> TInterp constr
+R12485:12491 TypeRulesCore <> Carrier def
+R12496:12497 PayloadInversion <> S1:115 var
+R12493:12494 PayloadInversion <> E1:113 var
+R12452:12455 TypeRulesCore <> TApp constr
+R12481:12481 PayloadInversion <> c:118 var
+R12458:12465 TypeRulesCore <> branches def
+R12468:12471 TypeRulesCore <> TApp constr
+R12476:12477 PayloadInversion <> i1:117 var
+R12473:12474 PayloadInversion <> S1:115 var
+R12377:12383 TypeRulesCore <> TInterp constr
+R12419:12425 TypeRulesCore <> Carrier def
+R12430:12431 PayloadInversion <> S0:114 var
+R12427:12428 PayloadInversion <> E0:112 var
+R12386:12389 TypeRulesCore <> TApp constr
+R12415:12415 PayloadInversion <> c:118 var
+R12392:12399 TypeRulesCore <> branches def
+R12402:12405 TypeRulesCore <> TApp constr
+R12410:12411 PayloadInversion <> i0:116 var
+R12407:12408 PayloadInversion <> S0:114 var
+R12556:12564 TypeRulesCore <> cv_interp constr
+R12556:12564 TypeRulesCore <> cv_interp constr
+R12577:12582 TypeRulesCore <> cv_app constr
+R12577:12582 TypeRulesCore <> cv_app constr
+R12597:12618 PayloadInversion <> lift_branch_conv_nophi thm
+R12597:12618 PayloadInversion <> lift_branch_conv_nophi thm
+R12645:12651 TypeRulesCore <> cv_refl constr
+R12645:12651 TypeRulesCore <> cv_refl constr
+R12664:12681 PayloadInversion <> carrier_conv_nophi thm
+R12664:12681 PayloadInversion <> carrier_conv_nophi thm
+prf 12708:12721 <> mus_edge_nophi
+binder 12732:12732 <> G:119
+binder 12734:12735 <> E0:120
+binder 12737:12738 <> S0:121
+binder 12740:12741 <> i0:122
+binder 12743:12744 <> E1:123
+binder 12746:12747 <> S1:124
+binder 12749:12750 <> i1:125
+binder 12752:12752 <> c:126
+binder 12754:12754 <> z:127
+R12811:12816 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12759:12762 TypeRulesCore <> conv ind
+R12789:12792 TypeRulesCore <> TApp constr
+R12808:12809 PayloadInversion <> i1:125 var
+R12795:12799 TypeRulesCore <> SigMu def
+R12804:12805 PayloadInversion <> S1:124 var
+R12801:12802 PayloadInversion <> E1:123 var
+R12765:12768 TypeRulesCore <> TApp constr
+R12784:12785 PayloadInversion <> i0:122 var
+R12771:12775 TypeRulesCore <> SigMu def
+R12780:12781 PayloadInversion <> S0:121 var
+R12777:12778 PayloadInversion <> E0:120 var
+R12837:12842 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12817:12821 TypeRulesCore <> check ind
+R12828:12832 TypeRulesCore <> Label def
+R12834:12835 PayloadInversion <> E0:120 var
+R12825:12825 PayloadInversion <> c:126 var
+R12823:12823 PayloadInversion <> G:119 var
+R12911:12916 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12843:12847 TypeRulesCore <> check ind
+R12854:12860 TypeRulesCore <> TInterp constr
+R12896:12902 TypeRulesCore <> Carrier def
+R12907:12908 PayloadInversion <> S0:121 var
+R12904:12905 PayloadInversion <> E0:120 var
+R12863:12866 TypeRulesCore <> TApp constr
+R12892:12892 PayloadInversion <> c:126 var
+R12869:12876 TypeRulesCore <> branches def
+R12879:12882 TypeRulesCore <> TApp constr
+R12887:12888 PayloadInversion <> i0:122 var
+R12884:12885 PayloadInversion <> S0:121 var
+R12851:12851 PayloadInversion <> z:127 var
+R12849:12849 PayloadInversion <> G:119 var
+R12937:12942 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12917:12921 TypeRulesCore <> check ind
+R12928:12932 TypeRulesCore <> Label def
+R12934:12935 PayloadInversion <> E1:123 var
+R12925:12925 PayloadInversion <> c:126 var
+R12923:12923 PayloadInversion <> G:119 var
+R12943:12947 TypeRulesCore <> check ind
+R12954:12960 TypeRulesCore <> TInterp constr
+R12996:13002 TypeRulesCore <> Carrier def
+R13007:13008 PayloadInversion <> S1:124 var
+R13004:13005 PayloadInversion <> E1:123 var
+R12963:12966 TypeRulesCore <> TApp constr
+R12992:12992 PayloadInversion <> c:126 var
+R12969:12976 TypeRulesCore <> branches def
+R12979:12982 TypeRulesCore <> TApp constr
+R12987:12988 PayloadInversion <> i1:125 var
+R12984:12985 PayloadInversion <> S1:124 var
+R12951:12951 PayloadInversion <> z:127 var
+R12949:12949 PayloadInversion <> G:119 var
+R13074:13097 ConversionInversion <> conv_sigmuapp_components thm
+R13074:13097 ConversionInversion <> conv_sigmuapp_components thm
+R13151:13155 TypeRulesCore <> Label def
+R13170:13178 TypeRulesCore <> ch_expand constr
+R13188:13193 TypeRulesCore <> cv_sym constr
+R13196:13203 TypeRulesCore <> cv_enumt constr
+R13170:13178 TypeRulesCore <> ch_expand constr
+R13188:13193 TypeRulesCore <> cv_sym constr
+R13196:13203 TypeRulesCore <> cv_enumt constr
+R13237:13245 TypeRulesCore <> ch_expand constr
+R13255:13260 TypeRulesCore <> cv_sym constr
+R13263:13284 PayloadInversion <> sig_payload_conv_nophi thm
+R13237:13245 TypeRulesCore <> ch_expand constr
+R13255:13260 TypeRulesCore <> cv_sym constr
+R13263:13284 PayloadInversion <> sig_payload_conv_nophi thm
+ind 13326:13333 <> rigid_mu
+constr 13355:13360 <> rk_mui
+constr 13405:13414 <> rk_carrier
+R13341:13344 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13337:13340 TypeRulesCore <> term ind
+binder 13371:13371 <> R:130
+binder 13373:13373 <> i:131
+R13376:13383 PayloadInversion <> rigid_mu:128 ind
+R13386:13389 TypeRulesCore <> TApp constr
+R13400:13400 PayloadInversion <> i:131 var
+R13392:13395 TypeRulesCore <> TMuI constr
+R13397:13397 PayloadInversion <> R:130 var
+binder 13425:13425 <> E:132
+binder 13427:13428 <> Sf:133
+binder 13430:13430 <> i:134
+R13433:13440 PayloadInversion <> rigid_mu:128 ind
+R13443:13446 TypeRulesCore <> TApp constr
+R13463:13463 PayloadInversion <> i:134 var
+R13449:13455 TypeRulesCore <> Carrier def
+R13459:13460 PayloadInversion <> Sf:133 var
+R13457:13457 PayloadInversion <> E:132 var
+scheme 13326:13333 <> rigid_mu_ind
+scheme 13326:13333 <> rigid_mu_sind
+prf 13473:13501 <> conv_carrier_mus_absurd_nophi
+binder 13512:13512 <> E:135
+binder 13514:13515 <> Sf:136
+binder 13517:13517 <> i:137
+binder 13519:13520 <> E':138
+binder 13522:13523 <> S':139
+binder 13525:13525 <> j:140
+R13580:13583 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13529:13532 TypeRulesCore <> conv ind
+R13559:13562 TypeRulesCore <> TApp constr
+R13578:13578 PayloadInversion <> j:140 var
+R13565:13569 TypeRulesCore <> SigMu def
+R13574:13575 PayloadInversion <> S':139 var
+R13571:13572 PayloadInversion <> E':138 var
+R13535:13538 TypeRulesCore <> TApp constr
+R13555:13555 PayloadInversion <> i:137 var
+R13541:13547 TypeRulesCore <> Carrier def
+R13551:13552 PayloadInversion <> Sf:136 var
+R13549:13549 PayloadInversion <> E:135 var
+R13584:13588 Corelib.Init.Logic <> False ind
+R13613:13619 TypeRulesCore <> Carrier def
+R13634:13656 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+R13634:13656 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+prf 13683:13711 <> conv_mus_carrier_absurd_nophi
+binder 13722:13722 <> E:141
+binder 13724:13725 <> Sf:142
+binder 13727:13727 <> i:143
+binder 13729:13730 <> E':144
+binder 13732:13733 <> S':145
+binder 13735:13735 <> j:146
+R13790:13793 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13739:13742 TypeRulesCore <> conv ind
+R13767:13770 TypeRulesCore <> TApp constr
+R13788:13788 PayloadInversion <> j:146 var
+R13773:13779 TypeRulesCore <> Carrier def
+R13784:13785 PayloadInversion <> S':145 var
+R13781:13782 PayloadInversion <> E':144 var
+R13745:13748 TypeRulesCore <> TApp constr
+R13763:13763 PayloadInversion <> i:143 var
+R13751:13755 TypeRulesCore <> SigMu def
+R13759:13760 PayloadInversion <> Sf:142 var
+R13757:13757 PayloadInversion <> E:141 var
+R13794:13798 Corelib.Init.Logic <> False ind
+R13823:13829 TypeRulesCore <> Carrier def
+R13844:13866 PayloadInversion <> conv_mus_mui_absurd_tmp thm
+R13844:13866 PayloadInversion <> conv_mus_mui_absurd_tmp thm
+prf 13893:13908 <> rigid_path_nophi
+binder 13919:13919 <> G:147
+binder 13921:13921 <> A:148
+binder 13923:13923 <> B:149
+R13936:13939 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13926:13933 PayloadInversion <> rigid_mu ind
+R13935:13935 PayloadInversion <> A:148 var
+R13953:13956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13940:13946 PayloadInversion <> mu_path ind
+R13948:13948 PayloadInversion <> G:147 var
+R13950:13950 PayloadInversion <> A:148 var
+R13952:13952 PayloadInversion <> B:149 var
+R13957:13964 PayloadInversion <> rigid_mu ind
+R13966:13966 PayloadInversion <> B:149 var
+R14123:14128 PayloadInversion <> rk_mui constr
+R14123:14128 PayloadInversion <> rk_mui constr
+R14154:14176 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+R14154:14176 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+R14205:14214 PayloadInversion <> rk_carrier constr
+R14205:14214 PayloadInversion <> rk_carrier constr
+R14229:14235 TypeRulesCore <> Carrier def
+R14302:14307 PayloadInversion <> rk_mui constr
+R14302:14307 PayloadInversion <> rk_mui constr
+R14333:14361 PayloadInversion <> conv_carrier_mus_absurd_nophi thm
+R14333:14361 PayloadInversion <> conv_carrier_mus_absurd_nophi thm
+R14390:14399 PayloadInversion <> rk_carrier constr
+R14390:14399 PayloadInversion <> rk_carrier constr
+prf 14487:14496 <> test_rigid
+binder 14507:14507 <> G:150
+binder 14509:14509 <> c:151
+binder 14511:14511 <> A:152
+binder 14513:14513 <> B:153
+binder 14515:14515 <> z:154
+R14529:14532 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14519:14526 PayloadInversion <> rigid_mu ind
+R14528:14528 PayloadInversion <> A:152 var
+R14549:14552 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14533:14540 PayloadInversion <> mu_state ind
+R14542:14542 PayloadInversion <> G:150 var
+R14544:14544 PayloadInversion <> c:151 var
+R14546:14546 PayloadInversion <> A:152 var
+R14548:14548 PayloadInversion <> z:154 var
+R14566:14569 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14553:14559 PayloadInversion <> mu_path ind
+R14561:14561 PayloadInversion <> G:150 var
+R14563:14563 PayloadInversion <> A:152 var
+R14565:14565 PayloadInversion <> B:153 var
+R14580:14583 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14570:14577 PayloadInversion <> rigid_mu ind
+R14579:14579 PayloadInversion <> B:153 var
+R14584:14591 PayloadInversion <> mu_state ind
+R14593:14593 PayloadInversion <> G:150 var
+R14595:14595 PayloadInversion <> c:151 var
+R14597:14597 PayloadInversion <> B:153 var
+R14599:14599 PayloadInversion <> z:154 var
+R14789:14794 PayloadInversion <> ms_mui constr
+R14789:14794 PayloadInversion <> ms_mui constr
+R14804:14817 PayloadInversion <> mui_edge_nophi thm
+R14804:14817 PayloadInversion <> mui_edge_nophi thm
+R14870:14892 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+R14870:14892 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+R14922:14928 TypeRulesCore <> Carrier def
+R14942:14947 PayloadInversion <> ms_mui constr
+R14942:14947 PayloadInversion <> ms_mui constr
+R14957:14970 PayloadInversion <> mui_edge_nophi thm
+R14957:14970 PayloadInversion <> mui_edge_nophi thm
+R15012:15018 TypeRulesCore <> Carrier def
+R15117:15122 PayloadInversion <> ms_mui constr
+R15117:15122 PayloadInversion <> ms_mui constr
+R15132:15145 PayloadInversion <> mui_edge_nophi thm
+R15132:15145 PayloadInversion <> mui_edge_nophi thm
+R15201:15229 PayloadInversion <> conv_carrier_mus_absurd_nophi thm
+R15201:15229 PayloadInversion <> conv_carrier_mus_absurd_nophi thm
+R15261:15266 PayloadInversion <> ms_mui constr
+R15261:15266 PayloadInversion <> ms_mui constr
+R15276:15289 PayloadInversion <> mui_edge_nophi thm
+R15276:15289 PayloadInversion <> mui_edge_nophi thm
+R15372:15379 PayloadInversion <> rigid_mu ind
+R15395:15410 PayloadInversion <> rigid_path_nophi thm
+R15372:15379 PayloadInversion <> rigid_mu ind
+R15395:15410 PayloadInversion <> rigid_path_nophi thm
+R15451:15458 PayloadInversion <> mu_state ind
+R15451:15458 PayloadInversion <> mu_state ind
+ind 15550:15559 <> sig_state2
+constr 15605:15611 <> ss2_mus
+constr 15778:15784 <> ss2_mui
+constr 15900:15910 <> ss2_carrier
+R15566:15568 TypeRulesCore <> ctx def
+binder 15562:15562 <> G:155
+R15579:15582 TypeRulesCore <> term ind
+binder 15572:15572 <> c:156
+binder 15574:15575 <> ys:157
+R15591:15594 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15587:15590 TypeRulesCore <> term ind
+binder 15622:15622 <> E:160
+binder 15624:15625 <> Sf:161
+binder 15627:15627 <> i:162
+R15653:15660 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15634:15638 TypeRulesCore <> check ind
+R15645:15649 TypeRulesCore <> Label def
+R15651:15651 PayloadInversion <> E:160 var
+R15642:15642 PayloadInversion <> c:156 var
+R15640:15640 PayloadInversion <> G:155 var
+R15728:15735 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15661:15665 TypeRulesCore <> check ind
+R15673:15679 TypeRulesCore <> TInterp constr
+R15714:15720 TypeRulesCore <> Carrier def
+R15724:15725 PayloadInversion <> Sf:161 var
+R15722:15722 PayloadInversion <> E:160 var
+R15682:15685 TypeRulesCore <> TApp constr
+R15710:15710 PayloadInversion <> c:156 var
+R15688:15695 TypeRulesCore <> branches def
+R15698:15701 TypeRulesCore <> TApp constr
+R15706:15706 PayloadInversion <> i:162 var
+R15703:15704 PayloadInversion <> Sf:161 var
+R15669:15670 PayloadInversion <> ys:157 var
+R15667:15667 PayloadInversion <> G:155 var
+R15736:15745 PayloadInversion <> sig_state2:158 ind
+R15755:15758 TypeRulesCore <> TApp constr
+R15773:15773 PayloadInversion <> i:162 var
+R15761:15765 TypeRulesCore <> SigMu def
+R15769:15770 PayloadInversion <> Sf:161 var
+R15767:15767 PayloadInversion <> E:160 var
+R15751:15752 PayloadInversion <> ys:157 var
+R15749:15749 PayloadInversion <> c:156 var
+R15747:15747 PayloadInversion <> G:155 var
+binder 15795:15795 <> R:163
+binder 15797:15797 <> i:164
+R15854:15861 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15804:15808 TypeRulesCore <> check ind
+R15826:15832 TypeRulesCore <> TInterp constr
+R15846:15849 TypeRulesCore <> TMuI constr
+R15851:15851 PayloadInversion <> R:163 var
+R15835:15838 TypeRulesCore <> TApp constr
+R15842:15842 PayloadInversion <> i:164 var
+R15840:15840 PayloadInversion <> R:163 var
+R15813:15817 TypeRulesCore <> TPair constr
+R15821:15822 PayloadInversion <> ys:157 var
+R15819:15819 PayloadInversion <> c:156 var
+R15810:15810 PayloadInversion <> G:155 var
+R15862:15871 PayloadInversion <> sig_state2:158 ind
+R15881:15884 TypeRulesCore <> TApp constr
+R15895:15895 PayloadInversion <> i:164 var
+R15887:15890 TypeRulesCore <> TMuI constr
+R15892:15892 PayloadInversion <> R:163 var
+R15877:15878 PayloadInversion <> ys:157 var
+R15875:15875 PayloadInversion <> c:156 var
+R15873:15873 PayloadInversion <> G:155 var
+binder 15921:15921 <> E:165
+binder 15923:15924 <> Sf:166
+binder 15926:15926 <> i:167
+R16099:16106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15933:15937 TypeRulesCore <> check ind
+R15955:15961 TypeRulesCore <> TInterp constr
+R16036:16039 TypeRulesCore <> TMuI constr
+R16042:16045 TypeRulesCore <> TLam constr
+R16048:16051 TypeRulesCore <> Full def
+R16067:16070 TypeRulesCore <> TApp constr
+R16087:16090 TypeRulesCore <> TVar constr
+R16073:16076 TypeRulesCore <> lift def
+R16082:16083 PayloadInversion <> Sf:166 var
+R16054:16057 TypeRulesCore <> lift def
+R16063:16063 PayloadInversion <> E:165 var
+R15964:15967 TypeRulesCore <> TApp constr
+R16026:16026 PayloadInversion <> i:167 var
+R15970:15973 TypeRulesCore <> TLam constr
+R15976:15979 TypeRulesCore <> Full def
+R15995:15998 TypeRulesCore <> TApp constr
+R16015:16018 TypeRulesCore <> TVar constr
+R16001:16004 TypeRulesCore <> lift def
+R16010:16011 PayloadInversion <> Sf:166 var
+R15982:15985 TypeRulesCore <> lift def
+R15991:15991 PayloadInversion <> E:165 var
+R15942:15946 TypeRulesCore <> TPair constr
+R15950:15951 PayloadInversion <> ys:157 var
+R15948:15948 PayloadInversion <> c:156 var
+R15939:15939 PayloadInversion <> G:155 var
+R16107:16116 PayloadInversion <> sig_state2:158 ind
+R16126:16129 TypeRulesCore <> TApp constr
+R16146:16146 PayloadInversion <> i:167 var
+R16132:16138 TypeRulesCore <> Carrier def
+R16142:16143 PayloadInversion <> Sf:166 var
+R16140:16140 PayloadInversion <> E:165 var
+R16122:16123 PayloadInversion <> ys:157 var
+R16120:16120 PayloadInversion <> c:156 var
+R16118:16118 PayloadInversion <> G:155 var
+scheme 15550:15559 <> sig_state2_ind
+scheme 15550:15559 <> sig_state2_sind
+prf 16157:16171 <> sig_state2_path
+binder 16182:16182 <> G:168
+binder 16184:16184 <> c:169
+binder 16186:16187 <> ys:170
+binder 16189:16189 <> A:171
+binder 16191:16191 <> B:172
+R16215:16218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16196:16205 PayloadInversion <> sig_state2 ind
+R16207:16207 PayloadInversion <> G:168 var
+R16209:16209 PayloadInversion <> c:169 var
+R16211:16212 PayloadInversion <> ys:170 var
+R16214:16214 PayloadInversion <> A:171 var
+R16232:16235 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16219:16225 PayloadInversion <> mu_path ind
+R16227:16227 PayloadInversion <> G:168 var
+R16229:16229 PayloadInversion <> A:171 var
+R16231:16231 PayloadInversion <> B:172 var
+R16236:16245 PayloadInversion <> sig_state2 ind
+R16247:16247 PayloadInversion <> G:168 var
+R16249:16249 PayloadInversion <> c:169 var
+R16251:16252 PayloadInversion <> ys:170 var
+R16254:16254 PayloadInversion <> B:172 var
+R16457:16479 PayloadInversion <> conv_mus_mui_absurd_tmp thm
+R16457:16479 PayloadInversion <> conv_mus_mui_absurd_tmp thm
+R16515:16528 PayloadInversion <> mus_edge_nophi thm
+R16515:16528 PayloadInversion <> mus_edge_nophi thm
+R16578:16584 PayloadInversion <> ss2_mus constr
+R16578:16584 PayloadInversion <> ss2_mus constr
+R16623:16651 PayloadInversion <> conv_mus_carrier_absurd_nophi thm
+R16623:16651 PayloadInversion <> conv_mus_carrier_absurd_nophi thm
+R16733:16739 PayloadInversion <> ss2_mui constr
+R16733:16739 PayloadInversion <> ss2_mui constr
+R16749:16762 PayloadInversion <> mui_edge_nophi thm
+R16749:16762 PayloadInversion <> mui_edge_nophi thm
+R16802:16824 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+R16802:16824 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+R16854:16864 PayloadInversion <> ss2_carrier constr
+R16854:16864 PayloadInversion <> ss2_carrier constr
+R16874:16880 TypeRulesCore <> Carrier def
+R16896:16909 PayloadInversion <> mui_edge_nophi thm
+R16896:16909 PayloadInversion <> mui_edge_nophi thm
+R16991:16997 PayloadInversion <> ss2_mui constr
+R16991:16997 PayloadInversion <> ss2_mui constr
+R17007:17013 TypeRulesCore <> Carrier def
+R17029:17042 PayloadInversion <> mui_edge_nophi thm
+R17029:17042 PayloadInversion <> mui_edge_nophi thm
+R17082:17110 PayloadInversion <> conv_carrier_mus_absurd_nophi thm
+R17082:17110 PayloadInversion <> conv_carrier_mus_absurd_nophi thm
+R17140:17150 PayloadInversion <> ss2_carrier constr
+R17140:17150 PayloadInversion <> ss2_carrier constr
+R17160:17166 TypeRulesCore <> Carrier def
+R17182:17195 PayloadInversion <> mui_edge_nophi thm
+R17182:17195 PayloadInversion <> mui_edge_nophi thm
+R17287:17297 PayloadInversion <> ss2_carrier constr
+R17287:17297 PayloadInversion <> ss2_carrier constr
+R17307:17313 TypeRulesCore <> Carrier def
+R17322:17344 PayloadInversion <> sig_to_carrier_pair_tmp thm
+R17322:17344 PayloadInversion <> sig_to_carrier_pair_tmp thm
+R17495:17501 PayloadInversion <> ss2_mus constr
+R17495:17501 PayloadInversion <> ss2_mus constr
+R17533:17560 PayloadInversion <> sigmu_edge_payload_typed_tmp thm
+R17533:17560 PayloadInversion <> sigmu_edge_payload_typed_tmp thm
+prf 17836:17859 <> mui_in_payload_same_pres
+binder 17870:17870 <> G:173
+binder 17872:17872 <> R:174
+binder 17874:17874 <> i:175
+binder 17876:17877 <> xs:176
+binder 17879:17880 <> IT:177
+R17905:17910 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17885:17889 TypeRulesCore <> check ind
+R17897:17901 TypeRulesCore <> TSort constr
+R17893:17894 PayloadInversion <> IT:177 var
+R17891:17891 PayloadInversion <> G:173 var
+R17952:17957 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17911:17915 TypeRulesCore <> check ind
+R17922:17924 TypeRulesCore <> TPi constr
+R17930:17935 TypeRulesCore <> TIDesc constr
+R17938:17941 TypeRulesCore <> lift def
+R17947:17948 PayloadInversion <> IT:177 var
+R17926:17927 PayloadInversion <> IT:177 var
+R17919:17919 PayloadInversion <> R:174 var
+R17917:17917 PayloadInversion <> G:173 var
+R17970:17975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17958:17962 TypeRulesCore <> check ind
+R17968:17969 PayloadInversion <> IT:177 var
+R17966:17966 PayloadInversion <> i:175 var
+R17964:17964 PayloadInversion <> G:173 var
+R18010:18015 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17976:17980 TypeRulesCore <> check ind
+R17994:17997 TypeRulesCore <> TApp constr
+R18008:18008 PayloadInversion <> i:175 var
+R18000:18003 TypeRulesCore <> TMuI constr
+R18005:18005 PayloadInversion <> R:174 var
+R17985:17987 TypeRulesCore <> TIn constr
+R17989:17990 PayloadInversion <> xs:176 var
+R17982:17982 PayloadInversion <> G:173 var
+R18016:18020 TypeRulesCore <> check ind
+R18028:18034 TypeRulesCore <> TInterp constr
+R18048:18051 TypeRulesCore <> TMuI constr
+R18053:18053 PayloadInversion <> R:174 var
+R18037:18040 TypeRulesCore <> TApp constr
+R18044:18044 PayloadInversion <> i:175 var
+R18042:18042 PayloadInversion <> R:174 var
+R18024:18025 PayloadInversion <> xs:176 var
+R18022:18022 PayloadInversion <> G:173 var
+R18113:18129 PayloadInversion <> in_origin_aux_tmp thm
+R18134:18136 TypeRulesCore <> TIn constr
+R18143:18146 TypeRulesCore <> TApp constr
+R18149:18152 TypeRulesCore <> TMuI constr
+R18167:18173 Corelib.Init.Logic <> eq_refl constr
+R18113:18129 PayloadInversion <> in_origin_aux_tmp thm
+R18134:18136 TypeRulesCore <> TIn constr
+R18143:18146 TypeRulesCore <> TApp constr
+R18149:18152 TypeRulesCore <> TMuI constr
+R18167:18173 Corelib.Init.Logic <> eq_refl constr
+R18270:18282 PayloadInversion <> mu_factor_tmp thm
+R18287:18290 TypeRulesCore <> TApp constr
+R18293:18296 TypeRulesCore <> TMuI constr
+R18307:18310 TypeRulesCore <> TApp constr
+R18313:18316 TypeRulesCore <> TMuI constr
+R18336:18339 TypeRulesCore <> TApp constr
+R18342:18345 TypeRulesCore <> TMuI constr
+R18354:18359 PayloadInversion <> mr_mui constr
+R18367:18373 TypeRulesCore <> cv_refl constr
+R18270:18282 PayloadInversion <> mu_factor_tmp thm
+R18287:18290 TypeRulesCore <> TApp constr
+R18293:18296 TypeRulesCore <> TMuI constr
+R18307:18310 TypeRulesCore <> TApp constr
+R18313:18316 TypeRulesCore <> TMuI constr
+R18336:18339 TypeRulesCore <> TApp constr
+R18342:18345 TypeRulesCore <> TMuI constr
+R18354:18359 PayloadInversion <> mr_mui constr
+R18367:18373 TypeRulesCore <> cv_refl constr
+R18427:18433 PayloadInversion <> mu_path ind
+R18438:18441 TypeRulesCore <> TApp constr
+R18444:18447 TypeRulesCore <> TMuI constr
+R18427:18433 PayloadInversion <> mu_path ind
+R18438:18441 TypeRulesCore <> TApp constr
+R18444:18447 TypeRulesCore <> TMuI constr
+R18473:18479 PayloadInversion <> mp_conv constr
+R18489:18494 PayloadInversion <> mr_mui constr
+R18473:18479 PayloadInversion <> mp_conv constr
+R18489:18494 PayloadInversion <> mr_mui constr
+R18539:18545 PayloadInversion <> mu_path ind
+R18550:18553 TypeRulesCore <> TApp constr
+R18556:18559 TypeRulesCore <> TMuI constr
+R18570:18573 TypeRulesCore <> TApp constr
+R18576:18579 TypeRulesCore <> TMuI constr
+R18539:18545 PayloadInversion <> mu_path ind
+R18550:18553 TypeRulesCore <> TApp constr
+R18556:18559 TypeRulesCore <> TMuI constr
+R18570:18573 TypeRulesCore <> TApp constr
+R18576:18579 TypeRulesCore <> TMuI constr
+R18602:18609 PayloadInversion <> mp_trans constr
+R18602:18609 PayloadInversion <> mp_trans constr
+R18644:18651 PayloadInversion <> mu_state ind
+R18656:18659 TypeRulesCore <> TVar constr
+R18665:18668 TypeRulesCore <> TApp constr
+R18671:18674 TypeRulesCore <> TMuI constr
+R18644:18651 PayloadInversion <> mu_state ind
+R18656:18659 TypeRulesCore <> TVar constr
+R18665:18668 TypeRulesCore <> TApp constr
+R18671:18674 TypeRulesCore <> TMuI constr
+R18701:18710 PayloadInversion <> test_rigid thm
+R18715:18718 TypeRulesCore <> TVar constr
+R18724:18727 TypeRulesCore <> TApp constr
+R18730:18733 TypeRulesCore <> TMuI constr
+R18754:18757 TypeRulesCore <> TApp constr
+R18760:18763 TypeRulesCore <> TMuI constr
+R18701:18710 PayloadInversion <> test_rigid thm
+R18715:18718 TypeRulesCore <> TVar constr
+R18724:18727 TypeRulesCore <> TApp constr
+R18730:18733 TypeRulesCore <> TMuI constr
+R18754:18757 TypeRulesCore <> TApp constr
+R18760:18763 TypeRulesCore <> TMuI constr
+R18790:18795 PayloadInversion <> rk_mui constr
+R18790:18795 PayloadInversion <> rk_mui constr
+R18812:18817 PayloadInversion <> ms_mui constr
+R18812:18817 PayloadInversion <> ms_mui constr
+R18865:18870 PayloadInversion <> rk_mui constr
+R18865:18870 PayloadInversion <> rk_mui constr
+R19057:19069 PayloadInversion <> mu_factor_tmp thm
+R19074:19077 TypeRulesCore <> TApp constr
+R19080:19084 TypeRulesCore <> SigMu def
+R19097:19100 TypeRulesCore <> TApp constr
+R19103:19106 TypeRulesCore <> TMuI constr
+R19126:19129 TypeRulesCore <> TApp constr
+R19132:19135 TypeRulesCore <> TMuI constr
+R19144:19149 PayloadInversion <> mr_mui constr
+R19157:19163 TypeRulesCore <> cv_refl constr
+R19057:19069 PayloadInversion <> mu_factor_tmp thm
+R19074:19077 TypeRulesCore <> TApp constr
+R19080:19084 TypeRulesCore <> SigMu def
+R19097:19100 TypeRulesCore <> TApp constr
+R19103:19106 TypeRulesCore <> TMuI constr
+R19126:19129 TypeRulesCore <> TApp constr
+R19132:19135 TypeRulesCore <> TMuI constr
+R19144:19149 PayloadInversion <> mr_mui constr
+R19157:19163 TypeRulesCore <> cv_refl constr
+R19217:19223 PayloadInversion <> mu_path ind
+R19228:19231 TypeRulesCore <> TApp constr
+R19234:19238 TypeRulesCore <> SigMu def
+R19217:19223 PayloadInversion <> mu_path ind
+R19228:19231 TypeRulesCore <> TApp constr
+R19234:19238 TypeRulesCore <> SigMu def
+R19266:19272 PayloadInversion <> mp_conv constr
+R19282:19287 PayloadInversion <> mr_mus constr
+R19266:19272 PayloadInversion <> mp_conv constr
+R19282:19287 PayloadInversion <> mr_mus constr
+R19332:19338 PayloadInversion <> mu_path ind
+R19343:19346 TypeRulesCore <> TApp constr
+R19349:19353 TypeRulesCore <> SigMu def
+R19366:19369 TypeRulesCore <> TApp constr
+R19372:19375 TypeRulesCore <> TMuI constr
+R19332:19338 PayloadInversion <> mu_path ind
+R19343:19346 TypeRulesCore <> TApp constr
+R19349:19353 TypeRulesCore <> SigMu def
+R19366:19369 TypeRulesCore <> TApp constr
+R19372:19375 TypeRulesCore <> TMuI constr
+R19398:19405 PayloadInversion <> mp_trans constr
+R19398:19405 PayloadInversion <> mp_trans constr
+R19444:19453 PayloadInversion <> sig_state2 ind
+R19464:19467 TypeRulesCore <> TApp constr
+R19470:19474 TypeRulesCore <> SigMu def
+R19444:19453 PayloadInversion <> sig_state2 ind
+R19464:19467 TypeRulesCore <> TApp constr
+R19470:19474 TypeRulesCore <> SigMu def
+R19500:19506 PayloadInversion <> ss2_mus constr
+R19500:19506 PayloadInversion <> ss2_mus constr
+R19540:19549 PayloadInversion <> sig_state2 ind
+R19560:19563 TypeRulesCore <> TApp constr
+R19566:19569 TypeRulesCore <> TMuI constr
+R19540:19549 PayloadInversion <> sig_state2 ind
+R19560:19563 TypeRulesCore <> TApp constr
+R19566:19569 TypeRulesCore <> TMuI constr
+R19592:19606 PayloadInversion <> sig_state2_path thm
+R19592:19606 PayloadInversion <> sig_state2_path thm
+prf 19673:19701 <> mus_in_pair_payload_same_pres
+binder 19712:19712 <> G:178
+binder 19714:19715 <> Sf:179
+binder 19717:19717 <> i:180
+binder 19719:19719 <> a:181
+binder 19721:19722 <> xs:182
+binder 19724:19725 <> IT:183
+binder 19727:19727 <> E:184
+R19752:19755 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19732:19736 TypeRulesCore <> check ind
+R19744:19748 TypeRulesCore <> TSort constr
+R19740:19741 PayloadInversion <> IT:183 var
+R19738:19738 PayloadInversion <> G:178 var
+R19772:19777 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19756:19760 TypeRulesCore <> check ind
+R19766:19771 TypeRulesCore <> TEnumU constr
+R19764:19764 PayloadInversion <> E:184 var
+R19762:19762 PayloadInversion <> G:178 var
+R19830:19835 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19778:19782 TypeRulesCore <> check ind
+R19790:19792 TypeRulesCore <> TPi constr
+R19798:19800 TypeRulesCore <> Sig def
+R19817:19820 TypeRulesCore <> lift def
+R19826:19826 PayloadInversion <> E:184 var
+R19803:19806 TypeRulesCore <> lift def
+R19812:19813 PayloadInversion <> IT:183 var
+R19794:19795 PayloadInversion <> IT:183 var
+R19786:19787 PayloadInversion <> Sf:179 var
+R19784:19784 PayloadInversion <> G:178 var
+R19848:19853 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19836:19840 TypeRulesCore <> check ind
+R19846:19847 PayloadInversion <> IT:183 var
+R19844:19844 PayloadInversion <> i:180 var
+R19842:19842 PayloadInversion <> G:178 var
+R19902:19907 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19854:19858 TypeRulesCore <> check ind
+R19882:19885 TypeRulesCore <> TApp constr
+R19900:19900 PayloadInversion <> i:180 var
+R19888:19892 TypeRulesCore <> SigMu def
+R19896:19897 PayloadInversion <> Sf:179 var
+R19894:19894 PayloadInversion <> E:184 var
+R19863:19865 TypeRulesCore <> TIn constr
+R19868:19872 TypeRulesCore <> TPair constr
+R19876:19877 PayloadInversion <> xs:182 var
+R19874:19874 PayloadInversion <> a:181 var
+R19860:19860 PayloadInversion <> G:178 var
+R19908:19912 TypeRulesCore <> check ind
+R19924:19930 TypeRulesCore <> TInterp constr
+R19965:19971 TypeRulesCore <> Carrier def
+R19975:19976 PayloadInversion <> Sf:179 var
+R19973:19973 PayloadInversion <> E:184 var
+R19933:19936 TypeRulesCore <> TApp constr
+R19961:19961 PayloadInversion <> a:181 var
+R19939:19946 TypeRulesCore <> branches def
+R19949:19952 TypeRulesCore <> TApp constr
+R19957:19957 PayloadInversion <> i:180 var
+R19954:19955 PayloadInversion <> Sf:179 var
+R19916:19917 PayloadInversion <> xs:182 var
+R19914:19914 PayloadInversion <> G:178 var
+R20045:20078 Progress SignatureLemmas in_pair_origin_aux thm
+R20083:20085 TypeRulesCore <> TIn constr
+R20088:20092 TypeRulesCore <> TPair constr
+R20102:20105 TypeRulesCore <> TApp constr
+R20108:20112 TypeRulesCore <> SigMu def
+R20138:20144 Corelib.Init.Logic <> eq_refl constr
+R20045:20078 Progress SignatureLemmas in_pair_origin_aux thm
+R20083:20085 TypeRulesCore <> TIn constr
+R20088:20092 TypeRulesCore <> TPair constr
+R20102:20105 TypeRulesCore <> TApp constr
+R20108:20112 TypeRulesCore <> SigMu def
+R20138:20144 Corelib.Init.Logic <> eq_refl constr
+R20254:20266 Progress <> sub_transport thm
+R20271:20274 TypeRulesCore <> TApp constr
+R20277:20280 TypeRulesCore <> TMuI constr
+R20291:20294 TypeRulesCore <> TApp constr
+R20297:20301 TypeRulesCore <> SigMu def
+R20324:20327 TypeRulesCore <> TApp constr
+R20330:20334 TypeRulesCore <> SigMu def
+R20345:20351 Progress <> HMuSApp constr
+R20354:20360 TypeRulesCore <> cv_refl constr
+R20372:20380 Progress <> whd_shape thm
+R20387:20395 Progress <> hs_musapp constr
+R20398:20402 TypeRulesCore <> TPair constr
+R20254:20266 Progress <> sub_transport thm
+R20271:20274 TypeRulesCore <> TApp constr
+R20277:20280 TypeRulesCore <> TMuI constr
+R20291:20294 TypeRulesCore <> TApp constr
+R20297:20301 TypeRulesCore <> SigMu def
+R20324:20327 TypeRulesCore <> TApp constr
+R20330:20334 TypeRulesCore <> SigMu def
+R20345:20351 Progress <> HMuSApp constr
+R20354:20360 TypeRulesCore <> cv_refl constr
+R20372:20380 Progress <> whd_shape thm
+R20387:20395 Progress <> hs_musapp constr
+R20398:20402 TypeRulesCore <> TPair constr
+R20498:20520 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+R20498:20520 PayloadInversion <> conv_mui_mus_absurd_tmp thm
+R20666:20668 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R20659:20665 Progress <> HMuIApp constr
+R20669:20675 Progress <> HMuSApp constr
+R20666:20668 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R20659:20665 Progress <> HMuIApp constr
+R20669:20675 Progress <> HMuSApp constr
+R20696:20703 Progress <> conv_whd thm
+R20728:20736 Progress <> whd_shape thm
+R20696:20703 Progress <> conv_whd thm
+R20728:20736 Progress <> whd_shape thm
+R20936:20948 PayloadInversion <> mu_factor_tmp thm
+R20953:20956 TypeRulesCore <> TApp constr
+R20959:20963 TypeRulesCore <> SigMu def
+R20977:20980 TypeRulesCore <> TApp constr
+R20983:20987 TypeRulesCore <> SigMu def
+R21010:21013 TypeRulesCore <> TApp constr
+R21016:21020 TypeRulesCore <> SigMu def
+R21032:21037 PayloadInversion <> mr_mus constr
+R21047:21053 TypeRulesCore <> cv_refl constr
+R20936:20948 PayloadInversion <> mu_factor_tmp thm
+R20953:20956 TypeRulesCore <> TApp constr
+R20959:20963 TypeRulesCore <> SigMu def
+R20977:20980 TypeRulesCore <> TApp constr
+R20983:20987 TypeRulesCore <> SigMu def
+R21010:21013 TypeRulesCore <> TApp constr
+R21016:21020 TypeRulesCore <> SigMu def
+R21032:21037 PayloadInversion <> mr_mus constr
+R21047:21053 TypeRulesCore <> cv_refl constr
+R21107:21113 PayloadInversion <> mu_path ind
+R21118:21121 TypeRulesCore <> TApp constr
+R21124:21128 TypeRulesCore <> SigMu def
+R21107:21113 PayloadInversion <> mu_path ind
+R21118:21121 TypeRulesCore <> TApp constr
+R21124:21128 TypeRulesCore <> SigMu def
+R21157:21163 PayloadInversion <> mp_conv constr
+R21173:21178 PayloadInversion <> mr_mus constr
+R21157:21163 PayloadInversion <> mp_conv constr
+R21173:21178 PayloadInversion <> mr_mus constr
+R21223:21229 PayloadInversion <> mu_path ind
+R21234:21237 TypeRulesCore <> TApp constr
+R21240:21244 TypeRulesCore <> SigMu def
+R21258:21261 TypeRulesCore <> TApp constr
+R21264:21268 TypeRulesCore <> SigMu def
+R21223:21229 PayloadInversion <> mu_path ind
+R21234:21237 TypeRulesCore <> TApp constr
+R21240:21244 TypeRulesCore <> SigMu def
+R21258:21261 TypeRulesCore <> TApp constr
+R21264:21268 TypeRulesCore <> SigMu def
+R21294:21301 PayloadInversion <> mp_trans constr
+R21294:21301 PayloadInversion <> mp_trans constr
+R21340:21349 PayloadInversion <> sig_state2 ind
+R21359:21362 TypeRulesCore <> TApp constr
+R21365:21369 TypeRulesCore <> SigMu def
+R21340:21349 PayloadInversion <> sig_state2 ind
+R21359:21362 TypeRulesCore <> TApp constr
+R21365:21369 TypeRulesCore <> SigMu def
+R21396:21402 PayloadInversion <> ss2_mus constr
+R21396:21402 PayloadInversion <> ss2_mus constr
+R21436:21445 PayloadInversion <> sig_state2 ind
+R21455:21458 TypeRulesCore <> TApp constr
+R21461:21465 TypeRulesCore <> SigMu def
+R21436:21445 PayloadInversion <> sig_state2 ind
+R21455:21458 TypeRulesCore <> TApp constr
+R21461:21465 TypeRulesCore <> SigMu def
+R21491:21505 PayloadInversion <> sig_state2_path thm
+R21491:21505 PayloadInversion <> sig_state2_path thm

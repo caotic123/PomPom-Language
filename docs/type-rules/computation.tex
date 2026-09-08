@@ -1,0 +1,71 @@
+\section{Computation}
+\subsection{Functions, pairs, enumerations, and interpretation}
+Let $P^+:=\lambda e.\,P(1_E+e)$. The primitive computation rules are
+\begin{align*}
+(\lambda x.b)\,a&\longmapsto b[a/x],&
+\pi_0(a,b)&\longmapsto a,&\pi_1(a,b)&\longmapsto b,\\
+\pi_k\,\op{nilE}\,P&\longmapsto\mathbf1,\\
+\pi_k\,(\op{consE}\,\ell\,E)\,P&\longmapsto P\,0_E\times\pi_k\,E\,P^+,\\
+\op{switch}_k\,(\op{consE}\,\ell\,E)\,P\,(p_0,ps)\,0_E&\longmapsto p_0,\\
+\op{switch}_k\,(\op{consE}\,\ell\,E)\,P\,(p_0,ps)\,(1_E+n)&\longmapsto\op{switch}_k\,E\,P^+\,ps\,n.
+\end{align*}
+\begin{align*}
+\interp{\code{'var}\,i}{X}&\longmapsto X\,i,\\
+\interp{\code{'1}}{X}&\longmapsto\mathbf1,\\
+\interp{A\mathbin{'\times}B}{X}&\longmapsto\interp{A}{X}\times\interp{B}{X},\\
+\interp{'\Pi\,A\,T}{X}&\longmapsto\Pi a:A.\,\interp{T\,a}{X},\\
+\interp{'\Sigma\,A\,T}{X}&\longmapsto\Sigma a:A.\,\interp{T\,a}{X},\\
+\interp{'\sigma\,E\,T}{X}&\longmapsto\Sigma e:\op{EnumT}\,E.\,\interp{T\,e}{X}.
+\end{align*}
+\subsection{Induction hypotheses}
+In this subsection abbreviate $\mathcal A(D,x):=\op{iAll}\,D\,X\,x\,P$ and $\mathcal H(D,x):=\op{hyps}\,D\,X\,P\,h\,x$, with $X,P,h$ fixed.
+\begin{align*}
+\mathcal A(\code{'var}\,j,x)&\longmapsto P(j,x),&
+\mathcal H(\code{'var}\,j,x)&\longmapsto h\,j\,x,\\
+\mathcal A(\code{'1},\op{unit})&\longmapsto\mathbf1,&
+\mathcal H(\code{'1},\op{unit})&\longmapsto\op{unit},\\
+\mathcal A(A\mathbin{'\times}B,(a,b))&\longmapsto\mathcal A(A,a)\times\mathcal A(B,b),\\
+\mathcal H(A\mathbin{'\times}B,(a,b))&\longmapsto(\mathcal H(A,a),\mathcal H(B,b)),\\
+\mathcal A('\Pi\,A\,T,f)&\longmapsto\Pi a:A.\,\mathcal A(T\,a,f\,a),\\
+\mathcal H('\Pi\,A\,T,f)&\longmapsto\lambda a.\,\mathcal H(T\,a,f\,a),\\
+\mathcal A('\Sigma\,A\,T,(a,x))&\longmapsto\mathcal A(T\,a,x),&
+\mathcal H('\Sigma\,A\,T,(a,x))&\longmapsto\mathcal H(T\,a,x),\\
+\mathcal A('\sigma\,E\,T,(e,x))&\longmapsto\mathcal A(T\,e,x),&
+\mathcal H('\sigma\,E\,T,(e,x))&\longmapsto\mathcal H(T\,e,x).
+\end{align*}
+Writing $h:=\lambda j.\lambda y.\op{iinduction}\,R\,P\,s\,j\,y$, induction computes by
+\[
+ \op{iinduction}\,R\,P\,s\,i\,(\op{in}\,xs)
+ \longmapsto s\,i\,xs\,
+ \bigl(\op{hyps}\,(R\,i)\,(\mu^I R)\,P\,h\,xs\bigr).
+\]
+\subsection{Case selection and evaluation positions}
+Write $c\Downarrow_{\rm pos}n$ for the syntactic predicate \texttt{enum\_pos}: $0_E\Downarrow_{\rm pos}0$ and $c\Downarrow_{\rm pos}n$ implies $(1_E+c)\Downarrow_{\rm pos}(n+1)$. This notation does not denote an evaluation relation.
+
+If the zero-based clause $bs[k]=(c_k,N_k)$ satisfies $c_k\Downarrow_{\rm pos}n$ and $a\Downarrow_{\rm pos}n$, and every earlier clause label has a canonical position different from $n$, then
+\[
+ \op{case}\ (\op{in}(a,xs))\ \op{of}\ Q\ bs
+ \longmapsto N_k[xs/x].
+\]
+Thus raw case selection uses the first matching position. For a typed case, distinctness ensures uniqueness.
+
+The relation is closed under the following one-hole computation contexts:
+\begin{align*}
+\mathcal E::={}&[\,]\,a\mid\pi_0[\,]\mid\pi_1[\,]\mid\pi_k\,[\,]\,P\\
+ &\mid\op{switch}_k\,[\,]\,P\,p\,e
+ \mid\op{switch}_k\,E\,P\,[\,]\,e
+ \mid\op{switch}_k\,E\,P\,p\,[\,]\\
+ &\mid\interp{[\,]}{X}
+ \mid\op{iAll}\,[\,]\,X\,xs\,P
+ \mid\op{iAll}\,D\,X\,[\,]\,P\\
+ &\mid\op{hyps}\,[\,]\,X\,P\,h\,xs
+ \mid\op{hyps}\,D\,X\,P\,h\,[\,]\\
+ &\mid\op{iinduction}\,R\,P\,s\,i\,[\,]
+ \mid\op{case}\ [\,]\ \op{of}\ Q\ bs\\
+ &\mid\op{case}\ M\ \op{of}\ Q\ (bs_1\mathbin{+\!+}([\,],b)::bs_2)\\
+ &\mid 1_E+[\,]\mid\op{in}[\,]\mid([\,],b)\mid(a,[\,]).
+\end{align*}
+That is, $t\longmapsto u$ implies $\mathcal E[t]\longmapsto\mathcal E[u]$. This is a relation and does not impose a total evaluation order between the available positions. Evaluation $\Downarrow$ is its reflexive transitive closure. Fixed-point heads have no unfolding rule.
+
+The value forms are sorts, $\Pi$, lambdas, $\Sigma$, pairs, unit type and unit, identifiers and tags, enumeration type and constructors, positional zero and successor, description type and codes, $\mu^I R$, $\mu^s S$, their one-argument applications, $\op{in}\,x$, and list types and constructors. Their components need not themselves be values.
+\src{progress/TypeRules.v: step, eval, enum_pos, value}

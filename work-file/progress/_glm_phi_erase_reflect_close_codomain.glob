@@ -1,0 +1,197 @@
+DIGEST d30b44d9a43f98cec5c9577ab85adc4f
+F_glm_phi_erase_reflect_close_codomain
+R1728:1735 Progress <> <> lib
+R1737:1747 _tmp_epstep <> <> lib
+R1749:1767 _work_mixed_closure <> <> lib
+R1769:1779 _work_cjoin <> <> lib
+R1783:1804 _work_cstep_invariants <> <> lib
+R1806:1831 _glm_injectivity_close_rep <> <> lib
+R1835:1856 _glm_muapp_sort_origin <> <> lib
+R1858:1878 _glm_muapp_sort_close <> <> lib
+R1882:1917 _glm_phi_erase_reflect_close_reflect <> <> lib
+R1947:1950 Stdlib.Lists.List <> <> lib
+R1952:1954 Stdlib.micromega.Lia <> <> lib
+R1956:1963 Stdlib.Arith.PeanoNat <> <> lib
+R1973:1985 Stdlib.Lists.List ListNotations <> mod
+R1987:1995 TypeRules <> <> mod
+prf 2249:2276 <> cjoin_erase_sort_reflect_glm
+R2301:2304 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2282:2300 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R2325:2330 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2305:2324 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 2338:2338 <> B:1
+binder 2340:2340 <> j:2
+R2372:2375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2343:2347 _work_cjoin <> cjoin def
+R2350:2354 TypeRules <> TSort constr
+R2356:2356 _glm_phi_erase_reflect_close_codomain <> j:2 var
+R2360:2368 Progress <> phi_erase def
+R2370:2370 _glm_phi_erase_reflect_close_codomain <> B:1 var
+R2376:2379 TypeRules <> conv ind
+R2384:2388 TypeRules <> TSort constr
+R2390:2390 _glm_phi_erase_reflect_close_codomain <> j:2 var
+R2381:2381 _glm_phi_erase_reflect_close_codomain <> B:1 var
+R2451:2453 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2454:2458 TypeRules <> TSort constr
+R2474:2490 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R2451:2453 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2454:2458 TypeRules <> TSort constr
+R2474:2490 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R2525:2553 _glm_phi_erase_reflect_close_reflect <> stable_sort_erase_reflect_glm thm
+R2525:2553 _glm_phi_erase_reflect_close_reflect <> stable_sort_erase_reflect_glm thm
+prf 2825:2855 <> conv_pi_cod_sort_from_erase_glm
+R2880:2883 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2861:2879 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R2904:2909 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2884:2903 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 2917:2918 <> A0:3
+binder 2920:2921 <> B0:4
+binder 2923:2924 <> A1:5
+binder 2926:2927 <> B1:6
+binder 2929:2929 <> j:7
+R2953:2960 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2936:2939 TypeRules <> conv ind
+R2945:2949 TypeRules <> TSort constr
+R2951:2951 _glm_phi_erase_reflect_close_codomain <> j:7 var
+R2941:2942 _glm_phi_erase_reflect_close_codomain <> B0:4 var
+R2989:2996 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2961:2964 TypeRules <> conv ind
+R2979:2981 TypeRules <> TPi constr
+R2986:2987 _glm_phi_erase_reflect_close_codomain <> B1:6 var
+R2983:2984 _glm_phi_erase_reflect_close_codomain <> A1:5 var
+R2967:2969 TypeRules <> TPi constr
+R2974:2975 _glm_phi_erase_reflect_close_codomain <> B0:4 var
+R2971:2972 _glm_phi_erase_reflect_close_codomain <> A0:3 var
+R2997:3000 TypeRules <> conv ind
+R3006:3010 TypeRules <> TSort constr
+R3012:3012 _glm_phi_erase_reflect_close_codomain <> j:7 var
+R3002:3003 _glm_phi_erase_reflect_close_codomain <> B1:6 var
+R3073:3086 _work_cjoin <> conv_phi_cjoin thm
+R3073:3086 _work_cjoin <> conv_phi_cjoin thm
+R3111:3119 Progress <> phi_erase def
+R3142:3153 _work_cstep_invariants <> cjoin_pi_inv thm
+R3142:3153 _work_cstep_invariants <> cjoin_pi_inv thm
+R3194:3207 _work_cjoin <> conv_phi_cjoin thm
+R3194:3207 _work_cjoin <> conv_phi_cjoin thm
+R3232:3240 Progress <> phi_erase def
+R3270:3274 _work_cjoin <> cjoin def
+R3277:3281 TypeRules <> TSort constr
+R3287:3295 Progress <> phi_erase def
+R3270:3274 _work_cjoin <> cjoin def
+R3277:3281 TypeRules <> TSort constr
+R3287:3295 Progress <> phi_erase def
+R3314:3324 _work_cjoin <> cjoin_trans thm
+R3314:3324 _work_cjoin <> cjoin_trans thm
+R3339:3347 _work_cjoin <> cjoin_sym thm
+R3339:3347 _work_cjoin <> cjoin_sym thm
+R3389:3416 _glm_phi_erase_reflect_close_codomain <> cjoin_erase_sort_reflect_glm thm
+R3389:3416 _glm_phi_erase_reflect_close_codomain <> cjoin_erase_sort_reflect_glm thm
+prf 3690:3732 <> conv_pisort_codomain_from_erase_reflect_glm
+R3757:3760 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3738:3756 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R3781:3786 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3761:3780 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 3794:3795 <> IT:8
+binder 3797:3797 <> A:9
+binder 3799:3799 <> B:10
+R3839:3842 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3806:3809 TypeRules <> conv ind
+R3831:3833 TypeRules <> TPi constr
+R3837:3837 _glm_phi_erase_reflect_close_codomain <> B:10 var
+R3835:3835 _glm_phi_erase_reflect_close_codomain <> A:9 var
+R3812:3814 TypeRules <> TPi constr
+R3820:3824 TypeRules <> TSort constr
+R3816:3817 _glm_phi_erase_reflect_close_codomain <> IT:8 var
+R3843:3846 TypeRules <> conv ind
+R3851:3855 TypeRules <> TSort constr
+R3848:3848 _glm_phi_erase_reflect_close_codomain <> B:10 var
+R3903:3933 _glm_phi_erase_reflect_close_codomain <> conv_pi_cod_sort_from_erase_glm thm
+R3969:3975 TypeRules <> cv_refl constr
+R3903:3933 _glm_phi_erase_reflect_close_codomain <> conv_pi_cod_sort_from_erase_glm thm
+R3969:3975 TypeRules <> cv_refl constr
+prf 4420:4450 <> pi_cod_sort_inv_intro_erase_glm
+R4475:4478 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4456:4474 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R4499:4504 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4479:4498 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 4512:4513 <> A0:11
+binder 4515:4516 <> B0:12
+binder 4518:4518 <> j:13
+R4538:4541 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4521:4524 TypeRules <> conv ind
+R4530:4534 TypeRules <> TSort constr
+R4536:4536 _glm_phi_erase_reflect_close_codomain <> j:13 var
+R4526:4527 _glm_phi_erase_reflect_close_codomain <> B0:12 var
+R4542:4560 _glm_muapp_sort_close <> pi_cod_sort_inv_glm def
+R4563:4565 TypeRules <> TPi constr
+R4570:4571 _glm_phi_erase_reflect_close_codomain <> B0:12 var
+R4567:4568 _glm_phi_erase_reflect_close_codomain <> A0:11 var
+R4637:4667 _glm_phi_erase_reflect_close_codomain <> conv_pi_cod_sort_from_erase_glm thm
+R4637:4667 _glm_phi_erase_reflect_close_codomain <> conv_pi_cod_sort_from_erase_glm thm
+prf 4841:4869 <> sub_pi_cod_sort_inv_erase_glm
+R4894:4897 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4875:4893 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R4918:4923 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4898:4917 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 4931:4931 <> G:14
+binder 4933:4933 <> X:15
+binder 4935:4935 <> Y:16
+R4947:4950 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4938:4940 TypeRules <> sub ind
+R4946:4946 _glm_phi_erase_reflect_close_codomain <> Y:16 var
+R4944:4944 _glm_phi_erase_reflect_close_codomain <> X:15 var
+R4942:4942 _glm_phi_erase_reflect_close_codomain <> G:14 var
+R4972:4975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4951:4969 _glm_muapp_sort_close <> pi_cod_sort_inv_glm def
+R4971:4971 _glm_phi_erase_reflect_close_codomain <> X:15 var
+R4976:4994 _glm_muapp_sort_close <> pi_cod_sort_inv_glm def
+R4996:4996 _glm_phi_erase_reflect_close_codomain <> Y:16 var
+R5174:5181 TypeRules <> cv_trans constr
+R5174:5181 TypeRules <> cv_trans constr
+R5392:5413 _glm_muapp_sort_origin <> glm_conv_sort_pi_l_glm thm
+R5392:5413 _glm_muapp_sort_origin <> glm_conv_sort_pi_l_glm thm
+R5509:5535 _glm_muapp_sort_close <> pi_cod_sort_inv_pi_elim_glm thm
+R5509:5535 _glm_muapp_sort_close <> pi_cod_sort_inv_pi_elim_glm thm
+R5572:5599 _glm_muapp_sort_origin <> glm_sub_sort_source_conv_glm thm
+R5572:5599 _glm_muapp_sort_origin <> glm_sub_sort_source_conv_glm thm
+R5644:5674 _glm_phi_erase_reflect_close_codomain <> pi_cod_sort_inv_intro_erase_glm thm
+R5644:5674 _glm_phi_erase_reflect_close_codomain <> pi_cod_sort_inv_intro_erase_glm thm
+R5816:5841 _glm_muapp_sort_close <> glm_conv_carrierapp_pi_glm thm
+R5816:5841 _glm_muapp_sort_close <> glm_conv_carrierapp_pi_glm thm
+R5946:5967 _glm_muapp_sort_close <> glm_conv_musapp_pi_glm thm
+R5946:5967 _glm_muapp_sort_close <> glm_conv_musapp_pi_glm thm
+prf 5992:6021 <> sub_pisort0_cod_sort_erase_glm
+R6046:6049 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6027:6045 _glm_phi_erase_reflect_close_reflect <> erase_pstep_reflect def
+R6070:6075 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6050:6069 _glm_phi_erase_reflect_close_reflect <> erase_epstep_reflect def
+binder 6083:6083 <> G:17
+binder 6085:6086 <> IT:18
+binder 6088:6088 <> A:19
+binder 6090:6090 <> B:20
+R6127:6132 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6093:6095 TypeRules <> sub ind
+R6119:6121 TypeRules <> TPi constr
+R6125:6125 _glm_phi_erase_reflect_close_codomain <> B:20 var
+R6123:6123 _glm_phi_erase_reflect_close_codomain <> A:19 var
+R6100:6102 TypeRules <> TPi constr
+R6108:6112 TypeRules <> TSort constr
+R6104:6105 _glm_phi_erase_reflect_close_codomain <> IT:18 var
+R6097:6097 _glm_phi_erase_reflect_close_codomain <> G:17 var
+R6133:6139 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6141:6142 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6140:6140 <> j:21
+R6143:6146 TypeRules <> conv ind
+R6151:6155 TypeRules <> TSort constr
+R6157:6157 _glm_phi_erase_reflect_close_codomain <> j:21 var
+R6148:6148 _glm_phi_erase_reflect_close_codomain <> B:20 var
+R6207:6233 _glm_muapp_sort_close <> pi_cod_sort_inv_pi_elim_glm thm
+R6207:6233 _glm_muapp_sort_close <> pi_cod_sort_inv_pi_elim_glm thm
+R6245:6273 _glm_phi_erase_reflect_close_codomain <> sub_pi_cod_sort_inv_erase_glm thm
+R6245:6273 _glm_phi_erase_reflect_close_codomain <> sub_pi_cod_sort_inv_erase_glm thm
+R6327:6357 _glm_phi_erase_reflect_close_codomain <> pi_cod_sort_inv_intro_erase_glm thm
+R6393:6399 TypeRules <> cv_refl constr
+R6327:6357 _glm_phi_erase_reflect_close_codomain <> pi_cod_sort_inv_intro_erase_glm thm
+R6393:6399 TypeRules <> cv_refl constr
+R6427:6469 _glm_phi_erase_reflect_close_codomain <> conv_pisort_codomain_from_erase_reflect_glm thm
+R6490:6519 _glm_phi_erase_reflect_close_codomain <> sub_pisort0_cod_sort_erase_glm thm

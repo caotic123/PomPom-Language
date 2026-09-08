@@ -1,0 +1,172 @@
+DIGEST 4f22a572e85107452fc5bb9378c5df68
+F_luna_repair_app_origin
+R15:22 Progress <> <> lib
+R52:55 Stdlib.Lists.List <> <> lib
+R57:59 Stdlib.micromega.Lia <> <> lib
+R61:68 Stdlib.Arith.PeanoNat <> <> lib
+R78:90 Stdlib.Lists.List ListNotations <> mod
+R92:100 TypeRules <> <> mod
+prf 110:129 <> luna_check_mui_synth
+binder 140:140 <> G:1
+binder 142:142 <> t:2
+binder 144:144 <> T:3
+R162:169 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R151:155 TypeRules <> check ind
+R161:161 _luna_repair_app_origin <> T:3 var
+R159:159 _luna_repair_app_origin <> t:2 var
+R157:157 _luna_repair_app_origin <> G:1 var
+binder 177:177 <> R:4
+R190:197 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R181:183 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R180:180 _luna_repair_app_origin <> t:2 var
+R184:187 TypeRules <> TMuI constr
+R189:189 _luna_repair_app_origin <> R:4 var
+R198:204 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R207:208 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 205:206 <> IT:5
+R244:263 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R335:335 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R209:213 TypeRules <> synth ind
+R227:229 TypeRules <> TPi constr
+R235:239 TypeRules <> TSort constr
+R231:232 _luna_repair_app_origin <> IT:5 var
+R218:221 TypeRules <> TMuI constr
+R223:223 _luna_repair_app_origin <> R:4 var
+R215:215 _luna_repair_app_origin <> G:1 var
+R289:308 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R264:267 TypeRules <> conv ind
+R288:288 _luna_repair_app_origin <> T:3 var
+R270:272 TypeRules <> TPi constr
+R278:282 TypeRules <> TSort constr
+R274:275 _luna_repair_app_origin <> IT:5 var
+R309:311 TypeRules <> sub ind
+R334:334 _luna_repair_app_origin <> T:3 var
+R316:318 TypeRules <> TPi constr
+R324:328 TypeRules <> TSort constr
+R320:321 _luna_repair_app_origin <> IT:5 var
+R313:313 _luna_repair_app_origin <> G:1 var
+R593:599 Corelib.Init.Logic <> eq_refl constr
+R593:599 Corelib.Init.Logic <> eq_refl constr
+R716:723 TypeRules <> cv_trans constr
+R746:751 TypeRules <> cv_sym constr
+R716:723 TypeRules <> cv_trans constr
+R746:751 TypeRules <> cv_sym constr
+R784:791 TypeRules <> su_trans constr
+R814:820 TypeRules <> su_conv constr
+R823:828 TypeRules <> cv_sym constr
+R784:791 TypeRules <> su_trans constr
+R814:820 TypeRules <> su_conv constr
+R823:828 TypeRules <> cv_sym constr
+prf 847:866 <> luna_check_mus_synth
+binder 877:877 <> G:6
+binder 879:879 <> t:7
+binder 881:881 <> T:8
+R899:906 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R888:892 TypeRules <> check ind
+R898:898 _luna_repair_app_origin <> T:8 var
+R896:896 _luna_repair_app_origin <> t:7 var
+R894:894 _luna_repair_app_origin <> G:6 var
+binder 914:915 <> Sf:9
+R929:936 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R919:921 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R918:918 _luna_repair_app_origin <> t:7 var
+R922:925 TypeRules <> TMuS constr
+R927:928 _luna_repair_app_origin <> Sf:9 var
+R937:943 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R946:947 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 944:945 <> IT:10
+R984:1003 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1075:1075 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R948:952 TypeRules <> synth ind
+R967:969 TypeRules <> TPi constr
+R975:979 TypeRules <> TSort constr
+R971:972 _luna_repair_app_origin <> IT:10 var
+R957:960 TypeRules <> TMuS constr
+R962:963 _luna_repair_app_origin <> Sf:9 var
+R954:954 _luna_repair_app_origin <> G:6 var
+R1029:1048 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1004:1007 TypeRules <> conv ind
+R1028:1028 _luna_repair_app_origin <> T:8 var
+R1010:1012 TypeRules <> TPi constr
+R1018:1022 TypeRules <> TSort constr
+R1014:1015 _luna_repair_app_origin <> IT:10 var
+R1049:1051 TypeRules <> sub ind
+R1074:1074 _luna_repair_app_origin <> T:8 var
+R1056:1058 TypeRules <> TPi constr
+R1064:1068 TypeRules <> TSort constr
+R1060:1061 _luna_repair_app_origin <> IT:10 var
+R1053:1053 _luna_repair_app_origin <> G:6 var
+R1335:1341 Corelib.Init.Logic <> eq_refl constr
+R1335:1341 Corelib.Init.Logic <> eq_refl constr
+R1458:1465 TypeRules <> cv_trans constr
+R1488:1493 TypeRules <> cv_sym constr
+R1458:1465 TypeRules <> cv_trans constr
+R1488:1493 TypeRules <> cv_sym constr
+R1526:1533 TypeRules <> su_trans constr
+R1556:1562 TypeRules <> su_conv constr
+R1565:1570 TypeRules <> cv_sym constr
+R1526:1533 TypeRules <> su_trans constr
+R1556:1562 TypeRules <> su_conv constr
+R1565:1570 TypeRules <> cv_sym constr
+prf 1589:1627 <> mu_former_checked_erased_pi_origin_luna
+binder 1638:1638 <> G:11
+binder 1640:1640 <> f:12
+binder 1642:1642 <> A:13
+binder 1644:1644 <> B:14
+R1701:1708 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1651:1651 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1672:1677 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1700:1700 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1652:1658 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1660:1661 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1659:1659 <> R:15
+R1663:1665 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1662:1662 _luna_repair_app_origin <> f:12 var
+R1666:1669 TypeRules <> TMuI constr
+R1671:1671 _luna_repair_app_origin <> R:15 var
+R1678:1684 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1687:1688 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1685:1686 <> Sf:16
+R1690:1692 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1689:1689 _luna_repair_app_origin <> f:12 var
+R1693:1696 TypeRules <> TMuS constr
+R1698:1699 _luna_repair_app_origin <> Sf:16 var
+R1728:1735 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1709:1713 TypeRules <> check ind
+R1720:1722 TypeRules <> TPi constr
+R1726:1726 _luna_repair_app_origin <> B:14 var
+R1724:1724 _luna_repair_app_origin <> A:13 var
+R1717:1717 _luna_repair_app_origin <> f:12 var
+R1715:1715 _luna_repair_app_origin <> G:11 var
+R1736:1742 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1745:1746 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1743:1744 <> IT:17
+R1747:1749 TypeRules <> sub ind
+R1773:1775 TypeRules <> TPi constr
+R1779:1779 _luna_repair_app_origin <> B:14 var
+R1777:1777 _luna_repair_app_origin <> A:13 var
+R1754:1756 TypeRules <> TPi constr
+R1762:1766 TypeRules <> TSort constr
+R1758:1759 _luna_repair_app_origin <> IT:17 var
+R1751:1751 _luna_repair_app_origin <> G:11 var
+R1846:1865 _luna_repair_app_origin <> luna_check_mui_synth thm
+R1870:1873 TypeRules <> TMuI constr
+R1879:1881 TypeRules <> TPi constr
+R1893:1899 Corelib.Init.Logic <> eq_refl constr
+R1846:1865 _luna_repair_app_origin <> luna_check_mui_synth thm
+R1870:1873 TypeRules <> TMuI constr
+R1879:1881 TypeRules <> TPi constr
+R1893:1899 Corelib.Init.Logic <> eq_refl constr
+R1962:1968 TypeRules <> su_conv constr
+R1962:1968 TypeRules <> su_conv constr
+R2027:2046 _luna_repair_app_origin <> luna_check_mus_synth thm
+R2051:2054 TypeRules <> TMuS constr
+R2061:2063 TypeRules <> TPi constr
+R2076:2082 Corelib.Init.Logic <> eq_refl constr
+R2027:2046 _luna_repair_app_origin <> luna_check_mus_synth thm
+R2051:2054 TypeRules <> TMuS constr
+R2061:2063 TypeRules <> TPi constr
+R2076:2082 Corelib.Init.Logic <> eq_refl constr
+R2145:2151 TypeRules <> su_conv constr
+R2145:2151 TypeRules <> su_conv constr
+R2220:2258 _luna_repair_app_origin <> mu_former_checked_erased_pi_origin_luna thm

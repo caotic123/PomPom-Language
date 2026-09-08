@@ -1,0 +1,205 @@
+DIGEST 0f8d804085624d69c98dba0a98d46bba
+F_glm_mueq_sim_close_sort
+R1859:1866 Progress <> <> lib
+R1884:1894 _tmp_epstep <> <> lib
+R1911:1929 _work_mixed_closure <> <> lib
+R1931:1941 _work_cjoin <> <> lib
+R1943:1964 _work_cstep_invariants <> <> lib
+R1981:1990 _luna_mueq <> <> lib
+R1992:2007 _luna_mueq_equiv <> <> lib
+R2024:2037 _glm_qconv_def <> <> lib
+R2054:2076 _glm_mueq_sim_close_rep <> <> lib
+R2093:2113 _glm_cjoin_subst_main <> <> lib
+R2130:2144 _glm_qconv_main <> <> lib
+R2161:2186 _glm_injectivity_close_rep <> <> lib
+R2216:2219 Stdlib.Lists.List <> <> lib
+R2229:2241 Stdlib.Lists.List ListNotations <> mod
+R2243:2251 TypeRules <> <> mod
+def 2510:2517 <> sort_rep
+R2524:2527 TypeRules <> term ind
+binder 2520:2520 <> t:1
+R2535:2537 Corelib.Init.Datatypes <> nat ind
+binder 2531:2531 <> j:2
+R2550:2554 _work_cjoin <> cjoin def
+R2556:2556 _glm_mueq_sim_close_sort <> t:1 var
+R2559:2563 TypeRules <> TSort constr
+R2565:2565 _glm_mueq_sim_close_sort <> j:2 var
+prf 3064:3085 <> rtc_cstep_sort_inv_glm
+binder 3096:3096 <> j:3
+binder 3098:3098 <> w:4
+R3126:3129 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3105:3107 Progress <> rtc ind
+R3125:3125 _glm_mueq_sim_close_sort <> w:4 var
+R3116:3120 TypeRules <> TSort constr
+R3122:3122 _glm_mueq_sim_close_sort <> j:3 var
+R3109:3113 _work_mixed_closure <> cstep ind
+R3131:3133 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3130:3130 _glm_mueq_sim_close_sort <> w:4 var
+R3134:3138 TypeRules <> TSort constr
+R3140:3140 _glm_mueq_sim_close_sort <> j:3 var
+R3156:3172 _work_cstep_invariants <> rtc_cstep_sort_id thm
+R3156:3172 _work_cstep_invariants <> rtc_cstep_sort_id thm
+prf 3347:3364 <> cjoin_sort_inv_glm
+binder 3375:3375 <> t:5
+binder 3377:3377 <> j:6
+R3396:3399 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3384:3391 _glm_mueq_sim_close_sort <> sort_rep def
+R3393:3393 _glm_mueq_sim_close_sort <> t:5 var
+R3395:3395 _glm_mueq_sim_close_sort <> j:6 var
+R3400:3402 Progress <> rtc ind
+R3413:3417 TypeRules <> TSort constr
+R3419:3419 _glm_mueq_sim_close_sort <> j:6 var
+R3410:3410 _glm_mueq_sim_close_sort <> t:5 var
+R3404:3408 _work_mixed_closure <> cstep ind
+R3456:3463 _glm_mueq_sim_close_sort <> sort_rep def
+R3517:3538 _glm_mueq_sim_close_sort <> rtc_cstep_sort_inv_glm thm
+R3517:3538 _glm_mueq_sim_close_sort <> rtc_cstep_sort_inv_glm thm
+R3517:3538 _glm_mueq_sim_close_sort <> rtc_cstep_sort_inv_glm thm
+prf 4064:4086 <> mueq_sort_shape_inv_glm
+binder 4097:4097 <> j:7
+binder 4099:4099 <> x:8
+R4122:4125 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4106:4109 _luna_mueq <> mueq ind
+R4112:4116 TypeRules <> TSort constr
+R4118:4118 _glm_mueq_sim_close_sort <> j:7 var
+R4121:4121 _glm_mueq_sim_close_sort <> x:8 var
+R4127:4129 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4126:4126 _glm_mueq_sim_close_sort <> x:8 var
+R4130:4134 TypeRules <> TSort constr
+R4136:4136 _glm_mueq_sim_close_sort <> j:7 var
+prf 4853:4888 <> mueq_sort_rep_sim_from_cstep_sim_glm
+R4914:4921 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4896:4913 _glm_mueq_sim_close_rep <> mueq_cstep_sim_glm def
+binder 4929:4929 <> t:9
+binder 4931:4931 <> u:10
+binder 4933:4933 <> j:11
+R4944:4947 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4936:4939 _luna_mueq <> mueq ind
+R4941:4941 _glm_mueq_sim_close_sort <> t:9 var
+R4943:4943 _glm_mueq_sim_close_sort <> u:10 var
+R4960:4963 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4948:4955 _glm_mueq_sim_close_sort <> sort_rep def
+R4957:4957 _glm_mueq_sim_close_sort <> t:9 var
+R4959:4959 _glm_mueq_sim_close_sort <> j:11 var
+R4964:4971 _glm_mueq_sim_close_sort <> sort_rep def
+R4973:4973 _glm_mueq_sim_close_sort <> u:10 var
+R4975:4975 _glm_mueq_sim_close_sort <> j:11 var
+R5020:5027 _glm_mueq_sim_close_sort <> sort_rep def
+R5044:5061 _glm_mueq_sim_close_sort <> cjoin_sort_inv_glm thm
+R5044:5061 _glm_mueq_sim_close_sort <> cjoin_sort_inv_glm thm
+R5092:5113 _glm_mueq_sim_close_rep <> mueq_rtc_cstep_sim_glm thm
+R5122:5126 TypeRules <> TSort constr
+R5092:5113 _glm_mueq_sim_close_rep <> mueq_rtc_cstep_sim_glm thm
+R5122:5126 TypeRules <> TSort constr
+R5174:5196 _glm_mueq_sim_close_sort <> mueq_sort_shape_inv_glm thm
+R5174:5196 _glm_mueq_sim_close_sort <> mueq_sort_shape_inv_glm thm
+R5174:5196 _glm_mueq_sim_close_sort <> mueq_sort_shape_inv_glm thm
+R5226:5230 TypeRules <> TSort constr
+R5226:5230 TypeRules <> TSort constr
+R5262:5269 Progress <> rtc_refl constr
+R5262:5269 Progress <> rtc_refl constr
+prf 5367:5399 <> mueq_sort_rep_sim_from_narrow_glm
+R5425:5428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5407:5424 _glm_mueq_sim_close_rep <> mueq_pstep_sim_glm def
+R5448:5455 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5429:5447 _glm_mueq_sim_close_rep <> mueq_epstep_sim_glm def
+binder 5463:5463 <> t:12
+binder 5465:5465 <> u:13
+binder 5467:5467 <> j:14
+R5478:5481 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5470:5473 _luna_mueq <> mueq ind
+R5475:5475 _glm_mueq_sim_close_sort <> t:12 var
+R5477:5477 _glm_mueq_sim_close_sort <> u:13 var
+R5494:5497 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5482:5489 _glm_mueq_sim_close_sort <> sort_rep def
+R5491:5491 _glm_mueq_sim_close_sort <> t:12 var
+R5493:5493 _glm_mueq_sim_close_sort <> j:14 var
+R5498:5505 _glm_mueq_sim_close_sort <> sort_rep def
+R5507:5507 _glm_mueq_sim_close_sort <> u:13 var
+R5509:5509 _glm_mueq_sim_close_sort <> j:14 var
+R5543:5578 _glm_mueq_sim_close_sort <> mueq_sort_rep_sim_from_cstep_sim_glm thm
+R5543:5578 _glm_mueq_sim_close_sort <> mueq_sort_rep_sim_from_cstep_sim_glm thm
+R5589:5618 _glm_mueq_sim_close_rep <> mueq_cstep_sim_glm_from_narrow thm
+R5589:5618 _glm_mueq_sim_close_rep <> mueq_cstep_sim_glm_from_narrow thm
+prf 5889:5910 <> qlink_sort_rep_sim_glm
+R5932:5939 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5914:5931 _glm_mueq_sim_close_rep <> mueq_cstep_sim_glm def
+binder 5947:5947 <> t:15
+binder 5949:5949 <> u:16
+binder 5951:5951 <> j:17
+R5963:5966 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5954:5958 _glm_qconv_def <> qlink def
+R5960:5960 _glm_mueq_sim_close_sort <> t:15 var
+R5962:5962 _glm_mueq_sim_close_sort <> u:16 var
+R5979:5982 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5967:5974 _glm_mueq_sim_close_sort <> sort_rep def
+R5976:5976 _glm_mueq_sim_close_sort <> t:15 var
+R5978:5978 _glm_mueq_sim_close_sort <> j:17 var
+R5983:5990 _glm_mueq_sim_close_sort <> sort_rep def
+R5992:5992 _glm_mueq_sim_close_sort <> u:16 var
+R5994:5994 _glm_mueq_sim_close_sort <> j:17 var
+R6147:6154 _glm_mueq_sim_close_sort <> sort_rep def
+R6173:6183 _work_cjoin <> cjoin_trans thm
+R6193:6201 _work_cjoin <> cjoin_sym thm
+R6173:6183 _work_cjoin <> cjoin_trans thm
+R6193:6201 _work_cjoin <> cjoin_sym thm
+R6319:6354 _glm_mueq_sim_close_sort <> mueq_sort_rep_sim_from_cstep_sim_glm thm
+R6319:6354 _glm_mueq_sim_close_sort <> mueq_sort_rep_sim_from_cstep_sim_glm thm
+prf 6388:6409 <> qconv_sort_rep_sim_glm
+R6431:6438 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6413:6430 _glm_mueq_sim_close_rep <> mueq_cstep_sim_glm def
+binder 6446:6446 <> t:18
+binder 6448:6448 <> u:19
+R6460:6463 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6451:6455 _glm_qconv_def <> qconv def
+R6457:6457 _glm_mueq_sim_close_sort <> t:18 var
+R6459:6459 _glm_mueq_sim_close_sort <> u:19 var
+binder 6471:6471 <> j:20
+R6486:6489 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6474:6481 _glm_mueq_sim_close_sort <> sort_rep def
+R6483:6483 _glm_mueq_sim_close_sort <> t:18 var
+R6485:6485 _glm_mueq_sim_close_sort <> j:20 var
+R6490:6497 _glm_mueq_sim_close_sort <> sort_rep def
+R6499:6499 _glm_mueq_sim_close_sort <> u:19 var
+R6501:6501 _glm_mueq_sim_close_sort <> j:20 var
+R6620:6641 _glm_mueq_sim_close_sort <> qlink_sort_rep_sim_glm thm
+R6620:6641 _glm_mueq_sim_close_sort <> qlink_sort_rep_sim_glm thm
+prf 7242:7282 <> conv_subst_sort_target_from_cstep_sim_glm
+R7308:7315 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7290:7307 _glm_mueq_sim_close_rep <> mueq_cstep_sim_glm def
+binder 7323:7323 <> B:21
+binder 7325:7325 <> j:22
+R7344:7351 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7328:7331 TypeRules <> conv ind
+R7336:7340 TypeRules <> TSort constr
+R7342:7342 _glm_mueq_sim_close_sort <> j:22 var
+R7333:7333 _glm_mueq_sim_close_sort <> B:21 var
+binder 7359:7359 <> a:23
+binder 7361:7361 <> k:24
+R7364:7367 TypeRules <> conv ind
+R7384:7388 TypeRules <> TSort constr
+R7390:7390 _glm_mueq_sim_close_sort <> j:22 var
+R7370:7374 TypeRules <> subst def
+R7380:7380 _glm_mueq_sim_close_sort <> B:21 var
+R7378:7378 _glm_mueq_sim_close_sort <> k:24 var
+R7376:7376 _glm_mueq_sim_close_sort <> a:23 var
+R7446:7453 _glm_mueq_sim_close_sort <> sort_rep def
+R7446:7453 _glm_mueq_sim_close_sort <> sort_rep def
+R7472:7493 _glm_mueq_sim_close_sort <> qconv_sort_rep_sim_glm thm
+R7500:7504 TypeRules <> TSort constr
+R7472:7493 _glm_mueq_sim_close_sort <> qconv_sort_rep_sim_glm thm
+R7500:7504 TypeRules <> TSort constr
+R7525:7533 _glm_qconv_def <> qconv_sym thm
+R7525:7533 _glm_qconv_def <> qconv_sym thm
+R7542:7555 _glm_qconv_main <> conv_qconv_glm thm
+R7542:7555 _glm_qconv_main <> conv_qconv_glm thm
+R7583:7592 _work_cjoin <> cjoin_refl thm
+R7583:7592 _work_cjoin <> cjoin_refl thm
+R7611:7630 _glm_cjoin_subst_main <> cjoin_subst_sort_glm thm
+R7611:7630 _glm_cjoin_subst_main <> cjoin_subst_sort_glm thm
+R7663:7672 _glm_injectivity_close_rep <> cjoin_conv thm
+R7663:7672 _glm_injectivity_close_rep <> cjoin_conv thm
+R7955:7990 _glm_mueq_sim_close_sort <> mueq_sort_rep_sim_from_cstep_sim_glm thm
+R8011:8043 _glm_mueq_sim_close_sort <> mueq_sort_rep_sim_from_narrow_glm thm
+R8064:8085 _glm_mueq_sim_close_sort <> qconv_sort_rep_sim_glm thm
+R8106:8146 _glm_mueq_sim_close_sort <> conv_subst_sort_target_from_cstep_sim_glm thm
