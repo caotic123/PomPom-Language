@@ -1,0 +1,148 @@
+\newpage
+\sectiontitle{11}{Lists, nonempty lists, and constructor reuse}
+Throughout this example, $\Gamma\vdash A:\Set_0$ and $I=\one$.
+The names $\op{nil},\op{cons},\op{fork}$ are literal constructor identities.
+\[
+\begin{aligned}
+ N&:=\code{\one},&
+ K_A&:=\code{\Sigma}\,A\,(\lambda\_.\,\code{\op{var}}\,\unit),&
+ B&:=\code{\op{var}}\,\unit\dprod\code{\op{var}}\,\unit,\\
+ r_L&:=[(\op{nil},N),(\op{cons},K_A)],&
+ r_U&:=[(\op{cons},K_A)],\\
+ r_P&:=[(\op{nil},\code{\bot}),(\op{cons},K_A)],&
+ r_T&:=[(\op{nil},N),(\op{cons},K_A),(\op{fork},B)].
+\end{aligned}
+\]
+\[
+\begin{aligned}
+ L_A&:=\lambda i:\one.\,\rows{r_L},&
+ U_A&:=\lambda i:\one.\,\rows{r_U},\\
+ P_A&:=\lambda i:\one.\,\rows{r_P},&
+ T_A&:=\lambda i:\one.\,\rows{r_T},\\
+ \op{List}\,A&:=C_{L_A,L_A}(\unit),&
+ \op{NonEmpty}\,A&:=C_{U_A,L_A}(\unit),\\
+ \op{Padded}\,A&:=C_{P_A,L_A}(\unit),&
+ \op{Tree}\,A&:=C_{T_A,T_A}(\unit).
+\end{aligned}
+\]
+Surface forms expose the recursive parameter:
+\[
+\begin{aligned}
+ L_A&=\{R::\op{nil}:\one,\ \op{cons}:A\times R\},\\
+ U_A&=\{R::\op{cons}:A\times R\},\\
+ T_A&=\{R::\op{nil}:\one,\ \op{cons}:A\times R,\ \op{fork}:R\times R\},\\
+ \op{List}\,A&=L_A(L_A),\qquad
+ \op{NonEmpty}\,A=U_A(L_A),\qquad
+ \op{Tree}\,A=T_A(T_A).
+\end{aligned}
+\]
+
+\textbf{Constructor-rule instantiations.}
+\[
+\begin{array}{@{}llll@{}}
+\toprule
+\text{Expected type}&\text{Identity}&\text{Position}&\text{Payload type}\\
+\midrule
+\op{List}\,A&\op{nil}&0&\one\\
+\op{List}\,A&\op{cons}&\op{s}\,0&A\times\op{List}\,A\\
+\op{NonEmpty}\,A&\op{cons}&0&A\times\op{List}\,A\\
+\op{Tree}\,A&\op{cons}&\op{s}\,0&A\times\op{Tree}\,A\\
+\op{Tree}\,A&\op{fork}&\op{s}(\op{s}\,0)&\op{Tree}\,A\times\op{Tree}\,A\\
+\bottomrule
+\end{array}
+\]
+\begin{mathpar}
+\ruleof{List-cons}{\jd{\one}{\Set_0}\\\jd{L_A}{\Defs\,\one}\\
+ \jd{\unit}{\one}\\\jd{a}{A}\\\jd{x_s}{\op{List}\,A}}
+ {\jd{\roll(\op{s}\,0,(a,x_s))}{C_{L_A,L_A}(\unit)}}
+\\
+\ruleof{NonEmpty-cons}{\jd{\one}{\Set_0}\\\jd{U_A}{\Defs\,\one}\\
+ \jd{L_A}{\Defs\,\one}\\\jd{\unit}{\one}\\
+ \jd{a}{A}\\\jd{x_s}{\op{List}\,A}}
+ {\jd{\roll(0,(a,x_s))}{C_{U_A,L_A}(\unit)}}
+\end{mathpar}
+These are derived instantiations using interpretation, pair formation,
+and \texttt{ty\_in\_close}; their general typing claims remain unproved.
+\[
+\begin{aligned}
+ \op{nil}&:=\roll(0,\unit):\op{List}\,A,\\
+ \op{cons}_L(a,x_s)&:=\roll(\op{s}\,0,(a,x_s)):\op{List}\,A,\\
+ \op{cons}_U(a,x_s)&:=\roll(0,(a,x_s)):\op{NonEmpty}\,A,\\
+ \op{singleton}\,a&:=\op{cons}_U(a,\op{nil}).
+\end{aligned}
+\]
+
+\newpage
+\sectiontitle{12}{Concrete widening, observers, and induction}
+\textbf{Widening only the outer tag.}
+\[
+\begin{aligned}
+ q_{U,L}
+  &:=\op{dispatch}^{0}_{\one,r_U,X_{L_A},
+           \interp{L_A\,\unit}{X_{L_A}}}([\op{retag}_1]),\\
+ \op{toList}
+  &:=\lambda x.\,\roll\bigl(q_{U,L}(\unroll_{U_A,L_A,\unit}\,x)\bigr),\\
+ q_{U,L}(0,(a,x_s))&\leadsto^*(\op{s}\,0,(a,x_s)),\\
+ \op{toList}(\op{cons}_U(a,x_s))
+  &\leadsto^*\op{cons}_L(a,x_s).
+\end{aligned}
+\]
+\[
+\ruleof{NonEmpty-sub-List}{\jd{\one}{\Set_0}\\
+ \jd{U_A}{\Defs\,\one}\\\jd{L_A}{\Defs\,\one}\\\jd{\unit}{\one}\\
+ \Gamma\vdash U_A\,\unit\preceq^{\one}_{X_{L_A}}L_A\,\unit
+       \rightsquigarrow q_{U,L}}
+ {\subt{\op{NonEmpty}\,A}{\op{List}\,A}{\op{toList}}}
+\]
+\textbf{Bottom-padded and compact rows.}
+For each conversion, $X=X_{L_A}$ and $Y$ is the target layer type.
+\[
+\begin{array}{@{}lll@{}}
+\toprule
+\text{Source row}&\text{Target row}&\text{Handler list}\\
+\midrule
+r_U&r_L&[\op{retag}_1]\\
+r_U&r_P&[\op{retag}_1]\\
+r_P&r_U&[\op{exfalso}^{0}_{\interp{U_A\,\unit}{X_{L_A}}}(\id),
+                 \op{retag}_0]\\
+\bottomrule
+\end{array}
+\]
+Use each dispatcher inside $\lambda x.\,\roll(q(\unroll\,x))$.
+The padded nil branch has witness $\id:\bot\to\bot$.
+
+\textbf{Observers via one-layer elimination.}
+For $r=r_U$ and $X=X_{L_A}$,
+\[
+\begin{aligned}
+ \op{head}
+  &:=\lambda x.\,\op{closeCase}_0\,U_A\,L_A\,\unit\,(\lambda\_.\,A)\,
+    \bigl(\op{dispatch}^{0}_{\one,r,X,A}([\lambda y.\,\op{fst}\,y])\bigr)\,x,\\
+ \op{tail}
+  &:=\lambda x.\,\op{closeCase}_0\,U_A\,L_A\,\unit\,
+    (\lambda\_.\,\op{List}\,A)\,
+    \bigl(\op{dispatch}^{0}_{\one,r,X,\op{List}\,A}
+                  ([\lambda y.\,\op{snd}\,y])\bigr)\,x,\\
+ \op{head}(\op{singleton}\,a)&\leadsto^*a,\qquad
+ \op{tail}(\op{singleton}\,a)\leadsto^*\op{nil}.
+\end{aligned}
+\]
+\textbf{Instantiating the induction hypotheses.}
+Let $P:\op{CloseMot}_{\one}(L_A)$ and
+$s:\op{CloseStep}_{\one}(L_A,P)$. Put
+$h:=\lambda j\,y.\,\op{closeInd}\,L_A\,P\,s\,L_A\,j\,y$.
+\[
+\begin{aligned}
+ \allh\,(L_A\,\unit)\,X_{L_A}\,(0,\unit)\,P^{L_A}
+    &\leadsto^*\one,\\
+ \allh\,(L_A\,\unit)\,X_{L_A}\,(\op{s}\,0,(a,x_s))\,P^{L_A}
+    &\leadsto^*P\,L_A\,\unit\,x_s,\\
+ \allh\,(U_A\,\unit)\,X_{L_A}\,(0,(a,x_s))\,P^{L_A}
+    &\leadsto^*P\,L_A\,\unit\,x_s,\\
+ \op{closeInd}\,L_A\,P\,s\,U_A\,\unit\,(\op{cons}_U(a,x_s))
+    &\leadsto^*s\,U_A\,\unit\,(0,(a,x_s))\,(h\,\unit\,x_s).
+\end{aligned}
+\]
+The nonempty result uses $P\,U_A$, while the tail hypothesis uses $P\,L_A$.
+Self-closing $U_A(U_A)$ instead demands a tail in $U_A(U_A)$; its
+uninhabitedness is a separate conjecture.

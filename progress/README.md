@@ -1,4 +1,22 @@
-# Coq metatheory
+# Rocq specifications
+
+## Revised open-signature calculus
+
+The new version of [type-rules.md](type-rules.md) is exported by
+[OpenSignatures.v](OpenSignatures.v). It includes the `close F G` rules,
+reusable constructor schemes, explicit coercion elaboration, and concrete
+list examples. Its 47 metatheory statements are unproved conjectures; ten
+closed computation checks are proved independently of them.
+
+```sh
+make -C progress open-signatures
+make -C progress audit-open-signatures
+```
+
+See [OpenSignatures.md](OpenSignatures.md) for the module map, source-language
+boundary, and theorem status.
+
+## Earlier signature-pair calculus
 
 The formalization in this directory is Rocq/Coq. `TypeRulesCore.v` contains
 the language, typing, conversion, subtyping, value, and `Bot` definitions.

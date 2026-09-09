@@ -1,0 +1,301 @@
+\newpage
+\sectiontitle{6}{Rows, open signatures, and generated handlers}
+\[
+\begin{aligned}
+ r&=[(\ell_0,D_0),\ldots,(\ell_{n-1},D_{n-1})],&
+ \op{names}(r)&=[\ell_0,\ldots,\ell_{n-1}],\\
+ E_r&=[\op{tag}(\ell_0),\ldots,\op{tag}(\ell_{n-1})],&
+ \op{tuple}([])&=\unit,\\
+ \op{tuple}(t::t_s)&=(t,\op{tuple}(t_s)),&
+ d_r&=\op{tuple}([D_0,\ldots,D_{n-1}]),\\
+ p_r&:=\lambda c.\,\op{switch}_1\,E_r\,(\lambda\_.\,\op{IDesc}\,I)\,d_r\,c,&
+ \rows{r}&:=\code{\sigma}\,E_r\,p_r.
+\end{aligned}
+\]
+Rows are finite lists of literal identities and core description terms.
+\[
+\begin{aligned}
+ \rowok{I}{r}\quad:\!\Longleftrightarrow\quad&
+ (\jd{I}{\Set_0})\ \land\ \op{NoDup}(\op{names}(r))\\
+ &{}\land\ \forall(\ell,D)\in r.\ \jd{D}{\op{IDesc}\,I}.
+\end{aligned}
+\]
+\[
+\ruleof{view_rows}{\rowok{I}{r}\\\jd{D}{\op{IDesc}\,I}\\D\equiv\rows{r}}
+ {\view{D}{r}}
+\]
+\textbf{Open signature assembly.}
+\[
+ \op{signature}_I(r):=\lambda i.\,\rows{r_i},\qquad
+ r_i\text{ is scoped in }\Gamma,i:I.
+\]
+\[
+\ruleof{signature_typing}{\jd{I}{\Set_0}\\
+ \op{RowOK}_{\Gamma,i:I}(I,r_i)}
+ {\jd{\lambda i.\,\rows{r_i}}{\Defs\,I}}
+\]
+This derived statement is unproved. Surface $\{R::\op{branches}\,R\}$
+uses positive slots: $R\,j$ becomes $\code{\op{var}}\,j$.
+The Rocq relation starts with those translated schemes.
+
+\textbf{Dispatcher and branch handlers (core terms).}
+\[
+\begin{aligned}
+ M_{I,r,X,Y}&:=\lambda c.\,\interp{p_r\,c}{X}\to Y,\\
+ \op{dispatch}^{k}_{I,r,X,Y}(h_s)
+ &:=\lambda z.\,
+   \bigl(\op{switch}_k\,E_r\,M_{I,r,X,Y}\,
+       (\op{tuple}(h_s))\,(\op{fst}\,z)\bigr)(\op{snd}\,z),\\
+ \op{retag}_m&:=\lambda x_s.\,(\pos{m},x_s),\\
+ \op{exfalso}^{k}_{Y}(d)&:=\lambda x_s.\,\abort_k\,Y\,(d\,x_s).
+\end{aligned}
+\]
+$X$ is the recursive family; $Y$ is the handler result type.
+The switch motive depends on the source tag.
+
+\textbf{Row handler relation.}
+$\rh{X}{Y}{r'}{r}{h_s}$ aligns source $r$ with target $r'$.
+\begin{mathpar}
+\ruleof{rh_nil}{}{\rh{X}{Y}{r'}{[]}{[]}}
+\\
+\ruleof{rh_live}{r'[m]=(\ell,D')\\
+ \interp{D}{X}\equiv\interp{D'}{X}\\
+ \rh{X}{Y}{r'}{r}{h_s}}
+ {\rh{X}{Y}{r'}{(\ell,D)::r}{\op{retag}_m::h_s}}
+\\
+\ruleof{rh_dead}{\dead{D}{X}{d}\\\rh{X}{Y}{r'}{r}{h_s}}
+ {\rh{X}{Y}{r'}{(\ell,D)::r}{\op{exfalso}^{0}_{Y}(d)::h_s}}
+\end{mathpar}
+A live handler preserves the payload and translates the local tag.
+A dead handler requires no occurrence of $\ell$ in $r'$.
+Row and endpoint formation checks are supplied by \texttt{ds\_rows} below.
+
+\newpage
+\sectiontitle{7}{Certified empty descriptions and description coercions}
+$\dead{D}{X}{d}$ generates a witness
+$d:\interp{D}{X}\to\bot$.
+\begin{mathpar}
+\ruleof{dead_bot}{\jd{I}{\Set_0}\\\jd{D}{\op{IDesc}\,I}\\
+ \jd{X}{I\to\Set_0}\\D\equiv\code{\bot}}
+ {\dead{D}{X}{\id}}
+\\
+\ruleof{dead_nil}{\jd{I}{\Set_0}\\\jd{D}{\op{IDesc}\,I}\\
+ \jd{X}{I\to\Set_0}\\D\equiv\code{\sigma}\,[]\,p}
+ {\dead{D}{X}{\lambda z.\,\op{fst}\,z}}
+\\
+\ruleof{dead_left}{\jd{I}{\Set_0}\\\jd{D}{\op{IDesc}\,I}\\
+ \jd{X}{I\to\Set_0}\\D\equiv D_1\dprod D_2\\\dead{D_1}{X}{d}}
+ {\dead{D}{X}{\lambda z.\,d(\op{fst}\,z)}}
+\\
+\ruleof{dead_right}{\jd{I}{\Set_0}\\\jd{D}{\op{IDesc}\,I}\\
+ \jd{X}{I\to\Set_0}\\D\equiv D_1\dprod D_2\\\dead{D_2}{X}{d}}
+ {\dead{D}{X}{\lambda z.\,d(\op{snd}\,z)}}
+\\
+\ruleof{dead_choice}{\jd{I}{\Set_0}\\\jd{D}{\op{IDesc}\,I}\\
+ \jd{X}{I\to\Set_0}\\\view{D}{r}\\\dr{r}{X}{h_s}}
+ {\dead{D}{X}{\op{dispatch}^{0}_{I,r,X,\bot}(h_s)}}
+\\
+\ruleof{dead_provided}{\jd{I}{\Set_0}\\\jd{D}{\op{IDesc}\,I}\\
+ \jd{X}{I\to\Set_0}\\\jd{d}{\interp{D}{X}\to\bot}}
+ {\dead{D}{X}{d}}
+\\
+\ruleof{dr_nil}{}{\dr{[]}{X}{[]}}
+\and
+\ruleof{dr_cons}{\dead{D}{X}{d}\\\dr{r}{X}{d_s}}
+ {\dr{(\ell,D)::r}{X}{d::d_s}}
+\end{mathpar}
+An explicit empty-payload witness may be checked; non-reduction is not
+an emptiness test.
+
+\textbf{Description coercions.}
+$\dsub{D}{D'}{X}{q}$ generates
+$q:\interp{D}{X}\to\interp{D'}{X}$.
+\begin{mathpar}
+\ruleof{ds_conv}{\jd{I}{\Set_0}\\
+ \jd{D}{\op{IDesc}\,I}\\\jd{D'}{\op{IDesc}\,I}\\
+ \jd{X}{I\to\Set_0}\\D\equiv D'}
+ {\dsub{D}{D'}{X}{\id}}
+\\
+\ruleof{ds_dead}{\dead{D}{X}{d}\\
+ \jd{I}{\Set_0}\\\jd{D'}{\op{IDesc}\,I}\\\jd{X}{I\to\Set_0}}
+ {\dsub{D}{D'}{X}{\op{exfalso}^{0}_{\interp{D'}{X}}(d)}}
+\\
+\ruleof{ds_rows}{\jd{I}{\Set_0}\\
+ \jd{D}{\op{IDesc}\,I}\\\jd{D'}{\op{IDesc}\,I}\\\jd{X}{I\to\Set_0}\\
+ \view{D}{r}\\\view{D'}{r'}\\
+ \rh{X}{\interp{D'}{X}}{r'}{r}{h_s}}
+ {\dsub{D}{D'}{X}{\op{dispatch}^{0}_{I,r,X,\interp{D'}{X}}(h_s)}}
+\end{mathpar}
+
+\newpage
+\sectiontitle{8}{Type coercions}
+Outer-constructor restriction is motivated by
+\cite[Section~2]{campos-constructor-subsets}; these coercion rules are the revision.
+$\subt{A}{B}{c}$ generates a core function $c:A\to B$.
+\begin{mathpar}
+\ruleof{su_conv}{\jd{A}{\Set_j}\\\jd{B}{\Set_k}\\A\equiv B}
+ {\subt{A}{B}{\id}}
+\and
+\ruleof{su_trans}{\subt{A}{B}{c}\\\subt{B}{C}{d}}
+ {\subt{A}{C}{\lambda x.\,d(c\,x)}}
+\\
+\ruleof{su_bottom}{\jd{A}{\Set_k}}
+ {\subt{\bot}{A}{\lambda z.\,\abort_k\,A\,z}}
+\\
+\ruleof{su_pi}{\jd{\Pi a:A.\,B}{\Set_j}\\
+ \jd{\Pi x:A'.\,B'}{\Set_k}\\
+ \subt{A'}{A}{c}\\
+ \Gamma,x:A'\vdash B[c\,x/a]\sqsubseteq B'\rightsquigarrow d}
+ {\subt{(\Pi a:A.\,B)}{(\Pi x:A'.\,B')}{\lambda f\,x.\,d(f(c\,x))}}
+\\
+\ruleof{su_close}{\jd{I}{\Set_0}\\
+ \jd{F}{\Defs\,I}\\\jd{H}{\Defs\,I}\\\jd{G}{\Defs\,I}\\\jd{i}{I}\\
+ \dsub{F\,i}{H\,i}{\cl{G}{G}}{q}}
+ {\subt{C_{F,G}(i)}{C_{H,G}(i)}
+  {\lambda x.\,\roll\bigl(q(\unroll_{F,G,i}\,x)\bigr)}}
+\end{mathpar}
+Repeated identical formation premises have been combined.
+The recursive definition is the same $G$ on both sides of \texttt{su\_close}.
+
+\textbf{Dependent-function instantiation.}
+For element type $S$, instantiate \texttt{su\_pi} as follows:
+\[
+\begin{gathered}
+ \jd{S}{\Set_0},\qquad
+ \jd{\Pi a:\op{List}\,S.\,B(a)}{\Set_j},\qquad
+ \jd{\Pi x:\op{NonEmpty}\,S.\,B'(x)}{\Set_k},\\
+ \subt{\op{NonEmpty}\,S}{\op{List}\,S}{\op{toList}},\\
+ \Gamma,x:\op{NonEmpty}\,S
+   \vdash B(\op{toList}\,x)\sqsubseteq B'(x)\rightsquigarrow d_x,\\
+ (\lambda f\,x.\,d_x(f(\op{toList}\,x))):
+   (\Pi a:\op{List}\,S.\,B(a))\to
+   (\Pi x:\op{NonEmpty}\,S.\,B'(x)).
+\end{gathered}
+\]
+The source codomain is $B(\op{toList}\,x)$, not $B(x)$.
+
+\textbf{Rocq binder instantiation.}
+For de Bruijn terms, $\uparrow^m_c t$ raises indices at cutoff $c$ by $m$;
+$[u/0]t$ substitutes for index $0$.
+\[
+\begin{aligned}
+ \op{coercedCodomain}(c,B)
+   &:=[\,(\uparrow^1_0 c)\,0/0\,](\uparrow^1_1 B),\\
+ \op{piCoercion}(c,d)
+   &:=\lambda.\lambda.\,
+       (\uparrow^1_1 d)\bigl(1\,((\uparrow^2_0 c)\,0)\bigr).
+\end{aligned}
+\]
+The lifted $d$ remains under the new argument binder; the function binder
+is inserted below it. For outer-context variable $c=0$ and $B=1\,0$:
+\[
+ \op{coercedCodomain}(0,1\,0)=1\,(1\,0).
+\]
+
+\newpage
+\sectiontitle{9}{Source synthesis and checking}
+$\synth{e}{A}{t}$ synthesizes $A$ and generates $t$;
+$\checkt{e}{A}{t}$ checks against $A$ and generates $t$.
+\begin{mathpar}
+\ruleof{es_var}{\wf\\x:A\in\Gamma}{\synth{x}{A}{x}}
+\and
+\ruleof{es_ann}{\jd{A}{\Set_k}\\\checkt{e}{A}{t}}
+ {\synth{(e:A)}{A}{t}}
+\\
+\ruleof{es_app}{\jd{\Pi x:A.\,B}{\Set_k}\\
+ \synth{f}{\Pi x:A.\,B}{t}\\\checkt{a}{A}{u}}
+ {\synth{f\,a}{B[u/x]}{t\,u}}
+\\
+\ruleof{ec_lam}{\jd{\Pi x:A.\,B}{\Set_k}\\
+ \Gamma,x:A\vdash e\Leftarrow B\rightsquigarrow t}
+ {\checkt{\lambda x.\,e}{\Pi x:A.\,B}{\lambda x.\,t}}
+\\
+\ruleof{ec_pair}{\jd{\Sigma x:A.\,B}{\Set_k}\\
+ \checkt{e}{A}{t}\\\checkt{f}{B[t/x]}{u}}
+ {\checkt{(e,f)}{\Sigma x:A.\,B}{(t,u)}}
+\\
+\ruleof{ec_core}{\jd{t}{A}}{\checkt{\op{core}(t)}{A}{t}}
+\\
+\ruleof{ec_conversion}{\synth{e}{A}{t}\\\jd{B}{\Set_k}\\A\equiv B}
+ {\checkt{e}{B}{t}}
+\\
+\ruleof{ec_target_conversion}{\checkt{e}{A}{t}\\\jd{B}{\Set_k}\\A\equiv B}
+ {\checkt{e}{B}{t}}
+\\
+\ruleof{ec_subsumption}{\synth{e}{A}{t}\\\subt{A}{B}{c}}
+ {\checkt{e}{B}{c\,t}}
+\\
+\ruleof{es_signature}{\jd{I}{\Set_0}\\
+ \op{RowOK}_{\Gamma,i:I}(I,r_i)}
+ {\synth{\op{signature}\ I\ r}{\Defs\,I}{\lambda i.\,\rows{r_i}}}
+\\
+\ruleof{es_close}{\jd{I}{\Set_0}\\
+ \checkt{F}{\Defs\,I}{f}\\\checkt{G}{\Defs\,I}{g}}
+ {\synth{F(G)}{I\to\Set_0}{\cl{f}{g}}}
+\end{mathpar}
+For unindexed surface datatypes, the unit application is inserted:
+$F(G)$ abbreviates $(\cl{f}{g})\,\unit$.
+An embedded core term synthesizes only through an annotation.
+These are relations, not a deterministic inference algorithm.
+
+\newpage
+\sectiontitle{10}{Named constructors and exhaustive cases}
+\[
+\ruleof{ec_constructor}{\jd{I}{\Set_0}\\\jd{F}{\Defs\,I}\\
+ \jd{G}{\Defs\,I}\\\jd{i}{I}\\\view{F\,i}{r}\\
+ r[n]=(\ell,D)\\\checkt{e}{\interp{D}{X_G}}{x_s}}
+ {\checkt{\ell(e)}{C_{F,G}(i)}{\roll(\pos{n},x_s)}}
+\]
+The expected type determines the row, local tag, and recursive payload.
+
+\textbf{Clause compilation.}
+Let $b_s$ be a list of clauses $(\ell,y.e)$, with $y$ bound in $e$.
+$\op{names}(b_s)$ is their list of identities.
+$\ecases{X}{Q}{b_s}{r}{h_s}$ compiles one handler for each entry of $r$.
+\begin{mathpar}
+\ruleof{cases_nil}{}{\ecases{X}{Q}{b_s}{[]}{[]}}
+\\
+\ruleof{cases_live}{(\ell,y.e)\in b_s\\
+ \Gamma,y:\interp{D}{X}\vdash e\Leftarrow Q\rightsquigarrow t\\
+ \ecases{X}{Q}{b_s}{r}{h_s}}
+ {\ecases{X}{Q}{b_s}{(\ell,D)::r}{(\lambda y.\,t)::h_s}}
+\\
+\ruleof{cases_dead}{\ell\notin\op{names}(b_s)\\\dead{D}{X}{d}\\
+ \ecases{X}{Q}{b_s}{r}{h_s}}
+ {\ecases{X}{Q}{b_s}{(\ell,D)::r}{\op{exfalso}^{k}_{Q}(d)::h_s}}
+\end{mathpar}
+$Q$ is scoped in $\Gamma$, so $y$ does not occur free in $Q$.
+An omitted clause needs a checked dead witness.
+
+\textbf{Case synthesis.}
+\[
+\ruleof{es_case}{\jd{I}{\Set_0}\\\jd{F}{\Defs\,I}\\\jd{G}{\Defs\,I}\\
+ \jd{i}{I}\\\synth{e}{C_{F,G}(i)}{x}\\\jd{Q}{\Set_k}\\
+ \view{F\,i}{r}\\\op{NoDup}(\op{names}(b_s))\\
+ \forall(\ell,y.e_\ell)\in b_s.\ \ell\in\op{names}(r)\\
+ \ecases{X_G}{Q}{b_s}{r}{h_s}}
+ {\synth{\op{case}_{Q}\ e\ \op{of}\ b_s}{Q}
+   {\op{closeCase}_k\,F\,G\,i\,(\lambda\_.\,Q)\,
+     (\op{dispatch}^{k}_{I,r,X_G,Q}(h_s))\,x}}
+\]
+The row view supplies distinct constructor identities. The two clause
+premises reject duplicate and foreign identities.
+
+\textbf{Single live clause instantiation.}
+For $r=[(\op{cons},K_A)]$, $X=X_{L_A}$, and
+$b_s=[(\op{cons},y.\op{core}(\op{fst}\,y))]$:
+\[
+\begin{gathered}
+ \interp{K_A}{X_{L_A}}\equiv A\times\op{List}\,A,\qquad
+ \Gamma,y:A\times\op{List}\,A\vdash\op{fst}\,y:A,\\
+ \ecases{X_{L_A}}{A}{b_s}{[(\op{cons},K_A)]}
+       {[\lambda y.\,\op{fst}\,y]},\\
+ \op{case}_{A}\ e\ \op{of}\ b_s
+ \rightsquigarrow
+ \op{closeCase}_0\,U_A\,L_A\,\unit\,(\lambda\_.\,A)\,
+   \bigl(\op{dispatch}^{0}_{\one,r,X_{L_A},A}
+      ([\lambda y.\,\op{fst}\,y])\bigr)\,x.
+\end{gathered}
+\]
+Here $e$ synthesizes $\op{NonEmpty}\,A$ and generates $x$;
+$L_A,U_A,K_A$ are defined next.

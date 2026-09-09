@@ -1,0 +1,60 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[margin=19mm]{geometry}
+\usepackage{amsmath,amssymb,stmaryrd,mathpartir,booktabs,array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks,linkcolor=MidnightBlue,citecolor=MidnightBlue,
+  urlcolor=MidnightBlue]{hyperref}
+\hypersetup{pdftitle={PomPom: open signatures and parameterized closure},
+  pdfauthor={PomPom Language}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\newcommand{\Set}{\mathsf{Set}}
+\newcommand{\op}[1]{\mathsf{#1}}
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\unit}{\star}
+\newcommand{\code}[1]{{}^{\prime}\!#1}
+\newcommand{\dprod}{\mathbin{\code{\times}}}
+\newcommand{\interp}[2]{\llbracket #1\rrbracket\,#2}
+\newcommand{\Defs}{\op{Def}}
+\newcommand{\cl}[2]{\op{close}\,#1\,#2}
+\newcommand{\roll}{\op{in}}
+\newcommand{\jd}[2]{\Gamma\vdash #1:#2}
+\newcommand{\wf}{\Gamma\ \op{wf}}
+\newcommand{\subt}[3]{\Gamma\vdash #1\sqsubseteq #2\rightsquigarrow #3}
+\newcommand{\dsub}[4]{\Gamma\vdash #1\preceq^{I}_{#3}#2\rightsquigarrow #4}
+\newcommand{\dead}[3]{\Gamma\vdash #1\mathrel{\op{dead}^{I}_{#2}}\rightsquigarrow #3}
+\newcommand{\synth}[3]{\Gamma\vdash #1\Rightarrow #2\rightsquigarrow #3}
+\newcommand{\checkt}[3]{\Gamma\vdash #1\Leftarrow #2\rightsquigarrow #3}
+\newcommand{\ruleof}[3]{\inferrule*[right={\normalfont\ttfamily\footnotesize\detokenize{#1}}]{#2}{#3}}
+\newcommand{\rows}[1]{\langle #1\rangle_I}
+\newcommand{\rowok}[2]{\op{RowOK}_{\Gamma}(#1,#2)}
+\newcommand{\view}[2]{\Gamma\vdash #1\Downarrow_I #2}
+\newcommand{\dr}[3]{\op{DeadRows}_{\Gamma,I}(#1,#2)\rightsquigarrow #3}
+\newcommand{\rh}[5]{\op{Handlers}_{\Gamma,I}(#1,#2;#3;#4)\rightsquigarrow #5}
+\newcommand{\ecases}[5]{\op{Cases}_{\Gamma,k,I}(#1,#2;#3;#4)\rightsquigarrow #5}
+\newcommand{\id}{\op{id}}
+\newcommand{\abort}{\op{abort}}
+\newcommand{\unroll}{\op{unroll}}
+\newcommand{\allh}{\op{iAll}}
+\newcommand{\hyps}{\op{hyps}}
+\newcommand{\Mot}{\op{Mot}}
+\newcommand{\pos}[1]{\overline{#1}}
+\newcommand{\sectiontitle}[2]{\section*{#1.\quad #2}}
+\begin{document}
+\begin{center}
+{\Large\bfseries PomPom: open signatures and parameterized closure}\\[3pt]
+Typing, computation, elaboration, and examples
+\quad{\small 9 September 2026}
+\end{center}
+Named binders replace de Bruijn indices; substitutions are capture avoiding.
+Rule labels are the exact Rocq constructor names. Formation premises are
+displayed. $k,j\in\mathbb N$; $\pos{n}:=\op{s}^{n}0$;
+$\id:=\lambda x.\,x$. A rule with no premises has an empty numerator.
+\input{open-signatures-core}
+\input{open-signatures-elaboration}
+\input{open-signatures-examples}
+\input{open-signatures-theorems}
+\input{open-signatures-references}
+\end{document}

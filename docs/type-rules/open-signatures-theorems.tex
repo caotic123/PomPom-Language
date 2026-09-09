@@ -1,0 +1,86 @@
+\newpage
+\sectiontitle{13}{Selected theorem statements: unproved}
+All 47 statements in \texttt{OpenSignaturesTheorems.v} are
+\texttt{Conjecture}s. The following are representative; the example typing
+and derived-rule claims above are also unproved.
+\[
+\begin{array}{@{}ll@{}}
+ \text{Context validity}&
+ \Gamma\vdash t:A\ \Longrightarrow\ \Gamma\ \op{wf}.\\[4pt]
+ \text{Type correctness}&
+ \Gamma\vdash t:A\ \Longrightarrow\ \exists k.\ \Gamma\vdash A:\Set_k.\\[4pt]
+ \text{Weakening}&
+ \Gamma\vdash t:A,\ \Gamma\vdash B:\Set_k
+ \ \Longrightarrow\ \Gamma,x:B\vdash t:A.\\[4pt]
+ \text{Substitution}&
+ \Gamma,x:A\vdash t:B,\ \Gamma\vdash u:A
+ \ \Longrightarrow\ \Gamma\vdash t[u/x]:B[u/x].\\[4pt]
+ \text{Preservation}&
+ \Gamma\vdash t:A,\ t\to u
+ \ \Longrightarrow\ \Gamma\vdash u:A
+ \quad\text{(also for }\leadsto\text{).}\\[4pt]
+ \text{Progress}&
+ \varnothing\vdash t:A
+ \ \Longrightarrow\ \op{value}(t)\ \lor\ \exists u.\ t\to u.\\[4pt]
+ \text{Normalization}&
+ \Gamma\vdash t:A\ \Longrightarrow\ t\text{ is strongly normalizing for }\leadsto.\\[4pt]
+ \text{Confluence}&
+ \Gamma\vdash t:A,\ t\leadsto^*u,\ t\leadsto^*v\\
+ &\hspace{6mm}\Longrightarrow\ \exists w.\ u\leadsto^*w\land v\leadsto^*w.\\[4pt]
+ \text{Consistency}&
+ \neg\exists t.\ \varnothing\vdash t:\bot.\\[4pt]
+ \text{Dead soundness}&
+ \dead{D}{X}{d}\ \Longrightarrow\ \Gamma\vdash d:\interp{D}{X}\to\bot.\\[4pt]
+ \text{Description soundness}&
+ \dsub{D}{D'}{X}{q}\ \Longrightarrow\
+ \Gamma\vdash q:\interp{D}{X}\to\interp{D'}{X}.\\[4pt]
+ \text{Coercion soundness}&
+ \subt{A}{B}{c}\ \Longrightarrow\ \Gamma\vdash c:A\to B.\\[4pt]
+ \text{Synthesis soundness}&
+ \synth{e}{A}{t}\ \Longrightarrow\ \Gamma\vdash t:A.\\[4pt]
+ \text{Checking soundness}&
+ \checkt{e}{A}{t}\ \Longrightarrow\ \Gamma\vdash t:A.\\[4pt]
+ \text{Coercion coherence}&
+ \subt{A}{B}{c},\ \subt{A}{B}{d}
+ \ \Longrightarrow\ c\approx_{A\to B}d.\\[4pt]
+ \text{Checking coherence}&
+ \checkt{e}{A}{t},\ \checkt{e}{A}{u}
+ \ \Longrightarrow\ t\approx_A u.\\[4pt]
+ \text{Roll/unroll}&
+ \Gamma\vdash x:C_{F,G}(i)
+ \ \Longrightarrow\ \roll(\unroll_{F,G,i}\,x)\approx_{C_{F,G}(i)}x.
+\end{array}
+\]
+The last statement additionally requires
+$\Gamma\vdash I:\Set_0$, $F,G:\Defs\,I$, and $i:I$.
+Weakening uses a fresh $x$.
+$\approx_A$ quantifies over typed closing substitutions and closed Boolean
+observations. It is not definitional equality.
+\[
+\begin{gathered}
+ \Gamma\vdash A:\Set_0
+ \ \Longrightarrow\
+ \subt{\op{NonEmpty}\,A}{\op{List}\,A}{\op{toList}},\\
+ \neg\exists c.\ \varnothing\vdash c:
+       \Pi A:\Set_0.\,\op{List}\,A\to\op{NonEmpty}\,A,\\
+ \varnothing\vdash A:\Set_0
+ \ \Longrightarrow\
+ \neg\exists x.\ \varnothing\vdash x:C_{U_A,U_A}(\unit).
+\end{gathered}
+\]
+Ten closed computation checks in \texttt{OpenSignaturesExamples.v} are
+proved by reflexivity. They do not prove the general typing claims.
+
+\textbf{Source map.}
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Sections & Rocq source\\
+\midrule
+1--5 & \href{../../progress/OpenSignaturesCore.v}{\texttt{OpenSignaturesCore.v}}\\
+6--10 & \href{../../progress/OpenSignaturesElaboration.v}{\texttt{OpenSignaturesElaboration.v}}\\
+11--12 & \href{../../progress/OpenSignaturesExamples.v}{\texttt{OpenSignaturesExamples.v}}\\
+13 & \href{../../progress/OpenSignaturesTheorems.v}{\texttt{OpenSignaturesTheorems.v}}\\
+\bottomrule
+\end{tabular}
+\end{center}

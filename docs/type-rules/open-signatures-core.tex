@@ -1,0 +1,352 @@
+\sectiontitle{1}{Contexts, universes, dependent functions and pairs}
+Base calculus: \cite[Fig.~1]{dagand-mcbride-2012}.
+\begin{mathpar}
+\ruleof{wf_nil}{}{\varnothing\ \op{wf}}
+\and
+\ruleof{wf_cons}{\wf\\\jd{A}{\Set_k}\\x\notin\op{dom}(\Gamma)}
+ {\Gamma,x:A\ \op{wf}}
+\and
+\ruleof{ty_var}{\wf\\x:A\in\Gamma}{\jd{x}{A}}
+\\
+\ruleof{ty_sort}{\wf}{\jd{\Set_k}{\Set_{k+1}}}
+\and
+\ruleof{ty_cumul}{\jd{t}{\Set_j}\\j\leq k}{\jd{t}{\Set_k}}
+\\
+\ruleof{ty_pi}{\jd{A}{\Set_j}\\\Gamma,x:A\vdash B:\Set_k}
+ {\jd{\Pi x:A.\,B}{\Set_{\max(j,k)}}}
+\and
+\ruleof{ty_sigma}{\jd{A}{\Set_j}\\\Gamma,x:A\vdash B:\Set_k}
+ {\jd{\Sigma x:A.\,B}{\Set_{\max(j,k)}}}
+\\
+\ruleof{ty_lam}{\jd{\Pi x:A.\,B}{\Set_k}\\\Gamma,x:A\vdash b:B}
+ {\jd{\lambda x.\,b}{\Pi x:A.\,B}}
+\\
+\ruleof{ty_app}{\jd{\Pi x:A.\,B}{\Set_k}\\
+ \jd{f}{\Pi x:A.\,B}\\\jd{a}{A}}
+ {\jd{f\,a}{B[a/x]}}
+\\
+\ruleof{ty_pair}{\jd{\Sigma x:A.\,B}{\Set_k}\\
+ \jd{a}{A}\\\jd{b}{B[a/x]}}
+ {\jd{(a,b)}{\Sigma x:A.\,B}}
+\\
+\ruleof{ty_fst}{\jd{\Sigma x:A.\,B}{\Set_k}\\\jd{p}{\Sigma x:A.\,B}}
+ {\jd{\op{fst}\,p}{A}}
+\and
+\ruleof{ty_snd}{\jd{\Sigma x:A.\,B}{\Set_k}\\\jd{p}{\Sigma x:A.\,B}}
+ {\jd{\op{snd}\,p}{B[\op{fst}\,p/x]}}
+\\
+\ruleof{ty_conv}{\jd{t}{A}\\\jd{B}{\Set_k}\\A\equiv B}
+ {\jd{t}{B}}
+\and
+\ruleof{ty_unitT}{\wf}{\jd{\one}{\Set_k}}
+\and
+\ruleof{ty_unit}{\wf}{\jd{\unit}{\one}}
+\end{mathpar}
+
+\textbf{Computation and conversion.}
+Write $\longmapsto$ for a root computation, $\leadsto$ for its compatible
+closure together with $\eta$ contraction, and $\to$ for the operational
+relation in Rocq.
+\[
+\begin{aligned}
+ (\lambda x.\,b)\,a&\longmapsto b[a/x],&
+ \op{fst}(a,b)&\longmapsto a,&
+ \op{snd}(a,b)&\longmapsto b,\\
+ \lambda x.\,f\,x&\leadsto f\quad(x\notin\op{FV}(f)),&
+ (\op{fst}\,p,\op{snd}\,p)&\leadsto p.
+\end{aligned}
+\]
+\[
+\inferrule{t\longmapsto u}{t\leadsto u}
+\qquad
+\inferrule{t\leadsto u}{\mathcal C[t]\leadsto\mathcal C[u]}
+\qquad
+\inferrule{}{t\equiv t}
+\qquad
+\inferrule{t\leadsto u}{t\equiv u}
+\qquad
+\inferrule{t\equiv u}{u\equiv t}
+\qquad
+\inferrule{t\equiv u\\u\equiv v}{t\equiv v}
+\]
+Here $\mathcal C[-]$ ranges over single-hole term contexts, including
+binders. There is no equation unfolding a $\op{close}$ type.
+The remaining root computations appear beside their operators below.
+
+\newpage
+\sectiontitle{2}{Identities, enumerations, branch tuples, and bottom}
+Enumeration universe: \cite[Fig.~2]{dagand-mcbride-2012}.
+\begin{mathpar}
+\ruleof{ty_uid}{\wf}{\jd{\op{UId}}{\Set_0}}
+\and
+\ruleof{ty_tag}{\wf}{\jd{\op{tag}(s)}{\op{UId}}}
+\and
+\ruleof{ty_enumu}{\wf}{\jd{\op{EnumU}}{\Set_0}}
+\\
+\ruleof{ty_nile}{\wf}{\jd{[]}{\op{EnumU}}}
+\and
+\ruleof{ty_conse}{\jd{\ell}{\op{UId}}\\\jd{E}{\op{EnumU}}}
+ {\jd{\ell::E}{\op{EnumU}}}
+\and
+\ruleof{ty_enumt}{\jd{E}{\op{EnumU}}}{\jd{\op{EnumT}\,E}{\Set_0}}
+\\
+\ruleof{ty_zero}{\jd{\ell}{\op{UId}}\\\jd{E}{\op{EnumU}}}
+ {\jd{0}{\op{EnumT}(\ell::E)}}
+\and
+\ruleof{ty_succ}{\jd{\ell}{\op{UId}}\\\jd{E}{\op{EnumU}}\\
+ \jd{n}{\op{EnumT}\,E}}
+ {\jd{\op{s}\,n}{\op{EnumT}(\ell::E)}}
+\\
+\ruleof{ty_epi}{\jd{E}{\op{EnumU}}\\
+ \jd{P}{\op{EnumT}\,E\to\Set_k}}
+ {\jd{\op{EPi}_k\,E\,P}{\Set_k}}
+\\
+\ruleof{ty_switch}{\jd{E}{\op{EnumU}}\\
+ \jd{P}{\op{EnumT}\,E\to\Set_k}\\
+ \jd{b}{\op{EPi}_k\,E\,P}\\\jd{c}{\op{EnumT}\,E}}
+ {\jd{\op{switch}_k\,E\,P\,b\,c}{P\,c}}
+\end{mathpar}
+$s$ is a literal string. Identity expressions $\ell$ and positions $n$
+are distinct core terms.
+\[
+\begin{aligned}
+ \op{EPi}_k\,[]\,P&\longmapsto\one,\\
+ \op{EPi}_k\,(\ell::E)\,P
+   &\longmapsto P\,0\times\op{EPi}_k\,E\,(\lambda n.\,P(\op{s}\,n)),\\
+ \op{switch}_k\,(\ell::E)\,P\,(b,b_s)\,0&\longmapsto b,\\
+ \op{switch}_k\,(\ell::E)\,P\,(b,b_s)\,(\op{s}\,n)
+   &\longmapsto\op{switch}_k\,E\,(\lambda n.\,P(\op{s}\,n))\,b_s\,n.
+\end{aligned}
+\]
+
+\textbf{Derived empty elimination.}
+\[
+ \bot:=\op{EnumT}\,[],\qquad
+ \abort_k\,A\,z:=\op{switch}_k\,[]\,(\lambda\_.\,A)\,\unit\,z.
+\]
+\[
+\ruleof{abort_typing}{\jd{A}{\Set_k}\\\jd{z}{\bot}}
+ {\jd{\abort_k\,A\,z}{A}}
+\qquad
+ \bot:\Set_0,\quad(\Pi A:\Set_k.\,A):\Set_{k+1}.
+\]
+The displayed derived typing statement is unproved in Rocq.
+
+\textbf{Identity at a local position.}
+$\op{At}(E,s,n)$ records the literal identity $s$ at position $n$.
+\begin{mathpar}
+\ruleof{at_here}{}{\op{At}(\op{tag}(s)::E,s,0)}
+\and
+\ruleof{at_there}{\op{At}(E,s,n)}{\op{At}(\ell::E,s,\op{s}\,n)}
+\\
+\ruleof{at_convert}{E\equiv E'\\n\equiv n'\\\op{At}(E,s,n)}
+ {\op{At}(E',s,n')}
+\end{mathpar}
+
+\newpage
+\sectiontitle{3}{Positive descriptions and interpretation}
+Indexed descriptions: \cite[Fig.~4]{dagand-mcbride-2012};
+$\code{\bot}$ is the added code.
+\begin{mathpar}
+\ruleof{ty_idesc}{\jd{I}{\Set_0}}{\jd{\op{IDesc}\,I}{\Set_1}}
+\and
+\ruleof{ty_ivar}{\jd{I}{\Set_0}\\\jd{i}{I}}
+ {\jd{\code{\op{var}}\,i}{\op{IDesc}\,I}}
+\\
+\ruleof{ty_i1}{\jd{I}{\Set_0}}{\jd{\code{\one}}{\op{IDesc}\,I}}
+\and
+\ruleof{ty_ibot}{\jd{I}{\Set_0}}{\jd{\code{\bot}}{\op{IDesc}\,I}}
+\\
+\ruleof{ty_iprod}{\jd{I}{\Set_0}\\
+ \jd{D_1}{\op{IDesc}\,I}\\\jd{D_2}{\op{IDesc}\,I}}
+ {\jd{D_1\dprod D_2}{\op{IDesc}\,I}}
+\\
+\ruleof{ty_ipi}{\jd{I}{\Set_0}\\\jd{S}{\Set_0}\\
+ \jd{T}{S\to\op{IDesc}\,I}}
+ {\jd{\code{\Pi}\,S\,T}{\op{IDesc}\,I}}
+\\
+\ruleof{ty_isig}{\jd{I}{\Set_0}\\\jd{S}{\Set_0}\\
+ \jd{T}{S\to\op{IDesc}\,I}}
+ {\jd{\code{\Sigma}\,S\,T}{\op{IDesc}\,I}}
+\\
+\ruleof{ty_ichoice}{\jd{I}{\Set_0}\\\jd{E}{\op{EnumU}}\\
+ \jd{p}{\op{EnumT}\,E\to\op{IDesc}\,I}}
+ {\jd{\code{\sigma}\,E\,p}{\op{IDesc}\,I}}
+\\
+\ruleof{ty_interp}{\jd{I}{\Set_0}\\
+ \jd{D}{\op{IDesc}\,I}\\\jd{X}{I\to\Set_0}}
+ {\jd{\interp{D}{X}}{\Set_0}}
+\end{mathpar}
+\[
+\begin{aligned}
+ \interp{\code{\op{var}}\,i}{X}&\longmapsto X\,i,&
+ \interp{\code{\one}}{X}&\longmapsto\one,&
+ \interp{\code{\bot}}{X}&\longmapsto\bot,\\
+ \interp{D_1\dprod D_2}{X}
+   &\longmapsto\interp{D_1}{X}\times\interp{D_2}{X},\\
+ \interp{\code{\Pi}\,S\,T}{X}
+   &\longmapsto\Pi s:S.\,\interp{T\,s}{X},\\
+ \interp{\code{\Sigma}\,S\,T}{X}
+   &\longmapsto\Sigma s:S.\,\interp{T\,s}{X},\\
+ \interp{\code{\sigma}\,E\,p}{X}
+   &\longmapsto\Sigma c:\op{EnumT}\,E.\,\interp{p\,c}{X}.
+\end{aligned}
+\]
+\[
+ \Defs\,I:=\Pi i:I.\,\op{IDesc}\,I,\qquad
+ \op{Family}\,I:=I\to\Set_0.
+\]
+\textbf{Instantiations.}
+\[
+\begin{aligned}
+ \interp{\code{\Sigma}\,A\,(\lambda\_.\,\code{\op{var}}\,\unit)}{X}
+   &\leadsto^* A\times X\,\unit,\\
+ \interp{\code{\op{var}}\,\unit\dprod\code{\op{var}}\,\unit}{X}
+   &\leadsto^* X\,\unit\times X\,\unit,\\
+ \interp{\code{\sigma}\,[]\,p}{X}
+   &\longmapsto\Sigma c:\bot.\,\interp{p\,c}{X}.
+\end{aligned}
+\]
+An empty choice has an empty tag; its interpretation is not definitionally
+$\bot$ under these equations.
+
+\newpage
+\sectiontitle{4}{Structural hypotheses and the reference fixed point}
+Generic induction: \cite{chapman-et-al-2010};
+indexed fixed point: \cite[Fig.~4]{dagand-mcbride-2012}.
+\[
+ \Mot_I(X):=(\Sigma i:I.\,X\,i)\to\Set_0,\qquad
+ \op{Rec}_I(X,P):=\Pi i:I.\,\Pi y:X\,i.\,P(i,y).
+\]
+\begin{mathpar}
+\ruleof{ty_iall}{\jd{I}{\Set_0}\\\jd{D}{\op{IDesc}\,I}\\
+ \jd{X}{I\to\Set_0}\\\jd{x_s}{\interp{D}{X}}\\\jd{P}{\Mot_I(X)}}
+ {\jd{\allh\,D\,X\,x_s\,P}{\Set_0}}
+\\
+\ruleof{ty_hyps}{\jd{I}{\Set_0}\\\jd{D}{\op{IDesc}\,I}\\
+ \jd{X}{I\to\Set_0}\\\jd{P}{\Mot_I(X)}\\
+ \jd{h}{\op{Rec}_I(X,P)}\\\jd{x_s}{\interp{D}{X}}}
+ {\jd{\hyps\,D\,X\,P\,h\,x_s}{\allh\,D\,X\,x_s\,P}}
+\end{mathpar}
+For the table only, $\mathcal A_D(x):=\allh\,D\,X\,x\,P$ and
+$\mathcal H_D(x):=\hyps\,D\,X\,P\,h\,x$.
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}llll@{}}
+\toprule
+$D$ & $x$ & $\mathcal A_D(x)\longmapsto$ & $\mathcal H_D(x)\longmapsto$\\
+\midrule
+$\code{\op{var}}\,j$ & $y$ & $P(j,y)$ & $h\,j\,y$\\
+$\code{\one}$ & $\unit$ & $\one$ & $\unit$\\
+$\code{\bot}$ & $z$ & $\one$ & $\unit$\\
+$D_1\dprod D_2$ & $(a,b)$ & $\mathcal A_{D_1}(a)\times\mathcal A_{D_2}(b)$
+ & $(\mathcal H_{D_1}(a),\mathcal H_{D_2}(b))$\\
+$\code{\Pi}\,S\,T$ & $f$ & $\Pi s:S.\,\mathcal A_{T\,s}(f\,s)$
+ & $\lambda s.\,\mathcal H_{T\,s}(f\,s)$\\
+$\code{\Sigma}\,S\,T$ & $(s,x_s)$ & $\mathcal A_{T\,s}(x_s)$
+ & $\mathcal H_{T\,s}(x_s)$\\
+$\code{\sigma}\,E\,p$ & $(c,x_s)$ & $\mathcal A_{p\,c}(x_s)$
+ & $\mathcal H_{p\,c}(x_s)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Reference $\mu^I$, retained as a separate former.}
+\begin{mathpar}
+\ruleof{ty_mui}{\jd{I}{\Set_0}\\\jd{D}{\Defs\,I}}
+ {\jd{\mu^I D}{I\to\Set_0}}
+\\
+\ruleof{ty_in_mui}{\jd{I}{\Set_0}\\\jd{D}{\Defs\,I}\\\jd{i}{I}\\
+ \jd{x_s}{\interp{D\,i}{(\mu^I D)}}}
+ {\jd{\roll\,x_s}{\mu^I D\,i}}
+\end{mathpar}
+\[
+\begin{aligned}
+ \op{MuStep}_I(D,P):={}&
+ \Pi i:I.\,\Pi x_s:\interp{D\,i}{(\mu^I D)}.\\
+ &\allh\,(D\,i)\,(\mu^I D)\,x_s\,P\to P(i,\roll\,x_s).
+\end{aligned}
+\]
+\[
+\ruleof{ty_ind}{\jd{I}{\Set_0}\\\jd{D}{\Defs\,I}\\
+ \jd{P}{\Mot_I(\mu^I D)}\\\jd{s}{\op{MuStep}_I(D,P)}\\
+ \jd{i}{I}\\\jd{x}{\mu^I D\,i}}
+ {\jd{\op{ind}\,D\,P\,s\,i\,x}{P(i,x)}}
+\]
+\[
+\begin{aligned}
+ \op{ind}\,D\,P\,s\,i\,(\roll\,x_s)
+ &\longmapsto s\,i\,x_s\,
+   \bigl(\hyps\,(D\,i)\,(\mu^I D)\,P\,h\,x_s\bigr),\\
+ h&:=\lambda j\,y.\,\op{ind}\,D\,P\,s\,j\,y.
+\end{aligned}
+\]
+
+\newpage
+\sectiontitle{5}{Parameterized closure: formation, cases, and induction}
+\[
+ C_{F,G}(i):=\cl{F}{G}\,i,\qquad
+ X_G:=\cl{G}{G},\qquad
+ L_{F,G}(i):=\interp{F\,i}{X_G}.
+\]
+\begin{mathpar}
+\ruleof{ty_close}{\jd{I}{\Set_0}\\\jd{F}{\Defs\,I}\\\jd{G}{\Defs\,I}}
+ {\jd{\cl{F}{G}}{I\to\Set_0}}
+\\
+\ruleof{ty_in_close}{\jd{I}{\Set_0}\\\jd{F}{\Defs\,I}\\
+ \jd{G}{\Defs\,I}\\\jd{i}{I}\\\jd{x_s}{\interp{F\,i}{(\cl{G}{G})}}}
+ {\jd{\roll\,x_s}{\cl{F}{G}\,i}}
+\\
+\ruleof{ty_close_case}{\jd{I}{\Set_0}\\\jd{F}{\Defs\,I}\\
+ \jd{G}{\Defs\,I}\\\jd{i}{I}\\
+ \jd{Q}{C_{F,G}(i)\to\Set_k}\\
+ \jd{b}{\Pi x_s:\interp{F\,i}{X_G}.\,Q(\roll\,x_s)}\\
+ \jd{x}{C_{F,G}(i)}}
+ {\jd{\op{closeCase}_k\,F\,G\,i\,Q\,b\,x}{Q\,x}}
+\end{mathpar}
+\[
+\begin{aligned}
+ \op{closeCase}_k\,F\,G\,i\,Q\,b\,(\roll\,x_s)&\longmapsto b\,x_s,\\
+ \unroll_{F,G,i}\,x
+ &:=\op{closeCase}_0\,F\,G\,i\,(\lambda\_.\,L_{F,G}(i))\,\id\,x.
+\end{aligned}
+\]
+\[
+\ruleof{unroll_typing}{\jd{I}{\Set_0}\\\jd{F}{\Defs\,I}\\
+ \jd{G}{\Defs\,I}\\\jd{i}{I}\\\jd{x}{C_{F,G}(i)}}
+ {\jd{\unroll_{F,G,i}\,x}{\interp{F\,i}{X_G}}}
+\]
+\[
+ \unroll_{F,G,i}(\roll\,x_s)\leadsto^*x_s.
+\]
+The derived typing statement is unproved. The outer definition $F$ and
+recursive definition $G$ are arbitrary; no row inclusion premise is imposed.
+
+\textbf{Induction motive and method, expanded.}
+\[
+\begin{aligned}
+ \op{CloseMot}_I(G)&:=\Pi H:\Defs\,I.\,\Pi j:I.\,C_{H,G}(j)\to\Set_0,\\
+ P^G&:=\lambda z.\,P\,G\,(\op{fst}\,z)\,(\op{snd}\,z),\\
+ \op{CloseStep}_I(G,P)&:=
+ \Pi H:\Defs\,I.\,\Pi j:I.\,\Pi y_s:\interp{H\,j}{X_G}.\\
+ &\hspace{8mm}\allh\,(H\,j)\,X_G\,y_s\,P^G\to P\,H\,j\,(\roll\,y_s).
+\end{aligned}
+\]
+\[
+\ruleof{ty_close_ind}{\jd{I}{\Set_0}\\\jd{G}{\Defs\,I}\\
+ \jd{P}{\Pi H:\Defs\,I.\,\Pi j:I.\,C_{H,G}(j)\to\Set_0}\\
+ \jd{s}{\op{CloseStep}_I(G,P)}\\
+ \jd{F}{\Defs\,I}\\\jd{i}{I}\\\jd{x}{C_{F,G}(i)}}
+ {\jd{\op{closeInd}\,G\,P\,s\,F\,i\,x}{P\,F\,i\,x}}
+\]
+\[
+\begin{aligned}
+ \op{closeInd}\,G\,P\,s\,F\,i\,(\roll\,x_s)
+ &\longmapsto s\,F\,i\,x_s\,
+       \bigl(\hyps\,(F\,i)\,X_G\,P^G\,h\,x_s\bigr),\\
+ h&:=\lambda j\,y.\,\op{closeInd}\,G\,P\,s\,G\,j\,y.
+\end{aligned}
+\]
+Children use outer definition $G$ and motive $P\,G\,j\,y$.
+Case motives range over $\Set_k$; recursive motives range over $\Set_0$.
+The diagonal $C_{G,G}$ is not judgmentally identified with $\mu^I G$.

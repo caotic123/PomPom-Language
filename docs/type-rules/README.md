@@ -1,5 +1,38 @@
 # PomPom typing rules
 
+## Open signatures and parameterized closure
+
+The current rule reference is
+[open-signatures.pdf](open-signatures.pdf), built from
+[open-signatures.tex](open-signatures.tex) and its included files. It keeps
+prose short while displaying all 82 context, typing, name-resolution, and
+elaboration rules from the revised Rocq modules, with explicit formation
+premises and searchable Rocq rule names. It includes structural computation
+equations, concrete list/nonempty-list/tree instantiations, dependent function
+coercions, and a bibliography. Selected theorem statements are explicitly
+marked unproved, matching the
+[OpenSignatures Rocq specification](../../progress/OpenSignatures.md).
+
+| LaTeX source | Contents |
+| --- | --- |
+| [open-signatures-core.tex](open-signatures-core.tex) | Contexts, universes, Π/Σ, enumerations, descriptions, `iAll`, `hyps`, reference μᴵ, and `close`. |
+| [open-signatures-elaboration.tex](open-signatures-elaboration.tex) | Rows, dead witnesses, row handlers, description/type coercions, source checking and synthesis, constructors, and cases. |
+| [open-signatures-examples.tex](open-signatures-examples.tex) | Lists, nonempty lists, constructor reuse, compact/padded conversions, observers, and instantiated induction hypotheses. |
+| [open-signatures-theorems.tex](open-signatures-theorems.tex) | Selected unproved theorem statements and the source map. |
+| [open-signatures-references.tex](open-signatures-references.tex) | Paper citations and attribution of inherited constructions versus proposed rules. |
+
+Build just this document from the repository root:
+
+```sh
+make -C docs/type-rules open-signatures
+```
+
+The default `make -C docs/type-rules` builds both documents. Both use
+`latexmk` and pdfLaTeX; `make -C docs/type-rules clean` removes auxiliary
+files while retaining the PDFs.
+
+## Earlier signature-pair calculus
+
 Open [type-rules.pdf](type-rules.pdf) for the mathematical presentation, or
 edit [type-rules.tex](type-rules.tex) and its three included `.tex` files.
 
