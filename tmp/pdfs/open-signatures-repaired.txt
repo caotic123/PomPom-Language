@@ -1,0 +1,696 @@
+         Elaborating Constructor Subtyping for Indexed Datatypes
+                         Typing, computation, elaboration, and examples             27 September 2026
+
+Named binders replace de Bruijn indices; substitutions are capture avoiding. Rule labels are the exact Rocq
+constructor names. Formation premises are displayed. k, j ∈ N; n := sn 0; id := λx. x.
+
+
+1.     Contexts, universes, dependent functions and pairs
+Base calculus: [1, Fig. 1].
+                               Γ wf       Γ ⊢ A : Setk    x∈
+                                                           / dom(Γ)                          Γ wf     x:A∈Γ
+                                                                    wf_cons                                 ty_var
+       ∅ wf wf_nil                            Γ, x : A wf                                           Γ⊢x:A
+
+                            Γ wf                                     Γ ⊢ t : Setj     j≤k
+                                        ty_sort                                           ty_cumul
+                      Γ ⊢ Setk : Setk+1                                   Γ ⊢ t : Setk
+
+                                x∈
+                                 / dom(Γ)        Γ ⊢ A : Setj     Γ, x : A ⊢ B : Setk
+                                                                                      ty_pi
+                                              Γ ⊢ Πx : A. B : Setmax(j,k)
+
+                               x∈
+                                / dom(Γ)        Γ ⊢ A : Setj     Γ, x : A ⊢ B : Setk
+                                                                                     ty_sigma
+                                             Γ ⊢ Σx : A. B : Setmax(j,k)
+
+                            x∈
+                             / dom(Γ)          Γ ⊢ Πx : A. B : Setk       Γ, x : A ⊢ b : B
+                                                                                             ty_lam
+                                                Γ ⊢ λx. b : Πx : A. B
+
+                            Γ ⊢ Πx : A. B : Setk     Γ ⊢ f : Πx : A. B            Γ⊢a:A
+                                                                                             ty_app
+                                                Γ ⊢ f a : B[a/x]
+
+                               Γ ⊢ Σx : A. B : Setk      Γ⊢a:A        Γ ⊢ b : B[a/x]
+                                                                                     ty_pair
+                                               Γ ⊢ (a, b) : Σx : A. B
+
+     Γ ⊢ Σx : A. B : Setk       Γ ⊢ p : Σx : A. B                   Γ ⊢ Σx : A. B : Setk     Γ ⊢ p : Σx : A. B
+                                                  ty_fst                                                       ty_snd
+                    Γ ⊢ fst p : A                                             Γ ⊢ snd p : B[fst p/x]
+
+       Γ⊢t:A         Γ ⊢ B : Setk          A≡B                         Γ wf                             Γ wf
+                                                    ty_conv                      ty_unitT                    ty_unit
+                      Γ⊢t:B                                         Γ ⊢ 1 : Setk                       Γ⊢⋆:1
+
+Function cumulativity. Write A ≤u B for the structural universe inclusion universe_le. Its function domains
+are contravariant and its codomains covariant, recursively through nested dependent functions:
+                                                 j≤k                               C ≤u A      B ≤u D
+                                                          ul_sort                                        ul_pi
+             A ≤u A ul_refl                  Setj ≤u Setk                         Πx : A. B ≤u Πx : C. D
+
+     Γ ⊢ f : Πx : A. B        Γ ⊢ Πx : A. B : Setj     Γ ⊢ Πx : C. D : Setk          C ≤u A           B ≤u D
+                                                                                                               ty_cumul_fun
+                                              Γ ⊢ f : Πx : C. D
+Both function types must be well formed; Set0 ̸≡ Set1 . The rule admits f : 1 → Set0 at 1 → Set1 and
+g : Set1 → Set0 at Set0 → Set0 , repairing the eta examples checked in OpenSignaturesEtaRegression.v.
+General preservation remains unproved.
+Computation and conversion. Write 7−→ for a root computation, ⇝ for its compatible closure together with
+η contraction, and → for the operational relation in Rocq.
+                              (λx. b) a 7−→ b[a/x],            fst(a, b) 7−→ a,    snd(a, b) 7−→ b,
+                               λx. f x ⇝ f     (x ∈
+                                                  / FV(f )).
+
+                     t 7−→ u             t⇝u                    t⇝u         t≡u          t≡u   u≡v
+                                                       t≡t
+                      t⇝u             C[t] ⇝ C[u]               t≡u         u≡t             t≡v
+Here C[−] ranges over single-hole term contexts, including binders. There is no equation unfolding a close type.
+The remaining root computations appear beside their operators below.
+
+
+                                                               1
+2.     Identities, enumerations, branch tuples, and bottom
+Enumeration universe: [1, Fig. 2].
+
+               Γ wf                                 Γ wf                                   Γ wf
+                          ty_uid                                ty_tag                                ty_enumu
+           Γ ⊢ UId : Set0                      Γ ⊢ tag(s) : UId                      Γ ⊢ EnumU : Set0
+
+          Γ wf                       Γ ⊢ ℓ : UId     Γ ⊢ E : EnumU                            Γ ⊢ E : EnumU
+                    ty_nile                                        ty_conse                                    ty_enumt
+     Γ ⊢ [] : EnumU                        Γ ⊢ ℓ :: E : EnumU                               Γ ⊢ EnumT E : Set0
+
+     Γ ⊢ ℓ : UId    Γ ⊢ E : EnumU                      Γ ⊢ ℓ : UId       Γ ⊢ E : EnumU       Γ ⊢ n : EnumT E
+                                  ty_zero                                                                    ty_succ
+         Γ ⊢ 0 : EnumT(ℓ :: E)                                          Γ ⊢ s n : EnumT(ℓ :: E)
+
+                                  Γ ⊢ E : EnumU     Γ ⊢ P : EnumT E → Setk
+                                                                           ty_epi
+                                              Γ ⊢ EPik E P : Setk
+
+         Γ ⊢ E : EnumU         Γ ⊢ P : EnumT E → Setk       Γ ⊢ b : EPik E P            Γ ⊢ c : EnumT E
+                                                                                                           ty_switch
+                                          Γ ⊢ switchk E P b c : P c
+
+s is a literal string. Identity expressions ℓ and positions n are distinct core terms.
+
+                                                    EPik [] P 7−→ 1,
+                                             EPik (ℓ :: E) P 7−→ P 0 × EPik E (λn. P (s n)),
+                                 switchk (ℓ :: E) P (b, bs ) 0 7−→ b,
+                              switchk (ℓ :: E) P (b, bs ) (s n) 7−→ switchk E (λn. P (s n)) bs n.
+
+Derived empty elimination.
+
+                                ⊥ := EnumT [],         abortk A z := switchk [] (λ_. A) ⋆ z.
+
+                  Γ ⊢ A : Setk     Γ⊢z:⊥
+                                         abort_typing
+                      Γ ⊢ abortk A z : A                             ⊥ : Set0 ,   (ΠA : Setk . A) : Setk+1 .
+The displayed derived typing statement is proved in Rocq.
+Identity at a local position. At(E, s, n) records the literal identity s at position n.
+
+                                                                            At(E, s, n)
+                                                                                             at_there
+                       At(tag(s) :: E, s, 0) at_here                      At(ℓ :: E, s, s n)
+
+                                      E ≡ E′       n ≡ n′          At(E, s, n)
+                                                                               at_convert
+                                                  At(E ′ , s, n′ )
+
+
+
+
+                                                              2
+3.    Positive descriptions and interpretation
+Indexed descriptions: [1, Fig. 4]; ′⊥ is the added code.
+
+                       Γ ⊢ I : Set0                                Γ ⊢ I : Set0     Γ⊢i:I
+                                       ty_idesc                            ′              ty_ivar
+                    Γ ⊢ IDesc I : Set1                                Γ ⊢ var i : IDesc I
+
+                           Γ ⊢ I : Set0                                Γ ⊢ I : Set0
+                                           ty_i1                                       ty_ibot
+                          Γ ⊢ ′1 : IDesc I                            Γ ⊢ ′⊥ : IDesc I
+
+                          Γ ⊢ I : Set0       Γ ⊢ D1 : IDesc I    Γ ⊢ D2 : IDesc I
+                                                   ′                              ty_iprod
+                                            Γ ⊢ D1 × D2 : IDesc I
+
+                           Γ ⊢ I : Set0        Γ ⊢ S : Set0   Γ ⊢ T : S → IDesc I
+                                                   ′                              ty_ipi
+                                               Γ ⊢ Π S T : IDesc I
+
+                          Γ ⊢ I : Set0       Γ ⊢ S : Set0     Γ ⊢ T : S → IDesc I
+                                                                                  ty_isig
+                                             Γ ⊢ ′Σ S T : IDesc I
+
+                   Γ ⊢ I : Set0       Γ ⊢ E : EnumU      Γ ⊢ p : EnumT E → IDesc I
+                                                ′                                  ty_ichoice
+                                           Γ ⊢ σ E p : IDesc I
+
+                         Γ ⊢ I : Set0       Γ ⊢ D : IDesc I    Γ ⊢ X : I → Set0
+                                                                                ty_interp
+                                              Γ ⊢ JDK X : Set0
+
+                         J′var iK X 7−→ X i,                         J′1K X 7−→ 1,    J′⊥K X 7−→ ⊥,
+                    JD1 ′× D2 K X 7−→ JD1 K X × JD2 K X,
+                        J′Π S T K X 7−→ Πs : S. JT sK X,
+                        J′Σ S T K X 7−→ Σs : S. JT sK X,
+                        J′σ E pK X 7−→ Σc : EnumT E. Jp cK X.
+                                  Def I := Πi : I. IDesc I,       Family I := I → Set0 .
+Instantiations.
+                                        J′Σ A (λ_. ′var ⋆)K X ⇝∗ A × X ⋆,
+                                          J′var ⋆ ′×′var ⋆K X ⇝∗ X ⋆ ×X ⋆,
+                                                   J′σ [] pK X 7−→ Σc : ⊥. Jp cK X.
+An empty choice has an empty tag; its interpretation is not definitionally ⊥ under these equations.
+
+
+
+
+                                                              3
+4.    Structural hypotheses and the reference fixed point
+Generic induction: [2]; indexed fixed point: [1, Fig. 4].
+
+                    MotI (X) := (Σi : I. X i) → Set0 ,                RecI (X, P ) := Πi : I. Πy : X i. P (i, y).
+
+     Γ ⊢ I : Set0      Γ ⊢ D : IDesc I          Γ ⊢ X : I → Set0       Γ ⊢ xs : JDK X               Γ ⊢ P : MotI (X)
+                                                                                                                         ty_iall
+                                                Γ ⊢ iAll D X xs P : Set0
+
+                                              Γ ⊢ I : Set0
+  Γ ⊢ D : IDesc I      Γ ⊢ X : I → Set0    Γ ⊢ P : MotI (X)      Γ ⊢ h : RecI (X, P )                    Γ ⊢ xs : JDK X
+                                                                                                                            ty_hyps
+                                   Γ ⊢ hyps D X P h xs : iAll D X xs P
+For the table only, AD (x) := iAll D X x P and HD (x) := hyps D X P h x.
+
+                             D              x            AD (x) 7−→                HD (x) 7−→
+                             ′
+                             var j          y            P (j, y)                  hj y
+                             ′
+                             1              ⋆            1                         ⋆
+                             ′
+                             ⊥              z            1                         ⋆
+                                   ′
+                             D1 × D 2       (a, b)       AD1 (a) × AD2 (b)         (HD1 (a), HD2 (b))
+                             ′
+                             ΠS T           f            Πs : S. AT s (f s)        λs. HT s (f s)
+                             ′
+                             ΣS T           (s, xs )     AT s (xs )                HT s (xs )
+                             ′
+                             σEp            (c, xs )     Ap c (xs )                Hp c (xs )
+
+Reference µI , retained as a separate former.
+
+                                           Γ ⊢ I : Set0         Γ ⊢ D : Def I
+                                                          I
+                                                                                   ty_mui
+                                                  Γ ⊢ µ D : I → Set0
+
+                    Γ ⊢ I : Set0       Γ ⊢ D : Def I          Γ⊢i:I            Γ ⊢ xs : JD iK (µI D)
+                                                                                                       ty_in_mui
+                                                  Γ ⊢ in xs : µI D i
+
+                                   MuStepI (D, P ) := Πi : I. Πxs : JD iK (µI D).
+                                                          iAll (D i) (µI D) xs P → P (i, in xs ).
+                                                 Γ ⊢ I : Set0
+     Γ ⊢ D : Def I       Γ ⊢ P : MotI (µI D)     Γ ⊢ s : MuStepI (D, P )                    Γ⊢i:I       Γ ⊢ x : µI D i
+                                                                                                                         ty_ind
+                                          Γ ⊢ ind D P s i x : P (i, x)
+                                   ind D P s i (in xs ) 7−→ s i xs hyps (D i) (µI D) P h xs ,
+                                                                                           
+
+                                                       h := λj y. ind D P s j y.
+
+
+
+
+                                                                    4
+5.    Parameterized closure: formation, cases, and induction
+                        CF,G (i) := close F G i,        XG := close G G,          LF,G (i) := JF iK XG .
+                               Γ ⊢ I : Set0     Γ ⊢ F : Def I    Γ ⊢ G : Def I
+                                                                               ty_close
+                                           Γ ⊢ close F G : I → Set0
+
+      Γ ⊢ I : Set0      Γ ⊢ F : Def I       Γ ⊢ G : Def I       Γ⊢i:I             Γ ⊢ xs : JF iK (close G G)
+                                                                                                               ty_in_close
+                                            Γ ⊢ in xs : close F G i
+
+                          Γ ⊢ I : Set0     Γ ⊢ F : Def I      Γ ⊢ G : Def I
+     Γ⊢i:I       Γ ⊢ Q : CF,G (i) → Setk     Γ ⊢ b : Πxs : JF iK XG . Q(in xs )             Γ ⊢ x : CF,G (i)
+                                                                                                               ty_close_case
+                                   Γ ⊢ closeCasek F G i Q b x : Q x
+                           closeCasek F G i Q b (in xs ) 7−→ b xs ,
+                                           unrollF,G,i x := closeCase0 F G i (λ_. LF,G (i)) id x.
+         Γ ⊢ I : Set0       Γ ⊢ F : Def I    Γ ⊢ G : Def I       Γ⊢i:I                Γ ⊢ x : CF,G (i)
+                                                                                                         unroll_typing
+                                      Γ ⊢ unrollF,G,i x : JF iK XG
+                                                   unrollF,G,i (in xs ) ⇝∗ xs .
+The derived typing statement is proved in Rocq. The outer definition F and recursive definition G are arbitrary;
+no row inclusion premise is imposed.
+Induction motive and method, expanded.
+
+                                  CloseMotI (G) := ΠH : Def I. Πj : I. CH,G (j) → Set0 ,
+                                            P G := λz. P G (fst z) (snd z),
+                              CloseStepI (G, P ) := ΠH : Def I. Πj : I. Πys : JH jK XG .
+                                                         iAll (H j) XG ys P G → P H j (in ys ).
+
+           Γ ⊢ I : Set0     Γ ⊢ G : Def I      Γ ⊢ P : ΠH : Def I. Πj : I. CH,G (j) → Set0
+            Γ ⊢ s : CloseStepI (G, P )     Γ ⊢ F : Def I       Γ⊢i:I        Γ ⊢ x : CF,G (i)
+                                                                                             ty_close_ind
+                                   Γ ⊢ closeInd G P s F i x : P F i x
+                          closeInd G P s F i (in xs ) 7−→ s F i xs hyps (F i) XG P G h xs ,
+                                                                                          
+
+                                                       h := λj y. closeInd G P s G j y.
+Children use outer definition G and motive P G j y. Case motives range over Setk ; recursive motives range over
+Set0 . The diagonal CG,G is not judgmentally identified with µI G.
+
+
+
+
+                                                                5
+6.     Rows, open signatures, and generated handlers
+                            r = [(ℓ0 , D0 ), . . . , (ℓn−1 , Dn−1 )],       names(r) = [ℓ0 , . . . , ℓn−1 ],
+                          Er = [tag(ℓ0 ), . . . , tag(ℓn−1 )],               tuple([]) = ⋆,
+               tuple(t :: ts ) = (t, tuple(ts )),                                   dr = tuple([D0 , . . . , Dn−1 ]),
+                          pr := λc. switch1 Er (λ_. IDesc I) dr c,                ⟨r⟩I := ′σ Er pr .
+Rows are finite lists of literal identities and core description terms.
+
+                              RowOKΓ (I, r)         :⇐⇒     (Γ ⊢ I : Set0 ) ∧ NoDup(names(r))
+                                                             ∧ ∀(ℓ, D) ∈ r. Γ ⊢ D : IDesc I.
+
+                               RowOKΓ (I, r)          Γ ⊢ D : IDesc I         D ≡ ⟨r⟩I
+                                                                                          view_rows
+                                                      Γ ⊢ D ⇓I r
+Open signature assembly.
+
+                                  signatureI (r) := λi. ⟨ri ⟩I ,        ri is scoped in Γ, i : I.
+
+                         i∈
+                          / dom(Γ)          Γ ⊢ I : Set0       RowOKΓ,i:I (I, ri )
+                                                                                   signature_typing
+                                            Γ ⊢ λi. ⟨ri ⟩I : Def I
+This derived statement is proved in Rocq. Surface {R :: branches R} uses positive slots: R j becomes ′var j. The
+Rocq relation starts with those translated schemes.
+Dispatcher and branch handlers (core terms).
+
+                                  MI,r,X,Y := λc. Jpr cK X → Y,
+                     dispatchkI,r,X,Y (hs ) := λz.
+                                                                                                
+                                                        switchk Er MI,r,X,Y (tuple(hs )) (fst z) (snd z),
+                                    retagm := λxs . (m, xs ),
+                               exfalsokY (d) := λxs . abortk Y (d xs ).
+
+X is the recursive family; Y is the handler result type. The switch motive depends on the source tag.
+Row handler relation. HandlersΓ,I (X, Y ; r′ ; r) ⇝ hs aligns source r with target r′ .
+
+                                             HandlersΓ,I (X, Y ; r′ ; []) ⇝ [] rh_nil
+
+                  r′ [m] = (ℓ, D′ )   JDK X ≡ JD′ K X            HandlersΓ,I (X, Y ; r′ ; r) ⇝ hs
+                                                    ′                                             rh_live
+                               HandlersΓ,I (X, Y ; r ; (ℓ, D) :: r) ⇝ retagm :: hs
+
+                              Γ ⊢ D deadIX ⇝ d            HandlersΓ,I (X, Y ; r′ ; r) ⇝ hs
+                                                                                              rh_dead
+                              HandlersΓ,I (X, Y ; r′ ; (ℓ, D) :: r) ⇝ exfalso0Y (d) :: hs
+
+A live handler preserves the payload and translates the local tag. A dead handler requires no occurrence of ℓ in r′ .
+Row and endpoint formation checks are supplied by ds_rows below.
+
+
+
+
+                                                                   6
+7.     Certified empty descriptions and description coercions
+Γ ⊢ D deadIX ⇝ d generates a witness d : JDK X → ⊥.
+
+                      Γ ⊢ I : Set0      Γ ⊢ D : IDesc I       Γ ⊢ X : I → Set0        D ≡ ′⊥
+                                                                                               dead_bot
+                                                Γ ⊢ D deadIX ⇝ id
+
+                    Γ ⊢ I : Set0       Γ ⊢ D : IDesc I       Γ ⊢ X : I → Set0        D ≡ ′σ [] p
+                                                                                                   dead_nil
+                                             Γ ⊢ D deadIX ⇝ λz. fst z
+
+     Γ ⊢ I : Set0     Γ ⊢ D : IDesc I        Γ ⊢ X : I → Set0        D ≡ D1 ′× D2         Γ ⊢ D1 deadIX ⇝ d
+                                                                                                                 dead_left
+                                           Γ ⊢ D deadIX ⇝ λz. d(fst z)
+
+     Γ ⊢ I : Set0     Γ ⊢ D : IDesc I       Γ ⊢ X : I → Set0         D ≡ D1 ′× D2        Γ ⊢ D2 deadIX ⇝ d
+                                                                                                                 dead_right
+                                          Γ ⊢ D deadIX ⇝ λz. d(snd z)
+
+ Γ ⊢ I : Set0       Γ ⊢ D : IDesc I       Γ ⊢ X : I → Set0    Γ ⊢ D ⇓I r            DeadRowsΓ,I (r, X) ⇝ hs
+                                                I           0
+                                                                                                                  dead_choice
+                                      Γ ⊢ D deadX ⇝ dispatchI,r,X,⊥ (hs )
+
+            Γ ⊢ I : Set0      Γ ⊢ D : IDesc I       Γ ⊢ X : I → Set0           Γ ⊢ d : JDK X → ⊥
+                                                                                                     dead_provided
+                                              Γ ⊢ D deadIX ⇝ d
+
+                                                         Γ ⊢ D deadIX ⇝ d     DeadRowsΓ,I (r, X) ⇝ ds
+                                                                                                      dr_cons
+          DeadRowsΓ,I ([], X) ⇝ [] dr_nil                    DeadRowsΓ,I ((ℓ, D) :: r, X) ⇝ d :: ds
+
+An explicit empty-payload witness may be checked; non-reduction is not an emptiness test.
+Description coercions. Γ ⊢ D ⪯IX D′ ⇝ q generates q : JDK X → JD′ K X.
+
+           Γ ⊢ I : Set0     Γ ⊢ D : IDesc I       Γ ⊢ D′ : IDesc I       Γ ⊢ X : I → Set0          D ≡ D′
+                                                                                                              ds_conv
+                                                Γ ⊢ D ⪯IX D′ ⇝ id
+
+                Γ ⊢ D deadIX ⇝ d         Γ ⊢ I : Set0       Γ ⊢ D′ : IDesc I       Γ ⊢ X : I → Set0
+                                                                                                       ds_dead
+                                         Γ ⊢ D ⪯IX D′ ⇝ exfalso0JD′ K X (d)
+
+                          Γ ⊢ I : Set0  Γ ⊢ D : IDesc I               Γ ⊢ D′ : IDesc I
+         Γ ⊢ X : I → Set0    Γ ⊢ D ⇓I r    Γ ⊢ D′ ⇓I r′               HandlersΓ,I (X, JD′ K X; r′ ; r) ⇝ hs
+                                                                                                               ds_rows
+                                     Γ ⊢ D ⪯IX D′ ⇝ dispatch0I,r,X,JD′ K X (hs )
+
+
+
+
+                                                               7
+8.      Type coercions
+Outer-constructor restriction is motivated by [3, Section 2]; these coercion rules are the revision. Γ ⊢ A ⊑ B ⇝ c
+generates a core function c : A → B.
+
+       Γ ⊢ A : Setj       Γ ⊢ B : Setk       A≡B                      Γ⊢A⊑B⇝c        Γ⊢B⊑C⇝d
+                                                     su_conv                                    su_trans
+                      Γ ⊢ A ⊑ B ⇝ id                                     Γ ⊢ A ⊑ C ⇝ λx. d(c x)
+
+                                                  Γ ⊢ A : Setk
+                                                                      su_bottom
+                                           Γ ⊢ ⊥ ⊑ A ⇝ λz. abortk A z
+
+     Γ ⊢ Πa : A. B : Setj        Γ ⊢ Πx : A′ . B ′ : Setk Γ ⊢ A′ ⊑ A ⇝ c           Γ, x : A′ ⊢ B[c x/a] ⊑ B ′ ⇝ d
+                                                                                                                  su_pi
+                                  Γ ⊢ (Πa : A. B) ⊑ (Πx : A′ . B ′ ) ⇝ λf x. d(f (c x))
+
+                                                 Γ ⊢ I : Set0
+        Γ ⊢ F : Def I       Γ ⊢ H : Def I    Γ ⊢ G : Def I     Γ⊢i:I         Γ ⊢ F i ⪯Iclose G G H i ⇝ q
+                                                                                                        su_close
+                               Γ ⊢ CF,G (i) ⊑ CH,G (i) ⇝ λx. in q(unrollF,G,i x)
+
+Repeated identical formation premises have been combined. The recursive definition is the same G on both sides
+of su_close.
+Dependent-function instantiation. For element type S, instantiate su_pi as follows:
+
+                Γ ⊢ S : Set0 ,       Γ ⊢ Πa : List S. B(a) : Setj ,    Γ ⊢ Πx : NonEmpty S. B ′ (x) : Setk ,
+                                             Γ ⊢ NonEmpty S ⊑ List S ⇝ toList,
+                                      Γ, x : NonEmpty S ⊢ B(toList x) ⊑ B ′ (x) ⇝ dx ,
+                        (λf x. dx (f (toList x))) : (Πa : List S. B(a)) → (Πx : NonEmpty S. B ′ (x)).
+
+The source codomain is B(toList x), not B(x).
+Rocq binder instantiation. For de Bruijn terms, ↑m c t raises indices at cutoff c by m; [u/0]t substitutes for
+index 0.
+                          coercedCodomain(c, B) := [ (↑10 c) 0/0 ](↑11 B),
+                                 piCoercion(c, d) := λ.λ. (↑11 d) 1 ((↑20 c) 0) .
+                                                                               
+
+The lifted d remains under the new argument binder; the function binder is inserted below it. For outer-context
+variable c = 0 and B = 1 0:
+                                      coercedCodomain(0, 1 0) = 1 (1 0).
+
+
+
+
+                                                               8
+9.    Source synthesis and checking
+Γ ⊢ e ⇒ A ⇝ t synthesizes A and generates t; Γ ⊢ e ⇐ A ⇝ t checks against A and generates t.
+
+                Γ wf x:A∈Γ                               Γ ⊢ A : Setk     Γ⊢e⇐A⇝t
+                           es_var                                                 es_ann
+                 Γ⊢x⇒A⇝x                                      Γ ⊢ (e : A) ⇒ A ⇝ t
+
+                  Γ ⊢ Πx : A. B : Setk     Γ ⊢ f ⇒ Πx : A. B ⇝ t        Γ⊢a⇐A⇝u
+                                                                                        es_app
+                                         Γ ⊢ f a ⇒ B[u/x] ⇝ t u
+
+                             Γ ⊢ Πx : A. B : Setk   Γ, x : A ⊢ e ⇐ B ⇝ t
+                                                                         ec_lam
+                                    Γ ⊢ λx. e ⇐ Πx : A. B ⇝ λx. t
+
+                   Γ ⊢ Σx : A. B : Setk      Γ⊢e⇐A⇝t           Γ ⊢ f ⇐ B[t/x] ⇝ u
+                                                                                  ec_pair
+                                    Γ ⊢ (e, f ) ⇐ Σx : A. B ⇝ (t, u)
+
+                                                Γ⊢t:A
+                                                              ec_core
+                                          Γ ⊢ core(t) ⇐ A ⇝ t
+
+                           Γ⊢e⇒A⇝t  Γ ⊢ B : Setk                A≡B
+                                                                        ec_conversion
+                                 Γ⊢e⇐B⇝t
+
+                        Γ⊢e⇐A⇝t  Γ ⊢ B : Setk                A≡B
+                                                                     ec_target_conversion
+                              Γ⊢e⇐B⇝t
+
+                               Γ⊢e⇒A⇝t      Γ⊢A⊑B⇝c
+                                                    ec_subsumption
+                                   Γ ⊢ e ⇐ B ⇝ ct
+
+                                 Γ ⊢ I : Set0    RowOKΓ,i:I (I, ri )
+                                                                      es_signature
+                               Γ ⊢ signature I r ⇒ Def I ⇝ λi. ⟨ri ⟩I
+
+                     Γ ⊢ I : Set0      Γ ⊢ F ⇐ Def I ⇝ f     Γ ⊢ G ⇐ Def I ⇝ g
+                                                                               es_close
+                                    Γ ⊢ F (G) ⇒ I → Set0 ⇝ close f g
+
+For unindexed surface datatypes, the unit application is inserted: F (G) abbreviates (close f g) ⋆. An embedded
+core term synthesizes only through an annotation. These are relations, not a deterministic inference algorithm.
+
+
+
+
+                                                        9
+10.     Named constructors and exhaustive cases
+                                         Γ ⊢ I : Set0    Γ ⊢ F : Def I
+      Γ ⊢ G : Def I       Γ⊢i:I           Γ ⊢ F i ⇓I r     r[n] = (ℓ, D)           Γ ⊢ e ⇐ JDK XG ⇝ xs
+                                                                                                              ec_constructor
+                                        Γ ⊢ ℓ(e) ⇐ CF,G (i) ⇝ in(n, xs )
+The expected type determines the row, local tag, and recursive payload.
+Clause compilation. Let bs be a list of clauses (ℓ, y.e), with y bound in e. names(bs ) is their list of identities.
+CasesΓ,k,I (X, Q; bs ; r) ⇝ hs compiles one handler for each entry of r.
+
+                                             CasesΓ,k,I (X, Q; bs ; []) ⇝ [] cases_nil
+
+                (ℓ, y.e) ∈ bs      Γ, y : JDK X ⊢ e ⇐ Q ⇝ t            CasesΓ,k,I (X, Q; bs ; r) ⇝ hs
+                                                                                                      cases_live
+                                  CasesΓ,k,I (X, Q; bs ; (ℓ, D) :: r) ⇝ (λy. t) :: hs
+
+                   ℓ∈
+                    / names(bs )          Γ ⊢ D deadIX ⇝ d         CasesΓ,k,I (X, Q; bs ; r) ⇝ hs
+                                                                                                       cases_dead
+                                CasesΓ,k,I (X, Q; bs ; (ℓ, D) :: r) ⇝ exfalsokQ (d) :: hs
+
+Q is scoped in Γ, so y does not occur free in Q. An omitted clause needs a checked dead witness.
+Case synthesis.
+
+ Γ ⊢ I : Set0      Γ ⊢ F : Def I  Γ ⊢ G : Def I      Γ⊢i:I         Γ ⊢ e ⇒ CF,G (i) ⇝ x      Γ ⊢ Q : Setk
+ Γ ⊢ F i ⇓I r       NoDup(names(bs ))   ∀(ℓ, y.eℓ ) ∈ bs . ℓ ∈ names(r)    CasesΓ,k,I (XG , Q; bs ; r) ⇝ hs
+                                                                                                                         es_case
+                 Γ ⊢ caseQ e of bs ⇒ Q ⇝ closeCasek F G i (λ_. Q) (dispatchkI,r,XG ,Q (hs )) x
+
+The row view supplies distinct constructor identities. The two clause premises reject duplicate and foreign
+identities.
+Single live clause instantiation. For r = [(cons, KA )], X = XLA , and bs = [(cons, y.core(fst y))]:
+
+                                  JKA K XLA ≡ A × List A,             Γ, y : A × List A ⊢ fst y : A,
+                                       CasesΓ,k,I (XLA , A; bs ; [(cons, KA )]) ⇝ [λy. fst y],
+                    caseA e of bs ⇝ closeCase0 UA LA ⋆ (λ_. A) dispatch01,r,XL ,A ([λy. fst y]) x.
+                                                                                               
+                                                                                            A
+
+
+Here e synthesizes NonEmpty A and generates x; LA , UA , KA are defined next.
+
+
+
+
+                                                                 10
+11.     Lists, nonempty lists, and constructor reuse
+Throughout this example, Γ ⊢ A : Set0 and I = 1. The names nil, cons, fork are literal constructor identities.
+
+             N := ′1,                            KA := ′Σ A (λ_. ′var ⋆),                        B := ′var ⋆ ′×′var ⋆,
+            rL := [(nil, N ), (cons, KA )],       rU := [(cons, KA )],
+            rP := [(nil, ′⊥), (cons, KA )],       rT := [(nil, N ), (cons, KA ), (fork, B)].
+
+                                        LA := λi : 1. ⟨rL ⟩I ,                UA := λi : 1. ⟨rU ⟩I ,
+                                        PA := λi : 1. ⟨rP ⟩I ,                TA := λi : 1. ⟨rT ⟩I ,
+                                      List A := CLA ,LA (⋆),      NonEmpty A := CUA ,LA (⋆),
+                                  Padded A := CPA ,LA (⋆),               Tree A := CTA ,TA (⋆).
+Surface forms expose the recursive parameter:
+
+                           LA = {R :: nil : 1, cons : A × R},
+                           UA = {R :: cons : A × R},
+                               TA = {R :: nil : 1, cons : A × R, fork : R × R},
+                         List A = LA (LA ),         NonEmpty A = UA (LA ),               Tree A = TA (TA ).
+
+Constructor-rule instantiations.
+
+                                    Expected type      Identity    Position     Payload type
+                                    List A             nil         0            1
+                                    List A             cons        s0           A × List A
+                                    NonEmpty A         cons        0            A × List A
+                                    Tree A             cons        s0           A × Tree A
+                                    Tree A             fork        s(s 0)       Tree A × Tree A
+
+                Γ ⊢ 1 : Set0       Γ ⊢ LA : Def 1      Γ⊢⋆:1           Γ⊢a:A               Γ ⊢ xs : List A
+                                                                                                             List-cons
+                                         Γ ⊢ in(s 0, (a, xs )) : CLA ,LA (⋆)
+
+ Γ ⊢ 1 : Set0       Γ ⊢ UA : Def 1         Γ ⊢ LA : Def 1        Γ⊢⋆:1            Γ⊢a:A            Γ ⊢ xs : List A
+                                                                                                                     NonEmpty-cons
+                                         Γ ⊢ in(0, (a, xs )) : CUA ,LA (⋆)
+These are derived instantiations using interpretation, pair formation, and ty_in_close; their general typing
+claims are proved in Rocq.
+                                            nil := in(0, ⋆) : List A,
+                                         consL (a, xs ) := in(s 0, (a, xs )) : List A,
+                                         consU (a, xs ) := in(0, (a, xs )) : NonEmpty A,
+                                           singleton a := consU (a, nil).
+
+
+
+
+                                                                  11
+12.     Concrete widening, observers, and induction
+Widening only the outer tag.
+
+                                              qU,L := dispatch01,rU ,XL ,JLA ⋆K XL ([retag1 ]),
+                                                                       A            A
+                                                                                      
+                                             toList := λx. in qU,L (unrollUA ,LA ,⋆ x) ,
+                                   qU,L (0, (a, xs )) ⇝∗ (s 0, (a, xs )),
+                           toList(consU (a, xs )) ⇝∗ consL (a, xs ).
+
+                                               Γ ⊢ 1 : Set0
+       Γ ⊢ UA : Def 1      Γ ⊢ LA : Def 1          Γ⊢⋆:1            Γ ⊢ UA ⋆ ⪯1XL LA ⋆ ⇝ qU,L
+                                                                                      A
+                                                                                                    NonEmpty-sub-List
+                               Γ ⊢ NonEmpty A ⊑ List A ⇝ toList
+Bottom-padded and compact rows. For each conversion, X = XLA and Y is the target layer type.
+
+                              Source row        Target row      Handler list
+                              rU                rL              [retag1 ]
+                              rU                rP              [retag1 ]
+                              rP                rU              [exfalso0JUA ⋆K XL (id), retag0 ]
+                                                                                  A
+
+
+
+Use each dispatcher inside λx. in(q(unroll x)). The padded nil branch has witness id : ⊥ → ⊥.
+Observers via one-layer elimination. For r = rU and X = XLA ,
+
+                        head := λx. closeCase0 UA LA ⋆ (λ_. A) dispatch01,r,X,A ([λy. fst y]) x,
+                                                                                             
+
+                          tail := λx. closeCase0 UA LA ⋆ (λ_. List A) dispatch01,r,X,List A ([λy. snd y]) x,
+                                                                                                         
+
+            head(singleton a) ⇝∗ a,         tail(singleton a) ⇝∗ nil.
+
+Instantiating the induction hypotheses. Let P : CloseMot1 (LA ) and s : CloseStep1 (LA , P ). Put h :=
+λj y. closeInd LA P s LA j y.
+
+                                    iAll (LA ⋆) XLA (0, ⋆) P LA ⇝∗ 1,
+                           iAll (LA ⋆) XLA (s 0, (a, xs )) P LA ⇝∗ P LA ⋆ xs ,
+                            iAll (UA ⋆) XLA (0, (a, xs )) P LA ⇝∗ P LA ⋆ xs ,
+                        closeInd LA P s UA ⋆ (consU (a, xs )) ⇝∗ s UA ⋆ (0, (a, xs )) (h ⋆ xs ).
+
+The nonempty result uses P UA , while the tail hypothesis uses P LA . Self-closing UA (UA ) instead demands a tail
+in UA (UA ); its uninhabitedness is a separate conjecture.
+
+
+
+
+                                                               12
+13.     Selected theorem statements and proof status
+Of the 47 original claims in OpenSignaturesTheorems.v, 27 have proofs without axiom dependencies, 16 have
+conditional proofs, and four remain conjectures. Progress, confluence, weakening, substitution, type correctness,
+closing substitution, and close canonical forms are proved. Full preservation, strong normalization, and the two
+coherence claims remain unproved. The function-cumulativity repair addresses the previous eta counterexample; its
+regression proofs do not prove general preservation. The exact dependency table is in progress/PROOF_STATUS.md.
+
+                  Context validity              Γ ⊢ t : A =⇒ Γ wf.
+                  Type correctness              Γ ⊢ t : A =⇒ ∃k. Γ ⊢ A : Setk .
+                  Weakening                     Γ ⊢ t : A, Γ ⊢ B : Setk =⇒ Γ, x : B ⊢ t : A.
+                  Substitution                  Γ, x : A ⊢ t : B, Γ ⊢ u : A =⇒ Γ ⊢ t[u/x] : B[u/x].
+                  Preservation                  Γ ⊢ t : A, t → u =⇒ Γ ⊢ u : A      (also for ⇝ ).
+                  Progress                      ∅ ⊢ t : A =⇒ value(t) ∨ ∃u. t → u.
+                  Normalization                 Γ ⊢ t : A =⇒ t is strongly normalizing for ⇝ .
+                  Confluence                    Γ ⊢ t : A, t ⇝∗ u, t ⇝∗ v
+                                                    =⇒ ∃w, w′ . u ⇝∗ w ∧ v ⇝∗ w′ ∧ w ≡α w′ .
+                  Consistency                   ¬∃t. ∅ ⊢ t : ⊥.
+                  Dead soundness                Γ ⊢ D deadIX ⇝ d =⇒ Γ ⊢ d : JDK X → ⊥.
+                  Description soundness         Γ ⊢ D ⪯IX D′ ⇝ q =⇒ Γ ⊢ q : JDK X → JD′ K X.
+                  Coercion soundness            Γ ⊢ A ⊑ B ⇝ c =⇒ Γ ⊢ c : A → B.
+                  Synthesis soundness           Γ ⊢ e ⇒ A ⇝ t =⇒ Γ ⊢ t : A.
+                  Checking soundness            Γ ⊢ e ⇐ A ⇝ t =⇒ Γ ⊢ t : A.
+                  Coercion coherence            Γ ⊢ A ⊑ B ⇝ c, Γ ⊢ A ⊑ B ⇝ d =⇒ c ≈A→B d.
+                  Checking coherence            Γ ⊢ e ⇐ A ⇝ t, Γ ⊢ e ⇐ A ⇝ u =⇒ t ≈A u.
+                  Roll/unroll                   Γ ⊢ x : CF,G (i) =⇒ in(unrollF,G,i x) ≈CF,G (i) x.
+
+The last statement additionally requires Γ ⊢ I : Set0 , F, G : Def I, and i : I. Weakening uses a fresh x. ≈A
+quantifies over typed closing substitutions and closed Boolean observations. It is not definitional equality.
+
+                                Γ ⊢ A : Set0 =⇒ Γ ⊢ NonEmpty A ⊑ List A ⇝ toList,
+                                   ¬∃c. ∅ ⊢ c : ΠA : Set0 . List A → NonEmpty A,
+                                     ∅ ⊢ A : Set0 =⇒ ¬∃x. ∅ ⊢ x : CUA ,UA (⋆).
+
+The computation checks in OpenSignaturesExamples.v are proved by reflexivity. Separate symbolic proofs
+establish the list, nonempty-list, tree, and observer typing claims.
+Source map.
+
+                                     Sections     Rocq source
+                                     1–5          OpenSignaturesCore.v
+                                     6–10         OpenSignaturesElaboration.v
+                                     11–12        OpenSignaturesExamples.v
+                                     13           OpenSignaturesTheorems.v
+
+
+
+
+                                                            13
+14.     Sources and attribution
+  Source                           Use in this document
+  Dagand–McBride [1]               Figures 1–4: the base dependent calculus, enumerations, descriptions, their
+                                   interpretation, and the reference indexed fixed point. The version cited is
+                                   arXiv v2, matching the local PDF used in the notes.
+  Chapman et al. [2]               Supporting source reached through EID’s account of generic induction. The
+                                   explicit iAll/hyps equations here are the Rocq reconstruction; the bottom
+                                   case belongs to this revision.
+  Campos [3]                       The discussion’s constructor-subtyping manuscript, especially Section 2,
+                                   Rules 1–7, and optional βηφ conversion: motivation for restricting the outer
+                                   constructor and omitting impossible clauses. Its phantom signatures and
+                                   metatheorems are not imported here.
+
+The direct ′⊥ code, reusable open signatures, close F G, and generated coercions are the design of this discussion.
+The references do not establish their metatheory.
+
+
+References
+[1] Pierre-Évariste Dagand and Conor McBride. Elaborating Inductive Definitions. 2012. arXiv:1210.6390v2, 30
+    October 2012. arXiv record; version cited. Local copy:
+    ~/Workspace/Subtyping-Theory/first-class-inductive-types.pdf.
+[2] James Chapman, Pierre-Évariste Dagand, Conor McBride, and Peter Morris. The Gentle Art of Levitation.
+    Proceedings of ICFP 2010, pp. 3–14. doi:10.1145/1863543.1863547; author’s PDF. Supporting reference cited
+    by EID for generic induction.
+[3] Tiago Campos. First-Class Constructor Subsets for Pattern Matching on Indexed Families. Undated working
+    manuscript; local source consulted 9 September 2026. Local manuscript source:
+    ~/Workspace/Subtyping-Theory/subindex/LIPIcs_2021_Version_Sample/subtyping_paper.tex. The
+    template directory name is not a publication date or venue claim.
+
+
+
+
+                                                        14
+

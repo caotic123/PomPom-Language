@@ -1,0 +1,359 @@
+DIGEST 380e6e221ac01c12ddfc1b66fbadb11d
+Fnameless.DBOperatorFormations
+R102:105 Stdlib.Lists.List <> <> lib
+R107:111 Stdlib.Arith.Arith <> <> lib
+R113:116 Stdlib.Bool.Bool <> <> lib
+R118:120 Stdlib.micromega.Lia <> <> lib
+R138:160 nameless.DBPreservation <> <> lib
+R170:182 Stdlib.Lists.List ListNotations <> mod
+prf 192:204 <> def_formation
+binder 215:219 <> Gamma:1
+binder 221:222 <> IT:2
+R251:254 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R226:231 nameless.DBTyping <> typing ind
+R233:237 nameless.DBOperatorFormations <> Gamma:1 var
+R239:240 nameless.DBOperatorFormations <> IT:2 var
+R243:247 nameless.DBSyntax <> TSort constr
+R255:260 nameless.DBTyping <> typing ind
+R262:266 nameless.DBOperatorFormations <> Gamma:1 var
+R269:271 nameless.DBSyntax <> Def def
+R273:274 nameless.DBOperatorFormations <> IT:2 var
+R278:282 nameless.DBSyntax <> TSort constr
+R324:328 nameless.DBSyntax <> TSort constr
+R339:343 nameless.DBSyntax <> TSort constr
+R346:352 Stdlib.Arith.PeanoNat Nat max def
+R324:328 nameless.DBSyntax <> TSort constr
+R339:343 nameless.DBSyntax <> TSort constr
+R346:352 Stdlib.Arith.PeanoNat Nat max def
+R368:372 nameless.DBTyping <> ty_pi constr
+R391:398 nameless.DBTyping <> ty_idesc constr
+R408:416 nameless.DBWeakening <> weakening thm
+R368:372 nameless.DBTyping <> ty_pi constr
+R391:398 nameless.DBTyping <> ty_idesc constr
+R408:416 nameless.DBWeakening <> weakening thm
+prf 449:466 <> family_application
+binder 477:481 <> Gamma:3
+binder 483:484 <> IT:4
+binder 486:486 <> X:5
+binder 488:488 <> i:6
+R518:521 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R492:497 nameless.DBTyping <> typing ind
+R499:503 nameless.DBOperatorFormations <> Gamma:3 var
+R505:505 nameless.DBOperatorFormations <> X:5 var
+R508:513 nameless.DBSyntax <> Family def
+R515:516 nameless.DBOperatorFormations <> IT:4 var
+R539:542 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R522:527 nameless.DBTyping <> typing ind
+R529:533 nameless.DBOperatorFormations <> Gamma:3 var
+R535:535 nameless.DBOperatorFormations <> i:6 var
+R537:538 nameless.DBOperatorFormations <> IT:4 var
+R543:548 nameless.DBTyping <> typing ind
+R550:554 nameless.DBOperatorFormations <> Gamma:3 var
+R557:560 nameless.DBSyntax <> TApp constr
+R564:564 nameless.DBOperatorFormations <> i:6 var
+R562:562 nameless.DBOperatorFormations <> X:5 var
+R568:572 nameless.DBSyntax <> TSort constr
+R619:637 nameless.DBDerivedTyping <> regular_application thm
+R619:637 nameless.DBDerivedTyping <> regular_application thm
+R700:707 nameless.DBWeakening <> lift_Def thm
+R711:721 nameless.DBWeakening <> lift_Family thm
+R725:735 nameless.DBWeakening <> lift_motive thm
+R739:748 nameless.DBWeakening <> lift_total thm
+R752:772 nameless.DBWeakening <> lift_recursive_method thm
+R779:795 nameless.DBWeakening <> lift_close_motive thm
+R799:820 nameless.DBWeakening <> lift_close_case_method thm
+R824:844 nameless.DBWeakening <> lift_close_ind_method thm
+R848:865 nameless.DBWeakening <> lift_mu_ind_method thm
+R872:891 nameless.DBWeakening <> lift_diagonal_motive thm
+R895:904 nameless.DBWeakening <> lift_arrow thm
+R918:921 nameless.DBSyntax <> lift def
+R923:926 nameless.DBSyntax <> MuAt def
+R928:934 nameless.DBSyntax <> CloseAt def
+R936:942 nameless.DBSyntax <> payload def
+R944:950 nameless.DBSyntax <> carrier def
+R969:982 nameless.DBParallelBase <> lift_fuse_zero thm
+R1035:1052 nameless.DBOperatorFormations <> family_application thm
+R1055:1063 nameless.DBTyping <> ty_interp constr
+R1066:1072 nameless.DBTyping <> ty_iall constr
+R1075:1082 nameless.DBTyping <> ty_idesc constr
+R1085:1092 nameless.DBTyping <> ty_enumt constr
+R1095:1109 nameless.DBInductionBeta <> def_application thm
+R1112:1122 nameless.DBDerivedTyping <> smart_close thm
+R1128:1136 nameless.DBDerivedTyping <> smart_mui thm
+R1139:1156 nameless.DBDerivedTyping <> close_at_formation thm
+R1159:1173 nameless.DBDerivedTyping <> mu_at_formation thm
+R1176:1192 nameless.DBInductionBeta <> payload_formation thm
+R1195:1209 nameless.DBDerivedTyping <> total_formation thm
+R1215:1230 nameless.DBInductionBeta <> motive_formation thm
+R1233:1245 nameless.DBOperatorFormations <> def_formation thm
+R1248:1263 nameless.DBDerivedTyping <> family_formation thm
+R1266:1287 nameless.DBInductionBeta <> diagonal_motive_typing thm
+R1293:1316 nameless.DBDerivedTyping <> close_motive_application thm
+R1319:1336 nameless.DBDerivedTyping <> motive_application thm
+R1339:1352 nameless.DBDerivedTyping <> smart_in_close thm
+R1355:1366 nameless.DBDerivedTyping <> smart_in_mui thm
+R1418:1424 nameless.DBTyping <> ty_sort constr
+R1439:1452 nameless.DBWeakening <> typing_context thm
+R1490:1497 nameless.DBTyping <> ty_cumul constr
+R1582:1587 nameless.DBTyping <> typing ind
+R1593:1595 nameless.DBSyntax <> TPi constr
+R1605:1609 nameless.DBSyntax <> TSort constr
+R1582:1587 nameless.DBTyping <> typing ind
+R1593:1595 nameless.DBSyntax <> TPi constr
+R1605:1609 nameless.DBSyntax <> TSort constr
+R1662:1667 nameless.DBTyping <> typing ind
+R1674:1678 nameless.DBSyntax <> TSort constr
+R1711:1715 nameless.DBTyping <> ty_pi constr
+R1780:1785 nameless.DBTyping <> typing ind
+R1780:1785 nameless.DBTyping <> typing ind
+R1851:1859 nameless.DBWeakening <> weakening thm
+R2062:2067 nameless.DBTyping <> typing ind
+R2071:2072 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2077:2080 nameless.DBSyntax <> TVar constr
+R2086:2089 nameless.DBSyntax <> lift def
+R2114:2122 nameless.DBDerivedTyping <> smart_var thm
+R2133:2139 nameless.DBTyping <> wf_cons constr
+R2154:2167 nameless.DBWeakening <> typing_context thm
+prf 2229:2250 <> close_motive_formation
+binder 2261:2265 <> Gamma:7
+binder 2267:2268 <> IT:8
+binder 2270:2270 <> G:9
+R2299:2302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2274:2279 nameless.DBTyping <> typing ind
+R2281:2285 nameless.DBOperatorFormations <> Gamma:7 var
+R2287:2288 nameless.DBOperatorFormations <> IT:8 var
+R2291:2295 nameless.DBSyntax <> TSort constr
+R2326:2330 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2303:2308 nameless.DBTyping <> typing ind
+R2310:2314 nameless.DBOperatorFormations <> Gamma:7 var
+R2316:2316 nameless.DBOperatorFormations <> G:9 var
+R2319:2321 nameless.DBSyntax <> Def def
+R2323:2324 nameless.DBOperatorFormations <> IT:8 var
+R2331:2336 nameless.DBTyping <> typing ind
+R2338:2342 nameless.DBOperatorFormations <> Gamma:7 var
+R2345:2356 nameless.DBSyntax <> close_motive def
+R2361:2361 nameless.DBOperatorFormations <> G:9 var
+R2358:2359 nameless.DBOperatorFormations <> IT:8 var
+R2365:2369 nameless.DBSyntax <> TSort constr
+R2415:2426 nameless.DBSyntax <> close_motive def
+prf 2475:2500 <> recursive_method_formation
+binder 2511:2515 <> Gamma:10
+binder 2517:2518 <> IT:11
+binder 2520:2520 <> X:12
+binder 2522:2522 <> P:13
+R2551:2554 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2526:2531 nameless.DBTyping <> typing ind
+R2533:2537 nameless.DBOperatorFormations <> Gamma:10 var
+R2539:2540 nameless.DBOperatorFormations <> IT:11 var
+R2543:2547 nameless.DBSyntax <> TSort constr
+R2581:2584 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2555:2560 nameless.DBTyping <> typing ind
+R2562:2566 nameless.DBOperatorFormations <> Gamma:10 var
+R2568:2568 nameless.DBOperatorFormations <> X:12 var
+R2571:2576 nameless.DBSyntax <> Family def
+R2578:2579 nameless.DBOperatorFormations <> IT:11 var
+R2613:2617 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2585:2590 nameless.DBTyping <> typing ind
+R2592:2596 nameless.DBOperatorFormations <> Gamma:10 var
+R2598:2598 nameless.DBOperatorFormations <> P:13 var
+R2601:2606 nameless.DBSyntax <> motive def
+R2611:2611 nameless.DBOperatorFormations <> X:12 var
+R2608:2609 nameless.DBOperatorFormations <> IT:11 var
+R2618:2623 nameless.DBTyping <> typing ind
+R2625:2629 nameless.DBOperatorFormations <> Gamma:10 var
+R2632:2647 nameless.DBSyntax <> recursive_method def
+R2654:2654 nameless.DBOperatorFormations <> P:13 var
+R2652:2652 nameless.DBOperatorFormations <> X:12 var
+R2649:2650 nameless.DBOperatorFormations <> IT:11 var
+R2658:2662 nameless.DBSyntax <> TSort constr
+R2713:2728 nameless.DBSyntax <> recursive_method def
+prf 2777:2795 <> mu_method_formation
+binder 2806:2810 <> Gamma:14
+binder 2812:2813 <> IT:15
+binder 2815:2815 <> D:16
+binder 2817:2817 <> P:17
+R2846:2849 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2821:2826 nameless.DBTyping <> typing ind
+R2828:2832 nameless.DBOperatorFormations <> Gamma:14 var
+R2834:2835 nameless.DBOperatorFormations <> IT:15 var
+R2838:2842 nameless.DBSyntax <> TSort constr
+R2873:2877 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2850:2855 nameless.DBTyping <> typing ind
+R2857:2861 nameless.DBOperatorFormations <> Gamma:14 var
+R2863:2863 nameless.DBOperatorFormations <> D:16 var
+R2866:2868 nameless.DBSyntax <> Def def
+R2870:2871 nameless.DBOperatorFormations <> IT:15 var
+R2916:2920 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2878:2883 nameless.DBTyping <> typing ind
+R2885:2889 nameless.DBOperatorFormations <> Gamma:14 var
+R2891:2891 nameless.DBOperatorFormations <> P:17 var
+R2894:2899 nameless.DBSyntax <> motive def
+R2905:2908 nameless.DBSyntax <> TMuI constr
+R2913:2913 nameless.DBOperatorFormations <> D:16 var
+R2910:2911 nameless.DBOperatorFormations <> IT:15 var
+R2901:2902 nameless.DBOperatorFormations <> IT:15 var
+R2921:2926 nameless.DBTyping <> typing ind
+R2928:2932 nameless.DBOperatorFormations <> Gamma:14 var
+R2935:2947 nameless.DBSyntax <> mu_ind_method def
+R2954:2954 nameless.DBOperatorFormations <> P:17 var
+R2952:2952 nameless.DBOperatorFormations <> D:16 var
+R2949:2950 nameless.DBOperatorFormations <> IT:15 var
+R2958:2962 nameless.DBSyntax <> TSort constr
+R3013:3025 nameless.DBSyntax <> mu_ind_method def
+prf 3074:3095 <> close_method_formation
+binder 3106:3110 <> Gamma:18
+binder 3112:3113 <> IT:19
+binder 3115:3115 <> G:20
+binder 3117:3117 <> P:21
+R3146:3149 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3121:3126 nameless.DBTyping <> typing ind
+R3128:3132 nameless.DBOperatorFormations <> Gamma:18 var
+R3134:3135 nameless.DBOperatorFormations <> IT:19 var
+R3138:3142 nameless.DBSyntax <> TSort constr
+R3173:3177 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3150:3155 nameless.DBTyping <> typing ind
+R3157:3161 nameless.DBOperatorFormations <> Gamma:18 var
+R3163:3163 nameless.DBOperatorFormations <> G:20 var
+R3166:3168 nameless.DBSyntax <> Def def
+R3170:3171 nameless.DBOperatorFormations <> IT:19 var
+R3212:3216 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3178:3183 nameless.DBTyping <> typing ind
+R3185:3189 nameless.DBOperatorFormations <> Gamma:18 var
+R3191:3191 nameless.DBOperatorFormations <> P:21 var
+R3194:3205 nameless.DBSyntax <> close_motive def
+R3210:3210 nameless.DBOperatorFormations <> G:20 var
+R3207:3208 nameless.DBOperatorFormations <> IT:19 var
+R3217:3222 nameless.DBTyping <> typing ind
+R3224:3228 nameless.DBOperatorFormations <> Gamma:18 var
+R3231:3246 nameless.DBSyntax <> close_ind_method def
+R3253:3253 nameless.DBOperatorFormations <> P:21 var
+R3251:3251 nameless.DBOperatorFormations <> G:20 var
+R3248:3249 nameless.DBOperatorFormations <> IT:19 var
+R3257:3261 nameless.DBSyntax <> TSort constr
+R3312:3327 nameless.DBSyntax <> close_ind_method def
+prf 3376:3402 <> close_case_method_formation
+binder 3413:3417 <> Gamma:22
+binder 3419:3419 <> k:23
+binder 3421:3422 <> IT:24
+binder 3424:3424 <> F:25
+binder 3426:3426 <> G:26
+binder 3428:3428 <> i:27
+binder 3430:3430 <> Q:28
+R3459:3462 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3434:3439 nameless.DBTyping <> typing ind
+R3441:3445 nameless.DBOperatorFormations <> Gamma:22 var
+R3447:3448 nameless.DBOperatorFormations <> IT:24 var
+R3451:3455 nameless.DBSyntax <> TSort constr
+R3486:3489 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3463:3468 nameless.DBTyping <> typing ind
+R3470:3474 nameless.DBOperatorFormations <> Gamma:22 var
+R3476:3476 nameless.DBOperatorFormations <> F:25 var
+R3479:3481 nameless.DBSyntax <> Def def
+R3483:3484 nameless.DBOperatorFormations <> IT:24 var
+R3513:3517 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3490:3495 nameless.DBTyping <> typing ind
+R3497:3501 nameless.DBOperatorFormations <> Gamma:22 var
+R3503:3503 nameless.DBOperatorFormations <> G:26 var
+R3506:3508 nameless.DBSyntax <> Def def
+R3510:3511 nameless.DBOperatorFormations <> IT:24 var
+R3535:3538 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3518:3523 nameless.DBTyping <> typing ind
+R3525:3529 nameless.DBOperatorFormations <> Gamma:22 var
+R3531:3531 nameless.DBOperatorFormations <> i:27 var
+R3533:3534 nameless.DBOperatorFormations <> IT:24 var
+R3588:3592 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3539:3544 nameless.DBTyping <> typing ind
+R3546:3550 nameless.DBOperatorFormations <> Gamma:22 var
+R3552:3552 nameless.DBOperatorFormations <> Q:28 var
+R3555:3557 nameless.DBSyntax <> TPi constr
+R3579:3583 nameless.DBSyntax <> TSort constr
+R3585:3585 nameless.DBOperatorFormations <> k:23 var
+R3560:3566 nameless.DBSyntax <> CloseAt def
+R3575:3575 nameless.DBOperatorFormations <> i:27 var
+R3573:3573 nameless.DBOperatorFormations <> G:26 var
+R3571:3571 nameless.DBOperatorFormations <> F:25 var
+R3568:3569 nameless.DBOperatorFormations <> IT:24 var
+R3593:3598 nameless.DBTyping <> typing ind
+R3600:3604 nameless.DBOperatorFormations <> Gamma:22 var
+R3607:3623 nameless.DBSyntax <> close_case_method def
+R3634:3634 nameless.DBOperatorFormations <> Q:28 var
+R3632:3632 nameless.DBOperatorFormations <> i:27 var
+R3630:3630 nameless.DBOperatorFormations <> G:26 var
+R3628:3628 nameless.DBOperatorFormations <> F:25 var
+R3625:3626 nameless.DBOperatorFormations <> IT:24 var
+R3638:3642 nameless.DBSyntax <> TSort constr
+R3644:3644 nameless.DBOperatorFormations <> k:23 var
+R3711:3727 nameless.DBInductionBeta <> payload_formation thm
+R3711:3727 nameless.DBInductionBeta <> payload_formation thm
+R3767:3783 nameless.DBSyntax <> close_case_method def
+R3794:3798 nameless.DBSyntax <> TSort constr
+R3809:3813 nameless.DBSyntax <> TSort constr
+R3816:3822 Stdlib.Arith.PeanoNat Nat max def
+R3794:3798 nameless.DBSyntax <> TSort constr
+R3809:3813 nameless.DBSyntax <> TSort constr
+R3816:3822 Stdlib.Arith.PeanoNat Nat max def
+R3838:3842 nameless.DBTyping <> ty_pi constr
+R3838:3842 nameless.DBTyping <> ty_pi constr
+R3871:3879 nameless.DBWeakening <> weakening thm
+R3871:3879 nameless.DBWeakening <> weakening thm
+R3919:3927 nameless.DBWeakening <> weakening thm
+R3919:3927 nameless.DBWeakening <> weakening thm
+R3967:3975 nameless.DBWeakening <> weakening thm
+R3967:3975 nameless.DBWeakening <> weakening thm
+R4015:4023 nameless.DBWeakening <> weakening thm
+R4015:4023 nameless.DBWeakening <> weakening thm
+R4063:4071 nameless.DBWeakening <> weakening thm
+R4063:4071 nameless.DBWeakening <> weakening thm
+R4112:4117 nameless.DBTyping <> typing ind
+R4136:4137 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4120:4126 nameless.DBSyntax <> payload def
+R4146:4149 nameless.DBSyntax <> TVar constr
+R4155:4158 nameless.DBSyntax <> lift def
+R4165:4171 nameless.DBSyntax <> payload def
+R4198:4206 nameless.DBDerivedTyping <> smart_var thm
+R4217:4223 nameless.DBTyping <> wf_cons constr
+R4238:4251 nameless.DBWeakening <> typing_context thm
+R4112:4117 nameless.DBTyping <> typing ind
+R4136:4137 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4120:4126 nameless.DBSyntax <> payload def
+R4146:4149 nameless.DBSyntax <> TVar constr
+R4155:4158 nameless.DBSyntax <> lift def
+R4165:4171 nameless.DBSyntax <> payload def
+R4198:4206 nameless.DBDerivedTyping <> smart_var thm
+R4217:4223 nameless.DBTyping <> wf_cons constr
+R4238:4251 nameless.DBWeakening <> typing_context thm
+R4238:4251 nameless.DBWeakening <> typing_context thm
+R4297:4315 nameless.DBDerivedTyping <> regular_application thm
+R4332:4345 nameless.DBDerivedTyping <> smart_in_close thm
+R4297:4315 nameless.DBDerivedTyping <> regular_application thm
+R4332:4345 nameless.DBDerivedTyping <> smart_in_close thm
+prf 4393:4415 <> sort_codomain_formation
+binder 4426:4430 <> Gamma:29
+binder 4432:4432 <> A:30
+binder 4434:4434 <> j:31
+binder 4436:4436 <> k:32
+R4464:4468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4440:4445 nameless.DBTyping <> typing ind
+R4447:4451 nameless.DBOperatorFormations <> Gamma:29 var
+R4453:4453 nameless.DBOperatorFormations <> A:30 var
+R4456:4460 nameless.DBSyntax <> TSort constr
+R4462:4462 nameless.DBOperatorFormations <> j:31 var
+R4469:4474 nameless.DBTyping <> typing ind
+R4476:4480 nameless.DBOperatorFormations <> Gamma:29 var
+R4483:4485 nameless.DBSyntax <> TPi constr
+R4490:4494 nameless.DBSyntax <> TSort constr
+R4496:4496 nameless.DBOperatorFormations <> k:32 var
+R4487:4487 nameless.DBOperatorFormations <> A:30 var
+R4501:4505 nameless.DBSyntax <> TSort constr
+R4508:4514 Stdlib.Arith.PeanoNat Nat max def
+R4516:4516 nameless.DBOperatorFormations <> j:31 var
+R4519:4519 Corelib.Init.Datatypes <> S constr
+R4521:4521 nameless.DBOperatorFormations <> k:32 var
+R4549:4553 nameless.DBTyping <> ty_pi constr
+R4574:4580 nameless.DBTyping <> ty_sort constr
+R4595:4601 nameless.DBTyping <> wf_cons constr
+R4604:4617 nameless.DBWeakening <> typing_context thm
+R4549:4553 nameless.DBTyping <> ty_pi constr
+R4574:4580 nameless.DBTyping <> ty_sort constr
+R4595:4601 nameless.DBTyping <> wf_cons constr
+R4604:4617 nameless.DBWeakening <> typing_context thm

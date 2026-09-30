@@ -1,0 +1,196 @@
+DIGEST 2c41716af0edf913f1ddbba5824559c5
+Fannotated.AEtaPreservation
+R152:175 annotated.AStrengthening <> <> lib
+R177:197 annotated.AGeneration <> <> lib
+R199:212 annotated.AEta <> <> lib
+prf 224:239 <> eta_preservation
+binder 250:254 <> Gamma:1
+binder 256:256 <> A:2
+binder 258:258 <> B:3
+binder 260:260 <> C:4
+binder 262:262 <> D:5
+binder 264:264 <> f:6
+binder 266:266 <> T:7
+R329:334 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R271:276 annotated.ATyping <> typing ind
+R278:282 annotated.AEtaPreservation <> Gamma:1 var
+R285:288 annotated.ASyntax <> TLam constr
+R290:290 annotated.AEtaPreservation <> A:2 var
+R292:292 annotated.AEtaPreservation <> B:3 var
+R295:298 annotated.ASyntax <> TApp constr
+R300:300 annotated.AEtaPreservation <> C:4 var
+R302:302 annotated.AEtaPreservation <> D:5 var
+R305:308 annotated.ASyntax <> lift def
+R314:314 annotated.AEtaPreservation <> f:6 var
+R318:321 annotated.ASyntax <> TVar constr
+R328:328 annotated.AEtaPreservation <> T:7 var
+R335:340 annotated.ATyping <> typing ind
+R342:346 annotated.AEtaPreservation <> Gamma:1 var
+R348:348 annotated.AEtaPreservation <> f:6 var
+R350:350 annotated.AEtaPreservation <> T:7 var
+R403:419 annotated.AGeneration <> lambda_generation thm
+R436:442 Corelib.Init.Logic <> eq_refl constr
+R403:419 annotated.AGeneration <> lambda_generation thm
+R436:442 Corelib.Init.Logic <> eq_refl constr
+R496:517 annotated.AGeneration <> application_generation thm
+R539:545 Corelib.Init.Logic <> eq_refl constr
+R496:517 annotated.AGeneration <> application_generation thm
+R539:545 Corelib.Init.Logic <> eq_refl constr
+R601:631 annotated.AStrengthening <> typing_strengthening_comparison thm
+R657:667 annotated.AContextInsertion <> insert_head constr
+R675:688 annotated.ATyping <> typing_context thm
+R700:706 Corelib.Init.Logic <> eq_refl constr
+R601:631 annotated.AStrengthening <> typing_strengthening_comparison thm
+R657:667 annotated.AContextInsertion <> insert_head constr
+R675:688 annotated.ATyping <> typing_context thm
+R700:706 Corelib.Init.Logic <> eq_refl constr
+R743:765 annotated.AComparison RC comparison_pi_source thm
+R781:793 annotated.AGeneration RCore cv_refl constr
+R743:765 annotated.AComparison RC comparison_pi_source thm
+R781:793 annotated.AGeneration RCore cv_refl constr
+R835:853 annotated.ASubstitution RS conversion_subst thm
+R865:873 annotated.AErase Raw TUnit constr
+R835:853 annotated.ASubstitution RS conversion_subst thm
+R865:873 annotated.AErase Raw TUnit constr
+R896:904 annotated.AErase Raw subst def
+R926:945 annotated.ASubstitution RB subst_lift_cancel thm
+R926:945 annotated.ASubstitution RB subst_lift_cancel thm
+R926:945 annotated.ASubstitution RB subst_lift_cancel thm
+R976:993 annotated.AComparison RC type_comparison ind
+R1000:1006 annotated.AErase Raw TPi constr
+R1056:1063 annotated.AErase Raw lift def
+R1070:1078 annotated.AErase Raw subst def
+R1080:1088 annotated.AErase Raw TUnit constr
+R1009:1016 annotated.AErase Raw lift def
+R1023:1031 annotated.AErase Raw subst def
+R1033:1041 annotated.AErase Raw TUnit constr
+R1102:1108 annotated.AErase Raw TPi constr
+R1121:1125 annotated.AErase <> erase def
+R1111:1115 annotated.AErase <> erase def
+R976:993 annotated.AComparison RC type_comparison ind
+R1000:1006 annotated.AErase Raw TPi constr
+R1056:1063 annotated.AErase Raw lift def
+R1070:1078 annotated.AErase Raw subst def
+R1080:1088 annotated.AErase Raw TUnit constr
+R1009:1016 annotated.AErase Raw lift def
+R1023:1031 annotated.AErase Raw subst def
+R1033:1041 annotated.AErase Raw TUnit constr
+R1102:1108 annotated.AErase Raw TPi constr
+R1121:1125 annotated.AErase <> erase def
+R1111:1115 annotated.AErase <> erase def
+R1144:1172 annotated.AComparison RC comparison_left_conversion thm
+R1144:1172 annotated.AComparison RC comparison_left_conversion thm
+R1200:1211 annotated.AGeneration RCore cv_sym constr
+R1221:1238 annotated.AWeakening RW conversion_lift thm
+R1200:1211 annotated.AGeneration RCore cv_sym constr
+R1221:1238 annotated.AWeakening RW conversion_lift thm
+R1271:1296 annotated.AComparison RC comparison_pi_inversion thm
+R1271:1296 annotated.AComparison RC comparison_pi_inversion thm
+R1341:1370 annotated.AComparison RCh variable_change_generation thm
+R1379:1392 annotated.ATyping <> typing_erasure thm
+R1406:1412 Corelib.Init.Logic <> eq_refl constr
+R1341:1370 annotated.AComparison RCh variable_change_generation thm
+R1379:1392 annotated.ATyping <> typing_erasure thm
+R1406:1412 Corelib.Init.Logic <> eq_refl constr
+R1498:1515 annotated.AComparison RC type_comparison ind
+R1518:1522 annotated.AErase <> erase def
+R1528:1536 annotated.AErase Raw subst def
+R1538:1546 annotated.AErase Raw TUnit constr
+R1498:1515 annotated.AComparison RC type_comparison ind
+R1518:1522 annotated.AErase <> erase def
+R1528:1536 annotated.AErase Raw subst def
+R1538:1546 annotated.AErase Raw TUnit constr
+R1565:1581 annotated.AContextInsertion <> comparison_unlift thm
+R1565:1581 annotated.AContextInsertion <> comparison_unlift thm
+R1609:1632 annotated.AComparison RC comparison_transitive thm
+R1643:1667 annotated.AComparison RC type_change_comparison thm
+R1609:1632 annotated.AComparison RC comparison_transitive thm
+R1643:1667 annotated.AComparison RC type_change_comparison thm
+R1710:1728 annotated.AComparison RC comparison_subst thm
+R1740:1747 annotated.AErase Raw TVar constr
+R1710:1728 annotated.AComparison RC comparison_subst thm
+R1740:1747 annotated.AErase Raw TVar constr
+R1779:1802 annotated.ASubstitution RB subst_eta_beta_cancel thm
+R1779:1802 annotated.ASubstitution RB subst_eta_beta_cancel thm
+R1779:1802 annotated.ASubstitution RB subst_eta_beta_cancel thm
+R1834:1851 annotated.AComparison RC type_comparison ind
+R1858:1864 annotated.AErase Raw TPi constr
+R1893:1901 annotated.AErase Raw subst def
+R1903:1911 annotated.AErase Raw TUnit constr
+R1867:1875 annotated.AErase Raw subst def
+R1877:1885 annotated.AErase Raw TUnit constr
+R1924:1930 annotated.AErase Raw TPi constr
+R1943:1947 annotated.AErase <> erase def
+R1933:1937 annotated.AErase <> erase def
+R1834:1851 annotated.AComparison RC type_comparison ind
+R1858:1864 annotated.AErase Raw TPi constr
+R1893:1901 annotated.AErase Raw subst def
+R1903:1911 annotated.AErase Raw TUnit constr
+R1867:1875 annotated.AErase Raw subst def
+R1877:1885 annotated.AErase Raw TUnit constr
+R1924:1930 annotated.AErase Raw TPi constr
+R1943:1947 annotated.AErase <> erase def
+R1933:1937 annotated.AErase <> erase def
+R1966:1974 annotated.AComparison RC cmp_pi constr
+R1984:1996 annotated.AGeneration RCore cv_refl constr
+R2004:2016 annotated.AGeneration RCore cv_refl constr
+R1966:1974 annotated.AComparison RC cmp_pi constr
+R1984:1996 annotated.AGeneration RCore cv_refl constr
+R2004:2016 annotated.AGeneration RCore cv_refl constr
+R2046:2069 annotated.AComparison RC comparison_transitive thm
+R2046:2069 annotated.AComparison RC comparison_transitive thm
+R2113:2129 annotated.AComparison <> comparison_typing thm
+R2151:2166 annotated.ATyping <> type_correctness thm
+R2113:2129 annotated.AComparison <> comparison_typing thm
+R2151:2166 annotated.ATyping <> type_correctness thm
+R2189:2212 annotated.AComparison RC comparison_transitive thm
+R2189:2212 annotated.AComparison RC comparison_transitive thm
+R2239:2267 annotated.AComparison RC comparison_left_conversion thm
+R2239:2267 annotated.AComparison RC comparison_left_conversion thm
+prf 2310:2330 <> eta_root_preservation
+binder 2341:2345 <> Gamma:8
+binder 2347:2347 <> t:9
+binder 2349:2349 <> u:10
+binder 2351:2351 <> T:11
+R2372:2375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2356:2361 annotated.ATyping <> typing ind
+R2363:2367 annotated.AEtaPreservation <> Gamma:8 var
+R2369:2369 annotated.AEtaPreservation <> t:9 var
+R2371:2371 annotated.AEtaPreservation <> T:11 var
+R2388:2391 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2376:2383 annotated.AEta <> eta_root ind
+R2385:2385 annotated.AEtaPreservation <> t:9 var
+R2387:2387 annotated.AEtaPreservation <> u:10 var
+R2392:2397 annotated.ATyping <> typing ind
+R2399:2403 annotated.AEtaPreservation <> Gamma:8 var
+R2405:2405 annotated.AEtaPreservation <> u:10 var
+R2407:2407 annotated.AEtaPreservation <> T:11 var
+R2463:2478 annotated.AEtaPreservation <> eta_preservation thm
+R2463:2478 annotated.AEtaPreservation <> eta_preservation thm
+prf 2505:2529 <> eta_contract_preservation
+binder 2540:2544 <> Gamma:12
+binder 2546:2546 <> t:13
+binder 2548:2548 <> u:14
+binder 2550:2550 <> T:15
+R2571:2574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2555:2560 annotated.ATyping <> typing ind
+R2562:2566 annotated.AEtaPreservation <> Gamma:12 var
+R2568:2568 annotated.AEtaPreservation <> t:13 var
+R2570:2570 annotated.AEtaPreservation <> T:15 var
+R2598:2601 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2589:2591 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2575:2586 annotated.AEta <> eta_contract def
+R2588:2588 annotated.AEtaPreservation <> t:13 var
+R2592:2595 Corelib.Init.Datatypes <> Some constr
+R2597:2597 annotated.AEtaPreservation <> u:14 var
+R2602:2607 annotated.ATyping <> typing ind
+R2609:2613 annotated.AEtaPreservation <> Gamma:12 var
+R2615:2615 annotated.AEtaPreservation <> u:14 var
+R2617:2617 annotated.AEtaPreservation <> T:15 var
+R2662:2682 annotated.AEtaPreservation <> eta_root_preservation thm
+R2709:2726 annotated.AEta <> eta_contract_sound thm
+R2662:2682 annotated.AEtaPreservation <> eta_root_preservation thm
+R2709:2726 annotated.AEta <> eta_contract_sound thm
+R2754:2769 annotated.AEtaPreservation <> eta_preservation thm
+R2790:2810 annotated.AEtaPreservation <> eta_root_preservation thm
+R2831:2855 annotated.AEtaPreservation <> eta_contract_preservation thm

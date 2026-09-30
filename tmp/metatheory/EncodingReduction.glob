@@ -1,0 +1,266 @@
+DIGEST fc62ec3ff3de43e16bad2f26c3b7a1f9
+FEncodingReduction
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:74 EncodingWork <> <> lib
+R92:118 OpenSignaturesDerivedTyping <> <> lib
+R129:147 ProofDB.DBReduction <> <> lib
+R157:169 Stdlib.Lists.List ListNotations <> mod
+R185:198 ProofDB.DBCore <> <> mod
+mod 179:180 <> DC
+prf 208:221 <> encode_product
+binder 232:232 <> A:1
+binder 234:234 <> B:2
+binder 236:238 <> env:3
+R267:269 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R243:248 EncodingWork <> encode def
+R250:252 EncodingReduction <> env:3 var
+R255:261 OpenSignaturesSyntax <> product def
+R265:265 EncodingReduction <> B:2 var
+R263:263 EncodingReduction <> A:1 var
+R270:279 EncodingWork DB product def
+R297:302 EncodingWork <> encode def
+R304:306 EncodingReduction <> env:3 var
+R308:308 EncodingReduction <> B:2 var
+R282:287 EncodingWork <> encode def
+R289:291 EncodingReduction <> env:3 var
+R293:293 EncodingReduction <> A:1 var
+R336:342 OpenSignaturesSyntax <> product def
+R345:354 EncodingWork DB product def
+R362:367 EncodingWork <> encode def
+R388:399 EncodingWork <> encode_fresh thm
+R402:415 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R388:399 EncodingWork <> encode_fresh thm
+R402:415 OpenSignaturesDerivedTyping <> fresh_not_free thm
+prf 440:454 <> encode_diagonal
+binder 465:465 <> G:4
+binder 467:467 <> P:5
+binder 469:471 <> env:6
+R508:510 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R476:481 EncodingWork <> encode def
+R483:485 EncodingReduction <> env:6 var
+R488:502 OpenSignaturesSyntax <> diagonal_motive def
+R506:506 EncodingReduction <> P:5 var
+R504:504 EncodingReduction <> G:4 var
+R511:528 EncodingWork DB diagonal_motive def
+R546:551 EncodingWork <> encode def
+R553:555 EncodingReduction <> env:6 var
+R557:557 EncodingReduction <> P:5 var
+R531:536 EncodingWork <> encode def
+R538:540 EncodingReduction <> env:6 var
+R542:542 EncodingReduction <> G:4 var
+R585:599 OpenSignaturesSyntax <> diagonal_motive def
+R602:619 EncodingWork DB diagonal_motive def
+R627:632 EncodingWork <> encode def
+R634:643 EncodingWork <> encode_var def
+R657:668 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R657:668 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R657:668 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R709:722 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R686:697 EncodingWork <> encode_fresh thm
+R686:697 EncodingWork <> encode_fresh thm
+R709:722 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R686:697 EncodingWork <> encode_fresh thm
+R686:697 EncodingWork <> encode_fresh thm
+R709:722 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R686:697 EncodingWork <> encode_fresh thm
+R686:697 EncodingWork <> encode_fresh thm
+R799:812 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R851:852 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R853:854 Stdlib.Lists.List <> In def
+R873:881 OpenSignaturesSyntax <> free_vars def
+R857:857 Corelib.Init.Datatypes <> S constr
+R860:864 OpenSignaturesSyntax <> fresh def
+R851:852 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R853:854 Stdlib.Lists.List <> In def
+R873:881 OpenSignaturesSyntax <> free_vars def
+R857:857 Corelib.Init.Datatypes <> S constr
+R860:864 OpenSignaturesSyntax <> fresh def
+R904:923 OpenSignaturesDerivedTyping <> above_fresh_not_free thm
+R932:932 Corelib.Init.Datatypes <> S constr
+R935:939 OpenSignaturesSyntax <> fresh def
+R1007:1012 EncodingWork <> encode def
+R1014:1025 EncodingReduction <> root_step def
+R1027:1035 OpenSignaturesCore <> root_step def
+R1037:1046 Corelib.Init.Datatypes <> option_map def
+R1059:1061 OpenSignaturesSyntax <> Bot def
+R1064:1069 EncodingWork DB Bot def
+R1072:1078 OpenSignaturesSyntax <> carrier def
+R1081:1090 EncodingWork DB carrier def
+R1110:1121 EncodingWork <> encode_subst thm
+R1141:1154 EncodingReduction <> encode_product thm
+R1174:1188 EncodingReduction <> encode_diagonal thm
+R1198:1203 EncodingWork <> encode def
+R1205:1214 EncodingWork <> encode_var def
+R1235:1246 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R1266:1277 EncodingWork <> encode_fresh thm
+R1304:1310 EncodingWork DB lift def
+R1353:1356 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R1357:1357 Corelib.Init.Datatypes <> S constr
+R1353:1356 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R1357:1357 Corelib.Init.Datatypes <> S constr
+R1380:1383 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R1384:1384 Corelib.Init.Datatypes <> S constr
+R1394:1398 Corelib.Init.Datatypes <> false constr
+R1420:1430 Stdlib.Arith.PeanoNat Nat eqb_neq thm
+R1462:1498 ProofDB.DBParallelBase <> lift_fuse_zero thm
+R1525:1564 ProofDB.DBParallelBase <> lift_one_one_zero thm
+prf 1593:1603 <> encode_root
+binder 1614:1614 <> t:7
+binder 1616:1618 <> env:8
+R1660:1662 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1623:1632 Corelib.Init.Datatypes <> option_map def
+R1648:1656 OpenSignaturesCore <> root_step def
+R1658:1658 EncodingReduction <> t:7 var
+R1635:1640 EncodingWork <> encode def
+R1642:1644 EncodingReduction <> env:8 var
+R1663:1674 EncodingReduction <> root_step def
+R1677:1682 EncodingWork <> encode def
+R1684:1686 EncodingReduction <> env:8 var
+R1688:1688 EncodingReduction <> t:7 var
+R1732:1740 OpenSignaturesCore <> root_step def
+R1742:1747 EncodingWork <> encode def
+R1749:1760 EncodingReduction <> root_step def
+R1859:1861 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1820:1829 Corelib.Init.Datatypes <> option_map def
+R1859:1861 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1820:1829 Corelib.Init.Datatypes <> option_map def
+prf 1911:1926 <> encode_root_step
+binder 1937:1937 <> t:9
+binder 1939:1939 <> u:10
+binder 1941:1943 <> env:11
+R1966:1971 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1957:1959 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1946:1954 OpenSignaturesCore <> root_step def
+R1956:1956 EncodingReduction <> t:9 var
+R1960:1963 Corelib.Init.Datatypes <> Some constr
+R1965:1965 EncodingReduction <> u:10 var
+R1999:2001 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1972:1983 EncodingReduction <> root_step def
+R1986:1991 EncodingWork <> encode def
+R1993:1995 EncodingReduction <> env:11 var
+R1997:1997 EncodingReduction <> t:9 var
+R2002:2005 Corelib.Init.Datatypes <> Some constr
+R2008:2013 EncodingWork <> encode def
+R2015:2017 EncodingReduction <> env:11 var
+R2019:2019 EncodingReduction <> u:10 var
+R2059:2069 EncodingReduction <> encode_root thm
+R2059:2069 EncodingReduction <> encode_root thm
+R2059:2069 EncodingReduction <> encode_root thm
+prf 2099:2117 <> encode_root_inverse
+binder 2128:2128 <> t:12
+binder 2130:2132 <> env:13
+binder 2134:2134 <> u:14
+R2175:2180 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2166:2168 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2139:2150 EncodingReduction <> root_step def
+R2153:2158 EncodingWork <> encode def
+R2160:2162 EncodingReduction <> env:13 var
+R2164:2164 EncodingReduction <> t:12 var
+R2169:2172 Corelib.Init.Datatypes <> Some constr
+R2174:2174 EncodingReduction <> u:14 var
+R2181:2187 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2189:2190 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2188:2188 <> v:15
+R2211:2214 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2202:2204 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2191:2199 OpenSignaturesCore <> root_step def
+R2201:2201 EncodingReduction <> t:12 var
+R2205:2208 Corelib.Init.Datatypes <> Some constr
+R2210:2210 EncodingReduction <> v:15 var
+R2227:2229 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2215:2220 EncodingWork <> encode def
+R2222:2224 EncodingReduction <> env:13 var
+R2226:2226 EncodingReduction <> v:15 var
+R2230:2230 EncodingReduction <> u:14 var
+R2271:2281 EncodingReduction <> encode_root thm
+R2271:2281 EncodingReduction <> encode_root thm
+R2271:2281 EncodingReduction <> encode_root thm
+R2301:2309 OpenSignaturesCore <> root_step def
+R2301:2309 OpenSignaturesCore <> root_step def
+prf 2409:2424 <> encode_reduction
+binder 2435:2435 <> t:16
+binder 2437:2437 <> u:17
+R2453:2456 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2440:2448 OpenSignaturesCore <> reduction ind
+R2452:2452 EncodingReduction <> u:17 var
+R2450:2450 EncodingReduction <> t:16 var
+binder 2464:2466 <> env:18
+R2471:2482 EncodingReduction <> reduction ind
+R2500:2505 EncodingWork <> encode def
+R2507:2509 EncodingReduction <> env:18 var
+R2511:2511 EncodingReduction <> u:17 var
+R2485:2490 EncodingWork <> encode def
+R2492:2494 EncodingReduction <> env:18 var
+R2496:2496 EncodingReduction <> t:16 var
+R2567:2572 EncodingWork <> encode def
+R2621:2631 EncodingReduction <> red_root constr
+R2644:2659 EncodingReduction <> encode_root_step thm
+R2621:2631 EncodingReduction <> red_root constr
+R2644:2659 EncodingReduction <> encode_root_step thm
+R2671:2680 EncodingWork <> encode_var def
+R2692:2703 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2706:2717 EncodingWork <> encode_fresh thm
+R2692:2703 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2692:2703 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2706:2717 EncodingWork <> encode_fresh thm
+R2706:2717 EncodingWork <> encode_fresh thm
+R2744:2753 EncodingReduction <> red_eta constr
+R2744:2753 EncodingReduction <> red_eta constr
+prf 2769:2785 <> encode_conversion
+binder 2796:2796 <> t:19
+binder 2798:2798 <> u:20
+R2809:2812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2801:2804 OpenSignaturesCore <> conv ind
+R2808:2808 EncodingReduction <> u:20 var
+R2806:2806 EncodingReduction <> t:19 var
+binder 2820:2822 <> env:21
+R2827:2833 EncodingReduction <> conv ind
+R2851:2856 EncodingWork <> encode def
+R2858:2860 EncodingReduction <> env:21 var
+R2862:2862 EncodingReduction <> u:20 var
+R2836:2841 EncodingWork <> encode def
+R2843:2845 EncodingReduction <> env:21 var
+R2847:2847 EncodingReduction <> t:19 var
+R2925:2934 EncodingReduction <> cv_step constr
+R2925:2934 EncodingReduction <> cv_step constr
+R2955:2960 EncodingWork <> encode def
+R3007:3016 EncodingReduction <> st_root constr
+R3029:3044 EncodingReduction <> encode_root_step thm
+R3007:3016 EncodingReduction <> st_root constr
+R3029:3044 EncodingReduction <> encode_root_step thm
+R3057:3066 EncodingReduction <> cv_refl constr
+R3057:3066 EncodingReduction <> cv_refl constr
+R3083:3091 EncodingReduction <> cv_sym constr
+R3083:3091 EncodingReduction <> cv_sym constr
+R3109:3119 EncodingReduction <> cv_trans constr
+R3109:3119 EncodingReduction <> cv_trans constr
+R3154:3159 EncodingWork <> encode def
+R3161:3170 EncodingWork <> encode_var def
+R3182:3193 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R3196:3207 EncodingWork <> encode_fresh thm
+R3182:3193 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R3182:3193 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R3196:3207 EncodingWork <> encode_fresh thm
+R3196:3207 EncodingWork <> encode_fresh thm
+R3234:3242 EncodingReduction <> cv_eta constr
+R3234:3242 EncodingReduction <> cv_eta constr
+R3269:3271 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3257:3262 EncodingWork <> encode def
+R3272:3277 EncodingWork <> encode def
+R3269:3271 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3257:3262 EncodingWork <> encode def
+R3272:3277 EncodingWork <> encode def
+R3299:3310 EncodingWork <> encode_alpha thm
+R3332:3351 OpenSignaturesSubstitution <> alpha_closed_context thm
+R3299:3310 EncodingWork <> encode_alpha thm
+R3332:3351 OpenSignaturesSubstitution <> alpha_closed_context thm
+R3390:3399 EncodingReduction <> cv_refl constr
+R3390:3399 EncodingReduction <> cv_refl constr
+R3412:3427 EncodingReduction <> cv_compatible constr
+R3412:3427 EncodingReduction <> cv_compatible constr
+R3454:3463 OpenSignaturesSyntax <> compatible ind
+R3454:3463 OpenSignaturesSyntax <> compatible ind
+R3506:3511 EncodingWork <> encode def

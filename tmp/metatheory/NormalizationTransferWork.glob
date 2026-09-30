@@ -1,0 +1,198 @@
+DIGEST fc7e0c75e00805696d82b3c9af879462
+FNormalizationTransferWork
+R27:29 Stdlib.micromega.Lia <> <> lib
+R47:68 ActivePostponementWork <> <> lib
+R70:87 ActiveParallelWork <> <> lib
+prf 97:119 <> accessible_computations
+binder 130:130 <> t:1
+R169:174 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R135:137 Corelib.Init.Wf <> Acc ind
+R168:168 NormalizationTransferWork <> t:1 var
+binder 144:144 <> u:2
+binder 146:146 <> v:3
+R151:161 nameless.DBComputationPreservation <> computation ind
+R163:163 NormalizationTransferWork <> v:3 var
+R165:165 NormalizationTransferWork <> u:2 var
+binder 182:182 <> u:4
+R204:207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R185:187 nameless.DBParallelBase <> rtc ind
+R203:203 NormalizationTransferWork <> u:4 var
+R201:201 NormalizationTransferWork <> t:1 var
+R189:199 nameless.DBComputationPreservation <> computation ind
+R208:210 Corelib.Init.Wf <> Acc ind
+R241:241 NormalizationTransferWork <> u:4 var
+binder 217:217 <> u:5
+binder 219:219 <> v:6
+R224:234 nameless.DBComputationPreservation <> computation ind
+R236:236 NormalizationTransferWork <> v:6 var
+R238:238 NormalizationTransferWork <> u:5 var
+R317:323 Corelib.Init.Wf <> Acc_inv thm
+R317:323 Corelib.Init.Wf <> Acc_inv thm
+prf 343:374 <> accessible_positive_computations
+binder 385:385 <> t:7
+R424:429 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R390:392 Corelib.Init.Wf <> Acc ind
+R423:423 NormalizationTransferWork <> t:7 var
+binder 399:399 <> u:8
+binder 401:401 <> v:9
+R406:416 nameless.DBComputationPreservation <> computation ind
+R418:418 NormalizationTransferWork <> v:9 var
+R420:420 NormalizationTransferWork <> u:8 var
+R430:432 Corelib.Init.Wf <> Acc ind
+R473:473 NormalizationTransferWork <> t:7 var
+binder 439:439 <> u:10
+binder 441:441 <> v:11
+R446:466 ActiveParallelWork <> positive_computations def
+R468:468 NormalizationTransferWork <> v:11 var
+R470:470 NormalizationTransferWork <> u:10 var
+R668:674 Corelib.Init.Wf <> Acc_inv thm
+R668:674 Corelib.Init.Wf <> Acc_inv thm
+prf 734:750 <> accessible_apstep
+binder 761:761 <> t:12
+R800:805 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R766:768 Corelib.Init.Wf <> Acc ind
+R799:799 NormalizationTransferWork <> t:12 var
+binder 775:775 <> u:13
+binder 777:777 <> v:14
+R782:792 nameless.DBComputationPreservation <> computation ind
+R794:794 NormalizationTransferWork <> v:14 var
+R796:796 NormalizationTransferWork <> u:13 var
+R806:808 Corelib.Init.Wf <> Acc ind
+R839:839 NormalizationTransferWork <> t:12 var
+binder 815:815 <> u:15
+binder 817:817 <> v:16
+R822:827 ActiveParallelWork <> apstep ind
+R829:832 Corelib.Init.Datatypes <> true constr
+R834:834 NormalizationTransferWork <> v:16 var
+R836:836 NormalizationTransferWork <> u:15 var
+R875:906 NormalizationTransferWork <> accessible_positive_computations thm
+R875:906 NormalizationTransferWork <> accessible_positive_computations thm
+R1003:1017 ActiveParallelWork <> apstep_positive thm
+R1028:1034 Corelib.Init.Logic <> eq_refl constr
+R1003:1017 ActiveParallelWork <> apstep_positive thm
+R1028:1034 Corelib.Init.Logic <> eq_refl constr
+prf 1052:1081 <> normalization_from_computation
+binder 1092:1096 <> Gamma:17
+binder 1098:1098 <> t:18
+binder 1100:1100 <> T:19
+R1121:1124 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1105:1110 nameless.DBTyping <> typing ind
+R1112:1116 NormalizationTransferWork <> Gamma:17 var
+R1118:1118 NormalizationTransferWork <> t:18 var
+R1120:1120 NormalizationTransferWork <> T:19 var
+R1159:1164 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1125:1127 Corelib.Init.Wf <> Acc ind
+R1158:1158 NormalizationTransferWork <> t:18 var
+binder 1134:1134 <> u:20
+binder 1136:1136 <> v:21
+R1141:1151 nameless.DBComputationPreservation <> computation ind
+R1153:1153 NormalizationTransferWork <> v:21 var
+R1155:1155 NormalizationTransferWork <> u:20 var
+R1165:1167 Corelib.Init.Wf <> Acc ind
+R1196:1196 NormalizationTransferWork <> t:18 var
+binder 1174:1174 <> u:22
+binder 1176:1176 <> v:23
+R1181:1189 nameless.DBCore <> reduction ind
+R1193:1193 NormalizationTransferWork <> u:22 var
+R1191:1191 NormalizationTransferWork <> v:23 var
+R1246:1262 NormalizationTransferWork <> accessible_apstep thm
+R1246:1262 NormalizationTransferWork <> accessible_apstep thm
+binder 1309:1309 <> s:24
+R1346:1353 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1312:1314 Corelib.Init.Wf <> Acc ind
+R1345:1345 NormalizationTransferWork <> s:24 var
+binder 1321:1321 <> u:25
+binder 1323:1323 <> v:26
+R1328:1333 ActiveParallelWork <> apstep ind
+R1335:1338 Corelib.Init.Datatypes <> true constr
+R1340:1340 NormalizationTransferWork <> v:26 var
+R1342:1342 NormalizationTransferWork <> u:25 var
+R1370:1373 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1354:1359 nameless.DBTyping <> typing ind
+R1367:1367 NormalizationTransferWork <> s:24 var
+binder 1381:1381 <> u:27
+R1398:1405 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1384:1386 nameless.DBParallelBase <> rtc ind
+R1397:1397 NormalizationTransferWork <> u:27 var
+R1395:1395 NormalizationTransferWork <> s:24 var
+R1388:1393 nameless.DBEta <> epstep ind
+R1406:1408 Corelib.Init.Wf <> Acc ind
+R1437:1437 NormalizationTransferWork <> u:27 var
+binder 1415:1415 <> v:28
+binder 1417:1417 <> w:29
+R1422:1430 nameless.DBCore <> reduction ind
+R1434:1434 NormalizationTransferWork <> v:28 var
+R1432:1432 NormalizationTransferWork <> w:29 var
+binder 1309:1309 <> s:30
+R1346:1353 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1312:1314 Corelib.Init.Wf <> Acc ind
+R1345:1345 NormalizationTransferWork <> s:30 var
+binder 1321:1321 <> u:31
+binder 1323:1323 <> v:32
+R1328:1333 ActiveParallelWork <> apstep ind
+R1335:1338 Corelib.Init.Datatypes <> true constr
+R1340:1340 NormalizationTransferWork <> v:32 var
+R1342:1342 NormalizationTransferWork <> u:31 var
+R1370:1373 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1354:1359 nameless.DBTyping <> typing ind
+R1367:1367 NormalizationTransferWork <> s:30 var
+binder 1381:1381 <> u:33
+R1398:1405 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1384:1386 nameless.DBParallelBase <> rtc ind
+R1397:1397 NormalizationTransferWork <> u:33 var
+R1395:1395 NormalizationTransferWork <> s:30 var
+R1388:1393 nameless.DBEta <> epstep ind
+R1406:1408 Corelib.Init.Wf <> Acc ind
+R1437:1437 NormalizationTransferWork <> u:33 var
+binder 1415:1415 <> v:34
+binder 1417:1417 <> w:35
+R1422:1430 nameless.DBCore <> reduction ind
+R1434:1434 NormalizationTransferWork <> v:34 var
+R1432:1432 NormalizationTransferWork <> w:35 var
+R1506:1521 nameless.DBParallelBase <> tsize_strong_ind thm
+binder 1528:1528 <> u:36
+R1547:1556 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1533:1535 nameless.DBParallelBase <> rtc ind
+R1546:1546 NormalizationTransferWork <> u:36 var
+R1537:1542 nameless.DBEta <> epstep ind
+R1557:1559 Corelib.Init.Wf <> Acc ind
+R1588:1588 NormalizationTransferWork <> u:36 var
+binder 1566:1566 <> v:37
+binder 1568:1568 <> w:38
+R1573:1581 nameless.DBCore <> reduction ind
+R1585:1585 NormalizationTransferWork <> v:37 var
+R1583:1583 NormalizationTransferWork <> w:38 var
+R1506:1521 nameless.DBParallelBase <> tsize_strong_ind thm
+binder 1528:1528 <> u:39
+R1547:1556 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1533:1535 nameless.DBParallelBase <> rtc ind
+R1546:1546 NormalizationTransferWork <> u:39 var
+R1537:1542 nameless.DBEta <> epstep ind
+R1557:1559 Corelib.Init.Wf <> Acc ind
+R1588:1588 NormalizationTransferWork <> u:39 var
+binder 1566:1566 <> v:40
+binder 1568:1568 <> w:41
+R1573:1581 nameless.DBCore <> reduction ind
+R1585:1585 NormalizationTransferWork <> v:40 var
+R1583:1583 NormalizationTransferWork <> w:41 var
+R1656:1680 nameless.DBNormalization <> reduction_computation_eta thm
+R1656:1680 nameless.DBNormalization <> reduction_computation_eta thm
+R1727:1751 ActivePostponementWork <> safe_etas_apstep_postpone thm
+R1762:1776 nameless.DBEtaSafety <> typing_eta_safe thm
+R1796:1799 Corelib.Init.Datatypes <> true constr
+R1804:1821 ActiveParallelWork <> computation_apstep thm
+R1727:1751 ActivePostponementWork <> safe_etas_apstep_postpone thm
+R1762:1776 nameless.DBEtaSafety <> typing_eta_safe thm
+R1796:1799 Corelib.Init.Datatypes <> true constr
+R1804:1821 ActiveParallelWork <> computation_apstep thm
+R1886:1903 nameless.DBParallelPreservation <> pstep_preservation thm
+R1914:1925 ActiveParallelWork <> apstep_pstep thm
+R1886:1903 nameless.DBParallelPreservation <> pstep_preservation thm
+R1914:1925 ActiveParallelWork <> apstep_pstep thm
+R2012:2020 nameless.DBParallelBase <> rtc_trans thm
+R2040:2046 nameless.DBParallelBase <> rtc_one thm
+R2012:2020 nameless.DBParallelBase <> rtc_trans thm
+R2040:2046 nameless.DBParallelBase <> rtc_one thm
+R2084:2091 nameless.DBParallelBase <> rtc_refl constr
+R2084:2091 nameless.DBParallelBase <> rtc_refl constr
+R2119:2148 NormalizationTransferWork <> normalization_from_computation thm

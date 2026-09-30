@@ -1,0 +1,551 @@
+DIGEST 39a27f0b9cf8a7290fe0502ae73522d7
+FObservationWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:48 Stdlib.Strings.String <> <> lib
+R50:52 Stdlib.micromega.Lia <> <> lib
+R70:91 OpenSignaturesTheorems <> <> lib
+R101:113 Stdlib.Lists.List ListNotations <> mod
+prf 123:154 <> substitution_argument_conversion
+binder 165:165 <> b:1
+binder 167:167 <> x:2
+binder 169:169 <> t:3
+binder 171:171 <> u:4
+R184:187 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R176:179 OpenSignaturesCore <> conv ind
+R183:183 ObservationWork <> u:4 var
+R181:181 ObservationWork <> t:3 var
+R188:191 OpenSignaturesCore <> conv ind
+R208:212 OpenSignaturesSyntax <> subst def
+R218:218 ObservationWork <> b:1 var
+R216:216 ObservationWork <> x:2 var
+R214:214 ObservationWork <> u:4 var
+R194:198 OpenSignaturesSyntax <> subst def
+R204:204 ObservationWork <> b:1 var
+R202:202 ObservationWork <> x:2 var
+R200:200 ObservationWork <> t:3 var
+R274:277 OpenSignaturesSyntax <> TApp constr
+R280:283 OpenSignaturesSyntax <> TLam constr
+R256:263 OpenSignaturesCore <> cv_trans constr
+R274:277 OpenSignaturesSyntax <> TApp constr
+R280:283 OpenSignaturesSyntax <> TLam constr
+R256:263 OpenSignaturesCore <> cv_trans constr
+R304:309 OpenSignaturesCore <> cv_sym constr
+R312:318 OpenSignaturesCore <> cv_step constr
+R321:327 OpenSignaturesCore <> st_root constr
+R304:309 OpenSignaturesCore <> cv_sym constr
+R312:318 OpenSignaturesCore <> cv_step constr
+R321:327 OpenSignaturesCore <> st_root constr
+R372:375 OpenSignaturesSyntax <> TApp constr
+R378:381 OpenSignaturesSyntax <> TLam constr
+R354:361 OpenSignaturesCore <> cv_trans constr
+R372:375 OpenSignaturesSyntax <> TApp constr
+R378:381 OpenSignaturesSyntax <> TLam constr
+R354:361 OpenSignaturesCore <> cv_trans constr
+R404:416 OpenSignaturesCore <> cv_compatible constr
+R419:425 OpenSignaturesSyntax <> cp_TApp constr
+R439:445 OpenSignaturesCore <> cv_refl constr
+R404:416 OpenSignaturesCore <> cv_compatible constr
+R419:425 OpenSignaturesSyntax <> cp_TApp constr
+R439:445 OpenSignaturesCore <> cv_refl constr
+R439:445 OpenSignaturesCore <> cv_refl constr
+R460:466 OpenSignaturesCore <> cv_step constr
+R469:475 OpenSignaturesCore <> st_root constr
+R460:466 OpenSignaturesCore <> cv_step constr
+R469:475 OpenSignaturesCore <> st_root constr
+prf 501:522 <> instantiate_conversion
+binder 533:535 <> env:5
+binder 537:537 <> t:6
+binder 539:539 <> u:7
+R552:555 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R544:547 OpenSignaturesCore <> conv ind
+R551:551 ObservationWork <> u:7 var
+R549:549 ObservationWork <> t:6 var
+R556:559 OpenSignaturesCore <> conv ind
+R582:592 OpenSignaturesTheorems <> instantiate def
+R594:596 ObservationWork <> env:5 var
+R598:598 ObservationWork <> u:7 var
+R562:572 OpenSignaturesTheorems <> instantiate def
+R574:576 ObservationWork <> env:5 var
+R578:578 ObservationWork <> t:6 var
+R664:674 OpenSignaturesTheorems <> instantiate def
+R706:728 OpenSignaturesTheorems <> conversion_substitution thm
+R706:728 OpenSignaturesTheorems <> conversion_substitution thm
+prf 742:756 <> instantiate_app
+binder 767:769 <> env:8
+binder 771:771 <> f:9
+binder 773:773 <> a:10
+R804:806 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R778:788 OpenSignaturesTheorems <> instantiate def
+R790:792 ObservationWork <> env:8 var
+R795:798 OpenSignaturesSyntax <> TApp constr
+R802:802 ObservationWork <> a:10 var
+R800:800 ObservationWork <> f:9 var
+R807:810 OpenSignaturesSyntax <> TApp constr
+R833:843 OpenSignaturesTheorems <> instantiate def
+R845:847 ObservationWork <> env:8 var
+R849:849 ObservationWork <> a:10 var
+R813:823 OpenSignaturesTheorems <> instantiate def
+R825:827 ObservationWork <> env:8 var
+R829:829 ObservationWork <> f:9 var
+R907:917 OpenSignaturesTheorems <> instantiate def
+R919:923 OpenSignaturesSyntax <> subst def
+R925:934 OpenSignaturesSyntax <> substitute def
+prf 955:971 <> instantiate_close
+binder 982:984 <> env:11
+binder 986:987 <> IT:12
+binder 989:989 <> F:13
+binder 991:991 <> G:14
+R1027:1029 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R996:1006 OpenSignaturesTheorems <> instantiate def
+R1008:1010 ObservationWork <> env:11 var
+R1013:1018 OpenSignaturesSyntax <> TClose constr
+R1025:1025 ObservationWork <> G:14 var
+R1023:1023 ObservationWork <> F:13 var
+R1020:1021 ObservationWork <> IT:12 var
+R1030:1035 OpenSignaturesSyntax <> TClose constr
+R1079:1089 OpenSignaturesTheorems <> instantiate def
+R1091:1093 ObservationWork <> env:11 var
+R1095:1095 ObservationWork <> G:14 var
+R1059:1069 OpenSignaturesTheorems <> instantiate def
+R1071:1073 ObservationWork <> env:11 var
+R1075:1075 ObservationWork <> F:13 var
+R1038:1048 OpenSignaturesTheorems <> instantiate def
+R1050:1052 ObservationWork <> env:11 var
+R1054:1055 ObservationWork <> IT:12 var
+R1153:1163 OpenSignaturesTheorems <> instantiate def
+R1165:1169 OpenSignaturesSyntax <> subst def
+R1171:1180 OpenSignaturesSyntax <> substitute def
+prf 1201:1214 <> instantiate_in
+binder 1225:1227 <> env:15
+binder 1229:1229 <> t:16
+R1255:1257 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1232:1242 OpenSignaturesTheorems <> instantiate def
+R1244:1246 ObservationWork <> env:15 var
+R1249:1251 OpenSignaturesSyntax <> TIn constr
+R1253:1253 ObservationWork <> t:16 var
+R1258:1260 OpenSignaturesSyntax <> TIn constr
+R1263:1273 OpenSignaturesTheorems <> instantiate def
+R1275:1277 ObservationWork <> env:15 var
+R1279:1279 ObservationWork <> t:16 var
+R1337:1347 OpenSignaturesTheorems <> instantiate def
+R1349:1353 OpenSignaturesSyntax <> subst def
+R1355:1364 OpenSignaturesSyntax <> substitute def
+prf 1385:1400 <> instantiate_case
+binder 1411:1413 <> env:17
+binder 1415:1415 <> k:18
+binder 1417:1418 <> IT:19
+binder 1420:1420 <> F:20
+binder 1422:1422 <> G:21
+binder 1424:1424 <> i:22
+binder 1426:1426 <> Q:23
+binder 1428:1428 <> b:24
+binder 1430:1430 <> t:25
+R1480:1484 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1435:1445 OpenSignaturesTheorems <> instantiate def
+R1447:1449 ObservationWork <> env:17 var
+R1452:1461 OpenSignaturesSyntax <> TCloseCase constr
+R1478:1478 ObservationWork <> t:25 var
+R1476:1476 ObservationWork <> b:24 var
+R1474:1474 ObservationWork <> Q:23 var
+R1472:1472 ObservationWork <> i:22 var
+R1470:1470 ObservationWork <> G:21 var
+R1468:1468 ObservationWork <> F:20 var
+R1465:1466 ObservationWork <> IT:19 var
+R1463:1463 ObservationWork <> k:18 var
+R1485:1494 OpenSignaturesSyntax <> TCloseCase constr
+R1624:1634 OpenSignaturesTheorems <> instantiate def
+R1636:1638 ObservationWork <> env:17 var
+R1640:1640 ObservationWork <> t:25 var
+R1604:1614 OpenSignaturesTheorems <> instantiate def
+R1616:1618 ObservationWork <> env:17 var
+R1620:1620 ObservationWork <> b:24 var
+R1584:1594 OpenSignaturesTheorems <> instantiate def
+R1596:1598 ObservationWork <> env:17 var
+R1600:1600 ObservationWork <> Q:23 var
+R1564:1574 OpenSignaturesTheorems <> instantiate def
+R1576:1578 ObservationWork <> env:17 var
+R1580:1580 ObservationWork <> i:22 var
+R1540:1550 OpenSignaturesTheorems <> instantiate def
+R1552:1554 ObservationWork <> env:17 var
+R1556:1556 ObservationWork <> G:21 var
+R1520:1530 OpenSignaturesTheorems <> instantiate def
+R1532:1534 ObservationWork <> env:17 var
+R1536:1536 ObservationWork <> F:20 var
+R1499:1509 OpenSignaturesTheorems <> instantiate def
+R1511:1513 ObservationWork <> env:17 var
+R1515:1516 ObservationWork <> IT:19 var
+R1496:1496 ObservationWork <> k:18 var
+R1698:1708 OpenSignaturesTheorems <> instantiate def
+R1710:1714 OpenSignaturesSyntax <> subst def
+R1716:1725 OpenSignaturesSyntax <> substitute def
+prf 1746:1763 <> instantiate_closed
+binder 1774:1776 <> env:26
+binder 1778:1778 <> t:27
+R1797:1800 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1792:1794 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1781:1789 OpenSignaturesSyntax <> free_vars def
+R1791:1791 ObservationWork <> t:27 var
+R1795:1796 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1818:1820 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1801:1811 OpenSignaturesTheorems <> instantiate def
+R1813:1815 ObservationWork <> env:26 var
+R1817:1817 ObservationWork <> t:27 var
+R1821:1821 ObservationWork <> t:27 var
+R1884:1894 OpenSignaturesTheorems <> instantiate def
+R1924:1934 OpenSignaturesBinding <> subst_fresh thm
+R1924:1934 OpenSignaturesBinding <> subst_fresh thm
+R1924:1934 OpenSignaturesBinding <> subst_fresh thm
+prf 1984:2004 <> observations_separate
+binder 2015:2015 <> t:28
+binder 2017:2017 <> u:29
+R2035:2038 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2022:2032 OpenSignaturesTheorems <> observation def
+R2034:2034 ObservationWork <> t:28 var
+R2052:2055 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2039:2049 OpenSignaturesTheorems <> observation def
+R2051:2051 ObservationWork <> u:29 var
+R2064:2067 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2056:2059 OpenSignaturesCore <> conv ind
+R2063:2063 ObservationWork <> u:29 var
+R2061:2061 ObservationWork <> t:28 var
+R2069:2071 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2068:2068 ObservationWork <> t:28 var
+R2072:2072 ObservationWork <> u:29 var
+R2168:2175 OpenSignaturesLabels <> raw_head thm
+R2188:2194 Corelib.Init.Logic <> eq_refl constr
+R2196:2202 Corelib.Init.Logic <> eq_refl constr
+R2168:2175 OpenSignaturesLabels <> raw_head thm
+R2188:2194 Corelib.Init.Logic <> eq_refl constr
+R2196:2202 Corelib.Init.Logic <> eq_refl constr
+R2168:2175 OpenSignaturesLabels <> raw_head thm
+R2188:2194 Corelib.Init.Logic <> eq_refl constr
+R2196:2202 Corelib.Init.Logic <> eq_refl constr
+prf 2231:2253 <> observation_normal_form
+binder 2264:2264 <> t:30
+R2304:2307 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2269:2274 OpenSignaturesCore <> typing ind
+R2288:2303 OpenSignaturesTheorems <> observation_type def
+R2286:2286 ObservationWork <> t:30 var
+R2276:2284 OpenSignaturesSyntax <> empty_ctx def
+R2308:2314 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2316:2317 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2315:2315 <> v:31
+R2326:2329 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2318:2321 OpenSignaturesCore <> eval ind
+R2325:2325 ObservationWork <> v:31 var
+R2323:2323 ObservationWork <> t:30 var
+R2330:2340 OpenSignaturesTheorems <> observation def
+R2342:2342 ObservationWork <> v:31 var
+R2377:2382 OpenSignaturesCore <> typing ind
+R2397:2402 OpenSignaturesSyntax <> TEnumT constr
+R2405:2412 OpenSignaturesElaboration <> row_enum def
+R2414:2414 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R2434:2434 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R2455:2455 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R2415:2415 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2429:2429 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2433:2433 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2430:2432 OpenSignaturesSyntax <> TI1 constr
+R2435:2435 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2450:2450 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2454:2454 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2451:2453 OpenSignaturesSyntax <> TI1 constr
+R2384:2392 OpenSignaturesSyntax <> empty_ctx def
+R2377:2382 OpenSignaturesCore <> typing ind
+R2397:2402 OpenSignaturesSyntax <> TEnumT constr
+R2405:2412 OpenSignaturesElaboration <> row_enum def
+R2414:2414 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R2434:2434 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R2455:2455 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R2415:2415 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2429:2429 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2433:2433 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2430:2432 OpenSignaturesSyntax <> TI1 constr
+R2435:2435 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2450:2450 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2454:2454 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2451:2453 OpenSignaturesSyntax <> TI1 constr
+R2384:2392 OpenSignaturesSyntax <> empty_ctx def
+R2479:2494 OpenSignaturesNamedCanonical <> enum_normal_form thm
+R2514:2531 OpenSignaturesTheorems <> normalization_eval thm
+R2496:2512 OpenSignaturesTheorems <> full_preservation prfax
+R2479:2494 OpenSignaturesNamedCanonical <> enum_normal_form thm
+R2514:2531 OpenSignaturesTheorems <> normalization_eval thm
+R2496:2512 OpenSignaturesTheorems <> full_preservation prfax
+R2607:2615 Stdlib.Lists.List <> nth_error def
+R2683:2693 OpenSignaturesTheorems <> observation def
+R2700:2712 OpenSignaturesSyntax <> enum_position def
+prf 2734:2766 <> observation_evaluation_conversion
+binder 2777:2777 <> t:32
+binder 2779:2779 <> u:33
+binder 2781:2786 <> result:34
+R2826:2829 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2791:2796 OpenSignaturesCore <> typing ind
+R2810:2825 OpenSignaturesTheorems <> observation_type def
+R2808:2808 ObservationWork <> t:32 var
+R2798:2806 OpenSignaturesSyntax <> empty_ctx def
+R2865:2870 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2830:2835 OpenSignaturesCore <> typing ind
+R2849:2864 OpenSignaturesTheorems <> observation_type def
+R2847:2847 ObservationWork <> u:33 var
+R2837:2845 OpenSignaturesSyntax <> empty_ctx def
+R2879:2882 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2871:2874 OpenSignaturesCore <> conv ind
+R2878:2878 ObservationWork <> u:33 var
+R2876:2876 ObservationWork <> t:32 var
+R2901:2904 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2883:2893 OpenSignaturesTheorems <> observation def
+R2895:2900 ObservationWork <> result:34 var
+R2918:2921 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2905:2908 OpenSignaturesCore <> eval ind
+R2912:2917 ObservationWork <> result:34 var
+R2910:2910 ObservationWork <> t:32 var
+R2922:2925 OpenSignaturesCore <> eval ind
+R2929:2934 ObservationWork <> result:34 var
+R2927:2927 ObservationWork <> u:33 var
+R2993:3015 ObservationWork <> observation_normal_form thm
+R2993:3015 ObservationWork <> observation_normal_form thm
+R3056:3058 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3056:3058 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3073:3093 ObservationWork <> observations_separate thm
+R3073:3093 ObservationWork <> observations_separate thm
+R3129:3136 OpenSignaturesCore <> cv_trans constr
+R3146:3151 OpenSignaturesCore <> cv_sym constr
+R3160:3174 OpenSignaturesNamedCanonical <> eval_conversion thm
+R3129:3136 OpenSignaturesCore <> cv_trans constr
+R3146:3151 OpenSignaturesCore <> cv_sym constr
+R3160:3174 OpenSignaturesNamedCanonical <> eval_conversion thm
+R3199:3206 OpenSignaturesCore <> cv_trans constr
+R3226:3240 OpenSignaturesNamedCanonical <> eval_conversion thm
+R3199:3206 OpenSignaturesCore <> cv_trans constr
+R3226:3240 OpenSignaturesNamedCanonical <> eval_conversion thm
+prf 3287:3317 <> closed_observational_conversion
+binder 3328:3328 <> A:35
+binder 3330:3330 <> t:36
+binder 3332:3332 <> u:37
+R3357:3360 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3337:3342 OpenSignaturesCore <> typing ind
+R3356:3356 ObservationWork <> A:35 var
+R3354:3354 ObservationWork <> t:36 var
+R3344:3352 OpenSignaturesSyntax <> empty_ctx def
+R3381:3384 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3361:3366 OpenSignaturesCore <> typing ind
+R3380:3380 ObservationWork <> A:35 var
+R3378:3378 ObservationWork <> u:37 var
+R3368:3376 OpenSignaturesSyntax <> empty_ctx def
+R3393:3396 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3385:3388 OpenSignaturesCore <> conv ind
+R3392:3392 ObservationWork <> u:37 var
+R3390:3390 ObservationWork <> t:36 var
+R3397:3419 OpenSignaturesTheorems <> closed_observational_eq def
+R3421:3421 ObservationWork <> A:35 var
+R3423:3423 ObservationWork <> t:36 var
+R3425:3425 ObservationWork <> u:37 var
+R3550:3555 OpenSignaturesCore <> typing ind
+R3587:3602 OpenSignaturesTheorems <> observation_type def
+R3568:3572 OpenSignaturesSyntax <> subst def
+R3557:3565 OpenSignaturesSyntax <> empty_ctx def
+R3550:3555 OpenSignaturesCore <> typing ind
+R3587:3602 OpenSignaturesTheorems <> observation_type def
+R3568:3572 OpenSignaturesSyntax <> subst def
+R3557:3565 OpenSignaturesSyntax <> empty_ctx def
+R3617:3632 OpenSignaturesTheorems <> observation_type def
+R3640:3644 OpenSignaturesSyntax <> subst def
+R3650:3665 OpenSignaturesTheorems <> observation_type def
+R3617:3632 OpenSignaturesTheorems <> observation_type def
+R3640:3644 OpenSignaturesSyntax <> subst def
+R3650:3665 OpenSignaturesTheorems <> observation_type def
+R3680:3691 OpenSignaturesTheorems <> substitution prfax
+R3680:3691 OpenSignaturesTheorems <> substitution prfax
+R3746:3751 OpenSignaturesCore <> typing ind
+R3783:3798 OpenSignaturesTheorems <> observation_type def
+R3764:3768 OpenSignaturesSyntax <> subst def
+R3753:3761 OpenSignaturesSyntax <> empty_ctx def
+R3746:3751 OpenSignaturesCore <> typing ind
+R3783:3798 OpenSignaturesTheorems <> observation_type def
+R3764:3768 OpenSignaturesSyntax <> subst def
+R3753:3761 OpenSignaturesSyntax <> empty_ctx def
+R3813:3828 OpenSignaturesTheorems <> observation_type def
+R3836:3840 OpenSignaturesSyntax <> subst def
+R3846:3861 OpenSignaturesTheorems <> observation_type def
+R3813:3828 OpenSignaturesTheorems <> observation_type def
+R3836:3840 OpenSignaturesSyntax <> subst def
+R3846:3861 OpenSignaturesTheorems <> observation_type def
+R3876:3887 OpenSignaturesTheorems <> substitution prfax
+R3876:3887 OpenSignaturesTheorems <> substitution prfax
+R3944:3947 OpenSignaturesCore <> conv ind
+R3970:3974 OpenSignaturesSyntax <> subst def
+R3950:3954 OpenSignaturesSyntax <> subst def
+R4003:4034 ObservationWork <> substitution_argument_conversion thm
+R3944:3947 OpenSignaturesCore <> conv ind
+R3970:3974 OpenSignaturesSyntax <> subst def
+R3950:3954 OpenSignaturesSyntax <> subst def
+R4003:4034 ObservationWork <> substitution_argument_conversion thm
+R4067:4099 ObservationWork <> observation_evaluation_conversion thm
+R4067:4099 ObservationWork <> observation_evaluation_conversion thm
+R4137:4169 ObservationWork <> observation_evaluation_conversion thm
+R4184:4189 OpenSignaturesCore <> cv_sym constr
+R4137:4169 ObservationWork <> observation_evaluation_conversion thm
+R4184:4189 OpenSignaturesCore <> cv_sym constr
+prf 4217:4240 <> observational_conversion
+binder 4251:4255 <> Gamma:38
+binder 4257:4257 <> A:39
+binder 4259:4259 <> t:40
+binder 4261:4261 <> u:41
+R4282:4285 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4266:4271 OpenSignaturesCore <> typing ind
+R4281:4281 ObservationWork <> A:39 var
+R4279:4279 ObservationWork <> t:40 var
+R4273:4277 ObservationWork <> Gamma:38 var
+R4302:4305 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4286:4291 OpenSignaturesCore <> typing ind
+R4301:4301 ObservationWork <> A:39 var
+R4299:4299 ObservationWork <> u:41 var
+R4293:4297 ObservationWork <> Gamma:38 var
+R4314:4317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4306:4309 OpenSignaturesCore <> conv ind
+R4313:4313 ObservationWork <> u:41 var
+R4311:4311 ObservationWork <> t:40 var
+R4318:4333 OpenSignaturesTheorems <> observational_eq def
+R4335:4339 ObservationWork <> Gamma:38 var
+R4341:4341 ObservationWork <> A:39 var
+R4343:4343 ObservationWork <> t:40 var
+R4345:4345 ObservationWork <> u:41 var
+R4455:4485 ObservationWork <> closed_observational_conversion thm
+R4455:4485 ObservationWork <> closed_observational_conversion thm
+R4499:4518 OpenSignaturesTheorems <> closing_substitution thm
+R4499:4518 OpenSignaturesTheorems <> closing_substitution thm
+R4545:4564 OpenSignaturesTheorems <> closing_substitution thm
+R4545:4564 OpenSignaturesTheorems <> closing_substitution thm
+R4594:4615 ObservationWork <> instantiate_conversion thm
+R4594:4615 ObservationWork <> instantiate_conversion thm
+prf 4632:4654 <> close_roll_unroll_proof
+binder 4665:4669 <> Gamma:42
+binder 4671:4672 <> IT:43
+binder 4674:4674 <> F:44
+binder 4676:4676 <> G:45
+binder 4678:4678 <> i:46
+binder 4680:4680 <> x:47
+R4711:4714 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4685:4695 OpenSignaturesCore <> close_input def
+R4710:4710 ObservationWork <> i:46 var
+R4708:4708 ObservationWork <> G:45 var
+R4706:4706 ObservationWork <> F:44 var
+R4703:4704 ObservationWork <> IT:43 var
+R4697:4701 ObservationWork <> Gamma:42 var
+R4748:4753 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4715:4720 OpenSignaturesCore <> typing ind
+R4731:4737 OpenSignaturesSyntax <> CloseAt def
+R4746:4746 ObservationWork <> i:46 var
+R4744:4744 ObservationWork <> G:45 var
+R4742:4742 ObservationWork <> F:44 var
+R4739:4740 ObservationWork <> IT:43 var
+R4728:4728 ObservationWork <> x:47 var
+R4722:4726 ObservationWork <> Gamma:42 var
+R4754:4769 OpenSignaturesTheorems <> observational_eq def
+R4771:4775 ObservationWork <> Gamma:42 var
+R4778:4784 OpenSignaturesSyntax <> CloseAt def
+R4793:4793 ObservationWork <> i:46 var
+R4791:4791 ObservationWork <> G:45 var
+R4789:4789 ObservationWork <> F:44 var
+R4786:4787 ObservationWork <> IT:43 var
+R4797:4799 OpenSignaturesSyntax <> TIn constr
+R4802:4807 OpenSignaturesSyntax <> unroll def
+R4818:4818 ObservationWork <> x:47 var
+R4816:4816 ObservationWork <> i:46 var
+R4814:4814 ObservationWork <> G:45 var
+R4812:4812 ObservationWork <> F:44 var
+R4809:4810 ObservationWork <> IT:43 var
+R4822:4822 ObservationWork <> x:47 var
+R4887:4892 OpenSignaturesCore <> typing ind
+R4927:4933 OpenSignaturesSyntax <> CloseAt def
+R4901:4903 OpenSignaturesSyntax <> TIn constr
+R4906:4911 OpenSignaturesSyntax <> unroll def
+R4887:4892 OpenSignaturesCore <> typing ind
+R4927:4933 OpenSignaturesSyntax <> CloseAt def
+R4901:4903 OpenSignaturesSyntax <> TIn constr
+R4906:4911 OpenSignaturesSyntax <> unroll def
+R4996:5006 OpenSignaturesCore <> ty_in_close constr
+R4996:5006 OpenSignaturesCore <> ty_in_close constr
+R5035:5047 OpenSignaturesTheorems <> unroll_typing thm
+R5035:5047 OpenSignaturesTheorems <> unroll_typing thm
+R5168:5187 OpenSignaturesTheorems <> closing_substitution thm
+R5168:5187 OpenSignaturesTheorems <> closing_substitution thm
+R5230:5260 ObservationWork <> closed_observational_conversion thm
+R5230:5260 ObservationWork <> closed_observational_conversion thm
+R5274:5293 OpenSignaturesTheorems <> closing_substitution thm
+R5274:5293 OpenSignaturesTheorems <> closing_substitution thm
+R5339:5345 OpenSignaturesSyntax <> CloseAt def
+R5367:5381 ObservationWork <> instantiate_app thm
+R5384:5400 ObservationWork <> instantiate_close thm
+R5367:5381 ObservationWork <> instantiate_app thm
+R5367:5381 ObservationWork <> instantiate_app thm
+R5384:5400 ObservationWork <> instantiate_close thm
+R5384:5400 ObservationWork <> instantiate_close thm
+R5428:5445 OpenSignaturesTheorems <> normalization_eval thm
+R5428:5445 OpenSignaturesTheorems <> normalization_eval thm
+R5492:5508 OpenSignaturesTheorems <> preservation_eval thm
+R5492:5508 OpenSignaturesTheorems <> preservation_eval thm
+R5552:5568 OpenSignaturesCanonical <> close_value_shape thm
+R5552:5568 OpenSignaturesCanonical <> close_value_shape thm
+R5631:5633 OpenSignaturesSyntax <> TIn constr
+R5613:5620 OpenSignaturesCore <> cv_trans constr
+R5648:5653 OpenSignaturesCore <> cv_sym constr
+R5665:5679 OpenSignaturesNamedCanonical <> eval_conversion thm
+R5631:5633 OpenSignaturesSyntax <> TIn constr
+R5613:5620 OpenSignaturesCore <> cv_trans constr
+R5648:5653 OpenSignaturesCore <> cv_sym constr
+R5665:5679 OpenSignaturesNamedCanonical <> eval_conversion thm
+R5694:5699 OpenSignaturesSyntax <> unroll def
+R5710:5723 ObservationWork <> instantiate_in thm
+R5726:5741 ObservationWork <> instantiate_case thm
+R5710:5723 ObservationWork <> instantiate_in thm
+R5710:5723 ObservationWork <> instantiate_in thm
+R5726:5741 ObservationWork <> instantiate_case thm
+R5726:5741 ObservationWork <> instantiate_case thm
+R5757:5774 ObservationWork <> instantiate_closed thm
+R5780:5787 OpenSignaturesSyntax <> identity def
+R5757:5774 ObservationWork <> instantiate_closed thm
+R5780:5787 OpenSignaturesSyntax <> identity def
+R5757:5774 ObservationWork <> instantiate_closed thm
+R5780:5787 OpenSignaturesSyntax <> identity def
+R5816:5830 OpenSignaturesNamedCanonical <> eval_conversion thm
+R5834:5848 OpenSignaturesNamedCanonical <> eval_congruence thm
+R5850:5852 OpenSignaturesSyntax <> TIn constr
+R5868:5875 OpenSignaturesCore <> st_TIn_x constr
+R5816:5830 OpenSignaturesNamedCanonical <> eval_conversion thm
+R5834:5848 OpenSignaturesNamedCanonical <> eval_congruence thm
+R5850:5852 OpenSignaturesSyntax <> TIn constr
+R5868:5875 OpenSignaturesCore <> st_TIn_x constr
+R5891:5905 OpenSignaturesNamedCanonical <> eval_transitive thm
+R5891:5905 OpenSignaturesNamedCanonical <> eval_transitive thm
+R5921:5935 OpenSignaturesNamedCanonical <> eval_congruence thm
+binder 5942:5942 <> t:48
+R5947:5956 OpenSignaturesSyntax <> TCloseCase constr
+R6060:6060 ObservationWork <> t:48 var
+R6051:6058 OpenSignaturesSyntax <> identity def
+R6030:6040 OpenSignaturesTheorems <> instantiate def
+R6010:6020 OpenSignaturesTheorems <> instantiate def
+R5982:5992 OpenSignaturesTheorems <> instantiate def
+R5961:5971 OpenSignaturesTheorems <> instantiate def
+R6077:6091 OpenSignaturesCore <> st_TCloseCase_x constr
+R5921:5935 OpenSignaturesNamedCanonical <> eval_congruence thm
+binder 5942:5942 <> t:49
+R5947:5956 OpenSignaturesSyntax <> TCloseCase constr
+R6060:6060 ObservationWork <> t:49 var
+R6051:6058 OpenSignaturesSyntax <> identity def
+R6030:6040 OpenSignaturesTheorems <> instantiate def
+R6010:6020 OpenSignaturesTheorems <> instantiate def
+R5982:5992 OpenSignaturesTheorems <> instantiate def
+R5961:5971 OpenSignaturesTheorems <> instantiate def
+R6077:6091 OpenSignaturesCore <> st_TCloseCase_x constr
+R6117:6123 OpenSignaturesCore <> ev_step constr
+R6133:6139 OpenSignaturesCore <> st_root constr
+R6117:6123 OpenSignaturesCore <> ev_step constr
+R6133:6139 OpenSignaturesCore <> st_root constr
+R6169:6175 OpenSignaturesCore <> ev_step constr
+R6185:6191 OpenSignaturesCore <> st_root constr
+R6169:6175 OpenSignaturesCore <> ev_step constr
+R6185:6191 OpenSignaturesCore <> st_root constr

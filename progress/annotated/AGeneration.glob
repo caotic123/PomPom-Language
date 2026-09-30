@@ -1,0 +1,162 @@
+DIGEST d39fd803517aca112f7ef77893887b41
+Fannotated.AGeneration
+R149:152 Stdlib.Lists.List <> <> lib
+R154:158 Stdlib.Arith.Arith <> <> lib
+R176:196 annotated.AComparison <> <> lib
+R206:218 Stdlib.Lists.List ListNotations <> mod
+R237:251 nameless.DBCore <> <> mod
+mod 228:232 <> RCore
+prf 261:277 <> lambda_generation
+binder 288:292 <> Gamma:1
+binder 294:294 <> t:2
+binder 296:296 <> T:3
+R315:318 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R299:304 annotated.ATyping <> typing ind
+R306:310 annotated.AGeneration <> Gamma:1 var
+R312:312 annotated.AGeneration <> t:2 var
+R314:314 annotated.AGeneration <> T:3 var
+binder 326:326 <> A:4
+binder 328:328 <> B:5
+binder 330:330 <> b:6
+R349:352 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R336:338 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R335:335 annotated.AGeneration <> t:2 var
+R339:342 annotated.ASyntax <> TLam constr
+R344:344 annotated.AGeneration <> A:4 var
+R346:346 annotated.AGeneration <> B:5 var
+R348:348 annotated.AGeneration <> b:6 var
+R353:359 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R363:366 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 360:360 <> j:7
+binder 362:362 <> k:8
+R395:400 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R367:372 annotated.ATyping <> typing ind
+R374:378 annotated.AGeneration <> Gamma:1 var
+R380:380 annotated.AGeneration <> A:4 var
+R383:391 annotated.AErase Raw TSort constr
+R393:393 annotated.AGeneration <> j:7 var
+R442:447 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R401:406 annotated.ATyping <> typing ind
+R416:419 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R409:413 annotated.AErase <> erase def
+R415:415 annotated.AGeneration <> A:4 var
+R420:424 annotated.AGeneration <> Gamma:1 var
+R427:427 annotated.AGeneration <> B:5 var
+R430:438 annotated.AErase Raw TSort constr
+R440:440 annotated.AGeneration <> k:8 var
+R485:490 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R448:453 annotated.ATyping <> typing ind
+R463:466 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R456:460 annotated.AErase <> erase def
+R462:462 annotated.AGeneration <> A:4 var
+R467:471 annotated.AGeneration <> Gamma:1 var
+R474:474 annotated.AGeneration <> b:6 var
+R477:481 annotated.AErase <> erase def
+R483:483 annotated.AGeneration <> B:5 var
+R491:508 annotated.AComparison RC type_comparison ind
+R511:517 annotated.AErase Raw TPi constr
+R530:534 annotated.AErase <> erase def
+R536:536 annotated.AGeneration <> B:5 var
+R520:524 annotated.AErase <> erase def
+R526:526 annotated.AGeneration <> A:4 var
+R540:540 annotated.AGeneration <> T:3 var
+R703:719 annotated.AComparison RC cmp_conversion constr
+R722:734 annotated.AGeneration <> cv_refl constr
+R703:719 annotated.AComparison RC cmp_conversion constr
+R722:734 annotated.AGeneration <> cv_refl constr
+R858:887 annotated.AComparison RC comparison_right_conversion thm
+R858:887 annotated.AComparison RC comparison_right_conversion thm
+R1024:1047 annotated.AComparison RC comparison_transitive thm
+R1024:1047 annotated.AComparison RC comparison_transitive thm
+R1073:1094 annotated.AComparison RC comparison_universe thm
+R1097:1106 annotated.ATyping RT ul_sort constr
+R1073:1094 annotated.AComparison RC comparison_universe thm
+R1097:1106 annotated.ATyping RT ul_sort constr
+R1242:1265 annotated.AComparison RC comparison_transitive thm
+R1242:1265 annotated.AComparison RC comparison_transitive thm
+R1291:1312 annotated.AComparison RC comparison_universe thm
+R1315:1322 annotated.ATyping RT ul_pi constr
+R1291:1312 annotated.AComparison RC comparison_universe thm
+R1315:1322 annotated.ATyping RT ul_pi constr
+prf 1349:1370 <> application_generation
+binder 1381:1385 <> Gamma:9
+binder 1387:1387 <> t:10
+binder 1389:1389 <> T:11
+R1408:1411 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1392:1397 annotated.ATyping <> typing ind
+R1399:1403 annotated.AGeneration <> Gamma:9 var
+R1405:1405 annotated.AGeneration <> t:10 var
+R1407:1407 annotated.AGeneration <> T:11 var
+binder 1419:1419 <> A:12
+binder 1421:1421 <> B:13
+binder 1423:1423 <> f:14
+binder 1425:1425 <> a:15
+R1446:1449 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1431:1433 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1430:1430 annotated.AGeneration <> t:10 var
+R1434:1437 annotated.ASyntax <> TApp constr
+R1439:1439 annotated.AGeneration <> A:12 var
+R1441:1441 annotated.AGeneration <> B:13 var
+R1443:1443 annotated.AGeneration <> f:14 var
+R1445:1445 annotated.AGeneration <> a:15 var
+R1450:1456 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1460:1463 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1457:1457 <> j:16
+binder 1459:1459 <> k:17
+R1492:1497 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1464:1469 annotated.ATyping <> typing ind
+R1471:1475 annotated.AGeneration <> Gamma:9 var
+R1477:1477 annotated.AGeneration <> A:12 var
+R1480:1488 annotated.AErase Raw TSort constr
+R1490:1490 annotated.AGeneration <> j:16 var
+R1539:1544 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1498:1503 annotated.ATyping <> typing ind
+R1513:1516 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1506:1510 annotated.AErase <> erase def
+R1512:1512 annotated.AGeneration <> A:12 var
+R1517:1521 annotated.AGeneration <> Gamma:9 var
+R1524:1524 annotated.AGeneration <> B:13 var
+R1527:1535 annotated.AErase Raw TSort constr
+R1537:1537 annotated.AGeneration <> k:17 var
+R1589:1594 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1545:1550 annotated.ATyping <> typing ind
+R1552:1556 annotated.AGeneration <> Gamma:9 var
+R1558:1558 annotated.AGeneration <> f:14 var
+R1561:1567 annotated.AErase Raw TPi constr
+R1580:1584 annotated.AErase <> erase def
+R1586:1586 annotated.AGeneration <> B:13 var
+R1570:1574 annotated.AErase <> erase def
+R1576:1576 annotated.AGeneration <> A:12 var
+R1619:1624 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1595:1600 annotated.ATyping <> typing ind
+R1602:1606 annotated.AGeneration <> Gamma:9 var
+R1608:1608 annotated.AGeneration <> a:15 var
+R1611:1615 annotated.AErase <> erase def
+R1617:1617 annotated.AGeneration <> A:12 var
+R1625:1642 annotated.AComparison RC type_comparison ind
+R1645:1653 annotated.AErase Raw subst def
+R1668:1672 annotated.AErase <> erase def
+R1674:1674 annotated.AGeneration <> B:13 var
+R1656:1660 annotated.AErase <> erase def
+R1662:1662 annotated.AGeneration <> a:15 var
+R1678:1678 annotated.AGeneration <> T:11 var
+R1843:1859 annotated.AComparison RC cmp_conversion constr
+R1862:1874 annotated.AGeneration <> cv_refl constr
+R1843:1859 annotated.AComparison RC cmp_conversion constr
+R1862:1874 annotated.AGeneration <> cv_refl constr
+R2005:2034 annotated.AComparison RC comparison_right_conversion thm
+R2005:2034 annotated.AComparison RC comparison_right_conversion thm
+R2178:2201 annotated.AComparison RC comparison_transitive thm
+R2178:2201 annotated.AComparison RC comparison_transitive thm
+R2227:2248 annotated.AComparison RC comparison_universe thm
+R2251:2260 annotated.ATyping RT ul_sort constr
+R2227:2248 annotated.AComparison RC comparison_universe thm
+R2251:2260 annotated.ATyping RT ul_sort constr
+R2403:2426 annotated.AComparison RC comparison_transitive thm
+R2403:2426 annotated.AComparison RC comparison_transitive thm
+R2452:2473 annotated.AComparison RC comparison_universe thm
+R2476:2483 annotated.ATyping RT ul_pi constr
+R2452:2473 annotated.AComparison RC comparison_universe thm
+R2476:2483 annotated.ATyping RT ul_pi constr
+R2522:2538 annotated.AGeneration <> lambda_generation thm
+R2559:2580 annotated.AGeneration <> application_generation thm

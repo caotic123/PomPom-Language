@@ -1,0 +1,386 @@
+DIGEST 60583890fb2910d9762196ec918eb6c9
+FLabelsWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:48 Stdlib.Strings.String <> <> lib
+R50:52 Stdlib.micromega.Lia <> <> lib
+R70:84 NamedConfluence <> <> lib
+R86:110 OpenSignaturesElaboration <> <> lib
+R120:132 Stdlib.Lists.List ListNotations <> mod
+prf 142:149 <> raw_head
+binder 160:160 <> t:1
+binder 162:162 <> u:2
+binder 164:164 <> h:3
+binder 166:166 <> k:4
+R177:182 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R169:172 OpenSignaturesCore <> conv ind
+R176:176 LabelsWork <> u:2 var
+R174:174 LabelsWork <> t:1 var
+R203:206 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R194:196 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R183:191 OpenSignaturesProgress <> term_head def
+R193:193 LabelsWork <> t:1 var
+R197:200 Corelib.Init.Datatypes <> Some constr
+R202:202 LabelsWork <> h:3 var
+R227:230 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R218:220 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R207:215 OpenSignaturesProgress <> term_head def
+R217:217 LabelsWork <> u:2 var
+R221:224 Corelib.Init.Datatypes <> Some constr
+R226:226 LabelsWork <> k:4 var
+R232:234 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R231:231 LabelsWork <> h:3 var
+R235:235 LabelsWork <> k:4 var
+R283:308 NamedConfluence <> raw_conversion_joinability thm
+R283:308 NamedConfluence <> raw_conversion_joinability thm
+R358:369 OpenSignaturesProgress <> reduces_head thm
+R358:369 OpenSignaturesProgress <> reduces_head thm
+R406:417 OpenSignaturesProgress <> reduces_head thm
+R406:417 OpenSignaturesProgress <> reduces_head thm
+R455:464 OpenSignaturesProgress <> alpha_head thm
+R455:464 OpenSignaturesProgress <> alpha_head thm
+prf 504:514 <> reduces_tag
+binder 525:525 <> s:5
+binder 527:527 <> u:6
+R548:551 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R530:536 OpenSignaturesCore <> reduces ind
+R547:547 LabelsWork <> u:6 var
+R539:542 OpenSignaturesSyntax <> TTag constr
+R544:544 LabelsWork <> s:5 var
+R553:555 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R552:552 LabelsWork <> u:6 var
+R556:559 OpenSignaturesSyntax <> TTag constr
+R561:561 LabelsWork <> s:5 var
+R597:600 OpenSignaturesSyntax <> TTag constr
+R597:600 OpenSignaturesSyntax <> TTag constr
+R670:678 OpenSignaturesCore <> root_step def
+prf 712:720 <> conv_tags
+binder 731:731 <> a:7
+binder 733:733 <> b:8
+R758:761 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R736:739 OpenSignaturesCore <> conv ind
+R751:754 OpenSignaturesSyntax <> TTag constr
+R756:756 LabelsWork <> b:8 var
+R742:745 OpenSignaturesSyntax <> TTag constr
+R747:747 LabelsWork <> a:7 var
+R763:765 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R762:762 LabelsWork <> a:7 var
+R766:766 LabelsWork <> b:8 var
+R802:827 NamedConfluence <> raw_conversion_joinability thm
+R802:827 NamedConfluence <> raw_conversion_joinability thm
+R871:881 LabelsWork <> reduces_tag thm
+R896:906 LabelsWork <> reduces_tag thm
+R871:881 LabelsWork <> reduces_tag thm
+R896:906 LabelsWork <> reduces_tag thm
+R930:940 OpenSignaturesAlpha <> alpha_equiv def
+R942:950 OpenSignaturesAlpha <> alpha_eqb def
+R952:963 OpenSignaturesAlpha <> alpha_eqb_in def
+R983:995 Stdlib.Strings.String <> eqb_eq thm
+R983:995 Stdlib.Strings.String <> eqb_eq thm
+prf 1015:1029 <> reduction_conse
+binder 1040:1040 <> a:9
+binder 1042:1042 <> E:10
+binder 1044:1044 <> t:11
+R1071:1076 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1047:1055 OpenSignaturesCore <> reduction ind
+R1070:1070 LabelsWork <> t:11 var
+R1058:1063 OpenSignaturesSyntax <> TConsE constr
+R1067:1067 LabelsWork <> E:10 var
+R1065:1065 LabelsWork <> a:9 var
+R1077:1083 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1087:1088 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1084:1084 <> b:12
+binder 1086:1086 <> F:13
+R1103:1106 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1090:1092 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1089:1089 LabelsWork <> t:11 var
+R1093:1098 OpenSignaturesSyntax <> TConsE constr
+R1102:1102 LabelsWork <> F:13 var
+R1100:1100 LabelsWork <> b:12 var
+R1118:1121 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1107:1113 OpenSignaturesCore <> reduces ind
+R1117:1117 LabelsWork <> b:12 var
+R1115:1115 LabelsWork <> a:9 var
+R1122:1128 OpenSignaturesCore <> reduces ind
+R1132:1132 LabelsWork <> F:13 var
+R1130:1130 LabelsWork <> E:10 var
+R1185:1193 OpenSignaturesCore <> root_step def
+R1238:1244 OpenSignaturesCore <> reduces ind
+R1238:1244 OpenSignaturesCore <> reduces ind
+R1238:1244 OpenSignaturesCore <> reduces ind
+prf 1258:1270 <> reduces_conse
+binder 1281:1281 <> a:14
+binder 1283:1283 <> E:15
+binder 1285:1285 <> t:16
+R1310:1315 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1288:1294 OpenSignaturesCore <> reduces ind
+R1309:1309 LabelsWork <> t:16 var
+R1297:1302 OpenSignaturesSyntax <> TConsE constr
+R1306:1306 LabelsWork <> E:15 var
+R1304:1304 LabelsWork <> a:14 var
+R1316:1322 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1326:1327 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1323:1323 <> b:17
+binder 1325:1325 <> F:18
+R1342:1345 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1329:1331 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1328:1328 LabelsWork <> t:16 var
+R1332:1337 OpenSignaturesSyntax <> TConsE constr
+R1341:1341 LabelsWork <> F:18 var
+R1339:1339 LabelsWork <> b:17 var
+R1357:1360 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1346:1352 OpenSignaturesCore <> reduces ind
+R1356:1356 LabelsWork <> b:17 var
+R1354:1354 LabelsWork <> a:14 var
+R1361:1367 OpenSignaturesCore <> reduces ind
+R1371:1371 LabelsWork <> F:18 var
+R1369:1369 LabelsWork <> E:15 var
+R1409:1414 OpenSignaturesSyntax <> TConsE constr
+R1409:1414 OpenSignaturesSyntax <> TConsE constr
+R1507:1513 OpenSignaturesCore <> reduces ind
+R1507:1513 OpenSignaturesCore <> reduces ind
+R1530:1544 LabelsWork <> reduction_conse thm
+R1530:1544 LabelsWork <> reduction_conse thm
+R1608:1614 Corelib.Init.Logic <> eq_refl constr
+R1608:1614 Corelib.Init.Logic <> eq_refl constr
+R1685:1697 OpenSignaturesProgress <> reduces_trans thm
+R1685:1697 OpenSignaturesProgress <> reduces_trans thm
+R1685:1697 OpenSignaturesProgress <> reduces_trans thm
+prf 1711:1721 <> joined_conv
+binder 1732:1732 <> t:19
+binder 1734:1735 <> t':20
+binder 1737:1737 <> u:21
+binder 1739:1740 <> u':22
+R1755:1758 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1743:1749 OpenSignaturesCore <> reduces ind
+R1753:1754 LabelsWork <> t':20 var
+R1751:1751 LabelsWork <> t:19 var
+R1771:1776 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1759:1765 OpenSignaturesCore <> reduces ind
+R1769:1770 LabelsWork <> u':22 var
+R1767:1767 LabelsWork <> u:21 var
+R1794:1797 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1777:1787 OpenSignaturesAlpha <> alpha_equiv def
+R1789:1790 LabelsWork <> t':20 var
+R1792:1793 LabelsWork <> u':22 var
+R1798:1801 OpenSignaturesCore <> conv ind
+R1805:1805 LabelsWork <> u:21 var
+R1803:1803 LabelsWork <> t:19 var
+R1853:1860 OpenSignaturesCore <> cv_trans constr
+R1871:1882 OpenSignaturesProgress <> reduces_conv thm
+R1853:1860 OpenSignaturesCore <> cv_trans constr
+R1871:1882 OpenSignaturesProgress <> reduces_conv thm
+R1904:1911 OpenSignaturesCore <> cv_trans constr
+R1921:1928 OpenSignaturesCore <> cv_alpha constr
+R1945:1950 OpenSignaturesCore <> cv_sym constr
+R1959:1970 OpenSignaturesProgress <> reduces_conv thm
+R1904:1911 OpenSignaturesCore <> cv_trans constr
+R1921:1928 OpenSignaturesCore <> cv_alpha constr
+R1945:1950 OpenSignaturesCore <> cv_sym constr
+R1959:1970 OpenSignaturesProgress <> reduces_conv thm
+prf 1993:2002 <> conv_conse
+binder 2013:2013 <> a:23
+binder 2015:2015 <> E:24
+binder 2017:2017 <> b:25
+binder 2019:2019 <> F:26
+R2052:2057 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2022:2025 OpenSignaturesCore <> conv ind
+R2041:2046 OpenSignaturesSyntax <> TConsE constr
+R2050:2050 LabelsWork <> F:26 var
+R2048:2048 LabelsWork <> b:25 var
+R2028:2033 OpenSignaturesSyntax <> TConsE constr
+R2037:2037 LabelsWork <> E:24 var
+R2035:2035 LabelsWork <> a:23 var
+R2066:2069 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2058:2061 OpenSignaturesCore <> conv ind
+R2065:2065 LabelsWork <> b:25 var
+R2063:2063 LabelsWork <> a:23 var
+R2070:2073 OpenSignaturesCore <> conv ind
+R2077:2077 LabelsWork <> F:26 var
+R2075:2075 LabelsWork <> E:24 var
+R2119:2144 NamedConfluence <> raw_conversion_joinability thm
+R2119:2144 NamedConfluence <> raw_conversion_joinability thm
+R2192:2204 LabelsWork <> reduces_conse thm
+R2192:2204 LabelsWork <> reduces_conse thm
+R2257:2269 LabelsWork <> reduces_conse thm
+R2257:2269 LabelsWork <> reduces_conse thm
+R2355:2357 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2336:2339 Corelib.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R2321:2329 OpenSignaturesAlpha <> alpha_eqb def
+R2340:2348 OpenSignaturesAlpha <> alpha_eqb def
+R2358:2361 Corelib.Init.Datatypes <> true constr
+R2355:2357 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2336:2339 Corelib.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R2321:2329 OpenSignaturesAlpha <> alpha_eqb def
+R2340:2348 OpenSignaturesAlpha <> alpha_eqb def
+R2358:2361 Corelib.Init.Datatypes <> true constr
+R2379:2396 Stdlib.Bool.Bool <> andb_true_iff thm
+R2379:2396 Stdlib.Bool.Bool <> andb_true_iff thm
+R2447:2457 LabelsWork <> joined_conv thm
+R2447:2457 LabelsWork <> joined_conv thm
+R2447:2457 LabelsWork <> joined_conv thm
+prf 2485:2502 <> label_row_position
+binder 2513:2513 <> E:27
+binder 2515:2518 <> name:28
+binder 2520:2524 <> label:29
+R2548:2553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2527:2534 OpenSignaturesCore <> label_at ind
+R2543:2547 LabelsWork <> label:29 var
+R2538:2541 LabelsWork <> name:28 var
+R2536:2536 LabelsWork <> E:27 var
+binder 2561:2562 <> rs:30
+R2585:2590 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2565:2568 OpenSignaturesCore <> conv ind
+R2573:2580 OpenSignaturesElaboration <> row_enum def
+R2582:2583 LabelsWork <> rs:30 var
+R2570:2570 LabelsWork <> E:27 var
+R2591:2597 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2601:2602 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2598:2598 <> n:31
+binder 2600:2600 <> D:32
+R2633:2636 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2617:2619 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2603:2611 Stdlib.Lists.List <> nth_error def
+R2616:2616 LabelsWork <> n:31 var
+R2613:2614 LabelsWork <> rs:30 var
+R2620:2623 Corelib.Init.Datatypes <> Some constr
+R2625:2625 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2630:2630 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2632:2632 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2626:2629 LabelsWork <> name:28 var
+R2631:2631 LabelsWork <> D:32 var
+R2637:2640 OpenSignaturesCore <> conv ind
+R2649:2661 OpenSignaturesSyntax <> enum_position def
+R2663:2663 LabelsWork <> n:31 var
+R2642:2646 LabelsWork <> label:29 var
+R2786:2793 LabelsWork <> raw_head thm
+R2807:2813 Corelib.Init.Logic <> eq_refl constr
+R2815:2821 Corelib.Init.Logic <> eq_refl constr
+R2786:2793 LabelsWork <> raw_head thm
+R2807:2813 Corelib.Init.Logic <> eq_refl constr
+R2815:2821 Corelib.Init.Logic <> eq_refl constr
+R2850:2857 OpenSignaturesElaboration <> row_enum def
+R2874:2883 LabelsWork <> conv_conse thm
+R2874:2883 LabelsWork <> conv_conse thm
+R2930:2938 LabelsWork <> conv_tags thm
+R2930:2938 LabelsWork <> conv_tags thm
+R2995:3001 OpenSignaturesCore <> cv_refl constr
+R2995:3001 OpenSignaturesCore <> cv_refl constr
+R3064:3071 LabelsWork <> raw_head thm
+R3085:3091 Corelib.Init.Logic <> eq_refl constr
+R3093:3099 Corelib.Init.Logic <> eq_refl constr
+R3064:3071 LabelsWork <> raw_head thm
+R3085:3091 Corelib.Init.Logic <> eq_refl constr
+R3093:3099 Corelib.Init.Logic <> eq_refl constr
+R3128:3135 OpenSignaturesElaboration <> row_enum def
+R3152:3161 LabelsWork <> conv_conse thm
+R3152:3161 LabelsWork <> conv_conse thm
+R3269:3269 Corelib.Init.Datatypes <> S constr
+R3269:3269 Corelib.Init.Datatypes <> S constr
+R3311:3323 OpenSignaturesCore <> cv_compatible constr
+R3326:3334 OpenSignaturesSyntax <> cp_TESucc constr
+R3311:3323 OpenSignaturesCore <> cv_compatible constr
+R3326:3334 OpenSignaturesSyntax <> cp_TESucc constr
+R3378:3385 OpenSignaturesCore <> cv_trans constr
+R3378:3385 OpenSignaturesCore <> cv_trans constr
+R3469:3476 OpenSignaturesCore <> cv_trans constr
+R3502:3507 OpenSignaturesCore <> cv_sym constr
+R3469:3476 OpenSignaturesCore <> cv_trans constr
+R3502:3507 OpenSignaturesCore <> cv_sym constr
+prf 3545:3563 <> row_position_unique
+binder 3574:3575 <> rs:33
+binder 3577:3580 <> name:34
+binder 3582:3582 <> n:35
+binder 3584:3584 <> m:36
+binder 3586:3586 <> D:37
+binder 3588:3588 <> E:38
+R3613:3616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3593:3597 Stdlib.Lists.List <> NoDup ind
+R3600:3608 OpenSignaturesElaboration <> row_names def
+R3610:3611 LabelsWork <> rs:33 var
+R3647:3652 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3631:3633 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3617:3625 Stdlib.Lists.List <> nth_error def
+R3630:3630 LabelsWork <> n:35 var
+R3627:3628 LabelsWork <> rs:33 var
+R3634:3637 Corelib.Init.Datatypes <> Some constr
+R3639:3639 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3644:3644 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3646:3646 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3640:3643 LabelsWork <> name:34 var
+R3645:3645 LabelsWork <> D:37 var
+R3683:3686 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3667:3669 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3653:3661 Stdlib.Lists.List <> nth_error def
+R3666:3666 LabelsWork <> m:36 var
+R3663:3664 LabelsWork <> rs:33 var
+R3670:3673 Corelib.Init.Datatypes <> Some constr
+R3675:3675 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3680:3680 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3682:3682 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3676:3679 LabelsWork <> name:34 var
+R3681:3681 LabelsWork <> E:38 var
+R3688:3690 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3687:3687 LabelsWork <> n:35 var
+R3691:3691 LabelsWork <> m:36 var
+R3929:3938 Stdlib.Lists.List <> in_map_iff thm
+R3929:3938 Stdlib.Lists.List <> in_map_iff thm
+R3948:3948 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3953:3953 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3955:3955 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3991:4002 Stdlib.Lists.List <> nth_error_In thm
+R3948:3948 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3953:3953 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3955:3955 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3991:4002 Stdlib.Lists.List <> nth_error_In thm
+R4114:4123 Stdlib.Lists.List <> in_map_iff thm
+R4114:4123 Stdlib.Lists.List <> in_map_iff thm
+R4133:4133 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4138:4138 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4140:4140 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4176:4187 Stdlib.Lists.List <> nth_error_In thm
+R4133:4133 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4138:4138 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4140:4140 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4176:4187 Stdlib.Lists.List <> nth_error_In thm
+prf 4293:4305 <> labels_unique
+binder 4316:4317 <> rs:39
+binder 4319:4322 <> name:40
+binder 4324:4324 <> a:41
+binder 4326:4326 <> b:42
+R4351:4354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4331:4335 Stdlib.Lists.List <> NoDup ind
+R4338:4346 OpenSignaturesElaboration <> row_names def
+R4348:4349 LabelsWork <> rs:39 var
+R4384:4389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4355:4362 OpenSignaturesCore <> label_at ind
+R4383:4383 LabelsWork <> a:41 var
+R4378:4381 LabelsWork <> name:40 var
+R4365:4372 OpenSignaturesElaboration <> row_enum def
+R4374:4375 LabelsWork <> rs:39 var
+R4419:4422 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4390:4397 OpenSignaturesCore <> label_at ind
+R4418:4418 LabelsWork <> b:42 var
+R4413:4416 LabelsWork <> name:40 var
+R4400:4407 OpenSignaturesElaboration <> row_enum def
+R4409:4410 LabelsWork <> rs:39 var
+R4423:4426 OpenSignaturesCore <> conv ind
+R4430:4430 LabelsWork <> b:42 var
+R4428:4428 LabelsWork <> a:41 var
+R4484:4501 LabelsWork <> label_row_position thm
+R4516:4522 OpenSignaturesCore <> cv_refl constr
+R4484:4501 LabelsWork <> label_row_position thm
+R4516:4522 OpenSignaturesCore <> cv_refl constr
+R4561:4578 LabelsWork <> label_row_position thm
+R4593:4599 OpenSignaturesCore <> cv_refl constr
+R4561:4578 LabelsWork <> label_row_position thm
+R4593:4599 OpenSignaturesCore <> cv_refl constr
+R4637:4639 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4654:4672 LabelsWork <> row_position_unique thm
+R4637:4639 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4654:4672 LabelsWork <> row_position_unique thm
+R4707:4714 OpenSignaturesCore <> cv_trans constr
+R4738:4743 OpenSignaturesCore <> cv_sym constr
+R4707:4714 OpenSignaturesCore <> cv_trans constr
+R4738:4743 OpenSignaturesCore <> cv_sym constr

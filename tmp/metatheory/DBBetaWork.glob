@@ -1,0 +1,242 @@
+DIGEST bb82d3e5aae909dc059da057d18474c1
+FDBBetaWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:85 DBContextConversionWork <> <> lib
+R87:102 DBGenerationWork <> <> lib
+R112:124 Stdlib.Lists.List ListNotations <> mod
+prf 134:145 <> convert_type
+binder 156:160 <> Gamma:1
+binder 162:162 <> t:2
+binder 164:164 <> A:3
+binder 166:166 <> B:4
+R187:190 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R171:176 nameless.DBTyping <> typing ind
+R178:182 DBBetaWork <> Gamma:1 var
+R184:184 DBBetaWork <> t:2 var
+R186:186 DBBetaWork <> A:3 var
+R206:209 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R191:197 nameless.DBTyping <> type_wf def
+R199:203 DBBetaWork <> Gamma:1 var
+R205:205 DBBetaWork <> B:4 var
+R218:221 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R210:213 nameless.DBCore <> conv ind
+R217:217 DBBetaWork <> B:4 var
+R215:215 DBBetaWork <> A:3 var
+R222:227 nameless.DBTyping <> typing ind
+R229:233 DBBetaWork <> Gamma:1 var
+R235:235 DBBetaWork <> t:2 var
+R237:237 DBBetaWork <> B:4 var
+R287:293 nameless.DBTyping <> ty_conv constr
+R287:293 nameless.DBTyping <> ty_conv constr
+prf 319:350 <> substitution_argument_conversion
+binder 361:361 <> B:5
+binder 363:363 <> a:6
+binder 365:365 <> b:7
+R378:381 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R370:373 nameless.DBCore <> conv ind
+R377:377 DBBetaWork <> b:7 var
+R375:375 DBBetaWork <> a:6 var
+R382:385 nameless.DBCore <> conv ind
+R402:406 nameless.DBSyntax <> subst def
+R412:412 DBBetaWork <> B:5 var
+R408:408 DBBetaWork <> b:7 var
+R388:392 nameless.DBSyntax <> subst def
+R398:398 DBBetaWork <> B:5 var
+R394:394 DBBetaWork <> a:6 var
+R467:470 nameless.DBSyntax <> TApp constr
+R473:476 nameless.DBSyntax <> TLam constr
+R449:456 nameless.DBCore <> cv_trans constr
+R467:470 nameless.DBSyntax <> TApp constr
+R473:476 nameless.DBSyntax <> TLam constr
+R449:456 nameless.DBCore <> cv_trans constr
+R495:500 nameless.DBCore <> cv_sym constr
+R503:509 nameless.DBCore <> cv_step constr
+R512:518 nameless.DBCore <> st_root constr
+R495:500 nameless.DBCore <> cv_sym constr
+R503:509 nameless.DBCore <> cv_step constr
+R512:518 nameless.DBCore <> st_root constr
+R562:565 nameless.DBSyntax <> TApp constr
+R568:571 nameless.DBSyntax <> TLam constr
+R544:551 nameless.DBCore <> cv_trans constr
+R562:565 nameless.DBSyntax <> TApp constr
+R568:571 nameless.DBSyntax <> TLam constr
+R544:551 nameless.DBCore <> cv_trans constr
+R592:604 nameless.DBCore <> cv_compatible constr
+R607:613 nameless.DBSyntax <> cp_TApp constr
+R627:633 nameless.DBCore <> cv_refl constr
+R592:604 nameless.DBCore <> cv_compatible constr
+R607:613 nameless.DBSyntax <> cp_TApp constr
+R627:633 nameless.DBCore <> cv_refl constr
+R627:633 nameless.DBCore <> cv_refl constr
+R648:654 nameless.DBCore <> cv_step constr
+R657:663 nameless.DBCore <> st_root constr
+R648:654 nameless.DBCore <> cv_step constr
+R657:663 nameless.DBCore <> st_root constr
+prf 691:707 <> beta_preservation
+binder 718:722 <> Gamma:8
+binder 724:724 <> A:9
+binder 726:726 <> B:10
+binder 728:728 <> b:11
+binder 730:730 <> a:12
+binder 732:732 <> k:13
+R769:772 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R737:742 nameless.DBTyping <> typing ind
+R744:748 DBBetaWork <> Gamma:8 var
+R751:753 nameless.DBSyntax <> TPi constr
+R757:757 DBBetaWork <> B:10 var
+R755:755 DBBetaWork <> A:9 var
+R761:765 nameless.DBSyntax <> TSort constr
+R767:767 DBBetaWork <> k:13 var
+R804:807 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R773:778 nameless.DBTyping <> typing ind
+R780:784 DBBetaWork <> Gamma:8 var
+R787:790 nameless.DBSyntax <> TLam constr
+R792:792 DBBetaWork <> b:11 var
+R796:798 nameless.DBSyntax <> TPi constr
+R802:802 DBBetaWork <> B:10 var
+R800:800 DBBetaWork <> A:9 var
+R824:829 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R808:813 nameless.DBTyping <> typing ind
+R815:819 DBBetaWork <> Gamma:8 var
+R821:821 DBBetaWork <> a:12 var
+R823:823 DBBetaWork <> A:9 var
+R830:835 nameless.DBTyping <> typing ind
+R837:841 DBBetaWork <> Gamma:8 var
+R844:848 nameless.DBSyntax <> subst def
+R854:854 DBBetaWork <> b:11 var
+R850:850 DBBetaWork <> a:12 var
+R858:862 nameless.DBSyntax <> subst def
+R868:868 DBBetaWork <> B:10 var
+R864:864 DBBetaWork <> a:12 var
+R929:945 DBGenerationWork <> lambda_generation thm
+R960:966 Corelib.Init.Logic <> eq_refl constr
+R929:945 DBGenerationWork <> lambda_generation thm
+R960:966 Corelib.Init.Logic <> eq_refl constr
+R1007:1019 DBGenerationWork <> conversion_pi thm
+R1007:1019 DBGenerationWork <> conversion_pi thm
+R1066:1078 nameless.DBDerivedTyping <> pi_components thm
+R1094:1100 Corelib.Init.Logic <> eq_refl constr
+R1066:1078 nameless.DBDerivedTyping <> pi_components thm
+R1094:1100 Corelib.Init.Logic <> eq_refl constr
+R1135:1147 nameless.DBDerivedTyping <> pi_components thm
+R1163:1169 Corelib.Init.Logic <> eq_refl constr
+R1135:1147 nameless.DBDerivedTyping <> pi_components thm
+R1163:1169 Corelib.Init.Logic <> eq_refl constr
+R1210:1215 nameless.DBTyping <> typing ind
+R1239:1245 nameless.DBTyping <> ty_conv constr
+R1277:1282 nameless.DBCore <> cv_sym constr
+R1210:1215 nameless.DBTyping <> typing ind
+R1239:1245 nameless.DBTyping <> ty_conv constr
+R1277:1282 nameless.DBCore <> cv_sym constr
+R1296:1302 nameless.DBTyping <> ty_conv constr
+R1296:1302 nameless.DBTyping <> ty_conv constr
+R1316:1327 nameless.DBSubstitution <> substitution thm
+R1316:1327 nameless.DBSubstitution <> substitution thm
+R1359:1370 nameless.DBSubstitution <> substitution thm
+R1359:1370 nameless.DBSubstitution <> substitution thm
+R1404:1419 nameless.DBSubstitution <> conversion_subst thm
+R1404:1419 nameless.DBSubstitution <> conversion_subst thm
+prf 1435:1450 <> fst_preservation
+binder 1461:1465 <> Gamma:14
+binder 1467:1467 <> A:15
+binder 1469:1469 <> B:16
+binder 1471:1471 <> a:17
+binder 1473:1473 <> b:18
+binder 1475:1475 <> k:19
+R1515:1518 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1480:1485 nameless.DBTyping <> typing ind
+R1487:1491 DBBetaWork <> Gamma:14 var
+R1494:1499 nameless.DBSyntax <> TSigma constr
+R1503:1503 DBBetaWork <> B:16 var
+R1501:1501 DBBetaWork <> A:15 var
+R1507:1511 nameless.DBSyntax <> TSort constr
+R1513:1513 DBBetaWork <> k:19 var
+R1556:1559 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1519:1524 nameless.DBTyping <> typing ind
+R1526:1530 DBBetaWork <> Gamma:14 var
+R1533:1537 nameless.DBSyntax <> TPair constr
+R1541:1541 DBBetaWork <> b:18 var
+R1539:1539 DBBetaWork <> a:17 var
+R1545:1550 nameless.DBSyntax <> TSigma constr
+R1554:1554 DBBetaWork <> B:16 var
+R1552:1552 DBBetaWork <> A:15 var
+R1560:1565 nameless.DBTyping <> typing ind
+R1567:1571 DBBetaWork <> Gamma:14 var
+R1573:1573 DBBetaWork <> a:17 var
+R1575:1575 DBBetaWork <> A:15 var
+R1629:1643 DBGenerationWork <> pair_generation thm
+R1658:1664 Corelib.Init.Logic <> eq_refl constr
+R1629:1643 DBGenerationWork <> pair_generation thm
+R1658:1664 Corelib.Init.Logic <> eq_refl constr
+R1710:1725 DBGenerationWork <> conversion_sigma thm
+R1710:1725 DBGenerationWork <> conversion_sigma thm
+R1772:1787 nameless.DBDerivedTyping <> sigma_components thm
+R1802:1808 Corelib.Init.Logic <> eq_refl constr
+R1772:1787 nameless.DBDerivedTyping <> sigma_components thm
+R1802:1808 Corelib.Init.Logic <> eq_refl constr
+R1840:1846 nameless.DBTyping <> ty_conv constr
+R1840:1846 nameless.DBTyping <> ty_conv constr
+prf 1874:1889 <> snd_preservation
+binder 1900:1904 <> Gamma:20
+binder 1906:1906 <> A:21
+binder 1908:1908 <> B:22
+binder 1910:1910 <> a:23
+binder 1912:1912 <> b:24
+binder 1914:1914 <> k:25
+R1954:1957 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1919:1924 nameless.DBTyping <> typing ind
+R1926:1930 DBBetaWork <> Gamma:20 var
+R1933:1938 nameless.DBSyntax <> TSigma constr
+R1942:1942 DBBetaWork <> B:22 var
+R1940:1940 DBBetaWork <> A:21 var
+R1946:1950 nameless.DBSyntax <> TSort constr
+R1952:1952 DBBetaWork <> k:25 var
+R1995:2000 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1958:1963 nameless.DBTyping <> typing ind
+R1965:1969 DBBetaWork <> Gamma:20 var
+R1972:1976 nameless.DBSyntax <> TPair constr
+R1980:1980 DBBetaWork <> b:24 var
+R1978:1978 DBBetaWork <> a:23 var
+R1984:1989 nameless.DBSyntax <> TSigma constr
+R1993:1993 DBBetaWork <> B:22 var
+R1991:1991 DBBetaWork <> A:21 var
+R2001:2006 nameless.DBTyping <> typing ind
+R2008:2012 DBBetaWork <> Gamma:20 var
+R2014:2014 DBBetaWork <> b:24 var
+R2017:2021 nameless.DBSyntax <> subst def
+R2044:2044 DBBetaWork <> B:22 var
+R2024:2027 nameless.DBSyntax <> TFst constr
+R2030:2034 nameless.DBSyntax <> TPair constr
+R2038:2038 DBBetaWork <> b:24 var
+R2036:2036 DBBetaWork <> a:23 var
+R2099:2113 DBGenerationWork <> pair_generation thm
+R2128:2134 Corelib.Init.Logic <> eq_refl constr
+R2099:2113 DBGenerationWork <> pair_generation thm
+R2128:2134 Corelib.Init.Logic <> eq_refl constr
+R2180:2195 DBGenerationWork <> conversion_sigma thm
+R2180:2195 DBGenerationWork <> conversion_sigma thm
+R2242:2257 nameless.DBDerivedTyping <> sigma_components thm
+R2272:2278 Corelib.Init.Logic <> eq_refl constr
+R2242:2257 nameless.DBDerivedTyping <> sigma_components thm
+R2272:2278 Corelib.Init.Logic <> eq_refl constr
+R2310:2316 nameless.DBTyping <> ty_conv constr
+R2310:2316 nameless.DBTyping <> ty_conv constr
+R2345:2356 nameless.DBSubstitution <> substitution thm
+R2372:2380 nameless.DBDerivedTyping <> smart_fst thm
+R2345:2356 nameless.DBSubstitution <> substitution thm
+R2372:2380 nameless.DBDerivedTyping <> smart_fst thm
+R2412:2419 nameless.DBCore <> cv_trans constr
+R2429:2444 nameless.DBSubstitution <> conversion_subst thm
+R2412:2419 nameless.DBCore <> cv_trans constr
+R2429:2444 nameless.DBSubstitution <> conversion_subst thm
+R2469:2500 DBBetaWork <> substitution_argument_conversion thm
+R2503:2508 nameless.DBCore <> cv_sym constr
+R2511:2517 nameless.DBCore <> cv_step constr
+R2520:2526 nameless.DBCore <> st_root constr
+R2469:2500 DBBetaWork <> substitution_argument_conversion thm
+R2503:2508 nameless.DBCore <> cv_sym constr
+R2511:2517 nameless.DBCore <> cv_step constr
+R2520:2526 nameless.DBCore <> st_root constr

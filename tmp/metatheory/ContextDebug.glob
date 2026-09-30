@@ -1,0 +1,100 @@
+DIGEST 245a057cc33a869456d296615ab298ba
+FContextDebug
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R47:55 Stdlib.FSets.FMapFacts <> <> lib
+R73:95 OpenSignaturesTransport <> <> lib
+R117:132 Stdlib.FSets.FMapFacts WFacts <> mod
+R134:139 OpenSignaturesSyntax VarMap <> mod
+mod 105:112 <> CtxFacts
+def 155:163 <> ctx_equal
+R180:182 OpenSignaturesSyntax <> ctx def
+binder 166:170 <> Gamma:1
+binder 172:176 <> Delta:2
+binder 195:195 <> x:3
+R212:214 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R198:203 OpenSignaturesSyntax <> lookup def
+R211:211 ContextDebug <> x:3 var
+R205:209 ContextDebug <> Gamma:1 var
+R215:220 OpenSignaturesSyntax <> lookup def
+R228:228 ContextDebug <> x:3 var
+R222:226 ContextDebug <> Delta:2 var
+prf 237:252 <> ctx_equal_extend
+binder 263:267 <> Gamma:4
+binder 269:273 <> Delta:5
+binder 275:275 <> x:6
+binder 277:277 <> A:7
+R303:306 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R282:290 ContextDebug <> ctx_equal def
+R292:296 ContextDebug <> Gamma:4 var
+R298:302 ContextDebug <> Delta:5 var
+R307:315 ContextDebug <> ctx_equal def
+R318:323 OpenSignaturesSyntax <> extend def
+R333:333 ContextDebug <> A:7 var
+R331:331 ContextDebug <> x:6 var
+R325:329 ContextDebug <> Gamma:4 var
+R337:342 OpenSignaturesSyntax <> extend def
+R352:352 ContextDebug <> A:7 var
+R350:350 ContextDebug <> x:6 var
+R344:348 ContextDebug <> Delta:5 var
+R403:412 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R403:412 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+prf 537:551 <> ctx_equal_fresh
+binder 562:566 <> Gamma:8
+binder 568:572 <> Delta:9
+binder 574:574 <> x:10
+R600:603 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R579:587 ContextDebug <> ctx_equal def
+R589:593 ContextDebug <> Gamma:8 var
+R595:599 ContextDebug <> Delta:9 var
+R620:623 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R604:611 OpenSignaturesSyntax <> fresh_in def
+R619:619 ContextDebug <> x:10 var
+R613:617 ContextDebug <> Gamma:8 var
+R624:631 OpenSignaturesSyntax <> fresh_in def
+R639:639 ContextDebug <> x:10 var
+R633:637 ContextDebug <> Delta:9 var
+R656:664 ContextDebug <> ctx_equal def
+R667:674 OpenSignaturesSyntax <> fresh_in def
+prf 733:750 <> ctx_equal_exchange
+binder 761:765 <> Gamma:11
+binder 767:767 <> x:12
+binder 769:769 <> y:13
+binder 771:771 <> A:14
+binder 773:773 <> B:15
+R784:787 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R779:782 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R778:778 ContextDebug <> x:12 var
+R783:783 ContextDebug <> y:13 var
+R788:796 ContextDebug <> ctx_equal def
+R799:804 OpenSignaturesSyntax <> extend def
+R827:827 ContextDebug <> B:15 var
+R825:825 ContextDebug <> y:13 var
+R807:812 OpenSignaturesSyntax <> extend def
+R822:822 ContextDebug <> A:14 var
+R820:820 ContextDebug <> x:12 var
+R814:818 ContextDebug <> Gamma:11 var
+R831:836 OpenSignaturesSyntax <> extend def
+R859:859 ContextDebug <> A:14 var
+R857:857 ContextDebug <> x:12 var
+R839:844 OpenSignaturesSyntax <> extend def
+R854:854 ContextDebug <> B:15 var
+R852:852 ContextDebug <> y:13 var
+R846:850 ContextDebug <> Gamma:11 var
+R910:919 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R952:961 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R910:919 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R952:961 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R952:961 Stdlib.Arith.PeanoNat Nat eq_dec thm

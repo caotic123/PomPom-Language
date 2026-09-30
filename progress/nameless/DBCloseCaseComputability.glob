@@ -1,0 +1,573 @@
+DIGEST 524532815816fd2ad90fe4d8569748f5
+Fnameless.DBCloseCaseComputability
+R177:180 Stdlib.Lists.List <> <> lib
+R182:186 Stdlib.Arith.Arith <> <> lib
+R188:191 Stdlib.Bool.Bool <> <> lib
+R193:195 Stdlib.micromega.Lia <> <> lib
+R213:240 nameless.DBHypsComputability <> <> lib
+R242:272 nameless.DBSaturatedElimination <> <> lib
+R282:294 Stdlib.Lists.List ListNotations <> mod
+R296:299 nameless.DBFullReducibility Full <> mod
+prf 309:329 <> rolled_elements_intro
+binder 340:340 <> R:1
+binder 342:342 <> u:2
+R348:351 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R345:345 nameless.DBCloseCaseComputability <> R:1 var
+R347:347 nameless.DBCloseCaseComputability <> u:2 var
+R352:366 nameless.DBIndexedCandidates <> rolled_elements def
+R368:368 nameless.DBCloseCaseComputability <> R:1 var
+R371:373 nameless.DBSyntax <> TIn constr
+R375:375 nameless.DBCloseCaseComputability <> u:2 var
+R407:421 nameless.DBPositiveCandidates <> saturated_intro thm
+R407:421 nameless.DBPositiveCandidates <> saturated_intro thm
+prf 451:463 <> in_reductions
+binder 474:474 <> u:3
+binder 476:476 <> t:4
+R502:507 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R479:481 nameless.DBParallelBase <> rtc ind
+R501:501 nameless.DBCloseCaseComputability <> t:4 var
+R494:496 nameless.DBSyntax <> TIn constr
+R498:498 nameless.DBCloseCaseComputability <> u:3 var
+R483:491 nameless.DBCore <> reduction ind
+R508:514 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R516:517 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 515:515 <> v:5
+R527:530 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R519:521 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R518:518 nameless.DBCloseCaseComputability <> t:4 var
+R522:524 nameless.DBSyntax <> TIn constr
+R526:526 nameless.DBCloseCaseComputability <> v:5 var
+R531:533 nameless.DBParallelBase <> rtc ind
+R547:547 nameless.DBCloseCaseComputability <> v:5 var
+R545:545 nameless.DBCloseCaseComputability <> u:3 var
+R535:543 nameless.DBCore <> reduction ind
+R565:607 nameless.DBInterpretationComputability <> reduces_unary thm
+R565:607 nameless.DBInterpretationComputability <> reduces_unary thm
+R702:708 nameless.DBParallelBase <> rtc_one thm
+R702:708 nameless.DBParallelBase <> rtc_one thm
+def 728:736 <> case_plug
+binder 738:738 <> p:6
+binder 740:740 <> x:7
+R753:753 nameless.DBCloseCaseComputability <> p:6 var
+R760:769 nameless.DBSyntax <> TCloseCase constr
+R791:800 nameless.DBSyntax <> TCloseCase constr
+R817:817 nameless.DBCloseCaseComputability <> x:7 var
+R826:829 nameless.DBSyntax <> TVar constr
+sec 847:864 <> CloseCaseCandidate
+var 876:882 CloseCaseCandidate Payload
+R890:893 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R886:889 nameless.DBSyntax <> term ind
+var 911:927 CloseCaseCandidate payload_candidate
+R931:939 nameless.DBFullReducibility Full candidate rec
+R941:947 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+var 959:964 CloseCaseCandidate Result
+R972:975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R968:971 nameless.DBSyntax <> term ind
+R980:983 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R976:979 nameless.DBSyntax <> term ind
+var 1001:1016 CloseCaseCandidate result_candidate
+binder 1027:1027 <> x:15
+R1055:1058 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1030:1044 nameless.DBIndexedCandidates <> rolled_elements def
+R1046:1052 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+R1054:1054 nameless.DBCloseCaseComputability <> x:15 var
+R1059:1067 nameless.DBFullReducibility Full candidate rec
+R1070:1075 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Result var
+R1077:1077 nameless.DBCloseCaseComputability <> x:15 var
+var 1092:1104 CloseCaseCandidate result_stable
+R1108:1120 nameless.DBFullReducibility Full stable_family def
+R1123:1137 nameless.DBIndexedCandidates <> rolled_elements def
+R1139:1145 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+R1148:1153 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Result var
+def 1168:1178 <> case_method
+binder 1180:1180 <> b:20
+binder 1192:1192 <> u:21
+R1204:1207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1195:1201 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+R1203:1203 nameless.DBCloseCaseComputability <> u:21 var
+R1208:1213 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Result var
+R1216:1218 nameless.DBSyntax <> TIn constr
+R1220:1220 nameless.DBCloseCaseComputability <> u:21 var
+R1224:1227 nameless.DBSyntax <> TApp constr
+R1231:1231 nameless.DBCloseCaseComputability <> u:21 var
+R1229:1229 nameless.DBCloseCaseComputability <> b:20 var
+prf 1241:1262 <> case_method_reductions
+binder 1273:1273 <> b:22
+binder 1275:1276 <> b':23
+R1292:1295 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1279:1289 nameless.DBCloseCaseComputability <> case_method def
+R1291:1291 nameless.DBCloseCaseComputability <> b:22 var
+R1314:1317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1296:1298 nameless.DBParallelBase <> rtc ind
+R1312:1313 nameless.DBCloseCaseComputability <> b':23 var
+R1310:1310 nameless.DBCloseCaseComputability <> b:22 var
+R1300:1308 nameless.DBCore <> reduction ind
+R1318:1328 nameless.DBCloseCaseComputability <> case_method def
+R1330:1331 nameless.DBCloseCaseComputability <> b':23 var
+R1376:1392 nameless.DBFullReducibility Full candidate_reducts thm
+R1402:1417 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_candidate var
+R1430:1450 nameless.DBCloseCaseComputability <> rolled_elements_intro thm
+R1376:1392 nameless.DBFullReducibility Full candidate_reducts thm
+R1402:1417 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_candidate var
+R1430:1450 nameless.DBCloseCaseComputability <> rolled_elements_intro thm
+R1480:1492 nameless.DBReduction <> red_star_TApp thm
+R1480:1492 nameless.DBReduction <> red_star_TApp thm
+def 1535:1548 <> case_parameter
+binder 1550:1550 <> p:24
+R1555:1561 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1576:1579 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1562:1562 <> k:25
+binder 1564:1565 <> IT:26
+binder 1567:1567 <> F:27
+binder 1569:1569 <> G:28
+binder 1571:1571 <> i:29
+binder 1573:1573 <> Q:30
+binder 1575:1575 <> b:31
+R1618:1623 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1581:1583 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1580:1580 nameless.DBCloseCaseComputability <> p:24 var
+R1584:1593 nameless.DBSyntax <> TCloseCase constr
+R1611:1614 nameless.DBSyntax <> TVar constr
+R1608:1608 nameless.DBCloseCaseComputability <> b:31 var
+R1606:1606 nameless.DBCloseCaseComputability <> Q:30 var
+R1604:1604 nameless.DBCloseCaseComputability <> i:29 var
+R1602:1602 nameless.DBCloseCaseComputability <> G:28 var
+R1600:1600 nameless.DBCloseCaseComputability <> F:27 var
+R1597:1598 nameless.DBCloseCaseComputability <> IT:26 var
+R1595:1595 nameless.DBCloseCaseComputability <> k:25 var
+R1653:1656 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1624:1629 Corelib.Lists.ListDef <> Forall ind
+R1639:1639 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1642:1642 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1644:1644 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1646:1646 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1648:1648 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1650:1650 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1652:1652 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R1640:1641 nameless.DBCloseCaseComputability <> IT:26 var
+R1643:1643 nameless.DBCloseCaseComputability <> F:27 var
+R1645:1645 nameless.DBCloseCaseComputability <> G:28 var
+R1647:1647 nameless.DBCloseCaseComputability <> i:29 var
+R1649:1649 nameless.DBCloseCaseComputability <> Q:30 var
+R1651:1651 nameless.DBCloseCaseComputability <> b:31 var
+R1631:1637 nameless.DBFullReductionStructure <> full_SN def
+R1657:1667 nameless.DBCloseCaseComputability <> case_method def
+R1669:1669 nameless.DBCloseCaseComputability <> b:31 var
+R1739:1744 Corelib.Lists.ListDef <> Forall ind
+R1756:1759 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1746:1752 nameless.DBFullReductionStructure <> full_SN def
+R1739:1744 Corelib.Lists.ListDef <> Forall ind
+R1756:1759 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1746:1752 nameless.DBFullReductionStructure <> full_SN def
+R1855:1865 Corelib.Lists.ListDef <> Forall_cons constr
+R1920:1928 nameless.DBCore <> reduction ind
+R1920:1928 nameless.DBCore <> reduction ind
+R1942:1948 nameless.DBFullReductionStructure <> full_SN def
+R1942:1948 nameless.DBFullReductionStructure <> full_SN def
+R1956:1962 nameless.DBFullReductionStructure <> full_SN def
+R1956:1962 nameless.DBFullReductionStructure <> full_SN def
+R1986:1992 Corelib.Init.Wf <> Acc_inv thm
+R1994:1997 nameless.DBSyntax <> term ind
+binder 2004:2004 <> u:32
+binder 2006:2006 <> v:33
+R2011:2019 nameless.DBCore <> reduction ind
+R2023:2023 nameless.DBCloseCaseComputability <> u:32 var
+R2021:2021 nameless.DBCloseCaseComputability <> v:33 var
+R2060:2069 Corelib.Lists.ListDef <> Forall_nil constr
+prf 2079:2099 <> case_parameter_reduct
+binder 2110:2110 <> p:34
+binder 2112:2112 <> q:35
+R2133:2136 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2117:2130 nameless.DBCloseCaseComputability <> case_parameter def
+R2132:2132 nameless.DBCloseCaseComputability <> p:34 var
+R2150:2153 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2137:2145 nameless.DBCore <> reduction ind
+R2149:2149 nameless.DBCloseCaseComputability <> q:35 var
+R2147:2147 nameless.DBCloseCaseComputability <> p:34 var
+R2154:2167 nameless.DBCloseCaseComputability <> case_parameter def
+R2169:2169 nameless.DBCloseCaseComputability <> q:35 var
+R2354:2362 nameless.DBCore <> reduction ind
+R2365:2368 nameless.DBSyntax <> TVar constr
+R2354:2362 nameless.DBCore <> reduction ind
+R2365:2368 nameless.DBSyntax <> TVar constr
+R2522:2543 nameless.DBCloseCaseComputability <> case_method_reductions thm
+R2566:2572 nameless.DBParallelBase <> rtc_one thm
+R2522:2543 nameless.DBCloseCaseComputability <> case_method_reductions thm
+R2566:2572 nameless.DBParallelBase <> rtc_one thm
+prf 2587:2609 <> case_argument_reduction
+binder 2620:2620 <> p:36
+R2639:2642 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2623:2636 nameless.DBCloseCaseComputability <> case_parameter def
+R2638:2638 nameless.DBCloseCaseComputability <> p:36 var
+binder 2650:2650 <> x:37
+binder 2652:2652 <> y:38
+R2670:2673 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2657:2665 nameless.DBCore <> reduction ind
+R2669:2669 nameless.DBCloseCaseComputability <> y:38 var
+R2667:2667 nameless.DBCloseCaseComputability <> x:37 var
+R2674:2682 nameless.DBCore <> reduction ind
+R2701:2709 nameless.DBCloseCaseComputability <> case_plug def
+R2711:2711 nameless.DBCloseCaseComputability <> p:36 var
+R2713:2713 nameless.DBCloseCaseComputability <> y:38 var
+R2685:2693 nameless.DBCloseCaseComputability <> case_plug def
+R2695:2695 nameless.DBCloseCaseComputability <> p:36 var
+R2697:2697 nameless.DBCloseCaseComputability <> x:37 var
+R2785:2793 nameless.DBCloseCaseComputability <> case_plug def
+R2807:2822 nameless.DBCore <> red_TCloseCase_x constr
+R2807:2822 nameless.DBCore <> red_TCloseCase_x constr
+prf 2836:2852 <> case_plug_neutral
+binder 2863:2863 <> p:39
+R2882:2885 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2866:2879 nameless.DBCloseCaseComputability <> case_parameter def
+R2881:2881 nameless.DBCloseCaseComputability <> p:39 var
+binder 2893:2893 <> x:40
+R2896:2902 nameless.DBFullReducibility Full neutral def
+R2905:2913 nameless.DBCloseCaseComputability <> case_plug def
+R2915:2915 nameless.DBCloseCaseComputability <> p:39 var
+R2917:2917 nameless.DBCloseCaseComputability <> x:40 var
+R2982:2982 Corelib.Init.Logic <> I constr
+R2982:2982 Corelib.Init.Logic <> I constr
+prf 2996:3012 <> case_neutral_step
+binder 3023:3023 <> p:41
+R3042:3045 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3026:3039 nameless.DBCloseCaseComputability <> case_parameter def
+R3041:3041 nameless.DBCloseCaseComputability <> p:41 var
+binder 3053:3053 <> x:42
+binder 3055:3055 <> u:43
+R3069:3072 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3060:3066 nameless.DBFullReducibility Full neutral def
+R3068:3068 nameless.DBCloseCaseComputability <> x:42 var
+R3100:3105 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3073:3081 nameless.DBCore <> reduction ind
+R3099:3099 nameless.DBCloseCaseComputability <> u:43 var
+R3084:3092 nameless.DBCloseCaseComputability <> case_plug def
+R3094:3094 nameless.DBCloseCaseComputability <> p:41 var
+R3096:3096 nameless.DBCloseCaseComputability <> x:42 var
+R3106:3106 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3151:3158 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3203:3203 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3107:3113 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3115:3116 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3114:3114 <> q:44
+R3130:3133 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3117:3125 nameless.DBCore <> reduction ind
+R3129:3129 nameless.DBCloseCaseComputability <> q:44 var
+R3127:3127 nameless.DBCloseCaseComputability <> p:41 var
+R3135:3137 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3134:3134 nameless.DBCloseCaseComputability <> u:43 var
+R3138:3146 nameless.DBCloseCaseComputability <> case_plug def
+R3148:3148 nameless.DBCloseCaseComputability <> q:44 var
+R3150:3150 nameless.DBCloseCaseComputability <> x:42 var
+R3159:3165 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3167:3168 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3166:3166 <> y:45
+R3182:3185 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3169:3177 nameless.DBCore <> reduction ind
+R3181:3181 nameless.DBCloseCaseComputability <> y:45 var
+R3179:3179 nameless.DBCloseCaseComputability <> x:42 var
+R3187:3189 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3186:3186 nameless.DBCloseCaseComputability <> u:43 var
+R3190:3198 nameless.DBCloseCaseComputability <> case_plug def
+R3200:3200 nameless.DBCloseCaseComputability <> p:41 var
+R3202:3202 nameless.DBCloseCaseComputability <> y:45 var
+R3278:3286 nameless.DBCloseCaseComputability <> case_plug def
+R3421:3427 nameless.DBFullReducibility Full neutral def
+R3429:3437 nameless.DBCore <> root_step def
+R3510:3516 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3518:3519 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3517:3517 <> q:46
+R3521:3524 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3527:3529 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3510:3516 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3518:3519 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3517:3517 <> q:47
+R3521:3524 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3527:3529 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3556:3565 nameless.DBSyntax <> TCloseCase constr
+R3556:3565 nameless.DBSyntax <> TCloseCase constr
+R3608:3617 nameless.DBSyntax <> TCloseCase constr
+R3635:3638 nameless.DBSyntax <> TVar constr
+R3673:3689 nameless.DBCore <> red_TCloseCase_IT constr
+R3692:3707 nameless.DBCore <> red_TCloseCase_F constr
+R3710:3725 nameless.DBCore <> red_TCloseCase_G constr
+R3738:3753 nameless.DBCore <> red_TCloseCase_i constr
+R3756:3771 nameless.DBCore <> red_TCloseCase_Q constr
+R3774:3789 nameless.DBCore <> red_TCloseCase_b constr
+R3608:3617 nameless.DBSyntax <> TCloseCase constr
+R3635:3638 nameless.DBSyntax <> TVar constr
+R3673:3689 nameless.DBCore <> red_TCloseCase_IT constr
+R3692:3707 nameless.DBCore <> red_TCloseCase_F constr
+R3710:3725 nameless.DBCore <> red_TCloseCase_G constr
+R3738:3753 nameless.DBCore <> red_TCloseCase_i constr
+R3756:3771 nameless.DBCore <> red_TCloseCase_Q constr
+R3774:3789 nameless.DBCore <> red_TCloseCase_b constr
+R3608:3617 nameless.DBSyntax <> TCloseCase constr
+R3635:3638 nameless.DBSyntax <> TVar constr
+R3673:3689 nameless.DBCore <> red_TCloseCase_IT constr
+R3692:3707 nameless.DBCore <> red_TCloseCase_F constr
+R3710:3725 nameless.DBCore <> red_TCloseCase_G constr
+R3738:3753 nameless.DBCore <> red_TCloseCase_i constr
+R3756:3771 nameless.DBCore <> red_TCloseCase_Q constr
+R3774:3789 nameless.DBCore <> red_TCloseCase_b constr
+R3608:3617 nameless.DBSyntax <> TCloseCase constr
+R3635:3638 nameless.DBSyntax <> TVar constr
+R3673:3689 nameless.DBCore <> red_TCloseCase_IT constr
+R3692:3707 nameless.DBCore <> red_TCloseCase_F constr
+R3710:3725 nameless.DBCore <> red_TCloseCase_G constr
+R3738:3753 nameless.DBCore <> red_TCloseCase_i constr
+R3756:3771 nameless.DBCore <> red_TCloseCase_Q constr
+R3774:3789 nameless.DBCore <> red_TCloseCase_b constr
+R3608:3617 nameless.DBSyntax <> TCloseCase constr
+R3635:3638 nameless.DBSyntax <> TVar constr
+R3673:3689 nameless.DBCore <> red_TCloseCase_IT constr
+R3692:3707 nameless.DBCore <> red_TCloseCase_F constr
+R3710:3725 nameless.DBCore <> red_TCloseCase_G constr
+R3738:3753 nameless.DBCore <> red_TCloseCase_i constr
+R3756:3771 nameless.DBCore <> red_TCloseCase_Q constr
+R3774:3789 nameless.DBCore <> red_TCloseCase_b constr
+R3608:3617 nameless.DBSyntax <> TCloseCase constr
+R3635:3638 nameless.DBSyntax <> TVar constr
+R3673:3689 nameless.DBCore <> red_TCloseCase_IT constr
+R3692:3707 nameless.DBCore <> red_TCloseCase_F constr
+R3710:3725 nameless.DBCore <> red_TCloseCase_G constr
+R3738:3753 nameless.DBCore <> red_TCloseCase_i constr
+R3756:3771 nameless.DBCore <> red_TCloseCase_Q constr
+R3774:3789 nameless.DBCore <> red_TCloseCase_b constr
+R3608:3617 nameless.DBSyntax <> TCloseCase constr
+R3635:3638 nameless.DBSyntax <> TVar constr
+R3673:3689 nameless.DBCore <> red_TCloseCase_IT constr
+R3692:3707 nameless.DBCore <> red_TCloseCase_F constr
+R3710:3725 nameless.DBCore <> red_TCloseCase_G constr
+R3738:3753 nameless.DBCore <> red_TCloseCase_i constr
+R3756:3771 nameless.DBCore <> red_TCloseCase_Q constr
+R3774:3789 nameless.DBCore <> red_TCloseCase_b constr
+prf 3829:3848 <> case_seed_computable
+binder 3859:3859 <> p:48
+R3878:3881 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3862:3875 nameless.DBCloseCaseComputability <> case_parameter def
+R3877:3877 nameless.DBCloseCaseComputability <> p:48 var
+binder 3889:3889 <> u:49
+R3903:3906 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3894:3900 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+R3902:3902 nameless.DBCloseCaseComputability <> u:49 var
+R3907:3912 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Result var
+R3915:3917 nameless.DBSyntax <> TIn constr
+R3919:3919 nameless.DBCloseCaseComputability <> u:49 var
+R3923:3931 nameless.DBCloseCaseComputability <> case_plug def
+R3933:3933 nameless.DBCloseCaseComputability <> p:48 var
+R3936:3938 nameless.DBSyntax <> TIn constr
+R3940:3940 nameless.DBCloseCaseComputability <> u:49 var
+R4048:4056 nameless.DBCloseCaseComputability <> case_plug def
+R4074:4098 nameless.DBIndexedCandidates <> rolled_elements_candidate thm
+R4102:4118 nameless.DBCloseCaseComputability <> CloseCaseCandidate.payload_candidate var
+R4074:4098 nameless.DBIndexedCandidates <> rolled_elements_candidate thm
+R4102:4118 nameless.DBCloseCaseComputability <> CloseCaseCandidate.payload_candidate var
+R4142:4162 nameless.DBCloseCaseComputability <> rolled_elements_intro thm
+R4142:4162 nameless.DBCloseCaseComputability <> rolled_elements_intro thm
+R4194:4203 nameless.DBPositiveCandidates <> full_SN_in thm
+R4208:4228 nameless.DBFullReducibility Full candidate_normalizing proj
+R4230:4246 nameless.DBCloseCaseComputability <> CloseCaseCandidate.payload_candidate var
+R4194:4203 nameless.DBPositiveCandidates <> full_SN_in thm
+R4208:4228 nameless.DBFullReducibility Full candidate_normalizing proj
+R4230:4246 nameless.DBCloseCaseComputability <> CloseCaseCandidate.payload_candidate var
+R4271:4301 nameless.DBHeadExpansion <> computability_by_head_expansion thm
+R4312:4327 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_candidate var
+R4271:4301 nameless.DBHeadExpansion <> computability_by_head_expansion thm
+R4312:4327 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_candidate var
+R4352:4364 nameless.DBHeadExpansion <> term_children def
+R4433:4433 Corelib.Init.Logic <> I constr
+R4433:4433 Corelib.Init.Logic <> I constr
+R4503:4505 nameless.DBParallelBase <> rtc ind
+R4518:4520 nameless.DBSyntax <> TIn constr
+R4507:4515 nameless.DBCore <> reduction ind
+R4503:4505 nameless.DBParallelBase <> rtc ind
+R4518:4520 nameless.DBSyntax <> TIn constr
+R4507:4515 nameless.DBCore <> reduction ind
+R4552:4564 nameless.DBCloseCaseComputability <> in_reductions thm
+R4552:4564 nameless.DBCloseCaseComputability <> in_reductions thm
+R4624:4632 nameless.DBCore <> root_step def
+R4671:4673 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4665:4668 Corelib.Init.Datatypes <> Some constr
+R4674:4677 Corelib.Init.Datatypes <> Some constr
+R4671:4673 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4665:4668 Corelib.Init.Datatypes <> Some constr
+R4674:4677 Corelib.Init.Datatypes <> Some constr
+R4731:4737 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+R4754:4770 nameless.DBFullReducibility Full candidate_reducts thm
+R4731:4737 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+R4754:4770 nameless.DBFullReducibility Full candidate_reducts thm
+R4798:4802 Corelib.Init.Logic <> proj2 thm
+R4805:4828 nameless.DBSaturatedElimination <> stable_family_reductions thm
+R4837:4849 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_stable var
+R4856:4867 nameless.DBReduction <> red_star_TIn thm
+R4798:4802 Corelib.Init.Logic <> proj2 thm
+R4805:4828 nameless.DBSaturatedElimination <> stable_family_reductions thm
+R4837:4849 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_stable var
+R4856:4867 nameless.DBReduction <> red_star_TIn thm
+R4897:4918 nameless.DBCloseCaseComputability <> case_method_reductions thm
+R4897:4918 nameless.DBCloseCaseComputability <> case_method_reductions thm
+prf 4967:4992 <> case_parameter_normalizing
+binder 5003:5003 <> k:50
+binder 5005:5006 <> IT:51
+binder 5008:5008 <> F:52
+binder 5010:5010 <> G:53
+binder 5012:5012 <> i:54
+binder 5014:5014 <> Q:55
+binder 5016:5016 <> b:56
+R5050:5053 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5021:5026 Corelib.Lists.ListDef <> Forall ind
+R5036:5036 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5039:5039 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5041:5041 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5043:5043 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5045:5045 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5047:5047 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5049:5049 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5037:5038 nameless.DBCloseCaseComputability <> IT:51 var
+R5040:5040 nameless.DBCloseCaseComputability <> F:52 var
+R5042:5042 nameless.DBCloseCaseComputability <> G:53 var
+R5044:5044 nameless.DBCloseCaseComputability <> i:54 var
+R5046:5046 nameless.DBCloseCaseComputability <> Q:55 var
+R5048:5048 nameless.DBCloseCaseComputability <> b:56 var
+R5028:5034 nameless.DBFullReductionStructure <> full_SN def
+R5054:5060 nameless.DBFullReductionStructure <> full_SN def
+R5063:5072 nameless.DBSyntax <> TCloseCase constr
+R5090:5093 nameless.DBSyntax <> TVar constr
+R5087:5087 nameless.DBCloseCaseComputability <> b:56 var
+R5085:5085 nameless.DBCloseCaseComputability <> Q:55 var
+R5083:5083 nameless.DBCloseCaseComputability <> i:54 var
+R5081:5081 nameless.DBCloseCaseComputability <> G:53 var
+R5079:5079 nameless.DBCloseCaseComputability <> F:52 var
+R5076:5077 nameless.DBCloseCaseComputability <> IT:51 var
+R5074:5074 nameless.DBCloseCaseComputability <> k:50 var
+R5173:5203 nameless.DBHeadExpansion <> normalization_by_head_expansion thm
+R5173:5203 nameless.DBHeadExpansion <> normalization_by_head_expansion thm
+R5215:5227 nameless.DBHeadExpansion <> term_children def
+R5245:5255 Corelib.Lists.ListDef <> Forall_cons constr
+R5284:5301 nameless.DBFullReducibility Full candidate_variable thm
+R5305:5325 nameless.DBFullReducibility Full normalizing_candidate thm
+R5245:5255 Corelib.Lists.ListDef <> Forall_cons constr
+R5245:5255 Corelib.Lists.ListDef <> Forall_cons constr
+R5245:5255 Corelib.Lists.ListDef <> Forall_cons constr
+R5245:5255 Corelib.Lists.ListDef <> Forall_cons constr
+R5245:5255 Corelib.Lists.ListDef <> Forall_cons constr
+R5245:5255 Corelib.Lists.ListDef <> Forall_cons constr
+R5245:5255 Corelib.Lists.ListDef <> Forall_cons constr
+R5284:5301 nameless.DBFullReducibility Full candidate_variable thm
+R5305:5325 nameless.DBFullReducibility Full normalizing_candidate thm
+R5245:5255 Corelib.Lists.ListDef <> Forall_cons constr
+R5415:5417 nameless.DBParallelBase <> rtc ind
+R5430:5433 nameless.DBSyntax <> TVar constr
+R5419:5427 nameless.DBCore <> reduction ind
+R5415:5417 nameless.DBParallelBase <> rtc ind
+R5430:5433 nameless.DBSyntax <> TVar constr
+R5419:5427 nameless.DBCore <> reduction ind
+R5474:5476 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5468:5471 nameless.DBSyntax <> TVar constr
+R5490:5515 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R5474:5476 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5468:5471 nameless.DBSyntax <> TVar constr
+R5490:5515 nameless.DBFullNormalForms <> normal_reductions_identity thm
+prf 5642:5662 <> close_case_computable
+binder 5673:5673 <> k:57
+binder 5675:5676 <> IT:58
+binder 5678:5678 <> F:59
+binder 5680:5680 <> G:60
+binder 5682:5682 <> i:61
+binder 5684:5684 <> Q:62
+binder 5686:5686 <> b:63
+R5720:5723 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5691:5696 Corelib.Lists.ListDef <> Forall ind
+R5706:5706 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5709:5709 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5711:5711 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5713:5713 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5715:5715 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5717:5717 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5719:5719 Stdlib.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5707:5708 nameless.DBCloseCaseComputability <> IT:58 var
+R5710:5710 nameless.DBCloseCaseComputability <> F:59 var
+R5712:5712 nameless.DBCloseCaseComputability <> G:60 var
+R5714:5714 nameless.DBCloseCaseComputability <> i:61 var
+R5716:5716 nameless.DBCloseCaseComputability <> Q:62 var
+R5718:5718 nameless.DBCloseCaseComputability <> b:63 var
+R5698:5704 nameless.DBFullReductionStructure <> full_SN def
+R5737:5740 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5724:5734 nameless.DBCloseCaseComputability <> case_method def
+R5736:5736 nameless.DBCloseCaseComputability <> b:63 var
+binder 5748:5748 <> x:64
+R5778:5781 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5753:5767 nameless.DBIndexedCandidates <> rolled_elements def
+R5769:5775 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+R5777:5777 nameless.DBCloseCaseComputability <> x:64 var
+R5782:5787 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Result var
+R5789:5789 nameless.DBCloseCaseComputability <> x:64 var
+R5792:5801 nameless.DBSyntax <> TCloseCase constr
+R5818:5818 nameless.DBCloseCaseComputability <> x:64 var
+R5816:5816 nameless.DBCloseCaseComputability <> b:63 var
+R5814:5814 nameless.DBCloseCaseComputability <> Q:62 var
+R5812:5812 nameless.DBCloseCaseComputability <> i:61 var
+R5810:5810 nameless.DBCloseCaseComputability <> G:60 var
+R5808:5808 nameless.DBCloseCaseComputability <> F:59 var
+R5805:5806 nameless.DBCloseCaseComputability <> IT:58 var
+R5803:5803 nameless.DBCloseCaseComputability <> k:57 var
+R5875:5880 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Result var
+R5885:5893 nameless.DBCloseCaseComputability <> case_plug def
+R5896:5905 nameless.DBSyntax <> TCloseCase constr
+R5923:5926 nameless.DBSyntax <> TVar constr
+R5875:5880 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Result var
+R5885:5893 nameless.DBCloseCaseComputability <> case_plug def
+R5896:5905 nameless.DBSyntax <> TCloseCase constr
+R5923:5926 nameless.DBSyntax <> TVar constr
+R5994:6002 nameless.DBCore <> reduction ind
+R6023:6036 nameless.DBCloseCaseComputability <> case_parameter def
+binder 6054:6054 <> z:65
+R6059:6065 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6067:6068 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6066:6066 <> u:66
+R6078:6081 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6070:6072 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6069:6069 nameless.DBCloseCaseComputability <> z:65 var
+R6073:6075 nameless.DBSyntax <> TIn constr
+R6077:6077 nameless.DBCloseCaseComputability <> u:66 var
+R6082:6088 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+R6090:6090 nameless.DBCloseCaseComputability <> u:66 var
+R5946:5966 nameless.DBSaturatedElimination <> saturated_elimination thm
+R5994:6002 nameless.DBCore <> reduction ind
+R6023:6036 nameless.DBCloseCaseComputability <> case_parameter def
+binder 6054:6054 <> z:67
+R6059:6065 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6067:6068 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6066:6066 <> u:68
+R6078:6081 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6070:6072 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6069:6069 nameless.DBCloseCaseComputability <> z:67 var
+R6073:6075 nameless.DBSyntax <> TIn constr
+R6077:6077 nameless.DBCloseCaseComputability <> u:68 var
+R6082:6088 nameless.DBCloseCaseComputability <> CloseCaseCandidate.Payload var
+R6090:6090 nameless.DBCloseCaseComputability <> u:68 var
+R5946:5966 nameless.DBSaturatedElimination <> saturated_elimination thm
+R6126:6135 nameless.DBPositiveCandidates <> full_SN_in thm
+R6145:6165 nameless.DBFullReducibility Full candidate_normalizing proj
+R6167:6183 nameless.DBCloseCaseComputability <> CloseCaseCandidate.payload_candidate var
+R6126:6135 nameless.DBPositiveCandidates <> full_SN_in thm
+R6145:6165 nameless.DBFullReducibility Full candidate_normalizing proj
+R6167:6183 nameless.DBCloseCaseComputability <> CloseCaseCandidate.payload_candidate var
+R6200:6215 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_candidate var
+R6200:6215 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_candidate var
+R6228:6240 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_stable var
+R6228:6240 nameless.DBCloseCaseComputability <> CloseCaseCandidate.result_stable var
+R6253:6273 nameless.DBCloseCaseComputability <> case_parameter_reduct thm
+R6253:6273 nameless.DBCloseCaseComputability <> case_parameter_reduct thm
+R6286:6308 nameless.DBCloseCaseComputability <> case_argument_reduction thm
+R6286:6308 nameless.DBCloseCaseComputability <> case_argument_reduction thm
+R6321:6337 nameless.DBCloseCaseComputability <> case_plug_neutral thm
+R6321:6337 nameless.DBCloseCaseComputability <> case_plug_neutral thm
+R6350:6366 nameless.DBCloseCaseComputability <> case_neutral_step thm
+R6350:6366 nameless.DBCloseCaseComputability <> case_neutral_step thm
+R6410:6429 nameless.DBCloseCaseComputability <> case_seed_computable thm
+R6410:6429 nameless.DBCloseCaseComputability <> case_seed_computable thm
+R6446:6471 nameless.DBCloseCaseComputability <> case_parameter_normalizing thm
+R6446:6471 nameless.DBCloseCaseComputability <> case_parameter_normalizing thm
+R6530:6547 nameless.DBCloseCaseComputability CloseCaseCandidate <> sec
+R6569:6589 nameless.DBCloseCaseComputability <> close_case_computable thm

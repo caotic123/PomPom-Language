@@ -1,0 +1,56 @@
+DIGEST ad302561294cf86b98a71f0263a3331c
+Fannotated.AStructuralPreservation
+R169:189 annotated.ACompatible <> <> lib
+R191:205 annotated.ABeta <> <> lib
+R207:228 annotated.AProjections <> <> lib
+R232:257 annotated.AEtaPreservation <> <> lib
+prf 269:296 <> structural_root_preservation
+binder 307:311 <> Gamma:1
+binder 313:313 <> t:2
+binder 315:315 <> u:3
+binder 317:317 <> T:4
+R338:341 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R322:327 annotated.ATyping <> typing ind
+R329:333 annotated.AStructuralPreservation <> Gamma:1 var
+R335:335 annotated.AStructuralPreservation <> t:2 var
+R337:337 annotated.AStructuralPreservation <> T:4 var
+R361:364 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R342:356 annotated.AEta <> structural_root ind
+R358:358 annotated.AStructuralPreservation <> t:2 var
+R360:360 annotated.AStructuralPreservation <> u:3 var
+R365:370 annotated.ATyping <> typing ind
+R372:376 annotated.AStructuralPreservation <> Gamma:1 var
+R378:378 annotated.AStructuralPreservation <> u:3 var
+R380:380 annotated.AStructuralPreservation <> T:4 var
+R442:458 annotated.ABeta <> beta_preservation thm
+R442:458 annotated.ABeta <> beta_preservation thm
+R482:497 annotated.AProjections <> fst_preservation thm
+R482:497 annotated.AProjections <> fst_preservation thm
+R535:550 annotated.AProjections <> snd_preservation thm
+R535:550 annotated.AProjections <> snd_preservation thm
+prf 591:618 <> structural_step_preservation
+binder 629:629 <> t:5
+binder 631:631 <> u:6
+R655:658 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R636:650 annotated.AEta <> structural_step ind
+R652:652 annotated.AStructuralPreservation <> t:5 var
+R654:654 annotated.AStructuralPreservation <> u:6 var
+binder 666:670 <> Gamma:7
+binder 672:672 <> T:8
+R691:694 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R675:680 annotated.ATyping <> typing ind
+R682:686 annotated.AStructuralPreservation <> Gamma:7 var
+R688:688 annotated.AStructuralPreservation <> t:5 var
+R690:690 annotated.AStructuralPreservation <> T:8 var
+R695:700 annotated.ATyping <> typing ind
+R702:706 annotated.AStructuralPreservation <> Gamma:7 var
+R708:708 annotated.AStructuralPreservation <> u:6 var
+R710:710 annotated.AStructuralPreservation <> T:8 var
+R782:809 annotated.AStructuralPreservation <> structural_root_preservation thm
+R782:809 annotated.AStructuralPreservation <> structural_root_preservation thm
+R836:856 annotated.AEtaPreservation <> eta_root_preservation thm
+R836:856 annotated.AEtaPreservation <> eta_root_preservation thm
+R883:905 annotated.ACompatible <> compatible_preservation thm
+R883:905 annotated.ACompatible <> compatible_preservation thm
+R974:999 annotated.AEta <> structural_step_conversion thm
+R974:999 annotated.AEta <> structural_step_conversion thm

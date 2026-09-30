@@ -1,0 +1,90 @@
+DIGEST 9271440b4614650d74323b694d9739bf
+Fannotated.AComparison
+R164:167 Stdlib.Lists.List <> <> lib
+R169:173 Stdlib.Arith.Arith <> <> lib
+R191:213 annotated.ASubstitution <> <> lib
+R224:248 nameless.DBTypeComparison <> <> lib
+R264:288 nameless.DBTypeComparison <> <> mod
+mod 258:259 <> RC
+R305:331 nameless.DBCumulativeTyping <> <> mod
+mod 298:300 <> RCh
+prf 341:358 <> universe_le_typing
+binder 369:373 <> Gamma:1
+binder 375:375 <> t:2
+binder 377:377 <> A:3
+binder 379:379 <> B:4
+R400:403 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R384:389 annotated.ATyping <> typing ind
+R391:395 annotated.AComparison <> Gamma:1 var
+R397:397 annotated.AComparison <> t:2 var
+R399:399 annotated.AComparison <> A:3 var
+R422:425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R404:417 annotated.ATyping RT universe_le ind
+R419:419 annotated.AComparison <> A:3 var
+R421:421 annotated.AComparison <> B:4 var
+R444:449 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R426:435 annotated.ATyping RT type_wf def
+R437:441 annotated.AComparison <> Gamma:1 var
+R443:443 annotated.AComparison <> B:4 var
+R450:455 annotated.ATyping <> typing ind
+R457:461 annotated.AComparison <> Gamma:1 var
+R463:463 annotated.AComparison <> t:2 var
+R465:465 annotated.AComparison <> B:4 var
+R545:552 annotated.ATyping <> ty_cumul constr
+R545:552 annotated.ATyping <> ty_cumul constr
+R582:597 annotated.ATyping <> type_correctness thm
+R582:597 annotated.ATyping <> type_correctness thm
+R645:656 annotated.ATyping <> ty_cumul_fun constr
+R645:656 annotated.ATyping <> ty_cumul_fun constr
+prf 684:701 <> type_change_typing
+binder 712:716 <> Gamma:5
+binder 718:718 <> A:6
+binder 720:720 <> B:7
+R750:753 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R725:739 annotated.AComparison <> type_change ind
+R741:745 annotated.AComparison <> Gamma:5 var
+R747:747 annotated.AComparison <> A:6 var
+R749:749 annotated.AComparison <> B:7 var
+binder 761:761 <> t:8
+R780:783 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R764:769 annotated.ATyping <> typing ind
+R771:775 annotated.AComparison <> Gamma:5 var
+R777:777 annotated.AComparison <> t:8 var
+R779:779 annotated.AComparison <> A:6 var
+R784:789 annotated.ATyping <> typing ind
+R791:795 annotated.AComparison <> Gamma:5 var
+R797:797 annotated.AComparison <> t:8 var
+R799:799 annotated.AComparison <> B:7 var
+R891:897 annotated.ATyping <> ty_conv constr
+R891:897 annotated.ATyping <> ty_conv constr
+R924:941 annotated.AComparison <> universe_le_typing thm
+R924:941 annotated.AComparison <> universe_le_typing thm
+prf 981:997 <> comparison_typing
+binder 1008:1012 <> Gamma:9
+binder 1014:1014 <> t:10
+binder 1016:1016 <> A:11
+binder 1018:1018 <> B:12
+R1039:1042 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1023:1028 annotated.ATyping <> typing ind
+R1030:1034 annotated.AComparison <> Gamma:9 var
+R1036:1036 annotated.AComparison <> t:10 var
+R1038:1038 annotated.AComparison <> A:11 var
+R1065:1068 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1043:1060 annotated.AComparison <> type_comparison ind
+R1062:1062 annotated.AComparison <> A:11 var
+R1064:1064 annotated.AComparison <> B:12 var
+R1087:1092 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1069:1078 annotated.ATyping RT type_wf def
+R1080:1084 annotated.AComparison <> Gamma:9 var
+R1086:1086 annotated.AComparison <> B:12 var
+R1093:1098 annotated.ATyping <> typing ind
+R1100:1104 annotated.AComparison <> Gamma:9 var
+R1106:1106 annotated.AComparison <> t:10 var
+R1108:1108 annotated.AComparison <> B:12 var
+R1158:1175 annotated.AComparison <> type_change_typing thm
+R1185:1209 annotated.AComparison <> comparison_realization thm
+R1158:1175 annotated.AComparison <> type_change_typing thm
+R1185:1209 annotated.AComparison <> comparison_realization thm
+R1254:1269 annotated.ATyping <> type_correctness thm
+R1254:1269 annotated.ATyping <> type_correctness thm
+R1306:1322 annotated.AComparison <> comparison_typing thm

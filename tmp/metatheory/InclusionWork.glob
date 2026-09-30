@@ -1,0 +1,317 @@
+DIGEST 0745881445b7953f94e51447a55adf72
+FInclusionWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:84 OpenSignaturesContexts <> <> lib
+def 99:110 <> ctx_included
+R127:129 OpenSignaturesSyntax <> ctx def
+binder 113:117 <> Gamma:1
+binder 119:123 <> Delta:2
+binder 142:142 <> x:3
+binder 144:144 <> A:4
+R172:175 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R163:165 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R149:154 OpenSignaturesSyntax <> lookup def
+R162:162 InclusionWork <> x:3 var
+R156:160 InclusionWork <> Gamma:1 var
+R166:169 Corelib.Init.Datatypes <> Some constr
+R171:171 InclusionWork <> A:4 var
+R190:192 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R176:181 OpenSignaturesSyntax <> lookup def
+R189:189 InclusionWork <> x:3 var
+R183:187 InclusionWork <> Delta:2 var
+R193:196 Corelib.Init.Datatypes <> Some constr
+R198:198 InclusionWork <> A:4 var
+prf 207:223 <> ctx_included_refl
+binder 234:238 <> Gamma:5
+R241:252 InclusionWork <> ctx_included def
+R254:258 InclusionWork <> Gamma:5 var
+R260:264 InclusionWork <> Gamma:5 var
+prf 297:314 <> ctx_included_trans
+binder 325:329 <> Gamma:6
+binder 331:335 <> Delta:7
+binder 337:341 <> Theta:8
+R370:373 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R346:357 InclusionWork <> ctx_included def
+R359:363 InclusionWork <> Gamma:6 var
+R365:369 InclusionWork <> Delta:7 var
+R398:401 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R374:385 InclusionWork <> ctx_included def
+R387:391 InclusionWork <> Delta:7 var
+R393:397 InclusionWork <> Theta:8 var
+R402:413 InclusionWork <> ctx_included def
+R415:419 InclusionWork <> Gamma:6 var
+R421:425 InclusionWork <> Theta:8 var
+prf 458:476 <> ctx_included_extend
+binder 487:491 <> Gamma:9
+binder 493:493 <> x:10
+binder 495:495 <> A:11
+R516:519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R500:507 OpenSignaturesSyntax <> fresh_in def
+R515:515 InclusionWork <> x:10 var
+R509:513 InclusionWork <> Gamma:9 var
+R520:531 InclusionWork <> ctx_included def
+R533:537 InclusionWork <> Gamma:9 var
+R540:545 OpenSignaturesSyntax <> extend def
+R555:555 InclusionWork <> A:11 var
+R553:553 InclusionWork <> x:10 var
+R547:551 InclusionWork <> Gamma:9 var
+R606:615 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R606:615 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R646:653 OpenSignaturesSyntax <> fresh_in def
+R690:708 OpenSignaturesBinding <> lookup_extend_other thm
+R690:708 OpenSignaturesBinding <> lookup_extend_other thm
+R690:708 OpenSignaturesBinding <> lookup_extend_other thm
+prf 737:752 <> wf_lookup_origin
+binder 763:767 <> Delta:12
+R778:781 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R770:771 OpenSignaturesCore <> wf ind
+R773:777 InclusionWork <> Delta:12 var
+binder 789:789 <> x:13
+binder 791:791 <> A:14
+R819:822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R810:812 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R796:801 OpenSignaturesSyntax <> lookup def
+R809:809 InclusionWork <> x:13 var
+R803:807 InclusionWork <> Delta:12 var
+R813:816 Corelib.Init.Datatypes <> Some constr
+R818:818 InclusionWork <> A:14 var
+R823:829 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R837:840 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 830:834 <> Gamma:15
+binder 836:836 <> k:16
+R849:852 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R841:842 OpenSignaturesCore <> wf ind
+R844:848 InclusionWork <> Gamma:15 var
+R869:872 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R853:860 OpenSignaturesSyntax <> fresh_in def
+R868:868 InclusionWork <> x:13 var
+R862:866 InclusionWork <> Gamma:15 var
+R897:900 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R873:878 OpenSignaturesCore <> typing ind
+R889:893 OpenSignaturesSyntax <> TSort constr
+R895:895 InclusionWork <> k:16 var
+R886:886 InclusionWork <> A:14 var
+R880:884 InclusionWork <> Gamma:15 var
+R901:912 InclusionWork <> ctx_included def
+R914:918 InclusionWork <> Gamma:15 var
+R920:924 InclusionWork <> Delta:12 var
+R1013:1022 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R1013:1022 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R1054:1071 OpenSignaturesBinding <> lookup_extend_same thm
+R1054:1071 OpenSignaturesBinding <> lookup_extend_same thm
+R1054:1071 OpenSignaturesBinding <> lookup_extend_same thm
+R1146:1164 InclusionWork <> ctx_included_extend thm
+R1146:1164 InclusionWork <> ctx_included_extend thm
+R1146:1164 InclusionWork <> ctx_included_extend thm
+R1146:1164 InclusionWork <> ctx_included_extend thm
+R1146:1164 InclusionWork <> ctx_included_extend thm
+R1179:1197 OpenSignaturesBinding <> lookup_extend_other thm
+R1179:1197 OpenSignaturesBinding <> lookup_extend_other thm
+R1179:1197 OpenSignaturesBinding <> lookup_extend_other thm
+R1344:1361 InclusionWork <> ctx_included_trans thm
+R1385:1403 InclusionWork <> ctx_included_extend thm
+R1344:1361 InclusionWork <> ctx_included_trans thm
+R1385:1403 InclusionWork <> ctx_included_extend thm
+sec 1421:1436 <> ContextInclusion
+var 1448:1453 ContextInclusion weaken
+binder 1464:1468 <> Gamma:17
+binder 1470:1470 <> x:18
+binder 1472:1472 <> t:19
+binder 1474:1474 <> A:20
+binder 1476:1476 <> B:21
+binder 1478:1478 <> k:22
+R1499:1502 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1483:1490 OpenSignaturesSyntax <> fresh_in def
+R1498:1498 InclusionWork <> x:18 var
+R1492:1496 InclusionWork <> Gamma:17 var
+R1519:1522 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1503:1508 OpenSignaturesCore <> typing ind
+R1518:1518 InclusionWork <> A:20 var
+R1516:1516 InclusionWork <> t:19 var
+R1510:1514 InclusionWork <> Gamma:17 var
+R1547:1552 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1523:1528 OpenSignaturesCore <> typing ind
+R1539:1543 OpenSignaturesSyntax <> TSort constr
+R1545:1545 InclusionWork <> k:22 var
+R1536:1536 InclusionWork <> B:21 var
+R1530:1534 InclusionWork <> Gamma:17 var
+R1553:1558 OpenSignaturesCore <> typing ind
+R1581:1581 InclusionWork <> A:20 var
+R1579:1579 InclusionWork <> t:19 var
+R1561:1566 OpenSignaturesSyntax <> extend def
+R1576:1576 InclusionWork <> B:21 var
+R1574:1574 InclusionWork <> x:18 var
+R1568:1572 InclusionWork <> Gamma:17 var
+var 1593:1599 ContextInclusion regular
+binder 1610:1614 <> Gamma:25
+binder 1616:1616 <> t:26
+binder 1618:1618 <> A:27
+R1637:1640 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1621:1626 OpenSignaturesCore <> typing ind
+R1636:1636 InclusionWork <> A:27 var
+R1634:1634 InclusionWork <> t:26 var
+R1628:1632 InclusionWork <> Gamma:25 var
+R1641:1647 OpenSignaturesCore <> type_wf def
+R1655:1655 InclusionWork <> A:27 var
+R1649:1653 InclusionWork <> Gamma:25 var
+var 1667:1674 ContextInclusion preserve
+binder 1685:1689 <> Gamma:30
+binder 1691:1691 <> t:31
+binder 1693:1693 <> u:32
+binder 1695:1695 <> A:33
+R1714:1717 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1698:1703 OpenSignaturesCore <> typing ind
+R1713:1713 InclusionWork <> A:33 var
+R1711:1711 InclusionWork <> t:31 var
+R1705:1709 InclusionWork <> Gamma:30 var
+R1731:1734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1718:1726 OpenSignaturesCore <> reduction ind
+R1730:1730 InclusionWork <> u:32 var
+R1728:1728 InclusionWork <> t:31 var
+R1735:1740 OpenSignaturesCore <> typing ind
+R1750:1750 InclusionWork <> A:33 var
+R1748:1748 InclusionWork <> u:32 var
+R1742:1746 InclusionWork <> Gamma:30 var
+prf 1760:1776 <> typing_from_empty
+binder 1787:1791 <> Gamma:36
+R1802:1805 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1794:1795 OpenSignaturesCore <> wf ind
+R1797:1801 InclusionWork <> Gamma:36 var
+binder 1813:1813 <> t:37
+binder 1815:1815 <> A:38
+R1840:1843 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1820:1825 OpenSignaturesCore <> typing ind
+R1839:1839 InclusionWork <> A:38 var
+R1837:1837 InclusionWork <> t:37 var
+R1827:1835 OpenSignaturesSyntax <> empty_ctx def
+R1844:1849 OpenSignaturesCore <> typing ind
+R1859:1859 InclusionWork <> A:38 var
+R1857:1857 InclusionWork <> t:37 var
+R1851:1855 InclusionWork <> Gamma:36 var
+prf 1929:1947 <> typing_ctx_included
+binder 1958:1962 <> Gamma:39
+R1973:1976 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1965:1966 OpenSignaturesCore <> wf ind
+R1968:1972 InclusionWork <> Gamma:39 var
+binder 1984:1988 <> Delta:40
+binder 1990:1990 <> t:41
+binder 1992:1992 <> A:42
+R2005:2008 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1997:1998 OpenSignaturesCore <> wf ind
+R2000:2004 InclusionWork <> Delta:40 var
+R2033:2036 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2009:2020 InclusionWork <> ctx_included def
+R2022:2026 InclusionWork <> Gamma:39 var
+R2028:2032 InclusionWork <> Delta:40 var
+R2053:2056 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2037:2042 OpenSignaturesCore <> typing ind
+R2052:2052 InclusionWork <> A:42 var
+R2050:2050 InclusionWork <> t:41 var
+R2044:2048 InclusionWork <> Gamma:39 var
+R2057:2062 OpenSignaturesCore <> typing ind
+R2072:2072 InclusionWork <> A:42 var
+R2070:2070 InclusionWork <> t:41 var
+R2064:2068 InclusionWork <> Delta:40 var
+R2159:2175 InclusionWork <> typing_from_empty thm
+R2159:2175 InclusionWork <> typing_from_empty thm
+R2192:2198 InclusionWork <> ContextInclusion.regular var
+R2192:2198 InclusionWork <> ContextInclusion.regular var
+R2239:2244 OpenSignaturesCore <> typing ind
+R2265:2269 OpenSignaturesSyntax <> TSort constr
+R2272:2278 Stdlib.Arith.PeanoNat Nat max def
+R2253:2255 OpenSignaturesSyntax <> TPi constr
+R2298:2302 OpenSignaturesCore <> ty_pi constr
+R2239:2244 OpenSignaturesCore <> typing ind
+R2265:2269 OpenSignaturesSyntax <> TSort constr
+R2272:2278 Stdlib.Arith.PeanoNat Nat max def
+R2253:2255 OpenSignaturesSyntax <> TPi constr
+R2298:2302 OpenSignaturesCore <> ty_pi constr
+R2338:2343 OpenSignaturesCore <> typing ind
+R2363:2365 OpenSignaturesSyntax <> TPi constr
+R2352:2355 OpenSignaturesSyntax <> TLam constr
+R2386:2391 OpenSignaturesCore <> ty_lam constr
+R2338:2343 OpenSignaturesCore <> typing ind
+R2363:2365 OpenSignaturesSyntax <> TPi constr
+R2352:2355 OpenSignaturesSyntax <> TLam constr
+R2386:2391 OpenSignaturesCore <> ty_lam constr
+R2427:2438 InclusionWork <> ctx_included def
+R2470:2487 InclusionWork <> ctx_included_trans thm
+R2497:2515 InclusionWork <> ctx_included_extend thm
+R2427:2438 InclusionWork <> ctx_included def
+R2470:2487 InclusionWork <> ctx_included_trans thm
+R2497:2515 InclusionWork <> ctx_included_extend thm
+R2562:2567 OpenSignaturesCore <> typing ind
+R2588:2592 OpenSignaturesSyntax <> TSort constr
+R2595:2601 Stdlib.Arith.PeanoNat Nat max def
+R2576:2578 OpenSignaturesSyntax <> TPi constr
+R2562:2567 OpenSignaturesCore <> typing ind
+R2588:2592 OpenSignaturesSyntax <> TSort constr
+R2595:2601 Stdlib.Arith.PeanoNat Nat max def
+R2576:2578 OpenSignaturesSyntax <> TPi constr
+R2662:2667 OpenSignaturesCore <> typing ind
+R2687:2689 OpenSignaturesSyntax <> TPi constr
+R2676:2679 OpenSignaturesSyntax <> TLam constr
+R2662:2667 OpenSignaturesCore <> typing ind
+R2687:2689 OpenSignaturesSyntax <> TPi constr
+R2676:2679 OpenSignaturesSyntax <> TLam constr
+R2748:2753 OpenSignaturesCore <> typing ind
+R2762:2765 OpenSignaturesSyntax <> TVar constr
+R2789:2794 OpenSignaturesCore <> ty_var constr
+R2818:2835 OpenSignaturesBinding <> lookup_extend_same thm
+R2748:2753 OpenSignaturesCore <> typing ind
+R2762:2765 OpenSignaturesSyntax <> TVar constr
+R2789:2794 OpenSignaturesCore <> ty_var constr
+R2818:2835 OpenSignaturesBinding <> lookup_extend_same thm
+R2857:2862 OpenSignaturesCore <> ty_app constr
+R2877:2880 OpenSignaturesSyntax <> TLam constr
+R2888:2891 OpenSignaturesSyntax <> TVar constr
+R2857:2862 OpenSignaturesCore <> ty_app constr
+R2877:2880 OpenSignaturesSyntax <> TLam constr
+R2888:2891 OpenSignaturesSyntax <> TVar constr
+R2936:2958 OpenSignaturesTransport <> subst_variable_identity thm
+R2936:2958 OpenSignaturesTransport <> subst_variable_identity thm
+R2936:2958 OpenSignaturesTransport <> subst_variable_identity thm
+R2982:2989 InclusionWork <> ContextInclusion.preserve var
+R2982:2989 InclusionWork <> ContextInclusion.preserve var
+R3015:3022 OpenSignaturesCore <> red_root constr
+R3015:3022 OpenSignaturesCore <> red_root constr
+R3030:3038 OpenSignaturesCore <> root_step def
+R3058:3080 OpenSignaturesTransport <> subst_variable_identity thm
+R3058:3080 OpenSignaturesTransport <> subst_variable_identity thm
+R3058:3080 OpenSignaturesTransport <> subst_variable_identity thm
+prf 3095:3120 <> extension_domain_formation
+binder 3131:3135 <> Gamma:43
+binder 3137:3137 <> x:44
+binder 3139:3139 <> A:45
+R3152:3155 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3144:3145 OpenSignaturesCore <> wf ind
+R3147:3151 InclusionWork <> Gamma:43 var
+R3172:3175 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3156:3163 OpenSignaturesSyntax <> fresh_in def
+R3171:3171 InclusionWork <> x:44 var
+R3165:3169 InclusionWork <> Gamma:43 var
+R3197:3200 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3176:3177 OpenSignaturesCore <> wf ind
+R3180:3185 OpenSignaturesSyntax <> extend def
+R3195:3195 InclusionWork <> A:45 var
+R3193:3193 InclusionWork <> x:44 var
+R3187:3191 InclusionWork <> Gamma:43 var
+R3201:3207 OpenSignaturesCore <> type_wf def
+R3215:3215 InclusionWork <> A:45 var
+R3209:3213 InclusionWork <> Gamma:43 var
+R3270:3285 InclusionWork <> wf_lookup_origin thm
+R3299:3316 OpenSignaturesBinding <> lookup_extend_same thm
+R3270:3285 InclusionWork <> wf_lookup_origin thm
+R3299:3316 OpenSignaturesBinding <> lookup_extend_same thm
+R3389:3407 InclusionWork <> typing_ctx_included thm
+R3389:3407 InclusionWork <> typing_ctx_included thm
+R3471:3480 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R3471:3480 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R3511:3518 OpenSignaturesSyntax <> fresh_in def
+R3581:3599 OpenSignaturesBinding <> lookup_extend_other thm
+R3581:3599 OpenSignaturesBinding <> lookup_extend_other thm
+R3581:3599 OpenSignaturesBinding <> lookup_extend_other thm
+R3632:3647 InclusionWork ContextInclusion <> sec

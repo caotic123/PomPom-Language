@@ -1,0 +1,490 @@
+DIGEST 1d390ad55dd58039fc62d7c8fcdd5cc0
+Fnameless.DBDescriptionViews
+R104:107 Stdlib.Lists.List <> <> lib
+R109:113 Stdlib.Arith.Arith <> <> lib
+R115:118 Stdlib.Bool.Bool <> <> lib
+R120:122 Stdlib.micromega.Lia <> <> lib
+R140:165 nameless.DBEtaPostponement <> <> lib
+prf 175:191 <> psteps_conversion
+binder 202:202 <> t:1
+binder 204:204 <> u:2
+R220:223 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R207:209 nameless.DBParallelBase <> rtc ind
+R219:219 nameless.DBDescriptionViews <> u:2 var
+R217:217 nameless.DBDescriptionViews <> t:1 var
+R211:215 nameless.DBParallelBase <> pstep ind
+R224:227 nameless.DBCore <> conv ind
+R231:231 nameless.DBDescriptionViews <> u:2 var
+R229:229 nameless.DBDescriptionViews <> t:1 var
+R277:283 nameless.DBCore <> cv_refl constr
+R277:283 nameless.DBCore <> cv_refl constr
+R297:304 nameless.DBCore <> cv_trans constr
+R314:334 nameless.DBWeakening <> reductions_conversion thm
+R337:352 nameless.DBReduction <> pstep_reductions thm
+R297:304 nameless.DBCore <> cv_trans constr
+R314:334 nameless.DBWeakening <> reductions_conversion thm
+R337:352 nameless.DBReduction <> pstep_reductions thm
+prf 388:402 <> etas_conversion
+binder 413:413 <> t:3
+binder 415:415 <> u:4
+R432:435 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R418:420 nameless.DBParallelBase <> rtc ind
+R431:431 nameless.DBDescriptionViews <> u:4 var
+R429:429 nameless.DBDescriptionViews <> t:3 var
+R422:427 nameless.DBEta <> epstep ind
+R436:439 nameless.DBCore <> conv ind
+R443:443 nameless.DBDescriptionViews <> u:4 var
+R441:441 nameless.DBDescriptionViews <> t:3 var
+R489:495 nameless.DBCore <> cv_refl constr
+R489:495 nameless.DBCore <> cv_refl constr
+R509:516 nameless.DBCore <> cv_trans constr
+R526:546 nameless.DBWeakening <> reductions_conversion thm
+R549:565 nameless.DBReduction <> epstep_reductions thm
+R509:516 nameless.DBCore <> cv_trans constr
+R526:546 nameless.DBWeakening <> reductions_conversion thm
+R549:565 nameless.DBReduction <> epstep_reductions thm
+prf 601:615 <> reduction_iprod
+binder 626:626 <> A:5
+binder 628:628 <> B:6
+binder 630:630 <> t:7
+R657:662 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R633:641 nameless.DBCore <> reduction ind
+R656:656 nameless.DBDescriptionViews <> t:7 var
+R644:649 nameless.DBSyntax <> TIProd constr
+R653:653 nameless.DBDescriptionViews <> B:6 var
+R651:651 nameless.DBDescriptionViews <> A:5 var
+R663:669 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R675:676 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 670:671 <> A':8
+binder 673:674 <> B':9
+R693:696 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R678:680 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R677:677 nameless.DBDescriptionViews <> t:7 var
+R681:686 nameless.DBSyntax <> TIProd constr
+R691:692 nameless.DBDescriptionViews <> B':9 var
+R688:689 nameless.DBDescriptionViews <> A':8 var
+R715:718 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R697:699 nameless.DBParallelBase <> rtc ind
+R713:714 nameless.DBDescriptionViews <> A':8 var
+R711:711 nameless.DBDescriptionViews <> A:5 var
+R701:709 nameless.DBCore <> reduction ind
+R719:721 nameless.DBParallelBase <> rtc ind
+R735:736 nameless.DBDescriptionViews <> B':9 var
+R733:733 nameless.DBDescriptionViews <> B:6 var
+R723:731 nameless.DBCore <> reduction ind
+R779:787 nameless.DBCore <> root_step def
+R828:835 nameless.DBParallelBase <> rtc_refl constr
+R838:844 nameless.DBParallelBase <> rtc_one thm
+R828:835 nameless.DBParallelBase <> rtc_refl constr
+R828:835 nameless.DBParallelBase <> rtc_refl constr
+R838:844 nameless.DBParallelBase <> rtc_one thm
+R838:844 nameless.DBParallelBase <> rtc_one thm
+prf 858:874 <> reduction_ichoice
+binder 885:885 <> A:10
+binder 887:887 <> B:11
+binder 889:889 <> t:12
+R918:923 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R892:900 nameless.DBCore <> reduction ind
+R917:917 nameless.DBDescriptionViews <> t:12 var
+R903:910 nameless.DBSyntax <> TIChoice constr
+R914:914 nameless.DBDescriptionViews <> B:11 var
+R912:912 nameless.DBDescriptionViews <> A:10 var
+R924:930 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R936:937 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 931:932 <> A':13
+binder 934:935 <> B':14
+R956:959 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R939:941 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R938:938 nameless.DBDescriptionViews <> t:12 var
+R942:949 nameless.DBSyntax <> TIChoice constr
+R954:955 nameless.DBDescriptionViews <> B':14 var
+R951:952 nameless.DBDescriptionViews <> A':13 var
+R978:981 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R960:962 nameless.DBParallelBase <> rtc ind
+R976:977 nameless.DBDescriptionViews <> A':13 var
+R974:974 nameless.DBDescriptionViews <> A:10 var
+R964:972 nameless.DBCore <> reduction ind
+R982:984 nameless.DBParallelBase <> rtc ind
+R998:999 nameless.DBDescriptionViews <> B':14 var
+R996:996 nameless.DBDescriptionViews <> B:11 var
+R986:994 nameless.DBCore <> reduction ind
+R1042:1050 nameless.DBCore <> root_step def
+R1091:1098 nameless.DBParallelBase <> rtc_refl constr
+R1101:1107 nameless.DBParallelBase <> rtc_one thm
+R1091:1098 nameless.DBParallelBase <> rtc_refl constr
+R1091:1098 nameless.DBParallelBase <> rtc_refl constr
+R1101:1107 nameless.DBParallelBase <> rtc_one thm
+R1101:1107 nameless.DBParallelBase <> rtc_one thm
+prf 1121:1132 <> reduces_nile
+binder 1143:1143 <> t:15
+R1167:1170 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1146:1148 nameless.DBParallelBase <> rtc ind
+R1166:1166 nameless.DBDescriptionViews <> t:15 var
+R1160:1164 nameless.DBSyntax <> TNilE constr
+R1150:1158 nameless.DBCore <> reduction ind
+R1172:1174 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1171:1171 nameless.DBDescriptionViews <> t:15 var
+R1175:1179 nameless.DBSyntax <> TNilE constr
+R1212:1216 nameless.DBSyntax <> TNilE constr
+R1212:1216 nameless.DBSyntax <> TNilE constr
+R1285:1293 nameless.DBCore <> root_step def
+sec 1330:1338 <> EtaBinary
+var 1350:1350 EtaBinary C
+R1358:1361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1354:1357 nameless.DBSyntax <> term ind
+R1366:1369 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1362:1365 nameless.DBSyntax <> term ind
+R1370:1373 nameless.DBSyntax <> term ind
+var 1387:1390 EtaBinary etaC
+binder 1401:1401 <> t:18
+binder 1403:1403 <> A:19
+binder 1405:1405 <> B:20
+R1424:1427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1408:1413 nameless.DBEta <> epstep ind
+R1415:1415 nameless.DBDescriptionViews <> t:18 var
+R1418:1418 nameless.DBDescriptionViews <> EtaBinary.C var
+R1420:1420 nameless.DBDescriptionViews <> A:19 var
+R1422:1422 nameless.DBDescriptionViews <> B:20 var
+R1447:1452 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1440:1442 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1428:1437 nameless.DBEtaSafety <> not_lambda def
+R1439:1439 nameless.DBDescriptionViews <> t:18 var
+R1443:1446 Corelib.Init.Datatypes <> true constr
+R1453:1459 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1465:1466 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1460:1461 <> A':21
+binder 1463:1464 <> B':22
+R1478:1481 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1468:1470 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1467:1467 nameless.DBDescriptionViews <> t:18 var
+R1471:1471 nameless.DBDescriptionViews <> EtaBinary.C var
+R1473:1474 nameless.DBDescriptionViews <> A':21 var
+R1476:1477 nameless.DBDescriptionViews <> B':22 var
+R1493:1496 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1482:1487 nameless.DBEta <> epstep ind
+R1489:1490 nameless.DBDescriptionViews <> A':21 var
+R1492:1492 nameless.DBDescriptionViews <> A:19 var
+R1497:1502 nameless.DBEta <> epstep ind
+R1504:1505 nameless.DBDescriptionViews <> B':22 var
+R1507:1507 nameless.DBDescriptionViews <> B:20 var
+prf 1516:1534 <> etas_binary_inverse
+binder 1545:1545 <> t:25
+binder 1547:1547 <> u:26
+R1564:1567 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1550:1552 nameless.DBParallelBase <> rtc ind
+R1563:1563 nameless.DBDescriptionViews <> u:26 var
+R1561:1561 nameless.DBDescriptionViews <> t:25 var
+R1554:1559 nameless.DBEta <> epstep ind
+binder 1575:1575 <> A:27
+binder 1577:1577 <> B:28
+R1591:1594 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1583:1585 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1582:1582 nameless.DBDescriptionViews <> u:26 var
+R1586:1586 nameless.DBDescriptionViews <> EtaBinary.C var
+R1588:1588 nameless.DBDescriptionViews <> A:27 var
+R1590:1590 nameless.DBDescriptionViews <> B:28 var
+R1614:1619 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1607:1609 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1595:1604 nameless.DBEtaSafety <> not_lambda def
+R1606:1606 nameless.DBDescriptionViews <> t:25 var
+R1610:1613 Corelib.Init.Datatypes <> true constr
+R1620:1626 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1632:1633 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1627:1628 <> A':29
+binder 1630:1631 <> B':30
+R1645:1648 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1635:1637 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1634:1634 nameless.DBDescriptionViews <> t:25 var
+R1638:1638 nameless.DBDescriptionViews <> EtaBinary.C var
+R1640:1641 nameless.DBDescriptionViews <> A':29 var
+R1643:1644 nameless.DBDescriptionViews <> B':30 var
+R1664:1667 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1649:1651 nameless.DBParallelBase <> rtc ind
+R1663:1663 nameless.DBDescriptionViews <> A:27 var
+R1660:1661 nameless.DBDescriptionViews <> A':29 var
+R1653:1658 nameless.DBEta <> epstep ind
+R1668:1670 nameless.DBParallelBase <> rtc ind
+R1682:1682 nameless.DBDescriptionViews <> B:28 var
+R1679:1680 nameless.DBDescriptionViews <> B':30 var
+R1672:1677 nameless.DBEta <> epstep ind
+R1788:1795 nameless.DBParallelBase <> rtc_refl constr
+R1788:1795 nameless.DBParallelBase <> rtc_refl constr
+R1788:1795 nameless.DBParallelBase <> rtc_refl constr
+R1822:1828 Corelib.Init.Logic <> eq_refl constr
+R1831:1847 nameless.DBEtaSafety <> epstep_not_lambda thm
+R1822:1828 Corelib.Init.Logic <> eq_refl constr
+R1831:1847 nameless.DBEtaSafety <> epstep_not_lambda thm
+R1908:1911 nameless.DBDescriptionViews <> EtaBinary.etaC var
+R1908:1911 nameless.DBDescriptionViews <> EtaBinary.etaC var
+R1999:2006 nameless.DBParallelBase <> rtc_step constr
+R1999:2006 nameless.DBParallelBase <> rtc_step constr
+R1999:2006 nameless.DBParallelBase <> rtc_step constr
+R2018:2026 nameless.DBDescriptionViews EtaBinary <> sec
+prf 2036:2052 <> eta_iprod_inverse
+binder 2063:2063 <> t:31
+binder 2065:2065 <> A:32
+binder 2067:2067 <> B:33
+R2091:2094 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2070:2075 nameless.DBEta <> epstep ind
+R2077:2077 nameless.DBDescriptionViews <> t:31 var
+R2080:2085 nameless.DBSyntax <> TIProd constr
+R2089:2089 nameless.DBDescriptionViews <> B:33 var
+R2087:2087 nameless.DBDescriptionViews <> A:32 var
+R2114:2119 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2107:2109 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2095:2104 nameless.DBEtaSafety <> not_lambda def
+R2106:2106 nameless.DBDescriptionViews <> t:31 var
+R2110:2113 Corelib.Init.Datatypes <> true constr
+R2120:2126 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2132:2133 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2127:2128 <> A':34
+binder 2130:2131 <> B':35
+R2150:2153 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2135:2137 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2134:2134 nameless.DBDescriptionViews <> t:31 var
+R2138:2143 nameless.DBSyntax <> TIProd constr
+R2148:2149 nameless.DBDescriptionViews <> B':35 var
+R2145:2146 nameless.DBDescriptionViews <> A':34 var
+R2165:2168 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2154:2159 nameless.DBEta <> epstep ind
+R2161:2162 nameless.DBDescriptionViews <> A':34 var
+R2164:2164 nameless.DBDescriptionViews <> A:32 var
+R2169:2174 nameless.DBEta <> epstep ind
+R2176:2177 nameless.DBDescriptionViews <> B':35 var
+R2179:2179 nameless.DBDescriptionViews <> B:33 var
+R2222:2231 nameless.DBEtaSafety <> not_lambda def
+prf 2276:2294 <> eta_ichoice_inverse
+binder 2305:2305 <> t:36
+binder 2307:2307 <> A:37
+binder 2309:2309 <> B:38
+R2335:2338 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2312:2317 nameless.DBEta <> epstep ind
+R2319:2319 nameless.DBDescriptionViews <> t:36 var
+R2322:2329 nameless.DBSyntax <> TIChoice constr
+R2333:2333 nameless.DBDescriptionViews <> B:38 var
+R2331:2331 nameless.DBDescriptionViews <> A:37 var
+R2358:2363 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2351:2353 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2339:2348 nameless.DBEtaSafety <> not_lambda def
+R2350:2350 nameless.DBDescriptionViews <> t:36 var
+R2354:2357 Corelib.Init.Datatypes <> true constr
+R2364:2370 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2376:2377 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2371:2372 <> A':39
+binder 2374:2375 <> B':40
+R2396:2399 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2379:2381 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2378:2378 nameless.DBDescriptionViews <> t:36 var
+R2382:2389 nameless.DBSyntax <> TIChoice constr
+R2394:2395 nameless.DBDescriptionViews <> B':40 var
+R2391:2392 nameless.DBDescriptionViews <> A':39 var
+R2411:2414 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2400:2405 nameless.DBEta <> epstep ind
+R2407:2408 nameless.DBDescriptionViews <> A':39 var
+R2410:2410 nameless.DBDescriptionViews <> A:37 var
+R2415:2420 nameless.DBEta <> epstep ind
+R2422:2423 nameless.DBDescriptionViews <> B':40 var
+R2425:2425 nameless.DBDescriptionViews <> B:38 var
+R2468:2477 nameless.DBEtaSafety <> not_lambda def
+prf 2522:2538 <> etas_nile_inverse
+binder 2549:2549 <> t:41
+binder 2551:2551 <> u:42
+R2568:2571 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2554:2556 nameless.DBParallelBase <> rtc ind
+R2567:2567 nameless.DBDescriptionViews <> u:42 var
+R2565:2565 nameless.DBDescriptionViews <> t:41 var
+R2558:2563 nameless.DBEta <> epstep ind
+R2581:2586 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2573:2575 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2572:2572 nameless.DBDescriptionViews <> u:42 var
+R2576:2580 nameless.DBSyntax <> TNilE constr
+R2606:2609 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2599:2601 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2587:2596 nameless.DBEtaSafety <> not_lambda def
+R2598:2598 nameless.DBDescriptionViews <> t:41 var
+R2602:2605 Corelib.Init.Datatypes <> true constr
+R2611:2613 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2610:2610 nameless.DBDescriptionViews <> t:41 var
+R2614:2618 nameless.DBSyntax <> TNilE constr
+R2704:2710 Corelib.Init.Logic <> eq_refl constr
+R2713:2729 nameless.DBEtaSafety <> epstep_not_lambda thm
+R2704:2710 Corelib.Init.Logic <> eq_refl constr
+R2713:2729 nameless.DBEtaSafety <> epstep_not_lambda thm
+R2780:2789 nameless.DBEtaSafety <> not_lambda def
+prf 2824:2839 <> typed_iprod_view
+binder 2850:2854 <> Gamma:43
+binder 2856:2857 <> IT:44
+binder 2859:2859 <> D:45
+binder 2861:2861 <> A:46
+binder 2863:2863 <> B:47
+R2893:2896 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2868:2873 nameless.DBTyping <> typing ind
+R2875:2879 nameless.DBDescriptionViews <> Gamma:43 var
+R2881:2882 nameless.DBDescriptionViews <> IT:44 var
+R2885:2889 nameless.DBSyntax <> TSort constr
+R2923:2926 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2897:2902 nameless.DBTyping <> typing ind
+R2904:2908 nameless.DBDescriptionViews <> Gamma:43 var
+R2910:2910 nameless.DBDescriptionViews <> D:45 var
+R2913:2918 nameless.DBSyntax <> TIDesc constr
+R2920:2921 nameless.DBDescriptionViews <> IT:44 var
+R2946:2951 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2927:2930 nameless.DBCore <> conv ind
+R2935:2940 nameless.DBSyntax <> TIProd constr
+R2944:2944 nameless.DBDescriptionViews <> B:47 var
+R2942:2942 nameless.DBDescriptionViews <> A:46 var
+R2932:2932 nameless.DBDescriptionViews <> D:45 var
+R2952:2958 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2964:2965 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2959:2960 <> A':48
+binder 2962:2963 <> B':49
+R2993:2996 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2966:2971 nameless.DBTyping <> typing ind
+R2973:2977 nameless.DBDescriptionViews <> Gamma:43 var
+R2979:2980 nameless.DBDescriptionViews <> A':48 var
+R2983:2988 nameless.DBSyntax <> TIDesc constr
+R2990:2991 nameless.DBDescriptionViews <> IT:44 var
+R3024:3031 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2997:3002 nameless.DBTyping <> typing ind
+R3004:3008 nameless.DBDescriptionViews <> Gamma:43 var
+R3010:3011 nameless.DBDescriptionViews <> B':49 var
+R3014:3019 nameless.DBSyntax <> TIDesc constr
+R3021:3022 nameless.DBDescriptionViews <> IT:44 var
+R3041:3044 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3032:3035 nameless.DBCore <> conv ind
+R3039:3040 nameless.DBDescriptionViews <> A':48 var
+R3037:3037 nameless.DBDescriptionViews <> A:46 var
+R3054:3057 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3045:3048 nameless.DBCore <> conv ind
+R3052:3053 nameless.DBDescriptionViews <> B':49 var
+R3050:3050 nameless.DBDescriptionViews <> B:47 var
+R3058:3061 nameless.DBCore <> conv ind
+R3066:3071 nameless.DBSyntax <> TIProd constr
+R3076:3077 nameless.DBDescriptionViews <> B':49 var
+R3073:3074 nameless.DBDescriptionViews <> A':48 var
+R3063:3063 nameless.DBDescriptionViews <> D:45 var
+R3134:3152 nameless.DBConfluence <> conversion_joinable thm
+R3134:3152 nameless.DBConfluence <> conversion_joinable thm
+R3192:3205 nameless.DBGeneration <> reduces_binary thm
+R3214:3228 nameless.DBDescriptionViews <> reduction_iprod thm
+R3207:3212 nameless.DBSyntax <> TIProd constr
+R3192:3205 nameless.DBGeneration <> reduces_binary thm
+R3214:3228 nameless.DBDescriptionViews <> reduction_iprod thm
+R3207:3212 nameless.DBSyntax <> TIProd constr
+R3278:3306 nameless.DBEtaPostponement <> typed_reduction_factorization thm
+R3278:3306 nameless.DBEtaPostponement <> typed_reduction_factorization thm
+R3378:3380 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3366:3375 nameless.DBEtaSafety <> not_lambda def
+R3381:3384 Corelib.Init.Datatypes <> true constr
+R3378:3380 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3366:3375 nameless.DBEtaSafety <> not_lambda def
+R3381:3384 Corelib.Init.Datatypes <> true constr
+R3418:3436 nameless.DBDescriptionViews <> etas_binary_inverse thm
+R3476:3482 Corelib.Init.Logic <> eq_refl constr
+R3445:3461 nameless.DBDescriptionViews <> eta_iprod_inverse thm
+R3438:3443 nameless.DBSyntax <> TIProd constr
+R3418:3436 nameless.DBDescriptionViews <> etas_binary_inverse thm
+R3476:3482 Corelib.Init.Logic <> eq_refl constr
+R3445:3461 nameless.DBDescriptionViews <> eta_iprod_inverse thm
+R3438:3443 nameless.DBSyntax <> TIProd constr
+R3532:3552 nameless.DBConstructorGeneration <> description_inversion thm
+R3532:3552 nameless.DBConstructorGeneration <> description_inversion thm
+R3638:3645 nameless.DBCore <> cv_trans constr
+R3656:3676 nameless.DBWeakening <> reductions_conversion thm
+R3638:3645 nameless.DBCore <> cv_trans constr
+R3656:3676 nameless.DBWeakening <> reductions_conversion thm
+R3699:3704 nameless.DBCore <> cv_sym constr
+R3707:3721 nameless.DBDescriptionViews <> etas_conversion thm
+R3699:3704 nameless.DBCore <> cv_sym constr
+R3707:3721 nameless.DBDescriptionViews <> etas_conversion thm
+R3745:3752 nameless.DBCore <> cv_trans constr
+R3763:3783 nameless.DBWeakening <> reductions_conversion thm
+R3745:3752 nameless.DBCore <> cv_trans constr
+R3763:3783 nameless.DBWeakening <> reductions_conversion thm
+R3806:3811 nameless.DBCore <> cv_sym constr
+R3814:3828 nameless.DBDescriptionViews <> etas_conversion thm
+R3806:3811 nameless.DBCore <> cv_sym constr
+R3814:3828 nameless.DBDescriptionViews <> etas_conversion thm
+R3855:3871 nameless.DBDescriptionViews <> psteps_conversion thm
+R3855:3871 nameless.DBDescriptionViews <> psteps_conversion thm
+prf 3888:3910 <> typed_empty_choice_view
+binder 3921:3925 <> Gamma:50
+binder 3927:3928 <> IT:51
+binder 3930:3930 <> D:52
+binder 3932:3932 <> T:53
+R3962:3965 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3937:3942 nameless.DBTyping <> typing ind
+R3944:3948 nameless.DBDescriptionViews <> Gamma:50 var
+R3950:3951 nameless.DBDescriptionViews <> IT:51 var
+R3954:3958 nameless.DBSyntax <> TSort constr
+R3992:3995 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3966:3971 nameless.DBTyping <> typing ind
+R3973:3977 nameless.DBDescriptionViews <> Gamma:50 var
+R3979:3979 nameless.DBDescriptionViews <> D:52 var
+R3982:3987 nameless.DBSyntax <> TIDesc constr
+R3989:3990 nameless.DBDescriptionViews <> IT:51 var
+R4021:4026 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3996:3999 nameless.DBCore <> conv ind
+R4004:4011 nameless.DBSyntax <> TIChoice constr
+R4019:4019 nameless.DBDescriptionViews <> T:53 var
+R4013:4017 nameless.DBSyntax <> TNilE constr
+R4001:4001 nameless.DBDescriptionViews <> D:52 var
+R4027:4033 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4036:4037 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4034:4035 <> T':54
+R4088:4091 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4038:4043 nameless.DBTyping <> typing ind
+R4045:4049 nameless.DBDescriptionViews <> Gamma:50 var
+R4051:4052 nameless.DBDescriptionViews <> T':54 var
+R4055:4059 nameless.DBSyntax <> arrow def
+R4077:4082 nameless.DBSyntax <> TIDesc constr
+R4084:4085 nameless.DBDescriptionViews <> IT:51 var
+R4062:4067 nameless.DBSyntax <> TEnumT constr
+R4069:4073 nameless.DBSyntax <> TNilE constr
+R4092:4095 nameless.DBCore <> conv ind
+R4100:4107 nameless.DBSyntax <> TIChoice constr
+R4115:4116 nameless.DBDescriptionViews <> T':54 var
+R4109:4113 nameless.DBSyntax <> TNilE constr
+R4097:4097 nameless.DBDescriptionViews <> D:52 var
+R4171:4189 nameless.DBConfluence <> conversion_joinable thm
+R4171:4189 nameless.DBConfluence <> conversion_joinable thm
+R4229:4242 nameless.DBGeneration <> reduces_binary thm
+R4253:4269 nameless.DBDescriptionViews <> reduction_ichoice thm
+R4244:4251 nameless.DBSyntax <> TIChoice constr
+R4229:4242 nameless.DBGeneration <> reduces_binary thm
+R4253:4269 nameless.DBDescriptionViews <> reduction_ichoice thm
+R4244:4251 nameless.DBSyntax <> TIChoice constr
+R4315:4326 nameless.DBDescriptionViews <> reduces_nile thm
+R4315:4326 nameless.DBDescriptionViews <> reduces_nile thm
+R4356:4384 nameless.DBEtaPostponement <> typed_reduction_factorization thm
+R4356:4384 nameless.DBEtaPostponement <> typed_reduction_factorization thm
+R4456:4458 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4444:4453 nameless.DBEtaSafety <> not_lambda def
+R4459:4462 Corelib.Init.Datatypes <> true constr
+R4456:4458 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4444:4453 nameless.DBEtaSafety <> not_lambda def
+R4459:4462 Corelib.Init.Datatypes <> true constr
+R4496:4514 nameless.DBDescriptionViews <> etas_binary_inverse thm
+R4558:4564 Corelib.Init.Logic <> eq_refl constr
+R4525:4543 nameless.DBDescriptionViews <> eta_ichoice_inverse thm
+R4516:4523 nameless.DBSyntax <> TIChoice constr
+R4496:4514 nameless.DBDescriptionViews <> etas_binary_inverse thm
+R4558:4564 Corelib.Init.Logic <> eq_refl constr
+R4525:4543 nameless.DBDescriptionViews <> eta_ichoice_inverse thm
+R4516:4523 nameless.DBSyntax <> TIChoice constr
+R4613:4633 nameless.DBConstructorGeneration <> description_inversion thm
+R4613:4633 nameless.DBConstructorGeneration <> description_inversion thm
+R4697:4699 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4685:4694 nameless.DBEtaSafety <> not_lambda def
+R4700:4703 Corelib.Init.Datatypes <> true constr
+R4697:4699 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4685:4694 nameless.DBEtaSafety <> not_lambda def
+R4700:4703 Corelib.Init.Datatypes <> true constr
+R4739:4755 nameless.DBDescriptionViews <> etas_nile_inverse thm
+R4764:4770 Corelib.Init.Logic <> eq_refl constr
+R4739:4755 nameless.DBDescriptionViews <> etas_nile_inverse thm
+R4764:4770 Corelib.Init.Logic <> eq_refl constr
+R4829:4845 nameless.DBDescriptionViews <> psteps_conversion thm
+R4829:4845 nameless.DBDescriptionViews <> psteps_conversion thm
+R4873:4888 nameless.DBDescriptionViews <> typed_iprod_view thm
+R4909:4931 nameless.DBDescriptionViews <> typed_empty_choice_view thm

@@ -1,0 +1,177 @@
+DIGEST d4b3a703ff75cf323f32c2012e2c1680
+Fnameless.DBFullReductionStructure
+R89:92 Stdlib.Lists.List <> <> lib
+R94:98 Stdlib.Arith.Arith <> <> lib
+R100:103 Stdlib.Bool.Bool <> <> lib
+R105:107 Stdlib.micromega.Lia <> <> lib
+R125:158 nameless.DBComputationSubstitution <> <> lib
+prf 168:181 <> reduction_lift
+binder 192:192 <> t:1
+binder 194:194 <> u:2
+R210:213 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R197:205 nameless.DBCore <> reduction ind
+R209:209 nameless.DBFullReductionStructure <> u:2 var
+R207:207 nameless.DBFullReductionStructure <> t:1 var
+binder 221:221 <> d:3
+binder 223:223 <> c:4
+R228:236 nameless.DBCore <> reduction ind
+R252:255 nameless.DBSyntax <> lift def
+R261:261 nameless.DBFullReductionStructure <> u:2 var
+R259:259 nameless.DBFullReductionStructure <> c:4 var
+R257:257 nameless.DBFullReductionStructure <> d:3 var
+R239:242 nameless.DBSyntax <> lift def
+R248:248 nameless.DBFullReductionStructure <> t:1 var
+R246:246 nameless.DBFullReductionStructure <> c:4 var
+R244:244 nameless.DBFullReductionStructure <> d:3 var
+R329:332 nameless.DBSyntax <> lift def
+R366:373 nameless.DBCore <> red_root constr
+R366:373 nameless.DBCore <> red_root constr
+R393:401 nameless.DBCore <> root_step def
+R485:487 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R488:491 Corelib.Init.Datatypes <> Some constr
+R485:487 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R488:491 Corelib.Init.Datatypes <> Some constr
+R599:602 nameless.DBSyntax <> lift def
+R604:612 nameless.DBCore <> root_step def
+R623:629 nameless.DBSyntax <> product def
+R632:634 nameless.DBSyntax <> Bot def
+R637:643 nameless.DBSyntax <> carrier def
+R646:660 nameless.DBSyntax <> diagonal_motive def
+R703:706 nameless.DBSyntax <> lift def
+R718:735 nameless.DBParallelBase <> lift_lift_one_zero thm
+R718:735 nameless.DBParallelBase <> lift_lift_one_zero thm
+R718:735 nameless.DBParallelBase <> lift_lift_one_zero thm
+R744:750 nameless.DBCore <> red_eta constr
+R744:750 nameless.DBCore <> red_eta constr
+prf 764:778 <> reduction_subst
+binder 789:789 <> t:5
+binder 791:791 <> u:6
+R807:810 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R794:802 nameless.DBCore <> reduction ind
+R806:806 nameless.DBFullReductionStructure <> u:6 var
+R804:804 nameless.DBFullReductionStructure <> t:5 var
+binder 818:818 <> a:7
+binder 820:820 <> c:8
+R825:833 nameless.DBCore <> reduction ind
+R850:854 nameless.DBSyntax <> subst def
+R860:860 nameless.DBFullReductionStructure <> u:6 var
+R858:858 nameless.DBFullReductionStructure <> c:8 var
+R856:856 nameless.DBFullReductionStructure <> a:7 var
+R836:840 nameless.DBSyntax <> subst def
+R846:846 nameless.DBFullReductionStructure <> t:5 var
+R844:844 nameless.DBFullReductionStructure <> c:8 var
+R842:842 nameless.DBFullReductionStructure <> a:7 var
+R935:939 nameless.DBSyntax <> subst def
+R973:980 nameless.DBCore <> red_root constr
+R993:1014 nameless.DBComputationSubstitution <> computation_root_subst thm
+R973:980 nameless.DBCore <> red_root constr
+R993:1014 nameless.DBComputationSubstitution <> computation_root_subst thm
+R1026:1030 nameless.DBSyntax <> subst def
+R1042:1060 nameless.DBParallelBase <> subst_lift_one_zero thm
+R1042:1060 nameless.DBParallelBase <> subst_lift_one_zero thm
+R1042:1060 nameless.DBParallelBase <> subst_lift_one_zero thm
+R1069:1075 nameless.DBCore <> red_eta constr
+R1069:1075 nameless.DBCore <> red_eta constr
+def 1095:1101 <> full_SN
+binder 1103:1103 <> t:9
+R1108:1110 Corelib.Init.Wf <> Acc ind
+R1139:1139 nameless.DBFullReductionStructure <> t:9 var
+binder 1117:1117 <> u:10
+binder 1119:1119 <> v:11
+R1124:1132 nameless.DBCore <> reduction ind
+R1136:1136 nameless.DBFullReductionStructure <> u:10 var
+R1134:1134 nameless.DBFullReductionStructure <> v:11 var
+prf 1148:1169 <> full_SN_map_reflection
+binder 1180:1180 <> C:12
+R1185:1185 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1236:1242 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1193:1193 <> t:13
+binder 1195:1195 <> u:14
+R1211:1214 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1198:1206 nameless.DBCore <> reduction ind
+R1210:1210 nameless.DBFullReductionStructure <> u:14 var
+R1208:1208 nameless.DBFullReductionStructure <> t:13 var
+R1215:1223 nameless.DBCore <> reduction ind
+R1232:1232 nameless.DBFullReductionStructure <> C:12 var
+R1234:1234 nameless.DBFullReductionStructure <> u:14 var
+R1226:1226 nameless.DBFullReductionStructure <> C:12 var
+R1228:1228 nameless.DBFullReductionStructure <> t:13 var
+binder 1250:1250 <> t:15
+R1266:1269 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1253:1259 nameless.DBFullReductionStructure <> full_SN def
+R1262:1262 nameless.DBFullReductionStructure <> C:12 var
+R1264:1264 nameless.DBFullReductionStructure <> t:15 var
+R1270:1276 nameless.DBFullReductionStructure <> full_SN def
+R1278:1278 nameless.DBFullReductionStructure <> t:15 var
+prf 1482:1504 <> full_SN_lift_reflection
+binder 1515:1515 <> t:16
+binder 1517:1517 <> d:17
+binder 1519:1519 <> c:18
+R1542:1545 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1522:1528 nameless.DBFullReductionStructure <> full_SN def
+R1531:1534 nameless.DBSyntax <> lift def
+R1540:1540 nameless.DBFullReductionStructure <> t:16 var
+R1538:1538 nameless.DBFullReductionStructure <> c:18 var
+R1536:1536 nameless.DBFullReductionStructure <> d:17 var
+R1546:1552 nameless.DBFullReductionStructure <> full_SN def
+R1554:1554 nameless.DBFullReductionStructure <> t:16 var
+R1587:1608 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+R1611:1614 nameless.DBSyntax <> lift def
+R1642:1655 nameless.DBFullReductionStructure <> reduction_lift thm
+R1587:1608 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+R1611:1614 nameless.DBSyntax <> lift def
+R1642:1655 nameless.DBFullReductionStructure <> reduction_lift thm
+prf 1678:1701 <> full_SN_subst_reflection
+binder 1712:1712 <> t:19
+binder 1714:1714 <> a:20
+binder 1716:1716 <> c:21
+R1740:1743 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1719:1725 nameless.DBFullReductionStructure <> full_SN def
+R1728:1732 nameless.DBSyntax <> subst def
+R1738:1738 nameless.DBFullReductionStructure <> t:19 var
+R1736:1736 nameless.DBFullReductionStructure <> c:21 var
+R1734:1734 nameless.DBFullReductionStructure <> a:20 var
+R1744:1750 nameless.DBFullReductionStructure <> full_SN def
+R1752:1752 nameless.DBFullReductionStructure <> t:19 var
+R1785:1806 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+R1809:1813 nameless.DBSyntax <> subst def
+R1841:1855 nameless.DBFullReductionStructure <> reduction_subst thm
+R1785:1806 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+R1809:1813 nameless.DBSyntax <> subst def
+R1841:1855 nameless.DBFullReductionStructure <> reduction_subst thm
+prf 1878:1893 <> full_SN_eta_body
+binder 1904:1904 <> f:22
+R1945:1948 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1909:1915 nameless.DBFullReductionStructure <> full_SN def
+R1918:1921 nameless.DBSyntax <> TApp constr
+R1937:1940 nameless.DBSyntax <> TVar constr
+R1924:1927 nameless.DBSyntax <> lift def
+R1933:1933 nameless.DBFullReductionStructure <> f:22 var
+R1949:1955 nameless.DBFullReductionStructure <> full_SN def
+R1957:1957 nameless.DBFullReductionStructure <> f:22 var
+R1988:2010 nameless.DBFullReductionStructure <> full_SN_lift_reflection thm
+R1988:2010 nameless.DBFullReductionStructure <> full_SN_lift_reflection thm
+R2029:2050 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+binder 2057:2057 <> t:23
+R2062:2065 nameless.DBSyntax <> TApp constr
+R2070:2073 nameless.DBSyntax <> TVar constr
+R2067:2067 nameless.DBFullReductionStructure <> t:23 var
+R2104:2113 nameless.DBCore <> red_TApp_f constr
+R2029:2050 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+binder 2057:2057 <> t:24
+R2062:2065 nameless.DBSyntax <> TApp constr
+R2070:2073 nameless.DBSyntax <> TVar constr
+R2067:2067 nameless.DBFullReductionStructure <> t:24 var
+R2104:2113 nameless.DBCore <> red_TApp_f constr
+prf 2136:2149 <> full_SN_lambda
+binder 2160:2160 <> b:25
+R2172:2175 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2163:2169 nameless.DBFullReductionStructure <> full_SN def
+R2171:2171 nameless.DBFullReductionStructure <> b:25 var
+R2176:2182 nameless.DBFullReductionStructure <> full_SN def
+R2185:2188 nameless.DBSyntax <> TLam constr
+R2190:2190 nameless.DBFullReductionStructure <> b:25 var
+R2328:2343 nameless.DBFullReductionStructure <> full_SN_eta_body thm
+R2328:2343 nameless.DBFullReductionStructure <> full_SN_eta_body thm
+R2392:2406 nameless.DBFullReductionStructure <> reduction_subst thm
+R2427:2440 nameless.DBFullReductionStructure <> full_SN_lambda thm

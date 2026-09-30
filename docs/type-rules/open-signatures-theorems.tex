@@ -1,8 +1,23 @@
 \newpage
-\sectiontitle{13}{Selected theorem statements: unproved}
-All 47 statements in \texttt{OpenSignaturesTheorems.v} are
-\texttt{Conjecture}s. The following are representative; the example typing
-and derived-rule claims above are also unproved.
+\sectiontitle{13}{Selected theorem statements and proof status}
+Of the 47 original claims, 44 have proofs without axiom dependencies,
+two coherence claims remain conjectures, and full preservation is refuted.
+No proved claims depend on conjectures. Progress, operational preservation,
+confluence, structural rules, elaboration and subtyping soundness, full
+beta/eta strong normalization, consistency, and their corollaries are proved.
+The current rules admit the following checked counterexample:
+\[
+ f=(\lambda z.\lambda B.z)(\lambda x.x),\qquad
+ T=\Pi A:\Set_0.\,A\to A,\qquad
+ \vdash\lambda A.f\,A:T,\quad \lambda A.f\,A\leadsto f,\quad
+ \nvdash f:T.
+\]
+The hidden type of $z$ may depend on $A$ inside the eta expansion, but must
+be fixed before $B$ is bound in $f$.
+\texttt{OpenSignaturesEtaPolymorphism.v} proves this without axioms.
+The false conjecture was removed; its exact proposition remains as
+\texttt{full\_preservation\_statement}. A specification repair is required.
+The exact dependency table is in \texttt{progress/PROOF\_STATUS.md}.
 \[
 \begin{array}{@{}ll@{}}
  \text{Context validity}&
@@ -18,7 +33,7 @@ and derived-rule claims above are also unproved.
  \text{Preservation}&
  \Gamma\vdash t:A,\ t\to u
  \ \Longrightarrow\ \Gamma\vdash u:A
- \quad\text{(also for }\leadsto\text{).}\\[4pt]
+ \quad\text{(full }\leadsto\text{ is refuted).}\\[4pt]
  \text{Progress}&
  \varnothing\vdash t:A
  \ \Longrightarrow\ \op{value}(t)\ \lor\ \exists u.\ t\to u.\\[4pt]
@@ -26,7 +41,8 @@ and derived-rule claims above are also unproved.
  \Gamma\vdash t:A\ \Longrightarrow\ t\text{ is strongly normalizing for }\leadsto.\\[4pt]
  \text{Confluence}&
  \Gamma\vdash t:A,\ t\leadsto^*u,\ t\leadsto^*v\\
- &\hspace{6mm}\Longrightarrow\ \exists w.\ u\leadsto^*w\land v\leadsto^*w.\\[4pt]
+ &\hspace{6mm}\Longrightarrow\ \exists w,w'.\
+   u\leadsto^*w\land v\leadsto^*w'\land w\equiv_\alpha w'.\\[4pt]
  \text{Consistency}&
  \neg\exists t.\ \varnothing\vdash t:\bot.\\[4pt]
  \text{Dead soundness}&
@@ -68,8 +84,9 @@ observations. It is not definitional equality.
  \neg\exists x.\ \varnothing\vdash x:C_{U_A,U_A}(\unit).
 \end{gathered}
 \]
-Ten closed computation checks in \texttt{OpenSignaturesExamples.v} are
-proved by reflexivity. They do not prove the general typing claims.
+The computation checks in \texttt{OpenSignaturesExamples.v} are
+proved by reflexivity. Separate symbolic proofs establish the list,
+nonempty-list, tree, and observer typing claims.
 
 \textbf{Source map.}
 \begin{center}

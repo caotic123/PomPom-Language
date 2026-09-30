@@ -1,0 +1,126 @@
+DIGEST a7291154b15dcb7fced3e356c04f7274
+Fnameless.DBTypedPiViews
+R156:159 Stdlib.Lists.List <> <> lib
+R161:165 Stdlib.Arith.Arith <> <> lib
+R167:170 Stdlib.Bool.Bool <> <> lib
+R172:174 Stdlib.micromega.Lia <> <> lib
+R192:218 nameless.DBDescriptionViews <> <> lib
+prf 228:241 <> eta_pi_inverse
+binder 252:252 <> t:1
+binder 254:254 <> A:2
+binder 256:256 <> B:3
+R277:280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R259:264 nameless.DBEta <> epstep ind
+R266:266 nameless.DBTypedPiViews <> t:1 var
+R269:271 nameless.DBSyntax <> TPi constr
+R275:275 nameless.DBTypedPiViews <> B:3 var
+R273:273 nameless.DBTypedPiViews <> A:2 var
+R300:305 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R293:295 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R281:290 nameless.DBEtaSafety <> not_lambda def
+R292:292 nameless.DBTypedPiViews <> t:1 var
+R296:299 Corelib.Init.Datatypes <> true constr
+R306:312 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R318:319 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 313:314 <> A':4
+binder 316:317 <> B':5
+R333:336 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R321:323 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R320:320 nameless.DBTypedPiViews <> t:1 var
+R324:326 nameless.DBSyntax <> TPi constr
+R331:332 nameless.DBTypedPiViews <> B':5 var
+R328:329 nameless.DBTypedPiViews <> A':4 var
+R348:351 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R337:342 nameless.DBEta <> epstep ind
+R344:345 nameless.DBTypedPiViews <> A':4 var
+R347:347 nameless.DBTypedPiViews <> A:2 var
+R352:357 nameless.DBEta <> epstep ind
+R359:360 nameless.DBTypedPiViews <> B':5 var
+R362:362 nameless.DBTypedPiViews <> B:3 var
+R405:414 nameless.DBEtaSafety <> not_lambda def
+prf 462:474 <> typed_pi_view
+binder 485:489 <> Gamma:6
+binder 491:491 <> T:7
+binder 493:493 <> k:8
+binder 495:495 <> A:9
+binder 497:497 <> B:10
+R526:529 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R502:507 nameless.DBTyping <> typing ind
+R509:513 nameless.DBTypedPiViews <> Gamma:6 var
+R515:515 nameless.DBTypedPiViews <> T:7 var
+R518:522 nameless.DBSyntax <> TSort constr
+R524:524 nameless.DBTypedPiViews <> k:8 var
+R546:551 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R530:533 nameless.DBCore <> conv ind
+R538:540 nameless.DBSyntax <> TPi constr
+R544:544 nameless.DBTypedPiViews <> B:10 var
+R542:542 nameless.DBTypedPiViews <> A:9 var
+R535:535 nameless.DBTypedPiViews <> T:7 var
+R552:558 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R564:565 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 559:560 <> A':11
+binder 562:563 <> B':12
+R600:607 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R566:571 nameless.DBTyping <> typing ind
+R573:577 nameless.DBTypedPiViews <> Gamma:6 var
+R580:582 nameless.DBSyntax <> TPi constr
+R587:588 nameless.DBTypedPiViews <> B':12 var
+R584:585 nameless.DBTypedPiViews <> A':11 var
+R592:596 nameless.DBSyntax <> TSort constr
+R598:598 nameless.DBTypedPiViews <> k:8 var
+R617:620 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R608:611 nameless.DBCore <> conv ind
+R615:616 nameless.DBTypedPiViews <> A':11 var
+R613:613 nameless.DBTypedPiViews <> A:9 var
+R630:633 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R621:624 nameless.DBCore <> conv ind
+R628:629 nameless.DBTypedPiViews <> B':12 var
+R626:626 nameless.DBTypedPiViews <> B:10 var
+R634:637 nameless.DBCore <> conv ind
+R642:644 nameless.DBSyntax <> TPi constr
+R649:650 nameless.DBTypedPiViews <> B':12 var
+R646:647 nameless.DBTypedPiViews <> A':11 var
+R639:639 nameless.DBTypedPiViews <> T:7 var
+R703:721 nameless.DBConfluence <> conversion_joinable thm
+R703:721 nameless.DBConfluence <> conversion_joinable thm
+R761:774 nameless.DBGeneration <> reduces_binary thm
+R780:791 nameless.DBGeneration <> reduction_pi thm
+R776:778 nameless.DBSyntax <> TPi constr
+R761:774 nameless.DBGeneration <> reduces_binary thm
+R780:791 nameless.DBGeneration <> reduction_pi thm
+R776:778 nameless.DBSyntax <> TPi constr
+R841:869 nameless.DBEtaPostponement <> typed_reduction_factorization thm
+R841:869 nameless.DBEtaPostponement <> typed_reduction_factorization thm
+R941:943 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R929:938 nameless.DBEtaSafety <> not_lambda def
+R944:947 Corelib.Init.Datatypes <> true constr
+R941:943 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R929:938 nameless.DBEtaSafety <> not_lambda def
+R944:947 Corelib.Init.Datatypes <> true constr
+R981:999 nameless.DBDescriptionViews <> etas_binary_inverse thm
+R1033:1039 Corelib.Init.Logic <> eq_refl constr
+R1005:1018 nameless.DBTypedPiViews <> eta_pi_inverse thm
+R1001:1003 nameless.DBSyntax <> TPi constr
+R981:999 nameless.DBDescriptionViews <> etas_binary_inverse thm
+R1033:1039 Corelib.Init.Logic <> eq_refl constr
+R1005:1018 nameless.DBTypedPiViews <> eta_pi_inverse thm
+R1001:1003 nameless.DBSyntax <> TPi constr
+R1134:1141 nameless.DBCore <> cv_trans constr
+R1152:1172 nameless.DBWeakening <> reductions_conversion thm
+R1134:1141 nameless.DBCore <> cv_trans constr
+R1152:1172 nameless.DBWeakening <> reductions_conversion thm
+R1195:1200 nameless.DBCore <> cv_sym constr
+R1203:1217 nameless.DBDescriptionViews <> etas_conversion thm
+R1195:1200 nameless.DBCore <> cv_sym constr
+R1203:1217 nameless.DBDescriptionViews <> etas_conversion thm
+R1241:1248 nameless.DBCore <> cv_trans constr
+R1259:1279 nameless.DBWeakening <> reductions_conversion thm
+R1241:1248 nameless.DBCore <> cv_trans constr
+R1259:1279 nameless.DBWeakening <> reductions_conversion thm
+R1302:1307 nameless.DBCore <> cv_sym constr
+R1310:1324 nameless.DBDescriptionViews <> etas_conversion thm
+R1302:1307 nameless.DBCore <> cv_sym constr
+R1310:1324 nameless.DBDescriptionViews <> etas_conversion thm
+R1351:1367 nameless.DBDescriptionViews <> psteps_conversion thm
+R1351:1367 nameless.DBDescriptionViews <> psteps_conversion thm
+R1394:1406 nameless.DBTypedPiViews <> typed_pi_view thm

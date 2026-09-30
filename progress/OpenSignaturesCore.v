@@ -4,42 +4,49 @@
    It has NO equation unfolding a close type or identifying its diagonal
    judgmentally with the separately retained EID reference fixed point. *)
 From Stdlib Require Import List Arith String.
-Require Export OpenSignaturesSyntax.
+Require Export OpenSignaturesAlpha.
 Import ListNotations.
 Set Implicit Arguments.
 
+(* Every generated binder avoids all operands of its rule. Existing IDs
+   remain unchanged; beta substitutes for the lambda's explicit binder. *)
 Definition root_step (t : term) : option term :=
   match t with
-  | TApp (TLam b) a => Some (subst a 0 b)
+  | TApp (TLam x b) a => Some (subst a x b)
   | TFst (TPair a b) => Some a
   | TSnd (TPair a b) => Some b
   | TEPi k TNilE P => Some TUnitT
   | TEPi k (TConsE tag E) P =>
+      let x := fresh [tag; E; P] in
       Some (product (TApp P TEZero)
-        (TEPi k E (TLam (TApp (lift 1 0 P) (TESucc (TVar 0))))))
+        (TEPi k E (TLam x (TApp P (TESucc (TVar x))))))
   | TSwitch k (TConsE tag E) P (TPair p ps) TEZero => Some p
   | TSwitch k (TConsE tag E) P (TPair p ps) (TESucc n) =>
-      Some (TSwitch k E (TLam (TApp (lift 1 0 P) (TESucc (TVar 0)))) ps n)
+      let x := fresh [tag; E; P; p; ps; n] in
+      Some (TSwitch k E (TLam x (TApp P (TESucc (TVar x)))) ps n)
   | TInterp IT (TIVar i) X => Some (TApp X i)
   | TInterp IT TI1 X => Some TUnitT
   | TInterp IT TIBot X => Some Bot
   | TInterp IT (TIProd A B) X =>
       Some (product (TInterp IT A X) (TInterp IT B X))
   | TInterp IT (TIPi A D) X =>
-      Some (TPi A (TInterp (lift 1 0 IT) (TApp (lift 1 0 D) (TVar 0)) (lift 1 0 X)))
+      let x := fresh [IT; A; D; X] in
+      Some (TPi x A (TInterp IT (TApp D (TVar x)) X))
   | TInterp IT (TISig A D) X =>
-      Some (TSigma A (TInterp (lift 1 0 IT) (TApp (lift 1 0 D) (TVar 0)) (lift 1 0 X)))
+      let x := fresh [IT; A; D; X] in
+      Some (TSigma x A (TInterp IT (TApp D (TVar x)) X))
   | TInterp IT (TIChoice E D) X =>
-      Some (TSigma (TEnumT E)
-        (TInterp (lift 1 0 IT) (TApp (lift 1 0 D) (TVar 0)) (lift 1 0 X)))
+      let x := fresh [IT; E; D; X] in
+      Some (TSigma x (TEnumT E) (TInterp IT (TApp D (TVar x)) X))
   | TIAll IT (TIVar i) X x P => Some (TApp P (TPair i x))
   | TIAll IT TI1 X TUnit P => Some TUnitT
   | TIAll IT TIBot X x P => Some TUnitT
   | TIAll IT (TIProd A B) X (TPair a b) P =>
       Some (product (TIAll IT A X a P) (TIAll IT B X b P))
   | TIAll IT (TIPi A D) X f P =>
-      Some (TPi A (TIAll (lift 1 0 IT) (TApp (lift 1 0 D) (TVar 0))
-        (lift 1 0 X) (TApp (lift 1 0 f) (TVar 0)) (lift 1 0 P)))
+      let x := fresh [IT; A; D; X; f; P] in
+      Some (TPi x A (TIAll IT (TApp D (TVar x)) X
+        (TApp f (TVar x)) P))
   | TIAll IT (TISig A D) X (TPair a x) P =>
       Some (TIAll IT (TApp D a) X x P)
   | TIAll IT (TIChoice E D) X (TPair e x) P =>
@@ -50,25 +57,24 @@ Definition root_step (t : term) : option term :=
   | THyps IT (TIProd A B) X P h (TPair a b) =>
       Some (TPair (THyps IT A X P h a) (THyps IT B X P h b))
   | THyps IT (TIPi A D) X P h f =>
-      Some (TLam (THyps (lift 1 0 IT) (TApp (lift 1 0 D) (TVar 0))
-        (lift 1 0 X) (lift 1 0 P) (lift 1 0 h)
-        (TApp (lift 1 0 f) (TVar 0))))
+      let x := fresh [IT; A; D; X; P; h; f] in
+      Some (TLam x (THyps IT (TApp D (TVar x)) X P h
+        (TApp f (TVar x))))
   | THyps IT (TISig A D) X P h (TPair a x) =>
       Some (THyps IT (TApp D a) X P h x)
   | THyps IT (TIChoice E D) X P h (TPair e x) =>
       Some (THyps IT (TApp D e) X P h x)
   | TInd IT D P st i (TIn xs) =>
+      let j := fresh [IT; D; P; st; i; xs] in let x := S j in
       Some (TApp (TApp (TApp st i) xs)
         (THyps IT (TApp D i) (TMuI IT D) P
-          (TLam (TLam (TInd (lift 2 0 IT) (lift 2 0 D) (lift 2 0 P)
-            (lift 2 0 st) (TVar 1) (TVar 0)))) xs))
+          (TLam j (TLam x (TInd IT D P st (TVar j) (TVar x)))) xs))
   | TCloseCase k IT F G i Q b (TIn xs) => Some (TApp b xs)
   | TCloseInd IT G P st F i (TIn xs) =>
+      let j := fresh [IT; G; P; st; F; i; xs] in let x := S j in
       Some (TApp (TApp (TApp (TApp st F) i) xs)
         (THyps IT (TApp F i) (carrier IT G) (diagonal_motive G P)
-          (TLam (TLam (TCloseInd (lift 2 0 IT) (lift 2 0 G)
-            (lift 2 0 P) (lift 2 0 st) (lift 2 0 G)
-            (TVar 1) (TVar 0)))) xs))
+          (TLam j (TLam x (TCloseInd IT G P st G (TVar j) (TVar x)))) xs))
   | _ => None
   end.
 
@@ -122,21 +128,22 @@ Inductive eval : term -> term -> Prop :=
    arguments. There is no close-type unfolding rule. *)
 Inductive reduction : term -> term -> Prop :=
 | red_root : forall t u, root_step t = Some u -> reduction t u
-| red_eta : forall f, reduction (TLam (TApp (lift 1 0 f) (TVar 0))) f
-| red_TPi_A : forall A B A', reduction A A' ->
-    reduction (TPi A B) (TPi A' B)
-| red_TPi_B : forall A B B', reduction B B' ->
-    reduction (TPi A B) (TPi A B')
-| red_TLam_b : forall b b', reduction b b' ->
-    reduction (TLam b) (TLam b')
+| red_eta : forall x f, ~ In x (free_vars f) ->
+    reduction (TLam x (TApp f (TVar x))) f
+| red_TPi_A : forall x A B A', reduction A A' ->
+    reduction (TPi x A B) (TPi x A' B)
+| red_TPi_B : forall x A B B', reduction B B' ->
+    reduction (TPi x A B) (TPi x A B')
+| red_TLam_b : forall x b b', reduction b b' ->
+    reduction (TLam x b) (TLam x b')
 | red_TApp_f : forall f a f', reduction f f' ->
     reduction (TApp f a) (TApp f' a)
 | red_TApp_a : forall f a a', reduction a a' ->
     reduction (TApp f a) (TApp f a')
-| red_TSigma_A : forall A B A', reduction A A' ->
-    reduction (TSigma A B) (TSigma A' B)
-| red_TSigma_B : forall A B B', reduction B B' ->
-    reduction (TSigma A B) (TSigma A B')
+| red_TSigma_A : forall x A B A', reduction A A' ->
+    reduction (TSigma x A B) (TSigma x A' B)
+| red_TSigma_B : forall x A B B', reduction B B' ->
+    reduction (TSigma x A B) (TSigma x A B')
 | red_TPair_a : forall a b a', reduction a a' ->
     reduction (TPair a b) (TPair a' b)
 | red_TPair_b : forall a b b', reduction b b' ->
@@ -275,7 +282,9 @@ Inductive conv : term -> term -> Prop :=
 | cv_refl : forall t, conv t t
 | cv_sym : forall t u, conv t u -> conv u t
 | cv_trans : forall t u v, conv t u -> conv u v -> conv t v
-| cv_eta : forall f, conv (TLam (TApp (lift 1 0 f) (TVar 0))) f
+| cv_eta : forall x f, ~ In x (free_vars f) ->
+    conv (TLam x (TApp f (TVar x))) f
+| cv_alpha : forall t u, alpha_equiv t u -> conv t u
 | cv_compatible : forall t u, compatible conv t u -> conv t u.
 
 (* A deterministic reduction strategy for concrete computation checks.
@@ -382,9 +391,9 @@ Fixpoint run (fuel : nat) (t : term) : term :=
 
 Inductive value : term -> Prop :=
 | v_sort : forall k, value (TSort k)
-| v_pi : forall A B, value (TPi A B)
-| v_lam : forall b, value (TLam b)
-| v_sigma : forall A B, value (TSigma A B)
+| v_pi : forall x A B, value (TPi x A B)
+| v_lam : forall x b, value (TLam x b)
+| v_sigma : forall x A B, value (TSigma x A B)
 | v_pair : forall a b, value (TPair a b)
 | v_unitT : value TUnitT
 | v_unit : value TUnit
@@ -412,40 +421,53 @@ Inductive value : term -> Prop :=
 
 (* Declarative core typing. The target of conversion must itself be a type;
    no source coercion relation occurs in these mutually inductive rules. *)
+(* Universe inclusion is contravariant in Pi domains and covariant in their
+   codomains. Ordinary data types are unchanged; conversion stays separate. *)
+Inductive universe_le : term -> term -> Prop :=
+| ul_refl : forall A, universe_le A A
+| ul_sort : forall j k, j <= k -> universe_le (TSort j) (TSort k)
+| ul_pi : forall x A B C D, universe_le C A -> universe_le B D ->
+    universe_le (TPi x A B) (TPi x C D).
+
 Inductive wf : ctx -> Prop :=
-| wf_nil : wf []
-| wf_cons : forall Gamma A k,
-    wf Gamma -> typing Gamma A (TSort k) -> wf (A :: Gamma)
+| wf_nil : wf empty_ctx
+| wf_cons : forall Gamma x A k,
+    wf Gamma -> typing Gamma A (TSort k) -> fresh_in Gamma x ->
+    wf (extend Gamma x A)
 with typing : ctx -> term -> term -> Prop :=
-| ty_var : forall Gamma n A,
-    wf Gamma -> nth_error Gamma n = Some A ->
-    typing Gamma (TVar n) (lift (S n) 0 A)
+| ty_var : forall Gamma x A,
+    wf Gamma -> lookup Gamma x = Some A -> typing Gamma (TVar x) A
 | ty_sort : forall Gamma k,
     wf Gamma -> typing Gamma (TSort k) (TSort (S k))
-| ty_pi : forall Gamma A B j k,
-    typing Gamma A (TSort j) -> typing (A :: Gamma) B (TSort k) ->
-    typing Gamma (TPi A B) (TSort (Nat.max j k))
-| ty_sigma : forall Gamma A B j k,
-    typing Gamma A (TSort j) -> typing (A :: Gamma) B (TSort k) ->
-    typing Gamma (TSigma A B) (TSort (Nat.max j k))
-| ty_lam : forall Gamma A B b k,
-    typing Gamma (TPi A B) (TSort k) -> typing (A :: Gamma) b B ->
-    typing Gamma (TLam b) (TPi A B)
-| ty_app : forall Gamma A B f a k,
-    typing Gamma (TPi A B) (TSort k) ->
-    typing Gamma f (TPi A B) -> typing Gamma a A ->
-    typing Gamma (TApp f a) (subst a 0 B)
-| ty_pair : forall Gamma A B a b k,
-    typing Gamma (TSigma A B) (TSort k) ->
-    typing Gamma a A -> typing Gamma b (subst a 0 B) ->
-    typing Gamma (TPair a b) (TSigma A B)
-| ty_fst : forall Gamma A B p k,
-    typing Gamma (TSigma A B) (TSort k) ->
-    typing Gamma p (TSigma A B) -> typing Gamma (TFst p) A
-| ty_snd : forall Gamma A B p k,
-    typing Gamma (TSigma A B) (TSort k) ->
-    typing Gamma p (TSigma A B) ->
-    typing Gamma (TSnd p) (subst (TFst p) 0 B)
+| ty_pi : forall Gamma x A B j k,
+    fresh_in Gamma x ->
+    typing Gamma A (TSort j) -> typing (extend Gamma x A) B (TSort k) ->
+    typing Gamma (TPi x A B) (TSort (Nat.max j k))
+| ty_sigma : forall Gamma x A B j k,
+    fresh_in Gamma x ->
+    typing Gamma A (TSort j) -> typing (extend Gamma x A) B (TSort k) ->
+    typing Gamma (TSigma x A B) (TSort (Nat.max j k))
+| ty_lam : forall Gamma x A B b k,
+    fresh_in Gamma x -> typing Gamma (TPi x A B) (TSort k) ->
+    typing (extend Gamma x A) b B ->
+    typing Gamma (TLam x b) (TPi x A B)
+| ty_app : forall Gamma x A B f a k,
+    typing Gamma (TPi x A B) (TSort k) ->
+    typing Gamma f (TPi x A B) -> typing Gamma a A ->
+    typing Gamma (TApp f a) (subst a x B)
+| ty_pair : forall Gamma x A B a b k,
+    typing Gamma (TSigma x A B) (TSort k) ->
+    typing Gamma a A -> typing Gamma b (subst a x B) ->
+    typing Gamma (TPair a b) (TSigma x A B)
+| ty_fst : forall Gamma x A B p k,
+    typing Gamma (TSigma x A B) (TSort k) ->
+    typing Gamma p (TSigma x A B) -> typing Gamma (TFst p) A
+| ty_snd : forall Gamma x A B p k,
+    typing Gamma (TSigma x A B) (TSort k) ->
+    typing Gamma p (TSigma x A B) ->
+    typing Gamma (TSnd p) (subst (TFst p) x B)
+| ty_alpha : forall Gamma t u A,
+    typing Gamma t A -> alpha_equiv t u -> typing Gamma u A
 | ty_conv : forall Gamma t A B k,
     typing Gamma t A -> typing Gamma B (TSort k) -> conv A B ->
     typing Gamma t B
@@ -471,11 +493,11 @@ with typing : ctx -> term -> term -> Prop :=
     typing Gamma (TESucc n) (TEnumT (TConsE tag E))
 | ty_epi : forall Gamma k E P,
     typing Gamma E TEnumU ->
-    typing Gamma P (TPi (TEnumT E) (TSort k)) ->
+    typing Gamma P (arrow (TEnumT E) (TSort k)) ->
     typing Gamma (TEPi k E P) (TSort k)
 | ty_switch : forall Gamma k E P p e,
     typing Gamma E TEnumU ->
-    typing Gamma P (TPi (TEnumT E) (TSort k)) ->
+    typing Gamma P (arrow (TEnumT E) (TSort k)) ->
     typing Gamma p (TEPi k E P) -> typing Gamma e (TEnumT E) ->
     typing Gamma (TSwitch k E P p e) (TApp P e)
 | ty_idesc : forall Gamma IT,
@@ -544,7 +566,7 @@ with typing : ctx -> term -> term -> Prop :=
     typing Gamma IT (TSort 0) ->
     typing Gamma F (Def IT) -> typing Gamma G (Def IT) ->
     typing Gamma i IT ->
-    typing Gamma Q (TPi (CloseAt IT F G i) (TSort k)) ->
+    typing Gamma Q (arrow (CloseAt IT F G i) (TSort k)) ->
     typing Gamma b (close_case_method IT F G i Q) ->
     typing Gamma x (CloseAt IT F G i) ->
     typing Gamma (TCloseCase k IT F G i Q b x) (TApp Q x)
@@ -555,7 +577,12 @@ with typing : ctx -> term -> term -> Prop :=
     typing Gamma F (Def IT) -> typing Gamma i IT ->
     typing Gamma x (CloseAt IT F G i) ->
     typing Gamma (TCloseInd IT G P st F i x)
-      (TApp (TApp (TApp P F) i) x).
+      (TApp (TApp (TApp P F) i) x)
+| ty_cumul_fun : forall Gamma f x A B C D j k,
+    typing Gamma f (TPi x A B) ->
+    typing Gamma (TPi x A B) (TSort j) ->
+    typing Gamma (TPi x C D) (TSort k) ->
+    universe_le C A -> universe_le B D -> typing Gamma f (TPi x C D).
 
 Definition type_wf Gamma A := exists k, typing Gamma A (TSort k).
 Definition description_input Gamma IT D X :=

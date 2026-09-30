@@ -1,0 +1,273 @@
+DIGEST 5c57918348e5ffc4bd3288a3a337d358
+FClosedSubWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:88 OpenSignaturesSubstitution <> <> lib
+R98:110 Stdlib.Lists.List ListNotations <> mod
+prf 120:131 <> typed_closed
+binder 142:142 <> t:1
+binder 144:144 <> A:2
+R167:170 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R147:152 OpenSignaturesCore <> typing ind
+R166:166 ClosedSubWork <> A:2 var
+R164:164 ClosedSubWork <> t:1 var
+R154:162 OpenSignaturesSyntax <> empty_ctx def
+R182:184 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R171:179 OpenSignaturesSyntax <> free_vars def
+R181:181 ClosedSubWork <> t:1 var
+R185:186 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R222:230 OpenSignaturesSyntax <> free_vars def
+R222:230 OpenSignaturesSyntax <> free_vars def
+R287:307 OpenSignaturesBinding <> typing_fresh_not_free thm
+R319:325 Corelib.Init.Logic <> eq_refl constr
+R287:307 OpenSignaturesBinding <> typing_fresh_not_free thm
+R319:325 Corelib.Init.Logic <> eq_refl constr
+prf 362:387 <> closed_substitution_binder
+binder 398:398 <> u:3
+binder 400:400 <> k:4
+binder 402:402 <> x:5
+binder 404:404 <> b:6
+R425:428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R420:422 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R409:417 OpenSignaturesSyntax <> free_vars def
+R419:419 ClosedSubWork <> u:3 var
+R423:424 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R497:499 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R429:447 OpenSignaturesSyntax <> substitution_binder def
+R496:496 ClosedSubWork <> b:6 var
+R494:494 ClosedSubWork <> x:5 var
+binder 454:454 <> y:7
+R462:468 Stdlib.Arith.PeanoNat Nat eqb def
+R470:470 ClosedSubWork <> y:7 var
+R472:472 ClosedSubWork <> k:4 var
+R486:489 OpenSignaturesSyntax <> TVar constr
+R491:491 ClosedSubWork <> y:7 var
+R479:479 ClosedSubWork <> u:3 var
+R500:500 ClosedSubWork <> x:5 var
+R538:556 OpenSignaturesSyntax <> substitution_binder def
+R710:712 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R577:583 Stdlib.Lists.List <> existsb def
+R602:609 Stdlib.Lists.List <> flat_map def
+R675:680 Stdlib.Lists.List <> remove def
+R696:704 OpenSignaturesSyntax <> free_vars def
+R682:691 Stdlib.Arith.PeanoNat Nat eq_dec thm
+binder 616:616 <> y:8
+R621:629 OpenSignaturesSyntax <> free_vars def
+R635:641 Stdlib.Arith.PeanoNat Nat eqb def
+R643:643 ClosedSubWork <> y:8 var
+R659:662 OpenSignaturesSyntax <> TVar constr
+R664:664 ClosedSubWork <> y:8 var
+R586:592 Stdlib.Arith.PeanoNat Nat eqb def
+R713:717 Corelib.Init.Datatypes <> false constr
+R710:712 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R577:583 Stdlib.Lists.List <> existsb def
+R602:609 Stdlib.Lists.List <> flat_map def
+R675:680 Stdlib.Lists.List <> remove def
+R696:704 OpenSignaturesSyntax <> free_vars def
+R682:691 Stdlib.Arith.PeanoNat Nat eq_dec thm
+binder 616:616 <> y:9
+R621:629 OpenSignaturesSyntax <> free_vars def
+R635:641 Stdlib.Arith.PeanoNat Nat eqb def
+R643:643 ClosedSubWork <> y:9 var
+R659:662 OpenSignaturesSyntax <> TVar constr
+R664:664 ClosedSubWork <> y:9 var
+R586:592 Stdlib.Arith.PeanoNat Nat eqb def
+R713:717 Corelib.Init.Datatypes <> false constr
+R731:752 Stdlib.Bool.Bool <> not_true_is_false thm
+R731:752 Stdlib.Bool.Bool <> not_true_is_false thm
+R779:792 Stdlib.Lists.List <> existsb_exists thm
+R779:792 Stdlib.Lists.List <> existsb_exists thm
+R846:855 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R846:855 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R880:890 Stdlib.Lists.List <> in_flat_map thm
+R880:890 Stdlib.Lists.List <> in_flat_map thm
+R942:948 Stdlib.Arith.PeanoNat Nat eqb def
+R942:948 Stdlib.Arith.PeanoNat Nat eqb def
+R1002:1010 OpenSignaturesSyntax <> free_vars def
+R1058:1070 OpenSignaturesBinding <> in_remove_iff thm
+R1058:1070 OpenSignaturesBinding <> in_remove_iff thm
+R1058:1070 OpenSignaturesBinding <> in_remove_iff thm
+prf 1121:1144 <> bind_closed_substitution
+binder 1155:1155 <> u:10
+binder 1157:1157 <> k:11
+binder 1159:1159 <> x:12
+binder 1161:1161 <> b:13
+R1172:1177 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1167:1170 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R1166:1166 ClosedSubWork <> k:11 var
+R1171:1171 ClosedSubWork <> x:12 var
+R1259:1261 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1178:1187 OpenSignaturesSyntax <> substitute def
+R1258:1258 ClosedSubWork <> b:13 var
+R1190:1206 OpenSignaturesSyntax <> bind_substitution def
+R1255:1255 ClosedSubWork <> x:12 var
+R1253:1253 ClosedSubWork <> x:12 var
+binder 1213:1213 <> y:14
+R1221:1227 Stdlib.Arith.PeanoNat Nat eqb def
+R1229:1229 ClosedSubWork <> y:14 var
+R1231:1231 ClosedSubWork <> k:11 var
+R1245:1248 OpenSignaturesSyntax <> TVar constr
+R1250:1250 ClosedSubWork <> y:14 var
+R1238:1238 ClosedSubWork <> u:10 var
+R1262:1266 OpenSignaturesSyntax <> subst def
+R1272:1272 ClosedSubWork <> b:13 var
+R1270:1270 ClosedSubWork <> k:11 var
+R1268:1268 ClosedSubWork <> u:10 var
+R1310:1326 OpenSignaturesBinding <> substitute_ext_on thm
+R1310:1326 OpenSignaturesBinding <> substitute_ext_on thm
+R1351:1367 OpenSignaturesSyntax <> bind_substitution def
+R1380:1386 Stdlib.Arith.PeanoNat Nat eqb def
+R1380:1386 Stdlib.Arith.PeanoNat Nat eqb def
+R1424:1433 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R1424:1433 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R1475:1477 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1464:1470 Stdlib.Arith.PeanoNat Nat eqb def
+R1478:1482 Corelib.Init.Datatypes <> false constr
+R1495:1505 Stdlib.Arith.PeanoNat Nat eqb_neq thm
+R1475:1477 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1464:1470 Stdlib.Arith.PeanoNat Nat eqb def
+R1478:1482 Corelib.Init.Datatypes <> false constr
+R1495:1505 Stdlib.Arith.PeanoNat Nat eqb_neq thm
+prf 1552:1567 <> subst_closed_lam
+binder 1578:1578 <> u:15
+binder 1580:1580 <> k:16
+binder 1582:1582 <> x:17
+binder 1584:1584 <> t:18
+R1605:1608 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1600:1602 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1589:1597 OpenSignaturesSyntax <> free_vars def
+R1599:1599 ClosedSubWork <> u:15 var
+R1603:1604 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1615:1618 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1610:1613 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R1609:1609 ClosedSubWork <> k:16 var
+R1614:1614 ClosedSubWork <> x:17 var
+R1639:1641 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1619:1623 OpenSignaturesSyntax <> subst def
+R1630:1633 OpenSignaturesSyntax <> TLam constr
+R1637:1637 ClosedSubWork <> t:18 var
+R1635:1635 ClosedSubWork <> x:17 var
+R1627:1627 ClosedSubWork <> k:16 var
+R1625:1625 ClosedSubWork <> u:15 var
+R1642:1645 OpenSignaturesSyntax <> TLam constr
+R1650:1654 OpenSignaturesSyntax <> subst def
+R1660:1660 ClosedSubWork <> t:18 var
+R1658:1658 ClosedSubWork <> k:16 var
+R1656:1656 ClosedSubWork <> u:15 var
+R1647:1647 ClosedSubWork <> x:17 var
+R1703:1707 OpenSignaturesSyntax <> subst def
+R1720:1729 OpenSignaturesSyntax <> substitute def
+R1743:1768 ClosedSubWork <> closed_substitution_binder thm
+R1743:1768 ClosedSubWork <> closed_substitution_binder thm
+R1743:1768 ClosedSubWork <> closed_substitution_binder thm
+R1799:1822 ClosedSubWork <> bind_closed_substitution thm
+R1799:1822 ClosedSubWork <> bind_closed_substitution thm
+R1799:1822 ClosedSubWork <> bind_closed_substitution thm
+R1799:1822 ClosedSubWork <> bind_closed_substitution thm
+prf 1836:1850 <> subst_closed_pi
+binder 1861:1861 <> u:19
+binder 1863:1863 <> k:20
+binder 1865:1865 <> x:21
+binder 1867:1867 <> A:22
+binder 1869:1869 <> B:23
+R1890:1893 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1885:1887 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1874:1882 OpenSignaturesSyntax <> free_vars def
+R1884:1884 ClosedSubWork <> u:19 var
+R1888:1889 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1900:1905 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1895:1898 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R1894:1894 ClosedSubWork <> k:20 var
+R1899:1899 ClosedSubWork <> x:21 var
+R1927:1929 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1906:1910 OpenSignaturesSyntax <> subst def
+R1917:1919 OpenSignaturesSyntax <> TPi constr
+R1925:1925 ClosedSubWork <> B:23 var
+R1923:1923 ClosedSubWork <> A:22 var
+R1921:1921 ClosedSubWork <> x:21 var
+R1914:1914 ClosedSubWork <> k:20 var
+R1912:1912 ClosedSubWork <> u:19 var
+R1930:1932 OpenSignaturesSyntax <> TPi constr
+R1951:1955 OpenSignaturesSyntax <> subst def
+R1961:1961 ClosedSubWork <> B:23 var
+R1959:1959 ClosedSubWork <> k:20 var
+R1957:1957 ClosedSubWork <> u:19 var
+R1937:1941 OpenSignaturesSyntax <> subst def
+R1947:1947 ClosedSubWork <> A:22 var
+R1945:1945 ClosedSubWork <> k:20 var
+R1943:1943 ClosedSubWork <> u:19 var
+R1934:1934 ClosedSubWork <> x:21 var
+R2006:2010 OpenSignaturesSyntax <> subst def
+R2023:2032 OpenSignaturesSyntax <> substitute def
+R2046:2071 ClosedSubWork <> closed_substitution_binder thm
+R2046:2071 ClosedSubWork <> closed_substitution_binder thm
+R2046:2071 ClosedSubWork <> closed_substitution_binder thm
+R2102:2125 ClosedSubWork <> bind_closed_substitution thm
+R2102:2125 ClosedSubWork <> bind_closed_substitution thm
+R2102:2125 ClosedSubWork <> bind_closed_substitution thm
+R2102:2125 ClosedSubWork <> bind_closed_substitution thm
+prf 2140:2159 <> subst_closed_commute
+binder 2170:2170 <> t:24
+binder 2172:2172 <> u:25
+binder 2174:2174 <> v:26
+binder 2176:2176 <> x:27
+binder 2178:2178 <> y:28
+R2199:2202 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2194:2196 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2183:2191 OpenSignaturesSyntax <> free_vars def
+R2193:2193 ClosedSubWork <> u:25 var
+R2197:2198 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2219:2222 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2214:2216 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2203:2211 OpenSignaturesSyntax <> free_vars def
+R2213:2213 ClosedSubWork <> v:26 var
+R2217:2218 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2229:2234 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2224:2227 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2223:2223 ClosedSubWork <> x:27 var
+R2228:2228 ClosedSubWork <> y:28 var
+R2235:2245 OpenSignaturesAlpha <> alpha_equiv def
+R2248:2252 OpenSignaturesSyntax <> subst def
+R2259:2263 OpenSignaturesSyntax <> subst def
+R2269:2269 ClosedSubWork <> t:24 var
+R2267:2267 ClosedSubWork <> x:27 var
+R2265:2265 ClosedSubWork <> u:25 var
+R2256:2256 ClosedSubWork <> y:28 var
+R2254:2254 ClosedSubWork <> v:26 var
+R2274:2278 OpenSignaturesSyntax <> subst def
+R2285:2289 OpenSignaturesSyntax <> subst def
+R2295:2295 ClosedSubWork <> t:24 var
+R2293:2293 ClosedSubWork <> y:28 var
+R2291:2291 ClosedSubWork <> v:26 var
+R2282:2282 ClosedSubWork <> x:27 var
+R2280:2280 ClosedSubWork <> u:25 var
+R2344:2348 OpenSignaturesSyntax <> subst def
+R2375:2392 OpenSignaturesSubstitution <> substitute_compose thm
+R2375:2392 OpenSignaturesSubstitution <> substitute_compose thm
+R2431:2448 OpenSignaturesSubstitution <> substitute_compose thm
+R2431:2448 OpenSignaturesSubstitution <> substitute_compose thm
+R2460:2475 OpenSignaturesSubstitution <> substitute_alpha thm
+R2460:2475 OpenSignaturesSubstitution <> substitute_alpha thm
+R2519:2525 Stdlib.Arith.PeanoNat Nat eqb def
+R2550:2556 Stdlib.Arith.PeanoNat Nat eqb def
+R2519:2525 Stdlib.Arith.PeanoNat Nat eqb def
+R2550:2556 Stdlib.Arith.PeanoNat Nat eqb def
+R2550:2556 Stdlib.Arith.PeanoNat Nat eqb def
+R2581:2590 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R2581:2590 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R2581:2590 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R2625:2629 OpenSignaturesSyntax <> subst def
+R2625:2629 OpenSignaturesSyntax <> subst def
+R2647:2657 OpenSignaturesBinding <> subst_fresh thm
+R2647:2657 OpenSignaturesBinding <> subst_fresh thm
+R2647:2657 OpenSignaturesBinding <> subst_fresh thm
+R2692:2701 OpenSignaturesSyntax <> substitute def
+R2740:2744 OpenSignaturesSyntax <> subst def
+R2740:2744 OpenSignaturesSyntax <> subst def
+R2762:2772 OpenSignaturesBinding <> subst_fresh thm
+R2762:2772 OpenSignaturesBinding <> subst_fresh thm
+R2762:2772 OpenSignaturesBinding <> subst_fresh thm
+R2807:2816 OpenSignaturesSyntax <> substitute def
+R2854:2863 OpenSignaturesSyntax <> substitute def

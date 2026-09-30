@@ -1,0 +1,879 @@
+DIGEST 960e84c2623f81de4849433df6ab0800
+Fnameless.DBReducibility
+R319:322 Stdlib.Bool.Bool <> <> lib
+R324:326 Stdlib.micromega.Lia <> <> lib
+R344:367 nameless.DBNormalization <> <> lib
+R385:418 nameless.DBComputationSubstitution <> <> lib
+def 433:452 <> strongly_normalizing
+binder 454:454 <> t:1
+R459:461 Corelib.Init.Wf <> Acc ind
+R492:492 nameless.DBReducibility <> t:1 var
+binder 468:468 <> u:2
+binder 470:470 <> v:3
+R475:485 nameless.DBComputationPreservation <> computation ind
+R487:487 nameless.DBReducibility <> v:3 var
+R489:489 nameless.DBReducibility <> u:2 var
+def 506:512 <> neutral
+binder 514:514 <> t:4
+R527:527 nameless.DBReducibility <> t:4 var
+R538:541 nameless.DBSyntax <> TVar constr
+R547:550 nameless.DBSyntax <> TFst constr
+R556:559 nameless.DBSyntax <> TSnd constr
+R565:571 nameless.DBSyntax <> TSwitch constr
+R587:590 nameless.DBSyntax <> TInd constr
+R606:610 nameless.DBSyntax <> THyps constr
+R628:637 nameless.DBSyntax <> TCloseCase constr
+R657:665 nameless.DBSyntax <> TCloseInd constr
+R684:687 Corelib.Init.Logic <> True ind
+R684:687 Corelib.Init.Logic <> True ind
+R684:687 Corelib.Init.Logic <> True ind
+R684:687 Corelib.Init.Logic <> True ind
+R684:687 Corelib.Init.Logic <> True ind
+R684:687 Corelib.Init.Logic <> True ind
+R684:687 Corelib.Init.Logic <> True ind
+R684:687 Corelib.Init.Logic <> True ind
+R693:696 nameless.DBSyntax <> TApp constr
+R699:702 nameless.DBSyntax <> TMuI constr
+R713:716 nameless.DBSyntax <> TApp constr
+R719:724 nameless.DBSyntax <> TClose constr
+R738:742 Corelib.Init.Logic <> False ind
+R738:742 Corelib.Init.Logic <> False ind
+R748:751 nameless.DBSyntax <> TApp constr
+R760:763 Corelib.Init.Logic <> True ind
+R774:778 Corelib.Init.Logic <> False ind
+rec 794:802 <> candidate
+proj 837:857 <> candidate_normalizing
+proj 904:919 <> candidate_reduct
+proj 968:984 <> candidate_neutral
+R813:816 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R809:812 nameless.DBSyntax <> term ind
+binder 805:805 <> R:6
+binder 868:868 <> t:8
+R874:877 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R871:871 nameless.DBReducibility <> R:6 var
+R873:873 nameless.DBReducibility <> t:8 var
+R878:897 nameless.DBReducibility <> strongly_normalizing def
+R899:899 nameless.DBReducibility <> t:8 var
+binder 930:930 <> t:10
+binder 932:932 <> u:11
+R938:941 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R935:935 nameless.DBReducibility <> R:6 var
+R937:937 nameless.DBReducibility <> t:10 var
+R957:960 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R942:952 nameless.DBComputationPreservation <> computation ind
+R954:954 nameless.DBReducibility <> t:10 var
+R956:956 nameless.DBReducibility <> u:11 var
+R961:961 nameless.DBReducibility <> R:6 var
+R963:963 nameless.DBReducibility <> u:11 var
+binder 995:995 <> t:13
+R1007:1014 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R998:1004 nameless.DBReducibility <> neutral def
+R1006:1006 nameless.DBReducibility <> t:13 var
+R1015:1015 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1048:1052 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1023:1023 <> u:14
+R1041:1044 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1026:1036 nameless.DBComputationPreservation <> computation ind
+R1038:1038 nameless.DBReducibility <> t:13 var
+R1040:1040 nameless.DBReducibility <> u:14 var
+R1045:1045 nameless.DBReducibility <> R:6 var
+R1047:1047 nameless.DBReducibility <> u:14 var
+R1053:1053 nameless.DBReducibility <> R:6 var
+R1055:1055 nameless.DBReducibility <> t:13 var
+R1070:1090 nameless.DBReducibility <> candidate_normalizing proj
+R1070:1090 nameless.DBReducibility <> candidate_normalizing proj
+R1115:1130 nameless.DBReducibility <> candidate_reduct proj
+R1115:1130 nameless.DBReducibility <> candidate_reduct proj
+R1159:1175 nameless.DBReducibility <> candidate_neutral proj
+R1159:1175 nameless.DBReducibility <> candidate_neutral proj
+prf 1199:1215 <> candidate_reducts
+binder 1226:1226 <> R:16
+R1240:1245 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1229:1237 nameless.DBReducibility <> candidate rec
+R1239:1239 nameless.DBReducibility <> R:16 var
+binder 1253:1253 <> t:17
+binder 1255:1255 <> u:18
+R1277:1280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1258:1260 nameless.DBParallelBase <> rtc ind
+R1276:1276 nameless.DBReducibility <> u:18 var
+R1274:1274 nameless.DBReducibility <> t:17 var
+R1262:1272 nameless.DBComputationPreservation <> computation ind
+R1284:1287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1281:1281 nameless.DBReducibility <> R:16 var
+R1283:1283 nameless.DBReducibility <> t:17 var
+R1288:1288 nameless.DBReducibility <> R:16 var
+R1290:1290 nameless.DBReducibility <> u:18 var
+R1379:1394 nameless.DBReducibility <> candidate_reduct proj
+R1379:1394 nameless.DBReducibility <> candidate_reduct proj
+prf 1421:1441 <> normalizing_candidate
+R1445:1453 nameless.DBReducibility <> candidate rec
+R1455:1474 nameless.DBReducibility <> strongly_normalizing def
+R1529:1535 Corelib.Init.Wf <> Acc_inv thm
+R1529:1535 Corelib.Init.Wf <> Acc_inv thm
+prf 1595:1612 <> candidate_variable
+binder 1623:1623 <> R:19
+R1637:1640 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1626:1634 nameless.DBReducibility <> candidate rec
+R1636:1636 nameless.DBReducibility <> R:19 var
+binder 1648:1648 <> n:20
+R1651:1651 nameless.DBReducibility <> R:19 var
+R1654:1657 nameless.DBSyntax <> TVar constr
+R1659:1659 nameless.DBReducibility <> n:20 var
+R1694:1710 nameless.DBReducibility <> candidate_neutral proj
+R1724:1724 Corelib.Init.Logic <> I constr
+R1694:1710 nameless.DBReducibility <> candidate_neutral proj
+R1724:1724 Corelib.Init.Logic <> I constr
+prf 1781:1798 <> neutral_not_lambda
+binder 1809:1809 <> t:21
+R1821:1824 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1812:1818 nameless.DBReducibility <> neutral def
+R1820:1820 nameless.DBReducibility <> t:21 var
+R1837:1839 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1825:1834 nameless.DBEtaSafety <> not_lambda def
+R1836:1836 nameless.DBReducibility <> t:21 var
+R1840:1843 Corelib.Init.Datatypes <> true constr
+R1870:1876 nameless.DBReducibility <> neutral def
+R1878:1887 nameless.DBEtaSafety <> not_lambda def
+prf 1909:1927 <> neutral_application
+binder 1938:1938 <> f:22
+binder 1940:1940 <> a:23
+R1952:1955 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1943:1949 nameless.DBReducibility <> neutral def
+R1951:1951 nameless.DBReducibility <> f:22 var
+R1956:1962 nameless.DBReducibility <> neutral def
+R1965:1968 nameless.DBSyntax <> TApp constr
+R1972:1972 nameless.DBReducibility <> a:23 var
+R1970:1970 nameless.DBReducibility <> f:22 var
+R2000:2006 nameless.DBReducibility <> neutral def
+prf 2028:2056 <> neutral_application_reduction
+binder 2067:2067 <> f:24
+binder 2069:2069 <> a:25
+binder 2071:2071 <> u:26
+R2083:2088 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2074:2080 nameless.DBReducibility <> neutral def
+R2082:2082 nameless.DBReducibility <> f:24 var
+R2113:2118 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2089:2099 nameless.DBComputationPreservation <> computation ind
+R2102:2105 nameless.DBSyntax <> TApp constr
+R2109:2109 nameless.DBReducibility <> a:25 var
+R2107:2107 nameless.DBReducibility <> f:24 var
+R2112:2112 nameless.DBReducibility <> u:26 var
+R2119:2119 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2164:2171 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2216:2216 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2120:2126 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2129:2130 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2127:2128 <> f':27
+R2147:2150 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2131:2141 nameless.DBComputationPreservation <> computation ind
+R2143:2143 nameless.DBReducibility <> f:24 var
+R2145:2146 nameless.DBReducibility <> f':27 var
+R2152:2154 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2151:2151 nameless.DBReducibility <> u:26 var
+R2155:2158 nameless.DBSyntax <> TApp constr
+R2163:2163 nameless.DBReducibility <> a:25 var
+R2160:2161 nameless.DBReducibility <> f':27 var
+R2172:2178 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2181:2182 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2179:2180 <> a':28
+R2199:2202 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2183:2193 nameless.DBComputationPreservation <> computation ind
+R2195:2195 nameless.DBReducibility <> a:25 var
+R2197:2198 nameless.DBReducibility <> a':28 var
+R2204:2206 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2203:2203 nameless.DBReducibility <> u:26 var
+R2207:2210 nameless.DBSyntax <> TApp constr
+R2214:2215 nameless.DBReducibility <> a':28 var
+R2212:2212 nameless.DBReducibility <> f:24 var
+R2295:2301 nameless.DBReducibility <> neutral def
+R2303:2311 nameless.DBCore <> root_step def
+def 2360:2377 <> dependent_function
+R2388:2391 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2384:2387 nameless.DBSyntax <> term ind
+binder 2380:2380 <> A:29
+R2407:2410 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2403:2406 nameless.DBSyntax <> term ind
+R2415:2418 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2411:2414 nameless.DBSyntax <> term ind
+binder 2399:2399 <> B:30
+binder 2425:2425 <> f:31
+R2454:2457 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2432:2451 nameless.DBReducibility <> strongly_normalizing def
+R2453:2453 nameless.DBReducibility <> f:31 var
+binder 2465:2465 <> a:32
+R2471:2474 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2468:2468 nameless.DBReducibility <> A:29 var
+R2470:2470 nameless.DBReducibility <> a:32 var
+R2475:2475 nameless.DBReducibility <> B:30 var
+R2480:2483 nameless.DBSyntax <> TApp constr
+R2487:2487 nameless.DBReducibility <> a:32 var
+R2485:2485 nameless.DBReducibility <> f:31 var
+R2477:2477 nameless.DBReducibility <> a:32 var
+def 2502:2514 <> stable_family
+R2525:2528 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2521:2524 nameless.DBSyntax <> term ind
+binder 2517:2517 <> A:33
+R2544:2547 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2540:2543 nameless.DBSyntax <> term ind
+R2552:2555 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2548:2551 nameless.DBSyntax <> term ind
+binder 2536:2536 <> B:34
+binder 2574:2574 <> a:35
+binder 2576:2577 <> a':36
+R2583:2586 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2580:2580 nameless.DBReducibility <> A:33 var
+R2582:2582 nameless.DBReducibility <> a:35 var
+R2603:2606 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2587:2597 nameless.DBComputationPreservation <> computation ind
+R2599:2599 nameless.DBReducibility <> a:35 var
+R2601:2602 nameless.DBReducibility <> a':36 var
+binder 2614:2614 <> t:37
+R2622:2626 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2617:2617 nameless.DBReducibility <> B:34 var
+R2621:2621 nameless.DBReducibility <> t:37 var
+R2619:2619 nameless.DBReducibility <> a:35 var
+R2627:2627 nameless.DBReducibility <> B:34 var
+R2632:2632 nameless.DBReducibility <> t:37 var
+R2629:2630 nameless.DBReducibility <> a':36 var
+prf 2644:2671 <> dependent_function_candidate
+binder 2682:2682 <> A:38
+binder 2684:2684 <> B:39
+R2700:2703 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2689:2697 nameless.DBReducibility <> candidate rec
+R2699:2699 nameless.DBReducibility <> A:38 var
+R2704:2704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2737:2741 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2712:2712 <> a:40
+R2718:2721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2715:2715 nameless.DBReducibility <> A:38 var
+R2717:2717 nameless.DBReducibility <> a:40 var
+R2722:2730 nameless.DBReducibility <> candidate rec
+R2733:2733 nameless.DBReducibility <> B:39 var
+R2735:2735 nameless.DBReducibility <> a:40 var
+R2759:2764 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2742:2754 nameless.DBReducibility <> stable_family def
+R2756:2756 nameless.DBReducibility <> A:38 var
+R2758:2758 nameless.DBReducibility <> B:39 var
+R2765:2773 nameless.DBReducibility <> candidate rec
+R2776:2793 nameless.DBReducibility <> dependent_function def
+R2795:2795 nameless.DBReducibility <> A:38 var
+R2797:2797 nameless.DBReducibility <> B:39 var
+R2917:2923 Corelib.Init.Wf <> Acc_inv thm
+R2917:2923 Corelib.Init.Wf <> Acc_inv thm
+R2959:2974 nameless.DBReducibility <> candidate_reduct proj
+R2959:2974 nameless.DBReducibility <> candidate_reduct proj
+R3033:3042 nameless.DBComputationPreservation <> cmp_TApp_f constr
+R3033:3042 nameless.DBComputationPreservation <> cmp_TApp_f constr
+R3111:3115 Corelib.Init.Logic <> proj1 thm
+R3111:3115 Corelib.Init.Logic <> proj1 thm
+R3160:3180 nameless.DBReducibility <> candidate_normalizing proj
+R3160:3180 nameless.DBReducibility <> candidate_normalizing proj
+R3263:3279 nameless.DBReducibility <> candidate_neutral proj
+R3304:3322 nameless.DBReducibility <> neutral_application thm
+R3263:3279 nameless.DBReducibility <> candidate_neutral proj
+R3304:3322 nameless.DBReducibility <> neutral_application thm
+R3362:3390 nameless.DBReducibility <> neutral_application_reduction thm
+R3362:3390 nameless.DBReducibility <> neutral_application_reduction thm
+R3458:3462 Corelib.Init.Logic <> proj2 thm
+R3458:3462 Corelib.Init.Logic <> proj2 thm
+R3496:3500 Corelib.Init.Logic <> proj2 thm
+R3496:3500 Corelib.Init.Logic <> proj2 thm
+R3553:3568 nameless.DBReducibility <> candidate_reduct proj
+R3553:3568 nameless.DBReducibility <> candidate_reduct proj
+prf 3593:3610 <> normalizing_lambda
+binder 3621:3621 <> b:41
+R3646:3651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3624:3643 nameless.DBReducibility <> strongly_normalizing def
+R3645:3645 nameless.DBReducibility <> b:41 var
+R3652:3671 nameless.DBReducibility <> strongly_normalizing def
+R3674:3677 nameless.DBSyntax <> TLam constr
+R3679:3679 nameless.DBReducibility <> b:41 var
+prf 3818:3840 <> computations_substitute
+binder 3851:3851 <> b:42
+binder 3853:3854 <> b':43
+R3873:3876 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3857:3867 nameless.DBComputationPreservation <> computation ind
+R3869:3869 nameless.DBReducibility <> b:42 var
+R3871:3872 nameless.DBReducibility <> b':43 var
+binder 3884:3884 <> a:44
+R3889:3891 nameless.DBParallelBase <> rtc ind
+R3920:3924 nameless.DBSyntax <> subst def
+R3930:3931 nameless.DBReducibility <> b':43 var
+R3926:3926 nameless.DBReducibility <> a:44 var
+R3906:3910 nameless.DBSyntax <> subst def
+R3916:3916 nameless.DBReducibility <> b:42 var
+R3912:3912 nameless.DBReducibility <> a:44 var
+R3893:3903 nameless.DBComputationPreservation <> computation ind
+R3967:3984 nameless.DBParallelPreservation <> pstep_computations thm
+R3987:3997 nameless.DBParallelBase <> pstep_subst thm
+R4015:4031 nameless.DBParallelPreservation <> computation_pstep thm
+R4039:4048 nameless.DBParallelBase <> pstep_refl thm
+R3967:3984 nameless.DBParallelPreservation <> pstep_computations thm
+R3987:3997 nameless.DBParallelBase <> pstep_subst thm
+R4015:4031 nameless.DBParallelPreservation <> computation_pstep thm
+R4039:4048 nameless.DBParallelBase <> pstep_refl thm
+prf 4066:4103 <> dependent_lambda_from_normalizing_body
+binder 4114:4114 <> A:45
+binder 4116:4116 <> B:46
+R4132:4135 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4121:4129 nameless.DBReducibility <> candidate rec
+R4131:4131 nameless.DBReducibility <> A:45 var
+R4136:4136 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4169:4173 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4144:4144 <> a:47
+R4150:4153 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4147:4147 nameless.DBReducibility <> A:45 var
+R4149:4149 nameless.DBReducibility <> a:47 var
+R4154:4162 nameless.DBReducibility <> candidate rec
+R4165:4165 nameless.DBReducibility <> B:46 var
+R4167:4167 nameless.DBReducibility <> a:47 var
+R4191:4196 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4174:4186 nameless.DBReducibility <> stable_family def
+R4188:4188 nameless.DBReducibility <> A:45 var
+R4190:4190 nameless.DBReducibility <> B:46 var
+binder 4204:4204 <> b:48
+R4229:4236 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4207:4226 nameless.DBReducibility <> strongly_normalizing def
+R4228:4228 nameless.DBReducibility <> b:48 var
+R4237:4237 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4272:4280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4245:4245 <> a:49
+R4251:4254 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4248:4248 nameless.DBReducibility <> A:45 var
+R4250:4250 nameless.DBReducibility <> a:49 var
+R4255:4255 nameless.DBReducibility <> B:46 var
+R4257:4257 nameless.DBReducibility <> a:49 var
+R4260:4264 nameless.DBSyntax <> subst def
+R4270:4270 nameless.DBReducibility <> b:48 var
+R4266:4266 nameless.DBReducibility <> a:49 var
+R4281:4298 nameless.DBReducibility <> dependent_function def
+R4300:4300 nameless.DBReducibility <> A:45 var
+R4302:4302 nameless.DBReducibility <> B:46 var
+R4305:4308 nameless.DBSyntax <> TLam constr
+R4310:4310 nameless.DBReducibility <> b:48 var
+R4406:4423 nameless.DBReducibility <> normalizing_lambda thm
+R4406:4423 nameless.DBReducibility <> normalizing_lambda thm
+R4478:4498 nameless.DBReducibility <> candidate_normalizing proj
+R4478:4498 nameless.DBReducibility <> candidate_normalizing proj
+R4578:4594 nameless.DBReducibility <> candidate_neutral proj
+R4615:4615 Corelib.Init.Logic <> I constr
+R4578:4594 nameless.DBReducibility <> candidate_neutral proj
+R4615:4615 Corelib.Init.Logic <> I constr
+R4669:4677 nameless.DBCore <> root_step def
+R4747:4757 nameless.DBComputationPreservation <> computation ind
+R4760:4763 nameless.DBSyntax <> TLam constr
+R4747:4757 nameless.DBComputationPreservation <> computation ind
+R4760:4763 nameless.DBSyntax <> TLam constr
+binder 4856:4856 <> x:50
+R4862:4865 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4861:4861 nameless.DBReducibility <> x:50 var
+R4868:4868 nameless.DBReducibility <> x:50 var
+R4871:4875 nameless.DBSyntax <> subst def
+R4877:4877 nameless.DBReducibility <> x:50 var
+binder 4856:4856 <> x:51
+R4862:4865 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4861:4861 nameless.DBReducibility <> x:51 var
+R4868:4868 nameless.DBReducibility <> x:51 var
+R4871:4875 nameless.DBSyntax <> subst def
+R4877:4877 nameless.DBReducibility <> x:51 var
+R4915:4931 nameless.DBReducibility <> candidate_reducts thm
+R4970:4992 nameless.DBReducibility <> computations_substitute thm
+R4915:4931 nameless.DBReducibility <> candidate_reducts thm
+R4970:4992 nameless.DBReducibility <> computations_substitute thm
+R5040:5044 Corelib.Init.Logic <> proj2 thm
+R5040:5044 Corelib.Init.Logic <> proj2 thm
+R5096:5106 nameless.DBComputationPreservation <> computation ind
+R5096:5106 nameless.DBComputationPreservation <> computation ind
+R5137:5141 Corelib.Init.Logic <> proj2 thm
+R5199:5214 nameless.DBReducibility <> candidate_reduct proj
+R5137:5141 Corelib.Init.Logic <> proj2 thm
+R5199:5214 nameless.DBReducibility <> candidate_reduct proj
+R5255:5282 nameless.DBReducibility <> dependent_function_candidate thm
+prf 5293:5319 <> dependent_lambda_computable
+binder 5330:5330 <> A:52
+binder 5332:5332 <> B:53
+R5348:5351 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5337:5345 nameless.DBReducibility <> candidate rec
+R5347:5347 nameless.DBReducibility <> A:52 var
+R5352:5352 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5385:5389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5360:5360 <> a:54
+R5366:5369 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5363:5363 nameless.DBReducibility <> A:52 var
+R5365:5365 nameless.DBReducibility <> a:54 var
+R5370:5378 nameless.DBReducibility <> candidate rec
+R5381:5381 nameless.DBReducibility <> B:53 var
+R5383:5383 nameless.DBReducibility <> a:54 var
+R5407:5412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5390:5402 nameless.DBReducibility <> stable_family def
+R5404:5404 nameless.DBReducibility <> A:52 var
+R5406:5406 nameless.DBReducibility <> B:53 var
+binder 5420:5420 <> b:55
+R5423:5423 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5458:5466 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5431:5431 <> a:56
+R5437:5440 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5434:5434 nameless.DBReducibility <> A:52 var
+R5436:5436 nameless.DBReducibility <> a:56 var
+R5441:5441 nameless.DBReducibility <> B:53 var
+R5443:5443 nameless.DBReducibility <> a:56 var
+R5446:5450 nameless.DBSyntax <> subst def
+R5456:5456 nameless.DBReducibility <> b:55 var
+R5452:5452 nameless.DBReducibility <> a:56 var
+R5467:5484 nameless.DBReducibility <> dependent_function def
+R5486:5486 nameless.DBReducibility <> A:52 var
+R5488:5488 nameless.DBReducibility <> B:53 var
+R5491:5494 nameless.DBSyntax <> TLam constr
+R5496:5496 nameless.DBReducibility <> b:55 var
+R5544:5581 nameless.DBReducibility <> dependent_lambda_from_normalizing_body thm
+R5544:5581 nameless.DBReducibility <> dependent_lambda_from_normalizing_body thm
+R5615:5632 nameless.DBReducibility <> candidate_variable thm
+R5615:5632 nameless.DBReducibility <> candidate_variable thm
+R5660:5694 nameless.DBComputationSubstitution <> substitution_reflects_normalization thm
+R5699:5702 nameless.DBSyntax <> TVar constr
+R5714:5734 nameless.DBReducibility <> candidate_normalizing proj
+R5660:5694 nameless.DBComputationSubstitution <> substitution_reflects_normalization thm
+R5699:5702 nameless.DBSyntax <> TVar constr
+R5714:5734 nameless.DBReducibility <> candidate_normalizing proj
+R5786:5812 nameless.DBReducibility <> dependent_lambda_computable thm
+prf 5822:5842 <> neutral_fst_reduction
+binder 5853:5853 <> p:57
+binder 5855:5855 <> u:58
+R5867:5870 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5858:5864 nameless.DBReducibility <> neutral def
+R5866:5866 nameless.DBReducibility <> p:57 var
+R5893:5898 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5871:5881 nameless.DBComputationPreservation <> computation ind
+R5884:5887 nameless.DBSyntax <> TFst constr
+R5889:5889 nameless.DBReducibility <> p:57 var
+R5892:5892 nameless.DBReducibility <> u:58 var
+R5899:5905 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5908:5909 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5906:5907 <> p':59
+R5926:5929 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5910:5920 nameless.DBComputationPreservation <> computation ind
+R5922:5922 nameless.DBReducibility <> p:57 var
+R5924:5925 nameless.DBReducibility <> p':59 var
+R5931:5933 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5930:5930 nameless.DBReducibility <> u:58 var
+R5934:5937 nameless.DBSyntax <> TFst constr
+R5939:5940 nameless.DBReducibility <> p':59 var
+R6017:6023 nameless.DBReducibility <> neutral def
+R6025:6033 nameless.DBCore <> root_step def
+prf 6076:6096 <> neutral_snd_reduction
+binder 6107:6107 <> p:60
+binder 6109:6109 <> u:61
+R6121:6124 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6112:6118 nameless.DBReducibility <> neutral def
+R6120:6120 nameless.DBReducibility <> p:60 var
+R6147:6152 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6125:6135 nameless.DBComputationPreservation <> computation ind
+R6138:6141 nameless.DBSyntax <> TSnd constr
+R6143:6143 nameless.DBReducibility <> p:60 var
+R6146:6146 nameless.DBReducibility <> u:61 var
+R6153:6159 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6162:6163 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6160:6161 <> p':62
+R6180:6183 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6164:6174 nameless.DBComputationPreservation <> computation ind
+R6176:6176 nameless.DBReducibility <> p:60 var
+R6178:6179 nameless.DBReducibility <> p':62 var
+R6185:6187 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6184:6184 nameless.DBReducibility <> u:61 var
+R6188:6191 nameless.DBSyntax <> TSnd constr
+R6193:6194 nameless.DBReducibility <> p':62 var
+R6271:6277 nameless.DBReducibility <> neutral def
+R6279:6287 nameless.DBCore <> root_step def
+def 6336:6349 <> dependent_pair
+R6360:6363 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6356:6359 nameless.DBSyntax <> term ind
+binder 6352:6352 <> A:63
+R6379:6382 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6375:6378 nameless.DBSyntax <> term ind
+R6387:6390 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6383:6386 nameless.DBSyntax <> term ind
+binder 6371:6371 <> B:64
+binder 6397:6397 <> p:65
+R6426:6429 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6404:6423 nameless.DBReducibility <> strongly_normalizing def
+R6425:6425 nameless.DBReducibility <> p:65 var
+R6440:6443 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6430:6430 nameless.DBReducibility <> A:63 var
+R6433:6436 nameless.DBSyntax <> TFst constr
+R6438:6438 nameless.DBReducibility <> p:65 var
+R6444:6444 nameless.DBReducibility <> B:64 var
+R6456:6459 nameless.DBSyntax <> TSnd constr
+R6461:6461 nameless.DBReducibility <> p:65 var
+R6447:6450 nameless.DBSyntax <> TFst constr
+R6452:6452 nameless.DBReducibility <> p:65 var
+prf 6474:6497 <> dependent_pair_candidate
+binder 6508:6508 <> A:66
+binder 6510:6510 <> B:67
+R6526:6529 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6515:6523 nameless.DBReducibility <> candidate rec
+R6525:6525 nameless.DBReducibility <> A:66 var
+R6530:6530 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6563:6567 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6538:6538 <> a:68
+R6544:6547 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6541:6541 nameless.DBReducibility <> A:66 var
+R6543:6543 nameless.DBReducibility <> a:68 var
+R6548:6556 nameless.DBReducibility <> candidate rec
+R6559:6559 nameless.DBReducibility <> B:67 var
+R6561:6561 nameless.DBReducibility <> a:68 var
+R6585:6590 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6568:6580 nameless.DBReducibility <> stable_family def
+R6582:6582 nameless.DBReducibility <> A:66 var
+R6584:6584 nameless.DBReducibility <> B:67 var
+R6591:6599 nameless.DBReducibility <> candidate rec
+R6602:6615 nameless.DBReducibility <> dependent_pair def
+R6617:6617 nameless.DBReducibility <> A:66 var
+R6619:6619 nameless.DBReducibility <> B:67 var
+R6744:6750 Corelib.Init.Wf <> Acc_inv thm
+R6744:6750 Corelib.Init.Wf <> Acc_inv thm
+R6783:6786 nameless.DBSyntax <> TFst constr
+R6809:6824 nameless.DBReducibility <> candidate_reduct proj
+R6856:6865 nameless.DBComputationPreservation <> cmp_TFst_p constr
+R6783:6786 nameless.DBSyntax <> TFst constr
+R6809:6824 nameless.DBReducibility <> candidate_reduct proj
+R6856:6865 nameless.DBComputationPreservation <> cmp_TFst_p constr
+R6906:6910 Corelib.Init.Logic <> proj1 thm
+R6924:6933 nameless.DBComputationPreservation <> cmp_TFst_p constr
+R6906:6910 Corelib.Init.Logic <> proj1 thm
+R6924:6933 nameless.DBComputationPreservation <> cmp_TFst_p constr
+R6959:6974 nameless.DBReducibility <> candidate_reduct proj
+R7016:7025 nameless.DBComputationPreservation <> cmp_TSnd_p constr
+R6959:6974 nameless.DBReducibility <> candidate_reduct proj
+R7016:7025 nameless.DBComputationPreservation <> cmp_TSnd_p constr
+R7095:7099 Corelib.Init.Logic <> proj1 thm
+R7095:7099 Corelib.Init.Logic <> proj1 thm
+R7135:7138 nameless.DBSyntax <> TFst constr
+R7135:7138 nameless.DBSyntax <> TFst constr
+R7160:7176 nameless.DBReducibility <> candidate_neutral proj
+R7190:7190 Corelib.Init.Logic <> I constr
+R7160:7176 nameless.DBReducibility <> candidate_neutral proj
+R7190:7190 Corelib.Init.Logic <> I constr
+R7226:7246 nameless.DBReducibility <> neutral_fst_reduction thm
+R7226:7246 nameless.DBReducibility <> neutral_fst_reduction thm
+R7291:7295 Corelib.Init.Logic <> proj1 thm
+R7298:7302 Corelib.Init.Logic <> proj2 thm
+R7291:7295 Corelib.Init.Logic <> proj1 thm
+R7298:7302 Corelib.Init.Logic <> proj2 thm
+R7359:7375 nameless.DBReducibility <> candidate_neutral proj
+R7396:7396 Corelib.Init.Logic <> I constr
+R7359:7375 nameless.DBReducibility <> candidate_neutral proj
+R7396:7396 Corelib.Init.Logic <> I constr
+R7430:7450 nameless.DBReducibility <> neutral_snd_reduction thm
+R7430:7450 nameless.DBReducibility <> neutral_snd_reduction thm
+R7493:7497 Corelib.Init.Logic <> proj2 thm
+R7511:7520 nameless.DBComputationPreservation <> cmp_TFst_p constr
+R7493:7497 Corelib.Init.Logic <> proj2 thm
+R7511:7520 nameless.DBComputationPreservation <> cmp_TFst_p constr
+R7548:7552 Corelib.Init.Logic <> proj2 thm
+R7555:7559 Corelib.Init.Logic <> proj2 thm
+R7548:7552 Corelib.Init.Logic <> proj2 thm
+R7555:7559 Corelib.Init.Logic <> proj2 thm
+prf 7587:7602 <> normalizing_pair
+binder 7613:7613 <> a:69
+binder 7615:7615 <> b:70
+R7642:7645 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7620:7639 nameless.DBReducibility <> strongly_normalizing def
+R7641:7641 nameless.DBReducibility <> a:69 var
+R7668:7673 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7646:7665 nameless.DBReducibility <> strongly_normalizing def
+R7667:7667 nameless.DBReducibility <> b:70 var
+R7674:7693 nameless.DBReducibility <> strongly_normalizing def
+R7696:7700 nameless.DBSyntax <> TPair constr
+R7704:7704 nameless.DBReducibility <> b:70 var
+R7702:7702 nameless.DBReducibility <> a:69 var
+prf 7973:7990 <> candidate_fst_pair
+binder 8001:8001 <> R:71
+R8015:8018 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8004:8012 nameless.DBReducibility <> candidate rec
+R8014:8014 nameless.DBReducibility <> R:71 var
+binder 8026:8026 <> a:72
+binder 8028:8028 <> b:73
+R8036:8039 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8033:8033 nameless.DBReducibility <> R:71 var
+R8035:8035 nameless.DBReducibility <> a:72 var
+R8062:8065 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8040:8059 nameless.DBReducibility <> strongly_normalizing def
+R8061:8061 nameless.DBReducibility <> b:73 var
+R8066:8066 nameless.DBReducibility <> R:71 var
+R8069:8072 nameless.DBSyntax <> TFst constr
+R8075:8079 nameless.DBSyntax <> TPair constr
+R8083:8083 nameless.DBReducibility <> b:73 var
+R8081:8081 nameless.DBReducibility <> a:72 var
+R8134:8149 nameless.DBReducibility <> normalizing_pair thm
+R8156:8176 nameless.DBReducibility <> candidate_normalizing proj
+R8134:8149 nameless.DBReducibility <> normalizing_pair thm
+R8156:8176 nameless.DBReducibility <> candidate_normalizing proj
+R8218:8222 nameless.DBSyntax <> TPair constr
+R8218:8222 nameless.DBSyntax <> TPair constr
+R8325:8341 nameless.DBReducibility <> candidate_neutral proj
+R8355:8355 Corelib.Init.Logic <> I constr
+R8325:8341 nameless.DBReducibility <> candidate_neutral proj
+R8355:8355 Corelib.Init.Logic <> I constr
+R8405:8413 nameless.DBCore <> root_step def
+R8477:8487 nameless.DBComputationPreservation <> computation ind
+R8490:8494 nameless.DBSyntax <> TPair constr
+R8477:8487 nameless.DBComputationPreservation <> computation ind
+R8490:8494 nameless.DBSyntax <> TPair constr
+R8585:8595 nameless.DBComputationPreservation <> cmp_TPair_a constr
+R8585:8595 nameless.DBComputationPreservation <> cmp_TPair_a constr
+R8638:8653 nameless.DBReducibility <> candidate_reduct proj
+R8638:8653 nameless.DBReducibility <> candidate_reduct proj
+R8693:8703 nameless.DBComputationPreservation <> cmp_TPair_b constr
+R8693:8703 nameless.DBComputationPreservation <> cmp_TPair_b constr
+prf 8752:8769 <> candidate_snd_pair
+binder 8780:8780 <> R:74
+R8794:8797 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8783:8791 nameless.DBReducibility <> candidate rec
+R8793:8793 nameless.DBReducibility <> R:74 var
+binder 8805:8805 <> a:75
+binder 8807:8807 <> b:76
+R8834:8837 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8812:8831 nameless.DBReducibility <> strongly_normalizing def
+R8833:8833 nameless.DBReducibility <> a:75 var
+R8841:8844 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8838:8838 nameless.DBReducibility <> R:74 var
+R8840:8840 nameless.DBReducibility <> b:76 var
+R8845:8845 nameless.DBReducibility <> R:74 var
+R8848:8851 nameless.DBSyntax <> TSnd constr
+R8854:8858 nameless.DBSyntax <> TPair constr
+R8862:8862 nameless.DBReducibility <> b:76 var
+R8860:8860 nameless.DBReducibility <> a:75 var
+R8913:8928 nameless.DBReducibility <> normalizing_pair thm
+R8938:8958 nameless.DBReducibility <> candidate_normalizing proj
+R8913:8928 nameless.DBReducibility <> normalizing_pair thm
+R8938:8958 nameless.DBReducibility <> candidate_normalizing proj
+R8997:9001 nameless.DBSyntax <> TPair constr
+R8997:9001 nameless.DBSyntax <> TPair constr
+R9104:9120 nameless.DBReducibility <> candidate_neutral proj
+R9134:9134 Corelib.Init.Logic <> I constr
+R9104:9120 nameless.DBReducibility <> candidate_neutral proj
+R9134:9134 Corelib.Init.Logic <> I constr
+R9184:9192 nameless.DBCore <> root_step def
+R9256:9266 nameless.DBComputationPreservation <> computation ind
+R9269:9273 nameless.DBSyntax <> TPair constr
+R9256:9266 nameless.DBComputationPreservation <> computation ind
+R9269:9273 nameless.DBSyntax <> TPair constr
+R9364:9374 nameless.DBComputationPreservation <> cmp_TPair_a constr
+R9364:9374 nameless.DBComputationPreservation <> cmp_TPair_a constr
+R9436:9446 nameless.DBComputationPreservation <> cmp_TPair_b constr
+R9436:9446 nameless.DBComputationPreservation <> cmp_TPair_b constr
+R9489:9504 nameless.DBReducibility <> candidate_reduct proj
+R9489:9504 nameless.DBReducibility <> candidate_reduct proj
+prf 9534:9558 <> dependent_pair_computable
+binder 9569:9569 <> A:77
+binder 9571:9571 <> B:78
+R9587:9590 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9576:9584 nameless.DBReducibility <> candidate rec
+R9586:9586 nameless.DBReducibility <> A:77 var
+R9591:9591 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9624:9628 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 9599:9599 <> a:79
+R9605:9608 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9602:9602 nameless.DBReducibility <> A:77 var
+R9604:9604 nameless.DBReducibility <> a:79 var
+R9609:9617 nameless.DBReducibility <> candidate rec
+R9620:9620 nameless.DBReducibility <> B:78 var
+R9622:9622 nameless.DBReducibility <> a:79 var
+R9646:9651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9629:9641 nameless.DBReducibility <> stable_family def
+R9643:9643 nameless.DBReducibility <> A:77 var
+R9645:9645 nameless.DBReducibility <> B:78 var
+binder 9659:9659 <> a:80
+binder 9661:9661 <> b:81
+R9667:9670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9664:9664 nameless.DBReducibility <> A:77 var
+R9666:9666 nameless.DBReducibility <> a:80 var
+R9676:9679 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9671:9671 nameless.DBReducibility <> B:78 var
+R9673:9673 nameless.DBReducibility <> a:80 var
+R9675:9675 nameless.DBReducibility <> b:81 var
+R9680:9693 nameless.DBReducibility <> dependent_pair def
+R9695:9695 nameless.DBReducibility <> A:77 var
+R9697:9697 nameless.DBReducibility <> B:78 var
+R9700:9704 nameless.DBSyntax <> TPair constr
+R9708:9708 nameless.DBReducibility <> b:81 var
+R9706:9706 nameless.DBReducibility <> a:80 var
+R9766:9786 nameless.DBReducibility <> candidate_normalizing proj
+R9766:9786 nameless.DBReducibility <> candidate_normalizing proj
+R9817:9837 nameless.DBReducibility <> candidate_normalizing proj
+R9817:9837 nameless.DBReducibility <> candidate_normalizing proj
+R9881:9896 nameless.DBReducibility <> normalizing_pair thm
+R9881:9896 nameless.DBReducibility <> normalizing_pair thm
+R9915:9932 nameless.DBReducibility <> candidate_fst_pair thm
+R9915:9932 nameless.DBReducibility <> candidate_fst_pair thm
+R9989:9993 Corelib.Init.Logic <> proj2 thm
+R10007:10014 nameless.DBComputationPreservation <> cmp_root constr
+R10017:10020 nameless.DBSyntax <> TFst constr
+R10023:10027 nameless.DBSyntax <> TPair constr
+R10037:10043 Corelib.Init.Logic <> eq_refl constr
+R9989:9993 Corelib.Init.Logic <> proj2 thm
+R10007:10014 nameless.DBComputationPreservation <> cmp_root constr
+R10017:10020 nameless.DBSyntax <> TFst constr
+R10023:10027 nameless.DBSyntax <> TPair constr
+R10037:10043 Corelib.Init.Logic <> eq_refl constr
+R10060:10077 nameless.DBReducibility <> candidate_snd_pair thm
+R10060:10077 nameless.DBReducibility <> candidate_snd_pair thm
+R10128:10151 nameless.DBReducibility <> dependent_pair_candidate thm
+R10172:10196 nameless.DBReducibility <> dependent_pair_computable thm
+prf 10206:10235 <> normalizing_context_reflection
+binder 10246:10246 <> C:82
+R10251:10251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10306:10312 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 10259:10259 <> t:83
+binder 10261:10261 <> u:84
+R10279:10282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10264:10274 nameless.DBComputationPreservation <> computation ind
+R10276:10276 nameless.DBReducibility <> t:83 var
+R10278:10278 nameless.DBReducibility <> u:84 var
+R10283:10293 nameless.DBComputationPreservation <> computation ind
+R10296:10296 nameless.DBReducibility <> C:82 var
+R10298:10298 nameless.DBReducibility <> t:83 var
+R10302:10302 nameless.DBReducibility <> C:82 var
+R10304:10304 nameless.DBReducibility <> u:84 var
+binder 10320:10320 <> t:85
+R10349:10352 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10323:10342 nameless.DBReducibility <> strongly_normalizing def
+R10345:10345 nameless.DBReducibility <> C:82 var
+R10347:10347 nameless.DBReducibility <> t:85 var
+R10353:10372 nameless.DBReducibility <> strongly_normalizing def
+R10374:10374 nameless.DBReducibility <> t:85 var
+prf 10578:10604 <> normalizing_lift_reflection
+binder 10615:10615 <> t:86
+binder 10617:10617 <> d:87
+binder 10619:10619 <> c:88
+R10657:10660 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10624:10643 nameless.DBReducibility <> strongly_normalizing def
+R10646:10649 nameless.DBSyntax <> lift def
+R10655:10655 nameless.DBReducibility <> t:86 var
+R10653:10653 nameless.DBReducibility <> c:88 var
+R10651:10651 nameless.DBReducibility <> d:87 var
+R10661:10680 nameless.DBReducibility <> strongly_normalizing def
+R10682:10682 nameless.DBReducibility <> t:86 var
+R10722:10738 nameless.DBNormalization <> accessible_apstep thm
+R10722:10738 nameless.DBNormalization <> accessible_apstep thm
+R10773:10776 nameless.DBSyntax <> lift def
+R10773:10776 nameless.DBSyntax <> lift def
+R10901:10904 nameless.DBSyntax <> lift def
+R10930:10940 nameless.DBActiveParallel <> apstep_lift thm
+R10943:10960 nameless.DBActiveParallel <> computation_apstep thm
+R10901:10904 nameless.DBSyntax <> lift def
+R10930:10940 nameless.DBActiveParallel <> apstep_lift thm
+R10943:10960 nameless.DBActiveParallel <> computation_apstep thm
+prf 10990:11011 <> dependent_function_eta
+binder 11022:11022 <> A:89
+binder 11024:11024 <> B:90
+R11040:11043 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11029:11037 nameless.DBReducibility <> candidate rec
+R11039:11039 nameless.DBReducibility <> A:89 var
+R11044:11044 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11077:11081 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 11052:11052 <> a:91
+R11058:11061 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11055:11055 nameless.DBReducibility <> A:89 var
+R11057:11057 nameless.DBReducibility <> a:91 var
+R11062:11070 nameless.DBReducibility <> candidate rec
+R11073:11073 nameless.DBReducibility <> B:90 var
+R11075:11075 nameless.DBReducibility <> a:91 var
+R11099:11104 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11082:11094 nameless.DBReducibility <> stable_family def
+R11096:11096 nameless.DBReducibility <> A:89 var
+R11098:11098 nameless.DBReducibility <> B:90 var
+binder 11112:11112 <> f:92
+R11173:11181 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R11115:11132 nameless.DBReducibility <> dependent_function def
+R11134:11134 nameless.DBReducibility <> A:89 var
+R11136:11136 nameless.DBReducibility <> B:90 var
+R11139:11142 nameless.DBSyntax <> TLam constr
+R11145:11148 nameless.DBSyntax <> TApp constr
+R11164:11167 nameless.DBSyntax <> TVar constr
+R11151:11154 nameless.DBSyntax <> lift def
+R11160:11160 nameless.DBReducibility <> f:92 var
+R11182:11199 nameless.DBReducibility <> dependent_function def
+R11201:11201 nameless.DBReducibility <> A:89 var
+R11203:11203 nameless.DBReducibility <> B:90 var
+R11205:11205 nameless.DBReducibility <> f:92 var
+R11287:11313 nameless.DBReducibility <> normalizing_lift_reflection thm
+R11287:11313 nameless.DBReducibility <> normalizing_lift_reflection thm
+R11336:11365 nameless.DBReducibility <> normalizing_context_reflection thm
+binder 11372:11372 <> t:93
+R11377:11380 nameless.DBSyntax <> TApp constr
+R11385:11388 nameless.DBSyntax <> TVar constr
+R11382:11382 nameless.DBReducibility <> t:93 var
+R11423:11432 nameless.DBComputationPreservation <> cmp_TApp_f constr
+R11336:11365 nameless.DBReducibility <> normalizing_context_reflection thm
+binder 11372:11372 <> t:94
+R11377:11380 nameless.DBSyntax <> TApp constr
+R11385:11388 nameless.DBSyntax <> TVar constr
+R11382:11382 nameless.DBReducibility <> t:94 var
+R11423:11432 nameless.DBComputationPreservation <> cmp_TApp_f constr
+R11450:11479 nameless.DBReducibility <> normalizing_context_reflection thm
+R11481:11484 nameless.DBSyntax <> TLam constr
+R11515:11524 nameless.DBComputationPreservation <> cmp_TLam_b constr
+R11450:11479 nameless.DBReducibility <> normalizing_context_reflection thm
+R11481:11484 nameless.DBSyntax <> TLam constr
+R11515:11524 nameless.DBComputationPreservation <> cmp_TLam_b constr
+R11563:11578 nameless.DBReducibility <> candidate_reduct proj
+R11563:11578 nameless.DBReducibility <> candidate_reduct proj
+R11635:11642 nameless.DBComputationPreservation <> cmp_root constr
+R11650:11658 nameless.DBCore <> root_step def
+R11660:11664 nameless.DBSyntax <> subst def
+R11635:11642 nameless.DBComputationPreservation <> cmp_root constr
+R11680:11694 nameless.DBParallelBase <> subst_lift_zero thm
+R11697:11708 nameless.DBParallelBase <> lift_zero_id thm
+R11680:11694 nameless.DBParallelBase <> subst_lift_zero thm
+R11680:11694 nameless.DBParallelBase <> subst_lift_zero thm
+R11697:11708 nameless.DBParallelBase <> lift_zero_id thm
+R11697:11708 nameless.DBParallelBase <> lift_zero_id thm
+R11738:11764 nameless.DBReducibility <> dependent_lambda_computable thm
+R11738:11764 nameless.DBReducibility <> dependent_lambda_computable thm
+R11803:11807 nameless.DBSyntax <> subst def
+R11819:11833 nameless.DBParallelBase <> subst_lift_zero thm
+R11836:11847 nameless.DBParallelBase <> lift_zero_id thm
+R11819:11833 nameless.DBParallelBase <> subst_lift_zero thm
+R11819:11833 nameless.DBParallelBase <> subst_lift_zero thm
+R11836:11847 nameless.DBParallelBase <> lift_zero_id thm
+R11836:11847 nameless.DBParallelBase <> lift_zero_id thm
+prf 11878:11904 <> dependent_function_variance
+binder 11915:11915 <> A:95
+binder 11917:11917 <> B:96
+binder 11919:11920 <> A':97
+binder 11922:11923 <> B':98
+R11928:11928 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11950:11956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 11936:11936 <> a:99
+R11943:11946 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11939:11940 nameless.DBReducibility <> A':97 var
+R11942:11942 nameless.DBReducibility <> a:99 var
+R11947:11947 nameless.DBReducibility <> A:95 var
+R11949:11949 nameless.DBReducibility <> a:99 var
+R11957:11957 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11993:11999 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 11965:11965 <> a:100
+binder 11967:11967 <> t:101
+R11974:11977 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11970:11971 nameless.DBReducibility <> A':97 var
+R11973:11973 nameless.DBReducibility <> a:100 var
+R11983:11986 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11978:11978 nameless.DBReducibility <> B:96 var
+R11980:11980 nameless.DBReducibility <> a:100 var
+R11982:11982 nameless.DBReducibility <> t:101 var
+R11987:11988 nameless.DBReducibility <> B':98 var
+R11990:11990 nameless.DBReducibility <> a:100 var
+R11992:11992 nameless.DBReducibility <> t:101 var
+binder 12007:12007 <> f:102
+R12034:12037 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12010:12027 nameless.DBReducibility <> dependent_function def
+R12029:12029 nameless.DBReducibility <> A:95 var
+R12031:12031 nameless.DBReducibility <> B:96 var
+R12033:12033 nameless.DBReducibility <> f:102 var
+R12038:12055 nameless.DBReducibility <> dependent_function def
+R12057:12058 nameless.DBReducibility <> A':97 var
+R12060:12061 nameless.DBReducibility <> B':98 var
+R12063:12063 nameless.DBReducibility <> f:102 var
+R12211:12232 nameless.DBReducibility <> dependent_function_eta thm
+R12253:12279 nameless.DBReducibility <> dependent_function_variance thm

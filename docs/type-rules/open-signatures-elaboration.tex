@@ -30,11 +30,11 @@ Rows are finite lists of literal identities and core description terms.
  r_i\text{ is scoped in }\Gamma,i:I.
 \]
 \[
-\ruleof{signature_typing}{\jd{I}{\Set_0}\\
+\ruleof{signature_typing}{i\notin\op{dom}(\Gamma)\\\jd{I}{\Set_0}\\
  \op{RowOK}_{\Gamma,i:I}(I,r_i)}
  {\jd{\lambda i.\,\rows{r_i}}{\Defs\,I}}
 \]
-This derived statement is unproved. Surface $\{R::\op{branches}\,R\}$
+This derived statement is proved in Rocq. Surface $\{R::\op{branches}\,R\}$
 uses positive slots: $R\,j$ becomes $\code{\op{var}}\,j$.
 The Rocq relation starts with those translated schemes.
 

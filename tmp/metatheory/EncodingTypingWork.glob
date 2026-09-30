@@ -1,0 +1,376 @@
+DIGEST 7704b78b70c3cec9974525003c6aea0f
+FEncodingTypingWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:86 OpenSignaturesConfluence <> <> lib
+R88:110 OpenSignaturesTransport <> <> lib
+R121:129 SDSubWork <> <> lib
+R139:151 Stdlib.Lists.List ListNotations <> mod
+prf 161:182 <> alpha_var_same_inverse
+binder 193:195 <> env:1
+binder 197:197 <> x:2
+binder 199:199 <> y:3
+R232:235 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R225:227 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R204:212 OpenSignaturesAlpha <> alpha_var def
+R214:216 EncodingTypingWork <> env:1 var
+R218:220 EncodingTypingWork <> env:1 var
+R222:222 EncodingTypingWork <> x:2 var
+R224:224 EncodingTypingWork <> y:3 var
+R228:231 Corelib.Init.Datatypes <> true constr
+R237:239 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R236:236 EncodingTypingWork <> x:2 var
+R240:240 EncodingTypingWork <> y:3 var
+R301:309 OpenSignaturesAlpha <> alpha_var def
+R332:341 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R332:341 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R358:364 Stdlib.Arith.PeanoNat Nat eqb def
+R389:395 Stdlib.Arith.PeanoNat Nat eqb def
+R358:364 Stdlib.Arith.PeanoNat Nat eqb def
+R389:395 Stdlib.Arith.PeanoNat Nat eqb def
+R389:395 Stdlib.Arith.PeanoNat Nat eqb def
+R440:449 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R440:449 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+R440:449 Stdlib.Arith.PeanoNat Nat eqb_eq thm
+prf 505:520 <> encode_env_alpha
+binder 531:533 <> env:4
+binder 535:535 <> t:5
+binder 537:537 <> u:6
+R567:570 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R552:554 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R540:545 OpenSignaturesEncoding <> encode def
+R547:549 EncodingTypingWork <> env:4 var
+R551:551 EncodingTypingWork <> t:5 var
+R555:560 OpenSignaturesEncoding <> encode def
+R562:564 EncodingTypingWork <> env:4 var
+R566:566 EncodingTypingWork <> u:6 var
+R571:581 OpenSignaturesAlpha <> alpha_equiv def
+R583:583 EncodingTypingWork <> t:5 var
+R585:585 EncodingTypingWork <> u:6 var
+R621:640 OpenSignaturesEncoding <> encode_alpha_inverse thm
+R621:640 OpenSignaturesEncoding <> encode_alpha_inverse thm
+R673:686 OpenSignaturesSubstitution <> alpha_env_mono thm
+R673:686 OpenSignaturesSubstitution <> alpha_env_mono thm
+R731:752 EncodingTypingWork <> alpha_var_same_inverse thm
+R731:752 EncodingTypingWork <> alpha_var_same_inverse thm
+R775:786 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R775:786 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+prf 800:824 <> encode_conversion_inverse
+binder 835:837 <> env:7
+binder 839:839 <> t:8
+binder 841:841 <> u:9
+R883:886 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R846:852 OpenSignaturesEncodingReduction DC conv ind
+R870:875 OpenSignaturesEncoding <> encode def
+R877:879 EncodingTypingWork <> env:7 var
+R881:881 EncodingTypingWork <> u:9 var
+R855:860 OpenSignaturesEncoding <> encode def
+R862:864 EncodingTypingWork <> env:7 var
+R866:866 EncodingTypingWork <> t:8 var
+R887:890 OpenSignaturesCore <> conv ind
+R894:894 EncodingTypingWork <> u:9 var
+R892:892 EncodingTypingWork <> t:8 var
+R936:976 nameless.DBConfluence <> conversion_joinable thm
+R936:976 nameless.DBConfluence <> conversion_joinable thm
+R1013:1037 OpenSignaturesEncodingReflection <> encode_reductions_inverse thm
+R1052:1058 Corelib.Init.Logic <> eq_refl constr
+R1013:1037 OpenSignaturesEncodingReflection <> encode_reductions_inverse thm
+R1052:1058 Corelib.Init.Logic <> eq_refl constr
+R1091:1115 OpenSignaturesEncodingReflection <> encode_reductions_inverse thm
+R1130:1136 Corelib.Init.Logic <> eq_refl constr
+R1091:1115 OpenSignaturesEncodingReflection <> encode_reductions_inverse thm
+R1130:1136 Corelib.Init.Logic <> eq_refl constr
+R1167:1174 OpenSignaturesCore <> cv_trans constr
+R1185:1196 OpenSignaturesProgress <> reduces_conv thm
+R1167:1174 OpenSignaturesCore <> cv_trans constr
+R1185:1196 OpenSignaturesProgress <> reduces_conv thm
+R1219:1226 OpenSignaturesCore <> cv_trans constr
+R1249:1256 OpenSignaturesCore <> cv_alpha constr
+R1265:1280 EncodingTypingWork <> encode_env_alpha thm
+R1219:1226 OpenSignaturesCore <> cv_trans constr
+R1249:1256 OpenSignaturesCore <> cv_alpha constr
+R1265:1280 EncodingTypingWork <> encode_env_alpha thm
+R1309:1314 OpenSignaturesCore <> cv_sym constr
+R1323:1334 OpenSignaturesProgress <> reduces_conv thm
+R1309:1314 OpenSignaturesCore <> cv_sym constr
+R1323:1334 OpenSignaturesProgress <> reduces_conv thm
+prf 1358:1369 <> encode_arrow
+binder 1380:1380 <> A:10
+binder 1382:1382 <> B:11
+binder 1384:1386 <> env:12
+R1413:1415 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1391:1396 OpenSignaturesEncoding <> encode def
+R1398:1400 EncodingTypingWork <> env:12 var
+R1403:1407 OpenSignaturesSyntax <> arrow def
+R1411:1411 EncodingTypingWork <> B:11 var
+R1409:1409 EncodingTypingWork <> A:10 var
+R1416:1423 OpenSignaturesEncoding DB arrow def
+R1441:1446 OpenSignaturesEncoding <> encode def
+R1448:1450 EncodingTypingWork <> env:12 var
+R1452:1452 EncodingTypingWork <> B:11 var
+R1426:1431 OpenSignaturesEncoding <> encode def
+R1433:1435 EncodingTypingWork <> env:12 var
+R1437:1437 EncodingTypingWork <> A:10 var
+R1480:1484 OpenSignaturesSyntax <> arrow def
+R1487:1494 OpenSignaturesEncoding DB arrow def
+R1502:1507 OpenSignaturesEncoding <> encode def
+R1528:1539 OpenSignaturesEncoding <> encode_fresh thm
+R1542:1555 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R1528:1539 OpenSignaturesEncoding <> encode_fresh thm
+R1542:1555 OpenSignaturesDerivedTyping <> fresh_not_free thm
+prf 1580:1589 <> encode_Def
+binder 1600:1601 <> IT:13
+binder 1603:1605 <> env:14
+R1627:1629 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1608:1613 OpenSignaturesEncoding <> encode def
+R1615:1617 EncodingTypingWork <> env:14 var
+R1620:1622 OpenSignaturesSyntax <> Def def
+R1624:1625 EncodingTypingWork <> IT:13 var
+R1630:1635 OpenSignaturesEncoding DB Def def
+R1638:1643 OpenSignaturesEncoding <> encode def
+R1645:1647 EncodingTypingWork <> env:14 var
+R1649:1650 EncodingTypingWork <> IT:13 var
+R1678:1680 OpenSignaturesSyntax <> Def def
+R1683:1688 OpenSignaturesEncoding DB Def def
+R1696:1701 OpenSignaturesEncoding <> encode def
+R1736:1749 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R1713:1724 OpenSignaturesEncoding <> encode_fresh thm
+R1713:1724 OpenSignaturesEncoding <> encode_fresh thm
+R1736:1749 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R1713:1724 OpenSignaturesEncoding <> encode_fresh thm
+prf 1788:1800 <> encode_Family
+binder 1811:1812 <> IT:15
+binder 1814:1816 <> env:16
+R1841:1843 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1819:1824 OpenSignaturesEncoding <> encode def
+R1826:1828 EncodingTypingWork <> env:16 var
+R1831:1836 OpenSignaturesSyntax <> Family def
+R1838:1839 EncodingTypingWork <> IT:15 var
+R1844:1852 OpenSignaturesEncoding DB Family def
+R1855:1860 OpenSignaturesEncoding <> encode def
+R1862:1864 EncodingTypingWork <> env:16 var
+R1866:1867 EncodingTypingWork <> IT:15 var
+prf 1902:1913 <> encode_total
+binder 1924:1925 <> IT:17
+binder 1927:1927 <> X:18
+binder 1929:1931 <> env:19
+R1957:1959 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1934:1939 OpenSignaturesEncoding <> encode def
+R1941:1943 EncodingTypingWork <> env:19 var
+R1946:1950 OpenSignaturesSyntax <> total def
+R1955:1955 EncodingTypingWork <> X:18 var
+R1952:1953 EncodingTypingWork <> IT:17 var
+R1960:1967 OpenSignaturesEncoding DB total def
+R1986:1991 OpenSignaturesEncoding <> encode def
+R1993:1995 EncodingTypingWork <> env:19 var
+R1997:1997 EncodingTypingWork <> X:18 var
+R1970:1975 OpenSignaturesEncoding <> encode def
+R1977:1979 EncodingTypingWork <> env:19 var
+R1981:1982 EncodingTypingWork <> IT:17 var
+R2025:2029 OpenSignaturesSyntax <> total def
+R2032:2039 OpenSignaturesEncoding DB total def
+R2047:2052 OpenSignaturesEncoding <> encode def
+R2054:2063 OpenSignaturesEncoding <> encode_var def
+R2075:2086 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2075:2086 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2075:2086 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2122:2135 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R2099:2110 OpenSignaturesEncoding <> encode_fresh thm
+R2099:2110 OpenSignaturesEncoding <> encode_fresh thm
+R2122:2135 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R2099:2110 OpenSignaturesEncoding <> encode_fresh thm
+prf 2172:2184 <> encode_motive
+binder 2195:2196 <> IT:20
+binder 2198:2198 <> X:21
+binder 2200:2202 <> env:22
+R2229:2231 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2205:2210 OpenSignaturesEncoding <> encode def
+R2212:2214 EncodingTypingWork <> env:22 var
+R2217:2222 OpenSignaturesSyntax <> motive def
+R2227:2227 EncodingTypingWork <> X:21 var
+R2224:2225 EncodingTypingWork <> IT:20 var
+R2232:2240 OpenSignaturesEncoding DB motive def
+R2259:2264 OpenSignaturesEncoding <> encode def
+R2266:2268 EncodingTypingWork <> env:22 var
+R2270:2270 EncodingTypingWork <> X:21 var
+R2243:2248 OpenSignaturesEncoding <> encode def
+R2250:2252 EncodingTypingWork <> env:22 var
+R2254:2255 EncodingTypingWork <> IT:20 var
+R2296:2301 OpenSignaturesSyntax <> motive def
+R2304:2312 OpenSignaturesEncoding DB motive def
+R2323:2334 EncodingTypingWork <> encode_arrow thm
+R2337:2348 EncodingTypingWork <> encode_total thm
+R2323:2334 EncodingTypingWork <> encode_arrow thm
+R2323:2334 EncodingTypingWork <> encode_arrow thm
+R2337:2348 EncodingTypingWork <> encode_total thm
+R2337:2348 EncodingTypingWork <> encode_total thm
+R2421:2425 OpenSignaturesSyntax <> fresh def
+R2421:2425 OpenSignaturesSyntax <> fresh def
+R2450:2450 Corelib.Init.Datatypes <> S constr
+R2450:2450 Corelib.Init.Datatypes <> S constr
+R2537:2538 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2539:2540 Stdlib.Lists.List <> In def
+R2546:2554 OpenSignaturesSyntax <> free_vars def
+R2537:2538 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2539:2540 Stdlib.Lists.List <> In def
+R2546:2554 OpenSignaturesSyntax <> free_vars def
+R2601:2620 OpenSignaturesDerivedTyping <> above_fresh_not_free thm
+R2694:2699 OpenSignaturesEncoding <> encode def
+R2701:2710 OpenSignaturesEncoding <> encode_var def
+R2729:2743 OpenSignaturesEncodingReduction <> encode_diagonal thm
+R2763:2774 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2794:2805 OpenSignaturesEncoding <> encode_fresh thm
+R2841:2847 OpenSignaturesEncoding DB lift def
+R2888:2894 Stdlib.Arith.PeanoNat Nat eqb def
+R2888:2894 Stdlib.Arith.PeanoNat Nat eqb def
+R2955:2957 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2944:2950 Stdlib.Arith.PeanoNat Nat eqb def
+R2958:2962 Corelib.Init.Datatypes <> false constr
+R2975:2985 Stdlib.Arith.PeanoNat Nat eqb_neq thm
+R3039:3076 nameless.DBParallelBase <> lift_fuse_zero thm
+prf 3112:3134 <> encode_recursive_method
+binder 3145:3146 <> IT:23
+binder 3148:3148 <> X:24
+binder 3150:3150 <> P:25
+binder 3152:3154 <> env:26
+R3195:3197 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3159:3164 OpenSignaturesEncoding <> encode def
+R3166:3168 EncodingTypingWork <> env:26 var
+R3171:3186 OpenSignaturesSyntax <> recursive_method def
+R3193:3193 EncodingTypingWork <> P:25 var
+R3191:3191 EncodingTypingWork <> X:24 var
+R3188:3189 EncodingTypingWork <> IT:23 var
+R3198:3216 OpenSignaturesEncoding DB recursive_method def
+R3250:3255 OpenSignaturesEncoding <> encode def
+R3257:3259 EncodingTypingWork <> env:26 var
+R3261:3261 EncodingTypingWork <> P:25 var
+R3235:3240 OpenSignaturesEncoding <> encode def
+R3242:3244 EncodingTypingWork <> env:26 var
+R3246:3246 EncodingTypingWork <> X:24 var
+R3219:3224 OpenSignaturesEncoding <> encode def
+R3226:3228 EncodingTypingWork <> env:26 var
+R3230:3231 EncodingTypingWork <> IT:23 var
+R3287:3302 OpenSignaturesSyntax <> recursive_method def
+R3305:3323 OpenSignaturesEncoding DB recursive_method def
+prf 3357:3380 <> encode_close_case_method
+binder 3391:3392 <> IT:27
+binder 3394:3394 <> F:28
+binder 3396:3396 <> G:29
+binder 3398:3398 <> i:30
+binder 3400:3400 <> Q:31
+binder 3402:3404 <> env:32
+R3450:3452 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3409:3414 OpenSignaturesEncoding <> encode def
+R3416:3418 EncodingTypingWork <> env:32 var
+R3421:3437 OpenSignaturesSyntax <> close_case_method def
+R3448:3448 EncodingTypingWork <> Q:31 var
+R3446:3446 EncodingTypingWork <> i:30 var
+R3444:3444 EncodingTypingWork <> G:29 var
+R3442:3442 EncodingTypingWork <> F:28 var
+R3439:3440 EncodingTypingWork <> IT:27 var
+R3453:3472 OpenSignaturesEncoding DB close_case_method def
+R3540:3545 OpenSignaturesEncoding <> encode def
+R3547:3549 EncodingTypingWork <> env:32 var
+R3551:3551 EncodingTypingWork <> Q:31 var
+R3525:3530 OpenSignaturesEncoding <> encode def
+R3532:3534 EncodingTypingWork <> env:32 var
+R3536:3536 EncodingTypingWork <> i:30 var
+R3510:3515 OpenSignaturesEncoding <> encode def
+R3517:3519 EncodingTypingWork <> env:32 var
+R3521:3521 EncodingTypingWork <> G:29 var
+R3495:3500 OpenSignaturesEncoding <> encode def
+R3502:3504 EncodingTypingWork <> env:32 var
+R3506:3506 EncodingTypingWork <> F:28 var
+R3479:3484 OpenSignaturesEncoding <> encode def
+R3486:3488 EncodingTypingWork <> env:32 var
+R3490:3491 EncodingTypingWork <> IT:27 var
+R3577:3593 OpenSignaturesSyntax <> close_case_method def
+R3596:3615 OpenSignaturesEncoding DB close_case_method def
+R3618:3624 OpenSignaturesSyntax <> payload def
+R3627:3636 OpenSignaturesEncoding DB payload def
+R3639:3645 OpenSignaturesSyntax <> carrier def
+R3648:3657 OpenSignaturesEncoding DB carrier def
+prf 3691:3709 <> encode_close_motive
+binder 3720:3721 <> IT:33
+binder 3723:3723 <> G:34
+binder 3725:3727 <> env:35
+R3762:3764 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3732:3737 OpenSignaturesEncoding <> encode def
+R3739:3741 EncodingTypingWork <> env:35 var
+R3744:3755 OpenSignaturesSyntax <> close_motive def
+R3760:3760 EncodingTypingWork <> G:34 var
+R3757:3758 EncodingTypingWork <> IT:33 var
+R3765:3779 OpenSignaturesEncoding DB close_motive def
+R3798:3803 OpenSignaturesEncoding <> encode def
+R3805:3807 EncodingTypingWork <> env:35 var
+R3809:3809 EncodingTypingWork <> G:34 var
+R3782:3787 OpenSignaturesEncoding <> encode def
+R3789:3791 EncodingTypingWork <> env:35 var
+R3793:3794 EncodingTypingWork <> IT:33 var
+R3835:3846 OpenSignaturesSyntax <> close_motive def
+R3849:3863 OpenSignaturesEncoding DB close_motive def
+R3866:3872 OpenSignaturesSyntax <> CloseAt def
+R3875:3884 OpenSignaturesEncoding DB CloseAt def
+R3919:3928 EncodingTypingWork <> encode_Def thm
+R3919:3928 EncodingTypingWork <> encode_Def thm
+R3919:3928 EncodingTypingWork <> encode_Def thm
+prf 3942:3961 <> encode_mu_ind_method
+binder 3972:3973 <> IT:36
+binder 3975:3975 <> D:37
+binder 3977:3977 <> P:38
+binder 3979:3981 <> env:39
+R4019:4021 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3986:3991 OpenSignaturesEncoding <> encode def
+R3993:3995 EncodingTypingWork <> env:39 var
+R3998:4010 OpenSignaturesSyntax <> mu_ind_method def
+R4017:4017 EncodingTypingWork <> P:38 var
+R4015:4015 EncodingTypingWork <> D:37 var
+R4012:4013 EncodingTypingWork <> IT:36 var
+R4022:4037 OpenSignaturesEncoding DB mu_ind_method def
+R4071:4076 OpenSignaturesEncoding <> encode def
+R4078:4080 EncodingTypingWork <> env:39 var
+R4082:4082 EncodingTypingWork <> P:38 var
+R4056:4061 OpenSignaturesEncoding <> encode def
+R4063:4065 EncodingTypingWork <> env:39 var
+R4067:4067 EncodingTypingWork <> D:37 var
+R4040:4045 OpenSignaturesEncoding <> encode def
+R4047:4049 EncodingTypingWork <> env:39 var
+R4051:4052 EncodingTypingWork <> IT:36 var
+R4108:4120 OpenSignaturesSyntax <> mu_ind_method def
+R4123:4138 OpenSignaturesEncoding DB mu_ind_method def
+prf 4172:4194 <> encode_close_ind_method
+binder 4205:4206 <> IT:40
+binder 4208:4208 <> G:41
+binder 4210:4210 <> P:42
+binder 4212:4214 <> env:43
+R4255:4257 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4219:4224 OpenSignaturesEncoding <> encode def
+R4226:4228 EncodingTypingWork <> env:43 var
+R4231:4246 OpenSignaturesSyntax <> close_ind_method def
+R4253:4253 EncodingTypingWork <> P:42 var
+R4251:4251 EncodingTypingWork <> G:41 var
+R4248:4249 EncodingTypingWork <> IT:40 var
+R4258:4276 OpenSignaturesEncoding DB close_ind_method def
+R4310:4315 OpenSignaturesEncoding <> encode def
+R4317:4319 EncodingTypingWork <> env:43 var
+R4321:4321 EncodingTypingWork <> P:42 var
+R4295:4300 OpenSignaturesEncoding <> encode def
+R4302:4304 EncodingTypingWork <> env:43 var
+R4306:4306 EncodingTypingWork <> G:41 var
+R4279:4284 OpenSignaturesEncoding <> encode def
+R4286:4288 EncodingTypingWork <> env:43 var
+R4290:4291 EncodingTypingWork <> IT:40 var
+R4349:4364 OpenSignaturesSyntax <> close_ind_method def
+R4367:4385 OpenSignaturesEncoding DB close_ind_method def
+R4388:4394 OpenSignaturesSyntax <> payload def
+R4397:4406 OpenSignaturesEncoding DB payload def
+R4409:4415 OpenSignaturesSyntax <> carrier def
+R4418:4427 OpenSignaturesEncoding DB carrier def
+R4460:4469 EncodingTypingWork <> encode_Def thm
+R4460:4469 EncodingTypingWork <> encode_Def thm
+R4460:4469 EncodingTypingWork <> encode_Def thm
+R4479:4485 OpenSignaturesEncoding DB lift def
+R4504:4541 nameless.DBParallelBase <> lift_fuse_zero thm
+R4504:4541 nameless.DBParallelBase <> lift_fuse_zero thm

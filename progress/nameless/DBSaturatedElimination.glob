@@ -1,0 +1,277 @@
+DIGEST 4665a7054438f61e87831cd58b49cb9d
+Fnameless.DBSaturatedElimination
+R179:182 Stdlib.Lists.List <> <> lib
+R184:188 Stdlib.Arith.Arith <> <> lib
+R190:193 Stdlib.Bool.Bool <> <> lib
+R195:197 Stdlib.micromega.Lia <> <> lib
+R215:238 nameless.DBHeadExpansion <> <> lib
+R240:267 nameless.DBIndexedCandidates <> <> lib
+R277:280 nameless.DBFullReducibility Full <> mod
+prf 290:313 <> stable_family_reductions
+binder 324:324 <> A:1
+binder 326:326 <> B:2
+R340:343 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R329:337 nameless.DBFullReducibility Full candidate rec
+R339:339 nameless.DBSaturatedElimination <> A:1 var
+R361:366 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R344:356 nameless.DBFullReducibility Full stable_family def
+R358:358 nameless.DBSaturatedElimination <> A:1 var
+R360:360 nameless.DBSaturatedElimination <> B:2 var
+binder 374:374 <> t:3
+binder 376:376 <> u:4
+R396:399 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R379:381 nameless.DBParallelBase <> rtc ind
+R395:395 nameless.DBSaturatedElimination <> u:4 var
+R393:393 nameless.DBSaturatedElimination <> t:3 var
+R383:391 nameless.DBCore <> reduction ind
+R403:406 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R400:400 nameless.DBSaturatedElimination <> A:1 var
+R402:402 nameless.DBSaturatedElimination <> t:3 var
+R407:421 nameless.DBFullReducibility Full predicate_equiv def
+R424:424 nameless.DBSaturatedElimination <> B:2 var
+R426:426 nameless.DBSaturatedElimination <> t:3 var
+R430:430 nameless.DBSaturatedElimination <> B:2 var
+R432:432 nameless.DBSaturatedElimination <> u:4 var
+R530:545 nameless.DBFullReducibility Full candidate_reduct proj
+R530:545 nameless.DBFullReducibility Full candidate_reduct proj
+sec 649:668 <> SaturatedElimination
+var  680:685 SaturatedElimination Params
+var 705:718 SaturatedElimination parameter_step
+R728:731 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R722:727 nameless.DBSaturatedElimination <> SaturatedElimination.Params var
+R738:741 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R732:737 nameless.DBSaturatedElimination <> SaturatedElimination.Params var
+var 757:771 SaturatedElimination valid_parameter
+R781:784 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R775:780 nameless.DBSaturatedElimination <> SaturatedElimination.Params var
+var 800:808 SaturatedElimination construct
+R818:821 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R812:817 nameless.DBSaturatedElimination <> SaturatedElimination.Params var
+R826:829 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R822:825 nameless.DBSyntax <> term ind
+R830:833 nameless.DBSyntax <> term ind
+var 845:848 SaturatedElimination seed
+R856:859 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R852:855 nameless.DBSyntax <> term ind
+var 877:892 SaturatedElimination seed_normalizing
+binder 903:903 <> t:14
+R912:915 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R906:909 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R911:911 nameless.DBSaturatedElimination <> t:14 var
+R916:922 nameless.DBFullReductionStructure <> full_SN def
+R924:924 nameless.DBSaturatedElimination <> t:14 var
+var 936:941 SaturatedElimination result
+R949:952 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R945:948 nameless.DBSyntax <> term ind
+R957:960 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R953:956 nameless.DBSyntax <> term ind
+var 978:993 SaturatedElimination result_candidate
+binder 1004:1004 <> t:19
+R1023:1026 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1007:1015 nameless.DBPositiveCandidates <> saturated def
+R1017:1020 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R1022:1022 nameless.DBSaturatedElimination <> t:19 var
+R1027:1035 nameless.DBFullReducibility Full candidate rec
+R1038:1043 nameless.DBSaturatedElimination <> SaturatedElimination.result var
+R1045:1045 nameless.DBSaturatedElimination <> t:19 var
+var 1060:1072 SaturatedElimination result_stable
+R1076:1088 nameless.DBFullReducibility Full stable_family def
+R1091:1099 nameless.DBPositiveCandidates <> saturated def
+R1101:1104 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R1107:1112 nameless.DBSaturatedElimination <> SaturatedElimination.result var
+var 1126:1137 SaturatedElimination valid_reduct
+binder 1148:1148 <> p:24
+binder 1150:1150 <> q:25
+R1172:1175 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1155:1169 nameless.DBSaturatedElimination <> SaturatedElimination.valid_parameter var
+R1171:1171 nameless.DBSaturatedElimination <> p:24 var
+R1194:1197 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1176:1189 nameless.DBSaturatedElimination <> SaturatedElimination.parameter_step var
+R1191:1191 nameless.DBSaturatedElimination <> p:24 var
+R1193:1193 nameless.DBSaturatedElimination <> q:25 var
+R1198:1212 nameless.DBSaturatedElimination <> SaturatedElimination.valid_parameter var
+R1214:1214 nameless.DBSaturatedElimination <> q:25 var
+var 1228:1245 SaturatedElimination construct_argument
+binder 1256:1256 <> p:28
+R1276:1279 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1259:1273 nameless.DBSaturatedElimination <> SaturatedElimination.valid_parameter var
+R1275:1275 nameless.DBSaturatedElimination <> p:28 var
+binder 1287:1287 <> t:29
+binder 1289:1289 <> u:30
+R1307:1310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1294:1302 nameless.DBCore <> reduction ind
+R1306:1306 nameless.DBSaturatedElimination <> u:30 var
+R1304:1304 nameless.DBSaturatedElimination <> t:29 var
+R1311:1319 nameless.DBCore <> reduction ind
+R1338:1346 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R1348:1348 nameless.DBSaturatedElimination <> p:28 var
+R1350:1350 nameless.DBSaturatedElimination <> u:30 var
+R1322:1330 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R1332:1332 nameless.DBSaturatedElimination <> p:28 var
+R1334:1334 nameless.DBSaturatedElimination <> t:29 var
+var 1365:1381 SaturatedElimination construct_neutral
+binder 1392:1392 <> p:33
+R1412:1415 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1395:1409 nameless.DBSaturatedElimination <> SaturatedElimination.valid_parameter var
+R1411:1411 nameless.DBSaturatedElimination <> p:33 var
+binder 1423:1423 <> t:34
+R1428:1434 nameless.DBFullReducibility Full neutral def
+R1437:1445 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R1447:1447 nameless.DBSaturatedElimination <> p:33 var
+R1449:1449 nameless.DBSaturatedElimination <> t:34 var
+var 1464:1485 SaturatedElimination construct_neutral_step
+binder 1496:1496 <> p:37
+R1516:1519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1499:1513 nameless.DBSaturatedElimination <> SaturatedElimination.valid_parameter var
+R1515:1515 nameless.DBSaturatedElimination <> p:37 var
+binder 1527:1527 <> t:38
+binder 1529:1529 <> u:39
+R1543:1546 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1534:1540 nameless.DBFullReducibility Full neutral def
+R1542:1542 nameless.DBSaturatedElimination <> t:38 var
+R1574:1579 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1547:1555 nameless.DBCore <> reduction ind
+R1573:1573 nameless.DBSaturatedElimination <> u:39 var
+R1558:1566 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R1568:1568 nameless.DBSaturatedElimination <> p:37 var
+R1570:1570 nameless.DBSaturatedElimination <> t:38 var
+R1580:1580 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1630:1637 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1685:1685 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1581:1587 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1589:1590 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1588:1588 <> q:40
+R1609:1612 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1591:1604 nameless.DBSaturatedElimination <> SaturatedElimination.parameter_step var
+R1606:1606 nameless.DBSaturatedElimination <> p:37 var
+R1608:1608 nameless.DBSaturatedElimination <> q:40 var
+R1614:1616 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1613:1613 nameless.DBSaturatedElimination <> u:39 var
+R1617:1625 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R1627:1627 nameless.DBSaturatedElimination <> q:40 var
+R1629:1629 nameless.DBSaturatedElimination <> t:38 var
+R1638:1644 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1647:1648 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1645:1646 <> t':41
+R1663:1666 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1649:1657 nameless.DBCore <> reduction ind
+R1661:1662 nameless.DBSaturatedElimination <> t':41 var
+R1659:1659 nameless.DBSaturatedElimination <> t:38 var
+R1668:1670 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1667:1667 nameless.DBSaturatedElimination <> u:39 var
+R1671:1679 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R1681:1681 nameless.DBSaturatedElimination <> p:37 var
+R1683:1684 nameless.DBSaturatedElimination <> t':41 var
+var 1699:1712 SaturatedElimination construct_seed
+binder 1723:1723 <> p:44
+R1743:1746 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1726:1740 nameless.DBSaturatedElimination <> SaturatedElimination.valid_parameter var
+R1742:1742 nameless.DBSaturatedElimination <> p:44 var
+binder 1754:1754 <> t:45
+R1765:1768 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1759:1762 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R1764:1764 nameless.DBSaturatedElimination <> t:45 var
+R1769:1774 nameless.DBSaturatedElimination <> SaturatedElimination.result var
+R1776:1776 nameless.DBSaturatedElimination <> t:45 var
+R1779:1787 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R1789:1789 nameless.DBSaturatedElimination <> p:44 var
+R1791:1791 nameless.DBSaturatedElimination <> t:45 var
+prf 1804:1824 <> saturated_elimination
+binder 1835:1835 <> p:48
+R1877:1880 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1840:1842 Corelib.Init.Wf <> Acc ind
+R1876:1876 nameless.DBSaturatedElimination <> p:48 var
+binder 1849:1849 <> q:49
+binder 1851:1851 <> p:50
+R1856:1869 nameless.DBSaturatedElimination <> SaturatedElimination.parameter_step var
+R1871:1871 nameless.DBSaturatedElimination <> p:50 var
+R1873:1873 nameless.DBSaturatedElimination <> q:49 var
+R1898:1903 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1881:1895 nameless.DBSaturatedElimination <> SaturatedElimination.valid_parameter var
+R1897:1897 nameless.DBSaturatedElimination <> p:48 var
+binder 1911:1911 <> t:51
+R1930:1933 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1914:1922 nameless.DBPositiveCandidates <> saturated def
+R1924:1927 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R1929:1929 nameless.DBSaturatedElimination <> t:51 var
+R1934:1939 nameless.DBSaturatedElimination <> SaturatedElimination.result var
+R1941:1941 nameless.DBSaturatedElimination <> t:51 var
+R1944:1952 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R1954:1954 nameless.DBSaturatedElimination <> p:48 var
+R1956:1956 nameless.DBSaturatedElimination <> t:51 var
+R2033:2051 nameless.DBPositiveCandidates <> saturated_candidate thm
+R2053:2056 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R2058:2073 nameless.DBSaturatedElimination <> SaturatedElimination.seed_normalizing var
+R2033:2051 nameless.DBPositiveCandidates <> saturated_candidate thm
+R2053:2056 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R2058:2073 nameless.DBSaturatedElimination <> SaturatedElimination.seed_normalizing var
+R2098:2106 nameless.DBFullReducibility Full candidate rec
+binder 2113:2113 <> t:52
+R2134:2137 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2118:2126 nameless.DBPositiveCandidates <> saturated def
+R2128:2131 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R2133:2133 nameless.DBSaturatedElimination <> t:52 var
+R2138:2143 nameless.DBSaturatedElimination <> SaturatedElimination.result var
+R2145:2145 nameless.DBSaturatedElimination <> t:52 var
+R2148:2156 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R2160:2160 nameless.DBSaturatedElimination <> t:52 var
+R2098:2106 nameless.DBFullReducibility Full candidate rec
+binder 2113:2113 <> t:53
+R2134:2137 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2118:2126 nameless.DBPositiveCandidates <> saturated def
+R2128:2131 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R2133:2133 nameless.DBSaturatedElimination <> t:53 var
+R2138:2143 nameless.DBSaturatedElimination <> SaturatedElimination.result var
+R2145:2145 nameless.DBSaturatedElimination <> t:53 var
+R2148:2156 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R2160:2160 nameless.DBSaturatedElimination <> t:53 var
+R2213:2233 nameless.DBFullReducibility Full candidate_normalizing proj
+R2213:2233 nameless.DBFullReducibility Full candidate_normalizing proj
+R2287:2302 nameless.DBFullReducibility Full candidate_reduct proj
+R2287:2302 nameless.DBFullReducibility Full candidate_reduct proj
+R2330:2334 Corelib.Init.Logic <> proj1 thm
+R2337:2349 nameless.DBSaturatedElimination <> SaturatedElimination.result_stable var
+R2362:2370 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R2330:2334 Corelib.Init.Logic <> proj1 thm
+R2337:2349 nameless.DBSaturatedElimination <> SaturatedElimination.result_stable var
+R2362:2370 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R2393:2408 nameless.DBFullReducibility Full candidate_reduct proj
+R2438:2455 nameless.DBSaturatedElimination <> SaturatedElimination.construct_argument var
+R2411:2426 nameless.DBSaturatedElimination <> SaturatedElimination.result_candidate var
+R2393:2408 nameless.DBFullReducibility Full candidate_reduct proj
+R2438:2455 nameless.DBSaturatedElimination <> SaturatedElimination.construct_argument var
+R2411:2426 nameless.DBSaturatedElimination <> SaturatedElimination.result_candidate var
+R2513:2521 nameless.DBPositiveCandidates <> saturated def
+R2523:2526 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R2513:2521 nameless.DBPositiveCandidates <> saturated def
+R2523:2526 nameless.DBSaturatedElimination <> SaturatedElimination.seed var
+R2547:2563 nameless.DBFullReducibility Full candidate_neutral proj
+R2593:2597 Corelib.Init.Logic <> proj1 thm
+R2547:2563 nameless.DBFullReducibility Full candidate_neutral proj
+R2593:2597 Corelib.Init.Logic <> proj1 thm
+R2652:2668 nameless.DBFullReducibility Full candidate_neutral proj
+R2695:2711 nameless.DBSaturatedElimination <> SaturatedElimination.construct_neutral var
+R2671:2686 nameless.DBSaturatedElimination <> SaturatedElimination.result_candidate var
+R2652:2668 nameless.DBFullReducibility Full candidate_neutral proj
+R2695:2711 nameless.DBSaturatedElimination <> SaturatedElimination.construct_neutral var
+R2671:2686 nameless.DBSaturatedElimination <> SaturatedElimination.result_candidate var
+R2752:2773 nameless.DBSaturatedElimination <> SaturatedElimination.construct_neutral_step var
+R2752:2773 nameless.DBSaturatedElimination <> SaturatedElimination.construct_neutral_step var
+R2864:2875 nameless.DBSaturatedElimination <> SaturatedElimination.valid_reduct var
+R2864:2875 nameless.DBSaturatedElimination <> SaturatedElimination.valid_reduct var
+R2914:2918 Corelib.Init.Logic <> proj2 thm
+R2921:2933 nameless.DBSaturatedElimination <> SaturatedElimination.result_stable var
+R2948:2956 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R2914:2918 Corelib.Init.Logic <> proj2 thm
+R2921:2933 nameless.DBSaturatedElimination <> SaturatedElimination.result_stable var
+R2948:2956 nameless.DBSaturatedElimination <> SaturatedElimination.construct var
+R2982:2986 Corelib.Init.Logic <> proj2 thm
+R2982:2986 Corelib.Init.Logic <> proj2 thm
+R3027:3031 Corelib.Init.Logic <> proj2 thm
+R3027:3031 Corelib.Init.Logic <> proj2 thm
+R3080:3094 nameless.DBPositiveCandidates <> saturated_intro thm
+R3103:3116 nameless.DBSaturatedElimination <> SaturatedElimination.construct_seed var
+R3080:3094 nameless.DBPositiveCandidates <> saturated_intro thm
+R3103:3116 nameless.DBSaturatedElimination <> SaturatedElimination.construct_seed var
+R3140:3159 nameless.DBSaturatedElimination SaturatedElimination <> sec
+R3181:3201 nameless.DBSaturatedElimination <> saturated_elimination thm

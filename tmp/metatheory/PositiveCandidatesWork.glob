@@ -1,0 +1,311 @@
+DIGEST 6cf86291af073c8934122d720d162a26
+FPositiveCandidatesWork
+R105:108 Stdlib.Lists.List <> <> lib
+R110:114 Stdlib.Arith.Arith <> <> lib
+R116:119 Stdlib.Bool.Bool <> <> lib
+R121:123 Stdlib.micromega.Lia <> <> lib
+R141:160 FullReducibilityWork <> <> lib
+R170:173 FullReducibilityWork Full <> mod
+def 188:196 <> saturated
+R210:213 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R206:209 nameless.DBSyntax <> term ind
+binder 199:202 <> seed:1
+binder 220:220 <> t:2
+binder 234:234 <> R:3
+R248:251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R237:245 FullReducibilityWork Full candidate rec
+R247:247 PositiveCandidatesWork <> R:3 var
+R252:252 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R276:280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 260:260 <> u:4
+R269:272 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R263:266 PositiveCandidatesWork <> seed:1 var
+R268:268 PositiveCandidatesWork <> u:4 var
+R273:273 PositiveCandidatesWork <> R:3 var
+R275:275 PositiveCandidatesWork <> u:4 var
+R281:281 PositiveCandidatesWork <> R:3 var
+R283:283 PositiveCandidatesWork <> t:2 var
+prf 292:306 <> saturated_intro
+binder 317:320 <> seed:5
+binder 322:322 <> t:6
+R331:334 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R325:328 PositiveCandidatesWork <> seed:5 var
+R330:330 PositiveCandidatesWork <> t:6 var
+R335:343 PositiveCandidatesWork <> saturated def
+R345:348 PositiveCandidatesWork <> seed:5 var
+R350:350 PositiveCandidatesWork <> t:6 var
+prf 410:423 <> saturated_elim
+binder 434:437 <> seed:7
+binder 439:439 <> R:8
+R453:458 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R442:450 FullReducibilityWork Full candidate rec
+R452:452 PositiveCandidatesWork <> R:8 var
+R459:459 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R483:487 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 467:467 <> u:9
+R476:479 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R470:473 PositiveCandidatesWork <> seed:7 var
+R475:475 PositiveCandidatesWork <> u:9 var
+R480:480 PositiveCandidatesWork <> R:8 var
+R482:482 PositiveCandidatesWork <> u:9 var
+binder 495:495 <> t:10
+R514:517 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R498:506 PositiveCandidatesWork <> saturated def
+R508:511 PositiveCandidatesWork <> seed:7 var
+R513:513 PositiveCandidatesWork <> t:10 var
+R518:518 PositiveCandidatesWork <> R:8 var
+R520:520 PositiveCandidatesWork <> t:10 var
+prf 587:605 <> saturated_candidate
+binder 616:619 <> seed:11
+R624:624 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R654:658 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 632:632 <> t:12
+R641:644 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R635:638 PositiveCandidatesWork <> seed:11 var
+R640:640 PositiveCandidatesWork <> t:12 var
+R645:651 FullReductionStructureWork <> full_SN def
+R653:653 PositiveCandidatesWork <> t:12 var
+R659:667 FullReducibilityWork Full candidate rec
+R670:678 PositiveCandidatesWork <> saturated def
+R680:683 PositiveCandidatesWork <> seed:11 var
+R750:756 FullReductionStructureWork <> full_SN def
+R758:778 FullReducibilityWork Full normalizing_candidate thm
+R750:756 FullReductionStructureWork <> full_SN def
+R758:778 FullReducibilityWork Full normalizing_candidate thm
+R821:836 FullReducibilityWork Full candidate_reduct proj
+R821:836 FullReducibilityWork Full candidate_reduct proj
+R893:909 FullReducibilityWork Full candidate_neutral proj
+R893:909 FullReducibilityWork Full candidate_neutral proj
+prf 972:989 <> saturated_monotone
+binder 1000:1003 <> seed:13
+binder 1005:1009 <> seed':14
+R1014:1014 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1042:1046 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1022:1022 <> t:15
+R1031:1034 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1025:1028 PositiveCandidatesWork <> seed:13 var
+R1030:1030 PositiveCandidatesWork <> t:15 var
+R1035:1039 PositiveCandidatesWork <> seed':14 var
+R1041:1041 PositiveCandidatesWork <> t:15 var
+binder 1054:1054 <> t:16
+R1073:1076 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1057:1065 PositiveCandidatesWork <> saturated def
+R1067:1070 PositiveCandidatesWork <> seed:13 var
+R1072:1072 PositiveCandidatesWork <> t:16 var
+R1077:1085 PositiveCandidatesWork <> saturated def
+R1087:1091 PositiveCandidatesWork <> seed':14 var
+R1093:1093 PositiveCandidatesWork <> t:16 var
+prf 1171:1185 <> saturated_least
+binder 1196:1199 <> seed:17
+binder 1201:1201 <> R:18
+R1217:1220 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1206:1214 FullReducibilityWork Full candidate rec
+R1216:1216 PositiveCandidatesWork <> R:18 var
+R1221:1221 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1245:1251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1229:1229 <> t:19
+R1238:1241 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1232:1235 PositiveCandidatesWork <> seed:17 var
+R1237:1237 PositiveCandidatesWork <> t:19 var
+R1242:1242 PositiveCandidatesWork <> R:18 var
+R1244:1244 PositiveCandidatesWork <> t:19 var
+binder 1259:1259 <> t:20
+R1278:1281 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1262:1270 PositiveCandidatesWork <> saturated def
+R1272:1275 PositiveCandidatesWork <> seed:17 var
+R1277:1277 PositiveCandidatesWork <> t:20 var
+R1282:1282 PositiveCandidatesWork <> R:18 var
+R1284:1284 PositiveCandidatesWork <> t:20 var
+R1300:1313 PositiveCandidatesWork <> saturated_elim thm
+R1300:1313 PositiveCandidatesWork <> saturated_elim thm
+prf 1327:1336 <> full_SN_in
+binder 1347:1347 <> x:21
+R1359:1362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1350:1356 FullReductionStructureWork <> full_SN def
+R1358:1358 PositiveCandidatesWork <> x:21 var
+R1363:1369 FullReductionStructureWork <> full_SN def
+R1372:1374 nameless.DBSyntax <> TIn constr
+R1376:1376 PositiveCandidatesWork <> x:21 var
+sec 1518:1535 <> PositiveFixedPoint
+var  1547:1551 PositiveFixedPoint Index
+def 1573:1578 <> family
+R1588:1591 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1583:1587 PositiveCandidatesWork <> PositiveFixedPoint.Index var
+R1596:1599 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1592:1595 nameless.DBSyntax <> term ind
+def 1617:1632 <> family_candidate
+R1639:1644 PositiveCandidatesWork <> family def
+binder 1635:1635 <> X:23
+binder 1657:1657 <> i:24
+R1660:1668 FullReducibilityWork Full candidate rec
+R1671:1671 PositiveCandidatesWork <> X:23 var
+R1673:1673 PositiveCandidatesWork <> i:24 var
+def 1688:1703 <> family_inclusion
+R1712:1717 PositiveCandidatesWork <> family def
+binder 1706:1706 <> X:25
+binder 1708:1708 <> Y:26
+binder 1730:1730 <> i:27
+binder 1732:1732 <> t:28
+R1740:1743 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1735:1735 PositiveCandidatesWork <> X:25 var
+R1737:1737 PositiveCandidatesWork <> i:27 var
+R1739:1739 PositiveCandidatesWork <> t:28 var
+R1744:1744 PositiveCandidatesWork <> Y:26 var
+R1746:1746 PositiveCandidatesWork <> i:27 var
+R1748:1748 PositiveCandidatesWork <> t:28 var
+var 1760:1760 PositiveFixedPoint F
+R1770:1773 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1764:1769 PositiveCandidatesWork <> family def
+R1774:1779 PositiveCandidatesWork <> family def
+var 1793:1802 PositiveFixedPoint F_monotone
+binder 1813:1813 <> X:31
+binder 1815:1815 <> Y:32
+R1838:1841 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1818:1833 PositiveCandidatesWork <> family_inclusion def
+R1835:1835 PositiveCandidatesWork <> X:31 var
+R1837:1837 PositiveCandidatesWork <> Y:32 var
+R1842:1857 PositiveCandidatesWork <> family_inclusion def
+R1860:1860 PositiveCandidatesWork <> PositiveFixedPoint.F var
+R1862:1862 PositiveCandidatesWork <> X:31 var
+R1866:1866 PositiveCandidatesWork <> PositiveFixedPoint.F var
+R1868:1868 PositiveCandidatesWork <> Y:32 var
+var 1883:1895 PositiveFixedPoint F_normalizing
+binder 1906:1906 <> i:35
+binder 1908:1908 <> t:36
+R1935:1938 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1911:1911 PositiveCandidatesWork <> PositiveFixedPoint.F var
+R1923:1929 FullReductionStructureWork <> full_SN def
+R1932:1932 PositiveCandidatesWork <> i:35 var
+R1934:1934 PositiveCandidatesWork <> t:36 var
+R1939:1945 FullReductionStructureWork <> full_SN def
+R1947:1947 PositiveCandidatesWork <> t:36 var
+def 1961:1968 <> prefixed
+R1975:1980 PositiveCandidatesWork <> family def
+binder 1971:1971 <> X:39
+binder 1993:1993 <> i:40
+binder 1995:1995 <> t:41
+R2005:2008 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1998:1998 PositiveCandidatesWork <> PositiveFixedPoint.F var
+R2000:2000 PositiveCandidatesWork <> X:39 var
+R2002:2002 PositiveCandidatesWork <> i:40 var
+R2004:2004 PositiveCandidatesWork <> t:41 var
+R2009:2009 PositiveCandidatesWork <> X:39 var
+R2011:2011 PositiveCandidatesWork <> i:40 var
+R2014:2016 nameless.DBSyntax <> TIn constr
+R2018:2018 PositiveCandidatesWork <> t:41 var
+def 2033:2043 <> positive_mu
+binder 2045:2045 <> i:42
+binder 2047:2047 <> t:43
+binder 2059:2059 <> X:44
+R2080:2083 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2062:2077 PositiveCandidatesWork <> family_candidate def
+R2079:2079 PositiveCandidatesWork <> X:44 var
+R2094:2097 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2084:2091 PositiveCandidatesWork <> prefixed def
+R2093:2093 PositiveCandidatesWork <> X:44 var
+R2098:2098 PositiveCandidatesWork <> X:44 var
+R2100:2100 PositiveCandidatesWork <> i:42 var
+R2102:2102 PositiveCandidatesWork <> t:43 var
+prf 2112:2131 <> normalizing_prefixed
+R2135:2142 PositiveCandidatesWork <> prefixed def
+R2154:2160 FullReductionStructureWork <> full_SN def
+R2191:2200 PositiveCandidatesWork <> full_SN_in thm
+R2213:2225 PositiveCandidatesWork <> PositiveFixedPoint.F_normalizing var
+R2191:2200 PositiveCandidatesWork <> full_SN_in thm
+R2213:2225 PositiveCandidatesWork <> PositiveFixedPoint.F_normalizing var
+prf 2248:2268 <> positive_mu_candidate
+R2272:2287 PositiveCandidatesWork <> family_candidate def
+R2289:2299 PositiveCandidatesWork <> positive_mu def
+R2369:2375 FullReductionStructureWork <> full_SN def
+R2388:2408 FullReducibilityWork Full normalizing_candidate thm
+R2411:2430 PositiveCandidatesWork <> normalizing_prefixed thm
+R2369:2375 FullReductionStructureWork <> full_SN def
+R2388:2408 FullReducibilityWork Full normalizing_candidate thm
+R2411:2430 PositiveCandidatesWork <> normalizing_prefixed thm
+R2470:2485 FullReducibilityWork Full candidate_reduct proj
+R2470:2485 FullReducibilityWork Full candidate_reduct proj
+R2546:2562 FullReducibilityWork Full candidate_neutral proj
+R2546:2562 FullReducibilityWork Full candidate_neutral proj
+prf 2631:2646 <> positive_mu_fold
+R2650:2657 PositiveCandidatesWork <> prefixed def
+R2659:2669 PositiveCandidatesWork <> positive_mu def
+R2721:2730 PositiveCandidatesWork <> PositiveFixedPoint.F_monotone var
+R2721:2730 PositiveCandidatesWork <> PositiveFixedPoint.F_monotone var
+prf 2796:2816 <> positive_mu_induction
+binder 2827:2827 <> X:45
+R2850:2853 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2832:2847 PositiveCandidatesWork <> family_candidate def
+R2849:2849 PositiveCandidatesWork <> X:45 var
+R2864:2867 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2854:2861 PositiveCandidatesWork <> prefixed def
+R2863:2863 PositiveCandidatesWork <> X:45 var
+R2868:2883 PositiveCandidatesWork <> family_inclusion def
+R2885:2895 PositiveCandidatesWork <> positive_mu def
+R2897:2897 PositiveCandidatesWork <> X:45 var
+def 2964:2969 <> rolled
+R2976:2981 PositiveCandidatesWork <> family def
+binder 2972:2972 <> X:46
+binder 2984:2984 <> i:47
+binder 2986:2986 <> t:48
+R2991:2999 PositiveCandidatesWork <> saturated def
+binder 3006:3006 <> z:49
+R3011:3017 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3019:3020 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3018:3018 <> u:50
+R3030:3033 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3022:3024 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3021:3021 PositiveCandidatesWork <> z:49 var
+R3025:3027 nameless.DBSyntax <> TIn constr
+R3029:3029 PositiveCandidatesWork <> u:50 var
+R3034:3034 PositiveCandidatesWork <> PositiveFixedPoint.F var
+R3036:3036 PositiveCandidatesWork <> X:46 var
+R3038:3038 PositiveCandidatesWork <> i:47 var
+R3040:3040 PositiveCandidatesWork <> u:50 var
+R3043:3043 PositiveCandidatesWork <> t:48 var
+prf 3052:3070 <> rolled_mu_candidate
+R3074:3089 PositiveCandidatesWork <> family_candidate def
+R3092:3097 PositiveCandidatesWork <> rolled def
+R3099:3109 PositiveCandidatesWork <> positive_mu def
+R3138:3156 PositiveCandidatesWork <> saturated_candidate thm
+R3138:3156 PositiveCandidatesWork <> saturated_candidate thm
+R3189:3198 PositiveCandidatesWork <> full_SN_in thm
+R3201:3213 PositiveCandidatesWork <> PositiveFixedPoint.F_normalizing var
+R3189:3198 PositiveCandidatesWork <> full_SN_in thm
+R3201:3213 PositiveCandidatesWork <> PositiveFixedPoint.F_normalizing var
+R3232:3241 PositiveCandidatesWork <> PositiveFixedPoint.F_monotone var
+R3232:3241 PositiveCandidatesWork <> PositiveFixedPoint.F_monotone var
+R3281:3301 FullReducibilityWork Full candidate_normalizing proj
+R3304:3324 PositiveCandidatesWork <> positive_mu_candidate thm
+R3281:3301 FullReducibilityWork Full candidate_normalizing proj
+R3304:3324 PositiveCandidatesWork <> positive_mu_candidate thm
+prf 3345:3363 <> rolled_mu_inclusion
+R3367:3382 PositiveCandidatesWork <> family_inclusion def
+R3385:3390 PositiveCandidatesWork <> rolled def
+R3392:3402 PositiveCandidatesWork <> positive_mu def
+R3405:3415 PositiveCandidatesWork <> positive_mu def
+R3451:3461 PositiveCandidatesWork <> positive_mu def
+R3467:3487 PositiveCandidatesWork <> positive_mu_candidate thm
+R3451:3461 PositiveCandidatesWork <> positive_mu def
+R3467:3487 PositiveCandidatesWork <> positive_mu_candidate thm
+R3528:3543 PositiveCandidatesWork <> positive_mu_fold thm
+R3528:3543 PositiveCandidatesWork <> positive_mu_fold thm
+prf 3559:3576 <> positive_mu_unfold
+R3580:3595 PositiveCandidatesWork <> family_inclusion def
+R3597:3607 PositiveCandidatesWork <> positive_mu def
+R3610:3615 PositiveCandidatesWork <> rolled def
+R3617:3627 PositiveCandidatesWork <> positive_mu def
+R3646:3666 PositiveCandidatesWork <> positive_mu_induction thm
+R3676:3694 PositiveCandidatesWork <> rolled_mu_candidate thm
+R3646:3666 PositiveCandidatesWork <> positive_mu_induction thm
+R3676:3694 PositiveCandidatesWork <> rolled_mu_candidate thm
+R3722:3736 PositiveCandidatesWork <> saturated_intro thm
+R3722:3736 PositiveCandidatesWork <> saturated_intro thm
+R3781:3790 PositiveCandidatesWork <> PositiveFixedPoint.F_monotone var
+R3800:3818 PositiveCandidatesWork <> rolled_mu_inclusion thm
+R3781:3790 PositiveCandidatesWork <> PositiveFixedPoint.F_monotone var
+R3800:3818 PositiveCandidatesWork <> rolled_mu_inclusion thm
+R3840:3857 PositiveCandidatesWork PositiveFixedPoint <> sec
+R3879:3897 PositiveCandidatesWork <> saturated_candidate thm
+R3918:3938 PositiveCandidatesWork <> positive_mu_candidate thm
+R3959:3974 PositiveCandidatesWork <> positive_mu_fold thm
+R3995:4012 PositiveCandidatesWork <> positive_mu_unfold thm

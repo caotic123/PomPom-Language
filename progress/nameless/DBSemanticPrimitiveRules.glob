@@ -1,0 +1,566 @@
+DIGEST 2e4567e2f73c74ccbd9ef0a2a136ceb4
+Fnameless.DBSemanticPrimitiveRules
+R98:102 Stdlib.Arith.Arith <> <> lib
+R104:106 Stdlib.micromega.Lia <> <> lib
+R124:151 nameless.DBSemanticOperators <> <> lib
+R161:164 nameless.DBFullReducibility Full <> mod
+prf 174:191 <> semantic_unit_type
+binder 202:202 <> k:1
+R205:218 nameless.DBSemanticJudgments <> semantic_value def
+R220:225 nameless.DBSyntax <> TUnitT constr
+R228:232 nameless.DBSyntax <> TSort constr
+R234:234 nameless.DBSemanticPrimitiveRules <> k:1 var
+R259:277 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R287:293 nameless.DBFullReductionStructure <> full_SN def
+R302:319 nameless.DBCalculusModel <> calculus_unit_type thm
+R259:277 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R287:293 nameless.DBFullReductionStructure <> full_SN def
+R302:319 nameless.DBCalculusModel <> calculus_unit_type thm
+prf 333:351 <> semantic_unit_value
+R355:368 nameless.DBSemanticJudgments <> semantic_value def
+R370:374 nameless.DBSyntax <> TUnit constr
+R376:381 nameless.DBSyntax <> TUnitT constr
+R398:423 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R434:451 nameless.DBCalculusModel <> calculus_unit_type thm
+R462:483 nameless.DBFullNormalForms <> normal_form_accessible thm
+R398:423 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R434:451 nameless.DBCalculusModel <> calculus_unit_type thm
+R462:483 nameless.DBFullNormalForms <> normal_form_accessible thm
+prf 537:553 <> semantic_uid_type
+R557:570 nameless.DBSemanticJudgments <> semantic_value def
+R572:575 nameless.DBSyntax <> TUId constr
+R578:582 nameless.DBSyntax <> TSort constr
+R601:619 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R629:635 nameless.DBFullReductionStructure <> full_SN def
+R644:660 nameless.DBCalculusModel <> calculus_uid_type thm
+R601:619 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R629:635 nameless.DBFullReductionStructure <> full_SN def
+R644:660 nameless.DBCalculusModel <> calculus_uid_type thm
+prf 674:685 <> semantic_tag
+binder 696:696 <> s:2
+R699:712 nameless.DBSemanticJudgments <> semantic_value def
+R715:718 nameless.DBSyntax <> TTag constr
+R720:720 nameless.DBSemanticPrimitiveRules <> s:2 var
+R723:726 nameless.DBSyntax <> TUId constr
+R751:776 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R787:803 nameless.DBCalculusModel <> calculus_uid_type thm
+R814:835 nameless.DBFullNormalForms <> normal_form_accessible thm
+R751:776 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R787:803 nameless.DBCalculusModel <> calculus_uid_type thm
+R814:835 nameless.DBFullNormalForms <> normal_form_accessible thm
+prf 889:907 <> semantic_enumu_type
+R911:924 nameless.DBSemanticJudgments <> semantic_value def
+R926:931 nameless.DBSyntax <> TEnumU constr
+R934:938 nameless.DBSyntax <> TSort constr
+R957:975 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R985:1006 nameless.DBEnumCandidates <> enumeration_computable ind
+R1015:1036 nameless.DBCalculusModel <> calculus_enum_universe thm
+R957:975 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R985:1006 nameless.DBEnumCandidates <> enumeration_computable ind
+R1015:1036 nameless.DBCalculusModel <> calculus_enum_universe thm
+prf 1050:1062 <> semantic_nile
+R1066:1079 nameless.DBSemanticJudgments <> semantic_value def
+R1081:1085 nameless.DBSyntax <> TNilE constr
+R1087:1092 nameless.DBSyntax <> TEnumU constr
+R1109:1134 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R1145:1166 nameless.DBCalculusModel <> calculus_enum_universe thm
+R1109:1134 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R1145:1166 nameless.DBCalculusModel <> calculus_enum_universe thm
+prf 1196:1209 <> semantic_conse
+binder 1220:1222 <> tag:3
+binder 1224:1224 <> E:4
+R1250:1253 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1227:1240 nameless.DBSemanticJudgments <> semantic_value def
+R1242:1244 nameless.DBSemanticPrimitiveRules <> tag:3 var
+R1246:1249 nameless.DBSyntax <> TUId constr
+R1277:1282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1254:1267 nameless.DBSemanticJudgments <> semantic_value def
+R1269:1269 nameless.DBSemanticPrimitiveRules <> E:4 var
+R1271:1276 nameless.DBSyntax <> TEnumU constr
+R1283:1296 nameless.DBSemanticJudgments <> semantic_value def
+R1299:1304 nameless.DBSyntax <> TConsE constr
+R1310:1310 nameless.DBSemanticPrimitiveRules <> E:4 var
+R1306:1308 nameless.DBSemanticPrimitiveRules <> tag:3 var
+R1313:1318 nameless.DBSyntax <> TEnumU constr
+R1359:1384 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R1395:1416 nameless.DBCalculusModel <> calculus_enum_universe thm
+R1359:1384 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R1395:1416 nameless.DBCalculusModel <> calculus_enum_universe thm
+R1447:1451 Corelib.Init.Logic <> proj1 thm
+R1454:1479 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R1502:1521 nameless.DBSemanticOperators <> semantic_enum_member thm
+R1447:1451 Corelib.Init.Logic <> proj1 thm
+R1454:1479 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R1502:1521 nameless.DBSemanticOperators <> semantic_enum_member thm
+prf 1536:1549 <> semantic_enumt
+binder 1560:1560 <> E:5
+R1586:1589 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1563:1576 nameless.DBSemanticJudgments <> semantic_value def
+R1578:1578 nameless.DBSemanticPrimitiveRules <> E:5 var
+R1580:1585 nameless.DBSyntax <> TEnumU constr
+R1590:1603 nameless.DBSemanticJudgments <> semantic_value def
+R1606:1611 nameless.DBSyntax <> TEnumT constr
+R1613:1613 nameless.DBSemanticPrimitiveRules <> E:5 var
+R1617:1621 nameless.DBSyntax <> TSort constr
+R1655:1673 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R1684:1696 nameless.DBEnumCandidates <> enum_elements def
+R1708:1725 nameless.DBCalculusModel <> calculus_enum_type thm
+R1655:1673 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R1684:1696 nameless.DBEnumCandidates <> enum_elements def
+R1708:1725 nameless.DBCalculusModel <> calculus_enum_type thm
+R1737:1741 Corelib.Init.Logic <> proj1 thm
+R1744:1769 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R1737:1741 Corelib.Init.Logic <> proj1 thm
+R1744:1769 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+prf 1792:1804 <> semantic_zero
+binder 1815:1817 <> tag:6
+binder 1819:1819 <> E:7
+R1845:1848 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1822:1835 nameless.DBSemanticJudgments <> semantic_value def
+R1837:1839 nameless.DBSemanticPrimitiveRules <> tag:6 var
+R1841:1844 nameless.DBSyntax <> TUId constr
+R1872:1877 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1849:1862 nameless.DBSemanticJudgments <> semantic_value def
+R1864:1864 nameless.DBSemanticPrimitiveRules <> E:7 var
+R1866:1871 nameless.DBSyntax <> TEnumU constr
+R1878:1891 nameless.DBSemanticJudgments <> semantic_value def
+R1893:1898 nameless.DBSyntax <> TEZero constr
+R1901:1906 nameless.DBSyntax <> TEnumT constr
+R1909:1914 nameless.DBSyntax <> TConsE constr
+R1920:1920 nameless.DBSemanticPrimitiveRules <> E:7 var
+R1916:1918 nameless.DBSemanticPrimitiveRules <> tag:6 var
+R1968:1972 Corelib.Init.Logic <> proj1 thm
+R1975:2000 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R1968:1972 Corelib.Init.Logic <> proj1 thm
+R1975:2000 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R2032:2036 Corelib.Init.Logic <> proj1 thm
+R2039:2064 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R2032:2036 Corelib.Init.Logic <> proj1 thm
+R2039:2064 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R2092:2117 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R2139:2156 nameless.DBCalculusModel <> calculus_enum_type thm
+R2169:2185 nameless.DBEnumCandidates <> full_SN_cons_enum thm
+R2092:2117 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R2139:2156 nameless.DBCalculusModel <> calculus_enum_type thm
+R2169:2185 nameless.DBEnumCandidates <> full_SN_cons_enum thm
+R2202:2221 nameless.DBEnumCandidates <> enum_zero_computable thm
+R2202:2221 nameless.DBEnumCandidates <> enum_zero_computable thm
+prf 2235:2247 <> semantic_succ
+binder 2258:2260 <> tag:8
+binder 2262:2262 <> E:9
+binder 2264:2264 <> e:10
+R2292:2295 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2269:2282 nameless.DBSemanticJudgments <> semantic_value def
+R2284:2286 nameless.DBSemanticPrimitiveRules <> tag:8 var
+R2288:2291 nameless.DBSyntax <> TUId constr
+R2319:2322 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2296:2309 nameless.DBSemanticJudgments <> semantic_value def
+R2311:2311 nameless.DBSemanticPrimitiveRules <> E:9 var
+R2313:2318 nameless.DBSyntax <> TEnumU constr
+R2350:2355 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2323:2336 nameless.DBSemanticJudgments <> semantic_value def
+R2338:2338 nameless.DBSemanticPrimitiveRules <> e:10 var
+R2341:2346 nameless.DBSyntax <> TEnumT constr
+R2348:2348 nameless.DBSemanticPrimitiveRules <> E:9 var
+R2356:2369 nameless.DBSemanticJudgments <> semantic_value def
+R2372:2377 nameless.DBSyntax <> TESucc constr
+R2379:2379 nameless.DBSemanticPrimitiveRules <> e:10 var
+R2383:2388 nameless.DBSyntax <> TEnumT constr
+R2391:2396 nameless.DBSyntax <> TConsE constr
+R2402:2402 nameless.DBSemanticPrimitiveRules <> E:9 var
+R2398:2400 nameless.DBSemanticPrimitiveRules <> tag:8 var
+R2455:2459 Corelib.Init.Logic <> proj1 thm
+R2462:2487 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R2455:2459 Corelib.Init.Logic <> proj1 thm
+R2462:2487 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R2519:2523 Corelib.Init.Logic <> proj1 thm
+R2526:2551 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R2519:2523 Corelib.Init.Logic <> proj1 thm
+R2526:2551 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R2579:2604 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R2626:2643 nameless.DBCalculusModel <> calculus_enum_type thm
+R2656:2672 nameless.DBEnumCandidates <> full_SN_cons_enum thm
+R2579:2604 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R2626:2643 nameless.DBCalculusModel <> calculus_enum_type thm
+R2656:2672 nameless.DBEnumCandidates <> full_SN_cons_enum thm
+R2685:2704 nameless.DBEnumCandidates <> enum_succ_computable thm
+R2685:2704 nameless.DBEnumCandidates <> enum_succ_computable thm
+R2739:2759 nameless.DBSemanticJudgments <> semantic_value_member thm
+R2773:2790 nameless.DBCalculusModel <> calculus_enum_type thm
+R2739:2759 nameless.DBSemanticJudgments <> semantic_value_member thm
+R2773:2790 nameless.DBCalculusModel <> calculus_enum_type thm
+prf 2814:2836 <> enum_family_type_interp
+binder 2847:2847 <> k:11
+binder 2849:2849 <> E:12
+R2861:2866 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2852:2858 nameless.DBFullReductionStructure <> full_SN def
+R2860:2860 nameless.DBSemanticPrimitiveRules <> E:12 var
+R2867:2881 nameless.DBCalculusModel <> calculus_interp def
+R2884:2884 Corelib.Init.Datatypes <> S constr
+R2886:2886 nameless.DBSemanticPrimitiveRules <> k:11 var
+R2890:2892 nameless.DBSyntax <> TPi constr
+R2906:2910 nameless.DBSyntax <> TSort constr
+R2912:2912 nameless.DBSemanticPrimitiveRules <> k:11 var
+R2895:2900 nameless.DBSyntax <> TEnumT constr
+R2902:2902 nameless.DBSemanticPrimitiveRules <> E:12 var
+R2921:2938 nameless.DBFullReducibility Full dependent_function def
+R2941:2953 nameless.DBEnumCandidates <> enum_elements def
+R2955:2955 nameless.DBSemanticPrimitiveRules <> E:12 var
+R2968:2980 nameless.DBCalculusModel <> calculus_type def
+R2982:2982 nameless.DBSemanticPrimitiveRules <> k:11 var
+R3017:3034 nameless.DBSemanticFamilies <> calculus_pi_interp thm
+R3048:3065 nameless.DBCalculusModel <> calculus_enum_type thm
+R3017:3034 nameless.DBSemanticFamilies <> calculus_pi_interp thm
+R3048:3065 nameless.DBCalculusModel <> calculus_enum_type thm
+R3091:3110 nameless.DBCalculusModel <> calculus_sort_interp thm
+R3091:3110 nameless.DBCalculusModel <> calculus_sort_interp thm
+prf 3129:3140 <> semantic_epi
+binder 3151:3151 <> k:13
+binder 3153:3153 <> E:14
+binder 3155:3155 <> P:15
+R3183:3186 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3160:3173 nameless.DBSemanticJudgments <> semantic_value def
+R3175:3175 nameless.DBSemanticPrimitiveRules <> E:14 var
+R3177:3182 nameless.DBSyntax <> TEnumU constr
+R3230:3235 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3187:3200 nameless.DBSemanticJudgments <> semantic_value def
+R3202:3202 nameless.DBSemanticPrimitiveRules <> P:15 var
+R3205:3207 nameless.DBSyntax <> TPi constr
+R3221:3225 nameless.DBSyntax <> TSort constr
+R3227:3227 nameless.DBSemanticPrimitiveRules <> k:13 var
+R3210:3215 nameless.DBSyntax <> TEnumT constr
+R3217:3217 nameless.DBSemanticPrimitiveRules <> E:14 var
+R3236:3249 nameless.DBSemanticJudgments <> semantic_value def
+R3252:3255 nameless.DBSyntax <> TEPi constr
+R3261:3261 nameless.DBSemanticPrimitiveRules <> P:15 var
+R3259:3259 nameless.DBSemanticPrimitiveRules <> E:14 var
+R3257:3257 nameless.DBSemanticPrimitiveRules <> k:13 var
+R3265:3269 nameless.DBSyntax <> TSort constr
+R3271:3271 nameless.DBSemanticPrimitiveRules <> k:13 var
+R3318:3337 nameless.DBSemanticOperators <> semantic_enum_member thm
+R3318:3337 nameless.DBSemanticOperators <> semantic_enum_member thm
+R3366:3386 nameless.DBSemanticJudgments <> semantic_value_member thm
+R3400:3422 nameless.DBSemanticPrimitiveRules <> enum_family_type_interp thm
+R3429:3462 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R3366:3386 nameless.DBSemanticJudgments <> semantic_value_member thm
+R3400:3422 nameless.DBSemanticPrimitiveRules <> enum_family_type_interp thm
+R3429:3462 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R3487:3505 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R3508:3521 nameless.DBEnumComputability <> epi_computable thm
+R3541:3545 Corelib.Init.Logic <> proj1 thm
+R3558:3562 Corelib.Init.Logic <> proj2 thm
+R3487:3505 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R3508:3521 nameless.DBEnumComputability <> epi_computable thm
+R3541:3545 Corelib.Init.Logic <> proj1 thm
+R3558:3562 Corelib.Init.Logic <> proj2 thm
+prf 3581:3595 <> semantic_switch
+binder 3606:3606 <> k:16
+binder 3608:3608 <> E:17
+binder 3610:3610 <> P:18
+binder 3612:3612 <> p:19
+binder 3614:3614 <> e:20
+R3642:3645 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3619:3632 nameless.DBSemanticJudgments <> semantic_value def
+R3634:3634 nameless.DBSemanticPrimitiveRules <> E:17 var
+R3636:3641 nameless.DBSyntax <> TEnumU constr
+R3689:3694 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3646:3659 nameless.DBSemanticJudgments <> semantic_value def
+R3661:3661 nameless.DBSemanticPrimitiveRules <> P:18 var
+R3664:3666 nameless.DBSyntax <> TPi constr
+R3680:3684 nameless.DBSyntax <> TSort constr
+R3686:3686 nameless.DBSemanticPrimitiveRules <> k:16 var
+R3669:3674 nameless.DBSyntax <> TEnumT constr
+R3676:3676 nameless.DBSemanticPrimitiveRules <> E:17 var
+R3724:3727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3695:3708 nameless.DBSemanticJudgments <> semantic_value def
+R3710:3710 nameless.DBSemanticPrimitiveRules <> p:19 var
+R3713:3716 nameless.DBSyntax <> TEPi constr
+R3722:3722 nameless.DBSemanticPrimitiveRules <> P:18 var
+R3720:3720 nameless.DBSemanticPrimitiveRules <> E:17 var
+R3718:3718 nameless.DBSemanticPrimitiveRules <> k:16 var
+R3755:3760 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3728:3741 nameless.DBSemanticJudgments <> semantic_value def
+R3743:3743 nameless.DBSemanticPrimitiveRules <> e:20 var
+R3746:3751 nameless.DBSyntax <> TEnumT constr
+R3753:3753 nameless.DBSemanticPrimitiveRules <> E:17 var
+R3761:3774 nameless.DBSemanticJudgments <> semantic_value def
+R3777:3783 nameless.DBSyntax <> TSwitch constr
+R3793:3793 nameless.DBSemanticPrimitiveRules <> e:20 var
+R3791:3791 nameless.DBSemanticPrimitiveRules <> p:19 var
+R3789:3789 nameless.DBSemanticPrimitiveRules <> P:18 var
+R3787:3787 nameless.DBSemanticPrimitiveRules <> E:17 var
+R3785:3785 nameless.DBSemanticPrimitiveRules <> k:16 var
+R3797:3800 nameless.DBSyntax <> TApp constr
+R3804:3804 nameless.DBSemanticPrimitiveRules <> e:20 var
+R3802:3802 nameless.DBSemanticPrimitiveRules <> P:18 var
+R3861:3880 nameless.DBSemanticOperators <> semantic_enum_member thm
+R3861:3880 nameless.DBSemanticOperators <> semantic_enum_member thm
+R3909:3942 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R3909:3942 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R3971:3991 nameless.DBSemanticJudgments <> semantic_value_member thm
+R4005:4027 nameless.DBSemanticPrimitiveRules <> enum_family_type_interp thm
+R3971:3991 nameless.DBSemanticJudgments <> semantic_value_member thm
+R4005:4027 nameless.DBSemanticPrimitiveRules <> enum_family_type_interp thm
+R4063:4079 nameless.DBSwitchComputability <> switch_computable thm
+R4099:4103 Corelib.Init.Logic <> proj1 thm
+R4116:4120 Corelib.Init.Logic <> proj2 thm
+R4063:4079 nameless.DBSwitchComputability <> switch_computable thm
+R4099:4103 Corelib.Init.Logic <> proj1 thm
+R4116:4120 Corelib.Init.Logic <> proj2 thm
+R4141:4162 nameless.DBSemanticJudgments <> semantic_value_relevel thm
+R4181:4194 nameless.DBEnumComputability <> epi_computable thm
+R4214:4218 Corelib.Init.Logic <> proj1 thm
+R4231:4235 Corelib.Init.Logic <> proj2 thm
+R4141:4162 nameless.DBSemanticJudgments <> semantic_value_relevel thm
+R4181:4194 nameless.DBEnumComputability <> epi_computable thm
+R4214:4218 Corelib.Init.Logic <> proj1 thm
+R4231:4235 Corelib.Init.Logic <> proj2 thm
+R4255:4275 nameless.DBSemanticJudgments <> semantic_value_member thm
+R4289:4306 nameless.DBCalculusModel <> calculus_enum_type thm
+R4255:4275 nameless.DBSemanticJudgments <> semantic_value_member thm
+R4289:4306 nameless.DBCalculusModel <> calculus_enum_type thm
+prf 4329:4342 <> semantic_idesc
+binder 4353:4354 <> IT:21
+binder 4356:4357 <> RI:22
+R4378:4381 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4360:4371 nameless.DBInterpretationComputability <> small_interp def
+R4373:4374 nameless.DBSemanticPrimitiveRules <> IT:21 var
+R4376:4377 nameless.DBSemanticPrimitiveRules <> RI:22 var
+R4382:4395 nameless.DBSemanticJudgments <> semantic_value def
+R4398:4403 nameless.DBSyntax <> TIDesc constr
+R4405:4406 nameless.DBSemanticPrimitiveRules <> IT:21 var
+R4410:4414 nameless.DBSyntax <> TSort constr
+R4441:4459 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R4470:4479 nameless.DBInterpretationComputability <> small_code def
+R4496:4525 nameless.DBCalculusModel <> calculus_description_formation thm
+R4441:4459 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R4470:4479 nameless.DBInterpretationComputability <> small_code def
+R4496:4525 nameless.DBCalculusModel <> calculus_description_formation thm
+prf 4539:4564 <> semantic_description_value
+binder 4575:4576 <> IT:23
+binder 4578:4579 <> RI:24
+binder 4581:4581 <> D:25
+R4604:4607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4586:4597 nameless.DBInterpretationComputability <> small_interp def
+R4599:4600 nameless.DBSemanticPrimitiveRules <> IT:23 var
+R4602:4603 nameless.DBSemanticPrimitiveRules <> RI:24 var
+R4623:4626 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4608:4617 nameless.DBInterpretationComputability <> small_code def
+R4619:4620 nameless.DBSemanticPrimitiveRules <> RI:24 var
+R4622:4622 nameless.DBSemanticPrimitiveRules <> D:25 var
+R4627:4640 nameless.DBSemanticJudgments <> semantic_value def
+R4642:4642 nameless.DBSemanticPrimitiveRules <> D:25 var
+R4645:4650 nameless.DBSyntax <> TIDesc constr
+R4652:4653 nameless.DBSemanticPrimitiveRules <> IT:23 var
+R4695:4720 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R4735:4764 nameless.DBCalculusModel <> calculus_description_formation thm
+R4695:4720 nameless.DBSemanticJudgments <> semantic_value_from_member thm
+R4735:4764 nameless.DBCalculusModel <> calculus_description_formation thm
+prf 4811:4823 <> semantic_ivar
+binder 4834:4835 <> IT:26
+binder 4837:4838 <> RI:27
+binder 4840:4840 <> i:28
+R4861:4864 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4843:4854 nameless.DBInterpretationComputability <> small_interp def
+R4856:4857 nameless.DBSemanticPrimitiveRules <> IT:26 var
+R4859:4860 nameless.DBSemanticPrimitiveRules <> RI:27 var
+R4884:4889 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4865:4878 nameless.DBSemanticJudgments <> semantic_value def
+R4880:4880 nameless.DBSemanticPrimitiveRules <> i:28 var
+R4882:4883 nameless.DBSemanticPrimitiveRules <> IT:26 var
+R4890:4903 nameless.DBSemanticJudgments <> semantic_value def
+R4906:4910 nameless.DBSyntax <> TIVar constr
+R4912:4912 nameless.DBSemanticPrimitiveRules <> i:28 var
+R4916:4921 nameless.DBSyntax <> TIDesc constr
+R4923:4924 nameless.DBSemanticPrimitiveRules <> IT:26 var
+R4966:4991 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R4966:4991 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R5037:5057 nameless.DBSemanticFamilies <> small_semantic_member thm
+R5079:5083 Corelib.Init.Logic <> proj1 thm
+R5086:5111 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R5037:5057 nameless.DBSemanticFamilies <> small_semantic_member thm
+R5079:5083 Corelib.Init.Logic <> proj1 thm
+R5086:5111 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+prf 5135:5145 <> semantic_i1
+binder 5156:5157 <> IT:29
+binder 5159:5160 <> RI:30
+R5181:5184 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5163:5174 nameless.DBInterpretationComputability <> small_interp def
+R5176:5177 nameless.DBSemanticPrimitiveRules <> IT:29 var
+R5179:5180 nameless.DBSemanticPrimitiveRules <> RI:30 var
+R5185:5198 nameless.DBSemanticJudgments <> semantic_value def
+R5200:5202 nameless.DBSyntax <> TI1 constr
+R5205:5210 nameless.DBSyntax <> TIDesc constr
+R5212:5213 nameless.DBSemanticPrimitiveRules <> IT:29 var
+R5239:5264 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R5239:5264 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+prf 5305:5317 <> semantic_ibot
+binder 5328:5329 <> IT:31
+binder 5331:5332 <> RI:32
+R5353:5356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5335:5346 nameless.DBInterpretationComputability <> small_interp def
+R5348:5349 nameless.DBSemanticPrimitiveRules <> IT:31 var
+R5351:5352 nameless.DBSemanticPrimitiveRules <> RI:32 var
+R5357:5370 nameless.DBSemanticJudgments <> semantic_value def
+R5372:5376 nameless.DBSyntax <> TIBot constr
+R5379:5384 nameless.DBSyntax <> TIDesc constr
+R5386:5387 nameless.DBSemanticPrimitiveRules <> IT:31 var
+R5413:5438 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R5413:5438 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+prf 5479:5492 <> semantic_iprod
+binder 5503:5504 <> IT:33
+binder 5506:5507 <> RI:34
+binder 5509:5509 <> A:35
+binder 5511:5511 <> B:36
+R5534:5537 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5516:5527 nameless.DBInterpretationComputability <> small_interp def
+R5529:5530 nameless.DBSemanticPrimitiveRules <> IT:33 var
+R5532:5533 nameless.DBSemanticPrimitiveRules <> RI:34 var
+R5566:5569 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5538:5551 nameless.DBSemanticJudgments <> semantic_value def
+R5553:5553 nameless.DBSemanticPrimitiveRules <> A:35 var
+R5556:5561 nameless.DBSyntax <> TIDesc constr
+R5563:5564 nameless.DBSemanticPrimitiveRules <> IT:33 var
+R5598:5603 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5570:5583 nameless.DBSemanticJudgments <> semantic_value def
+R5585:5585 nameless.DBSemanticPrimitiveRules <> B:36 var
+R5588:5593 nameless.DBSyntax <> TIDesc constr
+R5595:5596 nameless.DBSemanticPrimitiveRules <> IT:33 var
+R5604:5617 nameless.DBSemanticJudgments <> semantic_value def
+R5620:5625 nameless.DBSyntax <> TIProd constr
+R5629:5629 nameless.DBSemanticPrimitiveRules <> B:36 var
+R5627:5627 nameless.DBSemanticPrimitiveRules <> A:35 var
+R5633:5638 nameless.DBSyntax <> TIDesc constr
+R5640:5641 nameless.DBSemanticPrimitiveRules <> IT:33 var
+R5688:5713 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R5688:5713 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R5758:5784 nameless.DBSemanticOperators <> semantic_description_member thm
+R5758:5784 nameless.DBSemanticOperators <> semantic_description_member thm
+R5758:5784 nameless.DBSemanticOperators <> semantic_description_member thm
+prf 5811:5822 <> semantic_ipi
+binder 5833:5834 <> IT:37
+binder 5836:5837 <> RI:38
+binder 5839:5839 <> A:39
+binder 5841:5841 <> D:40
+R5864:5867 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5846:5857 nameless.DBInterpretationComputability <> small_interp def
+R5859:5860 nameless.DBSemanticPrimitiveRules <> IT:37 var
+R5862:5863 nameless.DBSemanticPrimitiveRules <> RI:38 var
+R5894:5897 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5868:5881 nameless.DBSemanticJudgments <> semantic_value def
+R5883:5883 nameless.DBSemanticPrimitiveRules <> A:39 var
+R5886:5890 nameless.DBSyntax <> TSort constr
+R5936:5941 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5898:5911 nameless.DBSemanticJudgments <> semantic_value def
+R5913:5913 nameless.DBSemanticPrimitiveRules <> D:40 var
+R5916:5920 nameless.DBSyntax <> arrow def
+R5925:5930 nameless.DBSyntax <> TIDesc constr
+R5932:5933 nameless.DBSemanticPrimitiveRules <> IT:37 var
+R5922:5922 nameless.DBSemanticPrimitiveRules <> A:39 var
+R5942:5955 nameless.DBSemanticJudgments <> semantic_value def
+R5958:5961 nameless.DBSyntax <> TIPi constr
+R5965:5965 nameless.DBSemanticPrimitiveRules <> D:40 var
+R5963:5963 nameless.DBSemanticPrimitiveRules <> A:39 var
+R5969:5974 nameless.DBSyntax <> TIDesc constr
+R5976:5977 nameless.DBSemanticPrimitiveRules <> IT:37 var
+R6027:6045 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6027:6045 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6080:6108 nameless.DBSemanticOperators <> semantic_description_function thm
+R6080:6108 nameless.DBSemanticOperators <> semantic_description_function thm
+R6150:6175 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R6150:6175 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R6207:6211 nameless.DBDescriptionCandidates <> dc_pi constr
+R6232:6236 Corelib.Init.Logic <> proj1 thm
+R6249:6253 Corelib.Init.Logic <> proj2 thm
+R6207:6211 nameless.DBDescriptionCandidates <> dc_pi constr
+R6232:6236 Corelib.Init.Logic <> proj1 thm
+R6249:6253 Corelib.Init.Logic <> proj2 thm
+prf 6272:6284 <> semantic_isig
+binder 6295:6296 <> IT:41
+binder 6298:6299 <> RI:42
+binder 6301:6301 <> A:43
+binder 6303:6303 <> D:44
+R6326:6329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6308:6319 nameless.DBInterpretationComputability <> small_interp def
+R6321:6322 nameless.DBSemanticPrimitiveRules <> IT:41 var
+R6324:6325 nameless.DBSemanticPrimitiveRules <> RI:42 var
+R6356:6359 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6330:6343 nameless.DBSemanticJudgments <> semantic_value def
+R6345:6345 nameless.DBSemanticPrimitiveRules <> A:43 var
+R6348:6352 nameless.DBSyntax <> TSort constr
+R6398:6403 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6360:6373 nameless.DBSemanticJudgments <> semantic_value def
+R6375:6375 nameless.DBSemanticPrimitiveRules <> D:44 var
+R6378:6382 nameless.DBSyntax <> arrow def
+R6387:6392 nameless.DBSyntax <> TIDesc constr
+R6394:6395 nameless.DBSemanticPrimitiveRules <> IT:41 var
+R6384:6384 nameless.DBSemanticPrimitiveRules <> A:43 var
+R6404:6417 nameless.DBSemanticJudgments <> semantic_value def
+R6420:6424 nameless.DBSyntax <> TISig constr
+R6428:6428 nameless.DBSemanticPrimitiveRules <> D:44 var
+R6426:6426 nameless.DBSemanticPrimitiveRules <> A:43 var
+R6432:6437 nameless.DBSyntax <> TIDesc constr
+R6439:6440 nameless.DBSemanticPrimitiveRules <> IT:41 var
+R6490:6508 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6490:6508 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6543:6571 nameless.DBSemanticOperators <> semantic_description_function thm
+R6543:6571 nameless.DBSemanticOperators <> semantic_description_function thm
+R6613:6638 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R6613:6638 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R6670:6677 nameless.DBDescriptionCandidates <> dc_sigma constr
+R6698:6702 Corelib.Init.Logic <> proj1 thm
+R6715:6719 Corelib.Init.Logic <> proj2 thm
+R6670:6677 nameless.DBDescriptionCandidates <> dc_sigma constr
+R6698:6702 Corelib.Init.Logic <> proj1 thm
+R6715:6719 Corelib.Init.Logic <> proj2 thm
+prf 6738:6753 <> semantic_ichoice
+binder 6764:6765 <> IT:45
+binder 6767:6768 <> RI:46
+binder 6770:6770 <> E:47
+binder 6772:6772 <> D:48
+R6795:6798 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6777:6788 nameless.DBInterpretationComputability <> small_interp def
+R6790:6791 nameless.DBSemanticPrimitiveRules <> IT:45 var
+R6793:6794 nameless.DBSemanticPrimitiveRules <> RI:46 var
+R6822:6825 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6799:6812 nameless.DBSemanticJudgments <> semantic_value def
+R6814:6814 nameless.DBSemanticPrimitiveRules <> E:47 var
+R6816:6821 nameless.DBSyntax <> TEnumU constr
+R6873:6878 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6826:6839 nameless.DBSemanticJudgments <> semantic_value def
+R6841:6841 nameless.DBSemanticPrimitiveRules <> D:48 var
+R6844:6848 nameless.DBSyntax <> arrow def
+R6862:6867 nameless.DBSyntax <> TIDesc constr
+R6869:6870 nameless.DBSemanticPrimitiveRules <> IT:45 var
+R6851:6856 nameless.DBSyntax <> TEnumT constr
+R6858:6858 nameless.DBSemanticPrimitiveRules <> E:47 var
+R6879:6892 nameless.DBSemanticJudgments <> semantic_value def
+R6895:6902 nameless.DBSyntax <> TIChoice constr
+R6906:6906 nameless.DBSemanticPrimitiveRules <> D:48 var
+R6904:6904 nameless.DBSemanticPrimitiveRules <> E:47 var
+R6910:6915 nameless.DBSyntax <> TIDesc constr
+R6917:6918 nameless.DBSemanticPrimitiveRules <> IT:45 var
+R6972:6976 Corelib.Init.Logic <> proj1 thm
+R6979:7004 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R6972:6976 Corelib.Init.Logic <> proj1 thm
+R6979:7004 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R7037:7060 nameless.DBCalculusModel <> universe_zero_small_type thm
+R7067:7084 nameless.DBCalculusModel <> calculus_enum_type thm
+R7037:7060 nameless.DBCalculusModel <> universe_zero_small_type thm
+R7067:7084 nameless.DBCalculusModel <> calculus_enum_type thm
+R7118:7146 nameless.DBSemanticOperators <> semantic_description_function thm
+R7155:7160 nameless.DBSyntax <> TEnumT constr
+R7118:7146 nameless.DBSemanticOperators <> semantic_description_function thm
+R7155:7160 nameless.DBSyntax <> TEnumT constr
+R7196:7221 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R7196:7221 nameless.DBSemanticPrimitiveRules <> semantic_description_value thm
+R7253:7261 nameless.DBDescriptionCandidates <> dc_choice constr
+R7282:7286 Corelib.Init.Logic <> proj1 thm
+R7299:7303 Corelib.Init.Logic <> proj2 thm
+R7253:7261 nameless.DBDescriptionCandidates <> dc_choice constr
+R7282:7286 Corelib.Init.Logic <> proj1 thm
+R7299:7303 Corelib.Init.Logic <> proj2 thm
+R7335:7346 nameless.DBSemanticPrimitiveRules <> semantic_epi thm
+R7367:7381 nameless.DBSemanticPrimitiveRules <> semantic_switch thm
+R7402:7413 nameless.DBSemanticPrimitiveRules <> semantic_ipi thm
+R7434:7449 nameless.DBSemanticPrimitiveRules <> semantic_ichoice thm

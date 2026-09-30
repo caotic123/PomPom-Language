@@ -1,0 +1,324 @@
+DIGEST 77bcd5a7202ac47fd31336d6524e44ea
+Fannotated.AFunctions
+R110:113 Stdlib.Lists.List <> <> lib
+R115:119 Stdlib.Arith.Arith <> <> lib
+R137:159 annotated.ASubstitution <> <> lib
+R169:181 Stdlib.Lists.List ListNotations <> mod
+prf 191:205 <> arrow_formation
+binder 216:220 <> Gamma:1
+binder 222:222 <> A:2
+binder 224:224 <> B:3
+binder 226:226 <> j:4
+binder 228:228 <> k:5
+R261:264 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R233:238 annotated.ATyping <> typing ind
+R240:244 annotated.AFunctions <> Gamma:1 var
+R246:246 annotated.AFunctions <> A:2 var
+R249:257 annotated.AErase Raw TSort constr
+R259:259 annotated.AFunctions <> j:4 var
+R293:298 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R265:270 annotated.ATyping <> typing ind
+R272:276 annotated.AFunctions <> Gamma:1 var
+R278:278 annotated.AFunctions <> B:3 var
+R281:289 annotated.AErase Raw TSort constr
+R291:291 annotated.AFunctions <> k:5 var
+R299:304 annotated.ATyping <> typing ind
+R306:310 annotated.AFunctions <> Gamma:1 var
+R313:317 annotated.ASyntax <> arrow def
+R319:319 annotated.AFunctions <> A:2 var
+R321:321 annotated.AFunctions <> B:3 var
+R325:333 annotated.AErase Raw TSort constr
+R336:342 Stdlib.Arith.PeanoNat Nat max def
+R344:344 annotated.AFunctions <> j:4 var
+R346:346 annotated.AFunctions <> k:5 var
+R395:399 annotated.ASyntax <> arrow def
+R409:413 annotated.ATyping <> ty_pi constr
+R409:413 annotated.ATyping <> ty_pi constr
+R438:446 annotated.AWeakening <> weakening thm
+R462:475 annotated.ATyping <> typing_erasure thm
+R438:446 annotated.AWeakening <> weakening thm
+R462:475 annotated.ATyping <> typing_erasure thm
+def 506:513 <> identity
+binder 515:515 <> A:6
+R520:523 annotated.ASyntax <> TLam constr
+R525:525 annotated.AFunctions <> A:6 var
+R528:531 annotated.ASyntax <> lift def
+R537:537 annotated.AFunctions <> A:6 var
+R541:544 annotated.ASyntax <> TVar constr
+def 561:568 <> constant
+binder 570:570 <> A:7
+binder 572:572 <> B:8
+binder 574:574 <> t:9
+R579:582 annotated.ASyntax <> TLam constr
+R584:584 annotated.AFunctions <> B:8 var
+R587:590 annotated.ASyntax <> lift def
+R596:596 annotated.AFunctions <> A:7 var
+R600:603 annotated.ASyntax <> lift def
+R609:609 annotated.AFunctions <> t:9 var
+def 624:635 <> k_combinator
+binder 637:637 <> A:10
+binder 639:639 <> B:11
+R646:649 annotated.ASyntax <> TLam constr
+R651:651 annotated.AFunctions <> A:10 var
+R654:658 annotated.ASyntax <> arrow def
+R661:664 annotated.ASyntax <> lift def
+R670:670 annotated.AFunctions <> B:11 var
+R674:677 annotated.ASyntax <> lift def
+R683:683 annotated.AFunctions <> A:10 var
+R692:699 annotated.AFunctions <> constant def
+R702:705 annotated.ASyntax <> lift def
+R711:711 annotated.AFunctions <> A:10 var
+R715:718 annotated.ASyntax <> lift def
+R724:724 annotated.AFunctions <> B:11 var
+R728:731 annotated.ASyntax <> TVar constr
+def 749:759 <> arrow_apply
+binder 761:761 <> A:12
+binder 763:763 <> B:13
+binder 765:765 <> f:14
+binder 767:767 <> a:15
+R772:775 annotated.ASyntax <> TApp constr
+R777:777 annotated.AFunctions <> A:12 var
+R780:783 annotated.ASyntax <> lift def
+R789:789 annotated.AFunctions <> B:13 var
+R792:792 annotated.AFunctions <> f:14 var
+R794:794 annotated.AFunctions <> a:15 var
+prf 804:818 <> identity_typing
+binder 829:833 <> Gamma:16
+binder 835:835 <> A:17
+binder 837:837 <> k:18
+R870:875 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R842:847 annotated.ATyping <> typing ind
+R849:853 annotated.AFunctions <> Gamma:16 var
+R855:855 annotated.AFunctions <> A:17 var
+R858:866 annotated.AErase Raw TSort constr
+R868:868 annotated.AFunctions <> k:18 var
+R876:881 annotated.ATyping <> typing ind
+R883:887 annotated.AFunctions <> Gamma:16 var
+R890:897 annotated.AFunctions <> identity def
+R899:899 annotated.AFunctions <> A:17 var
+R903:911 annotated.AErase Raw arrow def
+R924:928 annotated.AErase <> erase def
+R930:930 annotated.AFunctions <> A:17 var
+R914:918 annotated.AErase <> erase def
+R920:920 annotated.AFunctions <> A:17 var
+R972:979 annotated.AFunctions <> identity def
+R982:990 annotated.AErase Raw arrow def
+R1006:1015 annotated.AErasure <> erase_lift thm
+R1025:1030 annotated.ATyping <> ty_lam constr
+R1006:1015 annotated.AErasure <> erase_lift thm
+R1006:1015 annotated.AErasure <> erase_lift thm
+R1025:1030 annotated.ATyping <> ty_lam constr
+R1059:1067 annotated.AWeakening <> weakening thm
+R1083:1096 annotated.ATyping <> typing_erasure thm
+R1059:1067 annotated.AWeakening <> weakening thm
+R1083:1096 annotated.ATyping <> typing_erasure thm
+R1122:1131 annotated.AErasure <> erase_lift thm
+R1141:1146 annotated.ATyping <> ty_var constr
+R1163:1172 annotated.ATyping RT wf_cons constr
+R1187:1200 annotated.ATyping <> typing_context thm
+R1203:1216 annotated.ATyping <> typing_erasure thm
+R1122:1131 annotated.AErasure <> erase_lift thm
+R1122:1131 annotated.AErasure <> erase_lift thm
+R1141:1146 annotated.ATyping <> ty_var constr
+R1163:1172 annotated.ATyping RT wf_cons constr
+R1187:1200 annotated.ATyping <> typing_context thm
+R1187:1200 annotated.ATyping <> typing_context thm
+R1203:1216 annotated.ATyping <> typing_erasure thm
+R1203:1216 annotated.ATyping <> typing_erasure thm
+prf 1244:1258 <> constant_typing
+binder 1269:1273 <> Gamma:19
+binder 1275:1275 <> A:20
+binder 1277:1277 <> B:21
+binder 1279:1279 <> t:22
+binder 1281:1281 <> j:23
+binder 1283:1283 <> k:24
+R1316:1319 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1288:1293 annotated.ATyping <> typing ind
+R1295:1299 annotated.AFunctions <> Gamma:19 var
+R1301:1301 annotated.AFunctions <> A:20 var
+R1304:1312 annotated.AErase Raw TSort constr
+R1314:1314 annotated.AFunctions <> j:23 var
+R1348:1353 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1320:1325 annotated.ATyping <> typing ind
+R1327:1331 annotated.AFunctions <> Gamma:19 var
+R1333:1333 annotated.AFunctions <> B:21 var
+R1336:1344 annotated.AErase Raw TSort constr
+R1346:1346 annotated.AFunctions <> k:24 var
+R1378:1383 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1354:1359 annotated.ATyping <> typing ind
+R1361:1365 annotated.AFunctions <> Gamma:19 var
+R1367:1367 annotated.AFunctions <> t:22 var
+R1370:1374 annotated.AErase <> erase def
+R1376:1376 annotated.AFunctions <> A:20 var
+R1384:1389 annotated.ATyping <> typing ind
+R1391:1395 annotated.AFunctions <> Gamma:19 var
+R1398:1405 annotated.AFunctions <> constant def
+R1407:1407 annotated.AFunctions <> A:20 var
+R1409:1409 annotated.AFunctions <> B:21 var
+R1411:1411 annotated.AFunctions <> t:22 var
+R1415:1423 annotated.AErase Raw arrow def
+R1436:1440 annotated.AErase <> erase def
+R1442:1442 annotated.AFunctions <> A:20 var
+R1426:1430 annotated.AErase <> erase def
+R1432:1432 annotated.AFunctions <> B:21 var
+R1496:1503 annotated.AFunctions <> constant def
+R1506:1514 annotated.AErase Raw arrow def
+R1530:1539 annotated.AErasure <> erase_lift thm
+R1549:1554 annotated.ATyping <> ty_lam constr
+R1530:1539 annotated.AErasure <> erase_lift thm
+R1530:1539 annotated.AErasure <> erase_lift thm
+R1549:1554 annotated.ATyping <> ty_lam constr
+R1583:1591 annotated.AWeakening <> weakening thm
+R1607:1620 annotated.ATyping <> typing_erasure thm
+R1583:1591 annotated.AWeakening <> weakening thm
+R1607:1620 annotated.ATyping <> typing_erasure thm
+R1646:1655 annotated.AErasure <> erase_lift thm
+R1665:1673 annotated.AWeakening <> weakening thm
+R1689:1702 annotated.ATyping <> typing_erasure thm
+R1646:1655 annotated.AErasure <> erase_lift thm
+R1646:1655 annotated.AErasure <> erase_lift thm
+R1665:1673 annotated.AWeakening <> weakening thm
+R1689:1702 annotated.ATyping <> typing_erasure thm
+prf 1728:1746 <> k_combinator_typing
+binder 1757:1761 <> Gamma:25
+binder 1763:1763 <> A:26
+binder 1765:1765 <> B:27
+binder 1767:1767 <> j:28
+binder 1769:1769 <> k:29
+R1802:1805 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1774:1779 annotated.ATyping <> typing ind
+R1781:1785 annotated.AFunctions <> Gamma:25 var
+R1787:1787 annotated.AFunctions <> A:26 var
+R1790:1798 annotated.AErase Raw TSort constr
+R1800:1800 annotated.AFunctions <> j:28 var
+R1834:1839 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1806:1811 annotated.ATyping <> typing ind
+R1813:1817 annotated.AFunctions <> Gamma:25 var
+R1819:1819 annotated.AFunctions <> B:27 var
+R1822:1830 annotated.AErase Raw TSort constr
+R1832:1832 annotated.AFunctions <> k:29 var
+R1840:1845 annotated.ATyping <> typing ind
+R1847:1851 annotated.AFunctions <> Gamma:25 var
+R1854:1865 annotated.AFunctions <> k_combinator def
+R1867:1867 annotated.AFunctions <> A:26 var
+R1869:1869 annotated.AFunctions <> B:27 var
+R1877:1885 annotated.AErase Raw arrow def
+R1898:1906 annotated.AErase Raw arrow def
+R1919:1923 annotated.AErase <> erase def
+R1925:1925 annotated.AFunctions <> A:26 var
+R1909:1913 annotated.AErase <> erase def
+R1915:1915 annotated.AFunctions <> B:27 var
+R1888:1892 annotated.AErase <> erase def
+R1894:1894 annotated.AFunctions <> A:26 var
+R1982:1990 annotated.AWeakening <> weakening thm
+R2006:2019 annotated.ATyping <> typing_erasure thm
+R1982:1990 annotated.AWeakening <> weakening thm
+R2006:2019 annotated.ATyping <> typing_erasure thm
+R2054:2062 annotated.AWeakening <> weakening thm
+R2078:2091 annotated.ATyping <> typing_erasure thm
+R2054:2062 annotated.AWeakening <> weakening thm
+R2078:2091 annotated.ATyping <> typing_erasure thm
+R2121:2132 annotated.AFunctions <> k_combinator def
+R2142:2150 annotated.AErase Raw arrow def
+R2166:2178 annotated.AWeakening RW lift_arrow thm
+R2166:2178 annotated.AWeakening RW lift_arrow thm
+R2166:2178 annotated.AWeakening RW lift_arrow thm
+R2195:2204 annotated.AErasure <> erase_lift thm
+R2210:2220 annotated.AErasure <> erase_arrow thm
+R2195:2204 annotated.AErasure <> erase_lift thm
+R2195:2204 annotated.AErasure <> erase_lift thm
+R2195:2204 annotated.AErasure <> erase_lift thm
+R2195:2204 annotated.AErasure <> erase_lift thm
+R2210:2220 annotated.AErasure <> erase_arrow thm
+R2210:2220 annotated.AErasure <> erase_arrow thm
+R2232:2237 annotated.ATyping <> ty_lam constr
+R2257:2271 annotated.AFunctions <> arrow_formation thm
+R2232:2237 annotated.ATyping <> ty_lam constr
+R2257:2271 annotated.AFunctions <> arrow_formation thm
+R2299:2309 annotated.AErasure <> erase_arrow thm
+R2319:2333 annotated.AFunctions <> constant_typing thm
+R2299:2309 annotated.AErasure <> erase_arrow thm
+R2299:2309 annotated.AErasure <> erase_arrow thm
+R2319:2333 annotated.AFunctions <> constant_typing thm
+R2370:2379 annotated.AErasure <> erase_lift thm
+R2389:2394 annotated.ATyping <> ty_var constr
+R2409:2418 annotated.ATyping RT wf_cons constr
+R2433:2446 annotated.ATyping <> typing_context thm
+R2449:2462 annotated.ATyping <> typing_erasure thm
+R2370:2379 annotated.AErasure <> erase_lift thm
+R2370:2379 annotated.AErasure <> erase_lift thm
+R2389:2394 annotated.ATyping <> ty_var constr
+R2409:2418 annotated.ATyping RT wf_cons constr
+R2433:2446 annotated.ATyping <> typing_context thm
+R2433:2446 annotated.ATyping <> typing_context thm
+R2449:2462 annotated.ATyping <> typing_erasure thm
+R2449:2462 annotated.ATyping <> typing_erasure thm
+prf 2490:2506 <> arrow_application
+binder 2517:2521 <> Gamma:30
+binder 2523:2523 <> A:31
+binder 2525:2525 <> B:32
+binder 2527:2527 <> f:33
+binder 2529:2529 <> a:34
+binder 2531:2531 <> j:35
+binder 2533:2533 <> k:36
+R2566:2569 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2538:2543 annotated.ATyping <> typing ind
+R2545:2549 annotated.AFunctions <> Gamma:30 var
+R2551:2551 annotated.AFunctions <> A:31 var
+R2554:2562 annotated.AErase Raw TSort constr
+R2564:2564 annotated.AFunctions <> j:35 var
+R2598:2603 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2570:2575 annotated.ATyping <> typing ind
+R2577:2581 annotated.AFunctions <> Gamma:30 var
+R2583:2583 annotated.AFunctions <> B:32 var
+R2586:2594 annotated.AErase Raw TSort constr
+R2596:2596 annotated.AFunctions <> k:36 var
+R2650:2653 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2604:2609 annotated.ATyping <> typing ind
+R2611:2615 annotated.AFunctions <> Gamma:30 var
+R2617:2617 annotated.AFunctions <> f:33 var
+R2620:2628 annotated.AErase Raw arrow def
+R2641:2645 annotated.AErase <> erase def
+R2647:2647 annotated.AFunctions <> B:32 var
+R2631:2635 annotated.AErase <> erase def
+R2637:2637 annotated.AFunctions <> A:31 var
+R2678:2683 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2654:2659 annotated.ATyping <> typing ind
+R2661:2665 annotated.AFunctions <> Gamma:30 var
+R2667:2667 annotated.AFunctions <> a:34 var
+R2670:2674 annotated.AErase <> erase def
+R2676:2676 annotated.AFunctions <> A:31 var
+R2684:2689 annotated.ATyping <> typing ind
+R2691:2695 annotated.AFunctions <> Gamma:30 var
+R2698:2708 annotated.AFunctions <> arrow_apply def
+R2710:2710 annotated.AFunctions <> A:31 var
+R2712:2712 annotated.AFunctions <> B:32 var
+R2714:2714 annotated.AFunctions <> f:33 var
+R2716:2716 annotated.AFunctions <> a:34 var
+R2720:2724 annotated.AErase <> erase def
+R2726:2726 annotated.AFunctions <> B:32 var
+R2784:2794 annotated.AFunctions <> arrow_apply def
+R2808:2812 annotated.AErase <> erase def
+R2823:2831 annotated.AErase Raw subst def
+R2846:2850 annotated.AErase <> erase def
+R2853:2856 annotated.ASyntax <> lift def
+R2834:2838 annotated.AErase <> erase def
+R2883:2892 annotated.AErasure <> erase_lift thm
+R2901:2918 annotated.ASubstitution RB subst_lift_zero thm
+R2808:2812 annotated.AErase <> erase def
+R2823:2831 annotated.AErase Raw subst def
+R2846:2850 annotated.AErase <> erase def
+R2853:2856 annotated.ASyntax <> lift def
+R2834:2838 annotated.AErase <> erase def
+R2883:2892 annotated.AErasure <> erase_lift thm
+R2883:2892 annotated.AErasure <> erase_lift thm
+R2901:2918 annotated.ASubstitution RB subst_lift_zero thm
+R2931:2936 annotated.ATyping <> ty_app constr
+R2931:2936 annotated.ATyping <> ty_app constr
+R2975:2983 annotated.AWeakening <> weakening thm
+R2999:3012 annotated.ATyping <> typing_erasure thm
+R2975:2983 annotated.AWeakening <> weakening thm
+R2999:3012 annotated.ATyping <> typing_erasure thm
+R3038:3047 annotated.AErasure <> erase_lift thm
+R3038:3047 annotated.AErasure <> erase_lift thm
+R3038:3047 annotated.AErasure <> erase_lift thm

@@ -1,0 +1,494 @@
+DIGEST c3c93b004414cba05413d79b8b935e06
+FElaborationWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:43 Stdlib.Strings.String <> <> lib
+R45:48 Stdlib.Bool.Bool <> <> lib
+R50:52 Stdlib.micromega.Lia <> <> lib
+R70:78 CasesWork <> <> lib
+R88:100 Stdlib.Lists.List ListNotations <> mod
+prf 110:129 <> subtyping_formations
+binder 140:144 <> Gamma:1
+binder 146:146 <> A:2
+binder 148:148 <> B:3
+binder 150:150 <> c:4
+R170:173 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R155:157 OpenSignaturesElaboration <> sub ind
+R169:169 ElaborationWork <> c:4 var
+R167:167 ElaborationWork <> B:3 var
+R165:165 ElaborationWork <> A:2 var
+R159:163 ElaborationWork <> Gamma:1 var
+R189:192 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R174:180 OpenSignaturesCore <> type_wf def
+R188:188 ElaborationWork <> A:2 var
+R182:186 ElaborationWork <> Gamma:1 var
+R193:199 OpenSignaturesCore <> type_wf def
+R207:207 ElaborationWork <> B:3 var
+R201:205 ElaborationWork <> Gamma:1 var
+R293:300 OpenSignaturesCore <> ty_enumt constr
+R303:309 OpenSignaturesCore <> ty_nile constr
+R319:332 OpenSignaturesProgress <> typing_context thm
+R293:300 OpenSignaturesCore <> ty_enumt constr
+R303:309 OpenSignaturesCore <> ty_nile constr
+R319:332 OpenSignaturesProgress <> typing_context thm
+R459:476 OpenSignaturesProgress <> close_at_formation thm
+R459:476 OpenSignaturesProgress <> close_at_formation thm
+R459:476 OpenSignaturesProgress <> close_at_formation thm
+prf 503:516 <> row_input_cons
+binder 527:531 <> Gamma:5
+binder 533:534 <> IT:6
+binder 536:539 <> name:7
+binder 541:541 <> D:8
+binder 543:544 <> rs:9
+R584:589 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R549:557 OpenSignaturesElaboration <> row_input def
+R577:580 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R569:569 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R574:574 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R576:576 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R570:573 ElaborationWork <> name:7 var
+R575:575 ElaborationWork <> D:8 var
+R581:582 ElaborationWork <> rs:9 var
+R565:566 ElaborationWork <> IT:6 var
+R559:563 ElaborationWork <> Gamma:5 var
+R611:614 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R590:598 OpenSignaturesElaboration <> row_input def
+R609:610 ElaborationWork <> rs:9 var
+R606:607 ElaborationWork <> IT:6 var
+R600:604 ElaborationWork <> Gamma:5 var
+R615:620 OpenSignaturesCore <> typing ind
+R631:636 OpenSignaturesSyntax <> TIDesc constr
+R638:639 ElaborationWork <> IT:6 var
+R628:628 ElaborationWork <> D:8 var
+R622:626 ElaborationWork <> Gamma:5 var
+def 827:841 <> synth_induction
+def 886:900 <> check_induction
+def 945:959 <> cases_induction
+R860:869 OpenSignaturesElaboration <> elab_synth ind
+R919:928 OpenSignaturesElaboration <> elab_check ind
+R978:987 OpenSignaturesElaboration <> elab_cases ind
+R1043:1057 ElaborationWork <> synth_induction scheme
+R1060:1074 ElaborationWork <> check_induction scheme
+R1077:1091 ElaborationWork <> cases_induction scheme
+sec 1103:1122 <> ElaborationSoundness
+var 1134:1139 ElaborationSoundness weaken
+binder 1150:1154 <> Gamma:10
+binder 1156:1156 <> x:11
+binder 1158:1158 <> t:12
+binder 1160:1160 <> A:13
+binder 1162:1162 <> B:14
+binder 1164:1164 <> k:15
+R1185:1188 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1169:1176 OpenSignaturesSyntax <> fresh_in def
+R1184:1184 ElaborationWork <> x:11 var
+R1178:1182 ElaborationWork <> Gamma:10 var
+R1205:1208 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1189:1194 OpenSignaturesCore <> typing ind
+R1204:1204 ElaborationWork <> A:13 var
+R1202:1202 ElaborationWork <> t:12 var
+R1196:1200 ElaborationWork <> Gamma:10 var
+R1233:1238 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1209:1214 OpenSignaturesCore <> typing ind
+R1225:1229 OpenSignaturesSyntax <> TSort constr
+R1231:1231 ElaborationWork <> k:15 var
+R1222:1222 ElaborationWork <> B:14 var
+R1216:1220 ElaborationWork <> Gamma:10 var
+R1239:1244 OpenSignaturesCore <> typing ind
+R1267:1267 ElaborationWork <> A:13 var
+R1265:1265 ElaborationWork <> t:12 var
+R1247:1252 OpenSignaturesSyntax <> extend def
+R1262:1262 ElaborationWork <> B:14 var
+R1260:1260 ElaborationWork <> x:11 var
+R1254:1258 ElaborationWork <> Gamma:10 var
+var 1279:1288 ElaborationSoundness dead_typed
+binder 1299:1303 <> Gamma:18
+binder 1305:1306 <> IT:19
+binder 1308:1308 <> D:20
+binder 1310:1310 <> X:21
+binder 1312:1312 <> d:22
+R1336:1339 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1317:1320 OpenSignaturesElaboration <> dead ind
+R1335:1335 ElaborationWork <> d:22 var
+R1333:1333 ElaborationWork <> X:21 var
+R1331:1331 ElaborationWork <> D:20 var
+R1328:1329 ElaborationWork <> IT:19 var
+R1322:1326 ElaborationWork <> Gamma:18 var
+R1340:1345 OpenSignaturesCore <> typing ind
+R1356:1360 OpenSignaturesSyntax <> arrow def
+R1379:1381 OpenSignaturesSyntax <> Bot def
+R1363:1369 OpenSignaturesSyntax <> TInterp constr
+R1376:1376 ElaborationWork <> X:21 var
+R1374:1374 ElaborationWork <> D:20 var
+R1371:1372 ElaborationWork <> IT:19 var
+R1353:1353 ElaborationWork <> d:22 var
+R1347:1351 ElaborationWork <> Gamma:18 var
+var 1394:1402 ElaborationSoundness sub_typed
+binder 1413:1417 <> Gamma:25
+binder 1419:1419 <> A:26
+binder 1421:1421 <> B:27
+binder 1423:1423 <> c:28
+R1443:1446 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1428:1430 OpenSignaturesElaboration <> sub ind
+R1442:1442 ElaborationWork <> c:28 var
+R1440:1440 ElaborationWork <> B:27 var
+R1438:1438 ElaborationWork <> A:26 var
+R1432:1436 ElaborationWork <> Gamma:25 var
+R1447:1452 OpenSignaturesCore <> typing ind
+R1463:1467 OpenSignaturesSyntax <> arrow def
+R1471:1471 ElaborationWork <> B:27 var
+R1469:1469 ElaborationWork <> A:26 var
+R1460:1460 ElaborationWork <> c:28 var
+R1454:1458 ElaborationWork <> Gamma:25 var
+prf 1482:1503 <> elaboration_from_rules
+R1509:1509 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1572:1578 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 1517:1521 <> Gamma:31
+binder 1523:1523 <> e:32
+binder 1525:1525 <> A:33
+binder 1527:1527 <> t:34
+R1552:1555 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1530:1539 OpenSignaturesElaboration <> elab_synth ind
+R1551:1551 ElaborationWork <> t:34 var
+R1549:1549 ElaborationWork <> A:33 var
+R1547:1547 ElaborationWork <> e:32 var
+R1541:1545 ElaborationWork <> Gamma:31 var
+R1556:1561 OpenSignaturesCore <> typing ind
+R1571:1571 ElaborationWork <> A:33 var
+R1569:1569 ElaborationWork <> t:34 var
+R1563:1567 ElaborationWork <> Gamma:31 var
+R1579:1579 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1642:1649 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1893:1893 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 1587:1591 <> Gamma:35
+binder 1593:1593 <> e:36
+binder 1595:1595 <> A:37
+binder 1597:1597 <> t:38
+R1622:1625 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1600:1609 OpenSignaturesElaboration <> elab_check ind
+R1621:1621 ElaborationWork <> t:38 var
+R1619:1619 ElaborationWork <> A:37 var
+R1617:1617 ElaborationWork <> e:36 var
+R1611:1615 ElaborationWork <> Gamma:35 var
+R1626:1631 OpenSignaturesCore <> typing ind
+R1641:1641 ElaborationWork <> A:37 var
+R1639:1639 ElaborationWork <> t:38 var
+R1633:1637 ElaborationWork <> Gamma:35 var
+binder 1657:1661 <> Gamma:39
+binder 1663:1663 <> k:40
+binder 1665:1666 <> IT:41
+binder 1668:1668 <> X:42
+binder 1670:1670 <> Q:43
+binder 1672:1673 <> bs:44
+binder 1675:1676 <> rs:45
+binder 1678:1679 <> hs:46
+R1716:1723 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1682:1691 OpenSignaturesElaboration <> elab_cases ind
+R1714:1715 ElaborationWork <> hs:46 var
+R1711:1712 ElaborationWork <> rs:45 var
+R1708:1709 ElaborationWork <> bs:44 var
+R1706:1706 ElaborationWork <> Q:43 var
+R1704:1704 ElaborationWork <> X:42 var
+R1701:1702 ElaborationWork <> IT:41 var
+R1699:1699 ElaborationWork <> k:40 var
+R1693:1697 ElaborationWork <> Gamma:39 var
+R1745:1748 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1724:1732 OpenSignaturesElaboration <> row_input def
+R1743:1744 ElaborationWork <> rs:45 var
+R1740:1741 ElaborationWork <> IT:41 var
+R1734:1738 ElaborationWork <> Gamma:39 var
+R1775:1778 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1749:1754 OpenSignaturesCore <> typing ind
+R1765:1770 OpenSignaturesSyntax <> Family def
+R1772:1773 ElaborationWork <> IT:41 var
+R1762:1762 ElaborationWork <> X:42 var
+R1756:1760 ElaborationWork <> Gamma:39 var
+R1803:1810 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1779:1784 OpenSignaturesCore <> typing ind
+R1795:1799 OpenSignaturesSyntax <> TSort constr
+R1801:1801 ElaborationWork <> k:40 var
+R1792:1792 ElaborationWork <> Q:43 var
+R1786:1790 ElaborationWork <> Gamma:39 var
+R1811:1817 Stdlib.Lists.List <> Forall2 ind
+R1891:1892 ElaborationWork <> hs:46 var
+R1888:1889 ElaborationWork <> rs:45 var
+binder 1824:1828 <> entry:47
+binder 1830:1830 <> h:48
+R1835:1840 OpenSignaturesCore <> typing ind
+R1851:1855 OpenSignaturesSyntax <> arrow def
+R1884:1884 ElaborationWork <> Q:43 var
+R1858:1864 OpenSignaturesSyntax <> TInterp constr
+R1881:1881 ElaborationWork <> X:42 var
+R1870:1872 Corelib.Init.Datatypes <> snd def
+R1874:1878 ElaborationWork <> entry:47 var
+R1866:1867 ElaborationWork <> IT:41 var
+R1848:1848 ElaborationWork <> h:48 var
+R1842:1846 ElaborationWork <> Gamma:39 var
+R1911:1931 ElaborationWork <> elaboration_induction scheme
+R1973:1979 OpenSignaturesCore <> type_wf def
+R1973:1979 OpenSignaturesCore <> type_wf def
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R1911:1931 ElaborationWork <> elaboration_induction scheme
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2065:2070 OpenSignaturesCore <> ty_var constr
+R2073:2078 OpenSignaturesCore <> ty_app constr
+R2081:2088 OpenSignaturesCore <> ty_close constr
+R2091:2097 OpenSignaturesCore <> ty_conv constr
+R2100:2105 OpenSignaturesCore <> ty_lam constr
+R2108:2114 OpenSignaturesCore <> ty_pair constr
+R2123:2146 OpenSignaturesRowTyping <> signature_from_weakening thm
+R2193:2208 CasesWork <> case_term_typing thm
+R2218:2223 ElaborationWork <> ElaborationSoundness.weaken var
+R2193:2208 CasesWork <> case_term_typing thm
+R2218:2223 ElaborationWork <> ElaborationSoundness.weaken var
+R2315:2320 OpenSignaturesCore <> typing ind
+R2344:2349 OpenSignaturesSyntax <> Family def
+R2329:2335 OpenSignaturesSyntax <> carrier def
+R2315:2320 OpenSignaturesCore <> typing ind
+R2344:2349 OpenSignaturesSyntax <> Family def
+R2329:2335 OpenSignaturesSyntax <> carrier def
+R2403:2410 OpenSignaturesCore <> ty_close constr
+R2403:2410 OpenSignaturesCore <> ty_close constr
+R2437:2454 CasesWork <> row_handlers_tuple thm
+R2464:2469 ElaborationWork <> ElaborationSoundness.weaken var
+R2437:2454 CasesWork <> row_handlers_tuple thm
+R2464:2469 ElaborationWork <> ElaborationSoundness.weaken var
+R2549:2551 OpenSignaturesElaboration <> sub ind
+R2549:2551 OpenSignaturesElaboration <> sub ind
+R2594:2613 ElaborationWork <> subtyping_formations thm
+R2594:2613 ElaborationWork <> subtyping_formations thm
+R2673:2681 OpenSignaturesDerivedTyping <> arrow_app thm
+R2691:2696 ElaborationWork <> ElaborationSoundness.weaken var
+R2723:2731 ElaborationWork <> ElaborationSoundness.sub_typed var
+R2673:2681 OpenSignaturesDerivedTyping <> arrow_app thm
+R2691:2696 ElaborationWork <> ElaborationSoundness.weaken var
+R2723:2731 ElaborationWork <> ElaborationSoundness.sub_typed var
+R2789:2796 OpenSignaturesElaboration <> row_view ind
+R2789:2796 OpenSignaturesElaboration <> row_view ind
+R2867:2887 OpenSignaturesRowTyping <> close_row_constructor thm
+R2867:2887 OpenSignaturesRowTyping <> close_row_constructor thm
+R2935:2943 OpenSignaturesElaboration <> row_input def
+R2968:2971 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2957:2957 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2963:2964 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2967:2967 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2935:2943 OpenSignaturesElaboration <> row_input def
+R2968:2971 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2957:2957 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2963:2964 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2967:2967 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3001:3005 Corelib.Init.Logic <> proj1 thm
+R3035:3048 ElaborationWork <> row_input_cons thm
+R3001:3005 Corelib.Init.Logic <> proj1 thm
+R3035:3048 ElaborationWork <> row_input_cons thm
+R3001:3005 Corelib.Init.Logic <> proj1 thm
+R3035:3048 ElaborationWork <> row_input_cons thm
+R3139:3149 OpenSignaturesDerivedTyping <> arrow_intro thm
+R3159:3164 ElaborationWork <> ElaborationSoundness.weaken var
+R3139:3149 OpenSignaturesDerivedTyping <> arrow_intro thm
+R3159:3164 ElaborationWork <> ElaborationSoundness.weaken var
+R3216:3224 OpenSignaturesCore <> ty_interp constr
+R3216:3224 OpenSignaturesCore <> ty_interp constr
+R3250:3268 CasesWork <> dead_handler_typing thm
+R3278:3283 ElaborationWork <> ElaborationSoundness.weaken var
+R3250:3268 CasesWork <> dead_handler_typing thm
+R3278:3283 ElaborationWork <> ElaborationSoundness.weaken var
+R3314:3322 OpenSignaturesCore <> ty_interp constr
+R3314:3322 OpenSignaturesCore <> ty_interp constr
+R3350:3359 ElaborationWork <> ElaborationSoundness.dead_typed var
+R3350:3359 ElaborationWork <> ElaborationSoundness.dead_typed var
+prf 3389:3408 <> synthesis_from_rules
+binder 3419:3423 <> Gamma:49
+binder 3425:3425 <> e:50
+binder 3427:3427 <> A:51
+binder 3429:3429 <> t:52
+R3456:3459 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3434:3443 OpenSignaturesElaboration <> elab_synth ind
+R3455:3455 ElaborationWork <> t:52 var
+R3453:3453 ElaborationWork <> A:51 var
+R3451:3451 ElaborationWork <> e:50 var
+R3445:3449 ElaborationWork <> Gamma:49 var
+R3460:3465 OpenSignaturesCore <> typing ind
+R3475:3475 ElaborationWork <> A:51 var
+R3473:3473 ElaborationWork <> t:52 var
+R3467:3471 ElaborationWork <> Gamma:49 var
+R3492:3496 Corelib.Init.Logic <> proj1 thm
+R3498:3519 ElaborationWork <> elaboration_from_rules thm
+R3492:3496 Corelib.Init.Logic <> proj1 thm
+R3498:3519 ElaborationWork <> elaboration_from_rules thm
+prf 3537:3555 <> checking_from_rules
+binder 3566:3570 <> Gamma:53
+binder 3572:3572 <> e:54
+binder 3574:3574 <> A:55
+binder 3576:3576 <> t:56
+R3603:3606 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3581:3590 OpenSignaturesElaboration <> elab_check ind
+R3602:3602 ElaborationWork <> t:56 var
+R3600:3600 ElaborationWork <> A:55 var
+R3598:3598 ElaborationWork <> e:54 var
+R3592:3596 ElaborationWork <> Gamma:53 var
+R3607:3612 OpenSignaturesCore <> typing ind
+R3622:3622 ElaborationWork <> A:55 var
+R3620:3620 ElaborationWork <> t:56 var
+R3614:3618 ElaborationWork <> Gamma:53 var
+R3639:3643 Corelib.Init.Logic <> proj1 thm
+R3646:3650 Corelib.Init.Logic <> proj2 thm
+R3652:3673 ElaborationWork <> elaboration_from_rules thm
+R3639:3643 Corelib.Init.Logic <> proj1 thm
+R3646:3650 Corelib.Init.Logic <> proj2 thm
+R3652:3673 ElaborationWork <> elaboration_from_rules thm
+prf 3692:3715 <> case_handlers_from_rules
+binder 3726:3730 <> Gamma:57
+binder 3732:3732 <> k:58
+binder 3734:3735 <> IT:59
+binder 3737:3737 <> X:60
+binder 3739:3739 <> Q:61
+binder 3741:3742 <> bs:62
+binder 3744:3745 <> rs:63
+binder 3747:3748 <> hs:64
+R3774:3777 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3753:3761 OpenSignaturesElaboration <> row_input def
+R3772:3773 ElaborationWork <> rs:63 var
+R3769:3770 ElaborationWork <> IT:59 var
+R3763:3767 ElaborationWork <> Gamma:57 var
+R3804:3807 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3778:3783 OpenSignaturesCore <> typing ind
+R3794:3799 OpenSignaturesSyntax <> Family def
+R3801:3802 ElaborationWork <> IT:59 var
+R3791:3791 ElaborationWork <> X:60 var
+R3785:3789 ElaborationWork <> Gamma:57 var
+R3832:3837 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3808:3813 OpenSignaturesCore <> typing ind
+R3824:3828 OpenSignaturesSyntax <> TSort constr
+R3830:3830 ElaborationWork <> k:58 var
+R3821:3821 ElaborationWork <> Q:61 var
+R3815:3819 ElaborationWork <> Gamma:57 var
+R3872:3877 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3838:3847 OpenSignaturesElaboration <> elab_cases ind
+R3870:3871 ElaborationWork <> hs:64 var
+R3867:3868 ElaborationWork <> rs:63 var
+R3864:3865 ElaborationWork <> bs:62 var
+R3862:3862 ElaborationWork <> Q:61 var
+R3860:3860 ElaborationWork <> X:60 var
+R3857:3858 ElaborationWork <> IT:59 var
+R3855:3855 ElaborationWork <> k:58 var
+R3849:3853 ElaborationWork <> Gamma:57 var
+R3878:3883 OpenSignaturesCore <> typing ind
+R3903:3906 OpenSignaturesSyntax <> TEPi constr
+R3925:3938 OpenSignaturesElaboration <> handler_motive def
+R3948:3948 ElaborationWork <> Q:61 var
+R3946:3946 ElaborationWork <> X:60 var
+R3943:3944 ElaborationWork <> rs:63 var
+R3940:3941 ElaborationWork <> IT:59 var
+R3911:3918 OpenSignaturesElaboration <> row_enum def
+R3920:3921 ElaborationWork <> rs:63 var
+R3908:3908 ElaborationWork <> k:58 var
+R3892:3896 OpenSignaturesSyntax <> tuple def
+R3898:3899 ElaborationWork <> hs:64 var
+R3885:3889 ElaborationWork <> Gamma:57 var
+R4021:4038 CasesWork <> row_handlers_tuple thm
+R4048:4053 ElaborationWork <> ElaborationSoundness.weaken var
+R4021:4038 CasesWork <> row_handlers_tuple thm
+R4048:4053 ElaborationWork <> ElaborationSoundness.weaken var
+R4097:4101 Corelib.Init.Logic <> proj2 thm
+R4104:4108 Corelib.Init.Logic <> proj2 thm
+R4110:4131 ElaborationWork <> elaboration_from_rules thm
+R4097:4101 Corelib.Init.Logic <> proj2 thm
+R4104:4108 Corelib.Init.Logic <> proj2 thm
+R4110:4131 ElaborationWork <> elaboration_from_rules thm
+R4189:4208 ElaborationWork ElaborationSoundness <> sec

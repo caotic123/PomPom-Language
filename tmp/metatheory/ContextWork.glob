@@ -1,0 +1,196 @@
+DIGEST 065058a688f6cd49760babd85181d50b
+FContextWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R47:55 Stdlib.FSets.FMapFacts <> <> lib
+R73:95 OpenSignaturesTransport <> <> lib
+R117:132 Stdlib.FSets.FMapFacts WFacts <> mod
+R134:139 OpenSignaturesSyntax VarMap <> mod
+mod 105:112 <> CtxFacts
+def 155:163 <> ctx_equal
+R180:182 OpenSignaturesSyntax <> ctx def
+binder 166:170 <> Gamma:1
+binder 172:176 <> Delta:2
+binder 195:195 <> x:3
+R212:214 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R198:203 OpenSignaturesSyntax <> lookup def
+R211:211 ContextWork <> x:3 var
+R205:209 ContextWork <> Gamma:1 var
+R215:220 OpenSignaturesSyntax <> lookup def
+R228:228 ContextWork <> x:3 var
+R222:226 ContextWork <> Delta:2 var
+prf 237:252 <> ctx_equal_extend
+binder 263:267 <> Gamma:4
+binder 269:273 <> Delta:5
+binder 275:275 <> x:6
+binder 277:277 <> A:7
+R303:306 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R282:290 ContextWork <> ctx_equal def
+R292:296 ContextWork <> Gamma:4 var
+R298:302 ContextWork <> Delta:5 var
+R307:315 ContextWork <> ctx_equal def
+R318:323 OpenSignaturesSyntax <> extend def
+R333:333 ContextWork <> A:7 var
+R331:331 ContextWork <> x:6 var
+R325:329 ContextWork <> Gamma:4 var
+R337:342 OpenSignaturesSyntax <> extend def
+R352:352 ContextWork <> A:7 var
+R350:350 ContextWork <> x:6 var
+R344:348 ContextWork <> Delta:5 var
+R403:412 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R403:412 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R449:466 OpenSignaturesBinding <> lookup_extend_same thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+R482:500 OpenSignaturesBinding <> lookup_extend_other thm
+prf 537:551 <> ctx_equal_fresh
+binder 562:566 <> Gamma:8
+binder 568:572 <> Delta:9
+binder 574:574 <> x:10
+R600:603 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R579:587 ContextWork <> ctx_equal def
+R589:593 ContextWork <> Gamma:8 var
+R595:599 ContextWork <> Delta:9 var
+R620:623 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R604:611 OpenSignaturesSyntax <> fresh_in def
+R619:619 ContextWork <> x:10 var
+R613:617 ContextWork <> Gamma:8 var
+R624:631 OpenSignaturesSyntax <> fresh_in def
+R639:639 ContextWork <> x:10 var
+R633:637 ContextWork <> Delta:9 var
+R656:664 ContextWork <> ctx_equal def
+R667:674 OpenSignaturesSyntax <> fresh_in def
+prf 733:750 <> ctx_equal_exchange
+binder 761:765 <> Gamma:11
+binder 767:767 <> x:12
+binder 769:769 <> y:13
+binder 771:771 <> A:14
+binder 773:773 <> B:15
+R784:787 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R779:782 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R778:778 ContextWork <> x:12 var
+R783:783 ContextWork <> y:13 var
+R788:796 ContextWork <> ctx_equal def
+R799:804 OpenSignaturesSyntax <> extend def
+R827:827 ContextWork <> B:15 var
+R825:825 ContextWork <> y:13 var
+R807:812 OpenSignaturesSyntax <> extend def
+R822:822 ContextWork <> A:14 var
+R820:820 ContextWork <> x:12 var
+R814:818 ContextWork <> Gamma:11 var
+R831:836 OpenSignaturesSyntax <> extend def
+R859:859 ContextWork <> A:14 var
+R857:857 ContextWork <> x:12 var
+R839:844 OpenSignaturesSyntax <> extend def
+R854:854 ContextWork <> B:15 var
+R852:852 ContextWork <> y:13 var
+R846:850 ContextWork <> Gamma:11 var
+R910:919 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R952:961 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R910:919 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R952:961 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R952:961 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R1016:1033 OpenSignaturesBinding <> lookup_extend_same thm
+R1016:1033 OpenSignaturesBinding <> lookup_extend_same thm
+R1016:1033 OpenSignaturesBinding <> lookup_extend_same thm
+R1016:1033 OpenSignaturesBinding <> lookup_extend_same thm
+R1044:1062 OpenSignaturesBinding <> lookup_extend_other thm
+R1044:1062 OpenSignaturesBinding <> lookup_extend_other thm
+R1044:1062 OpenSignaturesBinding <> lookup_extend_other thm
+R1091:1108 OpenSignaturesBinding <> lookup_extend_same thm
+R1091:1108 OpenSignaturesBinding <> lookup_extend_same thm
+R1091:1108 OpenSignaturesBinding <> lookup_extend_same thm
+R1124:1141 OpenSignaturesBinding <> lookup_extend_same thm
+R1124:1141 OpenSignaturesBinding <> lookup_extend_same thm
+R1124:1141 OpenSignaturesBinding <> lookup_extend_same thm
+R1124:1141 OpenSignaturesBinding <> lookup_extend_same thm
+R1152:1170 OpenSignaturesBinding <> lookup_extend_other thm
+R1152:1170 OpenSignaturesBinding <> lookup_extend_other thm
+R1152:1170 OpenSignaturesBinding <> lookup_extend_other thm
+R1199:1216 OpenSignaturesBinding <> lookup_extend_same thm
+R1199:1216 OpenSignaturesBinding <> lookup_extend_same thm
+R1199:1216 OpenSignaturesBinding <> lookup_extend_same thm
+R1236:1254 OpenSignaturesBinding <> lookup_extend_other thm
+R1236:1254 OpenSignaturesBinding <> lookup_extend_other thm
+R1236:1254 OpenSignaturesBinding <> lookup_extend_other thm
+R1236:1254 OpenSignaturesBinding <> lookup_extend_other thm
+R1236:1254 OpenSignaturesBinding <> lookup_extend_other thm
+R1236:1254 OpenSignaturesBinding <> lookup_extend_other thm
+R1236:1254 OpenSignaturesBinding <> lookup_extend_other thm
+prf 1285:1300 <> typing_ctx_equal
+binder 1311:1315 <> Gamma:16
+binder 1317:1317 <> t:17
+binder 1319:1319 <> A:18
+R1338:1343 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1322:1327 OpenSignaturesCore <> typing ind
+R1337:1337 ContextWork <> A:18 var
+R1335:1335 ContextWork <> t:17 var
+R1329:1333 ContextWork <> Gamma:16 var
+binder 1351:1355 <> Delta:19
+R1366:1369 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1358:1359 OpenSignaturesCore <> wf ind
+R1361:1365 ContextWork <> Delta:19 var
+R1391:1394 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1370:1378 ContextWork <> ctx_equal def
+R1380:1384 ContextWork <> Gamma:16 var
+R1386:1390 ContextWork <> Delta:19 var
+R1395:1400 OpenSignaturesCore <> typing ind
+R1410:1410 ContextWork <> A:18 var
+R1408:1408 ContextWork <> t:17 var
+R1402:1406 ContextWork <> Delta:19 var
+R1526:1531 OpenSignaturesCore <> ty_var constr
+R1526:1531 OpenSignaturesCore <> ty_var constr
+R1583:1590 OpenSignaturesSyntax <> fresh_in def
+R1612:1626 ContextWork <> ctx_equal_fresh thm
+R1583:1590 OpenSignaturesSyntax <> fresh_in def
+R1612:1626 ContextWork <> ctx_equal_fresh thm
+R1660:1665 OpenSignaturesCore <> typing ind
+R1676:1680 OpenSignaturesSyntax <> TSort constr
+R1660:1665 OpenSignaturesCore <> typing ind
+R1676:1680 OpenSignaturesSyntax <> TSort constr
+R1706:1710 OpenSignaturesCore <> ty_pi constr
+R1706:1710 OpenSignaturesCore <> ty_pi constr
+R1764:1770 OpenSignaturesCore <> wf_cons constr
+R1795:1810 ContextWork <> ctx_equal_extend thm
+R1764:1770 OpenSignaturesCore <> wf_cons constr
+R1795:1810 ContextWork <> ctx_equal_extend thm
+R1831:1838 OpenSignaturesSyntax <> fresh_in def
+R1860:1874 ContextWork <> ctx_equal_fresh thm
+R1831:1838 OpenSignaturesSyntax <> fresh_in def
+R1860:1874 ContextWork <> ctx_equal_fresh thm
+R1908:1913 OpenSignaturesCore <> typing ind
+R1924:1928 OpenSignaturesSyntax <> TSort constr
+R1908:1913 OpenSignaturesCore <> typing ind
+R1924:1928 OpenSignaturesSyntax <> TSort constr
+R1954:1961 OpenSignaturesCore <> ty_sigma constr
+R1954:1961 OpenSignaturesCore <> ty_sigma constr
+R2015:2021 OpenSignaturesCore <> wf_cons constr
+R2046:2061 ContextWork <> ctx_equal_extend thm
+R2015:2021 OpenSignaturesCore <> wf_cons constr
+R2046:2061 ContextWork <> ctx_equal_extend thm
+R2082:2089 OpenSignaturesSyntax <> fresh_in def
+R2111:2125 ContextWork <> ctx_equal_fresh thm
+R2082:2089 OpenSignaturesSyntax <> fresh_in def
+R2111:2125 ContextWork <> ctx_equal_fresh thm
+R2160:2165 OpenSignaturesCore <> typing ind
+R2186:2190 OpenSignaturesSyntax <> TSort constr
+R2174:2176 OpenSignaturesSyntax <> TPi constr
+R2160:2165 OpenSignaturesCore <> typing ind
+R2186:2190 OpenSignaturesSyntax <> TSort constr
+R2174:2176 OpenSignaturesSyntax <> TPi constr
+R2219:2237 OpenSignaturesTransport <> pi_domain_formation thm
+R2219:2237 OpenSignaturesTransport <> pi_domain_formation thm
+R2276:2281 OpenSignaturesCore <> ty_lam constr
+R2276:2281 OpenSignaturesCore <> ty_lam constr
+R2336:2342 OpenSignaturesCore <> wf_cons constr
+R2367:2382 ContextWork <> ctx_equal_extend thm
+R2336:2342 OpenSignaturesCore <> wf_cons constr
+R2367:2382 ContextWork <> ctx_equal_extend thm

@@ -1,0 +1,109 @@
+DIGEST 19eb1f6042ff2b69dc85c0b2d0790dbd
+Fannotated.AContexts
+R100:103 Stdlib.Lists.List <> <> lib
+R105:109 Stdlib.Arith.Arith <> <> lib
+R127:147 annotated.AComparison <> <> lib
+R157:169 Stdlib.Lists.List ListNotations <> mod
+prf 181:198 <> context_conversion
+binder 209:213 <> Gamma:1
+binder 215:215 <> A:2
+binder 217:217 <> B:3
+binder 219:219 <> t:4
+binder 221:221 <> T:5
+binder 223:223 <> j:6
+binder 225:225 <> k:7
+R261:264 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R230:238 annotated.ATyping RT typing ind
+R240:244 annotated.AContexts <> Gamma:1 var
+R246:246 annotated.AContexts <> A:2 var
+R249:257 annotated.AErase Raw TSort constr
+R259:259 annotated.AContexts <> j:6 var
+R296:301 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R265:273 annotated.ATyping RT typing ind
+R275:279 annotated.AContexts <> Gamma:1 var
+R281:281 annotated.AContexts <> B:3 var
+R284:292 annotated.AErase Raw TSort constr
+R294:294 annotated.AContexts <> k:7 var
+R326:329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R302:321 nameless.DBCore <> conv ind
+R325:325 annotated.AContexts <> B:3 var
+R323:323 annotated.AContexts <> A:2 var
+R353:356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R330:335 annotated.ATyping <> typing ind
+R339:342 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R338:338 annotated.AContexts <> A:2 var
+R343:347 annotated.AContexts <> Gamma:1 var
+R350:350 annotated.AContexts <> t:4 var
+R352:352 annotated.AContexts <> T:5 var
+R357:362 annotated.ATyping <> typing ind
+R366:369 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R365:365 annotated.AContexts <> B:3 var
+R370:374 annotated.AContexts <> Gamma:1 var
+R377:377 annotated.AContexts <> t:4 var
+R379:379 annotated.AContexts <> T:5 var
+R443:459 annotated.AWeakening RW typing_context thm
+R443:459 annotated.AWeakening RW typing_context thm
+R496:500 annotated.ATyping RT wf ind
+R504:507 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R527:536 annotated.ATyping RT wf_cons constr
+R496:500 annotated.ATyping RT wf ind
+R504:507 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R527:536 annotated.ATyping RT wf_cons constr
+R567:578 annotated.AWeakening RW weakening thm
+R567:578 annotated.AWeakening RW weakening thm
+R624:628 annotated.ATyping RT wf ind
+R645:648 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R631:638 annotated.AErase Raw lift def
+R650:653 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R677:686 annotated.ATyping RT wf_cons constr
+R624:628 annotated.ATyping RT wf ind
+R645:648 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R631:638 annotated.AErase Raw lift def
+R650:653 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R677:686 annotated.ATyping RT wf_cons constr
+R719:724 annotated.ATyping <> typing ind
+R741:744 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R727:734 annotated.AErase Raw lift def
+R746:749 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R762:765 annotated.ASyntax <> lift def
+R775:782 annotated.AErase Raw lift def
+R719:724 annotated.ATyping <> typing ind
+R741:744 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R727:734 annotated.AErase Raw lift def
+R746:749 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R762:765 annotated.ASyntax <> lift def
+R775:782 annotated.AErase Raw lift def
+R804:814 annotated.AWeakening <> typing_lift thm
+R804:814 annotated.AWeakening <> typing_lift thm
+R853:876 annotated.AWeakening RW environment_lift_cons thm
+R879:902 annotated.AWeakening RW environment_lift_head thm
+R853:876 annotated.AWeakening RW environment_lift_cons thm
+R879:902 annotated.AWeakening RW environment_lift_head thm
+R922:927 annotated.ATyping <> typing ind
+R931:934 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R943:946 annotated.ASyntax <> TVar constr
+R952:959 annotated.AErase Raw lift def
+R922:927 annotated.ATyping <> typing ind
+R931:934 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R943:946 annotated.ASyntax <> TVar constr
+R952:959 annotated.AErase Raw lift def
+R1000:1007 annotated.AErase Raw lift def
+R981:987 annotated.ATyping <> ty_conv constr
+R1000:1007 annotated.AErase Raw lift def
+R981:987 annotated.ATyping <> ty_conv constr
+R1030:1035 annotated.ATyping <> ty_var constr
+R1030:1035 annotated.ATyping <> ty_var constr
+R1094:1111 annotated.AWeakening RW conversion_lift thm
+R1114:1135 nameless.DBCore <> cv_sym constr
+R1094:1111 annotated.AWeakening RW conversion_lift thm
+R1114:1135 nameless.DBCore <> cv_sym constr
+R1164:1175 annotated.ASubstitution <> substitution thm
+R1164:1175 annotated.ASubstitution <> substitution thm
+R1209:1213 annotated.AErase <> erase def
+R1233:1257 annotated.ABinding <> subst_eta_beta_cancel_gen thm
+R1260:1287 annotated.ASubstitution RB subst_eta_beta_cancel_gen thm
+R1233:1257 annotated.ABinding <> subst_eta_beta_cancel_gen thm
+R1233:1257 annotated.ABinding <> subst_eta_beta_cancel_gen thm
+R1260:1287 annotated.ASubstitution RB subst_eta_beta_cancel_gen thm
+R1260:1287 annotated.ASubstitution RB subst_eta_beta_cancel_gen thm
+R1332:1349 annotated.AContexts <> context_conversion thm

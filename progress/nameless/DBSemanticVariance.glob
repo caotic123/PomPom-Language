@@ -1,0 +1,429 @@
+DIGEST b7c62824c43c8d7c7e6120978849c2af
+Fnameless.DBSemanticVariance
+R157:161 Stdlib.Arith.Arith <> <> lib
+R163:165 Stdlib.micromega.Lia <> <> lib
+R183:210 nameless.DBSemanticJudgments <> <> lib
+R220:223 nameless.DBFullReducibility Full <> mod
+ind 237:255 <> bounded_universe_le
+constr 292:298 <> bu_refl
+constr 342:348 <> bu_sort
+constr 420:424 <> bu_pi
+R262:265 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R259:261 Corelib.Init.Datatypes <> nat ind
+R270:273 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R266:269 nameless.DBSyntax <> term ind
+R278:281 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R274:277 nameless.DBSyntax <> term ind
+binder 309:309 <> n:3
+binder 311:311 <> A:4
+R314:332 nameless.DBSemanticVariance <> bounded_universe_le:1 ind
+R338:338 nameless.DBSemanticVariance <> A:4 var
+R336:336 nameless.DBSemanticVariance <> A:4 var
+R334:334 nameless.DBSemanticVariance <> n:3 var
+binder 359:359 <> n:5
+binder 361:361 <> j:6
+binder 363:363 <> k:7
+R372:375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R367:370 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R366:366 nameless.DBSemanticVariance <> j:6 var
+R371:371 nameless.DBSemanticVariance <> k:7 var
+R376:394 nameless.DBSemanticVariance <> bounded_universe_le:1 ind
+R409:413 nameless.DBSyntax <> TSort constr
+R415:415 nameless.DBSemanticVariance <> k:7 var
+R399:403 nameless.DBSyntax <> TSort constr
+R405:405 nameless.DBSemanticVariance <> j:6 var
+R396:396 nameless.DBSemanticVariance <> n:5 var
+binder 435:435 <> n:8
+binder 437:437 <> A:9
+binder 439:439 <> B:10
+binder 441:441 <> C:11
+binder 443:443 <> D:12
+R475:478 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R450:468 nameless.DBSemanticVariance <> bounded_universe_le:1 ind
+R474:474 nameless.DBSemanticVariance <> A:9 var
+R472:472 nameless.DBSemanticVariance <> C:11 var
+R470:470 nameless.DBSemanticVariance <> n:8 var
+R504:511 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R479:497 nameless.DBSemanticVariance <> bounded_universe_le:1 ind
+R503:503 nameless.DBSemanticVariance <> D:12 var
+R501:501 nameless.DBSemanticVariance <> B:10 var
+R499:499 nameless.DBSemanticVariance <> n:8 var
+R512:530 nameless.DBSemanticVariance <> bounded_universe_le:1 ind
+R549:551 nameless.DBSyntax <> TPi constr
+R555:555 nameless.DBSemanticVariance <> D:12 var
+R553:553 nameless.DBSemanticVariance <> C:11 var
+R539:541 nameless.DBSyntax <> TPi constr
+R545:545 nameless.DBSemanticVariance <> B:10 var
+R543:543 nameless.DBSemanticVariance <> A:9 var
+R533:533 Corelib.Init.Datatypes <> S constr
+R535:535 nameless.DBSemanticVariance <> n:8 var
+scheme 237:255 <> bounded_universe_le_ind
+scheme 237:255 <> bounded_universe_le_sind
+prf 565:585 <> bounded_universe_mono
+binder 596:596 <> n:13
+binder 598:598 <> A:14
+binder 600:600 <> B:15
+R628:633 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R603:621 nameless.DBSemanticVariance <> bounded_universe_le ind
+R623:623 nameless.DBSemanticVariance <> n:13 var
+R625:625 nameless.DBSemanticVariance <> A:14 var
+R627:627 nameless.DBSemanticVariance <> B:15 var
+binder 641:641 <> m:16
+R650:653 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R645:648 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R644:644 nameless.DBSemanticVariance <> n:13 var
+R649:649 nameless.DBSemanticVariance <> m:16 var
+R654:672 nameless.DBSemanticVariance <> bounded_universe_le ind
+R674:674 nameless.DBSemanticVariance <> m:16 var
+R676:676 nameless.DBSemanticVariance <> A:14 var
+R678:678 nameless.DBSemanticVariance <> B:15 var
+prf 875:893 <> universe_le_bounded
+binder 904:904 <> A:17
+binder 906:906 <> B:18
+R924:927 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R909:919 nameless.DBTyping <> universe_le ind
+R921:921 nameless.DBSemanticVariance <> A:17 var
+R923:923 nameless.DBSemanticVariance <> B:18 var
+R928:934 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R936:937 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 935:935 <> n:19
+R938:956 nameless.DBSemanticVariance <> bounded_universe_le ind
+R958:958 nameless.DBSemanticVariance <> n:19 var
+R960:960 nameless.DBSemanticVariance <> A:17 var
+R962:962 nameless.DBSemanticVariance <> B:18 var
+R1136:1136 Corelib.Init.Datatypes <> S constr
+R1139:1145 Stdlib.Arith.PeanoNat Nat max def
+R1174:1194 nameless.DBSemanticVariance <> bounded_universe_mono thm
+R1219:1230 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R1247:1258 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R1136:1136 Corelib.Init.Datatypes <> S constr
+R1139:1145 Stdlib.Arith.PeanoNat Nat max def
+R1174:1194 nameless.DBSemanticVariance <> bounded_universe_mono thm
+R1174:1194 nameless.DBSemanticVariance <> bounded_universe_mono thm
+R1219:1230 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R1247:1258 Stdlib.Arith.PeanoNat Nat le_max_r thm
+prf 1273:1294 <> bounded_universe_subst
+binder 1305:1305 <> n:20
+binder 1307:1307 <> A:21
+binder 1309:1309 <> B:22
+R1337:1340 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1312:1330 nameless.DBSemanticVariance <> bounded_universe_le ind
+R1332:1332 nameless.DBSemanticVariance <> n:20 var
+R1334:1334 nameless.DBSemanticVariance <> A:21 var
+R1336:1336 nameless.DBSemanticVariance <> B:22 var
+binder 1348:1348 <> a:23
+binder 1350:1350 <> c:24
+R1355:1373 nameless.DBSemanticVariance <> bounded_universe_le ind
+R1375:1375 nameless.DBSemanticVariance <> n:20 var
+R1378:1382 nameless.DBSyntax <> subst def
+R1388:1388 nameless.DBSemanticVariance <> A:21 var
+R1386:1386 nameless.DBSemanticVariance <> c:24 var
+R1384:1384 nameless.DBSemanticVariance <> a:23 var
+R1392:1396 nameless.DBSyntax <> subst def
+R1402:1402 nameless.DBSemanticVariance <> B:22 var
+R1400:1400 nameless.DBSemanticVariance <> c:24 var
+R1398:1398 nameless.DBSemanticVariance <> a:23 var
+R1459:1463 nameless.DBSyntax <> subst def
+prf 1497:1523 <> bounded_universe_step_match
+binder 1534:1534 <> n:25
+binder 1536:1536 <> A:26
+binder 1538:1538 <> B:27
+R1566:1571 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1541:1559 nameless.DBSemanticVariance <> bounded_universe_le ind
+R1561:1561 nameless.DBSemanticVariance <> n:25 var
+R1563:1563 nameless.DBSemanticVariance <> A:26 var
+R1565:1565 nameless.DBSemanticVariance <> B:27 var
+R1572:1572 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1658:1665 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1751:1751 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 1580:1581 <> A':28
+R1598:1601 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1584:1592 nameless.DBCore <> reduction ind
+R1596:1597 nameless.DBSemanticVariance <> A':28 var
+R1594:1594 nameless.DBSemanticVariance <> A:26 var
+R1602:1608 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1611:1612 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1609:1610 <> B':29
+R1627:1630 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1613:1621 nameless.DBCore <> reduction ind
+R1625:1626 nameless.DBSemanticVariance <> B':29 var
+R1623:1623 nameless.DBSemanticVariance <> B:27 var
+R1631:1649 nameless.DBSemanticVariance <> bounded_universe_le ind
+R1651:1651 nameless.DBSemanticVariance <> n:25 var
+R1653:1654 nameless.DBSemanticVariance <> A':28 var
+R1656:1657 nameless.DBSemanticVariance <> B':29 var
+binder 1673:1674 <> B':30
+R1691:1694 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1677:1685 nameless.DBCore <> reduction ind
+R1689:1690 nameless.DBSemanticVariance <> B':30 var
+R1687:1687 nameless.DBSemanticVariance <> B:27 var
+R1695:1701 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1704:1705 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1702:1703 <> A':31
+R1720:1723 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1706:1714 nameless.DBCore <> reduction ind
+R1718:1719 nameless.DBSemanticVariance <> A':31 var
+R1716:1716 nameless.DBSemanticVariance <> A:26 var
+R1724:1742 nameless.DBSemanticVariance <> bounded_universe_le ind
+R1744:1744 nameless.DBSemanticVariance <> n:25 var
+R1746:1747 nameless.DBSemanticVariance <> A':31 var
+R1749:1750 nameless.DBSemanticVariance <> B':30 var
+R2106:2114 nameless.DBCore <> reduction ind
+R2106:2114 nameless.DBCore <> reduction ind
+R2185:2187 nameless.DBSyntax <> TPi constr
+R2214:2222 nameless.DBCore <> red_TPi_A constr
+R2185:2187 nameless.DBSyntax <> TPi constr
+R2214:2222 nameless.DBCore <> red_TPi_A constr
+R2268:2276 nameless.DBCore <> reduction ind
+R2268:2276 nameless.DBCore <> reduction ind
+R2347:2349 nameless.DBSyntax <> TPi constr
+R2376:2384 nameless.DBCore <> red_TPi_B constr
+R2347:2349 nameless.DBSyntax <> TPi constr
+R2376:2384 nameless.DBCore <> red_TPi_B constr
+R2430:2438 nameless.DBCore <> reduction ind
+R2430:2438 nameless.DBCore <> reduction ind
+R2509:2511 nameless.DBSyntax <> TPi constr
+R2538:2546 nameless.DBCore <> red_TPi_A constr
+R2509:2511 nameless.DBSyntax <> TPi constr
+R2538:2546 nameless.DBCore <> red_TPi_A constr
+R2592:2600 nameless.DBCore <> reduction ind
+R2592:2600 nameless.DBCore <> reduction ind
+R2671:2673 nameless.DBSyntax <> TPi constr
+R2700:2708 nameless.DBCore <> red_TPi_B constr
+R2671:2673 nameless.DBSyntax <> TPi constr
+R2700:2708 nameless.DBCore <> red_TPi_B constr
+prf 2739:2771 <> bounded_universe_reductions_match
+binder 2782:2782 <> A:32
+binder 2784:2785 <> A':33
+R2806:2809 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2788:2790 nameless.DBParallelBase <> rtc ind
+R2804:2805 nameless.DBSemanticVariance <> A':33 var
+R2802:2802 nameless.DBSemanticVariance <> A:32 var
+R2792:2800 nameless.DBCore <> reduction ind
+binder 2817:2817 <> n:34
+binder 2819:2819 <> B:35
+R2849:2852 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2824:2842 nameless.DBSemanticVariance <> bounded_universe_le ind
+R2844:2844 nameless.DBSemanticVariance <> n:34 var
+R2846:2846 nameless.DBSemanticVariance <> A:32 var
+R2848:2848 nameless.DBSemanticVariance <> B:35 var
+R2853:2859 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2862:2863 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2860:2861 <> B':36
+R2882:2885 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2864:2866 nameless.DBParallelBase <> rtc ind
+R2880:2881 nameless.DBSemanticVariance <> B':36 var
+R2878:2878 nameless.DBSemanticVariance <> B:35 var
+R2868:2876 nameless.DBCore <> reduction ind
+R2886:2904 nameless.DBSemanticVariance <> bounded_universe_le ind
+R2906:2906 nameless.DBSemanticVariance <> n:34 var
+R2908:2909 nameless.DBSemanticVariance <> A':33 var
+R2911:2912 nameless.DBSemanticVariance <> B':36 var
+R3025:3029 Corelib.Init.Logic <> proj1 thm
+R3032:3058 nameless.DBSemanticVariance <> bounded_universe_step_match thm
+R3025:3029 Corelib.Init.Logic <> proj1 thm
+R3032:3058 nameless.DBSemanticVariance <> bounded_universe_step_match thm
+R3164:3171 nameless.DBParallelBase <> rtc_step constr
+R3164:3171 nameless.DBParallelBase <> rtc_step constr
+prf 3209:3231 <> bounded_universe_normal
+binder 3242:3242 <> n:37
+binder 3244:3244 <> A:38
+binder 3246:3246 <> B:39
+R3276:3279 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3251:3269 nameless.DBSemanticVariance <> bounded_universe_le ind
+R3271:3271 nameless.DBSemanticVariance <> n:37 var
+R3273:3273 nameless.DBSemanticVariance <> A:38 var
+R3275:3275 nameless.DBSemanticVariance <> B:39 var
+R3293:3296 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3280:3290 nameless.DBFullNormalForms <> normal_form def
+R3292:3292 nameless.DBSemanticVariance <> A:38 var
+R3297:3307 nameless.DBFullNormalForms <> normal_form def
+R3309:3309 nameless.DBSemanticVariance <> B:39 var
+R3356:3360 Corelib.Init.Logic <> proj2 thm
+R3363:3389 nameless.DBSemanticVariance <> bounded_universe_step_match thm
+R3356:3360 Corelib.Init.Logic <> proj2 thm
+R3363:3389 nameless.DBSemanticVariance <> bounded_universe_step_match thm
+prf 3452:3480 <> calculus_normal_pi_components
+binder 3491:3491 <> n:40
+binder 3493:3493 <> A:41
+binder 3495:3495 <> B:42
+binder 3497:3497 <> R:43
+R3531:3534 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3502:3516 nameless.DBCalculusModel <> calculus_interp def
+R3518:3518 nameless.DBSemanticVariance <> n:40 var
+R3521:3523 nameless.DBSyntax <> TPi constr
+R3527:3527 nameless.DBSemanticVariance <> B:42 var
+R3525:3525 nameless.DBSemanticVariance <> A:41 var
+R3530:3530 nameless.DBSemanticVariance <> R:43 var
+R3556:3561 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3535:3545 nameless.DBFullNormalForms <> normal_form def
+R3548:3550 nameless.DBSyntax <> TPi constr
+R3554:3554 nameless.DBSemanticVariance <> B:42 var
+R3552:3552 nameless.DBSemanticVariance <> A:41 var
+R3562:3568 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3574:3575 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3569:3570 <> RA:44
+binder 3572:3573 <> RB:45
+R3598:3601 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3576:3590 nameless.DBCalculusModel <> calculus_interp def
+R3592:3592 nameless.DBSemanticVariance <> n:40 var
+R3594:3594 nameless.DBSemanticVariance <> A:41 var
+R3596:3597 nameless.DBSemanticVariance <> RA:44 var
+R3646:3652 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3709:3709 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3602:3616 nameless.DBFullReducibility Full predicate_equiv def
+R3618:3618 nameless.DBSemanticVariance <> R:43 var
+R3621:3638 nameless.DBFullReducibility Full dependent_function def
+R3640:3641 nameless.DBSemanticVariance <> RA:44 var
+R3643:3644 nameless.DBSemanticVariance <> RB:45 var
+binder 3660:3660 <> a:46
+R3667:3670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3663:3664 nameless.DBSemanticVariance <> RA:44 var
+R3666:3666 nameless.DBSemanticVariance <> a:46 var
+R3671:3685 nameless.DBCalculusModel <> calculus_interp def
+R3687:3687 nameless.DBSemanticVariance <> n:40 var
+R3690:3694 nameless.DBSyntax <> subst def
+R3700:3700 nameless.DBSemanticVariance <> B:42 var
+R3696:3696 nameless.DBSemanticVariance <> a:46 var
+R3704:3705 nameless.DBSemanticVariance <> RB:45 var
+R3707:3707 nameless.DBSemanticVariance <> a:46 var
+R3755:3780 nameless.DBSemanticBinders <> type_interp_pi_normal_view thm
+R3854:3860 Corelib.Init.Logic <> eq_refl constr
+R3796:3812 nameless.DBUniverseModel <> level_atom_not_pi thm
+R3821:3836 nameless.DBCalculusModel <> primitive_not_pi thm
+R3755:3780 nameless.DBSemanticBinders <> type_interp_pi_normal_view thm
+R3854:3860 Corelib.Init.Logic <> eq_refl constr
+R3796:3812 nameless.DBUniverseModel <> level_atom_not_pi thm
+R3821:3836 nameless.DBCalculusModel <> primitive_not_pi thm
+R3796:3812 nameless.DBUniverseModel <> level_atom_not_pi thm
+R3821:3836 nameless.DBCalculusModel <> primitive_not_pi thm
+R3919:3929 nameless.DBFullNormalForms <> normal_form def
+R3962:3964 nameless.DBSyntax <> TPi constr
+R3983:3991 nameless.DBCore <> red_TPi_B constr
+R3919:3929 nameless.DBFullNormalForms <> normal_form def
+R3962:3964 nameless.DBSyntax <> TPi constr
+R3983:3991 nameless.DBCore <> red_TPi_B constr
+R4009:4034 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R4009:4034 nameless.DBFullNormalForms <> normal_reductions_identity thm
+prf 4096:4121 <> bounded_universe_semantics
+binder 4132:4132 <> h:47
+binder 4134:4134 <> A:48
+binder 4136:4136 <> B:49
+R4166:4169 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4141:4159 nameless.DBSemanticVariance <> bounded_universe_le ind
+R4161:4161 nameless.DBSemanticVariance <> h:47 var
+R4163:4163 nameless.DBSemanticVariance <> A:48 var
+R4165:4165 nameless.DBSemanticVariance <> B:49 var
+binder 4177:4177 <> n:50
+binder 4179:4179 <> m:51
+binder 4181:4181 <> R:52
+binder 4183:4183 <> S:53
+R4209:4212 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4188:4202 nameless.DBCalculusModel <> calculus_interp def
+R4204:4204 nameless.DBSemanticVariance <> n:50 var
+R4206:4206 nameless.DBSemanticVariance <> A:48 var
+R4208:4208 nameless.DBSemanticVariance <> R:52 var
+R4234:4237 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4213:4227 nameless.DBCalculusModel <> calculus_interp def
+R4229:4229 nameless.DBSemanticVariance <> m:51 var
+R4231:4231 nameless.DBSemanticVariance <> B:49 var
+R4233:4233 nameless.DBSemanticVariance <> S:53 var
+binder 4245:4245 <> t:54
+R4251:4254 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4248:4248 nameless.DBSemanticVariance <> R:52 var
+R4250:4250 nameless.DBSemanticVariance <> t:54 var
+R4255:4255 nameless.DBSemanticVariance <> S:53 var
+R4257:4257 nameless.DBSemanticVariance <> t:54 var
+R4297:4305 Stdlib.Arith.Wf_nat <> lt_wf_ind thm
+R4297:4305 Stdlib.Arith.Wf_nat <> lt_wf_ind thm
+R4355:4368 nameless.DBFullNormalForms <> normalize_full def
+R4373:4395 nameless.DBSemanticTypes <> type_interp_normalizing thm
+R4355:4368 nameless.DBFullNormalForms <> normalize_full def
+R4373:4395 nameless.DBSemanticTypes <> type_interp_normalizing thm
+R4438:4470 nameless.DBSemanticVariance <> bounded_universe_reductions_match thm
+R4438:4470 nameless.DBSemanticVariance <> bounded_universe_reductions_match thm
+R4521:4543 nameless.DBSemanticVariance <> bounded_universe_normal thm
+R4521:4543 nameless.DBSemanticVariance <> bounded_universe_normal thm
+R4583:4604 nameless.DBSemanticTypes <> type_interp_reductions thm
+R4583:4604 nameless.DBSemanticTypes <> type_interp_reductions thm
+R4643:4664 nameless.DBSemanticTypes <> type_interp_reductions thm
+R4643:4664 nameless.DBSemanticTypes <> type_interp_reductions thm
+R4754:4775 nameless.DBCalculusModel <> calculus_interp_unique thm
+R4798:4804 nameless.DBCore <> cv_refl constr
+R4754:4775 nameless.DBCalculusModel <> calculus_interp_unique thm
+R4798:4804 nameless.DBCore <> cv_refl constr
+R4837:4841 Corelib.Init.Logic <> proj2 thm
+R4844:4861 nameless.DBSemanticGeneration <> calculus_sort_view thm
+R4876:4882 nameless.DBCore <> cv_refl constr
+R4837:4841 Corelib.Init.Logic <> proj2 thm
+R4844:4861 nameless.DBSemanticGeneration <> calculus_sort_view thm
+R4876:4882 nameless.DBCore <> cv_refl constr
+R4913:4917 Corelib.Init.Logic <> proj2 thm
+R4920:4937 nameless.DBSemanticGeneration <> calculus_sort_view thm
+R4952:4958 nameless.DBCore <> cv_refl constr
+R4913:4917 Corelib.Init.Logic <> proj2 thm
+R4920:4937 nameless.DBSemanticGeneration <> calculus_sort_view thm
+R4952:4958 nameless.DBCore <> cv_refl constr
+R4995:5018 nameless.DBCalculusModel <> calculus_type_cumulative thm
+R4995:5018 nameless.DBCalculusModel <> calculus_type_cumulative thm
+R5070:5098 nameless.DBSemanticVariance <> calculus_normal_pi_components thm
+R5070:5098 nameless.DBSemanticVariance <> calculus_normal_pi_components thm
+R5166:5194 nameless.DBSemanticVariance <> calculus_normal_pi_components thm
+R5166:5194 nameless.DBSemanticVariance <> calculus_normal_pi_components thm
+R5271:5297 nameless.DBFullReducibility Full dependent_function_variance thm
+R5271:5297 nameless.DBFullReducibility Full dependent_function_variance thm
+R5575:5596 nameless.DBSemanticVariance <> bounded_universe_subst thm
+R5575:5596 nameless.DBSemanticVariance <> bounded_universe_subst thm
+prf 5670:5690 <> universe_le_semantics
+binder 5701:5701 <> A:55
+binder 5703:5703 <> B:56
+R5721:5724 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5706:5716 nameless.DBTyping <> universe_le ind
+R5718:5718 nameless.DBSemanticVariance <> A:55 var
+R5720:5720 nameless.DBSemanticVariance <> B:56 var
+binder 5732:5732 <> n:57
+binder 5734:5734 <> m:58
+binder 5736:5736 <> R:59
+binder 5738:5738 <> S:60
+R5764:5767 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5743:5757 nameless.DBCalculusModel <> calculus_interp def
+R5759:5759 nameless.DBSemanticVariance <> n:57 var
+R5761:5761 nameless.DBSemanticVariance <> A:55 var
+R5763:5763 nameless.DBSemanticVariance <> R:59 var
+R5789:5792 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5768:5782 nameless.DBCalculusModel <> calculus_interp def
+R5784:5784 nameless.DBSemanticVariance <> m:58 var
+R5786:5786 nameless.DBSemanticVariance <> B:56 var
+R5788:5788 nameless.DBSemanticVariance <> S:60 var
+binder 5800:5800 <> t:61
+R5806:5809 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5803:5803 nameless.DBSemanticVariance <> R:59 var
+R5805:5805 nameless.DBSemanticVariance <> t:61 var
+R5810:5810 nameless.DBSemanticVariance <> S:60 var
+R5812:5812 nameless.DBSemanticVariance <> t:61 var
+R5848:5866 nameless.DBSemanticVariance <> universe_le_bounded thm
+R5848:5866 nameless.DBSemanticVariance <> universe_le_bounded thm
+R5895:5920 nameless.DBSemanticVariance <> bounded_universe_semantics thm
+R5895:5920 nameless.DBSemanticVariance <> bounded_universe_semantics thm
+prf 5946:5973 <> semantic_function_cumulative
+binder 5984:5984 <> f:62
+binder 5986:5986 <> A:63
+binder 5988:5988 <> B:64
+R6011:6014 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5993:6006 nameless.DBSemanticJudgments <> semantic_value def
+R6008:6008 nameless.DBSemanticVariance <> f:62 var
+R6010:6010 nameless.DBSemanticVariance <> A:63 var
+R6030:6033 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6015:6027 nameless.DBSemanticJudgments <> semantic_type def
+R6029:6029 nameless.DBSemanticVariance <> B:64 var
+R6049:6052 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6034:6044 nameless.DBTyping <> universe_le ind
+R6046:6046 nameless.DBSemanticVariance <> A:63 var
+R6048:6048 nameless.DBSemanticVariance <> B:64 var
+R6053:6066 nameless.DBSemanticJudgments <> semantic_value def
+R6068:6068 nameless.DBSemanticVariance <> f:62 var
+R6070:6070 nameless.DBSemanticVariance <> B:64 var
+R6167:6187 nameless.DBSemanticVariance <> universe_le_semantics thm
+R6167:6187 nameless.DBSemanticVariance <> universe_le_semantics thm
+R6227:6247 nameless.DBSemanticVariance <> universe_le_semantics thm
+R6268:6295 nameless.DBSemanticVariance <> semantic_function_cumulative thm

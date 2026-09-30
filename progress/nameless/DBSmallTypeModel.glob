@@ -1,0 +1,571 @@
+DIGEST dc2cfb39eed32d0793792269f26fdca1
+Fnameless.DBSmallTypeModel
+R324:327 Stdlib.Lists.List <> <> lib
+R329:333 Stdlib.Arith.Arith <> <> lib
+R335:338 Stdlib.Bool.Bool <> <> lib
+R340:342 Stdlib.micromega.Lia <> <> lib
+R360:386 nameless.DBDescriptionModel <> <> lib
+R396:399 nameless.DBFullReducibility Full <> mod
+def 414:436 <> description_fixed_point
+binder 438:439 <> RI:1
+R450:453 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R446:449 nameless.DBSyntax <> term ind
+R454:472 nameless.DBDescriptionModel <> description_functor def
+binder 442:442 <> F:2
+R480:489 nameless.DBIndexedCandidates Indexed mu def
+binder 499:499 <> X:3
+binder 501:501 <> i:4
+R506:506 nameless.DBSmallTypeModel <> F:2 var
+R510:510 nameless.DBSmallTypeModel <> X:3 var
+R508:508 nameless.DBSmallTypeModel <> i:4 var
+R491:492 nameless.DBSmallTypeModel <> RI:1 var
+ind 525:534 <> small_atom
+constr 574:580 <> sa_unit
+constr 612:617 <> sa_uid
+constr 647:654 <> sa_enumu
+constr 701:707 <> sa_enum
+constr 763:767 <> sa_mu
+constr 1033:1040 <> sa_close
+R542:545 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R538:541 nameless.DBSyntax <> term ind
+R546:546 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R559:563 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R551:554 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R547:550 nameless.DBSyntax <> term ind
+R584:593 nameless.DBSmallTypeModel <> small_atom:5 ind
+R602:608 nameless.DBFullReductionStructure <> full_SN def
+R595:600 nameless.DBSyntax <> TUnitT constr
+R621:630 nameless.DBSmallTypeModel <> small_atom:5 ind
+R637:643 nameless.DBFullReductionStructure <> full_SN def
+R632:635 nameless.DBSyntax <> TUId constr
+R658:667 nameless.DBSmallTypeModel <> small_atom:5 ind
+R676:697 nameless.DBEnumCandidates <> enumeration_computable ind
+R669:674 nameless.DBSyntax <> TEnumU constr
+binder 718:718 <> E:7
+R721:730 nameless.DBSmallTypeModel <> small_atom:5 ind
+R744:756 nameless.DBEnumCandidates <> enum_elements def
+R758:758 nameless.DBSmallTypeModel <> E:7 var
+R733:738 nameless.DBSyntax <> TEnumT constr
+R740:740 nameless.DBSmallTypeModel <> E:7 var
+binder 778:779 <> IT:8
+binder 781:781 <> D:9
+binder 783:783 <> i:10
+binder 785:786 <> RI:11
+binder 788:788 <> F:12
+R823:826 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R795:805 nameless.DBSemanticTypes <> type_interp ind
+R818:819 nameless.DBSmallTypeModel <> IT:8 var
+R821:822 nameless.DBSmallTypeModel <> RI:11 var
+R807:816 nameless.DBSmallTypeModel <> small_atom:5 ind
+R831:838 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R827:828 nameless.DBSmallTypeModel <> RI:11 var
+R830:830 nameless.DBSmallTypeModel <> i:10 var
+R839:839 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R907:915 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 847:847 <> j:13
+R854:857 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R850:851 nameless.DBSmallTypeModel <> RI:11 var
+R853:853 nameless.DBSmallTypeModel <> j:13 var
+R858:875 nameless.DBDescriptionModel <> description_interp ind
+R888:889 nameless.DBSmallTypeModel <> RI:11 var
+R892:895 nameless.DBSyntax <> TApp constr
+R899:899 nameless.DBSmallTypeModel <> j:13 var
+R897:897 nameless.DBSmallTypeModel <> D:9 var
+R903:903 nameless.DBSmallTypeModel <> F:12 var
+R905:905 nameless.DBSmallTypeModel <> j:13 var
+R877:886 nameless.DBSmallTypeModel <> small_atom:5 ind
+R958:965 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R916:924 nameless.DBFullReducibility Full candidate rec
+R927:949 nameless.DBSmallTypeModel <> description_fixed_point def
+R951:952 nameless.DBSmallTypeModel <> RI:11 var
+R954:954 nameless.DBSmallTypeModel <> F:12 var
+R956:956 nameless.DBSmallTypeModel <> i:10 var
+R966:975 nameless.DBSmallTypeModel <> small_atom:5 ind
+R999:1021 nameless.DBSmallTypeModel <> description_fixed_point def
+R1023:1024 nameless.DBSmallTypeModel <> RI:11 var
+R1026:1026 nameless.DBSmallTypeModel <> F:12 var
+R1028:1028 nameless.DBSmallTypeModel <> i:10 var
+R978:981 nameless.DBSyntax <> TApp constr
+R995:995 nameless.DBSmallTypeModel <> i:10 var
+R984:987 nameless.DBSyntax <> TMuI constr
+R992:992 nameless.DBSmallTypeModel <> D:9 var
+R989:990 nameless.DBSmallTypeModel <> IT:8 var
+binder 1051:1052 <> IT:14
+binder 1054:1054 <> D:15
+binder 1056:1056 <> G:16
+binder 1058:1058 <> i:17
+binder 1060:1061 <> RI:18
+binder 1063:1064 <> FD:19
+binder 1066:1067 <> FG:20
+R1102:1105 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1074:1084 nameless.DBSemanticTypes <> type_interp ind
+R1097:1098 nameless.DBSmallTypeModel <> IT:14 var
+R1100:1101 nameless.DBSmallTypeModel <> RI:18 var
+R1086:1095 nameless.DBSmallTypeModel <> small_atom:5 ind
+R1110:1117 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1106:1107 nameless.DBSmallTypeModel <> RI:18 var
+R1109:1109 nameless.DBSmallTypeModel <> i:17 var
+R1164:1171 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1118:1135 nameless.DBDescriptionModel <> description_interp ind
+R1148:1149 nameless.DBSmallTypeModel <> RI:18 var
+R1152:1155 nameless.DBSyntax <> TApp constr
+R1159:1159 nameless.DBSmallTypeModel <> i:17 var
+R1157:1157 nameless.DBSmallTypeModel <> D:15 var
+R1162:1163 nameless.DBSmallTypeModel <> FD:19 var
+R1137:1146 nameless.DBSmallTypeModel <> small_atom:5 ind
+R1172:1172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1241:1249 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1180:1180 <> j:21
+R1187:1190 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1183:1184 nameless.DBSmallTypeModel <> RI:18 var
+R1186:1186 nameless.DBSmallTypeModel <> j:21 var
+R1191:1208 nameless.DBDescriptionModel <> description_interp ind
+R1221:1222 nameless.DBSmallTypeModel <> RI:18 var
+R1225:1228 nameless.DBSyntax <> TApp constr
+R1232:1232 nameless.DBSmallTypeModel <> j:21 var
+R1230:1230 nameless.DBSmallTypeModel <> G:16 var
+R1236:1237 nameless.DBSmallTypeModel <> FG:20 var
+R1239:1239 nameless.DBSmallTypeModel <> j:21 var
+R1210:1219 nameless.DBSmallTypeModel <> small_atom:5 ind
+R1314:1321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1250:1258 nameless.DBFullReducibility Full candidate rec
+R1261:1275 nameless.DBIndexedCandidates <> rolled_elements def
+R1278:1279 nameless.DBSmallTypeModel <> FD:19 var
+R1282:1304 nameless.DBSmallTypeModel <> description_fixed_point def
+R1306:1307 nameless.DBSmallTypeModel <> RI:18 var
+R1309:1310 nameless.DBSmallTypeModel <> FG:20 var
+R1322:1331 nameless.DBSmallTypeModel <> small_atom:5 ind
+R1365:1379 nameless.DBIndexedCandidates <> rolled_elements def
+R1382:1383 nameless.DBSmallTypeModel <> FD:19 var
+R1386:1408 nameless.DBSmallTypeModel <> description_fixed_point def
+R1410:1411 nameless.DBSmallTypeModel <> RI:18 var
+R1413:1414 nameless.DBSmallTypeModel <> FG:20 var
+R1334:1337 nameless.DBSyntax <> TApp constr
+R1355:1355 nameless.DBSmallTypeModel <> i:17 var
+R1340:1345 nameless.DBSyntax <> TClose constr
+R1352:1352 nameless.DBSmallTypeModel <> G:16 var
+R1350:1350 nameless.DBSmallTypeModel <> D:15 var
+R1347:1348 nameless.DBSmallTypeModel <> IT:14 var
+scheme 525:534 <> small_atom_ind
+scheme 525:534 <> small_atom_sind
+prf 1427:1446 <> small_atom_candidate
+binder 1457:1457 <> n:22
+binder 1459:1459 <> R:23
+R1476:1479 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1462:1471 nameless.DBSmallTypeModel <> small_atom ind
+R1473:1473 nameless.DBSmallTypeModel <> n:22 var
+R1475:1475 nameless.DBSmallTypeModel <> R:23 var
+R1480:1488 nameless.DBFullReducibility Full candidate rec
+R1490:1490 nameless.DBSmallTypeModel <> R:23 var
+R1539:1559 nameless.DBFullReducibility Full normalizing_candidate thm
+R1562:1584 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R1591:1622 nameless.DBEnumCandidates <> enumeration_computable_candidate thm
+R1539:1559 nameless.DBFullReducibility Full normalizing_candidate thm
+R1539:1559 nameless.DBFullReducibility Full normalizing_candidate thm
+R1539:1559 nameless.DBFullReducibility Full normalizing_candidate thm
+R1539:1559 nameless.DBFullReducibility Full normalizing_candidate thm
+R1539:1559 nameless.DBFullReducibility Full normalizing_candidate thm
+R1539:1559 nameless.DBFullReducibility Full normalizing_candidate thm
+R1562:1584 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R1591:1622 nameless.DBEnumCandidates <> enumeration_computable_candidate thm
+R1562:1584 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R1591:1622 nameless.DBEnumCandidates <> enumeration_computable_candidate thm
+R1562:1584 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R1591:1622 nameless.DBEnumCandidates <> enumeration_computable_candidate thm
+R1562:1584 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R1591:1622 nameless.DBEnumCandidates <> enumeration_computable_candidate thm
+R1562:1584 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R1591:1622 nameless.DBEnumCandidates <> enumeration_computable_candidate thm
+R1562:1584 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R1591:1622 nameless.DBEnumCandidates <> enumeration_computable_candidate thm
+prf 1636:1657 <> small_atom_not_neutral
+binder 1668:1668 <> n:24
+binder 1670:1670 <> R:25
+R1687:1690 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1673:1682 nameless.DBSmallTypeModel <> small_atom ind
+R1684:1684 nameless.DBSmallTypeModel <> n:24 var
+R1686:1686 nameless.DBSmallTypeModel <> R:25 var
+R1691:1692 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1693:1699 nameless.DBFullReducibility Full neutral def
+R1701:1701 nameless.DBSmallTypeModel <> n:24 var
+R1742:1748 nameless.DBFullReducibility Full neutral def
+prf 1770:1786 <> small_atom_not_pi
+binder 1797:1797 <> A:26
+binder 1799:1799 <> B:27
+binder 1801:1801 <> R:28
+R1804:1805 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1806:1815 nameless.DBSmallTypeModel <> small_atom ind
+R1818:1820 nameless.DBSyntax <> TPi constr
+R1824:1824 nameless.DBSmallTypeModel <> B:27 var
+R1822:1822 nameless.DBSmallTypeModel <> A:26 var
+R1827:1827 nameless.DBSmallTypeModel <> R:28 var
+prf 1877:1896 <> small_atom_not_sigma
+binder 1907:1907 <> A:29
+binder 1909:1909 <> B:30
+binder 1911:1911 <> R:31
+R1914:1915 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1916:1925 nameless.DBSmallTypeModel <> small_atom ind
+R1928:1933 nameless.DBSyntax <> TSigma constr
+R1937:1937 nameless.DBSmallTypeModel <> B:30 var
+R1935:1935 nameless.DBSmallTypeModel <> A:29 var
+R1940:1940 nameless.DBSmallTypeModel <> R:31 var
+prf 1990:2008 <> small_atom_not_sort
+binder 2019:2019 <> k:32
+binder 2021:2021 <> R:33
+R2024:2025 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2026:2035 nameless.DBSmallTypeModel <> small_atom ind
+R2038:2042 nameless.DBSyntax <> TSort constr
+R2044:2044 nameless.DBSmallTypeModel <> k:32 var
+R2047:2047 nameless.DBSmallTypeModel <> R:33 var
+prf 2098:2114 <> small_atom_unique
+binder 2125:2125 <> n:34
+binder 2127:2127 <> R:35
+R2144:2149 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2130:2139 nameless.DBSmallTypeModel <> small_atom ind
+R2141:2141 nameless.DBSmallTypeModel <> n:34 var
+R2143:2143 nameless.DBSmallTypeModel <> R:35 var
+binder 2157:2157 <> S:36
+R2174:2177 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2160:2169 nameless.DBSmallTypeModel <> small_atom ind
+R2171:2171 nameless.DBSmallTypeModel <> n:34 var
+R2173:2173 nameless.DBSmallTypeModel <> S:36 var
+R2178:2192 nameless.DBFullReducibility Full predicate_equiv def
+R2194:2194 nameless.DBSmallTypeModel <> R:35 var
+R2196:2196 nameless.DBSmallTypeModel <> S:36 var
+R2331:2345 nameless.DBFullReducibility Full predicate_equiv def
+R2331:2345 nameless.DBFullReducibility Full predicate_equiv def
+R2369:2386 nameless.DBSemanticTypes <> type_interp_unique thm
+R2396:2417 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2425:2441 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R2458:2477 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R2557:2563 nameless.DBCore <> cv_refl constr
+R2369:2386 nameless.DBSemanticTypes <> type_interp_unique thm
+R2396:2417 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2425:2441 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R2458:2477 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R2557:2563 nameless.DBCore <> cv_refl constr
+R2579:2600 nameless.DBIndexedCandidates Indexed mu_model_equiv thm
+R2579:2600 nameless.DBIndexedCandidates Indexed mu_model_equiv thm
+R2650:2674 nameless.DBDescriptionModel <> description_interp_unique thm
+R2684:2705 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2713:2729 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R2744:2763 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R2842:2848 nameless.DBCore <> cv_refl constr
+R2650:2674 nameless.DBDescriptionModel <> description_interp_unique thm
+R2684:2705 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2713:2729 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R2744:2763 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R2842:2848 nameless.DBCore <> cv_refl constr
+R2899:2913 nameless.DBFullReducibility Full predicate_equiv def
+R2899:2913 nameless.DBFullReducibility Full predicate_equiv def
+R2937:2954 nameless.DBSemanticTypes <> type_interp_unique thm
+R2964:2985 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2993:3009 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R3026:3045 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R3125:3131 nameless.DBCore <> cv_refl constr
+R2937:2954 nameless.DBSemanticTypes <> type_interp_unique thm
+R2964:2985 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2993:3009 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R3026:3045 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R3125:3131 nameless.DBCore <> cv_refl constr
+binder 3162:3162 <> j:37
+R3165:3179 nameless.DBFullReducibility Full predicate_equiv def
+R3182:3204 nameless.DBSmallTypeModel <> description_fixed_point def
+R3212:3212 nameless.DBSmallTypeModel <> j:37 var
+R3222:3244 nameless.DBSmallTypeModel <> description_fixed_point def
+R3254:3254 nameless.DBSmallTypeModel <> j:37 var
+binder 3162:3162 <> j:38
+R3165:3179 nameless.DBFullReducibility Full predicate_equiv def
+R3182:3204 nameless.DBSmallTypeModel <> description_fixed_point def
+R3212:3212 nameless.DBSmallTypeModel <> j:38 var
+R3222:3244 nameless.DBSmallTypeModel <> description_fixed_point def
+R3254:3254 nameless.DBSmallTypeModel <> j:38 var
+R3271:3292 nameless.DBIndexedCandidates Indexed mu_model_equiv thm
+R3271:3292 nameless.DBIndexedCandidates Indexed mu_model_equiv thm
+R3346:3370 nameless.DBDescriptionModel <> description_interp_unique thm
+R3380:3401 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R3409:3425 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R3442:3461 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R3542:3548 nameless.DBCore <> cv_refl constr
+R3346:3370 nameless.DBDescriptionModel <> description_interp_unique thm
+R3380:3401 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R3409:3425 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R3442:3461 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R3542:3548 nameless.DBCore <> cv_refl constr
+R3603:3615 nameless.DBDescriptionModel <> functor_equiv def
+R3603:3615 nameless.DBDescriptionModel <> functor_equiv def
+R3639:3663 nameless.DBDescriptionModel <> description_interp_unique thm
+R3673:3694 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R3702:3718 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R3735:3754 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R3835:3841 nameless.DBCore <> cv_refl constr
+R3639:3663 nameless.DBDescriptionModel <> description_interp_unique thm
+R3673:3694 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R3702:3718 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R3735:3754 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R3835:3841 nameless.DBCore <> cv_refl constr
+R3857:3877 nameless.DBIndexedCandidates <> rolled_elements_equiv thm
+R3857:3877 nameless.DBIndexedCandidates <> rolled_elements_equiv thm
+R3896:3926 nameless.DBDescriptionModel <> description_interp_family_equiv thm
+binder 3948:3948 <> j:39
+R3959:3959 nameless.DBSmallTypeModel <> j:39 var
+R3896:3926 nameless.DBDescriptionModel <> description_interp_family_equiv thm
+binder 3948:3948 <> j:40
+R3959:3959 nameless.DBSmallTypeModel <> j:40 var
+R4018:4040 nameless.DBSmallTypeModel <> description_fixed_point def
+R4018:4040 nameless.DBSmallTypeModel <> description_fixed_point def
+prf 4074:4093 <> small_type_candidate
+binder 4104:4104 <> A:41
+binder 4106:4106 <> R:42
+R4135:4138 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4109:4119 nameless.DBSemanticTypes <> type_interp ind
+R4132:4132 nameless.DBSmallTypeModel <> A:41 var
+R4134:4134 nameless.DBSmallTypeModel <> R:42 var
+R4121:4130 nameless.DBSmallTypeModel <> small_atom ind
+R4139:4147 nameless.DBFullReducibility Full candidate rec
+R4149:4149 nameless.DBSmallTypeModel <> R:42 var
+R4182:4202 nameless.DBSemanticTypes <> type_interp_candidate thm
+R4216:4235 nameless.DBSmallTypeModel <> small_atom_candidate thm
+R4243:4264 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R4272:4288 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R4301:4320 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R4349:4365 nameless.DBSmallTypeModel <> small_atom_unique thm
+R4182:4202 nameless.DBSemanticTypes <> type_interp_candidate thm
+R4216:4235 nameless.DBSmallTypeModel <> small_atom_candidate thm
+R4243:4264 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R4272:4288 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R4301:4320 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R4349:4365 nameless.DBSmallTypeModel <> small_atom_unique thm
+prf 4401:4427 <> small_description_candidate
+binder 4438:4439 <> RI:43
+binder 4441:4441 <> D:44
+binder 4443:4443 <> F:45
+R4484:4487 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4448:4465 nameless.DBDescriptionModel <> description_interp ind
+R4478:4479 nameless.DBSmallTypeModel <> RI:43 var
+R4481:4481 nameless.DBSmallTypeModel <> D:44 var
+R4483:4483 nameless.DBSmallTypeModel <> F:45 var
+R4467:4476 nameless.DBSmallTypeModel <> small_atom ind
+binder 4495:4495 <> X:46
+R4521:4524 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4498:4515 nameless.DBIndexedCandidates Indexed candidates def
+R4520:4520 nameless.DBSmallTypeModel <> X:46 var
+R4517:4518 nameless.DBSmallTypeModel <> RI:43 var
+R4525:4533 nameless.DBFullReducibility Full candidate rec
+R4536:4536 nameless.DBSmallTypeModel <> F:45 var
+R4538:4538 nameless.DBSmallTypeModel <> X:46 var
+R4580:4607 nameless.DBDescriptionModel <> description_interp_candidate thm
+R4621:4642 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R4650:4666 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R4674:4693 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R4727:4743 nameless.DBSmallTypeModel <> small_atom_unique thm
+R4764:4783 nameless.DBSmallTypeModel <> small_atom_candidate thm
+R4580:4607 nameless.DBDescriptionModel <> description_interp_candidate thm
+R4621:4642 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R4650:4666 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R4674:4693 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R4727:4743 nameless.DBSmallTypeModel <> small_atom_unique thm
+R4764:4783 nameless.DBSmallTypeModel <> small_atom_candidate thm
+prf 4817:4843 <> small_fixed_point_candidate
+binder 4854:4855 <> RI:47
+binder 4857:4857 <> D:48
+binder 4859:4859 <> F:49
+R4864:4864 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4932:4938 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4872:4872 <> j:50
+R4879:4882 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4875:4876 nameless.DBSmallTypeModel <> RI:47 var
+R4878:4878 nameless.DBSmallTypeModel <> j:50 var
+R4883:4900 nameless.DBDescriptionModel <> description_interp ind
+R4913:4914 nameless.DBSmallTypeModel <> RI:47 var
+R4917:4920 nameless.DBSyntax <> TApp constr
+R4924:4924 nameless.DBSmallTypeModel <> j:50 var
+R4922:4922 nameless.DBSmallTypeModel <> D:48 var
+R4928:4928 nameless.DBSmallTypeModel <> F:49 var
+R4930:4930 nameless.DBSmallTypeModel <> j:50 var
+R4902:4911 nameless.DBSmallTypeModel <> small_atom ind
+R4939:4956 nameless.DBIndexedCandidates Indexed candidates def
+R4962:4984 nameless.DBSmallTypeModel <> description_fixed_point def
+R4986:4987 nameless.DBSmallTypeModel <> RI:47 var
+R4989:4989 nameless.DBSmallTypeModel <> F:49 var
+R4958:4959 nameless.DBSmallTypeModel <> RI:47 var
+R5026:5045 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R5026:5045 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R5075:5095 nameless.DBFullReducibility Full candidate_normalizing proj
+R5102:5128 nameless.DBSmallTypeModel <> small_description_candidate thm
+R5156:5162 nameless.DBFullReductionStructure <> full_SN def
+R5183:5203 nameless.DBFullReducibility Full normalizing_candidate thm
+R5075:5095 nameless.DBFullReducibility Full candidate_normalizing proj
+R5102:5128 nameless.DBSmallTypeModel <> small_description_candidate thm
+R5156:5162 nameless.DBFullReductionStructure <> full_SN def
+R5183:5203 nameless.DBFullReducibility Full normalizing_candidate thm
+prf 5225:5237 <> small_mu_atom
+binder 5248:5249 <> IT:51
+binder 5251:5251 <> D:52
+binder 5253:5253 <> i:53
+binder 5255:5256 <> RI:54
+binder 5258:5258 <> F:55
+R5291:5294 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5263:5273 nameless.DBSemanticTypes <> type_interp ind
+R5286:5287 nameless.DBSmallTypeModel <> IT:51 var
+R5289:5290 nameless.DBSmallTypeModel <> RI:54 var
+R5275:5284 nameless.DBSmallTypeModel <> small_atom ind
+R5299:5304 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5295:5296 nameless.DBSmallTypeModel <> RI:54 var
+R5298:5298 nameless.DBSmallTypeModel <> i:53 var
+R5305:5305 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5373:5379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5313:5313 <> j:56
+R5320:5323 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5316:5317 nameless.DBSmallTypeModel <> RI:54 var
+R5319:5319 nameless.DBSmallTypeModel <> j:56 var
+R5324:5341 nameless.DBDescriptionModel <> description_interp ind
+R5354:5355 nameless.DBSmallTypeModel <> RI:54 var
+R5358:5361 nameless.DBSyntax <> TApp constr
+R5365:5365 nameless.DBSmallTypeModel <> j:56 var
+R5363:5363 nameless.DBSmallTypeModel <> D:52 var
+R5369:5369 nameless.DBSmallTypeModel <> F:55 var
+R5371:5371 nameless.DBSmallTypeModel <> j:56 var
+R5343:5352 nameless.DBSmallTypeModel <> small_atom ind
+R5380:5389 nameless.DBSmallTypeModel <> small_atom ind
+R5392:5395 nameless.DBSyntax <> TApp constr
+R5409:5409 nameless.DBSmallTypeModel <> i:53 var
+R5398:5401 nameless.DBSyntax <> TMuI constr
+R5406:5406 nameless.DBSmallTypeModel <> D:52 var
+R5403:5404 nameless.DBSmallTypeModel <> IT:51 var
+R5413:5435 nameless.DBSmallTypeModel <> description_fixed_point def
+R5437:5438 nameless.DBSmallTypeModel <> RI:54 var
+R5440:5440 nameless.DBSmallTypeModel <> F:55 var
+R5442:5442 nameless.DBSmallTypeModel <> i:53 var
+R5490:5494 nameless.DBSmallTypeModel <> sa_mu constr
+R5490:5494 nameless.DBSmallTypeModel <> sa_mu constr
+R5522:5548 nameless.DBSmallTypeModel <> small_fixed_point_candidate thm
+R5522:5548 nameless.DBSmallTypeModel <> small_fixed_point_candidate thm
+prf 5580:5595 <> small_close_atom
+binder 5606:5607 <> IT:57
+binder 5609:5609 <> D:58
+binder 5611:5611 <> G:59
+binder 5613:5613 <> i:60
+binder 5615:5616 <> RI:61
+binder 5618:5619 <> FD:62
+binder 5621:5622 <> FG:63
+R5655:5658 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5627:5637 nameless.DBSemanticTypes <> type_interp ind
+R5650:5651 nameless.DBSmallTypeModel <> IT:57 var
+R5653:5654 nameless.DBSmallTypeModel <> RI:61 var
+R5639:5648 nameless.DBSmallTypeModel <> small_atom ind
+R5663:5668 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5659:5660 nameless.DBSmallTypeModel <> RI:61 var
+R5662:5662 nameless.DBSmallTypeModel <> i:60 var
+R5715:5720 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5669:5686 nameless.DBDescriptionModel <> description_interp ind
+R5699:5700 nameless.DBSmallTypeModel <> RI:61 var
+R5703:5706 nameless.DBSyntax <> TApp constr
+R5710:5710 nameless.DBSmallTypeModel <> i:60 var
+R5708:5708 nameless.DBSmallTypeModel <> D:58 var
+R5713:5714 nameless.DBSmallTypeModel <> FD:62 var
+R5688:5697 nameless.DBSmallTypeModel <> small_atom ind
+R5721:5721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5790:5796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5729:5729 <> j:64
+R5736:5739 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5732:5733 nameless.DBSmallTypeModel <> RI:61 var
+R5735:5735 nameless.DBSmallTypeModel <> j:64 var
+R5740:5757 nameless.DBDescriptionModel <> description_interp ind
+R5770:5771 nameless.DBSmallTypeModel <> RI:61 var
+R5774:5777 nameless.DBSyntax <> TApp constr
+R5781:5781 nameless.DBSmallTypeModel <> j:64 var
+R5779:5779 nameless.DBSmallTypeModel <> G:59 var
+R5785:5786 nameless.DBSmallTypeModel <> FG:63 var
+R5788:5788 nameless.DBSmallTypeModel <> j:64 var
+R5759:5768 nameless.DBSmallTypeModel <> small_atom ind
+R5797:5806 nameless.DBSmallTypeModel <> small_atom ind
+R5809:5812 nameless.DBSyntax <> TApp constr
+R5830:5830 nameless.DBSmallTypeModel <> i:60 var
+R5815:5820 nameless.DBSyntax <> TClose constr
+R5827:5827 nameless.DBSmallTypeModel <> G:59 var
+R5825:5825 nameless.DBSmallTypeModel <> D:58 var
+R5822:5823 nameless.DBSmallTypeModel <> IT:57 var
+R5838:5852 nameless.DBIndexedCandidates <> rolled_elements def
+R5855:5856 nameless.DBSmallTypeModel <> FD:62 var
+R5859:5881 nameless.DBSmallTypeModel <> description_fixed_point def
+R5883:5884 nameless.DBSmallTypeModel <> RI:61 var
+R5886:5887 nameless.DBSmallTypeModel <> FG:63 var
+R5946:5953 nameless.DBSmallTypeModel <> sa_close constr
+R5946:5953 nameless.DBSmallTypeModel <> sa_close constr
+R5980:6004 nameless.DBIndexedCandidates <> rolled_elements_candidate thm
+R6008:6034 nameless.DBSmallTypeModel <> small_description_candidate thm
+R5980:6004 nameless.DBIndexedCandidates <> rolled_elements_candidate thm
+R6008:6034 nameless.DBSmallTypeModel <> small_description_candidate thm
+R6056:6082 nameless.DBSmallTypeModel <> small_fixed_point_candidate thm
+R6056:6082 nameless.DBSmallTypeModel <> small_fixed_point_candidate thm
+prf 6111:6139 <> small_fixed_point_index_equiv
+binder 6150:6151 <> RI:65
+binder 6153:6153 <> D:66
+binder 6155:6155 <> F:67
+R6160:6160 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6228:6234 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6168:6168 <> j:68
+R6175:6178 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6171:6172 nameless.DBSmallTypeModel <> RI:65 var
+R6174:6174 nameless.DBSmallTypeModel <> j:68 var
+R6179:6196 nameless.DBDescriptionModel <> description_interp ind
+R6209:6210 nameless.DBSmallTypeModel <> RI:65 var
+R6213:6216 nameless.DBSyntax <> TApp constr
+R6220:6220 nameless.DBSmallTypeModel <> j:68 var
+R6218:6218 nameless.DBSmallTypeModel <> D:66 var
+R6224:6224 nameless.DBSmallTypeModel <> F:67 var
+R6226:6226 nameless.DBSmallTypeModel <> j:68 var
+R6198:6207 nameless.DBSmallTypeModel <> small_atom ind
+binder 6242:6242 <> i:69
+binder 6244:6244 <> j:70
+R6251:6254 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6247:6248 nameless.DBSmallTypeModel <> RI:65 var
+R6250:6250 nameless.DBSmallTypeModel <> i:69 var
+R6259:6262 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6255:6256 nameless.DBSmallTypeModel <> RI:65 var
+R6258:6258 nameless.DBSmallTypeModel <> j:70 var
+R6271:6276 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6263:6266 nameless.DBCore <> conv ind
+R6270:6270 nameless.DBSmallTypeModel <> j:70 var
+R6268:6268 nameless.DBSmallTypeModel <> i:69 var
+R6277:6291 nameless.DBFullReducibility Full predicate_equiv def
+R6294:6316 nameless.DBSmallTypeModel <> description_fixed_point def
+R6318:6319 nameless.DBSmallTypeModel <> RI:65 var
+R6321:6321 nameless.DBSmallTypeModel <> F:67 var
+R6323:6323 nameless.DBSmallTypeModel <> i:69 var
+R6327:6349 nameless.DBSmallTypeModel <> description_fixed_point def
+R6351:6352 nameless.DBSmallTypeModel <> RI:65 var
+R6354:6354 nameless.DBSmallTypeModel <> F:67 var
+R6356:6356 nameless.DBSmallTypeModel <> j:70 var
+R6406:6427 nameless.DBIndexedCandidates Indexed mu_index_equiv thm
+R6406:6427 nameless.DBIndexedCandidates Indexed mu_index_equiv thm
+R6467:6493 nameless.DBDescriptionModel <> description_interp_monotone thm
+R6467:6493 nameless.DBDescriptionModel <> description_interp_monotone thm
+R6566:6586 nameless.DBFullReducibility Full candidate_normalizing proj
+R6595:6621 nameless.DBSmallTypeModel <> small_description_candidate thm
+R6649:6655 nameless.DBFullReductionStructure <> full_SN def
+R6678:6698 nameless.DBFullReducibility Full normalizing_candidate thm
+R6566:6586 nameless.DBFullReducibility Full candidate_normalizing proj
+R6595:6621 nameless.DBSmallTypeModel <> small_description_candidate thm
+R6649:6655 nameless.DBFullReductionStructure <> full_SN def
+R6678:6698 nameless.DBFullReducibility Full normalizing_candidate thm
+R6759:6783 nameless.DBDescriptionModel <> description_interp_unique thm
+R6799:6820 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R6828:6844 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R6852:6871 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R6907:6923 nameless.DBSmallTypeModel <> small_atom_unique thm
+R6759:6783 nameless.DBDescriptionModel <> description_interp_unique thm
+R6799:6820 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R6828:6844 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R6852:6871 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R6907:6923 nameless.DBSmallTypeModel <> small_atom_unique thm
+R6996:7008 nameless.DBCore <> cv_compatible constr
+R7011:7017 nameless.DBSyntax <> cp_TApp constr
+R7027:7033 nameless.DBCore <> cv_refl constr
+R6996:7008 nameless.DBCore <> cv_compatible constr
+R7011:7017 nameless.DBSyntax <> cp_TApp constr
+R7027:7033 nameless.DBCore <> cv_refl constr
+R7070:7086 nameless.DBSmallTypeModel <> small_atom_unique thm
+R7107:7119 nameless.DBSmallTypeModel <> small_mu_atom thm
+R7140:7155 nameless.DBSmallTypeModel <> small_close_atom thm

@@ -1,0 +1,311 @@
+DIGEST 10c5fef7e20878a6190c23aa2086bf66
+Fnameless.DBPositiveCandidates
+R105:108 Stdlib.Lists.List <> <> lib
+R110:114 Stdlib.Arith.Arith <> <> lib
+R116:119 Stdlib.Bool.Bool <> <> lib
+R121:123 Stdlib.micromega.Lia <> <> lib
+R141:167 nameless.DBFullReducibility <> <> lib
+R177:180 nameless.DBFullReducibility Full <> mod
+def 195:203 <> saturated
+R217:220 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R213:216 nameless.DBSyntax <> term ind
+binder 206:209 <> seed:1
+binder 227:227 <> t:2
+binder 241:241 <> R:3
+R255:258 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R244:252 nameless.DBFullReducibility Full candidate rec
+R254:254 nameless.DBPositiveCandidates <> R:3 var
+R259:259 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R283:287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 267:267 <> u:4
+R276:279 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R270:273 nameless.DBPositiveCandidates <> seed:1 var
+R275:275 nameless.DBPositiveCandidates <> u:4 var
+R280:280 nameless.DBPositiveCandidates <> R:3 var
+R282:282 nameless.DBPositiveCandidates <> u:4 var
+R288:288 nameless.DBPositiveCandidates <> R:3 var
+R290:290 nameless.DBPositiveCandidates <> t:2 var
+prf 299:313 <> saturated_intro
+binder 324:327 <> seed:5
+binder 329:329 <> t:6
+R338:341 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R332:335 nameless.DBPositiveCandidates <> seed:5 var
+R337:337 nameless.DBPositiveCandidates <> t:6 var
+R342:350 nameless.DBPositiveCandidates <> saturated def
+R352:355 nameless.DBPositiveCandidates <> seed:5 var
+R357:357 nameless.DBPositiveCandidates <> t:6 var
+prf 417:430 <> saturated_elim
+binder 441:444 <> seed:7
+binder 446:446 <> R:8
+R460:465 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R449:457 nameless.DBFullReducibility Full candidate rec
+R459:459 nameless.DBPositiveCandidates <> R:8 var
+R466:466 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R490:494 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 474:474 <> u:9
+R483:486 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R477:480 nameless.DBPositiveCandidates <> seed:7 var
+R482:482 nameless.DBPositiveCandidates <> u:9 var
+R487:487 nameless.DBPositiveCandidates <> R:8 var
+R489:489 nameless.DBPositiveCandidates <> u:9 var
+binder 502:502 <> t:10
+R521:524 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R505:513 nameless.DBPositiveCandidates <> saturated def
+R515:518 nameless.DBPositiveCandidates <> seed:7 var
+R520:520 nameless.DBPositiveCandidates <> t:10 var
+R525:525 nameless.DBPositiveCandidates <> R:8 var
+R527:527 nameless.DBPositiveCandidates <> t:10 var
+prf 594:612 <> saturated_candidate
+binder 623:626 <> seed:11
+R631:631 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R661:665 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 639:639 <> t:12
+R648:651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R642:645 nameless.DBPositiveCandidates <> seed:11 var
+R647:647 nameless.DBPositiveCandidates <> t:12 var
+R652:658 nameless.DBFullReductionStructure <> full_SN def
+R660:660 nameless.DBPositiveCandidates <> t:12 var
+R666:674 nameless.DBFullReducibility Full candidate rec
+R677:685 nameless.DBPositiveCandidates <> saturated def
+R687:690 nameless.DBPositiveCandidates <> seed:11 var
+R757:763 nameless.DBFullReductionStructure <> full_SN def
+R765:785 nameless.DBFullReducibility Full normalizing_candidate thm
+R757:763 nameless.DBFullReductionStructure <> full_SN def
+R765:785 nameless.DBFullReducibility Full normalizing_candidate thm
+R828:843 nameless.DBFullReducibility Full candidate_reduct proj
+R828:843 nameless.DBFullReducibility Full candidate_reduct proj
+R900:916 nameless.DBFullReducibility Full candidate_neutral proj
+R900:916 nameless.DBFullReducibility Full candidate_neutral proj
+prf 979:996 <> saturated_monotone
+binder 1007:1010 <> seed:13
+binder 1012:1016 <> seed':14
+R1021:1021 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1049:1053 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1029:1029 <> t:15
+R1038:1041 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1032:1035 nameless.DBPositiveCandidates <> seed:13 var
+R1037:1037 nameless.DBPositiveCandidates <> t:15 var
+R1042:1046 nameless.DBPositiveCandidates <> seed':14 var
+R1048:1048 nameless.DBPositiveCandidates <> t:15 var
+binder 1061:1061 <> t:16
+R1080:1083 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1064:1072 nameless.DBPositiveCandidates <> saturated def
+R1074:1077 nameless.DBPositiveCandidates <> seed:13 var
+R1079:1079 nameless.DBPositiveCandidates <> t:16 var
+R1084:1092 nameless.DBPositiveCandidates <> saturated def
+R1094:1098 nameless.DBPositiveCandidates <> seed':14 var
+R1100:1100 nameless.DBPositiveCandidates <> t:16 var
+prf 1178:1192 <> saturated_least
+binder 1203:1206 <> seed:17
+binder 1208:1208 <> R:18
+R1224:1227 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1213:1221 nameless.DBFullReducibility Full candidate rec
+R1223:1223 nameless.DBPositiveCandidates <> R:18 var
+R1228:1228 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1252:1258 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1236:1236 <> t:19
+R1245:1248 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1239:1242 nameless.DBPositiveCandidates <> seed:17 var
+R1244:1244 nameless.DBPositiveCandidates <> t:19 var
+R1249:1249 nameless.DBPositiveCandidates <> R:18 var
+R1251:1251 nameless.DBPositiveCandidates <> t:19 var
+binder 1266:1266 <> t:20
+R1285:1288 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1269:1277 nameless.DBPositiveCandidates <> saturated def
+R1279:1282 nameless.DBPositiveCandidates <> seed:17 var
+R1284:1284 nameless.DBPositiveCandidates <> t:20 var
+R1289:1289 nameless.DBPositiveCandidates <> R:18 var
+R1291:1291 nameless.DBPositiveCandidates <> t:20 var
+R1307:1320 nameless.DBPositiveCandidates <> saturated_elim thm
+R1307:1320 nameless.DBPositiveCandidates <> saturated_elim thm
+prf 1334:1343 <> full_SN_in
+binder 1354:1354 <> x:21
+R1366:1369 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1357:1363 nameless.DBFullReductionStructure <> full_SN def
+R1365:1365 nameless.DBPositiveCandidates <> x:21 var
+R1370:1376 nameless.DBFullReductionStructure <> full_SN def
+R1379:1381 nameless.DBSyntax <> TIn constr
+R1383:1383 nameless.DBPositiveCandidates <> x:21 var
+sec 1525:1542 <> PositiveFixedPoint
+var  1554:1558 PositiveFixedPoint Index
+def 1580:1585 <> family
+R1595:1598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1590:1594 nameless.DBPositiveCandidates <> PositiveFixedPoint.Index var
+R1603:1606 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1599:1602 nameless.DBSyntax <> term ind
+def 1624:1639 <> family_candidate
+R1646:1651 nameless.DBPositiveCandidates <> family def
+binder 1642:1642 <> X:23
+binder 1664:1664 <> i:24
+R1667:1675 nameless.DBFullReducibility Full candidate rec
+R1678:1678 nameless.DBPositiveCandidates <> X:23 var
+R1680:1680 nameless.DBPositiveCandidates <> i:24 var
+def 1695:1710 <> family_inclusion
+R1719:1724 nameless.DBPositiveCandidates <> family def
+binder 1713:1713 <> X:25
+binder 1715:1715 <> Y:26
+binder 1737:1737 <> i:27
+binder 1739:1739 <> t:28
+R1747:1750 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1742:1742 nameless.DBPositiveCandidates <> X:25 var
+R1744:1744 nameless.DBPositiveCandidates <> i:27 var
+R1746:1746 nameless.DBPositiveCandidates <> t:28 var
+R1751:1751 nameless.DBPositiveCandidates <> Y:26 var
+R1753:1753 nameless.DBPositiveCandidates <> i:27 var
+R1755:1755 nameless.DBPositiveCandidates <> t:28 var
+var 1767:1767 PositiveFixedPoint F
+R1777:1780 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1771:1776 nameless.DBPositiveCandidates <> family def
+R1781:1786 nameless.DBPositiveCandidates <> family def
+var 1800:1809 PositiveFixedPoint F_monotone
+binder 1820:1820 <> X:31
+binder 1822:1822 <> Y:32
+R1845:1848 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1825:1840 nameless.DBPositiveCandidates <> family_inclusion def
+R1842:1842 nameless.DBPositiveCandidates <> X:31 var
+R1844:1844 nameless.DBPositiveCandidates <> Y:32 var
+R1849:1864 nameless.DBPositiveCandidates <> family_inclusion def
+R1867:1867 nameless.DBPositiveCandidates <> PositiveFixedPoint.F var
+R1869:1869 nameless.DBPositiveCandidates <> X:31 var
+R1873:1873 nameless.DBPositiveCandidates <> PositiveFixedPoint.F var
+R1875:1875 nameless.DBPositiveCandidates <> Y:32 var
+var 1890:1902 PositiveFixedPoint F_normalizing
+binder 1913:1913 <> i:35
+binder 1915:1915 <> t:36
+R1942:1945 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1918:1918 nameless.DBPositiveCandidates <> PositiveFixedPoint.F var
+R1930:1936 nameless.DBFullReductionStructure <> full_SN def
+R1939:1939 nameless.DBPositiveCandidates <> i:35 var
+R1941:1941 nameless.DBPositiveCandidates <> t:36 var
+R1946:1952 nameless.DBFullReductionStructure <> full_SN def
+R1954:1954 nameless.DBPositiveCandidates <> t:36 var
+def 1968:1975 <> prefixed
+R1982:1987 nameless.DBPositiveCandidates <> family def
+binder 1978:1978 <> X:39
+binder 2000:2000 <> i:40
+binder 2002:2002 <> t:41
+R2012:2015 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2005:2005 nameless.DBPositiveCandidates <> PositiveFixedPoint.F var
+R2007:2007 nameless.DBPositiveCandidates <> X:39 var
+R2009:2009 nameless.DBPositiveCandidates <> i:40 var
+R2011:2011 nameless.DBPositiveCandidates <> t:41 var
+R2016:2016 nameless.DBPositiveCandidates <> X:39 var
+R2018:2018 nameless.DBPositiveCandidates <> i:40 var
+R2021:2023 nameless.DBSyntax <> TIn constr
+R2025:2025 nameless.DBPositiveCandidates <> t:41 var
+def 2040:2050 <> positive_mu
+binder 2052:2052 <> i:42
+binder 2054:2054 <> t:43
+binder 2066:2066 <> X:44
+R2087:2090 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2069:2084 nameless.DBPositiveCandidates <> family_candidate def
+R2086:2086 nameless.DBPositiveCandidates <> X:44 var
+R2101:2104 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2091:2098 nameless.DBPositiveCandidates <> prefixed def
+R2100:2100 nameless.DBPositiveCandidates <> X:44 var
+R2105:2105 nameless.DBPositiveCandidates <> X:44 var
+R2107:2107 nameless.DBPositiveCandidates <> i:42 var
+R2109:2109 nameless.DBPositiveCandidates <> t:43 var
+prf 2119:2138 <> normalizing_prefixed
+R2142:2149 nameless.DBPositiveCandidates <> prefixed def
+R2161:2167 nameless.DBFullReductionStructure <> full_SN def
+R2198:2207 nameless.DBPositiveCandidates <> full_SN_in thm
+R2220:2232 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_normalizing var
+R2198:2207 nameless.DBPositiveCandidates <> full_SN_in thm
+R2220:2232 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_normalizing var
+prf 2255:2275 <> positive_mu_candidate
+R2279:2294 nameless.DBPositiveCandidates <> family_candidate def
+R2296:2306 nameless.DBPositiveCandidates <> positive_mu def
+R2376:2382 nameless.DBFullReductionStructure <> full_SN def
+R2395:2415 nameless.DBFullReducibility Full normalizing_candidate thm
+R2418:2437 nameless.DBPositiveCandidates <> normalizing_prefixed thm
+R2376:2382 nameless.DBFullReductionStructure <> full_SN def
+R2395:2415 nameless.DBFullReducibility Full normalizing_candidate thm
+R2418:2437 nameless.DBPositiveCandidates <> normalizing_prefixed thm
+R2477:2492 nameless.DBFullReducibility Full candidate_reduct proj
+R2477:2492 nameless.DBFullReducibility Full candidate_reduct proj
+R2553:2569 nameless.DBFullReducibility Full candidate_neutral proj
+R2553:2569 nameless.DBFullReducibility Full candidate_neutral proj
+prf 2638:2653 <> positive_mu_fold
+R2657:2664 nameless.DBPositiveCandidates <> prefixed def
+R2666:2676 nameless.DBPositiveCandidates <> positive_mu def
+R2728:2737 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_monotone var
+R2728:2737 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_monotone var
+prf 2803:2823 <> positive_mu_induction
+binder 2834:2834 <> X:45
+R2857:2860 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2839:2854 nameless.DBPositiveCandidates <> family_candidate def
+R2856:2856 nameless.DBPositiveCandidates <> X:45 var
+R2871:2874 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2861:2868 nameless.DBPositiveCandidates <> prefixed def
+R2870:2870 nameless.DBPositiveCandidates <> X:45 var
+R2875:2890 nameless.DBPositiveCandidates <> family_inclusion def
+R2892:2902 nameless.DBPositiveCandidates <> positive_mu def
+R2904:2904 nameless.DBPositiveCandidates <> X:45 var
+def 2971:2976 <> rolled
+R2983:2988 nameless.DBPositiveCandidates <> family def
+binder 2979:2979 <> X:46
+binder 2991:2991 <> i:47
+binder 2993:2993 <> t:48
+R2998:3006 nameless.DBPositiveCandidates <> saturated def
+binder 3013:3013 <> z:49
+R3018:3024 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3026:3027 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3025:3025 <> u:50
+R3037:3040 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3029:3031 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3028:3028 nameless.DBPositiveCandidates <> z:49 var
+R3032:3034 nameless.DBSyntax <> TIn constr
+R3036:3036 nameless.DBPositiveCandidates <> u:50 var
+R3041:3041 nameless.DBPositiveCandidates <> PositiveFixedPoint.F var
+R3043:3043 nameless.DBPositiveCandidates <> X:46 var
+R3045:3045 nameless.DBPositiveCandidates <> i:47 var
+R3047:3047 nameless.DBPositiveCandidates <> u:50 var
+R3050:3050 nameless.DBPositiveCandidates <> t:48 var
+prf 3059:3077 <> rolled_mu_candidate
+R3081:3096 nameless.DBPositiveCandidates <> family_candidate def
+R3099:3104 nameless.DBPositiveCandidates <> rolled def
+R3106:3116 nameless.DBPositiveCandidates <> positive_mu def
+R3145:3163 nameless.DBPositiveCandidates <> saturated_candidate thm
+R3145:3163 nameless.DBPositiveCandidates <> saturated_candidate thm
+R3196:3205 nameless.DBPositiveCandidates <> full_SN_in thm
+R3208:3220 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_normalizing var
+R3196:3205 nameless.DBPositiveCandidates <> full_SN_in thm
+R3208:3220 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_normalizing var
+R3239:3248 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_monotone var
+R3239:3248 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_monotone var
+R3288:3308 nameless.DBFullReducibility Full candidate_normalizing proj
+R3311:3331 nameless.DBPositiveCandidates <> positive_mu_candidate thm
+R3288:3308 nameless.DBFullReducibility Full candidate_normalizing proj
+R3311:3331 nameless.DBPositiveCandidates <> positive_mu_candidate thm
+prf 3352:3370 <> rolled_mu_inclusion
+R3374:3389 nameless.DBPositiveCandidates <> family_inclusion def
+R3392:3397 nameless.DBPositiveCandidates <> rolled def
+R3399:3409 nameless.DBPositiveCandidates <> positive_mu def
+R3412:3422 nameless.DBPositiveCandidates <> positive_mu def
+R3458:3468 nameless.DBPositiveCandidates <> positive_mu def
+R3474:3494 nameless.DBPositiveCandidates <> positive_mu_candidate thm
+R3458:3468 nameless.DBPositiveCandidates <> positive_mu def
+R3474:3494 nameless.DBPositiveCandidates <> positive_mu_candidate thm
+R3535:3550 nameless.DBPositiveCandidates <> positive_mu_fold thm
+R3535:3550 nameless.DBPositiveCandidates <> positive_mu_fold thm
+prf 3566:3583 <> positive_mu_unfold
+R3587:3602 nameless.DBPositiveCandidates <> family_inclusion def
+R3604:3614 nameless.DBPositiveCandidates <> positive_mu def
+R3617:3622 nameless.DBPositiveCandidates <> rolled def
+R3624:3634 nameless.DBPositiveCandidates <> positive_mu def
+R3653:3673 nameless.DBPositiveCandidates <> positive_mu_induction thm
+R3683:3701 nameless.DBPositiveCandidates <> rolled_mu_candidate thm
+R3653:3673 nameless.DBPositiveCandidates <> positive_mu_induction thm
+R3683:3701 nameless.DBPositiveCandidates <> rolled_mu_candidate thm
+R3729:3743 nameless.DBPositiveCandidates <> saturated_intro thm
+R3729:3743 nameless.DBPositiveCandidates <> saturated_intro thm
+R3788:3797 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_monotone var
+R3807:3825 nameless.DBPositiveCandidates <> rolled_mu_inclusion thm
+R3788:3797 nameless.DBPositiveCandidates <> PositiveFixedPoint.F_monotone var
+R3807:3825 nameless.DBPositiveCandidates <> rolled_mu_inclusion thm
+R3847:3864 nameless.DBPositiveCandidates PositiveFixedPoint <> sec
+R3886:3904 nameless.DBPositiveCandidates <> saturated_candidate thm
+R3925:3945 nameless.DBPositiveCandidates <> positive_mu_candidate thm
+R3966:3981 nameless.DBPositiveCandidates <> positive_mu_fold thm
+R4002:4019 nameless.DBPositiveCandidates <> positive_mu_unfold thm

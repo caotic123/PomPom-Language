@@ -1,0 +1,236 @@
+DIGEST 1370d0044eda5169512d00df28fb70b8
+Fnameless.DBDataComputability
+R153:179 nameless.DBIndComputability <> <> lib
+R189:192 nameless.DBFullReducibility Full <> mod
+def 207:227 <> computable_definition
+binder 229:230 <> RI:1
+binder 232:232 <> D:2
+R246:251 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R237:243 nameless.DBFullReductionStructure <> full_SN def
+R245:245 nameless.DBDataComputability <> D:2 var
+binder 259:259 <> i:3
+R266:269 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R262:263 nameless.DBDataComputability <> RI:1 var
+R265:265 nameless.DBDataComputability <> i:3 var
+R270:279 nameless.DBInterpretationComputability <> small_code def
+R281:282 nameless.DBDataComputability <> RI:1 var
+R285:288 nameless.DBSyntax <> TApp constr
+R292:292 nameless.DBDataComputability <> i:3 var
+R290:290 nameless.DBDataComputability <> D:2 var
+def 307:324 <> definition_meaning
+binder 326:327 <> RI:4
+binder 329:329 <> D:5
+binder 331:331 <> i:6
+R336:347 nameless.DBInterpretationComputability <> code_meaning def
+R349:350 nameless.DBDataComputability <> RI:4 var
+R353:356 nameless.DBSyntax <> TApp constr
+R360:360 nameless.DBDataComputability <> i:6 var
+R358:358 nameless.DBDataComputability <> D:5 var
+prf 370:398 <> computable_definition_meaning
+binder 409:410 <> RI:7
+R425:428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R413:421 nameless.DBFullReducibility Full candidate rec
+R423:424 nameless.DBDataComputability <> RI:7 var
+binder 436:436 <> D:8
+R467:470 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R441:461 nameless.DBDataComputability <> computable_definition def
+R463:464 nameless.DBDataComputability <> RI:7 var
+R466:466 nameless.DBDataComputability <> D:8 var
+binder 478:478 <> i:9
+R485:490 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R481:482 nameless.DBDataComputability <> RI:7 var
+R484:484 nameless.DBDataComputability <> i:9 var
+R491:507 nameless.DBInterpretationComputability <> small_description def
+R509:510 nameless.DBDataComputability <> RI:7 var
+R513:516 nameless.DBSyntax <> TApp constr
+R520:520 nameless.DBDataComputability <> i:9 var
+R518:518 nameless.DBDataComputability <> D:8 var
+R524:541 nameless.DBDataComputability <> definition_meaning def
+R543:544 nameless.DBDataComputability <> RI:7 var
+R546:546 nameless.DBDataComputability <> D:8 var
+R548:548 nameless.DBDataComputability <> i:9 var
+R590:607 nameless.DBInterpretationComputability <> small_code_meaning thm
+R628:632 Corelib.Init.Logic <> proj2 thm
+R590:607 nameless.DBInterpretationComputability <> small_code_meaning thm
+R628:632 Corelib.Init.Logic <> proj2 thm
+prf 656:687 <> computable_definition_reductions
+binder 698:699 <> RI:10
+binder 701:701 <> D:11
+R732:735 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R706:726 nameless.DBDataComputability <> computable_definition def
+R728:729 nameless.DBDataComputability <> RI:10 var
+R731:731 nameless.DBDataComputability <> D:11 var
+binder 743:744 <> D':12
+R765:768 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R747:749 nameless.DBParallelBase <> rtc ind
+R763:764 nameless.DBDataComputability <> D':12 var
+R761:761 nameless.DBDataComputability <> D:11 var
+R751:759 nameless.DBCore <> reduction ind
+R769:789 nameless.DBDataComputability <> computable_definition def
+R791:792 nameless.DBDataComputability <> RI:10 var
+R794:795 nameless.DBDataComputability <> D':12 var
+R849:866 nameless.DBFullNormalForms <> full_SN_reductions thm
+R849:866 nameless.DBFullNormalForms <> full_SN_reductions thm
+R904:920 nameless.DBFullReducibility Full candidate_reducts thm
+R930:961 nameless.DBDescriptionCandidates <> description_computable_candidate thm
+R904:920 nameless.DBFullReducibility Full candidate_reducts thm
+R930:961 nameless.DBDescriptionCandidates <> description_computable_candidate thm
+R991:1003 nameless.DBReduction <> red_star_TApp thm
+R991:1003 nameless.DBReduction <> red_star_TApp thm
+prf 1041:1069 <> definition_meaning_conversion
+binder 1080:1081 <> RI:13
+R1096:1099 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1084:1092 nameless.DBFullReducibility Full candidate rec
+R1094:1095 nameless.DBDataComputability <> RI:13 var
+binder 1107:1107 <> D:14
+binder 1109:1109 <> E:15
+binder 1111:1111 <> i:16
+binder 1113:1113 <> j:17
+R1144:1147 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1118:1138 nameless.DBDataComputability <> computable_definition def
+R1140:1141 nameless.DBDataComputability <> RI:13 var
+R1143:1143 nameless.DBDataComputability <> D:14 var
+R1174:1177 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1148:1168 nameless.DBDataComputability <> computable_definition def
+R1170:1171 nameless.DBDataComputability <> RI:13 var
+R1173:1173 nameless.DBDataComputability <> E:15 var
+R1182:1185 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1178:1179 nameless.DBDataComputability <> RI:13 var
+R1181:1181 nameless.DBDataComputability <> i:16 var
+R1190:1195 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1186:1187 nameless.DBDataComputability <> RI:13 var
+R1189:1189 nameless.DBDataComputability <> j:17 var
+R1204:1207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1196:1199 nameless.DBCore <> conv ind
+R1203:1203 nameless.DBDataComputability <> E:15 var
+R1201:1201 nameless.DBDataComputability <> D:14 var
+R1216:1219 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1208:1211 nameless.DBCore <> conv ind
+R1215:1215 nameless.DBDataComputability <> j:17 var
+R1213:1213 nameless.DBDataComputability <> i:16 var
+R1220:1232 nameless.DBDescriptionModel <> functor_equiv def
+R1235:1252 nameless.DBDataComputability <> definition_meaning def
+R1254:1255 nameless.DBDataComputability <> RI:13 var
+R1257:1257 nameless.DBDataComputability <> D:14 var
+R1259:1259 nameless.DBDataComputability <> i:16 var
+R1263:1280 nameless.DBDataComputability <> definition_meaning def
+R1282:1283 nameless.DBDataComputability <> RI:13 var
+R1285:1285 nameless.DBDataComputability <> E:15 var
+R1287:1287 nameless.DBDataComputability <> j:17 var
+R1348:1371 nameless.DBInterpretationComputability <> small_description_unique thm
+R1386:1414 nameless.DBDataComputability <> computable_definition_meaning thm
+R1446:1474 nameless.DBDataComputability <> computable_definition_meaning thm
+R1348:1371 nameless.DBInterpretationComputability <> small_description_unique thm
+R1386:1414 nameless.DBDataComputability <> computable_definition_meaning thm
+R1446:1474 nameless.DBDataComputability <> computable_definition_meaning thm
+R1505:1517 nameless.DBCore <> cv_compatible constr
+R1520:1526 nameless.DBSyntax <> cp_TApp constr
+R1505:1517 nameless.DBCore <> cv_compatible constr
+R1520:1526 nameless.DBSyntax <> cp_TApp constr
+prf 1554:1583 <> small_fixed_point_rolled_equiv
+binder 1594:1595 <> RI:18
+binder 1597:1597 <> D:19
+binder 1599:1599 <> F:20
+R1604:1604 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1660:1664 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1612:1612 <> i:21
+R1619:1622 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1615:1616 nameless.DBDataComputability <> RI:18 var
+R1618:1618 nameless.DBDataComputability <> i:21 var
+R1623:1639 nameless.DBInterpretationComputability <> small_description def
+R1641:1642 nameless.DBDataComputability <> RI:18 var
+R1645:1648 nameless.DBSyntax <> TApp constr
+R1652:1652 nameless.DBDataComputability <> i:21 var
+R1650:1650 nameless.DBDataComputability <> D:19 var
+R1656:1656 nameless.DBDataComputability <> F:20 var
+R1658:1658 nameless.DBDataComputability <> i:21 var
+binder 1672:1672 <> i:22
+R1679:1684 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1675:1676 nameless.DBDataComputability <> RI:18 var
+R1678:1678 nameless.DBDataComputability <> i:22 var
+R1685:1699 nameless.DBFullReducibility Full predicate_equiv def
+R1702:1724 nameless.DBSmallTypeModel <> description_fixed_point def
+R1726:1727 nameless.DBDataComputability <> RI:18 var
+R1729:1729 nameless.DBDataComputability <> F:20 var
+R1731:1731 nameless.DBDataComputability <> i:22 var
+R1739:1753 nameless.DBIndexedCandidates <> rolled_elements def
+R1756:1756 nameless.DBDataComputability <> F:20 var
+R1758:1758 nameless.DBDataComputability <> i:22 var
+R1761:1783 nameless.DBSmallTypeModel <> description_fixed_point def
+R1785:1786 nameless.DBDataComputability <> RI:18 var
+R1788:1788 nameless.DBDataComputability <> F:20 var
+binder 1848:1848 <> X:23
+binder 1850:1850 <> Y:24
+R1877:1884 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1853:1869 nameless.DBIndexedCandidates Indexed inclusion def
+R1874:1874 nameless.DBDataComputability <> X:23 var
+R1876:1876 nameless.DBDataComputability <> Y:24 var
+R1885:1901 nameless.DBIndexedCandidates Indexed inclusion def
+binder 1911:1911 <> i:25
+R1918:1918 nameless.DBDataComputability <> i:25 var
+R1920:1920 nameless.DBDataComputability <> X:23 var
+binder 1928:1928 <> i:26
+R1935:1935 nameless.DBDataComputability <> i:26 var
+R1937:1937 nameless.DBDataComputability <> Y:24 var
+binder 1848:1848 <> X:27
+binder 1850:1850 <> Y:28
+R1877:1884 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1853:1869 nameless.DBIndexedCandidates Indexed inclusion def
+R1874:1874 nameless.DBDataComputability <> X:27 var
+R1876:1876 nameless.DBDataComputability <> Y:28 var
+R1885:1901 nameless.DBIndexedCandidates Indexed inclusion def
+binder 1911:1911 <> i:29
+R1918:1918 nameless.DBDataComputability <> i:29 var
+R1920:1920 nameless.DBDataComputability <> X:27 var
+binder 1928:1928 <> i:30
+R1935:1935 nameless.DBDataComputability <> i:30 var
+R1937:1937 nameless.DBDataComputability <> Y:28 var
+R1979:2005 nameless.DBDescriptionModel <> description_interp_monotone thm
+R1979:2005 nameless.DBDescriptionModel <> description_interp_monotone thm
+binder 2076:2076 <> j:31
+R2083:2086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2082:2082 nameless.DBDataComputability <> j:31 var
+binder 2094:2094 <> t:32
+R2121:2124 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2099:2099 nameless.DBDataComputability <> j:31 var
+R2111:2117 nameless.DBFullReductionStructure <> full_SN def
+R2120:2120 nameless.DBDataComputability <> t:32 var
+R2125:2131 nameless.DBFullReductionStructure <> full_SN def
+R2133:2133 nameless.DBDataComputability <> t:32 var
+binder 2076:2076 <> j:33
+R2083:2086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2082:2082 nameless.DBDataComputability <> j:33 var
+binder 2094:2094 <> t:34
+R2121:2124 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2099:2099 nameless.DBDataComputability <> j:33 var
+R2111:2117 nameless.DBFullReductionStructure <> full_SN def
+R2120:2120 nameless.DBDataComputability <> t:34 var
+R2125:2131 nameless.DBFullReductionStructure <> full_SN def
+R2133:2133 nameless.DBDataComputability <> t:34 var
+R2166:2186 nameless.DBFullReducibility Full candidate_normalizing proj
+R2195:2221 nameless.DBSmallTypeModel <> small_description_candidate thm
+R2253:2273 nameless.DBFullReducibility Full normalizing_candidate thm
+R2166:2186 nameless.DBFullReducibility Full candidate_normalizing proj
+R2195:2221 nameless.DBSmallTypeModel <> small_description_candidate thm
+R2253:2273 nameless.DBFullReducibility Full normalizing_candidate thm
+R2313:2329 nameless.DBIndexedCandidates Indexed mu_unfold thm
+binder 2339:2339 <> X:35
+binder 2341:2341 <> i:36
+R2348:2348 nameless.DBDataComputability <> i:36 var
+R2350:2350 nameless.DBDataComputability <> X:35 var
+R2313:2329 nameless.DBIndexedCandidates Indexed mu_unfold thm
+binder 2339:2339 <> X:37
+binder 2341:2341 <> i:38
+R2348:2348 nameless.DBDataComputability <> i:38 var
+R2350:2350 nameless.DBDataComputability <> X:37 var
+R2377:2403 nameless.DBIndexedCandidates Indexed rolled_mu_inclusion thm
+binder 2413:2413 <> X:39
+binder 2415:2415 <> i:40
+R2422:2422 nameless.DBDataComputability <> i:40 var
+R2424:2424 nameless.DBDataComputability <> X:39 var
+R2377:2403 nameless.DBIndexedCandidates Indexed rolled_mu_inclusion thm
+binder 2413:2413 <> X:41
+binder 2415:2415 <> i:42
+R2422:2422 nameless.DBDataComputability <> i:42 var
+R2424:2424 nameless.DBDataComputability <> X:41 var
+R2464:2493 nameless.DBDataComputability <> small_fixed_point_rolled_equiv thm

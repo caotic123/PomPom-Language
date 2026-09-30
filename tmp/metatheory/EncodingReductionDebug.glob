@@ -1,0 +1,108 @@
+DIGEST 5f9b6db76d91bc9a68f5a77dab57eebb
+FEncodingReductionDebug
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:74 EncodingWork <> <> lib
+R92:118 OpenSignaturesDerivedTyping <> <> lib
+R129:147 ProofDB.DBReduction <> <> lib
+R157:169 Stdlib.Lists.List ListNotations <> mod
+R185:198 ProofDB.DBCore <> <> mod
+mod 179:180 <> DC
+prf 208:221 <> encode_product
+binder 232:232 <> A:1
+binder 234:234 <> B:2
+binder 236:238 <> env:3
+R267:269 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R243:248 EncodingWork <> encode def
+R250:252 EncodingReductionDebug <> env:3 var
+R255:261 OpenSignaturesSyntax <> product def
+R265:265 EncodingReductionDebug <> B:2 var
+R263:263 EncodingReductionDebug <> A:1 var
+R270:279 EncodingWork DB product def
+R297:302 EncodingWork <> encode def
+R304:306 EncodingReductionDebug <> env:3 var
+R308:308 EncodingReductionDebug <> B:2 var
+R282:287 EncodingWork <> encode def
+R289:291 EncodingReductionDebug <> env:3 var
+R293:293 EncodingReductionDebug <> A:1 var
+R336:342 OpenSignaturesSyntax <> product def
+R345:354 EncodingWork DB product def
+R362:367 EncodingWork <> encode def
+R388:399 EncodingWork <> encode_fresh thm
+R402:415 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R388:399 EncodingWork <> encode_fresh thm
+R402:415 OpenSignaturesDerivedTyping <> fresh_not_free thm
+prf 440:454 <> encode_diagonal
+binder 465:465 <> G:4
+binder 467:467 <> P:5
+binder 469:471 <> env:6
+R508:510 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R476:481 EncodingWork <> encode def
+R483:485 EncodingReductionDebug <> env:6 var
+R488:502 OpenSignaturesSyntax <> diagonal_motive def
+R506:506 EncodingReductionDebug <> P:5 var
+R504:504 EncodingReductionDebug <> G:4 var
+R511:528 EncodingWork DB diagonal_motive def
+R546:551 EncodingWork <> encode def
+R553:555 EncodingReductionDebug <> env:6 var
+R557:557 EncodingReductionDebug <> P:5 var
+R531:536 EncodingWork <> encode def
+R538:540 EncodingReductionDebug <> env:6 var
+R542:542 EncodingReductionDebug <> G:4 var
+R585:599 OpenSignaturesSyntax <> diagonal_motive def
+R602:619 EncodingWork DB diagonal_motive def
+R627:632 EncodingWork <> encode def
+R634:643 EncodingWork <> encode_var def
+R657:668 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R657:668 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R657:668 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R709:722 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R686:697 EncodingWork <> encode_fresh thm
+R686:697 EncodingWork <> encode_fresh thm
+R709:722 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R686:697 EncodingWork <> encode_fresh thm
+R686:697 EncodingWork <> encode_fresh thm
+R709:722 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R686:697 EncodingWork <> encode_fresh thm
+R686:697 EncodingWork <> encode_fresh thm
+R799:812 OpenSignaturesDerivedTyping <> fresh_not_free thm
+R839:858 OpenSignaturesDerivedTyping <> above_fresh_not_free thm
+R913:918 EncodingWork <> encode def
+R920:931 EncodingReductionDebug <> root_step def
+R933:941 OpenSignaturesCore <> root_step def
+R943:952 Corelib.Init.Datatypes <> option_map def
+R965:967 OpenSignaturesSyntax <> Bot def
+R970:975 EncodingWork DB Bot def
+R978:984 OpenSignaturesSyntax <> carrier def
+R987:996 EncodingWork DB carrier def
+R1016:1027 EncodingWork <> encode_subst thm
+R1047:1060 EncodingReductionDebug <> encode_product thm
+R1080:1094 EncodingReductionDebug <> encode_diagonal thm
+R1104:1109 EncodingWork <> encode def
+R1111:1120 EncodingWork <> encode_var def
+R1141:1152 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R1172:1183 EncodingWork <> encode_fresh thm
+R1210:1216 EncodingWork DB lift def
+R1237:1276 ProofDB.DBParallelBase <> lift_one_one_zero thm
+prf 1305:1315 <> encode_root
+binder 1326:1326 <> t:7
+binder 1328:1330 <> env:8
+R1372:1374 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1335:1344 Corelib.Init.Datatypes <> option_map def
+R1360:1368 OpenSignaturesCore <> root_step def
+R1370:1370 EncodingReductionDebug <> t:7 var
+R1347:1352 EncodingWork <> encode def
+R1354:1356 EncodingReductionDebug <> env:8 var
+R1375:1386 EncodingReductionDebug <> root_step def
+R1389:1394 EncodingWork <> encode def
+R1396:1398 EncodingReductionDebug <> env:8 var
+R1400:1400 EncodingReductionDebug <> t:7 var
+R1444:1452 OpenSignaturesCore <> root_step def
+R1454:1459 EncodingWork <> encode def
+R1461:1472 EncodingReductionDebug <> root_step def
+R1571:1573 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1532:1541 Corelib.Init.Datatypes <> option_map def
+R1571:1573 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1532:1541 Corelib.Init.Datatypes <> option_map def

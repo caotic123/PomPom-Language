@@ -1,0 +1,805 @@
+DIGEST 17c31472b078a3cc7f2709c79df4b722
+Fnameless.DBUniverseModel
+R250:253 Stdlib.Lists.List <> <> lib
+R255:259 Stdlib.Arith.Arith <> <> lib
+R261:264 Stdlib.Bool.Bool <> <> lib
+R266:268 Stdlib.micromega.Lia <> <> lib
+R286:309 nameless.DBSemanticTypes <> <> lib
+R319:331 Stdlib.Lists.List ListNotations <> mod
+R333:336 nameless.DBFullReducibility Full <> mod
+sec 348:360 <> UniverseTower
+var 372:375 UniverseTower base
+R382:385 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R379:381 Corelib.Init.Datatypes <> nat ind
+R390:393 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R386:389 nameless.DBSyntax <> term ind
+R394:394 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R407:411 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R399:402 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R395:398 nameless.DBSyntax <> term ind
+var 429:442 UniverseTower base_candidate
+binder 453:457 <> level:3
+binder 459:459 <> n:4
+binder 461:461 <> R:5
+R478:481 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R464:467 nameless.DBUniverseModel <> UniverseTower.base var
+R469:473 nameless.DBUniverseModel <> level:3 var
+R475:475 nameless.DBUniverseModel <> n:4 var
+R477:477 nameless.DBUniverseModel <> R:5 var
+R482:490 nameless.DBFullReducibility Full candidate rec
+R492:492 nameless.DBUniverseModel <> R:5 var
+var 506:521 UniverseTower base_not_neutral
+binder 532:536 <> level:8
+binder 538:538 <> n:9
+binder 540:540 <> R:10
+R557:560 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R543:546 nameless.DBUniverseModel <> UniverseTower.base var
+R548:552 nameless.DBUniverseModel <> level:8 var
+R554:554 nameless.DBUniverseModel <> n:9 var
+R556:556 nameless.DBUniverseModel <> R:10 var
+R561:562 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R563:569 nameless.DBFullReducibility Full neutral def
+R571:571 nameless.DBUniverseModel <> n:9 var
+var 585:595 UniverseTower base_not_pi
+binder 606:610 <> level:13
+binder 612:612 <> A:14
+binder 614:614 <> B:15
+binder 616:616 <> R:16
+R619:620 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R621:624 nameless.DBUniverseModel <> UniverseTower.base var
+R626:630 nameless.DBUniverseModel <> level:13 var
+R633:635 nameless.DBSyntax <> TPi constr
+R639:639 nameless.DBUniverseModel <> B:15 var
+R637:637 nameless.DBUniverseModel <> A:14 var
+R642:642 nameless.DBUniverseModel <> R:16 var
+var 656:669 UniverseTower base_not_sigma
+binder 680:684 <> level:19
+binder 686:686 <> A:20
+binder 688:688 <> B:21
+binder 690:690 <> R:22
+R693:694 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R695:698 nameless.DBUniverseModel <> UniverseTower.base var
+R700:704 nameless.DBUniverseModel <> level:19 var
+R707:712 nameless.DBSyntax <> TSigma constr
+R716:716 nameless.DBUniverseModel <> B:21 var
+R714:714 nameless.DBUniverseModel <> A:20 var
+R719:719 nameless.DBUniverseModel <> R:22 var
+var 733:745 UniverseTower base_not_sort
+binder 756:760 <> level:25
+binder 762:762 <> k:26
+binder 764:764 <> R:27
+R767:768 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R769:772 nameless.DBUniverseModel <> UniverseTower.base var
+R774:778 nameless.DBUniverseModel <> level:25 var
+R781:785 nameless.DBSyntax <> TSort constr
+R787:787 nameless.DBUniverseModel <> k:26 var
+R790:790 nameless.DBUniverseModel <> R:27 var
+var 804:814 UniverseTower base_unique
+binder 825:829 <> level:30
+binder 831:831 <> n:31
+binder 833:833 <> R:32
+binder 835:835 <> S:33
+R854:857 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R840:843 nameless.DBUniverseModel <> UniverseTower.base var
+R845:849 nameless.DBUniverseModel <> level:30 var
+R851:851 nameless.DBUniverseModel <> n:31 var
+R853:853 nameless.DBUniverseModel <> R:32 var
+R872:875 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R858:861 nameless.DBUniverseModel <> UniverseTower.base var
+R863:867 nameless.DBUniverseModel <> level:30 var
+R869:869 nameless.DBUniverseModel <> n:31 var
+R871:871 nameless.DBUniverseModel <> S:33 var
+R876:890 nameless.DBFullReducibility Full predicate_equiv def
+R892:892 nameless.DBUniverseModel <> R:32 var
+R894:894 nameless.DBUniverseModel <> S:33 var
+var 909:923 UniverseTower base_cumulative
+binder 934:934 <> n:36
+binder 936:936 <> m:37
+R945:948 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R940:943 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R939:939 nameless.DBUniverseModel <> n:36 var
+R944:944 nameless.DBUniverseModel <> m:37 var
+binder 956:956 <> A:38
+binder 958:958 <> R:39
+R971:974 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R961:964 nameless.DBUniverseModel <> UniverseTower.base var
+R966:966 nameless.DBUniverseModel <> n:36 var
+R968:968 nameless.DBUniverseModel <> A:38 var
+R970:970 nameless.DBUniverseModel <> R:39 var
+R975:978 nameless.DBUniverseModel <> UniverseTower.base var
+R980:980 nameless.DBUniverseModel <> m:37 var
+R982:982 nameless.DBUniverseModel <> A:38 var
+R984:984 nameless.DBUniverseModel <> R:39 var
+ind 998:1007 <> level_atom
+constr 1092:1098 <> la_base
+constr 1162:1168 <> la_sort
+R1018:1020 Corelib.Init.Datatypes <> nat ind
+binder 1010:1014 <> level:42
+R1033:1036 Corelib.Init.Datatypes <> list ind
+R1043:1046 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1039:1042 nameless.DBSyntax <> term ind
+binder 1024:1029 <> levels:43
+R1060:1063 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1056:1059 nameless.DBSyntax <> term ind
+R1064:1064 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1077:1081 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1069:1072 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1065:1068 nameless.DBSyntax <> term ind
+binder 1109:1109 <> n:46
+binder 1111:1111 <> R:47
+R1128:1131 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1114:1117 nameless.DBUniverseModel <> UniverseTower.base var
+R1119:1123 nameless.DBUniverseModel <> level:42 var
+R1125:1125 nameless.DBUniverseModel <> n:46 var
+R1127:1127 nameless.DBUniverseModel <> R:47 var
+R1132:1141 nameless.DBUniverseModel <> level_atom:44 ind
+R1158:1158 nameless.DBUniverseModel <> R:47 var
+R1156:1156 nameless.DBUniverseModel <> n:46 var
+R1149:1154 nameless.DBUniverseModel <> levels:43 var
+R1143:1147 nameless.DBUniverseModel <> level:42 var
+binder 1179:1179 <> k:48
+binder 1181:1181 <> R:49
+R1211:1214 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1202:1204 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1184:1192 Stdlib.Lists.List <> nth_error def
+R1201:1201 nameless.DBUniverseModel <> k:48 var
+R1194:1199 nameless.DBUniverseModel <> levels:43 var
+R1205:1208 Corelib.Init.Datatypes <> Some constr
+R1210:1210 nameless.DBUniverseModel <> R:49 var
+R1215:1224 nameless.DBUniverseModel <> level_atom:44 ind
+R1249:1249 nameless.DBUniverseModel <> R:49 var
+R1240:1244 nameless.DBSyntax <> TSort constr
+R1246:1246 nameless.DBUniverseModel <> k:48 var
+R1232:1237 nameless.DBUniverseModel <> levels:43 var
+R1226:1230 nameless.DBUniverseModel <> level:42 var
+scheme 998:1007 <> level_atom_ind
+scheme 998:1007 <> level_atom_sind
+prf 1258:1279 <> level_atom_not_neutral
+binder 1290:1294 <> level:50
+binder 1296:1301 <> levels:51
+binder 1303:1303 <> n:52
+binder 1305:1305 <> R:53
+R1335:1338 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1308:1317 nameless.DBUniverseModel <> level_atom ind
+R1319:1323 nameless.DBUniverseModel <> level:50 var
+R1325:1330 nameless.DBUniverseModel <> levels:51 var
+R1332:1332 nameless.DBUniverseModel <> n:52 var
+R1334:1334 nameless.DBUniverseModel <> R:53 var
+R1339:1340 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1341:1347 nameless.DBFullReducibility Full neutral def
+R1349:1349 nameless.DBUniverseModel <> n:52 var
+R1406:1421 nameless.DBUniverseModel <> UniverseTower.base_not_neutral var
+R1441:1447 nameless.DBFullReducibility Full neutral def
+R1406:1421 nameless.DBUniverseModel <> UniverseTower.base_not_neutral var
+prf 1470:1486 <> level_atom_not_pi
+binder 1497:1501 <> level:54
+binder 1503:1508 <> levels:55
+binder 1510:1510 <> A:56
+binder 1512:1512 <> B:57
+binder 1514:1514 <> R:58
+R1517:1518 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1519:1528 nameless.DBUniverseModel <> level_atom ind
+R1530:1534 nameless.DBUniverseModel <> level:54 var
+R1536:1541 nameless.DBUniverseModel <> levels:55 var
+R1544:1546 nameless.DBSyntax <> TPi constr
+R1550:1550 nameless.DBUniverseModel <> B:57 var
+R1548:1548 nameless.DBUniverseModel <> A:56 var
+R1553:1553 nameless.DBUniverseModel <> R:58 var
+R1619:1629 nameless.DBUniverseModel <> UniverseTower.base_not_pi var
+R1619:1629 nameless.DBUniverseModel <> UniverseTower.base_not_pi var
+prf 1656:1675 <> level_atom_not_sigma
+binder 1686:1690 <> level:59
+binder 1692:1697 <> levels:60
+binder 1699:1699 <> A:61
+binder 1701:1701 <> B:62
+binder 1703:1703 <> R:63
+R1706:1707 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1708:1717 nameless.DBUniverseModel <> level_atom ind
+R1719:1723 nameless.DBUniverseModel <> level:59 var
+R1725:1730 nameless.DBUniverseModel <> levels:60 var
+R1733:1738 nameless.DBSyntax <> TSigma constr
+R1742:1742 nameless.DBUniverseModel <> B:62 var
+R1740:1740 nameless.DBUniverseModel <> A:61 var
+R1745:1745 nameless.DBUniverseModel <> R:63 var
+R1811:1824 nameless.DBUniverseModel <> UniverseTower.base_not_sigma var
+R1811:1824 nameless.DBUniverseModel <> UniverseTower.base_not_sigma var
+prf 1851:1867 <> level_atom_unique
+binder 1878:1882 <> level:64
+binder 1884:1889 <> levels:65
+binder 1891:1891 <> n:66
+binder 1893:1893 <> R:67
+binder 1895:1895 <> S:68
+R1927:1930 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1900:1909 nameless.DBUniverseModel <> level_atom ind
+R1911:1915 nameless.DBUniverseModel <> level:64 var
+R1917:1922 nameless.DBUniverseModel <> levels:65 var
+R1924:1924 nameless.DBUniverseModel <> n:66 var
+R1926:1926 nameless.DBUniverseModel <> R:67 var
+R1958:1961 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1931:1940 nameless.DBUniverseModel <> level_atom ind
+R1942:1946 nameless.DBUniverseModel <> level:64 var
+R1948:1953 nameless.DBUniverseModel <> levels:65 var
+R1955:1955 nameless.DBUniverseModel <> n:66 var
+R1957:1957 nameless.DBUniverseModel <> S:68 var
+R1962:1976 nameless.DBFullReducibility Full predicate_equiv def
+R1978:1978 nameless.DBUniverseModel <> R:67 var
+R1980:1980 nameless.DBUniverseModel <> S:68 var
+R2075:2085 nameless.DBUniverseModel <> UniverseTower.base_unique var
+R2075:2085 nameless.DBUniverseModel <> UniverseTower.base_unique var
+R2121:2133 nameless.DBUniverseModel <> UniverseTower.base_not_sort var
+R2121:2133 nameless.DBUniverseModel <> UniverseTower.base_not_sort var
+R2169:2181 nameless.DBUniverseModel <> UniverseTower.base_not_sort var
+R2169:2181 nameless.DBUniverseModel <> UniverseTower.base_not_sort var
+R2234:2236 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2221:2229 Stdlib.Lists.List <> nth_error def
+R2237:2240 Corelib.Init.Datatypes <> Some constr
+R2234:2236 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2221:2229 Stdlib.Lists.List <> nth_error def
+R2237:2240 Corelib.Init.Datatypes <> Some constr
+R2263:2265 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2250:2258 Stdlib.Lists.List <> nth_error def
+R2266:2269 Corelib.Init.Datatypes <> Some constr
+R2263:2265 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2250:2258 Stdlib.Lists.List <> nth_error def
+R2266:2269 Corelib.Init.Datatypes <> Some constr
+prf 2356:2375 <> level_atom_candidate
+binder 2386:2390 <> level:69
+binder 2392:2397 <> levels:70
+R2425:2428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2402:2407 Corelib.Lists.ListDef <> Forall ind
+R2419:2424 nameless.DBUniverseModel <> levels:70 var
+R2409:2417 nameless.DBFullReducibility Full candidate rec
+binder 2436:2436 <> n:71
+binder 2438:2438 <> R:72
+R2468:2471 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2441:2450 nameless.DBUniverseModel <> level_atom ind
+R2452:2456 nameless.DBUniverseModel <> level:69 var
+R2458:2463 nameless.DBUniverseModel <> levels:70 var
+R2465:2465 nameless.DBUniverseModel <> n:71 var
+R2467:2467 nameless.DBUniverseModel <> R:72 var
+R2472:2480 nameless.DBFullReducibility Full candidate rec
+R2482:2482 nameless.DBUniverseModel <> R:72 var
+R2544:2557 nameless.DBUniverseModel <> UniverseTower.base_candidate var
+R2544:2557 nameless.DBUniverseModel <> UniverseTower.base_candidate var
+R2584:2596 Stdlib.Lists.List <> Forall_forall thm
+R2619:2630 Stdlib.Lists.List <> nth_error_In thm
+R2584:2596 Stdlib.Lists.List <> Forall_forall thm
+R2619:2630 Stdlib.Lists.List <> nth_error_In thm
+prf 2652:2675 <> layer_universe_candidate
+binder 2686:2690 <> level:73
+binder 2692:2697 <> levels:74
+R2723:2728 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2700:2705 Corelib.Lists.ListDef <> Forall ind
+R2717:2722 nameless.DBUniverseModel <> levels:74 var
+R2707:2715 nameless.DBFullReducibility Full candidate rec
+R2729:2737 nameless.DBFullReducibility Full candidate rec
+R2740:2753 nameless.DBSemanticTypes <> reducible_type def
+R2756:2765 nameless.DBUniverseModel <> level_atom ind
+R2767:2771 nameless.DBUniverseModel <> level:73 var
+R2773:2778 nameless.DBUniverseModel <> levels:74 var
+R2804:2827 nameless.DBSemanticTypes <> reducible_type_candidate thm
+R2804:2827 nameless.DBSemanticTypes <> reducible_type_candidate thm
+def 2845:2859 <> universe_levels
+binder 2861:2861 <> n:75
+R2865:2868 Corelib.Init.Datatypes <> list ind
+R2875:2878 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2871:2874 nameless.DBSyntax <> term ind
+R2896:2896 nameless.DBUniverseModel <> n:75 var
+R2912:2913 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2919:2919 Corelib.Init.Datatypes <> S constr
+R2942:2956 nameless.DBUniverseModel <> universe_levels:76 def
+binder 2930:2937 <> previous:78
+R2977:2980 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2969:2976 nameless.DBUniverseModel <> previous:78 var
+R2981:2981 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3020:3020 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2982:2995 nameless.DBSemanticTypes <> reducible_type def
+R2998:3007 nameless.DBUniverseModel <> level_atom ind
+R3011:3018 nameless.DBUniverseModel <> previous:78 var
+def 3040:3053 <> universe_model
+binder 3055:3055 <> n:79
+R3060:3073 nameless.DBSemanticTypes <> reducible_type def
+R3076:3085 nameless.DBUniverseModel <> level_atom ind
+R3087:3087 nameless.DBUniverseModel <> n:79 var
+R3090:3104 nameless.DBUniverseModel <> universe_levels def
+R3106:3106 nameless.DBUniverseModel <> n:79 var
+def 3122:3136 <> universe_interp
+binder 3138:3138 <> n:80
+R3143:3153 nameless.DBSemanticTypes <> type_interp ind
+R3156:3165 nameless.DBUniverseModel <> level_atom ind
+R3167:3167 nameless.DBUniverseModel <> n:80 var
+R3170:3184 nameless.DBUniverseModel <> universe_levels def
+R3186:3186 nameless.DBUniverseModel <> n:80 var
+prf 3197:3222 <> universe_levels_candidates
+binder 3233:3233 <> n:81
+R3236:3241 Corelib.Lists.ListDef <> Forall ind
+R3254:3268 nameless.DBUniverseModel <> universe_levels def
+R3270:3270 nameless.DBUniverseModel <> n:81 var
+R3243:3251 nameless.DBFullReducibility Full candidate rec
+R3301:3315 nameless.DBUniverseModel <> universe_levels def
+R3338:3347 Stdlib.Lists.List <> Forall_app thm
+R3338:3347 Stdlib.Lists.List <> Forall_app thm
+R3398:3421 nameless.DBUniverseModel <> layer_universe_candidate thm
+R3398:3421 nameless.DBUniverseModel <> layer_universe_candidate thm
+prf 3450:3473 <> universe_model_candidate
+binder 3484:3484 <> n:82
+R3487:3495 nameless.DBFullReducibility Full candidate rec
+R3498:3511 nameless.DBUniverseModel <> universe_model def
+R3513:3513 nameless.DBUniverseModel <> n:82 var
+R3540:3563 nameless.DBUniverseModel <> layer_universe_candidate thm
+R3566:3591 nameless.DBUniverseModel <> universe_levels_candidates thm
+R3540:3563 nameless.DBUniverseModel <> layer_universe_candidate thm
+R3566:3591 nameless.DBUniverseModel <> universe_levels_candidates thm
+prf 3605:3626 <> universe_levels_length
+binder 3637:3637 <> n:83
+R3666:3668 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3640:3645 Corelib.Init.Datatypes <> length def
+R3648:3662 nameless.DBUniverseModel <> universe_levels def
+R3664:3664 nameless.DBUniverseModel <> n:83 var
+R3669:3669 nameless.DBUniverseModel <> n:83 var
+R3697:3711 nameless.DBUniverseModel <> universe_levels def
+R3736:3745 Stdlib.Lists.List <> length_app thm
+R3736:3745 Stdlib.Lists.List <> length_app thm
+R3736:3745 Stdlib.Lists.List <> length_app thm
+prf 3775:3796 <> universe_levels_lookup
+binder 3807:3807 <> k:84
+binder 3809:3809 <> n:85
+R3817:3822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3813:3815 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R3812:3812 nameless.DBUniverseModel <> k:84 var
+R3816:3816 nameless.DBUniverseModel <> n:85 var
+R3854:3856 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3823:3831 Stdlib.Lists.List <> nth_error def
+R3853:3853 nameless.DBUniverseModel <> k:84 var
+R3834:3848 nameless.DBUniverseModel <> universe_levels def
+R3850:3850 nameless.DBUniverseModel <> n:85 var
+R3857:3860 Corelib.Init.Datatypes <> Some constr
+R3863:3876 nameless.DBUniverseModel <> universe_model def
+R3878:3878 nameless.DBUniverseModel <> k:84 var
+R3953:3967 nameless.DBUniverseModel <> universe_levels def
+R3981:3990 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R3981:3990 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R4049:4070 nameless.DBUniverseModel <> universe_levels_length thm
+R4022:4035 Stdlib.Lists.List <> nth_error_app2 thm
+R4022:4035 Stdlib.Lists.List <> nth_error_app2 thm
+R4049:4070 nameless.DBUniverseModel <> universe_levels_length thm
+R4049:4070 nameless.DBUniverseModel <> universe_levels_length thm
+R4022:4035 Stdlib.Lists.List <> nth_error_app2 thm
+R4091:4112 nameless.DBUniverseModel <> universe_levels_length thm
+R4115:4126 Stdlib.Arith.PeanoNat Nat sub_diag thm
+R4091:4112 nameless.DBUniverseModel <> universe_levels_length thm
+R4091:4112 nameless.DBUniverseModel <> universe_levels_length thm
+R4115:4126 Stdlib.Arith.PeanoNat Nat sub_diag thm
+R4115:4126 Stdlib.Arith.PeanoNat Nat sub_diag thm
+R4181:4202 nameless.DBUniverseModel <> universe_levels_length thm
+R4154:4167 Stdlib.Lists.List <> nth_error_app1 thm
+R4154:4167 Stdlib.Lists.List <> nth_error_app1 thm
+R4181:4202 nameless.DBUniverseModel <> universe_levels_length thm
+R4181:4202 nameless.DBUniverseModel <> universe_levels_length thm
+R4154:4167 Stdlib.Lists.List <> nth_error_app1 thm
+prf 4243:4262 <> type_interp_monotone
+binder 4273:4277 <> atoms:86
+binder 4279:4284 <> atoms':87
+R4289:4289 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4325:4331 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4297:4297 <> n:88
+binder 4299:4299 <> R:89
+R4311:4314 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4302:4306 nameless.DBUniverseModel <> atoms:86 var
+R4308:4308 nameless.DBUniverseModel <> n:88 var
+R4310:4310 nameless.DBUniverseModel <> R:89 var
+R4315:4320 nameless.DBUniverseModel <> atoms':87 var
+R4322:4322 nameless.DBUniverseModel <> n:88 var
+R4324:4324 nameless.DBUniverseModel <> R:89 var
+binder 4339:4339 <> A:90
+binder 4341:4341 <> R:91
+R4365:4368 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4344:4354 nameless.DBSemanticTypes <> type_interp ind
+R4362:4362 nameless.DBUniverseModel <> A:90 var
+R4364:4364 nameless.DBUniverseModel <> R:91 var
+R4356:4360 nameless.DBUniverseModel <> atoms:86 var
+R4369:4379 nameless.DBSemanticTypes <> type_interp ind
+R4388:4388 nameless.DBUniverseModel <> A:90 var
+R4390:4390 nameless.DBUniverseModel <> R:91 var
+R4381:4386 nameless.DBUniverseModel <> atoms':87 var
+R4463:4472 nameless.DBSemanticTypes <> it_neutral constr
+R4494:4500 nameless.DBSemanticTypes <> it_atom constr
+R4568:4572 nameless.DBSemanticTypes <> it_pi constr
+R4594:4601 nameless.DBSemanticTypes <> it_sigma constr
+R4623:4630 nameless.DBSemanticTypes <> it_equiv constr
+R4463:4472 nameless.DBSemanticTypes <> it_neutral constr
+R4463:4472 nameless.DBSemanticTypes <> it_neutral constr
+R4494:4500 nameless.DBSemanticTypes <> it_atom constr
+R4463:4472 nameless.DBSemanticTypes <> it_neutral constr
+R4494:4500 nameless.DBSemanticTypes <> it_atom constr
+R4568:4572 nameless.DBSemanticTypes <> it_pi constr
+R4463:4472 nameless.DBSemanticTypes <> it_neutral constr
+R4494:4500 nameless.DBSemanticTypes <> it_atom constr
+R4568:4572 nameless.DBSemanticTypes <> it_pi constr
+R4594:4601 nameless.DBSemanticTypes <> it_sigma constr
+R4463:4472 nameless.DBSemanticTypes <> it_neutral constr
+R4494:4500 nameless.DBSemanticTypes <> it_atom constr
+R4568:4572 nameless.DBSemanticTypes <> it_pi constr
+R4594:4601 nameless.DBSemanticTypes <> it_sigma constr
+R4623:4630 nameless.DBSemanticTypes <> it_equiv constr
+prf 4658:4678 <> level_atom_cumulative
+binder 4689:4689 <> n:92
+binder 4691:4691 <> m:93
+R4700:4703 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4695:4698 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R4694:4694 nameless.DBUniverseModel <> n:92 var
+R4699:4699 nameless.DBUniverseModel <> m:93 var
+binder 4711:4711 <> A:94
+binder 4713:4713 <> R:95
+R4754:4757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4718:4727 nameless.DBUniverseModel <> level_atom ind
+R4729:4729 nameless.DBUniverseModel <> n:92 var
+R4732:4746 nameless.DBUniverseModel <> universe_levels def
+R4748:4748 nameless.DBUniverseModel <> n:92 var
+R4751:4751 nameless.DBUniverseModel <> A:94 var
+R4753:4753 nameless.DBUniverseModel <> R:95 var
+R4758:4767 nameless.DBUniverseModel <> level_atom ind
+R4769:4769 nameless.DBUniverseModel <> m:93 var
+R4772:4786 nameless.DBUniverseModel <> universe_levels def
+R4788:4788 nameless.DBUniverseModel <> m:93 var
+R4791:4791 nameless.DBUniverseModel <> A:94 var
+R4793:4793 nameless.DBUniverseModel <> R:95 var
+R4846:4852 nameless.DBUniverseModel <> la_base constr
+R4862:4876 nameless.DBUniverseModel <> UniverseTower.base_cumulative var
+R4846:4852 nameless.DBUniverseModel <> la_base constr
+R4862:4876 nameless.DBUniverseModel <> UniverseTower.base_cumulative var
+R4911:4913 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4911:4913 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4933:4954 nameless.DBUniverseModel <> universe_levels_length thm
+R4933:4954 nameless.DBUniverseModel <> universe_levels_length thm
+R4933:4954 nameless.DBUniverseModel <> universe_levels_length thm
+R4963:4976 Stdlib.Lists.List <> nth_error_Some thm
+R4963:4976 Stdlib.Lists.List <> nth_error_Some thm
+R5007:5028 nameless.DBUniverseModel <> universe_levels_lookup thm
+R5007:5028 nameless.DBUniverseModel <> universe_levels_lookup thm
+R5096:5102 nameless.DBUniverseModel <> la_sort constr
+R5105:5126 nameless.DBUniverseModel <> universe_levels_lookup thm
+R5096:5102 nameless.DBUniverseModel <> la_sort constr
+R5105:5126 nameless.DBUniverseModel <> universe_levels_lookup thm
+prf 5147:5172 <> universe_interp_cumulative
+binder 5183:5183 <> n:96
+binder 5185:5185 <> m:97
+R5194:5197 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5189:5192 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R5188:5188 nameless.DBUniverseModel <> n:96 var
+R5193:5193 nameless.DBUniverseModel <> m:97 var
+binder 5205:5205 <> A:98
+binder 5207:5207 <> R:99
+R5233:5236 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5212:5226 nameless.DBUniverseModel <> universe_interp def
+R5228:5228 nameless.DBUniverseModel <> n:96 var
+R5230:5230 nameless.DBUniverseModel <> A:98 var
+R5232:5232 nameless.DBUniverseModel <> R:99 var
+R5237:5251 nameless.DBUniverseModel <> universe_interp def
+R5253:5253 nameless.DBUniverseModel <> m:97 var
+R5255:5255 nameless.DBUniverseModel <> A:98 var
+R5257:5257 nameless.DBUniverseModel <> R:99 var
+R5291:5310 nameless.DBUniverseModel <> type_interp_monotone thm
+R5291:5310 nameless.DBUniverseModel <> type_interp_monotone thm
+R5325:5345 nameless.DBUniverseModel <> level_atom_cumulative thm
+R5325:5345 nameless.DBUniverseModel <> level_atom_cumulative thm
+prf 5361:5385 <> universe_model_cumulative
+binder 5396:5396 <> n:100
+binder 5398:5398 <> m:101
+R5407:5410 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5402:5405 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R5401:5401 nameless.DBUniverseModel <> n:100 var
+R5406:5406 nameless.DBUniverseModel <> m:101 var
+binder 5418:5418 <> A:102
+R5441:5444 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5423:5436 nameless.DBUniverseModel <> universe_model def
+R5438:5438 nameless.DBUniverseModel <> n:100 var
+R5440:5440 nameless.DBUniverseModel <> A:102 var
+R5445:5458 nameless.DBUniverseModel <> universe_model def
+R5460:5460 nameless.DBUniverseModel <> m:101 var
+R5462:5462 nameless.DBUniverseModel <> A:102 var
+R5516:5541 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R5516:5541 nameless.DBUniverseModel <> universe_interp_cumulative thm
+prf 5568:5578 <> sort_normal
+binder 5589:5589 <> k:103
+R5592:5602 nameless.DBFullNormalForms <> normal_form def
+R5605:5609 nameless.DBSyntax <> TSort constr
+R5611:5611 nameless.DBUniverseModel <> k:103 var
+prf 5676:5703 <> universe_sort_interpretation
+binder 5714:5714 <> k:104
+binder 5716:5716 <> n:105
+R5724:5729 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5720:5722 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5719:5719 nameless.DBUniverseModel <> k:104 var
+R5723:5723 nameless.DBUniverseModel <> n:105 var
+R5730:5744 nameless.DBUniverseModel <> universe_interp def
+R5746:5746 nameless.DBUniverseModel <> n:105 var
+R5749:5753 nameless.DBSyntax <> TSort constr
+R5755:5755 nameless.DBUniverseModel <> k:104 var
+R5759:5772 nameless.DBUniverseModel <> universe_model def
+R5774:5774 nameless.DBUniverseModel <> k:104 var
+R5825:5829 nameless.DBSyntax <> TSort constr
+R5808:5814 nameless.DBSemanticTypes <> it_atom constr
+R5825:5829 nameless.DBSyntax <> TSort constr
+R5808:5814 nameless.DBSemanticTypes <> it_atom constr
+R5845:5866 nameless.DBFullNormalForms <> normal_form_accessible thm
+R5869:5879 nameless.DBUniverseModel <> sort_normal thm
+R5845:5866 nameless.DBFullNormalForms <> normal_form_accessible thm
+R5869:5879 nameless.DBUniverseModel <> sort_normal thm
+R5909:5919 nameless.DBUniverseModel <> sort_normal thm
+R5909:5919 nameless.DBUniverseModel <> sort_normal thm
+R5932:5938 nameless.DBUniverseModel <> la_sort constr
+R5951:5972 nameless.DBUniverseModel <> universe_levels_lookup thm
+R5932:5938 nameless.DBUniverseModel <> la_sort constr
+R5951:5972 nameless.DBUniverseModel <> universe_levels_lookup thm
+prf 5988:6011 <> universe_sort_computable
+binder 6022:6022 <> k:106
+R6025:6038 nameless.DBUniverseModel <> universe_model def
+R6041:6041 Corelib.Init.Datatypes <> S constr
+R6043:6043 nameless.DBUniverseModel <> k:106 var
+R6047:6051 nameless.DBSyntax <> TSort constr
+R6053:6053 nameless.DBUniverseModel <> k:106 var
+R6082:6095 nameless.DBUniverseModel <> universe_model def
+R6107:6134 nameless.DBUniverseModel <> universe_sort_interpretation thm
+R6082:6095 nameless.DBUniverseModel <> universe_model def
+R6107:6134 nameless.DBUniverseModel <> universe_sort_interpretation thm
+prf 6156:6180 <> universe_interp_candidate
+binder 6191:6191 <> n:107
+binder 6193:6193 <> A:108
+binder 6195:6195 <> R:109
+R6221:6224 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6200:6214 nameless.DBUniverseModel <> universe_interp def
+R6216:6216 nameless.DBUniverseModel <> n:107 var
+R6218:6218 nameless.DBUniverseModel <> A:108 var
+R6220:6220 nameless.DBUniverseModel <> R:109 var
+R6225:6233 nameless.DBFullReducibility Full candidate rec
+R6235:6235 nameless.DBUniverseModel <> R:109 var
+R6270:6290 nameless.DBSemanticTypes <> type_interp_candidate thm
+R6270:6290 nameless.DBSemanticTypes <> type_interp_candidate thm
+R6323:6342 nameless.DBUniverseModel <> level_atom_candidate thm
+R6345:6370 nameless.DBUniverseModel <> universe_levels_candidates thm
+R6323:6342 nameless.DBUniverseModel <> level_atom_candidate thm
+R6345:6370 nameless.DBUniverseModel <> universe_levels_candidates thm
+R6383:6404 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R6383:6404 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R6417:6433 nameless.DBUniverseModel <> level_atom_not_pi thm
+R6417:6433 nameless.DBUniverseModel <> level_atom_not_pi thm
+R6446:6465 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R6446:6465 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R6478:6494 nameless.DBUniverseModel <> level_atom_unique thm
+R6478:6494 nameless.DBUniverseModel <> level_atom_unique thm
+prf 6510:6531 <> universe_interp_unique
+binder 6542:6542 <> n:110
+binder 6544:6544 <> m:111
+binder 6546:6546 <> A:112
+binder 6548:6548 <> B:113
+binder 6550:6550 <> R:114
+binder 6552:6552 <> S:115
+R6578:6581 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6557:6571 nameless.DBUniverseModel <> universe_interp def
+R6573:6573 nameless.DBUniverseModel <> n:110 var
+R6575:6575 nameless.DBUniverseModel <> A:112 var
+R6577:6577 nameless.DBUniverseModel <> R:114 var
+R6603:6606 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6582:6596 nameless.DBUniverseModel <> universe_interp def
+R6598:6598 nameless.DBUniverseModel <> m:111 var
+R6600:6600 nameless.DBUniverseModel <> B:113 var
+R6602:6602 nameless.DBUniverseModel <> S:115 var
+R6615:6618 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6607:6610 nameless.DBCore <> conv ind
+R6614:6614 nameless.DBUniverseModel <> B:113 var
+R6612:6612 nameless.DBUniverseModel <> A:112 var
+R6619:6633 nameless.DBFullReducibility Full predicate_equiv def
+R6635:6635 nameless.DBUniverseModel <> R:114 var
+R6637:6637 nameless.DBUniverseModel <> S:115 var
+R6692:6717 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R6722:6728 Stdlib.Arith.PeanoNat Nat max def
+R6736:6747 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R6692:6717 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R6722:6728 Stdlib.Arith.PeanoNat Nat max def
+R6736:6747 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R6784:6809 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R6814:6820 Stdlib.Arith.PeanoNat Nat max def
+R6828:6839 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R6784:6809 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R6814:6820 Stdlib.Arith.PeanoNat Nat max def
+R6828:6839 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R6872:6889 nameless.DBSemanticTypes <> type_interp_unique thm
+R6892:6901 nameless.DBUniverseModel <> level_atom ind
+R6904:6910 Stdlib.Arith.PeanoNat Nat max def
+R6918:6932 nameless.DBUniverseModel <> universe_levels def
+R6935:6941 Stdlib.Arith.PeanoNat Nat max def
+R6963:6984 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R6992:7008 nameless.DBUniverseModel <> level_atom_not_pi thm
+R7016:7035 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R7048:7064 nameless.DBUniverseModel <> level_atom_unique thm
+R6872:6889 nameless.DBSemanticTypes <> type_interp_unique thm
+R6892:6901 nameless.DBUniverseModel <> level_atom ind
+R6904:6910 Stdlib.Arith.PeanoNat Nat max def
+R6918:6932 nameless.DBUniverseModel <> universe_levels def
+R6935:6941 Stdlib.Arith.PeanoNat Nat max def
+R6963:6984 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R6992:7008 nameless.DBUniverseModel <> level_atom_not_pi thm
+R7016:7035 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R7048:7064 nameless.DBUniverseModel <> level_atom_unique thm
+def 7114:7130 <> universe_elements
+binder 7132:7132 <> n:116
+binder 7134:7134 <> A:117
+R7139:7151 nameless.DBSemanticTypes <> type_elements def
+R7188:7188 nameless.DBUniverseModel <> A:117 var
+R7154:7163 nameless.DBUniverseModel <> level_atom ind
+R7165:7165 nameless.DBUniverseModel <> n:116 var
+R7168:7182 nameless.DBUniverseModel <> universe_levels def
+R7184:7184 nameless.DBUniverseModel <> n:116 var
+prf 7197:7221 <> universe_interp_canonical
+binder 7232:7232 <> n:118
+binder 7234:7234 <> A:119
+R7257:7260 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7239:7252 nameless.DBUniverseModel <> universe_model def
+R7254:7254 nameless.DBUniverseModel <> n:118 var
+R7256:7256 nameless.DBUniverseModel <> A:119 var
+R7261:7275 nameless.DBUniverseModel <> universe_interp def
+R7277:7277 nameless.DBUniverseModel <> n:118 var
+R7279:7279 nameless.DBUniverseModel <> A:119 var
+R7282:7298 nameless.DBUniverseModel <> universe_elements def
+R7300:7300 nameless.DBUniverseModel <> n:118 var
+R7302:7302 nameless.DBUniverseModel <> A:119 var
+R7335:7355 nameless.DBSemanticTypes <> type_interp_canonical thm
+R7369:7390 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R7398:7414 nameless.DBUniverseModel <> level_atom_not_pi thm
+R7422:7441 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R7454:7470 nameless.DBUniverseModel <> level_atom_unique thm
+R7335:7355 nameless.DBSemanticTypes <> type_interp_canonical thm
+R7369:7390 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R7398:7414 nameless.DBUniverseModel <> level_atom_not_pi thm
+R7422:7441 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R7454:7470 nameless.DBUniverseModel <> level_atom_unique thm
+prf 7495:7515 <> universe_pi_formation
+binder 7526:7526 <> j:120
+binder 7528:7528 <> k:121
+binder 7530:7530 <> U:122
+binder 7532:7532 <> V:123
+R7555:7560 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7537:7550 nameless.DBUniverseModel <> universe_model def
+R7552:7552 nameless.DBUniverseModel <> j:120 var
+R7554:7554 nameless.DBUniverseModel <> U:122 var
+R7561:7561 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7629:7635 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7569:7569 <> a:124
+R7595:7598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7572:7588 nameless.DBUniverseModel <> universe_elements def
+R7590:7590 nameless.DBUniverseModel <> j:120 var
+R7592:7592 nameless.DBUniverseModel <> U:122 var
+R7594:7594 nameless.DBUniverseModel <> a:124 var
+R7599:7612 nameless.DBUniverseModel <> universe_model def
+R7614:7614 nameless.DBUniverseModel <> k:121 var
+R7617:7621 nameless.DBSyntax <> subst def
+R7627:7627 nameless.DBUniverseModel <> V:123 var
+R7623:7623 nameless.DBUniverseModel <> a:124 var
+R7636:7649 nameless.DBUniverseModel <> universe_model def
+R7652:7658 Stdlib.Arith.PeanoNat Nat max def
+R7660:7660 nameless.DBUniverseModel <> j:120 var
+R7662:7662 nameless.DBUniverseModel <> k:121 var
+R7666:7668 nameless.DBSyntax <> TPi constr
+R7672:7672 nameless.DBUniverseModel <> V:123 var
+R7670:7670 nameless.DBUniverseModel <> U:122 var
+R7717:7734 nameless.DBFullReducibility Full dependent_function def
+R7737:7753 nameless.DBUniverseModel <> universe_elements def
+binder 7769:7769 <> a:125
+R7774:7790 nameless.DBUniverseModel <> universe_elements def
+R7795:7799 nameless.DBSyntax <> subst def
+R7801:7801 nameless.DBUniverseModel <> a:125 var
+R7717:7734 nameless.DBFullReducibility Full dependent_function def
+R7737:7753 nameless.DBUniverseModel <> universe_elements def
+binder 7769:7769 <> a:126
+R7774:7790 nameless.DBUniverseModel <> universe_elements def
+R7795:7799 nameless.DBSyntax <> subst def
+R7801:7801 nameless.DBUniverseModel <> a:126 var
+R7820:7839 nameless.DBSemanticTypes <> type_interp_pi_intro thm
+R7820:7839 nameless.DBSemanticTypes <> type_interp_pi_intro thm
+R7852:7871 nameless.DBUniverseModel <> level_atom_candidate thm
+R7874:7899 nameless.DBUniverseModel <> universe_levels_candidates thm
+R7852:7871 nameless.DBUniverseModel <> level_atom_candidate thm
+R7874:7899 nameless.DBUniverseModel <> universe_levels_candidates thm
+R7912:7933 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R7912:7933 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R7946:7962 nameless.DBUniverseModel <> level_atom_not_pi thm
+R7946:7962 nameless.DBUniverseModel <> level_atom_not_pi thm
+R7975:7994 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R7975:7994 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R8007:8023 nameless.DBUniverseModel <> level_atom_unique thm
+R8007:8023 nameless.DBUniverseModel <> level_atom_unique thm
+R8037:8062 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R8067:8073 Stdlib.Arith.PeanoNat Nat max def
+R8081:8092 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R8037:8062 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R8067:8073 Stdlib.Arith.PeanoNat Nat max def
+R8081:8092 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R8115:8139 nameless.DBUniverseModel <> universe_interp_canonical thm
+R8115:8139 nameless.DBUniverseModel <> universe_interp_canonical thm
+R8166:8191 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R8196:8202 Stdlib.Arith.PeanoNat Nat max def
+R8210:8221 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R8166:8191 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R8196:8202 Stdlib.Arith.PeanoNat Nat max def
+R8210:8221 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R8240:8264 nameless.DBUniverseModel <> universe_interp_canonical thm
+R8240:8264 nameless.DBUniverseModel <> universe_interp_canonical thm
+prf 8294:8317 <> universe_sigma_formation
+binder 8328:8328 <> j:127
+binder 8330:8330 <> k:128
+binder 8332:8332 <> U:129
+binder 8334:8334 <> V:130
+R8357:8362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8339:8352 nameless.DBUniverseModel <> universe_model def
+R8354:8354 nameless.DBUniverseModel <> j:127 var
+R8356:8356 nameless.DBUniverseModel <> U:129 var
+R8363:8363 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8431:8437 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8371:8371 <> a:131
+R8397:8400 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8374:8390 nameless.DBUniverseModel <> universe_elements def
+R8392:8392 nameless.DBUniverseModel <> j:127 var
+R8394:8394 nameless.DBUniverseModel <> U:129 var
+R8396:8396 nameless.DBUniverseModel <> a:131 var
+R8401:8414 nameless.DBUniverseModel <> universe_model def
+R8416:8416 nameless.DBUniverseModel <> k:128 var
+R8419:8423 nameless.DBSyntax <> subst def
+R8429:8429 nameless.DBUniverseModel <> V:130 var
+R8425:8425 nameless.DBUniverseModel <> a:131 var
+R8438:8451 nameless.DBUniverseModel <> universe_model def
+R8454:8460 Stdlib.Arith.PeanoNat Nat max def
+R8462:8462 nameless.DBUniverseModel <> j:127 var
+R8464:8464 nameless.DBUniverseModel <> k:128 var
+R8468:8473 nameless.DBSyntax <> TSigma constr
+R8477:8477 nameless.DBUniverseModel <> V:130 var
+R8475:8475 nameless.DBUniverseModel <> U:129 var
+R8522:8535 nameless.DBFullReducibility Full dependent_pair def
+R8538:8554 nameless.DBUniverseModel <> universe_elements def
+binder 8570:8570 <> a:132
+R8575:8591 nameless.DBUniverseModel <> universe_elements def
+R8596:8600 nameless.DBSyntax <> subst def
+R8602:8602 nameless.DBUniverseModel <> a:132 var
+R8522:8535 nameless.DBFullReducibility Full dependent_pair def
+R8538:8554 nameless.DBUniverseModel <> universe_elements def
+binder 8570:8570 <> a:133
+R8575:8591 nameless.DBUniverseModel <> universe_elements def
+R8596:8600 nameless.DBSyntax <> subst def
+R8602:8602 nameless.DBUniverseModel <> a:133 var
+R8621:8643 nameless.DBSemanticTypes <> type_interp_sigma_intro thm
+R8621:8643 nameless.DBSemanticTypes <> type_interp_sigma_intro thm
+R8656:8675 nameless.DBUniverseModel <> level_atom_candidate thm
+R8678:8703 nameless.DBUniverseModel <> universe_levels_candidates thm
+R8656:8675 nameless.DBUniverseModel <> level_atom_candidate thm
+R8678:8703 nameless.DBUniverseModel <> universe_levels_candidates thm
+R8716:8737 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R8716:8737 nameless.DBUniverseModel <> level_atom_not_neutral thm
+R8750:8766 nameless.DBUniverseModel <> level_atom_not_pi thm
+R8750:8766 nameless.DBUniverseModel <> level_atom_not_pi thm
+R8779:8798 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R8779:8798 nameless.DBUniverseModel <> level_atom_not_sigma thm
+R8811:8827 nameless.DBUniverseModel <> level_atom_unique thm
+R8811:8827 nameless.DBUniverseModel <> level_atom_unique thm
+R8841:8866 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R8871:8877 Stdlib.Arith.PeanoNat Nat max def
+R8885:8896 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R8841:8866 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R8871:8877 Stdlib.Arith.PeanoNat Nat max def
+R8885:8896 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R8919:8943 nameless.DBUniverseModel <> universe_interp_canonical thm
+R8919:8943 nameless.DBUniverseModel <> universe_interp_canonical thm
+R8970:8995 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R9000:9006 Stdlib.Arith.PeanoNat Nat max def
+R9014:9025 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R8970:8995 nameless.DBUniverseModel <> universe_interp_cumulative thm
+R9000:9006 Stdlib.Arith.PeanoNat Nat max def
+R9014:9025 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R9044:9068 nameless.DBUniverseModel <> universe_interp_canonical thm
+R9044:9068 nameless.DBUniverseModel <> universe_interp_canonical thm
+R9094:9106 nameless.DBUniverseModel UniverseTower <> sec
+R9128:9151 nameless.DBUniverseModel <> universe_model_candidate thm
+R9172:9196 nameless.DBUniverseModel <> universe_model_cumulative thm
+R9217:9240 nameless.DBUniverseModel <> universe_sort_computable thm
+R9261:9282 nameless.DBUniverseModel <> universe_interp_unique thm
+R9303:9323 nameless.DBUniverseModel <> universe_pi_formation thm
+R9344:9367 nameless.DBUniverseModel <> universe_sigma_formation thm

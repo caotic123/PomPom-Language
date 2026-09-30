@@ -1,0 +1,461 @@
+DIGEST 416eefe49ac2101fa23d38b04b265b85
+Fnameless.DBCumulativeTyping
+R180:183 Stdlib.Lists.List <> <> lib
+R185:189 Stdlib.Arith.Arith <> <> lib
+R191:194 Stdlib.Bool.Bool <> <> lib
+R196:198 Stdlib.micromega.Lia <> <> lib
+R216:236 nameless.DBGeneration <> <> lib
+R246:258 Stdlib.Lists.List ListNotations <> mod
+ind 272:282 <> type_change
+constr 326:338 <> tc_conversion
+constr 432:442 <> tc_universe
+constr 543:555 <> tc_transitive
+R293:295 nameless.DBSyntax <> ctx def
+binder 285:289 <> Gamma:1
+R304:307 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R300:303 nameless.DBSyntax <> term ind
+R312:315 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R308:311 nameless.DBSyntax <> term ind
+binder 349:349 <> A:4
+binder 351:351 <> B:5
+R373:376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R358:364 nameless.DBTyping <> type_wf def
+R366:370 nameless.DBCumulativeTyping <> Gamma:1 var
+R372:372 nameless.DBCumulativeTyping <> A:4 var
+R392:395 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R377:383 nameless.DBTyping <> type_wf def
+R385:389 nameless.DBCumulativeTyping <> Gamma:1 var
+R391:391 nameless.DBCumulativeTyping <> B:5 var
+R404:407 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R396:399 nameless.DBCore <> conv ind
+R403:403 nameless.DBCumulativeTyping <> B:5 var
+R401:401 nameless.DBCumulativeTyping <> A:4 var
+R408:418 nameless.DBCumulativeTyping <> type_change:2 ind
+R428:428 nameless.DBCumulativeTyping <> B:5 var
+R426:426 nameless.DBCumulativeTyping <> A:4 var
+R420:424 nameless.DBCumulativeTyping <> Gamma:1 var
+binder 453:453 <> A:6
+binder 455:455 <> B:7
+R477:480 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R462:468 nameless.DBTyping <> type_wf def
+R470:474 nameless.DBCumulativeTyping <> Gamma:1 var
+R476:476 nameless.DBCumulativeTyping <> A:6 var
+R496:499 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R481:487 nameless.DBTyping <> type_wf def
+R489:493 nameless.DBCumulativeTyping <> Gamma:1 var
+R495:495 nameless.DBCumulativeTyping <> B:7 var
+R515:518 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R500:510 nameless.DBTyping <> universe_le ind
+R512:512 nameless.DBCumulativeTyping <> A:6 var
+R514:514 nameless.DBCumulativeTyping <> B:7 var
+R519:529 nameless.DBCumulativeTyping <> type_change:2 ind
+R539:539 nameless.DBCumulativeTyping <> B:7 var
+R537:537 nameless.DBCumulativeTyping <> A:6 var
+R531:535 nameless.DBCumulativeTyping <> Gamma:1 var
+binder 566:566 <> A:8
+binder 568:568 <> B:9
+binder 570:570 <> C:10
+R598:601 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R577:587 nameless.DBCumulativeTyping <> type_change:2 ind
+R597:597 nameless.DBCumulativeTyping <> B:9 var
+R595:595 nameless.DBCumulativeTyping <> A:8 var
+R589:593 nameless.DBCumulativeTyping <> Gamma:1 var
+R623:626 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R602:612 nameless.DBCumulativeTyping <> type_change:2 ind
+R622:622 nameless.DBCumulativeTyping <> C:10 var
+R620:620 nameless.DBCumulativeTyping <> B:9 var
+R614:618 nameless.DBCumulativeTyping <> Gamma:1 var
+R627:637 nameless.DBCumulativeTyping <> type_change:2 ind
+R647:647 nameless.DBCumulativeTyping <> C:10 var
+R645:645 nameless.DBCumulativeTyping <> A:8 var
+R639:643 nameless.DBCumulativeTyping <> Gamma:1 var
+scheme 272:282 <> type_change_ind
+scheme 272:282 <> type_change_sind
+prf 657:672 <> type_change_refl
+binder 683:687 <> Gamma:11
+binder 689:689 <> A:12
+R709:712 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R694:700 nameless.DBTyping <> type_wf def
+R702:706 nameless.DBCumulativeTyping <> Gamma:11 var
+R708:708 nameless.DBCumulativeTyping <> A:12 var
+R713:723 nameless.DBCumulativeTyping <> type_change ind
+R725:729 nameless.DBCumulativeTyping <> Gamma:11 var
+R731:731 nameless.DBCumulativeTyping <> A:12 var
+R733:733 nameless.DBCumulativeTyping <> A:12 var
+R757:769 nameless.DBCumulativeTyping <> tc_conversion constr
+R783:789 nameless.DBCore <> cv_refl constr
+R757:769 nameless.DBCumulativeTyping <> tc_conversion constr
+R783:789 nameless.DBCore <> cv_refl constr
+R783:789 nameless.DBCore <> cv_refl constr
+R783:789 nameless.DBCore <> cv_refl constr
+prf 804:824 <> type_change_formation
+binder 835:839 <> Gamma:13
+binder 841:841 <> A:14
+binder 843:843 <> B:15
+R869:872 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R848:858 nameless.DBCumulativeTyping <> type_change ind
+R860:864 nameless.DBCumulativeTyping <> Gamma:13 var
+R866:866 nameless.DBCumulativeTyping <> A:14 var
+R868:868 nameless.DBCumulativeTyping <> B:15 var
+R888:891 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R873:879 nameless.DBTyping <> type_wf def
+R881:885 nameless.DBCumulativeTyping <> Gamma:13 var
+R887:887 nameless.DBCumulativeTyping <> A:14 var
+R892:898 nameless.DBTyping <> type_wf def
+R900:904 nameless.DBCumulativeTyping <> Gamma:13 var
+R906:906 nameless.DBCumulativeTyping <> B:15 var
+prf 974:991 <> type_change_typing
+binder 1002:1006 <> Gamma:16
+binder 1008:1008 <> A:17
+binder 1010:1010 <> B:18
+R1036:1039 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1015:1025 nameless.DBCumulativeTyping <> type_change ind
+R1027:1031 nameless.DBCumulativeTyping <> Gamma:16 var
+R1033:1033 nameless.DBCumulativeTyping <> A:17 var
+R1035:1035 nameless.DBCumulativeTyping <> B:18 var
+binder 1047:1047 <> t:19
+R1066:1069 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1050:1055 nameless.DBTyping <> typing ind
+R1057:1061 nameless.DBCumulativeTyping <> Gamma:16 var
+R1063:1063 nameless.DBCumulativeTyping <> t:19 var
+R1065:1065 nameless.DBCumulativeTyping <> A:17 var
+R1070:1075 nameless.DBTyping <> typing ind
+R1077:1081 nameless.DBCumulativeTyping <> Gamma:16 var
+R1083:1083 nameless.DBCumulativeTyping <> t:19 var
+R1085:1085 nameless.DBCumulativeTyping <> B:18 var
+R1177:1183 nameless.DBTyping <> ty_conv constr
+R1177:1183 nameless.DBTyping <> ty_conv constr
+R1210:1227 nameless.DBDerivedTyping <> universe_le_typing thm
+R1210:1227 nameless.DBDerivedTyping <> universe_le_typing thm
+prf 1267:1287 <> type_change_narrowing
+binder 1298:1302 <> Gamma:20
+binder 1304:1304 <> A:21
+binder 1306:1306 <> B:22
+R1332:1335 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1311:1321 nameless.DBCumulativeTyping <> type_change ind
+R1323:1327 nameless.DBCumulativeTyping <> Gamma:20 var
+R1329:1329 nameless.DBCumulativeTyping <> A:21 var
+R1331:1331 nameless.DBCumulativeTyping <> B:22 var
+binder 1343:1343 <> t:23
+binder 1345:1345 <> T:24
+R1371:1374 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1350:1355 nameless.DBTyping <> typing ind
+R1359:1360 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1358:1358 nameless.DBCumulativeTyping <> B:22 var
+R1361:1365 nameless.DBCumulativeTyping <> Gamma:20 var
+R1368:1368 nameless.DBCumulativeTyping <> t:23 var
+R1370:1370 nameless.DBCumulativeTyping <> T:24 var
+R1375:1380 nameless.DBTyping <> typing ind
+R1384:1385 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1383:1383 nameless.DBCumulativeTyping <> A:21 var
+R1386:1390 nameless.DBCumulativeTyping <> Gamma:20 var
+R1393:1393 nameless.DBCumulativeTyping <> t:23 var
+R1395:1395 nameless.DBCumulativeTyping <> T:24 var
+R1506:1523 nameless.DBContexts <> context_conversion thm
+R1555:1560 nameless.DBCore <> cv_sym constr
+R1506:1523 nameless.DBContexts <> context_conversion thm
+R1555:1560 nameless.DBCore <> cv_sym constr
+R1624:1640 nameless.DBContexts <> context_narrowing thm
+R1624:1640 nameless.DBContexts <> context_narrowing thm
+prf 1704:1713 <> type_wf_pi
+binder 1724:1728 <> Gamma:25
+binder 1730:1730 <> A:26
+binder 1732:1732 <> B:27
+R1752:1755 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1737:1743 nameless.DBTyping <> type_wf def
+R1745:1749 nameless.DBCumulativeTyping <> Gamma:25 var
+R1751:1751 nameless.DBCumulativeTyping <> A:26 var
+R1776:1779 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1756:1762 nameless.DBTyping <> type_wf def
+R1766:1767 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1765:1765 nameless.DBCumulativeTyping <> A:26 var
+R1768:1772 nameless.DBCumulativeTyping <> Gamma:25 var
+R1775:1775 nameless.DBCumulativeTyping <> B:27 var
+R1780:1786 nameless.DBTyping <> type_wf def
+R1788:1792 nameless.DBCumulativeTyping <> Gamma:25 var
+R1795:1797 nameless.DBSyntax <> TPi constr
+R1801:1801 nameless.DBCumulativeTyping <> B:27 var
+R1799:1799 nameless.DBCumulativeTyping <> A:26 var
+R1852:1858 Stdlib.Arith.PeanoNat Nat max def
+R1876:1880 nameless.DBTyping <> ty_pi constr
+R1852:1858 Stdlib.Arith.PeanoNat Nat max def
+R1876:1880 nameless.DBTyping <> ty_pi constr
+prf 1895:1917 <> type_change_pi_codomain
+binder 1928:1932 <> Gamma:28
+binder 1934:1934 <> A:29
+binder 1936:1936 <> B:30
+binder 1938:1938 <> D:31
+R1958:1961 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1943:1949 nameless.DBTyping <> type_wf def
+R1951:1955 nameless.DBCumulativeTyping <> Gamma:28 var
+R1957:1957 nameless.DBCumulativeTyping <> A:29 var
+R1988:1993 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1962:1972 nameless.DBCumulativeTyping <> type_change ind
+R1976:1977 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1975:1975 nameless.DBCumulativeTyping <> A:29 var
+R1978:1982 nameless.DBCumulativeTyping <> Gamma:28 var
+R1985:1985 nameless.DBCumulativeTyping <> B:30 var
+R1987:1987 nameless.DBCumulativeTyping <> D:31 var
+R1994:2004 nameless.DBCumulativeTyping <> type_change ind
+R2006:2010 nameless.DBCumulativeTyping <> Gamma:28 var
+R2013:2015 nameless.DBSyntax <> TPi constr
+R2019:2019 nameless.DBCumulativeTyping <> B:30 var
+R2017:2017 nameless.DBCumulativeTyping <> A:29 var
+R2023:2025 nameless.DBSyntax <> TPi constr
+R2029:2029 nameless.DBCumulativeTyping <> D:31 var
+R2027:2027 nameless.DBCumulativeTyping <> A:29 var
+R2078:2079 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2078:2079 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2141:2153 nameless.DBCumulativeTyping <> tc_conversion constr
+R2168:2177 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2141:2153 nameless.DBCumulativeTyping <> tc_conversion constr
+R2168:2177 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2168:2177 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2168:2177 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2190:2202 nameless.DBCore <> cv_compatible constr
+R2229:2235 nameless.DBCore <> cv_refl constr
+R2190:2202 nameless.DBCore <> cv_compatible constr
+R2229:2235 nameless.DBCore <> cv_refl constr
+R2229:2235 nameless.DBCore <> cv_refl constr
+R2248:2258 nameless.DBCumulativeTyping <> tc_universe constr
+R2273:2282 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2248:2258 nameless.DBCumulativeTyping <> tc_universe constr
+R2273:2282 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2273:2282 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2273:2282 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2313:2323 nameless.DBTyping <> universe_le ind
+R2313:2323 nameless.DBTyping <> universe_le ind
+R2313:2323 nameless.DBTyping <> universe_le ind
+R2337:2349 nameless.DBCumulativeTyping <> tc_transitive constr
+R2337:2349 nameless.DBCumulativeTyping <> tc_transitive constr
+prf 2371:2391 <> type_change_pi_domain
+binder 2402:2406 <> Gamma:32
+binder 2408:2408 <> A:33
+binder 2410:2410 <> C:34
+R2436:2439 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2415:2425 nameless.DBCumulativeTyping <> type_change ind
+R2427:2431 nameless.DBCumulativeTyping <> Gamma:32 var
+R2433:2433 nameless.DBCumulativeTyping <> C:34 var
+R2435:2435 nameless.DBCumulativeTyping <> A:33 var
+binder 2447:2447 <> B:35
+R2470:2475 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2450:2456 nameless.DBTyping <> type_wf def
+R2460:2461 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2459:2459 nameless.DBCumulativeTyping <> A:33 var
+R2462:2466 nameless.DBCumulativeTyping <> Gamma:32 var
+R2469:2469 nameless.DBCumulativeTyping <> B:35 var
+R2476:2486 nameless.DBCumulativeTyping <> type_change ind
+R2488:2492 nameless.DBCumulativeTyping <> Gamma:32 var
+R2495:2497 nameless.DBSyntax <> TPi constr
+R2501:2501 nameless.DBCumulativeTyping <> B:35 var
+R2499:2499 nameless.DBCumulativeTyping <> A:33 var
+R2505:2507 nameless.DBSyntax <> TPi constr
+R2511:2511 nameless.DBCumulativeTyping <> B:35 var
+R2509:2509 nameless.DBCumulativeTyping <> C:34 var
+R2588:2594 nameless.DBTyping <> type_wf def
+R2598:2599 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2588:2594 nameless.DBTyping <> type_wf def
+R2598:2599 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2663:2683 nameless.DBCumulativeTyping <> type_change_narrowing thm
+R2694:2706 nameless.DBCumulativeTyping <> tc_conversion constr
+R2663:2683 nameless.DBCumulativeTyping <> type_change_narrowing thm
+R2694:2706 nameless.DBCumulativeTyping <> tc_conversion constr
+R2744:2756 nameless.DBCumulativeTyping <> tc_conversion constr
+R2771:2780 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2744:2756 nameless.DBCumulativeTyping <> tc_conversion constr
+R2771:2780 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2771:2780 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2771:2780 nameless.DBCumulativeTyping <> type_wf_pi thm
+R2793:2805 nameless.DBCore <> cv_compatible constr
+R2832:2838 nameless.DBCore <> cv_refl constr
+R2841:2846 nameless.DBCore <> cv_sym constr
+R2793:2805 nameless.DBCore <> cv_compatible constr
+R2832:2838 nameless.DBCore <> cv_refl constr
+R2832:2838 nameless.DBCore <> cv_refl constr
+R2841:2846 nameless.DBCore <> cv_sym constr
+R2841:2846 nameless.DBCore <> cv_sym constr
+R2867:2873 nameless.DBTyping <> type_wf def
+R2877:2878 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2867:2873 nameless.DBTyping <> type_wf def
+R2877:2878 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2942:2962 nameless.DBCumulativeTyping <> type_change_narrowing thm
+R2973:2983 nameless.DBCumulativeTyping <> tc_universe constr
+R2942:2962 nameless.DBCumulativeTyping <> type_change_narrowing thm
+R2973:2983 nameless.DBCumulativeTyping <> tc_universe constr
+R3021:3031 nameless.DBCumulativeTyping <> tc_universe constr
+R3046:3055 nameless.DBCumulativeTyping <> type_wf_pi thm
+R3021:3031 nameless.DBCumulativeTyping <> tc_universe constr
+R3046:3055 nameless.DBCumulativeTyping <> type_wf_pi thm
+R3046:3055 nameless.DBCumulativeTyping <> type_wf_pi thm
+R3046:3055 nameless.DBCumulativeTyping <> type_wf_pi thm
+R3086:3096 nameless.DBTyping <> universe_le ind
+R3086:3096 nameless.DBTyping <> universe_le ind
+R3086:3096 nameless.DBTyping <> universe_le ind
+R3110:3122 nameless.DBCumulativeTyping <> tc_transitive constr
+R3110:3122 nameless.DBCumulativeTyping <> tc_transitive constr
+R3230:3250 nameless.DBCumulativeTyping <> type_change_narrowing thm
+R3230:3250 nameless.DBCumulativeTyping <> type_change_narrowing thm
+prf 3280:3293 <> type_change_pi
+binder 3304:3308 <> Gamma:36
+binder 3310:3310 <> A:37
+binder 3312:3312 <> B:38
+binder 3314:3314 <> C:39
+binder 3316:3316 <> D:40
+R3342:3345 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3321:3331 nameless.DBCumulativeTyping <> type_change ind
+R3333:3337 nameless.DBCumulativeTyping <> Gamma:36 var
+R3339:3339 nameless.DBCumulativeTyping <> C:39 var
+R3341:3341 nameless.DBCumulativeTyping <> A:37 var
+R3366:3371 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3346:3352 nameless.DBTyping <> type_wf def
+R3356:3357 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3355:3355 nameless.DBCumulativeTyping <> A:37 var
+R3358:3362 nameless.DBCumulativeTyping <> Gamma:36 var
+R3365:3365 nameless.DBCumulativeTyping <> B:38 var
+R3398:3401 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3372:3382 nameless.DBCumulativeTyping <> type_change ind
+R3386:3387 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3385:3385 nameless.DBCumulativeTyping <> C:39 var
+R3388:3392 nameless.DBCumulativeTyping <> Gamma:36 var
+R3395:3395 nameless.DBCumulativeTyping <> B:38 var
+R3397:3397 nameless.DBCumulativeTyping <> D:40 var
+R3402:3412 nameless.DBCumulativeTyping <> type_change ind
+R3414:3418 nameless.DBCumulativeTyping <> Gamma:36 var
+R3421:3423 nameless.DBSyntax <> TPi constr
+R3427:3427 nameless.DBCumulativeTyping <> B:38 var
+R3425:3425 nameless.DBCumulativeTyping <> A:37 var
+R3431:3433 nameless.DBSyntax <> TPi constr
+R3437:3437 nameless.DBCumulativeTyping <> D:40 var
+R3435:3435 nameless.DBCumulativeTyping <> C:39 var
+R3490:3502 nameless.DBCumulativeTyping <> tc_transitive constr
+R3490:3502 nameless.DBCumulativeTyping <> tc_transitive constr
+R3515:3535 nameless.DBCumulativeTyping <> type_change_pi_domain thm
+R3515:3535 nameless.DBCumulativeTyping <> type_change_pi_domain thm
+R3561:3583 nameless.DBCumulativeTyping <> type_change_pi_codomain thm
+R3594:3598 Corelib.Init.Logic <> proj1 thm
+R3601:3621 nameless.DBCumulativeTyping <> type_change_formation thm
+R3561:3583 nameless.DBCumulativeTyping <> type_change_pi_codomain thm
+R3594:3598 Corelib.Init.Logic <> proj1 thm
+R3601:3621 nameless.DBCumulativeTyping <> type_change_formation thm
+prf 3659:3684 <> variable_change_generation
+binder 3695:3699 <> Gamma:41
+binder 3701:3701 <> t:42
+binder 3703:3703 <> T:43
+R3724:3727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3708:3713 nameless.DBTyping <> typing ind
+R3715:3719 nameless.DBCumulativeTyping <> Gamma:41 var
+R3721:3721 nameless.DBCumulativeTyping <> t:42 var
+R3723:3723 nameless.DBCumulativeTyping <> T:43 var
+binder 3735:3735 <> n:44
+R3748:3753 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3739:3741 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3738:3738 nameless.DBCumulativeTyping <> t:42 var
+R3742:3745 nameless.DBSyntax <> TVar constr
+R3747:3747 nameless.DBCumulativeTyping <> n:44 var
+R3754:3760 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3762:3763 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3761:3761 <> A:45
+R3790:3797 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3781:3783 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3764:3772 Stdlib.Lists.List <> nth_error def
+R3780:3780 nameless.DBCumulativeTyping <> n:44 var
+R3774:3778 nameless.DBCumulativeTyping <> Gamma:41 var
+R3784:3787 Corelib.Init.Datatypes <> Some constr
+R3789:3789 nameless.DBCumulativeTyping <> A:45 var
+R3798:3808 nameless.DBCumulativeTyping <> type_change ind
+R3810:3814 nameless.DBCumulativeTyping <> Gamma:41 var
+R3817:3820 nameless.DBSyntax <> lift def
+R3830:3830 nameless.DBCumulativeTyping <> A:45 var
+R3823:3823 Corelib.Init.Datatypes <> S constr
+R3825:3825 nameless.DBCumulativeTyping <> n:44 var
+R3833:3833 nameless.DBCumulativeTyping <> T:43 var
+R3979:3994 nameless.DBCumulativeTyping <> type_change_refl thm
+R3979:3994 nameless.DBCumulativeTyping <> type_change_refl thm
+R4107:4119 nameless.DBCumulativeTyping <> tc_transitive constr
+R4138:4150 nameless.DBCumulativeTyping <> tc_conversion constr
+R4165:4180 nameless.DBWeakening <> type_correctness thm
+R4107:4119 nameless.DBCumulativeTyping <> tc_transitive constr
+R4138:4150 nameless.DBCumulativeTyping <> tc_conversion constr
+R4165:4180 nameless.DBWeakening <> type_correctness thm
+R4165:4180 nameless.DBWeakening <> type_correctness thm
+R4165:4180 nameless.DBWeakening <> type_correctness thm
+R4293:4305 nameless.DBCumulativeTyping <> tc_transitive constr
+R4324:4334 nameless.DBCumulativeTyping <> tc_universe constr
+R4293:4305 nameless.DBCumulativeTyping <> tc_transitive constr
+R4324:4334 nameless.DBCumulativeTyping <> tc_universe constr
+R4351:4366 nameless.DBWeakening <> type_correctness thm
+R4351:4366 nameless.DBWeakening <> type_correctness thm
+R4403:4409 nameless.DBTyping <> ty_sort constr
+R4424:4437 nameless.DBWeakening <> typing_context thm
+R4403:4409 nameless.DBTyping <> ty_sort constr
+R4424:4437 nameless.DBWeakening <> typing_context thm
+R4551:4563 nameless.DBCumulativeTyping <> tc_transitive constr
+R4582:4592 nameless.DBCumulativeTyping <> tc_universe constr
+R4551:4563 nameless.DBCumulativeTyping <> tc_transitive constr
+R4582:4592 nameless.DBCumulativeTyping <> tc_universe constr
+prf 4663:4691 <> application_change_generation
+binder 4702:4706 <> Gamma:46
+binder 4708:4708 <> t:47
+binder 4710:4710 <> T:48
+R4731:4734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4715:4720 nameless.DBTyping <> typing ind
+R4722:4726 nameless.DBCumulativeTyping <> Gamma:46 var
+R4728:4728 nameless.DBCumulativeTyping <> t:47 var
+R4730:4730 nameless.DBCumulativeTyping <> T:48 var
+binder 4742:4742 <> f:49
+binder 4744:4744 <> a:50
+R4759:4764 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4748:4750 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4747:4747 nameless.DBCumulativeTyping <> t:47 var
+R4751:4754 nameless.DBSyntax <> TApp constr
+R4758:4758 nameless.DBCumulativeTyping <> a:50 var
+R4756:4756 nameless.DBCumulativeTyping <> f:49 var
+R4765:4771 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4775:4776 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4772:4772 <> A:51
+binder 4774:4774 <> B:52
+R4801:4804 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4777:4782 nameless.DBTyping <> typing ind
+R4784:4788 nameless.DBCumulativeTyping <> Gamma:46 var
+R4790:4790 nameless.DBCumulativeTyping <> f:49 var
+R4793:4795 nameless.DBSyntax <> TPi constr
+R4799:4799 nameless.DBCumulativeTyping <> B:52 var
+R4797:4797 nameless.DBCumulativeTyping <> A:51 var
+R4821:4828 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4805:4810 nameless.DBTyping <> typing ind
+R4812:4816 nameless.DBCumulativeTyping <> Gamma:46 var
+R4818:4818 nameless.DBCumulativeTyping <> a:50 var
+R4820:4820 nameless.DBCumulativeTyping <> A:51 var
+R4829:4839 nameless.DBCumulativeTyping <> type_change ind
+R4841:4845 nameless.DBCumulativeTyping <> Gamma:46 var
+R4848:4852 nameless.DBSyntax <> subst def
+R4858:4858 nameless.DBCumulativeTyping <> B:52 var
+R4854:4854 nameless.DBCumulativeTyping <> a:50 var
+R4861:4861 nameless.DBCumulativeTyping <> T:48 var
+R5021:5036 nameless.DBCumulativeTyping <> type_change_refl thm
+R5021:5036 nameless.DBCumulativeTyping <> type_change_refl thm
+R5172:5184 nameless.DBCumulativeTyping <> tc_transitive constr
+R5203:5215 nameless.DBCumulativeTyping <> tc_conversion constr
+R5230:5245 nameless.DBWeakening <> type_correctness thm
+R5172:5184 nameless.DBCumulativeTyping <> tc_transitive constr
+R5203:5215 nameless.DBCumulativeTyping <> tc_conversion constr
+R5230:5245 nameless.DBWeakening <> type_correctness thm
+R5230:5245 nameless.DBWeakening <> type_correctness thm
+R5230:5245 nameless.DBWeakening <> type_correctness thm
+R5381:5393 nameless.DBCumulativeTyping <> tc_transitive constr
+R5412:5422 nameless.DBCumulativeTyping <> tc_universe constr
+R5381:5393 nameless.DBCumulativeTyping <> tc_transitive constr
+R5412:5422 nameless.DBCumulativeTyping <> tc_universe constr
+R5439:5454 nameless.DBWeakening <> type_correctness thm
+R5439:5454 nameless.DBWeakening <> type_correctness thm
+R5491:5497 nameless.DBTyping <> ty_sort constr
+R5512:5525 nameless.DBWeakening <> typing_context thm
+R5491:5497 nameless.DBTyping <> ty_sort constr
+R5512:5525 nameless.DBWeakening <> typing_context thm
+R5662:5674 nameless.DBCumulativeTyping <> tc_transitive constr
+R5693:5703 nameless.DBCumulativeTyping <> tc_universe constr
+R5662:5674 nameless.DBCumulativeTyping <> tc_transitive constr
+R5693:5703 nameless.DBCumulativeTyping <> tc_universe constr
+R5786:5799 nameless.DBCumulativeTyping <> type_change_pi thm
+R5820:5845 nameless.DBCumulativeTyping <> variable_change_generation thm
+R5866:5894 nameless.DBCumulativeTyping <> application_change_generation thm

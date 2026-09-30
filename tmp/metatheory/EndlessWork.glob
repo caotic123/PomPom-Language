@@ -1,0 +1,405 @@
+DIGEST c9290271d711257f9381cfd50b260d2b
+FEndlessWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R47:52 Stdlib.Arith.Wf_nat <> <> lib
+R70:97 OpenSignaturesNamedCanonical <> <> lib
+R99:121 OpenSignaturesObservers <> <> lib
+R131:143 Stdlib.Lists.List ListNotations <> mod
+def 158:168 <> step_normal
+binder 170:170 <> t:1
+binder 182:182 <> u:2
+R185:186 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R187:190 OpenSignaturesCore <> step ind
+R194:194 EndlessWork <> u:2 var
+R192:192 EndlessWork <> t:1 var
+prf 203:219 <> normal_evaluation
+binder 230:230 <> t:3
+binder 232:232 <> u:4
+R248:251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R235:245 EndlessWork <> step_normal def
+R247:247 EndlessWork <> t:3 var
+R260:263 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R252:255 OpenSignaturesCore <> eval ind
+R259:259 EndlessWork <> u:4 var
+R257:257 EndlessWork <> t:3 var
+R265:267 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R264:264 EndlessWork <> t:3 var
+R268:268 EndlessWork <> u:4 var
+prf 359:372 <> normal_context
+R391:394 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R387:390 OpenSignaturesSyntax <> term ind
+R395:398 OpenSignaturesSyntax <> term ind
+binder 383:383 <> C:5
+R403:403 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R444:450 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 411:411 <> t:6
+binder 413:413 <> u:7
+R424:427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R416:419 OpenSignaturesCore <> step ind
+R423:423 EndlessWork <> u:7 var
+R421:421 EndlessWork <> t:6 var
+R428:431 OpenSignaturesCore <> step ind
+R440:440 EndlessWork <> C:5 var
+R442:442 EndlessWork <> u:7 var
+R434:434 EndlessWork <> C:5 var
+R436:436 EndlessWork <> t:6 var
+binder 458:458 <> t:8
+R478:481 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R461:471 EndlessWork <> step_normal def
+R474:474 EndlessWork <> C:5 var
+R476:476 EndlessWork <> t:8 var
+R482:492 EndlessWork <> step_normal def
+R494:494 EndlessWork <> t:8 var
+R511:521 EndlessWork <> step_normal def
+prf 576:584 <> normal_in
+binder 595:595 <> t:9
+R617:620 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R598:608 EndlessWork <> step_normal def
+R611:613 OpenSignaturesSyntax <> TIn constr
+R615:615 EndlessWork <> t:9 var
+R621:631 EndlessWork <> step_normal def
+R633:633 EndlessWork <> t:9 var
+R650:663 EndlessWork <> normal_context thm
+R665:667 OpenSignaturesSyntax <> TIn constr
+R682:689 OpenSignaturesCore <> st_TIn_x constr
+R650:663 EndlessWork <> normal_context thm
+R665:667 OpenSignaturesSyntax <> TIn constr
+R682:689 OpenSignaturesCore <> st_TIn_x constr
+prf 703:717 <> normal_pair_snd
+binder 728:728 <> a:10
+binder 730:730 <> b:11
+R756:759 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R733:743 EndlessWork <> step_normal def
+R746:750 OpenSignaturesSyntax <> TPair constr
+R754:754 EndlessWork <> b:11 var
+R752:752 EndlessWork <> a:10 var
+R760:770 EndlessWork <> step_normal def
+R772:772 EndlessWork <> b:11 var
+R798:811 EndlessWork <> normal_context thm
+R814:818 OpenSignaturesSyntax <> TPair constr
+R836:845 OpenSignaturesCore <> st_TPair_b constr
+R798:811 EndlessWork <> normal_context thm
+R814:818 OpenSignaturesSyntax <> TPair constr
+R836:845 OpenSignaturesCore <> st_TPair_b constr
+prf 860:878 <> product_value_shape
+binder 889:893 <> Gamma:12
+binder 895:895 <> A:13
+binder 897:897 <> B:14
+binder 899:899 <> v:15
+R932:935 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R904:909 OpenSignaturesCore <> typing ind
+R920:926 OpenSignaturesSyntax <> product def
+R930:930 EndlessWork <> B:14 var
+R928:928 EndlessWork <> A:13 var
+R917:917 EndlessWork <> v:15 var
+R911:915 EndlessWork <> Gamma:12 var
+R943:946 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R936:940 OpenSignaturesCore <> value ind
+R942:942 EndlessWork <> v:15 var
+R947:953 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R957:958 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 954:954 <> a:16
+binder 956:956 <> b:17
+R960:962 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R959:959 EndlessWork <> v:15 var
+R963:967 OpenSignaturesSyntax <> TPair constr
+R971:971 EndlessWork <> b:17 var
+R969:969 EndlessWork <> a:16 var
+R1022:1045 OpenSignaturesProgress <> canonical_representation thm
+R1047:1060 OpenSignaturesCanonical <> raw_join_typed thm
+R1022:1045 OpenSignaturesProgress <> canonical_representation thm
+R1047:1060 OpenSignaturesCanonical <> raw_join_typed thm
+R1116:1134 OpenSignaturesProgress <> canonical_type_head thm
+R1116:1134 OpenSignaturesProgress <> canonical_type_head thm
+R1168:1170 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1171:1177 OpenSignaturesProgress <> h_sigma constr
+R1191:1198 OpenSignaturesLabels <> raw_head thm
+R1168:1170 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1171:1177 OpenSignaturesProgress <> h_sigma constr
+R1191:1198 OpenSignaturesLabels <> raw_head thm
+R1274:1282 OpenSignaturesProgress <> term_head def
+def 1334:1343 <> named_size
+binder 1345:1345 <> t:18
+R1350:1378 nameless.DBParallelBase <> tsize def
+R1381:1386 OpenSignaturesEncoding <> encode def
+R1388:1389 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1391:1391 EndlessWork <> t:18 var
+sec 1404:1415 <> EndlessEmpty
+var 1427:1432 EndlessEmpty weaken
+binder 1443:1447 <> Gamma:19
+binder 1449:1449 <> x:20
+binder 1451:1451 <> t:21
+binder 1453:1453 <> A:22
+binder 1455:1455 <> B:23
+binder 1457:1457 <> k:24
+R1478:1481 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1462:1469 OpenSignaturesSyntax <> fresh_in def
+R1477:1477 EndlessWork <> x:20 var
+R1471:1475 EndlessWork <> Gamma:19 var
+R1498:1501 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1482:1487 OpenSignaturesCore <> typing ind
+R1497:1497 EndlessWork <> A:22 var
+R1495:1495 EndlessWork <> t:21 var
+R1489:1493 EndlessWork <> Gamma:19 var
+R1526:1531 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1502:1507 OpenSignaturesCore <> typing ind
+R1518:1522 OpenSignaturesSyntax <> TSort constr
+R1524:1524 EndlessWork <> k:24 var
+R1515:1515 EndlessWork <> B:23 var
+R1509:1513 EndlessWork <> Gamma:19 var
+R1532:1537 OpenSignaturesCore <> typing ind
+R1560:1560 EndlessWork <> A:22 var
+R1558:1558 EndlessWork <> t:21 var
+R1540:1545 OpenSignaturesSyntax <> extend def
+R1555:1555 EndlessWork <> B:23 var
+R1553:1553 EndlessWork <> x:20 var
+R1547:1551 EndlessWork <> Gamma:19 var
+var 1572:1579 EndlessEmpty preserve
+binder 1590:1594 <> Gamma:27
+binder 1596:1596 <> t:28
+binder 1598:1598 <> u:29
+binder 1600:1600 <> A:30
+R1619:1622 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1603:1608 OpenSignaturesCore <> typing ind
+R1618:1618 EndlessWork <> A:30 var
+R1616:1616 EndlessWork <> t:28 var
+R1610:1614 EndlessWork <> Gamma:27 var
+R1636:1639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1623:1631 OpenSignaturesCore <> reduction ind
+R1635:1635 EndlessWork <> u:29 var
+R1633:1633 EndlessWork <> t:28 var
+R1640:1645 OpenSignaturesCore <> typing ind
+R1655:1655 EndlessWork <> A:30 var
+R1653:1653 EndlessWork <> u:29 var
+R1647:1651 EndlessWork <> Gamma:27 var
+var 1667:1675 EndlessEmpty normalize
+binder 1686:1686 <> t:33
+binder 1688:1688 <> A:34
+R1711:1714 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1691:1696 OpenSignaturesCore <> typing ind
+R1710:1710 EndlessWork <> A:34 var
+R1708:1708 EndlessWork <> t:33 var
+R1698:1706 OpenSignaturesSyntax <> empty_ctx def
+R1715:1721 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1723:1724 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1722:1722 <> v:35
+R1733:1736 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1725:1728 OpenSignaturesCore <> eval ind
+R1732:1732 EndlessWork <> v:35 var
+R1730:1730 EndlessWork <> t:33 var
+R1737:1741 OpenSignaturesCore <> value ind
+R1743:1743 EndlessWork <> v:35 var
+prf 1753:1764 <> normal_value
+binder 1775:1775 <> t:38
+binder 1777:1777 <> A:39
+R1802:1805 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1782:1787 OpenSignaturesCore <> typing ind
+R1801:1801 EndlessWork <> A:39 var
+R1799:1799 EndlessWork <> t:38 var
+R1789:1797 OpenSignaturesSyntax <> empty_ctx def
+R1819:1822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1806:1816 EndlessWork <> step_normal def
+R1818:1818 EndlessWork <> t:38 var
+R1823:1827 OpenSignaturesCore <> value ind
+R1829:1829 EndlessWork <> t:38 var
+R1869:1892 OpenSignaturesProgress <> progress_from_conversion thm
+R1918:1924 Corelib.Init.Logic <> eq_refl constr
+R1894:1907 OpenSignaturesCanonical <> raw_join_typed thm
+R1869:1892 OpenSignaturesProgress <> progress_from_conversion thm
+R1918:1924 Corelib.Init.Logic <> eq_refl constr
+R1894:1907 OpenSignaturesCanonical <> raw_join_typed thm
+prf 2001:2020 <> normal_endless_empty
+binder 2031:2031 <> t:40
+binder 2033:2033 <> A:41
+R2066:2069 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2038:2043 OpenSignaturesCore <> typing ind
+R2058:2062 OpenSignaturesSyntax <> TSort constr
+R2055:2055 EndlessWork <> A:41 var
+R2045:2053 OpenSignaturesSyntax <> empty_ctx def
+R2083:2086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2070:2080 EndlessWork <> step_normal def
+R2082:2082 EndlessWork <> t:40 var
+R2087:2088 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2089:2094 OpenSignaturesCore <> typing ind
+R2109:2120 OpenSignaturesExamples <> endless_type def
+R2122:2122 EndlessWork <> A:41 var
+R2106:2106 EndlessWork <> t:40 var
+R2096:2104 OpenSignaturesSyntax <> empty_ctx def
+R2154:2175 Corelib.Init.Wf <> well_founded_induction thm
+R2178:2194 Stdlib.Arith.Wf_nat <> well_founded_ltof thm
+R2198:2207 EndlessWork <> named_size def
+R2154:2175 Corelib.Init.Wf <> well_founded_induction thm
+R2178:2194 Stdlib.Arith.Wf_nat <> well_founded_ltof thm
+R2198:2207 EndlessWork <> named_size def
+R2255:2262 OpenSignaturesElaboration <> row_view ind
+R2312:2324 OpenSignaturesExamples <> nonempty_rows def
+R2282:2285 OpenSignaturesSyntax <> TApp constr
+R2304:2308 OpenSignaturesSyntax <> TUnit constr
+R2288:2299 OpenSignaturesExamples <> nonempty_def def
+R2274:2279 OpenSignaturesSyntax <> TUnitT constr
+R2264:2272 OpenSignaturesSyntax <> empty_ctx def
+R2255:2262 OpenSignaturesElaboration <> row_view ind
+R2312:2324 OpenSignaturesExamples <> nonempty_rows def
+R2282:2285 OpenSignaturesSyntax <> TApp constr
+R2304:2308 OpenSignaturesSyntax <> TUnit constr
+R2288:2299 OpenSignaturesExamples <> nonempty_def def
+R2274:2279 OpenSignaturesSyntax <> TUnitT constr
+R2264:2272 OpenSignaturesSyntax <> empty_ctx def
+R2364:2383 OpenSignaturesExampleTyping <> nonempty_rows_typing thm
+R2364:2383 OpenSignaturesExampleTyping <> nonempty_rows_typing thm
+R2398:2412 OpenSignaturesDerivedTyping <> def_application thm
+R2422:2427 EndlessWork <> EndlessEmpty.weaken var
+R2435:2442 OpenSignaturesCore <> ty_unitT constr
+R2450:2455 OpenSignaturesCore <> wf_nil constr
+R2465:2471 OpenSignaturesCore <> ty_unit constr
+R2479:2484 OpenSignaturesCore <> wf_nil constr
+R2398:2412 OpenSignaturesDerivedTyping <> def_application thm
+R2422:2427 EndlessWork <> EndlessEmpty.weaken var
+R2435:2442 OpenSignaturesCore <> ty_unitT constr
+R2450:2455 OpenSignaturesCore <> wf_nil constr
+R2465:2471 OpenSignaturesCore <> ty_unit constr
+R2479:2484 OpenSignaturesCore <> wf_nil constr
+R2501:2505 Corelib.Init.Logic <> proj1 thm
+R2508:2512 Corelib.Init.Logic <> proj2 thm
+R2515:2545 OpenSignaturesExampleTyping <> list_definitions_from_weakening thm
+R2547:2552 EndlessWork <> EndlessEmpty.weaken var
+R2501:2505 Corelib.Init.Logic <> proj1 thm
+R2508:2512 Corelib.Init.Logic <> proj2 thm
+R2515:2545 OpenSignaturesExampleTyping <> list_definitions_from_weakening thm
+R2547:2552 EndlessWork <> EndlessEmpty.weaken var
+R2577:2602 OpenSignaturesExampleTyping <> unit_signature_application thm
+R2577:2602 OpenSignaturesExampleTyping <> unit_signature_application thm
+R2619:2644 OpenSignaturesNamedCanonical <> canonical_named_from_rules thm
+R2662:2670 EndlessWork <> EndlessEmpty.normalize var
+R2653:2660 EndlessWork <> EndlessEmpty.preserve var
+R2646:2651 EndlessWork <> EndlessEmpty.weaken var
+R2619:2644 OpenSignaturesNamedCanonical <> canonical_named_from_rules thm
+R2662:2670 EndlessWork <> EndlessEmpty.normalize var
+R2653:2660 EndlessWork <> EndlessEmpty.preserve var
+R2646:2651 EndlessWork <> EndlessEmpty.weaken var
+R2767:2779 OpenSignaturesExamples <> nonempty_rows def
+R2781:2789 Stdlib.Lists.List <> nth_error def
+R2865:2881 EndlessWork <> normal_evaluation thm
+R2865:2881 EndlessWork <> normal_evaluation thm
+R2936:2946 EndlessWork <> step_normal def
+R2963:2977 EndlessWork <> normal_pair_snd thm
+R2980:2988 EndlessWork <> normal_in thm
+R2936:2946 EndlessWork <> step_normal def
+R2963:2977 EndlessWork <> normal_pair_snd thm
+R2980:2988 EndlessWork <> normal_in thm
+R3028:3033 OpenSignaturesCore <> typing ind
+R3063:3067 OpenSignaturesSyntax <> TSort constr
+R3046:3057 OpenSignaturesExamples <> endless_type def
+R3035:3043 OpenSignaturesSyntax <> empty_ctx def
+R3028:3033 OpenSignaturesCore <> typing ind
+R3063:3067 OpenSignaturesSyntax <> TSort constr
+R3046:3057 OpenSignaturesExamples <> endless_type def
+R3035:3043 OpenSignaturesSyntax <> empty_ctx def
+R3084:3101 OpenSignaturesProgress <> close_at_formation thm
+R3111:3118 OpenSignaturesCore <> ty_unitT constr
+R3126:3131 OpenSignaturesCore <> wf_nil constr
+R3143:3149 OpenSignaturesCore <> ty_unit constr
+R3157:3162 OpenSignaturesCore <> wf_nil constr
+R3179:3183 Corelib.Init.Logic <> proj1 thm
+R3186:3190 Corelib.Init.Logic <> proj2 thm
+R3193:3223 OpenSignaturesExampleTyping <> list_definitions_from_weakening thm
+R3225:3230 EndlessWork <> EndlessEmpty.weaken var
+R3084:3101 OpenSignaturesProgress <> close_at_formation thm
+R3111:3118 OpenSignaturesCore <> ty_unitT constr
+R3126:3131 OpenSignaturesCore <> wf_nil constr
+R3143:3149 OpenSignaturesCore <> ty_unit constr
+R3157:3162 OpenSignaturesCore <> wf_nil constr
+R3179:3183 Corelib.Init.Logic <> proj1 thm
+R3186:3190 Corelib.Init.Logic <> proj2 thm
+R3193:3223 OpenSignaturesExampleTyping <> list_definitions_from_weakening thm
+R3225:3230 EndlessWork <> EndlessEmpty.weaken var
+R3179:3183 Corelib.Init.Logic <> proj1 thm
+R3186:3190 Corelib.Init.Logic <> proj2 thm
+R3193:3223 OpenSignaturesExampleTyping <> list_definitions_from_weakening thm
+R3225:3230 EndlessWork <> EndlessEmpty.weaken var
+R3263:3268 OpenSignaturesCore <> typing ind
+R3284:3290 OpenSignaturesSyntax <> product def
+R3295:3306 OpenSignaturesExamples <> endless_type def
+R3270:3278 OpenSignaturesSyntax <> empty_ctx def
+R3263:3268 OpenSignaturesCore <> typing ind
+R3284:3290 OpenSignaturesSyntax <> product def
+R3295:3306 OpenSignaturesExamples <> endless_type def
+R3270:3278 OpenSignaturesSyntax <> empty_ctx def
+R3325:3331 OpenSignaturesCore <> ty_conv constr
+R3352:3368 OpenSignaturesDerivedTyping <> product_formation thm
+R3370:3375 EndlessWork <> EndlessEmpty.weaken var
+R3325:3331 OpenSignaturesCore <> ty_conv constr
+R3352:3368 OpenSignaturesDerivedTyping <> product_formation thm
+R3370:3375 EndlessWork <> EndlessEmpty.weaken var
+R3413:3432 OpenSignaturesObservers <> cons_payload_product thm
+R3413:3432 OpenSignaturesObservers <> cons_payload_product thm
+R3449:3467 EndlessWork <> product_value_shape thm
+R3484:3495 EndlessWork <> normal_value thm
+R3449:3467 EndlessWork <> product_value_shape thm
+R3484:3495 EndlessWork <> normal_value thm
+R3555:3560 OpenSignaturesCore <> typing ind
+R3578:3589 OpenSignaturesExamples <> endless_type def
+R3562:3570 OpenSignaturesSyntax <> empty_ctx def
+R3555:3560 OpenSignaturesCore <> typing ind
+R3578:3589 OpenSignaturesExamples <> endless_type def
+R3562:3570 OpenSignaturesSyntax <> empty_ctx def
+R3625:3628 OpenSignaturesSyntax <> TSnd constr
+R3631:3635 OpenSignaturesSyntax <> TPair constr
+R3607:3614 EndlessWork <> EndlessEmpty.preserve var
+R3625:3628 OpenSignaturesSyntax <> TSnd constr
+R3631:3635 OpenSignaturesSyntax <> TPair constr
+R3607:3614 EndlessWork <> EndlessEmpty.preserve var
+R3660:3684 OpenSignaturesDeadTyping <> product_projection_typing thm
+R3701:3705 Corelib.Init.Datatypes <> false constr
+R3686:3691 EndlessWork <> EndlessEmpty.weaken var
+R3660:3684 OpenSignaturesDeadTyping <> product_projection_typing thm
+R3701:3705 Corelib.Init.Datatypes <> false constr
+R3686:3691 EndlessWork <> EndlessEmpty.weaken var
+R3739:3746 OpenSignaturesCore <> red_root constr
+R3739:3746 OpenSignaturesCore <> red_root constr
+R3808:3822 EndlessWork <> normal_pair_snd thm
+R3808:3822 EndlessWork <> normal_pair_snd thm
+R3863:3866 Stdlib.Arith.Wf_nat <> ltof def
+R3869:3878 EndlessWork <> named_size def
+R3886:3891 OpenSignaturesEncoding <> encode def
+R3893:3921 nameless.DBParallelBase <> tsize def
+R3923:3935 OpenSignaturesSyntax <> enum_position def
+prf 3958:3975 <> endless_from_rules
+R3981:3981 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4065:4071 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3989:3989 <> t:42
+binder 3991:3991 <> A:43
+R4014:4017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3994:3999 OpenSignaturesCore <> typing ind
+R4013:4013 EndlessWork <> A:43 var
+R4011:4011 EndlessWork <> t:42 var
+R4001:4009 OpenSignaturesSyntax <> empty_ctx def
+R4018:4024 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4026:4027 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4025:4025 <> v:44
+R4048:4051 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4028:4033 OpenSignaturesCore <> typing ind
+R4047:4047 EndlessWork <> A:43 var
+R4045:4045 EndlessWork <> v:44 var
+R4035:4043 OpenSignaturesSyntax <> empty_ctx def
+R4052:4062 EndlessWork <> step_normal def
+R4064:4064 EndlessWork <> v:44 var
+binder 4079:4079 <> A:45
+R4110:4113 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4082:4087 OpenSignaturesCore <> typing ind
+R4102:4106 OpenSignaturesSyntax <> TSort constr
+R4099:4099 EndlessWork <> A:45 var
+R4089:4097 OpenSignaturesSyntax <> empty_ctx def
+binder 4121:4121 <> x:46
+R4124:4125 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R4126:4131 OpenSignaturesCore <> typing ind
+R4146:4157 OpenSignaturesExamples <> endless_type def
+R4159:4159 EndlessWork <> A:45 var
+R4143:4143 EndlessWork <> x:46 var
+R4133:4141 OpenSignaturesSyntax <> empty_ctx def
+R4255:4274 EndlessWork <> normal_endless_empty thm
+R4255:4274 EndlessWork <> normal_endless_empty thm
+R4300:4311 EndlessWork EndlessEmpty <> sec

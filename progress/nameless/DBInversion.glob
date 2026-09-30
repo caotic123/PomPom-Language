@@ -1,0 +1,521 @@
+DIGEST d19322efdb34f07c761bd20f20ac2651
+Fnameless.DBInversion
+R15:37 nameless.DBParallelBase <> <> lib
+prf 46:56 <> invert_TLam
+binder 67:68 <> x0:1
+binder 70:70 <> u:2
+R90:93 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R73:77 nameless.DBParallelBase <> pstep ind
+R80:83 nameless.DBSyntax <> TLam constr
+R85:86 nameless.DBInversion <> x0:1 var
+R89:89 nameless.DBInversion <> u:2 var
+R94:100 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R103:104 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 101:102 <> y0:3
+R118:121 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R106:109 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R117:117 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R105:105 nameless.DBInversion <> u:2 var
+R110:113 nameless.DBSyntax <> TLam constr
+R115:116 nameless.DBInversion <> y0:3 var
+R122:126 nameless.DBParallelBase <> pstep ind
+R128:129 nameless.DBInversion <> x0:1 var
+R131:132 nameless.DBInversion <> y0:3 var
+R170:174 nameless.DBParallelBase <> pstep ind
+R170:174 nameless.DBParallelBase <> pstep ind
+prf 281:292 <> invert_TPair
+binder 303:304 <> x0:4
+binder 306:307 <> x1:5
+binder 309:309 <> u:6
+R333:336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R312:316 nameless.DBParallelBase <> pstep ind
+R319:323 nameless.DBSyntax <> TPair constr
+R328:329 nameless.DBInversion <> x1:5 var
+R325:326 nameless.DBInversion <> x0:4 var
+R332:332 nameless.DBInversion <> u:6 var
+R337:343 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R349:350 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 344:345 <> y0:7
+binder 347:348 <> y1:8
+R368:371 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R352:355 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R367:367 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R351:351 nameless.DBInversion <> u:6 var
+R356:360 nameless.DBSyntax <> TPair constr
+R365:366 nameless.DBInversion <> y1:8 var
+R362:363 nameless.DBInversion <> y0:7 var
+R383:386 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R372:376 nameless.DBParallelBase <> pstep ind
+R378:379 nameless.DBInversion <> x0:4 var
+R381:382 nameless.DBInversion <> y0:7 var
+R387:391 nameless.DBParallelBase <> pstep ind
+R393:394 nameless.DBInversion <> x1:5 var
+R396:397 nameless.DBInversion <> y1:8 var
+R435:439 nameless.DBParallelBase <> pstep ind
+R435:439 nameless.DBParallelBase <> pstep ind
+prf 546:557 <> invert_TNilE
+binder 568:568 <> u:9
+R584:587 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R571:575 nameless.DBParallelBase <> pstep ind
+R577:581 nameless.DBSyntax <> TNilE constr
+R583:583 nameless.DBInversion <> u:9 var
+R589:591 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R588:588 nameless.DBInversion <> u:9 var
+R592:596 nameless.DBSyntax <> TNilE constr
+R634:638 nameless.DBParallelBase <> pstep ind
+R634:638 nameless.DBParallelBase <> pstep ind
+prf 731:743 <> invert_TConsE
+binder 754:755 <> x0:10
+binder 757:758 <> x1:11
+binder 760:760 <> u:12
+R785:788 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R763:767 nameless.DBParallelBase <> pstep ind
+R770:775 nameless.DBSyntax <> TConsE constr
+R780:781 nameless.DBInversion <> x1:11 var
+R777:778 nameless.DBInversion <> x0:10 var
+R784:784 nameless.DBInversion <> u:12 var
+R789:795 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R801:802 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 796:797 <> y0:13
+binder 799:800 <> y1:14
+R821:824 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R804:807 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R820:820 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R803:803 nameless.DBInversion <> u:12 var
+R808:813 nameless.DBSyntax <> TConsE constr
+R818:819 nameless.DBInversion <> y1:14 var
+R815:816 nameless.DBInversion <> y0:13 var
+R836:839 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R825:829 nameless.DBParallelBase <> pstep ind
+R831:832 nameless.DBInversion <> x0:10 var
+R834:835 nameless.DBInversion <> y0:13 var
+R840:844 nameless.DBParallelBase <> pstep ind
+R846:847 nameless.DBInversion <> x1:11 var
+R849:850 nameless.DBInversion <> y1:14 var
+R888:892 nameless.DBParallelBase <> pstep ind
+R888:892 nameless.DBParallelBase <> pstep ind
+prf 999:1011 <> invert_TEZero
+binder 1022:1022 <> u:15
+R1039:1042 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1025:1029 nameless.DBParallelBase <> pstep ind
+R1031:1036 nameless.DBSyntax <> TEZero constr
+R1038:1038 nameless.DBInversion <> u:15 var
+R1044:1046 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1043:1043 nameless.DBInversion <> u:15 var
+R1047:1052 nameless.DBSyntax <> TEZero constr
+R1090:1094 nameless.DBParallelBase <> pstep ind
+R1090:1094 nameless.DBParallelBase <> pstep ind
+prf 1187:1199 <> invert_TESucc
+binder 1210:1211 <> x0:16
+binder 1213:1213 <> u:17
+R1235:1238 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1216:1220 nameless.DBParallelBase <> pstep ind
+R1223:1228 nameless.DBSyntax <> TESucc constr
+R1230:1231 nameless.DBInversion <> x0:16 var
+R1234:1234 nameless.DBInversion <> u:17 var
+R1239:1245 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1248:1249 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1246:1247 <> y0:18
+R1265:1268 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1251:1254 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1264:1264 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1250:1250 nameless.DBInversion <> u:17 var
+R1255:1260 nameless.DBSyntax <> TESucc constr
+R1262:1263 nameless.DBInversion <> y0:18 var
+R1269:1273 nameless.DBParallelBase <> pstep ind
+R1275:1276 nameless.DBInversion <> x0:16 var
+R1278:1279 nameless.DBInversion <> y0:18 var
+R1317:1321 nameless.DBParallelBase <> pstep ind
+R1317:1321 nameless.DBParallelBase <> pstep ind
+prf 1428:1439 <> invert_TUnit
+binder 1450:1450 <> u:19
+R1466:1469 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1453:1457 nameless.DBParallelBase <> pstep ind
+R1459:1463 nameless.DBSyntax <> TUnit constr
+R1465:1465 nameless.DBInversion <> u:19 var
+R1471:1473 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1470:1470 nameless.DBInversion <> u:19 var
+R1474:1478 nameless.DBSyntax <> TUnit constr
+R1516:1520 nameless.DBParallelBase <> pstep ind
+R1516:1520 nameless.DBParallelBase <> pstep ind
+prf 1613:1624 <> invert_TIVar
+binder 1635:1636 <> x0:20
+binder 1638:1638 <> u:21
+R1659:1662 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1641:1645 nameless.DBParallelBase <> pstep ind
+R1648:1652 nameless.DBSyntax <> TIVar constr
+R1654:1655 nameless.DBInversion <> x0:20 var
+R1658:1658 nameless.DBInversion <> u:21 var
+R1663:1669 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1672:1673 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1670:1671 <> y0:22
+R1688:1691 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1675:1678 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1687:1687 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1674:1674 nameless.DBInversion <> u:21 var
+R1679:1683 nameless.DBSyntax <> TIVar constr
+R1685:1686 nameless.DBInversion <> y0:22 var
+R1692:1696 nameless.DBParallelBase <> pstep ind
+R1698:1699 nameless.DBInversion <> x0:20 var
+R1701:1702 nameless.DBInversion <> y0:22 var
+R1740:1744 nameless.DBParallelBase <> pstep ind
+R1740:1744 nameless.DBParallelBase <> pstep ind
+prf 1851:1860 <> invert_TI1
+binder 1871:1871 <> u:23
+R1885:1888 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1874:1878 nameless.DBParallelBase <> pstep ind
+R1880:1882 nameless.DBSyntax <> TI1 constr
+R1884:1884 nameless.DBInversion <> u:23 var
+R1890:1892 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1889:1889 nameless.DBInversion <> u:23 var
+R1893:1895 nameless.DBSyntax <> TI1 constr
+R1933:1937 nameless.DBParallelBase <> pstep ind
+R1933:1937 nameless.DBParallelBase <> pstep ind
+prf 2030:2041 <> invert_TIBot
+binder 2052:2052 <> u:24
+R2068:2071 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2055:2059 nameless.DBParallelBase <> pstep ind
+R2061:2065 nameless.DBSyntax <> TIBot constr
+R2067:2067 nameless.DBInversion <> u:24 var
+R2073:2075 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2072:2072 nameless.DBInversion <> u:24 var
+R2076:2080 nameless.DBSyntax <> TIBot constr
+R2118:2122 nameless.DBParallelBase <> pstep ind
+R2118:2122 nameless.DBParallelBase <> pstep ind
+prf 2215:2227 <> invert_TIProd
+binder 2238:2239 <> x0:25
+binder 2241:2242 <> x1:26
+binder 2244:2244 <> u:27
+R2269:2272 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2247:2251 nameless.DBParallelBase <> pstep ind
+R2254:2259 nameless.DBSyntax <> TIProd constr
+R2264:2265 nameless.DBInversion <> x1:26 var
+R2261:2262 nameless.DBInversion <> x0:25 var
+R2268:2268 nameless.DBInversion <> u:27 var
+R2273:2279 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2285:2286 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2280:2281 <> y0:28
+binder 2283:2284 <> y1:29
+R2305:2308 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2288:2291 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2304:2304 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2287:2287 nameless.DBInversion <> u:27 var
+R2292:2297 nameless.DBSyntax <> TIProd constr
+R2302:2303 nameless.DBInversion <> y1:29 var
+R2299:2300 nameless.DBInversion <> y0:28 var
+R2320:2323 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2309:2313 nameless.DBParallelBase <> pstep ind
+R2315:2316 nameless.DBInversion <> x0:25 var
+R2318:2319 nameless.DBInversion <> y0:28 var
+R2324:2328 nameless.DBParallelBase <> pstep ind
+R2330:2331 nameless.DBInversion <> x1:26 var
+R2333:2334 nameless.DBInversion <> y1:29 var
+R2372:2376 nameless.DBParallelBase <> pstep ind
+R2372:2376 nameless.DBParallelBase <> pstep ind
+prf 2483:2493 <> invert_TIPi
+binder 2504:2505 <> x0:30
+binder 2507:2508 <> x1:31
+binder 2510:2510 <> u:32
+R2533:2536 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2513:2517 nameless.DBParallelBase <> pstep ind
+R2520:2523 nameless.DBSyntax <> TIPi constr
+R2528:2529 nameless.DBInversion <> x1:31 var
+R2525:2526 nameless.DBInversion <> x0:30 var
+R2532:2532 nameless.DBInversion <> u:32 var
+R2537:2543 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2549:2550 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2544:2545 <> y0:33
+binder 2547:2548 <> y1:34
+R2567:2570 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2552:2555 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2566:2566 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2551:2551 nameless.DBInversion <> u:32 var
+R2556:2559 nameless.DBSyntax <> TIPi constr
+R2564:2565 nameless.DBInversion <> y1:34 var
+R2561:2562 nameless.DBInversion <> y0:33 var
+R2582:2585 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2571:2575 nameless.DBParallelBase <> pstep ind
+R2577:2578 nameless.DBInversion <> x0:30 var
+R2580:2581 nameless.DBInversion <> y0:33 var
+R2586:2590 nameless.DBParallelBase <> pstep ind
+R2592:2593 nameless.DBInversion <> x1:31 var
+R2595:2596 nameless.DBInversion <> y1:34 var
+R2634:2638 nameless.DBParallelBase <> pstep ind
+R2634:2638 nameless.DBParallelBase <> pstep ind
+prf 2745:2756 <> invert_TISig
+binder 2767:2768 <> x0:35
+binder 2770:2771 <> x1:36
+binder 2773:2773 <> u:37
+R2797:2800 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2776:2780 nameless.DBParallelBase <> pstep ind
+R2783:2787 nameless.DBSyntax <> TISig constr
+R2792:2793 nameless.DBInversion <> x1:36 var
+R2789:2790 nameless.DBInversion <> x0:35 var
+R2796:2796 nameless.DBInversion <> u:37 var
+R2801:2807 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2813:2814 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2808:2809 <> y0:38
+binder 2811:2812 <> y1:39
+R2832:2835 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2816:2819 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2831:2831 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2815:2815 nameless.DBInversion <> u:37 var
+R2820:2824 nameless.DBSyntax <> TISig constr
+R2829:2830 nameless.DBInversion <> y1:39 var
+R2826:2827 nameless.DBInversion <> y0:38 var
+R2847:2850 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2836:2840 nameless.DBParallelBase <> pstep ind
+R2842:2843 nameless.DBInversion <> x0:35 var
+R2845:2846 nameless.DBInversion <> y0:38 var
+R2851:2855 nameless.DBParallelBase <> pstep ind
+R2857:2858 nameless.DBInversion <> x1:36 var
+R2860:2861 nameless.DBInversion <> y1:39 var
+R2899:2903 nameless.DBParallelBase <> pstep ind
+R2899:2903 nameless.DBParallelBase <> pstep ind
+prf 3010:3024 <> invert_TIChoice
+binder 3035:3036 <> x0:40
+binder 3038:3039 <> x1:41
+binder 3041:3041 <> u:42
+R3068:3071 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3044:3048 nameless.DBParallelBase <> pstep ind
+R3051:3058 nameless.DBSyntax <> TIChoice constr
+R3063:3064 nameless.DBInversion <> x1:41 var
+R3060:3061 nameless.DBInversion <> x0:40 var
+R3067:3067 nameless.DBInversion <> u:42 var
+R3072:3078 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3084:3085 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3079:3080 <> y0:43
+binder 3082:3083 <> y1:44
+R3106:3109 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3087:3090 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3105:3105 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3086:3086 nameless.DBInversion <> u:42 var
+R3091:3098 nameless.DBSyntax <> TIChoice constr
+R3103:3104 nameless.DBInversion <> y1:44 var
+R3100:3101 nameless.DBInversion <> y0:43 var
+R3121:3124 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3110:3114 nameless.DBParallelBase <> pstep ind
+R3116:3117 nameless.DBInversion <> x0:40 var
+R3119:3120 nameless.DBInversion <> y0:43 var
+R3125:3129 nameless.DBParallelBase <> pstep ind
+R3131:3132 nameless.DBInversion <> x1:41 var
+R3134:3135 nameless.DBInversion <> y1:44 var
+R3173:3177 nameless.DBParallelBase <> pstep ind
+R3173:3177 nameless.DBParallelBase <> pstep ind
+prf 3284:3293 <> invert_TIn
+binder 3304:3305 <> x0:45
+binder 3307:3307 <> u:46
+R3326:3329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3310:3314 nameless.DBParallelBase <> pstep ind
+R3317:3319 nameless.DBSyntax <> TIn constr
+R3321:3322 nameless.DBInversion <> x0:45 var
+R3325:3325 nameless.DBInversion <> u:46 var
+R3330:3336 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3339:3340 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3337:3338 <> y0:47
+R3353:3356 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3342:3345 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3352:3352 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3341:3341 nameless.DBInversion <> u:46 var
+R3346:3348 nameless.DBSyntax <> TIn constr
+R3350:3351 nameless.DBInversion <> y0:47 var
+R3357:3361 nameless.DBParallelBase <> pstep ind
+R3363:3364 nameless.DBInversion <> x0:45 var
+R3366:3367 nameless.DBInversion <> y0:47 var
+R3405:3409 nameless.DBParallelBase <> pstep ind
+R3405:3409 nameless.DBParallelBase <> pstep ind
+R3549:3553 nameless.DBParallelBase <> pstep ind
+R3556:3559 nameless.DBSyntax <> TLam constr
+R3549:3553 nameless.DBParallelBase <> pstep ind
+R3556:3559 nameless.DBSyntax <> TLam constr
+R3955:3959 nameless.DBParallelBase <> pstep ind
+R3962:3966 nameless.DBSyntax <> TPair constr
+R3955:3959 nameless.DBParallelBase <> pstep ind
+R3962:3966 nameless.DBSyntax <> TPair constr
+R4370:4374 nameless.DBParallelBase <> pstep ind
+R4376:4380 nameless.DBSyntax <> TNilE constr
+R4370:4374 nameless.DBParallelBase <> pstep ind
+R4376:4380 nameless.DBSyntax <> TNilE constr
+R4769:4773 nameless.DBParallelBase <> pstep ind
+R4776:4781 nameless.DBSyntax <> TConsE constr
+R4769:4773 nameless.DBParallelBase <> pstep ind
+R4776:4781 nameless.DBSyntax <> TConsE constr
+R5186:5190 nameless.DBParallelBase <> pstep ind
+R5192:5197 nameless.DBSyntax <> TEZero constr
+R5186:5190 nameless.DBParallelBase <> pstep ind
+R5192:5197 nameless.DBSyntax <> TEZero constr
+R5587:5591 nameless.DBParallelBase <> pstep ind
+R5594:5599 nameless.DBSyntax <> TESucc constr
+R5587:5591 nameless.DBParallelBase <> pstep ind
+R5594:5599 nameless.DBSyntax <> TESucc constr
+R5997:6001 nameless.DBParallelBase <> pstep ind
+R6003:6007 nameless.DBSyntax <> TUnit constr
+R5997:6001 nameless.DBParallelBase <> pstep ind
+R6003:6007 nameless.DBSyntax <> TUnit constr
+R6396:6400 nameless.DBParallelBase <> pstep ind
+R6403:6407 nameless.DBSyntax <> TIVar constr
+R6396:6400 nameless.DBParallelBase <> pstep ind
+R6403:6407 nameless.DBSyntax <> TIVar constr
+R6804:6808 nameless.DBParallelBase <> pstep ind
+R6810:6812 nameless.DBSyntax <> TI1 constr
+R6804:6808 nameless.DBParallelBase <> pstep ind
+R6810:6812 nameless.DBSyntax <> TI1 constr
+R7199:7203 nameless.DBParallelBase <> pstep ind
+R7205:7209 nameless.DBSyntax <> TIBot constr
+R7199:7203 nameless.DBParallelBase <> pstep ind
+R7205:7209 nameless.DBSyntax <> TIBot constr
+R7598:7602 nameless.DBParallelBase <> pstep ind
+R7605:7610 nameless.DBSyntax <> TIProd constr
+R7598:7602 nameless.DBParallelBase <> pstep ind
+R7605:7610 nameless.DBSyntax <> TIProd constr
+R8015:8019 nameless.DBParallelBase <> pstep ind
+R8022:8025 nameless.DBSyntax <> TIPi constr
+R8015:8019 nameless.DBParallelBase <> pstep ind
+R8022:8025 nameless.DBSyntax <> TIPi constr
+R8428:8432 nameless.DBParallelBase <> pstep ind
+R8435:8439 nameless.DBSyntax <> TISig constr
+R8428:8432 nameless.DBParallelBase <> pstep ind
+R8435:8439 nameless.DBSyntax <> TISig constr
+R8843:8847 nameless.DBParallelBase <> pstep ind
+R8850:8857 nameless.DBSyntax <> TIChoice constr
+R8843:8847 nameless.DBParallelBase <> pstep ind
+R8850:8857 nameless.DBSyntax <> TIChoice constr
+R9264:9268 nameless.DBParallelBase <> pstep ind
+R9271:9273 nameless.DBSyntax <> TIn constr
+R9264:9268 nameless.DBParallelBase <> pstep ind
+R9271:9273 nameless.DBSyntax <> TIn constr
+R9327:9336 nameless.DBInversion <> invert_TIn thm
+R9391:9397 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9399:9400 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9391:9397 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9399:9400 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9484:9487 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9484:9487 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9591:9593 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9591:9593 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8915:8929 nameless.DBInversion <> invert_TIChoice thm
+R8987:8993 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8995:8996 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8987:8993 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8995:8996 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9080:9083 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9080:9083 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9187:9189 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9187:9189 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8497:8508 nameless.DBInversion <> invert_TISig thm
+R8566:8572 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8574:8575 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8566:8572 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8574:8575 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8659:8662 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8659:8662 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8766:8768 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8766:8768 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8083:8093 nameless.DBInversion <> invert_TIPi thm
+R8151:8157 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8159:8160 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8151:8157 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8159:8160 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8244:8247 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8244:8247 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8351:8353 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8351:8353 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7668:7680 nameless.DBInversion <> invert_TIProd thm
+R7738:7744 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7746:7747 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7738:7744 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7746:7747 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7831:7834 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7831:7834 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7938:7940 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7938:7940 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7258:7269 nameless.DBInversion <> invert_TIBot thm
+R7321:7327 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7329:7330 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7321:7327 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7329:7330 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7414:7417 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7414:7417 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7521:7523 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7521:7523 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6861:6870 nameless.DBInversion <> invert_TI1 thm
+R6922:6928 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6930:6931 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6922:6928 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6930:6931 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7015:7018 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7015:7018 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7122:7124 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7122:7124 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6461:6472 nameless.DBInversion <> invert_TIVar thm
+R6527:6533 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6535:6536 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6527:6533 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6535:6536 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6620:6623 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6620:6623 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6727:6729 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6727:6729 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6056:6067 nameless.DBInversion <> invert_TUnit thm
+R6119:6125 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6127:6128 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6119:6125 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6127:6128 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6212:6215 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6212:6215 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6319:6321 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6319:6321 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5653:5665 nameless.DBInversion <> invert_TESucc thm
+R5720:5726 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5728:5729 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5720:5726 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5728:5729 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5813:5816 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5813:5816 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5920:5922 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5920:5922 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5246:5258 nameless.DBInversion <> invert_TEZero thm
+R5310:5316 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5318:5319 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5310:5316 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5318:5319 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5403:5406 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5403:5406 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5510:5512 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5510:5512 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4839:4851 nameless.DBInversion <> invert_TConsE thm
+R4909:4915 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4917:4918 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4909:4915 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4917:4918 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5002:5005 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5002:5005 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5109:5111 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5109:5111 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4429:4440 nameless.DBInversion <> invert_TNilE thm
+R4492:4498 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4500:4501 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4492:4498 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4500:4501 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4585:4588 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4585:4588 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4692:4694 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4692:4694 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4024:4035 nameless.DBInversion <> invert_TPair thm
+R4093:4099 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4101:4102 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4093:4099 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4101:4102 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4186:4189 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4186:4189 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4293:4295 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4293:4295 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3613:3623 nameless.DBInversion <> invert_TLam thm
+R3678:3684 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3686:3687 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3678:3684 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3686:3687 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3771:3774 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3771:3774 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3878:3880 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3878:3880 Corelib.Init.Logic <> ::type_scope:x_'='_x not

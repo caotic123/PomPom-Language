@@ -1,0 +1,1478 @@
+DIGEST a78de9d172672bb5a1b8c24416c48c55
+Fnameless.DBInterpretationComputability
+R162:165 Stdlib.Lists.List <> <> lib
+R167:171 Stdlib.Arith.Arith <> <> lib
+R173:176 Stdlib.Bool.Bool <> <> lib
+R178:180 Stdlib.micromega.Lia <> <> lib
+R198:226 nameless.DBSemanticGeneration <> <> lib
+R228:251 nameless.DBHeadExpansion <> <> lib
+R261:273 Stdlib.Lists.List ListNotations <> mod
+R275:278 nameless.DBFullReducibility Full <> mod
+def 293:304 <> small_interp
+R309:319 nameless.DBSemanticTypes <> type_interp ind
+R321:330 nameless.DBSmallTypeModel <> small_atom ind
+def 344:360 <> small_description
+R365:382 nameless.DBDescriptionModel <> description_interp ind
+R384:393 nameless.DBSmallTypeModel <> small_atom ind
+def 407:416 <> small_code
+R421:442 nameless.DBDescriptionCandidates <> description_computable ind
+R444:453 nameless.DBSmallTypeModel <> small_atom ind
+def 467:478 <> code_meaning
+R483:502 nameless.DBDescriptionModel <> description_elements def
+R504:513 nameless.DBSmallTypeModel <> small_atom ind
+prf 523:541 <> small_interp_unique
+binder 552:552 <> A:1
+binder 554:554 <> B:2
+binder 556:556 <> R:3
+binder 558:558 <> S:4
+R579:582 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R563:574 nameless.DBInterpretationComputability <> small_interp def
+R576:576 nameless.DBInterpretationComputability <> A:1 var
+R578:578 nameless.DBInterpretationComputability <> R:3 var
+R599:602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R583:594 nameless.DBInterpretationComputability <> small_interp def
+R596:596 nameless.DBInterpretationComputability <> B:2 var
+R598:598 nameless.DBInterpretationComputability <> S:4 var
+R611:614 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R603:606 nameless.DBCore <> conv ind
+R610:610 nameless.DBInterpretationComputability <> B:2 var
+R608:608 nameless.DBInterpretationComputability <> A:1 var
+R615:629 nameless.DBFullReducibility Full predicate_equiv def
+R631:631 nameless.DBInterpretationComputability <> R:3 var
+R633:633 nameless.DBInterpretationComputability <> S:4 var
+R660:677 nameless.DBSemanticTypes <> type_interp_unique thm
+R687:708 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R716:732 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R745:764 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R793:809 nameless.DBSmallTypeModel <> small_atom_unique thm
+R660:677 nameless.DBSemanticTypes <> type_interp_unique thm
+R687:708 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R716:732 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R745:764 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R793:809 nameless.DBSmallTypeModel <> small_atom_unique thm
+prf 878:901 <> small_description_unique
+binder 912:913 <> RI:5
+binder 915:915 <> D:6
+binder 917:917 <> F:7
+binder 919:921 <> RI':8
+binder 923:923 <> E:9
+binder 925:925 <> G:10
+R954:957 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R930:946 nameless.DBInterpretationComputability <> small_description def
+R948:949 nameless.DBInterpretationComputability <> RI:5 var
+R951:951 nameless.DBInterpretationComputability <> D:6 var
+R953:953 nameless.DBInterpretationComputability <> F:7 var
+R983:986 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R958:974 nameless.DBInterpretationComputability <> small_description def
+R976:978 nameless.DBInterpretationComputability <> RI':8 var
+R980:980 nameless.DBInterpretationComputability <> E:9 var
+R982:982 nameless.DBInterpretationComputability <> G:10 var
+R995:998 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R987:990 nameless.DBCore <> conv ind
+R994:994 nameless.DBInterpretationComputability <> E:9 var
+R992:992 nameless.DBInterpretationComputability <> D:6 var
+R999:1011 nameless.DBDescriptionModel <> functor_equiv def
+R1013:1013 nameless.DBInterpretationComputability <> F:7 var
+R1015:1015 nameless.DBInterpretationComputability <> G:10 var
+R1042:1066 nameless.DBDescriptionModel <> description_interp_unique thm
+R1076:1097 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R1105:1121 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R1134:1153 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R1182:1198 nameless.DBSmallTypeModel <> small_atom_unique thm
+R1042:1066 nameless.DBDescriptionModel <> description_interp_unique thm
+R1076:1097 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R1105:1121 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R1134:1153 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R1182:1198 nameless.DBSmallTypeModel <> small_atom_unique thm
+prf 1267:1284 <> small_code_meaning
+binder 1295:1296 <> RI:11
+R1311:1314 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1299:1307 nameless.DBFullReducibility Full candidate rec
+R1309:1310 nameless.DBInterpretationComputability <> RI:11 var
+binder 1322:1322 <> D:12
+R1340:1345 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1325:1334 nameless.DBInterpretationComputability <> small_code def
+R1336:1337 nameless.DBInterpretationComputability <> RI:11 var
+R1339:1339 nameless.DBInterpretationComputability <> D:12 var
+R1346:1362 nameless.DBInterpretationComputability <> small_description def
+R1364:1365 nameless.DBInterpretationComputability <> RI:11 var
+R1367:1367 nameless.DBInterpretationComputability <> D:12 var
+R1370:1381 nameless.DBInterpretationComputability <> code_meaning def
+R1383:1384 nameless.DBInterpretationComputability <> RI:11 var
+R1386:1386 nameless.DBInterpretationComputability <> D:12 var
+R1425:1452 nameless.DBDescriptionModel <> description_interp_canonical thm
+R1466:1487 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R1495:1511 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R1519:1538 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R1572:1588 nameless.DBSmallTypeModel <> small_atom_unique thm
+R1425:1452 nameless.DBDescriptionModel <> description_interp_canonical thm
+R1466:1487 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R1495:1511 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R1519:1538 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R1572:1588 nameless.DBSmallTypeModel <> small_atom_unique thm
+R1615:1648 nameless.DBDescriptionModel <> computable_description_interpreted thm
+R1662:1683 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R1691:1707 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R1715:1734 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R1768:1784 nameless.DBSmallTypeModel <> small_atom_unique thm
+R1615:1648 nameless.DBDescriptionModel <> computable_description_interpreted thm
+R1662:1683 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R1691:1707 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R1715:1734 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R1768:1784 nameless.DBSmallTypeModel <> small_atom_unique thm
+prf 1831:1845 <> small_pi_interp
+binder 1856:1856 <> A:13
+binder 1858:1858 <> B:14
+binder 1860:1861 <> RA:15
+binder 1863:1864 <> RB:16
+R1886:1889 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1869:1880 nameless.DBInterpretationComputability <> small_interp def
+R1882:1882 nameless.DBInterpretationComputability <> A:13 var
+R1884:1885 nameless.DBInterpretationComputability <> RA:15 var
+R1890:1890 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1942:1948 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1898:1898 <> a:17
+R1905:1908 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1901:1902 nameless.DBInterpretationComputability <> RA:15 var
+R1904:1904 nameless.DBInterpretationComputability <> a:17 var
+R1909:1920 nameless.DBInterpretationComputability <> small_interp def
+R1923:1927 nameless.DBSyntax <> subst def
+R1933:1933 nameless.DBInterpretationComputability <> B:14 var
+R1929:1929 nameless.DBInterpretationComputability <> a:17 var
+R1937:1938 nameless.DBInterpretationComputability <> RB:16 var
+R1940:1940 nameless.DBInterpretationComputability <> a:17 var
+R1949:1960 nameless.DBInterpretationComputability <> small_interp def
+R1963:1965 nameless.DBSyntax <> TPi constr
+R1969:1969 nameless.DBInterpretationComputability <> B:14 var
+R1967:1967 nameless.DBInterpretationComputability <> A:13 var
+R1973:1990 nameless.DBFullReducibility Full dependent_function def
+R1992:1993 nameless.DBInterpretationComputability <> RA:15 var
+R1995:1996 nameless.DBInterpretationComputability <> RB:16 var
+R2024:2043 nameless.DBSemanticTypes <> type_interp_pi_intro thm
+R2057:2076 nameless.DBSmallTypeModel <> small_atom_candidate thm
+R2084:2105 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2113:2129 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R2142:2161 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R2190:2206 nameless.DBSmallTypeModel <> small_atom_unique thm
+R2024:2043 nameless.DBSemanticTypes <> type_interp_pi_intro thm
+R2057:2076 nameless.DBSmallTypeModel <> small_atom_candidate thm
+R2084:2105 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2113:2129 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R2142:2161 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R2190:2206 nameless.DBSmallTypeModel <> small_atom_unique thm
+prf 2263:2280 <> small_sigma_interp
+binder 2291:2291 <> A:18
+binder 2293:2293 <> B:19
+binder 2295:2296 <> RA:20
+binder 2298:2299 <> RB:21
+R2321:2324 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2304:2315 nameless.DBInterpretationComputability <> small_interp def
+R2317:2317 nameless.DBInterpretationComputability <> A:18 var
+R2319:2320 nameless.DBInterpretationComputability <> RA:20 var
+R2325:2325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2377:2383 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 2333:2333 <> a:22
+R2340:2343 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2336:2337 nameless.DBInterpretationComputability <> RA:20 var
+R2339:2339 nameless.DBInterpretationComputability <> a:22 var
+R2344:2355 nameless.DBInterpretationComputability <> small_interp def
+R2358:2362 nameless.DBSyntax <> subst def
+R2368:2368 nameless.DBInterpretationComputability <> B:19 var
+R2364:2364 nameless.DBInterpretationComputability <> a:22 var
+R2372:2373 nameless.DBInterpretationComputability <> RB:21 var
+R2375:2375 nameless.DBInterpretationComputability <> a:22 var
+R2384:2395 nameless.DBInterpretationComputability <> small_interp def
+R2398:2403 nameless.DBSyntax <> TSigma constr
+R2407:2407 nameless.DBInterpretationComputability <> B:19 var
+R2405:2405 nameless.DBInterpretationComputability <> A:18 var
+R2411:2424 nameless.DBFullReducibility Full dependent_pair def
+R2426:2427 nameless.DBInterpretationComputability <> RA:20 var
+R2429:2430 nameless.DBInterpretationComputability <> RB:21 var
+R2458:2480 nameless.DBSemanticTypes <> type_interp_sigma_intro thm
+R2494:2513 nameless.DBSmallTypeModel <> small_atom_candidate thm
+R2521:2542 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2550:2566 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R2579:2598 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R2627:2643 nameless.DBSmallTypeModel <> small_atom_unique thm
+R2458:2480 nameless.DBSemanticTypes <> type_interp_sigma_intro thm
+R2494:2513 nameless.DBSmallTypeModel <> small_atom_candidate thm
+R2521:2542 nameless.DBSmallTypeModel <> small_atom_not_neutral thm
+R2550:2566 nameless.DBSmallTypeModel <> small_atom_not_pi thm
+R2579:2598 nameless.DBSmallTypeModel <> small_atom_not_sigma thm
+R2627:2643 nameless.DBSmallTypeModel <> small_atom_unique thm
+prf 2700:2719 <> small_product_interp
+binder 2730:2730 <> A:23
+binder 2732:2732 <> B:24
+binder 2734:2735 <> RA:25
+binder 2737:2738 <> RB:26
+R2760:2763 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2743:2754 nameless.DBInterpretationComputability <> small_interp def
+R2756:2756 nameless.DBInterpretationComputability <> A:23 var
+R2758:2759 nameless.DBInterpretationComputability <> RA:25 var
+R2781:2786 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2764:2775 nameless.DBInterpretationComputability <> small_interp def
+R2777:2777 nameless.DBInterpretationComputability <> B:24 var
+R2779:2780 nameless.DBInterpretationComputability <> RB:26 var
+R2787:2798 nameless.DBInterpretationComputability <> small_interp def
+R2801:2807 nameless.DBSyntax <> product def
+R2811:2811 nameless.DBInterpretationComputability <> B:24 var
+R2809:2809 nameless.DBInterpretationComputability <> A:23 var
+R2815:2828 nameless.DBFullReducibility Full dependent_pair def
+R2830:2831 nameless.DBInterpretationComputability <> RA:25 var
+R2843:2844 nameless.DBInterpretationComputability <> RB:26 var
+R2888:2905 nameless.DBInterpretationComputability <> small_sigma_interp thm
+R2888:2905 nameless.DBInterpretationComputability <> small_sigma_interp thm
+R2948:2962 nameless.DBParallelBase <> subst_lift_zero thm
+R2948:2962 nameless.DBParallelBase <> subst_lift_zero thm
+R2948:2962 nameless.DBParallelBase <> subst_lift_zero thm
+prf 2976:2992 <> small_unit_interp
+R2996:3007 nameless.DBInterpretationComputability <> small_interp def
+R3009:3014 nameless.DBSyntax <> TUnitT constr
+R3016:3022 nameless.DBFullReductionStructure <> full_SN def
+R3038:3061 nameless.DBCalculusModel <> universe_zero_small_type thm
+R3064:3081 nameless.DBCalculusModel <> calculus_unit_type thm
+R3038:3061 nameless.DBCalculusModel <> universe_zero_small_type thm
+R3064:3081 nameless.DBCalculusModel <> calculus_unit_type thm
+prf 3095:3113 <> small_bottom_interp
+R3117:3128 nameless.DBInterpretationComputability <> small_interp def
+R3130:3132 nameless.DBSyntax <> Bot def
+R3134:3147 nameless.DBEnumCandidates <> empty_elements def
+R3166:3173 nameless.DBSemanticTypes <> it_equiv constr
+R3183:3206 nameless.DBCalculusModel <> universe_zero_small_type thm
+R3209:3226 nameless.DBCalculusModel <> calculus_enum_type thm
+R3239:3260 nameless.DBFullNormalForms <> normal_form_accessible thm
+R3263:3277 nameless.DBEnumCandidates <> nil_enum_normal thm
+R3285:3303 nameless.DBEnumCandidates <> enum_elements_empty thm
+R3166:3173 nameless.DBSemanticTypes <> it_equiv constr
+R3183:3206 nameless.DBCalculusModel <> universe_zero_small_type thm
+R3209:3226 nameless.DBCalculusModel <> calculus_enum_type thm
+R3239:3260 nameless.DBFullNormalForms <> normal_form_accessible thm
+R3263:3277 nameless.DBEnumCandidates <> nil_enum_normal thm
+R3285:3303 nameless.DBEnumCandidates <> enum_elements_empty thm
+def 3324:3341 <> interpreted_family
+R3353:3356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3349:3352 nameless.DBSyntax <> term ind
+binder 3344:3345 <> RI:27
+binder 3363:3363 <> X:28
+R3371:3384 nameless.DBDescriptionModel <> payload_family def
+binder 3366:3367 <> RX:29
+binder 3399:3399 <> i:30
+R3406:3409 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3402:3403 nameless.DBInterpretationComputability <> RI:27 var
+R3405:3405 nameless.DBInterpretationComputability <> i:30 var
+R3410:3421 nameless.DBInterpretationComputability <> small_interp def
+R3424:3427 nameless.DBSyntax <> TApp constr
+R3431:3431 nameless.DBInterpretationComputability <> i:30 var
+R3429:3429 nameless.DBInterpretationComputability <> X:28 var
+R3435:3436 nameless.DBInterpretationComputability <> RX:29 var
+R3438:3438 nameless.DBInterpretationComputability <> i:30 var
+def 3453:3473 <> stable_indexed_family
+binder 3475:3476 <> RI:31
+R3484:3497 nameless.DBDescriptionModel <> payload_family def
+binder 3479:3480 <> RX:32
+R3529:3532 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3505:3522 nameless.DBIndexedCandidates Indexed candidates def
+R3527:3528 nameless.DBInterpretationComputability <> RX:32 var
+R3524:3525 nameless.DBInterpretationComputability <> RI:31 var
+binder 3540:3540 <> i:33
+binder 3542:3542 <> j:34
+R3549:3552 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3545:3546 nameless.DBInterpretationComputability <> RI:31 var
+R3548:3548 nameless.DBInterpretationComputability <> i:33 var
+R3557:3560 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3553:3554 nameless.DBInterpretationComputability <> RI:31 var
+R3556:3556 nameless.DBInterpretationComputability <> j:34 var
+R3569:3572 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3561:3564 nameless.DBCore <> conv ind
+R3568:3568 nameless.DBInterpretationComputability <> j:34 var
+R3566:3566 nameless.DBInterpretationComputability <> i:33 var
+R3573:3587 nameless.DBFullReducibility Full predicate_equiv def
+R3590:3591 nameless.DBInterpretationComputability <> RX:32 var
+R3593:3593 nameless.DBInterpretationComputability <> i:33 var
+R3597:3598 nameless.DBInterpretationComputability <> RX:32 var
+R3600:3600 nameless.DBInterpretationComputability <> j:34 var
+prf 3610:3634 <> interpreted_family_stable
+binder 3645:3646 <> RI:35
+binder 3648:3648 <> X:36
+binder 3650:3651 <> RX:37
+R3682:3685 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3656:3673 nameless.DBInterpretationComputability <> interpreted_family def
+R3675:3676 nameless.DBInterpretationComputability <> RI:35 var
+R3678:3678 nameless.DBInterpretationComputability <> X:36 var
+R3680:3681 nameless.DBInterpretationComputability <> RX:37 var
+R3686:3706 nameless.DBInterpretationComputability <> stable_indexed_family def
+R3708:3709 nameless.DBInterpretationComputability <> RI:35 var
+R3711:3712 nameless.DBInterpretationComputability <> RX:37 var
+R3773:3792 nameless.DBSmallTypeModel <> small_type_candidate thm
+R3773:3792 nameless.DBSmallTypeModel <> small_type_candidate thm
+R3841:3859 nameless.DBInterpretationComputability <> small_interp_unique thm
+R3841:3859 nameless.DBInterpretationComputability <> small_interp_unique thm
+R3906:3918 nameless.DBCore <> cv_compatible constr
+R3921:3927 nameless.DBSyntax <> cp_TApp constr
+R3937:3943 nameless.DBCore <> cv_refl constr
+R3906:3918 nameless.DBCore <> cv_compatible constr
+R3921:3927 nameless.DBSyntax <> cp_TApp constr
+R3937:3943 nameless.DBCore <> cv_refl constr
+prf 3967:3995 <> interpreted_family_reductions
+binder 4006:4007 <> RI:38
+binder 4009:4009 <> X:39
+binder 4011:4012 <> RX:40
+R4043:4046 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4017:4034 nameless.DBInterpretationComputability <> interpreted_family def
+R4036:4037 nameless.DBInterpretationComputability <> RI:38 var
+R4039:4039 nameless.DBInterpretationComputability <> X:39 var
+R4041:4042 nameless.DBInterpretationComputability <> RX:40 var
+binder 4054:4055 <> X':41
+R4076:4079 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4058:4060 nameless.DBParallelBase <> rtc ind
+R4074:4075 nameless.DBInterpretationComputability <> X':41 var
+R4072:4072 nameless.DBInterpretationComputability <> X:39 var
+R4062:4070 nameless.DBCore <> reduction ind
+R4080:4097 nameless.DBInterpretationComputability <> interpreted_family def
+R4099:4100 nameless.DBInterpretationComputability <> RI:38 var
+R4102:4103 nameless.DBInterpretationComputability <> X':41 var
+R4105:4106 nameless.DBInterpretationComputability <> RX:40 var
+R4155:4176 nameless.DBSemanticTypes <> type_interp_reductions thm
+R4206:4218 nameless.DBReduction <> red_star_TApp thm
+R4155:4176 nameless.DBSemanticTypes <> type_interp_reductions thm
+R4206:4218 nameless.DBReduction <> red_star_TApp thm
+def 4263:4282 <> interpretation_roots
+binder 4284:4285 <> RI:42
+binder 4287:4287 <> D:43
+binder 4299:4300 <> D':44
+R4321:4326 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4303:4305 nameless.DBParallelBase <> rtc ind
+R4319:4320 nameless.DBInterpretationComputability <> D':44 var
+R4317:4317 nameless.DBInterpretationComputability <> D:43 var
+R4307:4315 nameless.DBCore <> reduction ind
+binder 4334:4335 <> IT:45
+binder 4337:4337 <> X:46
+binder 4339:4340 <> RX:47
+R4353:4356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4343:4349 nameless.DBFullReductionStructure <> full_SN def
+R4351:4352 nameless.DBInterpretationComputability <> IT:45 var
+R4366:4369 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4357:4363 nameless.DBFullReductionStructure <> full_SN def
+R4365:4365 nameless.DBInterpretationComputability <> X:46 var
+R4396:4401 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4370:4387 nameless.DBInterpretationComputability <> interpreted_family def
+R4389:4390 nameless.DBInterpretationComputability <> RI:42 var
+R4392:4392 nameless.DBInterpretationComputability <> X:46 var
+R4394:4395 nameless.DBInterpretationComputability <> RX:47 var
+binder 4409:4409 <> F:48
+R4437:4440 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4412:4428 nameless.DBInterpretationComputability <> small_description def
+R4430:4431 nameless.DBInterpretationComputability <> RI:42 var
+R4433:4434 nameless.DBInterpretationComputability <> D':44 var
+R4436:4436 nameless.DBInterpretationComputability <> F:48 var
+binder 4448:4448 <> v:49
+R4489:4492 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4480:4482 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4453:4461 nameless.DBCore <> root_step def
+R4464:4470 nameless.DBSyntax <> TInterp constr
+R4478:4478 nameless.DBInterpretationComputability <> X:46 var
+R4475:4476 nameless.DBInterpretationComputability <> D':44 var
+R4472:4473 nameless.DBInterpretationComputability <> IT:45 var
+R4483:4486 Corelib.Init.Datatypes <> Some constr
+R4488:4488 nameless.DBInterpretationComputability <> v:49 var
+R4493:4504 nameless.DBInterpretationComputability <> small_interp def
+R4506:4506 nameless.DBInterpretationComputability <> v:49 var
+R4509:4509 nameless.DBInterpretationComputability <> F:48 var
+R4511:4512 nameless.DBInterpretationComputability <> RX:47 var
+prf 4522:4552 <> interpretation_roots_reductions
+binder 4563:4564 <> RI:50
+binder 4566:4566 <> D:51
+R4594:4599 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4569:4588 nameless.DBInterpretationComputability <> interpretation_roots def
+R4590:4591 nameless.DBInterpretationComputability <> RI:50 var
+R4593:4593 nameless.DBInterpretationComputability <> D:51 var
+binder 4607:4607 <> E:52
+R4627:4630 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4610:4612 nameless.DBParallelBase <> rtc ind
+R4626:4626 nameless.DBInterpretationComputability <> E:52 var
+R4624:4624 nameless.DBInterpretationComputability <> D:51 var
+R4614:4622 nameless.DBCore <> reduction ind
+R4631:4650 nameless.DBInterpretationComputability <> interpretation_roots def
+R4652:4653 nameless.DBInterpretationComputability <> RI:50 var
+R4655:4655 nameless.DBInterpretationComputability <> E:52 var
+R4710:4718 nameless.DBParallelBase <> rtc_trans thm
+R4710:4718 nameless.DBParallelBase <> rtc_trans thm
+prf 4746:4774 <> neutral_interpretation_normal
+binder 4785:4786 <> IT:53
+binder 4788:4788 <> D:54
+binder 4790:4790 <> X:55
+R4809:4812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4795:4805 nameless.DBFullNormalForms <> normal_form def
+R4807:4808 nameless.DBInterpretationComputability <> IT:53 var
+R4826:4829 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4813:4823 nameless.DBFullNormalForms <> normal_form def
+R4825:4825 nameless.DBInterpretationComputability <> D:54 var
+R4843:4846 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4830:4840 nameless.DBFullNormalForms <> normal_form def
+R4842:4842 nameless.DBInterpretationComputability <> X:55 var
+R4856:4861 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4847:4853 nameless.DBFullReducibility Full neutral def
+R4855:4855 nameless.DBInterpretationComputability <> D:54 var
+R4862:4872 nameless.DBFullNormalForms <> normal_form def
+R4875:4881 nameless.DBSyntax <> TInterp constr
+R4888:4888 nameless.DBInterpretationComputability <> X:55 var
+R4886:4886 nameless.DBInterpretationComputability <> D:54 var
+R4883:4884 nameless.DBInterpretationComputability <> IT:53 var
+R4975:4981 nameless.DBFullReducibility Full neutral def
+R4983:4991 nameless.DBCore <> root_step def
+prf 5127:5156 <> interpretation_meaning_at_root
+binder 5167:5168 <> RI:56
+binder 5170:5170 <> D:57
+binder 5172:5172 <> F:58
+binder 5174:5175 <> IT:59
+binder 5177:5177 <> X:60
+binder 5179:5180 <> RX:61
+R5209:5212 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5185:5201 nameless.DBInterpretationComputability <> small_description def
+R5203:5204 nameless.DBInterpretationComputability <> RI:56 var
+R5206:5206 nameless.DBInterpretationComputability <> D:57 var
+R5208:5208 nameless.DBInterpretationComputability <> F:58 var
+R5238:5243 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5213:5232 nameless.DBInterpretationComputability <> interpretation_roots def
+R5234:5235 nameless.DBInterpretationComputability <> RI:56 var
+R5237:5237 nameless.DBInterpretationComputability <> D:57 var
+R5254:5257 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5244:5250 nameless.DBFullReductionStructure <> full_SN def
+R5252:5253 nameless.DBInterpretationComputability <> IT:59 var
+R5267:5270 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5258:5264 nameless.DBFullReductionStructure <> full_SN def
+R5266:5266 nameless.DBInterpretationComputability <> X:60 var
+R5297:5302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5271:5288 nameless.DBInterpretationComputability <> interpreted_family def
+R5290:5291 nameless.DBInterpretationComputability <> RI:56 var
+R5293:5293 nameless.DBInterpretationComputability <> X:60 var
+R5295:5296 nameless.DBInterpretationComputability <> RX:61 var
+R5327:5330 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5303:5309 nameless.DBFullReductionStructure <> full_SN def
+R5312:5318 nameless.DBSyntax <> TInterp constr
+R5325:5325 nameless.DBInterpretationComputability <> X:60 var
+R5323:5323 nameless.DBInterpretationComputability <> D:57 var
+R5320:5321 nameless.DBInterpretationComputability <> IT:59 var
+binder 5338:5338 <> E:62
+binder 5340:5340 <> v:63
+R5362:5365 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5345:5347 nameless.DBParallelBase <> rtc ind
+R5361:5361 nameless.DBInterpretationComputability <> E:62 var
+R5359:5359 nameless.DBInterpretationComputability <> D:57 var
+R5349:5357 nameless.DBCore <> reduction ind
+R5401:5406 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5392:5394 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5366:5374 nameless.DBCore <> root_step def
+R5377:5383 nameless.DBSyntax <> TInterp constr
+R5390:5390 nameless.DBInterpretationComputability <> X:60 var
+R5388:5388 nameless.DBInterpretationComputability <> E:62 var
+R5385:5386 nameless.DBInterpretationComputability <> IT:59 var
+R5395:5398 Corelib.Init.Datatypes <> Some constr
+R5400:5400 nameless.DBInterpretationComputability <> v:63 var
+R5407:5418 nameless.DBInterpretationComputability <> small_interp def
+R5421:5427 nameless.DBSyntax <> TInterp constr
+R5434:5434 nameless.DBInterpretationComputability <> X:60 var
+R5432:5432 nameless.DBInterpretationComputability <> D:57 var
+R5429:5430 nameless.DBInterpretationComputability <> IT:59 var
+R5438:5438 nameless.DBInterpretationComputability <> F:58 var
+R5440:5441 nameless.DBInterpretationComputability <> RX:61 var
+R5521:5537 nameless.DBInterpretationComputability <> small_description def
+R5558:5586 nameless.DBDescriptionModel <> description_interp_reductions thm
+R5521:5537 nameless.DBInterpretationComputability <> small_description def
+R5558:5586 nameless.DBDescriptionModel <> description_interp_reductions thm
+R5612:5633 nameless.DBSemanticTypes <> type_interp_conversion thm
+R5612:5633 nameless.DBSemanticTypes <> type_interp_conversion thm
+R5701:5706 nameless.DBCore <> cv_sym constr
+R5715:5735 nameless.DBWeakening <> reductions_conversion thm
+R5701:5706 nameless.DBCore <> cv_sym constr
+R5715:5735 nameless.DBWeakening <> reductions_conversion thm
+R5747:5755 nameless.DBParallelBase <> rtc_trans thm
+R5765:5780 nameless.DBReduction <> red_star_TInterp thm
+R5747:5755 nameless.DBParallelBase <> rtc_trans thm
+R5765:5780 nameless.DBReduction <> red_star_TInterp thm
+R5829:5835 nameless.DBParallelBase <> rtc_one thm
+R5838:5845 nameless.DBCore <> red_root constr
+R5829:5835 nameless.DBParallelBase <> rtc_one thm
+R5838:5845 nameless.DBCore <> red_root constr
+prf 5870:5902 <> interpretation_meaning_from_roots
+binder 5913:5914 <> RI:64
+binder 5916:5916 <> D:65
+binder 5918:5918 <> F:66
+R5947:5950 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5923:5939 nameless.DBInterpretationComputability <> small_description def
+R5941:5942 nameless.DBInterpretationComputability <> RI:64 var
+R5944:5944 nameless.DBInterpretationComputability <> D:65 var
+R5946:5946 nameless.DBInterpretationComputability <> F:66 var
+R5976:5981 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5951:5970 nameless.DBInterpretationComputability <> interpretation_roots def
+R5972:5973 nameless.DBInterpretationComputability <> RI:64 var
+R5975:5975 nameless.DBInterpretationComputability <> D:65 var
+binder 5989:5990 <> IT:67
+binder 5992:5992 <> X:68
+binder 5994:5995 <> RX:69
+R6008:6011 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5998:6004 nameless.DBFullReductionStructure <> full_SN def
+R6006:6007 nameless.DBInterpretationComputability <> IT:67 var
+R6021:6024 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6012:6018 nameless.DBFullReductionStructure <> full_SN def
+R6020:6020 nameless.DBInterpretationComputability <> X:68 var
+R6051:6056 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6025:6042 nameless.DBInterpretationComputability <> interpreted_family def
+R6044:6045 nameless.DBInterpretationComputability <> RI:64 var
+R6047:6047 nameless.DBInterpretationComputability <> X:68 var
+R6049:6050 nameless.DBInterpretationComputability <> RX:69 var
+R6081:6084 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6057:6063 nameless.DBFullReductionStructure <> full_SN def
+R6066:6072 nameless.DBSyntax <> TInterp constr
+R6079:6079 nameless.DBInterpretationComputability <> X:68 var
+R6077:6077 nameless.DBInterpretationComputability <> D:65 var
+R6074:6075 nameless.DBInterpretationComputability <> IT:67 var
+R6085:6096 nameless.DBInterpretationComputability <> small_interp def
+R6099:6105 nameless.DBSyntax <> TInterp constr
+R6112:6112 nameless.DBInterpretationComputability <> X:68 var
+R6110:6110 nameless.DBInterpretationComputability <> D:65 var
+R6107:6108 nameless.DBInterpretationComputability <> IT:67 var
+R6116:6116 nameless.DBInterpretationComputability <> F:66 var
+R6118:6119 nameless.DBInterpretationComputability <> RX:69 var
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6250:6279 nameless.DBInterpretationComputability <> interpretation_meaning_at_root thm
+R6360:6373 nameless.DBFullNormalForms <> normalize_full def
+R6360:6373 nameless.DBFullNormalForms <> normalize_full def
+R6415:6428 nameless.DBFullNormalForms <> normalize_full def
+R6415:6428 nameless.DBFullNormalForms <> normalize_full def
+R6485:6491 nameless.DBSyntax <> TInterp constr
+R6465:6474 nameless.DBSemanticTypes <> it_neutral constr
+R6485:6491 nameless.DBSyntax <> TInterp constr
+R6465:6474 nameless.DBSemanticTypes <> it_neutral constr
+R6536:6551 nameless.DBReduction <> red_star_TInterp thm
+R6536:6551 nameless.DBReduction <> red_star_TInterp thm
+R6570:6598 nameless.DBInterpretationComputability <> neutral_interpretation_normal thm
+R6570:6598 nameless.DBInterpretationComputability <> neutral_interpretation_normal thm
+R6613:6613 Corelib.Init.Logic <> I constr
+R6613:6613 Corelib.Init.Logic <> I constr
+R6627:6634 nameless.DBSemanticTypes <> it_equiv constr
+R6627:6634 nameless.DBSemanticTypes <> it_equiv constr
+prf 6692:6716 <> interpretation_from_roots
+binder 6727:6728 <> RI:70
+binder 6730:6730 <> D:71
+binder 6732:6732 <> F:72
+R6761:6764 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6737:6753 nameless.DBInterpretationComputability <> small_description def
+R6755:6756 nameless.DBInterpretationComputability <> RI:70 var
+R6758:6758 nameless.DBInterpretationComputability <> D:71 var
+R6760:6760 nameless.DBInterpretationComputability <> F:72 var
+R6790:6795 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6765:6784 nameless.DBInterpretationComputability <> interpretation_roots def
+R6786:6787 nameless.DBInterpretationComputability <> RI:70 var
+R6789:6789 nameless.DBInterpretationComputability <> D:71 var
+binder 6803:6804 <> IT:73
+binder 6806:6806 <> X:74
+binder 6808:6809 <> RX:75
+R6822:6825 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6812:6818 nameless.DBFullReductionStructure <> full_SN def
+R6820:6821 nameless.DBInterpretationComputability <> IT:73 var
+R6835:6838 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6826:6832 nameless.DBFullReductionStructure <> full_SN def
+R6834:6834 nameless.DBInterpretationComputability <> X:74 var
+R6865:6870 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6839:6856 nameless.DBInterpretationComputability <> interpreted_family def
+R6858:6859 nameless.DBInterpretationComputability <> RI:70 var
+R6861:6861 nameless.DBInterpretationComputability <> X:74 var
+R6863:6864 nameless.DBInterpretationComputability <> RX:75 var
+R6871:6882 nameless.DBInterpretationComputability <> small_interp def
+R6885:6891 nameless.DBSyntax <> TInterp constr
+R6898:6898 nameless.DBInterpretationComputability <> X:74 var
+R6896:6896 nameless.DBInterpretationComputability <> D:71 var
+R6893:6894 nameless.DBInterpretationComputability <> IT:73 var
+R6902:6902 nameless.DBInterpretationComputability <> F:72 var
+R6904:6905 nameless.DBInterpretationComputability <> RX:75 var
+R6971:6984 nameless.DBSemanticTypes <> reducible_type def
+R6998:7004 nameless.DBSyntax <> TInterp constr
+R6986:6995 nameless.DBSmallTypeModel <> small_atom ind
+R6971:6984 nameless.DBSemanticTypes <> reducible_type def
+R6998:7004 nameless.DBSyntax <> TInterp constr
+R6986:6995 nameless.DBSmallTypeModel <> small_atom ind
+R7026:7056 nameless.DBHeadExpansion <> computability_by_head_expansion thm
+R7066:7089 nameless.DBSemanticTypes <> reducible_type_candidate thm
+R7026:7056 nameless.DBHeadExpansion <> computability_by_head_expansion thm
+R7066:7089 nameless.DBSemanticTypes <> reducible_type_candidate thm
+R7109:7121 nameless.DBHeadExpansion <> term_children def
+R7178:7207 nameless.DBDescriptionModel <> description_interp_normalizing thm
+R7178:7207 nameless.DBDescriptionModel <> description_interp_normalizing thm
+R7306:7306 Corelib.Init.Logic <> I constr
+R7306:7306 Corelib.Init.Logic <> I constr
+R7451:7468 nameless.DBFullNormalForms <> full_SN_reductions thm
+R7451:7468 nameless.DBFullNormalForms <> full_SN_reductions thm
+R7497:7514 nameless.DBFullNormalForms <> full_SN_reductions thm
+R7497:7514 nameless.DBFullNormalForms <> full_SN_reductions thm
+R7543:7571 nameless.DBInterpretationComputability <> interpreted_family_reductions thm
+R7543:7571 nameless.DBInterpretationComputability <> interpreted_family_reductions thm
+R7602:7630 nameless.DBDescriptionModel <> description_interp_reductions thm
+R7602:7630 nameless.DBDescriptionModel <> description_interp_reductions thm
+R7657:7689 nameless.DBInterpretationComputability <> interpretation_meaning_from_roots thm
+R7657:7689 nameless.DBInterpretationComputability <> interpretation_meaning_from_roots thm
+R7755:7777 nameless.DBSemanticTypes <> type_interp_normalizing thm
+R7755:7777 nameless.DBSemanticTypes <> type_interp_normalizing thm
+prf 7802:7831 <> interpretation_from_code_roots
+binder 7842:7843 <> RI:76
+R7858:7861 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7846:7854 nameless.DBFullReducibility Full candidate rec
+R7856:7857 nameless.DBInterpretationComputability <> RI:76 var
+binder 7869:7869 <> D:77
+R7889:7892 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7874:7883 nameless.DBInterpretationComputability <> small_code def
+R7885:7886 nameless.DBInterpretationComputability <> RI:76 var
+R7888:7888 nameless.DBInterpretationComputability <> D:77 var
+R7918:7923 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7893:7912 nameless.DBInterpretationComputability <> interpretation_roots def
+R7914:7915 nameless.DBInterpretationComputability <> RI:76 var
+R7917:7917 nameless.DBInterpretationComputability <> D:77 var
+binder 7931:7932 <> IT:78
+binder 7934:7934 <> X:79
+binder 7936:7937 <> RX:80
+R7950:7953 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7940:7946 nameless.DBFullReductionStructure <> full_SN def
+R7948:7949 nameless.DBInterpretationComputability <> IT:78 var
+R7963:7966 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7954:7960 nameless.DBFullReductionStructure <> full_SN def
+R7962:7962 nameless.DBInterpretationComputability <> X:79 var
+R7993:7998 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7967:7984 nameless.DBInterpretationComputability <> interpreted_family def
+R7986:7987 nameless.DBInterpretationComputability <> RI:76 var
+R7989:7989 nameless.DBInterpretationComputability <> X:79 var
+R7991:7992 nameless.DBInterpretationComputability <> RX:80 var
+R7999:8010 nameless.DBInterpretationComputability <> small_interp def
+R8013:8019 nameless.DBSyntax <> TInterp constr
+R8026:8026 nameless.DBInterpretationComputability <> X:79 var
+R8024:8024 nameless.DBInterpretationComputability <> D:77 var
+R8021:8022 nameless.DBInterpretationComputability <> IT:78 var
+R8030:8041 nameless.DBInterpretationComputability <> code_meaning def
+R8043:8044 nameless.DBInterpretationComputability <> RI:76 var
+R8046:8046 nameless.DBInterpretationComputability <> D:77 var
+R8048:8049 nameless.DBInterpretationComputability <> RX:80 var
+R8075:8099 nameless.DBInterpretationComputability <> interpretation_from_roots thm
+R8110:8127 nameless.DBInterpretationComputability <> small_code_meaning thm
+R8075:8099 nameless.DBInterpretationComputability <> interpretation_from_roots thm
+R8110:8127 nameless.DBInterpretationComputability <> small_code_meaning thm
+prf 8204:8216 <> reduces_unary
+R8235:8238 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8231:8234 nameless.DBSyntax <> term ind
+R8239:8242 nameless.DBSyntax <> term ind
+binder 8227:8227 <> C:81
+R8247:8247 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8322:8328 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8255:8255 <> a:82
+binder 8257:8257 <> u:83
+R8277:8280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8260:8268 nameless.DBCore <> reduction ind
+R8276:8276 nameless.DBInterpretationComputability <> u:83 var
+R8271:8271 nameless.DBInterpretationComputability <> C:81 var
+R8273:8273 nameless.DBInterpretationComputability <> a:82 var
+R8281:8287 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8290:8291 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8288:8289 <> a':84
+R8300:8303 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8293:8295 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8292:8292 nameless.DBInterpretationComputability <> u:83 var
+R8296:8296 nameless.DBInterpretationComputability <> C:81 var
+R8298:8299 nameless.DBInterpretationComputability <> a':84 var
+R8304:8306 nameless.DBParallelBase <> rtc ind
+R8320:8321 nameless.DBInterpretationComputability <> a':84 var
+R8318:8318 nameless.DBInterpretationComputability <> a:82 var
+R8308:8316 nameless.DBCore <> reduction ind
+binder 8336:8336 <> a:85
+binder 8338:8338 <> u:86
+R8362:8365 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8341:8343 nameless.DBParallelBase <> rtc ind
+R8361:8361 nameless.DBInterpretationComputability <> u:86 var
+R8356:8356 nameless.DBInterpretationComputability <> C:81 var
+R8358:8358 nameless.DBInterpretationComputability <> a:85 var
+R8345:8353 nameless.DBCore <> reduction ind
+R8366:8372 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8375:8376 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8373:8374 <> a':87
+R8385:8388 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8378:8380 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8377:8377 nameless.DBInterpretationComputability <> u:86 var
+R8381:8381 nameless.DBInterpretationComputability <> C:81 var
+R8383:8384 nameless.DBInterpretationComputability <> a':87 var
+R8389:8391 nameless.DBParallelBase <> rtc ind
+R8405:8406 nameless.DBInterpretationComputability <> a':87 var
+R8403:8403 nameless.DBInterpretationComputability <> a:85 var
+R8393:8401 nameless.DBCore <> reduction ind
+R8624:8630 Corelib.Init.Logic <> eq_refl constr
+R8624:8630 Corelib.Init.Logic <> eq_refl constr
+R8695:8703 nameless.DBParallelBase <> rtc_trans thm
+R8695:8703 nameless.DBParallelBase <> rtc_trans thm
+prf 8731:8745 <> ivar_reductions
+binder 8756:8756 <> i:88
+binder 8758:8758 <> D:89
+R8786:8791 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8761:8763 nameless.DBParallelBase <> rtc ind
+R8785:8785 nameless.DBInterpretationComputability <> D:89 var
+R8776:8780 nameless.DBSyntax <> TIVar constr
+R8782:8782 nameless.DBInterpretationComputability <> i:88 var
+R8765:8773 nameless.DBCore <> reduction ind
+R8792:8798 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8800:8801 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8799:8799 <> j:90
+R8813:8816 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8803:8805 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8802:8802 nameless.DBInterpretationComputability <> D:89 var
+R8806:8810 nameless.DBSyntax <> TIVar constr
+R8812:8812 nameless.DBInterpretationComputability <> j:90 var
+R8817:8819 nameless.DBParallelBase <> rtc ind
+R8833:8833 nameless.DBInterpretationComputability <> j:90 var
+R8831:8831 nameless.DBInterpretationComputability <> i:88 var
+R8821:8829 nameless.DBCore <> reduction ind
+R8851:8863 nameless.DBInterpretationComputability <> reduces_unary thm
+R8851:8863 nameless.DBInterpretationComputability <> reduces_unary thm
+R8958:8964 nameless.DBParallelBase <> rtc_one thm
+R8958:8964 nameless.DBParallelBase <> rtc_one thm
+prf 8979:8993 <> iprod_reduction
+binder 9004:9004 <> A:91
+binder 9006:9006 <> B:92
+binder 9008:9008 <> D:93
+R9035:9040 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9011:9019 nameless.DBCore <> reduction ind
+R9034:9034 nameless.DBInterpretationComputability <> D:93 var
+R9022:9027 nameless.DBSyntax <> TIProd constr
+R9031:9031 nameless.DBInterpretationComputability <> B:92 var
+R9029:9029 nameless.DBInterpretationComputability <> A:91 var
+R9041:9047 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9053:9054 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9048:9049 <> A':94
+binder 9051:9052 <> B':95
+R9071:9074 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9056:9058 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9055:9055 nameless.DBInterpretationComputability <> D:93 var
+R9059:9064 nameless.DBSyntax <> TIProd constr
+R9069:9070 nameless.DBInterpretationComputability <> B':95 var
+R9066:9067 nameless.DBInterpretationComputability <> A':94 var
+R9093:9096 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9075:9077 nameless.DBParallelBase <> rtc ind
+R9091:9092 nameless.DBInterpretationComputability <> A':94 var
+R9089:9089 nameless.DBInterpretationComputability <> A:91 var
+R9079:9087 nameless.DBCore <> reduction ind
+R9097:9099 nameless.DBParallelBase <> rtc ind
+R9113:9114 nameless.DBInterpretationComputability <> B':95 var
+R9111:9111 nameless.DBInterpretationComputability <> B:92 var
+R9101:9109 nameless.DBCore <> reduction ind
+R9152:9160 nameless.DBCore <> reduction ind
+R9152:9160 nameless.DBCore <> reduction ind
+R9230:9237 nameless.DBParallelBase <> rtc_refl constr
+R9240:9246 nameless.DBParallelBase <> rtc_one thm
+R9230:9237 nameless.DBParallelBase <> rtc_refl constr
+R9230:9237 nameless.DBParallelBase <> rtc_refl constr
+R9240:9246 nameless.DBParallelBase <> rtc_one thm
+R9240:9246 nameless.DBParallelBase <> rtc_one thm
+prf 9260:9272 <> ipi_reduction
+binder 9283:9283 <> A:96
+binder 9285:9285 <> B:97
+binder 9287:9287 <> D:98
+R9312:9317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9290:9298 nameless.DBCore <> reduction ind
+R9311:9311 nameless.DBInterpretationComputability <> D:98 var
+R9301:9304 nameless.DBSyntax <> TIPi constr
+R9308:9308 nameless.DBInterpretationComputability <> B:97 var
+R9306:9306 nameless.DBInterpretationComputability <> A:96 var
+R9318:9324 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9330:9331 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9325:9326 <> A':99
+binder 9328:9329 <> B':100
+R9346:9349 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9333:9335 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9332:9332 nameless.DBInterpretationComputability <> D:98 var
+R9336:9339 nameless.DBSyntax <> TIPi constr
+R9344:9345 nameless.DBInterpretationComputability <> B':100 var
+R9341:9342 nameless.DBInterpretationComputability <> A':99 var
+R9368:9371 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9350:9352 nameless.DBParallelBase <> rtc ind
+R9366:9367 nameless.DBInterpretationComputability <> A':99 var
+R9364:9364 nameless.DBInterpretationComputability <> A:96 var
+R9354:9362 nameless.DBCore <> reduction ind
+R9372:9374 nameless.DBParallelBase <> rtc ind
+R9388:9389 nameless.DBInterpretationComputability <> B':100 var
+R9386:9386 nameless.DBInterpretationComputability <> B:97 var
+R9376:9384 nameless.DBCore <> reduction ind
+R9427:9435 nameless.DBCore <> reduction ind
+R9427:9435 nameless.DBCore <> reduction ind
+R9505:9512 nameless.DBParallelBase <> rtc_refl constr
+R9515:9521 nameless.DBParallelBase <> rtc_one thm
+R9505:9512 nameless.DBParallelBase <> rtc_refl constr
+R9505:9512 nameless.DBParallelBase <> rtc_refl constr
+R9515:9521 nameless.DBParallelBase <> rtc_one thm
+R9515:9521 nameless.DBParallelBase <> rtc_one thm
+prf 9535:9548 <> isig_reduction
+binder 9559:9559 <> A:101
+binder 9561:9561 <> B:102
+binder 9563:9563 <> D:103
+R9589:9594 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9566:9574 nameless.DBCore <> reduction ind
+R9588:9588 nameless.DBInterpretationComputability <> D:103 var
+R9577:9581 nameless.DBSyntax <> TISig constr
+R9585:9585 nameless.DBInterpretationComputability <> B:102 var
+R9583:9583 nameless.DBInterpretationComputability <> A:101 var
+R9595:9601 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9607:9608 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9602:9603 <> A':104
+binder 9605:9606 <> B':105
+R9624:9627 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9610:9612 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9609:9609 nameless.DBInterpretationComputability <> D:103 var
+R9613:9617 nameless.DBSyntax <> TISig constr
+R9622:9623 nameless.DBInterpretationComputability <> B':105 var
+R9619:9620 nameless.DBInterpretationComputability <> A':104 var
+R9646:9649 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9628:9630 nameless.DBParallelBase <> rtc ind
+R9644:9645 nameless.DBInterpretationComputability <> A':104 var
+R9642:9642 nameless.DBInterpretationComputability <> A:101 var
+R9632:9640 nameless.DBCore <> reduction ind
+R9650:9652 nameless.DBParallelBase <> rtc ind
+R9666:9667 nameless.DBInterpretationComputability <> B':105 var
+R9664:9664 nameless.DBInterpretationComputability <> B:102 var
+R9654:9662 nameless.DBCore <> reduction ind
+R9705:9713 nameless.DBCore <> reduction ind
+R9705:9713 nameless.DBCore <> reduction ind
+R9783:9790 nameless.DBParallelBase <> rtc_refl constr
+R9793:9799 nameless.DBParallelBase <> rtc_one thm
+R9783:9790 nameless.DBParallelBase <> rtc_refl constr
+R9783:9790 nameless.DBParallelBase <> rtc_refl constr
+R9793:9799 nameless.DBParallelBase <> rtc_one thm
+R9793:9799 nameless.DBParallelBase <> rtc_one thm
+prf 9813:9829 <> ichoice_reduction
+binder 9840:9840 <> A:106
+binder 9842:9842 <> B:107
+binder 9844:9844 <> D:108
+R9873:9878 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9847:9855 nameless.DBCore <> reduction ind
+R9872:9872 nameless.DBInterpretationComputability <> D:108 var
+R9858:9865 nameless.DBSyntax <> TIChoice constr
+R9869:9869 nameless.DBInterpretationComputability <> B:107 var
+R9867:9867 nameless.DBInterpretationComputability <> A:106 var
+R9879:9885 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9891:9892 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9886:9887 <> A':109
+binder 9889:9890 <> B':110
+R9911:9914 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9894:9896 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9893:9893 nameless.DBInterpretationComputability <> D:108 var
+R9897:9904 nameless.DBSyntax <> TIChoice constr
+R9909:9910 nameless.DBInterpretationComputability <> B':110 var
+R9906:9907 nameless.DBInterpretationComputability <> A':109 var
+R9933:9936 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9915:9917 nameless.DBParallelBase <> rtc ind
+R9931:9932 nameless.DBInterpretationComputability <> A':109 var
+R9929:9929 nameless.DBInterpretationComputability <> A:106 var
+R9919:9927 nameless.DBCore <> reduction ind
+R9937:9939 nameless.DBParallelBase <> rtc ind
+R9953:9954 nameless.DBInterpretationComputability <> B':110 var
+R9951:9951 nameless.DBInterpretationComputability <> B:107 var
+R9941:9949 nameless.DBCore <> reduction ind
+R9992:10000 nameless.DBCore <> reduction ind
+R9992:10000 nameless.DBCore <> reduction ind
+R10070:10077 nameless.DBParallelBase <> rtc_refl constr
+R10080:10086 nameless.DBParallelBase <> rtc_one thm
+R10070:10077 nameless.DBParallelBase <> rtc_refl constr
+R10070:10077 nameless.DBParallelBase <> rtc_refl constr
+R10080:10086 nameless.DBParallelBase <> rtc_one thm
+R10080:10086 nameless.DBParallelBase <> rtc_one thm
+prf 10101:10122 <> variable_index_meaning
+binder 10133:10134 <> RI:111
+R10149:10152 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10137:10145 nameless.DBFullReducibility Full candidate rec
+R10147:10148 nameless.DBInterpretationComputability <> RI:111 var
+binder 10160:10160 <> i:112
+binder 10162:10163 <> RX:113
+binder 10165:10165 <> F:114
+R10174:10177 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10170:10171 nameless.DBInterpretationComputability <> RI:111 var
+R10173:10173 nameless.DBInterpretationComputability <> i:112 var
+R10205:10208 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10178:10198 nameless.DBInterpretationComputability <> stable_indexed_family def
+R10200:10201 nameless.DBInterpretationComputability <> RI:111 var
+R10203:10204 nameless.DBInterpretationComputability <> RX:113 var
+R10241:10246 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10209:10225 nameless.DBInterpretationComputability <> small_description def
+R10227:10228 nameless.DBInterpretationComputability <> RI:111 var
+R10231:10235 nameless.DBSyntax <> TIVar constr
+R10237:10237 nameless.DBInterpretationComputability <> i:112 var
+R10240:10240 nameless.DBInterpretationComputability <> F:114 var
+R10247:10261 nameless.DBFullReducibility Full predicate_equiv def
+R10264:10265 nameless.DBInterpretationComputability <> RX:113 var
+R10267:10267 nameless.DBInterpretationComputability <> i:112 var
+R10271:10271 nameless.DBInterpretationComputability <> F:114 var
+R10273:10274 nameless.DBInterpretationComputability <> RX:113 var
+R10332:10352 nameless.DBFullReducibility Full candidate_normalizing proj
+R10332:10352 nameless.DBFullReducibility Full candidate_normalizing proj
+R10382:10395 nameless.DBFullNormalForms <> normalize_full def
+R10382:10395 nameless.DBFullNormalForms <> normalize_full def
+R10452:10468 nameless.DBFullReducibility Full candidate_reducts thm
+R10452:10468 nameless.DBFullReducibility Full candidate_reducts thm
+R10502:10518 nameless.DBInterpretationComputability <> small_description def
+R10524:10528 nameless.DBSyntax <> TIVar constr
+binder 10538:10538 <> Y:115
+R10543:10543 nameless.DBInterpretationComputability <> Y:115 var
+R10502:10518 nameless.DBInterpretationComputability <> small_description def
+R10524:10528 nameless.DBSyntax <> TIVar constr
+binder 10538:10538 <> Y:116
+R10543:10543 nameless.DBInterpretationComputability <> Y:116 var
+R10561:10566 nameless.DBDescriptionModel <> di_var constr
+R10561:10566 nameless.DBDescriptionModel <> di_var constr
+R10585:10596 nameless.DBDescriptionCandidates <> full_SN_ivar thm
+R10585:10596 nameless.DBDescriptionCandidates <> full_SN_ivar thm
+R10615:10628 nameless.DBReduction <> red_star_TIVar thm
+R10615:10628 nameless.DBReduction <> red_star_TIVar thm
+R10742:10765 nameless.DBInterpretationComputability <> small_description_unique thm
+R10788:10794 nameless.DBCore <> cv_refl constr
+R10742:10765 nameless.DBInterpretationComputability <> small_description_unique thm
+R10788:10794 nameless.DBCore <> cv_refl constr
+R10825:10839 nameless.DBFullReducibility Full predicate_equiv def
+R10825:10839 nameless.DBFullReducibility Full predicate_equiv def
+R10868:10872 Corelib.Init.Logic <> proj2 thm
+R10889:10909 nameless.DBWeakening <> reductions_conversion thm
+R10868:10872 Corelib.Init.Logic <> proj2 thm
+R10889:10909 nameless.DBWeakening <> reductions_conversion thm
+prf 10991:11018 <> variable_description_meaning
+binder 11029:11030 <> RI:117
+R11045:11048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11033:11041 nameless.DBFullReducibility Full candidate rec
+R11043:11044 nameless.DBInterpretationComputability <> RI:117 var
+binder 11056:11056 <> i:118
+binder 11058:11058 <> X:119
+binder 11060:11061 <> RX:120
+binder 11063:11063 <> F:121
+R11072:11075 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11068:11069 nameless.DBInterpretationComputability <> RI:117 var
+R11071:11071 nameless.DBInterpretationComputability <> i:118 var
+R11102:11105 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11076:11093 nameless.DBInterpretationComputability <> interpreted_family def
+R11095:11096 nameless.DBInterpretationComputability <> RI:117 var
+R11098:11098 nameless.DBInterpretationComputability <> X:119 var
+R11100:11101 nameless.DBInterpretationComputability <> RX:120 var
+R11138:11143 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11106:11122 nameless.DBInterpretationComputability <> small_description def
+R11124:11125 nameless.DBInterpretationComputability <> RI:117 var
+R11128:11132 nameless.DBSyntax <> TIVar constr
+R11134:11134 nameless.DBInterpretationComputability <> i:118 var
+R11137:11137 nameless.DBInterpretationComputability <> F:121 var
+R11144:11158 nameless.DBFullReducibility Full predicate_equiv def
+R11161:11162 nameless.DBInterpretationComputability <> RX:120 var
+R11164:11164 nameless.DBInterpretationComputability <> i:118 var
+R11168:11168 nameless.DBInterpretationComputability <> F:121 var
+R11170:11171 nameless.DBInterpretationComputability <> RX:120 var
+R11224:11245 nameless.DBInterpretationComputability <> variable_index_meaning thm
+R11281:11305 nameless.DBInterpretationComputability <> interpreted_family_stable thm
+R11224:11245 nameless.DBInterpretationComputability <> variable_index_meaning thm
+R11281:11305 nameless.DBInterpretationComputability <> interpreted_family_stable thm
+prf 11336:11364 <> interpretation_change_meaning
+binder 11375:11376 <> RI:122
+binder 11378:11378 <> D:123
+binder 11380:11380 <> F:124
+binder 11382:11382 <> G:125
+binder 11384:11385 <> RX:126
+binder 11387:11387 <> T:127
+R11416:11419 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11392:11408 nameless.DBInterpretationComputability <> small_description def
+R11410:11411 nameless.DBInterpretationComputability <> RI:122 var
+R11413:11413 nameless.DBInterpretationComputability <> D:123 var
+R11415:11415 nameless.DBInterpretationComputability <> F:124 var
+R11444:11449 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11420:11436 nameless.DBInterpretationComputability <> small_description def
+R11438:11439 nameless.DBInterpretationComputability <> RI:122 var
+R11441:11441 nameless.DBInterpretationComputability <> D:123 var
+R11443:11443 nameless.DBInterpretationComputability <> G:125 var
+R11471:11474 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11450:11461 nameless.DBInterpretationComputability <> small_interp def
+R11463:11463 nameless.DBInterpretationComputability <> T:127 var
+R11466:11466 nameless.DBInterpretationComputability <> F:124 var
+R11468:11469 nameless.DBInterpretationComputability <> RX:126 var
+R11475:11486 nameless.DBInterpretationComputability <> small_interp def
+R11488:11488 nameless.DBInterpretationComputability <> T:127 var
+R11491:11491 nameless.DBInterpretationComputability <> G:125 var
+R11493:11494 nameless.DBInterpretationComputability <> RX:126 var
+R11545:11552 nameless.DBSemanticTypes <> it_equiv constr
+R11545:11552 nameless.DBSemanticTypes <> it_equiv constr
+R11577:11600 nameless.DBInterpretationComputability <> small_description_unique thm
+R11621:11627 nameless.DBCore <> cv_refl constr
+R11577:11600 nameless.DBInterpretationComputability <> small_description_unique thm
+R11621:11627 nameless.DBCore <> cv_refl constr
+prf 11648:11670 <> interpreted_code_reduct
+binder 11681:11682 <> RI:128
+R11697:11700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11685:11693 nameless.DBFullReducibility Full candidate rec
+R11695:11696 nameless.DBInterpretationComputability <> RI:128 var
+binder 11708:11708 <> D:129
+binder 11710:11711 <> D':130
+R11731:11734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11716:11725 nameless.DBInterpretationComputability <> small_code def
+R11727:11728 nameless.DBInterpretationComputability <> RI:128 var
+R11730:11730 nameless.DBInterpretationComputability <> D:129 var
+R11760:11763 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11735:11754 nameless.DBInterpretationComputability <> interpretation_roots def
+R11756:11757 nameless.DBInterpretationComputability <> RI:128 var
+R11759:11759 nameless.DBInterpretationComputability <> D:129 var
+R11782:11787 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11764:11766 nameless.DBParallelBase <> rtc ind
+R11780:11781 nameless.DBInterpretationComputability <> D':130 var
+R11778:11778 nameless.DBInterpretationComputability <> D:129 var
+R11768:11776 nameless.DBCore <> reduction ind
+binder 11795:11796 <> IT:131
+binder 11798:11798 <> X:132
+binder 11800:11801 <> RX:133
+R11814:11817 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11804:11810 nameless.DBFullReductionStructure <> full_SN def
+R11812:11813 nameless.DBInterpretationComputability <> IT:131 var
+R11827:11830 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11818:11824 nameless.DBFullReductionStructure <> full_SN def
+R11826:11826 nameless.DBInterpretationComputability <> X:132 var
+R11857:11862 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11831:11848 nameless.DBInterpretationComputability <> interpreted_family def
+R11850:11851 nameless.DBInterpretationComputability <> RI:128 var
+R11853:11853 nameless.DBInterpretationComputability <> X:132 var
+R11855:11856 nameless.DBInterpretationComputability <> RX:133 var
+R11906:11911 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11863:11879 nameless.DBInterpretationComputability <> small_description def
+R11881:11882 nameless.DBInterpretationComputability <> RI:128 var
+R11884:11885 nameless.DBInterpretationComputability <> D':130 var
+R11888:11899 nameless.DBInterpretationComputability <> code_meaning def
+R11901:11902 nameless.DBInterpretationComputability <> RI:128 var
+R11904:11904 nameless.DBInterpretationComputability <> D:129 var
+R11912:11923 nameless.DBInterpretationComputability <> small_interp def
+R11926:11932 nameless.DBSyntax <> TInterp constr
+R11940:11940 nameless.DBInterpretationComputability <> X:132 var
+R11937:11938 nameless.DBInterpretationComputability <> D':130 var
+R11934:11935 nameless.DBInterpretationComputability <> IT:131 var
+R11944:11955 nameless.DBInterpretationComputability <> code_meaning def
+R11957:11958 nameless.DBInterpretationComputability <> RI:128 var
+R11960:11960 nameless.DBInterpretationComputability <> D:129 var
+R11962:11963 nameless.DBInterpretationComputability <> RX:133 var
+R12041:12069 nameless.DBDescriptionModel <> description_interp_reductions thm
+R12080:12097 nameless.DBInterpretationComputability <> small_code_meaning thm
+R12041:12069 nameless.DBDescriptionModel <> description_interp_reductions thm
+R12080:12097 nameless.DBInterpretationComputability <> small_code_meaning thm
+R12135:12156 nameless.DBSemanticTypes <> type_interp_reductions thm
+R12173:12202 nameless.DBInterpretationComputability <> interpretation_from_code_roots thm
+R12135:12156 nameless.DBSemanticTypes <> type_interp_reductions thm
+R12173:12202 nameless.DBInterpretationComputability <> interpretation_from_code_roots thm
+R12250:12265 nameless.DBReduction <> red_star_TInterp thm
+R12250:12265 nameless.DBReduction <> red_star_TInterp thm
+prf 12319:12349 <> computable_interpretation_roots
+binder 12360:12361 <> RI:134
+R12376:12379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12364:12372 nameless.DBFullReducibility Full candidate rec
+R12374:12375 nameless.DBInterpretationComputability <> RI:134 var
+binder 12387:12387 <> D:135
+R12407:12410 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12392:12401 nameless.DBInterpretationComputability <> small_code def
+R12403:12404 nameless.DBInterpretationComputability <> RI:134 var
+R12406:12406 nameless.DBInterpretationComputability <> D:135 var
+R12411:12430 nameless.DBInterpretationComputability <> interpretation_roots def
+R12432:12433 nameless.DBInterpretationComputability <> RI:134 var
+R12435:12435 nameless.DBInterpretationComputability <> D:135 var
+R12543:12557 nameless.DBInterpretationComputability <> ivar_reductions thm
+R12543:12557 nameless.DBInterpretationComputability <> ivar_reductions thm
+R12592:12600 nameless.DBCore <> root_step def
+R12667:12683 nameless.DBFullReducibility Full candidate_reducts thm
+R12667:12683 nameless.DBFullReducibility Full candidate_reducts thm
+R12711:12718 nameless.DBSemanticTypes <> it_equiv constr
+R12711:12718 nameless.DBSemanticTypes <> it_equiv constr
+R12752:12779 nameless.DBInterpretationComputability <> variable_description_meaning thm
+R12752:12779 nameless.DBInterpretationComputability <> variable_description_meaning thm
+R12825:12850 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R12856:12877 nameless.DBDescriptionModel <> one_description_normal thm
+R12825:12850 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R12856:12877 nameless.DBDescriptionModel <> one_description_normal thm
+R12911:12919 nameless.DBCore <> root_step def
+R12963:12991 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+R13012:13028 nameless.DBInterpretationComputability <> small_unit_interp thm
+R12963:12991 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+R13012:13028 nameless.DBInterpretationComputability <> small_unit_interp thm
+R13042:13047 nameless.DBDescriptionModel <> di_one constr
+R13057:13078 nameless.DBFullNormalForms <> normal_form_accessible thm
+R13081:13102 nameless.DBDescriptionModel <> one_description_normal thm
+R13042:13047 nameless.DBDescriptionModel <> di_one constr
+R13057:13078 nameless.DBFullNormalForms <> normal_form_accessible thm
+R13081:13102 nameless.DBDescriptionModel <> one_description_normal thm
+R13134:13159 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R13165:13186 nameless.DBDescriptionModel <> bot_description_normal thm
+R13134:13159 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R13165:13186 nameless.DBDescriptionModel <> bot_description_normal thm
+R13220:13228 nameless.DBCore <> root_step def
+R13272:13300 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+R13321:13339 nameless.DBInterpretationComputability <> small_bottom_interp thm
+R13272:13300 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+R13321:13339 nameless.DBInterpretationComputability <> small_bottom_interp thm
+R13353:13358 nameless.DBDescriptionModel <> di_bot constr
+R13368:13389 nameless.DBFullNormalForms <> normal_form_accessible thm
+R13392:13413 nameless.DBDescriptionModel <> bot_description_normal thm
+R13353:13358 nameless.DBDescriptionModel <> di_bot constr
+R13368:13389 nameless.DBFullNormalForms <> normal_form_accessible thm
+R13392:13413 nameless.DBDescriptionModel <> bot_description_normal thm
+R13443:13456 nameless.DBGeneration <> reduces_binary thm
+R13465:13479 nameless.DBInterpretationComputability <> iprod_reduction thm
+R13458:13463 nameless.DBSyntax <> TIProd constr
+R13443:13456 nameless.DBGeneration <> reduces_binary thm
+R13465:13479 nameless.DBInterpretationComputability <> iprod_reduction thm
+R13458:13463 nameless.DBSyntax <> TIProd constr
+R13527:13535 nameless.DBCore <> root_step def
+R13582:13604 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+R13582:13604 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+R13676:13698 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+R13676:13698 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+binder 13816:13816 <> Y:136
+R13821:13834 nameless.DBFullReducibility Full dependent_pair def
+R13837:13848 nameless.DBInterpretationComputability <> code_meaning def
+R13855:13855 nameless.DBInterpretationComputability <> Y:136 var
+R13868:13879 nameless.DBInterpretationComputability <> code_meaning def
+R13886:13886 nameless.DBInterpretationComputability <> Y:136 var
+R13767:13795 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+R13915:13934 nameless.DBInterpretationComputability <> small_product_interp thm
+binder 13816:13816 <> Y:137
+R13821:13834 nameless.DBFullReducibility Full dependent_pair def
+R13837:13848 nameless.DBInterpretationComputability <> code_meaning def
+R13855:13855 nameless.DBInterpretationComputability <> Y:137 var
+R13868:13879 nameless.DBInterpretationComputability <> code_meaning def
+R13886:13886 nameless.DBInterpretationComputability <> Y:137 var
+R13767:13795 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+R13915:13934 nameless.DBInterpretationComputability <> small_product_interp thm
+R13970:13998 nameless.DBDescriptionModel <> description_interp_prod_intro thm
+R13970:13998 nameless.DBDescriptionModel <> description_interp_prod_intro thm
+R14028:14041 nameless.DBGeneration <> reduces_binary thm
+R14048:14060 nameless.DBInterpretationComputability <> ipi_reduction thm
+R14043:14046 nameless.DBSyntax <> TIPi constr
+R14028:14041 nameless.DBGeneration <> reduces_binary thm
+R14048:14060 nameless.DBInterpretationComputability <> ipi_reduction thm
+R14043:14046 nameless.DBSyntax <> TIPi constr
+R14109:14117 nameless.DBCore <> root_step def
+R14168:14179 nameless.DBInterpretationComputability <> small_interp def
+R14199:14220 nameless.DBSemanticTypes <> type_interp_reductions thm
+R14168:14179 nameless.DBInterpretationComputability <> small_interp def
+R14199:14220 nameless.DBSemanticTypes <> type_interp_reductions thm
+R14255:14261 nameless.DBFullReductionStructure <> full_SN def
+R14278:14295 nameless.DBFullNormalForms <> full_SN_reductions thm
+R14255:14261 nameless.DBFullReductionStructure <> full_SN def
+R14278:14295 nameless.DBFullNormalForms <> full_SN_reductions thm
+binder 14334:14334 <> a:138
+R14341:14350 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14340:14340 nameless.DBInterpretationComputability <> a:138 var
+R14412:14421 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R14351:14367 nameless.DBInterpretationComputability <> small_description def
+R14373:14376 nameless.DBSyntax <> TApp constr
+R14381:14381 nameless.DBInterpretationComputability <> a:138 var
+R14385:14396 nameless.DBInterpretationComputability <> code_meaning def
+R14402:14405 nameless.DBSyntax <> TApp constr
+R14409:14409 nameless.DBInterpretationComputability <> a:138 var
+R14422:14433 nameless.DBInterpretationComputability <> small_interp def
+R14436:14442 nameless.DBSyntax <> TInterp constr
+R14448:14451 nameless.DBSyntax <> TApp constr
+R14456:14456 nameless.DBInterpretationComputability <> a:138 var
+R14463:14474 nameless.DBInterpretationComputability <> code_meaning def
+R14480:14483 nameless.DBSyntax <> TApp constr
+R14487:14487 nameless.DBInterpretationComputability <> a:138 var
+binder 14334:14334 <> a:139
+R14341:14350 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14340:14340 nameless.DBInterpretationComputability <> a:139 var
+R14412:14421 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R14351:14367 nameless.DBInterpretationComputability <> small_description def
+R14373:14376 nameless.DBSyntax <> TApp constr
+R14381:14381 nameless.DBInterpretationComputability <> a:139 var
+R14385:14396 nameless.DBInterpretationComputability <> code_meaning def
+R14402:14405 nameless.DBSyntax <> TApp constr
+R14409:14409 nameless.DBInterpretationComputability <> a:139 var
+R14422:14433 nameless.DBInterpretationComputability <> small_interp def
+R14436:14442 nameless.DBSyntax <> TInterp constr
+R14448:14451 nameless.DBSyntax <> TApp constr
+R14456:14456 nameless.DBInterpretationComputability <> a:139 var
+R14463:14474 nameless.DBInterpretationComputability <> code_meaning def
+R14480:14483 nameless.DBSyntax <> TApp constr
+R14487:14487 nameless.DBInterpretationComputability <> a:139 var
+R14522:14544 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+R14522:14544 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+R14641:14653 nameless.DBReduction <> red_star_TApp thm
+R14641:14653 nameless.DBReduction <> red_star_TApp thm
+binder 14742:14742 <> Y:140
+R14747:14764 nameless.DBFullReducibility Full dependent_function def
+binder 14774:14774 <> a:141
+R14779:14790 nameless.DBInterpretationComputability <> code_meaning def
+R14796:14799 nameless.DBSyntax <> TApp constr
+R14803:14803 nameless.DBInterpretationComputability <> a:141 var
+R14806:14806 nameless.DBInterpretationComputability <> Y:140 var
+R14693:14721 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+binder 14742:14742 <> Y:142
+R14747:14764 nameless.DBFullReducibility Full dependent_function def
+binder 14774:14774 <> a:143
+R14779:14790 nameless.DBInterpretationComputability <> code_meaning def
+R14796:14799 nameless.DBSyntax <> TApp constr
+R14803:14803 nameless.DBInterpretationComputability <> a:143 var
+R14806:14806 nameless.DBInterpretationComputability <> Y:142 var
+R14693:14721 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+R14839:14865 nameless.DBDescriptionModel <> description_interp_pi_intro thm
+R14839:14865 nameless.DBDescriptionModel <> description_interp_pi_intro thm
+R14918:14922 Corelib.Init.Logic <> proj1 thm
+R14918:14922 Corelib.Init.Logic <> proj1 thm
+R14948:14962 nameless.DBInterpretationComputability <> small_pi_interp thm
+R14948:14962 nameless.DBInterpretationComputability <> small_pi_interp thm
+R15006:15032 nameless.DBDescriptionBeta <> instantiated_interpretation thm
+R15042:15046 Corelib.Init.Logic <> proj2 thm
+R15006:15032 nameless.DBDescriptionBeta <> instantiated_interpretation thm
+R15006:15032 nameless.DBDescriptionBeta <> instantiated_interpretation thm
+R15042:15046 Corelib.Init.Logic <> proj2 thm
+R15074:15087 nameless.DBGeneration <> reduces_binary thm
+R15095:15108 nameless.DBInterpretationComputability <> isig_reduction thm
+R15089:15093 nameless.DBSyntax <> TISig constr
+R15074:15087 nameless.DBGeneration <> reduces_binary thm
+R15095:15108 nameless.DBInterpretationComputability <> isig_reduction thm
+R15089:15093 nameless.DBSyntax <> TISig constr
+R15157:15165 nameless.DBCore <> root_step def
+R15216:15227 nameless.DBInterpretationComputability <> small_interp def
+R15247:15268 nameless.DBSemanticTypes <> type_interp_reductions thm
+R15216:15227 nameless.DBInterpretationComputability <> small_interp def
+R15247:15268 nameless.DBSemanticTypes <> type_interp_reductions thm
+R15303:15309 nameless.DBFullReductionStructure <> full_SN def
+R15326:15343 nameless.DBFullNormalForms <> full_SN_reductions thm
+R15303:15309 nameless.DBFullReductionStructure <> full_SN def
+R15326:15343 nameless.DBFullNormalForms <> full_SN_reductions thm
+binder 15382:15382 <> a:144
+R15389:15398 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15388:15388 nameless.DBInterpretationComputability <> a:144 var
+R15460:15469 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15399:15415 nameless.DBInterpretationComputability <> small_description def
+R15421:15424 nameless.DBSyntax <> TApp constr
+R15429:15429 nameless.DBInterpretationComputability <> a:144 var
+R15433:15444 nameless.DBInterpretationComputability <> code_meaning def
+R15450:15453 nameless.DBSyntax <> TApp constr
+R15457:15457 nameless.DBInterpretationComputability <> a:144 var
+R15470:15481 nameless.DBInterpretationComputability <> small_interp def
+R15484:15490 nameless.DBSyntax <> TInterp constr
+R15496:15499 nameless.DBSyntax <> TApp constr
+R15504:15504 nameless.DBInterpretationComputability <> a:144 var
+R15511:15522 nameless.DBInterpretationComputability <> code_meaning def
+R15528:15531 nameless.DBSyntax <> TApp constr
+R15535:15535 nameless.DBInterpretationComputability <> a:144 var
+binder 15382:15382 <> a:145
+R15389:15398 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15388:15388 nameless.DBInterpretationComputability <> a:145 var
+R15460:15469 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15399:15415 nameless.DBInterpretationComputability <> small_description def
+R15421:15424 nameless.DBSyntax <> TApp constr
+R15429:15429 nameless.DBInterpretationComputability <> a:145 var
+R15433:15444 nameless.DBInterpretationComputability <> code_meaning def
+R15450:15453 nameless.DBSyntax <> TApp constr
+R15457:15457 nameless.DBInterpretationComputability <> a:145 var
+R15470:15481 nameless.DBInterpretationComputability <> small_interp def
+R15484:15490 nameless.DBSyntax <> TInterp constr
+R15496:15499 nameless.DBSyntax <> TApp constr
+R15504:15504 nameless.DBInterpretationComputability <> a:145 var
+R15511:15522 nameless.DBInterpretationComputability <> code_meaning def
+R15528:15531 nameless.DBSyntax <> TApp constr
+R15535:15535 nameless.DBInterpretationComputability <> a:145 var
+R15570:15592 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+R15570:15592 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+R15689:15701 nameless.DBReduction <> red_star_TApp thm
+R15689:15701 nameless.DBReduction <> red_star_TApp thm
+binder 15790:15790 <> Y:146
+R15795:15808 nameless.DBFullReducibility Full dependent_pair def
+binder 15818:15818 <> a:147
+R15823:15834 nameless.DBInterpretationComputability <> code_meaning def
+R15840:15843 nameless.DBSyntax <> TApp constr
+R15847:15847 nameless.DBInterpretationComputability <> a:147 var
+R15850:15850 nameless.DBInterpretationComputability <> Y:146 var
+R15741:15769 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+binder 15790:15790 <> Y:148
+R15795:15808 nameless.DBFullReducibility Full dependent_pair def
+binder 15818:15818 <> a:149
+R15823:15834 nameless.DBInterpretationComputability <> code_meaning def
+R15840:15843 nameless.DBSyntax <> TApp constr
+R15847:15847 nameless.DBInterpretationComputability <> a:149 var
+R15850:15850 nameless.DBInterpretationComputability <> Y:148 var
+R15741:15769 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+R15883:15912 nameless.DBDescriptionModel <> description_interp_sigma_intro thm
+R15883:15912 nameless.DBDescriptionModel <> description_interp_sigma_intro thm
+R15965:15969 Corelib.Init.Logic <> proj1 thm
+R15965:15969 Corelib.Init.Logic <> proj1 thm
+R15995:16012 nameless.DBInterpretationComputability <> small_sigma_interp thm
+R15995:16012 nameless.DBInterpretationComputability <> small_sigma_interp thm
+R16056:16082 nameless.DBDescriptionBeta <> instantiated_interpretation thm
+R16092:16096 Corelib.Init.Logic <> proj2 thm
+R16056:16082 nameless.DBDescriptionBeta <> instantiated_interpretation thm
+R16056:16082 nameless.DBDescriptionBeta <> instantiated_interpretation thm
+R16092:16096 Corelib.Init.Logic <> proj2 thm
+R16124:16137 nameless.DBGeneration <> reduces_binary thm
+R16148:16164 nameless.DBInterpretationComputability <> ichoice_reduction thm
+R16139:16146 nameless.DBSyntax <> TIChoice constr
+R16124:16137 nameless.DBGeneration <> reduces_binary thm
+R16148:16164 nameless.DBInterpretationComputability <> ichoice_reduction thm
+R16139:16146 nameless.DBSyntax <> TIChoice constr
+R16213:16221 nameless.DBCore <> root_step def
+R16272:16283 nameless.DBInterpretationComputability <> small_interp def
+R16286:16291 nameless.DBSyntax <> TEnumT constr
+R16272:16283 nameless.DBInterpretationComputability <> small_interp def
+R16286:16291 nameless.DBSyntax <> TEnumT constr
+R16315:16336 nameless.DBSemanticTypes <> type_interp_reductions thm
+R16358:16372 nameless.DBReduction <> red_star_TEnumT thm
+R16315:16336 nameless.DBSemanticTypes <> type_interp_reductions thm
+R16358:16372 nameless.DBReduction <> red_star_TEnumT thm
+R16396:16402 nameless.DBFullReductionStructure <> full_SN def
+R16419:16436 nameless.DBFullNormalForms <> full_SN_reductions thm
+R16396:16402 nameless.DBFullReductionStructure <> full_SN def
+R16419:16436 nameless.DBFullNormalForms <> full_SN_reductions thm
+binder 16475:16475 <> a:150
+R16482:16491 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16481:16481 nameless.DBInterpretationComputability <> a:150 var
+R16553:16562 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16492:16508 nameless.DBInterpretationComputability <> small_description def
+R16514:16517 nameless.DBSyntax <> TApp constr
+R16522:16522 nameless.DBInterpretationComputability <> a:150 var
+R16526:16537 nameless.DBInterpretationComputability <> code_meaning def
+R16543:16546 nameless.DBSyntax <> TApp constr
+R16550:16550 nameless.DBInterpretationComputability <> a:150 var
+R16563:16574 nameless.DBInterpretationComputability <> small_interp def
+R16577:16583 nameless.DBSyntax <> TInterp constr
+R16589:16592 nameless.DBSyntax <> TApp constr
+R16597:16597 nameless.DBInterpretationComputability <> a:150 var
+R16604:16615 nameless.DBInterpretationComputability <> code_meaning def
+R16621:16624 nameless.DBSyntax <> TApp constr
+R16628:16628 nameless.DBInterpretationComputability <> a:150 var
+binder 16475:16475 <> a:151
+R16482:16491 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16481:16481 nameless.DBInterpretationComputability <> a:151 var
+R16553:16562 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16492:16508 nameless.DBInterpretationComputability <> small_description def
+R16514:16517 nameless.DBSyntax <> TApp constr
+R16522:16522 nameless.DBInterpretationComputability <> a:151 var
+R16526:16537 nameless.DBInterpretationComputability <> code_meaning def
+R16543:16546 nameless.DBSyntax <> TApp constr
+R16550:16550 nameless.DBInterpretationComputability <> a:151 var
+R16563:16574 nameless.DBInterpretationComputability <> small_interp def
+R16577:16583 nameless.DBSyntax <> TInterp constr
+R16589:16592 nameless.DBSyntax <> TApp constr
+R16597:16597 nameless.DBInterpretationComputability <> a:151 var
+R16604:16615 nameless.DBInterpretationComputability <> code_meaning def
+R16621:16624 nameless.DBSyntax <> TApp constr
+R16628:16628 nameless.DBInterpretationComputability <> a:151 var
+R16663:16685 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+R16663:16685 nameless.DBInterpretationComputability <> interpreted_code_reduct thm
+R16782:16794 nameless.DBReduction <> red_star_TApp thm
+R16782:16794 nameless.DBReduction <> red_star_TApp thm
+binder 16883:16883 <> Y:152
+R16888:16901 nameless.DBFullReducibility Full dependent_pair def
+binder 16911:16911 <> a:153
+R16916:16927 nameless.DBInterpretationComputability <> code_meaning def
+R16933:16936 nameless.DBSyntax <> TApp constr
+R16940:16940 nameless.DBInterpretationComputability <> a:153 var
+R16943:16943 nameless.DBInterpretationComputability <> Y:152 var
+R16834:16862 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+binder 16883:16883 <> Y:154
+R16888:16901 nameless.DBFullReducibility Full dependent_pair def
+binder 16911:16911 <> a:155
+R16916:16927 nameless.DBInterpretationComputability <> code_meaning def
+R16933:16936 nameless.DBSyntax <> TApp constr
+R16940:16940 nameless.DBInterpretationComputability <> a:155 var
+R16943:16943 nameless.DBInterpretationComputability <> Y:154 var
+R16834:16862 nameless.DBInterpretationComputability <> interpretation_change_meaning thm
+R16976:17006 nameless.DBDescriptionModel <> description_interp_choice_intro thm
+R16976:17006 nameless.DBDescriptionModel <> description_interp_choice_intro thm
+R17059:17063 Corelib.Init.Logic <> proj1 thm
+R17059:17063 Corelib.Init.Logic <> proj1 thm
+R17089:17106 nameless.DBInterpretationComputability <> small_sigma_interp thm
+R17089:17106 nameless.DBInterpretationComputability <> small_sigma_interp thm
+R17150:17176 nameless.DBDescriptionBeta <> instantiated_interpretation thm
+R17186:17190 Corelib.Init.Logic <> proj2 thm
+R17150:17176 nameless.DBDescriptionBeta <> instantiated_interpretation thm
+R17150:17176 nameless.DBDescriptionBeta <> instantiated_interpretation thm
+R17186:17190 Corelib.Init.Logic <> proj2 thm
+R17229:17236 nameless.DBParallelBase <> rtc_step constr
+R17229:17236 nameless.DBParallelBase <> rtc_step constr
+R17350:17356 nameless.DBFullReducibility Full neutral def
+R17358:17366 nameless.DBCore <> root_step def
+prf 17479:17503 <> interpretation_computable
+binder 17514:17515 <> RI:156
+R17530:17533 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17518:17526 nameless.DBFullReducibility Full candidate rec
+R17528:17529 nameless.DBInterpretationComputability <> RI:156 var
+binder 17541:17541 <> D:157
+R17561:17564 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17546:17555 nameless.DBInterpretationComputability <> small_code def
+R17557:17558 nameless.DBInterpretationComputability <> RI:156 var
+R17560:17560 nameless.DBInterpretationComputability <> D:157 var
+binder 17572:17573 <> IT:158
+binder 17575:17575 <> X:159
+binder 17577:17578 <> RX:160
+R17591:17594 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17581:17587 nameless.DBFullReductionStructure <> full_SN def
+R17589:17590 nameless.DBInterpretationComputability <> IT:158 var
+R17604:17607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17595:17601 nameless.DBFullReductionStructure <> full_SN def
+R17603:17603 nameless.DBInterpretationComputability <> X:159 var
+R17634:17639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17608:17625 nameless.DBInterpretationComputability <> interpreted_family def
+R17627:17628 nameless.DBInterpretationComputability <> RI:156 var
+R17630:17630 nameless.DBInterpretationComputability <> X:159 var
+R17632:17633 nameless.DBInterpretationComputability <> RX:160 var
+R17640:17651 nameless.DBInterpretationComputability <> small_interp def
+R17654:17660 nameless.DBSyntax <> TInterp constr
+R17667:17667 nameless.DBInterpretationComputability <> X:159 var
+R17665:17665 nameless.DBInterpretationComputability <> D:157 var
+R17662:17663 nameless.DBInterpretationComputability <> IT:158 var
+R17671:17682 nameless.DBInterpretationComputability <> code_meaning def
+R17684:17685 nameless.DBInterpretationComputability <> RI:156 var
+R17687:17687 nameless.DBInterpretationComputability <> D:157 var
+R17689:17690 nameless.DBInterpretationComputability <> RX:160 var
+R17729:17758 nameless.DBInterpretationComputability <> interpretation_from_code_roots thm
+R17795:17825 nameless.DBInterpretationComputability <> computable_interpretation_roots thm
+R17729:17758 nameless.DBInterpretationComputability <> interpretation_from_code_roots thm
+R17795:17825 nameless.DBInterpretationComputability <> computable_interpretation_roots thm
+prf 17842:17869 <> interpretation_computable_as
+binder 17880:17881 <> RI:161
+R17896:17899 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17884:17892 nameless.DBFullReducibility Full candidate rec
+R17894:17895 nameless.DBInterpretationComputability <> RI:161 var
+binder 17907:17907 <> D:162
+binder 17909:17909 <> F:163
+R17929:17932 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17914:17923 nameless.DBInterpretationComputability <> small_code def
+R17925:17926 nameless.DBInterpretationComputability <> RI:161 var
+R17928:17928 nameless.DBInterpretationComputability <> D:162 var
+R17957:17962 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17933:17949 nameless.DBInterpretationComputability <> small_description def
+R17951:17952 nameless.DBInterpretationComputability <> RI:161 var
+R17954:17954 nameless.DBInterpretationComputability <> D:162 var
+R17956:17956 nameless.DBInterpretationComputability <> F:163 var
+binder 17970:17971 <> IT:164
+binder 17973:17973 <> X:165
+binder 17975:17976 <> RX:166
+R17989:17992 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17979:17985 nameless.DBFullReductionStructure <> full_SN def
+R17987:17988 nameless.DBInterpretationComputability <> IT:164 var
+R18002:18005 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17993:17999 nameless.DBFullReductionStructure <> full_SN def
+R18001:18001 nameless.DBInterpretationComputability <> X:165 var
+R18032:18037 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18006:18023 nameless.DBInterpretationComputability <> interpreted_family def
+R18025:18026 nameless.DBInterpretationComputability <> RI:161 var
+R18028:18028 nameless.DBInterpretationComputability <> X:165 var
+R18030:18031 nameless.DBInterpretationComputability <> RX:166 var
+R18038:18049 nameless.DBInterpretationComputability <> small_interp def
+R18052:18058 nameless.DBSyntax <> TInterp constr
+R18065:18065 nameless.DBInterpretationComputability <> X:165 var
+R18063:18063 nameless.DBInterpretationComputability <> D:162 var
+R18060:18061 nameless.DBInterpretationComputability <> IT:164 var
+R18069:18069 nameless.DBInterpretationComputability <> F:163 var
+R18071:18072 nameless.DBInterpretationComputability <> RX:166 var
+R18117:18141 nameless.DBInterpretationComputability <> interpretation_from_roots thm
+R18169:18199 nameless.DBInterpretationComputability <> computable_interpretation_roots thm
+R18117:18141 nameless.DBInterpretationComputability <> interpretation_from_roots thm
+R18169:18199 nameless.DBInterpretationComputability <> computable_interpretation_roots thm
+R18227:18251 nameless.DBInterpretationComputability <> interpretation_from_roots thm
+R18272:18302 nameless.DBInterpretationComputability <> computable_interpretation_roots thm
+R18323:18347 nameless.DBInterpretationComputability <> interpretation_computable thm
+R18368:18395 nameless.DBInterpretationComputability <> interpretation_computable_as thm

@@ -1,0 +1,124 @@
+DIGEST 2b0b92eae7d5762625722ed442ebee7e
+Fnameless.DBRootPreservation
+R93:96 Stdlib.Lists.List <> <> lib
+R98:102 Stdlib.Arith.Arith <> <> lib
+R104:107 Stdlib.Bool.Bool <> <> lib
+R109:111 Stdlib.micromega.Lia <> <> lib
+R129:147 nameless.DBEnumBeta <> <> lib
+prf 159:175 <> root_preservation
+binder 186:190 <> Gamma:1
+binder 192:192 <> t:2
+binder 194:194 <> T:3
+R215:218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R199:204 nameless.DBTyping <> typing ind
+R206:210 nameless.DBRootPreservation <> Gamma:1 var
+R212:212 nameless.DBRootPreservation <> t:2 var
+R214:214 nameless.DBRootPreservation <> T:3 var
+binder 226:226 <> u:4
+R249:252 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R240:242 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R229:237 nameless.DBCore <> root_step def
+R239:239 nameless.DBRootPreservation <> t:2 var
+R243:246 Corelib.Init.Datatypes <> Some constr
+R248:248 nameless.DBRootPreservation <> u:4 var
+R253:258 nameless.DBTyping <> typing ind
+R260:264 nameless.DBRootPreservation <> Gamma:1 var
+R266:266 nameless.DBRootPreservation <> u:4 var
+R268:268 nameless.DBRootPreservation <> T:3 var
+R365:373 nameless.DBCore <> root_step def
+R433:449 nameless.DBBeta <> beta_preservation thm
+R433:449 nameless.DBBeta <> beta_preservation thm
+R486:494 nameless.DBCore <> root_step def
+R554:569 nameless.DBBeta <> fst_preservation thm
+R554:569 nameless.DBBeta <> fst_preservation thm
+R606:614 nameless.DBCore <> root_step def
+R674:689 nameless.DBBeta <> snd_preservation thm
+R674:689 nameless.DBBeta <> snd_preservation thm
+R716:722 nameless.DBTyping <> ty_conv constr
+R716:722 nameless.DBTyping <> ty_conv constr
+R790:797 nameless.DBTyping <> ty_cumul constr
+R790:797 nameless.DBTyping <> ty_cumul constr
+R852:859 nameless.DBEnumBeta <> epi_beta thm
+R852:859 nameless.DBEnumBeta <> epi_beta thm
+R886:896 nameless.DBEnumBeta <> switch_beta thm
+R886:896 nameless.DBEnumBeta <> switch_beta thm
+R923:933 nameless.DBDescriptionBeta <> interp_beta thm
+R923:933 nameless.DBDescriptionBeta <> interp_beta thm
+R960:968 nameless.DBDescriptionBeta <> iall_beta thm
+R960:968 nameless.DBDescriptionBeta <> iall_beta thm
+R995:1003 nameless.DBDescriptionBeta <> hyps_beta thm
+R995:1003 nameless.DBDescriptionBeta <> hyps_beta thm
+R1040:1048 nameless.DBCore <> root_step def
+R1108:1115 nameless.DBMuBeta <> ind_beta thm
+R1108:1115 nameless.DBMuBeta <> ind_beta thm
+R1152:1160 nameless.DBCore <> root_step def
+R1220:1234 nameless.DBInductionBeta <> close_case_beta thm
+R1220:1234 nameless.DBInductionBeta <> close_case_beta thm
+R1313:1321 nameless.DBCore <> root_step def
+R1381:1394 nameless.DBInductionBeta <> close_ind_beta thm
+R1381:1394 nameless.DBInductionBeta <> close_ind_beta thm
+R1421:1432 nameless.DBTyping <> ty_cumul_fun constr
+R1421:1432 nameless.DBTyping <> ty_cumul_fun constr
+prf 1525:1548 <> lambda_root_preservation
+binder 1559:1563 <> Gamma:5
+binder 1565:1565 <> t:6
+binder 1567:1567 <> T:7
+R1588:1591 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1572:1577 nameless.DBTyping <> typing ind
+R1579:1583 nameless.DBRootPreservation <> Gamma:5 var
+R1585:1585 nameless.DBRootPreservation <> t:6 var
+R1587:1587 nameless.DBRootPreservation <> T:7 var
+binder 1599:1599 <> b:8
+binder 1601:1602 <> b':9
+R1615:1618 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1606:1608 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1605:1605 nameless.DBRootPreservation <> t:6 var
+R1609:1612 nameless.DBSyntax <> TLam constr
+R1614:1614 nameless.DBRootPreservation <> b:8 var
+R1640:1645 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1630:1632 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1619:1627 nameless.DBCore <> root_step def
+R1629:1629 nameless.DBRootPreservation <> b:8 var
+R1633:1636 Corelib.Init.Datatypes <> Some constr
+R1638:1639 nameless.DBRootPreservation <> b':9 var
+R1646:1651 nameless.DBTyping <> typing ind
+R1653:1657 nameless.DBRootPreservation <> Gamma:5 var
+R1660:1663 nameless.DBSyntax <> TLam constr
+R1665:1666 nameless.DBRootPreservation <> b':9 var
+R1669:1669 nameless.DBRootPreservation <> T:7 var
+R1791:1796 nameless.DBTyping <> ty_lam constr
+R1819:1835 nameless.DBRootPreservation <> root_preservation thm
+R1791:1796 nameless.DBTyping <> ty_lam constr
+R1819:1835 nameless.DBRootPreservation <> root_preservation thm
+R1863:1869 nameless.DBTyping <> ty_conv constr
+R1863:1869 nameless.DBTyping <> ty_conv constr
+R1940:1947 nameless.DBTyping <> ty_cumul constr
+R1940:1947 nameless.DBTyping <> ty_cumul constr
+R2005:2016 nameless.DBTyping <> ty_cumul_fun constr
+R2005:2016 nameless.DBTyping <> ty_cumul_fun constr
+prf 2112:2134 <> eta_lambda_preservation
+binder 2145:2149 <> Gamma:10
+binder 2151:2151 <> b:11
+binder 2153:2153 <> T:12
+R2215:2218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2158:2163 nameless.DBTyping <> typing ind
+R2165:2169 nameless.DBRootPreservation <> Gamma:10 var
+R2172:2175 nameless.DBSyntax <> TLam constr
+R2178:2181 nameless.DBSyntax <> TApp constr
+R2204:2207 nameless.DBSyntax <> TVar constr
+R2184:2187 nameless.DBSyntax <> lift def
+R2194:2197 nameless.DBSyntax <> TLam constr
+R2199:2199 nameless.DBRootPreservation <> b:11 var
+R2214:2214 nameless.DBRootPreservation <> T:12 var
+R2219:2224 nameless.DBTyping <> typing ind
+R2226:2230 nameless.DBRootPreservation <> Gamma:10 var
+R2233:2236 nameless.DBSyntax <> TLam constr
+R2238:2238 nameless.DBRootPreservation <> b:11 var
+R2241:2241 nameless.DBRootPreservation <> T:12 var
+R2280:2303 nameless.DBRootPreservation <> lambda_root_preservation thm
+R2280:2303 nameless.DBRootPreservation <> lambda_root_preservation thm
+R2337:2340 nameless.DBSyntax <> lift def
+R2342:2350 nameless.DBCore <> root_step def
+R2366:2386 nameless.DBParallelBase <> subst_eta_beta_cancel thm
+R2366:2386 nameless.DBParallelBase <> subst_eta_beta_cancel thm
+R2366:2386 nameless.DBParallelBase <> subst_eta_beta_cancel thm

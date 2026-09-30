@@ -1,0 +1,240 @@
+DIGEST 117e97697ecaef2c7d3662d702ee68a7
+Fnameless.DBEliminatorCandidates
+R179:182 Stdlib.Lists.List <> <> lib
+R200:230 nameless.DBSaturatedElimination <> <> lib
+R240:243 nameless.DBFullReducibility Full <> mod
+sec 255:273 <> EliminatorCandidate
+var  285:290 EliminatorCandidate Params
+var 310:323 EliminatorCandidate parameter_step
+R333:336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R327:332 nameless.DBEliminatorCandidates <> EliminatorCandidate.Params var
+R343:346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R337:342 nameless.DBEliminatorCandidates <> EliminatorCandidate.Params var
+var 362:376 EliminatorCandidate valid_parameter
+R386:389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R380:385 nameless.DBEliminatorCandidates <> EliminatorCandidate.Params var
+var 405:413 EliminatorCandidate construct
+R423:426 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R417:422 nameless.DBEliminatorCandidates <> EliminatorCandidate.Params var
+R431:434 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R427:430 nameless.DBSyntax <> term ind
+R435:438 nameless.DBSyntax <> term ind
+var 450:455 EliminatorCandidate domain
+R463:466 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R459:462 nameless.DBSyntax <> term ind
+var 482:487 EliminatorCandidate result
+R497:500 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R491:496 nameless.DBEliminatorCandidates <> EliminatorCandidate.Params var
+R505:508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R501:504 nameless.DBSyntax <> term ind
+R513:516 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R509:512 nameless.DBSyntax <> term ind
+var 534:549 EliminatorCandidate domain_candidate
+R553:561 nameless.DBFullReducibility Full candidate rec
+R563:568 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain var
+var 582:597 EliminatorCandidate result_candidate
+binder 608:608 <> p:14
+R628:631 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R611:625 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R627:627 nameless.DBEliminatorCandidates <> p:14 var
+binder 639:639 <> t:15
+R652:655 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R644:649 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain var
+R651:651 nameless.DBEliminatorCandidates <> t:15 var
+R656:664 nameless.DBFullReducibility Full candidate rec
+R667:672 nameless.DBEliminatorCandidates <> EliminatorCandidate.result var
+R674:674 nameless.DBEliminatorCandidates <> p:14 var
+R676:676 nameless.DBEliminatorCandidates <> t:15 var
+var 691:703 EliminatorCandidate result_stable
+binder 714:714 <> p:18
+R734:737 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R717:731 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R733:733 nameless.DBEliminatorCandidates <> p:18 var
+R738:750 nameless.DBFullReducibility Full stable_family def
+R752:757 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain var
+R760:765 nameless.DBEliminatorCandidates <> EliminatorCandidate.result var
+R767:767 nameless.DBEliminatorCandidates <> p:18 var
+var 782:802 EliminatorCandidate parameter_normalizing
+binder 813:813 <> p:21
+R833:838 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R816:830 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R832:832 nameless.DBEliminatorCandidates <> p:21 var
+R839:841 Corelib.Init.Wf <> Acc ind
+R875:875 nameless.DBEliminatorCandidates <> p:21 var
+binder 848:848 <> q:22
+binder 850:850 <> p:23
+R855:868 nameless.DBEliminatorCandidates <> EliminatorCandidate.parameter_step var
+R870:870 nameless.DBEliminatorCandidates <> p:23 var
+R872:872 nameless.DBEliminatorCandidates <> q:22 var
+var 889:900 EliminatorCandidate valid_reduct
+binder 911:911 <> p:26
+binder 913:913 <> q:27
+R935:938 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R918:932 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R934:934 nameless.DBEliminatorCandidates <> p:26 var
+R957:960 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R939:952 nameless.DBEliminatorCandidates <> EliminatorCandidate.parameter_step var
+R954:954 nameless.DBEliminatorCandidates <> p:26 var
+R956:956 nameless.DBEliminatorCandidates <> q:27 var
+R961:975 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R977:977 nameless.DBEliminatorCandidates <> q:27 var
+var 991:1006 EliminatorCandidate parameter_stable
+binder 1017:1017 <> p:30
+binder 1019:1019 <> q:31
+R1041:1044 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1024:1038 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R1040:1040 nameless.DBEliminatorCandidates <> p:30 var
+R1063:1066 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1045:1058 nameless.DBEliminatorCandidates <> EliminatorCandidate.parameter_step var
+R1060:1060 nameless.DBEliminatorCandidates <> p:30 var
+R1062:1062 nameless.DBEliminatorCandidates <> q:31 var
+binder 1074:1074 <> t:32
+R1085:1090 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1077:1082 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain var
+R1084:1084 nameless.DBEliminatorCandidates <> t:32 var
+R1091:1105 nameless.DBFullReducibility Full predicate_equiv def
+R1108:1113 nameless.DBEliminatorCandidates <> EliminatorCandidate.result var
+R1115:1115 nameless.DBEliminatorCandidates <> p:30 var
+R1117:1117 nameless.DBEliminatorCandidates <> t:32 var
+R1121:1126 nameless.DBEliminatorCandidates <> EliminatorCandidate.result var
+R1128:1128 nameless.DBEliminatorCandidates <> q:31 var
+R1130:1130 nameless.DBEliminatorCandidates <> t:32 var
+var 1145:1162 EliminatorCandidate construct_argument
+binder 1173:1173 <> p:35
+R1193:1196 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1176:1190 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R1192:1192 nameless.DBEliminatorCandidates <> p:35 var
+binder 1204:1204 <> t:36
+binder 1206:1206 <> u:37
+R1224:1227 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1211:1219 nameless.DBCore <> reduction ind
+R1223:1223 nameless.DBEliminatorCandidates <> u:37 var
+R1221:1221 nameless.DBEliminatorCandidates <> t:36 var
+R1228:1236 nameless.DBCore <> reduction ind
+R1255:1263 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct var
+R1265:1265 nameless.DBEliminatorCandidates <> p:35 var
+R1267:1267 nameless.DBEliminatorCandidates <> u:37 var
+R1239:1247 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct var
+R1249:1249 nameless.DBEliminatorCandidates <> p:35 var
+R1251:1251 nameless.DBEliminatorCandidates <> t:36 var
+var 1282:1298 EliminatorCandidate construct_neutral
+binder 1309:1309 <> p:40
+R1329:1332 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1312:1326 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R1328:1328 nameless.DBEliminatorCandidates <> p:40 var
+binder 1340:1340 <> t:41
+R1345:1351 nameless.DBFullReducibility Full neutral def
+R1354:1362 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct var
+R1364:1364 nameless.DBEliminatorCandidates <> p:40 var
+R1366:1366 nameless.DBEliminatorCandidates <> t:41 var
+var 1381:1402 EliminatorCandidate construct_neutral_step
+binder 1413:1413 <> p:44
+R1433:1436 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1416:1430 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R1432:1432 nameless.DBEliminatorCandidates <> p:44 var
+binder 1444:1444 <> t:45
+binder 1446:1446 <> u:46
+R1460:1463 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1451:1457 nameless.DBFullReducibility Full neutral def
+R1459:1459 nameless.DBEliminatorCandidates <> t:45 var
+R1491:1496 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1464:1472 nameless.DBCore <> reduction ind
+R1490:1490 nameless.DBEliminatorCandidates <> u:46 var
+R1475:1483 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct var
+R1485:1485 nameless.DBEliminatorCandidates <> p:44 var
+R1487:1487 nameless.DBEliminatorCandidates <> t:45 var
+R1497:1497 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1547:1554 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1602:1602 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1498:1504 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1506:1507 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1505:1505 <> q:47
+R1526:1529 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1508:1521 nameless.DBEliminatorCandidates <> EliminatorCandidate.parameter_step var
+R1523:1523 nameless.DBEliminatorCandidates <> p:44 var
+R1525:1525 nameless.DBEliminatorCandidates <> q:47 var
+R1531:1533 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1530:1530 nameless.DBEliminatorCandidates <> u:46 var
+R1534:1542 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct var
+R1544:1544 nameless.DBEliminatorCandidates <> q:47 var
+R1546:1546 nameless.DBEliminatorCandidates <> t:45 var
+R1555:1561 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1564:1565 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1562:1563 <> t':48
+R1580:1583 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1566:1574 nameless.DBCore <> reduction ind
+R1578:1579 nameless.DBEliminatorCandidates <> t':48 var
+R1576:1576 nameless.DBEliminatorCandidates <> t:45 var
+R1585:1587 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1584:1584 nameless.DBEliminatorCandidates <> u:46 var
+R1588:1596 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct var
+R1598:1598 nameless.DBEliminatorCandidates <> p:44 var
+R1600:1601 nameless.DBEliminatorCandidates <> t':48 var
+def 1617:1637 <> eliminator_refinement
+binder 1639:1639 <> t:51
+R1652:1657 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1644:1649 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain var
+R1651:1651 nameless.DBEliminatorCandidates <> t:51 var
+binder 1665:1665 <> p:52
+R1685:1688 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1668:1682 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_parameter var
+R1684:1684 nameless.DBEliminatorCandidates <> p:52 var
+R1689:1694 nameless.DBEliminatorCandidates <> EliminatorCandidate.result var
+R1696:1696 nameless.DBEliminatorCandidates <> p:52 var
+R1698:1698 nameless.DBEliminatorCandidates <> t:51 var
+R1701:1709 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct var
+R1711:1711 nameless.DBEliminatorCandidates <> p:52 var
+R1713:1713 nameless.DBEliminatorCandidates <> t:51 var
+prf 1726:1756 <> eliminator_refinement_candidate
+R1760:1768 nameless.DBFullReducibility Full candidate rec
+R1770:1790 nameless.DBEliminatorCandidates <> eliminator_refinement def
+R1843:1863 nameless.DBFullReducibility Full candidate_normalizing proj
+R1865:1880 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain_candidate var
+R1843:1863 nameless.DBFullReducibility Full candidate_normalizing proj
+R1865:1880 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain_candidate var
+R1929:1944 nameless.DBFullReducibility Full candidate_reduct proj
+R1946:1961 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain_candidate var
+R1929:1944 nameless.DBFullReducibility Full candidate_reduct proj
+R1946:1961 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain_candidate var
+R1997:2001 Corelib.Init.Logic <> proj1 thm
+R2004:2016 nameless.DBEliminatorCandidates <> EliminatorCandidate.result_stable var
+R1997:2001 Corelib.Init.Logic <> proj1 thm
+R2004:2016 nameless.DBEliminatorCandidates <> EliminatorCandidate.result_stable var
+R2049:2064 nameless.DBFullReducibility Full candidate_reduct proj
+R2112:2129 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct_argument var
+R2067:2082 nameless.DBEliminatorCandidates <> EliminatorCandidate.result_candidate var
+R2049:2064 nameless.DBFullReducibility Full candidate_reduct proj
+R2112:2129 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct_argument var
+R2067:2082 nameless.DBEliminatorCandidates <> EliminatorCandidate.result_candidate var
+R2183:2188 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain var
+R2183:2188 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain var
+R2207:2223 nameless.DBFullReducibility Full candidate_neutral proj
+R2225:2240 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain_candidate var
+R2267:2271 Corelib.Init.Logic <> proj1 thm
+R2207:2223 nameless.DBFullReducibility Full candidate_neutral proj
+R2225:2240 nameless.DBEliminatorCandidates <> EliminatorCandidate.domain_candidate var
+R2267:2271 Corelib.Init.Logic <> proj1 thm
+R2340:2360 nameless.DBEliminatorCandidates <> EliminatorCandidate.parameter_normalizing var
+R2340:2360 nameless.DBEliminatorCandidates <> EliminatorCandidate.parameter_normalizing var
+R2438:2454 nameless.DBFullReducibility Full candidate_neutral proj
+R2486:2502 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct_neutral var
+R2457:2472 nameless.DBEliminatorCandidates <> EliminatorCandidate.result_candidate var
+R2438:2454 nameless.DBFullReducibility Full candidate_neutral proj
+R2486:2502 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct_neutral var
+R2457:2472 nameless.DBEliminatorCandidates <> EliminatorCandidate.result_candidate var
+R2541:2562 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct_neutral_step var
+R2541:2562 nameless.DBEliminatorCandidates <> EliminatorCandidate.construct_neutral_step var
+R2631:2635 Corelib.Init.Logic <> proj2 thm
+R2638:2653 nameless.DBEliminatorCandidates <> EliminatorCandidate.parameter_stable var
+R2631:2635 Corelib.Init.Logic <> proj2 thm
+R2638:2653 nameless.DBEliminatorCandidates <> EliminatorCandidate.parameter_stable var
+R2697:2708 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_reduct var
+R2697:2708 nameless.DBEliminatorCandidates <> EliminatorCandidate.valid_reduct var
+R2736:2740 Corelib.Init.Logic <> proj2 thm
+R2743:2755 nameless.DBEliminatorCandidates <> EliminatorCandidate.result_stable var
+R2736:2740 Corelib.Init.Logic <> proj2 thm
+R2743:2755 nameless.DBEliminatorCandidates <> EliminatorCandidate.result_stable var
+R2792:2796 Corelib.Init.Logic <> proj2 thm
+R2792:2796 Corelib.Init.Logic <> proj2 thm
+R2826:2844 nameless.DBEliminatorCandidates EliminatorCandidate <> sec
+R2866:2896 nameless.DBEliminatorCandidates <> eliminator_refinement_candidate thm

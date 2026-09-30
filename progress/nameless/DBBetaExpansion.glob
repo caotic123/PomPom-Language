@@ -1,0 +1,187 @@
+DIGEST d5c5aab8ec3114f66bd380f88f54b881
+Fnameless.DBBetaExpansion
+R87:110 nameless.DBSemanticTypes <> <> lib
+R120:123 nameless.DBFullReducibility Full <> mod
+prf 135:158 <> candidate_beta_expansion
+binder 169:169 <> R:1
+R183:186 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R172:180 nameless.DBFullReducibility Full candidate rec
+R182:182 nameless.DBBetaExpansion <> R:1 var
+binder 194:194 <> b:2
+binder 196:196 <> a:3
+R210:213 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R201:207 nameless.DBFullReductionStructure <> full_SN def
+R209:209 nameless.DBBetaExpansion <> b:2 var
+R223:226 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R214:220 nameless.DBFullReductionStructure <> full_SN def
+R222:222 nameless.DBBetaExpansion <> a:3 var
+R242:245 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R227:227 nameless.DBBetaExpansion <> R:1 var
+R230:234 nameless.DBSyntax <> subst def
+R240:240 nameless.DBBetaExpansion <> b:2 var
+R236:236 nameless.DBBetaExpansion <> a:3 var
+R246:246 nameless.DBBetaExpansion <> R:1 var
+R249:252 nameless.DBSyntax <> TApp constr
+R263:263 nameless.DBBetaExpansion <> a:3 var
+R255:258 nameless.DBSyntax <> TLam constr
+R260:260 nameless.DBBetaExpansion <> b:2 var
+R401:417 nameless.DBFullReducibility Full candidate_neutral proj
+R431:431 Corelib.Init.Logic <> I constr
+R401:417 nameless.DBFullReducibility Full candidate_neutral proj
+R431:431 Corelib.Init.Logic <> I constr
+R481:489 nameless.DBCore <> root_step def
+R556:564 nameless.DBCore <> reduction ind
+R567:570 nameless.DBSyntax <> TLam constr
+R556:564 nameless.DBCore <> reduction ind
+R567:570 nameless.DBSyntax <> TLam constr
+R654:666 nameless.DBParallelBase <> subst_eta_app thm
+R654:666 nameless.DBParallelBase <> subst_eta_app thm
+R654:666 nameless.DBParallelBase <> subst_eta_app thm
+R747:763 nameless.DBFullReducibility Full candidate_reducts thm
+R782:802 nameless.DBFullReducibility Full reductions_substitute thm
+R747:763 nameless.DBFullReducibility Full candidate_reducts thm
+R782:802 nameless.DBFullReducibility Full reductions_substitute thm
+R874:890 nameless.DBFullReducibility Full candidate_reducts thm
+R909:932 nameless.DBSemanticTypes <> reduction_subst_argument thm
+R874:890 nameless.DBFullReducibility Full candidate_reducts thm
+R909:932 nameless.DBSemanticTypes <> reduction_subst_argument thm
+R985:1008 nameless.DBBetaExpansion <> candidate_beta_expansion thm
+prf 1020:1053 <> dependent_double_lambda_computable
+binder 1064:1064 <> A:4
+binder 1066:1066 <> B:5
+binder 1068:1068 <> C:6
+R1084:1087 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1073:1081 nameless.DBFullReducibility Full candidate rec
+R1083:1083 nameless.DBBetaExpansion <> A:4 var
+R1088:1088 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1121:1127 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1096:1096 <> i:7
+R1102:1105 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1099:1099 nameless.DBBetaExpansion <> A:4 var
+R1101:1101 nameless.DBBetaExpansion <> i:7 var
+R1106:1114 nameless.DBFullReducibility Full candidate rec
+R1117:1117 nameless.DBBetaExpansion <> B:5 var
+R1119:1119 nameless.DBBetaExpansion <> i:7 var
+R1128:1128 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1174:1180 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1136:1136 <> i:8
+binder 1138:1138 <> x:9
+R1144:1147 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1141:1141 nameless.DBBetaExpansion <> A:4 var
+R1143:1143 nameless.DBBetaExpansion <> i:8 var
+R1153:1156 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1148:1148 nameless.DBBetaExpansion <> B:5 var
+R1150:1150 nameless.DBBetaExpansion <> i:8 var
+R1152:1152 nameless.DBBetaExpansion <> x:9 var
+R1157:1165 nameless.DBFullReducibility Full candidate rec
+R1168:1168 nameless.DBBetaExpansion <> C:6 var
+R1170:1170 nameless.DBBetaExpansion <> i:8 var
+R1172:1172 nameless.DBBetaExpansion <> x:9 var
+R1181:1181 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1224:1230 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1189:1189 <> i:10
+R1195:1198 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1192:1192 nameless.DBBetaExpansion <> A:4 var
+R1194:1194 nameless.DBBetaExpansion <> i:10 var
+R1199:1211 nameless.DBFullReducibility Full stable_family def
+R1214:1214 nameless.DBBetaExpansion <> B:5 var
+R1216:1216 nameless.DBBetaExpansion <> i:10 var
+R1220:1220 nameless.DBBetaExpansion <> C:6 var
+R1222:1222 nameless.DBBetaExpansion <> i:10 var
+binder 1238:1241 <> body:11
+R1246:1246 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1309:1315 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1254:1254 <> i:12
+binder 1256:1256 <> x:13
+R1262:1265 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1259:1259 nameless.DBBetaExpansion <> A:4 var
+R1261:1261 nameless.DBBetaExpansion <> i:12 var
+R1271:1274 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1266:1266 nameless.DBBetaExpansion <> B:5 var
+R1268:1268 nameless.DBBetaExpansion <> i:12 var
+R1270:1270 nameless.DBBetaExpansion <> x:13 var
+R1275:1275 nameless.DBBetaExpansion <> C:6 var
+R1277:1277 nameless.DBBetaExpansion <> i:12 var
+R1279:1279 nameless.DBBetaExpansion <> x:13 var
+R1282:1286 nameless.DBSyntax <> subst def
+R1293:1297 nameless.DBSyntax <> subst def
+R1303:1306 nameless.DBBetaExpansion <> body:11 var
+R1299:1299 nameless.DBBetaExpansion <> i:12 var
+R1288:1288 nameless.DBBetaExpansion <> x:13 var
+R1342:1347 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1316:1322 nameless.DBFullReductionStructure <> full_SN def
+R1325:1328 nameless.DBSyntax <> TLam constr
+R1331:1334 nameless.DBSyntax <> TLam constr
+R1336:1339 nameless.DBBetaExpansion <> body:11 var
+binder 1355:1355 <> i:14
+binder 1357:1357 <> x:15
+R1363:1366 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1360:1360 nameless.DBBetaExpansion <> A:4 var
+R1362:1362 nameless.DBBetaExpansion <> i:14 var
+R1372:1375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1367:1367 nameless.DBBetaExpansion <> B:5 var
+R1369:1369 nameless.DBBetaExpansion <> i:14 var
+R1371:1371 nameless.DBBetaExpansion <> x:15 var
+R1376:1376 nameless.DBBetaExpansion <> C:6 var
+R1378:1378 nameless.DBBetaExpansion <> i:14 var
+R1380:1380 nameless.DBBetaExpansion <> x:15 var
+R1383:1386 nameless.DBSyntax <> TApp constr
+R1416:1416 nameless.DBBetaExpansion <> x:15 var
+R1389:1392 nameless.DBSyntax <> TApp constr
+R1413:1413 nameless.DBBetaExpansion <> i:14 var
+R1395:1398 nameless.DBSyntax <> TLam constr
+R1401:1404 nameless.DBSyntax <> TLam constr
+R1406:1409 nameless.DBBetaExpansion <> body:11 var
+binder 1485:1485 <> i:16
+R1491:1494 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1490:1490 nameless.DBBetaExpansion <> i:16 var
+R1495:1512 nameless.DBFullReducibility Full dependent_function def
+R1517:1517 nameless.DBBetaExpansion <> i:16 var
+R1523:1523 nameless.DBBetaExpansion <> i:16 var
+R1527:1530 nameless.DBSyntax <> TLam constr
+R1533:1537 nameless.DBSyntax <> subst def
+R1539:1539 nameless.DBBetaExpansion <> i:16 var
+binder 1485:1485 <> i:17
+R1491:1494 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1490:1490 nameless.DBBetaExpansion <> i:17 var
+R1495:1512 nameless.DBFullReducibility Full dependent_function def
+R1517:1517 nameless.DBBetaExpansion <> i:17 var
+R1523:1523 nameless.DBBetaExpansion <> i:17 var
+R1527:1530 nameless.DBSyntax <> TLam constr
+R1533:1537 nameless.DBSyntax <> subst def
+R1539:1539 nameless.DBBetaExpansion <> i:17 var
+R1575:1601 nameless.DBFullReducibility Full dependent_lambda_computable thm
+R1575:1601 nameless.DBFullReducibility Full dependent_lambda_computable thm
+R1735:1752 nameless.DBFullReducibility Full candidate_variable thm
+R1735:1752 nameless.DBFullReducibility Full candidate_variable thm
+R1786:1792 nameless.DBFullReductionStructure <> full_SN def
+R1795:1798 nameless.DBSyntax <> TLam constr
+R1786:1792 nameless.DBFullReductionStructure <> full_SN def
+R1795:1798 nameless.DBSyntax <> TLam constr
+R1819:1842 nameless.DBFullReductionStructure <> full_SN_subst_reflection thm
+R1845:1848 nameless.DBSyntax <> TLam constr
+R1857:1860 nameless.DBSyntax <> TVar constr
+R1868:1872 Corelib.Init.Logic <> proj1 thm
+R1819:1842 nameless.DBFullReductionStructure <> full_SN_subst_reflection thm
+R1845:1848 nameless.DBSyntax <> TLam constr
+R1857:1860 nameless.DBSyntax <> TVar constr
+R1868:1872 Corelib.Init.Logic <> proj1 thm
+R1911:1928 nameless.DBFullReducibility Full normalizing_lambda thm
+R1911:1928 nameless.DBFullReducibility Full normalizing_lambda thm
+R1968:1985 nameless.DBFullReducibility Full dependent_function def
+R2000:2003 nameless.DBSyntax <> TApp constr
+R2006:2009 nameless.DBSyntax <> TLam constr
+R2012:2015 nameless.DBSyntax <> TLam constr
+R1968:1985 nameless.DBFullReducibility Full dependent_function def
+R2000:2003 nameless.DBSyntax <> TApp constr
+R2006:2009 nameless.DBSyntax <> TLam constr
+R2012:2015 nameless.DBSyntax <> TLam constr
+R2039:2062 nameless.DBBetaExpansion <> candidate_beta_expansion thm
+R2078:2105 nameless.DBFullReducibility Full dependent_function_candidate thm
+R2199:2219 nameless.DBFullReducibility Full candidate_normalizing proj
+R2039:2062 nameless.DBBetaExpansion <> candidate_beta_expansion thm
+R2078:2105 nameless.DBFullReducibility Full dependent_function_candidate thm
+R2199:2219 nameless.DBFullReducibility Full candidate_normalizing proj
+R2257:2261 Corelib.Init.Logic <> proj2 thm
+R2257:2261 Corelib.Init.Logic <> proj2 thm
+R2297:2330 nameless.DBBetaExpansion <> dependent_double_lambda_computable thm

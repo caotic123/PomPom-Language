@@ -1,0 +1,599 @@
+DIGEST 6c6165775737bfc45c6b096e8c325d85
+Fnameless.DBSemanticFundamental
+R103:106 Stdlib.Lists.List <> <> lib
+R108:112 Stdlib.Arith.Arith <> <> lib
+R114:116 Stdlib.micromega.Lia <> <> lib
+R134:161 nameless.DBSemanticCloseCase <> <> lib
+R171:183 Stdlib.Lists.List ListNotations <> mod
+R185:188 nameless.DBFullReducibility Full <> mod
+prf 198:219 <> instantiate_lift_three
+binder 230:230 <> t:1
+binder 232:234 <> rho:2
+binder 236:236 <> k:3
+R283:285 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R241:251 nameless.DBSemanticSubstitution <> instantiate def
+R253:255 nameless.DBSemanticFundamental <> rho:2 var
+R258:258 Corelib.Init.Datatypes <> S constr
+R261:261 Corelib.Init.Datatypes <> S constr
+R264:264 Corelib.Init.Datatypes <> S constr
+R266:266 nameless.DBSemanticFundamental <> k:3 var
+R272:275 nameless.DBSyntax <> lift def
+R281:281 nameless.DBSemanticFundamental <> t:1 var
+R286:289 nameless.DBSyntax <> lift def
+R296:306 nameless.DBSemanticSubstitution <> instantiate def
+R308:310 nameless.DBSemanticFundamental <> rho:2 var
+R312:312 nameless.DBSemanticFundamental <> k:3 var
+R314:314 nameless.DBSemanticFundamental <> t:1 var
+R340:355 nameless.DBSemanticSubstitution <> instantiate_lift thm
+R340:355 nameless.DBSemanticSubstitution <> instantiate_lift thm
+prf 393:413 <> instantiate_lift_four
+binder 424:424 <> t:4
+binder 426:428 <> rho:5
+binder 430:430 <> k:6
+R481:483 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R435:445 nameless.DBSemanticSubstitution <> instantiate def
+R447:449 nameless.DBSemanticFundamental <> rho:5 var
+R452:452 Corelib.Init.Datatypes <> S constr
+R455:455 Corelib.Init.Datatypes <> S constr
+R458:458 Corelib.Init.Datatypes <> S constr
+R461:461 Corelib.Init.Datatypes <> S constr
+R463:463 nameless.DBSemanticFundamental <> k:6 var
+R470:473 nameless.DBSyntax <> lift def
+R479:479 nameless.DBSemanticFundamental <> t:4 var
+R484:487 nameless.DBSyntax <> lift def
+R494:504 nameless.DBSemanticSubstitution <> instantiate def
+R506:508 nameless.DBSemanticFundamental <> rho:5 var
+R510:510 nameless.DBSemanticFundamental <> k:6 var
+R512:512 nameless.DBSemanticFundamental <> t:4 var
+R538:553 nameless.DBSemanticSubstitution <> instantiate_lift thm
+R538:553 nameless.DBSemanticSubstitution <> instantiate_lift thm
+R652:662 nameless.DBSemanticSubstitution <> instantiate def
+R664:668 nameless.DBSyntax <> arrow def
+R670:672 nameless.DBSyntax <> Def def
+R674:679 nameless.DBSyntax <> Family def
+R681:687 nameless.DBSyntax <> CloseAt def
+R689:692 nameless.DBSyntax <> MuAt def
+R694:700 nameless.DBSyntax <> carrier def
+R702:708 nameless.DBSyntax <> payload def
+R710:714 nameless.DBSyntax <> total def
+R716:721 nameless.DBSyntax <> motive def
+R727:742 nameless.DBSyntax <> recursive_method def
+R744:760 nameless.DBSyntax <> close_case_method def
+R762:773 nameless.DBSyntax <> close_motive def
+R775:789 nameless.DBSyntax <> diagonal_motive def
+R791:806 nameless.DBSyntax <> close_ind_method def
+R808:820 nameless.DBSyntax <> mu_ind_method def
+R837:856 nameless.DBSemanticSubstitution <> instantiate_lift_one thm
+R860:879 nameless.DBSemanticSubstitution <> instantiate_lift_two thm
+R883:904 nameless.DBSemanticFundamental <> instantiate_lift_three thm
+R908:928 nameless.DBSemanticFundamental <> instantiate_lift_four thm
+prf 955:971 <> instantiate_arrow
+binder 982:984 <> rho:7
+binder 986:986 <> k:8
+binder 988:988 <> A:9
+binder 990:990 <> B:10
+R1024:1026 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R995:1005 nameless.DBSemanticSubstitution <> instantiate def
+R1007:1009 nameless.DBSemanticFundamental <> rho:7 var
+R1011:1011 nameless.DBSemanticFundamental <> k:8 var
+R1014:1018 nameless.DBSyntax <> arrow def
+R1022:1022 nameless.DBSemanticFundamental <> B:10 var
+R1020:1020 nameless.DBSemanticFundamental <> A:9 var
+R1027:1031 nameless.DBSyntax <> arrow def
+R1056:1066 nameless.DBSemanticSubstitution <> instantiate def
+R1068:1070 nameless.DBSemanticFundamental <> rho:7 var
+R1072:1072 nameless.DBSemanticFundamental <> k:8 var
+R1074:1074 nameless.DBSemanticFundamental <> B:10 var
+R1034:1044 nameless.DBSemanticSubstitution <> instantiate def
+R1046:1048 nameless.DBSemanticFundamental <> rho:7 var
+R1050:1050 nameless.DBSemanticFundamental <> k:8 var
+R1052:1052 nameless.DBSemanticFundamental <> A:9 var
+prf 1124:1138 <> instantiate_Def
+binder 1149:1151 <> rho:11
+binder 1153:1153 <> k:12
+binder 1155:1156 <> IT:13
+R1185:1187 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1159:1169 nameless.DBSemanticSubstitution <> instantiate def
+R1171:1173 nameless.DBSemanticFundamental <> rho:11 var
+R1175:1175 nameless.DBSemanticFundamental <> k:12 var
+R1178:1180 nameless.DBSyntax <> Def def
+R1182:1183 nameless.DBSemanticFundamental <> IT:13 var
+R1188:1190 nameless.DBSyntax <> Def def
+R1193:1203 nameless.DBSemanticSubstitution <> instantiate def
+R1205:1207 nameless.DBSemanticFundamental <> rho:11 var
+R1209:1209 nameless.DBSemanticFundamental <> k:12 var
+R1211:1212 nameless.DBSemanticFundamental <> IT:13 var
+prf 1262:1279 <> instantiate_Family
+binder 1290:1292 <> rho:14
+binder 1294:1294 <> k:15
+binder 1296:1297 <> IT:16
+R1329:1331 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1300:1310 nameless.DBSemanticSubstitution <> instantiate def
+R1312:1314 nameless.DBSemanticFundamental <> rho:14 var
+R1316:1316 nameless.DBSemanticFundamental <> k:15 var
+R1319:1324 nameless.DBSyntax <> Family def
+R1326:1327 nameless.DBSemanticFundamental <> IT:16 var
+R1332:1337 nameless.DBSyntax <> Family def
+R1340:1350 nameless.DBSemanticSubstitution <> instantiate def
+R1352:1354 nameless.DBSemanticFundamental <> rho:14 var
+R1356:1356 nameless.DBSemanticFundamental <> k:15 var
+R1358:1359 nameless.DBSemanticFundamental <> IT:16 var
+prf 1409:1427 <> instantiate_CloseAt
+binder 1438:1440 <> rho:17
+binder 1442:1442 <> k:18
+binder 1444:1445 <> IT:19
+binder 1447:1447 <> D:20
+binder 1449:1449 <> G:21
+binder 1451:1451 <> i:22
+R1492:1494 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1456:1466 nameless.DBSemanticSubstitution <> instantiate def
+R1468:1470 nameless.DBSemanticFundamental <> rho:17 var
+R1472:1472 nameless.DBSemanticFundamental <> k:18 var
+R1475:1481 nameless.DBSyntax <> CloseAt def
+R1490:1490 nameless.DBSemanticFundamental <> i:22 var
+R1488:1488 nameless.DBSemanticFundamental <> G:21 var
+R1486:1486 nameless.DBSemanticFundamental <> D:20 var
+R1483:1484 nameless.DBSemanticFundamental <> IT:19 var
+R1495:1501 nameless.DBSyntax <> CloseAt def
+R1571:1581 nameless.DBSemanticSubstitution <> instantiate def
+R1583:1585 nameless.DBSemanticFundamental <> rho:17 var
+R1587:1587 nameless.DBSemanticFundamental <> k:18 var
+R1589:1589 nameless.DBSemanticFundamental <> i:22 var
+R1549:1559 nameless.DBSemanticSubstitution <> instantiate def
+R1561:1563 nameless.DBSemanticFundamental <> rho:17 var
+R1565:1565 nameless.DBSemanticFundamental <> k:18 var
+R1567:1567 nameless.DBSemanticFundamental <> G:21 var
+R1527:1537 nameless.DBSemanticSubstitution <> instantiate def
+R1539:1541 nameless.DBSemanticFundamental <> rho:17 var
+R1543:1543 nameless.DBSemanticFundamental <> k:18 var
+R1545:1545 nameless.DBSemanticFundamental <> D:20 var
+R1504:1514 nameless.DBSemanticSubstitution <> instantiate def
+R1516:1518 nameless.DBSemanticFundamental <> rho:17 var
+R1520:1520 nameless.DBSemanticFundamental <> k:18 var
+R1522:1523 nameless.DBSemanticFundamental <> IT:19 var
+prf 1639:1654 <> instantiate_MuAt
+binder 1665:1667 <> rho:23
+binder 1669:1669 <> k:24
+binder 1671:1672 <> IT:25
+binder 1674:1674 <> D:26
+binder 1676:1676 <> i:27
+R1712:1714 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1681:1691 nameless.DBSemanticSubstitution <> instantiate def
+R1693:1695 nameless.DBSemanticFundamental <> rho:23 var
+R1697:1697 nameless.DBSemanticFundamental <> k:24 var
+R1700:1703 nameless.DBSyntax <> MuAt def
+R1710:1710 nameless.DBSemanticFundamental <> i:27 var
+R1708:1708 nameless.DBSemanticFundamental <> D:26 var
+R1705:1706 nameless.DBSemanticFundamental <> IT:25 var
+R1715:1718 nameless.DBSyntax <> MuAt def
+R1766:1776 nameless.DBSemanticSubstitution <> instantiate def
+R1778:1780 nameless.DBSemanticFundamental <> rho:23 var
+R1782:1782 nameless.DBSemanticFundamental <> k:24 var
+R1784:1784 nameless.DBSemanticFundamental <> i:27 var
+R1744:1754 nameless.DBSemanticSubstitution <> instantiate def
+R1756:1758 nameless.DBSemanticFundamental <> rho:23 var
+R1760:1760 nameless.DBSemanticFundamental <> k:24 var
+R1762:1762 nameless.DBSemanticFundamental <> D:26 var
+R1721:1731 nameless.DBSemanticSubstitution <> instantiate def
+R1733:1735 nameless.DBSemanticFundamental <> rho:23 var
+R1737:1737 nameless.DBSemanticFundamental <> k:24 var
+R1739:1740 nameless.DBSemanticFundamental <> IT:25 var
+prf 1834:1852 <> instantiate_payload
+binder 1863:1865 <> rho:28
+binder 1867:1867 <> k:29
+binder 1869:1870 <> IT:30
+binder 1872:1872 <> D:31
+binder 1874:1874 <> G:32
+binder 1876:1876 <> i:33
+R1917:1919 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1881:1891 nameless.DBSemanticSubstitution <> instantiate def
+R1893:1895 nameless.DBSemanticFundamental <> rho:28 var
+R1897:1897 nameless.DBSemanticFundamental <> k:29 var
+R1900:1906 nameless.DBSyntax <> payload def
+R1915:1915 nameless.DBSemanticFundamental <> i:33 var
+R1913:1913 nameless.DBSemanticFundamental <> G:32 var
+R1911:1911 nameless.DBSemanticFundamental <> D:31 var
+R1908:1909 nameless.DBSemanticFundamental <> IT:30 var
+R1920:1926 nameless.DBSyntax <> payload def
+R1996:2006 nameless.DBSemanticSubstitution <> instantiate def
+R2008:2010 nameless.DBSemanticFundamental <> rho:28 var
+R2012:2012 nameless.DBSemanticFundamental <> k:29 var
+R2014:2014 nameless.DBSemanticFundamental <> i:33 var
+R1974:1984 nameless.DBSemanticSubstitution <> instantiate def
+R1986:1988 nameless.DBSemanticFundamental <> rho:28 var
+R1990:1990 nameless.DBSemanticFundamental <> k:29 var
+R1992:1992 nameless.DBSemanticFundamental <> G:32 var
+R1952:1962 nameless.DBSemanticSubstitution <> instantiate def
+R1964:1966 nameless.DBSemanticFundamental <> rho:28 var
+R1968:1968 nameless.DBSemanticFundamental <> k:29 var
+R1970:1970 nameless.DBSemanticFundamental <> D:31 var
+R1929:1939 nameless.DBSemanticSubstitution <> instantiate def
+R1941:1943 nameless.DBSemanticFundamental <> rho:28 var
+R1945:1945 nameless.DBSemanticFundamental <> k:29 var
+R1947:1948 nameless.DBSemanticFundamental <> IT:30 var
+prf 2064:2081 <> instantiate_motive
+binder 2092:2094 <> rho:34
+binder 2096:2096 <> k:35
+binder 2098:2099 <> IT:36
+binder 2101:2101 <> X:37
+R2137:2139 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2106:2116 nameless.DBSemanticSubstitution <> instantiate def
+R2118:2120 nameless.DBSemanticFundamental <> rho:34 var
+R2122:2122 nameless.DBSemanticFundamental <> k:35 var
+R2125:2130 nameless.DBSyntax <> motive def
+R2135:2135 nameless.DBSemanticFundamental <> X:37 var
+R2132:2133 nameless.DBSemanticFundamental <> IT:36 var
+R2140:2145 nameless.DBSyntax <> motive def
+R2171:2181 nameless.DBSemanticSubstitution <> instantiate def
+R2183:2185 nameless.DBSemanticFundamental <> rho:34 var
+R2187:2187 nameless.DBSemanticFundamental <> k:35 var
+R2189:2189 nameless.DBSemanticFundamental <> X:37 var
+R2148:2158 nameless.DBSemanticSubstitution <> instantiate def
+R2160:2162 nameless.DBSemanticFundamental <> rho:34 var
+R2164:2164 nameless.DBSemanticFundamental <> k:35 var
+R2166:2167 nameless.DBSemanticFundamental <> IT:36 var
+prf 2239:2266 <> instantiate_recursive_method
+binder 2277:2279 <> rho:38
+binder 2281:2281 <> k:39
+binder 2283:2284 <> IT:40
+binder 2286:2286 <> X:41
+binder 2288:2288 <> P:42
+R2336:2338 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2293:2303 nameless.DBSemanticSubstitution <> instantiate def
+R2305:2307 nameless.DBSemanticFundamental <> rho:38 var
+R2309:2309 nameless.DBSemanticFundamental <> k:39 var
+R2312:2327 nameless.DBSyntax <> recursive_method def
+R2334:2334 nameless.DBSemanticFundamental <> P:42 var
+R2332:2332 nameless.DBSemanticFundamental <> X:41 var
+R2329:2330 nameless.DBSemanticFundamental <> IT:40 var
+R2339:2354 nameless.DBSyntax <> recursive_method def
+R2402:2412 nameless.DBSemanticSubstitution <> instantiate def
+R2414:2416 nameless.DBSemanticFundamental <> rho:38 var
+R2418:2418 nameless.DBSemanticFundamental <> k:39 var
+R2420:2420 nameless.DBSemanticFundamental <> P:42 var
+R2380:2390 nameless.DBSemanticSubstitution <> instantiate def
+R2392:2394 nameless.DBSemanticFundamental <> rho:38 var
+R2396:2396 nameless.DBSemanticFundamental <> k:39 var
+R2398:2398 nameless.DBSemanticFundamental <> X:41 var
+R2357:2367 nameless.DBSemanticSubstitution <> instantiate def
+R2369:2371 nameless.DBSemanticFundamental <> rho:38 var
+R2373:2373 nameless.DBSemanticFundamental <> k:39 var
+R2375:2376 nameless.DBSemanticFundamental <> IT:40 var
+prf 2470:2498 <> instantiate_close_case_method
+binder 2509:2511 <> rho:43
+binder 2513:2513 <> k:44
+binder 2515:2516 <> IT:45
+binder 2518:2518 <> D:46
+binder 2520:2520 <> G:47
+binder 2522:2522 <> i:48
+binder 2524:2524 <> Q:49
+R2577:2583 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2529:2539 nameless.DBSemanticSubstitution <> instantiate def
+R2541:2543 nameless.DBSemanticFundamental <> rho:43 var
+R2545:2545 nameless.DBSemanticFundamental <> k:44 var
+R2548:2564 nameless.DBSyntax <> close_case_method def
+R2575:2575 nameless.DBSemanticFundamental <> Q:49 var
+R2573:2573 nameless.DBSemanticFundamental <> i:48 var
+R2571:2571 nameless.DBSemanticFundamental <> G:47 var
+R2569:2569 nameless.DBSemanticFundamental <> D:46 var
+R2566:2567 nameless.DBSemanticFundamental <> IT:45 var
+R2584:2600 nameless.DBSyntax <> close_case_method def
+R2692:2702 nameless.DBSemanticSubstitution <> instantiate def
+R2704:2706 nameless.DBSemanticFundamental <> rho:43 var
+R2708:2708 nameless.DBSemanticFundamental <> k:44 var
+R2710:2710 nameless.DBSemanticFundamental <> Q:49 var
+R2670:2680 nameless.DBSemanticSubstitution <> instantiate def
+R2682:2684 nameless.DBSemanticFundamental <> rho:43 var
+R2686:2686 nameless.DBSemanticFundamental <> k:44 var
+R2688:2688 nameless.DBSemanticFundamental <> i:48 var
+R2648:2658 nameless.DBSemanticSubstitution <> instantiate def
+R2660:2662 nameless.DBSemanticFundamental <> rho:43 var
+R2664:2664 nameless.DBSemanticFundamental <> k:44 var
+R2666:2666 nameless.DBSemanticFundamental <> G:47 var
+R2626:2636 nameless.DBSemanticSubstitution <> instantiate def
+R2638:2640 nameless.DBSemanticFundamental <> rho:43 var
+R2642:2642 nameless.DBSemanticFundamental <> k:44 var
+R2644:2644 nameless.DBSemanticFundamental <> D:46 var
+R2603:2613 nameless.DBSemanticSubstitution <> instantiate def
+R2615:2617 nameless.DBSemanticFundamental <> rho:43 var
+R2619:2619 nameless.DBSemanticFundamental <> k:44 var
+R2621:2622 nameless.DBSemanticFundamental <> IT:45 var
+prf 2760:2783 <> instantiate_close_motive
+binder 2794:2796 <> rho:50
+binder 2798:2798 <> k:51
+binder 2800:2801 <> IT:52
+binder 2803:2803 <> G:53
+R2845:2847 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2808:2818 nameless.DBSemanticSubstitution <> instantiate def
+R2820:2822 nameless.DBSemanticFundamental <> rho:50 var
+R2824:2824 nameless.DBSemanticFundamental <> k:51 var
+R2827:2838 nameless.DBSyntax <> close_motive def
+R2843:2843 nameless.DBSemanticFundamental <> G:53 var
+R2840:2841 nameless.DBSemanticFundamental <> IT:52 var
+R2848:2859 nameless.DBSyntax <> close_motive def
+R2885:2895 nameless.DBSemanticSubstitution <> instantiate def
+R2897:2899 nameless.DBSemanticFundamental <> rho:50 var
+R2901:2901 nameless.DBSemanticFundamental <> k:51 var
+R2903:2903 nameless.DBSemanticFundamental <> G:53 var
+R2862:2872 nameless.DBSemanticSubstitution <> instantiate def
+R2874:2876 nameless.DBSemanticFundamental <> rho:50 var
+R2878:2878 nameless.DBSemanticFundamental <> k:51 var
+R2880:2881 nameless.DBSemanticFundamental <> IT:52 var
+prf 2953:2980 <> instantiate_close_ind_method
+binder 2991:2993 <> rho:54
+binder 2995:2995 <> k:55
+binder 2997:2998 <> IT:56
+binder 3000:3000 <> G:57
+binder 3002:3002 <> P:58
+R3050:3052 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3007:3017 nameless.DBSemanticSubstitution <> instantiate def
+R3019:3021 nameless.DBSemanticFundamental <> rho:54 var
+R3023:3023 nameless.DBSemanticFundamental <> k:55 var
+R3026:3041 nameless.DBSyntax <> close_ind_method def
+R3048:3048 nameless.DBSemanticFundamental <> P:58 var
+R3046:3046 nameless.DBSemanticFundamental <> G:57 var
+R3043:3044 nameless.DBSemanticFundamental <> IT:56 var
+R3053:3068 nameless.DBSyntax <> close_ind_method def
+R3116:3126 nameless.DBSemanticSubstitution <> instantiate def
+R3128:3130 nameless.DBSemanticFundamental <> rho:54 var
+R3132:3132 nameless.DBSemanticFundamental <> k:55 var
+R3134:3134 nameless.DBSemanticFundamental <> P:58 var
+R3094:3104 nameless.DBSemanticSubstitution <> instantiate def
+R3106:3108 nameless.DBSemanticFundamental <> rho:54 var
+R3110:3110 nameless.DBSemanticFundamental <> k:55 var
+R3112:3112 nameless.DBSemanticFundamental <> G:57 var
+R3071:3081 nameless.DBSemanticSubstitution <> instantiate def
+R3083:3085 nameless.DBSemanticFundamental <> rho:54 var
+R3087:3087 nameless.DBSemanticFundamental <> k:55 var
+R3089:3090 nameless.DBSemanticFundamental <> IT:56 var
+prf 3184:3208 <> instantiate_mu_ind_method
+binder 3219:3221 <> rho:59
+binder 3223:3223 <> k:60
+binder 3225:3226 <> IT:61
+binder 3228:3228 <> D:62
+binder 3230:3230 <> P:63
+R3275:3277 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3235:3245 nameless.DBSemanticSubstitution <> instantiate def
+R3247:3249 nameless.DBSemanticFundamental <> rho:59 var
+R3251:3251 nameless.DBSemanticFundamental <> k:60 var
+R3254:3266 nameless.DBSyntax <> mu_ind_method def
+R3273:3273 nameless.DBSemanticFundamental <> P:63 var
+R3271:3271 nameless.DBSemanticFundamental <> D:62 var
+R3268:3269 nameless.DBSemanticFundamental <> IT:61 var
+R3278:3290 nameless.DBSyntax <> mu_ind_method def
+R3338:3348 nameless.DBSemanticSubstitution <> instantiate def
+R3350:3352 nameless.DBSemanticFundamental <> rho:59 var
+R3354:3354 nameless.DBSemanticFundamental <> k:60 var
+R3356:3356 nameless.DBSemanticFundamental <> P:63 var
+R3316:3326 nameless.DBSemanticSubstitution <> instantiate def
+R3328:3330 nameless.DBSemanticFundamental <> rho:59 var
+R3332:3332 nameless.DBSemanticFundamental <> k:60 var
+R3334:3334 nameless.DBSemanticFundamental <> D:62 var
+R3293:3303 nameless.DBSemanticSubstitution <> instantiate def
+R3305:3307 nameless.DBSemanticFundamental <> rho:59 var
+R3309:3309 nameless.DBSemanticFundamental <> k:60 var
+R3311:3312 nameless.DBSemanticFundamental <> IT:61 var
+R3422:3438 nameless.DBSemanticFundamental <> instantiate_arrow thm
+R3440:3454 nameless.DBSemanticFundamental <> instantiate_Def thm
+R3456:3473 nameless.DBSemanticFundamental <> instantiate_Family thm
+R3475:3493 nameless.DBSemanticFundamental <> instantiate_CloseAt thm
+R3495:3510 nameless.DBSemanticFundamental <> instantiate_MuAt thm
+R3514:3532 nameless.DBSemanticFundamental <> instantiate_payload thm
+R3534:3551 nameless.DBSemanticFundamental <> instantiate_motive thm
+R3553:3580 nameless.DBSemanticFundamental <> instantiate_recursive_method thm
+R3582:3610 nameless.DBSemanticFundamental <> instantiate_close_case_method thm
+R3614:3637 nameless.DBSemanticFundamental <> instantiate_close_motive thm
+R3639:3666 nameless.DBSemanticFundamental <> instantiate_close_ind_method thm
+R3668:3692 nameless.DBSemanticFundamental <> instantiate_mu_ind_method thm
+R3694:3715 nameless.DBSemanticSubstitution <> instantiate_subst_zero thm
+prf 3740:3754 <> semantic_formed
+binder 3765:3765 <> A:64
+binder 3767:3767 <> k:65
+R3796:3799 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3770:3783 nameless.DBSemanticJudgments <> semantic_value def
+R3785:3785 nameless.DBSemanticFundamental <> A:64 var
+R3788:3792 nameless.DBSyntax <> TSort constr
+R3794:3794 nameless.DBSemanticFundamental <> k:65 var
+R3800:3812 nameless.DBSemanticJudgments <> semantic_type def
+R3814:3814 nameless.DBSemanticFundamental <> A:64 var
+R3858:3876 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R3858:3876 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R4520:4539 nameless.DBAllComputability <> small_type_canonical thm
+R4548:4566 nameless.DBSemanticFamilies <> small_semantic_type thm
+prf 4590:4609 <> semantic_fundamental
+binder 4620:4624 <> Gamma:66
+binder 4626:4626 <> t:67
+binder 4628:4628 <> A:68
+R4647:4652 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4631:4636 nameless.DBTyping <> typing ind
+R4638:4642 nameless.DBSemanticFundamental <> Gamma:66 var
+R4644:4644 nameless.DBSemanticFundamental <> t:67 var
+R4646:4646 nameless.DBSemanticFundamental <> A:68 var
+binder 4660:4662 <> rho:69
+R4695:4698 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4665:4684 nameless.DBSemanticSubstitution <> semantic_environment def
+R4686:4690 nameless.DBSemanticFundamental <> Gamma:66 var
+R4692:4694 nameless.DBSemanticFundamental <> rho:69 var
+R4699:4712 nameless.DBSemanticJudgments <> semantic_value def
+R4715:4725 nameless.DBSemanticSubstitution <> instantiate def
+R4727:4729 nameless.DBSemanticFundamental <> rho:69 var
+R4733:4733 nameless.DBSemanticFundamental <> t:67 var
+R4737:4747 nameless.DBSemanticSubstitution <> instantiate def
+R4749:4751 nameless.DBSemanticFundamental <> rho:69 var
+R4755:4755 nameless.DBSemanticFundamental <> A:68 var
+binder 4866:4868 <> rho:70
+R4898:4901 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4871:4890 nameless.DBSemanticSubstitution <> semantic_environment def
+R4895:4897 nameless.DBSemanticFundamental <> rho:70 var
+R4902:4915 nameless.DBSemanticJudgments <> semantic_value def
+binder 4866:4868 <> rho:71
+R4898:4901 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4871:4890 nameless.DBSemanticSubstitution <> semantic_environment def
+R4895:4897 nameless.DBSemanticFundamental <> rho:71 var
+R4902:4915 nameless.DBSemanticJudgments <> semantic_value def
+R4931:4950 nameless.DBSemanticSubstitution <> semantic_environment def
+R4931:4950 nameless.DBSemanticSubstitution <> semantic_environment def
+R5052:5062 nameless.DBSemanticSubstitution <> instantiate def
+R5083:5096 nameless.DBSemanticJudgments <> semantic_value def
+R5099:5109 nameless.DBSemanticSubstitution <> instantiate def
+R5118:5121 nameless.DBSyntax <> TVar constr
+R5128:5138 nameless.DBSemanticSubstitution <> instantiate def
+R5147:5150 nameless.DBSyntax <> lift def
+R5153:5153 Corelib.Init.Datatypes <> S constr
+R5083:5096 nameless.DBSemanticJudgments <> semantic_value def
+R5099:5109 nameless.DBSemanticSubstitution <> instantiate def
+R5118:5121 nameless.DBSyntax <> TVar constr
+R5128:5138 nameless.DBSemanticSubstitution <> instantiate def
+R5147:5150 nameless.DBSyntax <> lift def
+R5153:5153 Corelib.Init.Datatypes <> S constr
+R5177:5205 nameless.DBSemanticSubstitution <> semantic_environment_variable thm
+R5177:5205 nameless.DBSemanticSubstitution <> semantic_environment_variable thm
+R5233:5245 nameless.DBSemanticJudgments <> semantic_sort thm
+R5233:5245 nameless.DBSemanticJudgments <> semantic_sort thm
+R5260:5278 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5281:5291 nameless.DBSemanticJudgments <> semantic_pi thm
+R5305:5323 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5260:5278 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5281:5291 nameless.DBSemanticJudgments <> semantic_pi thm
+R5305:5323 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5351:5369 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5380:5400 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5351:5369 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5380:5400 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5380:5400 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5420:5446 nameless.DBSemanticSubstitution <> semantic_environment_extend thm
+R5420:5446 nameless.DBSemanticSubstitution <> semantic_environment_extend thm
+R5473:5491 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5494:5507 nameless.DBSemanticJudgments <> semantic_sigma thm
+R5521:5539 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5473:5491 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5494:5507 nameless.DBSemanticJudgments <> semantic_sigma thm
+R5521:5539 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5567:5585 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5596:5616 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5567:5585 nameless.DBSemanticJudgments <> semantic_value_sort thm
+R5596:5616 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5596:5616 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5636:5662 nameless.DBSemanticSubstitution <> semantic_environment_extend thm
+R5636:5662 nameless.DBSemanticSubstitution <> semantic_environment_extend thm
+R5689:5703 nameless.DBSemanticJudgments <> semantic_lambda thm
+R5689:5703 nameless.DBSemanticJudgments <> semantic_lambda thm
+R5756:5776 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5756:5776 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5756:5776 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5756:5776 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5756:5776 nameless.DBSemanticSubstitution <> instantiate_extension thm
+R5796:5822 nameless.DBSemanticSubstitution <> semantic_environment_extend thm
+R5796:5822 nameless.DBSemanticSubstitution <> semantic_environment_extend thm
+R5850:5869 nameless.DBSemanticJudgments <> semantic_application thm
+R5850:5869 nameless.DBSemanticJudgments <> semantic_application thm
+R5932:5944 nameless.DBSemanticJudgments <> semantic_pair thm
+R5932:5944 nameless.DBSemanticJudgments <> semantic_pair thm
+R6007:6018 nameless.DBSemanticJudgments <> semantic_fst thm
+R6007:6018 nameless.DBSemanticJudgments <> semantic_fst thm
+R6047:6058 nameless.DBSemanticJudgments <> semantic_snd thm
+R6047:6058 nameless.DBSemanticJudgments <> semantic_snd thm
+R6109:6133 nameless.DBSemanticJudgments <> semantic_value_conversion thm
+R6179:6200 nameless.DBSemanticSubstitution <> conversion_instantiate thm
+R6109:6133 nameless.DBSemanticJudgments <> semantic_value_conversion thm
+R6179:6200 nameless.DBSemanticSubstitution <> conversion_instantiate thm
+R6217:6235 nameless.DBSemanticJudgments <> semantic_cumulative thm
+R6217:6235 nameless.DBSemanticJudgments <> semantic_cumulative thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6327:6346 nameless.DBAllComputability <> small_type_canonical thm
+R6349:6367 nameless.DBSemanticFamilies <> small_semantic_type thm
+R6410:6437 nameless.DBSemanticVariance <> semantic_function_cumulative thm
+R6496:6518 nameless.DBSemanticSubstitution <> universe_le_instantiate thm
+R6410:6437 nameless.DBSemanticVariance <> semantic_function_cumulative thm
+R6496:6518 nameless.DBSemanticSubstitution <> universe_le_instantiate thm
+R6496:6518 nameless.DBSemanticSubstitution <> universe_le_instantiate thm
+prf 6537:6566 <> semantic_environment_inhabited
+binder 6577:6581 <> Gamma:72
+R6592:6597 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6584:6585 nameless.DBTyping <> wf ind
+R6587:6591 nameless.DBSemanticFundamental <> Gamma:72 var
+R6598:6604 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6608:6609 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6605:6607 <> rho:73
+R6610:6629 nameless.DBSemanticSubstitution <> semantic_environment def
+R6631:6635 nameless.DBSemanticFundamental <> Gamma:72 var
+R6637:6639 nameless.DBSemanticFundamental <> rho:73 var
+R6701:6704 nameless.DBSyntax <> TVar constr
+R6716:6741 nameless.DBSemanticSubstitution <> semantic_environment_empty thm
+R6701:6704 nameless.DBSyntax <> TVar constr
+R6716:6741 nameless.DBSemanticSubstitution <> semantic_environment_empty thm
+R6787:6805 nameless.DBSemanticSubstitution <> extend_substitution def
+R6808:6811 nameless.DBSyntax <> TVar constr
+R6828:6854 nameless.DBSemanticSubstitution <> semantic_environment_extend thm
+R6787:6805 nameless.DBSemanticSubstitution <> extend_substitution def
+R6808:6811 nameless.DBSyntax <> TVar constr
+R6828:6854 nameless.DBSemanticSubstitution <> semantic_environment_extend thm
+R6880:6896 nameless.DBSemanticJudgments <> semantic_variable thm
+R6906:6920 nameless.DBSemanticFundamental <> semantic_formed thm
+R6880:6896 nameless.DBSemanticJudgments <> semantic_variable thm
+R6906:6920 nameless.DBSemanticFundamental <> semantic_formed thm
+R6946:6965 nameless.DBSemanticFundamental <> semantic_fundamental thm
+R6946:6965 nameless.DBSemanticFundamental <> semantic_fundamental thm
+R7009:7028 nameless.DBSemanticFundamental <> semantic_fundamental thm
+R7049:7078 nameless.DBSemanticFundamental <> semantic_environment_inhabited thm
+prf 7090:7114 <> typing_full_normalization
+binder 7125:7129 <> Gamma:74
+binder 7131:7131 <> t:75
+binder 7133:7133 <> A:76
+R7152:7155 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7136:7141 nameless.DBTyping <> typing ind
+R7143:7147 nameless.DBSemanticFundamental <> Gamma:74 var
+R7149:7149 nameless.DBSemanticFundamental <> t:75 var
+R7151:7151 nameless.DBSemanticFundamental <> A:76 var
+R7156:7162 nameless.DBFullReductionStructure <> full_SN def
+R7164:7164 nameless.DBSemanticFundamental <> t:75 var
+R7209:7238 nameless.DBSemanticFundamental <> semantic_environment_inhabited thm
+R7243:7256 nameless.DBWeakening <> typing_context thm
+R7209:7238 nameless.DBSemanticFundamental <> semantic_environment_inhabited thm
+R7243:7256 nameless.DBWeakening <> typing_context thm
+R7291:7326 nameless.DBSemanticSubstitution <> instantiation_reflects_normalization thm
+R7291:7326 nameless.DBSemanticSubstitution <> instantiation_reflects_normalization thm
+R7347:7351 Corelib.Init.Logic <> proj1 thm
+R7354:7379 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R7386:7405 nameless.DBSemanticFundamental <> semantic_fundamental thm
+R7347:7351 Corelib.Init.Logic <> proj1 thm
+R7354:7379 nameless.DBSemanticJudgments <> semantic_value_normalizing thm
+R7386:7405 nameless.DBSemanticFundamental <> semantic_fundamental thm
+R7451:7475 nameless.DBSemanticFundamental <> typing_full_normalization thm

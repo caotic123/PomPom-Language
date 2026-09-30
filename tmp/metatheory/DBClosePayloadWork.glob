@@ -1,0 +1,317 @@
+DIGEST 33b5fba2c06bdad429ae330686b25249
+FDBClosePayloadWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:77 nameless.DBBeta <> <> lib
+R87:99 Stdlib.Lists.List ListNotations <> mod
+prf 109:126 <> reduction_close_at
+binder 137:138 <> IT:1
+binder 140:140 <> F:2
+binder 142:142 <> G:3
+binder 144:144 <> i:4
+binder 146:146 <> t:5
+R181:184 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R151:159 nameless.DBCore <> reduction ind
+R180:180 DBClosePayloadWork <> t:5 var
+R162:168 nameless.DBSyntax <> CloseAt def
+R177:177 DBClosePayloadWork <> i:4 var
+R175:175 DBClosePayloadWork <> G:3 var
+R173:173 DBClosePayloadWork <> F:2 var
+R170:171 DBClosePayloadWork <> IT:1 var
+R185:191 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R200:203 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 192:193 <> JT:6
+binder 195:195 <> H:7
+binder 197:197 <> K:8
+binder 199:199 <> j:9
+R224:227 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R205:207 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R204:204 DBClosePayloadWork <> t:5 var
+R208:214 nameless.DBSyntax <> CloseAt def
+R223:223 DBClosePayloadWork <> j:9 var
+R221:221 DBClosePayloadWork <> K:8 var
+R219:219 DBClosePayloadWork <> H:7 var
+R216:217 DBClosePayloadWork <> JT:6 var
+R247:250 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R228:230 nameless.DBParallelBase <> rtc ind
+R245:246 DBClosePayloadWork <> JT:6 var
+R242:243 DBClosePayloadWork <> IT:1 var
+R232:240 nameless.DBCore <> reduction ind
+R268:273 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R251:253 nameless.DBParallelBase <> rtc ind
+R267:267 DBClosePayloadWork <> H:7 var
+R265:265 DBClosePayloadWork <> F:2 var
+R255:263 nameless.DBCore <> reduction ind
+R291:294 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R274:276 nameless.DBParallelBase <> rtc ind
+R290:290 DBClosePayloadWork <> K:8 var
+R288:288 DBClosePayloadWork <> G:3 var
+R278:286 nameless.DBCore <> reduction ind
+R295:297 nameless.DBParallelBase <> rtc ind
+R311:311 DBClosePayloadWork <> j:9 var
+R309:309 DBClosePayloadWork <> i:4 var
+R299:307 nameless.DBCore <> reduction ind
+R352:358 nameless.DBSyntax <> CloseAt def
+R394:402 nameless.DBCore <> root_step def
+R460:468 nameless.DBCore <> reduction ind
+R471:476 nameless.DBSyntax <> TClose constr
+R460:468 nameless.DBCore <> reduction ind
+R471:476 nameless.DBSyntax <> TClose constr
+R524:532 nameless.DBCore <> root_step def
+R585:592 nameless.DBParallelBase <> rtc_refl constr
+R595:601 nameless.DBParallelBase <> rtc_one thm
+R585:592 nameless.DBParallelBase <> rtc_refl constr
+R585:592 nameless.DBParallelBase <> rtc_refl constr
+R585:592 nameless.DBParallelBase <> rtc_refl constr
+R585:592 nameless.DBParallelBase <> rtc_refl constr
+R595:601 nameless.DBParallelBase <> rtc_one thm
+R595:601 nameless.DBParallelBase <> rtc_one thm
+R595:601 nameless.DBParallelBase <> rtc_one thm
+R595:601 nameless.DBParallelBase <> rtc_one thm
+prf 616:631 <> reduces_close_at
+binder 642:643 <> IT:10
+binder 645:645 <> F:11
+binder 647:647 <> G:12
+binder 649:649 <> i:13
+binder 651:651 <> t:14
+R690:693 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R656:658 nameless.DBParallelBase <> rtc ind
+R689:689 DBClosePayloadWork <> t:14 var
+R671:677 nameless.DBSyntax <> CloseAt def
+R686:686 DBClosePayloadWork <> i:13 var
+R684:684 DBClosePayloadWork <> G:12 var
+R682:682 DBClosePayloadWork <> F:11 var
+R679:680 DBClosePayloadWork <> IT:10 var
+R660:668 nameless.DBCore <> reduction ind
+R694:700 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R709:712 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 701:702 <> JT:15
+binder 704:704 <> H:16
+binder 706:706 <> K:17
+binder 708:708 <> j:18
+R733:736 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R714:716 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R713:713 DBClosePayloadWork <> t:14 var
+R717:723 nameless.DBSyntax <> CloseAt def
+R732:732 DBClosePayloadWork <> j:18 var
+R730:730 DBClosePayloadWork <> K:17 var
+R728:728 DBClosePayloadWork <> H:16 var
+R725:726 DBClosePayloadWork <> JT:15 var
+R756:759 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R737:739 nameless.DBParallelBase <> rtc ind
+R754:755 DBClosePayloadWork <> JT:15 var
+R751:752 DBClosePayloadWork <> IT:10 var
+R741:749 nameless.DBCore <> reduction ind
+R777:782 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R760:762 nameless.DBParallelBase <> rtc ind
+R776:776 DBClosePayloadWork <> H:16 var
+R774:774 DBClosePayloadWork <> F:11 var
+R764:772 nameless.DBCore <> reduction ind
+R800:803 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R783:785 nameless.DBParallelBase <> rtc ind
+R799:799 DBClosePayloadWork <> K:17 var
+R797:797 DBClosePayloadWork <> G:12 var
+R787:795 nameless.DBCore <> reduction ind
+R804:806 nameless.DBParallelBase <> rtc ind
+R820:820 DBClosePayloadWork <> j:18 var
+R818:818 DBClosePayloadWork <> i:13 var
+R808:816 nameless.DBCore <> reduction ind
+R864:870 nameless.DBSyntax <> CloseAt def
+R864:870 nameless.DBSyntax <> CloseAt def
+R1019:1036 DBClosePayloadWork <> reduction_close_at thm
+R1019:1036 DBClosePayloadWork <> reduction_close_at thm
+R1122:1128 Corelib.Init.Logic <> eq_refl constr
+R1122:1128 Corelib.Init.Logic <> eq_refl constr
+R1226:1234 nameless.DBParallelBase <> rtc_trans thm
+R1226:1234 nameless.DBParallelBase <> rtc_trans thm
+R1226:1234 nameless.DBParallelBase <> rtc_trans thm
+R1226:1234 nameless.DBParallelBase <> rtc_trans thm
+R1226:1234 nameless.DBParallelBase <> rtc_trans thm
+prf 1249:1265 <> joined_conversion
+binder 1276:1276 <> a:19
+binder 1278:1278 <> b:20
+binder 1280:1280 <> w:21
+R1302:1305 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1285:1287 nameless.DBParallelBase <> rtc ind
+R1301:1301 DBClosePayloadWork <> w:21 var
+R1299:1299 DBClosePayloadWork <> a:19 var
+R1289:1297 nameless.DBCore <> reduction ind
+R1323:1326 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1306:1308 nameless.DBParallelBase <> rtc ind
+R1322:1322 DBClosePayloadWork <> w:21 var
+R1320:1320 DBClosePayloadWork <> b:20 var
+R1310:1318 nameless.DBCore <> reduction ind
+R1327:1330 nameless.DBCore <> conv ind
+R1334:1334 DBClosePayloadWork <> b:20 var
+R1332:1332 DBClosePayloadWork <> a:19 var
+R1359:1366 nameless.DBCore <> cv_trans constr
+R1377:1397 nameless.DBWeakening <> reductions_conversion thm
+R1417:1422 nameless.DBCore <> cv_sym constr
+R1431:1451 nameless.DBWeakening <> reductions_conversion thm
+R1359:1366 nameless.DBCore <> cv_trans constr
+R1377:1397 nameless.DBWeakening <> reductions_conversion thm
+R1417:1422 nameless.DBCore <> cv_sym constr
+R1431:1451 nameless.DBWeakening <> reductions_conversion thm
+prf 1479:1497 <> conversion_close_at
+binder 1508:1509 <> IT:22
+binder 1511:1511 <> F:23
+binder 1513:1513 <> G:24
+binder 1515:1515 <> i:25
+binder 1517:1518 <> JT:26
+binder 1520:1520 <> H:27
+binder 1522:1522 <> K:28
+binder 1524:1524 <> j:29
+R1571:1576 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1529:1532 nameless.DBCore <> conv ind
+R1554:1560 nameless.DBSyntax <> CloseAt def
+R1569:1569 DBClosePayloadWork <> j:29 var
+R1567:1567 DBClosePayloadWork <> K:28 var
+R1565:1565 DBClosePayloadWork <> H:27 var
+R1562:1563 DBClosePayloadWork <> JT:26 var
+R1535:1541 nameless.DBSyntax <> CloseAt def
+R1550:1550 DBClosePayloadWork <> i:25 var
+R1548:1548 DBClosePayloadWork <> G:24 var
+R1546:1546 DBClosePayloadWork <> F:23 var
+R1543:1544 DBClosePayloadWork <> IT:22 var
+R1587:1590 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1577:1580 nameless.DBCore <> conv ind
+R1585:1586 DBClosePayloadWork <> JT:26 var
+R1582:1583 DBClosePayloadWork <> IT:22 var
+R1599:1602 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1591:1594 nameless.DBCore <> conv ind
+R1598:1598 DBClosePayloadWork <> H:27 var
+R1596:1596 DBClosePayloadWork <> F:23 var
+R1611:1614 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1603:1606 nameless.DBCore <> conv ind
+R1610:1610 DBClosePayloadWork <> K:28 var
+R1608:1608 DBClosePayloadWork <> G:24 var
+R1615:1618 nameless.DBCore <> conv ind
+R1622:1622 DBClosePayloadWork <> j:29 var
+R1620:1620 DBClosePayloadWork <> i:25 var
+R1673:1691 nameless.DBConfluence <> conversion_joinable thm
+R1673:1691 nameless.DBConfluence <> conversion_joinable thm
+R1729:1744 DBClosePayloadWork <> reduces_close_at thm
+R1729:1744 DBClosePayloadWork <> reduces_close_at thm
+R1820:1835 DBClosePayloadWork <> reduces_close_at thm
+R1820:1835 DBClosePayloadWork <> reduces_close_at thm
+R1946:1962 DBClosePayloadWork <> joined_conversion thm
+R1946:1962 DBClosePayloadWork <> joined_conversion thm
+R1946:1962 DBClosePayloadWork <> joined_conversion thm
+R1946:1962 DBClosePayloadWork <> joined_conversion thm
+R1946:1962 DBClosePayloadWork <> joined_conversion thm
+prf 1977:1994 <> payload_conversion
+binder 2005:2006 <> IT:30
+binder 2008:2008 <> F:31
+binder 2010:2010 <> G:32
+binder 2012:2012 <> i:33
+binder 2014:2015 <> JT:34
+binder 2017:2017 <> H:35
+binder 2019:2019 <> K:36
+binder 2021:2021 <> j:37
+R2036:2039 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2026:2029 nameless.DBCore <> conv ind
+R2034:2035 DBClosePayloadWork <> JT:34 var
+R2031:2032 DBClosePayloadWork <> IT:30 var
+R2048:2051 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2040:2043 nameless.DBCore <> conv ind
+R2047:2047 DBClosePayloadWork <> H:35 var
+R2045:2045 DBClosePayloadWork <> F:31 var
+R2060:2063 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2052:2055 nameless.DBCore <> conv ind
+R2059:2059 DBClosePayloadWork <> K:36 var
+R2057:2057 DBClosePayloadWork <> G:32 var
+R2072:2077 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2064:2067 nameless.DBCore <> conv ind
+R2071:2071 DBClosePayloadWork <> j:37 var
+R2069:2069 DBClosePayloadWork <> i:33 var
+R2078:2081 nameless.DBCore <> conv ind
+R2103:2109 nameless.DBSyntax <> payload def
+R2118:2118 DBClosePayloadWork <> j:37 var
+R2116:2116 DBClosePayloadWork <> K:36 var
+R2114:2114 DBClosePayloadWork <> H:35 var
+R2111:2112 DBClosePayloadWork <> JT:34 var
+R2084:2090 nameless.DBSyntax <> payload def
+R2099:2099 DBClosePayloadWork <> i:33 var
+R2097:2097 DBClosePayloadWork <> G:32 var
+R2095:2095 DBClosePayloadWork <> F:31 var
+R2092:2093 DBClosePayloadWork <> IT:30 var
+R2146:2152 nameless.DBSyntax <> payload def
+R2155:2161 nameless.DBSyntax <> carrier def
+R2172:2184 nameless.DBCore <> cv_compatible constr
+R2187:2196 nameless.DBSyntax <> cp_TInterp constr
+R2210:2222 nameless.DBCore <> cv_compatible constr
+R2225:2234 nameless.DBSyntax <> compatible ind
+R2172:2184 nameless.DBCore <> cv_compatible constr
+R2187:2196 nameless.DBSyntax <> cp_TInterp constr
+R2210:2222 nameless.DBCore <> cv_compatible constr
+R2210:2222 nameless.DBCore <> cv_compatible constr
+R2210:2222 nameless.DBCore <> cv_compatible constr
+R2225:2234 nameless.DBSyntax <> compatible ind
+R2225:2234 nameless.DBSyntax <> compatible ind
+R2225:2234 nameless.DBSyntax <> compatible ind
+prf 2251:2274 <> close_payload_generation
+binder 2285:2289 <> Gamma:38
+binder 2291:2291 <> t:39
+binder 2293:2293 <> T:40
+R2312:2317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2296:2301 nameless.DBTyping <> typing ind
+R2303:2307 DBClosePayloadWork <> Gamma:38 var
+R2309:2309 DBClosePayloadWork <> t:39 var
+R2311:2311 DBClosePayloadWork <> T:40 var
+binder 2325:2326 <> IT:41
+binder 2328:2328 <> F:42
+binder 2330:2330 <> G:43
+binder 2332:2332 <> i:44
+binder 2334:2335 <> xs:45
+R2348:2351 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2339:2341 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2338:2338 DBClosePayloadWork <> t:39 var
+R2342:2344 nameless.DBSyntax <> TIn constr
+R2346:2347 DBClosePayloadWork <> xs:45 var
+R2377:2382 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2352:2355 nameless.DBCore <> conv ind
+R2360:2366 nameless.DBSyntax <> CloseAt def
+R2375:2375 DBClosePayloadWork <> i:44 var
+R2373:2373 DBClosePayloadWork <> G:43 var
+R2371:2371 DBClosePayloadWork <> F:42 var
+R2368:2369 DBClosePayloadWork <> IT:41 var
+R2357:2357 DBClosePayloadWork <> T:40 var
+R2415:2418 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2383:2389 nameless.DBTyping <> type_wf def
+R2391:2395 DBClosePayloadWork <> Gamma:38 var
+R2398:2404 nameless.DBSyntax <> payload def
+R2413:2413 DBClosePayloadWork <> i:44 var
+R2411:2411 DBClosePayloadWork <> G:43 var
+R2409:2409 DBClosePayloadWork <> F:42 var
+R2406:2407 DBClosePayloadWork <> IT:41 var
+R2419:2424 nameless.DBTyping <> typing ind
+R2426:2430 DBClosePayloadWork <> Gamma:38 var
+R2432:2433 DBClosePayloadWork <> xs:45 var
+R2436:2442 nameless.DBSyntax <> payload def
+R2451:2451 DBClosePayloadWork <> i:44 var
+R2449:2449 DBClosePayloadWork <> G:43 var
+R2447:2447 DBClosePayloadWork <> F:42 var
+R2444:2445 DBClosePayloadWork <> IT:41 var
+R2590:2597 nameless.DBCore <> cv_trans constr
+R2590:2597 nameless.DBCore <> cv_trans constr
+R2647:2661 nameless.DBGeneration <> conversion_head thm
+R2674:2680 Corelib.Init.Logic <> eq_refl constr
+R2682:2688 Corelib.Init.Logic <> eq_refl constr
+R2647:2661 nameless.DBGeneration <> conversion_head thm
+R2674:2680 Corelib.Init.Logic <> eq_refl constr
+R2682:2688 Corelib.Init.Logic <> eq_refl constr
+R2731:2745 nameless.DBGeneration <> conversion_head thm
+R2758:2764 Corelib.Init.Logic <> eq_refl constr
+R2766:2772 Corelib.Init.Logic <> eq_refl constr
+R2731:2745 nameless.DBGeneration <> conversion_head thm
+R2758:2764 Corelib.Init.Logic <> eq_refl constr
+R2766:2772 Corelib.Init.Logic <> eq_refl constr
+R2827:2845 DBClosePayloadWork <> conversion_close_at thm
+R2827:2845 DBClosePayloadWork <> conversion_close_at thm
+R2903:2914 nameless.DBBeta <> convert_type thm
+R2945:2962 DBClosePayloadWork <> payload_conversion thm
+R2903:2914 nameless.DBBeta <> convert_type thm
+R2945:2962 DBClosePayloadWork <> payload_conversion thm
+R3001:3024 DBClosePayloadWork <> close_payload_generation thm

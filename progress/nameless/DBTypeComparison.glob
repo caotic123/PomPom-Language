@@ -1,0 +1,673 @@
+DIGEST 491e94daa6dbdd1aab78212f1d2c37a6
+Fnameless.DBTypeComparison
+R174:177 Stdlib.Lists.List <> <> lib
+R179:183 Stdlib.Arith.Arith <> <> lib
+R185:188 Stdlib.Bool.Bool <> <> lib
+R190:192 Stdlib.micromega.Lia <> <> lib
+R210:236 nameless.DBCumulativeTyping <> <> lib
+R238:260 nameless.DBTypedPiViews <> <> lib
+R270:282 Stdlib.Lists.List ListNotations <> mod
+ind 296:310 <> type_comparison
+constr 340:353 <> cmp_conversion
+constr 403:410 <> cmp_sort
+constr 506:511 <> cmp_pi
+R318:321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R314:317 nameless.DBSyntax <> term ind
+R326:329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R322:325 nameless.DBSyntax <> term ind
+binder 364:364 <> A:3
+binder 366:366 <> B:4
+R377:380 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R369:372 nameless.DBCore <> conv ind
+R376:376 nameless.DBTypeComparison <> B:4 var
+R374:374 nameless.DBTypeComparison <> A:3 var
+R381:395 nameless.DBTypeComparison <> type_comparison:1 ind
+R399:399 nameless.DBTypeComparison <> B:4 var
+R397:397 nameless.DBTypeComparison <> A:3 var
+binder 421:421 <> A:5
+binder 423:423 <> B:6
+binder 425:425 <> j:7
+binder 427:427 <> k:8
+R450:453 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R434:437 nameless.DBCore <> conv ind
+R442:446 nameless.DBSyntax <> TSort constr
+R448:448 nameless.DBTypeComparison <> j:7 var
+R439:439 nameless.DBTypeComparison <> A:5 var
+R470:473 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R454:457 nameless.DBCore <> conv ind
+R462:466 nameless.DBSyntax <> TSort constr
+R468:468 nameless.DBTypeComparison <> k:8 var
+R459:459 nameless.DBTypeComparison <> B:6 var
+R480:483 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R475:478 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R474:474 nameless.DBTypeComparison <> j:7 var
+R479:479 nameless.DBTypeComparison <> k:8 var
+R484:498 nameless.DBTypeComparison <> type_comparison:1 ind
+R502:502 nameless.DBTypeComparison <> B:6 var
+R500:500 nameless.DBTypeComparison <> A:5 var
+binder 522:522 <> A:9
+binder 524:524 <> B:10
+binder 526:526 <> U:11
+binder 528:528 <> V:12
+binder 530:530 <> X:13
+binder 532:532 <> Y:14
+R555:558 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R539:542 nameless.DBCore <> conv ind
+R547:549 nameless.DBSyntax <> TPi constr
+R553:553 nameless.DBTypeComparison <> V:12 var
+R551:551 nameless.DBTypeComparison <> U:11 var
+R544:544 nameless.DBTypeComparison <> A:9 var
+R575:582 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R559:562 nameless.DBCore <> conv ind
+R567:569 nameless.DBSyntax <> TPi constr
+R573:573 nameless.DBTypeComparison <> Y:14 var
+R571:571 nameless.DBTypeComparison <> X:13 var
+R564:564 nameless.DBTypeComparison <> B:10 var
+R602:605 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R583:597 nameless.DBTypeComparison <> type_comparison:1 ind
+R601:601 nameless.DBTypeComparison <> U:11 var
+R599:599 nameless.DBTypeComparison <> X:13 var
+R625:628 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R606:620 nameless.DBTypeComparison <> type_comparison:1 ind
+R624:624 nameless.DBTypeComparison <> Y:14 var
+R622:622 nameless.DBTypeComparison <> V:12 var
+R629:643 nameless.DBTypeComparison <> type_comparison:1 ind
+R647:647 nameless.DBTypeComparison <> B:10 var
+R645:645 nameless.DBTypeComparison <> A:9 var
+scheme 296:310 <> type_comparison_ind
+scheme 296:310 <> type_comparison_sind
+prf 657:682 <> comparison_left_conversion
+binder 693:693 <> A:15
+binder 695:695 <> B:16
+R719:722 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R700:714 nameless.DBTypeComparison <> type_comparison ind
+R716:716 nameless.DBTypeComparison <> A:15 var
+R718:718 nameless.DBTypeComparison <> B:16 var
+binder 730:731 <> A':17
+R743:746 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R734:737 nameless.DBCore <> conv ind
+R742:742 nameless.DBTypeComparison <> A:15 var
+R739:740 nameless.DBTypeComparison <> A':17 var
+R747:761 nameless.DBTypeComparison <> type_comparison ind
+R763:764 nameless.DBTypeComparison <> A':17 var
+R766:766 nameless.DBTypeComparison <> B:16 var
+R825:838 nameless.DBTypeComparison <> cmp_conversion constr
+R847:854 nameless.DBTypeComparison <> cmp_sort constr
+R863:868 nameless.DBTypeComparison <> cmp_pi constr
+R884:891 nameless.DBCore <> cv_trans constr
+R825:838 nameless.DBTypeComparison <> cmp_conversion constr
+R847:854 nameless.DBTypeComparison <> cmp_sort constr
+R863:868 nameless.DBTypeComparison <> cmp_pi constr
+R884:891 nameless.DBCore <> cv_trans constr
+R884:891 nameless.DBCore <> cv_trans constr
+R884:891 nameless.DBCore <> cv_trans constr
+R884:891 nameless.DBCore <> cv_trans constr
+R884:891 nameless.DBCore <> cv_trans constr
+R884:891 nameless.DBCore <> cv_trans constr
+R884:891 nameless.DBCore <> cv_trans constr
+R884:891 nameless.DBCore <> cv_trans constr
+prf 905:931 <> comparison_right_conversion
+binder 942:942 <> A:18
+binder 944:944 <> B:19
+R968:971 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R949:963 nameless.DBTypeComparison <> type_comparison ind
+R965:965 nameless.DBTypeComparison <> A:18 var
+R967:967 nameless.DBTypeComparison <> B:19 var
+binder 979:980 <> B':20
+R992:995 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R983:986 nameless.DBCore <> conv ind
+R990:991 nameless.DBTypeComparison <> B':20 var
+R988:988 nameless.DBTypeComparison <> B:19 var
+R996:1010 nameless.DBTypeComparison <> type_comparison ind
+R1012:1012 nameless.DBTypeComparison <> A:18 var
+R1014:1015 nameless.DBTypeComparison <> B':20 var
+R1074:1087 nameless.DBTypeComparison <> cmp_conversion constr
+R1096:1103 nameless.DBTypeComparison <> cmp_sort constr
+R1112:1117 nameless.DBTypeComparison <> cmp_pi constr
+R1133:1140 nameless.DBCore <> cv_trans constr
+R1143:1148 nameless.DBCore <> cv_sym constr
+R1074:1087 nameless.DBTypeComparison <> cmp_conversion constr
+R1096:1103 nameless.DBTypeComparison <> cmp_sort constr
+R1112:1117 nameless.DBTypeComparison <> cmp_pi constr
+R1133:1140 nameless.DBCore <> cv_trans constr
+R1133:1140 nameless.DBCore <> cv_trans constr
+R1133:1140 nameless.DBCore <> cv_trans constr
+R1133:1140 nameless.DBCore <> cv_trans constr
+R1133:1140 nameless.DBCore <> cv_trans constr
+R1133:1140 nameless.DBCore <> cv_trans constr
+R1133:1140 nameless.DBCore <> cv_trans constr
+R1133:1140 nameless.DBCore <> cv_trans constr
+R1143:1148 nameless.DBCore <> cv_sym constr
+R1143:1148 nameless.DBCore <> cv_sym constr
+R1143:1148 nameless.DBCore <> cv_sym constr
+R1143:1148 nameless.DBCore <> cv_sym constr
+R1143:1148 nameless.DBCore <> cv_sym constr
+R1143:1148 nameless.DBCore <> cv_sym constr
+R1143:1148 nameless.DBCore <> cv_sym constr
+R1143:1148 nameless.DBCore <> cv_sym constr
+prf 1163:1181 <> comparison_universe
+binder 1192:1192 <> A:21
+binder 1194:1194 <> B:22
+R1214:1217 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1199:1209 nameless.DBTyping <> universe_le ind
+R1211:1211 nameless.DBTypeComparison <> A:21 var
+R1213:1213 nameless.DBTypeComparison <> B:22 var
+R1218:1232 nameless.DBTypeComparison <> type_comparison ind
+R1234:1234 nameless.DBTypeComparison <> A:21 var
+R1236:1236 nameless.DBTypeComparison <> B:22 var
+R1285:1299 nameless.DBTypeComparison <> type_comparison ind
+R1302:1308 nameless.DBCore <> cv_refl constr
+R1285:1299 nameless.DBTypeComparison <> type_comparison ind
+R1285:1299 nameless.DBTypeComparison <> type_comparison ind
+R1285:1299 nameless.DBTypeComparison <> type_comparison ind
+R1302:1308 nameless.DBCore <> cv_refl constr
+R1302:1308 nameless.DBCore <> cv_refl constr
+R1302:1308 nameless.DBCore <> cv_refl constr
+prf 1323:1338 <> comparison_subst
+binder 1349:1349 <> A:23
+binder 1351:1351 <> B:24
+R1373:1376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1354:1368 nameless.DBTypeComparison <> type_comparison ind
+R1370:1370 nameless.DBTypeComparison <> A:23 var
+R1372:1372 nameless.DBTypeComparison <> B:24 var
+binder 1384:1384 <> t:25
+binder 1386:1386 <> c:26
+R1391:1405 nameless.DBTypeComparison <> type_comparison ind
+R1408:1412 nameless.DBSyntax <> subst def
+R1418:1418 nameless.DBTypeComparison <> A:23 var
+R1416:1416 nameless.DBTypeComparison <> c:26 var
+R1414:1414 nameless.DBTypeComparison <> t:25 var
+R1422:1426 nameless.DBSyntax <> subst def
+R1432:1432 nameless.DBTypeComparison <> B:24 var
+R1430:1430 nameless.DBTypeComparison <> c:26 var
+R1428:1428 nameless.DBTypeComparison <> t:25 var
+R1494:1507 nameless.DBTypeComparison <> cmp_conversion constr
+R1520:1535 nameless.DBSubstitution <> conversion_subst thm
+R1494:1507 nameless.DBTypeComparison <> cmp_conversion constr
+R1520:1535 nameless.DBSubstitution <> conversion_subst thm
+R1549:1556 nameless.DBTypeComparison <> cmp_sort constr
+R1567:1582 nameless.DBSubstitution <> conversion_subst thm
+R1602:1617 nameless.DBSubstitution <> conversion_subst thm
+R1549:1556 nameless.DBTypeComparison <> cmp_sort constr
+R1567:1582 nameless.DBSubstitution <> conversion_subst thm
+R1602:1617 nameless.DBSubstitution <> conversion_subst thm
+R1653:1658 nameless.DBTypeComparison <> cmp_pi constr
+R1669:1684 nameless.DBSubstitution <> conversion_subst thm
+R1704:1719 nameless.DBSubstitution <> conversion_subst thm
+R1653:1658 nameless.DBTypeComparison <> cmp_pi constr
+R1669:1684 nameless.DBSubstitution <> conversion_subst thm
+R1704:1719 nameless.DBSubstitution <> conversion_subst thm
+prf 1757:1780 <> conversion_common_source
+binder 1791:1791 <> t:27
+binder 1793:1793 <> A:28
+binder 1795:1795 <> B:29
+R1808:1811 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1800:1803 nameless.DBCore <> conv ind
+R1807:1807 nameless.DBTypeComparison <> A:28 var
+R1805:1805 nameless.DBTypeComparison <> t:27 var
+R1820:1823 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1812:1815 nameless.DBCore <> conv ind
+R1819:1819 nameless.DBTypeComparison <> B:29 var
+R1817:1817 nameless.DBTypeComparison <> t:27 var
+R1824:1827 nameless.DBCore <> conv ind
+R1831:1831 nameless.DBTypeComparison <> B:29 var
+R1829:1829 nameless.DBTypeComparison <> A:28 var
+R1856:1863 nameless.DBCore <> cv_trans constr
+R1873:1878 nameless.DBCore <> cv_sym constr
+R1856:1863 nameless.DBCore <> cv_trans constr
+R1873:1878 nameless.DBCore <> cv_sym constr
+prf 1918:1941 <> sort_reductions_identity
+binder 1952:1952 <> k:30
+binder 1954:1954 <> t:31
+R1984:1987 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1959:1961 nameless.DBParallelBase <> rtc ind
+R1983:1983 nameless.DBTypeComparison <> t:31 var
+R1974:1978 nameless.DBSyntax <> TSort constr
+R1980:1980 nameless.DBTypeComparison <> k:30 var
+R1963:1971 nameless.DBCore <> reduction ind
+R1989:1991 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1988:1988 nameless.DBTypeComparison <> t:31 var
+R1992:1996 nameless.DBSyntax <> TSort constr
+R1998:1998 nameless.DBTypeComparison <> k:30 var
+R2034:2038 nameless.DBSyntax <> TSort constr
+R2034:2038 nameless.DBSyntax <> TSort constr
+prf 2121:2142 <> conversion_sort_levels
+binder 2153:2153 <> j:32
+binder 2155:2155 <> k:33
+R2182:2185 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2158:2161 nameless.DBCore <> conv ind
+R2174:2178 nameless.DBSyntax <> TSort constr
+R2180:2180 nameless.DBTypeComparison <> k:33 var
+R2164:2168 nameless.DBSyntax <> TSort constr
+R2170:2170 nameless.DBTypeComparison <> j:32 var
+R2187:2189 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2186:2186 nameless.DBTypeComparison <> j:32 var
+R2190:2190 nameless.DBTypeComparison <> k:33 var
+R2226:2244 nameless.DBConfluence <> conversion_joinable thm
+R2226:2244 nameless.DBConfluence <> conversion_joinable thm
+R2277:2300 nameless.DBTypeComparison <> sort_reductions_identity thm
+R2277:2300 nameless.DBTypeComparison <> sort_reductions_identity thm
+R2277:2300 nameless.DBTypeComparison <> sort_reductions_identity thm
+prf 2336:2357 <> sort_not_pi_conversion
+binder 2368:2368 <> j:34
+binder 2370:2370 <> A:35
+binder 2372:2372 <> B:36
+R2375:2376 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2377:2380 nameless.DBCore <> conv ind
+R2393:2395 nameless.DBSyntax <> TPi constr
+R2399:2399 nameless.DBTypeComparison <> B:36 var
+R2397:2397 nameless.DBTypeComparison <> A:35 var
+R2383:2387 nameless.DBSyntax <> TSort constr
+R2389:2389 nameless.DBTypeComparison <> j:34 var
+R2438:2452 nameless.DBGeneration <> conversion_head thm
+R2464:2470 Corelib.Init.Logic <> eq_refl constr
+R2472:2478 Corelib.Init.Logic <> eq_refl constr
+R2438:2452 nameless.DBGeneration <> conversion_head thm
+R2464:2470 Corelib.Init.Logic <> eq_refl constr
+R2472:2478 Corelib.Init.Logic <> eq_refl constr
+prf 2508:2529 <> comparison_composition
+binder 2540:2540 <> A:37
+binder 2542:2542 <> B:38
+R2564:2569 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2545:2559 nameless.DBTypeComparison <> type_comparison ind
+R2561:2561 nameless.DBTypeComparison <> A:37 var
+R2563:2563 nameless.DBTypeComparison <> B:38 var
+R2570:2570 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2623:2630 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2683:2683 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 2578:2578 <> C:39
+R2600:2603 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2581:2595 nameless.DBTypeComparison <> type_comparison ind
+R2597:2597 nameless.DBTypeComparison <> B:38 var
+R2599:2599 nameless.DBTypeComparison <> C:39 var
+R2604:2618 nameless.DBTypeComparison <> type_comparison ind
+R2620:2620 nameless.DBTypeComparison <> A:37 var
+R2622:2622 nameless.DBTypeComparison <> C:39 var
+binder 2638:2638 <> C:40
+R2660:2663 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2641:2655 nameless.DBTypeComparison <> type_comparison ind
+R2657:2657 nameless.DBTypeComparison <> C:40 var
+R2659:2659 nameless.DBTypeComparison <> A:37 var
+R2664:2678 nameless.DBTypeComparison <> type_comparison ind
+R2680:2680 nameless.DBTypeComparison <> C:40 var
+R2682:2682 nameless.DBTypeComparison <> B:38 var
+R2817:2842 nameless.DBTypeComparison <> comparison_left_conversion thm
+R2851:2877 nameless.DBTypeComparison <> comparison_right_conversion thm
+R2817:2842 nameless.DBTypeComparison <> comparison_left_conversion thm
+R2851:2877 nameless.DBTypeComparison <> comparison_right_conversion thm
+R2999:3025 nameless.DBTypeComparison <> comparison_right_conversion thm
+R3036:3043 nameless.DBTypeComparison <> cmp_sort constr
+R2999:3025 nameless.DBTypeComparison <> comparison_right_conversion thm
+R3036:3043 nameless.DBTypeComparison <> cmp_sort constr
+R3091:3093 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3107:3128 nameless.DBTypeComparison <> conversion_sort_levels thm
+R3138:3161 nameless.DBTypeComparison <> conversion_common_source thm
+R3091:3093 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3107:3128 nameless.DBTypeComparison <> conversion_sort_levels thm
+R3138:3161 nameless.DBTypeComparison <> conversion_common_source thm
+R3191:3198 nameless.DBTypeComparison <> cmp_sort constr
+R3191:3198 nameless.DBTypeComparison <> cmp_sort constr
+R3248:3269 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R3279:3302 nameless.DBTypeComparison <> conversion_common_source thm
+R3248:3269 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R3279:3302 nameless.DBTypeComparison <> conversion_common_source thm
+R3339:3364 nameless.DBTypeComparison <> comparison_left_conversion thm
+R3375:3382 nameless.DBTypeComparison <> cmp_sort constr
+R3339:3364 nameless.DBTypeComparison <> comparison_left_conversion thm
+R3375:3382 nameless.DBTypeComparison <> cmp_sort constr
+R3430:3432 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3446:3467 nameless.DBTypeComparison <> conversion_sort_levels thm
+R3477:3500 nameless.DBTypeComparison <> conversion_common_source thm
+R3430:3432 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3446:3467 nameless.DBTypeComparison <> conversion_sort_levels thm
+R3477:3500 nameless.DBTypeComparison <> conversion_common_source thm
+R3530:3537 nameless.DBTypeComparison <> cmp_sort constr
+R3530:3537 nameless.DBTypeComparison <> cmp_sort constr
+R3587:3608 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R3618:3641 nameless.DBTypeComparison <> conversion_common_source thm
+R3587:3608 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R3618:3641 nameless.DBTypeComparison <> conversion_common_source thm
+R3841:3867 nameless.DBTypeComparison <> comparison_right_conversion thm
+R3878:3883 nameless.DBTypeComparison <> cmp_pi constr
+R3841:3867 nameless.DBTypeComparison <> comparison_right_conversion thm
+R3878:3883 nameless.DBTypeComparison <> cmp_pi constr
+R3944:3965 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R3975:3998 nameless.DBTypeComparison <> conversion_common_source thm
+R3944:3965 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R3975:3998 nameless.DBTypeComparison <> conversion_common_source thm
+R4038:4050 nameless.DBGeneration <> conversion_pi thm
+R4061:4084 nameless.DBTypeComparison <> conversion_common_source thm
+R4038:4050 nameless.DBGeneration <> conversion_pi thm
+R4061:4084 nameless.DBTypeComparison <> conversion_common_source thm
+R4125:4130 nameless.DBTypeComparison <> cmp_pi constr
+R4125:4130 nameless.DBTypeComparison <> cmp_pi constr
+R4198:4224 nameless.DBTypeComparison <> comparison_right_conversion thm
+R4247:4252 nameless.DBCore <> cv_sym constr
+R4198:4224 nameless.DBTypeComparison <> comparison_right_conversion thm
+R4247:4252 nameless.DBCore <> cv_sym constr
+R4271:4296 nameless.DBTypeComparison <> comparison_left_conversion thm
+R4271:4296 nameless.DBTypeComparison <> comparison_left_conversion thm
+R4333:4358 nameless.DBTypeComparison <> comparison_left_conversion thm
+R4369:4374 nameless.DBTypeComparison <> cmp_pi constr
+R4333:4358 nameless.DBTypeComparison <> comparison_left_conversion thm
+R4369:4374 nameless.DBTypeComparison <> cmp_pi constr
+R4435:4456 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R4466:4489 nameless.DBTypeComparison <> conversion_common_source thm
+R4435:4456 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R4466:4489 nameless.DBTypeComparison <> conversion_common_source thm
+R4529:4541 nameless.DBGeneration <> conversion_pi thm
+R4552:4575 nameless.DBTypeComparison <> conversion_common_source thm
+R4529:4541 nameless.DBGeneration <> conversion_pi thm
+R4552:4575 nameless.DBTypeComparison <> conversion_common_source thm
+R4616:4621 nameless.DBTypeComparison <> cmp_pi constr
+R4616:4621 nameless.DBTypeComparison <> cmp_pi constr
+R4689:4714 nameless.DBTypeComparison <> comparison_left_conversion thm
+R4689:4714 nameless.DBTypeComparison <> comparison_left_conversion thm
+R4753:4779 nameless.DBTypeComparison <> comparison_right_conversion thm
+R4802:4807 nameless.DBCore <> cv_sym constr
+R4753:4779 nameless.DBTypeComparison <> comparison_right_conversion thm
+R4802:4807 nameless.DBCore <> cv_sym constr
+prf 4825:4845 <> comparison_transitive
+binder 4856:4856 <> A:41
+binder 4858:4858 <> B:42
+binder 4860:4860 <> C:43
+R4884:4887 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4865:4879 nameless.DBTypeComparison <> type_comparison ind
+R4881:4881 nameless.DBTypeComparison <> A:41 var
+R4883:4883 nameless.DBTypeComparison <> B:42 var
+R4907:4910 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4888:4902 nameless.DBTypeComparison <> type_comparison ind
+R4904:4904 nameless.DBTypeComparison <> B:42 var
+R4906:4906 nameless.DBTypeComparison <> C:43 var
+R4911:4925 nameless.DBTypeComparison <> type_comparison ind
+R4927:4927 nameless.DBTypeComparison <> A:41 var
+R4929:4929 nameless.DBTypeComparison <> C:43 var
+R4962:4966 Corelib.Init.Logic <> proj1 thm
+R4969:4990 nameless.DBTypeComparison <> comparison_composition thm
+R4962:4966 Corelib.Init.Logic <> proj1 thm
+R4969:4990 nameless.DBTypeComparison <> comparison_composition thm
+prf 5015:5036 <> type_change_comparison
+binder 5047:5051 <> Gamma:44
+binder 5053:5053 <> A:45
+binder 5055:5055 <> B:46
+R5081:5084 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5060:5070 nameless.DBCumulativeTyping <> type_change ind
+R5072:5076 nameless.DBTypeComparison <> Gamma:44 var
+R5078:5078 nameless.DBTypeComparison <> A:45 var
+R5080:5080 nameless.DBTypeComparison <> B:46 var
+R5085:5099 nameless.DBTypeComparison <> type_comparison ind
+R5101:5101 nameless.DBTypeComparison <> A:45 var
+R5103:5103 nameless.DBTypeComparison <> B:46 var
+R5164:5177 nameless.DBTypeComparison <> cmp_conversion constr
+R5180:5198 nameless.DBTypeComparison <> comparison_universe thm
+R5201:5221 nameless.DBTypeComparison <> comparison_transitive thm
+R5164:5177 nameless.DBTypeComparison <> cmp_conversion constr
+R5164:5177 nameless.DBTypeComparison <> cmp_conversion constr
+R5164:5177 nameless.DBTypeComparison <> cmp_conversion constr
+R5180:5198 nameless.DBTypeComparison <> comparison_universe thm
+R5201:5221 nameless.DBTypeComparison <> comparison_transitive thm
+R5180:5198 nameless.DBTypeComparison <> comparison_universe thm
+R5201:5221 nameless.DBTypeComparison <> comparison_transitive thm
+R5180:5198 nameless.DBTypeComparison <> comparison_universe thm
+R5201:5221 nameless.DBTypeComparison <> comparison_transitive thm
+prf 5238:5266 <> comparison_realization_modulo
+binder 5277:5277 <> A:47
+binder 5279:5279 <> B:48
+R5301:5306 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5282:5296 nameless.DBTypeComparison <> type_comparison ind
+R5298:5298 nameless.DBTypeComparison <> A:47 var
+R5300:5300 nameless.DBTypeComparison <> B:48 var
+binder 5314:5318 <> Gamma:49
+binder 5320:5321 <> A':50
+binder 5323:5324 <> B':51
+R5336:5339 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5327:5330 nameless.DBCore <> conv ind
+R5334:5335 nameless.DBTypeComparison <> A':50 var
+R5332:5332 nameless.DBTypeComparison <> A:47 var
+R5349:5354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5340:5343 nameless.DBCore <> conv ind
+R5347:5348 nameless.DBTypeComparison <> B':51 var
+R5345:5345 nameless.DBTypeComparison <> B:48 var
+R5371:5374 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5355:5361 nameless.DBTyping <> type_wf def
+R5363:5367 nameless.DBTypeComparison <> Gamma:49 var
+R5369:5370 nameless.DBTypeComparison <> A':50 var
+R5391:5394 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5375:5381 nameless.DBTyping <> type_wf def
+R5383:5387 nameless.DBTypeComparison <> Gamma:49 var
+R5389:5390 nameless.DBTypeComparison <> B':51 var
+R5395:5405 nameless.DBCumulativeTyping <> type_change ind
+R5407:5411 nameless.DBTypeComparison <> Gamma:49 var
+R5413:5414 nameless.DBTypeComparison <> A':50 var
+R5416:5417 nameless.DBTypeComparison <> B':51 var
+R5568:5580 nameless.DBCumulativeTyping <> tc_conversion constr
+R5568:5580 nameless.DBCumulativeTyping <> tc_conversion constr
+R5618:5625 nameless.DBCore <> cv_trans constr
+R5635:5640 nameless.DBCore <> cv_sym constr
+R5660:5667 nameless.DBCore <> cv_trans constr
+R5618:5625 nameless.DBCore <> cv_trans constr
+R5635:5640 nameless.DBCore <> cv_sym constr
+R5660:5667 nameless.DBCore <> cv_trans constr
+R5712:5713 nameless.DBTyping <> wf ind
+R5762:5775 nameless.DBWeakening <> typing_context thm
+R5712:5713 nameless.DBTyping <> wf ind
+R5762:5775 nameless.DBWeakening <> typing_context thm
+R5790:5802 nameless.DBCumulativeTyping <> tc_transitive constr
+R5812:5824 nameless.DBCumulativeTyping <> tc_conversion constr
+R5857:5863 nameless.DBTyping <> ty_sort constr
+R5872:5895 nameless.DBTypeComparison <> conversion_common_source thm
+R5790:5802 nameless.DBCumulativeTyping <> tc_transitive constr
+R5812:5824 nameless.DBCumulativeTyping <> tc_conversion constr
+R5857:5863 nameless.DBTyping <> ty_sort constr
+R5872:5895 nameless.DBTypeComparison <> conversion_common_source thm
+R5957:5961 nameless.DBSyntax <> TSort constr
+R5934:5946 nameless.DBCumulativeTyping <> tc_transitive constr
+R5974:5984 nameless.DBCumulativeTyping <> tc_universe constr
+R6007:6013 nameless.DBTyping <> ty_sort constr
+R6034:6040 nameless.DBTyping <> ty_sort constr
+R6052:6058 nameless.DBTyping <> ul_sort constr
+R5957:5961 nameless.DBSyntax <> TSort constr
+R5934:5946 nameless.DBCumulativeTyping <> tc_transitive constr
+R5974:5984 nameless.DBCumulativeTyping <> tc_universe constr
+R6007:6013 nameless.DBTyping <> ty_sort constr
+R6034:6040 nameless.DBTyping <> ty_sort constr
+R6052:6058 nameless.DBTyping <> ul_sort constr
+R6074:6086 nameless.DBCumulativeTyping <> tc_conversion constr
+R6109:6115 nameless.DBTyping <> ty_sort constr
+R6134:6157 nameless.DBTypeComparison <> conversion_common_source thm
+R6074:6086 nameless.DBCumulativeTyping <> tc_conversion constr
+R6109:6115 nameless.DBTyping <> ty_sort constr
+R6134:6157 nameless.DBTypeComparison <> conversion_common_source thm
+R6246:6249 nameless.DBCore <> conv ind
+R6255:6257 nameless.DBSyntax <> TPi constr
+R6276:6299 nameless.DBTypeComparison <> conversion_common_source thm
+R6246:6249 nameless.DBCore <> conv ind
+R6255:6257 nameless.DBSyntax <> TPi constr
+R6276:6299 nameless.DBTypeComparison <> conversion_common_source thm
+R6334:6337 nameless.DBCore <> conv ind
+R6343:6345 nameless.DBSyntax <> TPi constr
+R6364:6387 nameless.DBTypeComparison <> conversion_common_source thm
+R6334:6337 nameless.DBCore <> conv ind
+R6343:6345 nameless.DBSyntax <> TPi constr
+R6364:6387 nameless.DBTypeComparison <> conversion_common_source thm
+R6418:6430 nameless.DBTypedPiViews <> typed_pi_view thm
+R6418:6430 nameless.DBTypedPiViews <> typed_pi_view thm
+R6497:6509 nameless.DBTypedPiViews <> typed_pi_view thm
+R6497:6509 nameless.DBTypedPiViews <> typed_pi_view thm
+R6578:6590 nameless.DBDerivedTyping <> pi_components thm
+R6605:6611 Corelib.Init.Logic <> eq_refl constr
+R6578:6590 nameless.DBDerivedTyping <> pi_components thm
+R6605:6611 Corelib.Init.Logic <> eq_refl constr
+R6652:6664 nameless.DBDerivedTyping <> pi_components thm
+R6679:6685 Corelib.Init.Logic <> eq_refl constr
+R6652:6664 nameless.DBDerivedTyping <> pi_components thm
+R6679:6685 Corelib.Init.Logic <> eq_refl constr
+R6731:6741 nameless.DBCumulativeTyping <> type_change ind
+R6731:6741 nameless.DBCumulativeTyping <> type_change ind
+R6855:6865 nameless.DBCumulativeTyping <> type_change ind
+R6870:6871 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6855:6865 nameless.DBCumulativeTyping <> type_change ind
+R6870:6871 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6955:6975 nameless.DBCumulativeTyping <> type_change_narrowing thm
+R6955:6975 nameless.DBCumulativeTyping <> type_change_narrowing thm
+R7034:7046 nameless.DBCumulativeTyping <> tc_transitive constr
+R7056:7068 nameless.DBCumulativeTyping <> tc_conversion constr
+R7034:7046 nameless.DBCumulativeTyping <> tc_transitive constr
+R7056:7068 nameless.DBCumulativeTyping <> tc_conversion constr
+R7133:7145 nameless.DBCumulativeTyping <> tc_transitive constr
+R7155:7168 nameless.DBCumulativeTyping <> type_change_pi thm
+R7133:7145 nameless.DBCumulativeTyping <> tc_transitive constr
+R7155:7168 nameless.DBCumulativeTyping <> type_change_pi thm
+R7229:7241 nameless.DBCumulativeTyping <> tc_conversion constr
+R7292:7297 nameless.DBCore <> cv_sym constr
+R7229:7241 nameless.DBCumulativeTyping <> tc_conversion constr
+R7292:7297 nameless.DBCore <> cv_sym constr
+prf 7315:7336 <> comparison_realization
+binder 7347:7347 <> A:52
+binder 7349:7349 <> B:53
+R7371:7376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7352:7366 nameless.DBTypeComparison <> type_comparison ind
+R7368:7368 nameless.DBTypeComparison <> A:52 var
+R7370:7370 nameless.DBTypeComparison <> B:53 var
+binder 7384:7388 <> Gamma:54
+R7406:7409 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7391:7397 nameless.DBTyping <> type_wf def
+R7399:7403 nameless.DBTypeComparison <> Gamma:54 var
+R7405:7405 nameless.DBTypeComparison <> A:52 var
+R7425:7428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7410:7416 nameless.DBTyping <> type_wf def
+R7418:7422 nameless.DBTypeComparison <> Gamma:54 var
+R7424:7424 nameless.DBTypeComparison <> B:53 var
+R7429:7439 nameless.DBCumulativeTyping <> type_change ind
+R7441:7445 nameless.DBTypeComparison <> Gamma:54 var
+R7447:7447 nameless.DBTypeComparison <> A:52 var
+R7449:7449 nameless.DBTypeComparison <> B:53 var
+R7474:7502 nameless.DBTypeComparison <> comparison_realization_modulo thm
+R7517:7523 nameless.DBCore <> cv_refl constr
+R7474:7502 nameless.DBTypeComparison <> comparison_realization_modulo thm
+R7517:7523 nameless.DBCore <> cv_refl constr
+R7517:7523 nameless.DBCore <> cv_refl constr
+R7517:7523 nameless.DBCore <> cv_refl constr
+R7517:7523 nameless.DBCore <> cv_refl constr
+R7517:7523 nameless.DBCore <> cv_refl constr
+prf 7538:7560 <> comparison_pi_inversion
+binder 7571:7571 <> A:55
+binder 7573:7573 <> B:56
+binder 7575:7575 <> C:57
+binder 7577:7577 <> D:58
+R7617:7622 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7582:7596 nameless.DBTypeComparison <> type_comparison ind
+R7599:7601 nameless.DBSyntax <> TPi constr
+R7605:7605 nameless.DBTypeComparison <> B:56 var
+R7603:7603 nameless.DBTypeComparison <> A:55 var
+R7609:7611 nameless.DBSyntax <> TPi constr
+R7615:7615 nameless.DBTypeComparison <> D:58 var
+R7613:7613 nameless.DBTypeComparison <> C:57 var
+R7642:7645 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7623:7637 nameless.DBTypeComparison <> type_comparison ind
+R7639:7639 nameless.DBTypeComparison <> C:57 var
+R7641:7641 nameless.DBTypeComparison <> A:55 var
+R7646:7660 nameless.DBTypeComparison <> type_comparison ind
+R7662:7662 nameless.DBTypeComparison <> B:56 var
+R7664:7664 nameless.DBTypeComparison <> D:58 var
+R7728:7740 nameless.DBGeneration <> conversion_pi thm
+R7768:7781 nameless.DBTypeComparison <> cmp_conversion constr
+R7795:7800 nameless.DBCore <> cv_sym constr
+R7728:7740 nameless.DBGeneration <> conversion_pi thm
+R7768:7781 nameless.DBTypeComparison <> cmp_conversion constr
+R7768:7781 nameless.DBTypeComparison <> cmp_conversion constr
+R7795:7800 nameless.DBCore <> cv_sym constr
+R7795:7800 nameless.DBCore <> cv_sym constr
+R7823:7844 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R7853:7858 nameless.DBCore <> cv_sym constr
+R7823:7844 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R7853:7858 nameless.DBCore <> cv_sym constr
+R7888:7900 nameless.DBGeneration <> conversion_pi thm
+R7888:7900 nameless.DBGeneration <> conversion_pi thm
+R7940:7952 nameless.DBGeneration <> conversion_pi thm
+R7940:7952 nameless.DBGeneration <> conversion_pi thm
+R8002:8027 nameless.DBTypeComparison <> comparison_left_conversion thm
+R8038:8064 nameless.DBTypeComparison <> comparison_right_conversion thm
+R8083:8088 nameless.DBCore <> cv_sym constr
+R8002:8027 nameless.DBTypeComparison <> comparison_left_conversion thm
+R8038:8064 nameless.DBTypeComparison <> comparison_right_conversion thm
+R8083:8088 nameless.DBCore <> cv_sym constr
+R8125:8150 nameless.DBTypeComparison <> comparison_left_conversion thm
+R8161:8187 nameless.DBTypeComparison <> comparison_right_conversion thm
+R8206:8211 nameless.DBCore <> cv_sym constr
+R8125:8150 nameless.DBTypeComparison <> comparison_left_conversion thm
+R8161:8187 nameless.DBTypeComparison <> comparison_right_conversion thm
+R8206:8211 nameless.DBCore <> cv_sym constr
+prf 8247:8266 <> comparison_pi_source
+binder 8277:8277 <> A:59
+binder 8279:8279 <> B:60
+R8303:8306 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8284:8298 nameless.DBTypeComparison <> type_comparison ind
+R8300:8300 nameless.DBTypeComparison <> A:59 var
+R8302:8302 nameless.DBTypeComparison <> B:60 var
+binder 8314:8314 <> C:61
+binder 8316:8316 <> D:62
+R8335:8340 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8319:8322 nameless.DBCore <> conv ind
+R8327:8329 nameless.DBSyntax <> TPi constr
+R8333:8333 nameless.DBTypeComparison <> D:62 var
+R8331:8331 nameless.DBTypeComparison <> C:61 var
+R8324:8324 nameless.DBTypeComparison <> B:60 var
+R8341:8347 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8351:8352 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8348:8348 <> U:63
+binder 8350:8350 <> V:64
+R8353:8356 nameless.DBCore <> conv ind
+R8361:8363 nameless.DBSyntax <> TPi constr
+R8367:8367 nameless.DBTypeComparison <> V:64 var
+R8365:8365 nameless.DBTypeComparison <> U:63 var
+R8358:8358 nameless.DBTypeComparison <> A:59 var
+R8444:8451 nameless.DBCore <> cv_trans constr
+R8444:8451 nameless.DBCore <> cv_trans constr
+R8487:8508 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R8518:8541 nameless.DBTypeComparison <> conversion_common_source thm
+R8487:8508 nameless.DBTypeComparison <> sort_not_pi_conversion thm
+R8518:8541 nameless.DBTypeComparison <> conversion_common_source thm
+prf 8590:8614 <> type_change_strengthening
+binder 8625:8629 <> Delta:65
+binder 8631:8631 <> A:66
+binder 8633:8633 <> B:67
+binder 8635:8635 <> c:68
+R8683:8688 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8640:8650 nameless.DBCumulativeTyping <> type_change ind
+R8652:8656 nameless.DBTypeComparison <> Delta:65 var
+R8659:8662 nameless.DBSyntax <> lift def
+R8668:8668 nameless.DBTypeComparison <> A:66 var
+R8666:8666 nameless.DBTypeComparison <> c:68 var
+R8672:8675 nameless.DBSyntax <> lift def
+R8681:8681 nameless.DBTypeComparison <> B:67 var
+R8679:8679 nameless.DBTypeComparison <> c:68 var
+binder 8696:8700 <> Gamma:69
+R8718:8721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8703:8709 nameless.DBTyping <> type_wf def
+R8711:8715 nameless.DBTypeComparison <> Gamma:69 var
+R8717:8717 nameless.DBTypeComparison <> A:66 var
+R8737:8740 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8722:8728 nameless.DBTyping <> type_wf def
+R8730:8734 nameless.DBTypeComparison <> Gamma:69 var
+R8736:8736 nameless.DBTypeComparison <> B:67 var
+R8741:8751 nameless.DBCumulativeTyping <> type_change ind
+R8753:8757 nameless.DBTypeComparison <> Gamma:69 var
+R8759:8759 nameless.DBTypeComparison <> A:66 var
+R8761:8761 nameless.DBTypeComparison <> B:67 var
+R8813:8834 nameless.DBTypeComparison <> comparison_realization thm
+R8813:8834 nameless.DBTypeComparison <> comparison_realization thm
+R8867:8882 nameless.DBTypeComparison <> comparison_subst thm
+R8889:8910 nameless.DBTypeComparison <> type_change_comparison thm
+R8921:8925 nameless.DBSyntax <> TUnit constr
+R8867:8882 nameless.DBTypeComparison <> comparison_subst thm
+R8889:8910 nameless.DBTypeComparison <> type_change_comparison thm
+R8921:8925 nameless.DBSyntax <> TUnit constr
+R8952:8968 nameless.DBParallelBase <> subst_lift_cancel thm
+R8952:8968 nameless.DBParallelBase <> subst_lift_cancel thm
+R8952:8968 nameless.DBParallelBase <> subst_lift_cancel thm
+R8952:8968 nameless.DBParallelBase <> subst_lift_cancel thm
+R8952:8968 nameless.DBParallelBase <> subst_lift_cancel thm
+R9001:9021 nameless.DBTypeComparison <> comparison_transitive thm
+R9042:9063 nameless.DBTypeComparison <> comparison_realization thm
+R9084:9108 nameless.DBTypeComparison <> type_change_strengthening thm

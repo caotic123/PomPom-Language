@@ -1,0 +1,745 @@
+DIGEST 4b95f49cda6859f55fcb6cf85548f68b
+FNamedWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:86 OpenSignaturesDeadTyping <> <> lib
+R88:110 OpenSignaturesRowTyping <> <> lib
+R120:132 Stdlib.Lists.List ListNotations <> mod
+prf 142:156 <> eval_transitive
+binder 167:167 <> t:1
+binder 169:169 <> u:2
+binder 171:171 <> v:3
+R182:185 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R174:177 OpenSignaturesCore <> eval ind
+R181:181 NamedWork <> u:2 var
+R179:179 NamedWork <> t:1 var
+R194:197 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R186:189 OpenSignaturesCore <> eval ind
+R193:193 NamedWork <> v:3 var
+R191:191 NamedWork <> u:2 var
+R198:201 OpenSignaturesCore <> eval ind
+R205:205 NamedWork <> v:3 var
+R203:203 NamedWork <> t:1 var
+R256:259 OpenSignaturesCore <> eval ind
+R256:259 OpenSignaturesCore <> eval ind
+R256:259 OpenSignaturesCore <> eval ind
+prf 273:287 <> eval_congruence
+R306:309 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R302:305 OpenSignaturesSyntax <> term ind
+R310:313 OpenSignaturesSyntax <> term ind
+binder 298:298 <> C:4
+R318:318 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R359:365 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 326:326 <> t:5
+binder 328:328 <> u:6
+R339:342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R331:334 OpenSignaturesCore <> step ind
+R338:338 NamedWork <> u:6 var
+R336:336 NamedWork <> t:5 var
+R343:346 OpenSignaturesCore <> step ind
+R355:355 NamedWork <> C:4 var
+R357:357 NamedWork <> u:6 var
+R349:349 NamedWork <> C:4 var
+R351:351 NamedWork <> t:5 var
+binder 373:373 <> t:7
+binder 375:375 <> u:8
+R386:389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R378:381 OpenSignaturesCore <> eval ind
+R385:385 NamedWork <> u:8 var
+R383:383 NamedWork <> t:7 var
+R390:393 OpenSignaturesCore <> eval ind
+R402:402 NamedWork <> C:4 var
+R404:404 NamedWork <> u:8 var
+R396:396 NamedWork <> C:4 var
+R398:398 NamedWork <> t:7 var
+R459:462 OpenSignaturesCore <> eval ind
+R459:462 OpenSignaturesCore <> eval ind
+R459:462 OpenSignaturesCore <> eval ind
+prf 476:490 <> eval_conversion
+binder 501:501 <> t:9
+binder 503:503 <> u:10
+R514:517 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R506:509 OpenSignaturesCore <> eval ind
+R513:513 NamedWork <> u:10 var
+R511:511 NamedWork <> t:9 var
+R518:521 OpenSignaturesCore <> conv ind
+R525:525 NamedWork <> u:10 var
+R523:523 NamedWork <> t:9 var
+R574:577 OpenSignaturesCore <> conv ind
+R574:577 OpenSignaturesCore <> conv ind
+R574:577 OpenSignaturesCore <> conv ind
+prf 591:605 <> eval_reductions
+binder 616:616 <> t:11
+binder 618:618 <> u:12
+R629:632 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R621:624 OpenSignaturesCore <> eval ind
+R628:628 NamedWork <> u:12 var
+R626:626 NamedWork <> t:11 var
+R633:639 OpenSignaturesCore <> reduces ind
+R643:643 NamedWork <> u:12 var
+R641:641 NamedWork <> t:11 var
+R692:698 OpenSignaturesCore <> reduces ind
+R701:714 OpenSignaturesProgress <> step_reduction thm
+R692:698 OpenSignaturesCore <> reduces ind
+R692:698 OpenSignaturesCore <> reduces ind
+R701:714 OpenSignaturesProgress <> step_reduction thm
+R701:714 OpenSignaturesProgress <> step_reduction thm
+prf 729:744 <> enum_value_shape
+binder 755:759 <> Gamma:13
+binder 761:761 <> E:14
+binder 763:763 <> v:15
+R793:796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R768:773 OpenSignaturesCore <> typing ind
+R784:789 OpenSignaturesSyntax <> TEnumT constr
+R791:791 NamedWork <> E:14 var
+R781:781 NamedWork <> v:15 var
+R775:779 NamedWork <> Gamma:13 var
+R804:807 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R797:801 OpenSignaturesCore <> value ind
+R803:803 NamedWork <> v:15 var
+R818:821 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R809:811 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R808:808 NamedWork <> v:15 var
+R812:817 OpenSignaturesSyntax <> TEZero constr
+R822:828 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R830:831 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 829:829 <> n:16
+R833:835 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R832:832 NamedWork <> v:15 var
+R836:841 OpenSignaturesSyntax <> TESucc constr
+R843:843 NamedWork <> n:16 var
+R892:915 OpenSignaturesProgress <> canonical_representation thm
+R917:930 OpenSignaturesCanonical <> raw_join_typed thm
+R892:915 OpenSignaturesProgress <> canonical_representation thm
+R917:930 OpenSignaturesCanonical <> raw_join_typed thm
+R986:1004 OpenSignaturesProgress <> canonical_type_head thm
+R986:1004 OpenSignaturesProgress <> canonical_type_head thm
+R1038:1040 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1041:1047 OpenSignaturesProgress <> h_enumt constr
+R1061:1068 OpenSignaturesLabels <> raw_head thm
+R1038:1040 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1041:1047 OpenSignaturesProgress <> h_enumt constr
+R1061:1068 OpenSignaturesLabels <> raw_head thm
+R1144:1152 OpenSignaturesProgress <> term_head def
+prf 1199:1219 <> typing_succ_principal
+binder 1230:1234 <> Gamma:17
+binder 1236:1236 <> t:18
+binder 1238:1238 <> T:19
+R1257:1260 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1241:1246 OpenSignaturesCore <> typing ind
+R1256:1256 NamedWork <> T:19 var
+R1254:1254 NamedWork <> t:18 var
+R1248:1252 NamedWork <> Gamma:17 var
+binder 1268:1268 <> n:20
+R1285:1288 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1274:1276 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1273:1273 NamedWork <> t:18 var
+R1277:1282 OpenSignaturesSyntax <> TESucc constr
+R1284:1284 NamedWork <> n:20 var
+R1289:1295 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1301:1302 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1296:1298 <> tag:21
+binder 1300:1300 <> E:22
+R1324:1327 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1303:1308 OpenSignaturesCore <> typing ind
+R1320:1323 OpenSignaturesSyntax <> TUId constr
+R1316:1318 NamedWork <> tag:21 var
+R1310:1314 NamedWork <> Gamma:17 var
+R1349:1356 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1328:1333 OpenSignaturesCore <> typing ind
+R1343:1348 OpenSignaturesSyntax <> TEnumU constr
+R1341:1341 NamedWork <> E:22 var
+R1335:1339 NamedWork <> Gamma:17 var
+R1382:1385 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1357:1362 OpenSignaturesCore <> typing ind
+R1373:1378 OpenSignaturesSyntax <> TEnumT constr
+R1380:1380 NamedWork <> E:22 var
+R1370:1370 NamedWork <> n:20 var
+R1364:1368 NamedWork <> Gamma:17 var
+R1386:1389 OpenSignaturesCore <> conv ind
+R1415:1415 NamedWork <> T:19 var
+R1392:1397 OpenSignaturesSyntax <> TEnumT constr
+R1400:1405 OpenSignaturesSyntax <> TConsE constr
+R1411:1411 NamedWork <> E:22 var
+R1407:1409 NamedWork <> tag:21 var
+R1512:1522 OpenSignaturesAlpha <> alpha_equiv def
+R1525:1533 OpenSignaturesAlpha <> alpha_eqb def
+R1565:1576 OpenSignaturesAlpha <> alpha_eqb_in def
+R1629:1635 Corelib.Init.Logic <> eq_refl constr
+R1629:1635 Corelib.Init.Logic <> eq_refl constr
+R1727:1734 OpenSignaturesCore <> ty_alpha constr
+R1727:1734 OpenSignaturesCore <> ty_alpha constr
+R1870:1877 OpenSignaturesCore <> cv_trans constr
+R1870:1877 OpenSignaturesCore <> cv_trans constr
+R1982:1989 OpenSignaturesLabels <> raw_head thm
+R2002:2008 Corelib.Init.Logic <> eq_refl constr
+R2010:2016 Corelib.Init.Logic <> eq_refl constr
+R1982:1989 OpenSignaturesLabels <> raw_head thm
+R2002:2008 Corelib.Init.Logic <> eq_refl constr
+R2010:2016 Corelib.Init.Logic <> eq_refl constr
+R2099:2105 OpenSignaturesCore <> cv_refl constr
+R2099:2105 OpenSignaturesCore <> cv_refl constr
+R2099:2105 OpenSignaturesCore <> cv_refl constr
+R2099:2105 OpenSignaturesCore <> cv_refl constr
+R2099:2105 OpenSignaturesCore <> cv_refl constr
+sec 2122:2135 <> NamedCanonical
+var 2147:2152 NamedCanonical weaken
+binder 2163:2167 <> Gamma:23
+binder 2169:2169 <> x:24
+binder 2171:2171 <> t:25
+binder 2173:2173 <> A:26
+binder 2175:2175 <> B:27
+binder 2177:2177 <> k:28
+R2198:2201 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2182:2189 OpenSignaturesSyntax <> fresh_in def
+R2197:2197 NamedWork <> x:24 var
+R2191:2195 NamedWork <> Gamma:23 var
+R2218:2221 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2202:2207 OpenSignaturesCore <> typing ind
+R2217:2217 NamedWork <> A:26 var
+R2215:2215 NamedWork <> t:25 var
+R2209:2213 NamedWork <> Gamma:23 var
+R2246:2251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2222:2227 OpenSignaturesCore <> typing ind
+R2238:2242 OpenSignaturesSyntax <> TSort constr
+R2244:2244 NamedWork <> k:28 var
+R2235:2235 NamedWork <> B:27 var
+R2229:2233 NamedWork <> Gamma:23 var
+R2252:2257 OpenSignaturesCore <> typing ind
+R2280:2280 NamedWork <> A:26 var
+R2278:2278 NamedWork <> t:25 var
+R2260:2265 OpenSignaturesSyntax <> extend def
+R2275:2275 NamedWork <> B:27 var
+R2273:2273 NamedWork <> x:24 var
+R2267:2271 NamedWork <> Gamma:23 var
+var 2292:2299 NamedCanonical preserve
+binder 2310:2314 <> Gamma:31
+binder 2316:2316 <> t:32
+binder 2318:2318 <> u:33
+binder 2320:2320 <> A:34
+R2339:2342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2323:2328 OpenSignaturesCore <> typing ind
+R2338:2338 NamedWork <> A:34 var
+R2336:2336 NamedWork <> t:32 var
+R2330:2334 NamedWork <> Gamma:31 var
+R2356:2359 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2343:2351 OpenSignaturesCore <> reduction ind
+R2355:2355 NamedWork <> u:33 var
+R2353:2353 NamedWork <> t:32 var
+R2360:2365 OpenSignaturesCore <> typing ind
+R2375:2375 NamedWork <> A:34 var
+R2373:2373 NamedWork <> u:33 var
+R2367:2371 NamedWork <> Gamma:31 var
+var 2387:2395 NamedCanonical normalize
+binder 2406:2406 <> t:37
+binder 2408:2408 <> A:38
+R2431:2434 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2411:2416 OpenSignaturesCore <> typing ind
+R2430:2430 NamedWork <> A:38 var
+R2428:2428 NamedWork <> t:37 var
+R2418:2426 OpenSignaturesSyntax <> empty_ctx def
+R2435:2441 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2443:2444 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2442:2442 <> v:39
+R2453:2456 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2445:2448 OpenSignaturesCore <> eval ind
+R2452:2452 NamedWork <> v:39 var
+R2450:2450 NamedWork <> t:37 var
+R2457:2461 OpenSignaturesCore <> value ind
+R2463:2463 NamedWork <> v:39 var
+prf 2473:2483 <> eval_typing
+binder 2494:2498 <> Gamma:42
+binder 2500:2500 <> t:43
+binder 2502:2502 <> u:44
+binder 2504:2504 <> A:45
+R2525:2528 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2509:2514 OpenSignaturesCore <> typing ind
+R2524:2524 NamedWork <> A:45 var
+R2522:2522 NamedWork <> t:43 var
+R2516:2520 NamedWork <> Gamma:42 var
+R2537:2540 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2529:2532 OpenSignaturesCore <> eval ind
+R2536:2536 NamedWork <> u:44 var
+R2534:2534 NamedWork <> t:43 var
+R2541:2546 OpenSignaturesCore <> typing ind
+R2556:2556 NamedWork <> A:45 var
+R2554:2554 NamedWork <> u:44 var
+R2548:2552 NamedWork <> Gamma:42 var
+R2581:2594 OpenSignaturesConstructorInversion <> typing_reduces thm
+R2604:2611 NamedWork <> NamedCanonical.preserve var
+R2620:2634 NamedWork <> eval_reductions thm
+R2581:2594 OpenSignaturesConstructorInversion <> typing_reduces thm
+R2604:2611 NamedWork <> NamedCanonical.preserve var
+R2620:2634 NamedWork <> eval_reductions thm
+prf 2675:2690 <> enum_normal_form
+binder 2701:2702 <> rs:46
+binder 2704:2704 <> t:47
+R2750:2755 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2709:2714 OpenSignaturesCore <> typing ind
+R2729:2734 OpenSignaturesSyntax <> TEnumT constr
+R2737:2744 OpenSignaturesElaboration <> row_enum def
+R2746:2747 NamedWork <> rs:46 var
+R2726:2726 NamedWork <> t:47 var
+R2716:2724 OpenSignaturesSyntax <> empty_ctx def
+R2756:2762 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2771:2772 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2763:2763 <> n:48
+binder 2765:2768 <> name:49
+binder 2770:2770 <> D:50
+R2803:2806 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2787:2789 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2773:2781 Stdlib.Lists.List <> nth_error def
+R2786:2786 NamedWork <> n:48 var
+R2783:2784 NamedWork <> rs:46 var
+R2790:2793 Corelib.Init.Datatypes <> Some constr
+R2795:2795 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2800:2800 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2802:2802 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2796:2799 NamedWork <> name:49 var
+R2801:2801 NamedWork <> D:50 var
+R2807:2810 OpenSignaturesCore <> eval ind
+R2815:2827 OpenSignaturesSyntax <> enum_position def
+R2829:2829 NamedWork <> n:48 var
+R2812:2812 NamedWork <> t:47 var
+R2903:2911 NamedWork <> NamedCanonical.normalize var
+R2903:2911 NamedWork <> NamedCanonical.normalize var
+R2958:2972 OpenSignaturesProgress <> bottom_no_value thm
+R2974:2987 OpenSignaturesCanonical <> raw_join_typed thm
+R2999:3009 NamedWork <> eval_typing thm
+R2958:2972 OpenSignaturesProgress <> bottom_no_value thm
+R2974:2987 OpenSignaturesCanonical <> raw_join_typed thm
+R2999:3009 NamedWork <> eval_typing thm
+R3049:3057 NamedWork <> NamedCanonical.normalize var
+R3049:3057 NamedWork <> NamedCanonical.normalize var
+R3101:3106 OpenSignaturesCore <> typing ind
+R3121:3126 OpenSignaturesSyntax <> TEnumT constr
+R3129:3136 OpenSignaturesElaboration <> row_enum def
+R3146:3147 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3139:3139 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3143:3143 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3145:3145 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3108:3116 OpenSignaturesSyntax <> empty_ctx def
+R3166:3176 NamedWork <> eval_typing thm
+R3101:3106 OpenSignaturesCore <> typing ind
+R3121:3126 OpenSignaturesSyntax <> TEnumT constr
+R3129:3136 OpenSignaturesElaboration <> row_enum def
+R3146:3147 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3139:3139 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3143:3143 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3145:3145 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3108:3116 OpenSignaturesSyntax <> empty_ctx def
+R3166:3176 NamedWork <> eval_typing thm
+R3207:3222 NamedWork <> enum_value_shape thm
+R3207:3222 NamedWork <> enum_value_shape thm
+R3323:3343 NamedWork <> typing_succ_principal thm
+R3357:3363 Corelib.Init.Logic <> eq_refl constr
+R3323:3343 NamedWork <> typing_succ_principal thm
+R3357:3363 Corelib.Init.Logic <> eq_refl constr
+R3413:3421 OpenSignaturesConstructorInversion <> conv_enum thm
+R3424:3433 OpenSignaturesLabels <> conv_conse thm
+R3413:3421 OpenSignaturesConstructorInversion <> conv_enum thm
+R3424:3433 OpenSignaturesLabels <> conv_conse thm
+R3485:3490 OpenSignaturesCore <> typing ind
+R3505:3510 OpenSignaturesSyntax <> TEnumT constr
+R3513:3520 OpenSignaturesElaboration <> row_enum def
+R3492:3500 OpenSignaturesSyntax <> empty_ctx def
+R3485:3490 OpenSignaturesCore <> typing ind
+R3505:3510 OpenSignaturesSyntax <> TEnumT constr
+R3513:3520 OpenSignaturesElaboration <> row_enum def
+R3492:3500 OpenSignaturesSyntax <> empty_ctx def
+R3544:3550 OpenSignaturesCore <> ty_conv constr
+R3569:3576 OpenSignaturesCore <> ty_enumt constr
+R3579:3593 OpenSignaturesRowTyping <> row_enum_typing thm
+R3596:3601 OpenSignaturesCore <> wf_nil constr
+R3544:3550 OpenSignaturesCore <> ty_conv constr
+R3569:3576 OpenSignaturesCore <> ty_enumt constr
+R3579:3593 OpenSignaturesRowTyping <> row_enum_typing thm
+R3596:3601 OpenSignaturesCore <> wf_nil constr
+R3620:3632 OpenSignaturesCore <> cv_compatible constr
+R3635:3643 OpenSignaturesSyntax <> cp_TEnumT constr
+R3620:3632 OpenSignaturesCore <> cv_compatible constr
+R3635:3643 OpenSignaturesSyntax <> cp_TEnumT constr
+R3726:3726 Corelib.Init.Datatypes <> S constr
+R3726:3726 Corelib.Init.Datatypes <> S constr
+R3772:3786 NamedWork <> eval_transitive thm
+R3772:3786 NamedWork <> eval_transitive thm
+R3815:3829 NamedWork <> eval_congruence thm
+R3831:3836 OpenSignaturesSyntax <> TESucc constr
+R3851:3861 OpenSignaturesCore <> st_TESucc_n constr
+R3815:3829 NamedWork <> eval_congruence thm
+R3831:3836 OpenSignaturesSyntax <> TESucc constr
+R3851:3861 OpenSignaturesCore <> st_TESucc_n constr
+R3851:3861 OpenSignaturesCore <> st_TESucc_n constr
+prf 3876:3893 <> choice_value_shape
+binder 3904:3908 <> Gamma:51
+binder 3910:3911 <> IT:52
+binder 3913:3913 <> E:53
+binder 3915:3915 <> D:54
+binder 3917:3917 <> X:55
+binder 3919:3919 <> v:56
+R3949:3952 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3924:3929 OpenSignaturesCore <> typing ind
+R3941:3945 OpenSignaturesSyntax <> TSort constr
+R3937:3938 NamedWork <> IT:52 var
+R3931:3935 NamedWork <> Gamma:51 var
+R3974:3979 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3953:3958 OpenSignaturesCore <> typing ind
+R3968:3973 OpenSignaturesSyntax <> TEnumU constr
+R3966:3966 NamedWork <> E:53 var
+R3960:3964 NamedWork <> Gamma:51 var
+R4025:4028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3980:3985 OpenSignaturesCore <> typing ind
+R3996:4000 OpenSignaturesSyntax <> arrow def
+R4014:4019 OpenSignaturesSyntax <> TIDesc constr
+R4021:4022 NamedWork <> IT:52 var
+R4003:4008 OpenSignaturesSyntax <> TEnumT constr
+R4010:4010 NamedWork <> E:53 var
+R3993:3993 NamedWork <> D:54 var
+R3987:3991 NamedWork <> Gamma:51 var
+R4055:4060 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4029:4034 OpenSignaturesCore <> typing ind
+R4045:4050 OpenSignaturesSyntax <> Family def
+R4052:4053 NamedWork <> IT:52 var
+R4042:4042 NamedWork <> X:55 var
+R4036:4040 NamedWork <> Gamma:51 var
+R4105:4108 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4061:4066 OpenSignaturesCore <> typing ind
+R4077:4083 OpenSignaturesSyntax <> TInterp constr
+R4103:4103 NamedWork <> X:55 var
+R4089:4096 OpenSignaturesSyntax <> TIChoice constr
+R4100:4100 NamedWork <> D:54 var
+R4098:4098 NamedWork <> E:53 var
+R4085:4086 NamedWork <> IT:52 var
+R4074:4074 NamedWork <> v:56 var
+R4068:4072 NamedWork <> Gamma:51 var
+R4116:4121 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4109:4113 OpenSignaturesCore <> value ind
+R4115:4115 NamedWork <> v:56 var
+R4122:4128 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4132:4133 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4129:4129 <> a:57
+binder 4131:4131 <> b:58
+R4135:4137 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4134:4134 NamedWork <> v:56 var
+R4138:4142 OpenSignaturesSyntax <> TPair constr
+R4146:4146 NamedWork <> b:58 var
+R4144:4144 NamedWork <> a:57 var
+R4219:4225 OpenSignaturesCore <> type_wf def
+R4234:4240 OpenSignaturesSyntax <> TInterp constr
+R4246:4253 OpenSignaturesSyntax <> TIChoice constr
+R4288:4296 OpenSignaturesCore <> ty_interp constr
+R4310:4319 OpenSignaturesCore <> ty_ichoice constr
+R4219:4225 OpenSignaturesCore <> type_wf def
+R4234:4240 OpenSignaturesSyntax <> TInterp constr
+R4246:4253 OpenSignaturesSyntax <> TIChoice constr
+R4288:4296 OpenSignaturesCore <> ty_interp constr
+R4310:4319 OpenSignaturesCore <> ty_ichoice constr
+R4310:4319 OpenSignaturesCore <> ty_ichoice constr
+R4310:4319 OpenSignaturesCore <> ty_ichoice constr
+R4335:4352 OpenSignaturesProgress <> value_type_exposes thm
+R4389:4409 OpenSignaturesProgress <> exposes_interp_choice constr
+R4354:4367 OpenSignaturesCanonical <> raw_join_typed thm
+R4335:4352 OpenSignaturesProgress <> value_type_exposes thm
+R4389:4409 OpenSignaturesProgress <> exposes_interp_choice constr
+R4354:4367 OpenSignaturesCanonical <> raw_join_typed thm
+R4473:4481 OpenSignaturesProgress <> term_head def
+prf 4533:4558 <> canonical_named_from_rules
+binder 4569:4570 <> IT:59
+binder 4572:4572 <> F:60
+binder 4574:4574 <> G:61
+binder 4576:4576 <> i:62
+binder 4578:4578 <> t:63
+binder 4580:4581 <> rs:64
+R4623:4628 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4586:4591 OpenSignaturesCore <> typing ind
+R4606:4612 OpenSignaturesSyntax <> CloseAt def
+R4621:4621 NamedWork <> i:62 var
+R4619:4619 NamedWork <> G:61 var
+R4617:4617 NamedWork <> F:60 var
+R4614:4615 NamedWork <> IT:59 var
+R4603:4603 NamedWork <> t:63 var
+R4593:4601 OpenSignaturesSyntax <> empty_ctx def
+R4664:4669 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4629:4636 OpenSignaturesElaboration <> row_view ind
+R4662:4663 NamedWork <> rs:64 var
+R4652:4655 OpenSignaturesSyntax <> TApp constr
+R4659:4659 NamedWork <> i:62 var
+R4657:4657 NamedWork <> F:60 var
+R4648:4649 NamedWork <> IT:59 var
+R4638:4646 OpenSignaturesSyntax <> empty_ctx def
+R4670:4676 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4688:4693 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4677:4680 <> name:65
+binder 4682:4682 <> D:66
+binder 4684:4684 <> n:67
+binder 4686:4687 <> xs:68
+R4724:4731 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4708:4710 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4694:4702 Stdlib.Lists.List <> nth_error def
+R4707:4707 NamedWork <> n:67 var
+R4704:4705 NamedWork <> rs:64 var
+R4711:4714 Corelib.Init.Datatypes <> Some constr
+R4716:4716 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4721:4721 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4723:4723 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4717:4720 NamedWork <> name:65 var
+R4722:4722 NamedWork <> D:66 var
+R4773:4780 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4732:4735 OpenSignaturesCore <> eval ind
+R4740:4742 OpenSignaturesSyntax <> TIn constr
+R4745:4749 OpenSignaturesSyntax <> TPair constr
+R4769:4770 NamedWork <> xs:68 var
+R4752:4764 OpenSignaturesSyntax <> enum_position def
+R4766:4766 NamedWork <> n:67 var
+R4737:4737 NamedWork <> t:63 var
+R4781:4786 OpenSignaturesCore <> typing ind
+R4802:4808 OpenSignaturesSyntax <> TInterp constr
+R4816:4822 OpenSignaturesSyntax <> carrier def
+R4827:4827 NamedWork <> G:61 var
+R4824:4825 NamedWork <> IT:59 var
+R4813:4813 NamedWork <> D:66 var
+R4810:4811 NamedWork <> IT:59 var
+R4798:4799 NamedWork <> xs:68 var
+R4788:4796 OpenSignaturesSyntax <> empty_ctx def
+R4884:4892 NamedWork <> NamedCanonical.normalize var
+R4884:4892 NamedWork <> NamedCanonical.normalize var
+R4935:4940 OpenSignaturesCore <> typing ind
+R4955:4961 OpenSignaturesSyntax <> CloseAt def
+R4942:4950 OpenSignaturesSyntax <> empty_ctx def
+R4985:4995 NamedWork <> eval_typing thm
+R4935:4940 OpenSignaturesCore <> typing ind
+R4955:4961 OpenSignaturesSyntax <> CloseAt def
+R4942:4950 OpenSignaturesSyntax <> empty_ctx def
+R4985:4995 NamedWork <> eval_typing thm
+R5024:5049 OpenSignaturesCanonical <> canonical_close_from_rules thm
+R5058:5065 NamedWork <> NamedCanonical.preserve var
+R5051:5056 NamedWork <> NamedCanonical.weaken var
+R5024:5049 OpenSignaturesCanonical <> canonical_close_from_rules thm
+R5058:5065 NamedWork <> NamedCanonical.preserve var
+R5051:5056 NamedWork <> NamedCanonical.weaken var
+R5113:5132 OpenSignaturesCanonical <> typing_in_regularity thm
+R5146:5152 Corelib.Init.Logic <> eq_refl constr
+R5113:5132 OpenSignaturesCanonical <> typing_in_regularity thm
+R5146:5152 Corelib.Init.Logic <> eq_refl constr
+R5181:5204 OpenSignaturesCanonical <> typing_close_application thm
+R5233:5239 Corelib.Init.Logic <> eq_refl constr
+R5206:5211 NamedWork <> NamedCanonical.weaken var
+R5181:5204 OpenSignaturesCanonical <> typing_close_application thm
+R5233:5239 Corelib.Init.Logic <> eq_refl constr
+R5206:5211 NamedWork <> NamedCanonical.weaken var
+R5333:5338 OpenSignaturesCore <> typing ind
+R5366:5371 OpenSignaturesSyntax <> Family def
+R5351:5357 OpenSignaturesSyntax <> carrier def
+R5340:5348 OpenSignaturesSyntax <> empty_ctx def
+R5391:5398 OpenSignaturesCore <> ty_close constr
+R5333:5338 OpenSignaturesCore <> typing ind
+R5366:5371 OpenSignaturesSyntax <> Family def
+R5351:5357 OpenSignaturesSyntax <> carrier def
+R5340:5348 OpenSignaturesSyntax <> empty_ctx def
+R5391:5398 OpenSignaturesCore <> ty_close constr
+R5423:5428 OpenSignaturesCore <> typing ind
+R5466:5470 OpenSignaturesSyntax <> arrow def
+R5496:5501 OpenSignaturesSyntax <> TIDesc constr
+R5473:5478 OpenSignaturesSyntax <> TEnumT constr
+R5481:5488 OpenSignaturesElaboration <> row_enum def
+R5441:5452 OpenSignaturesElaboration <> row_branches def
+R5430:5438 OpenSignaturesSyntax <> empty_ctx def
+R5423:5428 OpenSignaturesCore <> typing ind
+R5466:5470 OpenSignaturesSyntax <> arrow def
+R5496:5501 OpenSignaturesSyntax <> TIDesc constr
+R5473:5478 OpenSignaturesSyntax <> TEnumT constr
+R5481:5488 OpenSignaturesElaboration <> row_enum def
+R5441:5452 OpenSignaturesElaboration <> row_branches def
+R5430:5438 OpenSignaturesSyntax <> empty_ctx def
+R5520:5546 OpenSignaturesRowTyping <> row_branches_from_weakening thm
+R5556:5561 NamedWork <> NamedCanonical.weaken var
+R5580:5584 Corelib.Init.Logic <> proj2 thm
+R5587:5591 Corelib.Init.Logic <> proj2 thm
+R5520:5546 OpenSignaturesRowTyping <> row_branches_from_weakening thm
+R5556:5561 NamedWork <> NamedCanonical.weaken var
+R5580:5584 Corelib.Init.Logic <> proj2 thm
+R5587:5591 Corelib.Init.Logic <> proj2 thm
+R5625:5630 OpenSignaturesCore <> typing ind
+R5660:5665 OpenSignaturesSyntax <> TIDesc constr
+R5643:5650 OpenSignaturesElaboration <> row_code def
+R5632:5640 OpenSignaturesSyntax <> empty_ctx def
+R5686:5708 OpenSignaturesRowTyping <> row_code_from_weakening thm
+R5625:5630 OpenSignaturesCore <> typing ind
+R5660:5665 OpenSignaturesSyntax <> TIDesc constr
+R5643:5650 OpenSignaturesElaboration <> row_code def
+R5632:5640 OpenSignaturesSyntax <> empty_ctx def
+R5686:5708 OpenSignaturesRowTyping <> row_code_from_weakening thm
+R5740:5745 OpenSignaturesCore <> typing ind
+R5760:5766 OpenSignaturesSyntax <> TInterp constr
+R5789:5795 OpenSignaturesSyntax <> carrier def
+R5772:5779 OpenSignaturesElaboration <> row_code def
+R5747:5755 OpenSignaturesSyntax <> empty_ctx def
+R5740:5745 OpenSignaturesCore <> typing ind
+R5760:5766 OpenSignaturesSyntax <> TInterp constr
+R5789:5795 OpenSignaturesSyntax <> carrier def
+R5772:5779 OpenSignaturesElaboration <> row_code def
+R5747:5755 OpenSignaturesSyntax <> empty_ctx def
+R5817:5823 OpenSignaturesCore <> ty_conv constr
+R5846:5854 OpenSignaturesCore <> ty_interp constr
+R5866:5882 OpenSignaturesDeadTyping <> interp_conversion thm
+R5817:5823 OpenSignaturesCore <> ty_conv constr
+R5846:5854 OpenSignaturesCore <> ty_interp constr
+R5866:5882 OpenSignaturesDeadTyping <> interp_conversion thm
+R5900:5908 NamedWork <> NamedCanonical.normalize var
+R5900:5908 NamedWork <> NamedCanonical.normalize var
+R5952:5957 OpenSignaturesCore <> typing ind
+R5972:5978 OpenSignaturesSyntax <> TInterp constr
+R6001:6007 OpenSignaturesSyntax <> carrier def
+R5984:5991 OpenSignaturesElaboration <> row_code def
+R5959:5967 OpenSignaturesSyntax <> empty_ctx def
+R6032:6042 NamedWork <> eval_typing thm
+R5952:5957 OpenSignaturesCore <> typing ind
+R5972:5978 OpenSignaturesSyntax <> TInterp constr
+R6001:6007 OpenSignaturesSyntax <> carrier def
+R5984:5991 OpenSignaturesElaboration <> row_code def
+R5959:5967 OpenSignaturesSyntax <> empty_ctx def
+R6032:6042 NamedWork <> eval_typing thm
+R6071:6088 NamedWork <> choice_value_shape thm
+R6107:6121 OpenSignaturesRowTyping <> row_enum_typing thm
+R6128:6133 OpenSignaturesCore <> wf_nil constr
+R6071:6088 NamedWork <> choice_value_shape thm
+R6107:6121 OpenSignaturesRowTyping <> row_enum_typing thm
+R6128:6133 OpenSignaturesCore <> wf_nil constr
+R6191:6196 OpenSignaturesCore <> typing ind
+R6211:6216 OpenSignaturesSyntax <> TEnumT constr
+R6219:6226 OpenSignaturesElaboration <> row_enum def
+R6198:6206 OpenSignaturesSyntax <> empty_ctx def
+R6191:6196 OpenSignaturesCore <> typing ind
+R6211:6216 OpenSignaturesSyntax <> TEnumT constr
+R6219:6226 OpenSignaturesElaboration <> row_enum def
+R6198:6206 OpenSignaturesSyntax <> empty_ctx def
+R6264:6267 OpenSignaturesSyntax <> TFst constr
+R6270:6274 OpenSignaturesSyntax <> TPair constr
+R6246:6253 NamedWork <> NamedCanonical.preserve var
+R6264:6267 OpenSignaturesSyntax <> TFst constr
+R6270:6274 OpenSignaturesSyntax <> TPair constr
+R6246:6253 NamedWork <> NamedCanonical.preserve var
+R6296:6312 OpenSignaturesDataTyping <> interp_choice_fst thm
+R6327:6341 OpenSignaturesRowTyping <> row_enum_typing thm
+R6344:6349 OpenSignaturesCore <> wf_nil constr
+R6296:6312 OpenSignaturesDataTyping <> interp_choice_fst thm
+R6327:6341 OpenSignaturesRowTyping <> row_enum_typing thm
+R6327:6341 OpenSignaturesRowTyping <> row_enum_typing thm
+R6327:6341 OpenSignaturesRowTyping <> row_enum_typing thm
+R6327:6341 OpenSignaturesRowTyping <> row_enum_typing thm
+R6327:6341 OpenSignaturesRowTyping <> row_enum_typing thm
+R6327:6341 OpenSignaturesRowTyping <> row_enum_typing thm
+R6344:6349 OpenSignaturesCore <> wf_nil constr
+R6344:6349 OpenSignaturesCore <> wf_nil constr
+R6344:6349 OpenSignaturesCore <> wf_nil constr
+R6344:6349 OpenSignaturesCore <> wf_nil constr
+R6344:6349 OpenSignaturesCore <> wf_nil constr
+R6344:6349 OpenSignaturesCore <> wf_nil constr
+R6364:6371 OpenSignaturesCore <> red_root constr
+R6364:6371 OpenSignaturesCore <> red_root constr
+R6401:6416 NamedWork <> enum_normal_form thm
+R6401:6416 NamedWork <> enum_normal_form thm
+R6471:6476 OpenSignaturesCore <> typing ind
+R6495:6501 OpenSignaturesSyntax <> TInterp constr
+R6554:6560 OpenSignaturesSyntax <> carrier def
+R6507:6510 OpenSignaturesSyntax <> TApp constr
+R6534:6537 OpenSignaturesSyntax <> TFst constr
+R6540:6544 OpenSignaturesSyntax <> TPair constr
+R6513:6524 OpenSignaturesElaboration <> row_branches def
+R6478:6486 OpenSignaturesSyntax <> empty_ctx def
+R6471:6476 OpenSignaturesCore <> typing ind
+R6495:6501 OpenSignaturesSyntax <> TInterp constr
+R6554:6560 OpenSignaturesSyntax <> carrier def
+R6507:6510 OpenSignaturesSyntax <> TApp constr
+R6534:6537 OpenSignaturesSyntax <> TFst constr
+R6540:6544 OpenSignaturesSyntax <> TPair constr
+R6513:6524 OpenSignaturesElaboration <> row_branches def
+R6478:6486 OpenSignaturesSyntax <> empty_ctx def
+R6600:6603 OpenSignaturesSyntax <> TSnd constr
+R6606:6610 OpenSignaturesSyntax <> TPair constr
+R6582:6589 NamedWork <> NamedCanonical.preserve var
+R6600:6603 OpenSignaturesSyntax <> TSnd constr
+R6606:6610 OpenSignaturesSyntax <> TPair constr
+R6582:6589 NamedWork <> NamedCanonical.preserve var
+R6632:6648 OpenSignaturesDataTyping <> interp_choice_snd thm
+R6663:6677 OpenSignaturesRowTyping <> row_enum_typing thm
+R6680:6685 OpenSignaturesCore <> wf_nil constr
+R6632:6648 OpenSignaturesDataTyping <> interp_choice_snd thm
+R6663:6677 OpenSignaturesRowTyping <> row_enum_typing thm
+R6663:6677 OpenSignaturesRowTyping <> row_enum_typing thm
+R6663:6677 OpenSignaturesRowTyping <> row_enum_typing thm
+R6663:6677 OpenSignaturesRowTyping <> row_enum_typing thm
+R6663:6677 OpenSignaturesRowTyping <> row_enum_typing thm
+R6663:6677 OpenSignaturesRowTyping <> row_enum_typing thm
+R6680:6685 OpenSignaturesCore <> wf_nil constr
+R6680:6685 OpenSignaturesCore <> wf_nil constr
+R6680:6685 OpenSignaturesCore <> wf_nil constr
+R6680:6685 OpenSignaturesCore <> wf_nil constr
+R6680:6685 OpenSignaturesCore <> wf_nil constr
+R6680:6685 OpenSignaturesCore <> wf_nil constr
+R6700:6707 OpenSignaturesCore <> red_root constr
+R6700:6707 OpenSignaturesCore <> red_root constr
+R6786:6800 NamedWork <> eval_transitive thm
+R6786:6800 NamedWork <> eval_transitive thm
+R6828:6842 NamedWork <> eval_congruence thm
+R6844:6846 OpenSignaturesSyntax <> TIn constr
+R6862:6869 OpenSignaturesCore <> st_TIn_x constr
+R6828:6842 NamedWork <> eval_congruence thm
+R6844:6846 OpenSignaturesSyntax <> TIn constr
+R6862:6869 OpenSignaturesCore <> st_TIn_x constr
+R6885:6899 NamedWork <> eval_transitive thm
+R6885:6899 NamedWork <> eval_transitive thm
+R6927:6941 NamedWork <> eval_congruence thm
+binder 6948:6948 <> x:69
+R6953:6957 OpenSignaturesSyntax <> TPair constr
+R6959:6959 NamedWork <> x:69 var
+R6977:6986 OpenSignaturesCore <> st_TPair_a constr
+R6927:6941 NamedWork <> eval_congruence thm
+binder 6948:6948 <> x:70
+R6953:6957 OpenSignaturesSyntax <> TPair constr
+R6959:6959 NamedWork <> x:70 var
+R6977:6986 OpenSignaturesCore <> st_TPair_a constr
+R6977:6986 OpenSignaturesCore <> st_TPair_a constr
+R7000:7006 OpenSignaturesCore <> ty_conv constr
+R7000:7006 OpenSignaturesCore <> ty_conv constr
+R7036:7044 OpenSignaturesCore <> ty_interp constr
+R7036:7044 OpenSignaturesCore <> ty_interp constr
+R7139:7139 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7144:7144 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7146:7146 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7116:7128 Stdlib.Lists.List <> Forall_forall thm
+R7189:7200 Stdlib.Lists.List <> nth_error_In thm
+R7139:7139 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7144:7144 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7146:7146 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7116:7128 Stdlib.Lists.List <> Forall_forall thm
+R7189:7200 Stdlib.Lists.List <> nth_error_In thm
+R7227:7243 OpenSignaturesDeadTyping <> interp_conversion thm
+R7227:7243 OpenSignaturesDeadTyping <> interp_conversion thm
+R7277:7280 OpenSignaturesSyntax <> TApp constr
+R7304:7316 OpenSignaturesSyntax <> enum_position def
+R7283:7294 OpenSignaturesElaboration <> row_branches def
+R7259:7266 OpenSignaturesCore <> cv_trans constr
+R7277:7280 OpenSignaturesSyntax <> TApp constr
+R7304:7316 OpenSignaturesSyntax <> enum_position def
+R7283:7294 OpenSignaturesElaboration <> row_branches def
+R7259:7266 OpenSignaturesCore <> cv_trans constr
+R7337:7349 OpenSignaturesCore <> cv_compatible constr
+R7352:7358 OpenSignaturesSyntax <> cp_TApp constr
+R7368:7374 OpenSignaturesCore <> cv_refl constr
+R7337:7349 OpenSignaturesCore <> cv_compatible constr
+R7352:7358 OpenSignaturesSyntax <> cp_TApp constr
+R7368:7374 OpenSignaturesCore <> cv_refl constr
+R7394:7401 OpenSignaturesCore <> cv_trans constr
+R7411:7417 OpenSignaturesCore <> cv_step constr
+R7420:7426 OpenSignaturesCore <> st_root constr
+R7450:7464 NamedWork <> eval_conversion thm
+R7394:7401 OpenSignaturesCore <> cv_trans constr
+R7411:7417 OpenSignaturesCore <> cv_step constr
+R7420:7426 OpenSignaturesCore <> st_root constr
+R7450:7464 NamedWork <> eval_conversion thm
+R7483:7503 OpenSignaturesRowTyping <> row_branches_position thm
+R7483:7503 OpenSignaturesRowTyping <> row_branches_position thm
+R7528:7541 NamedWork NamedCanonical <> sec

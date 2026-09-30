@@ -1,0 +1,1237 @@
+DIGEST 45e2aae0925aee5639c74da7fafec828
+FProofDB.DBEta
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:40 Stdlib.micromega.Lia <> <> lib
+R42:49 Stdlib.Arith.PeanoNat <> <> lib
+R51:56 Stdlib.Strings.String <> <> lib
+R74:95 ProofDB.DBParallelBase <> <> lib
+R105:117 Stdlib.Lists.List ListNotations <> mod
+ind 131:136 <> epstep
+constr 166:173 <> eps_TVar
+constr 214:222 <> eps_TSort
+constr 265:271 <> eps_TPi
+constr 354:361 <> eps_TLam
+constr 421:428 <> eps_TApp
+constr 513:522 <> eps_TSigma
+constr 611:619 <> eps_TPair
+constr 706:713 <> eps_TFst
+constr 773:780 <> eps_TSnd
+constr 840:849 <> eps_TUnitT
+constr 876:884 <> eps_TUnit
+constr 909:916 <> eps_TUId
+constr 939:946 <> eps_TTag
+constr 987:996 <> eps_TEnumU
+constr 1023:1031 <> eps_TNilE
+constr 1056:1065 <> eps_TConsE
+constr 1166:1175 <> eps_TEnumT
+constr 1239:1248 <> eps_TEZero
+constr 1275:1284 <> eps_TESucc
+constr 1348:1355 <> eps_TEPi
+constr 1446:1456 <> eps_TSwitch
+constr 1603:1612 <> eps_TIDesc
+constr 1682:1690 <> eps_TIVar
+constr 1752:1758 <> eps_TI1
+constr 1779:1787 <> eps_TIBot
+constr 1812:1821 <> eps_TIProd
+constr 1910:1917 <> eps_TIPi
+constr 2002:2010 <> eps_TISig
+constr 2097:2108 <> eps_TIChoice
+constr 2201:2211 <> eps_TInterp
+constr 2333:2340 <> eps_TMuI
+constr 2431:2437 <> eps_TIn
+constr 2495:2502 <> eps_TInd
+constr 2693:2701 <> eps_TIAll
+constr 2869:2877 <> eps_THyps
+constr 3070:3079 <> eps_TClose
+constr 3199:3212 <> eps_TCloseCase
+constr 3446:3458 <> eps_TCloseInd
+constr 3685:3691 <> eps_eta
+R144:147 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R140:143 ProofDB.DBSyntax <> term ind
+R152:155 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R148:151 ProofDB.DBSyntax <> term ind
+binder 184:184 <> n:3
+R187:192 ProofDB.DBEta <> epstep:1 ind
+R204:207 ProofDB.DBSyntax <> TVar constr
+R209:209 ProofDB.DBEta <> n:3 var
+R195:198 ProofDB.DBSyntax <> TVar constr
+R200:200 ProofDB.DBEta <> n:3 var
+binder 233:233 <> k:4
+R236:241 ProofDB.DBEta <> epstep:1 ind
+R254:258 ProofDB.DBSyntax <> TSort constr
+R260:260 ProofDB.DBEta <> k:4 var
+R244:248 ProofDB.DBSyntax <> TSort constr
+R250:250 ProofDB.DBEta <> k:4 var
+binder 282:282 <> A:5
+binder 284:285 <> A':6
+binder 287:287 <> B:7
+binder 289:290 <> B':8
+R304:307 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R293:298 ProofDB.DBEta <> epstep:1 ind
+R302:303 ProofDB.DBEta <> A':6 var
+R300:300 ProofDB.DBEta <> A:5 var
+R319:322 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R308:313 ProofDB.DBEta <> epstep:1 ind
+R317:318 ProofDB.DBEta <> B':8 var
+R315:315 ProofDB.DBEta <> B:7 var
+R323:328 ProofDB.DBEta <> epstep:1 ind
+R341:343 ProofDB.DBSyntax <> TPi constr
+R348:349 ProofDB.DBEta <> B':8 var
+R345:346 ProofDB.DBEta <> A':6 var
+R331:333 ProofDB.DBSyntax <> TPi constr
+R337:337 ProofDB.DBEta <> B:7 var
+R335:335 ProofDB.DBEta <> A:5 var
+binder 372:372 <> b:9
+binder 374:375 <> b':10
+R389:392 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R378:383 ProofDB.DBEta <> epstep:1 ind
+R387:388 ProofDB.DBEta <> b':10 var
+R385:385 ProofDB.DBEta <> b:9 var
+R393:398 ProofDB.DBEta <> epstep:1 ind
+R410:413 ProofDB.DBSyntax <> TLam constr
+R415:416 ProofDB.DBEta <> b':10 var
+R401:404 ProofDB.DBSyntax <> TLam constr
+R406:406 ProofDB.DBEta <> b:9 var
+binder 439:439 <> f:11
+binder 441:442 <> f':12
+binder 444:444 <> a:13
+binder 446:447 <> a':14
+R461:464 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R450:455 ProofDB.DBEta <> epstep:1 ind
+R459:460 ProofDB.DBEta <> f':12 var
+R457:457 ProofDB.DBEta <> f:11 var
+R476:479 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R465:470 ProofDB.DBEta <> epstep:1 ind
+R474:475 ProofDB.DBEta <> a':14 var
+R472:472 ProofDB.DBEta <> a:13 var
+R480:485 ProofDB.DBEta <> epstep:1 ind
+R499:502 ProofDB.DBSyntax <> TApp constr
+R507:508 ProofDB.DBEta <> a':14 var
+R504:505 ProofDB.DBEta <> f':12 var
+R488:491 ProofDB.DBSyntax <> TApp constr
+R495:495 ProofDB.DBEta <> a:13 var
+R493:493 ProofDB.DBEta <> f:11 var
+binder 533:533 <> A:15
+binder 535:536 <> A':16
+binder 538:538 <> B:17
+binder 540:541 <> B':18
+R555:558 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R544:549 ProofDB.DBEta <> epstep:1 ind
+R553:554 ProofDB.DBEta <> A':16 var
+R551:551 ProofDB.DBEta <> A:15 var
+R570:573 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R559:564 ProofDB.DBEta <> epstep:1 ind
+R568:569 ProofDB.DBEta <> B':18 var
+R566:566 ProofDB.DBEta <> B:17 var
+R574:579 ProofDB.DBEta <> epstep:1 ind
+R595:600 ProofDB.DBSyntax <> TSigma constr
+R605:606 ProofDB.DBEta <> B':18 var
+R602:603 ProofDB.DBEta <> A':16 var
+R582:587 ProofDB.DBSyntax <> TSigma constr
+R591:591 ProofDB.DBEta <> B:17 var
+R589:589 ProofDB.DBEta <> A:15 var
+binder 630:630 <> a:19
+binder 632:633 <> a':20
+binder 635:635 <> b:21
+binder 637:638 <> b':22
+R652:655 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R641:646 ProofDB.DBEta <> epstep:1 ind
+R650:651 ProofDB.DBEta <> a':20 var
+R648:648 ProofDB.DBEta <> a:19 var
+R667:670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R656:661 ProofDB.DBEta <> epstep:1 ind
+R665:666 ProofDB.DBEta <> b':22 var
+R663:663 ProofDB.DBEta <> b:21 var
+R671:676 ProofDB.DBEta <> epstep:1 ind
+R691:695 ProofDB.DBSyntax <> TPair constr
+R700:701 ProofDB.DBEta <> b':22 var
+R697:698 ProofDB.DBEta <> a':20 var
+R679:683 ProofDB.DBSyntax <> TPair constr
+R687:687 ProofDB.DBEta <> b:21 var
+R685:685 ProofDB.DBEta <> a:19 var
+binder 724:724 <> p:23
+binder 726:727 <> p':24
+R741:744 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R730:735 ProofDB.DBEta <> epstep:1 ind
+R739:740 ProofDB.DBEta <> p':24 var
+R737:737 ProofDB.DBEta <> p:23 var
+R745:750 ProofDB.DBEta <> epstep:1 ind
+R762:765 ProofDB.DBSyntax <> TFst constr
+R767:768 ProofDB.DBEta <> p':24 var
+R753:756 ProofDB.DBSyntax <> TFst constr
+R758:758 ProofDB.DBEta <> p:23 var
+binder 791:791 <> p:25
+binder 793:794 <> p':26
+R808:811 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R797:802 ProofDB.DBEta <> epstep:1 ind
+R806:807 ProofDB.DBEta <> p':26 var
+R804:804 ProofDB.DBEta <> p:25 var
+R812:817 ProofDB.DBEta <> epstep:1 ind
+R829:832 ProofDB.DBSyntax <> TSnd constr
+R834:835 ProofDB.DBEta <> p':26 var
+R820:823 ProofDB.DBSyntax <> TSnd constr
+R825:825 ProofDB.DBEta <> p:25 var
+R853:858 ProofDB.DBEta <> epstep:1 ind
+R867:872 ProofDB.DBSyntax <> TUnitT constr
+R860:865 ProofDB.DBSyntax <> TUnitT constr
+R888:893 ProofDB.DBEta <> epstep:1 ind
+R901:905 ProofDB.DBSyntax <> TUnit constr
+R895:899 ProofDB.DBSyntax <> TUnit constr
+R920:925 ProofDB.DBEta <> epstep:1 ind
+R932:935 ProofDB.DBSyntax <> TUId constr
+R927:930 ProofDB.DBSyntax <> TUId constr
+binder 957:957 <> s:27
+R960:965 ProofDB.DBEta <> epstep:1 ind
+R977:980 ProofDB.DBSyntax <> TTag constr
+R982:982 ProofDB.DBEta <> s:27 var
+R968:971 ProofDB.DBSyntax <> TTag constr
+R973:973 ProofDB.DBEta <> s:27 var
+R1000:1005 ProofDB.DBEta <> epstep:1 ind
+R1014:1019 ProofDB.DBSyntax <> TEnumU constr
+R1007:1012 ProofDB.DBSyntax <> TEnumU constr
+R1035:1040 ProofDB.DBEta <> epstep:1 ind
+R1048:1052 ProofDB.DBSyntax <> TNilE constr
+R1042:1046 ProofDB.DBSyntax <> TNilE constr
+binder 1076:1078 <> tag:28
+binder 1080:1083 <> tag':29
+binder 1085:1085 <> E:30
+binder 1087:1088 <> E':31
+R1106:1109 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1091:1096 ProofDB.DBEta <> epstep:1 ind
+R1102:1105 ProofDB.DBEta <> tag':29 var
+R1098:1100 ProofDB.DBEta <> tag:28 var
+R1121:1124 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1110:1115 ProofDB.DBEta <> epstep:1 ind
+R1119:1120 ProofDB.DBEta <> E':31 var
+R1117:1117 ProofDB.DBEta <> E:30 var
+R1125:1130 ProofDB.DBEta <> epstep:1 ind
+R1148:1153 ProofDB.DBSyntax <> TConsE constr
+R1160:1161 ProofDB.DBEta <> E':31 var
+R1155:1158 ProofDB.DBEta <> tag':29 var
+R1133:1138 ProofDB.DBSyntax <> TConsE constr
+R1144:1144 ProofDB.DBEta <> E:30 var
+R1140:1142 ProofDB.DBEta <> tag:28 var
+binder 1186:1186 <> E:32
+binder 1188:1189 <> E':33
+R1203:1206 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1192:1197 ProofDB.DBEta <> epstep:1 ind
+R1201:1202 ProofDB.DBEta <> E':33 var
+R1199:1199 ProofDB.DBEta <> E:32 var
+R1207:1212 ProofDB.DBEta <> epstep:1 ind
+R1226:1231 ProofDB.DBSyntax <> TEnumT constr
+R1233:1234 ProofDB.DBEta <> E':33 var
+R1215:1220 ProofDB.DBSyntax <> TEnumT constr
+R1222:1222 ProofDB.DBEta <> E:32 var
+R1252:1257 ProofDB.DBEta <> epstep:1 ind
+R1266:1271 ProofDB.DBSyntax <> TEZero constr
+R1259:1264 ProofDB.DBSyntax <> TEZero constr
+binder 1295:1295 <> n:34
+binder 1297:1298 <> n':35
+R1312:1315 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1301:1306 ProofDB.DBEta <> epstep:1 ind
+R1310:1311 ProofDB.DBEta <> n':35 var
+R1308:1308 ProofDB.DBEta <> n:34 var
+R1316:1321 ProofDB.DBEta <> epstep:1 ind
+R1335:1340 ProofDB.DBSyntax <> TESucc constr
+R1342:1343 ProofDB.DBEta <> n':35 var
+R1324:1329 ProofDB.DBSyntax <> TESucc constr
+R1331:1331 ProofDB.DBEta <> n:34 var
+binder 1366:1366 <> k:36
+binder 1368:1368 <> E:37
+binder 1370:1371 <> E':38
+binder 1373:1373 <> P:39
+binder 1375:1376 <> P':40
+R1390:1393 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1379:1384 ProofDB.DBEta <> epstep:1 ind
+R1388:1389 ProofDB.DBEta <> E':38 var
+R1386:1386 ProofDB.DBEta <> E:37 var
+R1405:1408 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1394:1399 ProofDB.DBEta <> epstep:1 ind
+R1403:1404 ProofDB.DBEta <> P':40 var
+R1401:1401 ProofDB.DBEta <> P:39 var
+R1409:1414 ProofDB.DBEta <> epstep:1 ind
+R1430:1433 ProofDB.DBSyntax <> TEPi constr
+R1440:1441 ProofDB.DBEta <> P':40 var
+R1437:1438 ProofDB.DBEta <> E':38 var
+R1435:1435 ProofDB.DBEta <> k:36 var
+R1417:1420 ProofDB.DBSyntax <> TEPi constr
+R1426:1426 ProofDB.DBEta <> P:39 var
+R1424:1424 ProofDB.DBEta <> E:37 var
+R1422:1422 ProofDB.DBEta <> k:36 var
+binder 1467:1467 <> k:41
+binder 1469:1469 <> E:42
+binder 1471:1472 <> E':43
+binder 1474:1474 <> P:44
+binder 1476:1477 <> P':45
+binder 1479:1479 <> p:46
+binder 1481:1482 <> p':47
+binder 1484:1484 <> e:48
+binder 1486:1487 <> e':49
+R1501:1504 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1490:1495 ProofDB.DBEta <> epstep:1 ind
+R1499:1500 ProofDB.DBEta <> E':43 var
+R1497:1497 ProofDB.DBEta <> E:42 var
+R1516:1519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1505:1510 ProofDB.DBEta <> epstep:1 ind
+R1514:1515 ProofDB.DBEta <> P':45 var
+R1512:1512 ProofDB.DBEta <> P:44 var
+R1531:1534 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1520:1525 ProofDB.DBEta <> epstep:1 ind
+R1529:1530 ProofDB.DBEta <> p':47 var
+R1527:1527 ProofDB.DBEta <> p:46 var
+R1546:1549 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1535:1540 ProofDB.DBEta <> epstep:1 ind
+R1544:1545 ProofDB.DBEta <> e':49 var
+R1542:1542 ProofDB.DBEta <> e:48 var
+R1550:1555 ProofDB.DBEta <> epstep:1 ind
+R1578:1584 ProofDB.DBSyntax <> TSwitch constr
+R1597:1598 ProofDB.DBEta <> e':49 var
+R1594:1595 ProofDB.DBEta <> p':47 var
+R1591:1592 ProofDB.DBEta <> P':45 var
+R1588:1589 ProofDB.DBEta <> E':43 var
+R1586:1586 ProofDB.DBEta <> k:41 var
+R1558:1564 ProofDB.DBSyntax <> TSwitch constr
+R1574:1574 ProofDB.DBEta <> e:48 var
+R1572:1572 ProofDB.DBEta <> p:46 var
+R1570:1570 ProofDB.DBEta <> P:44 var
+R1568:1568 ProofDB.DBEta <> E:42 var
+R1566:1566 ProofDB.DBEta <> k:41 var
+binder 1623:1624 <> IT:50
+binder 1626:1628 <> IT':51
+R1644:1647 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1631:1636 ProofDB.DBEta <> epstep:1 ind
+R1641:1643 ProofDB.DBEta <> IT':51 var
+R1638:1639 ProofDB.DBEta <> IT:50 var
+R1648:1653 ProofDB.DBEta <> epstep:1 ind
+R1668:1673 ProofDB.DBSyntax <> TIDesc constr
+R1675:1677 ProofDB.DBEta <> IT':51 var
+R1656:1661 ProofDB.DBSyntax <> TIDesc constr
+R1663:1664 ProofDB.DBEta <> IT:50 var
+binder 1701:1701 <> i:52
+binder 1703:1704 <> i':53
+R1718:1721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1707:1712 ProofDB.DBEta <> epstep:1 ind
+R1716:1717 ProofDB.DBEta <> i':53 var
+R1714:1714 ProofDB.DBEta <> i:52 var
+R1722:1727 ProofDB.DBEta <> epstep:1 ind
+R1740:1744 ProofDB.DBSyntax <> TIVar constr
+R1746:1747 ProofDB.DBEta <> i':53 var
+R1730:1734 ProofDB.DBSyntax <> TIVar constr
+R1736:1736 ProofDB.DBEta <> i:52 var
+R1762:1767 ProofDB.DBEta <> epstep:1 ind
+R1773:1775 ProofDB.DBSyntax <> TI1 constr
+R1769:1771 ProofDB.DBSyntax <> TI1 constr
+R1791:1796 ProofDB.DBEta <> epstep:1 ind
+R1804:1808 ProofDB.DBSyntax <> TIBot constr
+R1798:1802 ProofDB.DBSyntax <> TIBot constr
+binder 1832:1832 <> A:54
+binder 1834:1835 <> A':55
+binder 1837:1837 <> B:56
+binder 1839:1840 <> B':57
+R1854:1857 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1843:1848 ProofDB.DBEta <> epstep:1 ind
+R1852:1853 ProofDB.DBEta <> A':55 var
+R1850:1850 ProofDB.DBEta <> A:54 var
+R1869:1872 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1858:1863 ProofDB.DBEta <> epstep:1 ind
+R1867:1868 ProofDB.DBEta <> B':57 var
+R1865:1865 ProofDB.DBEta <> B:56 var
+R1873:1878 ProofDB.DBEta <> epstep:1 ind
+R1894:1899 ProofDB.DBSyntax <> TIProd constr
+R1904:1905 ProofDB.DBEta <> B':57 var
+R1901:1902 ProofDB.DBEta <> A':55 var
+R1881:1886 ProofDB.DBSyntax <> TIProd constr
+R1890:1890 ProofDB.DBEta <> B:56 var
+R1888:1888 ProofDB.DBEta <> A:54 var
+binder 1928:1928 <> A:58
+binder 1930:1931 <> A':59
+binder 1933:1933 <> D:60
+binder 1935:1936 <> D':61
+R1950:1953 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1939:1944 ProofDB.DBEta <> epstep:1 ind
+R1948:1949 ProofDB.DBEta <> A':59 var
+R1946:1946 ProofDB.DBEta <> A:58 var
+R1965:1968 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1954:1959 ProofDB.DBEta <> epstep:1 ind
+R1963:1964 ProofDB.DBEta <> D':61 var
+R1961:1961 ProofDB.DBEta <> D:60 var
+R1969:1974 ProofDB.DBEta <> epstep:1 ind
+R1988:1991 ProofDB.DBSyntax <> TIPi constr
+R1996:1997 ProofDB.DBEta <> D':61 var
+R1993:1994 ProofDB.DBEta <> A':59 var
+R1977:1980 ProofDB.DBSyntax <> TIPi constr
+R1984:1984 ProofDB.DBEta <> D:60 var
+R1982:1982 ProofDB.DBEta <> A:58 var
+binder 2021:2021 <> A:62
+binder 2023:2024 <> A':63
+binder 2026:2026 <> D:64
+binder 2028:2029 <> D':65
+R2043:2046 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2032:2037 ProofDB.DBEta <> epstep:1 ind
+R2041:2042 ProofDB.DBEta <> A':63 var
+R2039:2039 ProofDB.DBEta <> A:62 var
+R2058:2061 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2047:2052 ProofDB.DBEta <> epstep:1 ind
+R2056:2057 ProofDB.DBEta <> D':65 var
+R2054:2054 ProofDB.DBEta <> D:64 var
+R2062:2067 ProofDB.DBEta <> epstep:1 ind
+R2082:2086 ProofDB.DBSyntax <> TISig constr
+R2091:2092 ProofDB.DBEta <> D':65 var
+R2088:2089 ProofDB.DBEta <> A':63 var
+R2070:2074 ProofDB.DBSyntax <> TISig constr
+R2078:2078 ProofDB.DBEta <> D:64 var
+R2076:2076 ProofDB.DBEta <> A:62 var
+binder 2119:2119 <> E:66
+binder 2121:2122 <> E':67
+binder 2124:2124 <> D:68
+binder 2126:2127 <> D':69
+R2141:2144 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2130:2135 ProofDB.DBEta <> epstep:1 ind
+R2139:2140 ProofDB.DBEta <> E':67 var
+R2137:2137 ProofDB.DBEta <> E:66 var
+R2156:2159 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2145:2150 ProofDB.DBEta <> epstep:1 ind
+R2154:2155 ProofDB.DBEta <> D':69 var
+R2152:2152 ProofDB.DBEta <> D:68 var
+R2160:2165 ProofDB.DBEta <> epstep:1 ind
+R2183:2190 ProofDB.DBSyntax <> TIChoice constr
+R2195:2196 ProofDB.DBEta <> D':69 var
+R2192:2193 ProofDB.DBEta <> E':67 var
+R2168:2175 ProofDB.DBSyntax <> TIChoice constr
+R2179:2179 ProofDB.DBEta <> D:68 var
+R2177:2177 ProofDB.DBEta <> E:66 var
+binder 2222:2223 <> IT:70
+binder 2225:2227 <> IT':71
+binder 2229:2229 <> D:72
+binder 2231:2232 <> D':73
+binder 2234:2234 <> X:74
+binder 2236:2237 <> X':75
+R2253:2256 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2240:2245 ProofDB.DBEta <> epstep:1 ind
+R2250:2252 ProofDB.DBEta <> IT':71 var
+R2247:2248 ProofDB.DBEta <> IT:70 var
+R2268:2271 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2257:2262 ProofDB.DBEta <> epstep:1 ind
+R2266:2267 ProofDB.DBEta <> D':73 var
+R2264:2264 ProofDB.DBEta <> D:72 var
+R2283:2286 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2272:2277 ProofDB.DBEta <> epstep:1 ind
+R2281:2282 ProofDB.DBEta <> X':75 var
+R2279:2279 ProofDB.DBEta <> X:74 var
+R2287:2292 ProofDB.DBEta <> epstep:1 ind
+R2312:2318 ProofDB.DBSyntax <> TInterp constr
+R2327:2328 ProofDB.DBEta <> X':75 var
+R2324:2325 ProofDB.DBEta <> D':73 var
+R2320:2322 ProofDB.DBEta <> IT':71 var
+R2295:2301 ProofDB.DBSyntax <> TInterp constr
+R2308:2308 ProofDB.DBEta <> X:74 var
+R2306:2306 ProofDB.DBEta <> D:72 var
+R2303:2304 ProofDB.DBEta <> IT:70 var
+binder 2351:2352 <> IT:76
+binder 2354:2356 <> IT':77
+binder 2358:2358 <> D:78
+binder 2360:2361 <> D':79
+R2377:2380 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2364:2369 ProofDB.DBEta <> epstep:1 ind
+R2374:2376 ProofDB.DBEta <> IT':77 var
+R2371:2372 ProofDB.DBEta <> IT:76 var
+R2392:2395 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2381:2386 ProofDB.DBEta <> epstep:1 ind
+R2390:2391 ProofDB.DBEta <> D':79 var
+R2388:2388 ProofDB.DBEta <> D:78 var
+R2396:2401 ProofDB.DBEta <> epstep:1 ind
+R2416:2419 ProofDB.DBSyntax <> TMuI constr
+R2425:2426 ProofDB.DBEta <> D':79 var
+R2421:2423 ProofDB.DBEta <> IT':77 var
+R2404:2407 ProofDB.DBSyntax <> TMuI constr
+R2412:2412 ProofDB.DBEta <> D:78 var
+R2409:2410 ProofDB.DBEta <> IT:76 var
+binder 2448:2448 <> x:80
+binder 2450:2451 <> x':81
+R2465:2468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2454:2459 ProofDB.DBEta <> epstep:1 ind
+R2463:2464 ProofDB.DBEta <> x':81 var
+R2461:2461 ProofDB.DBEta <> x:80 var
+R2469:2474 ProofDB.DBEta <> epstep:1 ind
+R2485:2487 ProofDB.DBSyntax <> TIn constr
+R2489:2490 ProofDB.DBEta <> x':81 var
+R2477:2479 ProofDB.DBSyntax <> TIn constr
+R2481:2481 ProofDB.DBEta <> x:80 var
+binder 2513:2514 <> IT:82
+binder 2516:2518 <> IT':83
+binder 2520:2520 <> D:84
+binder 2522:2523 <> D':85
+binder 2525:2525 <> P:86
+binder 2527:2528 <> P':87
+binder 2530:2530 <> s:88
+binder 2532:2533 <> s':89
+binder 2535:2535 <> i:90
+binder 2537:2538 <> i':91
+binder 2540:2540 <> x:92
+binder 2542:2543 <> x':93
+R2559:2562 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2546:2551 ProofDB.DBEta <> epstep:1 ind
+R2556:2558 ProofDB.DBEta <> IT':83 var
+R2553:2554 ProofDB.DBEta <> IT:82 var
+R2574:2577 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2563:2568 ProofDB.DBEta <> epstep:1 ind
+R2572:2573 ProofDB.DBEta <> D':85 var
+R2570:2570 ProofDB.DBEta <> D:84 var
+R2589:2592 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2578:2583 ProofDB.DBEta <> epstep:1 ind
+R2587:2588 ProofDB.DBEta <> P':87 var
+R2585:2585 ProofDB.DBEta <> P:86 var
+R2604:2607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2593:2598 ProofDB.DBEta <> epstep:1 ind
+R2602:2603 ProofDB.DBEta <> s':89 var
+R2600:2600 ProofDB.DBEta <> s:88 var
+R2619:2622 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2608:2613 ProofDB.DBEta <> epstep:1 ind
+R2617:2618 ProofDB.DBEta <> i':91 var
+R2615:2615 ProofDB.DBEta <> i:90 var
+R2634:2637 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2623:2628 ProofDB.DBEta <> epstep:1 ind
+R2632:2633 ProofDB.DBEta <> x':93 var
+R2630:2630 ProofDB.DBEta <> x:92 var
+R2638:2643 ProofDB.DBEta <> epstep:1 ind
+R2666:2669 ProofDB.DBSyntax <> TInd constr
+R2687:2688 ProofDB.DBEta <> x':93 var
+R2684:2685 ProofDB.DBEta <> i':91 var
+R2681:2682 ProofDB.DBEta <> s':89 var
+R2678:2679 ProofDB.DBEta <> P':87 var
+R2675:2676 ProofDB.DBEta <> D':85 var
+R2671:2673 ProofDB.DBEta <> IT':83 var
+R2646:2649 ProofDB.DBSyntax <> TInd constr
+R2662:2662 ProofDB.DBEta <> x:92 var
+R2660:2660 ProofDB.DBEta <> i:90 var
+R2658:2658 ProofDB.DBEta <> s:88 var
+R2656:2656 ProofDB.DBEta <> P:86 var
+R2654:2654 ProofDB.DBEta <> D:84 var
+R2651:2652 ProofDB.DBEta <> IT:82 var
+binder 2712:2713 <> IT:94
+binder 2715:2717 <> IT':95
+binder 2719:2719 <> D:96
+binder 2721:2722 <> D':97
+binder 2724:2724 <> X:98
+binder 2726:2727 <> X':99
+binder 2729:2729 <> x:100
+binder 2731:2732 <> x':101
+binder 2734:2734 <> P:102
+binder 2736:2737 <> P':103
+R2753:2756 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2740:2745 ProofDB.DBEta <> epstep:1 ind
+R2750:2752 ProofDB.DBEta <> IT':95 var
+R2747:2748 ProofDB.DBEta <> IT:94 var
+R2768:2771 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2757:2762 ProofDB.DBEta <> epstep:1 ind
+R2766:2767 ProofDB.DBEta <> D':97 var
+R2764:2764 ProofDB.DBEta <> D:96 var
+R2783:2786 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2772:2777 ProofDB.DBEta <> epstep:1 ind
+R2781:2782 ProofDB.DBEta <> X':99 var
+R2779:2779 ProofDB.DBEta <> X:98 var
+R2798:2801 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2787:2792 ProofDB.DBEta <> epstep:1 ind
+R2796:2797 ProofDB.DBEta <> x':101 var
+R2794:2794 ProofDB.DBEta <> x:100 var
+R2813:2816 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2802:2807 ProofDB.DBEta <> epstep:1 ind
+R2811:2812 ProofDB.DBEta <> P':103 var
+R2809:2809 ProofDB.DBEta <> P:102 var
+R2817:2822 ProofDB.DBEta <> epstep:1 ind
+R2844:2848 ProofDB.DBSyntax <> TIAll constr
+R2863:2864 ProofDB.DBEta <> P':103 var
+R2860:2861 ProofDB.DBEta <> x':101 var
+R2857:2858 ProofDB.DBEta <> X':99 var
+R2854:2855 ProofDB.DBEta <> D':97 var
+R2850:2852 ProofDB.DBEta <> IT':95 var
+R2825:2829 ProofDB.DBSyntax <> TIAll constr
+R2840:2840 ProofDB.DBEta <> P:102 var
+R2838:2838 ProofDB.DBEta <> x:100 var
+R2836:2836 ProofDB.DBEta <> X:98 var
+R2834:2834 ProofDB.DBEta <> D:96 var
+R2831:2832 ProofDB.DBEta <> IT:94 var
+binder 2888:2889 <> IT:104
+binder 2891:2893 <> IT':105
+binder 2895:2895 <> D:106
+binder 2897:2898 <> D':107
+binder 2900:2900 <> X:108
+binder 2902:2903 <> X':109
+binder 2905:2905 <> P:110
+binder 2907:2908 <> P':111
+binder 2910:2910 <> h:112
+binder 2912:2913 <> h':113
+binder 2915:2915 <> x:114
+binder 2917:2918 <> x':115
+R2934:2937 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2921:2926 ProofDB.DBEta <> epstep:1 ind
+R2931:2933 ProofDB.DBEta <> IT':105 var
+R2928:2929 ProofDB.DBEta <> IT:104 var
+R2949:2952 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2938:2943 ProofDB.DBEta <> epstep:1 ind
+R2947:2948 ProofDB.DBEta <> D':107 var
+R2945:2945 ProofDB.DBEta <> D:106 var
+R2964:2967 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2953:2958 ProofDB.DBEta <> epstep:1 ind
+R2962:2963 ProofDB.DBEta <> X':109 var
+R2960:2960 ProofDB.DBEta <> X:108 var
+R2979:2982 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2968:2973 ProofDB.DBEta <> epstep:1 ind
+R2977:2978 ProofDB.DBEta <> P':111 var
+R2975:2975 ProofDB.DBEta <> P:110 var
+R2994:2997 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2983:2988 ProofDB.DBEta <> epstep:1 ind
+R2992:2993 ProofDB.DBEta <> h':113 var
+R2990:2990 ProofDB.DBEta <> h:112 var
+R3009:3012 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2998:3003 ProofDB.DBEta <> epstep:1 ind
+R3007:3008 ProofDB.DBEta <> x':115 var
+R3005:3005 ProofDB.DBEta <> x:114 var
+R3013:3018 ProofDB.DBEta <> epstep:1 ind
+R3042:3046 ProofDB.DBSyntax <> THyps constr
+R3064:3065 ProofDB.DBEta <> x':115 var
+R3061:3062 ProofDB.DBEta <> h':113 var
+R3058:3059 ProofDB.DBEta <> P':111 var
+R3055:3056 ProofDB.DBEta <> X':109 var
+R3052:3053 ProofDB.DBEta <> D':107 var
+R3048:3050 ProofDB.DBEta <> IT':105 var
+R3021:3025 ProofDB.DBSyntax <> THyps constr
+R3038:3038 ProofDB.DBEta <> x:114 var
+R3036:3036 ProofDB.DBEta <> h:112 var
+R3034:3034 ProofDB.DBEta <> P:110 var
+R3032:3032 ProofDB.DBEta <> X:108 var
+R3030:3030 ProofDB.DBEta <> D:106 var
+R3027:3028 ProofDB.DBEta <> IT:104 var
+binder 3090:3091 <> IT:116
+binder 3093:3095 <> IT':117
+binder 3097:3097 <> F:118
+binder 3099:3100 <> F':119
+binder 3102:3102 <> G:120
+binder 3104:3105 <> G':121
+R3121:3124 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3108:3113 ProofDB.DBEta <> epstep:1 ind
+R3118:3120 ProofDB.DBEta <> IT':117 var
+R3115:3116 ProofDB.DBEta <> IT:116 var
+R3136:3139 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3125:3130 ProofDB.DBEta <> epstep:1 ind
+R3134:3135 ProofDB.DBEta <> F':119 var
+R3132:3132 ProofDB.DBEta <> F:118 var
+R3151:3154 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3140:3145 ProofDB.DBEta <> epstep:1 ind
+R3149:3150 ProofDB.DBEta <> G':121 var
+R3147:3147 ProofDB.DBEta <> G:120 var
+R3155:3160 ProofDB.DBEta <> epstep:1 ind
+R3179:3184 ProofDB.DBSyntax <> TClose constr
+R3193:3194 ProofDB.DBEta <> G':121 var
+R3190:3191 ProofDB.DBEta <> F':119 var
+R3186:3188 ProofDB.DBEta <> IT':117 var
+R3163:3168 ProofDB.DBSyntax <> TClose constr
+R3175:3175 ProofDB.DBEta <> G:120 var
+R3173:3173 ProofDB.DBEta <> F:118 var
+R3170:3171 ProofDB.DBEta <> IT:116 var
+binder 3223:3223 <> k:122
+binder 3225:3226 <> IT:123
+binder 3228:3230 <> IT':124
+binder 3232:3232 <> F:125
+binder 3234:3235 <> F':126
+binder 3237:3237 <> G:127
+binder 3239:3240 <> G':128
+binder 3242:3242 <> i:129
+binder 3244:3245 <> i':130
+binder 3247:3247 <> Q:131
+binder 3249:3250 <> Q':132
+binder 3252:3252 <> b:133
+binder 3254:3255 <> b':134
+binder 3257:3257 <> x:135
+binder 3259:3260 <> x':136
+R3276:3279 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3263:3268 ProofDB.DBEta <> epstep:1 ind
+R3273:3275 ProofDB.DBEta <> IT':124 var
+R3270:3271 ProofDB.DBEta <> IT:123 var
+R3291:3294 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3280:3285 ProofDB.DBEta <> epstep:1 ind
+R3289:3290 ProofDB.DBEta <> F':126 var
+R3287:3287 ProofDB.DBEta <> F:125 var
+R3306:3309 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3295:3300 ProofDB.DBEta <> epstep:1 ind
+R3304:3305 ProofDB.DBEta <> G':128 var
+R3302:3302 ProofDB.DBEta <> G:127 var
+R3321:3324 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3310:3315 ProofDB.DBEta <> epstep:1 ind
+R3319:3320 ProofDB.DBEta <> i':130 var
+R3317:3317 ProofDB.DBEta <> i:129 var
+R3336:3339 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3325:3330 ProofDB.DBEta <> epstep:1 ind
+R3334:3335 ProofDB.DBEta <> Q':132 var
+R3332:3332 ProofDB.DBEta <> Q:131 var
+R3351:3354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3340:3345 ProofDB.DBEta <> epstep:1 ind
+R3349:3350 ProofDB.DBEta <> b':134 var
+R3347:3347 ProofDB.DBEta <> b:133 var
+R3366:3369 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3355:3360 ProofDB.DBEta <> epstep:1 ind
+R3364:3365 ProofDB.DBEta <> x':136 var
+R3362:3362 ProofDB.DBEta <> x:135 var
+R3370:3375 ProofDB.DBEta <> epstep:1 ind
+R3408:3417 ProofDB.DBSyntax <> TCloseCase constr
+R3440:3441 ProofDB.DBEta <> x':136 var
+R3437:3438 ProofDB.DBEta <> b':134 var
+R3434:3435 ProofDB.DBEta <> Q':132 var
+R3431:3432 ProofDB.DBEta <> i':130 var
+R3428:3429 ProofDB.DBEta <> G':128 var
+R3425:3426 ProofDB.DBEta <> F':126 var
+R3421:3423 ProofDB.DBEta <> IT':124 var
+R3419:3419 ProofDB.DBEta <> k:122 var
+R3378:3387 ProofDB.DBSyntax <> TCloseCase constr
+R3404:3404 ProofDB.DBEta <> x:135 var
+R3402:3402 ProofDB.DBEta <> b:133 var
+R3400:3400 ProofDB.DBEta <> Q:131 var
+R3398:3398 ProofDB.DBEta <> i:129 var
+R3396:3396 ProofDB.DBEta <> G:127 var
+R3394:3394 ProofDB.DBEta <> F:125 var
+R3391:3392 ProofDB.DBEta <> IT:123 var
+R3389:3389 ProofDB.DBEta <> k:122 var
+binder 3469:3470 <> IT:137
+binder 3472:3474 <> IT':138
+binder 3476:3476 <> G:139
+binder 3478:3479 <> G':140
+binder 3481:3481 <> P:141
+binder 3483:3484 <> P':142
+binder 3486:3486 <> s:143
+binder 3488:3489 <> s':144
+binder 3491:3491 <> F:145
+binder 3493:3494 <> F':146
+binder 3496:3496 <> i:147
+binder 3498:3499 <> i':148
+binder 3501:3501 <> x:149
+binder 3503:3504 <> x':150
+R3520:3523 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3507:3512 ProofDB.DBEta <> epstep:1 ind
+R3517:3519 ProofDB.DBEta <> IT':138 var
+R3514:3515 ProofDB.DBEta <> IT:137 var
+R3535:3538 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3524:3529 ProofDB.DBEta <> epstep:1 ind
+R3533:3534 ProofDB.DBEta <> G':140 var
+R3531:3531 ProofDB.DBEta <> G:139 var
+R3550:3553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3539:3544 ProofDB.DBEta <> epstep:1 ind
+R3548:3549 ProofDB.DBEta <> P':142 var
+R3546:3546 ProofDB.DBEta <> P:141 var
+R3565:3568 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3554:3559 ProofDB.DBEta <> epstep:1 ind
+R3563:3564 ProofDB.DBEta <> s':144 var
+R3561:3561 ProofDB.DBEta <> s:143 var
+R3580:3583 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3569:3574 ProofDB.DBEta <> epstep:1 ind
+R3578:3579 ProofDB.DBEta <> F':146 var
+R3576:3576 ProofDB.DBEta <> F:145 var
+R3595:3598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3584:3589 ProofDB.DBEta <> epstep:1 ind
+R3593:3594 ProofDB.DBEta <> i':148 var
+R3591:3591 ProofDB.DBEta <> i:147 var
+R3610:3613 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3599:3604 ProofDB.DBEta <> epstep:1 ind
+R3608:3609 ProofDB.DBEta <> x':150 var
+R3606:3606 ProofDB.DBEta <> x:149 var
+R3614:3619 ProofDB.DBEta <> epstep:1 ind
+R3649:3657 ProofDB.DBSyntax <> TCloseInd constr
+R3678:3679 ProofDB.DBEta <> x':150 var
+R3675:3676 ProofDB.DBEta <> i':148 var
+R3672:3673 ProofDB.DBEta <> F':146 var
+R3669:3670 ProofDB.DBEta <> s':144 var
+R3666:3667 ProofDB.DBEta <> P':142 var
+R3663:3664 ProofDB.DBEta <> G':140 var
+R3659:3661 ProofDB.DBEta <> IT':138 var
+R3622:3630 ProofDB.DBSyntax <> TCloseInd constr
+R3645:3645 ProofDB.DBEta <> x:149 var
+R3643:3643 ProofDB.DBEta <> i:147 var
+R3641:3641 ProofDB.DBEta <> F:145 var
+R3639:3639 ProofDB.DBEta <> s:143 var
+R3637:3637 ProofDB.DBEta <> P:141 var
+R3635:3635 ProofDB.DBEta <> G:139 var
+R3632:3633 ProofDB.DBEta <> IT:137 var
+binder 3702:3702 <> f:151
+binder 3704:3705 <> f':152
+R3719:3726 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3708:3713 ProofDB.DBEta <> epstep:1 ind
+R3717:3718 ProofDB.DBEta <> f':152 var
+R3715:3715 ProofDB.DBEta <> f:151 var
+R3727:3732 ProofDB.DBEta <> epstep:1 ind
+R3770:3771 ProofDB.DBEta <> f':152 var
+R3735:3738 ProofDB.DBSyntax <> TLam constr
+R3741:3744 ProofDB.DBSyntax <> TApp constr
+R3760:3763 ProofDB.DBSyntax <> TVar constr
+R3747:3750 ProofDB.DBSyntax <> lift def
+R3756:3756 ProofDB.DBEta <> f:151 var
+scheme 131:136 <> epstep_ind
+scheme 131:136 <> epstep_sind
+prf 3781:3791 <> epstep_refl
+binder 3802:3802 <> t:153
+R3805:3810 ProofDB.DBEta <> epstep ind
+R3812:3812 ProofDB.DBEta <> t:153 var
+R3814:3814 ProofDB.DBEta <> t:153 var
+prf 3874:3884 <> epstep_lift
+binder 3895:3895 <> t:154
+binder 3897:3897 <> u:155
+R3910:3913 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3900:3905 ProofDB.DBEta <> epstep ind
+R3907:3907 ProofDB.DBEta <> t:154 var
+R3909:3909 ProofDB.DBEta <> u:155 var
+binder 3921:3921 <> d:156
+binder 3923:3923 <> c:157
+R3928:3933 ProofDB.DBEta <> epstep ind
+R3936:3939 ProofDB.DBSyntax <> lift def
+R3945:3945 ProofDB.DBEta <> t:154 var
+R3943:3943 ProofDB.DBEta <> c:157 var
+R3941:3941 ProofDB.DBEta <> d:156 var
+R3949:3952 ProofDB.DBSyntax <> lift def
+R3958:3958 ProofDB.DBEta <> u:155 var
+R3956:3956 ProofDB.DBEta <> c:157 var
+R3954:3954 ProofDB.DBEta <> d:156 var
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4036:4046 ProofDB.DBEta <> epstep_refl thm
+R4080:4097 ProofDB.DBParallelBase <> lift_lift_one_zero thm
+R4080:4097 ProofDB.DBParallelBase <> lift_lift_one_zero thm
+R4080:4097 ProofDB.DBParallelBase <> lift_lift_one_zero thm
+R4106:4112 ProofDB.DBEta <> eps_eta constr
+R4106:4112 ProofDB.DBEta <> eps_eta constr
+prf 4145:4156 <> epstep_subst
+binder 4167:4167 <> t:158
+binder 4169:4170 <> t':159
+R4184:4187 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4173:4178 ProofDB.DBEta <> epstep ind
+R4180:4180 ProofDB.DBEta <> t:158 var
+R4182:4183 ProofDB.DBEta <> t':159 var
+binder 4195:4195 <> u:160
+binder 4197:4198 <> u':161
+binder 4200:4200 <> c:162
+R4216:4219 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4205:4210 ProofDB.DBEta <> epstep ind
+R4212:4212 ProofDB.DBEta <> u:160 var
+R4214:4215 ProofDB.DBEta <> u':161 var
+R4220:4225 ProofDB.DBEta <> epstep ind
+R4228:4232 ProofDB.DBSyntax <> subst def
+R4238:4238 ProofDB.DBEta <> t:158 var
+R4236:4236 ProofDB.DBEta <> c:162 var
+R4234:4234 ProofDB.DBEta <> u:160 var
+R4242:4246 ProofDB.DBSyntax <> subst def
+R4253:4254 ProofDB.DBEta <> t':159 var
+R4251:4251 ProofDB.DBEta <> c:162 var
+R4248:4249 ProofDB.DBEta <> u':161 var
+R4318:4322 ProofDB.DBSyntax <> subst def
+R4376:4379 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R4391:4401 ProofDB.DBEta <> epstep_refl thm
+R4376:4379 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R4391:4401 ProofDB.DBEta <> epstep_refl thm
+R4421:4424 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R4440:4450 ProofDB.DBEta <> epstep_lift thm
+R4453:4463 ProofDB.DBEta <> epstep_refl thm
+R4421:4424 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R4440:4450 ProofDB.DBEta <> epstep_lift thm
+R4440:4450 ProofDB.DBEta <> epstep_lift thm
+R4453:4463 ProofDB.DBEta <> epstep_refl thm
+R4453:4463 ProofDB.DBEta <> epstep_refl thm
+R4478:4496 ProofDB.DBParallelBase <> subst_lift_one_zero thm
+R4478:4496 ProofDB.DBParallelBase <> subst_lift_one_zero thm
+R4478:4496 ProofDB.DBParallelBase <> subst_lift_one_zero thm
+R4505:4511 ProofDB.DBEta <> eps_eta constr
+R4505:4511 ProofDB.DBEta <> eps_eta constr
+prf 4546:4564 <> epstep_lift_inverse
+binder 4575:4575 <> t:163
+binder 4577:4577 <> T:164
+R4592:4595 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4582:4587 ProofDB.DBEta <> epstep ind
+R4589:4589 ProofDB.DBEta <> t:163 var
+R4591:4591 ProofDB.DBEta <> T:164 var
+binder 4603:4603 <> f:165
+binder 4605:4605 <> k:166
+R4622:4627 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4609:4611 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4608:4608 ProofDB.DBEta <> t:163 var
+R4612:4615 ProofDB.DBSyntax <> lift def
+R4621:4621 ProofDB.DBEta <> f:165 var
+R4619:4619 ProofDB.DBEta <> k:166 var
+R4628:4634 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4636:4637 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4635:4635 <> u:167
+R4652:4655 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4639:4641 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4638:4638 ProofDB.DBEta <> T:164 var
+R4642:4645 ProofDB.DBSyntax <> lift def
+R4651:4651 ProofDB.DBEta <> u:167 var
+R4649:4649 ProofDB.DBEta <> k:166 var
+R4656:4661 ProofDB.DBEta <> epstep ind
+R4663:4663 ProofDB.DBEta <> f:165 var
+R4665:4665 ProofDB.DBEta <> u:167 var
+R4823:4825 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4789:4792 ProofDB.DBSyntax <> TLam constr
+R4795:4798 ProofDB.DBSyntax <> TApp constr
+R4815:4818 ProofDB.DBSyntax <> TVar constr
+R4801:4804 ProofDB.DBSyntax <> lift def
+R4826:4829 ProofDB.DBSyntax <> lift def
+R4823:4825 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4789:4792 ProofDB.DBSyntax <> TLam constr
+R4795:4798 ProofDB.DBSyntax <> TApp constr
+R4815:4818 ProofDB.DBSyntax <> TVar constr
+R4801:4804 ProofDB.DBSyntax <> lift def
+R4826:4829 ProofDB.DBSyntax <> lift def
+binder 4870:4871 <> f0:168
+binder 4873:4873 <> k:169
+R4892:4895 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4878:4880 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4881:4884 ProofDB.DBSyntax <> lift def
+R4890:4891 ProofDB.DBEta <> f0:168 var
+R4888:4888 ProofDB.DBEta <> k:169 var
+binder 4870:4871 <> f0:170
+binder 4873:4873 <> k:171
+R4892:4895 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4878:4880 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4881:4884 ProofDB.DBSyntax <> lift def
+R4890:4891 ProofDB.DBEta <> f0:170 var
+R4888:4888 ProofDB.DBEta <> k:171 var
+R4922:4944 ProofDB.DBParallelBase <> lift_eta_shape_decomp_k thm
+R4965:4970 Corelib.Init.Logic <> eq_sym thm
+R5033:5039 Corelib.Init.Logic <> eq_refl constr
+R5118:5124 ProofDB.DBEta <> eps_eta constr
+R4922:4944 ProofDB.DBParallelBase <> lift_eta_shape_decomp_k thm
+R4965:4970 Corelib.Init.Logic <> eq_sym thm
+R5033:5039 Corelib.Init.Logic <> eq_refl constr
+R5118:5124 ProofDB.DBEta <> eps_eta constr
+R5168:5171 ProofDB.DBSyntax <> lift def
+R5240:5246 Stdlib.Arith.PeanoNat Nat ltb def
+R5240:5246 Stdlib.Arith.PeanoNat Nat ltb def
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5271:5274 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+binder 5385:5385 <> f:172
+binder 5387:5387 <> k:173
+R5416:5427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5403:5405 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5390:5393 ProofDB.DBSyntax <> lift def
+R5406:5409 ProofDB.DBSyntax <> lift def
+R5415:5415 ProofDB.DBEta <> f:172 var
+R5413:5413 ProofDB.DBEta <> k:173 var
+R5428:5434 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5436:5437 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5435:5435 <> u:174
+R5455:5458 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5442:5444 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5445:5448 ProofDB.DBSyntax <> lift def
+R5454:5454 ProofDB.DBEta <> u:174 var
+R5452:5452 ProofDB.DBEta <> k:173 var
+R5459:5464 ProofDB.DBEta <> epstep ind
+R5466:5466 ProofDB.DBEta <> f:172 var
+R5468:5468 ProofDB.DBEta <> u:174 var
+binder 5385:5385 <> f:175
+binder 5387:5387 <> k:176
+R5416:5427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5403:5405 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5390:5393 ProofDB.DBSyntax <> lift def
+R5406:5409 ProofDB.DBSyntax <> lift def
+R5415:5415 ProofDB.DBEta <> f:175 var
+R5413:5413 ProofDB.DBEta <> k:176 var
+R5428:5434 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5436:5437 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5435:5435 <> u:177
+R5455:5458 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5442:5444 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5445:5448 ProofDB.DBSyntax <> lift def
+R5454:5454 ProofDB.DBEta <> u:177 var
+R5452:5452 ProofDB.DBEta <> k:176 var
+R5459:5464 ProofDB.DBEta <> epstep ind
+R5466:5466 ProofDB.DBEta <> f:175 var
+R5468:5468 ProofDB.DBEta <> u:177 var
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5584:5590 Corelib.Init.Logic <> eq_refl constr
+R5698:5701 ProofDB.DBSyntax <> lift def
+prf 5747:5761 <> eta_app_inverse
+binder 5772:5772 <> f:178
+binder 5774:5774 <> t:179
+R5816:5821 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5779:5784 ProofDB.DBEta <> epstep ind
+R5787:5790 ProofDB.DBSyntax <> TApp constr
+R5806:5809 ProofDB.DBSyntax <> TVar constr
+R5793:5796 ProofDB.DBSyntax <> lift def
+R5802:5802 ProofDB.DBEta <> f:178 var
+R5815:5815 ProofDB.DBEta <> t:179 var
+R5822:5828 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5830:5831 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5829:5829 <> u:180
+R5862:5865 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5833:5835 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5832:5832 ProofDB.DBEta <> t:179 var
+R5836:5839 ProofDB.DBSyntax <> TApp constr
+R5855:5858 ProofDB.DBSyntax <> TVar constr
+R5842:5845 ProofDB.DBSyntax <> lift def
+R5851:5851 ProofDB.DBEta <> u:180 var
+R5866:5871 ProofDB.DBEta <> epstep ind
+R5873:5873 ProofDB.DBEta <> f:178 var
+R5875:5875 ProofDB.DBEta <> u:180 var
+R5943:5948 ProofDB.DBEta <> epstep ind
+R5951:5954 ProofDB.DBSyntax <> TVar constr
+R5943:5948 ProofDB.DBEta <> epstep ind
+R5951:5954 ProofDB.DBSyntax <> TVar constr
+R6015:6020 ProofDB.DBEta <> epstep ind
+R6023:6026 ProofDB.DBSyntax <> lift def
+R6015:6020 ProofDB.DBEta <> epstep ind
+R6023:6026 ProofDB.DBSyntax <> lift def
+R6061:6079 ProofDB.DBEta <> epstep_lift_inverse thm
+R6091:6097 Corelib.Init.Logic <> eq_refl constr
+R6061:6079 ProofDB.DBEta <> epstep_lift_inverse thm
+R6091:6097 Corelib.Init.Logic <> eq_refl constr
+binder 6234:6234 <> z:181
+R6248:6251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6237:6242 ProofDB.DBEta <> epstep ind
+R6247:6247 ProofDB.DBEta <> z:181 var
+R6252:6258 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6260:6261 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6259:6259 <> w:182
+R6273:6276 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6262:6267 ProofDB.DBEta <> epstep ind
+R6272:6272 ProofDB.DBEta <> w:182 var
+R6277:6282 ProofDB.DBEta <> epstep ind
+R6284:6284 ProofDB.DBEta <> z:181 var
+R6286:6286 ProofDB.DBEta <> w:182 var
+binder 6234:6234 <> z:183
+R6248:6251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6237:6242 ProofDB.DBEta <> epstep ind
+R6247:6247 ProofDB.DBEta <> z:183 var
+R6252:6258 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6260:6261 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6259:6259 <> w:184
+R6273:6276 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6262:6267 ProofDB.DBEta <> epstep ind
+R6272:6272 ProofDB.DBEta <> w:184 var
+R6277:6282 ProofDB.DBEta <> epstep ind
+R6284:6284 ProofDB.DBEta <> z:183 var
+R6286:6286 ProofDB.DBEta <> w:184 var
+R6297:6302 ProofDB.DBEta <> epstep ind
+R6297:6302 ProofDB.DBEta <> epstep ind
+prf 6493:6506 <> epstep_diamond
+R6510:6516 ProofDB.DBParallelBase <> diamond def
+R6518:6523 ProofDB.DBEta <> epstep ind
+binder 6763:6763 <> z:185
+R6804:6807 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6766:6771 ProofDB.DBEta <> epstep ind
+R6774:6777 ProofDB.DBSyntax <> TApp constr
+R6794:6797 ProofDB.DBSyntax <> TVar constr
+R6780:6783 ProofDB.DBSyntax <> lift def
+R6803:6803 ProofDB.DBEta <> z:185 var
+binder 6763:6763 <> z:186
+R6804:6807 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6766:6771 ProofDB.DBEta <> epstep ind
+R6774:6777 ProofDB.DBSyntax <> TApp constr
+R6794:6797 ProofDB.DBSyntax <> TVar constr
+R6780:6783 ProofDB.DBSyntax <> lift def
+R6803:6803 ProofDB.DBEta <> z:186 var
+R6821:6826 ProofDB.DBEta <> epstep ind
+R6829:6832 ProofDB.DBSyntax <> TApp constr
+R6849:6852 ProofDB.DBSyntax <> TVar constr
+R6835:6838 ProofDB.DBSyntax <> lift def
+R6821:6826 ProofDB.DBEta <> epstep ind
+R6829:6832 ProofDB.DBSyntax <> TApp constr
+R6849:6852 ProofDB.DBSyntax <> TVar constr
+R6835:6838 ProofDB.DBSyntax <> lift def
+R6875:6880 ProofDB.DBEta <> epstep ind
+R6875:6880 ProofDB.DBEta <> epstep ind
+R6912:6926 ProofDB.DBEta <> eta_app_inverse thm
+R6987:6992 ProofDB.DBEta <> epstep ind
+R6995:6998 ProofDB.DBSyntax <> TApp constr
+R7014:7017 ProofDB.DBSyntax <> TVar constr
+R7001:7004 ProofDB.DBSyntax <> lift def
+R7032:7035 ProofDB.DBSyntax <> TApp constr
+R7051:7054 ProofDB.DBSyntax <> TVar constr
+R7038:7041 ProofDB.DBSyntax <> lift def
+R7097:7107 ProofDB.DBEta <> epstep_lift thm
+R7189:7203 ProofDB.DBEta <> eta_app_inverse thm
+R7248:7262 ProofDB.DBEta <> eta_app_inverse thm
+R6912:6926 ProofDB.DBEta <> eta_app_inverse thm
+R6987:6992 ProofDB.DBEta <> epstep ind
+R6995:6998 ProofDB.DBSyntax <> TApp constr
+R7014:7017 ProofDB.DBSyntax <> TVar constr
+R7001:7004 ProofDB.DBSyntax <> lift def
+R7032:7035 ProofDB.DBSyntax <> TApp constr
+R7051:7054 ProofDB.DBSyntax <> TVar constr
+R7038:7041 ProofDB.DBSyntax <> lift def
+R7097:7107 ProofDB.DBEta <> epstep_lift thm
+R7189:7203 ProofDB.DBEta <> eta_app_inverse thm
+R7248:7262 ProofDB.DBEta <> eta_app_inverse thm
+R7318:7320 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7318:7320 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7373:7390 ProofDB.DBParallelBase <> lift_one_injective thm
+R7373:7390 ProofDB.DBParallelBase <> lift_one_injective thm
+R7449:7455 ProofDB.DBEta <> eps_eta constr
+R7449:7455 ProofDB.DBEta <> eps_eta constr
+binder 7508:7508 <> z:187
+R7522:7525 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7511:7516 ProofDB.DBEta <> epstep ind
+R7521:7521 ProofDB.DBEta <> z:187 var
+binder 7508:7508 <> z:188
+R7522:7525 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7511:7516 ProofDB.DBEta <> epstep ind
+R7521:7521 ProofDB.DBEta <> z:188 var
+R7540:7545 ProofDB.DBEta <> epstep ind
+R7548:7551 ProofDB.DBSyntax <> TApp constr
+R7568:7571 ProofDB.DBSyntax <> TVar constr
+R7554:7557 ProofDB.DBSyntax <> lift def
+R7540:7545 ProofDB.DBEta <> epstep ind
+R7548:7551 ProofDB.DBSyntax <> TApp constr
+R7568:7571 ProofDB.DBSyntax <> TVar constr
+R7554:7557 ProofDB.DBSyntax <> lift def
+R7605:7619 ProofDB.DBEta <> eta_app_inverse thm
+R7746:7752 ProofDB.DBEta <> eps_eta constr
+R7605:7619 ProofDB.DBEta <> eta_app_inverse thm
+R7746:7752 ProofDB.DBEta <> eps_eta constr
+R7799:7801 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7788:7791 ProofDB.DBSyntax <> lift def
+R7802:7805 ProofDB.DBSyntax <> lift def
+R7799:7801 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7788:7791 ProofDB.DBSyntax <> lift def
+R7802:7805 ProofDB.DBSyntax <> lift def
+R7834:7851 ProofDB.DBParallelBase <> lift_one_injective thm
+R7834:7851 ProofDB.DBParallelBase <> lift_one_injective thm

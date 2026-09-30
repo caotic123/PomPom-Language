@@ -1,0 +1,527 @@
+DIGEST f9222eed476127a40a705be4b470427b
+FCoercionWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:43 Stdlib.Strings.String <> <> lib
+R45:48 Stdlib.Bool.Bool <> <> lib
+R50:52 Stdlib.micromega.Lia <> <> lib
+R70:103 OpenSignaturesElaborationSoundness <> <> lib
+R113:125 Stdlib.Lists.List ListNotations <> mod
+prf 135:154 <> enum_position_closed
+binder 165:165 <> n:1
+R195:197 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R168:176 OpenSignaturesSyntax <> free_vars def
+R179:191 OpenSignaturesSyntax <> enum_position def
+R193:193 CoercionWork <> n:1 var
+R198:199 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+prf 245:254 <> dead_input
+binder 265:269 <> Gamma:2
+binder 271:272 <> IT:3
+binder 274:274 <> D:4
+binder 276:276 <> X:5
+binder 278:278 <> d:6
+R302:305 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R283:286 OpenSignaturesElaboration <> dead ind
+R301:301 CoercionWork <> d:6 var
+R299:299 CoercionWork <> X:5 var
+R297:297 CoercionWork <> D:4 var
+R294:295 CoercionWork <> IT:3 var
+R288:292 CoercionWork <> Gamma:2 var
+R306:322 OpenSignaturesCore <> description_input def
+R335:335 CoercionWork <> X:5 var
+R333:333 CoercionWork <> D:4 var
+R330:331 CoercionWork <> IT:3 var
+R324:328 CoercionWork <> Gamma:2 var
+sec 409:422 <> CoercionTyping
+var 434:439 CoercionTyping weaken
+binder 450:454 <> Gamma:7
+binder 456:456 <> x:8
+binder 458:458 <> t:9
+binder 460:460 <> A:10
+binder 462:462 <> B:11
+binder 464:464 <> k:12
+R485:488 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R469:476 OpenSignaturesSyntax <> fresh_in def
+R484:484 CoercionWork <> x:8 var
+R478:482 CoercionWork <> Gamma:7 var
+R505:508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R489:494 OpenSignaturesCore <> typing ind
+R504:504 CoercionWork <> A:10 var
+R502:502 CoercionWork <> t:9 var
+R496:500 CoercionWork <> Gamma:7 var
+R533:538 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R509:514 OpenSignaturesCore <> typing ind
+R525:529 OpenSignaturesSyntax <> TSort constr
+R531:531 CoercionWork <> k:12 var
+R522:522 CoercionWork <> B:11 var
+R516:520 CoercionWork <> Gamma:7 var
+R539:544 OpenSignaturesCore <> typing ind
+R567:567 CoercionWork <> A:10 var
+R565:565 CoercionWork <> t:9 var
+R547:552 OpenSignaturesSyntax <> extend def
+R562:562 CoercionWork <> B:11 var
+R560:560 CoercionWork <> x:8 var
+R554:558 CoercionWork <> Gamma:7 var
+var 579:588 CoercionTyping dead_typed
+binder 599:603 <> Gamma:15
+binder 605:606 <> IT:16
+binder 608:608 <> D:17
+binder 610:610 <> X:18
+binder 612:612 <> d:19
+R636:639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R617:620 OpenSignaturesElaboration <> dead ind
+R635:635 CoercionWork <> d:19 var
+R633:633 CoercionWork <> X:18 var
+R631:631 CoercionWork <> D:17 var
+R628:629 CoercionWork <> IT:16 var
+R622:626 CoercionWork <> Gamma:15 var
+R640:645 OpenSignaturesCore <> typing ind
+R656:660 OpenSignaturesSyntax <> arrow def
+R679:681 OpenSignaturesSyntax <> Bot def
+R663:669 OpenSignaturesSyntax <> TInterp constr
+R676:676 CoercionWork <> X:18 var
+R674:674 CoercionWork <> D:17 var
+R671:672 CoercionWork <> IT:16 var
+R653:653 CoercionWork <> d:19 var
+R647:651 CoercionWork <> Gamma:15 var
+prf 692:710 <> identity_for_typing
+binder 721:725 <> Gamma:22
+binder 727:727 <> A:23
+binder 729:729 <> B:24
+binder 731:732 <> ts:25
+binder 734:734 <> j:26
+binder 736:736 <> k:27
+R765:768 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R741:746 OpenSignaturesCore <> typing ind
+R757:761 OpenSignaturesSyntax <> TSort constr
+R763:763 CoercionWork <> j:26 var
+R754:754 CoercionWork <> A:23 var
+R748:752 CoercionWork <> Gamma:22 var
+R793:796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R769:774 OpenSignaturesCore <> typing ind
+R785:789 OpenSignaturesSyntax <> TSort constr
+R791:791 CoercionWork <> k:27 var
+R782:782 CoercionWork <> B:24 var
+R776:780 CoercionWork <> Gamma:22 var
+R805:810 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R797:800 OpenSignaturesCore <> conv ind
+R804:804 CoercionWork <> B:24 var
+R802:802 CoercionWork <> A:23 var
+R811:816 OpenSignaturesCore <> typing ind
+R843:847 OpenSignaturesSyntax <> arrow def
+R851:851 CoercionWork <> B:24 var
+R849:849 CoercionWork <> A:23 var
+R825:836 OpenSignaturesElaboration <> identity_for def
+R838:839 CoercionWork <> ts:25 var
+R818:822 CoercionWork <> Gamma:22 var
+R929:933 OpenSignaturesSyntax <> arrow def
+R910:916 OpenSignaturesCore <> ty_conv constr
+R929:933 OpenSignaturesSyntax <> arrow def
+R910:916 OpenSignaturesCore <> ty_conv constr
+R972:979 OpenSignaturesSyntax <> identity def
+R952:959 OpenSignaturesCore <> ty_alpha constr
+R991:1005 OpenSignaturesDerivedTyping <> identity_typing thm
+R1026:1043 OpenSignaturesAlpha <> alpha_lam_identity thm
+R972:979 OpenSignaturesSyntax <> identity def
+R952:959 OpenSignaturesCore <> ty_alpha constr
+R991:1005 OpenSignaturesDerivedTyping <> identity_typing thm
+R1026:1043 OpenSignaturesAlpha <> alpha_lam_identity thm
+R1058:1072 OpenSignaturesDerivedTyping <> arrow_formation thm
+R1058:1072 OpenSignaturesDerivedTyping <> arrow_formation thm
+R1098:1113 OpenSignaturesDerivedTyping <> arrow_conversion thm
+R1123:1129 OpenSignaturesCore <> cv_refl constr
+R1098:1113 OpenSignaturesDerivedTyping <> arrow_conversion thm
+R1123:1129 OpenSignaturesCore <> cv_refl constr
+prf 1157:1176 <> retag_handler_typing
+binder 1187:1191 <> Gamma:28
+binder 1193:1194 <> IT:29
+binder 1196:1201 <> target:30
+binder 1203:1203 <> X:31
+binder 1205:1205 <> Y:32
+binder 1207:1207 <> n:33
+binder 1209:1212 <> name:34
+binder 1214:1214 <> D:35
+binder 1216:1217 <> D':36
+R1247:1250 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1222:1230 OpenSignaturesElaboration <> row_input def
+R1241:1246 CoercionWork <> target:30 var
+R1238:1239 CoercionWork <> IT:29 var
+R1232:1236 CoercionWork <> Gamma:28 var
+R1277:1282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1251:1256 OpenSignaturesCore <> typing ind
+R1267:1272 OpenSignaturesSyntax <> TIDesc constr
+R1274:1275 CoercionWork <> IT:29 var
+R1264:1264 CoercionWork <> D:35 var
+R1258:1262 CoercionWork <> Gamma:28 var
+R1309:1312 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1283:1288 OpenSignaturesCore <> typing ind
+R1299:1304 OpenSignaturesSyntax <> Family def
+R1306:1307 CoercionWork <> IT:29 var
+R1296:1296 CoercionWork <> X:31 var
+R1290:1294 CoercionWork <> Gamma:28 var
+R1337:1342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1313:1318 OpenSignaturesCore <> typing ind
+R1329:1333 OpenSignaturesSyntax <> TSort constr
+R1326:1326 CoercionWork <> Y:32 var
+R1320:1324 CoercionWork <> Gamma:28 var
+R1385:1390 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1343:1346 OpenSignaturesCore <> conv ind
+R1351:1357 OpenSignaturesSyntax <> TInterp constr
+R1383:1383 CoercionWork <> X:31 var
+R1363:1370 OpenSignaturesElaboration <> row_code def
+R1375:1380 CoercionWork <> target:30 var
+R1372:1373 CoercionWork <> IT:29 var
+R1359:1360 CoercionWork <> IT:29 var
+R1348:1348 CoercionWork <> Y:32 var
+R1426:1429 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1409:1411 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1391:1399 Stdlib.Lists.List <> nth_error def
+R1408:1408 CoercionWork <> n:33 var
+R1401:1406 CoercionWork <> target:30 var
+R1412:1415 Corelib.Init.Datatypes <> Some constr
+R1417:1417 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1422:1422 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1425:1425 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1418:1421 CoercionWork <> name:34 var
+R1423:1424 CoercionWork <> D':36 var
+R1469:1474 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1430:1433 OpenSignaturesCore <> conv ind
+R1453:1459 OpenSignaturesSyntax <> TInterp constr
+R1467:1467 CoercionWork <> X:31 var
+R1464:1465 CoercionWork <> D':36 var
+R1461:1462 CoercionWork <> IT:29 var
+R1436:1442 OpenSignaturesSyntax <> TInterp constr
+R1449:1449 CoercionWork <> X:31 var
+R1447:1447 CoercionWork <> D:35 var
+R1444:1445 CoercionWork <> IT:29 var
+R1475:1480 OpenSignaturesCore <> typing ind
+R1507:1511 OpenSignaturesSyntax <> arrow def
+R1530:1530 CoercionWork <> Y:32 var
+R1514:1520 OpenSignaturesSyntax <> TInterp constr
+R1527:1527 CoercionWork <> X:31 var
+R1525:1525 CoercionWork <> D:35 var
+R1522:1523 CoercionWork <> IT:29 var
+R1489:1501 OpenSignaturesElaboration <> retag_handler def
+R1503:1503 CoercionWork <> n:33 var
+R1482:1486 CoercionWork <> Gamma:28 var
+R1628:1632 Corelib.Init.Logic <> proj1 thm
+R1628:1632 Corelib.Init.Logic <> proj1 thm
+R1662:1675 OpenSignaturesProgress <> typing_context thm
+R1662:1675 OpenSignaturesProgress <> typing_context thm
+R1713:1718 OpenSignaturesCore <> typing ind
+R1730:1735 OpenSignaturesSyntax <> TIDesc constr
+R1713:1718 OpenSignaturesCore <> typing ind
+R1730:1735 OpenSignaturesSyntax <> TIDesc constr
+R1811:1811 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1816:1816 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1819:1819 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1786:1798 Stdlib.Lists.List <> Forall_forall thm
+R1860:1871 Stdlib.Lists.List <> nth_error_In thm
+R1811:1811 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1816:1816 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1819:1819 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1786:1798 Stdlib.Lists.List <> Forall_forall thm
+R1860:1871 Stdlib.Lists.List <> nth_error_In thm
+R1906:1911 OpenSignaturesCore <> typing ind
+R1937:1941 OpenSignaturesSyntax <> TSort constr
+R1920:1926 OpenSignaturesSyntax <> TInterp constr
+R1960:1968 OpenSignaturesCore <> ty_interp constr
+R1906:1911 OpenSignaturesCore <> typing ind
+R1937:1941 OpenSignaturesSyntax <> TSort constr
+R1920:1926 OpenSignaturesSyntax <> TInterp constr
+R1960:1968 OpenSignaturesCore <> ty_interp constr
+R1991:1996 OpenSignaturesCore <> typing ind
+R2023:2027 OpenSignaturesSyntax <> TSort constr
+R2005:2011 OpenSignaturesSyntax <> TInterp constr
+R2046:2054 OpenSignaturesCore <> ty_interp constr
+R1991:1996 OpenSignaturesCore <> typing ind
+R2023:2027 OpenSignaturesSyntax <> TSort constr
+R2005:2011 OpenSignaturesSyntax <> TInterp constr
+R2046:2054 OpenSignaturesCore <> ty_interp constr
+R2066:2078 OpenSignaturesElaboration <> retag_handler def
+R2088:2104 OpenSignaturesDerivedTyping <> arrow_intro_fresh thm
+R2114:2119 CoercionWork <> CoercionTyping.weaken var
+R2088:2104 OpenSignaturesDerivedTyping <> arrow_intro_fresh thm
+R2114:2119 CoercionWork <> CoercionTyping.weaken var
+R2175:2180 OpenSignaturesCore <> typing ind
+R2221:2225 OpenSignaturesSyntax <> TPair constr
+R2321:2324 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R2298:2302 OpenSignaturesSyntax <> fresh def
+R2304:2304 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2320:2320 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2305:2317 OpenSignaturesSyntax <> enum_position def
+R2325:2329 OpenSignaturesSyntax <> fresh def
+R2331:2331 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2347:2347 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2332:2344 OpenSignaturesSyntax <> enum_position def
+R2366:2369 OpenSignaturesSyntax <> TVar constr
+R2372:2376 OpenSignaturesSyntax <> fresh def
+R2378:2378 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2394:2394 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2379:2391 OpenSignaturesSyntax <> enum_position def
+R2354:2357 OpenSignaturesSyntax <> TVar constr
+R2228:2232 OpenSignaturesSyntax <> subst def
+R2270:2282 OpenSignaturesSyntax <> enum_position def
+R2244:2248 OpenSignaturesSyntax <> fresh def
+R2250:2250 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2266:2266 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2251:2263 OpenSignaturesSyntax <> enum_position def
+R2235:2238 OpenSignaturesSyntax <> TVar constr
+R2183:2188 OpenSignaturesSyntax <> extend def
+R2199:2205 OpenSignaturesSyntax <> TInterp constr
+R2175:2180 OpenSignaturesCore <> typing ind
+R2221:2225 OpenSignaturesSyntax <> TPair constr
+R2321:2324 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R2298:2302 OpenSignaturesSyntax <> fresh def
+R2304:2304 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2320:2320 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2305:2317 OpenSignaturesSyntax <> enum_position def
+R2325:2329 OpenSignaturesSyntax <> fresh def
+R2331:2331 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2347:2347 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2332:2344 OpenSignaturesSyntax <> enum_position def
+R2366:2369 OpenSignaturesSyntax <> TVar constr
+R2372:2376 OpenSignaturesSyntax <> fresh def
+R2378:2378 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2394:2394 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2379:2391 OpenSignaturesSyntax <> enum_position def
+R2354:2357 OpenSignaturesSyntax <> TVar constr
+R2228:2232 OpenSignaturesSyntax <> subst def
+R2270:2282 OpenSignaturesSyntax <> enum_position def
+R2244:2248 OpenSignaturesSyntax <> fresh def
+R2250:2250 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2266:2266 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2251:2263 OpenSignaturesSyntax <> enum_position def
+R2235:2238 OpenSignaturesSyntax <> TVar constr
+R2183:2188 OpenSignaturesSyntax <> extend def
+R2199:2205 OpenSignaturesSyntax <> TInterp constr
+R2451:2470 CoercionWork <> enum_position_closed thm
+R2413:2424 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2427:2437 OpenSignaturesBinding <> subst_fresh thm
+R2413:2424 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2413:2424 Stdlib.Arith.PeanoNat Nat eqb_refl thm
+R2427:2437 OpenSignaturesBinding <> subst_fresh thm
+R2451:2470 CoercionWork <> enum_position_closed thm
+R2451:2470 CoercionWork <> enum_position_closed thm
+R2427:2437 OpenSignaturesBinding <> subst_fresh thm
+R2514:2520 OpenSignaturesSyntax <> TInterp constr
+R2526:2533 OpenSignaturesElaboration <> row_code def
+R2495:2501 OpenSignaturesCore <> ty_conv constr
+R2514:2520 OpenSignaturesSyntax <> TInterp constr
+R2526:2533 OpenSignaturesElaboration <> row_code def
+R2495:2501 OpenSignaturesCore <> ty_conv constr
+R2561:2580 OpenSignaturesRowTyping <> row_injection_typing thm
+R2590:2595 CoercionWork <> CoercionTyping.weaken var
+R2561:2580 OpenSignaturesRowTyping <> row_injection_typing thm
+R2590:2595 CoercionWork <> CoercionTyping.weaken var
+R2628:2643 OpenSignaturesRowTyping <> row_input_weaken thm
+R2628:2643 OpenSignaturesRowTyping <> row_input_weaken thm
+R2672:2677 CoercionWork <> CoercionTyping.weaken var
+R2672:2677 CoercionWork <> CoercionTyping.weaken var
+R2725:2731 OpenSignaturesSyntax <> TInterp constr
+R2706:2712 OpenSignaturesCore <> ty_conv constr
+R2725:2731 OpenSignaturesSyntax <> TInterp constr
+R2706:2712 OpenSignaturesCore <> ty_conv constr
+R2756:2761 OpenSignaturesCore <> ty_var constr
+R2772:2778 OpenSignaturesCore <> wf_cons constr
+R2799:2816 OpenSignaturesBinding <> lookup_extend_same thm
+R2756:2761 OpenSignaturesCore <> ty_var constr
+R2772:2778 OpenSignaturesCore <> wf_cons constr
+R2799:2816 OpenSignaturesBinding <> lookup_extend_same thm
+R2835:2840 CoercionWork <> CoercionTyping.weaken var
+R2835:2840 CoercionWork <> CoercionTyping.weaken var
+R2888:2893 CoercionWork <> CoercionTyping.weaken var
+R2888:2893 CoercionWork <> CoercionTyping.weaken var
+R2923:2928 OpenSignaturesCore <> cv_sym constr
+R2923:2928 OpenSignaturesCore <> cv_sym constr
+prf 2945:2967 <> row_handlers_from_rules
+binder 2978:2982 <> Gamma:37
+binder 2984:2985 <> IT:38
+binder 2987:2987 <> X:39
+binder 2989:2989 <> Y:40
+binder 2991:2996 <> target:41
+binder 2998:3003 <> source:42
+binder 3005:3012 <> handlers:43
+R3042:3045 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3017:3025 OpenSignaturesElaboration <> row_input def
+R3036:3041 CoercionWork <> source:42 var
+R3033:3034 CoercionWork <> IT:38 var
+R3027:3031 CoercionWork <> Gamma:37 var
+R3071:3076 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3046:3054 OpenSignaturesElaboration <> row_input def
+R3065:3070 CoercionWork <> target:41 var
+R3062:3063 CoercionWork <> IT:38 var
+R3056:3060 CoercionWork <> Gamma:37 var
+R3103:3106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3077:3082 OpenSignaturesCore <> typing ind
+R3093:3098 OpenSignaturesSyntax <> Family def
+R3100:3101 CoercionWork <> IT:38 var
+R3090:3090 CoercionWork <> X:39 var
+R3084:3088 CoercionWork <> Gamma:37 var
+R3131:3136 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3107:3112 OpenSignaturesCore <> typing ind
+R3123:3127 OpenSignaturesSyntax <> TSort constr
+R3120:3120 CoercionWork <> Y:40 var
+R3114:3118 CoercionWork <> Gamma:37 var
+R3179:3184 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3137:3140 OpenSignaturesCore <> conv ind
+R3145:3151 OpenSignaturesSyntax <> TInterp constr
+R3177:3177 CoercionWork <> X:39 var
+R3157:3164 OpenSignaturesElaboration <> row_code def
+R3169:3174 CoercionWork <> target:41 var
+R3166:3167 CoercionWork <> IT:38 var
+R3153:3154 CoercionWork <> IT:38 var
+R3142:3142 CoercionWork <> Y:40 var
+R3233:3238 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3185:3196 OpenSignaturesElaboration <> row_handlers ind
+R3225:3232 CoercionWork <> handlers:43 var
+R3218:3223 CoercionWork <> source:42 var
+R3211:3216 CoercionWork <> target:41 var
+R3209:3209 CoercionWork <> Y:40 var
+R3207:3207 CoercionWork <> X:39 var
+R3204:3205 CoercionWork <> IT:38 var
+R3198:3202 CoercionWork <> Gamma:37 var
+R3239:3245 Stdlib.Lists.List <> Forall2 ind
+R3323:3330 CoercionWork <> handlers:43 var
+R3316:3321 CoercionWork <> source:42 var
+binder 3252:3256 <> entry:44
+binder 3258:3258 <> h:45
+R3263:3268 OpenSignaturesCore <> typing ind
+R3279:3283 OpenSignaturesSyntax <> arrow def
+R3312:3312 CoercionWork <> Y:40 var
+R3286:3292 OpenSignaturesSyntax <> TInterp constr
+R3309:3309 CoercionWork <> X:39 var
+R3298:3300 Corelib.Init.Datatypes <> snd def
+R3302:3306 CoercionWork <> entry:44 var
+R3294:3295 CoercionWork <> IT:38 var
+R3276:3276 CoercionWork <> h:45 var
+R3270:3274 CoercionWork <> Gamma:37 var
+R3510:3523 OpenSignaturesElaborationSoundness <> row_input_cons thm
+R3510:3523 OpenSignaturesElaborationSoundness <> row_input_cons thm
+R3585:3604 CoercionWork <> retag_handler_typing thm
+R3585:3604 CoercionWork <> retag_handler_typing thm
+R3687:3700 OpenSignaturesElaborationSoundness <> row_input_cons thm
+R3687:3700 OpenSignaturesElaborationSoundness <> row_input_cons thm
+R3762:3780 OpenSignaturesCaseTyping <> dead_handler_typing thm
+R3790:3795 CoercionWork <> CoercionTyping.weaken var
+R3762:3780 OpenSignaturesCaseTyping <> dead_handler_typing thm
+R3790:3795 CoercionWork <> CoercionTyping.weaken var
+R3825:3833 OpenSignaturesCore <> ty_interp constr
+R3844:3848 Corelib.Init.Logic <> proj1 thm
+R3825:3833 OpenSignaturesCore <> ty_interp constr
+R3844:3848 Corelib.Init.Logic <> proj1 thm
+R3897:3906 CoercionWork <> CoercionTyping.dead_typed var
+R3897:3906 CoercionWork <> CoercionTyping.dead_typed var
+prf 3952:3983 <> description_subtyping_from_rules
+binder 3994:3998 <> Gamma:46
+binder 4000:4001 <> IT:47
+binder 4003:4003 <> D:48
+binder 4005:4006 <> D':49
+binder 4008:4008 <> X:50
+binder 4010:4010 <> q:51
+R4041:4046 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4015:4022 OpenSignaturesElaboration <> desc_sub ind
+R4040:4040 CoercionWork <> q:51 var
+R4038:4038 CoercionWork <> X:50 var
+R4035:4036 CoercionWork <> D':49 var
+R4033:4033 CoercionWork <> D:48 var
+R4030:4031 CoercionWork <> IT:47 var
+R4024:4028 CoercionWork <> Gamma:46 var
+R4047:4052 OpenSignaturesCore <> typing ind
+R4063:4067 OpenSignaturesSyntax <> arrow def
+R4087:4093 OpenSignaturesSyntax <> TInterp constr
+R4101:4101 CoercionWork <> X:50 var
+R4098:4099 CoercionWork <> D':49 var
+R4095:4096 CoercionWork <> IT:47 var
+R4070:4076 OpenSignaturesSyntax <> TInterp constr
+R4083:4083 CoercionWork <> X:50 var
+R4081:4081 CoercionWork <> D:48 var
+R4078:4079 CoercionWork <> IT:47 var
+R4060:4060 CoercionWork <> q:51 var
+R4054:4058 CoercionWork <> Gamma:46 var
+R4233:4251 CoercionWork <> identity_for_typing thm
+R4265:4273 OpenSignaturesCore <> ty_interp constr
+R4285:4293 OpenSignaturesCore <> ty_interp constr
+R4233:4251 CoercionWork <> identity_for_typing thm
+R4265:4273 OpenSignaturesCore <> ty_interp constr
+R4285:4293 OpenSignaturesCore <> ty_interp constr
+R4308:4320 OpenSignaturesCore <> cv_compatible constr
+R4323:4332 OpenSignaturesSyntax <> cp_TInterp constr
+R4346:4352 OpenSignaturesCore <> cv_refl constr
+R4308:4320 OpenSignaturesCore <> cv_compatible constr
+R4323:4332 OpenSignaturesSyntax <> cp_TInterp constr
+R4346:4352 OpenSignaturesCore <> cv_refl constr
+R4346:4352 OpenSignaturesCore <> cv_refl constr
+R4346:4352 OpenSignaturesCore <> cv_refl constr
+R4369:4378 CoercionWork <> dead_input thm
+R4369:4378 CoercionWork <> dead_input thm
+R4450:4468 OpenSignaturesCaseTyping <> dead_handler_typing thm
+R4478:4483 CoercionWork <> CoercionTyping.weaken var
+R4499:4508 CoercionWork <> CoercionTyping.dead_typed var
+R4528:4536 OpenSignaturesCore <> ty_interp constr
+R4450:4468 OpenSignaturesCaseTyping <> dead_handler_typing thm
+R4478:4483 CoercionWork <> CoercionTyping.weaken var
+R4499:4508 CoercionWork <> CoercionTyping.dead_typed var
+R4528:4536 OpenSignaturesCore <> ty_interp constr
+R4528:4536 OpenSignaturesCore <> ty_interp constr
+R4711:4716 OpenSignaturesCore <> typing ind
+R4742:4746 OpenSignaturesSyntax <> TSort constr
+R4725:4731 OpenSignaturesSyntax <> TInterp constr
+R4765:4773 OpenSignaturesCore <> ty_interp constr
+R4711:4716 OpenSignaturesCore <> typing ind
+R4742:4746 OpenSignaturesSyntax <> TSort constr
+R4725:4731 OpenSignaturesSyntax <> TInterp constr
+R4765:4773 OpenSignaturesCore <> ty_interp constr
+R4799:4804 OpenSignaturesCore <> typing ind
+R4831:4835 OpenSignaturesSyntax <> TSort constr
+R4813:4819 OpenSignaturesSyntax <> TInterp constr
+R4854:4862 OpenSignaturesCore <> ty_interp constr
+R4799:4804 OpenSignaturesCore <> typing ind
+R4831:4835 OpenSignaturesSyntax <> TSort constr
+R4813:4819 OpenSignaturesSyntax <> TInterp constr
+R4854:4862 OpenSignaturesCore <> ty_interp constr
+R4895:4899 OpenSignaturesSyntax <> arrow def
+R4934:4940 OpenSignaturesSyntax <> TInterp constr
+R4902:4908 OpenSignaturesSyntax <> TInterp constr
+R4914:4921 OpenSignaturesElaboration <> row_code def
+R4876:4882 OpenSignaturesCore <> ty_conv constr
+R4895:4899 OpenSignaturesSyntax <> arrow def
+R4934:4940 OpenSignaturesSyntax <> TInterp constr
+R4902:4908 OpenSignaturesSyntax <> TInterp constr
+R4914:4921 OpenSignaturesElaboration <> row_code def
+R4876:4882 OpenSignaturesCore <> ty_conv constr
+R4965:4978 OpenSignaturesCaseTyping <> row_map_typing thm
+R4988:4993 CoercionWork <> CoercionTyping.weaken var
+R4965:4978 OpenSignaturesCaseTyping <> row_map_typing thm
+R4988:4993 CoercionWork <> CoercionTyping.weaken var
+R5048:5065 OpenSignaturesCaseTyping <> row_handlers_tuple thm
+R5075:5080 CoercionWork <> CoercionTyping.weaken var
+R5048:5065 OpenSignaturesCaseTyping <> row_handlers_tuple thm
+R5075:5080 CoercionWork <> CoercionTyping.weaken var
+R5136:5158 CoercionWork <> row_handlers_from_rules thm
+R5136:5158 CoercionWork <> row_handlers_from_rules thm
+R5190:5202 OpenSignaturesCore <> cv_compatible constr
+R5205:5214 OpenSignaturesSyntax <> cp_TInterp constr
+R5228:5234 OpenSignaturesCore <> cv_refl constr
+R5190:5202 OpenSignaturesCore <> cv_compatible constr
+R5205:5214 OpenSignaturesSyntax <> cp_TInterp constr
+R5228:5234 OpenSignaturesCore <> cv_refl constr
+R5228:5234 OpenSignaturesCore <> cv_refl constr
+R5228:5234 OpenSignaturesCore <> cv_refl constr
+R5250:5264 OpenSignaturesDerivedTyping <> arrow_formation thm
+R5250:5264 OpenSignaturesDerivedTyping <> arrow_formation thm
+R5292:5307 OpenSignaturesDerivedTyping <> arrow_conversion thm
+R5318:5324 OpenSignaturesCore <> cv_refl constr
+R5292:5307 OpenSignaturesDerivedTyping <> arrow_conversion thm
+R5318:5324 OpenSignaturesCore <> cv_refl constr
+R5340:5352 OpenSignaturesCore <> cv_compatible constr
+R5355:5364 OpenSignaturesSyntax <> cp_TInterp constr
+R5377:5383 OpenSignaturesCore <> cv_refl constr
+R5340:5352 OpenSignaturesCore <> cv_compatible constr
+R5355:5364 OpenSignaturesSyntax <> cp_TInterp constr
+R5377:5383 OpenSignaturesCore <> cv_refl constr
+R5377:5383 OpenSignaturesCore <> cv_refl constr
+R5377:5383 OpenSignaturesCore <> cv_refl constr
+R5396:5401 OpenSignaturesCore <> cv_sym constr
+R5396:5401 OpenSignaturesCore <> cv_sym constr
+R5414:5427 CoercionWork CoercionTyping <> sec

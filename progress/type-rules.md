@@ -3,7 +3,7 @@
 Status: revised design sketch with a relational Rocq specification, not a
 soundness proof or an executable source checker. The new entry point is
 [OpenSignatures.v](OpenSignatures.v); see [OpenSignatures.md](OpenSignatures.md)
-for the build and module map. Its metatheory statements are unproved.
+for the build and module map. Its proved and conditional claims are listed in [PROOF_STATUS.md](PROOF_STATUS.md).
 This document supersedes the signature-pair and coercion-free μˢ design in
 the earlier sketch. The Haskell checker, original `TypeRules` Rocq modules,
 generated PDF, and existing `1.pom`/`2.pom` examples still describe the older
@@ -71,8 +71,36 @@ this sketch stores small parameters and has small interpretations:
 ~~~
 
 Functions and pairs exist at every universe level; mixed-level formation
-uses the maximum of the component levels. Existing universe cumulativity,
-if enabled, is a core universe rule, not an implicit constructor coercion.
+uses the maximum of the component levels. Universe cumulativity is a core
+rule: `Γ ⊢ t : Setⱼ` and `j ≤ k` imply `Γ ⊢ t : Setₖ`.
+Function cumulativity uses the structural relation `A ≤ᵤ B` (`universe_le`):
+
+~~~text
+A ≤ᵤ A                                      ul_refl
+j ≤ k  implies  Setⱼ ≤ᵤ Setₖ                 ul_sort
+C ≤ᵤ A and B ≤ᵤ D
+  imply (Π x:A. B) ≤ᵤ (Π x:C. D)             ul_pi
+
+Γ ⊢ f : Π x:A. B
+Γ ⊢ Π x:A. B : Setⱼ    Γ ⊢ Π x:C. D : Setₖ
+C ≤ᵤ A                   B ≤ᵤ D
+──────────────────────────────────────────── ty_cumul_fun
+Γ ⊢ f : Π x:C. D
+~~~
+
+Function domains are contravariant; codomains are covariant. This applies
+recursively to dependent and nested function types, with both complete
+function types checked for formation. Conversion and alpha renaming remain
+separate. Universe inclusion does not equate `Set₀` with `Set₁`.
+
+The rule repairs two eta mismatches: `f : 𝟙 → Set₀` can also receive
+`𝟙 → Set₁`, and `g : Set₁ → Set₀` can receive `Set₀ → Set₀`.
+The eta expansions and reducts are checked in
+[OpenSignaturesEtaRegression.v](OpenSignaturesEtaRegression.v).
+Unrestricted eta preservation is refuted by the independently checked
+[polymorphic application counterexample](OpenSignaturesEtaPolymorphism.v).
+Operational preservation remains proved.
+
 The `πₖ` and `switchₖ` operations must support level 1 because description
 codes inhabit `Set₁`. A level-k description universe would require the
 corresponding generalization of all formation and interpretation rules;
@@ -809,28 +837,21 @@ finite inhabitants.
 
 ## 12. Proof obligations and source boundary
 
-The companion `OpenSignatures` modules state these rules relationally and
-record metatheorems as `Conjecture` declarations. Only closed computation
-examples have been checked by proof. Required metatheory work includes:
+The companion `OpenSignatures` modules state these rules relationally.
+Of the 47 original claims, 44 are proved without axioms, two coherence claims
+remain open, and unrestricted full preservation is refuted. Progress,
+operational preservation, full beta/eta normalization, consistency, structural
+rules, canonical forms, dead-witness soundness, elaboration and subtyping
+soundness, and label uniqueness are proved. The normalization model covers
+positive descriptions, reference fixed points, closure, and every primitive
+operator. See [PROOF_STATUS.md](PROOF_STATUS.md) for exact dependencies.
+The remaining proof and design obligations include:
 
-- **Closure semantics.** Give a model or a well-founded inductive
-  construction for `close`, justify its induction principle, and relate
-  its diagonal to `μᴵ`. Because `Def I : Set₁`, an encoding that indexes
-  a family by all definitions is not automatically an instance of the
-  small-index EID `μᴵ` rule.
-- **Core metatheory.** Prove formation, strict positivity, substitution,
-  preservation, canonical forms, normalization, and consistency for the
-  added code and closure rules, including their universe levels.
-- **Elaboration soundness.** Prove that checked source terms elaborate to
-  well-typed core terms and that every `A ⊑ B ↝ c` produces
-  `c : A → B`. Account for substituted coercions in dependent types.
-- **Labels and coverage.** Prove agreement of stable identities with
-  `At`, uniqueness under `NoDupEnum`, correctness of tag translation,
-  and totality of elaborated switches. Reusing a scheme must not confuse
-  its local positions or recursive instantiations.
-- **Emptiness.** Every recognized dead description must produce the
-  claimed empty-elimination function. Bottom marking must not turn
-  unknown inhabitation or a neutral term into evidence.
+- **Eta and preservation.** The term `(lambda z. lambda B. z) (lambda x. x)`
+  cannot receive type `Pi A : Set0. A -> A`, although its eta expansion can.
+  [OpenSignaturesEtaPolymorphism.v](OpenSignaturesEtaPolymorphism.v) proves
+  the counterexample without axioms. A specification repair is needed;
+  function cumulativity alone does not repair this failure.
 - **Coercions.** Specify a deterministic elaboration policy and prove
   coherence where alternative derivations are intended to agree.
   Identity erasure, representation preservation, and zero-cost widening

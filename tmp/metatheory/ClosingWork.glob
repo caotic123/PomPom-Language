@@ -1,0 +1,387 @@
+DIGEST c2bc6931092702de0ec5ccc684fd8c1d
+FClosingWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:84 OpenSignaturesTheorems <> <> lib
+R86:98 InclusionWork <> <> lib
+R100:112 ClosedSubWork <> <> lib
+R122:134 Stdlib.Lists.List ListNotations <> mod
+prf 144:158 <> closing_context
+binder 169:173 <> Gamma:1
+binder 175:177 <> env:2
+R197:200 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R180:186 OpenSignaturesTheorems <> closing ind
+R188:192 ClosingWork <> Gamma:1 var
+R194:196 ClosingWork <> env:2 var
+R201:202 OpenSignaturesCore <> wf ind
+R204:208 ClosingWork <> Gamma:1 var
+R261:266 OpenSignaturesCore <> wf_nil constr
+R261:266 OpenSignaturesCore <> wf_nil constr
+R261:266 OpenSignaturesCore <> wf_nil constr
+prf 280:294 <> closing_entries
+binder 305:309 <> Gamma:3
+binder 311:313 <> env:4
+R333:338 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R316:322 OpenSignaturesTheorems <> closing ind
+R324:328 ClosingWork <> Gamma:3 var
+R330:332 ClosingWork <> env:4 var
+R339:344 Corelib.Lists.ListDef <> Forall ind
+R437:439 ClosingWork <> env:4 var
+binder 351:355 <> entry:5
+R360:360 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R404:408 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R361:367 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R369:370 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 368:368 <> A:6
+R395:397 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R371:376 OpenSignaturesSyntax <> lookup def
+R385:387 Corelib.Init.Datatypes <> fst def
+R389:393 ClosingWork <> entry:5 var
+R378:382 ClosingWork <> Gamma:3 var
+R398:401 Corelib.Init.Datatypes <> Some constr
+R403:403 ClosingWork <> A:6 var
+R430:432 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R409:417 OpenSignaturesSyntax <> free_vars def
+R420:422 Corelib.Init.Datatypes <> snd def
+R424:428 ClosingWork <> entry:5 var
+R433:434 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R546:563 OpenSignaturesBinding <> lookup_extend_same thm
+R572:583 ClosedSubWork <> typed_closed thm
+R546:563 OpenSignaturesBinding <> lookup_extend_same thm
+R572:583 ClosedSubWork <> typed_closed thm
+R610:620 Stdlib.Lists.List <> Forall_impl thm
+R610:620 Stdlib.Lists.List <> Forall_impl thm
+R712:730 InclusionWork <> ctx_included_extend thm
+R712:730 InclusionWork <> ctx_included_extend thm
+def 776:786 <> closed_away
+R795:798 Corelib.Init.Datatypes <> list ind
+R804:806 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R801:803 Corelib.Init.Datatypes <> nat ind
+R807:810 OpenSignaturesSyntax <> term ind
+binder 789:791 <> env:7
+binder 814:814 <> x:8
+R821:826 Corelib.Lists.ListDef <> Forall ind
+R888:890 ClosingWork <> env:7 var
+binder 833:837 <> entry:9
+R856:859 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R851:854 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R842:844 Corelib.Init.Datatypes <> fst def
+R846:850 ClosingWork <> entry:9 var
+R855:855 ClosingWork <> x:8 var
+R881:883 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R860:868 OpenSignaturesSyntax <> free_vars def
+R871:873 Corelib.Init.Datatypes <> snd def
+R875:879 ClosingWork <> entry:9 var
+R884:885 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+prf 899:910 <> closing_away
+binder 921:925 <> Gamma:10
+binder 927:929 <> env:11
+binder 931:931 <> x:12
+R953:956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R936:942 OpenSignaturesTheorems <> closing ind
+R944:948 ClosingWork <> Gamma:10 var
+R950:952 ClosingWork <> env:11 var
+R973:976 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R957:964 OpenSignaturesSyntax <> fresh_in def
+R972:972 ClosingWork <> x:12 var
+R966:970 ClosingWork <> Gamma:10 var
+R977:987 ClosingWork <> closed_away def
+R989:991 ClosingWork <> env:11 var
+R993:993 ClosingWork <> x:12 var
+R1037:1047 Stdlib.Lists.List <> Forall_impl thm
+R1059:1073 ClosingWork <> closing_entries thm
+R1037:1047 Stdlib.Lists.List <> Forall_impl thm
+R1059:1073 ClosingWork <> closing_entries thm
+R1151:1158 OpenSignaturesSyntax <> fresh_in def
+prf 1207:1223 <> instantiate_alpha
+binder 1234:1236 <> env:13
+binder 1238:1238 <> t:14
+binder 1240:1240 <> u:15
+R1260:1263 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1245:1255 OpenSignaturesAlpha <> alpha_equiv def
+R1257:1257 ClosingWork <> t:14 var
+R1259:1259 ClosingWork <> u:15 var
+R1264:1274 OpenSignaturesAlpha <> alpha_equiv def
+R1277:1287 OpenSignaturesTheorems <> instantiate def
+R1289:1291 ClosingWork <> env:13 var
+R1293:1293 ClosingWork <> t:14 var
+R1297:1307 OpenSignaturesTheorems <> instantiate def
+R1309:1311 ClosingWork <> env:13 var
+R1313:1313 ClosingWork <> u:15 var
+R1379:1389 OpenSignaturesTheorems <> instantiate def
+R1417:1432 OpenSignaturesSubstitution <> substitute_alpha thm
+R1417:1432 OpenSignaturesSubstitution <> substitute_alpha thm
+prf 1477:1491 <> instantiate_lam
+binder 1502:1504 <> env:16
+binder 1506:1506 <> x:17
+binder 1508:1508 <> t:18
+R1528:1533 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1511:1521 ClosingWork <> closed_away def
+R1523:1525 ClosingWork <> env:16 var
+R1527:1527 ClosingWork <> x:17 var
+R1560:1562 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1534:1544 OpenSignaturesTheorems <> instantiate def
+R1546:1548 ClosingWork <> env:16 var
+R1551:1554 OpenSignaturesSyntax <> TLam constr
+R1558:1558 ClosingWork <> t:18 var
+R1556:1556 ClosingWork <> x:17 var
+R1563:1566 OpenSignaturesSyntax <> TLam constr
+R1571:1581 OpenSignaturesTheorems <> instantiate def
+R1583:1585 ClosingWork <> env:16 var
+R1587:1587 ClosingWork <> t:18 var
+R1568:1568 ClosingWork <> x:17 var
+R1693:1703 OpenSignaturesTheorems <> instantiate def
+R1733:1748 ClosedSubWork <> subst_closed_lam thm
+R1733:1748 ClosedSubWork <> subst_closed_lam thm
+R1733:1748 ClosedSubWork <> subst_closed_lam thm
+prf 1786:1799 <> instantiate_pi
+binder 1810:1812 <> env:19
+binder 1814:1814 <> x:20
+binder 1816:1816 <> A:21
+binder 1818:1818 <> B:22
+R1838:1843 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1821:1831 ClosingWork <> closed_away def
+R1833:1835 ClosingWork <> env:19 var
+R1837:1837 ClosingWork <> x:20 var
+R1871:1873 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1844:1854 OpenSignaturesTheorems <> instantiate def
+R1856:1858 ClosingWork <> env:19 var
+R1861:1863 OpenSignaturesSyntax <> TPi constr
+R1869:1869 ClosingWork <> B:22 var
+R1867:1867 ClosingWork <> A:21 var
+R1865:1865 ClosingWork <> x:20 var
+R1874:1876 OpenSignaturesSyntax <> TPi constr
+R1901:1911 OpenSignaturesTheorems <> instantiate def
+R1913:1915 ClosingWork <> env:19 var
+R1917:1917 ClosingWork <> B:22 var
+R1881:1891 OpenSignaturesTheorems <> instantiate def
+R1893:1895 ClosingWork <> env:19 var
+R1897:1897 ClosingWork <> A:21 var
+R1878:1878 ClosingWork <> x:20 var
+R2029:2039 OpenSignaturesTheorems <> instantiate def
+R2069:2083 ClosedSubWork <> subst_closed_pi thm
+R2069:2083 ClosedSubWork <> subst_closed_pi thm
+R2069:2083 ClosedSubWork <> subst_closed_pi thm
+prf 2121:2136 <> instantiate_sort
+binder 2147:2149 <> env:23
+binder 2151:2151 <> k:24
+R2179:2181 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2154:2164 OpenSignaturesTheorems <> instantiate def
+R2166:2168 ClosingWork <> env:23 var
+R2171:2175 OpenSignaturesSyntax <> TSort constr
+R2177:2177 ClosingWork <> k:24 var
+R2182:2186 OpenSignaturesSyntax <> TSort constr
+R2188:2188 ClosingWork <> k:24 var
+R2245:2255 OpenSignaturesTheorems <> instantiate def
+R2257:2261 OpenSignaturesSyntax <> subst def
+R2263:2272 OpenSignaturesSyntax <> substitute def
+prf 2293:2311 <> instantiate_commute
+binder 2322:2324 <> env:25
+binder 2326:2326 <> x:26
+binder 2328:2328 <> u:27
+binder 2330:2330 <> t:28
+R2352:2355 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2335:2345 ClosingWork <> closed_away def
+R2347:2349 ClosingWork <> env:25 var
+R2351:2351 ClosingWork <> x:26 var
+R2372:2377 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2367:2369 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2356:2364 OpenSignaturesSyntax <> free_vars def
+R2366:2366 ClosingWork <> u:27 var
+R2370:2371 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2378:2388 OpenSignaturesAlpha <> alpha_equiv def
+R2391:2401 OpenSignaturesTheorems <> instantiate def
+R2403:2405 ClosingWork <> env:25 var
+R2408:2412 OpenSignaturesSyntax <> subst def
+R2418:2418 ClosingWork <> t:28 var
+R2416:2416 ClosingWork <> x:26 var
+R2414:2414 ClosingWork <> u:27 var
+R2423:2427 OpenSignaturesSyntax <> subst def
+R2434:2444 OpenSignaturesTheorems <> instantiate def
+R2446:2448 ClosingWork <> env:25 var
+R2450:2450 ClosingWork <> t:28 var
+R2431:2431 ClosingWork <> x:26 var
+R2429:2429 ClosingWork <> u:27 var
+R2567:2577 OpenSignaturesTheorems <> instantiate def
+R2621:2637 ClosingWork <> instantiate_alpha thm
+R2640:2659 ClosedSubWork <> subst_closed_commute thm
+R2621:2637 ClosingWork <> instantiate_alpha thm
+R2640:2659 ClosedSubWork <> subst_closed_commute thm
+sec 2724:2736 <> ClosingTyping
+var 2748:2753 ClosingTyping weaken
+binder 2764:2768 <> Gamma:29
+binder 2770:2770 <> x:30
+binder 2772:2772 <> t:31
+binder 2774:2774 <> A:32
+binder 2776:2776 <> B:33
+binder 2778:2778 <> k:34
+R2799:2802 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2783:2790 OpenSignaturesSyntax <> fresh_in def
+R2798:2798 ClosingWork <> x:30 var
+R2792:2796 ClosingWork <> Gamma:29 var
+R2819:2822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2803:2808 OpenSignaturesCore <> typing ind
+R2818:2818 ClosingWork <> A:32 var
+R2816:2816 ClosingWork <> t:31 var
+R2810:2814 ClosingWork <> Gamma:29 var
+R2847:2852 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2823:2828 OpenSignaturesCore <> typing ind
+R2839:2843 OpenSignaturesSyntax <> TSort constr
+R2845:2845 ClosingWork <> k:34 var
+R2836:2836 ClosingWork <> B:33 var
+R2830:2834 ClosingWork <> Gamma:29 var
+R2853:2858 OpenSignaturesCore <> typing ind
+R2881:2881 ClosingWork <> A:32 var
+R2879:2879 ClosingWork <> t:31 var
+R2861:2866 OpenSignaturesSyntax <> extend def
+R2876:2876 ClosingWork <> B:33 var
+R2874:2874 ClosingWork <> x:30 var
+R2868:2872 ClosingWork <> Gamma:29 var
+var 2893:2899 ClosingTyping regular
+binder 2910:2914 <> Gamma:37
+binder 2916:2916 <> t:38
+binder 2918:2918 <> A:39
+R2937:2940 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2921:2926 OpenSignaturesCore <> typing ind
+R2936:2936 ClosingWork <> A:39 var
+R2934:2934 ClosingWork <> t:38 var
+R2928:2932 ClosingWork <> Gamma:37 var
+R2941:2947 OpenSignaturesCore <> type_wf def
+R2955:2955 ClosingWork <> A:39 var
+R2949:2953 ClosingWork <> Gamma:37 var
+var 2967:2974 ClosingTyping preserve
+binder 2985:2989 <> Gamma:42
+binder 2991:2991 <> t:43
+binder 2993:2993 <> u:44
+binder 2995:2995 <> A:45
+R3014:3017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2998:3003 OpenSignaturesCore <> typing ind
+R3013:3013 ClosingWork <> A:45 var
+R3011:3011 ClosingWork <> t:43 var
+R3005:3009 ClosingWork <> Gamma:42 var
+R3031:3034 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3018:3026 OpenSignaturesCore <> reduction ind
+R3030:3030 ClosingWork <> u:44 var
+R3028:3028 ClosingWork <> t:43 var
+R3035:3040 OpenSignaturesCore <> typing ind
+R3050:3050 ClosingWork <> A:45 var
+R3048:3048 ClosingWork <> u:44 var
+R3042:3046 ClosingWork <> Gamma:42 var
+prf 3062:3079 <> closing_from_rules
+binder 3090:3094 <> Gamma:48
+binder 3096:3098 <> env:49
+binder 3100:3100 <> t:50
+binder 3102:3102 <> A:51
+R3124:3127 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3107:3113 OpenSignaturesTheorems <> closing ind
+R3115:3119 ClosingWork <> Gamma:48 var
+R3121:3123 ClosingWork <> env:49 var
+R3144:3149 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3128:3133 OpenSignaturesCore <> typing ind
+R3143:3143 ClosingWork <> A:51 var
+R3141:3141 ClosingWork <> t:50 var
+R3135:3139 ClosingWork <> Gamma:48 var
+R3150:3155 OpenSignaturesCore <> typing ind
+R3188:3198 OpenSignaturesTheorems <> instantiate def
+R3200:3202 ClosingWork <> env:49 var
+R3204:3204 ClosingWork <> A:51 var
+R3168:3178 OpenSignaturesTheorems <> instantiate def
+R3180:3182 ClosingWork <> env:49 var
+R3184:3184 ClosingWork <> t:50 var
+R3157:3165 OpenSignaturesSyntax <> empty_ctx def
+R3354:3364 OpenSignaturesTheorems <> instantiate def
+R3395:3409 ClosingWork <> closing_context thm
+R3395:3409 ClosingWork <> closing_context thm
+R3448:3459 ClosingWork <> closing_away thm
+R3448:3459 ClosingWork <> closing_away thm
+R3508:3519 ClosedSubWork <> typed_closed thm
+R3508:3519 ClosedSubWork <> typed_closed thm
+R3553:3578 InclusionWork <> extension_domain_formation thm
+R3595:3602 ClosingWork <> ClosingTyping.preserve var
+R3587:3593 ClosingWork <> ClosingTyping.regular var
+R3580:3585 ClosingWork <> ClosingTyping.weaken var
+R3553:3578 InclusionWork <> extension_domain_formation thm
+R3595:3602 ClosingWork <> ClosingTyping.preserve var
+R3587:3593 ClosingWork <> ClosingTyping.regular var
+R3580:3585 ClosingWork <> ClosingTyping.weaken var
+R3650:3656 ClosingWork <> ClosingTyping.regular var
+R3650:3656 ClosingWork <> ClosingTyping.regular var
+R3695:3700 OpenSignaturesCore <> typing ind
+R3721:3725 OpenSignaturesSyntax <> TSort constr
+R3728:3734 Stdlib.Arith.PeanoNat Nat max def
+R3709:3711 OpenSignaturesSyntax <> TPi constr
+R3754:3758 OpenSignaturesCore <> ty_pi constr
+R3695:3700 OpenSignaturesCore <> typing ind
+R3721:3725 OpenSignaturesSyntax <> TSort constr
+R3728:3734 Stdlib.Arith.PeanoNat Nat max def
+R3709:3711 OpenSignaturesSyntax <> TPi constr
+R3754:3758 OpenSignaturesCore <> ty_pi constr
+R3792:3797 OpenSignaturesCore <> typing ind
+R3817:3819 OpenSignaturesSyntax <> TPi constr
+R3806:3809 OpenSignaturesSyntax <> TLam constr
+R3840:3845 OpenSignaturesCore <> ty_lam constr
+R3792:3797 OpenSignaturesCore <> typing ind
+R3817:3819 OpenSignaturesSyntax <> TPi constr
+R3806:3809 OpenSignaturesSyntax <> TLam constr
+R3840:3845 OpenSignaturesCore <> ty_lam constr
+R3942:3955 ClosingWork <> instantiate_pi thm
+R3958:3973 ClosingWork <> instantiate_sort thm
+R3942:3955 ClosingWork <> instantiate_pi thm
+R3942:3955 ClosingWork <> instantiate_pi thm
+R3958:3973 ClosingWork <> instantiate_sort thm
+R3958:3973 ClosingWork <> instantiate_sort thm
+R4009:4023 ClosingWork <> instantiate_lam thm
+R4026:4039 ClosingWork <> instantiate_pi thm
+R4009:4023 ClosingWork <> instantiate_lam thm
+R4009:4023 ClosingWork <> instantiate_lam thm
+R4026:4039 ClosingWork <> instantiate_pi thm
+R4026:4039 ClosingWork <> instantiate_pi thm
+R4081:4086 OpenSignaturesCore <> ty_app constr
+R4088:4096 OpenSignaturesSyntax <> empty_ctx def
+R4101:4111 OpenSignaturesTheorems <> instantiate def
+R4121:4131 OpenSignaturesTheorems <> instantiate def
+R4145:4148 OpenSignaturesSyntax <> TLam constr
+R4153:4163 OpenSignaturesTheorems <> instantiate def
+R4081:4086 OpenSignaturesCore <> ty_app constr
+R4088:4096 OpenSignaturesSyntax <> empty_ctx def
+R4101:4111 OpenSignaturesTheorems <> instantiate def
+R4121:4131 OpenSignaturesTheorems <> instantiate def
+R4145:4148 OpenSignaturesSyntax <> TLam constr
+R4153:4163 OpenSignaturesTheorems <> instantiate def
+R4218:4223 OpenSignaturesCore <> typing ind
+R4268:4272 OpenSignaturesSyntax <> subst def
+R4279:4289 OpenSignaturesTheorems <> instantiate def
+R4236:4240 OpenSignaturesSyntax <> subst def
+R4247:4257 OpenSignaturesTheorems <> instantiate def
+R4225:4233 OpenSignaturesSyntax <> empty_ctx def
+R4315:4322 ClosingWork <> ClosingTyping.preserve var
+R4343:4350 OpenSignaturesCore <> red_root constr
+R4218:4223 OpenSignaturesCore <> typing ind
+R4268:4272 OpenSignaturesSyntax <> subst def
+R4279:4289 OpenSignaturesTheorems <> instantiate def
+R4236:4240 OpenSignaturesSyntax <> subst def
+R4247:4257 OpenSignaturesTheorems <> instantiate def
+R4225:4233 OpenSignaturesSyntax <> empty_ctx def
+R4315:4322 ClosingWork <> ClosingTyping.preserve var
+R4343:4350 OpenSignaturesCore <> red_root constr
+R4379:4385 ClosingWork <> ClosingTyping.regular var
+R4379:4385 ClosingWork <> ClosingTyping.regular var
+R4427:4445 ClosingWork <> instantiate_commute thm
+R4427:4445 ClosingWork <> instantiate_commute thm
+R4496:4514 ClosingWork <> instantiate_commute thm
+R4496:4514 ClosingWork <> instantiate_commute thm
+R4577:4581 OpenSignaturesSyntax <> subst def
+R4588:4598 OpenSignaturesTheorems <> instantiate def
+R4560:4566 OpenSignaturesCore <> ty_conv constr
+R4577:4581 OpenSignaturesSyntax <> subst def
+R4588:4598 OpenSignaturesTheorems <> instantiate def
+R4560:4566 OpenSignaturesCore <> ty_conv constr
+R4620:4627 OpenSignaturesCore <> ty_alpha constr
+R4620:4627 OpenSignaturesCore <> ty_alpha constr
+R4668:4675 OpenSignaturesCore <> ty_alpha constr
+R4668:4675 OpenSignaturesCore <> ty_alpha constr
+R4716:4723 OpenSignaturesCore <> cv_alpha constr
+R4716:4723 OpenSignaturesCore <> cv_alpha constr
+R4749:4761 ClosingWork ClosingTyping <> sec

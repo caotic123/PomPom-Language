@@ -1,0 +1,552 @@
+DIGEST d8a5b07dde009754b813ef648b7f6946
+Fnameless.DBIndexedCandidates
+R181:184 Stdlib.Lists.List <> <> lib
+R186:190 Stdlib.Arith.Arith <> <> lib
+R192:195 Stdlib.Bool.Bool <> <> lib
+R197:199 Stdlib.micromega.Lia <> <> lib
+R217:245 nameless.DBPositiveCandidates <> <> lib
+R255:258 nameless.DBFullReducibility Full <> mod
+prf 268:289 <> intersection_candidate
+binder 300:300 <> R:1
+binder 302:302 <> S:2
+R318:321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R307:315 nameless.DBFullReducibility Full candidate rec
+R317:317 nameless.DBIndexedCandidates <> R:1 var
+R333:336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R322:330 nameless.DBFullReducibility Full candidate rec
+R332:332 nameless.DBIndexedCandidates <> S:2 var
+R337:345 nameless.DBFullReducibility Full candidate rec
+binder 352:352 <> t:3
+R360:363 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R357:357 nameless.DBIndexedCandidates <> R:1 var
+R359:359 nameless.DBIndexedCandidates <> t:3 var
+R364:364 nameless.DBIndexedCandidates <> S:2 var
+R366:366 nameless.DBIndexedCandidates <> t:3 var
+R437:457 nameless.DBFullReducibility Full candidate_normalizing proj
+R437:457 nameless.DBFullReducibility Full candidate_normalizing proj
+R506:521 nameless.DBFullReducibility Full candidate_reduct proj
+R506:521 nameless.DBFullReducibility Full candidate_reduct proj
+R506:521 nameless.DBFullReducibility Full candidate_reduct proj
+R570:586 nameless.DBFullReducibility Full candidate_neutral proj
+R570:586 nameless.DBFullReducibility Full candidate_neutral proj
+R570:586 nameless.DBFullReducibility Full candidate_neutral proj
+def 659:673 <> rolled_elements
+R684:687 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R680:683 nameless.DBSyntax <> term ind
+binder 676:676 <> R:4
+R699:707 nameless.DBPositiveCandidates <> saturated def
+binder 714:714 <> z:5
+R719:725 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R727:728 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 726:726 <> u:6
+R738:741 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R730:732 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R729:729 nameless.DBIndexedCandidates <> z:5 var
+R733:735 nameless.DBSyntax <> TIn constr
+R737:737 nameless.DBIndexedCandidates <> u:6 var
+R742:742 nameless.DBIndexedCandidates <> R:4 var
+R744:744 nameless.DBIndexedCandidates <> u:6 var
+prf 754:778 <> rolled_elements_candidate
+binder 789:789 <> R:7
+R803:806 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R792:800 nameless.DBFullReducibility Full candidate rec
+R802:802 nameless.DBIndexedCandidates <> R:7 var
+R807:815 nameless.DBFullReducibility Full candidate rec
+R818:832 nameless.DBIndexedCandidates <> rolled_elements def
+R834:834 nameless.DBIndexedCandidates <> R:7 var
+R866:884 nameless.DBPositiveCandidates <> saturated_candidate thm
+R866:884 nameless.DBPositiveCandidates <> saturated_candidate thm
+R917:926 nameless.DBPositiveCandidates <> full_SN_in thm
+R936:956 nameless.DBFullReducibility Full candidate_normalizing proj
+R917:926 nameless.DBPositiveCandidates <> full_SN_in thm
+R936:956 nameless.DBFullReducibility Full candidate_normalizing proj
+prf 977:997 <> rolled_elements_equiv
+binder 1008:1008 <> R:8
+binder 1010:1010 <> S:9
+R1034:1037 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1015:1029 nameless.DBFullReducibility Full predicate_equiv def
+R1031:1031 nameless.DBIndexedCandidates <> R:8 var
+R1033:1033 nameless.DBIndexedCandidates <> S:9 var
+R1038:1052 nameless.DBFullReducibility Full predicate_equiv def
+R1055:1069 nameless.DBIndexedCandidates <> rolled_elements def
+R1071:1071 nameless.DBIndexedCandidates <> R:8 var
+R1075:1089 nameless.DBIndexedCandidates <> rolled_elements def
+R1091:1091 nameless.DBIndexedCandidates <> S:9 var
+R1134:1151 nameless.DBPositiveCandidates <> saturated_monotone thm
+R1134:1151 nameless.DBPositiveCandidates <> saturated_monotone thm
+R1134:1151 nameless.DBPositiveCandidates <> saturated_monotone thm
+mod 1263:1269 <> Indexed
+sec 1280:1289 Indexed FixedPoint
+var  1301:1305 Indexed.FixedPoint Index
+var 1325:1329 Indexed.FixedPoint valid
+R1338:1341 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1333:1337 nameless.DBIndexedCandidates <> Indexed.FixedPoint.Index var
+def 1359:1364 Indexed family
+R1374:1377 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1369:1373 nameless.DBIndexedCandidates <> Indexed.FixedPoint.Index var
+R1382:1385 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1378:1381 nameless.DBSyntax <> term ind
+def 1403:1412 Indexed candidates
+R1419:1424 nameless.DBIndexedCandidates Indexed family def
+binder 1415:1415 <> X:13
+binder 1437:1437 <> i:14
+R1447:1450 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1440:1444 nameless.DBIndexedCandidates <> Indexed.FixedPoint.valid var
+R1446:1446 nameless.DBIndexedCandidates <> i:14 var
+R1451:1459 nameless.DBFullReducibility Full candidate rec
+R1462:1462 nameless.DBIndexedCandidates <> X:13 var
+R1464:1464 nameless.DBIndexedCandidates <> i:14 var
+def 1479:1487 Indexed inclusion
+R1496:1501 nameless.DBIndexedCandidates Indexed family def
+binder 1490:1490 <> X:15
+binder 1492:1492 <> Y:16
+binder 1514:1514 <> i:17
+R1524:1527 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1517:1521 nameless.DBIndexedCandidates <> Indexed.FixedPoint.valid var
+R1523:1523 nameless.DBIndexedCandidates <> i:17 var
+binder 1535:1535 <> t:18
+R1543:1546 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1538:1538 nameless.DBIndexedCandidates <> X:15 var
+R1540:1540 nameless.DBIndexedCandidates <> i:17 var
+R1542:1542 nameless.DBIndexedCandidates <> t:18 var
+R1547:1547 nameless.DBIndexedCandidates <> Y:16 var
+R1549:1549 nameless.DBIndexedCandidates <> i:17 var
+R1551:1551 nameless.DBIndexedCandidates <> t:18 var
+def 1565:1572 Indexed prefixed
+R1585:1588 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1579:1584 nameless.DBIndexedCandidates Indexed family def
+R1589:1594 nameless.DBIndexedCandidates Indexed family def
+binder 1575:1575 <> F:19
+R1602:1607 nameless.DBIndexedCandidates Indexed family def
+binder 1598:1598 <> X:20
+binder 1622:1622 <> i:21
+R1632:1635 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1625:1629 nameless.DBIndexedCandidates <> Indexed.FixedPoint.valid var
+R1631:1631 nameless.DBIndexedCandidates <> i:21 var
+binder 1643:1643 <> t:22
+R1653:1656 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1646:1646 nameless.DBIndexedCandidates <> F:19 var
+R1650:1650 nameless.DBIndexedCandidates <> i:21 var
+R1652:1652 nameless.DBIndexedCandidates <> t:22 var
+R1648:1648 nameless.DBIndexedCandidates <> X:20 var
+R1657:1657 nameless.DBIndexedCandidates <> X:20 var
+R1659:1659 nameless.DBIndexedCandidates <> i:21 var
+R1662:1664 nameless.DBSyntax <> TIn constr
+R1666:1666 nameless.DBIndexedCandidates <> t:22 var
+def 1681:1682 Indexed mu
+R1695:1698 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1689:1694 nameless.DBIndexedCandidates Indexed family def
+R1699:1704 nameless.DBIndexedCandidates Indexed family def
+binder 1685:1685 <> F:23
+binder 1707:1707 <> i:24
+binder 1709:1709 <> t:25
+binder 1723:1723 <> X:26
+R1738:1741 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1726:1735 nameless.DBIndexedCandidates Indexed candidates def
+R1737:1737 nameless.DBIndexedCandidates <> X:26 var
+R1754:1757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1742:1749 nameless.DBIndexedCandidates Indexed prefixed def
+R1751:1751 nameless.DBIndexedCandidates <> F:23 var
+R1753:1753 nameless.DBIndexedCandidates <> X:26 var
+R1758:1758 nameless.DBIndexedCandidates <> X:26 var
+R1760:1760 nameless.DBIndexedCandidates <> i:24 var
+R1762:1762 nameless.DBIndexedCandidates <> t:25 var
+var 1775:1775 Indexed.FixedPoint F
+R1785:1788 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1779:1784 nameless.DBIndexedCandidates Indexed family def
+R1789:1794 nameless.DBIndexedCandidates Indexed family def
+var 1808:1817 Indexed.FixedPoint F_monotone
+binder 1828:1828 <> X:29
+binder 1830:1830 <> Y:30
+R1846:1849 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1833:1841 nameless.DBIndexedCandidates Indexed inclusion def
+R1843:1843 nameless.DBIndexedCandidates <> X:29 var
+R1845:1845 nameless.DBIndexedCandidates <> Y:30 var
+R1850:1858 nameless.DBIndexedCandidates Indexed inclusion def
+R1861:1861 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R1863:1863 nameless.DBIndexedCandidates <> X:29 var
+R1867:1867 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R1869:1869 nameless.DBIndexedCandidates <> Y:30 var
+var 1884:1896 Indexed.FixedPoint F_normalizing
+binder 1907:1907 <> i:33
+R1917:1920 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1910:1914 nameless.DBIndexedCandidates <> Indexed.FixedPoint.valid var
+R1916:1916 nameless.DBIndexedCandidates <> i:33 var
+binder 1928:1928 <> t:34
+R1957:1960 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1933:1933 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R1945:1951 nameless.DBFullReductionStructure <> full_SN def
+R1954:1954 nameless.DBIndexedCandidates <> i:33 var
+R1956:1956 nameless.DBIndexedCandidates <> t:34 var
+R1961:1967 nameless.DBFullReductionStructure <> full_SN def
+R1969:1969 nameless.DBIndexedCandidates <> t:34 var
+prf 1979:1998 Indexed normalizing_prefixed
+R2002:2009 nameless.DBIndexedCandidates Indexed prefixed def
+R2011:2011 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R2023:2029 nameless.DBFullReductionStructure <> full_SN def
+R2063:2072 nameless.DBPositiveCandidates <> full_SN_in thm
+R2082:2094 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_normalizing var
+R2063:2072 nameless.DBPositiveCandidates <> full_SN_in thm
+R2082:2094 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_normalizing var
+prf 2123:2134 Indexed mu_candidate
+R2138:2147 nameless.DBIndexedCandidates Indexed candidates def
+R2150:2151 nameless.DBIndexedCandidates Indexed mu def
+R2153:2153 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R2227:2233 nameless.DBFullReductionStructure <> full_SN def
+R2254:2274 nameless.DBFullReducibility Full normalizing_candidate thm
+R2277:2296 nameless.DBIndexedCandidates Indexed normalizing_prefixed thm
+R2227:2233 nameless.DBFullReductionStructure <> full_SN def
+R2254:2274 nameless.DBFullReducibility Full normalizing_candidate thm
+R2277:2296 nameless.DBIndexedCandidates Indexed normalizing_prefixed thm
+R2336:2351 nameless.DBFullReducibility Full candidate_reduct proj
+R2336:2351 nameless.DBFullReducibility Full candidate_reduct proj
+R2415:2431 nameless.DBFullReducibility Full candidate_neutral proj
+R2415:2431 nameless.DBFullReducibility Full candidate_neutral proj
+prf 2503:2509 Indexed mu_fold
+R2513:2520 nameless.DBIndexedCandidates Indexed prefixed def
+R2522:2522 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R2525:2526 nameless.DBIndexedCandidates Indexed mu def
+R2528:2528 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R2599:2608 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_monotone var
+R2599:2608 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_monotone var
+prf 2686:2697 Indexed mu_induction
+binder 2708:2708 <> X:37
+R2725:2728 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2713:2722 nameless.DBIndexedCandidates Indexed candidates def
+R2724:2724 nameless.DBIndexedCandidates <> X:37 var
+R2741:2744 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2729:2736 nameless.DBIndexedCandidates Indexed prefixed def
+R2738:2738 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R2740:2740 nameless.DBIndexedCandidates <> X:37 var
+R2745:2753 nameless.DBIndexedCandidates Indexed inclusion def
+R2756:2757 nameless.DBIndexedCandidates Indexed mu def
+R2759:2759 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R2762:2762 nameless.DBIndexedCandidates <> X:37 var
+def 2832:2837 Indexed rolled
+R2844:2849 nameless.DBIndexedCandidates Indexed family def
+binder 2840:2840 <> X:38
+binder 2852:2852 <> i:39
+R2859:2867 nameless.DBPositiveCandidates <> saturated def
+binder 2874:2874 <> z:40
+R2879:2885 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2887:2888 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2886:2886 <> u:41
+R2898:2901 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2890:2892 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2889:2889 nameless.DBIndexedCandidates <> z:40 var
+R2893:2895 nameless.DBSyntax <> TIn constr
+R2897:2897 nameless.DBIndexedCandidates <> u:41 var
+R2902:2902 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R2904:2904 nameless.DBIndexedCandidates <> X:38 var
+R2906:2906 nameless.DBIndexedCandidates <> i:39 var
+R2908:2908 nameless.DBIndexedCandidates <> u:41 var
+prf 2918:2936 Indexed rolled_mu_candidate
+R2940:2949 nameless.DBIndexedCandidates Indexed candidates def
+R2952:2957 nameless.DBIndexedCandidates Indexed rolled def
+R2960:2961 nameless.DBIndexedCandidates Indexed mu def
+R2963:2963 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R2996:3014 nameless.DBPositiveCandidates <> saturated_candidate thm
+R2996:3014 nameless.DBPositiveCandidates <> saturated_candidate thm
+R3047:3056 nameless.DBPositiveCandidates <> full_SN_in thm
+R3066:3078 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_normalizing var
+R3047:3056 nameless.DBPositiveCandidates <> full_SN_in thm
+R3066:3078 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_normalizing var
+R3096:3105 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_monotone var
+R3096:3105 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_monotone var
+R3157:3177 nameless.DBFullReducibility Full candidate_normalizing proj
+R3180:3191 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R3157:3177 nameless.DBFullReducibility Full candidate_normalizing proj
+R3180:3191 nameless.DBIndexedCandidates Indexed mu_candidate thm
+prf 3215:3233 Indexed rolled_mu_inclusion
+R3237:3245 nameless.DBIndexedCandidates Indexed inclusion def
+R3248:3253 nameless.DBIndexedCandidates Indexed rolled def
+R3256:3257 nameless.DBIndexedCandidates Indexed mu def
+R3259:3259 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3264:3265 nameless.DBIndexedCandidates Indexed mu def
+R3267:3267 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3307:3308 nameless.DBIndexedCandidates Indexed mu def
+R3310:3310 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3316:3327 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R3307:3308 nameless.DBIndexedCandidates Indexed mu def
+R3310:3310 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3316:3327 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R3371:3377 nameless.DBIndexedCandidates Indexed mu_fold thm
+R3371:3377 nameless.DBIndexedCandidates Indexed mu_fold thm
+prf 3393:3401 Indexed mu_unfold
+R3405:3413 nameless.DBIndexedCandidates Indexed inclusion def
+R3416:3417 nameless.DBIndexedCandidates Indexed mu def
+R3419:3419 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3423:3428 nameless.DBIndexedCandidates Indexed rolled def
+R3431:3432 nameless.DBIndexedCandidates Indexed mu def
+R3434:3434 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3454:3465 nameless.DBIndexedCandidates Indexed mu_induction thm
+R3475:3493 nameless.DBIndexedCandidates Indexed rolled_mu_candidate thm
+R3454:3465 nameless.DBIndexedCandidates Indexed mu_induction thm
+R3475:3493 nameless.DBIndexedCandidates Indexed rolled_mu_candidate thm
+R3524:3538 nameless.DBPositiveCandidates <> saturated_intro thm
+R3524:3538 nameless.DBPositiveCandidates <> saturated_intro thm
+R3583:3592 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_monotone var
+R3602:3620 nameless.DBIndexedCandidates Indexed rolled_mu_inclusion thm
+R3583:3592 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F_monotone var
+R3602:3620 nameless.DBIndexedCandidates Indexed rolled_mu_inclusion thm
+prf 3656:3669 Indexed mu_index_equiv
+binder 3680:3680 <> i:42
+binder 3682:3682 <> j:43
+R3694:3697 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3687:3691 nameless.DBIndexedCandidates <> Indexed.FixedPoint.valid var
+R3693:3693 nameless.DBIndexedCandidates <> i:42 var
+R3705:3710 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3698:3702 nameless.DBIndexedCandidates <> Indexed.FixedPoint.valid var
+R3704:3704 nameless.DBIndexedCandidates <> j:43 var
+R3711:3711 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3769:3775 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3719:3719 <> X:44
+R3734:3737 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3722:3731 nameless.DBIndexedCandidates Indexed candidates def
+R3733:3733 nameless.DBIndexedCandidates <> X:44 var
+R3738:3752 nameless.DBFullReducibility Full predicate_equiv def
+R3755:3755 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3757:3757 nameless.DBIndexedCandidates <> X:44 var
+R3759:3759 nameless.DBIndexedCandidates <> i:42 var
+R3763:3763 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3765:3765 nameless.DBIndexedCandidates <> X:44 var
+R3767:3767 nameless.DBIndexedCandidates <> j:43 var
+R3776:3790 nameless.DBFullReducibility Full predicate_equiv def
+R3793:3794 nameless.DBIndexedCandidates Indexed mu def
+R3796:3796 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3798:3798 nameless.DBIndexedCandidates <> i:42 var
+R3802:3803 nameless.DBIndexedCandidates Indexed mu def
+R3805:3805 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3807:3807 nameless.DBIndexedCandidates <> j:43 var
+R3876:3884 nameless.DBIndexedCandidates Indexed mu_unfold thm
+R3876:3884 nameless.DBIndexedCandidates Indexed mu_unfold thm
+R3919:3920 nameless.DBIndexedCandidates Indexed mu def
+R3922:3922 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3928:3939 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R3919:3920 nameless.DBIndexedCandidates Indexed mu def
+R3922:3922 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R3928:3939 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R3981:3987 nameless.DBIndexedCandidates Indexed mu_fold thm
+R3981:3987 nameless.DBIndexedCandidates Indexed mu_fold thm
+R4019:4030 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R4019:4030 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R4062:4070 nameless.DBIndexedCandidates Indexed mu_unfold thm
+R4062:4070 nameless.DBIndexedCandidates Indexed mu_unfold thm
+R4105:4106 nameless.DBIndexedCandidates Indexed mu def
+R4108:4108 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R4114:4125 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R4105:4106 nameless.DBIndexedCandidates Indexed mu def
+R4108:4108 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R4114:4125 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R4167:4173 nameless.DBIndexedCandidates Indexed mu_fold thm
+R4167:4173 nameless.DBIndexedCandidates Indexed mu_fold thm
+R4205:4216 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R4205:4216 nameless.DBIndexedCandidates Indexed mu_candidate thm
+prf 4387:4399 Indexed mu_refinement
+binder 4410:4410 <> X:45
+R4427:4430 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4415:4424 nameless.DBIndexedCandidates Indexed candidates def
+R4426:4426 nameless.DBIndexedCandidates <> X:45 var
+R4472:4477 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4431:4438 nameless.DBIndexedCandidates Indexed prefixed def
+R4440:4440 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+binder 4447:4447 <> i:46
+binder 4449:4449 <> t:47
+R4462:4465 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4454:4455 nameless.DBIndexedCandidates Indexed mu def
+R4457:4457 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R4459:4459 nameless.DBIndexedCandidates <> i:46 var
+R4461:4461 nameless.DBIndexedCandidates <> t:47 var
+R4466:4466 nameless.DBIndexedCandidates <> X:45 var
+R4468:4468 nameless.DBIndexedCandidates <> i:46 var
+R4470:4470 nameless.DBIndexedCandidates <> t:47 var
+R4478:4486 nameless.DBIndexedCandidates Indexed inclusion def
+R4489:4490 nameless.DBIndexedCandidates Indexed mu def
+R4492:4492 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R4495:4495 nameless.DBIndexedCandidates <> X:45 var
+R4548:4557 nameless.DBIndexedCandidates Indexed candidates def
+binder 4564:4564 <> i:48
+binder 4566:4566 <> t:49
+R4579:4582 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4571:4572 nameless.DBIndexedCandidates Indexed mu def
+R4574:4574 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R4576:4576 nameless.DBIndexedCandidates <> i:48 var
+R4578:4578 nameless.DBIndexedCandidates <> t:49 var
+R4585:4585 nameless.DBIndexedCandidates <> i:48 var
+R4587:4587 nameless.DBIndexedCandidates <> t:49 var
+R4548:4557 nameless.DBIndexedCandidates Indexed candidates def
+binder 4564:4564 <> i:50
+binder 4566:4566 <> t:51
+R4579:4582 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4571:4572 nameless.DBIndexedCandidates Indexed mu def
+R4574:4574 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R4576:4576 nameless.DBIndexedCandidates <> i:50 var
+R4578:4578 nameless.DBIndexedCandidates <> t:51 var
+R4585:4585 nameless.DBIndexedCandidates <> i:50 var
+R4587:4587 nameless.DBIndexedCandidates <> t:51 var
+R4615:4636 nameless.DBIndexedCandidates <> intersection_candidate thm
+R4646:4657 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R4615:4636 nameless.DBIndexedCandidates <> intersection_candidate thm
+R4646:4657 nameless.DBIndexedCandidates Indexed mu_candidate thm
+R4691:4695 Corelib.Init.Logic <> proj2 thm
+R4698:4709 nameless.DBIndexedCandidates Indexed mu_induction thm
+R4691:4695 Corelib.Init.Logic <> proj2 thm
+R4698:4709 nameless.DBIndexedCandidates Indexed mu_induction thm
+def 4824:4831 Indexed totalize
+R4838:4843 nameless.DBIndexedCandidates Indexed family def
+binder 4834:4834 <> X:52
+binder 4846:4846 <> i:53
+binder 4848:4848 <> t:54
+R4862:4866 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4883:4883 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4853:4859 nameless.DBFullReductionStructure <> full_SN def
+R4861:4861 nameless.DBIndexedCandidates <> t:54 var
+R4874:4877 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4867:4871 nameless.DBIndexedCandidates <> Indexed.FixedPoint.valid var
+R4873:4873 nameless.DBIndexedCandidates <> i:53 var
+R4878:4878 nameless.DBIndexedCandidates <> X:52 var
+R4880:4880 nameless.DBIndexedCandidates <> i:53 var
+R4882:4882 nameless.DBIndexedCandidates <> t:54 var
+prf 4892:4909 Indexed totalize_candidate
+binder 4920:4920 <> X:55
+R4935:4938 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4923:4932 nameless.DBIndexedCandidates Indexed candidates def
+R4934:4934 nameless.DBIndexedCandidates <> X:55 var
+binder 4946:4946 <> i:56
+R4949:4957 nameless.DBFullReducibility Full candidate rec
+R4960:4967 nameless.DBIndexedCandidates Indexed totalize def
+R4969:4969 nameless.DBIndexedCandidates <> X:55 var
+R4971:4971 nameless.DBIndexedCandidates <> i:56 var
+R5083:5089 Corelib.Init.Wf <> Acc_inv thm
+R5083:5089 Corelib.Init.Wf <> Acc_inv thm
+R5122:5137 nameless.DBFullReducibility Full candidate_reduct proj
+R5122:5137 nameless.DBFullReducibility Full candidate_reduct proj
+R5228:5232 Corelib.Init.Logic <> proj1 thm
+R5228:5232 Corelib.Init.Logic <> proj1 thm
+R5269:5285 nameless.DBFullReducibility Full candidate_neutral proj
+R5269:5285 nameless.DBFullReducibility Full candidate_neutral proj
+R5328:5332 Corelib.Init.Logic <> proj2 thm
+R5328:5332 Corelib.Init.Logic <> proj2 thm
+prf 5360:5373 Indexed totalize_equiv
+binder 5384:5384 <> X:57
+R5399:5402 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5387:5396 nameless.DBIndexedCandidates Indexed candidates def
+R5398:5398 nameless.DBIndexedCandidates <> X:57 var
+binder 5410:5410 <> i:58
+R5422:5425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5415:5419 nameless.DBIndexedCandidates <> Indexed.FixedPoint.valid var
+R5421:5421 nameless.DBIndexedCandidates <> i:58 var
+R5426:5440 nameless.DBFullReducibility Full predicate_equiv def
+R5443:5450 nameless.DBIndexedCandidates Indexed totalize def
+R5452:5452 nameless.DBIndexedCandidates <> X:57 var
+R5454:5454 nameless.DBIndexedCandidates <> i:58 var
+R5458:5458 nameless.DBIndexedCandidates <> X:57 var
+R5460:5460 nameless.DBIndexedCandidates <> i:58 var
+R5557:5577 nameless.DBFullReducibility Full candidate_normalizing proj
+R5557:5577 nameless.DBFullReducibility Full candidate_normalizing proj
+prf 5613:5628 Indexed mu_functor_equiv
+binder 5639:5639 <> G:59
+R5644:5644 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5723:5729 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 5652:5652 <> X:60
+R5667:5670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5655:5664 nameless.DBIndexedCandidates Indexed candidates def
+R5666:5666 nameless.DBIndexedCandidates <> X:60 var
+binder 5678:5678 <> i:61
+R5688:5691 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5681:5685 nameless.DBIndexedCandidates <> Indexed.FixedPoint.valid var
+R5687:5687 nameless.DBIndexedCandidates <> i:61 var
+R5692:5706 nameless.DBFullReducibility Full predicate_equiv def
+R5709:5709 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R5711:5711 nameless.DBIndexedCandidates <> X:60 var
+R5713:5713 nameless.DBIndexedCandidates <> i:61 var
+R5717:5717 nameless.DBIndexedCandidates <> G:59 var
+R5719:5719 nameless.DBIndexedCandidates <> X:60 var
+R5721:5721 nameless.DBIndexedCandidates <> i:61 var
+binder 5737:5737 <> i:62
+R5740:5754 nameless.DBFullReducibility Full predicate_equiv def
+R5757:5758 nameless.DBIndexedCandidates Indexed mu def
+R5760:5760 nameless.DBIndexedCandidates <> Indexed.FixedPoint.F var
+R5762:5762 nameless.DBIndexedCandidates <> i:62 var
+R5766:5767 nameless.DBIndexedCandidates Indexed mu def
+R5769:5769 nameless.DBIndexedCandidates <> G:59 var
+R5771:5771 nameless.DBIndexedCandidates <> i:62 var
+R5995:6004 nameless.DBIndexedCandidates Indexed.FixedPoint <> sec
+prf 6016:6029 Indexed mu_valid_equiv
+binder 6041:6045 <> Index:63
+R6076:6079 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6071:6075 nameless.DBIndexedCandidates <> Index:63 var
+binder 6056:6060 <> valid:64
+binder 6062:6067 <> valid':65
+binder 6086:6086 <> F:66
+R6091:6091 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6122:6128 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6099:6099 <> i:67
+R6109:6113 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R6102:6106 nameless.DBIndexedCandidates <> valid:64 var
+R6108:6108 nameless.DBIndexedCandidates <> i:67 var
+R6114:6119 nameless.DBIndexedCandidates <> valid':65 var
+R6121:6121 nameless.DBIndexedCandidates <> i:67 var
+binder 6136:6136 <> i:68
+R6139:6153 nameless.DBFullReducibility Full predicate_equiv def
+R6156:6157 nameless.DBIndexedCandidates Indexed mu def
+R6165:6165 nameless.DBIndexedCandidates <> F:66 var
+R6167:6167 nameless.DBIndexedCandidates <> i:68 var
+R6159:6163 nameless.DBIndexedCandidates <> valid:64 var
+R6171:6172 nameless.DBIndexedCandidates Indexed mu def
+R6181:6181 nameless.DBIndexedCandidates <> F:66 var
+R6183:6183 nameless.DBIndexedCandidates <> i:68 var
+R6174:6179 nameless.DBIndexedCandidates <> valid':65 var
+prf 6494:6507 Indexed mu_model_equiv
+binder 6519:6523 <> Index:69
+R6554:6557 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6549:6553 nameless.DBIndexedCandidates <> Index:69 var
+binder 6534:6538 <> valid:70
+binder 6540:6545 <> valid':71
+binder 6564:6564 <> F:72
+binder 6566:6566 <> G:73
+R6571:6571 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6602:6608 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6579:6579 <> i:74
+R6589:6593 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R6582:6586 nameless.DBIndexedCandidates <> valid:70 var
+R6588:6588 nameless.DBIndexedCandidates <> i:74 var
+R6594:6599 nameless.DBIndexedCandidates <> valid':71 var
+R6601:6601 nameless.DBIndexedCandidates <> i:74 var
+R6609:6609 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6694:6700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6617:6617 <> X:75
+R6638:6641 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6620:6629 nameless.DBIndexedCandidates Indexed candidates def
+R6637:6637 nameless.DBIndexedCandidates <> X:75 var
+R6631:6635 nameless.DBIndexedCandidates <> valid:70 var
+binder 6649:6649 <> i:76
+R6659:6662 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6652:6656 nameless.DBIndexedCandidates <> valid:70 var
+R6658:6658 nameless.DBIndexedCandidates <> i:76 var
+R6663:6677 nameless.DBFullReducibility Full predicate_equiv def
+R6680:6680 nameless.DBIndexedCandidates <> F:72 var
+R6682:6682 nameless.DBIndexedCandidates <> X:75 var
+R6684:6684 nameless.DBIndexedCandidates <> i:76 var
+R6688:6688 nameless.DBIndexedCandidates <> G:73 var
+R6690:6690 nameless.DBIndexedCandidates <> X:75 var
+R6692:6692 nameless.DBIndexedCandidates <> i:76 var
+binder 6708:6708 <> i:77
+R6711:6725 nameless.DBFullReducibility Full predicate_equiv def
+R6728:6729 nameless.DBIndexedCandidates Indexed mu def
+R6737:6737 nameless.DBIndexedCandidates <> F:72 var
+R6739:6739 nameless.DBIndexedCandidates <> i:77 var
+R6731:6735 nameless.DBIndexedCandidates <> valid:70 var
+R6743:6744 nameless.DBIndexedCandidates Indexed mu def
+R6753:6753 nameless.DBIndexedCandidates <> G:73 var
+R6755:6755 nameless.DBIndexedCandidates <> i:77 var
+R6746:6751 nameless.DBIndexedCandidates <> valid':71 var
+R6823:6838 nameless.DBIndexedCandidates Indexed mu_functor_equiv thm
+R6823:6838 nameless.DBIndexedCandidates Indexed mu_functor_equiv thm
+R6879:6892 nameless.DBIndexedCandidates Indexed mu_valid_equiv thm
+R6879:6892 nameless.DBIndexedCandidates Indexed mu_valid_equiv thm
+R6940:6946 nameless.DBIndexedCandidates Indexed <> mod
+R6968:6987 nameless.DBIndexedCandidates <> mu_candidate thm
+R7008:7024 nameless.DBIndexedCandidates <> mu_unfold thm
+R7045:7065 nameless.DBIndexedCandidates <> mu_refinement thm
+R7086:7109 nameless.DBIndexedCandidates <> mu_functor_equiv thm

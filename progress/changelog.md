@@ -1,8 +1,133 @@
 # Proposal revision changelog
 
+## 2026-09-30 - Explicit annotation repair in progress
+
+- Recorded the user's choice of explicit core annotations while retaining general eta contraction.
+- Added the complete annotated syntax and typing judgment in `annotated/`, with checked erasure, binding algebra, weakening, substitution, comparison transport, and beta preservation.
+- Implemented an executable eta check that includes annotations. Proved soundness, completeness, and stability under substitution and lifting.
+- Checked the original counterexample's annotated source at its original type and proved that its hidden dependency now blocks the bad eta contraction. General eta and application eta remain available.
+- Added a separate build and dependency audit. Full annotated preservation, primitive computation rules, named elaboration, public migration, and the two coherence claims remain unfinished. Original theorem counts are unchanged.
+
+## 2026-09-28 - Batched assumption audit
+
+- Kept all 247 closed proof/definition references at their original import positions, then audited their dependency graph in one collection. The two coherence conjectures remain separate printed assumptions.
+- Verified identical reference order, unchanged import order, and inclusion of every local binding in the collection. This avoids name shadowing from later imports.
+- Audit compilation decreased from about 364 seconds to 6 seconds with the same coverage; the collection prints `Closed under the global context`.
+
+
+## 2026-09-28 - Closed row-handler coherence
+
+- Proved that inhabited closed payloads cannot select dead handlers, and that live handler selection preserves the unique target label.
+- Proved canonical decomposition of arbitrary closed row payloads and conversion of the outputs from any two handler derivations for the same source and target row views.
+- Added these results in `OpenSignaturesRowCoherence.v`, without importing public conjectures.
+- Proved position and payload-description transport across convertible row views in `OpenSignaturesRowViews.v`.
+- Proved closed pointwise conversion for all description-coercion constructors in `OpenSignaturesDescriptionCoherence.v`, including differing source/target row views and identity-versus-row comparisons. Contextual function extensionality and closing arbitrary open derivations remain; the two original coherence claims remain open.
+
+
+## 2026-09-28 - Polymorphic eta counterexample
+
+- Proved an axiom-free counterexample to unrestricted eta subject reduction, including the current function-cumulativity rule. The eta expansion of `(lambda z. lambda B. z) (lambda x. x)` has type `Pi A : Sort 0. A -> A`; the eta reduct cannot have that type.
+- Added the nameless inversion proof and named typing-encoding/reflection bridge in `DBEtaPolymorphism.v` and `OpenSignaturesEtaPolymorphism.v`.
+- Removed the false `full_preservation` axiom and retained its exact proposition as `full_preservation_statement`, with `full_preservation_refuted` proving its negation. Preserved the pre-refutation public file and notes in `proof-archive/2026-09-28-before-polymorphic-eta-refutation`.
+- Prepared `OpenSignaturesComputationPreservation.v`: a separate preservation theorem for all compatible computation contexts, including binders and annotations. The current typing, beta/eta relation, and original-claim count are unchanged.
+- Current original-claim status: 44 proved without axioms, two coherence claims open, one refuted. No calculus rule or other original statement changed. Operational preservation, progress, normalization, and their corollaries remain proved.
+
+
+## 2026-09-28: independent contextual-equivalence library
+
+- Moved the unchanged closing-substitution and observation definitions and their checked proofs into `OpenSignaturesObservations.v`, which imports no public conjectures. All 47 public statements remain in the theorem file.
+- Proved equivalence laws, a characterization by closed observation functions, computation of coercion composition, and congruence under typed closed functions and typed contexts with a fixed closed result type.
+- Both coherence theorems remain open; the count remains 44 closed claims and 3 conjectures.
+
+## 2026-09-28: comparison inversion for eta preservation
+
+- Proved checked type-change chains, dependent Pi variance, and context narrowing.
+- Proved structural comparison modulo conversion, its transitivity and substitution laws, and realization from endpoint formation alone.
+- Recovered typed Pi views without general eta preservation, and proved strengthening for comparison chains.
+- Proved eta preservation for variables at arbitrary dependent function types, and a reusable theorem for functions with stable principal types.
+- General eta preservation and the two coherence claims remain open; the original audit count remains 44/47.
+
+## 2026-09-28: full beta/eta strong normalization
+
+- Proved semantic interpretations of all derived family, definition, motive, and method types, and semantic validity of every typing constructor.
+- Proved the full fundamental theorem, inhabited semantic environments, and strong normalization for the auxiliary nameless calculus.
+- Transferred full-reduction accessibility to the named calculus and proved the original `normalization` theorem with its statement unchanged.
+- Closed all six normalization-dependent claims. The original audit now has 44 closed claims without assumptions, no conditional proofs, and 3 conjectures: full preservation and the two coherence theorems.
+- The complete normalization dependency graph passes an independent Rocq kernel check without axioms.
+
 Revision of `progress/type-rules.md`, `context.md`, `progress/1.pom`,
 `progress/2.pom` (2026-08-23). Source of truth: EID Figures 1–4 and the
 constructor-subtyping paper, Rules 1–7.
+
+## 2026-09-27 — Computability of every primitive semantic operator
+
+- Proved `Interp`, `IAll`, `Hyps`, `EPi`, `Switch`, `CloseCase`, `Ind`, and `CloseInd` computable for full beta/eta reduction, without axioms.
+- Shared head expansion, beta expansion, saturated elimination, and parameterized candidate refinements keep the operator proofs independent of a typing normalization assumption.
+- The induction proofs retain data membership and recursive-call computability together. Generalized recursive hypotheses accept stable indexed candidate refinements.
+- Enumeration-code candidates now retain computable tails. Enumeration elimination and close-case motives support all universe levels.
+- Added strengthened binder views and a semantic judgment validating dependent functions, pairs, universes, variables, conversion, and sort cumulativity.
+- Proved semantic function cumulativity using a comparison-depth bound preserved by substitution and synchronized reduction.
+- Proved simultaneous-substitution algebra, semantic environment extension, full-step preservation, and reflection of normalization.
+- The full fundamental typing theorem remains outstanding. Original statements and calculus rules are unchanged; the original audit remains 37 closed, 6 conditional, and 4 conjectures.
+
+## 2026-09-27 — Concrete description and small-type model
+
+- Restricted positive fixed points to computable indices; proved refinement, coherence, and index conversion without choosing proofs of index validity.
+- Proved computability of description values and existence of their unique positive semantic functors. Original function fields are controlled before normalization.
+- Interpreted enumeration positions, using the least candidate for the empty enumeration.
+- Constructed a nested positive model for small types, reference fixed points, and closure; proved its coherence by guarded recursion and instantiated the cumulative universe hierarchy.
+- Proved semantic formation for primitive types and semantic inversion for universes, functions, and pairs. Semantic operator proofs and the full fundamental typing theorem remain open.
+- Original theorem statements and rules remain unchanged. The original audit remains 37 closed, 6 conditional, and 4 conjectures.
+
+## 2026-09-27 — Full-reduction semantics and cumulative universe construction
+
+- Proved lift/substitution compatibility for individual beta/eta steps and full-reduction candidate laws for functions and pairs.
+- Added a sound and complete full-step selector and a normalizer that requires accessibility; no universal termination assumption is hidden in the evaluator.
+- Proved conversion coherence and canonical interpretation of dependent types, avoiding choice when selecting codomain predicates.
+- Constructed the numeric universe hierarchy over level-indexed atomic interpretations and proved cumulativity, cross-level coherence, and Pi/Sigma formation.
+- Proved positive fixed-point candidate formation, fold, unfold, and induction. The concrete description interpretation and full fundamental typing theorem remain open.
+- All original theorem statements and rules remain unchanged. These foundations leave the original audit at 37 closed, 6 conditional, and 4 conjectures.
+
+## 2026-09-27 — Normalization transfer and reducibility foundations
+
+- Recorded actual computation in parallel reduction and proved that eta postponement preserves it.
+- Proved that computation termination implies full normalization for typed terms, without general eta preservation, and transferred the result to named terms.
+- Proved that substitution preserves individual computation steps and reflects normalization.
+- Proved dependent function and pair reducibility candidates, their introduction lemmas, function variance, and semantic eta equivalence. The universe/description interpretation and fundamental computability theorem remain open.
+- No calculus rules or original theorem statements changed. The original-claim audit remains 37 closed, 6 conditional, and 4 conjectures.
+
+## 2026-09-27 — Typed eta postponement and elaboration soundness
+
+- Proved preservation for computation in every binder and annotation, and for parallel computation.
+- Proved a typing invariant for data eliminations, strong eta postponement, and factorization of typed full reductions into computation followed by eta.
+- Replaced the conditional product and empty-choice description views with axiom-free proofs; dead-witness, handler, subtyping, synthesis, and checking soundness now have no conjecture dependencies.
+- Proved eta termination and a reduction of full normalization to computation-phase termination. Full normalization is still open.
+- The original 47 statements and calculus rules are unchanged in this update. The audit reports 37 closed claims, 6 conditional claims, and 4 conjectures.
+
+## 2026-09-27 — Independent execution preservation
+
+- Proved all root computations, including both induction operators, using shared constructor inversion and binder formation.
+- Proved operational preservation and evaluation preservation without full preservation; closed the original close-induction preservation claim.
+- Removed unnecessary full-preservation premises from canonical-form, context-exchange, and coercion helpers.
+- Factored full preservation into checked root/congruence cases and an explicit, still-unproved general eta premise.
+- Original theorem statements and calculus rules are unchanged in this update. The assumption audit now reports 30 closed claims, 13 conditional claims, and 4 conjectures.
+
+## Function cumulativity and eta (2026-09-27)
+
+- Added `universe_le` and `ty_cumul_fun` to the active named and auxiliary
+  nameless calculi. Function domains vary contravariantly and codomains
+  covariantly, including nested dependent functions. Both function types
+  must be well formed; distinct universes remain nonconvertible.
+- Checked the eta examples involving a widened result universe and a
+  narrowed argument universe, plus a nested dependent function. The old
+  counterexample and rules are preserved in
+  `proof-archive/2026-09-27-before-function-cumulativity/`.
+- Updated the structural, canonical-form, context-narrowing, beta, and
+  encoding/reflection proofs. The build, binding regressions, assumption
+  audit, and kernel check pass. The 47 original theorem statements remain
+  unchanged: 27 are axiom-free, 16 conditional, and four still conjectures.
+- Updated the Markdown rules and rebuilt the LaTeX/PDF reference. General
+  preservation and normalization are still proof obligations.
 
 ## Preservation closure (2026-09-06)
 

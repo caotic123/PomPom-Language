@@ -1,0 +1,355 @@
+DIGEST 12ff6311b6f7732a1458011c35cd620f
+Fnameless.DBSemanticGeneration
+R174:177 Stdlib.Lists.List <> <> lib
+R179:183 Stdlib.Arith.Arith <> <> lib
+R185:188 Stdlib.Bool.Bool <> <> lib
+R190:192 Stdlib.micromega.Lia <> <> lib
+R210:233 nameless.DBCalculusModel <> <> lib
+R243:246 nameless.DBFullReducibility Full <> mod
+sec 258:267 <> Generation
+var 279:282 Generation atom
+R290:293 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R286:289 nameless.DBSyntax <> term ind
+R294:294 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R307:311 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R299:302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R295:298 nameless.DBSyntax <> term ind
+var 329:339 Generation atom_not_pi
+binder 350:350 <> A:3
+binder 352:352 <> B:4
+binder 354:354 <> R:5
+R357:358 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R359:362 nameless.DBSemanticGeneration <> Generation.atom var
+R365:367 nameless.DBSyntax <> TPi constr
+R371:371 nameless.DBSemanticGeneration <> B:4 var
+R369:369 nameless.DBSemanticGeneration <> A:3 var
+R374:374 nameless.DBSemanticGeneration <> R:5 var
+var 388:401 Generation atom_not_sigma
+binder 412:412 <> A:8
+binder 414:414 <> B:9
+binder 416:416 <> R:10
+R419:420 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R421:424 nameless.DBSemanticGeneration <> Generation.atom var
+R427:432 nameless.DBSyntax <> TSigma constr
+R436:436 nameless.DBSemanticGeneration <> B:9 var
+R434:434 nameless.DBSemanticGeneration <> A:8 var
+R439:439 nameless.DBSemanticGeneration <> R:10 var
+prf 451:469 <> type_interp_pi_view
+binder 480:480 <> T:13
+binder 482:482 <> R:14
+R505:508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R485:495 nameless.DBSemanticTypes <> type_interp ind
+R502:502 nameless.DBSemanticGeneration <> T:13 var
+R504:504 nameless.DBSemanticGeneration <> R:14 var
+R497:500 nameless.DBSemanticGeneration <> Generation.atom var
+binder 516:516 <> A:15
+binder 518:518 <> B:16
+R534:537 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R524:526 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R523:523 nameless.DBSemanticGeneration <> T:13 var
+R527:529 nameless.DBSyntax <> TPi constr
+R533:533 nameless.DBSemanticGeneration <> B:16 var
+R531:531 nameless.DBSemanticGeneration <> A:15 var
+R538:544 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R550:553 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 545:546 <> RA:17
+binder 548:549 <> RB:18
+R575:578 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R554:564 nameless.DBSemanticTypes <> type_interp ind
+R571:571 nameless.DBSemanticGeneration <> A:15 var
+R573:574 nameless.DBSemanticGeneration <> RA:17 var
+R566:569 nameless.DBSemanticGeneration <> Generation.atom var
+R623:629 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R710:710 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R579:593 nameless.DBFullReducibility Full predicate_equiv def
+R595:595 nameless.DBSemanticGeneration <> R:14 var
+R598:615 nameless.DBFullReducibility Full dependent_function def
+R617:618 nameless.DBSemanticGeneration <> RA:17 var
+R620:621 nameless.DBSemanticGeneration <> RB:18 var
+binder 637:637 <> a:19
+R644:647 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R640:641 nameless.DBSemanticGeneration <> RA:17 var
+R643:643 nameless.DBSemanticGeneration <> a:19 var
+R669:672 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R648:654 nameless.DBFullReductionStructure <> full_SN def
+R657:661 nameless.DBSyntax <> subst def
+R667:667 nameless.DBSemanticGeneration <> B:16 var
+R663:663 nameless.DBSemanticGeneration <> a:19 var
+R673:683 nameless.DBSemanticTypes <> type_interp ind
+R691:695 nameless.DBSyntax <> subst def
+R701:701 nameless.DBSemanticGeneration <> B:16 var
+R697:697 nameless.DBSemanticGeneration <> a:19 var
+R705:706 nameless.DBSemanticGeneration <> RB:18 var
+R708:708 nameless.DBSemanticGeneration <> a:19 var
+R685:688 nameless.DBSemanticGeneration <> Generation.atom var
+R789:802 nameless.DBGeneration <> reduces_binary thm
+R808:819 nameless.DBGeneration <> reduction_pi thm
+R804:806 nameless.DBSyntax <> TPi constr
+R789:802 nameless.DBGeneration <> reduces_binary thm
+R808:819 nameless.DBGeneration <> reduction_pi thm
+R804:806 nameless.DBSyntax <> TPi constr
+R879:892 nameless.DBGeneration <> reduces_binary thm
+R898:909 nameless.DBGeneration <> reduction_pi thm
+R894:896 nameless.DBSyntax <> TPi constr
+R879:892 nameless.DBGeneration <> reduces_binary thm
+R898:909 nameless.DBGeneration <> reduction_pi thm
+R894:896 nameless.DBSyntax <> TPi constr
+R960:970 nameless.DBSemanticGeneration <> Generation.atom_not_pi var
+R960:970 nameless.DBSemanticGeneration <> Generation.atom_not_pi var
+R1000:1013 nameless.DBGeneration <> reduces_binary thm
+R1019:1030 nameless.DBGeneration <> reduction_pi thm
+R1015:1017 nameless.DBSyntax <> TPi constr
+R1000:1013 nameless.DBGeneration <> reduces_binary thm
+R1019:1030 nameless.DBGeneration <> reduction_pi thm
+R1015:1017 nameless.DBSyntax <> TPi constr
+R1134:1155 nameless.DBSemanticTypes <> type_interp_conversion thm
+R1176:1181 nameless.DBCore <> cv_sym constr
+R1191:1211 nameless.DBWeakening <> reductions_conversion thm
+R1134:1155 nameless.DBSemanticTypes <> type_interp_conversion thm
+R1176:1181 nameless.DBCore <> cv_sym constr
+R1191:1211 nameless.DBWeakening <> reductions_conversion thm
+binder 1272:1272 <> a:20
+R1277:1279 nameless.DBSyntax <> TPi constr
+R1281:1281 nameless.DBSemanticGeneration <> a:20 var
+R1236:1257 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+R1315:1323 nameless.DBCore <> red_TPi_A constr
+binder 1272:1272 <> a:21
+R1277:1279 nameless.DBSyntax <> TPi constr
+R1281:1281 nameless.DBSemanticGeneration <> a:21 var
+R1236:1257 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+R1315:1323 nameless.DBCore <> red_TPi_A constr
+R1396:1417 nameless.DBSemanticTypes <> type_interp_conversion thm
+R1460:1465 nameless.DBCore <> cv_sym constr
+R1468:1488 nameless.DBWeakening <> reductions_conversion thm
+R1501:1516 nameless.DBFullNormalForms <> reductions_subst thm
+R1396:1417 nameless.DBSemanticTypes <> type_interp_conversion thm
+R1460:1465 nameless.DBCore <> cv_sym constr
+R1468:1488 nameless.DBWeakening <> reductions_conversion thm
+R1501:1516 nameless.DBFullNormalForms <> reductions_subst thm
+R1534:1547 nameless.DBGeneration <> reduces_binary thm
+R1553:1564 nameless.DBGeneration <> reduction_pi thm
+R1549:1551 nameless.DBSyntax <> TPi constr
+R1534:1547 nameless.DBGeneration <> reduces_binary thm
+R1553:1564 nameless.DBGeneration <> reduction_pi thm
+R1549:1551 nameless.DBSyntax <> TPi constr
+R1643:1649 Corelib.Init.Logic <> eq_refl constr
+R1643:1649 Corelib.Init.Logic <> eq_refl constr
+prf 1803:1824 <> type_interp_sigma_view
+binder 1835:1835 <> T:22
+binder 1837:1837 <> R:23
+R1860:1863 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1840:1850 nameless.DBSemanticTypes <> type_interp ind
+R1857:1857 nameless.DBSemanticGeneration <> T:22 var
+R1859:1859 nameless.DBSemanticGeneration <> R:23 var
+R1852:1855 nameless.DBSemanticGeneration <> Generation.atom var
+binder 1871:1871 <> A:24
+binder 1873:1873 <> B:25
+R1892:1895 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1879:1881 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1878:1878 nameless.DBSemanticGeneration <> T:22 var
+R1882:1887 nameless.DBSyntax <> TSigma constr
+R1891:1891 nameless.DBSemanticGeneration <> B:25 var
+R1889:1889 nameless.DBSemanticGeneration <> A:24 var
+R1896:1902 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1908:1911 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1903:1904 <> RA:26
+binder 1906:1907 <> RB:27
+R1933:1936 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1912:1922 nameless.DBSemanticTypes <> type_interp ind
+R1929:1929 nameless.DBSemanticGeneration <> A:24 var
+R1931:1932 nameless.DBSemanticGeneration <> RA:26 var
+R1924:1927 nameless.DBSemanticGeneration <> Generation.atom var
+R1977:1983 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2064:2064 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1937:1951 nameless.DBFullReducibility Full predicate_equiv def
+R1953:1953 nameless.DBSemanticGeneration <> R:23 var
+R1956:1969 nameless.DBFullReducibility Full dependent_pair def
+R1971:1972 nameless.DBSemanticGeneration <> RA:26 var
+R1974:1975 nameless.DBSemanticGeneration <> RB:27 var
+binder 1991:1991 <> a:28
+R1998:2001 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1994:1995 nameless.DBSemanticGeneration <> RA:26 var
+R1997:1997 nameless.DBSemanticGeneration <> a:28 var
+R2023:2026 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2002:2008 nameless.DBFullReductionStructure <> full_SN def
+R2011:2015 nameless.DBSyntax <> subst def
+R2021:2021 nameless.DBSemanticGeneration <> B:25 var
+R2017:2017 nameless.DBSemanticGeneration <> a:28 var
+R2027:2037 nameless.DBSemanticTypes <> type_interp ind
+R2045:2049 nameless.DBSyntax <> subst def
+R2055:2055 nameless.DBSemanticGeneration <> B:25 var
+R2051:2051 nameless.DBSemanticGeneration <> a:28 var
+R2059:2060 nameless.DBSemanticGeneration <> RB:27 var
+R2062:2062 nameless.DBSemanticGeneration <> a:28 var
+R2039:2042 nameless.DBSemanticGeneration <> Generation.atom var
+R2143:2156 nameless.DBGeneration <> reduces_binary thm
+R2165:2179 nameless.DBGeneration <> reduction_sigma thm
+R2158:2163 nameless.DBSyntax <> TSigma constr
+R2143:2156 nameless.DBGeneration <> reduces_binary thm
+R2165:2179 nameless.DBGeneration <> reduction_sigma thm
+R2158:2163 nameless.DBSyntax <> TSigma constr
+R2239:2252 nameless.DBGeneration <> reduces_binary thm
+R2261:2275 nameless.DBGeneration <> reduction_sigma thm
+R2254:2259 nameless.DBSyntax <> TSigma constr
+R2239:2252 nameless.DBGeneration <> reduces_binary thm
+R2261:2275 nameless.DBGeneration <> reduction_sigma thm
+R2254:2259 nameless.DBSyntax <> TSigma constr
+R2326:2339 nameless.DBSemanticGeneration <> Generation.atom_not_sigma var
+R2326:2339 nameless.DBSemanticGeneration <> Generation.atom_not_sigma var
+R2369:2382 nameless.DBGeneration <> reduces_binary thm
+R2391:2405 nameless.DBGeneration <> reduction_sigma thm
+R2384:2389 nameless.DBSyntax <> TSigma constr
+R2369:2382 nameless.DBGeneration <> reduces_binary thm
+R2391:2405 nameless.DBGeneration <> reduction_sigma thm
+R2384:2389 nameless.DBSyntax <> TSigma constr
+R2466:2479 nameless.DBGeneration <> reduces_binary thm
+R2488:2502 nameless.DBGeneration <> reduction_sigma thm
+R2481:2486 nameless.DBSyntax <> TSigma constr
+R2466:2479 nameless.DBGeneration <> reduces_binary thm
+R2488:2502 nameless.DBGeneration <> reduction_sigma thm
+R2481:2486 nameless.DBSyntax <> TSigma constr
+R2606:2627 nameless.DBSemanticTypes <> type_interp_conversion thm
+R2648:2653 nameless.DBCore <> cv_sym constr
+R2663:2683 nameless.DBWeakening <> reductions_conversion thm
+R2606:2627 nameless.DBSemanticTypes <> type_interp_conversion thm
+R2648:2653 nameless.DBCore <> cv_sym constr
+R2663:2683 nameless.DBWeakening <> reductions_conversion thm
+binder 2744:2744 <> a:29
+R2749:2754 nameless.DBSyntax <> TSigma constr
+R2756:2756 nameless.DBSemanticGeneration <> a:29 var
+R2708:2729 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+R2790:2801 nameless.DBCore <> red_TSigma_A constr
+binder 2744:2744 <> a:30
+R2749:2754 nameless.DBSyntax <> TSigma constr
+R2756:2756 nameless.DBSemanticGeneration <> a:30 var
+R2708:2729 nameless.DBFullReductionStructure <> full_SN_map_reflection thm
+R2790:2801 nameless.DBCore <> red_TSigma_A constr
+R2874:2895 nameless.DBSemanticTypes <> type_interp_conversion thm
+R2938:2943 nameless.DBCore <> cv_sym constr
+R2946:2966 nameless.DBWeakening <> reductions_conversion thm
+R2979:2994 nameless.DBFullNormalForms <> reductions_subst thm
+R2874:2895 nameless.DBSemanticTypes <> type_interp_conversion thm
+R2938:2943 nameless.DBCore <> cv_sym constr
+R2946:2966 nameless.DBWeakening <> reductions_conversion thm
+R2979:2994 nameless.DBFullNormalForms <> reductions_subst thm
+R3030:3036 Corelib.Init.Logic <> eq_refl constr
+R3030:3036 Corelib.Init.Logic <> eq_refl constr
+prf 3190:3210 <> type_interp_atom_view
+binder 3221:3221 <> T:31
+binder 3223:3223 <> R:32
+R3246:3249 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3226:3236 nameless.DBSemanticTypes <> type_interp ind
+R3243:3243 nameless.DBSemanticGeneration <> T:31 var
+R3245:3245 nameless.DBSemanticGeneration <> R:32 var
+R3238:3241 nameless.DBSemanticGeneration <> Generation.atom var
+binder 3257:3257 <> n:33
+R3275:3278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3262:3272 nameless.DBFullNormalForms <> normal_form def
+R3274:3274 nameless.DBSemanticGeneration <> n:33 var
+R3290:3295 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3279:3280 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R3281:3287 nameless.DBFullReducibility Full neutral def
+R3289:3289 nameless.DBSemanticGeneration <> n:33 var
+R3296:3296 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3321:3325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3304:3304 <> A:34
+binder 3306:3306 <> B:35
+R3310:3313 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3309:3309 nameless.DBSemanticGeneration <> n:33 var
+R3314:3316 nameless.DBSyntax <> TPi constr
+R3320:3320 nameless.DBSemanticGeneration <> B:35 var
+R3318:3318 nameless.DBSemanticGeneration <> A:34 var
+R3326:3326 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3354:3360 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3334:3334 <> A:36
+binder 3336:3336 <> B:37
+R3340:3343 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3339:3339 nameless.DBSemanticGeneration <> n:33 var
+R3344:3349 nameless.DBSyntax <> TSigma constr
+R3353:3353 nameless.DBSemanticGeneration <> B:37 var
+R3351:3351 nameless.DBSemanticGeneration <> A:36 var
+R3369:3372 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3361:3364 nameless.DBCore <> conv ind
+R3368:3368 nameless.DBSemanticGeneration <> n:33 var
+R3366:3366 nameless.DBSemanticGeneration <> T:31 var
+R3373:3379 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3381:3382 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3380:3380 <> S:38
+R3391:3394 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3383:3386 nameless.DBSemanticGeneration <> Generation.atom var
+R3388:3388 nameless.DBSemanticGeneration <> n:33 var
+R3390:3390 nameless.DBSemanticGeneration <> S:38 var
+R3395:3409 nameless.DBFullReducibility Full predicate_equiv def
+R3411:3411 nameless.DBSemanticGeneration <> R:32 var
+R3413:3413 nameless.DBSemanticGeneration <> S:38 var
+R3518:3520 nameless.DBParallelBase <> rtc ind
+R3522:3530 nameless.DBCore <> reduction ind
+R3518:3520 nameless.DBParallelBase <> rtc ind
+R3522:3530 nameless.DBCore <> reduction ind
+R3544:3554 nameless.DBFullNormalForms <> normal_form def
+R3544:3554 nameless.DBFullNormalForms <> normal_form def
+R3609:3611 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3632:3648 nameless.DBFullNormalForms <> normal_forms_join thm
+R3676:3683 nameless.DBParallelBase <> rtc_refl constr
+R3609:3611 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3632:3648 nameless.DBFullNormalForms <> normal_forms_join thm
+R3676:3683 nameless.DBParallelBase <> rtc_refl constr
+R3609:3611 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3632:3648 nameless.DBFullNormalForms <> normal_forms_join thm
+R3676:3683 nameless.DBParallelBase <> rtc_refl constr
+R3609:3611 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3632:3648 nameless.DBFullNormalForms <> normal_forms_join thm
+R3676:3683 nameless.DBParallelBase <> rtc_refl constr
+R3609:3611 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3632:3648 nameless.DBFullNormalForms <> normal_forms_join thm
+R3676:3683 nameless.DBParallelBase <> rtc_refl constr
+R4041:4050 nameless.DBSemanticGeneration Generation <> sec
+prf 4062:4079 <> calculus_sort_view
+binder 4090:4090 <> n:39
+binder 4092:4092 <> A:40
+binder 4094:4094 <> R:41
+binder 4096:4096 <> k:42
+R4122:4125 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4101:4115 nameless.DBCalculusModel <> calculus_interp def
+R4117:4117 nameless.DBSemanticGeneration <> n:39 var
+R4119:4119 nameless.DBSemanticGeneration <> A:40 var
+R4121:4121 nameless.DBSemanticGeneration <> R:41 var
+R4142:4147 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4126:4129 nameless.DBCore <> conv ind
+R4134:4138 nameless.DBSyntax <> TSort constr
+R4140:4140 nameless.DBSemanticGeneration <> k:42 var
+R4131:4131 nameless.DBSemanticGeneration <> A:40 var
+R4153:4156 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4149:4151 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4148:4148 nameless.DBSemanticGeneration <> k:42 var
+R4152:4152 nameless.DBSemanticGeneration <> n:39 var
+R4157:4171 nameless.DBFullReducibility Full predicate_equiv def
+R4173:4173 nameless.DBSemanticGeneration <> R:41 var
+R4176:4188 nameless.DBCalculusModel <> calculus_type def
+R4190:4190 nameless.DBSemanticGeneration <> k:42 var
+R4237:4257 nameless.DBSemanticGeneration <> type_interp_atom_view thm
+R4269:4273 nameless.DBSyntax <> TSort constr
+R4279:4289 nameless.DBUniverseModel <> sort_normal thm
+R4237:4257 nameless.DBSemanticGeneration <> type_interp_atom_view thm
+R4269:4273 nameless.DBSyntax <> TSort constr
+R4279:4289 nameless.DBUniverseModel <> sort_normal thm
+R4320:4326 nameless.DBFullReducibility Full neutral def
+R4434:4451 nameless.DBCalculusModel <> primitive_not_sort thm
+R4434:4451 nameless.DBCalculusModel <> primitive_not_sort thm
+R4488:4490 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4488:4490 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4515:4536 nameless.DBUniverseModel <> universe_levels_length thm
+R4538:4549 nameless.DBCalculusModel <> primitive_at ind
+R4515:4536 nameless.DBUniverseModel <> universe_levels_length thm
+R4538:4549 nameless.DBCalculusModel <> primitive_at ind
+R4515:4536 nameless.DBUniverseModel <> universe_levels_length thm
+R4538:4549 nameless.DBCalculusModel <> primitive_at ind
+R4569:4582 Stdlib.Lists.List <> nth_error_Some thm
+R4569:4582 Stdlib.Lists.List <> nth_error_Some thm
+R4617:4638 nameless.DBUniverseModel <> universe_levels_lookup thm
+R4640:4651 nameless.DBCalculusModel <> primitive_at ind
+R4617:4638 nameless.DBUniverseModel <> universe_levels_lookup thm
+R4640:4651 nameless.DBCalculusModel <> primitive_at ind
+R4750:4768 nameless.DBSemanticGeneration <> type_interp_pi_view thm
+R4789:4810 nameless.DBSemanticGeneration <> type_interp_sigma_view thm
+R4831:4848 nameless.DBSemanticGeneration <> calculus_sort_view thm

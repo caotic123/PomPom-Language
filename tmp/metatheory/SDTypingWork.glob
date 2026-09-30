@@ -1,0 +1,1487 @@
+DIGEST 27fc84aa3a6c85bf84bad3163ce1d8a4
+FSDTypingWork
+R106:109 Stdlib.Lists.List <> <> lib
+R111:115 Stdlib.Arith.Arith <> <> lib
+R117:120 Stdlib.Bool.Bool <> <> lib
+R122:124 Stdlib.micromega.Lia <> <> lib
+R142:162 nameless.DBConfluence <> <> lib
+R172:184 Stdlib.Lists.List ListNotations <> mod
+ind 198:199 <> wf
+constr 220:225 <> wf_nil
+constr 237:243 <> wf_cons
+ind 330:335 <> typing
+constr 372:377 <> ty_var
+constr 575:581 <> ty_sort
+constr 656:660 <> ty_pi
+constr 804:811 <> ty_sigma
+constr 958:963 <> ty_lam
+constr 1094:1099 <> ty_app
+constr 1345:1351 <> ty_pair
+constr 1522:1527 <> ty_fst
+constr 1727:1732 <> ty_snd
+constr 1974:1980 <> ty_conv
+constr 2093:2100 <> ty_cumul
+constr 2193:2200 <> ty_unitT
+constr 2264:2270 <> ty_unit
+constr 2403:2408 <> ty_uid
+constr 2468:2473 <> ty_tag
+constr 2607:2614 <> ty_enumu
+constr 2676:2682 <> ty_nile
+constr 2815:2822 <> ty_conse
+constr 3016:3023 <> ty_enumt
+constr 3108:3114 <> ty_zero
+constr 3334:3340 <> ty_succ
+constr 3599:3604 <> ty_epi
+constr 3748:3756 <> ty_switch
+constr 4055:4062 <> ty_idesc
+constr 4153:4159 <> ty_ivar
+constr 4357:4361 <> ty_i1
+constr 4526:4532 <> ty_ibot
+constr 4699:4706 <> ty_iprod
+constr 4952:4957 <> ty_ipi
+constr 5209:5215 <> ty_isig
+constr 5468:5477 <> ty_ichoice
+constr 5739:5747 <> ty_interp
+constr 5915:5920 <> ty_mui
+constr 6126:6134 <> ty_in_mui
+constr 6426:6432 <> ty_iall
+constr 6680:6686 <> ty_hyps
+constr 7084:7089 <> ty_ind
+constr 7480:7487 <> ty_close
+constr 7730:7740 <> ty_in_close
+constr 8058:8070 <> ty_close_case
+constr 8511:8522 <> ty_close_ind
+R206:209 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R203:205 nameless.DBSyntax <> ctx def
+R342:345 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R339:341 nameless.DBSyntax <> ctx def
+R350:353 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R346:349 nameless.DBSyntax <> term ind
+R358:361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R354:357 nameless.DBSyntax <> term ind
+R229:230 SDTypingWork <> wf:1 ind
+R232:233 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+binder 254:258 <> Gamma:5
+binder 260:260 <> A:6
+binder 262:262 <> k:7
+R277:280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R269:270 SDTypingWork <> wf:1 ind
+R272:276 SDTypingWork <> Gamma:5 var
+R305:308 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R281:286 SDTypingWork <> typing:2 ind
+R297:301 nameless.DBSyntax <> TSort constr
+R303:303 SDTypingWork <> k:7 var
+R294:294 SDTypingWork <> A:6 var
+R288:292 SDTypingWork <> Gamma:5 var
+R309:310 SDTypingWork <> wf:1 ind
+R314:317 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R313:313 SDTypingWork <> A:6 var
+R318:322 SDTypingWork <> Gamma:5 var
+binder 388:392 <> Gamma:8
+R413:415 Corelib.Init.Datatypes <> nat ind
+binder 395:409 <> formation_level:9
+binder 418:418 <> n:10
+binder 420:420 <> A:11
+R435:438 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R427:428 SDTypingWork <> wf:1 ind
+R430:434 SDTypingWork <> Gamma:8 var
+R465:472 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R456:458 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R439:447 Stdlib.Lists.List <> nth_error def
+R455:455 SDTypingWork <> n:10 var
+R449:453 SDTypingWork <> Gamma:8 var
+R459:462 Corelib.Init.Datatypes <> Some constr
+R464:464 SDTypingWork <> A:11 var
+R526:533 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R473:478 SDTypingWork <> typing:2 ind
+R504:508 nameless.DBSyntax <> TSort constr
+R510:524 SDTypingWork <> formation_level:9 var
+R487:490 nameless.DBSyntax <> lift def
+R500:500 SDTypingWork <> A:11 var
+R493:493 Corelib.Init.Datatypes <> S constr
+R495:495 SDTypingWork <> n:10 var
+R480:484 SDTypingWork <> Gamma:8 var
+R534:539 SDTypingWork <> typing:2 ind
+R557:560 nameless.DBSyntax <> lift def
+R570:570 SDTypingWork <> A:11 var
+R563:563 Corelib.Init.Datatypes <> S constr
+R565:565 SDTypingWork <> n:10 var
+R548:551 nameless.DBSyntax <> TVar constr
+R553:553 SDTypingWork <> n:10 var
+R541:545 SDTypingWork <> Gamma:8 var
+binder 592:596 <> Gamma:12
+binder 598:598 <> k:13
+R613:616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R605:606 SDTypingWork <> wf:1 ind
+R608:612 SDTypingWork <> Gamma:12 var
+R617:622 SDTypingWork <> typing:2 ind
+R641:645 nameless.DBSyntax <> TSort constr
+R648:648 Corelib.Init.Datatypes <> S constr
+R650:650 SDTypingWork <> k:13 var
+R631:635 nameless.DBSyntax <> TSort constr
+R637:637 SDTypingWork <> k:13 var
+R624:628 SDTypingWork <> Gamma:12 var
+binder 671:675 <> Gamma:14
+binder 677:677 <> A:15
+binder 679:679 <> B:16
+binder 681:681 <> j:17
+binder 683:683 <> k:18
+R714:717 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R690:695 SDTypingWork <> typing:2 ind
+R706:710 nameless.DBSyntax <> TSort constr
+R712:712 SDTypingWork <> j:17 var
+R703:703 SDTypingWork <> A:15 var
+R697:701 SDTypingWork <> Gamma:14 var
+R749:756 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R718:723 SDTypingWork <> typing:2 ind
+R741:745 nameless.DBSyntax <> TSort constr
+R747:747 SDTypingWork <> k:18 var
+R738:738 SDTypingWork <> B:16 var
+R727:730 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R726:726 SDTypingWork <> A:15 var
+R731:735 SDTypingWork <> Gamma:14 var
+R757:762 SDTypingWork <> typing:2 ind
+R781:785 nameless.DBSyntax <> TSort constr
+R788:794 Stdlib.Arith.PeanoNat Nat max def
+R796:796 SDTypingWork <> j:17 var
+R798:798 SDTypingWork <> k:18 var
+R771:773 nameless.DBSyntax <> TPi constr
+R777:777 SDTypingWork <> B:16 var
+R775:775 SDTypingWork <> A:15 var
+R764:768 SDTypingWork <> Gamma:14 var
+binder 822:826 <> Gamma:19
+binder 828:828 <> A:20
+binder 830:830 <> B:21
+binder 832:832 <> j:22
+binder 834:834 <> k:23
+R865:868 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R841:846 SDTypingWork <> typing:2 ind
+R857:861 nameless.DBSyntax <> TSort constr
+R863:863 SDTypingWork <> j:22 var
+R854:854 SDTypingWork <> A:20 var
+R848:852 SDTypingWork <> Gamma:19 var
+R900:907 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R869:874 SDTypingWork <> typing:2 ind
+R892:896 nameless.DBSyntax <> TSort constr
+R898:898 SDTypingWork <> k:23 var
+R889:889 SDTypingWork <> B:21 var
+R878:881 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R877:877 SDTypingWork <> A:20 var
+R882:886 SDTypingWork <> Gamma:19 var
+R908:913 SDTypingWork <> typing:2 ind
+R935:939 nameless.DBSyntax <> TSort constr
+R942:948 Stdlib.Arith.PeanoNat Nat max def
+R950:950 SDTypingWork <> j:22 var
+R952:952 SDTypingWork <> k:23 var
+R922:927 nameless.DBSyntax <> TSigma constr
+R931:931 SDTypingWork <> B:21 var
+R929:929 SDTypingWork <> A:20 var
+R915:919 SDTypingWork <> Gamma:19 var
+binder 974:978 <> Gamma:24
+binder 980:980 <> A:25
+binder 982:982 <> B:26
+binder 984:984 <> b:27
+binder 986:986 <> k:28
+R1025:1028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R993:998 SDTypingWork <> typing:2 ind
+R1017:1021 nameless.DBSyntax <> TSort constr
+R1023:1023 SDTypingWork <> k:28 var
+R1007:1009 nameless.DBSyntax <> TPi constr
+R1013:1013 SDTypingWork <> B:26 var
+R1011:1011 SDTypingWork <> A:25 var
+R1000:1004 SDTypingWork <> Gamma:24 var
+R1052:1059 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1029:1034 SDTypingWork <> typing:2 ind
+R1051:1051 SDTypingWork <> B:26 var
+R1049:1049 SDTypingWork <> b:27 var
+R1038:1041 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1037:1037 SDTypingWork <> A:25 var
+R1042:1046 SDTypingWork <> Gamma:24 var
+R1060:1065 SDTypingWork <> typing:2 ind
+R1083:1085 nameless.DBSyntax <> TPi constr
+R1089:1089 SDTypingWork <> B:26 var
+R1087:1087 SDTypingWork <> A:25 var
+R1074:1077 nameless.DBSyntax <> TLam constr
+R1079:1079 SDTypingWork <> b:27 var
+R1067:1071 SDTypingWork <> Gamma:24 var
+binder 1110:1114 <> Gamma:29
+R1135:1137 Corelib.Init.Datatypes <> nat ind
+binder 1117:1131 <> formation_level:30
+binder 1140:1140 <> A:31
+binder 1142:1142 <> B:32
+binder 1144:1144 <> f:33
+binder 1146:1146 <> a:34
+binder 1148:1148 <> k:35
+R1187:1194 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1155:1160 SDTypingWork <> typing:2 ind
+R1179:1183 nameless.DBSyntax <> TSort constr
+R1185:1185 SDTypingWork <> k:35 var
+R1169:1171 nameless.DBSyntax <> TPi constr
+R1175:1175 SDTypingWork <> B:32 var
+R1173:1173 SDTypingWork <> A:31 var
+R1162:1166 SDTypingWork <> Gamma:29 var
+R1219:1222 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1195:1200 SDTypingWork <> typing:2 ind
+R1211:1213 nameless.DBSyntax <> TPi constr
+R1217:1217 SDTypingWork <> B:32 var
+R1215:1215 SDTypingWork <> A:31 var
+R1208:1208 SDTypingWork <> f:33 var
+R1202:1206 SDTypingWork <> Gamma:29 var
+R1239:1246 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1223:1228 SDTypingWork <> typing:2 ind
+R1238:1238 SDTypingWork <> A:31 var
+R1236:1236 SDTypingWork <> a:34 var
+R1230:1234 SDTypingWork <> Gamma:29 var
+R1297:1304 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1247:1252 SDTypingWork <> typing:2 ind
+R1275:1279 nameless.DBSyntax <> TSort constr
+R1281:1295 SDTypingWork <> formation_level:30 var
+R1261:1265 nameless.DBSyntax <> subst def
+R1271:1271 SDTypingWork <> B:32 var
+R1267:1267 SDTypingWork <> a:34 var
+R1254:1258 SDTypingWork <> Gamma:29 var
+R1305:1310 SDTypingWork <> typing:2 ind
+R1330:1334 nameless.DBSyntax <> subst def
+R1340:1340 SDTypingWork <> B:32 var
+R1336:1336 SDTypingWork <> a:34 var
+R1319:1322 nameless.DBSyntax <> TApp constr
+R1326:1326 SDTypingWork <> a:34 var
+R1324:1324 SDTypingWork <> f:33 var
+R1312:1316 SDTypingWork <> Gamma:29 var
+binder 1362:1366 <> Gamma:36
+binder 1368:1368 <> A:37
+binder 1370:1370 <> B:38
+binder 1372:1372 <> a:39
+binder 1374:1374 <> b:40
+binder 1376:1376 <> k:41
+R1418:1425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1383:1388 SDTypingWork <> typing:2 ind
+R1410:1414 nameless.DBSyntax <> TSort constr
+R1416:1416 SDTypingWork <> k:41 var
+R1397:1402 nameless.DBSyntax <> TSigma constr
+R1406:1406 SDTypingWork <> B:38 var
+R1404:1404 SDTypingWork <> A:37 var
+R1390:1394 SDTypingWork <> Gamma:36 var
+R1442:1445 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1426:1431 SDTypingWork <> typing:2 ind
+R1441:1441 SDTypingWork <> A:37 var
+R1439:1439 SDTypingWork <> a:39 var
+R1433:1437 SDTypingWork <> Gamma:36 var
+R1474:1481 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1446:1451 SDTypingWork <> typing:2 ind
+R1462:1466 nameless.DBSyntax <> subst def
+R1472:1472 SDTypingWork <> B:38 var
+R1468:1468 SDTypingWork <> a:39 var
+R1459:1459 SDTypingWork <> b:40 var
+R1453:1457 SDTypingWork <> Gamma:36 var
+R1482:1487 SDTypingWork <> typing:2 ind
+R1508:1513 nameless.DBSyntax <> TSigma constr
+R1517:1517 SDTypingWork <> B:38 var
+R1515:1515 SDTypingWork <> A:37 var
+R1496:1500 nameless.DBSyntax <> TPair constr
+R1504:1504 SDTypingWork <> b:40 var
+R1502:1502 SDTypingWork <> a:39 var
+R1489:1493 SDTypingWork <> Gamma:36 var
+binder 1538:1542 <> Gamma:42
+R1563:1565 Corelib.Init.Datatypes <> nat ind
+binder 1545:1559 <> formation_level:43
+binder 1568:1568 <> A:44
+binder 1570:1570 <> B:45
+binder 1572:1572 <> p:46
+binder 1574:1574 <> k:47
+R1616:1623 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1581:1586 SDTypingWork <> typing:2 ind
+R1608:1612 nameless.DBSyntax <> TSort constr
+R1614:1614 SDTypingWork <> k:47 var
+R1595:1600 nameless.DBSyntax <> TSigma constr
+R1604:1604 SDTypingWork <> B:45 var
+R1602:1602 SDTypingWork <> A:44 var
+R1588:1592 SDTypingWork <> Gamma:42 var
+R1651:1654 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1624:1629 SDTypingWork <> typing:2 ind
+R1640:1645 nameless.DBSyntax <> TSigma constr
+R1649:1649 SDTypingWork <> B:45 var
+R1647:1647 SDTypingWork <> A:44 var
+R1637:1637 SDTypingWork <> p:46 var
+R1631:1635 SDTypingWork <> Gamma:42 var
+R1693:1700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1655:1660 SDTypingWork <> typing:2 ind
+R1671:1675 nameless.DBSyntax <> TSort constr
+R1677:1691 SDTypingWork <> formation_level:43 var
+R1668:1668 SDTypingWork <> A:44 var
+R1662:1666 SDTypingWork <> Gamma:42 var
+R1701:1706 SDTypingWork <> typing:2 ind
+R1723:1723 SDTypingWork <> A:44 var
+R1715:1718 nameless.DBSyntax <> TFst constr
+R1720:1720 SDTypingWork <> p:46 var
+R1708:1712 SDTypingWork <> Gamma:42 var
+binder 1743:1747 <> Gamma:48
+R1768:1770 Corelib.Init.Datatypes <> nat ind
+binder 1750:1764 <> formation_level:49
+binder 1773:1773 <> A:50
+binder 1775:1775 <> B:51
+binder 1777:1777 <> p:52
+binder 1779:1779 <> k:53
+R1821:1828 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1786:1791 SDTypingWork <> typing:2 ind
+R1813:1817 nameless.DBSyntax <> TSort constr
+R1819:1819 SDTypingWork <> k:53 var
+R1800:1805 nameless.DBSyntax <> TSigma constr
+R1809:1809 SDTypingWork <> B:51 var
+R1807:1807 SDTypingWork <> A:50 var
+R1793:1797 SDTypingWork <> Gamma:48 var
+R1856:1863 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1829:1834 SDTypingWork <> typing:2 ind
+R1845:1850 nameless.DBSyntax <> TSigma constr
+R1854:1854 SDTypingWork <> B:51 var
+R1852:1852 SDTypingWork <> A:50 var
+R1842:1842 SDTypingWork <> p:52 var
+R1836:1840 SDTypingWork <> Gamma:48 var
+R1921:1928 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1864:1869 SDTypingWork <> typing:2 ind
+R1899:1903 nameless.DBSyntax <> TSort constr
+R1905:1919 SDTypingWork <> formation_level:49 var
+R1878:1882 nameless.DBSyntax <> subst def
+R1895:1895 SDTypingWork <> B:51 var
+R1885:1888 nameless.DBSyntax <> TFst constr
+R1890:1890 SDTypingWork <> p:52 var
+R1871:1875 SDTypingWork <> Gamma:48 var
+R1929:1934 SDTypingWork <> typing:2 ind
+R1952:1956 nameless.DBSyntax <> subst def
+R1969:1969 SDTypingWork <> B:51 var
+R1959:1962 nameless.DBSyntax <> TFst constr
+R1964:1964 SDTypingWork <> p:52 var
+R1943:1946 nameless.DBSyntax <> TSnd constr
+R1948:1948 SDTypingWork <> p:52 var
+R1936:1940 SDTypingWork <> Gamma:48 var
+binder 1991:1995 <> Gamma:54
+binder 1997:1997 <> t:55
+binder 1999:1999 <> A:56
+binder 2001:2001 <> B:57
+binder 2003:2003 <> k:58
+R2026:2029 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2010:2015 SDTypingWork <> typing:2 ind
+R2025:2025 SDTypingWork <> A:56 var
+R2023:2023 SDTypingWork <> t:55 var
+R2017:2021 SDTypingWork <> Gamma:54 var
+R2054:2057 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2030:2035 SDTypingWork <> typing:2 ind
+R2046:2050 nameless.DBSyntax <> TSort constr
+R2052:2052 SDTypingWork <> k:58 var
+R2043:2043 SDTypingWork <> B:57 var
+R2037:2041 SDTypingWork <> Gamma:54 var
+R2066:2073 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2058:2061 nameless.DBCore <> conv ind
+R2065:2065 SDTypingWork <> B:57 var
+R2063:2063 SDTypingWork <> A:56 var
+R2074:2079 SDTypingWork <> typing:2 ind
+R2089:2089 SDTypingWork <> B:57 var
+R2087:2087 SDTypingWork <> t:55 var
+R2081:2085 SDTypingWork <> Gamma:54 var
+binder 2111:2115 <> Gamma:59
+binder 2117:2117 <> t:60
+binder 2119:2119 <> j:61
+binder 2121:2121 <> k:62
+R2152:2155 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2128:2133 SDTypingWork <> typing:2 ind
+R2144:2148 nameless.DBSyntax <> TSort constr
+R2150:2150 SDTypingWork <> j:61 var
+R2141:2141 SDTypingWork <> t:60 var
+R2135:2139 SDTypingWork <> Gamma:59 var
+R2162:2165 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2157:2160 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R2156:2156 SDTypingWork <> j:61 var
+R2161:2161 SDTypingWork <> k:62 var
+R2166:2171 SDTypingWork <> typing:2 ind
+R2182:2186 nameless.DBSyntax <> TSort constr
+R2188:2188 SDTypingWork <> k:62 var
+R2179:2179 SDTypingWork <> t:60 var
+R2173:2177 SDTypingWork <> Gamma:59 var
+binder 2211:2215 <> Gamma:63
+binder 2217:2217 <> k:64
+R2228:2231 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2220:2221 SDTypingWork <> wf:1 ind
+R2223:2227 SDTypingWork <> Gamma:63 var
+R2232:2237 SDTypingWork <> typing:2 ind
+R2253:2257 nameless.DBSyntax <> TSort constr
+R2259:2259 SDTypingWork <> k:64 var
+R2245:2250 nameless.DBSyntax <> TUnitT constr
+R2239:2243 SDTypingWork <> Gamma:63 var
+binder 2281:2285 <> Gamma:65
+R2306:2308 Corelib.Init.Datatypes <> nat ind
+binder 2288:2302 <> formation_level:66
+R2320:2323 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2312:2313 SDTypingWork <> wf:1 ind
+R2315:2319 SDTypingWork <> Gamma:65 var
+R2367:2374 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2324:2329 SDTypingWork <> typing:2 ind
+R2345:2349 nameless.DBSyntax <> TSort constr
+R2351:2365 SDTypingWork <> formation_level:66 var
+R2337:2342 nameless.DBSyntax <> TUnitT constr
+R2331:2335 SDTypingWork <> Gamma:65 var
+R2375:2380 SDTypingWork <> typing:2 ind
+R2394:2399 nameless.DBSyntax <> TUnitT constr
+R2388:2392 nameless.DBSyntax <> TUnit constr
+R2382:2386 SDTypingWork <> Gamma:65 var
+binder 2419:2423 <> Gamma:67
+R2434:2437 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2426:2427 SDTypingWork <> wf:1 ind
+R2429:2433 SDTypingWork <> Gamma:67 var
+R2438:2443 SDTypingWork <> typing:2 ind
+R2457:2461 nameless.DBSyntax <> TSort constr
+R2451:2454 nameless.DBSyntax <> TUId constr
+R2445:2449 SDTypingWork <> Gamma:67 var
+binder 2484:2488 <> Gamma:68
+R2509:2511 Corelib.Init.Datatypes <> nat ind
+binder 2491:2505 <> formation_level:69
+binder 2514:2514 <> s:70
+R2525:2528 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2517:2518 SDTypingWork <> wf:1 ind
+R2520:2524 SDTypingWork <> Gamma:68 var
+R2570:2577 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2529:2534 SDTypingWork <> typing:2 ind
+R2548:2552 nameless.DBSyntax <> TSort constr
+R2554:2568 SDTypingWork <> formation_level:69 var
+R2542:2545 nameless.DBSyntax <> TUId constr
+R2536:2540 SDTypingWork <> Gamma:68 var
+R2578:2583 SDTypingWork <> typing:2 ind
+R2600:2603 nameless.DBSyntax <> TUId constr
+R2592:2595 nameless.DBSyntax <> TTag constr
+R2597:2597 SDTypingWork <> s:70 var
+R2585:2589 SDTypingWork <> Gamma:68 var
+binder 2625:2629 <> Gamma:71
+R2640:2643 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2632:2633 SDTypingWork <> wf:1 ind
+R2635:2639 SDTypingWork <> Gamma:71 var
+R2644:2649 SDTypingWork <> typing:2 ind
+R2665:2669 nameless.DBSyntax <> TSort constr
+R2657:2662 nameless.DBSyntax <> TEnumU constr
+R2651:2655 SDTypingWork <> Gamma:71 var
+binder 2693:2697 <> Gamma:72
+R2718:2720 Corelib.Init.Datatypes <> nat ind
+binder 2700:2714 <> formation_level:73
+R2732:2735 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2724:2725 SDTypingWork <> wf:1 ind
+R2727:2731 SDTypingWork <> Gamma:72 var
+R2779:2786 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2736:2741 SDTypingWork <> typing:2 ind
+R2757:2761 nameless.DBSyntax <> TSort constr
+R2763:2777 SDTypingWork <> formation_level:73 var
+R2749:2754 nameless.DBSyntax <> TEnumU constr
+R2743:2747 SDTypingWork <> Gamma:72 var
+R2787:2792 SDTypingWork <> typing:2 ind
+R2806:2811 nameless.DBSyntax <> TEnumU constr
+R2800:2804 nameless.DBSyntax <> TNilE constr
+R2794:2798 SDTypingWork <> Gamma:72 var
+binder 2833:2837 <> Gamma:74
+R2858:2860 Corelib.Init.Datatypes <> nat ind
+binder 2840:2854 <> formation_level:75
+binder 2863:2865 <> tag:76
+binder 2867:2867 <> E:77
+R2895:2898 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2874:2879 SDTypingWork <> typing:2 ind
+R2891:2894 nameless.DBSyntax <> TUId constr
+R2887:2889 SDTypingWork <> tag:76 var
+R2881:2885 SDTypingWork <> Gamma:74 var
+R2920:2927 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2899:2904 SDTypingWork <> typing:2 ind
+R2914:2919 nameless.DBSyntax <> TEnumU constr
+R2912:2912 SDTypingWork <> E:77 var
+R2906:2910 SDTypingWork <> Gamma:74 var
+R2971:2978 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2928:2933 SDTypingWork <> typing:2 ind
+R2949:2953 nameless.DBSyntax <> TSort constr
+R2955:2969 SDTypingWork <> formation_level:75 var
+R2941:2946 nameless.DBSyntax <> TEnumU constr
+R2935:2939 SDTypingWork <> Gamma:74 var
+R2979:2984 SDTypingWork <> typing:2 ind
+R3007:3012 nameless.DBSyntax <> TEnumU constr
+R2993:2998 nameless.DBSyntax <> TConsE constr
+R3004:3004 SDTypingWork <> E:77 var
+R3000:3002 SDTypingWork <> tag:76 var
+R2986:2990 SDTypingWork <> Gamma:74 var
+binder 3034:3038 <> Gamma:78
+binder 3040:3040 <> E:79
+R3068:3071 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3047:3052 SDTypingWork <> typing:2 ind
+R3062:3067 nameless.DBSyntax <> TEnumU constr
+R3060:3060 SDTypingWork <> E:79 var
+R3054:3058 SDTypingWork <> Gamma:78 var
+R3072:3077 SDTypingWork <> typing:2 ind
+R3097:3101 nameless.DBSyntax <> TSort constr
+R3086:3091 nameless.DBSyntax <> TEnumT constr
+R3093:3093 SDTypingWork <> E:79 var
+R3079:3083 SDTypingWork <> Gamma:78 var
+binder 3125:3129 <> Gamma:80
+R3150:3152 Corelib.Init.Datatypes <> nat ind
+binder 3132:3146 <> formation_level:81
+binder 3155:3157 <> tag:82
+binder 3159:3159 <> E:83
+R3187:3190 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3166:3171 SDTypingWork <> typing:2 ind
+R3183:3186 nameless.DBSyntax <> TUId constr
+R3179:3181 SDTypingWork <> tag:82 var
+R3173:3177 SDTypingWork <> Gamma:80 var
+R3212:3219 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3191:3196 SDTypingWork <> typing:2 ind
+R3206:3211 nameless.DBSyntax <> TEnumU constr
+R3204:3204 SDTypingWork <> E:83 var
+R3198:3202 SDTypingWork <> Gamma:80 var
+R3280:3287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3220:3225 SDTypingWork <> typing:2 ind
+R3258:3262 nameless.DBSyntax <> TSort constr
+R3264:3278 SDTypingWork <> formation_level:81 var
+R3234:3239 nameless.DBSyntax <> TEnumT constr
+R3242:3247 nameless.DBSyntax <> TConsE constr
+R3253:3253 SDTypingWork <> E:83 var
+R3249:3251 SDTypingWork <> tag:82 var
+R3227:3231 SDTypingWork <> Gamma:80 var
+R3288:3293 SDTypingWork <> typing:2 ind
+R3309:3314 nameless.DBSyntax <> TEnumT constr
+R3317:3322 nameless.DBSyntax <> TConsE constr
+R3328:3328 SDTypingWork <> E:83 var
+R3324:3326 SDTypingWork <> tag:82 var
+R3301:3306 nameless.DBSyntax <> TEZero constr
+R3295:3299 SDTypingWork <> Gamma:80 var
+binder 3351:3355 <> Gamma:84
+R3376:3378 Corelib.Init.Datatypes <> nat ind
+binder 3358:3372 <> formation_level:85
+binder 3381:3383 <> tag:86
+binder 3385:3385 <> E:87
+binder 3387:3387 <> n:88
+R3415:3418 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3394:3399 SDTypingWork <> typing:2 ind
+R3411:3414 nameless.DBSyntax <> TUId constr
+R3407:3409 SDTypingWork <> tag:86 var
+R3401:3405 SDTypingWork <> Gamma:84 var
+R3440:3447 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3419:3424 SDTypingWork <> typing:2 ind
+R3434:3439 nameless.DBSyntax <> TEnumU constr
+R3432:3432 SDTypingWork <> E:87 var
+R3426:3430 SDTypingWork <> Gamma:84 var
+R3473:3480 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3448:3453 SDTypingWork <> typing:2 ind
+R3464:3469 nameless.DBSyntax <> TEnumT constr
+R3471:3471 SDTypingWork <> E:87 var
+R3461:3461 SDTypingWork <> n:88 var
+R3455:3459 SDTypingWork <> Gamma:84 var
+R3541:3548 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3481:3486 SDTypingWork <> typing:2 ind
+R3519:3523 nameless.DBSyntax <> TSort constr
+R3525:3539 SDTypingWork <> formation_level:85 var
+R3495:3500 nameless.DBSyntax <> TEnumT constr
+R3503:3508 nameless.DBSyntax <> TConsE constr
+R3514:3514 SDTypingWork <> E:87 var
+R3510:3512 SDTypingWork <> tag:86 var
+R3488:3492 SDTypingWork <> Gamma:84 var
+R3549:3554 SDTypingWork <> typing:2 ind
+R3574:3579 nameless.DBSyntax <> TEnumT constr
+R3582:3587 nameless.DBSyntax <> TConsE constr
+R3593:3593 SDTypingWork <> E:87 var
+R3589:3591 SDTypingWork <> tag:86 var
+R3563:3568 nameless.DBSyntax <> TESucc constr
+R3570:3570 SDTypingWork <> n:88 var
+R3556:3560 SDTypingWork <> Gamma:84 var
+binder 3615:3619 <> Gamma:89
+binder 3621:3621 <> k:90
+binder 3623:3623 <> E:91
+binder 3625:3625 <> P:92
+R3653:3660 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3632:3637 SDTypingWork <> typing:2 ind
+R3647:3652 nameless.DBSyntax <> TEnumU constr
+R3645:3645 SDTypingWork <> E:91 var
+R3639:3643 SDTypingWork <> Gamma:89 var
+R3702:3709 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3661:3666 SDTypingWork <> typing:2 ind
+R3677:3679 nameless.DBSyntax <> TPi constr
+R3693:3697 nameless.DBSyntax <> TSort constr
+R3699:3699 SDTypingWork <> k:90 var
+R3682:3687 nameless.DBSyntax <> TEnumT constr
+R3689:3689 SDTypingWork <> E:91 var
+R3674:3674 SDTypingWork <> P:92 var
+R3668:3672 SDTypingWork <> Gamma:89 var
+R3710:3715 SDTypingWork <> typing:2 ind
+R3737:3741 nameless.DBSyntax <> TSort constr
+R3743:3743 SDTypingWork <> k:90 var
+R3724:3727 nameless.DBSyntax <> TEPi constr
+R3733:3733 SDTypingWork <> P:92 var
+R3731:3731 SDTypingWork <> E:91 var
+R3729:3729 SDTypingWork <> k:90 var
+R3717:3721 SDTypingWork <> Gamma:89 var
+binder 3767:3771 <> Gamma:93
+R3792:3794 Corelib.Init.Datatypes <> nat ind
+binder 3774:3788 <> formation_level:94
+binder 3797:3797 <> k:95
+binder 3799:3799 <> E:96
+binder 3801:3801 <> P:97
+binder 3803:3803 <> p:98
+binder 3805:3805 <> e:99
+R3833:3840 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3812:3817 SDTypingWork <> typing:2 ind
+R3827:3832 nameless.DBSyntax <> TEnumU constr
+R3825:3825 SDTypingWork <> E:96 var
+R3819:3823 SDTypingWork <> Gamma:93 var
+R3882:3889 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3841:3846 SDTypingWork <> typing:2 ind
+R3857:3859 nameless.DBSyntax <> TPi constr
+R3873:3877 nameless.DBSyntax <> TSort constr
+R3879:3879 SDTypingWork <> k:95 var
+R3862:3867 nameless.DBSyntax <> TEnumT constr
+R3869:3869 SDTypingWork <> E:96 var
+R3854:3854 SDTypingWork <> P:97 var
+R3848:3852 SDTypingWork <> Gamma:93 var
+R3917:3920 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3890:3895 SDTypingWork <> typing:2 ind
+R3906:3909 nameless.DBSyntax <> TEPi constr
+R3915:3915 SDTypingWork <> P:97 var
+R3913:3913 SDTypingWork <> E:96 var
+R3911:3911 SDTypingWork <> k:95 var
+R3903:3903 SDTypingWork <> p:98 var
+R3897:3901 SDTypingWork <> Gamma:93 var
+R3946:3953 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3921:3926 SDTypingWork <> typing:2 ind
+R3937:3942 nameless.DBSyntax <> TEnumT constr
+R3944:3944 SDTypingWork <> E:96 var
+R3934:3934 SDTypingWork <> e:99 var
+R3928:3932 SDTypingWork <> Gamma:93 var
+R4001:4008 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3954:3959 SDTypingWork <> typing:2 ind
+R3979:3983 nameless.DBSyntax <> TSort constr
+R3985:3999 SDTypingWork <> formation_level:94 var
+R3968:3971 nameless.DBSyntax <> TApp constr
+R3975:3975 SDTypingWork <> e:99 var
+R3973:3973 SDTypingWork <> P:97 var
+R3961:3965 SDTypingWork <> Gamma:93 var
+R4009:4014 SDTypingWork <> typing:2 ind
+R4043:4046 nameless.DBSyntax <> TApp constr
+R4050:4050 SDTypingWork <> e:99 var
+R4048:4048 SDTypingWork <> P:97 var
+R4023:4029 nameless.DBSyntax <> TSwitch constr
+R4039:4039 SDTypingWork <> e:99 var
+R4037:4037 SDTypingWork <> p:98 var
+R4035:4035 SDTypingWork <> P:97 var
+R4033:4033 SDTypingWork <> E:96 var
+R4031:4031 SDTypingWork <> k:95 var
+R4016:4020 SDTypingWork <> Gamma:93 var
+binder 4073:4077 <> Gamma:100
+binder 4079:4080 <> IT:101
+R4112:4115 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4087:4092 SDTypingWork <> typing:2 ind
+R4104:4108 nameless.DBSyntax <> TSort constr
+R4100:4101 SDTypingWork <> IT:101 var
+R4094:4098 SDTypingWork <> Gamma:100 var
+R4116:4121 SDTypingWork <> typing:2 ind
+R4142:4146 nameless.DBSyntax <> TSort constr
+R4130:4135 nameless.DBSyntax <> TIDesc constr
+R4137:4138 SDTypingWork <> IT:101 var
+R4123:4127 SDTypingWork <> Gamma:100 var
+binder 4170:4174 <> Gamma:102
+R4195:4197 Corelib.Init.Datatypes <> nat ind
+binder 4177:4191 <> formation_level:103
+binder 4200:4201 <> IT:104
+binder 4203:4203 <> i:105
+R4235:4238 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4210:4215 SDTypingWork <> typing:2 ind
+R4227:4231 nameless.DBSyntax <> TSort constr
+R4223:4224 SDTypingWork <> IT:104 var
+R4217:4221 SDTypingWork <> Gamma:102 var
+R4256:4263 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4239:4244 SDTypingWork <> typing:2 ind
+R4254:4255 SDTypingWork <> IT:104 var
+R4252:4252 SDTypingWork <> i:105 var
+R4246:4250 SDTypingWork <> Gamma:102 var
+R4312:4319 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4264:4269 SDTypingWork <> typing:2 ind
+R4290:4294 nameless.DBSyntax <> TSort constr
+R4296:4310 SDTypingWork <> formation_level:103 var
+R4278:4283 nameless.DBSyntax <> TIDesc constr
+R4285:4286 SDTypingWork <> IT:104 var
+R4271:4275 SDTypingWork <> Gamma:102 var
+R4320:4325 SDTypingWork <> typing:2 ind
+R4344:4349 nameless.DBSyntax <> TIDesc constr
+R4351:4352 SDTypingWork <> IT:104 var
+R4334:4338 nameless.DBSyntax <> TIVar constr
+R4340:4340 SDTypingWork <> i:105 var
+R4327:4331 SDTypingWork <> Gamma:102 var
+binder 4372:4376 <> Gamma:106
+R4397:4399 Corelib.Init.Datatypes <> nat ind
+binder 4379:4393 <> formation_level:107
+binder 4402:4403 <> IT:108
+R4435:4438 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4410:4415 SDTypingWork <> typing:2 ind
+R4427:4431 nameless.DBSyntax <> TSort constr
+R4423:4424 SDTypingWork <> IT:108 var
+R4417:4421 SDTypingWork <> Gamma:106 var
+R4487:4494 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4439:4444 SDTypingWork <> typing:2 ind
+R4465:4469 nameless.DBSyntax <> TSort constr
+R4471:4485 SDTypingWork <> formation_level:107 var
+R4453:4458 nameless.DBSyntax <> TIDesc constr
+R4460:4461 SDTypingWork <> IT:108 var
+R4446:4450 SDTypingWork <> Gamma:106 var
+R4495:4500 SDTypingWork <> typing:2 ind
+R4513:4518 nameless.DBSyntax <> TIDesc constr
+R4520:4521 SDTypingWork <> IT:108 var
+R4508:4510 nameless.DBSyntax <> TI1 constr
+R4502:4506 SDTypingWork <> Gamma:106 var
+binder 4543:4547 <> Gamma:109
+R4568:4570 Corelib.Init.Datatypes <> nat ind
+binder 4550:4564 <> formation_level:110
+binder 4573:4574 <> IT:111
+R4606:4609 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4581:4586 SDTypingWork <> typing:2 ind
+R4598:4602 nameless.DBSyntax <> TSort constr
+R4594:4595 SDTypingWork <> IT:111 var
+R4588:4592 SDTypingWork <> Gamma:109 var
+R4658:4665 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4610:4615 SDTypingWork <> typing:2 ind
+R4636:4640 nameless.DBSyntax <> TSort constr
+R4642:4656 SDTypingWork <> formation_level:110 var
+R4624:4629 nameless.DBSyntax <> TIDesc constr
+R4631:4632 SDTypingWork <> IT:111 var
+R4617:4621 SDTypingWork <> Gamma:109 var
+R4666:4671 SDTypingWork <> typing:2 ind
+R4686:4691 nameless.DBSyntax <> TIDesc constr
+R4693:4694 SDTypingWork <> IT:111 var
+R4679:4683 nameless.DBSyntax <> TIBot constr
+R4673:4677 SDTypingWork <> Gamma:109 var
+binder 4717:4721 <> Gamma:112
+R4742:4744 Corelib.Init.Datatypes <> nat ind
+binder 4724:4738 <> formation_level:113
+binder 4747:4748 <> IT:114
+binder 4750:4750 <> A:115
+binder 4752:4752 <> B:116
+R4784:4791 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4759:4764 SDTypingWork <> typing:2 ind
+R4776:4780 nameless.DBSyntax <> TSort constr
+R4772:4773 SDTypingWork <> IT:114 var
+R4766:4770 SDTypingWork <> Gamma:112 var
+R4818:4821 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4792:4797 SDTypingWork <> typing:2 ind
+R4808:4813 nameless.DBSyntax <> TIDesc constr
+R4815:4816 SDTypingWork <> IT:114 var
+R4805:4805 SDTypingWork <> A:115 var
+R4799:4803 SDTypingWork <> Gamma:112 var
+R4848:4855 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4822:4827 SDTypingWork <> typing:2 ind
+R4838:4843 nameless.DBSyntax <> TIDesc constr
+R4845:4846 SDTypingWork <> IT:114 var
+R4835:4835 SDTypingWork <> B:116 var
+R4829:4833 SDTypingWork <> Gamma:112 var
+R4904:4911 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4856:4861 SDTypingWork <> typing:2 ind
+R4882:4886 nameless.DBSyntax <> TSort constr
+R4888:4902 SDTypingWork <> formation_level:113 var
+R4870:4875 nameless.DBSyntax <> TIDesc constr
+R4877:4878 SDTypingWork <> IT:114 var
+R4863:4867 SDTypingWork <> Gamma:112 var
+R4912:4917 SDTypingWork <> typing:2 ind
+R4939:4944 nameless.DBSyntax <> TIDesc constr
+R4946:4947 SDTypingWork <> IT:114 var
+R4926:4931 nameless.DBSyntax <> TIProd constr
+R4935:4935 SDTypingWork <> B:116 var
+R4933:4933 SDTypingWork <> A:115 var
+R4919:4923 SDTypingWork <> Gamma:112 var
+binder 4968:4972 <> Gamma:117
+R4993:4995 Corelib.Init.Datatypes <> nat ind
+binder 4975:4989 <> formation_level:118
+binder 4998:4999 <> IT:119
+binder 5001:5001 <> A:120
+binder 5003:5003 <> D:121
+R5035:5038 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5010:5015 SDTypingWork <> typing:2 ind
+R5027:5031 nameless.DBSyntax <> TSort constr
+R5023:5024 SDTypingWork <> IT:119 var
+R5017:5021 SDTypingWork <> Gamma:117 var
+R5063:5070 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5039:5044 SDTypingWork <> typing:2 ind
+R5055:5059 nameless.DBSyntax <> TSort constr
+R5052:5052 SDTypingWork <> A:120 var
+R5046:5050 SDTypingWork <> Gamma:117 var
+R5107:5114 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5071:5076 SDTypingWork <> typing:2 ind
+R5087:5091 nameless.DBSyntax <> arrow def
+R5096:5101 nameless.DBSyntax <> TIDesc constr
+R5103:5104 SDTypingWork <> IT:119 var
+R5093:5093 SDTypingWork <> A:120 var
+R5084:5084 SDTypingWork <> D:121 var
+R5078:5082 SDTypingWork <> Gamma:117 var
+R5163:5170 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5115:5120 SDTypingWork <> typing:2 ind
+R5141:5145 nameless.DBSyntax <> TSort constr
+R5147:5161 SDTypingWork <> formation_level:118 var
+R5129:5134 nameless.DBSyntax <> TIDesc constr
+R5136:5137 SDTypingWork <> IT:119 var
+R5122:5126 SDTypingWork <> Gamma:117 var
+R5171:5176 SDTypingWork <> typing:2 ind
+R5196:5201 nameless.DBSyntax <> TIDesc constr
+R5203:5204 SDTypingWork <> IT:119 var
+R5185:5188 nameless.DBSyntax <> TIPi constr
+R5192:5192 SDTypingWork <> D:121 var
+R5190:5190 SDTypingWork <> A:120 var
+R5178:5182 SDTypingWork <> Gamma:117 var
+binder 5226:5230 <> Gamma:122
+R5251:5253 Corelib.Init.Datatypes <> nat ind
+binder 5233:5247 <> formation_level:123
+binder 5256:5257 <> IT:124
+binder 5259:5259 <> A:125
+binder 5261:5261 <> D:126
+R5293:5296 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5268:5273 SDTypingWork <> typing:2 ind
+R5285:5289 nameless.DBSyntax <> TSort constr
+R5281:5282 SDTypingWork <> IT:124 var
+R5275:5279 SDTypingWork <> Gamma:122 var
+R5321:5328 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5297:5302 SDTypingWork <> typing:2 ind
+R5313:5317 nameless.DBSyntax <> TSort constr
+R5310:5310 SDTypingWork <> A:125 var
+R5304:5308 SDTypingWork <> Gamma:122 var
+R5365:5372 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5329:5334 SDTypingWork <> typing:2 ind
+R5345:5349 nameless.DBSyntax <> arrow def
+R5354:5359 nameless.DBSyntax <> TIDesc constr
+R5361:5362 SDTypingWork <> IT:124 var
+R5351:5351 SDTypingWork <> A:125 var
+R5342:5342 SDTypingWork <> D:126 var
+R5336:5340 SDTypingWork <> Gamma:122 var
+R5421:5428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5373:5378 SDTypingWork <> typing:2 ind
+R5399:5403 nameless.DBSyntax <> TSort constr
+R5405:5419 SDTypingWork <> formation_level:123 var
+R5387:5392 nameless.DBSyntax <> TIDesc constr
+R5394:5395 SDTypingWork <> IT:124 var
+R5380:5384 SDTypingWork <> Gamma:122 var
+R5429:5434 SDTypingWork <> typing:2 ind
+R5455:5460 nameless.DBSyntax <> TIDesc constr
+R5462:5463 SDTypingWork <> IT:124 var
+R5443:5447 nameless.DBSyntax <> TISig constr
+R5451:5451 SDTypingWork <> D:126 var
+R5449:5449 SDTypingWork <> A:125 var
+R5436:5440 SDTypingWork <> Gamma:122 var
+binder 5488:5492 <> Gamma:127
+R5513:5515 Corelib.Init.Datatypes <> nat ind
+binder 5495:5509 <> formation_level:128
+binder 5518:5519 <> IT:129
+binder 5521:5521 <> E:130
+binder 5523:5523 <> D:131
+R5555:5558 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5530:5535 SDTypingWork <> typing:2 ind
+R5547:5551 nameless.DBSyntax <> TSort constr
+R5543:5544 SDTypingWork <> IT:129 var
+R5537:5541 SDTypingWork <> Gamma:127 var
+R5580:5587 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5559:5564 SDTypingWork <> typing:2 ind
+R5574:5579 nameless.DBSyntax <> TEnumU constr
+R5572:5572 SDTypingWork <> E:130 var
+R5566:5570 SDTypingWork <> Gamma:127 var
+R5633:5640 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5588:5593 SDTypingWork <> typing:2 ind
+R5604:5608 nameless.DBSyntax <> arrow def
+R5622:5627 nameless.DBSyntax <> TIDesc constr
+R5629:5630 SDTypingWork <> IT:129 var
+R5611:5616 nameless.DBSyntax <> TEnumT constr
+R5618:5618 SDTypingWork <> E:130 var
+R5601:5601 SDTypingWork <> D:131 var
+R5595:5599 SDTypingWork <> Gamma:127 var
+R5689:5696 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5641:5646 SDTypingWork <> typing:2 ind
+R5667:5671 nameless.DBSyntax <> TSort constr
+R5673:5687 SDTypingWork <> formation_level:128 var
+R5655:5660 nameless.DBSyntax <> TIDesc constr
+R5662:5663 SDTypingWork <> IT:129 var
+R5648:5652 SDTypingWork <> Gamma:127 var
+R5697:5702 SDTypingWork <> typing:2 ind
+R5726:5731 nameless.DBSyntax <> TIDesc constr
+R5733:5734 SDTypingWork <> IT:129 var
+R5711:5718 nameless.DBSyntax <> TIChoice constr
+R5722:5722 SDTypingWork <> D:131 var
+R5720:5720 SDTypingWork <> E:130 var
+R5704:5708 SDTypingWork <> Gamma:127 var
+binder 5758:5762 <> Gamma:132
+binder 5764:5765 <> IT:133
+binder 5767:5767 <> D:134
+binder 5769:5769 <> X:135
+R5801:5804 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5776:5781 SDTypingWork <> typing:2 ind
+R5793:5797 nameless.DBSyntax <> TSort constr
+R5789:5790 SDTypingWork <> IT:133 var
+R5783:5787 SDTypingWork <> Gamma:132 var
+R5831:5838 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5805:5810 SDTypingWork <> typing:2 ind
+R5821:5826 nameless.DBSyntax <> TIDesc constr
+R5828:5829 SDTypingWork <> IT:133 var
+R5818:5818 SDTypingWork <> D:134 var
+R5812:5816 SDTypingWork <> Gamma:132 var
+R5865:5872 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5839:5844 SDTypingWork <> typing:2 ind
+R5855:5860 nameless.DBSyntax <> Family def
+R5862:5863 SDTypingWork <> IT:133 var
+R5852:5852 SDTypingWork <> X:135 var
+R5846:5850 SDTypingWork <> Gamma:132 var
+R5873:5878 SDTypingWork <> typing:2 ind
+R5904:5908 nameless.DBSyntax <> TSort constr
+R5887:5893 nameless.DBSyntax <> TInterp constr
+R5900:5900 SDTypingWork <> X:135 var
+R5898:5898 SDTypingWork <> D:134 var
+R5895:5896 SDTypingWork <> IT:133 var
+R5880:5884 SDTypingWork <> Gamma:132 var
+binder 5931:5935 <> Gamma:136
+R5956:5958 Corelib.Init.Datatypes <> nat ind
+binder 5938:5952 <> formation_level:137
+binder 5961:5962 <> IT:138
+binder 5964:5964 <> D:139
+R5996:5999 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5971:5976 SDTypingWork <> typing:2 ind
+R5988:5992 nameless.DBSyntax <> TSort constr
+R5984:5985 SDTypingWork <> IT:138 var
+R5978:5982 SDTypingWork <> Gamma:136 var
+R6023:6030 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6000:6005 SDTypingWork <> typing:2 ind
+R6016:6018 nameless.DBSyntax <> Def def
+R6020:6021 SDTypingWork <> IT:138 var
+R6013:6013 SDTypingWork <> D:139 var
+R6007:6011 SDTypingWork <> Gamma:136 var
+R6079:6086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6031:6036 SDTypingWork <> typing:2 ind
+R6057:6061 nameless.DBSyntax <> TSort constr
+R6063:6077 SDTypingWork <> formation_level:137 var
+R6045:6050 nameless.DBSyntax <> Family def
+R6052:6053 SDTypingWork <> IT:138 var
+R6038:6042 SDTypingWork <> Gamma:136 var
+R6087:6092 SDTypingWork <> typing:2 ind
+R6113:6118 nameless.DBSyntax <> Family def
+R6120:6121 SDTypingWork <> IT:138 var
+R6101:6104 nameless.DBSyntax <> TMuI constr
+R6109:6109 SDTypingWork <> D:139 var
+R6106:6107 SDTypingWork <> IT:138 var
+R6094:6098 SDTypingWork <> Gamma:136 var
+binder 6145:6149 <> Gamma:140
+R6170:6172 Corelib.Init.Datatypes <> nat ind
+binder 6152:6166 <> formation_level:141
+binder 6175:6176 <> IT:142
+binder 6178:6178 <> D:143
+binder 6180:6180 <> i:144
+binder 6182:6183 <> xs:145
+R6215:6218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6190:6195 SDTypingWork <> typing:2 ind
+R6207:6211 nameless.DBSyntax <> TSort constr
+R6203:6204 SDTypingWork <> IT:142 var
+R6197:6201 SDTypingWork <> Gamma:140 var
+R6242:6249 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6219:6224 SDTypingWork <> typing:2 ind
+R6235:6237 nameless.DBSyntax <> Def def
+R6239:6240 SDTypingWork <> IT:142 var
+R6232:6232 SDTypingWork <> D:143 var
+R6226:6230 SDTypingWork <> Gamma:140 var
+R6267:6270 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6250:6255 SDTypingWork <> typing:2 ind
+R6265:6266 SDTypingWork <> IT:142 var
+R6263:6263 SDTypingWork <> i:144 var
+R6257:6261 SDTypingWork <> Gamma:140 var
+R6322:6329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6271:6276 SDTypingWork <> typing:2 ind
+R6288:6294 nameless.DBSyntax <> TInterp constr
+R6311:6314 nameless.DBSyntax <> TMuI constr
+R6319:6319 SDTypingWork <> D:143 var
+R6316:6317 SDTypingWork <> IT:142 var
+R6300:6303 nameless.DBSyntax <> TApp constr
+R6307:6307 SDTypingWork <> i:144 var
+R6305:6305 SDTypingWork <> D:143 var
+R6296:6297 SDTypingWork <> IT:142 var
+R6284:6285 SDTypingWork <> xs:145 var
+R6278:6282 SDTypingWork <> Gamma:140 var
+R6380:6387 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6330:6335 SDTypingWork <> typing:2 ind
+R6358:6362 nameless.DBSyntax <> TSort constr
+R6364:6378 SDTypingWork <> formation_level:141 var
+R6344:6347 nameless.DBSyntax <> MuAt def
+R6354:6354 SDTypingWork <> i:144 var
+R6352:6352 SDTypingWork <> D:143 var
+R6349:6350 SDTypingWork <> IT:142 var
+R6337:6341 SDTypingWork <> Gamma:140 var
+R6388:6393 SDTypingWork <> typing:2 ind
+R6411:6414 nameless.DBSyntax <> MuAt def
+R6421:6421 SDTypingWork <> i:144 var
+R6419:6419 SDTypingWork <> D:143 var
+R6416:6417 SDTypingWork <> IT:142 var
+R6402:6404 nameless.DBSyntax <> TIn constr
+R6406:6407 SDTypingWork <> xs:145 var
+R6395:6399 SDTypingWork <> Gamma:140 var
+binder 6443:6447 <> Gamma:146
+binder 6449:6450 <> IT:147
+binder 6452:6452 <> D:148
+binder 6454:6454 <> X:149
+binder 6456:6457 <> xs:150
+binder 6459:6459 <> P:151
+R6491:6494 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6466:6471 SDTypingWork <> typing:2 ind
+R6483:6487 nameless.DBSyntax <> TSort constr
+R6479:6480 SDTypingWork <> IT:147 var
+R6473:6477 SDTypingWork <> Gamma:146 var
+R6521:6528 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6495:6500 SDTypingWork <> typing:2 ind
+R6511:6516 nameless.DBSyntax <> TIDesc constr
+R6518:6519 SDTypingWork <> IT:147 var
+R6508:6508 SDTypingWork <> D:148 var
+R6502:6506 SDTypingWork <> Gamma:146 var
+R6555:6558 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6529:6534 SDTypingWork <> typing:2 ind
+R6545:6550 nameless.DBSyntax <> Family def
+R6552:6553 SDTypingWork <> IT:147 var
+R6542:6542 SDTypingWork <> X:149 var
+R6536:6540 SDTypingWork <> Gamma:146 var
+R6591:6598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6559:6564 SDTypingWork <> typing:2 ind
+R6576:6582 nameless.DBSyntax <> TInterp constr
+R6589:6589 SDTypingWork <> X:149 var
+R6587:6587 SDTypingWork <> D:148 var
+R6584:6585 SDTypingWork <> IT:147 var
+R6572:6573 SDTypingWork <> xs:150 var
+R6566:6570 SDTypingWork <> Gamma:146 var
+R6627:6634 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6599:6604 SDTypingWork <> typing:2 ind
+R6615:6620 nameless.DBSyntax <> motive def
+R6625:6625 SDTypingWork <> X:149 var
+R6622:6623 SDTypingWork <> IT:147 var
+R6612:6612 SDTypingWork <> P:151 var
+R6606:6610 SDTypingWork <> Gamma:146 var
+R6635:6640 SDTypingWork <> typing:2 ind
+R6669:6673 nameless.DBSyntax <> TSort constr
+R6649:6653 nameless.DBSyntax <> TIAll constr
+R6665:6665 SDTypingWork <> P:151 var
+R6662:6663 SDTypingWork <> xs:150 var
+R6660:6660 SDTypingWork <> X:149 var
+R6658:6658 SDTypingWork <> D:148 var
+R6655:6656 SDTypingWork <> IT:147 var
+R6642:6646 SDTypingWork <> Gamma:146 var
+binder 6697:6701 <> Gamma:152
+R6722:6724 Corelib.Init.Datatypes <> nat ind
+binder 6704:6718 <> formation_level:153
+binder 6727:6728 <> IT:154
+binder 6730:6730 <> D:155
+binder 6732:6732 <> X:156
+binder 6734:6734 <> P:157
+binder 6736:6736 <> h:158
+binder 6738:6739 <> xs:159
+R6771:6774 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6746:6751 SDTypingWork <> typing:2 ind
+R6763:6767 nameless.DBSyntax <> TSort constr
+R6759:6760 SDTypingWork <> IT:154 var
+R6753:6757 SDTypingWork <> Gamma:152 var
+R6801:6808 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6775:6780 SDTypingWork <> typing:2 ind
+R6791:6796 nameless.DBSyntax <> TIDesc constr
+R6798:6799 SDTypingWork <> IT:154 var
+R6788:6788 SDTypingWork <> D:155 var
+R6782:6786 SDTypingWork <> Gamma:152 var
+R6835:6838 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6809:6814 SDTypingWork <> typing:2 ind
+R6825:6830 nameless.DBSyntax <> Family def
+R6832:6833 SDTypingWork <> IT:154 var
+R6822:6822 SDTypingWork <> X:156 var
+R6816:6820 SDTypingWork <> Gamma:152 var
+R6867:6874 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6839:6844 SDTypingWork <> typing:2 ind
+R6855:6860 nameless.DBSyntax <> motive def
+R6865:6865 SDTypingWork <> X:156 var
+R6862:6863 SDTypingWork <> IT:154 var
+R6852:6852 SDTypingWork <> P:157 var
+R6846:6850 SDTypingWork <> Gamma:152 var
+R6915:6922 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6875:6880 SDTypingWork <> typing:2 ind
+R6891:6906 nameless.DBSyntax <> recursive_method def
+R6913:6913 SDTypingWork <> P:157 var
+R6911:6911 SDTypingWork <> X:156 var
+R6908:6909 SDTypingWork <> IT:154 var
+R6888:6888 SDTypingWork <> h:158 var
+R6882:6886 SDTypingWork <> Gamma:152 var
+R6955:6962 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6923:6928 SDTypingWork <> typing:2 ind
+R6940:6946 nameless.DBSyntax <> TInterp constr
+R6953:6953 SDTypingWork <> X:156 var
+R6951:6951 SDTypingWork <> D:155 var
+R6948:6949 SDTypingWork <> IT:154 var
+R6936:6937 SDTypingWork <> xs:159 var
+R6930:6934 SDTypingWork <> Gamma:152 var
+R7019:7026 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6963:6968 SDTypingWork <> typing:2 ind
+R6997:7001 nameless.DBSyntax <> TSort constr
+R7003:7017 SDTypingWork <> formation_level:153 var
+R6977:6981 nameless.DBSyntax <> TIAll constr
+R6993:6993 SDTypingWork <> P:157 var
+R6990:6991 SDTypingWork <> xs:159 var
+R6988:6988 SDTypingWork <> X:156 var
+R6986:6986 SDTypingWork <> D:155 var
+R6983:6984 SDTypingWork <> IT:154 var
+R6970:6974 SDTypingWork <> Gamma:152 var
+R7027:7032 SDTypingWork <> typing:2 ind
+R7063:7067 nameless.DBSyntax <> TIAll constr
+R7079:7079 SDTypingWork <> P:157 var
+R7076:7077 SDTypingWork <> xs:159 var
+R7074:7074 SDTypingWork <> X:156 var
+R7072:7072 SDTypingWork <> D:155 var
+R7069:7070 SDTypingWork <> IT:154 var
+R7041:7045 nameless.DBSyntax <> THyps constr
+R7058:7059 SDTypingWork <> xs:159 var
+R7056:7056 SDTypingWork <> h:158 var
+R7054:7054 SDTypingWork <> P:157 var
+R7052:7052 SDTypingWork <> X:156 var
+R7050:7050 SDTypingWork <> D:155 var
+R7047:7048 SDTypingWork <> IT:154 var
+R7034:7038 SDTypingWork <> Gamma:152 var
+binder 7100:7104 <> Gamma:160
+R7125:7127 Corelib.Init.Datatypes <> nat ind
+binder 7107:7121 <> formation_level:161
+binder 7130:7131 <> IT:162
+binder 7133:7133 <> D:163
+binder 7135:7135 <> P:164
+binder 7137:7138 <> st:165
+binder 7140:7140 <> i:166
+binder 7142:7142 <> x:167
+R7174:7177 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7149:7154 SDTypingWork <> typing:2 ind
+R7166:7170 nameless.DBSyntax <> TSort constr
+R7162:7163 SDTypingWork <> IT:162 var
+R7156:7160 SDTypingWork <> Gamma:160 var
+R7201:7208 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7178:7183 SDTypingWork <> typing:2 ind
+R7194:7196 nameless.DBSyntax <> Def def
+R7198:7199 SDTypingWork <> IT:162 var
+R7191:7191 SDTypingWork <> D:163 var
+R7185:7189 SDTypingWork <> Gamma:160 var
+R7247:7254 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7209:7214 SDTypingWork <> typing:2 ind
+R7225:7230 nameless.DBSyntax <> motive def
+R7236:7239 nameless.DBSyntax <> TMuI constr
+R7244:7244 SDTypingWork <> D:163 var
+R7241:7242 SDTypingWork <> IT:162 var
+R7232:7233 SDTypingWork <> IT:162 var
+R7222:7222 SDTypingWork <> P:164 var
+R7216:7220 SDTypingWork <> Gamma:160 var
+R7293:7300 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7255:7260 SDTypingWork <> typing:2 ind
+R7272:7284 nameless.DBSyntax <> mu_ind_method def
+R7291:7291 SDTypingWork <> P:164 var
+R7289:7289 SDTypingWork <> D:163 var
+R7286:7287 SDTypingWork <> IT:162 var
+R7268:7269 SDTypingWork <> st:165 var
+R7262:7266 SDTypingWork <> Gamma:160 var
+R7318:7321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7301:7306 SDTypingWork <> typing:2 ind
+R7316:7317 SDTypingWork <> IT:162 var
+R7314:7314 SDTypingWork <> i:166 var
+R7308:7312 SDTypingWork <> Gamma:160 var
+R7350:7357 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7322:7327 SDTypingWork <> typing:2 ind
+R7338:7341 nameless.DBSyntax <> MuAt def
+R7348:7348 SDTypingWork <> i:166 var
+R7346:7346 SDTypingWork <> D:163 var
+R7343:7344 SDTypingWork <> IT:162 var
+R7335:7335 SDTypingWork <> x:167 var
+R7329:7333 SDTypingWork <> Gamma:160 var
+R7415:7422 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7358:7363 SDTypingWork <> typing:2 ind
+R7393:7397 nameless.DBSyntax <> TSort constr
+R7399:7413 SDTypingWork <> formation_level:161 var
+R7372:7375 nameless.DBSyntax <> TApp constr
+R7380:7384 nameless.DBSyntax <> TPair constr
+R7388:7388 SDTypingWork <> x:167 var
+R7386:7386 SDTypingWork <> i:166 var
+R7377:7377 SDTypingWork <> P:164 var
+R7365:7369 SDTypingWork <> Gamma:160 var
+R7423:7428 SDTypingWork <> typing:2 ind
+R7458:7461 nameless.DBSyntax <> TApp constr
+R7466:7470 nameless.DBSyntax <> TPair constr
+R7474:7474 SDTypingWork <> x:167 var
+R7472:7472 SDTypingWork <> i:166 var
+R7463:7463 SDTypingWork <> P:164 var
+R7437:7440 nameless.DBSyntax <> TInd constr
+R7454:7454 SDTypingWork <> x:167 var
+R7452:7452 SDTypingWork <> i:166 var
+R7449:7450 SDTypingWork <> st:165 var
+R7447:7447 SDTypingWork <> P:164 var
+R7445:7445 SDTypingWork <> D:163 var
+R7442:7443 SDTypingWork <> IT:162 var
+R7430:7434 SDTypingWork <> Gamma:160 var
+binder 7498:7502 <> Gamma:168
+R7523:7525 Corelib.Init.Datatypes <> nat ind
+binder 7505:7519 <> formation_level:169
+binder 7528:7529 <> IT:170
+binder 7531:7531 <> F:171
+binder 7533:7533 <> G:172
+R7565:7572 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7540:7545 SDTypingWork <> typing:2 ind
+R7557:7561 nameless.DBSyntax <> TSort constr
+R7553:7554 SDTypingWork <> IT:170 var
+R7547:7551 SDTypingWork <> Gamma:168 var
+R7596:7599 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7573:7578 SDTypingWork <> typing:2 ind
+R7589:7591 nameless.DBSyntax <> Def def
+R7593:7594 SDTypingWork <> IT:170 var
+R7586:7586 SDTypingWork <> F:171 var
+R7580:7584 SDTypingWork <> Gamma:168 var
+R7623:7630 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7600:7605 SDTypingWork <> typing:2 ind
+R7616:7618 nameless.DBSyntax <> Def def
+R7620:7621 SDTypingWork <> IT:170 var
+R7613:7613 SDTypingWork <> G:172 var
+R7607:7611 SDTypingWork <> Gamma:168 var
+R7679:7686 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7631:7636 SDTypingWork <> typing:2 ind
+R7657:7661 nameless.DBSyntax <> TSort constr
+R7663:7677 SDTypingWork <> formation_level:169 var
+R7645:7650 nameless.DBSyntax <> Family def
+R7652:7653 SDTypingWork <> IT:170 var
+R7638:7642 SDTypingWork <> Gamma:168 var
+R7687:7692 SDTypingWork <> typing:2 ind
+R7717:7722 nameless.DBSyntax <> Family def
+R7724:7725 SDTypingWork <> IT:170 var
+R7701:7706 nameless.DBSyntax <> TClose constr
+R7713:7713 SDTypingWork <> G:172 var
+R7711:7711 SDTypingWork <> F:171 var
+R7708:7709 SDTypingWork <> IT:170 var
+R7694:7698 SDTypingWork <> Gamma:168 var
+binder 7751:7755 <> Gamma:173
+R7776:7778 Corelib.Init.Datatypes <> nat ind
+binder 7758:7772 <> formation_level:174
+binder 7781:7782 <> IT:175
+binder 7784:7784 <> F:176
+binder 7786:7786 <> G:177
+binder 7788:7788 <> i:178
+binder 7790:7791 <> xs:179
+R7823:7830 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7798:7803 SDTypingWork <> typing:2 ind
+R7815:7819 nameless.DBSyntax <> TSort constr
+R7811:7812 SDTypingWork <> IT:175 var
+R7805:7809 SDTypingWork <> Gamma:173 var
+R7854:7857 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7831:7836 SDTypingWork <> typing:2 ind
+R7847:7849 nameless.DBSyntax <> Def def
+R7851:7852 SDTypingWork <> IT:175 var
+R7844:7844 SDTypingWork <> F:176 var
+R7838:7842 SDTypingWork <> Gamma:173 var
+R7881:7888 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7858:7863 SDTypingWork <> typing:2 ind
+R7874:7876 nameless.DBSyntax <> Def def
+R7878:7879 SDTypingWork <> IT:175 var
+R7871:7871 SDTypingWork <> G:177 var
+R7865:7869 SDTypingWork <> Gamma:173 var
+R7906:7909 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7889:7894 SDTypingWork <> typing:2 ind
+R7904:7905 SDTypingWork <> IT:175 var
+R7902:7902 SDTypingWork <> i:178 var
+R7896:7900 SDTypingWork <> Gamma:173 var
+R7944:7951 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7910:7915 SDTypingWork <> typing:2 ind
+R7927:7933 nameless.DBSyntax <> payload def
+R7942:7942 SDTypingWork <> i:178 var
+R7940:7940 SDTypingWork <> G:177 var
+R7938:7938 SDTypingWork <> F:176 var
+R7935:7936 SDTypingWork <> IT:175 var
+R7923:7924 SDTypingWork <> xs:179 var
+R7917:7921 SDTypingWork <> Gamma:173 var
+R8007:8014 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7952:7957 SDTypingWork <> typing:2 ind
+R7985:7989 nameless.DBSyntax <> TSort constr
+R7991:8005 SDTypingWork <> formation_level:174 var
+R7966:7972 nameless.DBSyntax <> CloseAt def
+R7981:7981 SDTypingWork <> i:178 var
+R7979:7979 SDTypingWork <> G:177 var
+R7977:7977 SDTypingWork <> F:176 var
+R7974:7975 SDTypingWork <> IT:175 var
+R7959:7963 SDTypingWork <> Gamma:173 var
+R8015:8020 SDTypingWork <> typing:2 ind
+R8038:8044 nameless.DBSyntax <> CloseAt def
+R8053:8053 SDTypingWork <> i:178 var
+R8051:8051 SDTypingWork <> G:177 var
+R8049:8049 SDTypingWork <> F:176 var
+R8046:8047 SDTypingWork <> IT:175 var
+R8029:8031 nameless.DBSyntax <> TIn constr
+R8033:8034 SDTypingWork <> xs:179 var
+R8022:8026 SDTypingWork <> Gamma:173 var
+binder 8081:8085 <> Gamma:180
+R8106:8108 Corelib.Init.Datatypes <> nat ind
+binder 8088:8102 <> formation_level:181
+binder 8111:8111 <> k:182
+binder 8113:8114 <> IT:183
+binder 8116:8116 <> F:184
+binder 8118:8118 <> G:185
+binder 8120:8120 <> i:186
+binder 8122:8122 <> Q:187
+binder 8124:8124 <> b:188
+binder 8126:8126 <> x:189
+R8158:8165 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8133:8138 SDTypingWork <> typing:2 ind
+R8150:8154 nameless.DBSyntax <> TSort constr
+R8146:8147 SDTypingWork <> IT:183 var
+R8140:8144 SDTypingWork <> Gamma:180 var
+R8189:8192 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8166:8171 SDTypingWork <> typing:2 ind
+R8182:8184 nameless.DBSyntax <> Def def
+R8186:8187 SDTypingWork <> IT:183 var
+R8179:8179 SDTypingWork <> F:184 var
+R8173:8177 SDTypingWork <> Gamma:180 var
+R8216:8223 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8193:8198 SDTypingWork <> typing:2 ind
+R8209:8211 nameless.DBSyntax <> Def def
+R8213:8214 SDTypingWork <> IT:183 var
+R8206:8206 SDTypingWork <> G:185 var
+R8200:8204 SDTypingWork <> Gamma:180 var
+R8241:8248 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8224:8229 SDTypingWork <> typing:2 ind
+R8239:8240 SDTypingWork <> IT:183 var
+R8237:8237 SDTypingWork <> i:186 var
+R8231:8235 SDTypingWork <> Gamma:180 var
+R8298:8305 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8249:8254 SDTypingWork <> typing:2 ind
+R8265:8267 nameless.DBSyntax <> TPi constr
+R8289:8293 nameless.DBSyntax <> TSort constr
+R8295:8295 SDTypingWork <> k:182 var
+R8270:8276 nameless.DBSyntax <> CloseAt def
+R8285:8285 SDTypingWork <> i:186 var
+R8283:8283 SDTypingWork <> G:185 var
+R8281:8281 SDTypingWork <> F:184 var
+R8278:8279 SDTypingWork <> IT:183 var
+R8262:8262 SDTypingWork <> Q:187 var
+R8256:8260 SDTypingWork <> Gamma:180 var
+R8351:8358 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8306:8311 SDTypingWork <> typing:2 ind
+R8322:8338 nameless.DBSyntax <> close_case_method def
+R8349:8349 SDTypingWork <> Q:187 var
+R8347:8347 SDTypingWork <> i:186 var
+R8345:8345 SDTypingWork <> G:185 var
+R8343:8343 SDTypingWork <> F:184 var
+R8340:8341 SDTypingWork <> IT:183 var
+R8319:8319 SDTypingWork <> b:188 var
+R8313:8317 SDTypingWork <> Gamma:180 var
+R8392:8399 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8359:8364 SDTypingWork <> typing:2 ind
+R8375:8381 nameless.DBSyntax <> CloseAt def
+R8390:8390 SDTypingWork <> i:186 var
+R8388:8388 SDTypingWork <> G:185 var
+R8386:8386 SDTypingWork <> F:184 var
+R8383:8384 SDTypingWork <> IT:183 var
+R8372:8372 SDTypingWork <> x:189 var
+R8366:8370 SDTypingWork <> Gamma:180 var
+R8447:8454 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8400:8405 SDTypingWork <> typing:2 ind
+R8425:8429 nameless.DBSyntax <> TSort constr
+R8431:8445 SDTypingWork <> formation_level:181 var
+R8414:8417 nameless.DBSyntax <> TApp constr
+R8421:8421 SDTypingWork <> x:189 var
+R8419:8419 SDTypingWork <> Q:187 var
+R8407:8411 SDTypingWork <> Gamma:180 var
+R8455:8460 SDTypingWork <> typing:2 ind
+R8499:8502 nameless.DBSyntax <> TApp constr
+R8506:8506 SDTypingWork <> x:189 var
+R8504:8504 SDTypingWork <> Q:187 var
+R8469:8478 nameless.DBSyntax <> TCloseCase constr
+R8495:8495 SDTypingWork <> x:189 var
+R8493:8493 SDTypingWork <> b:188 var
+R8491:8491 SDTypingWork <> Q:187 var
+R8489:8489 SDTypingWork <> i:186 var
+R8487:8487 SDTypingWork <> G:185 var
+R8485:8485 SDTypingWork <> F:184 var
+R8482:8483 SDTypingWork <> IT:183 var
+R8480:8480 SDTypingWork <> k:182 var
+R8462:8466 SDTypingWork <> Gamma:180 var
+binder 8533:8537 <> Gamma:190
+R8558:8560 Corelib.Init.Datatypes <> nat ind
+binder 8540:8554 <> formation_level:191
+binder 8563:8564 <> IT:192
+binder 8566:8566 <> G:193
+binder 8568:8568 <> P:194
+binder 8570:8571 <> st:195
+binder 8573:8573 <> F:196
+binder 8575:8575 <> i:197
+binder 8577:8577 <> x:198
+R8609:8612 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8584:8589 SDTypingWork <> typing:2 ind
+R8601:8605 nameless.DBSyntax <> TSort constr
+R8597:8598 SDTypingWork <> IT:192 var
+R8591:8595 SDTypingWork <> Gamma:190 var
+R8636:8643 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8613:8618 SDTypingWork <> typing:2 ind
+R8629:8631 nameless.DBSyntax <> Def def
+R8633:8634 SDTypingWork <> IT:192 var
+R8626:8626 SDTypingWork <> G:193 var
+R8620:8624 SDTypingWork <> Gamma:190 var
+R8678:8685 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8644:8649 SDTypingWork <> typing:2 ind
+R8660:8671 nameless.DBSyntax <> close_motive def
+R8676:8676 SDTypingWork <> G:193 var
+R8673:8674 SDTypingWork <> IT:192 var
+R8657:8657 SDTypingWork <> P:194 var
+R8651:8655 SDTypingWork <> Gamma:190 var
+R8727:8734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8686:8691 SDTypingWork <> typing:2 ind
+R8703:8718 nameless.DBSyntax <> close_ind_method def
+R8725:8725 SDTypingWork <> P:194 var
+R8723:8723 SDTypingWork <> G:193 var
+R8720:8721 SDTypingWork <> IT:192 var
+R8699:8700 SDTypingWork <> st:195 var
+R8693:8697 SDTypingWork <> Gamma:190 var
+R8758:8761 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8735:8740 SDTypingWork <> typing:2 ind
+R8751:8753 nameless.DBSyntax <> Def def
+R8755:8756 SDTypingWork <> IT:192 var
+R8748:8748 SDTypingWork <> F:196 var
+R8742:8746 SDTypingWork <> Gamma:190 var
+R8779:8786 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8762:8767 SDTypingWork <> typing:2 ind
+R8777:8778 SDTypingWork <> IT:192 var
+R8775:8775 SDTypingWork <> i:197 var
+R8769:8773 SDTypingWork <> Gamma:190 var
+R8820:8827 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8787:8792 SDTypingWork <> typing:2 ind
+R8803:8809 nameless.DBSyntax <> CloseAt def
+R8818:8818 SDTypingWork <> i:197 var
+R8816:8816 SDTypingWork <> G:193 var
+R8814:8814 SDTypingWork <> F:196 var
+R8811:8812 SDTypingWork <> IT:192 var
+R8800:8800 SDTypingWork <> x:198 var
+R8794:8798 SDTypingWork <> Gamma:190 var
+R8893:8900 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8828:8833 SDTypingWork <> typing:2 ind
+R8871:8875 nameless.DBSyntax <> TSort constr
+R8877:8891 SDTypingWork <> formation_level:191 var
+R8842:8845 nameless.DBSyntax <> TApp constr
+R8867:8867 SDTypingWork <> x:198 var
+R8848:8851 nameless.DBSyntax <> TApp constr
+R8864:8864 SDTypingWork <> i:197 var
+R8854:8857 nameless.DBSyntax <> TApp constr
+R8861:8861 SDTypingWork <> F:196 var
+R8859:8859 SDTypingWork <> P:194 var
+R8835:8839 SDTypingWork <> Gamma:190 var
+R8901:8906 SDTypingWork <> typing:2 ind
+R8949:8952 nameless.DBSyntax <> TApp constr
+R8974:8974 SDTypingWork <> x:198 var
+R8955:8958 nameless.DBSyntax <> TApp constr
+R8971:8971 SDTypingWork <> i:197 var
+R8961:8964 nameless.DBSyntax <> TApp constr
+R8968:8968 SDTypingWork <> F:196 var
+R8966:8966 SDTypingWork <> P:194 var
+R8915:8923 nameless.DBSyntax <> TCloseInd constr
+R8939:8939 SDTypingWork <> x:198 var
+R8937:8937 SDTypingWork <> i:197 var
+R8935:8935 SDTypingWork <> F:196 var
+R8932:8933 SDTypingWork <> st:195 var
+R8930:8930 SDTypingWork <> P:194 var
+R8928:8928 SDTypingWork <> G:193 var
+R8925:8926 SDTypingWork <> IT:192 var
+R8908:8912 SDTypingWork <> Gamma:190 var
+scheme 198:199 <> wf_ind
+scheme 198:199 <> wf_sind
+scheme 330:335 <> typing_ind
+scheme 330:335 <> typing_sind
+def 8990:8996 <> type_wf
+binder 8998:9002 <> Gamma:199
+binder 9004:9004 <> A:200
+R9009:9015 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9017:9018 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9016:9016 <> k:201
+R9019:9024 SDTypingWork <> typing ind
+R9026:9030 SDTypingWork <> Gamma:199 var
+R9032:9032 SDTypingWork <> A:200 var
+R9035:9039 nameless.DBSyntax <> TSort constr
+R9041:9041 SDTypingWork <> k:201 var

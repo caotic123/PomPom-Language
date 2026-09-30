@@ -1,0 +1,269 @@
+DIGEST d4cda2ad7c36d1f7effb9610657f7ad0
+Fannotated.AContextInsertion
+R170:173 Stdlib.Lists.List <> <> lib
+R175:179 Stdlib.Arith.Arith <> <> lib
+R181:184 Stdlib.Bool.Bool <> <> lib
+R186:188 Stdlib.micromega.Lia <> <> lib
+R206:226 annotated.AComparison <> <> lib
+R236:248 Stdlib.Lists.List ListNotations <> mod
+ind 262:270 <> insertion
+constr 313:323 <> insert_head
+constr 376:387 <> insert_under
+R277:280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R274:276 Corelib.Init.Datatypes <> nat ind
+R288:291 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R281:287 annotated.AErase Raw ctx def
+R299:302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R292:298 annotated.AErase Raw ctx def
+binder 334:338 <> Gamma:3
+binder 340:340 <> A:4
+R343:351 annotated.AContextInsertion <> insertion:1 ind
+R363:366 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R362:362 annotated.AContextInsertion <> A:4 var
+R367:371 annotated.AContextInsertion <> Gamma:3 var
+R355:359 annotated.AContextInsertion <> Gamma:3 var
+binder 398:398 <> c:5
+binder 400:404 <> Gamma:6
+binder 406:410 <> Delta:7
+binder 412:412 <> A:8
+R442:449 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R419:427 annotated.AContextInsertion <> insertion:1 ind
+R437:441 annotated.AContextInsertion <> Delta:7 var
+R431:435 annotated.AContextInsertion <> Gamma:6 var
+R429:429 annotated.AContextInsertion <> c:5 var
+R450:458 annotated.AContextInsertion <> insertion:1 ind
+R494:497 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R480:487 annotated.AErase Raw lift def
+R493:493 annotated.AContextInsertion <> A:8 var
+R491:491 annotated.AContextInsertion <> c:5 var
+R498:502 annotated.AContextInsertion <> Delta:7 var
+R468:471 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R467:467 annotated.AContextInsertion <> A:8 var
+R472:476 annotated.AContextInsertion <> Gamma:6 var
+R461:461 Corelib.Init.Datatypes <> S constr
+R463:463 annotated.AContextInsertion <> c:5 var
+scheme 262:270 <> insertion_ind
+scheme 262:270 <> insertion_sind
+prf 513:533 <> insertion_environment
+binder 544:544 <> c:9
+binder 546:550 <> Gamma:10
+binder 552:556 <> Delta:11
+R584:587 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R561:569 annotated.AContextInsertion <> insertion ind
+R571:571 annotated.AContextInsertion <> c:9 var
+R573:577 annotated.AContextInsertion <> Gamma:10 var
+R579:583 annotated.AContextInsertion <> Delta:11 var
+R588:606 annotated.AWeakening RW environment_lift def
+R608:608 annotated.AContextInsertion <> c:9 var
+R610:614 annotated.AContextInsertion <> Gamma:10 var
+R616:620 annotated.AContextInsertion <> Delta:11 var
+R684:707 annotated.AWeakening RW environment_lift_head thm
+R710:733 annotated.AWeakening RW environment_lift_cons thm
+R684:707 annotated.AWeakening RW environment_lift_head thm
+R684:707 annotated.AWeakening RW environment_lift_head thm
+R710:733 annotated.AWeakening RW environment_lift_cons thm
+R710:733 annotated.AWeakening RW environment_lift_cons thm
+prf 748:763 <> insertion_length
+binder 774:774 <> c:12
+binder 776:780 <> Gamma:13
+binder 782:786 <> Delta:14
+R814:817 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R791:799 annotated.AContextInsertion <> insertion ind
+R801:801 annotated.AContextInsertion <> c:12 var
+R803:807 annotated.AContextInsertion <> Gamma:13 var
+R809:813 annotated.AContextInsertion <> Delta:14 var
+R835:837 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R818:828 Stdlib.Lists.List <> length abbrev
+R830:834 annotated.AContextInsertion <> Delta:14 var
+R838:838 Corelib.Init.Datatypes <> S constr
+R841:851 Stdlib.Lists.List <> length abbrev
+R853:857 annotated.AContextInsertion <> Gamma:13 var
+prf 934:948 <> insertion_bound
+binder 959:959 <> c:15
+binder 961:965 <> Gamma:16
+binder 967:971 <> Delta:17
+R999:1002 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R976:984 annotated.AContextInsertion <> insertion ind
+R986:986 annotated.AContextInsertion <> c:15 var
+R988:992 annotated.AContextInsertion <> Gamma:16 var
+R994:998 annotated.AContextInsertion <> Delta:17 var
+R1004:1007 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1003:1003 annotated.AContextInsertion <> c:15 var
+R1008:1018 Stdlib.Lists.List <> length abbrev
+R1020:1024 annotated.AContextInsertion <> Gamma:16 var
+prf 1093:1108 <> insertion_lookup
+binder 1119:1119 <> c:18
+binder 1121:1125 <> Gamma:19
+binder 1127:1131 <> Delta:20
+R1159:1162 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1136:1144 annotated.AContextInsertion <> insertion ind
+R1146:1146 annotated.AContextInsertion <> c:18 var
+R1148:1152 annotated.AContextInsertion <> Gamma:19 var
+R1154:1158 annotated.AContextInsertion <> Delta:20 var
+binder 1170:1170 <> n:21
+binder 1172:1172 <> A:22
+R1222:1225 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1213:1215 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1177:1185 Stdlib.Lists.List <> nth_error def
+R1194:1207 annotated.AWeakening RW shift_index def
+R1209:1209 annotated.AContextInsertion <> c:18 var
+R1211:1211 annotated.AContextInsertion <> n:21 var
+R1187:1191 annotated.AContextInsertion <> Delta:20 var
+R1216:1219 Corelib.Init.Datatypes <> Some constr
+R1221:1221 annotated.AContextInsertion <> A:22 var
+R1226:1232 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1234:1237 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1233:1233 <> B:23
+R1264:1269 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1255:1257 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1238:1246 Stdlib.Lists.List <> nth_error def
+R1254:1254 annotated.AContextInsertion <> n:21 var
+R1248:1252 annotated.AContextInsertion <> Gamma:19 var
+R1258:1261 Corelib.Init.Datatypes <> Some constr
+R1263:1263 annotated.AContextInsertion <> B:23 var
+R1303:1309 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1270:1277 annotated.AErase Raw lift def
+R1284:1291 annotated.AErase Raw lift def
+R1301:1301 annotated.AContextInsertion <> B:23 var
+R1294:1294 Corelib.Init.Datatypes <> S constr
+R1296:1296 annotated.AContextInsertion <> n:21 var
+R1281:1281 annotated.AContextInsertion <> c:18 var
+R1310:1317 annotated.AErase Raw lift def
+R1346:1346 annotated.AContextInsertion <> A:22 var
+R1320:1320 Corelib.Init.Datatypes <> S constr
+R1323:1336 annotated.AWeakening RW shift_index def
+R1338:1338 annotated.AContextInsertion <> c:18 var
+R1340:1340 annotated.AContextInsertion <> n:21 var
+R1423:1425 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1405:1418 annotated.AWeakening RW shift_index def
+R1426:1436 Stdlib.Lists.List <> length abbrev
+R1423:1425 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1405:1418 annotated.AWeakening RW shift_index def
+R1426:1436 Stdlib.Lists.List <> length abbrev
+R1456:1469 Stdlib.Lists.List <> nth_error_Some thm
+R1456:1469 Stdlib.Lists.List <> nth_error_Some thm
+R1514:1529 annotated.AContextInsertion <> insertion_length thm
+R1514:1529 annotated.AContextInsertion <> insertion_length thm
+R1562:1576 annotated.AContextInsertion <> insertion_bound thm
+R1562:1576 annotated.AContextInsertion <> insertion_bound thm
+R1611:1613 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1614:1624 Stdlib.Lists.List <> length abbrev
+R1611:1613 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1614:1624 Stdlib.Lists.List <> length abbrev
+R1645:1658 annotated.AWeakening RW shift_index def
+R1678:1681 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R1731:1740 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R1705:1714 Stdlib.Arith.PeanoNat Nat ltb_lt thm
+R1678:1681 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R1705:1714 Stdlib.Arith.PeanoNat Nat ltb_lt thm
+R1705:1714 Stdlib.Arith.PeanoNat Nat ltb_lt thm
+R1731:1740 Stdlib.Arith.PeanoNat Nat ltb_ge thm
+R1768:1776 Stdlib.Lists.List <> nth_error def
+R1768:1776 Stdlib.Lists.List <> nth_error def
+R1817:1837 annotated.AContextInsertion <> insertion_environment thm
+R1817:1837 annotated.AContextInsertion <> insertion_environment thm
+R1934:1947 Stdlib.Lists.List <> nth_error_Some thm
+R1934:1947 Stdlib.Lists.List <> nth_error_Some thm
+prf 1983:1999 <> comparison_unlift
+binder 2010:2010 <> A:24
+binder 2012:2012 <> B:25
+binder 2014:2014 <> c:26
+R2071:2076 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2019:2036 annotated.AComparison RC type_comparison ind
+R2039:2046 annotated.AErase Raw lift def
+R2052:2052 annotated.AContextInsertion <> A:24 var
+R2050:2050 annotated.AContextInsertion <> c:26 var
+R2056:2063 annotated.AErase Raw lift def
+R2069:2069 annotated.AContextInsertion <> B:25 var
+R2067:2067 annotated.AContextInsertion <> c:26 var
+R2077:2094 annotated.AComparison RC type_comparison ind
+R2096:2096 annotated.AContextInsertion <> A:24 var
+R2098:2098 annotated.AContextInsertion <> B:25 var
+R2140:2158 annotated.AComparison RC comparison_subst thm
+R2166:2174 annotated.AErase Raw TUnit constr
+R2140:2158 annotated.AComparison RC comparison_subst thm
+R2166:2174 annotated.AErase Raw TUnit constr
+R2201:2220 annotated.ASubstitution RB subst_lift_cancel thm
+R2201:2220 annotated.ASubstitution RB subst_lift_cancel thm
+R2201:2220 annotated.ASubstitution RB subst_lift_cancel thm
+R2201:2220 annotated.ASubstitution RB subst_lift_cancel thm
+R2201:2220 annotated.ASubstitution RB subst_lift_cancel thm
+prf 2241:2256 <> recovered_typing
+binder 2267:2271 <> Gamma:27
+binder 2273:2273 <> t:28
+binder 2275:2275 <> T:29
+binder 2277:2277 <> c:30
+R2282:2282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2369:2375 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2283:2289 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2291:2292 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2290:2290 <> S:31
+R2309:2316 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2293:2298 annotated.ATyping <> typing ind
+R2300:2304 annotated.AContextInsertion <> Gamma:27 var
+R2306:2306 annotated.AContextInsertion <> t:28 var
+R2308:2308 annotated.AContextInsertion <> S:31 var
+R2317:2334 annotated.AComparison RC type_comparison ind
+R2337:2344 annotated.AErase Raw lift def
+R2350:2350 annotated.AContextInsertion <> S:31 var
+R2348:2348 annotated.AContextInsertion <> c:30 var
+R2354:2361 annotated.AErase Raw lift def
+R2367:2367 annotated.AContextInsertion <> T:29 var
+R2365:2365 annotated.AContextInsertion <> c:30 var
+R2394:2397 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2376:2385 annotated.ATyping RT type_wf def
+R2387:2391 annotated.AContextInsertion <> Gamma:27 var
+R2393:2393 annotated.AContextInsertion <> T:29 var
+R2398:2403 annotated.ATyping <> typing ind
+R2405:2409 annotated.AContextInsertion <> Gamma:27 var
+R2411:2411 annotated.AContextInsertion <> t:28 var
+R2413:2413 annotated.AContextInsertion <> T:29 var
+R2469:2485 annotated.AComparison <> comparison_typing thm
+R2508:2524 annotated.AContextInsertion <> comparison_unlift thm
+R2469:2485 annotated.AComparison <> comparison_typing thm
+R2508:2524 annotated.AContextInsertion <> comparison_unlift thm
+prf 2555:2576 <> recovered_lower_typing
+binder 2587:2591 <> Gamma:32
+binder 2593:2593 <> t:33
+binder 2595:2595 <> T:34
+binder 2597:2597 <> c:35
+R2602:2602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2670:2676 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2603:2609 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2611:2612 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2610:2610 <> S:36
+R2629:2632 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2613:2618 annotated.ATyping <> typing ind
+R2620:2624 annotated.AContextInsertion <> Gamma:32 var
+R2626:2626 annotated.AContextInsertion <> t:33 var
+R2628:2628 annotated.AContextInsertion <> S:36 var
+R2633:2650 annotated.AComparison RC type_comparison ind
+R2653:2660 annotated.AErase Raw lift def
+R2666:2666 annotated.AContextInsertion <> S:36 var
+R2664:2664 annotated.AContextInsertion <> c:35 var
+R2669:2669 annotated.AContextInsertion <> T:34 var
+R2719:2724 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2677:2686 annotated.ATyping RT type_wf def
+R2688:2692 annotated.AContextInsertion <> Gamma:32 var
+R2695:2703 annotated.AErase Raw subst def
+R2717:2717 annotated.AContextInsertion <> T:34 var
+R2715:2715 annotated.AContextInsertion <> c:35 var
+R2705:2713 annotated.AErase Raw TUnit constr
+R2725:2730 annotated.ATyping <> typing ind
+R2732:2736 annotated.AContextInsertion <> Gamma:32 var
+R2738:2738 annotated.AContextInsertion <> t:33 var
+R2741:2749 annotated.AErase Raw subst def
+R2763:2763 annotated.AContextInsertion <> T:34 var
+R2761:2761 annotated.AContextInsertion <> c:35 var
+R2751:2759 annotated.AErase Raw TUnit constr
+R2825:2843 annotated.AComparison RC comparison_subst thm
+R2852:2860 annotated.AErase Raw TUnit constr
+R2825:2843 annotated.AComparison RC comparison_subst thm
+R2852:2860 annotated.AErase Raw TUnit constr
+R2886:2905 annotated.ASubstitution RB subst_lift_cancel thm
+R2886:2905 annotated.ASubstitution RB subst_lift_cancel thm
+R2886:2905 annotated.ASubstitution RB subst_lift_cancel thm
+R2927:2943 annotated.AComparison <> comparison_typing thm
+R2927:2943 annotated.AComparison <> comparison_typing thm
+R2983:2998 annotated.AContextInsertion <> insertion_lookup thm
+R3019:3034 annotated.AContextInsertion <> recovered_typing thm

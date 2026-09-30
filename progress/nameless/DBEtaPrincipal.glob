@@ -1,0 +1,447 @@
+DIGEST 97e50e5edd33bcb0cf897795861df42e
+Fnameless.DBEtaPrincipal
+R179:182 Stdlib.Lists.List <> <> lib
+R184:188 Stdlib.Arith.Arith <> <> lib
+R190:193 Stdlib.Bool.Bool <> <> lib
+R195:197 Stdlib.micromega.Lia <> <> lib
+R215:239 nameless.DBTypeComparison <> <> lib
+R249:261 Stdlib.Lists.List ListNotations <> mod
+def 276:291 <> stable_principal
+binder 293:297 <> Gamma:1
+binder 299:299 <> f:2
+binder 301:301 <> S:3
+binder 313:313 <> A:4
+binder 315:315 <> T:5
+R352:355 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R320:325 nameless.DBTyping <> typing ind
+R329:330 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R328:328 nameless.DBEtaPrincipal <> A:4 var
+R331:335 nameless.DBEtaPrincipal <> Gamma:1 var
+R339:342 nameless.DBSyntax <> lift def
+R348:348 nameless.DBEtaPrincipal <> f:2 var
+R351:351 nameless.DBEtaPrincipal <> T:5 var
+R356:370 nameless.DBTypeComparison <> type_comparison ind
+R373:376 nameless.DBSyntax <> lift def
+R382:382 nameless.DBEtaPrincipal <> S:3 var
+R385:385 nameless.DBEtaPrincipal <> T:5 var
+prf 395:421 <> stable_principal_conversion
+binder 432:436 <> Gamma:6
+binder 438:438 <> f:7
+binder 440:440 <> S:8
+binder 442:442 <> T:9
+R473:476 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R447:462 nameless.DBEtaPrincipal <> stable_principal def
+R464:468 nameless.DBEtaPrincipal <> Gamma:6 var
+R470:470 nameless.DBEtaPrincipal <> f:7 var
+R472:472 nameless.DBEtaPrincipal <> S:8 var
+R485:488 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R477:480 nameless.DBCore <> conv ind
+R484:484 nameless.DBEtaPrincipal <> T:9 var
+R482:482 nameless.DBEtaPrincipal <> S:8 var
+R489:504 nameless.DBEtaPrincipal <> stable_principal def
+R506:510 nameless.DBEtaPrincipal <> Gamma:6 var
+R512:512 nameless.DBEtaPrincipal <> f:7 var
+R514:514 nameless.DBEtaPrincipal <> T:9 var
+R568:593 nameless.DBTypeComparison <> comparison_left_conversion thm
+R568:593 nameless.DBTypeComparison <> comparison_left_conversion thm
+R626:631 nameless.DBCore <> cv_sym constr
+R644:658 nameless.DBWeakening <> conversion_lift thm
+R626:631 nameless.DBCore <> cv_sym constr
+R644:658 nameless.DBWeakening <> conversion_lift thm
+prf 673:700 <> stable_principal_application
+binder 711:715 <> Gamma:10
+binder 717:717 <> f:11
+binder 719:719 <> a:12
+binder 721:721 <> A:13
+binder 723:723 <> B:14
+R762:767 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R728:743 nameless.DBEtaPrincipal <> stable_principal def
+R745:749 nameless.DBEtaPrincipal <> Gamma:10 var
+R751:751 nameless.DBEtaPrincipal <> f:11 var
+R754:756 nameless.DBSyntax <> TPi constr
+R760:760 nameless.DBEtaPrincipal <> B:14 var
+R758:758 nameless.DBEtaPrincipal <> A:13 var
+R768:783 nameless.DBEtaPrincipal <> stable_principal def
+R785:789 nameless.DBEtaPrincipal <> Gamma:10 var
+R792:795 nameless.DBSyntax <> TApp constr
+R799:799 nameless.DBEtaPrincipal <> a:12 var
+R797:797 nameless.DBEtaPrincipal <> f:11 var
+R803:807 nameless.DBSyntax <> subst def
+R813:813 nameless.DBEtaPrincipal <> B:14 var
+R809:809 nameless.DBEtaPrincipal <> a:12 var
+R870:898 nameless.DBCumulativeTyping <> application_change_generation thm
+R913:919 Corelib.Init.Logic <> eq_refl constr
+R870:898 nameless.DBCumulativeTyping <> application_change_generation thm
+R913:919 Corelib.Init.Logic <> eq_refl constr
+R963:985 nameless.DBTypeComparison <> comparison_pi_inversion thm
+R963:985 nameless.DBTypeComparison <> comparison_pi_inversion thm
+R1035:1050 nameless.DBTypeComparison <> comparison_subst thm
+R1062:1065 nameless.DBSyntax <> lift def
+R1035:1050 nameless.DBTypeComparison <> comparison_subst thm
+R1062:1065 nameless.DBSyntax <> lift def
+R1096:1115 nameless.DBParallelBase <> lift_subst_zero_comm thm
+R1096:1115 nameless.DBParallelBase <> lift_subst_zero_comm thm
+R1096:1115 nameless.DBParallelBase <> lift_subst_zero_comm thm
+R1132:1152 nameless.DBTypeComparison <> comparison_transitive thm
+R1174:1195 nameless.DBTypeComparison <> type_change_comparison thm
+R1132:1152 nameless.DBTypeComparison <> comparison_transitive thm
+R1174:1195 nameless.DBTypeComparison <> type_change_comparison thm
+def 1222:1239 <> explicit_principal
+R1246:1249 nameless.DBSyntax <> term ind
+binder 1242:1242 <> t:15
+R1254:1259 Corelib.Init.Datatypes <> option ind
+R1261:1264 nameless.DBSyntax <> term ind
+R1277:1277 nameless.DBEtaPrincipal <> t:15 var
+R1288:1291 nameless.DBSyntax <> TMuI constr
+R1300:1305 nameless.DBSyntax <> TClose constr
+R1317:1320 Corelib.Init.Datatypes <> Some constr
+R1323:1328 nameless.DBSyntax <> Family def
+R1317:1320 Corelib.Init.Datatypes <> Some constr
+R1323:1328 nameless.DBSyntax <> Family def
+R1338:1344 nameless.DBSyntax <> TSwitch constr
+R1359:1362 Corelib.Init.Datatypes <> Some constr
+R1365:1368 nameless.DBSyntax <> TApp constr
+R1379:1382 nameless.DBSyntax <> TInd constr
+R1399:1402 Corelib.Init.Datatypes <> Some constr
+R1405:1408 nameless.DBSyntax <> TApp constr
+R1413:1417 nameless.DBSyntax <> TPair constr
+R1429:1433 nameless.DBSyntax <> THyps constr
+R1452:1455 Corelib.Init.Datatypes <> Some constr
+R1458:1462 nameless.DBSyntax <> TIAll constr
+R1481:1490 nameless.DBSyntax <> TCloseCase constr
+R1511:1514 Corelib.Init.Datatypes <> Some constr
+R1517:1520 nameless.DBSyntax <> TApp constr
+R1531:1539 nameless.DBSyntax <> TCloseInd constr
+R1558:1561 Corelib.Init.Datatypes <> Some constr
+R1564:1567 nameless.DBSyntax <> TApp constr
+R1570:1573 nameless.DBSyntax <> TApp constr
+R1576:1579 nameless.DBSyntax <> TApp constr
+R1601:1604 Corelib.Init.Datatypes <> None constr
+prf 1620:1648 <> explicit_principal_generation
+binder 1659:1663 <> Gamma:17
+binder 1665:1665 <> t:18
+binder 1667:1667 <> T:19
+R1688:1691 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1672:1677 nameless.DBTyping <> typing ind
+R1679:1683 nameless.DBEtaPrincipal <> Gamma:17 var
+R1685:1685 nameless.DBEtaPrincipal <> t:18 var
+R1687:1687 nameless.DBEtaPrincipal <> T:19 var
+binder 1699:1699 <> S:20
+R1731:1736 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1722:1724 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1702:1719 nameless.DBEtaPrincipal <> explicit_principal def
+R1721:1721 nameless.DBEtaPrincipal <> t:18 var
+R1725:1728 Corelib.Init.Datatypes <> Some constr
+R1730:1730 nameless.DBEtaPrincipal <> S:20 var
+R1753:1756 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1737:1742 nameless.DBTyping <> typing ind
+R1744:1748 nameless.DBEtaPrincipal <> Gamma:17 var
+R1750:1750 nameless.DBEtaPrincipal <> t:18 var
+R1752:1752 nameless.DBEtaPrincipal <> S:20 var
+R1757:1771 nameless.DBTypeComparison <> type_comparison ind
+R1773:1773 nameless.DBEtaPrincipal <> S:20 var
+R1775:1775 nameless.DBEtaPrincipal <> T:19 var
+R1838:1855 nameless.DBEtaPrincipal <> explicit_principal def
+R1962:1975 nameless.DBTypeComparison <> cmp_conversion constr
+R1978:1984 nameless.DBCore <> cv_refl constr
+R1962:1975 nameless.DBTypeComparison <> cmp_conversion constr
+R1978:1984 nameless.DBCore <> cv_refl constr
+R1962:1975 nameless.DBTypeComparison <> cmp_conversion constr
+R1978:1984 nameless.DBCore <> cv_refl constr
+R1962:1975 nameless.DBTypeComparison <> cmp_conversion constr
+R1978:1984 nameless.DBCore <> cv_refl constr
+R1962:1975 nameless.DBTypeComparison <> cmp_conversion constr
+R1978:1984 nameless.DBCore <> cv_refl constr
+R1962:1975 nameless.DBTypeComparison <> cmp_conversion constr
+R1978:1984 nameless.DBCore <> cv_refl constr
+R1962:1975 nameless.DBTypeComparison <> cmp_conversion constr
+R1978:1984 nameless.DBCore <> cv_refl constr
+R1962:1975 nameless.DBTypeComparison <> cmp_conversion constr
+R1978:1984 nameless.DBCore <> cv_refl constr
+R2062:2088 nameless.DBTypeComparison <> comparison_right_conversion thm
+R2062:2088 nameless.DBTypeComparison <> comparison_right_conversion thm
+R2176:2196 nameless.DBTypeComparison <> comparison_transitive thm
+R2215:2233 nameless.DBTypeComparison <> comparison_universe thm
+R2246:2252 nameless.DBTyping <> ul_sort constr
+R2176:2196 nameless.DBTypeComparison <> comparison_transitive thm
+R2215:2233 nameless.DBTypeComparison <> comparison_universe thm
+R2246:2252 nameless.DBTyping <> ul_sort constr
+R2329:2349 nameless.DBTypeComparison <> comparison_transitive thm
+R2368:2386 nameless.DBTypeComparison <> comparison_universe thm
+R2399:2403 nameless.DBTyping <> ul_pi constr
+R2329:2349 nameless.DBTypeComparison <> comparison_transitive thm
+R2368:2386 nameless.DBTypeComparison <> comparison_universe thm
+R2399:2403 nameless.DBTyping <> ul_pi constr
+prf 2419:2441 <> explicit_principal_lift
+binder 2452:2452 <> t:21
+binder 2454:2454 <> S:22
+binder 2456:2456 <> d:23
+binder 2458:2458 <> c:24
+R2492:2497 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2483:2485 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2463:2480 nameless.DBEtaPrincipal <> explicit_principal def
+R2482:2482 nameless.DBEtaPrincipal <> t:21 var
+R2486:2489 Corelib.Init.Datatypes <> Some constr
+R2491:2491 nameless.DBEtaPrincipal <> S:22 var
+R2529:2531 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2498:2515 nameless.DBEtaPrincipal <> explicit_principal def
+R2518:2521 nameless.DBSyntax <> lift def
+R2527:2527 nameless.DBEtaPrincipal <> t:21 var
+R2525:2525 nameless.DBEtaPrincipal <> c:24 var
+R2523:2523 nameless.DBEtaPrincipal <> d:23 var
+R2532:2535 Corelib.Init.Datatypes <> Some constr
+R2538:2541 nameless.DBSyntax <> lift def
+R2547:2547 nameless.DBEtaPrincipal <> S:22 var
+R2545:2545 nameless.DBEtaPrincipal <> c:24 var
+R2543:2543 nameless.DBEtaPrincipal <> d:23 var
+R2593:2610 nameless.DBEtaPrincipal <> explicit_principal def
+prf 2686:2710 <> explicit_stable_principal
+binder 2721:2725 <> Gamma:25
+binder 2727:2727 <> t:26
+binder 2729:2729 <> S:27
+R2763:2766 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2754:2756 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2734:2751 nameless.DBEtaPrincipal <> explicit_principal def
+R2753:2753 nameless.DBEtaPrincipal <> t:26 var
+R2757:2760 Corelib.Init.Datatypes <> Some constr
+R2762:2762 nameless.DBEtaPrincipal <> S:27 var
+R2767:2782 nameless.DBEtaPrincipal <> stable_principal def
+R2784:2788 nameless.DBEtaPrincipal <> Gamma:25 var
+R2790:2790 nameless.DBEtaPrincipal <> t:26 var
+R2792:2792 nameless.DBEtaPrincipal <> S:27 var
+R2841:2845 Corelib.Init.Logic <> proj2 thm
+R2848:2876 nameless.DBEtaPrincipal <> explicit_principal_generation thm
+R2890:2912 nameless.DBEtaPrincipal <> explicit_principal_lift thm
+R2841:2845 Corelib.Init.Logic <> proj2 thm
+R2848:2876 nameless.DBEtaPrincipal <> explicit_principal_generation thm
+R2890:2912 nameless.DBEtaPrincipal <> explicit_principal_lift thm
+prf 2943:2968 <> eta_principal_preservation
+binder 2979:2983 <> Gamma:28
+binder 2985:2985 <> f:29
+binder 2987:2987 <> S:30
+R3008:3011 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2992:2997 nameless.DBTyping <> typing ind
+R2999:3003 nameless.DBEtaPrincipal <> Gamma:28 var
+R3005:3005 nameless.DBEtaPrincipal <> f:29 var
+R3007:3007 nameless.DBEtaPrincipal <> S:30 var
+R3038:3041 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3012:3027 nameless.DBEtaPrincipal <> stable_principal def
+R3029:3033 nameless.DBEtaPrincipal <> Gamma:28 var
+R3035:3035 nameless.DBEtaPrincipal <> f:29 var
+R3037:3037 nameless.DBEtaPrincipal <> S:30 var
+binder 3049:3049 <> T:31
+R3104:3107 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3054:3059 nameless.DBTyping <> typing ind
+R3061:3065 nameless.DBEtaPrincipal <> Gamma:28 var
+R3068:3071 nameless.DBSyntax <> TLam constr
+R3074:3077 nameless.DBSyntax <> TApp constr
+R3093:3096 nameless.DBSyntax <> TVar constr
+R3080:3083 nameless.DBSyntax <> lift def
+R3089:3089 nameless.DBEtaPrincipal <> f:29 var
+R3103:3103 nameless.DBEtaPrincipal <> T:31 var
+R3108:3113 nameless.DBTyping <> typing ind
+R3115:3119 nameless.DBEtaPrincipal <> Gamma:28 var
+R3121:3121 nameless.DBEtaPrincipal <> f:29 var
+R3123:3123 nameless.DBEtaPrincipal <> T:31 var
+R3184:3200 nameless.DBGeneration <> lambda_generation thm
+R3213:3219 Corelib.Init.Logic <> eq_refl constr
+R3184:3200 nameless.DBGeneration <> lambda_generation thm
+R3213:3219 Corelib.Init.Logic <> eq_refl constr
+R3264:3276 nameless.DBDerivedTyping <> pi_components thm
+R3291:3297 Corelib.Init.Logic <> eq_refl constr
+R3264:3276 nameless.DBDerivedTyping <> pi_components thm
+R3291:3297 Corelib.Init.Logic <> eq_refl constr
+R3334:3362 nameless.DBCumulativeTyping <> application_change_generation thm
+R3377:3383 Corelib.Init.Logic <> eq_refl constr
+R3334:3362 nameless.DBCumulativeTyping <> application_change_generation thm
+R3377:3383 Corelib.Init.Logic <> eq_refl constr
+R3481:3500 nameless.DBTypeComparison <> comparison_pi_source thm
+R3519:3525 nameless.DBCore <> cv_refl constr
+R3481:3500 nameless.DBTypeComparison <> comparison_pi_source thm
+R3519:3525 nameless.DBCore <> cv_refl constr
+R3563:3578 nameless.DBSubstitution <> conversion_subst thm
+R3588:3592 nameless.DBSyntax <> TUnit constr
+R3563:3578 nameless.DBSubstitution <> conversion_subst thm
+R3588:3592 nameless.DBSyntax <> TUnit constr
+R3612:3616 nameless.DBSyntax <> subst def
+R3635:3651 nameless.DBParallelBase <> subst_lift_cancel thm
+R3635:3651 nameless.DBParallelBase <> subst_lift_cancel thm
+R3635:3651 nameless.DBParallelBase <> subst_lift_cancel thm
+R3673:3688 nameless.DBWeakening <> type_correctness thm
+R3673:3688 nameless.DBWeakening <> type_correctness thm
+R3723:3735 nameless.DBTypedPiViews <> typed_pi_view thm
+R3723:3735 nameless.DBTypedPiViews <> typed_pi_view thm
+R3799:3811 nameless.DBDerivedTyping <> pi_components thm
+R3826:3832 Corelib.Init.Logic <> eq_refl constr
+R3799:3811 nameless.DBDerivedTyping <> pi_components thm
+R3826:3832 Corelib.Init.Logic <> eq_refl constr
+R3876:3881 nameless.DBTyping <> typing ind
+R3892:3894 nameless.DBSyntax <> TPi constr
+R3913:3919 nameless.DBTyping <> ty_conv constr
+R3876:3881 nameless.DBTyping <> typing ind
+R3892:3894 nameless.DBSyntax <> TPi constr
+R3913:3919 nameless.DBTyping <> ty_conv constr
+R3957:3971 nameless.DBTypeComparison <> type_comparison ind
+R3974:3976 nameless.DBSyntax <> TPi constr
+R3992:3995 nameless.DBSyntax <> lift def
+R3979:3982 nameless.DBSyntax <> lift def
+R4006:4008 nameless.DBSyntax <> TPi constr
+R3957:3971 nameless.DBTypeComparison <> type_comparison ind
+R3974:3976 nameless.DBSyntax <> TPi constr
+R3992:3995 nameless.DBSyntax <> lift def
+R3979:3982 nameless.DBSyntax <> lift def
+R4006:4008 nameless.DBSyntax <> TPi constr
+R4028:4053 nameless.DBTypeComparison <> comparison_left_conversion thm
+R4028:4053 nameless.DBTypeComparison <> comparison_left_conversion thm
+R4084:4089 nameless.DBCore <> cv_sym constr
+R4099:4113 nameless.DBWeakening <> conversion_lift thm
+R4084:4089 nameless.DBCore <> cv_sym constr
+R4099:4113 nameless.DBWeakening <> conversion_lift thm
+R4144:4166 nameless.DBTypeComparison <> comparison_pi_inversion thm
+R4144:4166 nameless.DBTypeComparison <> comparison_pi_inversion thm
+R4214:4239 nameless.DBCumulativeTyping <> variable_change_generation thm
+R4254:4260 Corelib.Init.Logic <> eq_refl constr
+R4214:4239 nameless.DBCumulativeTyping <> variable_change_generation thm
+R4254:4260 Corelib.Init.Logic <> eq_refl constr
+R4290:4298 Stdlib.Lists.List <> nth_error def
+R4350:4364 nameless.DBTypeComparison <> type_comparison ind
+R4350:4364 nameless.DBTypeComparison <> type_comparison ind
+R4388:4408 nameless.DBTypeComparison <> comparison_transitive thm
+R4417:4438 nameless.DBTypeComparison <> type_change_comparison thm
+R4388:4408 nameless.DBTypeComparison <> comparison_transitive thm
+R4417:4438 nameless.DBTypeComparison <> type_change_comparison thm
+R4480:4495 nameless.DBTypeComparison <> comparison_subst thm
+R4503:4507 nameless.DBSyntax <> TUnit constr
+R4532:4548 nameless.DBParallelBase <> subst_lift_cancel thm
+R4480:4495 nameless.DBTypeComparison <> comparison_subst thm
+R4503:4507 nameless.DBSyntax <> TUnit constr
+R4532:4548 nameless.DBParallelBase <> subst_lift_cancel thm
+R4532:4548 nameless.DBParallelBase <> subst_lift_cancel thm
+R4532:4548 nameless.DBParallelBase <> subst_lift_cancel thm
+R4532:4548 nameless.DBParallelBase <> subst_lift_cancel thm
+R4580:4590 nameless.DBCumulativeTyping <> type_change ind
+R4613:4634 nameless.DBTypeComparison <> comparison_realization thm
+R4580:4590 nameless.DBCumulativeTyping <> type_change ind
+R4613:4634 nameless.DBTypeComparison <> comparison_realization thm
+R4683:4697 nameless.DBTypeComparison <> type_comparison ind
+R4683:4697 nameless.DBTypeComparison <> type_comparison ind
+R4721:4736 nameless.DBTypeComparison <> comparison_subst thm
+R4748:4751 nameless.DBSyntax <> TVar constr
+R4721:4736 nameless.DBTypeComparison <> comparison_subst thm
+R4748:4751 nameless.DBSyntax <> TVar constr
+R4777:4797 nameless.DBParallelBase <> subst_eta_beta_cancel thm
+R4777:4797 nameless.DBParallelBase <> subst_eta_beta_cancel thm
+R4777:4797 nameless.DBParallelBase <> subst_eta_beta_cancel thm
+R4816:4836 nameless.DBTypeComparison <> comparison_transitive thm
+R4858:4879 nameless.DBTypeComparison <> type_change_comparison thm
+R4816:4836 nameless.DBTypeComparison <> comparison_transitive thm
+R4858:4879 nameless.DBTypeComparison <> type_change_comparison thm
+R4915:4925 nameless.DBCumulativeTyping <> type_change ind
+R4929:4930 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4915:4925 nameless.DBCumulativeTyping <> type_change ind
+R4929:4930 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4954:4975 nameless.DBTypeComparison <> comparison_realization thm
+R4954:4975 nameless.DBTypeComparison <> comparison_realization thm
+R5035:5055 nameless.DBCumulativeTyping <> type_change_narrowing thm
+R5035:5055 nameless.DBCumulativeTyping <> type_change_narrowing thm
+R5090:5095 nameless.DBTyping <> typing ind
+R5106:5108 nameless.DBSyntax <> TPi constr
+R5090:5095 nameless.DBTyping <> typing ind
+R5106:5108 nameless.DBSyntax <> TPi constr
+R5128:5145 nameless.DBCumulativeTyping <> type_change_typing thm
+R5156:5169 nameless.DBCumulativeTyping <> type_change_pi thm
+R5128:5145 nameless.DBCumulativeTyping <> type_change_typing thm
+R5156:5169 nameless.DBCumulativeTyping <> type_change_pi thm
+R5252:5267 nameless.DBWeakening <> type_correctness thm
+R5298:5304 nameless.DBTyping <> ty_conv constr
+R5252:5267 nameless.DBWeakening <> type_correctness thm
+R5298:5304 nameless.DBTyping <> ty_conv constr
+prf 5332:5356 <> variable_stable_principal
+binder 5367:5371 <> Gamma:32
+binder 5373:5373 <> n:33
+binder 5375:5375 <> S:34
+R5406:5411 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5397:5399 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5380:5388 Stdlib.Lists.List <> nth_error def
+R5396:5396 nameless.DBEtaPrincipal <> n:33 var
+R5390:5394 nameless.DBEtaPrincipal <> Gamma:32 var
+R5400:5403 Corelib.Init.Datatypes <> Some constr
+R5405:5405 nameless.DBEtaPrincipal <> S:34 var
+R5412:5427 nameless.DBEtaPrincipal <> stable_principal def
+R5429:5433 nameless.DBEtaPrincipal <> Gamma:32 var
+R5436:5439 nameless.DBSyntax <> TVar constr
+R5441:5441 nameless.DBEtaPrincipal <> n:33 var
+R5445:5448 nameless.DBSyntax <> lift def
+R5468:5468 nameless.DBEtaPrincipal <> S:34 var
+R5451:5461 Corelib.Init.Datatypes <> S constr
+R5463:5463 nameless.DBEtaPrincipal <> n:33 var
+R5524:5529 nameless.DBTyping <> typing ind
+R5533:5534 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5543:5546 nameless.DBSyntax <> TVar constr
+R5549:5559 Corelib.Init.Datatypes <> S constr
+R5524:5529 nameless.DBTyping <> typing ind
+R5533:5534 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5543:5546 nameless.DBSyntax <> TVar constr
+R5549:5559 Corelib.Init.Datatypes <> S constr
+R5587:5612 nameless.DBCumulativeTyping <> variable_change_generation thm
+R5625:5631 Corelib.Init.Logic <> eq_refl constr
+R5587:5612 nameless.DBCumulativeTyping <> variable_change_generation thm
+R5625:5631 Corelib.Init.Logic <> eq_refl constr
+R5657:5665 Stdlib.Lists.List <> nth_error def
+R5731:5744 nameless.DBParallelBase <> lift_fuse_zero thm
+R5764:5785 nameless.DBTypeComparison <> type_change_comparison thm
+R5731:5744 nameless.DBParallelBase <> lift_fuse_zero thm
+R5731:5744 nameless.DBParallelBase <> lift_fuse_zero thm
+R5764:5785 nameless.DBTypeComparison <> type_change_comparison thm
+prf 5808:5832 <> eta_variable_preservation
+binder 5843:5847 <> Gamma:35
+binder 5849:5849 <> n:36
+binder 5851:5851 <> T:37
+R5913:5918 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5856:5861 nameless.DBTyping <> typing ind
+R5863:5867 nameless.DBEtaPrincipal <> Gamma:35 var
+R5870:5873 nameless.DBSyntax <> TLam constr
+R5876:5879 nameless.DBSyntax <> TApp constr
+R5902:5905 nameless.DBSyntax <> TVar constr
+R5882:5885 nameless.DBSyntax <> lift def
+R5892:5895 nameless.DBSyntax <> TVar constr
+R5897:5897 nameless.DBEtaPrincipal <> n:36 var
+R5912:5912 nameless.DBEtaPrincipal <> T:37 var
+R5919:5924 nameless.DBTyping <> typing ind
+R5926:5930 nameless.DBEtaPrincipal <> Gamma:35 var
+R5933:5936 nameless.DBSyntax <> TVar constr
+R5938:5938 nameless.DBEtaPrincipal <> n:36 var
+R5941:5941 nameless.DBEtaPrincipal <> T:37 var
+R5986:6002 nameless.DBGeneration <> lambda_generation thm
+R6015:6021 Corelib.Init.Logic <> eq_refl constr
+R5986:6002 nameless.DBGeneration <> lambda_generation thm
+R6015:6021 Corelib.Init.Logic <> eq_refl constr
+R6065:6093 nameless.DBCumulativeTyping <> application_change_generation thm
+R6108:6114 Corelib.Init.Logic <> eq_refl constr
+R6065:6093 nameless.DBCumulativeTyping <> application_change_generation thm
+R6108:6114 Corelib.Init.Logic <> eq_refl constr
+R6146:6151 nameless.DBTyping <> typing ind
+R6155:6156 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6165:6168 nameless.DBSyntax <> TVar constr
+R6171:6181 Corelib.Init.Datatypes <> S constr
+R6188:6190 nameless.DBSyntax <> TPi constr
+R6146:6151 nameless.DBTyping <> typing ind
+R6155:6156 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6165:6168 nameless.DBSyntax <> TVar constr
+R6171:6181 Corelib.Init.Datatypes <> S constr
+R6188:6190 nameless.DBSyntax <> TPi constr
+R6217:6242 nameless.DBCumulativeTyping <> variable_change_generation thm
+R6255:6261 Corelib.Init.Logic <> eq_refl constr
+R6217:6242 nameless.DBCumulativeTyping <> variable_change_generation thm
+R6255:6261 Corelib.Init.Logic <> eq_refl constr
+R6286:6294 Stdlib.Lists.List <> nth_error def
+R6313:6338 nameless.DBEtaPrincipal <> eta_principal_preservation thm
+R6349:6357 nameless.DBDerivedTyping <> smart_var thm
+R6373:6386 nameless.DBWeakening <> typing_context thm
+R6408:6432 nameless.DBEtaPrincipal <> variable_stable_principal thm
+R6313:6338 nameless.DBEtaPrincipal <> eta_principal_preservation thm
+R6349:6357 nameless.DBDerivedTyping <> smart_var thm
+R6373:6386 nameless.DBWeakening <> typing_context thm
+R6408:6432 nameless.DBEtaPrincipal <> variable_stable_principal thm
+R6469:6494 nameless.DBEtaPrincipal <> eta_principal_preservation thm
+R6515:6539 nameless.DBEtaPrincipal <> eta_variable_preservation thm

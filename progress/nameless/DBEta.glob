@@ -1,0 +1,1237 @@
+DIGEST 988bbf3ad99500c4076538ab22a02eea
+Fnameless.DBEta
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:40 Stdlib.micromega.Lia <> <> lib
+R42:49 Stdlib.Arith.PeanoNat <> <> lib
+R51:56 Stdlib.Strings.String <> <> lib
+R74:96 nameless.DBParallelBase <> <> lib
+R106:118 Stdlib.Lists.List ListNotations <> mod
+ind 132:137 <> epstep
+constr 167:174 <> eps_TVar
+constr 215:223 <> eps_TSort
+constr 266:272 <> eps_TPi
+constr 355:362 <> eps_TLam
+constr 422:429 <> eps_TApp
+constr 514:523 <> eps_TSigma
+constr 612:620 <> eps_TPair
+constr 707:714 <> eps_TFst
+constr 774:781 <> eps_TSnd
+constr 841:850 <> eps_TUnitT
+constr 877:885 <> eps_TUnit
+constr 910:917 <> eps_TUId
+constr 940:947 <> eps_TTag
+constr 988:997 <> eps_TEnumU
+constr 1024:1032 <> eps_TNilE
+constr 1057:1066 <> eps_TConsE
+constr 1167:1176 <> eps_TEnumT
+constr 1240:1249 <> eps_TEZero
+constr 1276:1285 <> eps_TESucc
+constr 1349:1356 <> eps_TEPi
+constr 1447:1457 <> eps_TSwitch
+constr 1604:1613 <> eps_TIDesc
+constr 1683:1691 <> eps_TIVar
+constr 1753:1759 <> eps_TI1
+constr 1780:1788 <> eps_TIBot
+constr 1813:1822 <> eps_TIProd
+constr 1911:1918 <> eps_TIPi
+constr 2003:2011 <> eps_TISig
+constr 2098:2109 <> eps_TIChoice
+constr 2202:2212 <> eps_TInterp
+constr 2334:2341 <> eps_TMuI
+constr 2432:2438 <> eps_TIn
+constr 2496:2503 <> eps_TInd
+constr 2694:2702 <> eps_TIAll
+constr 2870:2878 <> eps_THyps
+constr 3071:3080 <> eps_TClose
+constr 3200:3213 <> eps_TCloseCase
+constr 3447:3459 <> eps_TCloseInd
+constr 3686:3692 <> eps_eta
+R145:148 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R141:144 nameless.DBSyntax <> term ind
+R153:156 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R149:152 nameless.DBSyntax <> term ind
+binder 185:185 <> n:3
+R188:193 nameless.DBEta <> epstep:1 ind
+R205:208 nameless.DBSyntax <> TVar constr
+R210:210 nameless.DBEta <> n:3 var
+R196:199 nameless.DBSyntax <> TVar constr
+R201:201 nameless.DBEta <> n:3 var
+binder 234:234 <> k:4
+R237:242 nameless.DBEta <> epstep:1 ind
+R255:259 nameless.DBSyntax <> TSort constr
+R261:261 nameless.DBEta <> k:4 var
+R245:249 nameless.DBSyntax <> TSort constr
+R251:251 nameless.DBEta <> k:4 var
+binder 283:283 <> A:5
+binder 285:286 <> A':6
+binder 288:288 <> B:7
+binder 290:291 <> B':8
+R305:308 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R294:299 nameless.DBEta <> epstep:1 ind
+R303:304 nameless.DBEta <> A':6 var
+R301:301 nameless.DBEta <> A:5 var
+R320:323 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R309:314 nameless.DBEta <> epstep:1 ind
+R318:319 nameless.DBEta <> B':8 var
+R316:316 nameless.DBEta <> B:7 var
+R324:329 nameless.DBEta <> epstep:1 ind
+R342:344 nameless.DBSyntax <> TPi constr
+R349:350 nameless.DBEta <> B':8 var
+R346:347 nameless.DBEta <> A':6 var
+R332:334 nameless.DBSyntax <> TPi constr
+R338:338 nameless.DBEta <> B:7 var
+R336:336 nameless.DBEta <> A:5 var
+binder 373:373 <> b:9
+binder 375:376 <> b':10
+R390:393 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R379:384 nameless.DBEta <> epstep:1 ind
+R388:389 nameless.DBEta <> b':10 var
+R386:386 nameless.DBEta <> b:9 var
+R394:399 nameless.DBEta <> epstep:1 ind
+R411:414 nameless.DBSyntax <> TLam constr
+R416:417 nameless.DBEta <> b':10 var
+R402:405 nameless.DBSyntax <> TLam constr
+R407:407 nameless.DBEta <> b:9 var
+binder 440:440 <> f:11
+binder 442:443 <> f':12
+binder 445:445 <> a:13
+binder 447:448 <> a':14
+R462:465 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R451:456 nameless.DBEta <> epstep:1 ind
+R460:461 nameless.DBEta <> f':12 var
+R458:458 nameless.DBEta <> f:11 var
+R477:480 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R466:471 nameless.DBEta <> epstep:1 ind
+R475:476 nameless.DBEta <> a':14 var
+R473:473 nameless.DBEta <> a:13 var
+R481:486 nameless.DBEta <> epstep:1 ind
+R500:503 nameless.DBSyntax <> TApp constr
+R508:509 nameless.DBEta <> a':14 var
+R505:506 nameless.DBEta <> f':12 var
+R489:492 nameless.DBSyntax <> TApp constr
+R496:496 nameless.DBEta <> a:13 var
+R494:494 nameless.DBEta <> f:11 var
+binder 534:534 <> A:15
+binder 536:537 <> A':16
+binder 539:539 <> B:17
+binder 541:542 <> B':18
+R556:559 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R545:550 nameless.DBEta <> epstep:1 ind
+R554:555 nameless.DBEta <> A':16 var
+R552:552 nameless.DBEta <> A:15 var
+R571:574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R560:565 nameless.DBEta <> epstep:1 ind
+R569:570 nameless.DBEta <> B':18 var
+R567:567 nameless.DBEta <> B:17 var
+R575:580 nameless.DBEta <> epstep:1 ind
+R596:601 nameless.DBSyntax <> TSigma constr
+R606:607 nameless.DBEta <> B':18 var
+R603:604 nameless.DBEta <> A':16 var
+R583:588 nameless.DBSyntax <> TSigma constr
+R592:592 nameless.DBEta <> B:17 var
+R590:590 nameless.DBEta <> A:15 var
+binder 631:631 <> a:19
+binder 633:634 <> a':20
+binder 636:636 <> b:21
+binder 638:639 <> b':22
+R653:656 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R642:647 nameless.DBEta <> epstep:1 ind
+R651:652 nameless.DBEta <> a':20 var
+R649:649 nameless.DBEta <> a:19 var
+R668:671 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R657:662 nameless.DBEta <> epstep:1 ind
+R666:667 nameless.DBEta <> b':22 var
+R664:664 nameless.DBEta <> b:21 var
+R672:677 nameless.DBEta <> epstep:1 ind
+R692:696 nameless.DBSyntax <> TPair constr
+R701:702 nameless.DBEta <> b':22 var
+R698:699 nameless.DBEta <> a':20 var
+R680:684 nameless.DBSyntax <> TPair constr
+R688:688 nameless.DBEta <> b:21 var
+R686:686 nameless.DBEta <> a:19 var
+binder 725:725 <> p:23
+binder 727:728 <> p':24
+R742:745 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R731:736 nameless.DBEta <> epstep:1 ind
+R740:741 nameless.DBEta <> p':24 var
+R738:738 nameless.DBEta <> p:23 var
+R746:751 nameless.DBEta <> epstep:1 ind
+R763:766 nameless.DBSyntax <> TFst constr
+R768:769 nameless.DBEta <> p':24 var
+R754:757 nameless.DBSyntax <> TFst constr
+R759:759 nameless.DBEta <> p:23 var
+binder 792:792 <> p:25
+binder 794:795 <> p':26
+R809:812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R798:803 nameless.DBEta <> epstep:1 ind
+R807:808 nameless.DBEta <> p':26 var
+R805:805 nameless.DBEta <> p:25 var
+R813:818 nameless.DBEta <> epstep:1 ind
+R830:833 nameless.DBSyntax <> TSnd constr
+R835:836 nameless.DBEta <> p':26 var
+R821:824 nameless.DBSyntax <> TSnd constr
+R826:826 nameless.DBEta <> p:25 var
+R854:859 nameless.DBEta <> epstep:1 ind
+R868:873 nameless.DBSyntax <> TUnitT constr
+R861:866 nameless.DBSyntax <> TUnitT constr
+R889:894 nameless.DBEta <> epstep:1 ind
+R902:906 nameless.DBSyntax <> TUnit constr
+R896:900 nameless.DBSyntax <> TUnit constr
+R921:926 nameless.DBEta <> epstep:1 ind
+R933:936 nameless.DBSyntax <> TUId constr
+R928:931 nameless.DBSyntax <> TUId constr
+binder 958:958 <> s:27
+R961:966 nameless.DBEta <> epstep:1 ind
+R978:981 nameless.DBSyntax <> TTag constr
+R983:983 nameless.DBEta <> s:27 var
+R969:972 nameless.DBSyntax <> TTag constr
+R974:974 nameless.DBEta <> s:27 var
+R1001:1006 nameless.DBEta <> epstep:1 ind
+R1015:1020 nameless.DBSyntax <> TEnumU constr
+R1008:1013 nameless.DBSyntax <> TEnumU constr
+R1036:1041 nameless.DBEta <> epstep:1 ind
+R1049:1053 nameless.DBSyntax <> TNilE constr
+R1043:1047 nameless.DBSyntax <> TNilE constr
+binder 1077:1079 <> tag:28
+binder 1081:1084 <> tag':29
+binder 1086:1086 <> E:30
+binder 1088:1089 <> E':31
+R1107:1110 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1092:1097 nameless.DBEta <> epstep:1 ind
+R1103:1106 nameless.DBEta <> tag':29 var
+R1099:1101 nameless.DBEta <> tag:28 var
+R1122:1125 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1111:1116 nameless.DBEta <> epstep:1 ind
+R1120:1121 nameless.DBEta <> E':31 var
+R1118:1118 nameless.DBEta <> E:30 var
+R1126:1131 nameless.DBEta <> epstep:1 ind
+R1149:1154 nameless.DBSyntax <> TConsE constr
+R1161:1162 nameless.DBEta <> E':31 var
+R1156:1159 nameless.DBEta <> tag':29 var
+R1134:1139 nameless.DBSyntax <> TConsE constr
+R1145:1145 nameless.DBEta <> E:30 var
+R1141:1143 nameless.DBEta <> tag:28 var
+binder 1187:1187 <> E:32
+binder 1189:1190 <> E':33
+R1204:1207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1193:1198 nameless.DBEta <> epstep:1 ind
+R1202:1203 nameless.DBEta <> E':33 var
+R1200:1200 nameless.DBEta <> E:32 var
+R1208:1213 nameless.DBEta <> epstep:1 ind
+R1227:1232 nameless.DBSyntax <> TEnumT constr
+R1234:1235 nameless.DBEta <> E':33 var
+R1216:1221 nameless.DBSyntax <> TEnumT constr
+R1223:1223 nameless.DBEta <> E:32 var
+R1253:1258 nameless.DBEta <> epstep:1 ind
+R1267:1272 nameless.DBSyntax <> TEZero constr
+R1260:1265 nameless.DBSyntax <> TEZero constr
+binder 1296:1296 <> n:34
+binder 1298:1299 <> n':35
+R1313:1316 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1302:1307 nameless.DBEta <> epstep:1 ind
+R1311:1312 nameless.DBEta <> n':35 var
+R1309:1309 nameless.DBEta <> n:34 var
+R1317:1322 nameless.DBEta <> epstep:1 ind
+R1336:1341 nameless.DBSyntax <> TESucc constr
+R1343:1344 nameless.DBEta <> n':35 var
+R1325:1330 nameless.DBSyntax <> TESucc constr
+R1332:1332 nameless.DBEta <> n:34 var
+binder 1367:1367 <> k:36
+binder 1369:1369 <> E:37
+binder 1371:1372 <> E':38
+binder 1374:1374 <> P:39
+binder 1376:1377 <> P':40
+R1391:1394 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1380:1385 nameless.DBEta <> epstep:1 ind
+R1389:1390 nameless.DBEta <> E':38 var
+R1387:1387 nameless.DBEta <> E:37 var
+R1406:1409 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1395:1400 nameless.DBEta <> epstep:1 ind
+R1404:1405 nameless.DBEta <> P':40 var
+R1402:1402 nameless.DBEta <> P:39 var
+R1410:1415 nameless.DBEta <> epstep:1 ind
+R1431:1434 nameless.DBSyntax <> TEPi constr
+R1441:1442 nameless.DBEta <> P':40 var
+R1438:1439 nameless.DBEta <> E':38 var
+R1436:1436 nameless.DBEta <> k:36 var
+R1418:1421 nameless.DBSyntax <> TEPi constr
+R1427:1427 nameless.DBEta <> P:39 var
+R1425:1425 nameless.DBEta <> E:37 var
+R1423:1423 nameless.DBEta <> k:36 var
+binder 1468:1468 <> k:41
+binder 1470:1470 <> E:42
+binder 1472:1473 <> E':43
+binder 1475:1475 <> P:44
+binder 1477:1478 <> P':45
+binder 1480:1480 <> p:46
+binder 1482:1483 <> p':47
+binder 1485:1485 <> e:48
+binder 1487:1488 <> e':49
+R1502:1505 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1491:1496 nameless.DBEta <> epstep:1 ind
+R1500:1501 nameless.DBEta <> E':43 var
+R1498:1498 nameless.DBEta <> E:42 var
+R1517:1520 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1506:1511 nameless.DBEta <> epstep:1 ind
+R1515:1516 nameless.DBEta <> P':45 var
+R1513:1513 nameless.DBEta <> P:44 var
+R1532:1535 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1521:1526 nameless.DBEta <> epstep:1 ind
+R1530:1531 nameless.DBEta <> p':47 var
+R1528:1528 nameless.DBEta <> p:46 var
+R1547:1550 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1536:1541 nameless.DBEta <> epstep:1 ind
+R1545:1546 nameless.DBEta <> e':49 var
+R1543:1543 nameless.DBEta <> e:48 var
+R1551:1556 nameless.DBEta <> epstep:1 ind
+R1579:1585 nameless.DBSyntax <> TSwitch constr
+R1598:1599 nameless.DBEta <> e':49 var
+R1595:1596 nameless.DBEta <> p':47 var
+R1592:1593 nameless.DBEta <> P':45 var
+R1589:1590 nameless.DBEta <> E':43 var
+R1587:1587 nameless.DBEta <> k:41 var
+R1559:1565 nameless.DBSyntax <> TSwitch constr
+R1575:1575 nameless.DBEta <> e:48 var
+R1573:1573 nameless.DBEta <> p:46 var
+R1571:1571 nameless.DBEta <> P:44 var
+R1569:1569 nameless.DBEta <> E:42 var
+R1567:1567 nameless.DBEta <> k:41 var
+binder 1624:1625 <> IT:50
+binder 1627:1629 <> IT':51
+R1645:1648 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1632:1637 nameless.DBEta <> epstep:1 ind
+R1642:1644 nameless.DBEta <> IT':51 var
+R1639:1640 nameless.DBEta <> IT:50 var
+R1649:1654 nameless.DBEta <> epstep:1 ind
+R1669:1674 nameless.DBSyntax <> TIDesc constr
+R1676:1678 nameless.DBEta <> IT':51 var
+R1657:1662 nameless.DBSyntax <> TIDesc constr
+R1664:1665 nameless.DBEta <> IT:50 var
+binder 1702:1702 <> i:52
+binder 1704:1705 <> i':53
+R1719:1722 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1708:1713 nameless.DBEta <> epstep:1 ind
+R1717:1718 nameless.DBEta <> i':53 var
+R1715:1715 nameless.DBEta <> i:52 var
+R1723:1728 nameless.DBEta <> epstep:1 ind
+R1741:1745 nameless.DBSyntax <> TIVar constr
+R1747:1748 nameless.DBEta <> i':53 var
+R1731:1735 nameless.DBSyntax <> TIVar constr
+R1737:1737 nameless.DBEta <> i:52 var
+R1763:1768 nameless.DBEta <> epstep:1 ind
+R1774:1776 nameless.DBSyntax <> TI1 constr
+R1770:1772 nameless.DBSyntax <> TI1 constr
+R1792:1797 nameless.DBEta <> epstep:1 ind
+R1805:1809 nameless.DBSyntax <> TIBot constr
+R1799:1803 nameless.DBSyntax <> TIBot constr
+binder 1833:1833 <> A:54
+binder 1835:1836 <> A':55
+binder 1838:1838 <> B:56
+binder 1840:1841 <> B':57
+R1855:1858 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1844:1849 nameless.DBEta <> epstep:1 ind
+R1853:1854 nameless.DBEta <> A':55 var
+R1851:1851 nameless.DBEta <> A:54 var
+R1870:1873 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1859:1864 nameless.DBEta <> epstep:1 ind
+R1868:1869 nameless.DBEta <> B':57 var
+R1866:1866 nameless.DBEta <> B:56 var
+R1874:1879 nameless.DBEta <> epstep:1 ind
+R1895:1900 nameless.DBSyntax <> TIProd constr
+R1905:1906 nameless.DBEta <> B':57 var
+R1902:1903 nameless.DBEta <> A':55 var
+R1882:1887 nameless.DBSyntax <> TIProd constr
+R1891:1891 nameless.DBEta <> B:56 var
+R1889:1889 nameless.DBEta <> A:54 var
+binder 1929:1929 <> A:58
+binder 1931:1932 <> A':59
+binder 1934:1934 <> D:60
+binder 1936:1937 <> D':61
+R1951:1954 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1940:1945 nameless.DBEta <> epstep:1 ind
+R1949:1950 nameless.DBEta <> A':59 var
+R1947:1947 nameless.DBEta <> A:58 var
+R1966:1969 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1955:1960 nameless.DBEta <> epstep:1 ind
+R1964:1965 nameless.DBEta <> D':61 var
+R1962:1962 nameless.DBEta <> D:60 var
+R1970:1975 nameless.DBEta <> epstep:1 ind
+R1989:1992 nameless.DBSyntax <> TIPi constr
+R1997:1998 nameless.DBEta <> D':61 var
+R1994:1995 nameless.DBEta <> A':59 var
+R1978:1981 nameless.DBSyntax <> TIPi constr
+R1985:1985 nameless.DBEta <> D:60 var
+R1983:1983 nameless.DBEta <> A:58 var
+binder 2022:2022 <> A:62
+binder 2024:2025 <> A':63
+binder 2027:2027 <> D:64
+binder 2029:2030 <> D':65
+R2044:2047 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2033:2038 nameless.DBEta <> epstep:1 ind
+R2042:2043 nameless.DBEta <> A':63 var
+R2040:2040 nameless.DBEta <> A:62 var
+R2059:2062 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2048:2053 nameless.DBEta <> epstep:1 ind
+R2057:2058 nameless.DBEta <> D':65 var
+R2055:2055 nameless.DBEta <> D:64 var
+R2063:2068 nameless.DBEta <> epstep:1 ind
+R2083:2087 nameless.DBSyntax <> TISig constr
+R2092:2093 nameless.DBEta <> D':65 var
+R2089:2090 nameless.DBEta <> A':63 var
+R2071:2075 nameless.DBSyntax <> TISig constr
+R2079:2079 nameless.DBEta <> D:64 var
+R2077:2077 nameless.DBEta <> A:62 var
+binder 2120:2120 <> E:66
+binder 2122:2123 <> E':67
+binder 2125:2125 <> D:68
+binder 2127:2128 <> D':69
+R2142:2145 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2131:2136 nameless.DBEta <> epstep:1 ind
+R2140:2141 nameless.DBEta <> E':67 var
+R2138:2138 nameless.DBEta <> E:66 var
+R2157:2160 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2146:2151 nameless.DBEta <> epstep:1 ind
+R2155:2156 nameless.DBEta <> D':69 var
+R2153:2153 nameless.DBEta <> D:68 var
+R2161:2166 nameless.DBEta <> epstep:1 ind
+R2184:2191 nameless.DBSyntax <> TIChoice constr
+R2196:2197 nameless.DBEta <> D':69 var
+R2193:2194 nameless.DBEta <> E':67 var
+R2169:2176 nameless.DBSyntax <> TIChoice constr
+R2180:2180 nameless.DBEta <> D:68 var
+R2178:2178 nameless.DBEta <> E:66 var
+binder 2223:2224 <> IT:70
+binder 2226:2228 <> IT':71
+binder 2230:2230 <> D:72
+binder 2232:2233 <> D':73
+binder 2235:2235 <> X:74
+binder 2237:2238 <> X':75
+R2254:2257 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2241:2246 nameless.DBEta <> epstep:1 ind
+R2251:2253 nameless.DBEta <> IT':71 var
+R2248:2249 nameless.DBEta <> IT:70 var
+R2269:2272 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2258:2263 nameless.DBEta <> epstep:1 ind
+R2267:2268 nameless.DBEta <> D':73 var
+R2265:2265 nameless.DBEta <> D:72 var
+R2284:2287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2273:2278 nameless.DBEta <> epstep:1 ind
+R2282:2283 nameless.DBEta <> X':75 var
+R2280:2280 nameless.DBEta <> X:74 var
+R2288:2293 nameless.DBEta <> epstep:1 ind
+R2313:2319 nameless.DBSyntax <> TInterp constr
+R2328:2329 nameless.DBEta <> X':75 var
+R2325:2326 nameless.DBEta <> D':73 var
+R2321:2323 nameless.DBEta <> IT':71 var
+R2296:2302 nameless.DBSyntax <> TInterp constr
+R2309:2309 nameless.DBEta <> X:74 var
+R2307:2307 nameless.DBEta <> D:72 var
+R2304:2305 nameless.DBEta <> IT:70 var
+binder 2352:2353 <> IT:76
+binder 2355:2357 <> IT':77
+binder 2359:2359 <> D:78
+binder 2361:2362 <> D':79
+R2378:2381 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2365:2370 nameless.DBEta <> epstep:1 ind
+R2375:2377 nameless.DBEta <> IT':77 var
+R2372:2373 nameless.DBEta <> IT:76 var
+R2393:2396 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2382:2387 nameless.DBEta <> epstep:1 ind
+R2391:2392 nameless.DBEta <> D':79 var
+R2389:2389 nameless.DBEta <> D:78 var
+R2397:2402 nameless.DBEta <> epstep:1 ind
+R2417:2420 nameless.DBSyntax <> TMuI constr
+R2426:2427 nameless.DBEta <> D':79 var
+R2422:2424 nameless.DBEta <> IT':77 var
+R2405:2408 nameless.DBSyntax <> TMuI constr
+R2413:2413 nameless.DBEta <> D:78 var
+R2410:2411 nameless.DBEta <> IT:76 var
+binder 2449:2449 <> x:80
+binder 2451:2452 <> x':81
+R2466:2469 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2455:2460 nameless.DBEta <> epstep:1 ind
+R2464:2465 nameless.DBEta <> x':81 var
+R2462:2462 nameless.DBEta <> x:80 var
+R2470:2475 nameless.DBEta <> epstep:1 ind
+R2486:2488 nameless.DBSyntax <> TIn constr
+R2490:2491 nameless.DBEta <> x':81 var
+R2478:2480 nameless.DBSyntax <> TIn constr
+R2482:2482 nameless.DBEta <> x:80 var
+binder 2514:2515 <> IT:82
+binder 2517:2519 <> IT':83
+binder 2521:2521 <> D:84
+binder 2523:2524 <> D':85
+binder 2526:2526 <> P:86
+binder 2528:2529 <> P':87
+binder 2531:2531 <> s:88
+binder 2533:2534 <> s':89
+binder 2536:2536 <> i:90
+binder 2538:2539 <> i':91
+binder 2541:2541 <> x:92
+binder 2543:2544 <> x':93
+R2560:2563 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2547:2552 nameless.DBEta <> epstep:1 ind
+R2557:2559 nameless.DBEta <> IT':83 var
+R2554:2555 nameless.DBEta <> IT:82 var
+R2575:2578 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2564:2569 nameless.DBEta <> epstep:1 ind
+R2573:2574 nameless.DBEta <> D':85 var
+R2571:2571 nameless.DBEta <> D:84 var
+R2590:2593 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2579:2584 nameless.DBEta <> epstep:1 ind
+R2588:2589 nameless.DBEta <> P':87 var
+R2586:2586 nameless.DBEta <> P:86 var
+R2605:2608 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2594:2599 nameless.DBEta <> epstep:1 ind
+R2603:2604 nameless.DBEta <> s':89 var
+R2601:2601 nameless.DBEta <> s:88 var
+R2620:2623 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2609:2614 nameless.DBEta <> epstep:1 ind
+R2618:2619 nameless.DBEta <> i':91 var
+R2616:2616 nameless.DBEta <> i:90 var
+R2635:2638 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2624:2629 nameless.DBEta <> epstep:1 ind
+R2633:2634 nameless.DBEta <> x':93 var
+R2631:2631 nameless.DBEta <> x:92 var
+R2639:2644 nameless.DBEta <> epstep:1 ind
+R2667:2670 nameless.DBSyntax <> TInd constr
+R2688:2689 nameless.DBEta <> x':93 var
+R2685:2686 nameless.DBEta <> i':91 var
+R2682:2683 nameless.DBEta <> s':89 var
+R2679:2680 nameless.DBEta <> P':87 var
+R2676:2677 nameless.DBEta <> D':85 var
+R2672:2674 nameless.DBEta <> IT':83 var
+R2647:2650 nameless.DBSyntax <> TInd constr
+R2663:2663 nameless.DBEta <> x:92 var
+R2661:2661 nameless.DBEta <> i:90 var
+R2659:2659 nameless.DBEta <> s:88 var
+R2657:2657 nameless.DBEta <> P:86 var
+R2655:2655 nameless.DBEta <> D:84 var
+R2652:2653 nameless.DBEta <> IT:82 var
+binder 2713:2714 <> IT:94
+binder 2716:2718 <> IT':95
+binder 2720:2720 <> D:96
+binder 2722:2723 <> D':97
+binder 2725:2725 <> X:98
+binder 2727:2728 <> X':99
+binder 2730:2730 <> x:100
+binder 2732:2733 <> x':101
+binder 2735:2735 <> P:102
+binder 2737:2738 <> P':103
+R2754:2757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2741:2746 nameless.DBEta <> epstep:1 ind
+R2751:2753 nameless.DBEta <> IT':95 var
+R2748:2749 nameless.DBEta <> IT:94 var
+R2769:2772 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2758:2763 nameless.DBEta <> epstep:1 ind
+R2767:2768 nameless.DBEta <> D':97 var
+R2765:2765 nameless.DBEta <> D:96 var
+R2784:2787 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2773:2778 nameless.DBEta <> epstep:1 ind
+R2782:2783 nameless.DBEta <> X':99 var
+R2780:2780 nameless.DBEta <> X:98 var
+R2799:2802 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2788:2793 nameless.DBEta <> epstep:1 ind
+R2797:2798 nameless.DBEta <> x':101 var
+R2795:2795 nameless.DBEta <> x:100 var
+R2814:2817 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2803:2808 nameless.DBEta <> epstep:1 ind
+R2812:2813 nameless.DBEta <> P':103 var
+R2810:2810 nameless.DBEta <> P:102 var
+R2818:2823 nameless.DBEta <> epstep:1 ind
+R2845:2849 nameless.DBSyntax <> TIAll constr
+R2864:2865 nameless.DBEta <> P':103 var
+R2861:2862 nameless.DBEta <> x':101 var
+R2858:2859 nameless.DBEta <> X':99 var
+R2855:2856 nameless.DBEta <> D':97 var
+R2851:2853 nameless.DBEta <> IT':95 var
+R2826:2830 nameless.DBSyntax <> TIAll constr
+R2841:2841 nameless.DBEta <> P:102 var
+R2839:2839 nameless.DBEta <> x:100 var
+R2837:2837 nameless.DBEta <> X:98 var
+R2835:2835 nameless.DBEta <> D:96 var
+R2832:2833 nameless.DBEta <> IT:94 var
+binder 2889:2890 <> IT:104
+binder 2892:2894 <> IT':105
+binder 2896:2896 <> D:106
+binder 2898:2899 <> D':107
+binder 2901:2901 <> X:108
+binder 2903:2904 <> X':109
+binder 2906:2906 <> P:110
+binder 2908:2909 <> P':111
+binder 2911:2911 <> h:112
+binder 2913:2914 <> h':113
+binder 2916:2916 <> x:114
+binder 2918:2919 <> x':115
+R2935:2938 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2922:2927 nameless.DBEta <> epstep:1 ind
+R2932:2934 nameless.DBEta <> IT':105 var
+R2929:2930 nameless.DBEta <> IT:104 var
+R2950:2953 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2939:2944 nameless.DBEta <> epstep:1 ind
+R2948:2949 nameless.DBEta <> D':107 var
+R2946:2946 nameless.DBEta <> D:106 var
+R2965:2968 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2954:2959 nameless.DBEta <> epstep:1 ind
+R2963:2964 nameless.DBEta <> X':109 var
+R2961:2961 nameless.DBEta <> X:108 var
+R2980:2983 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2969:2974 nameless.DBEta <> epstep:1 ind
+R2978:2979 nameless.DBEta <> P':111 var
+R2976:2976 nameless.DBEta <> P:110 var
+R2995:2998 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2984:2989 nameless.DBEta <> epstep:1 ind
+R2993:2994 nameless.DBEta <> h':113 var
+R2991:2991 nameless.DBEta <> h:112 var
+R3010:3013 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2999:3004 nameless.DBEta <> epstep:1 ind
+R3008:3009 nameless.DBEta <> x':115 var
+R3006:3006 nameless.DBEta <> x:114 var
+R3014:3019 nameless.DBEta <> epstep:1 ind
+R3043:3047 nameless.DBSyntax <> THyps constr
+R3065:3066 nameless.DBEta <> x':115 var
+R3062:3063 nameless.DBEta <> h':113 var
+R3059:3060 nameless.DBEta <> P':111 var
+R3056:3057 nameless.DBEta <> X':109 var
+R3053:3054 nameless.DBEta <> D':107 var
+R3049:3051 nameless.DBEta <> IT':105 var
+R3022:3026 nameless.DBSyntax <> THyps constr
+R3039:3039 nameless.DBEta <> x:114 var
+R3037:3037 nameless.DBEta <> h:112 var
+R3035:3035 nameless.DBEta <> P:110 var
+R3033:3033 nameless.DBEta <> X:108 var
+R3031:3031 nameless.DBEta <> D:106 var
+R3028:3029 nameless.DBEta <> IT:104 var
+binder 3091:3092 <> IT:116
+binder 3094:3096 <> IT':117
+binder 3098:3098 <> F:118
+binder 3100:3101 <> F':119
+binder 3103:3103 <> G:120
+binder 3105:3106 <> G':121
+R3122:3125 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3109:3114 nameless.DBEta <> epstep:1 ind
+R3119:3121 nameless.DBEta <> IT':117 var
+R3116:3117 nameless.DBEta <> IT:116 var
+R3137:3140 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3126:3131 nameless.DBEta <> epstep:1 ind
+R3135:3136 nameless.DBEta <> F':119 var
+R3133:3133 nameless.DBEta <> F:118 var
+R3152:3155 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3141:3146 nameless.DBEta <> epstep:1 ind
+R3150:3151 nameless.DBEta <> G':121 var
+R3148:3148 nameless.DBEta <> G:120 var
+R3156:3161 nameless.DBEta <> epstep:1 ind
+R3180:3185 nameless.DBSyntax <> TClose constr
+R3194:3195 nameless.DBEta <> G':121 var
+R3191:3192 nameless.DBEta <> F':119 var
+R3187:3189 nameless.DBEta <> IT':117 var
+R3164:3169 nameless.DBSyntax <> TClose constr
+R3176:3176 nameless.DBEta <> G:120 var
+R3174:3174 nameless.DBEta <> F:118 var
+R3171:3172 nameless.DBEta <> IT:116 var
+binder 3224:3224 <> k:122
+binder 3226:3227 <> IT:123
+binder 3229:3231 <> IT':124
+binder 3233:3233 <> F:125
+binder 3235:3236 <> F':126
+binder 3238:3238 <> G:127
+binder 3240:3241 <> G':128
+binder 3243:3243 <> i:129
+binder 3245:3246 <> i':130
+binder 3248:3248 <> Q:131
+binder 3250:3251 <> Q':132
+binder 3253:3253 <> b:133
+binder 3255:3256 <> b':134
+binder 3258:3258 <> x:135
+binder 3260:3261 <> x':136
+R3277:3280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3264:3269 nameless.DBEta <> epstep:1 ind
+R3274:3276 nameless.DBEta <> IT':124 var
+R3271:3272 nameless.DBEta <> IT:123 var
+R3292:3295 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3281:3286 nameless.DBEta <> epstep:1 ind
+R3290:3291 nameless.DBEta <> F':126 var
+R3288:3288 nameless.DBEta <> F:125 var
+R3307:3310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3296:3301 nameless.DBEta <> epstep:1 ind
+R3305:3306 nameless.DBEta <> G':128 var
+R3303:3303 nameless.DBEta <> G:127 var
+R3322:3325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3311:3316 nameless.DBEta <> epstep:1 ind
+R3320:3321 nameless.DBEta <> i':130 var
+R3318:3318 nameless.DBEta <> i:129 var
+R3337:3340 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3326:3331 nameless.DBEta <> epstep:1 ind
+R3335:3336 nameless.DBEta <> Q':132 var
+R3333:3333 nameless.DBEta <> Q:131 var
+R3352:3355 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3341:3346 nameless.DBEta <> epstep:1 ind
+R3350:3351 nameless.DBEta <> b':134 var
+R3348:3348 nameless.DBEta <> b:133 var
+R3367:3370 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3356:3361 nameless.DBEta <> epstep:1 ind
+R3365:3366 nameless.DBEta <> x':136 var
+R3363:3363 nameless.DBEta <> x:135 var
+R3371:3376 nameless.DBEta <> epstep:1 ind
+R3409:3418 nameless.DBSyntax <> TCloseCase constr
+R3441:3442 nameless.DBEta <> x':136 var
+R3438:3439 nameless.DBEta <> b':134 var
+R3435:3436 nameless.DBEta <> Q':132 var
+R3432:3433 nameless.DBEta <> i':130 var
+R3429:3430 nameless.DBEta <> G':128 var
+R3426:3427 nameless.DBEta <> F':126 var
+R3422:3424 nameless.DBEta <> IT':124 var
+R3420:3420 nameless.DBEta <> k:122 var
+R3379:3388 nameless.DBSyntax <> TCloseCase constr
+R3405:3405 nameless.DBEta <> x:135 var
+R3403:3403 nameless.DBEta <> b:133 var
+R3401:3401 nameless.DBEta <> Q:131 var
+R3399:3399 nameless.DBEta <> i:129 var
+R3397:3397 nameless.DBEta <> G:127 var
+R3395:3395 nameless.DBEta <> F:125 var
+R3392:3393 nameless.DBEta <> IT:123 var
+R3390:3390 nameless.DBEta <> k:122 var
+binder 3470:3471 <> IT:137
+binder 3473:3475 <> IT':138
+binder 3477:3477 <> G:139
+binder 3479:3480 <> G':140
+binder 3482:3482 <> P:141
+binder 3484:3485 <> P':142
+binder 3487:3487 <> s:143
+binder 3489:3490 <> s':144
+binder 3492:3492 <> F:145
+binder 3494:3495 <> F':146
+binder 3497:3497 <> i:147
+binder 3499:3500 <> i':148
+binder 3502:3502 <> x:149
+binder 3504:3505 <> x':150
+R3521:3524 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3508:3513 nameless.DBEta <> epstep:1 ind
+R3518:3520 nameless.DBEta <> IT':138 var
+R3515:3516 nameless.DBEta <> IT:137 var
+R3536:3539 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3525:3530 nameless.DBEta <> epstep:1 ind
+R3534:3535 nameless.DBEta <> G':140 var
+R3532:3532 nameless.DBEta <> G:139 var
+R3551:3554 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3540:3545 nameless.DBEta <> epstep:1 ind
+R3549:3550 nameless.DBEta <> P':142 var
+R3547:3547 nameless.DBEta <> P:141 var
+R3566:3569 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3555:3560 nameless.DBEta <> epstep:1 ind
+R3564:3565 nameless.DBEta <> s':144 var
+R3562:3562 nameless.DBEta <> s:143 var
+R3581:3584 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3570:3575 nameless.DBEta <> epstep:1 ind
+R3579:3580 nameless.DBEta <> F':146 var
+R3577:3577 nameless.DBEta <> F:145 var
+R3596:3599 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3585:3590 nameless.DBEta <> epstep:1 ind
+R3594:3595 nameless.DBEta <> i':148 var
+R3592:3592 nameless.DBEta <> i:147 var
+R3611:3614 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3600:3605 nameless.DBEta <> epstep:1 ind
+R3609:3610 nameless.DBEta <> x':150 var
+R3607:3607 nameless.DBEta <> x:149 var
+R3615:3620 nameless.DBEta <> epstep:1 ind
+R3650:3658 nameless.DBSyntax <> TCloseInd constr
+R3679:3680 nameless.DBEta <> x':150 var
+R3676:3677 nameless.DBEta <> i':148 var
+R3673:3674 nameless.DBEta <> F':146 var
+R3670:3671 nameless.DBEta <> s':144 var
+R3667:3668 nameless.DBEta <> P':142 var
+R3664:3665 nameless.DBEta <> G':140 var
+R3660:3662 nameless.DBEta <> IT':138 var
+R3623:3631 nameless.DBSyntax <> TCloseInd constr
+R3646:3646 nameless.DBEta <> x:149 var
+R3644:3644 nameless.DBEta <> i:147 var
+R3642:3642 nameless.DBEta <> F:145 var
+R3640:3640 nameless.DBEta <> s:143 var
+R3638:3638 nameless.DBEta <> P:141 var
+R3636:3636 nameless.DBEta <> G:139 var
+R3633:3634 nameless.DBEta <> IT:137 var
+binder 3703:3703 <> f:151
+binder 3705:3706 <> f':152
+R3720:3727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3709:3714 nameless.DBEta <> epstep:1 ind
+R3718:3719 nameless.DBEta <> f':152 var
+R3716:3716 nameless.DBEta <> f:151 var
+R3728:3733 nameless.DBEta <> epstep:1 ind
+R3771:3772 nameless.DBEta <> f':152 var
+R3736:3739 nameless.DBSyntax <> TLam constr
+R3742:3745 nameless.DBSyntax <> TApp constr
+R3761:3764 nameless.DBSyntax <> TVar constr
+R3748:3751 nameless.DBSyntax <> lift def
+R3757:3757 nameless.DBEta <> f:151 var
+scheme 132:137 <> epstep_ind
+scheme 132:137 <> epstep_sind
+prf 3782:3792 <> epstep_refl
+binder 3803:3803 <> t:153
+R3806:3811 nameless.DBEta <> epstep ind
+R3813:3813 nameless.DBEta <> t:153 var
+R3815:3815 nameless.DBEta <> t:153 var
+prf 3875:3885 <> epstep_lift
+binder 3896:3896 <> t:154
+binder 3898:3898 <> u:155
+R3911:3914 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3901:3906 nameless.DBEta <> epstep ind
+R3908:3908 nameless.DBEta <> t:154 var
+R3910:3910 nameless.DBEta <> u:155 var
+binder 3922:3922 <> d:156
+binder 3924:3924 <> c:157
+R3929:3934 nameless.DBEta <> epstep ind
+R3937:3940 nameless.DBSyntax <> lift def
+R3946:3946 nameless.DBEta <> t:154 var
+R3944:3944 nameless.DBEta <> c:157 var
+R3942:3942 nameless.DBEta <> d:156 var
+R3950:3953 nameless.DBSyntax <> lift def
+R3959:3959 nameless.DBEta <> u:155 var
+R3957:3957 nameless.DBEta <> c:157 var
+R3955:3955 nameless.DBEta <> d:156 var
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4037:4047 nameless.DBEta <> epstep_refl thm
+R4081:4098 nameless.DBParallelBase <> lift_lift_one_zero thm
+R4081:4098 nameless.DBParallelBase <> lift_lift_one_zero thm
+R4081:4098 nameless.DBParallelBase <> lift_lift_one_zero thm
+R4107:4113 nameless.DBEta <> eps_eta constr
+R4107:4113 nameless.DBEta <> eps_eta constr
+prf 4146:4157 <> epstep_subst
+binder 4168:4168 <> t:158
+binder 4170:4171 <> t':159
+R4185:4188 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4174:4179 nameless.DBEta <> epstep ind
+R4181:4181 nameless.DBEta <> t:158 var
+R4183:4184 nameless.DBEta <> t':159 var
+binder 4196:4196 <> u:160
+binder 4198:4199 <> u':161
+binder 4201:4201 <> c:162
+R4217:4220 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4206:4211 nameless.DBEta <> epstep ind
+R4213:4213 nameless.DBEta <> u:160 var
+R4215:4216 nameless.DBEta <> u':161 var
+R4221:4226 nameless.DBEta <> epstep ind
+R4229:4233 nameless.DBSyntax <> subst def
+R4239:4239 nameless.DBEta <> t:158 var
+R4237:4237 nameless.DBEta <> c:162 var
+R4235:4235 nameless.DBEta <> u:160 var
+R4243:4247 nameless.DBSyntax <> subst def
+R4254:4255 nameless.DBEta <> t':159 var
+R4252:4252 nameless.DBEta <> c:162 var
+R4249:4250 nameless.DBEta <> u':161 var
+R4319:4323 nameless.DBSyntax <> subst def
+R4377:4380 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R4392:4402 nameless.DBEta <> epstep_refl thm
+R4377:4380 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R4392:4402 nameless.DBEta <> epstep_refl thm
+R4422:4425 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R4441:4451 nameless.DBEta <> epstep_lift thm
+R4454:4464 nameless.DBEta <> epstep_refl thm
+R4422:4425 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R4441:4451 nameless.DBEta <> epstep_lift thm
+R4441:4451 nameless.DBEta <> epstep_lift thm
+R4454:4464 nameless.DBEta <> epstep_refl thm
+R4454:4464 nameless.DBEta <> epstep_refl thm
+R4479:4497 nameless.DBParallelBase <> subst_lift_one_zero thm
+R4479:4497 nameless.DBParallelBase <> subst_lift_one_zero thm
+R4479:4497 nameless.DBParallelBase <> subst_lift_one_zero thm
+R4506:4512 nameless.DBEta <> eps_eta constr
+R4506:4512 nameless.DBEta <> eps_eta constr
+prf 4547:4565 <> epstep_lift_inverse
+binder 4576:4576 <> t:163
+binder 4578:4578 <> T:164
+R4593:4596 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4583:4588 nameless.DBEta <> epstep ind
+R4590:4590 nameless.DBEta <> t:163 var
+R4592:4592 nameless.DBEta <> T:164 var
+binder 4604:4604 <> f:165
+binder 4606:4606 <> k:166
+R4623:4628 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4610:4612 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4609:4609 nameless.DBEta <> t:163 var
+R4613:4616 nameless.DBSyntax <> lift def
+R4622:4622 nameless.DBEta <> f:165 var
+R4620:4620 nameless.DBEta <> k:166 var
+R4629:4635 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4637:4638 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4636:4636 <> u:167
+R4653:4656 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4640:4642 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4639:4639 nameless.DBEta <> T:164 var
+R4643:4646 nameless.DBSyntax <> lift def
+R4652:4652 nameless.DBEta <> u:167 var
+R4650:4650 nameless.DBEta <> k:166 var
+R4657:4662 nameless.DBEta <> epstep ind
+R4664:4664 nameless.DBEta <> f:165 var
+R4666:4666 nameless.DBEta <> u:167 var
+R4824:4826 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4790:4793 nameless.DBSyntax <> TLam constr
+R4796:4799 nameless.DBSyntax <> TApp constr
+R4816:4819 nameless.DBSyntax <> TVar constr
+R4802:4805 nameless.DBSyntax <> lift def
+R4827:4830 nameless.DBSyntax <> lift def
+R4824:4826 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4790:4793 nameless.DBSyntax <> TLam constr
+R4796:4799 nameless.DBSyntax <> TApp constr
+R4816:4819 nameless.DBSyntax <> TVar constr
+R4802:4805 nameless.DBSyntax <> lift def
+R4827:4830 nameless.DBSyntax <> lift def
+binder 4871:4872 <> f0:168
+binder 4874:4874 <> k:169
+R4893:4896 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4879:4881 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4882:4885 nameless.DBSyntax <> lift def
+R4891:4892 nameless.DBEta <> f0:168 var
+R4889:4889 nameless.DBEta <> k:169 var
+binder 4871:4872 <> f0:170
+binder 4874:4874 <> k:171
+R4893:4896 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4879:4881 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4882:4885 nameless.DBSyntax <> lift def
+R4891:4892 nameless.DBEta <> f0:170 var
+R4889:4889 nameless.DBEta <> k:171 var
+R4923:4945 nameless.DBParallelBase <> lift_eta_shape_decomp_k thm
+R4966:4971 Corelib.Init.Logic <> eq_sym thm
+R5034:5040 Corelib.Init.Logic <> eq_refl constr
+R5119:5125 nameless.DBEta <> eps_eta constr
+R4923:4945 nameless.DBParallelBase <> lift_eta_shape_decomp_k thm
+R4966:4971 Corelib.Init.Logic <> eq_sym thm
+R5034:5040 Corelib.Init.Logic <> eq_refl constr
+R5119:5125 nameless.DBEta <> eps_eta constr
+R5169:5172 nameless.DBSyntax <> lift def
+R5241:5247 Stdlib.Arith.PeanoNat Nat ltb def
+R5241:5247 Stdlib.Arith.PeanoNat Nat ltb def
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R5272:5275 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+binder 5386:5386 <> f:172
+binder 5388:5388 <> k:173
+R5417:5428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5404:5406 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5391:5394 nameless.DBSyntax <> lift def
+R5407:5410 nameless.DBSyntax <> lift def
+R5416:5416 nameless.DBEta <> f:172 var
+R5414:5414 nameless.DBEta <> k:173 var
+R5429:5435 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5437:5438 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5436:5436 <> u:174
+R5456:5459 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5443:5445 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5446:5449 nameless.DBSyntax <> lift def
+R5455:5455 nameless.DBEta <> u:174 var
+R5453:5453 nameless.DBEta <> k:173 var
+R5460:5465 nameless.DBEta <> epstep ind
+R5467:5467 nameless.DBEta <> f:172 var
+R5469:5469 nameless.DBEta <> u:174 var
+binder 5386:5386 <> f:175
+binder 5388:5388 <> k:176
+R5417:5428 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5404:5406 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5391:5394 nameless.DBSyntax <> lift def
+R5407:5410 nameless.DBSyntax <> lift def
+R5416:5416 nameless.DBEta <> f:175 var
+R5414:5414 nameless.DBEta <> k:176 var
+R5429:5435 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5437:5438 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5436:5436 <> u:177
+R5456:5459 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5443:5445 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5446:5449 nameless.DBSyntax <> lift def
+R5455:5455 nameless.DBEta <> u:177 var
+R5453:5453 nameless.DBEta <> k:176 var
+R5460:5465 nameless.DBEta <> epstep ind
+R5467:5467 nameless.DBEta <> f:175 var
+R5469:5469 nameless.DBEta <> u:177 var
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5585:5591 Corelib.Init.Logic <> eq_refl constr
+R5699:5702 nameless.DBSyntax <> lift def
+prf 5748:5762 <> eta_app_inverse
+binder 5773:5773 <> f:178
+binder 5775:5775 <> t:179
+R5817:5822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5780:5785 nameless.DBEta <> epstep ind
+R5788:5791 nameless.DBSyntax <> TApp constr
+R5807:5810 nameless.DBSyntax <> TVar constr
+R5794:5797 nameless.DBSyntax <> lift def
+R5803:5803 nameless.DBEta <> f:178 var
+R5816:5816 nameless.DBEta <> t:179 var
+R5823:5829 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5831:5832 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5830:5830 <> u:180
+R5863:5866 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5834:5836 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5833:5833 nameless.DBEta <> t:179 var
+R5837:5840 nameless.DBSyntax <> TApp constr
+R5856:5859 nameless.DBSyntax <> TVar constr
+R5843:5846 nameless.DBSyntax <> lift def
+R5852:5852 nameless.DBEta <> u:180 var
+R5867:5872 nameless.DBEta <> epstep ind
+R5874:5874 nameless.DBEta <> f:178 var
+R5876:5876 nameless.DBEta <> u:180 var
+R5944:5949 nameless.DBEta <> epstep ind
+R5952:5955 nameless.DBSyntax <> TVar constr
+R5944:5949 nameless.DBEta <> epstep ind
+R5952:5955 nameless.DBSyntax <> TVar constr
+R6016:6021 nameless.DBEta <> epstep ind
+R6024:6027 nameless.DBSyntax <> lift def
+R6016:6021 nameless.DBEta <> epstep ind
+R6024:6027 nameless.DBSyntax <> lift def
+R6062:6080 nameless.DBEta <> epstep_lift_inverse thm
+R6092:6098 Corelib.Init.Logic <> eq_refl constr
+R6062:6080 nameless.DBEta <> epstep_lift_inverse thm
+R6092:6098 Corelib.Init.Logic <> eq_refl constr
+binder 6235:6235 <> z:181
+R6249:6252 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6238:6243 nameless.DBEta <> epstep ind
+R6248:6248 nameless.DBEta <> z:181 var
+R6253:6259 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6261:6262 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6260:6260 <> w:182
+R6274:6277 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6263:6268 nameless.DBEta <> epstep ind
+R6273:6273 nameless.DBEta <> w:182 var
+R6278:6283 nameless.DBEta <> epstep ind
+R6285:6285 nameless.DBEta <> z:181 var
+R6287:6287 nameless.DBEta <> w:182 var
+binder 6235:6235 <> z:183
+R6249:6252 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6238:6243 nameless.DBEta <> epstep ind
+R6248:6248 nameless.DBEta <> z:183 var
+R6253:6259 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6261:6262 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6260:6260 <> w:184
+R6274:6277 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6263:6268 nameless.DBEta <> epstep ind
+R6273:6273 nameless.DBEta <> w:184 var
+R6278:6283 nameless.DBEta <> epstep ind
+R6285:6285 nameless.DBEta <> z:183 var
+R6287:6287 nameless.DBEta <> w:184 var
+R6298:6303 nameless.DBEta <> epstep ind
+R6298:6303 nameless.DBEta <> epstep ind
+prf 6494:6507 <> epstep_diamond
+R6511:6517 nameless.DBParallelBase <> diamond def
+R6519:6524 nameless.DBEta <> epstep ind
+binder 6764:6764 <> z:185
+R6805:6808 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6767:6772 nameless.DBEta <> epstep ind
+R6775:6778 nameless.DBSyntax <> TApp constr
+R6795:6798 nameless.DBSyntax <> TVar constr
+R6781:6784 nameless.DBSyntax <> lift def
+R6804:6804 nameless.DBEta <> z:185 var
+binder 6764:6764 <> z:186
+R6805:6808 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6767:6772 nameless.DBEta <> epstep ind
+R6775:6778 nameless.DBSyntax <> TApp constr
+R6795:6798 nameless.DBSyntax <> TVar constr
+R6781:6784 nameless.DBSyntax <> lift def
+R6804:6804 nameless.DBEta <> z:186 var
+R6822:6827 nameless.DBEta <> epstep ind
+R6830:6833 nameless.DBSyntax <> TApp constr
+R6850:6853 nameless.DBSyntax <> TVar constr
+R6836:6839 nameless.DBSyntax <> lift def
+R6822:6827 nameless.DBEta <> epstep ind
+R6830:6833 nameless.DBSyntax <> TApp constr
+R6850:6853 nameless.DBSyntax <> TVar constr
+R6836:6839 nameless.DBSyntax <> lift def
+R6876:6881 nameless.DBEta <> epstep ind
+R6876:6881 nameless.DBEta <> epstep ind
+R6913:6927 nameless.DBEta <> eta_app_inverse thm
+R6988:6993 nameless.DBEta <> epstep ind
+R6996:6999 nameless.DBSyntax <> TApp constr
+R7015:7018 nameless.DBSyntax <> TVar constr
+R7002:7005 nameless.DBSyntax <> lift def
+R7033:7036 nameless.DBSyntax <> TApp constr
+R7052:7055 nameless.DBSyntax <> TVar constr
+R7039:7042 nameless.DBSyntax <> lift def
+R7098:7108 nameless.DBEta <> epstep_lift thm
+R7190:7204 nameless.DBEta <> eta_app_inverse thm
+R7249:7263 nameless.DBEta <> eta_app_inverse thm
+R6913:6927 nameless.DBEta <> eta_app_inverse thm
+R6988:6993 nameless.DBEta <> epstep ind
+R6996:6999 nameless.DBSyntax <> TApp constr
+R7015:7018 nameless.DBSyntax <> TVar constr
+R7002:7005 nameless.DBSyntax <> lift def
+R7033:7036 nameless.DBSyntax <> TApp constr
+R7052:7055 nameless.DBSyntax <> TVar constr
+R7039:7042 nameless.DBSyntax <> lift def
+R7098:7108 nameless.DBEta <> epstep_lift thm
+R7190:7204 nameless.DBEta <> eta_app_inverse thm
+R7249:7263 nameless.DBEta <> eta_app_inverse thm
+R7319:7321 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7319:7321 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7374:7391 nameless.DBParallelBase <> lift_one_injective thm
+R7374:7391 nameless.DBParallelBase <> lift_one_injective thm
+R7450:7456 nameless.DBEta <> eps_eta constr
+R7450:7456 nameless.DBEta <> eps_eta constr
+binder 7509:7509 <> z:187
+R7523:7526 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7512:7517 nameless.DBEta <> epstep ind
+R7522:7522 nameless.DBEta <> z:187 var
+binder 7509:7509 <> z:188
+R7523:7526 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7512:7517 nameless.DBEta <> epstep ind
+R7522:7522 nameless.DBEta <> z:188 var
+R7541:7546 nameless.DBEta <> epstep ind
+R7549:7552 nameless.DBSyntax <> TApp constr
+R7569:7572 nameless.DBSyntax <> TVar constr
+R7555:7558 nameless.DBSyntax <> lift def
+R7541:7546 nameless.DBEta <> epstep ind
+R7549:7552 nameless.DBSyntax <> TApp constr
+R7569:7572 nameless.DBSyntax <> TVar constr
+R7555:7558 nameless.DBSyntax <> lift def
+R7606:7620 nameless.DBEta <> eta_app_inverse thm
+R7747:7753 nameless.DBEta <> eps_eta constr
+R7606:7620 nameless.DBEta <> eta_app_inverse thm
+R7747:7753 nameless.DBEta <> eps_eta constr
+R7800:7802 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7789:7792 nameless.DBSyntax <> lift def
+R7803:7806 nameless.DBSyntax <> lift def
+R7800:7802 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7789:7792 nameless.DBSyntax <> lift def
+R7803:7806 nameless.DBSyntax <> lift def
+R7835:7852 nameless.DBParallelBase <> lift_one_injective thm
+R7835:7852 nameless.DBParallelBase <> lift_one_injective thm

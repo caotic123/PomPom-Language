@@ -1,0 +1,279 @@
+DIGEST 7f1011dd648f14b201d44a578242d54e
+FNestedUniquenessProbe
+R15:41 nameless.DBDescriptionModel <> <> lib
+R51:54 nameless.DBFullReducibility Full <> mod
+sec 65:69 <> Local
+var 81:84 Local atom
+R92:95 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R88:91 nameless.DBSyntax <> term ind
+R96:96 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R109:113 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R101:104 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R97:100 nameless.DBSyntax <> term ind
+var 131:146 Local atom_not_neutral
+binder 157:157 <> n:3
+binder 159:159 <> R:4
+R170:173 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R162:165 NestedUniquenessProbe <> Local.atom var
+R167:167 NestedUniquenessProbe <> n:3 var
+R169:169 NestedUniquenessProbe <> R:4 var
+R174:175 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R176:182 nameless.DBFullReducibility Full neutral def
+R184:184 NestedUniquenessProbe <> n:3 var
+var 198:208 Local atom_not_pi
+binder 219:219 <> A:7
+binder 221:221 <> B:8
+binder 223:223 <> R:9
+R226:227 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R228:231 NestedUniquenessProbe <> Local.atom var
+R234:236 nameless.DBSyntax <> TPi constr
+R240:240 NestedUniquenessProbe <> B:8 var
+R238:238 NestedUniquenessProbe <> A:7 var
+R243:243 NestedUniquenessProbe <> R:9 var
+var 257:270 Local atom_not_sigma
+binder 281:281 <> A:12
+binder 283:283 <> B:13
+binder 285:285 <> R:14
+R288:289 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R290:293 NestedUniquenessProbe <> Local.atom var
+R296:301 nameless.DBSyntax <> TSigma constr
+R305:305 NestedUniquenessProbe <> B:13 var
+R303:303 NestedUniquenessProbe <> A:12 var
+R308:308 NestedUniquenessProbe <> R:14 var
+var 322:332 Local atom_unique
+binder 343:343 <> n:17
+binder 345:345 <> R:18
+binder 347:347 <> S:19
+R358:361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R350:353 NestedUniquenessProbe <> Local.atom var
+R355:355 NestedUniquenessProbe <> n:17 var
+R357:357 NestedUniquenessProbe <> R:18 var
+R370:373 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R362:365 NestedUniquenessProbe <> Local.atom var
+R367:367 NestedUniquenessProbe <> n:17 var
+R369:369 NestedUniquenessProbe <> S:19 var
+R374:388 nameless.DBFullReducibility Full predicate_equiv def
+R390:390 NestedUniquenessProbe <> R:18 var
+R392:392 NestedUniquenessProbe <> S:19 var
+prf 401:430 <> type_interp_unique_transparent
+binder 441:441 <> A:22
+binder 443:443 <> R:23
+R466:471 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R446:456 nameless.DBSemanticTypes <> type_interp ind
+R463:463 NestedUniquenessProbe <> A:22 var
+R465:465 NestedUniquenessProbe <> R:23 var
+R458:461 NestedUniquenessProbe <> Local.atom var
+binder 479:479 <> B:24
+binder 481:481 <> S:25
+R504:507 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R484:494 nameless.DBSemanticTypes <> type_interp ind
+R501:501 NestedUniquenessProbe <> B:24 var
+R503:503 NestedUniquenessProbe <> S:25 var
+R496:499 NestedUniquenessProbe <> Local.atom var
+R516:519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R508:511 nameless.DBCore <> conv ind
+R515:515 NestedUniquenessProbe <> B:24 var
+R513:513 NestedUniquenessProbe <> A:22 var
+R520:534 nameless.DBFullReducibility Full predicate_equiv def
+R536:536 NestedUniquenessProbe <> R:23 var
+R538:538 NestedUniquenessProbe <> S:25 var
+R757:760 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R747:750 nameless.DBCore <> conv ind
+R761:775 nameless.DBFullReducibility Full predicate_equiv def
+R757:760 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R747:750 nameless.DBCore <> conv ind
+R761:775 nameless.DBFullReducibility Full predicate_equiv def
+R793:807 nameless.DBFullReducibility Full predicate_equiv def
+R793:807 nameless.DBFullReducibility Full predicate_equiv def
+R822:825 nameless.DBCore <> conv ind
+R822:825 nameless.DBCore <> conv ind
+R836:850 nameless.DBFullReducibility Full predicate_equiv def
+R836:850 nameless.DBFullReducibility Full predicate_equiv def
+R964:966 nameless.DBParallelBase <> rtc ind
+R968:976 nameless.DBCore <> reduction ind
+R964:966 nameless.DBParallelBase <> rtc ind
+R968:976 nameless.DBCore <> reduction ind
+R991:1001 nameless.DBFullNormalForms <> normal_form def
+R991:1001 nameless.DBFullNormalForms <> normal_form def
+R1016:1018 nameless.DBParallelBase <> rtc ind
+R1020:1028 nameless.DBCore <> reduction ind
+R1016:1018 nameless.DBParallelBase <> rtc ind
+R1020:1028 nameless.DBCore <> reduction ind
+R1043:1053 nameless.DBFullNormalForms <> normal_form def
+R1043:1053 nameless.DBFullNormalForms <> normal_form def
+R1068:1071 nameless.DBCore <> conv ind
+R1068:1071 nameless.DBCore <> conv ind
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1236:1238 nameless.DBSyntax <> TPi constr
+R1236:1238 nameless.DBSyntax <> TPi constr
+R1264:1266 nameless.DBSyntax <> TPi constr
+R1264:1266 nameless.DBSyntax <> TPi constr
+R1329:1334 nameless.DBSyntax <> TSigma constr
+R1329:1334 nameless.DBSyntax <> TSigma constr
+R1360:1365 nameless.DBSyntax <> TSigma constr
+R1360:1365 nameless.DBSyntax <> TSigma constr
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1133:1135 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1166 nameless.DBFullNormalForms <> normal_forms_join thm
+R1476:1482 nameless.DBFullReducibility Full neutral def
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1541:1556 NestedUniquenessProbe <> Local.atom_not_neutral var
+R1607:1617 NestedUniquenessProbe <> Local.atom_not_pi var
+R1607:1617 NestedUniquenessProbe <> Local.atom_not_pi var
+R1607:1617 NestedUniquenessProbe <> Local.atom_not_pi var
+R1607:1617 NestedUniquenessProbe <> Local.atom_not_pi var
+R1607:1617 NestedUniquenessProbe <> Local.atom_not_pi var
+R1607:1617 NestedUniquenessProbe <> Local.atom_not_pi var
+R1607:1617 NestedUniquenessProbe <> Local.atom_not_pi var
+R1607:1617 NestedUniquenessProbe <> Local.atom_not_pi var
+R1607:1617 NestedUniquenessProbe <> Local.atom_not_pi var
+R1668:1681 NestedUniquenessProbe <> Local.atom_not_sigma var
+R1668:1681 NestedUniquenessProbe <> Local.atom_not_sigma var
+R1668:1681 NestedUniquenessProbe <> Local.atom_not_sigma var
+R1668:1681 NestedUniquenessProbe <> Local.atom_not_sigma var
+R1668:1681 NestedUniquenessProbe <> Local.atom_not_sigma var
+R1668:1681 NestedUniquenessProbe <> Local.atom_not_sigma var
+R1668:1681 NestedUniquenessProbe <> Local.atom_not_sigma var
+R1758:1768 NestedUniquenessProbe <> Local.atom_unique var
+R1758:1768 NestedUniquenessProbe <> Local.atom_unique var
+R1758:1768 NestedUniquenessProbe <> Local.atom_unique var
+R1758:1768 NestedUniquenessProbe <> Local.atom_unique var
+R1810:1833 nameless.DBFullReducibility Full dependent_function_equiv thm
+R1873:1879 nameless.DBCore <> cv_refl constr
+R1931:1937 nameless.DBCore <> cv_refl constr
+R1975:1981 nameless.DBCore <> cv_refl constr
+R1810:1833 nameless.DBFullReducibility Full dependent_function_equiv thm
+R1873:1879 nameless.DBCore <> cv_refl constr
+R1931:1937 nameless.DBCore <> cv_refl constr
+R1975:1981 nameless.DBCore <> cv_refl constr
+R1810:1833 nameless.DBFullReducibility Full dependent_function_equiv thm
+R2026:2045 nameless.DBFullReducibility Full dependent_pair_equiv thm
+R2085:2091 nameless.DBCore <> cv_refl constr
+R2143:2149 nameless.DBCore <> cv_refl constr
+R2187:2193 nameless.DBCore <> cv_refl constr
+R2026:2045 nameless.DBFullReducibility Full dependent_pair_equiv thm
+R2085:2091 nameless.DBCore <> cv_refl constr
+R2143:2149 nameless.DBCore <> cv_refl constr
+R2187:2193 nameless.DBCore <> cv_refl constr
+R2226:2230 NestedUniquenessProbe Local <> sec
+ind 2243:2245 <> toy
+constr 2285:2292 <> toy_unit
+constr 2317:2323 <> toy_box
+R2253:2256 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2249:2252 nameless.DBSyntax <> term ind
+R2257:2257 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2270:2274 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2262:2265 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2258:2261 nameless.DBSyntax <> term ind
+R2296:2298 NestedUniquenessProbe <> toy:26 ind
+R2307:2313 nameless.DBFullReductionStructure <> full_SN def
+R2300:2305 nameless.DBSyntax <> TUnitT constr
+binder 2334:2334 <> A:28
+binder 2336:2336 <> R:29
+R2358:2361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2339:2349 nameless.DBSemanticTypes <> type_interp ind
+R2355:2355 NestedUniquenessProbe <> A:28 var
+R2357:2357 NestedUniquenessProbe <> R:29 var
+R2351:2353 NestedUniquenessProbe <> toy:26 ind
+R2362:2364 NestedUniquenessProbe <> toy:26 ind
+R2377:2377 NestedUniquenessProbe <> R:29 var
+R2367:2372 nameless.DBSyntax <> TEnumT constr
+R2374:2374 NestedUniquenessProbe <> A:28 var
+scheme 2243:2245 <> toy_ind
+scheme 2243:2245 <> toy_sind
+prf 2386:2400 <> toy_not_neutral
+binder 2411:2411 <> A:30
+binder 2413:2413 <> R:31
+R2423:2426 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2416:2418 NestedUniquenessProbe <> toy ind
+R2420:2420 NestedUniquenessProbe <> A:30 var
+R2422:2422 NestedUniquenessProbe <> R:31 var
+R2427:2428 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2429:2435 nameless.DBFullReducibility Full neutral def
+R2437:2437 NestedUniquenessProbe <> A:30 var
+R2478:2484 nameless.DBFullReducibility Full neutral def
+prf 2506:2515 <> toy_not_pi
+binder 2526:2526 <> A:32
+binder 2528:2528 <> B:33
+binder 2530:2530 <> R:34
+R2533:2534 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2535:2537 NestedUniquenessProbe <> toy ind
+R2540:2542 nameless.DBSyntax <> TPi constr
+R2546:2546 NestedUniquenessProbe <> B:33 var
+R2544:2544 NestedUniquenessProbe <> A:32 var
+R2549:2549 NestedUniquenessProbe <> R:34 var
+prf 2599:2611 <> toy_not_sigma
+binder 2622:2622 <> A:35
+binder 2624:2624 <> B:36
+binder 2626:2626 <> R:37
+R2629:2630 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R2631:2633 NestedUniquenessProbe <> toy ind
+R2636:2641 nameless.DBSyntax <> TSigma constr
+R2645:2645 NestedUniquenessProbe <> B:36 var
+R2643:2643 NestedUniquenessProbe <> A:35 var
+R2648:2648 NestedUniquenessProbe <> R:37 var
+prf 2698:2707 <> toy_unique
+binder 2718:2718 <> A:38
+binder 2720:2720 <> R:39
+R2730:2733 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2723:2725 NestedUniquenessProbe <> toy ind
+R2727:2727 NestedUniquenessProbe <> A:38 var
+R2729:2729 NestedUniquenessProbe <> R:39 var
+binder 2741:2741 <> S:40
+R2751:2754 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2744:2746 NestedUniquenessProbe <> toy ind
+R2748:2748 NestedUniquenessProbe <> A:38 var
+R2750:2750 NestedUniquenessProbe <> S:40 var
+R2755:2769 nameless.DBFullReducibility Full predicate_equiv def
+R2771:2771 NestedUniquenessProbe <> R:39 var
+R2773:2773 NestedUniquenessProbe <> S:40 var
+R2886:2915 NestedUniquenessProbe <> type_interp_unique_transparent thm
+R2925:2939 NestedUniquenessProbe <> toy_not_neutral thm
+R2947:2956 NestedUniquenessProbe <> toy_not_pi thm
+R2964:2976 NestedUniquenessProbe <> toy_not_sigma thm
+R3058:3064 nameless.DBCore <> cv_refl constr
+R2886:2915 NestedUniquenessProbe <> type_interp_unique_transparent thm
+R2925:2939 NestedUniquenessProbe <> toy_not_neutral thm
+R2947:2956 NestedUniquenessProbe <> toy_not_pi thm
+R2964:2976 NestedUniquenessProbe <> toy_not_sigma thm
+R3058:3064 nameless.DBCore <> cv_refl constr
+R3095:3104 NestedUniquenessProbe <> toy_unique thm

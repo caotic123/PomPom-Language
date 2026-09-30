@@ -1,0 +1,590 @@
+DIGEST 195873d7240efdb5828fb1c6004ea477
+Fnameless.DBSwitchComputability
+R102:105 Stdlib.Lists.List <> <> lib
+R107:111 Stdlib.Arith.Arith <> <> lib
+R113:116 Stdlib.Bool.Bool <> <> lib
+R118:120 Stdlib.micromega.Lia <> <> lib
+R138:165 nameless.DBEnumComputability <> <> lib
+R175:187 Stdlib.Lists.List ListNotations <> mod
+R189:192 nameless.DBFullReducibility Full <> mod
+def 207:220 <> calculus_value
+binder 222:222 <> n:1
+binder 224:224 <> t:2
+binder 226:226 <> A:3
+R231:237 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R239:240 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 238:238 <> R:4
+R262:265 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R241:255 nameless.DBCalculusModel <> calculus_interp def
+R257:257 nameless.DBSwitchComputability <> n:1 var
+R259:259 nameless.DBSwitchComputability <> A:3 var
+R261:261 nameless.DBSwitchComputability <> R:4 var
+R266:266 nameless.DBSwitchComputability <> R:4 var
+R268:268 nameless.DBSwitchComputability <> t:2 var
+prf 277:297 <> calculus_value_member
+binder 308:308 <> n:5
+binder 310:310 <> t:6
+binder 312:312 <> A:7
+binder 314:314 <> R:8
+R339:342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R319:332 nameless.DBSwitchComputability <> calculus_value def
+R334:334 nameless.DBSwitchComputability <> n:5 var
+R336:336 nameless.DBSwitchComputability <> t:6 var
+R338:338 nameless.DBSwitchComputability <> A:7 var
+R364:367 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R343:357 nameless.DBCalculusModel <> calculus_interp def
+R359:359 nameless.DBSwitchComputability <> n:5 var
+R361:361 nameless.DBSwitchComputability <> A:7 var
+R363:363 nameless.DBSwitchComputability <> R:8 var
+R368:368 nameless.DBSwitchComputability <> R:8 var
+R370:370 nameless.DBSwitchComputability <> t:6 var
+R422:443 nameless.DBCalculusModel <> calculus_interp_unique thm
+R464:470 nameless.DBCore <> cv_refl constr
+R422:443 nameless.DBCalculusModel <> calculus_interp_unique thm
+R464:470 nameless.DBCore <> cv_refl constr
+prf 498:522 <> calculus_value_conversion
+binder 533:533 <> n:9
+binder 535:535 <> t:10
+binder 537:537 <> A:11
+binder 539:539 <> B:12
+R564:567 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R544:557 nameless.DBSwitchComputability <> calculus_value def
+R559:559 nameless.DBSwitchComputability <> n:9 var
+R561:561 nameless.DBSwitchComputability <> t:10 var
+R563:563 nameless.DBSwitchComputability <> A:11 var
+R585:588 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R568:580 nameless.DBCalculusModel <> calculus_type def
+R582:582 nameless.DBSwitchComputability <> n:9 var
+R584:584 nameless.DBSwitchComputability <> B:12 var
+R597:600 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R589:592 nameless.DBCore <> conv ind
+R596:596 nameless.DBSwitchComputability <> B:12 var
+R594:594 nameless.DBSwitchComputability <> A:11 var
+R601:614 nameless.DBSwitchComputability <> calculus_value def
+R616:616 nameless.DBSwitchComputability <> n:9 var
+R618:618 nameless.DBSwitchComputability <> t:10 var
+R620:620 nameless.DBSwitchComputability <> B:12 var
+R705:726 nameless.DBSemanticTypes <> type_interp_conversion thm
+R746:766 nameless.DBFullReducibility Full candidate_normalizing proj
+R769:791 nameless.DBCalculusModel <> calculus_type_candidate thm
+R705:726 nameless.DBSemanticTypes <> type_interp_conversion thm
+R746:766 nameless.DBFullReducibility Full candidate_normalizing proj
+R769:791 nameless.DBCalculusModel <> calculus_type_candidate thm
+prf 822:846 <> calculus_value_reductions
+binder 857:857 <> n:13
+binder 859:859 <> t:14
+binder 861:861 <> A:15
+binder 863:863 <> u:16
+R888:891 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R868:881 nameless.DBSwitchComputability <> calculus_value def
+R883:883 nameless.DBSwitchComputability <> n:13 var
+R885:885 nameless.DBSwitchComputability <> t:14 var
+R887:887 nameless.DBSwitchComputability <> A:15 var
+R909:912 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R892:894 nameless.DBParallelBase <> rtc ind
+R908:908 nameless.DBSwitchComputability <> u:16 var
+R906:906 nameless.DBSwitchComputability <> t:14 var
+R896:904 nameless.DBCore <> reduction ind
+R913:926 nameless.DBSwitchComputability <> calculus_value def
+R928:928 nameless.DBSwitchComputability <> n:13 var
+R930:930 nameless.DBSwitchComputability <> u:16 var
+R932:932 nameless.DBSwitchComputability <> A:15 var
+R1015:1031 nameless.DBFullReducibility Full candidate_reducts thm
+R1036:1060 nameless.DBCalculusModel <> calculus_interp_candidate thm
+R1015:1031 nameless.DBFullReducibility Full candidate_reducts thm
+R1036:1060 nameless.DBCalculusModel <> calculus_interp_candidate thm
+prf 1096:1125 <> calculus_value_type_reductions
+binder 1136:1136 <> n:17
+binder 1138:1138 <> t:18
+binder 1140:1140 <> A:19
+binder 1142:1142 <> B:20
+R1167:1170 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1147:1160 nameless.DBSwitchComputability <> calculus_value def
+R1162:1162 nameless.DBSwitchComputability <> n:17 var
+R1164:1164 nameless.DBSwitchComputability <> t:18 var
+R1166:1166 nameless.DBSwitchComputability <> A:19 var
+R1188:1191 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1171:1173 nameless.DBParallelBase <> rtc ind
+R1187:1187 nameless.DBSwitchComputability <> B:20 var
+R1185:1185 nameless.DBSwitchComputability <> A:19 var
+R1175:1183 nameless.DBCore <> reduction ind
+R1192:1205 nameless.DBSwitchComputability <> calculus_value def
+R1207:1207 nameless.DBSwitchComputability <> n:17 var
+R1209:1209 nameless.DBSwitchComputability <> t:18 var
+R1211:1211 nameless.DBSwitchComputability <> B:20 var
+R1294:1315 nameless.DBSemanticTypes <> type_interp_reductions thm
+R1294:1315 nameless.DBSemanticTypes <> type_interp_reductions thm
+prf 1342:1356 <> succ_reductions
+binder 1367:1367 <> u:21
+binder 1369:1369 <> t:22
+R1398:1403 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1372:1374 nameless.DBParallelBase <> rtc ind
+R1397:1397 nameless.DBSwitchComputability <> t:22 var
+R1387:1392 nameless.DBSyntax <> TESucc constr
+R1394:1394 nameless.DBSwitchComputability <> u:21 var
+R1376:1384 nameless.DBCore <> reduction ind
+R1404:1410 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1412:1413 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1411:1411 <> v:23
+R1426:1429 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1415:1417 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1414:1414 nameless.DBSwitchComputability <> t:22 var
+R1418:1423 nameless.DBSyntax <> TESucc constr
+R1425:1425 nameless.DBSwitchComputability <> v:23 var
+R1430:1432 nameless.DBParallelBase <> rtc ind
+R1446:1446 nameless.DBSwitchComputability <> v:23 var
+R1444:1444 nameless.DBSwitchComputability <> u:21 var
+R1434:1442 nameless.DBCore <> reduction ind
+R1464:1506 nameless.DBInterpretationComputability <> reduces_unary thm
+R1464:1506 nameless.DBInterpretationComputability <> reduces_unary thm
+R1605:1611 nameless.DBParallelBase <> rtc_one thm
+R1605:1611 nameless.DBParallelBase <> rtc_one thm
+prf 1626:1647 <> extended_elements_succ
+binder 1658:1658 <> R:24
+R1672:1675 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1661:1669 nameless.DBFullReducibility Full candidate rec
+R1671:1671 nameless.DBSwitchComputability <> R:24 var
+binder 1683:1683 <> e:25
+R1718:1721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1688:1704 nameless.DBEnumCandidates <> extended_elements def
+R1706:1706 nameless.DBSwitchComputability <> R:24 var
+R1709:1714 nameless.DBSyntax <> TESucc constr
+R1716:1716 nameless.DBSwitchComputability <> e:25 var
+R1722:1722 nameless.DBSwitchComputability <> R:24 var
+R1724:1724 nameless.DBSwitchComputability <> e:25 var
+R1764:1772 nameless.DBFullReducibility Full candidate rec
+binder 1779:1779 <> t:26
+R1793:1800 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1784:1790 nameless.DBFullReductionStructure <> full_SN def
+R1792:1792 nameless.DBSwitchComputability <> t:26 var
+binder 1808:1808 <> n:27
+R1837:1840 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1811:1813 nameless.DBParallelBase <> rtc ind
+R1828:1833 nameless.DBSyntax <> TESucc constr
+R1835:1835 nameless.DBSwitchComputability <> n:27 var
+R1825:1825 nameless.DBSwitchComputability <> t:26 var
+R1815:1823 nameless.DBCore <> reduction ind
+R1843:1843 nameless.DBSwitchComputability <> n:27 var
+R1764:1772 nameless.DBFullReducibility Full candidate rec
+binder 1779:1779 <> t:28
+R1793:1800 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1784:1790 nameless.DBFullReductionStructure <> full_SN def
+R1792:1792 nameless.DBSwitchComputability <> t:28 var
+binder 1808:1808 <> n:29
+R1837:1840 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1811:1813 nameless.DBParallelBase <> rtc ind
+R1828:1833 nameless.DBSyntax <> TESucc constr
+R1835:1835 nameless.DBSwitchComputability <> n:29 var
+R1825:1825 nameless.DBSwitchComputability <> t:28 var
+R1815:1823 nameless.DBCore <> reduction ind
+R1843:1843 nameless.DBSwitchComputability <> n:29 var
+R1922:1928 Corelib.Init.Wf <> Acc_inv thm
+R1922:1928 Corelib.Init.Wf <> Acc_inv thm
+R1976:1983 nameless.DBParallelBase <> rtc_step constr
+R1976:1983 nameless.DBParallelBase <> rtc_step constr
+R2062:2066 Corelib.Init.Logic <> proj1 thm
+R2062:2066 Corelib.Init.Logic <> proj1 thm
+R2154:2158 Corelib.Init.Logic <> proj2 thm
+R2154:2158 Corelib.Init.Logic <> proj2 thm
+R2209:2213 Corelib.Init.Logic <> proj2 thm
+R2230:2237 nameless.DBParallelBase <> rtc_refl constr
+R2209:2213 Corelib.Init.Logic <> proj2 thm
+R2230:2237 nameless.DBParallelBase <> rtc_refl constr
+R2287:2298 nameless.DBEnumCandidates <> full_SN_zero thm
+R2287:2298 nameless.DBEnumCandidates <> full_SN_zero thm
+R2331:2341 nameless.DBFullNormalForms <> normal_form def
+R2343:2348 nameless.DBSyntax <> TEZero constr
+R2331:2341 nameless.DBFullNormalForms <> normal_form def
+R2343:2348 nameless.DBSyntax <> TEZero constr
+R2419:2444 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R2419:2444 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R2482:2493 nameless.DBEnumCandidates <> full_SN_succ thm
+R2503:2523 nameless.DBFullReducibility Full candidate_normalizing proj
+R2482:2493 nameless.DBEnumCandidates <> full_SN_succ thm
+R2503:2523 nameless.DBFullReducibility Full candidate_normalizing proj
+R2560:2574 nameless.DBSwitchComputability <> succ_reductions thm
+R2560:2574 nameless.DBSwitchComputability <> succ_reductions thm
+R2632:2648 nameless.DBFullReducibility Full candidate_reducts thm
+R2632:2648 nameless.DBFullReducibility Full candidate_reducts thm
+def 2684:2695 <> switch_roots
+binder 2697:2697 <> E:30
+binder 2709:2710 <> E':31
+R2731:2734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2713:2715 nameless.DBParallelBase <> rtc ind
+R2729:2730 nameless.DBSwitchComputability <> E':31 var
+R2727:2727 nameless.DBSwitchComputability <> E:30 var
+R2717:2725 nameless.DBCore <> reduction ind
+binder 2742:2742 <> n:32
+binder 2744:2744 <> k:33
+binder 2746:2746 <> P:34
+binder 2748:2748 <> p:35
+binder 2750:2750 <> e:36
+R2764:2767 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2755:2761 nameless.DBFullReductionStructure <> full_SN def
+R2763:2763 nameless.DBSwitchComputability <> P:34 var
+R2786:2791 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2768:2778 nameless.DBEnumComputability <> enum_family def
+R2780:2780 nameless.DBSwitchComputability <> n:32 var
+R2782:2783 nameless.DBSwitchComputability <> E':31 var
+R2785:2785 nameless.DBSwitchComputability <> P:34 var
+R2824:2827 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2792:2805 nameless.DBSwitchComputability <> calculus_value def
+R2807:2807 nameless.DBSwitchComputability <> n:32 var
+R2809:2809 nameless.DBSwitchComputability <> p:35 var
+R2812:2815 nameless.DBSyntax <> TEPi constr
+R2822:2822 nameless.DBSwitchComputability <> P:34 var
+R2819:2820 nameless.DBSwitchComputability <> E':31 var
+R2817:2817 nameless.DBSwitchComputability <> k:33 var
+R2846:2849 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2828:2840 nameless.DBEnumCandidates <> enum_elements def
+R2842:2843 nameless.DBSwitchComputability <> E':31 var
+R2845:2845 nameless.DBSwitchComputability <> e:36 var
+binder 2857:2857 <> v:37
+R2901:2904 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2892:2894 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2862:2870 nameless.DBCore <> root_step def
+R2873:2879 nameless.DBSyntax <> TSwitch constr
+R2890:2890 nameless.DBSwitchComputability <> e:36 var
+R2888:2888 nameless.DBSwitchComputability <> p:35 var
+R2886:2886 nameless.DBSwitchComputability <> P:34 var
+R2883:2884 nameless.DBSwitchComputability <> E':31 var
+R2881:2881 nameless.DBSwitchComputability <> k:33 var
+R2895:2898 Corelib.Init.Datatypes <> Some constr
+R2900:2900 nameless.DBSwitchComputability <> v:37 var
+R2905:2918 nameless.DBSwitchComputability <> calculus_value def
+R2920:2920 nameless.DBSwitchComputability <> n:32 var
+R2922:2922 nameless.DBSwitchComputability <> v:37 var
+R2925:2928 nameless.DBSyntax <> TApp constr
+R2932:2932 nameless.DBSwitchComputability <> e:36 var
+R2930:2930 nameless.DBSwitchComputability <> P:34 var
+prf 2942:2964 <> switch_roots_reductions
+binder 2975:2975 <> E:38
+R2992:2995 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2978:2989 nameless.DBSwitchComputability <> switch_roots def
+R2991:2991 nameless.DBSwitchComputability <> E:38 var
+binder 3003:3004 <> E':39
+R3027:3030 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3009:3011 nameless.DBParallelBase <> rtc ind
+R3025:3026 nameless.DBSwitchComputability <> E':39 var
+R3023:3023 nameless.DBSwitchComputability <> E:38 var
+R3013:3021 nameless.DBCore <> reduction ind
+R3031:3042 nameless.DBSwitchComputability <> switch_roots def
+R3044:3045 nameless.DBSwitchComputability <> E':39 var
+R3097:3105 nameless.DBParallelBase <> rtc_trans thm
+R3097:3105 nameless.DBParallelBase <> rtc_trans thm
+prf 3132:3148 <> switch_from_roots
+binder 3159:3159 <> E:40
+R3171:3174 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3162:3168 nameless.DBFullReductionStructure <> full_SN def
+R3170:3170 nameless.DBSwitchComputability <> E:40 var
+R3189:3192 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3175:3186 nameless.DBSwitchComputability <> switch_roots def
+R3188:3188 nameless.DBSwitchComputability <> E:40 var
+binder 3200:3200 <> n:41
+binder 3202:3202 <> k:42
+binder 3204:3204 <> P:43
+binder 3206:3206 <> p:44
+binder 3208:3208 <> e:45
+R3222:3225 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3213:3219 nameless.DBFullReductionStructure <> full_SN def
+R3221:3221 nameless.DBSwitchComputability <> P:43 var
+R3243:3248 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3226:3236 nameless.DBEnumComputability <> enum_family def
+R3238:3238 nameless.DBSwitchComputability <> n:41 var
+R3240:3240 nameless.DBSwitchComputability <> E:40 var
+R3242:3242 nameless.DBSwitchComputability <> P:43 var
+R3280:3283 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3249:3262 nameless.DBSwitchComputability <> calculus_value def
+R3264:3264 nameless.DBSwitchComputability <> n:41 var
+R3266:3266 nameless.DBSwitchComputability <> p:44 var
+R3269:3272 nameless.DBSyntax <> TEPi constr
+R3278:3278 nameless.DBSwitchComputability <> P:43 var
+R3276:3276 nameless.DBSwitchComputability <> E:40 var
+R3274:3274 nameless.DBSwitchComputability <> k:42 var
+R3301:3306 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3284:3296 nameless.DBEnumCandidates <> enum_elements def
+R3298:3298 nameless.DBSwitchComputability <> E:40 var
+R3300:3300 nameless.DBSwitchComputability <> e:45 var
+R3307:3320 nameless.DBSwitchComputability <> calculus_value def
+R3322:3322 nameless.DBSwitchComputability <> n:41 var
+R3325:3331 nameless.DBSyntax <> TSwitch constr
+R3341:3341 nameless.DBSwitchComputability <> e:45 var
+R3339:3339 nameless.DBSwitchComputability <> p:44 var
+R3337:3337 nameless.DBSwitchComputability <> P:43 var
+R3335:3335 nameless.DBSwitchComputability <> E:40 var
+R3333:3333 nameless.DBSwitchComputability <> k:42 var
+R3345:3348 nameless.DBSyntax <> TApp constr
+R3352:3352 nameless.DBSwitchComputability <> e:45 var
+R3350:3350 nameless.DBSwitchComputability <> P:43 var
+R3428:3452 nameless.DBCalculusModel <> calculus_interp_candidate thm
+R3428:3452 nameless.DBCalculusModel <> calculus_interp_candidate thm
+R3485:3507 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R3485:3507 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R3593:3623 nameless.DBHeadExpansion <> computability_by_head_expansion thm
+R3634:3658 nameless.DBCalculusModel <> calculus_interp_candidate thm
+R3593:3623 nameless.DBHeadExpansion <> computability_by_head_expansion thm
+R3634:3658 nameless.DBCalculusModel <> calculus_interp_candidate thm
+R3687:3699 nameless.DBHeadExpansion <> term_children def
+R3778:3798 nameless.DBFullReducibility Full candidate_normalizing proj
+R3778:3798 nameless.DBFullReducibility Full candidate_normalizing proj
+R3836:3856 nameless.DBFullReducibility Full candidate_normalizing proj
+R3836:3856 nameless.DBFullReducibility Full candidate_normalizing proj
+R3916:3916 Corelib.Init.Logic <> I constr
+R3916:3916 Corelib.Init.Logic <> I constr
+R4001:4011 nameless.DBEnumComputability <> enum_family def
+R4033:4054 nameless.DBEnumComputability <> enum_family_reductions thm
+R4001:4011 nameless.DBEnumComputability <> enum_family def
+R4033:4054 nameless.DBEnumComputability <> enum_family_reductions thm
+R4089:4102 nameless.DBSwitchComputability <> calculus_value def
+R4110:4113 nameless.DBSyntax <> TEPi constr
+R4089:4102 nameless.DBSwitchComputability <> calculus_value def
+R4110:4113 nameless.DBSyntax <> TEPi constr
+R4179:4182 nameless.DBSyntax <> TEPi constr
+R4139:4168 nameless.DBSwitchComputability <> calculus_value_type_reductions thm
+R4208:4232 nameless.DBSwitchComputability <> calculus_value_reductions thm
+R4284:4296 nameless.DBReduction <> red_star_TEPi thm
+R4179:4182 nameless.DBSyntax <> TEPi constr
+R4139:4168 nameless.DBSwitchComputability <> calculus_value_type_reductions thm
+R4208:4232 nameless.DBSwitchComputability <> calculus_value_reductions thm
+R4284:4296 nameless.DBReduction <> red_star_TEPi thm
+R4320:4332 nameless.DBEnumCandidates <> enum_elements def
+R4320:4332 nameless.DBEnumCandidates <> enum_elements def
+R4355:4378 nameless.DBEnumCandidates <> enum_elements_conversion thm
+R4385:4405 nameless.DBWeakening <> reductions_conversion thm
+R4430:4446 nameless.DBFullReducibility Full candidate_reducts thm
+R4355:4378 nameless.DBEnumCandidates <> enum_elements_conversion thm
+R4385:4405 nameless.DBWeakening <> reductions_conversion thm
+R4430:4446 nameless.DBFullReducibility Full candidate_reducts thm
+R4487:4500 nameless.DBSwitchComputability <> calculus_value def
+R4507:4510 nameless.DBSyntax <> TApp constr
+R4487:4500 nameless.DBSwitchComputability <> calculus_value def
+R4507:4510 nameless.DBSyntax <> TApp constr
+R4555:4572 nameless.DBFullNormalForms <> full_SN_reductions thm
+R4555:4572 nameless.DBFullNormalForms <> full_SN_reductions thm
+R4678:4699 nameless.DBCalculusModel <> calculus_interp_unique thm
+R4735:4740 nameless.DBCore <> cv_sym constr
+R4743:4763 nameless.DBWeakening <> reductions_conversion thm
+R4776:4788 nameless.DBReduction <> red_star_TApp thm
+R4678:4699 nameless.DBCalculusModel <> calculus_interp_unique thm
+R4735:4740 nameless.DBCore <> cv_sym constr
+R4743:4763 nameless.DBWeakening <> reductions_conversion thm
+R4776:4788 nameless.DBReduction <> red_star_TApp thm
+prf 4814:4838 <> switch_product_components
+binder 4849:4849 <> n:46
+binder 4851:4851 <> k:47
+binder 4853:4855 <> tag:48
+binder 4857:4857 <> E:49
+binder 4859:4859 <> P:50
+binder 4861:4861 <> p:51
+binder 4863:4864 <> ps:52
+R4880:4883 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4869:4875 nameless.DBFullReductionStructure <> full_SN def
+R4877:4879 nameless.DBSwitchComputability <> tag:48 var
+R4908:4911 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4884:4905 nameless.DBEnumCandidates <> enumeration_computable ind
+R4907:4907 nameless.DBSwitchComputability <> E:49 var
+R4921:4926 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4912:4918 nameless.DBFullReductionStructure <> full_SN def
+R4920:4920 nameless.DBSwitchComputability <> P:50 var
+R4957:4962 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4927:4937 nameless.DBEnumComputability <> enum_family def
+R4939:4939 nameless.DBSwitchComputability <> n:46 var
+R4942:4947 nameless.DBSyntax <> TConsE constr
+R4953:4953 nameless.DBSwitchComputability <> E:49 var
+R4949:4951 nameless.DBSwitchComputability <> tag:48 var
+R4956:4956 nameless.DBSwitchComputability <> P:50 var
+R5018:5023 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4963:4976 nameless.DBSwitchComputability <> calculus_value def
+R4978:4978 nameless.DBSwitchComputability <> n:46 var
+R4981:4985 nameless.DBSyntax <> TPair constr
+R4989:4990 nameless.DBSwitchComputability <> ps:52 var
+R4987:4987 nameless.DBSwitchComputability <> p:51 var
+R4994:4997 nameless.DBSyntax <> TEPi constr
+R5016:5016 nameless.DBSwitchComputability <> P:50 var
+R5002:5007 nameless.DBSyntax <> TConsE constr
+R5013:5013 nameless.DBSwitchComputability <> E:49 var
+R5009:5011 nameless.DBSwitchComputability <> tag:48 var
+R4999:4999 nameless.DBSwitchComputability <> k:47 var
+R5058:5063 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5024:5037 nameless.DBSwitchComputability <> calculus_value def
+R5039:5039 nameless.DBSwitchComputability <> n:46 var
+R5041:5041 nameless.DBSwitchComputability <> p:51 var
+R5044:5047 nameless.DBSyntax <> TApp constr
+R5051:5056 nameless.DBSyntax <> TEZero constr
+R5049:5049 nameless.DBSwitchComputability <> P:50 var
+R5064:5077 nameless.DBSwitchComputability <> calculus_value def
+R5079:5079 nameless.DBSwitchComputability <> n:46 var
+R5081:5082 nameless.DBSwitchComputability <> ps:52 var
+R5085:5088 nameless.DBSyntax <> TEPi constr
+R5095:5110 nameless.DBEnumComputability <> enum_tail_family def
+R5112:5112 nameless.DBSwitchComputability <> P:50 var
+R5092:5092 nameless.DBSwitchComputability <> E:49 var
+R5090:5090 nameless.DBSwitchComputability <> k:47 var
+R5194:5227 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R5194:5227 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R5263:5282 nameless.DBEnumCandidates <> enum_zero_computable thm
+R5263:5282 nameless.DBEnumCandidates <> enum_zero_computable thm
+R5318:5344 nameless.DBEnumComputability <> enum_tail_family_computable thm
+R5318:5344 nameless.DBEnumComputability <> enum_tail_family_computable thm
+R5399:5412 nameless.DBEnumComputability <> epi_computable thm
+R5399:5412 nameless.DBEnumComputability <> epi_computable thm
+R5457:5481 nameless.DBCalculusModel <> calculus_interp_canonical thm
+R5457:5481 nameless.DBCalculusModel <> calculus_interp_canonical thm
+R5512:5536 nameless.DBCalculusModel <> calculus_interp_canonical thm
+R5512:5536 nameless.DBCalculusModel <> calculus_interp_canonical thm
+R5567:5589 nameless.DBEnumComputability <> calculus_product_interp thm
+R5567:5589 nameless.DBEnumComputability <> calculus_product_interp thm
+R5630:5633 nameless.DBCore <> conv ind
+R5666:5672 nameless.DBSyntax <> product def
+R5691:5694 nameless.DBSyntax <> TEPi constr
+R5701:5716 nameless.DBEnumComputability <> enum_tail_family def
+R5675:5678 nameless.DBSyntax <> TApp constr
+R5682:5687 nameless.DBSyntax <> TEZero constr
+R5636:5639 nameless.DBSyntax <> TEPi constr
+R5644:5649 nameless.DBSyntax <> TConsE constr
+R5630:5633 nameless.DBCore <> conv ind
+R5666:5672 nameless.DBSyntax <> product def
+R5691:5694 nameless.DBSyntax <> TEPi constr
+R5701:5716 nameless.DBEnumComputability <> enum_tail_family def
+R5675:5678 nameless.DBSyntax <> TApp constr
+R5682:5687 nameless.DBSyntax <> TEZero constr
+R5636:5639 nameless.DBSyntax <> TEPi constr
+R5644:5649 nameless.DBSyntax <> TConsE constr
+R5735:5755 nameless.DBWeakening <> reductions_conversion thm
+R5758:5764 nameless.DBParallelBase <> rtc_one thm
+R5767:5774 nameless.DBCore <> red_root constr
+R5735:5755 nameless.DBWeakening <> reductions_conversion thm
+R5758:5764 nameless.DBParallelBase <> rtc_one thm
+R5767:5774 nameless.DBCore <> red_root constr
+R5806:5810 Corelib.Init.Logic <> proj1 thm
+R5813:5834 nameless.DBCalculusModel <> calculus_interp_unique thm
+R5806:5810 Corelib.Init.Logic <> proj1 thm
+R5813:5834 nameless.DBCalculusModel <> calculus_interp_unique thm
+R5889:5908 nameless.DBAllComputability <> dependent_pair_value thm
+R5915:5939 nameless.DBCalculusModel <> calculus_interp_candidate thm
+R5967:5991 nameless.DBCalculusModel <> calculus_interp_candidate thm
+R6025:6032 Corelib.Init.Logic <> iff_refl thm
+R5889:5908 nameless.DBAllComputability <> dependent_pair_value thm
+R5915:5939 nameless.DBCalculusModel <> calculus_interp_candidate thm
+R5967:5991 nameless.DBCalculusModel <> calculus_interp_candidate thm
+R6025:6032 Corelib.Init.Logic <> iff_refl thm
+R6078:6094 nameless.DBCalculusModel <> calculus_elements def
+R6099:6102 nameless.DBSyntax <> TApp constr
+R6106:6111 nameless.DBSyntax <> TEZero constr
+R6123:6139 nameless.DBCalculusModel <> calculus_elements def
+R6144:6147 nameless.DBSyntax <> TEPi constr
+R6154:6169 nameless.DBEnumComputability <> enum_tail_family def
+R6078:6094 nameless.DBCalculusModel <> calculus_elements def
+R6099:6102 nameless.DBSyntax <> TApp constr
+R6106:6111 nameless.DBSyntax <> TEZero constr
+R6123:6139 nameless.DBCalculusModel <> calculus_elements def
+R6144:6147 nameless.DBSyntax <> TEPi constr
+R6154:6169 nameless.DBEnumComputability <> enum_tail_family def
+prf 6198:6220 <> computable_switch_roots
+binder 6231:6231 <> E:53
+R6258:6261 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6234:6255 nameless.DBEnumCandidates <> enumeration_computable ind
+R6257:6257 nameless.DBSwitchComputability <> E:53 var
+R6262:6273 nameless.DBSwitchComputability <> switch_roots def
+R6275:6275 nameless.DBSwitchComputability <> E:53 var
+R6371:6396 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R6402:6416 nameless.DBEnumCandidates <> nil_enum_normal thm
+R6371:6396 nameless.DBFullNormalForms <> normal_reductions_identity thm
+R6402:6416 nameless.DBEnumCandidates <> nil_enum_normal thm
+R6467:6486 nameless.DBEnumComputability <> cons_enum_reductions thm
+R6467:6486 nameless.DBEnumComputability <> cons_enum_reductions thm
+R6544:6561 nameless.DBFullNormalForms <> full_SN_reductions thm
+R6544:6561 nameless.DBFullNormalForms <> full_SN_reductions thm
+R6597:6613 nameless.DBFullReducibility Full candidate_reducts thm
+R6617:6648 nameless.DBEnumCandidates <> enumeration_computable_candidate thm
+R6597:6613 nameless.DBFullReducibility Full candidate_reducts thm
+R6617:6648 nameless.DBEnumCandidates <> enumeration_computable_candidate thm
+R6686:6719 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R6686:6719 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R6758:6766 nameless.DBCore <> root_step def
+R6815:6823 nameless.DBCore <> root_step def
+R6887:6891 Corelib.Init.Logic <> proj1 thm
+R6894:6918 nameless.DBSwitchComputability <> switch_product_components thm
+R6887:6891 Corelib.Init.Logic <> proj1 thm
+R6894:6918 nameless.DBSwitchComputability <> switch_product_components thm
+R6970:6994 nameless.DBSwitchComputability <> switch_product_components thm
+R6970:6994 nameless.DBSwitchComputability <> switch_product_components thm
+R7060:7064 Corelib.Init.Logic <> proj1 thm
+R7067:7084 nameless.DBEnumCandidates <> enum_elements_cons thm
+R7060:7064 Corelib.Init.Logic <> proj1 thm
+R7067:7084 nameless.DBEnumCandidates <> enum_elements_cons thm
+R7134:7155 nameless.DBSwitchComputability <> extended_elements_succ thm
+R7160:7182 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R7134:7155 nameless.DBSwitchComputability <> extended_elements_succ thm
+R7160:7182 nameless.DBEnumCandidates <> enum_elements_candidate thm
+R7222:7248 nameless.DBEnumComputability <> enum_tail_family_computable thm
+R7222:7248 nameless.DBEnumComputability <> enum_tail_family_computable thm
+R7304:7328 nameless.DBSwitchComputability <> calculus_value_conversion thm
+R7304:7328 nameless.DBSwitchComputability <> calculus_value_conversion thm
+R7345:7361 nameless.DBSwitchComputability <> switch_from_roots thm
+R7383:7405 nameless.DBSwitchComputability <> switch_roots_reductions thm
+R7345:7361 nameless.DBSwitchComputability <> switch_from_roots thm
+R7383:7405 nameless.DBSwitchComputability <> switch_roots_reductions thm
+R7507:7527 nameless.DBWeakening <> reductions_conversion thm
+R7530:7536 nameless.DBParallelBase <> rtc_one thm
+R7539:7546 nameless.DBCore <> red_root constr
+R7554:7562 nameless.DBCore <> root_step def
+R7564:7579 nameless.DBEnumComputability <> enum_tail_family def
+R7595:7609 nameless.DBEnumComputability <> enum_tail_subst thm
+R7507:7527 nameless.DBWeakening <> reductions_conversion thm
+R7530:7536 nameless.DBParallelBase <> rtc_one thm
+R7539:7546 nameless.DBCore <> red_root constr
+R7595:7609 nameless.DBEnumComputability <> enum_tail_subst thm
+R7595:7609 nameless.DBEnumComputability <> enum_tail_subst thm
+R7657:7664 nameless.DBParallelBase <> rtc_step constr
+R7657:7664 nameless.DBParallelBase <> rtc_step constr
+R7777:7783 nameless.DBFullReducibility Full neutral def
+R7785:7793 nameless.DBCore <> root_step def
+prf 7876:7892 <> switch_computable
+binder 7903:7903 <> E:54
+R7930:7933 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7906:7927 nameless.DBEnumCandidates <> enumeration_computable ind
+R7929:7929 nameless.DBSwitchComputability <> E:54 var
+binder 7941:7941 <> n:55
+binder 7943:7943 <> k:56
+binder 7945:7945 <> P:57
+binder 7947:7947 <> p:58
+binder 7949:7949 <> e:59
+R7963:7966 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7954:7960 nameless.DBFullReductionStructure <> full_SN def
+R7962:7962 nameless.DBSwitchComputability <> P:57 var
+R7984:7989 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7967:7977 nameless.DBEnumComputability <> enum_family def
+R7979:7979 nameless.DBSwitchComputability <> n:55 var
+R7981:7981 nameless.DBSwitchComputability <> E:54 var
+R7983:7983 nameless.DBSwitchComputability <> P:57 var
+R8021:8024 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7990:8003 nameless.DBSwitchComputability <> calculus_value def
+R8005:8005 nameless.DBSwitchComputability <> n:55 var
+R8007:8007 nameless.DBSwitchComputability <> p:58 var
+R8010:8013 nameless.DBSyntax <> TEPi constr
+R8019:8019 nameless.DBSwitchComputability <> P:57 var
+R8017:8017 nameless.DBSwitchComputability <> E:54 var
+R8015:8015 nameless.DBSwitchComputability <> k:56 var
+R8042:8047 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8025:8037 nameless.DBEnumCandidates <> enum_elements def
+R8039:8039 nameless.DBSwitchComputability <> E:54 var
+R8041:8041 nameless.DBSwitchComputability <> e:59 var
+R8048:8061 nameless.DBSwitchComputability <> calculus_value def
+R8063:8063 nameless.DBSwitchComputability <> n:55 var
+R8066:8072 nameless.DBSyntax <> TSwitch constr
+R8082:8082 nameless.DBSwitchComputability <> e:59 var
+R8080:8080 nameless.DBSwitchComputability <> p:58 var
+R8078:8078 nameless.DBSwitchComputability <> P:57 var
+R8076:8076 nameless.DBSwitchComputability <> E:54 var
+R8074:8074 nameless.DBSwitchComputability <> k:56 var
+R8086:8089 nameless.DBSyntax <> TApp constr
+R8093:8093 nameless.DBSwitchComputability <> e:59 var
+R8091:8091 nameless.DBSwitchComputability <> P:57 var
+R8125:8141 nameless.DBSwitchComputability <> switch_from_roots thm
+R8159:8192 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R8204:8226 nameless.DBSwitchComputability <> computable_switch_roots thm
+R8125:8141 nameless.DBSwitchComputability <> switch_from_roots thm
+R8159:8192 nameless.DBEnumCandidates <> enumeration_computable_normalizing thm
+R8204:8226 nameless.DBSwitchComputability <> computable_switch_roots thm
+R8254:8270 nameless.DBSwitchComputability <> switch_computable thm

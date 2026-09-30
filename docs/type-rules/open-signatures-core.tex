@@ -12,13 +12,13 @@ Base calculus: \cite[Fig.~1]{dagand-mcbride-2012}.
 \and
 \ruleof{ty_cumul}{\jd{t}{\Set_j}\\j\leq k}{\jd{t}{\Set_k}}
 \\
-\ruleof{ty_pi}{\jd{A}{\Set_j}\\\Gamma,x:A\vdash B:\Set_k}
+\ruleof{ty_pi}{x\notin\op{dom}(\Gamma)\\\jd{A}{\Set_j}\\\Gamma,x:A\vdash B:\Set_k}
  {\jd{\Pi x:A.\,B}{\Set_{\max(j,k)}}}
 \and
-\ruleof{ty_sigma}{\jd{A}{\Set_j}\\\Gamma,x:A\vdash B:\Set_k}
+\ruleof{ty_sigma}{x\notin\op{dom}(\Gamma)\\\jd{A}{\Set_j}\\\Gamma,x:A\vdash B:\Set_k}
  {\jd{\Sigma x:A.\,B}{\Set_{\max(j,k)}}}
 \\
-\ruleof{ty_lam}{\jd{\Pi x:A.\,B}{\Set_k}\\\Gamma,x:A\vdash b:B}
+\ruleof{ty_lam}{x\notin\op{dom}(\Gamma)\\\jd{\Pi x:A.\,B}{\Set_k}\\\Gamma,x:A\vdash b:B}
  {\jd{\lambda x.\,b}{\Pi x:A.\,B}}
 \\
 \ruleof{ty_app}{\jd{\Pi x:A.\,B}{\Set_k}\\
@@ -43,6 +43,32 @@ Base calculus: \cite[Fig.~1]{dagand-mcbride-2012}.
 \ruleof{ty_unit}{\wf}{\jd{\unit}{\one}}
 \end{mathpar}
 
+\textbf{Function cumulativity.}
+Write $A\leq_u B$ for the structural universe inclusion
+\texttt{universe\_le}. Its function domains are contravariant and its
+codomains covariant, recursively through nested dependent functions:
+\begin{mathpar}
+\ruleof{ul_refl}{}{A\leq_u A}
+\and
+\ruleof{ul_sort}{j\leq k}{\Set_j\leq_u\Set_k}
+\and
+\ruleof{ul_pi}{C\leq_u A\\B\leq_u D}
+ {\Pi x:A.\,B\leq_u\Pi x:C.\,D}
+\\
+\ruleof{ty_cumul_fun}
+ {\jd{f}{\Pi x:A.\,B}\\
+  \jd{\Pi x:A.\,B}{\Set_j}\\
+  \jd{\Pi x:C.\,D}{\Set_k}\\
+  C\leq_u A\\B\leq_u D}
+ {\jd{f}{\Pi x:C.\,D}}
+\end{mathpar}
+Both function types must be well formed; $\Set_0\not\equiv\Set_1$.
+The rule admits $f:\one\to\Set_0$ at $\one\to\Set_1$ and
+$g:\Set_1\to\Set_0$ at $\Set_0\to\Set_0$, repairing the eta examples
+checked in \texttt{OpenSignaturesEtaRegression.v}.
+Unrestricted eta preservation is refuted by the polymorphic application
+counterexample in Section 13. Operational preservation is proved.
+
 \textbf{Computation and conversion.}
 Write $\longmapsto$ for a root computation, $\leadsto$ for its compatible
 closure together with $\eta$ contraction, and $\to$ for the operational
@@ -52,8 +78,7 @@ relation in Rocq.
  (\lambda x.\,b)\,a&\longmapsto b[a/x],&
  \op{fst}(a,b)&\longmapsto a,&
  \op{snd}(a,b)&\longmapsto b,\\
- \lambda x.\,f\,x&\leadsto f\quad(x\notin\op{FV}(f)),&
- (\op{fst}\,p,\op{snd}\,p)&\leadsto p.
+ \lambda x.\,f\,x&\leadsto f\quad(x\notin\op{FV}(f)).
 \end{aligned}
 \]
 \[
@@ -130,7 +155,7 @@ are distinct core terms.
 \qquad
  \bot:\Set_0,\quad(\Pi A:\Set_k.\,A):\Set_{k+1}.
 \]
-The displayed derived typing statement is unproved in Rocq.
+The displayed derived typing statement is proved in Rocq.
 
 \textbf{Identity at a local position.}
 $\op{At}(E,s,n)$ records the literal identity $s$ at position $n$.
@@ -319,7 +344,7 @@ $\code{\sigma}\,E\,p$ & $(c,x_s)$ & $\mathcal A_{p\,c}(x_s)$
 \[
  \unroll_{F,G,i}(\roll\,x_s)\leadsto^*x_s.
 \]
-The derived typing statement is unproved. The outer definition $F$ and
+The derived typing statement is proved in Rocq. The outer definition $F$ and
 recursive definition $G$ are arbitrary; no row inclusion premise is imposed.
 
 \textbf{Induction motive and method, expanded.}

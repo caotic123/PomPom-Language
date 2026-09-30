@@ -1,0 +1,246 @@
+DIGEST 229164e35cc15e2b84b609a97c7942ae
+Fannotated.AProjections
+R109:112 Stdlib.Lists.List <> <> lib
+R114:118 Stdlib.Arith.Arith <> <> lib
+R136:156 annotated.AGeneration <> <> lib
+R166:178 Stdlib.Lists.List ListNotations <> mod
+R194:214 nameless.DBGeneration <> <> mod
+mod 188:189 <> RG
+prf 224:246 <> comparison_sigma_source
+binder 257:257 <> A:1
+binder 259:259 <> B:2
+binder 261:261 <> T:3
+R303:308 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R266:283 annotated.AComparison RC type_comparison ind
+R286:295 annotated.AErase Raw TSigma constr
+R299:299 annotated.AProjections <> B:2 var
+R297:297 annotated.AProjections <> A:1 var
+R302:302 annotated.AProjections <> T:3 var
+R309:318 annotated.AGeneration RCore conv ind
+R337:337 annotated.AProjections <> T:3 var
+R321:330 annotated.AErase Raw TSigma constr
+R334:334 annotated.AProjections <> B:2 var
+R332:332 annotated.AProjections <> A:1 var
+R432:441 annotated.AGeneration RCore conv ind
+R444:453 annotated.AErase Raw TSigma constr
+R432:441 annotated.AGeneration RCore conv ind
+R444:453 annotated.AErase Raw TSigma constr
+R486:503 annotated.AProjections <> conversion_head thm
+R516:522 Corelib.Init.Logic <> eq_refl constr
+R524:530 Corelib.Init.Logic <> eq_refl constr
+R486:503 annotated.AProjections <> conversion_head thm
+R516:522 Corelib.Init.Logic <> eq_refl constr
+R524:530 Corelib.Init.Logic <> eq_refl constr
+R486:503 annotated.AProjections <> conversion_head thm
+R516:522 Corelib.Init.Logic <> eq_refl constr
+R524:530 Corelib.Init.Logic <> eq_refl constr
+prf 566:580 <> pair_generation
+binder 591:595 <> Gamma:4
+binder 597:597 <> t:5
+binder 599:599 <> T:6
+R618:621 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R602:607 annotated.ATyping <> typing ind
+R609:613 annotated.AProjections <> Gamma:4 var
+R615:615 annotated.AProjections <> t:5 var
+R617:617 annotated.AProjections <> T:6 var
+binder 629:629 <> A:7
+binder 631:631 <> B:8
+binder 633:633 <> a:9
+binder 635:635 <> b:10
+R657:660 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R641:643 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R640:640 annotated.AProjections <> t:5 var
+R644:648 annotated.ASyntax <> TPair constr
+R650:650 annotated.AProjections <> A:7 var
+R652:652 annotated.AProjections <> B:8 var
+R654:654 annotated.AProjections <> a:9 var
+R656:656 annotated.AProjections <> b:10 var
+R661:667 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R671:674 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 668:668 <> j:11
+binder 670:670 <> k:12
+R703:708 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R675:680 annotated.ATyping <> typing ind
+R682:686 annotated.AProjections <> Gamma:4 var
+R688:688 annotated.AProjections <> A:7 var
+R691:699 annotated.AErase Raw TSort constr
+R701:701 annotated.AProjections <> j:11 var
+R750:755 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R709:714 annotated.ATyping <> typing ind
+R724:727 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R717:721 annotated.AErase <> erase def
+R723:723 annotated.AProjections <> A:7 var
+R728:732 annotated.AProjections <> Gamma:4 var
+R735:735 annotated.AProjections <> B:8 var
+R738:746 annotated.AErase Raw TSort constr
+R748:748 annotated.AProjections <> k:12 var
+R780:785 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R756:761 annotated.ATyping <> typing ind
+R763:767 annotated.AProjections <> Gamma:4 var
+R769:769 annotated.AProjections <> a:9 var
+R772:776 annotated.AErase <> erase def
+R778:778 annotated.AProjections <> A:7 var
+R834:839 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R786:791 annotated.ATyping <> typing ind
+R793:797 annotated.AProjections <> Gamma:4 var
+R799:799 annotated.AProjections <> b:10 var
+R802:810 annotated.AErase Raw subst def
+R825:829 annotated.AErase <> erase def
+R831:831 annotated.AProjections <> B:8 var
+R813:817 annotated.AErase <> erase def
+R819:819 annotated.AProjections <> a:9 var
+R840:857 annotated.AComparison RC type_comparison ind
+R860:869 annotated.AErase Raw TSigma constr
+R882:886 annotated.AErase <> erase def
+R888:888 annotated.AProjections <> B:8 var
+R872:876 annotated.AErase <> erase def
+R878:878 annotated.AProjections <> A:7 var
+R892:892 annotated.AProjections <> T:6 var
+R1063:1079 annotated.AComparison RC cmp_conversion constr
+R1082:1094 annotated.AGeneration RCore cv_refl constr
+R1063:1079 annotated.AComparison RC cmp_conversion constr
+R1082:1094 annotated.AGeneration RCore cv_refl constr
+R1225:1254 annotated.AComparison RC comparison_right_conversion thm
+R1225:1254 annotated.AComparison RC comparison_right_conversion thm
+R1398:1421 annotated.AComparison RC comparison_transitive thm
+R1398:1421 annotated.AComparison RC comparison_transitive thm
+R1447:1468 annotated.AComparison RC comparison_universe thm
+R1471:1480 annotated.ATyping RT ul_sort constr
+R1447:1468 annotated.AComparison RC comparison_universe thm
+R1471:1480 annotated.ATyping RT ul_sort constr
+R1623:1646 annotated.AComparison RC comparison_transitive thm
+R1623:1646 annotated.AComparison RC comparison_transitive thm
+R1672:1693 annotated.AComparison RC comparison_universe thm
+R1696:1703 annotated.ATyping RT ul_pi constr
+R1672:1693 annotated.AComparison RC comparison_universe thm
+R1696:1703 annotated.ATyping RT ul_pi constr
+prf 1732:1747 <> fst_preservation
+binder 1758:1762 <> Gamma:13
+binder 1764:1764 <> t:14
+binder 1766:1766 <> T:15
+R1785:1790 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1769:1774 annotated.ATyping <> typing ind
+R1776:1780 annotated.AProjections <> Gamma:13 var
+R1782:1782 annotated.AProjections <> t:14 var
+R1784:1784 annotated.AProjections <> T:15 var
+binder 1798:1798 <> A:16
+binder 1800:1800 <> B:17
+binder 1802:1802 <> C:18
+binder 1804:1804 <> D:19
+binder 1806:1806 <> a:20
+binder 1808:1808 <> b:21
+R1839:1842 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1812:1814 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1811:1811 annotated.AProjections <> t:14 var
+R1815:1818 annotated.ASyntax <> TFst constr
+R1820:1820 annotated.AProjections <> A:16 var
+R1822:1822 annotated.AProjections <> B:17 var
+R1825:1829 annotated.ASyntax <> TPair constr
+R1831:1831 annotated.AProjections <> C:18 var
+R1833:1833 annotated.AProjections <> D:19 var
+R1835:1835 annotated.AProjections <> a:20 var
+R1837:1837 annotated.AProjections <> b:21 var
+R1843:1848 annotated.ATyping <> typing ind
+R1850:1854 annotated.AProjections <> Gamma:13 var
+R1856:1856 annotated.AProjections <> a:20 var
+R1858:1858 annotated.AProjections <> T:15 var
+R1982:1988 annotated.ATyping <> ty_conv constr
+R1982:1988 annotated.ATyping <> ty_conv constr
+R1982:1988 annotated.ATyping <> ty_conv constr
+R1982:1988 annotated.ATyping <> ty_conv constr
+R1982:1988 annotated.ATyping <> ty_conv constr
+R2070:2077 annotated.ATyping <> ty_cumul constr
+R2070:2077 annotated.ATyping <> ty_cumul constr
+R2070:2077 annotated.ATyping <> ty_cumul constr
+R2070:2077 annotated.ATyping <> ty_cumul constr
+R2147:2158 annotated.ATyping <> ty_cumul_fun constr
+R2147:2158 annotated.ATyping <> ty_cumul_fun constr
+R2147:2158 annotated.ATyping <> ty_cumul_fun constr
+R2274:2288 annotated.AProjections <> pair_generation thm
+R2307:2313 Corelib.Init.Logic <> eq_refl constr
+R2274:2288 annotated.AProjections <> pair_generation thm
+R2307:2313 Corelib.Init.Logic <> eq_refl constr
+R2366:2388 annotated.AProjections <> comparison_sigma_source thm
+R2366:2388 annotated.AProjections <> comparison_sigma_source thm
+R2412:2430 annotated.AProjections <> conversion_sigma thm
+R2412:2430 annotated.AProjections <> conversion_sigma thm
+R2472:2478 annotated.ATyping <> ty_conv constr
+R2498:2511 annotated.ATyping <> typing_erasure thm
+R2472:2478 annotated.ATyping <> ty_conv constr
+R2498:2511 annotated.ATyping <> typing_erasure thm
+prf 2549:2564 <> snd_preservation
+binder 2575:2579 <> Gamma:22
+binder 2581:2581 <> t:23
+binder 2583:2583 <> T:24
+R2602:2607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2586:2591 annotated.ATyping <> typing ind
+R2593:2597 annotated.AProjections <> Gamma:22 var
+R2599:2599 annotated.AProjections <> t:23 var
+R2601:2601 annotated.AProjections <> T:24 var
+binder 2615:2615 <> A:25
+binder 2617:2617 <> B:26
+binder 2619:2619 <> C:27
+binder 2621:2621 <> D:28
+binder 2623:2623 <> a:29
+binder 2625:2625 <> b:30
+R2656:2659 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2629:2631 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2628:2628 annotated.AProjections <> t:23 var
+R2632:2635 annotated.ASyntax <> TSnd constr
+R2637:2637 annotated.AProjections <> A:25 var
+R2639:2639 annotated.AProjections <> B:26 var
+R2642:2646 annotated.ASyntax <> TPair constr
+R2648:2648 annotated.AProjections <> C:27 var
+R2650:2650 annotated.AProjections <> D:28 var
+R2652:2652 annotated.AProjections <> a:29 var
+R2654:2654 annotated.AProjections <> b:30 var
+R2660:2665 annotated.ATyping <> typing ind
+R2667:2671 annotated.AProjections <> Gamma:22 var
+R2673:2673 annotated.AProjections <> b:30 var
+R2675:2675 annotated.AProjections <> T:24 var
+R2799:2805 annotated.ATyping <> ty_conv constr
+R2799:2805 annotated.ATyping <> ty_conv constr
+R2799:2805 annotated.ATyping <> ty_conv constr
+R2799:2805 annotated.ATyping <> ty_conv constr
+R2799:2805 annotated.ATyping <> ty_conv constr
+R2887:2894 annotated.ATyping <> ty_cumul constr
+R2887:2894 annotated.ATyping <> ty_cumul constr
+R2887:2894 annotated.ATyping <> ty_cumul constr
+R2887:2894 annotated.ATyping <> ty_cumul constr
+R2964:2975 annotated.ATyping <> ty_cumul_fun constr
+R2964:2975 annotated.ATyping <> ty_cumul_fun constr
+R2964:2975 annotated.ATyping <> ty_cumul_fun constr
+R3091:3105 annotated.AProjections <> pair_generation thm
+R3124:3130 Corelib.Init.Logic <> eq_refl constr
+R3091:3105 annotated.AProjections <> pair_generation thm
+R3124:3130 Corelib.Init.Logic <> eq_refl constr
+R3183:3205 annotated.AProjections <> comparison_sigma_source thm
+R3183:3205 annotated.AProjections <> comparison_sigma_source thm
+R3229:3247 annotated.AProjections <> conversion_sigma thm
+R3229:3247 annotated.AProjections <> conversion_sigma thm
+R3289:3305 annotated.AComparison <> comparison_typing thm
+R3289:3305 annotated.AComparison <> comparison_typing thm
+R3333:3349 annotated.AComparison RC cmp_conversion constr
+R3359:3372 annotated.AGeneration RCore cv_trans constr
+R3333:3349 annotated.AComparison RC cmp_conversion constr
+R3359:3372 annotated.AGeneration RCore cv_trans constr
+R3387:3405 annotated.ASubstitution RS conversion_subst thm
+R3387:3405 annotated.ASubstitution RS conversion_subst thm
+R3432:3479 nameless.DBBeta <> substitution_argument_conversion thm
+R3490:3501 annotated.AGeneration RCore cv_sym constr
+R3504:3516 annotated.AGeneration RCore cv_step constr
+R3519:3531 annotated.AGeneration RCore st_root constr
+R3432:3479 nameless.DBBeta <> substitution_argument_conversion thm
+R3490:3501 annotated.AGeneration RCore cv_sym constr
+R3504:3516 annotated.AGeneration RCore cv_step constr
+R3519:3531 annotated.AGeneration RCore st_root constr
+R3586:3589 annotated.ASyntax <> TSnd constr
+R3598:3602 annotated.ASyntax <> TPair constr
+R3558:3573 annotated.ATyping <> type_correctness thm
+R3586:3589 annotated.ASyntax <> TSnd constr
+R3598:3602 annotated.ASyntax <> TPair constr
+R3558:3573 annotated.ATyping <> type_correctness thm
+R3637:3642 annotated.ATyping <> ty_snd constr
+R3637:3642 annotated.ATyping <> ty_snd constr
+R3682:3697 annotated.AProjections <> fst_preservation thm
+R3718:3733 annotated.AProjections <> snd_preservation thm

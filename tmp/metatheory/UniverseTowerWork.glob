@@ -1,0 +1,805 @@
+DIGEST 904a80f7fd39867f655bdcb8c1939f62
+FUniverseTowerWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:79 SemanticTypesWork <> <> lib
+R89:101 Stdlib.Lists.List ListNotations <> mod
+R103:106 FullReducibilityWork Full <> mod
+sec 118:130 <> UniverseTower
+var 142:145 UniverseTower base
+R152:155 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R149:151 Corelib.Init.Datatypes <> nat ind
+R160:163 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R156:159 nameless.DBSyntax <> term ind
+R164:164 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R177:181 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R169:172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R165:168 nameless.DBSyntax <> term ind
+var 199:212 UniverseTower base_candidate
+binder 223:227 <> level:3
+binder 229:229 <> n:4
+binder 231:231 <> R:5
+R248:251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R234:237 UniverseTowerWork <> UniverseTower.base var
+R239:243 UniverseTowerWork <> level:3 var
+R245:245 UniverseTowerWork <> n:4 var
+R247:247 UniverseTowerWork <> R:5 var
+R252:260 FullReducibilityWork Full candidate rec
+R262:262 UniverseTowerWork <> R:5 var
+var 276:291 UniverseTower base_not_neutral
+binder 302:306 <> level:8
+binder 308:308 <> n:9
+binder 310:310 <> R:10
+R327:330 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R313:316 UniverseTowerWork <> UniverseTower.base var
+R318:322 UniverseTowerWork <> level:8 var
+R324:324 UniverseTowerWork <> n:9 var
+R326:326 UniverseTowerWork <> R:10 var
+R331:332 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R333:339 FullReducibilityWork Full neutral def
+R341:341 UniverseTowerWork <> n:9 var
+var 355:365 UniverseTower base_not_pi
+binder 376:380 <> level:13
+binder 382:382 <> A:14
+binder 384:384 <> B:15
+binder 386:386 <> R:16
+R389:390 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R391:394 UniverseTowerWork <> UniverseTower.base var
+R396:400 UniverseTowerWork <> level:13 var
+R403:405 nameless.DBSyntax <> TPi constr
+R409:409 UniverseTowerWork <> B:15 var
+R407:407 UniverseTowerWork <> A:14 var
+R412:412 UniverseTowerWork <> R:16 var
+var 426:439 UniverseTower base_not_sigma
+binder 450:454 <> level:19
+binder 456:456 <> A:20
+binder 458:458 <> B:21
+binder 460:460 <> R:22
+R463:464 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R465:468 UniverseTowerWork <> UniverseTower.base var
+R470:474 UniverseTowerWork <> level:19 var
+R477:482 nameless.DBSyntax <> TSigma constr
+R486:486 UniverseTowerWork <> B:21 var
+R484:484 UniverseTowerWork <> A:20 var
+R489:489 UniverseTowerWork <> R:22 var
+var 503:515 UniverseTower base_not_sort
+binder 526:530 <> level:25
+binder 532:532 <> k:26
+binder 534:534 <> R:27
+R537:538 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R539:542 UniverseTowerWork <> UniverseTower.base var
+R544:548 UniverseTowerWork <> level:25 var
+R551:555 nameless.DBSyntax <> TSort constr
+R557:557 UniverseTowerWork <> k:26 var
+R560:560 UniverseTowerWork <> R:27 var
+var 574:584 UniverseTower base_unique
+binder 595:599 <> level:30
+binder 601:601 <> n:31
+binder 603:603 <> R:32
+binder 605:605 <> S:33
+R624:627 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R610:613 UniverseTowerWork <> UniverseTower.base var
+R615:619 UniverseTowerWork <> level:30 var
+R621:621 UniverseTowerWork <> n:31 var
+R623:623 UniverseTowerWork <> R:32 var
+R642:645 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R628:631 UniverseTowerWork <> UniverseTower.base var
+R633:637 UniverseTowerWork <> level:30 var
+R639:639 UniverseTowerWork <> n:31 var
+R641:641 UniverseTowerWork <> S:33 var
+R646:660 FullReducibilityWork Full predicate_equiv def
+R662:662 UniverseTowerWork <> R:32 var
+R664:664 UniverseTowerWork <> S:33 var
+var 679:693 UniverseTower base_cumulative
+binder 704:704 <> n:36
+binder 706:706 <> m:37
+R715:718 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R710:713 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R709:709 UniverseTowerWork <> n:36 var
+R714:714 UniverseTowerWork <> m:37 var
+binder 726:726 <> A:38
+binder 728:728 <> R:39
+R741:744 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R731:734 UniverseTowerWork <> UniverseTower.base var
+R736:736 UniverseTowerWork <> n:36 var
+R738:738 UniverseTowerWork <> A:38 var
+R740:740 UniverseTowerWork <> R:39 var
+R745:748 UniverseTowerWork <> UniverseTower.base var
+R750:750 UniverseTowerWork <> m:37 var
+R752:752 UniverseTowerWork <> A:38 var
+R754:754 UniverseTowerWork <> R:39 var
+ind 768:777 <> level_atom
+constr 862:868 <> la_base
+constr 932:938 <> la_sort
+R788:790 Corelib.Init.Datatypes <> nat ind
+binder 780:784 <> level:42
+R803:806 Corelib.Init.Datatypes <> list ind
+R813:816 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R809:812 nameless.DBSyntax <> term ind
+binder 794:799 <> levels:43
+R830:833 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R826:829 nameless.DBSyntax <> term ind
+R834:834 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R847:851 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R839:842 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R835:838 nameless.DBSyntax <> term ind
+binder 879:879 <> n:46
+binder 881:881 <> R:47
+R898:901 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R884:887 UniverseTowerWork <> UniverseTower.base var
+R889:893 UniverseTowerWork <> level:42 var
+R895:895 UniverseTowerWork <> n:46 var
+R897:897 UniverseTowerWork <> R:47 var
+R902:911 UniverseTowerWork <> level_atom:44 ind
+R928:928 UniverseTowerWork <> R:47 var
+R926:926 UniverseTowerWork <> n:46 var
+R919:924 UniverseTowerWork <> levels:43 var
+R913:917 UniverseTowerWork <> level:42 var
+binder 949:949 <> k:48
+binder 951:951 <> R:49
+R981:984 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R972:974 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R954:962 Stdlib.Lists.List <> nth_error def
+R971:971 UniverseTowerWork <> k:48 var
+R964:969 UniverseTowerWork <> levels:43 var
+R975:978 Corelib.Init.Datatypes <> Some constr
+R980:980 UniverseTowerWork <> R:49 var
+R985:994 UniverseTowerWork <> level_atom:44 ind
+R1019:1019 UniverseTowerWork <> R:49 var
+R1010:1014 nameless.DBSyntax <> TSort constr
+R1016:1016 UniverseTowerWork <> k:48 var
+R1002:1007 UniverseTowerWork <> levels:43 var
+R996:1000 UniverseTowerWork <> level:42 var
+scheme 768:777 <> level_atom_ind
+scheme 768:777 <> level_atom_sind
+prf 1028:1049 <> level_atom_not_neutral
+binder 1060:1064 <> level:50
+binder 1066:1071 <> levels:51
+binder 1073:1073 <> n:52
+binder 1075:1075 <> R:53
+R1105:1108 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1078:1087 UniverseTowerWork <> level_atom ind
+R1089:1093 UniverseTowerWork <> level:50 var
+R1095:1100 UniverseTowerWork <> levels:51 var
+R1102:1102 UniverseTowerWork <> n:52 var
+R1104:1104 UniverseTowerWork <> R:53 var
+R1109:1110 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1111:1117 FullReducibilityWork Full neutral def
+R1119:1119 UniverseTowerWork <> n:52 var
+R1176:1191 UniverseTowerWork <> UniverseTower.base_not_neutral var
+R1211:1217 FullReducibilityWork Full neutral def
+R1176:1191 UniverseTowerWork <> UniverseTower.base_not_neutral var
+prf 1240:1256 <> level_atom_not_pi
+binder 1267:1271 <> level:54
+binder 1273:1278 <> levels:55
+binder 1280:1280 <> A:56
+binder 1282:1282 <> B:57
+binder 1284:1284 <> R:58
+R1287:1288 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1289:1298 UniverseTowerWork <> level_atom ind
+R1300:1304 UniverseTowerWork <> level:54 var
+R1306:1311 UniverseTowerWork <> levels:55 var
+R1314:1316 nameless.DBSyntax <> TPi constr
+R1320:1320 UniverseTowerWork <> B:57 var
+R1318:1318 UniverseTowerWork <> A:56 var
+R1323:1323 UniverseTowerWork <> R:58 var
+R1389:1399 UniverseTowerWork <> UniverseTower.base_not_pi var
+R1389:1399 UniverseTowerWork <> UniverseTower.base_not_pi var
+prf 1426:1445 <> level_atom_not_sigma
+binder 1456:1460 <> level:59
+binder 1462:1467 <> levels:60
+binder 1469:1469 <> A:61
+binder 1471:1471 <> B:62
+binder 1473:1473 <> R:63
+R1476:1477 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1478:1487 UniverseTowerWork <> level_atom ind
+R1489:1493 UniverseTowerWork <> level:59 var
+R1495:1500 UniverseTowerWork <> levels:60 var
+R1503:1508 nameless.DBSyntax <> TSigma constr
+R1512:1512 UniverseTowerWork <> B:62 var
+R1510:1510 UniverseTowerWork <> A:61 var
+R1515:1515 UniverseTowerWork <> R:63 var
+R1581:1594 UniverseTowerWork <> UniverseTower.base_not_sigma var
+R1581:1594 UniverseTowerWork <> UniverseTower.base_not_sigma var
+prf 1621:1637 <> level_atom_unique
+binder 1648:1652 <> level:64
+binder 1654:1659 <> levels:65
+binder 1661:1661 <> n:66
+binder 1663:1663 <> R:67
+binder 1665:1665 <> S:68
+R1697:1700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1670:1679 UniverseTowerWork <> level_atom ind
+R1681:1685 UniverseTowerWork <> level:64 var
+R1687:1692 UniverseTowerWork <> levels:65 var
+R1694:1694 UniverseTowerWork <> n:66 var
+R1696:1696 UniverseTowerWork <> R:67 var
+R1728:1731 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1701:1710 UniverseTowerWork <> level_atom ind
+R1712:1716 UniverseTowerWork <> level:64 var
+R1718:1723 UniverseTowerWork <> levels:65 var
+R1725:1725 UniverseTowerWork <> n:66 var
+R1727:1727 UniverseTowerWork <> S:68 var
+R1732:1746 FullReducibilityWork Full predicate_equiv def
+R1748:1748 UniverseTowerWork <> R:67 var
+R1750:1750 UniverseTowerWork <> S:68 var
+R1845:1855 UniverseTowerWork <> UniverseTower.base_unique var
+R1845:1855 UniverseTowerWork <> UniverseTower.base_unique var
+R1891:1903 UniverseTowerWork <> UniverseTower.base_not_sort var
+R1891:1903 UniverseTowerWork <> UniverseTower.base_not_sort var
+R1939:1951 UniverseTowerWork <> UniverseTower.base_not_sort var
+R1939:1951 UniverseTowerWork <> UniverseTower.base_not_sort var
+R2004:2006 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1991:1999 Stdlib.Lists.List <> nth_error def
+R2007:2010 Corelib.Init.Datatypes <> Some constr
+R2004:2006 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1991:1999 Stdlib.Lists.List <> nth_error def
+R2007:2010 Corelib.Init.Datatypes <> Some constr
+R2033:2035 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2020:2028 Stdlib.Lists.List <> nth_error def
+R2036:2039 Corelib.Init.Datatypes <> Some constr
+R2033:2035 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2020:2028 Stdlib.Lists.List <> nth_error def
+R2036:2039 Corelib.Init.Datatypes <> Some constr
+prf 2126:2145 <> level_atom_candidate
+binder 2156:2160 <> level:69
+binder 2162:2167 <> levels:70
+R2195:2198 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2172:2177 Corelib.Lists.ListDef <> Forall ind
+R2189:2194 UniverseTowerWork <> levels:70 var
+R2179:2187 FullReducibilityWork Full candidate rec
+binder 2206:2206 <> n:71
+binder 2208:2208 <> R:72
+R2238:2241 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2211:2220 UniverseTowerWork <> level_atom ind
+R2222:2226 UniverseTowerWork <> level:69 var
+R2228:2233 UniverseTowerWork <> levels:70 var
+R2235:2235 UniverseTowerWork <> n:71 var
+R2237:2237 UniverseTowerWork <> R:72 var
+R2242:2250 FullReducibilityWork Full candidate rec
+R2252:2252 UniverseTowerWork <> R:72 var
+R2314:2327 UniverseTowerWork <> UniverseTower.base_candidate var
+R2314:2327 UniverseTowerWork <> UniverseTower.base_candidate var
+R2354:2366 Stdlib.Lists.List <> Forall_forall thm
+R2389:2400 Stdlib.Lists.List <> nth_error_In thm
+R2354:2366 Stdlib.Lists.List <> Forall_forall thm
+R2389:2400 Stdlib.Lists.List <> nth_error_In thm
+prf 2422:2445 <> layer_universe_candidate
+binder 2456:2460 <> level:73
+binder 2462:2467 <> levels:74
+R2493:2498 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2470:2475 Corelib.Lists.ListDef <> Forall ind
+R2487:2492 UniverseTowerWork <> levels:74 var
+R2477:2485 FullReducibilityWork Full candidate rec
+R2499:2507 FullReducibilityWork Full candidate rec
+R2510:2523 SemanticTypesWork <> reducible_type def
+R2526:2535 UniverseTowerWork <> level_atom ind
+R2537:2541 UniverseTowerWork <> level:73 var
+R2543:2548 UniverseTowerWork <> levels:74 var
+R2574:2597 SemanticTypesWork <> reducible_type_candidate thm
+R2574:2597 SemanticTypesWork <> reducible_type_candidate thm
+def 2615:2629 <> universe_levels
+binder 2631:2631 <> n:75
+R2635:2638 Corelib.Init.Datatypes <> list ind
+R2645:2648 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2641:2644 nameless.DBSyntax <> term ind
+R2666:2666 UniverseTowerWork <> n:75 var
+R2682:2683 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R2689:2689 Corelib.Init.Datatypes <> S constr
+R2712:2726 UniverseTowerWork <> universe_levels:76 def
+binder 2700:2707 <> previous:78
+R2747:2750 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2739:2746 UniverseTowerWork <> previous:78 var
+R2751:2751 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2790:2790 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2752:2765 SemanticTypesWork <> reducible_type def
+R2768:2777 UniverseTowerWork <> level_atom ind
+R2781:2788 UniverseTowerWork <> previous:78 var
+def 2810:2823 <> universe_model
+binder 2825:2825 <> n:79
+R2830:2843 SemanticTypesWork <> reducible_type def
+R2846:2855 UniverseTowerWork <> level_atom ind
+R2857:2857 UniverseTowerWork <> n:79 var
+R2860:2874 UniverseTowerWork <> universe_levels def
+R2876:2876 UniverseTowerWork <> n:79 var
+def 2892:2906 <> universe_interp
+binder 2908:2908 <> n:80
+R2913:2923 SemanticTypesWork <> type_interp ind
+R2926:2935 UniverseTowerWork <> level_atom ind
+R2937:2937 UniverseTowerWork <> n:80 var
+R2940:2954 UniverseTowerWork <> universe_levels def
+R2956:2956 UniverseTowerWork <> n:80 var
+prf 2967:2992 <> universe_levels_candidates
+binder 3003:3003 <> n:81
+R3006:3011 Corelib.Lists.ListDef <> Forall ind
+R3024:3038 UniverseTowerWork <> universe_levels def
+R3040:3040 UniverseTowerWork <> n:81 var
+R3013:3021 FullReducibilityWork Full candidate rec
+R3071:3085 UniverseTowerWork <> universe_levels def
+R3108:3117 Stdlib.Lists.List <> Forall_app thm
+R3108:3117 Stdlib.Lists.List <> Forall_app thm
+R3168:3191 UniverseTowerWork <> layer_universe_candidate thm
+R3168:3191 UniverseTowerWork <> layer_universe_candidate thm
+prf 3220:3243 <> universe_model_candidate
+binder 3254:3254 <> n:82
+R3257:3265 FullReducibilityWork Full candidate rec
+R3268:3281 UniverseTowerWork <> universe_model def
+R3283:3283 UniverseTowerWork <> n:82 var
+R3310:3333 UniverseTowerWork <> layer_universe_candidate thm
+R3336:3361 UniverseTowerWork <> universe_levels_candidates thm
+R3310:3333 UniverseTowerWork <> layer_universe_candidate thm
+R3336:3361 UniverseTowerWork <> universe_levels_candidates thm
+prf 3375:3396 <> universe_levels_length
+binder 3407:3407 <> n:83
+R3436:3438 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3410:3415 Corelib.Init.Datatypes <> length def
+R3418:3432 UniverseTowerWork <> universe_levels def
+R3434:3434 UniverseTowerWork <> n:83 var
+R3439:3439 UniverseTowerWork <> n:83 var
+R3467:3481 UniverseTowerWork <> universe_levels def
+R3506:3515 Stdlib.Lists.List <> length_app thm
+R3506:3515 Stdlib.Lists.List <> length_app thm
+R3506:3515 Stdlib.Lists.List <> length_app thm
+prf 3545:3566 <> universe_levels_lookup
+binder 3577:3577 <> k:84
+binder 3579:3579 <> n:85
+R3587:3592 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3583:3585 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R3582:3582 UniverseTowerWork <> k:84 var
+R3586:3586 UniverseTowerWork <> n:85 var
+R3624:3626 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3593:3601 Stdlib.Lists.List <> nth_error def
+R3623:3623 UniverseTowerWork <> k:84 var
+R3604:3618 UniverseTowerWork <> universe_levels def
+R3620:3620 UniverseTowerWork <> n:85 var
+R3627:3630 Corelib.Init.Datatypes <> Some constr
+R3633:3646 UniverseTowerWork <> universe_model def
+R3648:3648 UniverseTowerWork <> k:84 var
+R3723:3737 UniverseTowerWork <> universe_levels def
+R3751:3760 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R3751:3760 Stdlib.Arith.PeanoNat Nat eq_dec thm
+R3819:3840 UniverseTowerWork <> universe_levels_length thm
+R3792:3805 Stdlib.Lists.List <> nth_error_app2 thm
+R3792:3805 Stdlib.Lists.List <> nth_error_app2 thm
+R3819:3840 UniverseTowerWork <> universe_levels_length thm
+R3819:3840 UniverseTowerWork <> universe_levels_length thm
+R3792:3805 Stdlib.Lists.List <> nth_error_app2 thm
+R3861:3882 UniverseTowerWork <> universe_levels_length thm
+R3885:3896 Stdlib.Arith.PeanoNat Nat sub_diag thm
+R3861:3882 UniverseTowerWork <> universe_levels_length thm
+R3861:3882 UniverseTowerWork <> universe_levels_length thm
+R3885:3896 Stdlib.Arith.PeanoNat Nat sub_diag thm
+R3885:3896 Stdlib.Arith.PeanoNat Nat sub_diag thm
+R3951:3972 UniverseTowerWork <> universe_levels_length thm
+R3924:3937 Stdlib.Lists.List <> nth_error_app1 thm
+R3924:3937 Stdlib.Lists.List <> nth_error_app1 thm
+R3951:3972 UniverseTowerWork <> universe_levels_length thm
+R3951:3972 UniverseTowerWork <> universe_levels_length thm
+R3924:3937 Stdlib.Lists.List <> nth_error_app1 thm
+prf 4013:4032 <> type_interp_monotone
+binder 4043:4047 <> atoms:86
+binder 4049:4054 <> atoms':87
+R4059:4059 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4095:4101 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4067:4067 <> n:88
+binder 4069:4069 <> R:89
+R4081:4084 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4072:4076 UniverseTowerWork <> atoms:86 var
+R4078:4078 UniverseTowerWork <> n:88 var
+R4080:4080 UniverseTowerWork <> R:89 var
+R4085:4090 UniverseTowerWork <> atoms':87 var
+R4092:4092 UniverseTowerWork <> n:88 var
+R4094:4094 UniverseTowerWork <> R:89 var
+binder 4109:4109 <> A:90
+binder 4111:4111 <> R:91
+R4135:4138 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4114:4124 SemanticTypesWork <> type_interp ind
+R4132:4132 UniverseTowerWork <> A:90 var
+R4134:4134 UniverseTowerWork <> R:91 var
+R4126:4130 UniverseTowerWork <> atoms:86 var
+R4139:4149 SemanticTypesWork <> type_interp ind
+R4158:4158 UniverseTowerWork <> A:90 var
+R4160:4160 UniverseTowerWork <> R:91 var
+R4151:4156 UniverseTowerWork <> atoms':87 var
+R4233:4242 SemanticTypesWork <> it_neutral constr
+R4264:4270 SemanticTypesWork <> it_atom constr
+R4338:4342 SemanticTypesWork <> it_pi constr
+R4364:4371 SemanticTypesWork <> it_sigma constr
+R4393:4400 SemanticTypesWork <> it_equiv constr
+R4233:4242 SemanticTypesWork <> it_neutral constr
+R4233:4242 SemanticTypesWork <> it_neutral constr
+R4264:4270 SemanticTypesWork <> it_atom constr
+R4233:4242 SemanticTypesWork <> it_neutral constr
+R4264:4270 SemanticTypesWork <> it_atom constr
+R4338:4342 SemanticTypesWork <> it_pi constr
+R4233:4242 SemanticTypesWork <> it_neutral constr
+R4264:4270 SemanticTypesWork <> it_atom constr
+R4338:4342 SemanticTypesWork <> it_pi constr
+R4364:4371 SemanticTypesWork <> it_sigma constr
+R4233:4242 SemanticTypesWork <> it_neutral constr
+R4264:4270 SemanticTypesWork <> it_atom constr
+R4338:4342 SemanticTypesWork <> it_pi constr
+R4364:4371 SemanticTypesWork <> it_sigma constr
+R4393:4400 SemanticTypesWork <> it_equiv constr
+prf 4428:4448 <> level_atom_cumulative
+binder 4459:4459 <> n:92
+binder 4461:4461 <> m:93
+R4470:4473 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4465:4468 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R4464:4464 UniverseTowerWork <> n:92 var
+R4469:4469 UniverseTowerWork <> m:93 var
+binder 4481:4481 <> A:94
+binder 4483:4483 <> R:95
+R4524:4527 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4488:4497 UniverseTowerWork <> level_atom ind
+R4499:4499 UniverseTowerWork <> n:92 var
+R4502:4516 UniverseTowerWork <> universe_levels def
+R4518:4518 UniverseTowerWork <> n:92 var
+R4521:4521 UniverseTowerWork <> A:94 var
+R4523:4523 UniverseTowerWork <> R:95 var
+R4528:4537 UniverseTowerWork <> level_atom ind
+R4539:4539 UniverseTowerWork <> m:93 var
+R4542:4556 UniverseTowerWork <> universe_levels def
+R4558:4558 UniverseTowerWork <> m:93 var
+R4561:4561 UniverseTowerWork <> A:94 var
+R4563:4563 UniverseTowerWork <> R:95 var
+R4616:4622 UniverseTowerWork <> la_base constr
+R4632:4646 UniverseTowerWork <> UniverseTower.base_cumulative var
+R4616:4622 UniverseTowerWork <> la_base constr
+R4632:4646 UniverseTowerWork <> UniverseTower.base_cumulative var
+R4681:4683 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4681:4683 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4703:4724 UniverseTowerWork <> universe_levels_length thm
+R4703:4724 UniverseTowerWork <> universe_levels_length thm
+R4703:4724 UniverseTowerWork <> universe_levels_length thm
+R4733:4746 Stdlib.Lists.List <> nth_error_Some thm
+R4733:4746 Stdlib.Lists.List <> nth_error_Some thm
+R4777:4798 UniverseTowerWork <> universe_levels_lookup thm
+R4777:4798 UniverseTowerWork <> universe_levels_lookup thm
+R4866:4872 UniverseTowerWork <> la_sort constr
+R4875:4896 UniverseTowerWork <> universe_levels_lookup thm
+R4866:4872 UniverseTowerWork <> la_sort constr
+R4875:4896 UniverseTowerWork <> universe_levels_lookup thm
+prf 4917:4942 <> universe_interp_cumulative
+binder 4953:4953 <> n:96
+binder 4955:4955 <> m:97
+R4964:4967 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4959:4962 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R4958:4958 UniverseTowerWork <> n:96 var
+R4963:4963 UniverseTowerWork <> m:97 var
+binder 4975:4975 <> A:98
+binder 4977:4977 <> R:99
+R5003:5006 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4982:4996 UniverseTowerWork <> universe_interp def
+R4998:4998 UniverseTowerWork <> n:96 var
+R5000:5000 UniverseTowerWork <> A:98 var
+R5002:5002 UniverseTowerWork <> R:99 var
+R5007:5021 UniverseTowerWork <> universe_interp def
+R5023:5023 UniverseTowerWork <> m:97 var
+R5025:5025 UniverseTowerWork <> A:98 var
+R5027:5027 UniverseTowerWork <> R:99 var
+R5061:5080 UniverseTowerWork <> type_interp_monotone thm
+R5061:5080 UniverseTowerWork <> type_interp_monotone thm
+R5095:5115 UniverseTowerWork <> level_atom_cumulative thm
+R5095:5115 UniverseTowerWork <> level_atom_cumulative thm
+prf 5131:5155 <> universe_model_cumulative
+binder 5166:5166 <> n:100
+binder 5168:5168 <> m:101
+R5177:5180 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5172:5175 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R5171:5171 UniverseTowerWork <> n:100 var
+R5176:5176 UniverseTowerWork <> m:101 var
+binder 5188:5188 <> A:102
+R5211:5214 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5193:5206 UniverseTowerWork <> universe_model def
+R5208:5208 UniverseTowerWork <> n:100 var
+R5210:5210 UniverseTowerWork <> A:102 var
+R5215:5228 UniverseTowerWork <> universe_model def
+R5230:5230 UniverseTowerWork <> m:101 var
+R5232:5232 UniverseTowerWork <> A:102 var
+R5286:5311 UniverseTowerWork <> universe_interp_cumulative thm
+R5286:5311 UniverseTowerWork <> universe_interp_cumulative thm
+prf 5338:5348 <> sort_normal
+binder 5359:5359 <> k:103
+R5362:5372 FullNormalFormsWork <> normal_form def
+R5375:5379 nameless.DBSyntax <> TSort constr
+R5381:5381 UniverseTowerWork <> k:103 var
+prf 5446:5473 <> universe_sort_interpretation
+binder 5484:5484 <> k:104
+binder 5486:5486 <> n:105
+R5494:5499 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5490:5492 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5489:5489 UniverseTowerWork <> k:104 var
+R5493:5493 UniverseTowerWork <> n:105 var
+R5500:5514 UniverseTowerWork <> universe_interp def
+R5516:5516 UniverseTowerWork <> n:105 var
+R5519:5523 nameless.DBSyntax <> TSort constr
+R5525:5525 UniverseTowerWork <> k:104 var
+R5529:5542 UniverseTowerWork <> universe_model def
+R5544:5544 UniverseTowerWork <> k:104 var
+R5595:5599 nameless.DBSyntax <> TSort constr
+R5578:5584 SemanticTypesWork <> it_atom constr
+R5595:5599 nameless.DBSyntax <> TSort constr
+R5578:5584 SemanticTypesWork <> it_atom constr
+R5615:5636 FullNormalFormsWork <> normal_form_accessible thm
+R5639:5649 UniverseTowerWork <> sort_normal thm
+R5615:5636 FullNormalFormsWork <> normal_form_accessible thm
+R5639:5649 UniverseTowerWork <> sort_normal thm
+R5679:5689 UniverseTowerWork <> sort_normal thm
+R5679:5689 UniverseTowerWork <> sort_normal thm
+R5702:5708 UniverseTowerWork <> la_sort constr
+R5721:5742 UniverseTowerWork <> universe_levels_lookup thm
+R5702:5708 UniverseTowerWork <> la_sort constr
+R5721:5742 UniverseTowerWork <> universe_levels_lookup thm
+prf 5758:5781 <> universe_sort_computable
+binder 5792:5792 <> k:106
+R5795:5808 UniverseTowerWork <> universe_model def
+R5811:5811 Corelib.Init.Datatypes <> S constr
+R5813:5813 UniverseTowerWork <> k:106 var
+R5817:5821 nameless.DBSyntax <> TSort constr
+R5823:5823 UniverseTowerWork <> k:106 var
+R5852:5865 UniverseTowerWork <> universe_model def
+R5877:5904 UniverseTowerWork <> universe_sort_interpretation thm
+R5852:5865 UniverseTowerWork <> universe_model def
+R5877:5904 UniverseTowerWork <> universe_sort_interpretation thm
+prf 5926:5950 <> universe_interp_candidate
+binder 5961:5961 <> n:107
+binder 5963:5963 <> A:108
+binder 5965:5965 <> R:109
+R5991:5994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5970:5984 UniverseTowerWork <> universe_interp def
+R5986:5986 UniverseTowerWork <> n:107 var
+R5988:5988 UniverseTowerWork <> A:108 var
+R5990:5990 UniverseTowerWork <> R:109 var
+R5995:6003 FullReducibilityWork Full candidate rec
+R6005:6005 UniverseTowerWork <> R:109 var
+R6040:6060 SemanticTypesWork <> type_interp_candidate thm
+R6040:6060 SemanticTypesWork <> type_interp_candidate thm
+R6093:6112 UniverseTowerWork <> level_atom_candidate thm
+R6115:6140 UniverseTowerWork <> universe_levels_candidates thm
+R6093:6112 UniverseTowerWork <> level_atom_candidate thm
+R6115:6140 UniverseTowerWork <> universe_levels_candidates thm
+R6153:6174 UniverseTowerWork <> level_atom_not_neutral thm
+R6153:6174 UniverseTowerWork <> level_atom_not_neutral thm
+R6187:6203 UniverseTowerWork <> level_atom_not_pi thm
+R6187:6203 UniverseTowerWork <> level_atom_not_pi thm
+R6216:6235 UniverseTowerWork <> level_atom_not_sigma thm
+R6216:6235 UniverseTowerWork <> level_atom_not_sigma thm
+R6248:6264 UniverseTowerWork <> level_atom_unique thm
+R6248:6264 UniverseTowerWork <> level_atom_unique thm
+prf 6280:6301 <> universe_interp_unique
+binder 6312:6312 <> n:110
+binder 6314:6314 <> m:111
+binder 6316:6316 <> A:112
+binder 6318:6318 <> B:113
+binder 6320:6320 <> R:114
+binder 6322:6322 <> S:115
+R6348:6351 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6327:6341 UniverseTowerWork <> universe_interp def
+R6343:6343 UniverseTowerWork <> n:110 var
+R6345:6345 UniverseTowerWork <> A:112 var
+R6347:6347 UniverseTowerWork <> R:114 var
+R6373:6376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6352:6366 UniverseTowerWork <> universe_interp def
+R6368:6368 UniverseTowerWork <> m:111 var
+R6370:6370 UniverseTowerWork <> B:113 var
+R6372:6372 UniverseTowerWork <> S:115 var
+R6385:6388 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6377:6380 nameless.DBCore <> conv ind
+R6384:6384 UniverseTowerWork <> B:113 var
+R6382:6382 UniverseTowerWork <> A:112 var
+R6389:6403 FullReducibilityWork Full predicate_equiv def
+R6405:6405 UniverseTowerWork <> R:114 var
+R6407:6407 UniverseTowerWork <> S:115 var
+R6462:6487 UniverseTowerWork <> universe_interp_cumulative thm
+R6492:6498 Stdlib.Arith.PeanoNat Nat max def
+R6506:6517 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R6462:6487 UniverseTowerWork <> universe_interp_cumulative thm
+R6492:6498 Stdlib.Arith.PeanoNat Nat max def
+R6506:6517 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R6554:6579 UniverseTowerWork <> universe_interp_cumulative thm
+R6584:6590 Stdlib.Arith.PeanoNat Nat max def
+R6598:6609 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R6554:6579 UniverseTowerWork <> universe_interp_cumulative thm
+R6584:6590 Stdlib.Arith.PeanoNat Nat max def
+R6598:6609 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R6642:6659 SemanticTypesWork <> type_interp_unique thm
+R6662:6671 UniverseTowerWork <> level_atom ind
+R6674:6680 Stdlib.Arith.PeanoNat Nat max def
+R6688:6702 UniverseTowerWork <> universe_levels def
+R6705:6711 Stdlib.Arith.PeanoNat Nat max def
+R6733:6754 UniverseTowerWork <> level_atom_not_neutral thm
+R6762:6778 UniverseTowerWork <> level_atom_not_pi thm
+R6786:6805 UniverseTowerWork <> level_atom_not_sigma thm
+R6818:6834 UniverseTowerWork <> level_atom_unique thm
+R6642:6659 SemanticTypesWork <> type_interp_unique thm
+R6662:6671 UniverseTowerWork <> level_atom ind
+R6674:6680 Stdlib.Arith.PeanoNat Nat max def
+R6688:6702 UniverseTowerWork <> universe_levels def
+R6705:6711 Stdlib.Arith.PeanoNat Nat max def
+R6733:6754 UniverseTowerWork <> level_atom_not_neutral thm
+R6762:6778 UniverseTowerWork <> level_atom_not_pi thm
+R6786:6805 UniverseTowerWork <> level_atom_not_sigma thm
+R6818:6834 UniverseTowerWork <> level_atom_unique thm
+def 6884:6900 <> universe_elements
+binder 6902:6902 <> n:116
+binder 6904:6904 <> A:117
+R6909:6921 SemanticTypesWork <> type_elements def
+R6958:6958 UniverseTowerWork <> A:117 var
+R6924:6933 UniverseTowerWork <> level_atom ind
+R6935:6935 UniverseTowerWork <> n:116 var
+R6938:6952 UniverseTowerWork <> universe_levels def
+R6954:6954 UniverseTowerWork <> n:116 var
+prf 6967:6991 <> universe_interp_canonical
+binder 7002:7002 <> n:118
+binder 7004:7004 <> A:119
+R7027:7030 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7009:7022 UniverseTowerWork <> universe_model def
+R7024:7024 UniverseTowerWork <> n:118 var
+R7026:7026 UniverseTowerWork <> A:119 var
+R7031:7045 UniverseTowerWork <> universe_interp def
+R7047:7047 UniverseTowerWork <> n:118 var
+R7049:7049 UniverseTowerWork <> A:119 var
+R7052:7068 UniverseTowerWork <> universe_elements def
+R7070:7070 UniverseTowerWork <> n:118 var
+R7072:7072 UniverseTowerWork <> A:119 var
+R7105:7125 SemanticTypesWork <> type_interp_canonical thm
+R7139:7160 UniverseTowerWork <> level_atom_not_neutral thm
+R7168:7184 UniverseTowerWork <> level_atom_not_pi thm
+R7192:7211 UniverseTowerWork <> level_atom_not_sigma thm
+R7224:7240 UniverseTowerWork <> level_atom_unique thm
+R7105:7125 SemanticTypesWork <> type_interp_canonical thm
+R7139:7160 UniverseTowerWork <> level_atom_not_neutral thm
+R7168:7184 UniverseTowerWork <> level_atom_not_pi thm
+R7192:7211 UniverseTowerWork <> level_atom_not_sigma thm
+R7224:7240 UniverseTowerWork <> level_atom_unique thm
+prf 7265:7285 <> universe_pi_formation
+binder 7296:7296 <> j:120
+binder 7298:7298 <> k:121
+binder 7300:7300 <> U:122
+binder 7302:7302 <> V:123
+R7325:7330 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7307:7320 UniverseTowerWork <> universe_model def
+R7322:7322 UniverseTowerWork <> j:120 var
+R7324:7324 UniverseTowerWork <> U:122 var
+R7331:7331 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7399:7405 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7339:7339 <> a:124
+R7365:7368 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7342:7358 UniverseTowerWork <> universe_elements def
+R7360:7360 UniverseTowerWork <> j:120 var
+R7362:7362 UniverseTowerWork <> U:122 var
+R7364:7364 UniverseTowerWork <> a:124 var
+R7369:7382 UniverseTowerWork <> universe_model def
+R7384:7384 UniverseTowerWork <> k:121 var
+R7387:7391 nameless.DBSyntax <> subst def
+R7397:7397 UniverseTowerWork <> V:123 var
+R7393:7393 UniverseTowerWork <> a:124 var
+R7406:7419 UniverseTowerWork <> universe_model def
+R7422:7428 Stdlib.Arith.PeanoNat Nat max def
+R7430:7430 UniverseTowerWork <> j:120 var
+R7432:7432 UniverseTowerWork <> k:121 var
+R7436:7438 nameless.DBSyntax <> TPi constr
+R7442:7442 UniverseTowerWork <> V:123 var
+R7440:7440 UniverseTowerWork <> U:122 var
+R7487:7504 FullReducibilityWork Full dependent_function def
+R7507:7523 UniverseTowerWork <> universe_elements def
+binder 7539:7539 <> a:125
+R7544:7560 UniverseTowerWork <> universe_elements def
+R7565:7569 nameless.DBSyntax <> subst def
+R7571:7571 UniverseTowerWork <> a:125 var
+R7487:7504 FullReducibilityWork Full dependent_function def
+R7507:7523 UniverseTowerWork <> universe_elements def
+binder 7539:7539 <> a:126
+R7544:7560 UniverseTowerWork <> universe_elements def
+R7565:7569 nameless.DBSyntax <> subst def
+R7571:7571 UniverseTowerWork <> a:126 var
+R7590:7609 SemanticTypesWork <> type_interp_pi_intro thm
+R7590:7609 SemanticTypesWork <> type_interp_pi_intro thm
+R7622:7641 UniverseTowerWork <> level_atom_candidate thm
+R7644:7669 UniverseTowerWork <> universe_levels_candidates thm
+R7622:7641 UniverseTowerWork <> level_atom_candidate thm
+R7644:7669 UniverseTowerWork <> universe_levels_candidates thm
+R7682:7703 UniverseTowerWork <> level_atom_not_neutral thm
+R7682:7703 UniverseTowerWork <> level_atom_not_neutral thm
+R7716:7732 UniverseTowerWork <> level_atom_not_pi thm
+R7716:7732 UniverseTowerWork <> level_atom_not_pi thm
+R7745:7764 UniverseTowerWork <> level_atom_not_sigma thm
+R7745:7764 UniverseTowerWork <> level_atom_not_sigma thm
+R7777:7793 UniverseTowerWork <> level_atom_unique thm
+R7777:7793 UniverseTowerWork <> level_atom_unique thm
+R7807:7832 UniverseTowerWork <> universe_interp_cumulative thm
+R7837:7843 Stdlib.Arith.PeanoNat Nat max def
+R7851:7862 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R7807:7832 UniverseTowerWork <> universe_interp_cumulative thm
+R7837:7843 Stdlib.Arith.PeanoNat Nat max def
+R7851:7862 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R7885:7909 UniverseTowerWork <> universe_interp_canonical thm
+R7885:7909 UniverseTowerWork <> universe_interp_canonical thm
+R7936:7961 UniverseTowerWork <> universe_interp_cumulative thm
+R7966:7972 Stdlib.Arith.PeanoNat Nat max def
+R7980:7991 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R7936:7961 UniverseTowerWork <> universe_interp_cumulative thm
+R7966:7972 Stdlib.Arith.PeanoNat Nat max def
+R7980:7991 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R8010:8034 UniverseTowerWork <> universe_interp_canonical thm
+R8010:8034 UniverseTowerWork <> universe_interp_canonical thm
+prf 8064:8087 <> universe_sigma_formation
+binder 8098:8098 <> j:127
+binder 8100:8100 <> k:128
+binder 8102:8102 <> U:129
+binder 8104:8104 <> V:130
+R8127:8132 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8109:8122 UniverseTowerWork <> universe_model def
+R8124:8124 UniverseTowerWork <> j:127 var
+R8126:8126 UniverseTowerWork <> U:129 var
+R8133:8133 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8201:8207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8141:8141 <> a:131
+R8167:8170 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8144:8160 UniverseTowerWork <> universe_elements def
+R8162:8162 UniverseTowerWork <> j:127 var
+R8164:8164 UniverseTowerWork <> U:129 var
+R8166:8166 UniverseTowerWork <> a:131 var
+R8171:8184 UniverseTowerWork <> universe_model def
+R8186:8186 UniverseTowerWork <> k:128 var
+R8189:8193 nameless.DBSyntax <> subst def
+R8199:8199 UniverseTowerWork <> V:130 var
+R8195:8195 UniverseTowerWork <> a:131 var
+R8208:8221 UniverseTowerWork <> universe_model def
+R8224:8230 Stdlib.Arith.PeanoNat Nat max def
+R8232:8232 UniverseTowerWork <> j:127 var
+R8234:8234 UniverseTowerWork <> k:128 var
+R8238:8243 nameless.DBSyntax <> TSigma constr
+R8247:8247 UniverseTowerWork <> V:130 var
+R8245:8245 UniverseTowerWork <> U:129 var
+R8292:8305 FullReducibilityWork Full dependent_pair def
+R8308:8324 UniverseTowerWork <> universe_elements def
+binder 8340:8340 <> a:132
+R8345:8361 UniverseTowerWork <> universe_elements def
+R8366:8370 nameless.DBSyntax <> subst def
+R8372:8372 UniverseTowerWork <> a:132 var
+R8292:8305 FullReducibilityWork Full dependent_pair def
+R8308:8324 UniverseTowerWork <> universe_elements def
+binder 8340:8340 <> a:133
+R8345:8361 UniverseTowerWork <> universe_elements def
+R8366:8370 nameless.DBSyntax <> subst def
+R8372:8372 UniverseTowerWork <> a:133 var
+R8391:8413 SemanticTypesWork <> type_interp_sigma_intro thm
+R8391:8413 SemanticTypesWork <> type_interp_sigma_intro thm
+R8426:8445 UniverseTowerWork <> level_atom_candidate thm
+R8448:8473 UniverseTowerWork <> universe_levels_candidates thm
+R8426:8445 UniverseTowerWork <> level_atom_candidate thm
+R8448:8473 UniverseTowerWork <> universe_levels_candidates thm
+R8486:8507 UniverseTowerWork <> level_atom_not_neutral thm
+R8486:8507 UniverseTowerWork <> level_atom_not_neutral thm
+R8520:8536 UniverseTowerWork <> level_atom_not_pi thm
+R8520:8536 UniverseTowerWork <> level_atom_not_pi thm
+R8549:8568 UniverseTowerWork <> level_atom_not_sigma thm
+R8549:8568 UniverseTowerWork <> level_atom_not_sigma thm
+R8581:8597 UniverseTowerWork <> level_atom_unique thm
+R8581:8597 UniverseTowerWork <> level_atom_unique thm
+R8611:8636 UniverseTowerWork <> universe_interp_cumulative thm
+R8641:8647 Stdlib.Arith.PeanoNat Nat max def
+R8655:8666 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R8611:8636 UniverseTowerWork <> universe_interp_cumulative thm
+R8641:8647 Stdlib.Arith.PeanoNat Nat max def
+R8655:8666 Stdlib.Arith.PeanoNat Nat le_max_l thm
+R8689:8713 UniverseTowerWork <> universe_interp_canonical thm
+R8689:8713 UniverseTowerWork <> universe_interp_canonical thm
+R8740:8765 UniverseTowerWork <> universe_interp_cumulative thm
+R8770:8776 Stdlib.Arith.PeanoNat Nat max def
+R8784:8795 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R8740:8765 UniverseTowerWork <> universe_interp_cumulative thm
+R8770:8776 Stdlib.Arith.PeanoNat Nat max def
+R8784:8795 Stdlib.Arith.PeanoNat Nat le_max_r thm
+R8814:8838 UniverseTowerWork <> universe_interp_canonical thm
+R8814:8838 UniverseTowerWork <> universe_interp_canonical thm
+R8864:8876 UniverseTowerWork UniverseTower <> sec
+R8898:8921 UniverseTowerWork <> universe_model_candidate thm
+R8942:8966 UniverseTowerWork <> universe_model_cumulative thm
+R8987:9010 UniverseTowerWork <> universe_sort_computable thm
+R9031:9052 UniverseTowerWork <> universe_interp_unique thm
+R9073:9093 UniverseTowerWork <> universe_pi_formation thm
+R9114:9137 UniverseTowerWork <> universe_sigma_formation thm

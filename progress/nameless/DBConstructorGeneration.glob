@@ -1,0 +1,521 @@
+DIGEST 02983be228711ecaabf714503a8657ec
+Fnameless.DBConstructorGeneration
+R89:92 Stdlib.Lists.List <> <> lib
+R94:98 Stdlib.Arith.Arith <> <> lib
+R100:103 Stdlib.Bool.Bool <> <> lib
+R105:107 Stdlib.micromega.Lia <> <> lib
+R125:148 nameless.DBInductionBeta <> <> lib
+R158:170 Stdlib.Lists.List ListNotations <> mod
+sec 182:196 <> UnaryConversion
+var 208:208 UnaryConversion C
+R216:219 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R212:215 nameless.DBSyntax <> term ind
+R220:223 nameless.DBSyntax <> term ind
+var 237:240 UnaryConversion redC
+binder 251:251 <> A:3
+binder 253:253 <> t:4
+R273:276 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R256:264 nameless.DBCore <> reduction ind
+R272:272 nameless.DBConstructorGeneration <> t:4 var
+R267:267 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R269:269 nameless.DBConstructorGeneration <> A:3 var
+R277:283 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R285:286 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 284:284 <> B:5
+R294:297 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R288:290 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R287:287 nameless.DBConstructorGeneration <> t:4 var
+R291:291 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R293:293 nameless.DBConstructorGeneration <> B:5 var
+R298:300 nameless.DBParallelBase <> rtc ind
+R314:314 nameless.DBConstructorGeneration <> B:5 var
+R312:312 nameless.DBConstructorGeneration <> A:3 var
+R302:310 nameless.DBCore <> reduction ind
+var 328:331 UnaryConversion injC
+binder 342:342 <> A:8
+binder 344:344 <> B:9
+R356:359 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R350:352 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R347:347 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R349:349 nameless.DBConstructorGeneration <> A:8 var
+R353:353 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R355:355 nameless.DBConstructorGeneration <> B:9 var
+R361:363 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R360:360 nameless.DBConstructorGeneration <> A:8 var
+R364:364 nameless.DBConstructorGeneration <> B:9 var
+prf 373:385 <> reduces_unary
+binder 396:396 <> A:12
+binder 398:398 <> t:13
+R422:425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R401:403 nameless.DBParallelBase <> rtc ind
+R421:421 nameless.DBConstructorGeneration <> t:13 var
+R416:416 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R418:418 nameless.DBConstructorGeneration <> A:12 var
+R405:413 nameless.DBCore <> reduction ind
+R426:432 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R434:435 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 433:433 <> B:14
+R443:446 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R437:439 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R436:436 nameless.DBConstructorGeneration <> t:13 var
+R440:440 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R442:442 nameless.DBConstructorGeneration <> B:14 var
+R447:449 nameless.DBParallelBase <> rtc ind
+R463:463 nameless.DBConstructorGeneration <> B:14 var
+R461:461 nameless.DBConstructorGeneration <> A:12 var
+R451:459 nameless.DBCore <> reduction ind
+R499:499 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R499:499 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R596:603 nameless.DBParallelBase <> rtc_refl constr
+R596:603 nameless.DBParallelBase <> rtc_refl constr
+R596:603 nameless.DBParallelBase <> rtc_refl constr
+R620:623 nameless.DBConstructorGeneration <> UnaryConversion.redC var
+R620:623 nameless.DBConstructorGeneration <> UnaryConversion.redC var
+R670:676 Corelib.Init.Logic <> eq_refl constr
+R670:676 Corelib.Init.Logic <> eq_refl constr
+R724:732 nameless.DBParallelBase <> rtc_trans thm
+R724:732 nameless.DBParallelBase <> rtc_trans thm
+R724:732 nameless.DBParallelBase <> rtc_trans thm
+prf 746:761 <> conversion_unary
+binder 772:772 <> A:15
+binder 774:774 <> B:16
+R793:796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R777:780 nameless.DBCore <> conv ind
+R789:789 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R791:791 nameless.DBConstructorGeneration <> B:16 var
+R783:783 nameless.DBConstructorGeneration <> UnaryConversion.C var
+R785:785 nameless.DBConstructorGeneration <> A:15 var
+R797:800 nameless.DBCore <> conv ind
+R804:804 nameless.DBConstructorGeneration <> B:16 var
+R802:802 nameless.DBConstructorGeneration <> A:15 var
+R840:858 nameless.DBConfluence <> conversion_joinable thm
+R840:858 nameless.DBConfluence <> conversion_joinable thm
+R895:907 nameless.DBConstructorGeneration <> reduces_unary thm
+R895:907 nameless.DBConstructorGeneration <> reduces_unary thm
+R947:959 nameless.DBConstructorGeneration <> reduces_unary thm
+R947:959 nameless.DBConstructorGeneration <> reduces_unary thm
+R994:997 nameless.DBConstructorGeneration <> UnaryConversion.injC var
+R994:997 nameless.DBConstructorGeneration <> UnaryConversion.injC var
+R1024:1040 nameless.DBClosePayload <> joined_conversion thm
+R1024:1040 nameless.DBClosePayload <> joined_conversion thm
+R1052:1066 nameless.DBConstructorGeneration UnaryConversion <> sec
+prf 1076:1090 <> reduction_idesc
+binder 1101:1101 <> A:17
+binder 1103:1103 <> t:18
+R1128:1133 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1106:1114 nameless.DBCore <> reduction ind
+R1127:1127 nameless.DBConstructorGeneration <> t:18 var
+R1117:1122 nameless.DBSyntax <> TIDesc constr
+R1124:1124 nameless.DBConstructorGeneration <> A:17 var
+R1134:1140 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1142:1143 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1141:1141 <> B:19
+R1156:1159 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1145:1147 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1144:1144 nameless.DBConstructorGeneration <> t:18 var
+R1148:1153 nameless.DBSyntax <> TIDesc constr
+R1155:1155 nameless.DBConstructorGeneration <> B:19 var
+R1160:1162 nameless.DBParallelBase <> rtc ind
+R1176:1176 nameless.DBConstructorGeneration <> B:19 var
+R1174:1174 nameless.DBConstructorGeneration <> A:17 var
+R1164:1172 nameless.DBCore <> reduction ind
+R1225:1233 nameless.DBCore <> root_step def
+R1272:1278 nameless.DBParallelBase <> rtc_one thm
+R1272:1278 nameless.DBParallelBase <> rtc_one thm
+prf 1292:1307 <> conversion_idesc
+binder 1318:1318 <> A:20
+binder 1320:1320 <> B:21
+R1349:1352 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1323:1326 nameless.DBCore <> conv ind
+R1340:1345 nameless.DBSyntax <> TIDesc constr
+R1347:1347 nameless.DBConstructorGeneration <> B:21 var
+R1329:1334 nameless.DBSyntax <> TIDesc constr
+R1336:1336 nameless.DBConstructorGeneration <> A:20 var
+R1353:1356 nameless.DBCore <> conv ind
+R1360:1360 nameless.DBConstructorGeneration <> B:21 var
+R1358:1358 nameless.DBConstructorGeneration <> A:20 var
+R1377:1392 nameless.DBConstructorGeneration <> conversion_unary thm
+R1401:1415 nameless.DBConstructorGeneration <> reduction_idesc thm
+R1394:1399 nameless.DBSyntax <> TIDesc constr
+R1377:1392 nameless.DBConstructorGeneration <> conversion_unary thm
+R1401:1415 nameless.DBConstructorGeneration <> reduction_idesc thm
+R1394:1399 nameless.DBSyntax <> TIDesc constr
+prf 1450:1464 <> reduction_enumt
+binder 1475:1475 <> A:22
+binder 1477:1477 <> t:23
+R1502:1507 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1480:1488 nameless.DBCore <> reduction ind
+R1501:1501 nameless.DBConstructorGeneration <> t:23 var
+R1491:1496 nameless.DBSyntax <> TEnumT constr
+R1498:1498 nameless.DBConstructorGeneration <> A:22 var
+R1508:1514 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1516:1517 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1515:1515 <> B:24
+R1530:1533 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1519:1521 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1518:1518 nameless.DBConstructorGeneration <> t:23 var
+R1522:1527 nameless.DBSyntax <> TEnumT constr
+R1529:1529 nameless.DBConstructorGeneration <> B:24 var
+R1534:1536 nameless.DBParallelBase <> rtc ind
+R1550:1550 nameless.DBConstructorGeneration <> B:24 var
+R1548:1548 nameless.DBConstructorGeneration <> A:22 var
+R1538:1546 nameless.DBCore <> reduction ind
+R1599:1607 nameless.DBCore <> root_step def
+R1646:1652 nameless.DBParallelBase <> rtc_one thm
+R1646:1652 nameless.DBParallelBase <> rtc_one thm
+prf 1666:1681 <> conversion_enumt
+binder 1692:1692 <> A:25
+binder 1694:1694 <> B:26
+R1723:1726 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1697:1700 nameless.DBCore <> conv ind
+R1714:1719 nameless.DBSyntax <> TEnumT constr
+R1721:1721 nameless.DBConstructorGeneration <> B:26 var
+R1703:1708 nameless.DBSyntax <> TEnumT constr
+R1710:1710 nameless.DBConstructorGeneration <> A:25 var
+R1727:1730 nameless.DBCore <> conv ind
+R1734:1734 nameless.DBConstructorGeneration <> B:26 var
+R1732:1732 nameless.DBConstructorGeneration <> A:25 var
+R1751:1766 nameless.DBConstructorGeneration <> conversion_unary thm
+R1775:1789 nameless.DBConstructorGeneration <> reduction_enumt thm
+R1768:1773 nameless.DBSyntax <> TEnumT constr
+R1751:1766 nameless.DBConstructorGeneration <> conversion_unary thm
+R1775:1789 nameless.DBConstructorGeneration <> reduction_enumt thm
+R1768:1773 nameless.DBSyntax <> TEnumT constr
+def 1830:1846 <> description_shape
+binder 1848:1848 <> D:27
+R1861:1861 nameless.DBConstructorGeneration <> D:27 var
+R1868:1872 nameless.DBSyntax <> TIVar constr
+R1878:1880 nameless.DBSyntax <> TI1 constr
+R1884:1888 nameless.DBSyntax <> TIBot constr
+R1892:1897 nameless.DBSyntax <> TIProd constr
+R1905:1908 nameless.DBSyntax <> TIPi constr
+R1916:1920 nameless.DBSyntax <> TISig constr
+R1928:1935 nameless.DBSyntax <> TIChoice constr
+R1944:1947 Corelib.Init.Logic <> True ind
+R1944:1947 Corelib.Init.Logic <> True ind
+R1944:1947 Corelib.Init.Logic <> True ind
+R1944:1947 Corelib.Init.Logic <> True ind
+R1944:1947 Corelib.Init.Logic <> True ind
+R1944:1947 Corelib.Init.Logic <> True ind
+R1944:1947 Corelib.Init.Logic <> True ind
+R1956:1960 Corelib.Init.Logic <> False ind
+def 1978:1999 <> description_components
+binder 2001:2005 <> Gamma:29
+binder 2007:2008 <> IT:30
+binder 2010:2010 <> D:31
+R2023:2023 nameless.DBConstructorGeneration <> D:31 var
+R2034:2038 nameless.DBSyntax <> TIVar constr
+R2045:2050 nameless.DBTyping <> typing ind
+R2052:2056 nameless.DBConstructorGeneration <> Gamma:29 var
+R2060:2061 nameless.DBConstructorGeneration <> IT:30 var
+R2067:2072 nameless.DBSyntax <> TIProd constr
+R2107:2110 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2081:2086 nameless.DBTyping <> typing ind
+R2088:2092 nameless.DBConstructorGeneration <> Gamma:29 var
+R2097:2102 nameless.DBSyntax <> TIDesc constr
+R2104:2105 nameless.DBConstructorGeneration <> IT:30 var
+R2111:2116 nameless.DBTyping <> typing ind
+R2118:2122 nameless.DBConstructorGeneration <> Gamma:29 var
+R2127:2132 nameless.DBSyntax <> TIDesc constr
+R2134:2135 nameless.DBConstructorGeneration <> IT:30 var
+R2142:2145 nameless.DBSyntax <> TIPi constr
+R2153:2157 nameless.DBSyntax <> TISig constr
+R2190:2193 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2166:2171 nameless.DBTyping <> typing ind
+R2173:2177 nameless.DBConstructorGeneration <> Gamma:29 var
+R2182:2186 nameless.DBSyntax <> TSort constr
+R2194:2199 nameless.DBTyping <> typing ind
+R2201:2205 nameless.DBConstructorGeneration <> Gamma:29 var
+R2207:2207 nameless.DBConstructorGeneration <> D:31 var
+R2210:2214 nameless.DBSyntax <> arrow def
+R2219:2224 nameless.DBSyntax <> TIDesc constr
+R2226:2227 nameless.DBConstructorGeneration <> IT:30 var
+R2190:2193 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2166:2171 nameless.DBTyping <> typing ind
+R2173:2177 nameless.DBConstructorGeneration <> Gamma:29 var
+R2182:2186 nameless.DBSyntax <> TSort constr
+R2194:2199 nameless.DBTyping <> typing ind
+R2201:2205 nameless.DBConstructorGeneration <> Gamma:29 var
+R2207:2207 nameless.DBConstructorGeneration <> D:31 var
+R2210:2214 nameless.DBSyntax <> arrow def
+R2219:2224 nameless.DBSyntax <> TIDesc constr
+R2226:2227 nameless.DBConstructorGeneration <> IT:30 var
+R2235:2242 nameless.DBSyntax <> TIChoice constr
+R2272:2275 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2251:2256 nameless.DBTyping <> typing ind
+R2258:2262 nameless.DBConstructorGeneration <> Gamma:29 var
+R2266:2271 nameless.DBSyntax <> TEnumU constr
+R2276:2281 nameless.DBTyping <> typing ind
+R2283:2287 nameless.DBConstructorGeneration <> Gamma:29 var
+R2289:2289 nameless.DBConstructorGeneration <> D:31 var
+R2292:2296 nameless.DBSyntax <> arrow def
+R2310:2315 nameless.DBSyntax <> TIDesc constr
+R2317:2318 nameless.DBConstructorGeneration <> IT:30 var
+R2299:2304 nameless.DBSyntax <> TEnumT constr
+R2331:2334 Corelib.Init.Logic <> True ind
+prf 2350:2371 <> description_generation
+binder 2382:2386 <> Gamma:33
+binder 2388:2388 <> t:34
+binder 2390:2390 <> T:35
+R2409:2412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2393:2398 nameless.DBTyping <> typing ind
+R2400:2404 nameless.DBConstructorGeneration <> Gamma:33 var
+R2406:2406 nameless.DBConstructorGeneration <> t:34 var
+R2408:2408 nameless.DBConstructorGeneration <> T:35 var
+R2432:2437 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2413:2429 nameless.DBConstructorGeneration <> description_shape def
+R2431:2431 nameless.DBConstructorGeneration <> t:34 var
+R2438:2444 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2447:2448 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2445:2446 <> IT:36
+R2474:2477 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2449:2454 nameless.DBTyping <> typing ind
+R2456:2460 nameless.DBConstructorGeneration <> Gamma:33 var
+R2462:2463 nameless.DBConstructorGeneration <> IT:36 var
+R2466:2470 nameless.DBSyntax <> TSort constr
+R2496:2499 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2478:2481 nameless.DBCore <> conv ind
+R2495:2495 nameless.DBConstructorGeneration <> T:35 var
+R2484:2489 nameless.DBSyntax <> TIDesc constr
+R2491:2492 nameless.DBConstructorGeneration <> IT:36 var
+R2500:2521 nameless.DBConstructorGeneration <> description_components def
+R2523:2527 nameless.DBConstructorGeneration <> Gamma:33 var
+R2529:2530 nameless.DBConstructorGeneration <> IT:36 var
+R2532:2532 nameless.DBConstructorGeneration <> t:34 var
+R2582:2598 nameless.DBConstructorGeneration <> description_shape def
+R2733:2740 nameless.DBCore <> cv_trans constr
+R2733:2740 nameless.DBCore <> cv_trans constr
+R2830:2844 nameless.DBGeneration <> conversion_head thm
+R2857:2863 Corelib.Init.Logic <> eq_refl constr
+R2865:2871 Corelib.Init.Logic <> eq_refl constr
+R2830:2844 nameless.DBGeneration <> conversion_head thm
+R2857:2863 Corelib.Init.Logic <> eq_refl constr
+R2865:2871 Corelib.Init.Logic <> eq_refl constr
+R2909:2930 nameless.DBConstructorGeneration <> description_components def
+R2960:2966 nameless.DBCore <> cv_refl constr
+R2960:2966 nameless.DBCore <> cv_refl constr
+R2960:2966 nameless.DBCore <> cv_refl constr
+R2960:2966 nameless.DBCore <> cv_refl constr
+R2989:3010 nameless.DBConstructorGeneration <> description_components def
+R3040:3046 nameless.DBCore <> cv_refl constr
+R3040:3046 nameless.DBCore <> cv_refl constr
+R3040:3046 nameless.DBCore <> cv_refl constr
+R3069:3090 nameless.DBConstructorGeneration <> description_components def
+R3120:3126 nameless.DBCore <> cv_refl constr
+R3120:3126 nameless.DBCore <> cv_refl constr
+R3120:3126 nameless.DBCore <> cv_refl constr
+R3149:3170 nameless.DBConstructorGeneration <> description_components def
+R3200:3206 nameless.DBCore <> cv_refl constr
+R3200:3206 nameless.DBCore <> cv_refl constr
+R3200:3206 nameless.DBCore <> cv_refl constr
+R3200:3206 nameless.DBCore <> cv_refl constr
+R3200:3206 nameless.DBCore <> cv_refl constr
+R3229:3250 nameless.DBConstructorGeneration <> description_components def
+R3280:3286 nameless.DBCore <> cv_refl constr
+R3280:3286 nameless.DBCore <> cv_refl constr
+R3280:3286 nameless.DBCore <> cv_refl constr
+R3280:3286 nameless.DBCore <> cv_refl constr
+R3280:3286 nameless.DBCore <> cv_refl constr
+R3309:3330 nameless.DBConstructorGeneration <> description_components def
+R3360:3366 nameless.DBCore <> cv_refl constr
+R3360:3366 nameless.DBCore <> cv_refl constr
+R3360:3366 nameless.DBCore <> cv_refl constr
+R3360:3366 nameless.DBCore <> cv_refl constr
+R3360:3366 nameless.DBCore <> cv_refl constr
+R3389:3410 nameless.DBConstructorGeneration <> description_components def
+R3440:3446 nameless.DBCore <> cv_refl constr
+R3440:3446 nameless.DBCore <> cv_refl constr
+R3440:3446 nameless.DBCore <> cv_refl constr
+R3440:3446 nameless.DBCore <> cv_refl constr
+R3440:3446 nameless.DBCore <> cv_refl constr
+R3524:3538 nameless.DBGeneration <> conversion_head thm
+R3551:3557 Corelib.Init.Logic <> eq_refl constr
+R3559:3565 Corelib.Init.Logic <> eq_refl constr
+R3524:3538 nameless.DBGeneration <> conversion_head thm
+R3551:3557 Corelib.Init.Logic <> eq_refl constr
+R3559:3565 Corelib.Init.Logic <> eq_refl constr
+prf 3595:3609 <> arrow_formation
+binder 3620:3624 <> Gamma:37
+binder 3626:3626 <> A:38
+binder 3628:3628 <> B:39
+binder 3630:3630 <> j:40
+binder 3632:3632 <> k:41
+R3661:3664 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3637:3642 nameless.DBTyping <> typing ind
+R3644:3648 nameless.DBConstructorGeneration <> Gamma:37 var
+R3650:3650 nameless.DBConstructorGeneration <> A:38 var
+R3653:3657 nameless.DBSyntax <> TSort constr
+R3659:3659 nameless.DBConstructorGeneration <> j:40 var
+R3689:3694 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3665:3670 nameless.DBTyping <> typing ind
+R3672:3676 nameless.DBConstructorGeneration <> Gamma:37 var
+R3678:3678 nameless.DBConstructorGeneration <> B:39 var
+R3681:3685 nameless.DBSyntax <> TSort constr
+R3687:3687 nameless.DBConstructorGeneration <> k:41 var
+R3695:3700 nameless.DBTyping <> typing ind
+R3702:3706 nameless.DBConstructorGeneration <> Gamma:37 var
+R3709:3713 nameless.DBSyntax <> arrow def
+R3717:3717 nameless.DBConstructorGeneration <> B:39 var
+R3715:3715 nameless.DBConstructorGeneration <> A:38 var
+R3721:3725 nameless.DBSyntax <> TSort constr
+R3728:3734 Stdlib.Arith.PeanoNat Nat max def
+R3736:3736 nameless.DBConstructorGeneration <> j:40 var
+R3738:3738 nameless.DBConstructorGeneration <> k:41 var
+R3784:3788 nameless.DBTyping <> ty_pi constr
+R3808:3816 nameless.DBWeakening <> weakening thm
+R3784:3788 nameless.DBTyping <> ty_pi constr
+R3808:3816 nameless.DBWeakening <> weakening thm
+prf 3848:3863 <> arrow_conversion
+binder 3874:3874 <> A:42
+binder 3876:3876 <> B:43
+binder 3878:3878 <> C:44
+binder 3880:3880 <> D:45
+R3893:3896 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3885:3888 nameless.DBCore <> conv ind
+R3892:3892 nameless.DBConstructorGeneration <> C:44 var
+R3890:3890 nameless.DBConstructorGeneration <> A:42 var
+R3905:3908 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3897:3900 nameless.DBCore <> conv ind
+R3904:3904 nameless.DBConstructorGeneration <> D:45 var
+R3902:3902 nameless.DBConstructorGeneration <> B:43 var
+R3909:3912 nameless.DBCore <> conv ind
+R3927:3931 nameless.DBSyntax <> arrow def
+R3935:3935 nameless.DBConstructorGeneration <> D:45 var
+R3933:3933 nameless.DBConstructorGeneration <> C:44 var
+R3915:3919 nameless.DBSyntax <> arrow def
+R3923:3923 nameless.DBConstructorGeneration <> B:43 var
+R3921:3921 nameless.DBConstructorGeneration <> A:42 var
+R3960:3972 nameless.DBCore <> cv_compatible constr
+R3975:3980 nameless.DBSyntax <> cp_TPi constr
+R3994:4008 nameless.DBWeakening <> conversion_lift thm
+R3960:3972 nameless.DBCore <> cv_compatible constr
+R3975:3980 nameless.DBSyntax <> cp_TPi constr
+R3994:4008 nameless.DBWeakening <> conversion_lift thm
+R3994:4008 nameless.DBWeakening <> conversion_lift thm
+prf 4023:4043 <> description_inversion
+binder 4054:4058 <> Gamma:46
+binder 4060:4061 <> IT:47
+binder 4063:4063 <> D:48
+R4093:4096 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4068:4073 nameless.DBTyping <> typing ind
+R4075:4079 nameless.DBConstructorGeneration <> Gamma:46 var
+R4081:4082 nameless.DBConstructorGeneration <> IT:47 var
+R4085:4089 nameless.DBSyntax <> TSort constr
+R4123:4128 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4097:4102 nameless.DBTyping <> typing ind
+R4104:4108 nameless.DBConstructorGeneration <> Gamma:46 var
+R4110:4110 nameless.DBConstructorGeneration <> D:48 var
+R4113:4118 nameless.DBSyntax <> TIDesc constr
+R4120:4121 nameless.DBConstructorGeneration <> IT:47 var
+R4129:4150 nameless.DBConstructorGeneration <> description_components def
+R4152:4156 nameless.DBConstructorGeneration <> Gamma:46 var
+R4158:4159 nameless.DBConstructorGeneration <> IT:47 var
+R4161:4161 nameless.DBConstructorGeneration <> D:48 var
+R4232:4235 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R4213:4229 nameless.DBConstructorGeneration <> description_shape def
+R4236:4257 nameless.DBConstructorGeneration <> description_components def
+R4232:4235 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R4213:4229 nameless.DBConstructorGeneration <> description_shape def
+R4236:4257 nameless.DBConstructorGeneration <> description_components def
+R4293:4309 nameless.DBConstructorGeneration <> description_shape def
+R4311:4332 nameless.DBConstructorGeneration <> description_components def
+R4396:4417 nameless.DBConstructorGeneration <> description_generation thm
+R4396:4417 nameless.DBConstructorGeneration <> description_generation thm
+R4462:4477 nameless.DBConstructorGeneration <> conversion_idesc thm
+R4462:4477 nameless.DBConstructorGeneration <> conversion_idesc thm
+R4505:4526 nameless.DBConstructorGeneration <> description_components def
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4545:4545 Corelib.Init.Logic <> I constr
+R4624:4630 nameless.DBTyping <> ty_conv constr
+R4658:4672 nameless.DBConstructorGeneration <> arrow_formation thm
+R4675:4682 nameless.DBTyping <> ty_idesc constr
+R4685:4692 nameless.DBTyping <> ty_enumt constr
+R4624:4630 nameless.DBTyping <> ty_conv constr
+R4658:4672 nameless.DBConstructorGeneration <> arrow_formation thm
+R4675:4682 nameless.DBTyping <> ty_idesc constr
+R4685:4692 nameless.DBTyping <> ty_enumt constr
+R4624:4630 nameless.DBTyping <> ty_conv constr
+R4658:4672 nameless.DBConstructorGeneration <> arrow_formation thm
+R4675:4682 nameless.DBTyping <> ty_idesc constr
+R4685:4692 nameless.DBTyping <> ty_enumt constr
+R4624:4630 nameless.DBTyping <> ty_conv constr
+R4658:4672 nameless.DBConstructorGeneration <> arrow_formation thm
+R4675:4682 nameless.DBTyping <> ty_idesc constr
+R4685:4692 nameless.DBTyping <> ty_enumt constr
+R4624:4630 nameless.DBTyping <> ty_conv constr
+R4658:4672 nameless.DBConstructorGeneration <> arrow_formation thm
+R4675:4682 nameless.DBTyping <> ty_idesc constr
+R4685:4692 nameless.DBTyping <> ty_enumt constr
+R4624:4630 nameless.DBTyping <> ty_conv constr
+R4658:4672 nameless.DBConstructorGeneration <> arrow_formation thm
+R4675:4682 nameless.DBTyping <> ty_idesc constr
+R4685:4692 nameless.DBTyping <> ty_enumt constr
+R4624:4630 nameless.DBTyping <> ty_conv constr
+R4658:4672 nameless.DBConstructorGeneration <> arrow_formation thm
+R4675:4682 nameless.DBTyping <> ty_idesc constr
+R4685:4692 nameless.DBTyping <> ty_enumt constr
+R4715:4730 nameless.DBConstructorGeneration <> arrow_conversion thm
+R4733:4745 nameless.DBCore <> cv_compatible constr
+R4748:4757 nameless.DBSyntax <> compatible ind
+R4760:4766 nameless.DBCore <> cv_refl constr
+R4715:4730 nameless.DBConstructorGeneration <> arrow_conversion thm
+R4715:4730 nameless.DBConstructorGeneration <> arrow_conversion thm
+R4715:4730 nameless.DBConstructorGeneration <> arrow_conversion thm
+R4715:4730 nameless.DBConstructorGeneration <> arrow_conversion thm
+R4715:4730 nameless.DBConstructorGeneration <> arrow_conversion thm
+R4715:4730 nameless.DBConstructorGeneration <> arrow_conversion thm
+R4733:4745 nameless.DBCore <> cv_compatible constr
+R4748:4757 nameless.DBSyntax <> compatible ind
+R4760:4766 nameless.DBCore <> cv_refl constr
+R4733:4745 nameless.DBCore <> cv_compatible constr
+R4748:4757 nameless.DBSyntax <> compatible ind
+R4760:4766 nameless.DBCore <> cv_refl constr
+R4733:4745 nameless.DBCore <> cv_compatible constr
+R4748:4757 nameless.DBSyntax <> compatible ind
+R4760:4766 nameless.DBCore <> cv_refl constr
+R4733:4745 nameless.DBCore <> cv_compatible constr
+R4748:4757 nameless.DBSyntax <> compatible ind
+R4760:4766 nameless.DBCore <> cv_refl constr
+R4733:4745 nameless.DBCore <> cv_compatible constr
+R4748:4757 nameless.DBSyntax <> compatible ind
+R4760:4766 nameless.DBCore <> cv_refl constr
+R4733:4745 nameless.DBCore <> cv_compatible constr
+R4748:4757 nameless.DBSyntax <> compatible ind
+R4760:4766 nameless.DBCore <> cv_refl constr

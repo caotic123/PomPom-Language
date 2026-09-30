@@ -1,0 +1,726 @@
+DIGEST 37f0dc5e720172964117f975e8e50b58
+FSemanticTypesWork
+R27:30 Stdlib.Lists.List <> <> lib
+R32:36 Stdlib.Arith.Arith <> <> lib
+R38:41 Stdlib.Bool.Bool <> <> lib
+R43:45 Stdlib.micromega.Lia <> <> lib
+R63:81 FullNormalFormsWork <> <> lib
+R83:102 FullReducibilityWork <> <> lib
+R112:115 FullReducibilityWork Full <> mod
+prf 125:144 <> conversion_to_normal
+binder 155:155 <> A:1
+binder 157:157 <> B:2
+binder 159:159 <> n:3
+R173:176 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R164:170 FullReductionStructureWork <> full_SN def
+R172:172 SemanticTypesWork <> B:2 var
+R185:188 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R177:180 nameless.DBCore <> conv ind
+R184:184 SemanticTypesWork <> B:2 var
+R182:182 SemanticTypesWork <> A:1 var
+R206:209 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R189:191 nameless.DBParallelBase <> rtc ind
+R205:205 SemanticTypesWork <> n:3 var
+R203:203 SemanticTypesWork <> A:1 var
+R193:201 nameless.DBCore <> reduction ind
+R223:228 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R210:220 FullNormalFormsWork <> normal_form def
+R222:222 SemanticTypesWork <> n:3 var
+R229:231 nameless.DBParallelBase <> rtc ind
+R245:245 SemanticTypesWork <> n:3 var
+R243:243 SemanticTypesWork <> B:2 var
+R233:241 nameless.DBCore <> reduction ind
+R293:306 FullNormalFormsWork <> normalize_full def
+R293:306 FullNormalFormsWork <> normalize_full def
+R341:343 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R358:374 FullNormalFormsWork <> normal_forms_join thm
+R341:343 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R358:374 FullNormalFormsWork <> normal_forms_join thm
+prf 417:440 <> reduction_subst_argument
+binder 451:451 <> a:4
+binder 453:454 <> a':5
+R471:474 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R457:465 nameless.DBCore <> reduction ind
+R469:470 SemanticTypesWork <> a':5 var
+R467:467 SemanticTypesWork <> a:4 var
+binder 482:482 <> b:6
+binder 484:484 <> k:7
+R489:491 nameless.DBParallelBase <> rtc ind
+R518:522 nameless.DBSyntax <> subst def
+R529:529 SemanticTypesWork <> b:6 var
+R527:527 SemanticTypesWork <> k:7 var
+R524:525 SemanticTypesWork <> a':5 var
+R504:508 nameless.DBSyntax <> subst def
+R514:514 SemanticTypesWork <> b:6 var
+R512:512 SemanticTypesWork <> k:7 var
+R510:510 SemanticTypesWork <> a:4 var
+R493:501 nameless.DBCore <> reduction ind
+R571:588 nameless.DBConfluence <> reduction_parallel thm
+R571:588 nameless.DBConfluence <> reduction_parallel thm
+R619:634 nameless.DBReduction <> pstep_reductions thm
+R637:647 nameless.DBParallelBase <> pstep_subst thm
+R657:666 nameless.DBParallelBase <> pstep_refl thm
+R619:634 nameless.DBReduction <> pstep_reductions thm
+R637:647 nameless.DBParallelBase <> pstep_subst thm
+R657:666 nameless.DBParallelBase <> pstep_refl thm
+R689:705 nameless.DBReduction <> epstep_reductions thm
+R708:719 nameless.DBEta <> epstep_subst thm
+R729:739 nameless.DBEta <> epstep_refl thm
+R689:705 nameless.DBReduction <> epstep_reductions thm
+R708:719 nameless.DBEta <> epstep_subst thm
+R729:739 nameless.DBEta <> epstep_refl thm
+sec 766:783 <> TypeInterpretation
+var 795:798 TypeInterpretation atom
+R806:809 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R802:805 nameless.DBSyntax <> term ind
+R810:810 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R823:827 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R815:818 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R811:814 nameless.DBSyntax <> term ind
+var 845:858 TypeInterpretation atom_candidate
+binder 869:869 <> n:10
+binder 871:871 <> R:11
+R882:885 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R874:877 SemanticTypesWork <> TypeInterpretation.atom var
+R879:879 SemanticTypesWork <> n:10 var
+R881:881 SemanticTypesWork <> R:11 var
+R886:894 FullReducibilityWork Full candidate rec
+R896:896 SemanticTypesWork <> R:11 var
+var 910:925 TypeInterpretation atom_not_neutral
+binder 936:936 <> n:14
+binder 938:938 <> R:15
+R949:952 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R941:944 SemanticTypesWork <> TypeInterpretation.atom var
+R946:946 SemanticTypesWork <> n:14 var
+R948:948 SemanticTypesWork <> R:15 var
+R953:954 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R955:961 FullReducibilityWork Full neutral def
+R963:963 SemanticTypesWork <> n:14 var
+var 977:987 TypeInterpretation atom_not_pi
+binder 998:998 <> A:18
+binder 1000:1000 <> B:19
+binder 1002:1002 <> R:20
+R1005:1006 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1007:1010 SemanticTypesWork <> TypeInterpretation.atom var
+R1013:1015 nameless.DBSyntax <> TPi constr
+R1019:1019 SemanticTypesWork <> B:19 var
+R1017:1017 SemanticTypesWork <> A:18 var
+R1022:1022 SemanticTypesWork <> R:20 var
+var 1036:1049 TypeInterpretation atom_not_sigma
+binder 1060:1060 <> A:23
+binder 1062:1062 <> B:24
+binder 1064:1064 <> R:25
+R1067:1068 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R1069:1072 SemanticTypesWork <> TypeInterpretation.atom var
+R1075:1080 nameless.DBSyntax <> TSigma constr
+R1084:1084 SemanticTypesWork <> B:24 var
+R1082:1082 SemanticTypesWork <> A:23 var
+R1087:1087 SemanticTypesWork <> R:25 var
+var 1101:1111 TypeInterpretation atom_unique
+binder 1122:1122 <> n:28
+binder 1124:1124 <> R:29
+binder 1126:1126 <> S:30
+R1139:1142 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1131:1134 SemanticTypesWork <> TypeInterpretation.atom var
+R1136:1136 SemanticTypesWork <> n:28 var
+R1138:1138 SemanticTypesWork <> R:29 var
+R1151:1154 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1143:1146 SemanticTypesWork <> TypeInterpretation.atom var
+R1148:1148 SemanticTypesWork <> n:28 var
+R1150:1150 SemanticTypesWork <> S:30 var
+R1155:1169 FullReducibilityWork Full predicate_equiv def
+R1171:1171 SemanticTypesWork <> R:29 var
+R1173:1173 SemanticTypesWork <> S:30 var
+ind 1187:1197 <> type_interp
+constr 1237:1246 <> it_neutral
+constr 1358:1364 <> it_atom
+constr 1471:1475 <> it_pi
+constr 1697:1704 <> it_sigma
+constr 1928:1935 <> it_equiv
+R1205:1208 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1201:1204 nameless.DBSyntax <> term ind
+R1209:1209 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1222:1226 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1214:1217 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1210:1213 nameless.DBSyntax <> term ind
+binder 1257:1257 <> A:35
+binder 1259:1259 <> n:36
+R1275:1278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1266:1272 FullReductionStructureWork <> full_SN def
+R1274:1274 SemanticTypesWork <> A:35 var
+R1296:1299 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1279:1281 nameless.DBParallelBase <> rtc ind
+R1295:1295 SemanticTypesWork <> n:36 var
+R1293:1293 SemanticTypesWork <> A:35 var
+R1283:1291 nameless.DBCore <> reduction ind
+R1313:1316 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1300:1310 FullNormalFormsWork <> normal_form def
+R1312:1312 SemanticTypesWork <> n:36 var
+R1326:1333 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1317:1323 FullReducibilityWork Full neutral def
+R1325:1325 SemanticTypesWork <> n:36 var
+R1334:1344 SemanticTypesWork <> type_interp:33 ind
+R1348:1354 FullReductionStructureWork <> full_SN def
+R1346:1346 SemanticTypesWork <> A:35 var
+binder 1375:1375 <> A:37
+binder 1377:1377 <> n:38
+binder 1379:1379 <> R:39
+R1395:1398 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1386:1392 FullReductionStructureWork <> full_SN def
+R1394:1394 SemanticTypesWork <> A:37 var
+R1416:1419 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1399:1401 nameless.DBParallelBase <> rtc ind
+R1415:1415 SemanticTypesWork <> n:38 var
+R1413:1413 SemanticTypesWork <> A:37 var
+R1403:1411 nameless.DBCore <> reduction ind
+R1433:1436 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1420:1430 FullNormalFormsWork <> normal_form def
+R1432:1432 SemanticTypesWork <> n:38 var
+R1445:1452 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1437:1440 SemanticTypesWork <> TypeInterpretation.atom var
+R1442:1442 SemanticTypesWork <> n:38 var
+R1444:1444 SemanticTypesWork <> R:39 var
+R1453:1463 SemanticTypesWork <> type_interp:33 ind
+R1467:1467 SemanticTypesWork <> R:39 var
+R1465:1465 SemanticTypesWork <> A:37 var
+binder 1486:1486 <> A:40
+binder 1488:1488 <> U:41
+binder 1490:1490 <> V:42
+binder 1492:1493 <> RA:43
+binder 1495:1496 <> RB:44
+R1512:1515 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1503:1509 FullReductionStructureWork <> full_SN def
+R1511:1511 SemanticTypesWork <> A:40 var
+R1541:1544 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1516:1518 nameless.DBParallelBase <> rtc ind
+R1533:1535 nameless.DBSyntax <> TPi constr
+R1539:1539 SemanticTypesWork <> V:42 var
+R1537:1537 SemanticTypesWork <> U:41 var
+R1530:1530 SemanticTypesWork <> A:40 var
+R1520:1528 nameless.DBCore <> reduction ind
+R1566:1573 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1545:1555 FullNormalFormsWork <> normal_form def
+R1558:1560 nameless.DBSyntax <> TPi constr
+R1564:1564 SemanticTypesWork <> V:42 var
+R1562:1562 SemanticTypesWork <> U:41 var
+R1590:1593 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1574:1584 SemanticTypesWork <> type_interp:33 ind
+R1588:1589 SemanticTypesWork <> RA:43 var
+R1586:1586 SemanticTypesWork <> U:41 var
+R1594:1594 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1645:1653 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1602:1602 <> a:45
+R1609:1612 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1605:1606 SemanticTypesWork <> RA:43 var
+R1608:1608 SemanticTypesWork <> a:45 var
+R1613:1623 SemanticTypesWork <> type_interp:33 ind
+R1640:1641 SemanticTypesWork <> RB:44 var
+R1643:1643 SemanticTypesWork <> a:45 var
+R1626:1630 nameless.DBSyntax <> subst def
+R1636:1636 SemanticTypesWork <> V:42 var
+R1632:1632 SemanticTypesWork <> a:45 var
+R1654:1664 SemanticTypesWork <> type_interp:33 ind
+R1669:1686 FullReducibilityWork Full dependent_function def
+R1688:1689 SemanticTypesWork <> RA:43 var
+R1691:1692 SemanticTypesWork <> RB:44 var
+R1666:1666 SemanticTypesWork <> A:40 var
+binder 1715:1715 <> A:46
+binder 1717:1717 <> U:47
+binder 1719:1719 <> V:48
+binder 1721:1722 <> RA:49
+binder 1724:1725 <> RB:50
+R1741:1744 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1732:1738 FullReductionStructureWork <> full_SN def
+R1740:1740 SemanticTypesWork <> A:46 var
+R1773:1776 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1745:1747 nameless.DBParallelBase <> rtc ind
+R1762:1767 nameless.DBSyntax <> TSigma constr
+R1771:1771 SemanticTypesWork <> V:48 var
+R1769:1769 SemanticTypesWork <> U:47 var
+R1759:1759 SemanticTypesWork <> A:46 var
+R1749:1757 nameless.DBCore <> reduction ind
+R1801:1808 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1777:1787 FullNormalFormsWork <> normal_form def
+R1790:1795 nameless.DBSyntax <> TSigma constr
+R1799:1799 SemanticTypesWork <> V:48 var
+R1797:1797 SemanticTypesWork <> U:47 var
+R1825:1828 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1809:1819 SemanticTypesWork <> type_interp:33 ind
+R1823:1824 SemanticTypesWork <> RA:49 var
+R1821:1821 SemanticTypesWork <> U:47 var
+R1829:1829 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1880:1888 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1837:1837 <> a:51
+R1844:1847 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1840:1841 SemanticTypesWork <> RA:49 var
+R1843:1843 SemanticTypesWork <> a:51 var
+R1848:1858 SemanticTypesWork <> type_interp:33 ind
+R1875:1876 SemanticTypesWork <> RB:50 var
+R1878:1878 SemanticTypesWork <> a:51 var
+R1861:1865 nameless.DBSyntax <> subst def
+R1871:1871 SemanticTypesWork <> V:48 var
+R1867:1867 SemanticTypesWork <> a:51 var
+R1889:1899 SemanticTypesWork <> type_interp:33 ind
+R1904:1917 FullReducibilityWork Full dependent_pair def
+R1919:1920 SemanticTypesWork <> RA:49 var
+R1922:1923 SemanticTypesWork <> RB:50 var
+R1901:1901 SemanticTypesWork <> A:46 var
+binder 1946:1946 <> A:52
+binder 1948:1948 <> R:53
+binder 1950:1950 <> S:54
+R1972:1975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1957:1967 SemanticTypesWork <> type_interp:33 ind
+R1971:1971 SemanticTypesWork <> R:53 var
+R1969:1969 SemanticTypesWork <> A:52 var
+R1995:1998 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1976:1990 FullReducibilityWork Full predicate_equiv def
+R1992:1992 SemanticTypesWork <> R:53 var
+R1994:1994 SemanticTypesWork <> S:54 var
+R1999:2009 SemanticTypesWork <> type_interp:33 ind
+R2013:2013 SemanticTypesWork <> S:54 var
+R2011:2011 SemanticTypesWork <> A:52 var
+scheme 1187:1197 <> type_interp_ind
+scheme 1187:1197 <> type_interp_sind
+prf 2023:2045 <> type_interp_normalizing
+binder 2056:2056 <> A:55
+binder 2058:2058 <> R:56
+R2076:2079 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2061:2071 SemanticTypesWork <> type_interp ind
+R2073:2073 SemanticTypesWork <> A:55 var
+R2075:2075 SemanticTypesWork <> R:56 var
+R2080:2086 FullReductionStructureWork <> full_SN def
+R2088:2088 SemanticTypesWork <> A:55 var
+prf 2148:2169 <> type_interp_conversion
+binder 2180:2180 <> A:57
+binder 2182:2182 <> R:58
+R2200:2205 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2185:2195 SemanticTypesWork <> type_interp ind
+R2197:2197 SemanticTypesWork <> A:57 var
+R2199:2199 SemanticTypesWork <> R:58 var
+binder 2213:2213 <> B:59
+R2225:2228 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2216:2222 FullReductionStructureWork <> full_SN def
+R2224:2224 SemanticTypesWork <> B:59 var
+R2237:2240 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2229:2232 nameless.DBCore <> conv ind
+R2236:2236 SemanticTypesWork <> B:59 var
+R2234:2234 SemanticTypesWork <> A:57 var
+R2241:2251 SemanticTypesWork <> type_interp ind
+R2253:2253 SemanticTypesWork <> B:59 var
+R2255:2255 SemanticTypesWork <> R:58 var
+R2322:2331 SemanticTypesWork <> it_neutral constr
+R2351:2370 SemanticTypesWork <> conversion_to_normal thm
+R2322:2331 SemanticTypesWork <> it_neutral constr
+R2351:2370 SemanticTypesWork <> conversion_to_normal thm
+R2422:2428 SemanticTypesWork <> it_atom constr
+R2448:2467 SemanticTypesWork <> conversion_to_normal thm
+R2422:2428 SemanticTypesWork <> it_atom constr
+R2448:2467 SemanticTypesWork <> conversion_to_normal thm
+R2519:2523 SemanticTypesWork <> it_pi constr
+R2543:2562 SemanticTypesWork <> conversion_to_normal thm
+R2519:2523 SemanticTypesWork <> it_pi constr
+R2543:2562 SemanticTypesWork <> conversion_to_normal thm
+R2626:2633 SemanticTypesWork <> it_sigma constr
+R2653:2672 SemanticTypesWork <> conversion_to_normal thm
+R2626:2633 SemanticTypesWork <> it_sigma constr
+R2653:2672 SemanticTypesWork <> conversion_to_normal thm
+R2736:2743 SemanticTypesWork <> it_equiv constr
+R2736:2743 SemanticTypesWork <> it_equiv constr
+prf 2807:2824 <> type_interp_unique
+binder 2835:2835 <> A:60
+binder 2837:2837 <> R:61
+R2855:2860 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2840:2850 SemanticTypesWork <> type_interp ind
+R2852:2852 SemanticTypesWork <> A:60 var
+R2854:2854 SemanticTypesWork <> R:61 var
+binder 2868:2868 <> B:62
+binder 2870:2870 <> S:63
+R2888:2891 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2873:2883 SemanticTypesWork <> type_interp ind
+R2885:2885 SemanticTypesWork <> B:62 var
+R2887:2887 SemanticTypesWork <> S:63 var
+R2900:2903 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2892:2895 nameless.DBCore <> conv ind
+R2899:2899 SemanticTypesWork <> B:62 var
+R2897:2897 SemanticTypesWork <> A:60 var
+R2904:2918 FullReducibilityWork Full predicate_equiv def
+R2920:2920 SemanticTypesWork <> R:61 var
+R2922:2922 SemanticTypesWork <> S:63 var
+R3141:3144 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3131:3134 nameless.DBCore <> conv ind
+R3145:3159 FullReducibilityWork Full predicate_equiv def
+R3141:3144 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3131:3134 nameless.DBCore <> conv ind
+R3145:3159 FullReducibilityWork Full predicate_equiv def
+R3177:3191 FullReducibilityWork Full predicate_equiv def
+R3177:3191 FullReducibilityWork Full predicate_equiv def
+R3206:3209 nameless.DBCore <> conv ind
+R3206:3209 nameless.DBCore <> conv ind
+R3220:3234 FullReducibilityWork Full predicate_equiv def
+R3220:3234 FullReducibilityWork Full predicate_equiv def
+R3348:3350 nameless.DBParallelBase <> rtc ind
+R3352:3360 nameless.DBCore <> reduction ind
+R3348:3350 nameless.DBParallelBase <> rtc ind
+R3352:3360 nameless.DBCore <> reduction ind
+R3375:3385 FullNormalFormsWork <> normal_form def
+R3375:3385 FullNormalFormsWork <> normal_form def
+R3400:3402 nameless.DBParallelBase <> rtc ind
+R3404:3412 nameless.DBCore <> reduction ind
+R3400:3402 nameless.DBParallelBase <> rtc ind
+R3404:3412 nameless.DBCore <> reduction ind
+R3427:3437 FullNormalFormsWork <> normal_form def
+R3427:3437 FullNormalFormsWork <> normal_form def
+R3452:3455 nameless.DBCore <> conv ind
+R3452:3455 nameless.DBCore <> conv ind
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3517:3519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3534:3550 FullNormalFormsWork <> normal_forms_join thm
+R3635:3641 FullReducibilityWork Full neutral def
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3700:3715 SemanticTypesWork <> TypeInterpretation.atom_not_neutral var
+R3766:3776 SemanticTypesWork <> TypeInterpretation.atom_not_pi var
+R3766:3776 SemanticTypesWork <> TypeInterpretation.atom_not_pi var
+R3766:3776 SemanticTypesWork <> TypeInterpretation.atom_not_pi var
+R3766:3776 SemanticTypesWork <> TypeInterpretation.atom_not_pi var
+R3766:3776 SemanticTypesWork <> TypeInterpretation.atom_not_pi var
+R3766:3776 SemanticTypesWork <> TypeInterpretation.atom_not_pi var
+R3766:3776 SemanticTypesWork <> TypeInterpretation.atom_not_pi var
+R3766:3776 SemanticTypesWork <> TypeInterpretation.atom_not_pi var
+R3766:3776 SemanticTypesWork <> TypeInterpretation.atom_not_pi var
+R3827:3840 SemanticTypesWork <> TypeInterpretation.atom_not_sigma var
+R3827:3840 SemanticTypesWork <> TypeInterpretation.atom_not_sigma var
+R3827:3840 SemanticTypesWork <> TypeInterpretation.atom_not_sigma var
+R3827:3840 SemanticTypesWork <> TypeInterpretation.atom_not_sigma var
+R3827:3840 SemanticTypesWork <> TypeInterpretation.atom_not_sigma var
+R3827:3840 SemanticTypesWork <> TypeInterpretation.atom_not_sigma var
+R3827:3840 SemanticTypesWork <> TypeInterpretation.atom_not_sigma var
+R3917:3927 SemanticTypesWork <> TypeInterpretation.atom_unique var
+R3917:3927 SemanticTypesWork <> TypeInterpretation.atom_unique var
+R3917:3927 SemanticTypesWork <> TypeInterpretation.atom_unique var
+R3917:3927 SemanticTypesWork <> TypeInterpretation.atom_unique var
+R3969:3992 FullReducibilityWork Full dependent_function_equiv thm
+R4032:4038 nameless.DBCore <> cv_refl constr
+R4090:4096 nameless.DBCore <> cv_refl constr
+R4134:4140 nameless.DBCore <> cv_refl constr
+R3969:3992 FullReducibilityWork Full dependent_function_equiv thm
+R4032:4038 nameless.DBCore <> cv_refl constr
+R4090:4096 nameless.DBCore <> cv_refl constr
+R4134:4140 nameless.DBCore <> cv_refl constr
+R3969:3992 FullReducibilityWork Full dependent_function_equiv thm
+R4185:4204 FullReducibilityWork Full dependent_pair_equiv thm
+R4244:4250 nameless.DBCore <> cv_refl constr
+R4302:4308 nameless.DBCore <> cv_refl constr
+R4346:4352 nameless.DBCore <> cv_refl constr
+R4185:4204 FullReducibilityWork Full dependent_pair_equiv thm
+R4244:4250 nameless.DBCore <> cv_refl constr
+R4302:4308 nameless.DBCore <> cv_refl constr
+R4346:4352 nameless.DBCore <> cv_refl constr
+prf 4384:4405 <> type_interp_reductions
+binder 4416:4416 <> A:64
+binder 4418:4418 <> R:65
+R4436:4441 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4421:4431 SemanticTypesWork <> type_interp ind
+R4433:4433 SemanticTypesWork <> A:64 var
+R4435:4435 SemanticTypesWork <> R:65 var
+binder 4449:4449 <> B:66
+R4469:4472 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4452:4454 nameless.DBParallelBase <> rtc ind
+R4468:4468 SemanticTypesWork <> B:66 var
+R4466:4466 SemanticTypesWork <> A:64 var
+R4456:4464 nameless.DBCore <> reduction ind
+R4473:4483 SemanticTypesWork <> type_interp ind
+R4485:4485 SemanticTypesWork <> B:66 var
+R4487:4487 SemanticTypesWork <> R:65 var
+R4526:4547 SemanticTypesWork <> type_interp_conversion thm
+R4570:4587 FullNormalFormsWork <> full_SN_reductions thm
+R4598:4620 SemanticTypesWork <> type_interp_normalizing thm
+R4654:4674 nameless.DBWeakening <> reductions_conversion thm
+R4526:4547 SemanticTypesWork <> type_interp_conversion thm
+R4570:4587 FullNormalFormsWork <> full_SN_reductions thm
+R4598:4620 SemanticTypesWork <> type_interp_normalizing thm
+R4654:4674 nameless.DBWeakening <> reductions_conversion thm
+prf 4698:4718 <> type_interp_candidate
+binder 4729:4729 <> A:67
+binder 4731:4731 <> R:68
+R4749:4752 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4734:4744 SemanticTypesWork <> type_interp ind
+R4746:4746 SemanticTypesWork <> A:67 var
+R4748:4748 SemanticTypesWork <> R:68 var
+R4753:4761 FullReducibilityWork Full candidate rec
+R4763:4763 SemanticTypesWork <> R:68 var
+R4812:4832 FullReducibilityWork Full normalizing_candidate thm
+R4812:4832 FullReducibilityWork Full normalizing_candidate thm
+R4849:4862 SemanticTypesWork <> TypeInterpretation.atom_candidate var
+R4849:4862 SemanticTypesWork <> TypeInterpretation.atom_candidate var
+R4882:4909 FullReducibilityWork Full dependent_function_candidate thm
+R4882:4909 FullReducibilityWork Full dependent_function_candidate thm
+R5006:5021 FullReducibilityWork Full candidate_reduct proj
+R5006:5021 FullReducibilityWork Full candidate_reduct proj
+R5049:5066 SemanticTypesWork <> type_interp_unique thm
+R5049:5066 SemanticTypesWork <> type_interp_unique thm
+R5110:5130 nameless.DBWeakening <> reductions_conversion thm
+R5143:5166 SemanticTypesWork <> reduction_subst_argument thm
+R5110:5130 nameless.DBWeakening <> reductions_conversion thm
+R5143:5166 SemanticTypesWork <> reduction_subst_argument thm
+R5179:5202 FullReducibilityWork Full dependent_pair_candidate thm
+R5179:5202 FullReducibilityWork Full dependent_pair_candidate thm
+R5299:5314 FullReducibilityWork Full candidate_reduct proj
+R5299:5314 FullReducibilityWork Full candidate_reduct proj
+R5342:5359 SemanticTypesWork <> type_interp_unique thm
+R5342:5359 SemanticTypesWork <> type_interp_unique thm
+R5403:5423 nameless.DBWeakening <> reductions_conversion thm
+R5436:5459 SemanticTypesWork <> reduction_subst_argument thm
+R5403:5423 nameless.DBWeakening <> reductions_conversion thm
+R5436:5459 SemanticTypesWork <> reduction_subst_argument thm
+R5473:5487 FullReducibilityWork Full candidate_equiv thm
+R5473:5487 FullReducibilityWork Full candidate_equiv thm
+def 5520:5533 <> reducible_type
+binder 5535:5535 <> A:69
+R5540:5546 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5548:5549 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5547:5547 <> R:70
+R5550:5560 SemanticTypesWork <> type_interp ind
+R5562:5562 SemanticTypesWork <> A:69 var
+R5564:5564 SemanticTypesWork <> R:70 var
+prf 5575:5598 <> reducible_type_candidate
+R5602:5610 FullReducibilityWork Full candidate rec
+R5612:5625 SemanticTypesWork <> reducible_type def
+R5678:5700 SemanticTypesWork <> type_interp_normalizing thm
+R5678:5700 SemanticTypesWork <> type_interp_normalizing thm
+R5753:5774 SemanticTypesWork <> type_interp_reductions thm
+R5753:5774 SemanticTypesWork <> type_interp_reductions thm
+R5799:5805 nameless.DBParallelBase <> rtc_one thm
+R5799:5805 nameless.DBParallelBase <> rtc_one thm
+R5845:5851 FullReductionStructureWork <> full_SN def
+R5845:5851 FullReductionStructureWork <> full_SN def
+R5933:5955 SemanticTypesWork <> type_interp_normalizing thm
+R5933:5955 SemanticTypesWork <> type_interp_normalizing thm
+R5983:5991 FullNormalFormsWork <> full_next def
+R5983:5991 FullNormalFormsWork <> full_next def
+R6030:6044 FullNormalFormsWork <> full_next_sound thm
+R6030:6044 FullNormalFormsWork <> full_next_sound thm
+R6123:6144 SemanticTypesWork <> type_interp_conversion thm
+R6161:6166 nameless.DBCore <> cv_sym constr
+R6123:6144 SemanticTypesWork <> type_interp_conversion thm
+R6161:6166 nameless.DBCore <> cv_sym constr
+R6181:6201 nameless.DBWeakening <> reductions_conversion thm
+R6204:6210 nameless.DBParallelBase <> rtc_one thm
+R6181:6201 nameless.DBWeakening <> reductions_conversion thm
+R6204:6210 nameless.DBParallelBase <> rtc_one thm
+R6237:6243 FullReductionStructureWork <> full_SN def
+R6253:6262 SemanticTypesWork <> it_neutral constr
+R6302:6319 FullNormalFormsWork <> full_next_complete thm
+R6237:6243 FullReductionStructureWork <> full_SN def
+R6253:6262 SemanticTypesWork <> it_neutral constr
+R6302:6319 FullNormalFormsWork <> full_next_complete thm
+def 6355:6367 <> type_elements
+binder 6369:6369 <> A:71
+binder 6371:6371 <> t:72
+binder 6383:6383 <> R:73
+R6401:6404 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6386:6396 SemanticTypesWork <> type_interp ind
+R6398:6398 SemanticTypesWork <> A:71 var
+R6400:6400 SemanticTypesWork <> R:73 var
+R6405:6405 SemanticTypesWork <> R:73 var
+R6407:6407 SemanticTypesWork <> t:72 var
+prf 6416:6434 <> type_elements_equiv
+binder 6445:6445 <> A:74
+binder 6447:6447 <> R:75
+R6465:6470 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6450:6460 SemanticTypesWork <> type_interp ind
+R6462:6462 SemanticTypesWork <> A:74 var
+R6464:6464 SemanticTypesWork <> R:75 var
+R6471:6485 FullReducibilityWork Full predicate_equiv def
+R6487:6487 SemanticTypesWork <> R:75 var
+R6490:6502 SemanticTypesWork <> type_elements def
+R6504:6504 SemanticTypesWork <> A:74 var
+R6567:6584 SemanticTypesWork <> type_interp_unique thm
+R6601:6607 nameless.DBCore <> cv_refl constr
+R6567:6584 SemanticTypesWork <> type_interp_unique thm
+R6601:6607 nameless.DBCore <> cv_refl constr
+prf 6666:6686 <> type_interp_canonical
+binder 6697:6697 <> A:76
+R6716:6721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6700:6713 SemanticTypesWork <> reducible_type def
+R6715:6715 SemanticTypesWork <> A:76 var
+R6722:6732 SemanticTypesWork <> type_interp ind
+R6734:6734 SemanticTypesWork <> A:76 var
+R6737:6749 SemanticTypesWork <> type_elements def
+R6751:6751 SemanticTypesWork <> A:76 var
+R6788:6795 SemanticTypesWork <> it_equiv constr
+R6815:6833 SemanticTypesWork <> type_elements_equiv thm
+R6788:6795 SemanticTypesWork <> it_equiv constr
+R6815:6833 SemanticTypesWork <> type_elements_equiv thm
+prf 6856:6878 <> type_elements_candidate
+binder 6889:6889 <> A:77
+R6908:6911 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6892:6905 SemanticTypesWork <> reducible_type def
+R6907:6907 SemanticTypesWork <> A:77 var
+R6912:6920 FullReducibilityWork Full candidate rec
+R6923:6935 SemanticTypesWork <> type_elements def
+R6937:6937 SemanticTypesWork <> A:77 var
+R6967:6987 SemanticTypesWork <> type_interp_candidate thm
+R6994:7014 SemanticTypesWork <> type_interp_canonical thm
+R6967:6987 SemanticTypesWork <> type_interp_candidate thm
+R6994:7014 SemanticTypesWork <> type_interp_canonical thm
+prf 7035:7054 <> type_interp_pi_intro
+binder 7065:7065 <> U:78
+binder 7067:7067 <> V:79
+binder 7069:7070 <> RA:80
+binder 7072:7073 <> RB:81
+R7094:7097 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7078:7088 SemanticTypesWork <> type_interp ind
+R7090:7090 SemanticTypesWork <> U:78 var
+R7092:7093 SemanticTypesWork <> RA:80 var
+R7098:7098 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7149:7155 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7106:7106 <> a:82
+R7113:7116 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7109:7110 SemanticTypesWork <> RA:80 var
+R7112:7112 SemanticTypesWork <> a:82 var
+R7117:7127 SemanticTypesWork <> type_interp ind
+R7130:7134 nameless.DBSyntax <> subst def
+R7140:7140 SemanticTypesWork <> V:79 var
+R7136:7136 SemanticTypesWork <> a:82 var
+R7144:7145 SemanticTypesWork <> RB:81 var
+R7147:7147 SemanticTypesWork <> a:82 var
+R7156:7166 SemanticTypesWork <> type_interp ind
+R7169:7171 nameless.DBSyntax <> TPi constr
+R7175:7175 SemanticTypesWork <> V:79 var
+R7173:7173 SemanticTypesWork <> U:78 var
+R7179:7196 FullReducibilityWork Full dependent_function def
+R7198:7199 SemanticTypesWork <> RA:80 var
+R7201:7202 SemanticTypesWork <> RB:81 var
+R7253:7275 SemanticTypesWork <> type_interp_normalizing thm
+R7253:7275 SemanticTypesWork <> type_interp_normalizing thm
+R7307:7324 FullReducibilityWork Full candidate_variable thm
+R7329:7349 SemanticTypesWork <> type_interp_candidate thm
+R7307:7324 FullReducibilityWork Full candidate_variable thm
+R7329:7349 SemanticTypesWork <> type_interp_candidate thm
+R7383:7406 FullReductionStructureWork <> full_SN_subst_reflection thm
+R7411:7414 nameless.DBSyntax <> TVar constr
+R7426:7448 SemanticTypesWork <> type_interp_normalizing thm
+R7383:7406 FullReductionStructureWork <> full_SN_subst_reflection thm
+R7411:7414 nameless.DBSyntax <> TVar constr
+R7426:7448 SemanticTypesWork <> type_interp_normalizing thm
+R7486:7499 FullNormalFormsWork <> normalize_full def
+R7486:7499 FullNormalFormsWork <> normalize_full def
+R7537:7550 FullNormalFormsWork <> normalize_full def
+R7537:7550 FullNormalFormsWork <> normalize_full def
+R7585:7589 SemanticTypesWork <> it_pi constr
+R7585:7589 SemanticTypesWork <> it_pi constr
+R7627:7636 FullNormalFormsWork <> full_SN_pi thm
+R7627:7636 FullNormalFormsWork <> full_SN_pi thm
+R7653:7664 nameless.DBReduction <> red_star_TPi thm
+R7653:7664 nameless.DBReduction <> red_star_TPi thm
+R7681:7694 FullNormalFormsWork <> normal_form_pi thm
+R7681:7694 FullNormalFormsWork <> normal_form_pi thm
+R7708:7729 SemanticTypesWork <> type_interp_reductions thm
+R7708:7729 SemanticTypesWork <> type_interp_reductions thm
+R7769:7790 SemanticTypesWork <> type_interp_reductions thm
+R7769:7790 SemanticTypesWork <> type_interp_reductions thm
+R7827:7842 FullNormalFormsWork <> reductions_subst thm
+R7827:7842 FullNormalFormsWork <> reductions_subst thm
+prf 7856:7878 <> type_interp_sigma_intro
+binder 7889:7889 <> U:83
+binder 7891:7891 <> V:84
+binder 7893:7894 <> RA:85
+binder 7896:7897 <> RB:86
+R7918:7921 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7902:7912 SemanticTypesWork <> type_interp ind
+R7914:7914 SemanticTypesWork <> U:83 var
+R7916:7917 SemanticTypesWork <> RA:85 var
+R7922:7922 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7973:7979 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7930:7930 <> a:87
+R7937:7940 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7933:7934 SemanticTypesWork <> RA:85 var
+R7936:7936 SemanticTypesWork <> a:87 var
+R7941:7951 SemanticTypesWork <> type_interp ind
+R7954:7958 nameless.DBSyntax <> subst def
+R7964:7964 SemanticTypesWork <> V:84 var
+R7960:7960 SemanticTypesWork <> a:87 var
+R7968:7969 SemanticTypesWork <> RB:86 var
+R7971:7971 SemanticTypesWork <> a:87 var
+R7980:7990 SemanticTypesWork <> type_interp ind
+R7993:7998 nameless.DBSyntax <> TSigma constr
+R8002:8002 SemanticTypesWork <> V:84 var
+R8000:8000 SemanticTypesWork <> U:83 var
+R8006:8019 FullReducibilityWork Full dependent_pair def
+R8021:8022 SemanticTypesWork <> RA:85 var
+R8024:8025 SemanticTypesWork <> RB:86 var
+R8076:8098 SemanticTypesWork <> type_interp_normalizing thm
+R8076:8098 SemanticTypesWork <> type_interp_normalizing thm
+R8130:8147 FullReducibilityWork Full candidate_variable thm
+R8152:8172 SemanticTypesWork <> type_interp_candidate thm
+R8130:8147 FullReducibilityWork Full candidate_variable thm
+R8152:8172 SemanticTypesWork <> type_interp_candidate thm
+R8206:8229 FullReductionStructureWork <> full_SN_subst_reflection thm
+R8234:8237 nameless.DBSyntax <> TVar constr
+R8249:8271 SemanticTypesWork <> type_interp_normalizing thm
+R8206:8229 FullReductionStructureWork <> full_SN_subst_reflection thm
+R8234:8237 nameless.DBSyntax <> TVar constr
+R8249:8271 SemanticTypesWork <> type_interp_normalizing thm
+R8309:8322 FullNormalFormsWork <> normalize_full def
+R8309:8322 FullNormalFormsWork <> normalize_full def
+R8360:8373 FullNormalFormsWork <> normalize_full def
+R8360:8373 FullNormalFormsWork <> normalize_full def
+R8408:8415 SemanticTypesWork <> it_sigma constr
+R8408:8415 SemanticTypesWork <> it_sigma constr
+R8453:8465 FullNormalFormsWork <> full_SN_sigma thm
+R8453:8465 FullNormalFormsWork <> full_SN_sigma thm
+R8482:8496 nameless.DBReduction <> red_star_TSigma thm
+R8482:8496 nameless.DBReduction <> red_star_TSigma thm
+R8513:8529 FullNormalFormsWork <> normal_form_sigma thm
+R8513:8529 FullNormalFormsWork <> normal_form_sigma thm
+R8543:8564 SemanticTypesWork <> type_interp_reductions thm
+R8543:8564 SemanticTypesWork <> type_interp_reductions thm
+R8604:8625 SemanticTypesWork <> type_interp_reductions thm
+R8604:8625 SemanticTypesWork <> type_interp_reductions thm
+R8662:8677 FullNormalFormsWork <> reductions_subst thm
+R8662:8677 FullNormalFormsWork <> reductions_subst thm
+R8689:8706 SemanticTypesWork TypeInterpretation <> sec
+R8728:8745 SemanticTypesWork <> type_interp_unique thm
+R8766:8789 SemanticTypesWork <> reducible_type_candidate thm
+R8810:8829 SemanticTypesWork <> type_interp_pi_intro thm
+R8850:8872 SemanticTypesWork <> type_interp_sigma_intro thm

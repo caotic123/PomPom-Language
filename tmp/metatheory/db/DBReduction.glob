@@ -1,0 +1,2660 @@
+DIGEST 7d5771ee42ebee01c7090c5acebecd86
+FProofDB.DBReduction
+R15:35 ProofDB.DBCommutation <> <> lib
+prf 45:56 <> red_star_TPi
+binder 67:68 <> a0:1
+binder 70:71 <> b0:2
+binder 73:74 <> a1:3
+binder 76:77 <> b1:4
+R99:102 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R80:82 ProofDB.DBParallelBase <> rtc ind
+R97:98 ProofDB.DBReduction <> b0:2 var
+R94:95 ProofDB.DBReduction <> a0:1 var
+R84:92 ProofDB.DBCore <> reduction ind
+R122:125 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R103:105 ProofDB.DBParallelBase <> rtc ind
+R120:121 ProofDB.DBReduction <> b1:4 var
+R117:118 ProofDB.DBReduction <> a1:3 var
+R107:115 ProofDB.DBCore <> reduction ind
+R126:128 ProofDB.DBParallelBase <> rtc ind
+R153:155 ProofDB.DBSyntax <> TPi constr
+R160:161 ProofDB.DBReduction <> b1:4 var
+R157:158 ProofDB.DBReduction <> b0:2 var
+R141:143 ProofDB.DBSyntax <> TPi constr
+R148:149 ProofDB.DBReduction <> a1:3 var
+R145:146 ProofDB.DBReduction <> a0:1 var
+R130:138 ProofDB.DBCore <> reduction ind
+R209:217 ProofDB.DBParallelBase <> rtc_trans thm
+R209:217 ProofDB.DBParallelBase <> rtc_trans thm
+R232:242 ProofDB.DBParallelBase <> rtc_map_rel thm
+R248:256 ProofDB.DBCore <> reduction ind
+R258:266 ProofDB.DBCore <> reduction ind
+binder 273:273 <> z:5
+R278:280 ProofDB.DBSyntax <> TPi constr
+R282:282 ProofDB.DBReduction <> z:5 var
+R232:242 ProofDB.DBParallelBase <> rtc_map_rel thm
+R248:256 ProofDB.DBCore <> reduction ind
+R258:266 ProofDB.DBCore <> reduction ind
+binder 273:273 <> z:6
+R278:280 ProofDB.DBSyntax <> TPi constr
+R282:282 ProofDB.DBReduction <> z:6 var
+R333:341 ProofDB.DBCore <> red_TPi_A constr
+R333:341 ProofDB.DBCore <> red_TPi_A constr
+R356:366 ProofDB.DBParallelBase <> rtc_map_rel thm
+R372:380 ProofDB.DBCore <> reduction ind
+R382:390 ProofDB.DBCore <> reduction ind
+binder 397:397 <> z:7
+R402:404 ProofDB.DBSyntax <> TPi constr
+R409:409 ProofDB.DBReduction <> z:7 var
+R356:366 ProofDB.DBParallelBase <> rtc_map_rel thm
+R372:380 ProofDB.DBCore <> reduction ind
+R382:390 ProofDB.DBCore <> reduction ind
+binder 397:397 <> z:8
+R402:404 ProofDB.DBSyntax <> TPi constr
+R409:409 ProofDB.DBReduction <> z:8 var
+R457:465 ProofDB.DBCore <> red_TPi_B constr
+R457:465 ProofDB.DBCore <> red_TPi_B constr
+prf 480:492 <> red_star_TLam
+binder 503:504 <> a0:9
+binder 506:507 <> b0:10
+R529:532 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R510:512 ProofDB.DBParallelBase <> rtc ind
+R527:528 ProofDB.DBReduction <> b0:10 var
+R524:525 ProofDB.DBReduction <> a0:9 var
+R514:522 ProofDB.DBCore <> reduction ind
+R533:535 ProofDB.DBParallelBase <> rtc ind
+R558:561 ProofDB.DBSyntax <> TLam constr
+R563:564 ProofDB.DBReduction <> b0:10 var
+R548:551 ProofDB.DBSyntax <> TLam constr
+R553:554 ProofDB.DBReduction <> a0:9 var
+R537:545 ProofDB.DBCore <> reduction ind
+R604:614 ProofDB.DBParallelBase <> rtc_map_rel thm
+R620:628 ProofDB.DBCore <> reduction ind
+R630:638 ProofDB.DBCore <> reduction ind
+binder 645:645 <> z:11
+R650:653 ProofDB.DBSyntax <> TLam constr
+R655:655 ProofDB.DBReduction <> z:11 var
+R604:614 ProofDB.DBParallelBase <> rtc_map_rel thm
+R620:628 ProofDB.DBCore <> reduction ind
+R630:638 ProofDB.DBCore <> reduction ind
+binder 645:645 <> z:12
+R650:653 ProofDB.DBSyntax <> TLam constr
+R655:655 ProofDB.DBReduction <> z:12 var
+R703:712 ProofDB.DBCore <> red_TLam_b constr
+R703:712 ProofDB.DBCore <> red_TLam_b constr
+prf 727:739 <> red_star_TApp
+binder 750:751 <> a0:13
+binder 753:754 <> b0:14
+binder 756:757 <> a1:15
+binder 759:760 <> b1:16
+R782:785 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R763:765 ProofDB.DBParallelBase <> rtc ind
+R780:781 ProofDB.DBReduction <> b0:14 var
+R777:778 ProofDB.DBReduction <> a0:13 var
+R767:775 ProofDB.DBCore <> reduction ind
+R805:808 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R786:788 ProofDB.DBParallelBase <> rtc ind
+R803:804 ProofDB.DBReduction <> b1:16 var
+R800:801 ProofDB.DBReduction <> a1:15 var
+R790:798 ProofDB.DBCore <> reduction ind
+R809:811 ProofDB.DBParallelBase <> rtc ind
+R837:840 ProofDB.DBSyntax <> TApp constr
+R845:846 ProofDB.DBReduction <> b1:16 var
+R842:843 ProofDB.DBReduction <> b0:14 var
+R824:827 ProofDB.DBSyntax <> TApp constr
+R832:833 ProofDB.DBReduction <> a1:15 var
+R829:830 ProofDB.DBReduction <> a0:13 var
+R813:821 ProofDB.DBCore <> reduction ind
+R894:902 ProofDB.DBParallelBase <> rtc_trans thm
+R894:902 ProofDB.DBParallelBase <> rtc_trans thm
+R917:927 ProofDB.DBParallelBase <> rtc_map_rel thm
+R933:941 ProofDB.DBCore <> reduction ind
+R943:951 ProofDB.DBCore <> reduction ind
+binder 958:958 <> z:17
+R963:966 ProofDB.DBSyntax <> TApp constr
+R968:968 ProofDB.DBReduction <> z:17 var
+R917:927 ProofDB.DBParallelBase <> rtc_map_rel thm
+R933:941 ProofDB.DBCore <> reduction ind
+R943:951 ProofDB.DBCore <> reduction ind
+binder 958:958 <> z:18
+R963:966 ProofDB.DBSyntax <> TApp constr
+R968:968 ProofDB.DBReduction <> z:18 var
+R1019:1028 ProofDB.DBCore <> red_TApp_f constr
+R1019:1028 ProofDB.DBCore <> red_TApp_f constr
+R1043:1053 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1059:1067 ProofDB.DBCore <> reduction ind
+R1069:1077 ProofDB.DBCore <> reduction ind
+binder 1084:1084 <> z:19
+R1089:1092 ProofDB.DBSyntax <> TApp constr
+R1097:1097 ProofDB.DBReduction <> z:19 var
+R1043:1053 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1059:1067 ProofDB.DBCore <> reduction ind
+R1069:1077 ProofDB.DBCore <> reduction ind
+binder 1084:1084 <> z:20
+R1089:1092 ProofDB.DBSyntax <> TApp constr
+R1097:1097 ProofDB.DBReduction <> z:20 var
+R1145:1154 ProofDB.DBCore <> red_TApp_a constr
+R1145:1154 ProofDB.DBCore <> red_TApp_a constr
+prf 1169:1183 <> red_star_TSigma
+binder 1194:1195 <> a0:21
+binder 1197:1198 <> b0:22
+binder 1200:1201 <> a1:23
+binder 1203:1204 <> b1:24
+R1226:1229 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1207:1209 ProofDB.DBParallelBase <> rtc ind
+R1224:1225 ProofDB.DBReduction <> b0:22 var
+R1221:1222 ProofDB.DBReduction <> a0:21 var
+R1211:1219 ProofDB.DBCore <> reduction ind
+R1249:1252 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1230:1232 ProofDB.DBParallelBase <> rtc ind
+R1247:1248 ProofDB.DBReduction <> b1:24 var
+R1244:1245 ProofDB.DBReduction <> a1:23 var
+R1234:1242 ProofDB.DBCore <> reduction ind
+R1253:1255 ProofDB.DBParallelBase <> rtc ind
+R1283:1288 ProofDB.DBSyntax <> TSigma constr
+R1293:1294 ProofDB.DBReduction <> b1:24 var
+R1290:1291 ProofDB.DBReduction <> b0:22 var
+R1268:1273 ProofDB.DBSyntax <> TSigma constr
+R1278:1279 ProofDB.DBReduction <> a1:23 var
+R1275:1276 ProofDB.DBReduction <> a0:21 var
+R1257:1265 ProofDB.DBCore <> reduction ind
+R1342:1350 ProofDB.DBParallelBase <> rtc_trans thm
+R1342:1350 ProofDB.DBParallelBase <> rtc_trans thm
+R1365:1375 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1381:1389 ProofDB.DBCore <> reduction ind
+R1391:1399 ProofDB.DBCore <> reduction ind
+binder 1406:1406 <> z:25
+R1411:1416 ProofDB.DBSyntax <> TSigma constr
+R1418:1418 ProofDB.DBReduction <> z:25 var
+R1365:1375 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1381:1389 ProofDB.DBCore <> reduction ind
+R1391:1399 ProofDB.DBCore <> reduction ind
+binder 1406:1406 <> z:26
+R1411:1416 ProofDB.DBSyntax <> TSigma constr
+R1418:1418 ProofDB.DBReduction <> z:26 var
+R1469:1480 ProofDB.DBCore <> red_TSigma_A constr
+R1469:1480 ProofDB.DBCore <> red_TSigma_A constr
+R1495:1505 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1511:1519 ProofDB.DBCore <> reduction ind
+R1521:1529 ProofDB.DBCore <> reduction ind
+binder 1536:1536 <> z:27
+R1541:1546 ProofDB.DBSyntax <> TSigma constr
+R1551:1551 ProofDB.DBReduction <> z:27 var
+R1495:1505 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1511:1519 ProofDB.DBCore <> reduction ind
+R1521:1529 ProofDB.DBCore <> reduction ind
+binder 1536:1536 <> z:28
+R1541:1546 ProofDB.DBSyntax <> TSigma constr
+R1551:1551 ProofDB.DBReduction <> z:28 var
+R1599:1610 ProofDB.DBCore <> red_TSigma_B constr
+R1599:1610 ProofDB.DBCore <> red_TSigma_B constr
+prf 1625:1638 <> red_star_TPair
+binder 1649:1650 <> a0:29
+binder 1652:1653 <> b0:30
+binder 1655:1656 <> a1:31
+binder 1658:1659 <> b1:32
+R1681:1684 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1662:1664 ProofDB.DBParallelBase <> rtc ind
+R1679:1680 ProofDB.DBReduction <> b0:30 var
+R1676:1677 ProofDB.DBReduction <> a0:29 var
+R1666:1674 ProofDB.DBCore <> reduction ind
+R1704:1707 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1685:1687 ProofDB.DBParallelBase <> rtc ind
+R1702:1703 ProofDB.DBReduction <> b1:32 var
+R1699:1700 ProofDB.DBReduction <> a1:31 var
+R1689:1697 ProofDB.DBCore <> reduction ind
+R1708:1710 ProofDB.DBParallelBase <> rtc ind
+R1737:1741 ProofDB.DBSyntax <> TPair constr
+R1746:1747 ProofDB.DBReduction <> b1:32 var
+R1743:1744 ProofDB.DBReduction <> b0:30 var
+R1723:1727 ProofDB.DBSyntax <> TPair constr
+R1732:1733 ProofDB.DBReduction <> a1:31 var
+R1729:1730 ProofDB.DBReduction <> a0:29 var
+R1712:1720 ProofDB.DBCore <> reduction ind
+R1795:1803 ProofDB.DBParallelBase <> rtc_trans thm
+R1795:1803 ProofDB.DBParallelBase <> rtc_trans thm
+R1818:1828 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1834:1842 ProofDB.DBCore <> reduction ind
+R1844:1852 ProofDB.DBCore <> reduction ind
+binder 1859:1859 <> z:33
+R1864:1868 ProofDB.DBSyntax <> TPair constr
+R1870:1870 ProofDB.DBReduction <> z:33 var
+R1818:1828 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1834:1842 ProofDB.DBCore <> reduction ind
+R1844:1852 ProofDB.DBCore <> reduction ind
+binder 1859:1859 <> z:34
+R1864:1868 ProofDB.DBSyntax <> TPair constr
+R1870:1870 ProofDB.DBReduction <> z:34 var
+R1921:1931 ProofDB.DBCore <> red_TPair_a constr
+R1921:1931 ProofDB.DBCore <> red_TPair_a constr
+R1946:1956 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1962:1970 ProofDB.DBCore <> reduction ind
+R1972:1980 ProofDB.DBCore <> reduction ind
+binder 1987:1987 <> z:35
+R1992:1996 ProofDB.DBSyntax <> TPair constr
+R2001:2001 ProofDB.DBReduction <> z:35 var
+R1946:1956 ProofDB.DBParallelBase <> rtc_map_rel thm
+R1962:1970 ProofDB.DBCore <> reduction ind
+R1972:1980 ProofDB.DBCore <> reduction ind
+binder 1987:1987 <> z:36
+R1992:1996 ProofDB.DBSyntax <> TPair constr
+R2001:2001 ProofDB.DBReduction <> z:36 var
+R2049:2059 ProofDB.DBCore <> red_TPair_b constr
+R2049:2059 ProofDB.DBCore <> red_TPair_b constr
+prf 2074:2086 <> red_star_TFst
+binder 2097:2098 <> a0:37
+binder 2100:2101 <> b0:38
+R2123:2126 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2104:2106 ProofDB.DBParallelBase <> rtc ind
+R2121:2122 ProofDB.DBReduction <> b0:38 var
+R2118:2119 ProofDB.DBReduction <> a0:37 var
+R2108:2116 ProofDB.DBCore <> reduction ind
+R2127:2129 ProofDB.DBParallelBase <> rtc ind
+R2152:2155 ProofDB.DBSyntax <> TFst constr
+R2157:2158 ProofDB.DBReduction <> b0:38 var
+R2142:2145 ProofDB.DBSyntax <> TFst constr
+R2147:2148 ProofDB.DBReduction <> a0:37 var
+R2131:2139 ProofDB.DBCore <> reduction ind
+R2198:2208 ProofDB.DBParallelBase <> rtc_map_rel thm
+R2214:2222 ProofDB.DBCore <> reduction ind
+R2224:2232 ProofDB.DBCore <> reduction ind
+binder 2239:2239 <> z:39
+R2244:2247 ProofDB.DBSyntax <> TFst constr
+R2249:2249 ProofDB.DBReduction <> z:39 var
+R2198:2208 ProofDB.DBParallelBase <> rtc_map_rel thm
+R2214:2222 ProofDB.DBCore <> reduction ind
+R2224:2232 ProofDB.DBCore <> reduction ind
+binder 2239:2239 <> z:40
+R2244:2247 ProofDB.DBSyntax <> TFst constr
+R2249:2249 ProofDB.DBReduction <> z:40 var
+R2297:2306 ProofDB.DBCore <> red_TFst_p constr
+R2297:2306 ProofDB.DBCore <> red_TFst_p constr
+prf 2321:2333 <> red_star_TSnd
+binder 2344:2345 <> a0:41
+binder 2347:2348 <> b0:42
+R2370:2373 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2351:2353 ProofDB.DBParallelBase <> rtc ind
+R2368:2369 ProofDB.DBReduction <> b0:42 var
+R2365:2366 ProofDB.DBReduction <> a0:41 var
+R2355:2363 ProofDB.DBCore <> reduction ind
+R2374:2376 ProofDB.DBParallelBase <> rtc ind
+R2399:2402 ProofDB.DBSyntax <> TSnd constr
+R2404:2405 ProofDB.DBReduction <> b0:42 var
+R2389:2392 ProofDB.DBSyntax <> TSnd constr
+R2394:2395 ProofDB.DBReduction <> a0:41 var
+R2378:2386 ProofDB.DBCore <> reduction ind
+R2445:2455 ProofDB.DBParallelBase <> rtc_map_rel thm
+R2461:2469 ProofDB.DBCore <> reduction ind
+R2471:2479 ProofDB.DBCore <> reduction ind
+binder 2486:2486 <> z:43
+R2491:2494 ProofDB.DBSyntax <> TSnd constr
+R2496:2496 ProofDB.DBReduction <> z:43 var
+R2445:2455 ProofDB.DBParallelBase <> rtc_map_rel thm
+R2461:2469 ProofDB.DBCore <> reduction ind
+R2471:2479 ProofDB.DBCore <> reduction ind
+binder 2486:2486 <> z:44
+R2491:2494 ProofDB.DBSyntax <> TSnd constr
+R2496:2496 ProofDB.DBReduction <> z:44 var
+R2544:2553 ProofDB.DBCore <> red_TSnd_p constr
+R2544:2553 ProofDB.DBCore <> red_TSnd_p constr
+prf 2568:2582 <> red_star_TConsE
+binder 2593:2594 <> a0:45
+binder 2596:2597 <> b0:46
+binder 2599:2600 <> a1:47
+binder 2602:2603 <> b1:48
+R2625:2628 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2606:2608 ProofDB.DBParallelBase <> rtc ind
+R2623:2624 ProofDB.DBReduction <> b0:46 var
+R2620:2621 ProofDB.DBReduction <> a0:45 var
+R2610:2618 ProofDB.DBCore <> reduction ind
+R2648:2651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2629:2631 ProofDB.DBParallelBase <> rtc ind
+R2646:2647 ProofDB.DBReduction <> b1:48 var
+R2643:2644 ProofDB.DBReduction <> a1:47 var
+R2633:2641 ProofDB.DBCore <> reduction ind
+R2652:2654 ProofDB.DBParallelBase <> rtc ind
+R2682:2687 ProofDB.DBSyntax <> TConsE constr
+R2692:2693 ProofDB.DBReduction <> b1:48 var
+R2689:2690 ProofDB.DBReduction <> b0:46 var
+R2667:2672 ProofDB.DBSyntax <> TConsE constr
+R2677:2678 ProofDB.DBReduction <> a1:47 var
+R2674:2675 ProofDB.DBReduction <> a0:45 var
+R2656:2664 ProofDB.DBCore <> reduction ind
+R2741:2749 ProofDB.DBParallelBase <> rtc_trans thm
+R2741:2749 ProofDB.DBParallelBase <> rtc_trans thm
+R2764:2774 ProofDB.DBParallelBase <> rtc_map_rel thm
+R2780:2788 ProofDB.DBCore <> reduction ind
+R2790:2798 ProofDB.DBCore <> reduction ind
+binder 2805:2805 <> z:49
+R2810:2815 ProofDB.DBSyntax <> TConsE constr
+R2817:2817 ProofDB.DBReduction <> z:49 var
+R2764:2774 ProofDB.DBParallelBase <> rtc_map_rel thm
+R2780:2788 ProofDB.DBCore <> reduction ind
+R2790:2798 ProofDB.DBCore <> reduction ind
+binder 2805:2805 <> z:50
+R2810:2815 ProofDB.DBSyntax <> TConsE constr
+R2817:2817 ProofDB.DBReduction <> z:50 var
+R2868:2881 ProofDB.DBCore <> red_TConsE_tag constr
+R2868:2881 ProofDB.DBCore <> red_TConsE_tag constr
+R2896:2906 ProofDB.DBParallelBase <> rtc_map_rel thm
+R2912:2920 ProofDB.DBCore <> reduction ind
+R2922:2930 ProofDB.DBCore <> reduction ind
+binder 2937:2937 <> z:51
+R2942:2947 ProofDB.DBSyntax <> TConsE constr
+R2952:2952 ProofDB.DBReduction <> z:51 var
+R2896:2906 ProofDB.DBParallelBase <> rtc_map_rel thm
+R2912:2920 ProofDB.DBCore <> reduction ind
+R2922:2930 ProofDB.DBCore <> reduction ind
+binder 2937:2937 <> z:52
+R2942:2947 ProofDB.DBSyntax <> TConsE constr
+R2952:2952 ProofDB.DBReduction <> z:52 var
+R3000:3011 ProofDB.DBCore <> red_TConsE_E constr
+R3000:3011 ProofDB.DBCore <> red_TConsE_E constr
+prf 3026:3040 <> red_star_TEnumT
+binder 3051:3052 <> a0:53
+binder 3054:3055 <> b0:54
+R3077:3080 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3058:3060 ProofDB.DBParallelBase <> rtc ind
+R3075:3076 ProofDB.DBReduction <> b0:54 var
+R3072:3073 ProofDB.DBReduction <> a0:53 var
+R3062:3070 ProofDB.DBCore <> reduction ind
+R3081:3083 ProofDB.DBParallelBase <> rtc ind
+R3108:3113 ProofDB.DBSyntax <> TEnumT constr
+R3115:3116 ProofDB.DBReduction <> b0:54 var
+R3096:3101 ProofDB.DBSyntax <> TEnumT constr
+R3103:3104 ProofDB.DBReduction <> a0:53 var
+R3085:3093 ProofDB.DBCore <> reduction ind
+R3156:3166 ProofDB.DBParallelBase <> rtc_map_rel thm
+R3172:3180 ProofDB.DBCore <> reduction ind
+R3182:3190 ProofDB.DBCore <> reduction ind
+binder 3197:3197 <> z:55
+R3202:3207 ProofDB.DBSyntax <> TEnumT constr
+R3209:3209 ProofDB.DBReduction <> z:55 var
+R3156:3166 ProofDB.DBParallelBase <> rtc_map_rel thm
+R3172:3180 ProofDB.DBCore <> reduction ind
+R3182:3190 ProofDB.DBCore <> reduction ind
+binder 3197:3197 <> z:56
+R3202:3207 ProofDB.DBSyntax <> TEnumT constr
+R3209:3209 ProofDB.DBReduction <> z:56 var
+R3257:3268 ProofDB.DBCore <> red_TEnumT_E constr
+R3257:3268 ProofDB.DBCore <> red_TEnumT_E constr
+prf 3283:3297 <> red_star_TESucc
+binder 3308:3309 <> a0:57
+binder 3311:3312 <> b0:58
+R3334:3337 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3315:3317 ProofDB.DBParallelBase <> rtc ind
+R3332:3333 ProofDB.DBReduction <> b0:58 var
+R3329:3330 ProofDB.DBReduction <> a0:57 var
+R3319:3327 ProofDB.DBCore <> reduction ind
+R3338:3340 ProofDB.DBParallelBase <> rtc ind
+R3365:3370 ProofDB.DBSyntax <> TESucc constr
+R3372:3373 ProofDB.DBReduction <> b0:58 var
+R3353:3358 ProofDB.DBSyntax <> TESucc constr
+R3360:3361 ProofDB.DBReduction <> a0:57 var
+R3342:3350 ProofDB.DBCore <> reduction ind
+R3413:3423 ProofDB.DBParallelBase <> rtc_map_rel thm
+R3429:3437 ProofDB.DBCore <> reduction ind
+R3439:3447 ProofDB.DBCore <> reduction ind
+binder 3454:3454 <> z:59
+R3459:3464 ProofDB.DBSyntax <> TESucc constr
+R3466:3466 ProofDB.DBReduction <> z:59 var
+R3413:3423 ProofDB.DBParallelBase <> rtc_map_rel thm
+R3429:3437 ProofDB.DBCore <> reduction ind
+R3439:3447 ProofDB.DBCore <> reduction ind
+binder 3454:3454 <> z:60
+R3459:3464 ProofDB.DBSyntax <> TESucc constr
+R3466:3466 ProofDB.DBReduction <> z:60 var
+R3514:3525 ProofDB.DBCore <> red_TESucc_n constr
+R3514:3525 ProofDB.DBCore <> red_TESucc_n constr
+prf 3540:3552 <> red_star_TEPi
+binder 3563:3563 <> k:61
+binder 3565:3566 <> a0:62
+binder 3568:3569 <> b0:63
+binder 3571:3572 <> a1:64
+binder 3574:3575 <> b1:65
+R3597:3600 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3578:3580 ProofDB.DBParallelBase <> rtc ind
+R3595:3596 ProofDB.DBReduction <> b0:63 var
+R3592:3593 ProofDB.DBReduction <> a0:62 var
+R3582:3590 ProofDB.DBCore <> reduction ind
+R3620:3623 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3601:3603 ProofDB.DBParallelBase <> rtc ind
+R3618:3619 ProofDB.DBReduction <> b1:65 var
+R3615:3616 ProofDB.DBReduction <> a1:64 var
+R3605:3613 ProofDB.DBCore <> reduction ind
+R3624:3626 ProofDB.DBParallelBase <> rtc ind
+R3654:3657 ProofDB.DBSyntax <> TEPi constr
+R3664:3665 ProofDB.DBReduction <> b1:65 var
+R3661:3662 ProofDB.DBReduction <> b0:63 var
+R3659:3659 ProofDB.DBReduction <> k:61 var
+R3639:3642 ProofDB.DBSyntax <> TEPi constr
+R3649:3650 ProofDB.DBReduction <> a1:64 var
+R3646:3647 ProofDB.DBReduction <> a0:62 var
+R3644:3644 ProofDB.DBReduction <> k:61 var
+R3628:3636 ProofDB.DBCore <> reduction ind
+R3715:3723 ProofDB.DBParallelBase <> rtc_trans thm
+R3715:3723 ProofDB.DBParallelBase <> rtc_trans thm
+R3738:3748 ProofDB.DBParallelBase <> rtc_map_rel thm
+R3754:3762 ProofDB.DBCore <> reduction ind
+R3764:3772 ProofDB.DBCore <> reduction ind
+binder 3779:3779 <> z:66
+R3784:3787 ProofDB.DBSyntax <> TEPi constr
+R3791:3791 ProofDB.DBReduction <> z:66 var
+R3738:3748 ProofDB.DBParallelBase <> rtc_map_rel thm
+R3754:3762 ProofDB.DBCore <> reduction ind
+R3764:3772 ProofDB.DBCore <> reduction ind
+binder 3779:3779 <> z:67
+R3784:3787 ProofDB.DBSyntax <> TEPi constr
+R3791:3791 ProofDB.DBReduction <> z:67 var
+R3842:3851 ProofDB.DBCore <> red_TEPi_E constr
+R3842:3851 ProofDB.DBCore <> red_TEPi_E constr
+R3866:3876 ProofDB.DBParallelBase <> rtc_map_rel thm
+R3882:3890 ProofDB.DBCore <> reduction ind
+R3892:3900 ProofDB.DBCore <> reduction ind
+binder 3907:3907 <> z:68
+R3912:3915 ProofDB.DBSyntax <> TEPi constr
+R3922:3922 ProofDB.DBReduction <> z:68 var
+R3866:3876 ProofDB.DBParallelBase <> rtc_map_rel thm
+R3882:3890 ProofDB.DBCore <> reduction ind
+R3892:3900 ProofDB.DBCore <> reduction ind
+binder 3907:3907 <> z:69
+R3912:3915 ProofDB.DBSyntax <> TEPi constr
+R3922:3922 ProofDB.DBReduction <> z:69 var
+R3970:3979 ProofDB.DBCore <> red_TEPi_P constr
+R3970:3979 ProofDB.DBCore <> red_TEPi_P constr
+prf 3994:4009 <> red_star_TSwitch
+binder 4020:4020 <> k:70
+binder 4022:4023 <> a0:71
+binder 4025:4026 <> b0:72
+binder 4028:4029 <> a1:73
+binder 4031:4032 <> b1:74
+binder 4034:4035 <> a2:75
+binder 4037:4038 <> b2:76
+binder 4040:4041 <> a3:77
+binder 4043:4044 <> b3:78
+R4066:4069 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4047:4049 ProofDB.DBParallelBase <> rtc ind
+R4064:4065 ProofDB.DBReduction <> b0:72 var
+R4061:4062 ProofDB.DBReduction <> a0:71 var
+R4051:4059 ProofDB.DBCore <> reduction ind
+R4089:4092 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4070:4072 ProofDB.DBParallelBase <> rtc ind
+R4087:4088 ProofDB.DBReduction <> b1:74 var
+R4084:4085 ProofDB.DBReduction <> a1:73 var
+R4074:4082 ProofDB.DBCore <> reduction ind
+R4112:4115 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4093:4095 ProofDB.DBParallelBase <> rtc ind
+R4110:4111 ProofDB.DBReduction <> b2:76 var
+R4107:4108 ProofDB.DBReduction <> a2:75 var
+R4097:4105 ProofDB.DBCore <> reduction ind
+R4135:4138 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4116:4118 ProofDB.DBParallelBase <> rtc ind
+R4133:4134 ProofDB.DBReduction <> b3:78 var
+R4130:4131 ProofDB.DBReduction <> a3:77 var
+R4120:4128 ProofDB.DBCore <> reduction ind
+R4139:4141 ProofDB.DBParallelBase <> rtc ind
+R4178:4184 ProofDB.DBSyntax <> TSwitch constr
+R4197:4198 ProofDB.DBReduction <> b3:78 var
+R4194:4195 ProofDB.DBReduction <> b2:76 var
+R4191:4192 ProofDB.DBReduction <> b1:74 var
+R4188:4189 ProofDB.DBReduction <> b0:72 var
+R4186:4186 ProofDB.DBReduction <> k:70 var
+R4154:4160 ProofDB.DBSyntax <> TSwitch constr
+R4173:4174 ProofDB.DBReduction <> a3:77 var
+R4170:4171 ProofDB.DBReduction <> a2:75 var
+R4167:4168 ProofDB.DBReduction <> a1:73 var
+R4164:4165 ProofDB.DBReduction <> a0:71 var
+R4162:4162 ProofDB.DBReduction <> k:70 var
+R4143:4151 ProofDB.DBCore <> reduction ind
+R4266:4274 ProofDB.DBParallelBase <> rtc_trans thm
+R4266:4274 ProofDB.DBParallelBase <> rtc_trans thm
+R4289:4299 ProofDB.DBParallelBase <> rtc_map_rel thm
+R4305:4313 ProofDB.DBCore <> reduction ind
+R4315:4323 ProofDB.DBCore <> reduction ind
+binder 4330:4330 <> z:79
+R4335:4341 ProofDB.DBSyntax <> TSwitch constr
+R4345:4345 ProofDB.DBReduction <> z:79 var
+R4289:4299 ProofDB.DBParallelBase <> rtc_map_rel thm
+R4305:4313 ProofDB.DBCore <> reduction ind
+R4315:4323 ProofDB.DBCore <> reduction ind
+binder 4330:4330 <> z:80
+R4335:4341 ProofDB.DBSyntax <> TSwitch constr
+R4345:4345 ProofDB.DBReduction <> z:80 var
+R4402:4414 ProofDB.DBCore <> red_TSwitch_E constr
+R4402:4414 ProofDB.DBCore <> red_TSwitch_E constr
+R4428:4436 ProofDB.DBParallelBase <> rtc_trans thm
+R4428:4436 ProofDB.DBParallelBase <> rtc_trans thm
+R4451:4461 ProofDB.DBParallelBase <> rtc_map_rel thm
+R4467:4475 ProofDB.DBCore <> reduction ind
+R4477:4485 ProofDB.DBCore <> reduction ind
+binder 4492:4492 <> z:81
+R4497:4503 ProofDB.DBSyntax <> TSwitch constr
+R4510:4510 ProofDB.DBReduction <> z:81 var
+R4451:4461 ProofDB.DBParallelBase <> rtc_map_rel thm
+R4467:4475 ProofDB.DBCore <> reduction ind
+R4477:4485 ProofDB.DBCore <> reduction ind
+binder 4492:4492 <> z:82
+R4497:4503 ProofDB.DBSyntax <> TSwitch constr
+R4510:4510 ProofDB.DBReduction <> z:82 var
+R4564:4576 ProofDB.DBCore <> red_TSwitch_P constr
+R4564:4576 ProofDB.DBCore <> red_TSwitch_P constr
+R4590:4598 ProofDB.DBParallelBase <> rtc_trans thm
+R4590:4598 ProofDB.DBParallelBase <> rtc_trans thm
+R4613:4623 ProofDB.DBParallelBase <> rtc_map_rel thm
+R4629:4637 ProofDB.DBCore <> reduction ind
+R4639:4647 ProofDB.DBCore <> reduction ind
+binder 4654:4654 <> z:83
+R4659:4665 ProofDB.DBSyntax <> TSwitch constr
+R4675:4675 ProofDB.DBReduction <> z:83 var
+R4613:4623 ProofDB.DBParallelBase <> rtc_map_rel thm
+R4629:4637 ProofDB.DBCore <> reduction ind
+R4639:4647 ProofDB.DBCore <> reduction ind
+binder 4654:4654 <> z:84
+R4659:4665 ProofDB.DBSyntax <> TSwitch constr
+R4675:4675 ProofDB.DBReduction <> z:84 var
+R4726:4738 ProofDB.DBCore <> red_TSwitch_p constr
+R4726:4738 ProofDB.DBCore <> red_TSwitch_p constr
+R4753:4763 ProofDB.DBParallelBase <> rtc_map_rel thm
+R4769:4777 ProofDB.DBCore <> reduction ind
+R4779:4787 ProofDB.DBCore <> reduction ind
+binder 4794:4794 <> z:85
+R4799:4805 ProofDB.DBSyntax <> TSwitch constr
+R4818:4818 ProofDB.DBReduction <> z:85 var
+R4753:4763 ProofDB.DBParallelBase <> rtc_map_rel thm
+R4769:4777 ProofDB.DBCore <> reduction ind
+R4779:4787 ProofDB.DBCore <> reduction ind
+binder 4794:4794 <> z:86
+R4799:4805 ProofDB.DBSyntax <> TSwitch constr
+R4818:4818 ProofDB.DBReduction <> z:86 var
+R4866:4878 ProofDB.DBCore <> red_TSwitch_e constr
+R4866:4878 ProofDB.DBCore <> red_TSwitch_e constr
+prf 4893:4907 <> red_star_TIDesc
+binder 4918:4919 <> a0:87
+binder 4921:4922 <> b0:88
+R4944:4947 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4925:4927 ProofDB.DBParallelBase <> rtc ind
+R4942:4943 ProofDB.DBReduction <> b0:88 var
+R4939:4940 ProofDB.DBReduction <> a0:87 var
+R4929:4937 ProofDB.DBCore <> reduction ind
+R4948:4950 ProofDB.DBParallelBase <> rtc ind
+R4975:4980 ProofDB.DBSyntax <> TIDesc constr
+R4982:4983 ProofDB.DBReduction <> b0:88 var
+R4963:4968 ProofDB.DBSyntax <> TIDesc constr
+R4970:4971 ProofDB.DBReduction <> a0:87 var
+R4952:4960 ProofDB.DBCore <> reduction ind
+R5023:5033 ProofDB.DBParallelBase <> rtc_map_rel thm
+R5039:5047 ProofDB.DBCore <> reduction ind
+R5049:5057 ProofDB.DBCore <> reduction ind
+binder 5064:5064 <> z:89
+R5069:5074 ProofDB.DBSyntax <> TIDesc constr
+R5076:5076 ProofDB.DBReduction <> z:89 var
+R5023:5033 ProofDB.DBParallelBase <> rtc_map_rel thm
+R5039:5047 ProofDB.DBCore <> reduction ind
+R5049:5057 ProofDB.DBCore <> reduction ind
+binder 5064:5064 <> z:90
+R5069:5074 ProofDB.DBSyntax <> TIDesc constr
+R5076:5076 ProofDB.DBReduction <> z:90 var
+R5124:5136 ProofDB.DBCore <> red_TIDesc_IT constr
+R5124:5136 ProofDB.DBCore <> red_TIDesc_IT constr
+prf 5151:5164 <> red_star_TIVar
+binder 5175:5176 <> a0:91
+binder 5178:5179 <> b0:92
+R5201:5204 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5182:5184 ProofDB.DBParallelBase <> rtc ind
+R5199:5200 ProofDB.DBReduction <> b0:92 var
+R5196:5197 ProofDB.DBReduction <> a0:91 var
+R5186:5194 ProofDB.DBCore <> reduction ind
+R5205:5207 ProofDB.DBParallelBase <> rtc ind
+R5231:5235 ProofDB.DBSyntax <> TIVar constr
+R5237:5238 ProofDB.DBReduction <> b0:92 var
+R5220:5224 ProofDB.DBSyntax <> TIVar constr
+R5226:5227 ProofDB.DBReduction <> a0:91 var
+R5209:5217 ProofDB.DBCore <> reduction ind
+R5278:5288 ProofDB.DBParallelBase <> rtc_map_rel thm
+R5294:5302 ProofDB.DBCore <> reduction ind
+R5304:5312 ProofDB.DBCore <> reduction ind
+binder 5319:5319 <> z:93
+R5324:5328 ProofDB.DBSyntax <> TIVar constr
+R5330:5330 ProofDB.DBReduction <> z:93 var
+R5278:5288 ProofDB.DBParallelBase <> rtc_map_rel thm
+R5294:5302 ProofDB.DBCore <> reduction ind
+R5304:5312 ProofDB.DBCore <> reduction ind
+binder 5319:5319 <> z:94
+R5324:5328 ProofDB.DBSyntax <> TIVar constr
+R5330:5330 ProofDB.DBReduction <> z:94 var
+R5378:5388 ProofDB.DBCore <> red_TIVar_i constr
+R5378:5388 ProofDB.DBCore <> red_TIVar_i constr
+prf 5403:5417 <> red_star_TIProd
+binder 5428:5429 <> a0:95
+binder 5431:5432 <> b0:96
+binder 5434:5435 <> a1:97
+binder 5437:5438 <> b1:98
+R5460:5463 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5441:5443 ProofDB.DBParallelBase <> rtc ind
+R5458:5459 ProofDB.DBReduction <> b0:96 var
+R5455:5456 ProofDB.DBReduction <> a0:95 var
+R5445:5453 ProofDB.DBCore <> reduction ind
+R5483:5486 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5464:5466 ProofDB.DBParallelBase <> rtc ind
+R5481:5482 ProofDB.DBReduction <> b1:98 var
+R5478:5479 ProofDB.DBReduction <> a1:97 var
+R5468:5476 ProofDB.DBCore <> reduction ind
+R5487:5489 ProofDB.DBParallelBase <> rtc ind
+R5517:5522 ProofDB.DBSyntax <> TIProd constr
+R5527:5528 ProofDB.DBReduction <> b1:98 var
+R5524:5525 ProofDB.DBReduction <> b0:96 var
+R5502:5507 ProofDB.DBSyntax <> TIProd constr
+R5512:5513 ProofDB.DBReduction <> a1:97 var
+R5509:5510 ProofDB.DBReduction <> a0:95 var
+R5491:5499 ProofDB.DBCore <> reduction ind
+R5576:5584 ProofDB.DBParallelBase <> rtc_trans thm
+R5576:5584 ProofDB.DBParallelBase <> rtc_trans thm
+R5599:5609 ProofDB.DBParallelBase <> rtc_map_rel thm
+R5615:5623 ProofDB.DBCore <> reduction ind
+R5625:5633 ProofDB.DBCore <> reduction ind
+binder 5640:5640 <> z:99
+R5645:5650 ProofDB.DBSyntax <> TIProd constr
+R5652:5652 ProofDB.DBReduction <> z:99 var
+R5599:5609 ProofDB.DBParallelBase <> rtc_map_rel thm
+R5615:5623 ProofDB.DBCore <> reduction ind
+R5625:5633 ProofDB.DBCore <> reduction ind
+binder 5640:5640 <> z:100
+R5645:5650 ProofDB.DBSyntax <> TIProd constr
+R5652:5652 ProofDB.DBReduction <> z:100 var
+R5703:5714 ProofDB.DBCore <> red_TIProd_A constr
+R5703:5714 ProofDB.DBCore <> red_TIProd_A constr
+R5729:5739 ProofDB.DBParallelBase <> rtc_map_rel thm
+R5745:5753 ProofDB.DBCore <> reduction ind
+R5755:5763 ProofDB.DBCore <> reduction ind
+binder 5770:5770 <> z:101
+R5775:5780 ProofDB.DBSyntax <> TIProd constr
+R5785:5785 ProofDB.DBReduction <> z:101 var
+R5729:5739 ProofDB.DBParallelBase <> rtc_map_rel thm
+R5745:5753 ProofDB.DBCore <> reduction ind
+R5755:5763 ProofDB.DBCore <> reduction ind
+binder 5770:5770 <> z:102
+R5775:5780 ProofDB.DBSyntax <> TIProd constr
+R5785:5785 ProofDB.DBReduction <> z:102 var
+R5833:5844 ProofDB.DBCore <> red_TIProd_B constr
+R5833:5844 ProofDB.DBCore <> red_TIProd_B constr
+prf 5859:5871 <> red_star_TIPi
+binder 5882:5883 <> a0:103
+binder 5885:5886 <> b0:104
+binder 5888:5889 <> a1:105
+binder 5891:5892 <> b1:106
+R5914:5917 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5895:5897 ProofDB.DBParallelBase <> rtc ind
+R5912:5913 ProofDB.DBReduction <> b0:104 var
+R5909:5910 ProofDB.DBReduction <> a0:103 var
+R5899:5907 ProofDB.DBCore <> reduction ind
+R5937:5940 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5918:5920 ProofDB.DBParallelBase <> rtc ind
+R5935:5936 ProofDB.DBReduction <> b1:106 var
+R5932:5933 ProofDB.DBReduction <> a1:105 var
+R5922:5930 ProofDB.DBCore <> reduction ind
+R5941:5943 ProofDB.DBParallelBase <> rtc ind
+R5969:5972 ProofDB.DBSyntax <> TIPi constr
+R5977:5978 ProofDB.DBReduction <> b1:106 var
+R5974:5975 ProofDB.DBReduction <> b0:104 var
+R5956:5959 ProofDB.DBSyntax <> TIPi constr
+R5964:5965 ProofDB.DBReduction <> a1:105 var
+R5961:5962 ProofDB.DBReduction <> a0:103 var
+R5945:5953 ProofDB.DBCore <> reduction ind
+R6026:6034 ProofDB.DBParallelBase <> rtc_trans thm
+R6026:6034 ProofDB.DBParallelBase <> rtc_trans thm
+R6049:6059 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6065:6073 ProofDB.DBCore <> reduction ind
+R6075:6083 ProofDB.DBCore <> reduction ind
+binder 6090:6090 <> z:107
+R6095:6098 ProofDB.DBSyntax <> TIPi constr
+R6100:6100 ProofDB.DBReduction <> z:107 var
+R6049:6059 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6065:6073 ProofDB.DBCore <> reduction ind
+R6075:6083 ProofDB.DBCore <> reduction ind
+binder 6090:6090 <> z:108
+R6095:6098 ProofDB.DBSyntax <> TIPi constr
+R6100:6100 ProofDB.DBReduction <> z:108 var
+R6151:6160 ProofDB.DBCore <> red_TIPi_A constr
+R6151:6160 ProofDB.DBCore <> red_TIPi_A constr
+R6175:6185 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6191:6199 ProofDB.DBCore <> reduction ind
+R6201:6209 ProofDB.DBCore <> reduction ind
+binder 6216:6216 <> z:109
+R6221:6224 ProofDB.DBSyntax <> TIPi constr
+R6229:6229 ProofDB.DBReduction <> z:109 var
+R6175:6185 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6191:6199 ProofDB.DBCore <> reduction ind
+R6201:6209 ProofDB.DBCore <> reduction ind
+binder 6216:6216 <> z:110
+R6221:6224 ProofDB.DBSyntax <> TIPi constr
+R6229:6229 ProofDB.DBReduction <> z:110 var
+R6277:6286 ProofDB.DBCore <> red_TIPi_D constr
+R6277:6286 ProofDB.DBCore <> red_TIPi_D constr
+prf 6301:6314 <> red_star_TISig
+binder 6325:6326 <> a0:111
+binder 6328:6329 <> b0:112
+binder 6331:6332 <> a1:113
+binder 6334:6335 <> b1:114
+R6357:6360 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6338:6340 ProofDB.DBParallelBase <> rtc ind
+R6355:6356 ProofDB.DBReduction <> b0:112 var
+R6352:6353 ProofDB.DBReduction <> a0:111 var
+R6342:6350 ProofDB.DBCore <> reduction ind
+R6380:6383 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6361:6363 ProofDB.DBParallelBase <> rtc ind
+R6378:6379 ProofDB.DBReduction <> b1:114 var
+R6375:6376 ProofDB.DBReduction <> a1:113 var
+R6365:6373 ProofDB.DBCore <> reduction ind
+R6384:6386 ProofDB.DBParallelBase <> rtc ind
+R6413:6417 ProofDB.DBSyntax <> TISig constr
+R6422:6423 ProofDB.DBReduction <> b1:114 var
+R6419:6420 ProofDB.DBReduction <> b0:112 var
+R6399:6403 ProofDB.DBSyntax <> TISig constr
+R6408:6409 ProofDB.DBReduction <> a1:113 var
+R6405:6406 ProofDB.DBReduction <> a0:111 var
+R6388:6396 ProofDB.DBCore <> reduction ind
+R6471:6479 ProofDB.DBParallelBase <> rtc_trans thm
+R6471:6479 ProofDB.DBParallelBase <> rtc_trans thm
+R6494:6504 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6510:6518 ProofDB.DBCore <> reduction ind
+R6520:6528 ProofDB.DBCore <> reduction ind
+binder 6535:6535 <> z:115
+R6540:6544 ProofDB.DBSyntax <> TISig constr
+R6546:6546 ProofDB.DBReduction <> z:115 var
+R6494:6504 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6510:6518 ProofDB.DBCore <> reduction ind
+R6520:6528 ProofDB.DBCore <> reduction ind
+binder 6535:6535 <> z:116
+R6540:6544 ProofDB.DBSyntax <> TISig constr
+R6546:6546 ProofDB.DBReduction <> z:116 var
+R6597:6607 ProofDB.DBCore <> red_TISig_A constr
+R6597:6607 ProofDB.DBCore <> red_TISig_A constr
+R6622:6632 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6638:6646 ProofDB.DBCore <> reduction ind
+R6648:6656 ProofDB.DBCore <> reduction ind
+binder 6663:6663 <> z:117
+R6668:6672 ProofDB.DBSyntax <> TISig constr
+R6677:6677 ProofDB.DBReduction <> z:117 var
+R6622:6632 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6638:6646 ProofDB.DBCore <> reduction ind
+R6648:6656 ProofDB.DBCore <> reduction ind
+binder 6663:6663 <> z:118
+R6668:6672 ProofDB.DBSyntax <> TISig constr
+R6677:6677 ProofDB.DBReduction <> z:118 var
+R6725:6735 ProofDB.DBCore <> red_TISig_D constr
+R6725:6735 ProofDB.DBCore <> red_TISig_D constr
+prf 6750:6766 <> red_star_TIChoice
+binder 6777:6778 <> a0:119
+binder 6780:6781 <> b0:120
+binder 6783:6784 <> a1:121
+binder 6786:6787 <> b1:122
+R6809:6812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6790:6792 ProofDB.DBParallelBase <> rtc ind
+R6807:6808 ProofDB.DBReduction <> b0:120 var
+R6804:6805 ProofDB.DBReduction <> a0:119 var
+R6794:6802 ProofDB.DBCore <> reduction ind
+R6832:6835 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6813:6815 ProofDB.DBParallelBase <> rtc ind
+R6830:6831 ProofDB.DBReduction <> b1:122 var
+R6827:6828 ProofDB.DBReduction <> a1:121 var
+R6817:6825 ProofDB.DBCore <> reduction ind
+R6836:6838 ProofDB.DBParallelBase <> rtc ind
+R6868:6875 ProofDB.DBSyntax <> TIChoice constr
+R6880:6881 ProofDB.DBReduction <> b1:122 var
+R6877:6878 ProofDB.DBReduction <> b0:120 var
+R6851:6858 ProofDB.DBSyntax <> TIChoice constr
+R6863:6864 ProofDB.DBReduction <> a1:121 var
+R6860:6861 ProofDB.DBReduction <> a0:119 var
+R6840:6848 ProofDB.DBCore <> reduction ind
+R6929:6937 ProofDB.DBParallelBase <> rtc_trans thm
+R6929:6937 ProofDB.DBParallelBase <> rtc_trans thm
+R6952:6962 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6968:6976 ProofDB.DBCore <> reduction ind
+R6978:6986 ProofDB.DBCore <> reduction ind
+binder 6993:6993 <> z:123
+R6998:7005 ProofDB.DBSyntax <> TIChoice constr
+R7007:7007 ProofDB.DBReduction <> z:123 var
+R6952:6962 ProofDB.DBParallelBase <> rtc_map_rel thm
+R6968:6976 ProofDB.DBCore <> reduction ind
+R6978:6986 ProofDB.DBCore <> reduction ind
+binder 6993:6993 <> z:124
+R6998:7005 ProofDB.DBSyntax <> TIChoice constr
+R7007:7007 ProofDB.DBReduction <> z:124 var
+R7058:7071 ProofDB.DBCore <> red_TIChoice_E constr
+R7058:7071 ProofDB.DBCore <> red_TIChoice_E constr
+R7086:7096 ProofDB.DBParallelBase <> rtc_map_rel thm
+R7102:7110 ProofDB.DBCore <> reduction ind
+R7112:7120 ProofDB.DBCore <> reduction ind
+binder 7127:7127 <> z:125
+R7132:7139 ProofDB.DBSyntax <> TIChoice constr
+R7144:7144 ProofDB.DBReduction <> z:125 var
+R7086:7096 ProofDB.DBParallelBase <> rtc_map_rel thm
+R7102:7110 ProofDB.DBCore <> reduction ind
+R7112:7120 ProofDB.DBCore <> reduction ind
+binder 7127:7127 <> z:126
+R7132:7139 ProofDB.DBSyntax <> TIChoice constr
+R7144:7144 ProofDB.DBReduction <> z:126 var
+R7192:7205 ProofDB.DBCore <> red_TIChoice_D constr
+R7192:7205 ProofDB.DBCore <> red_TIChoice_D constr
+prf 7220:7235 <> red_star_TInterp
+binder 7246:7247 <> a0:127
+binder 7249:7250 <> b0:128
+binder 7252:7253 <> a1:129
+binder 7255:7256 <> b1:130
+binder 7258:7259 <> a2:131
+binder 7261:7262 <> b2:132
+R7284:7287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7265:7267 ProofDB.DBParallelBase <> rtc ind
+R7282:7283 ProofDB.DBReduction <> b0:128 var
+R7279:7280 ProofDB.DBReduction <> a0:127 var
+R7269:7277 ProofDB.DBCore <> reduction ind
+R7307:7310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7288:7290 ProofDB.DBParallelBase <> rtc ind
+R7305:7306 ProofDB.DBReduction <> b1:130 var
+R7302:7303 ProofDB.DBReduction <> a1:129 var
+R7292:7300 ProofDB.DBCore <> reduction ind
+R7330:7333 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7311:7313 ProofDB.DBParallelBase <> rtc ind
+R7328:7329 ProofDB.DBReduction <> b2:132 var
+R7325:7326 ProofDB.DBReduction <> a2:131 var
+R7315:7323 ProofDB.DBCore <> reduction ind
+R7334:7336 ProofDB.DBParallelBase <> rtc ind
+R7368:7374 ProofDB.DBSyntax <> TInterp constr
+R7382:7383 ProofDB.DBReduction <> b2:132 var
+R7379:7380 ProofDB.DBReduction <> b1:130 var
+R7376:7377 ProofDB.DBReduction <> b0:128 var
+R7349:7355 ProofDB.DBSyntax <> TInterp constr
+R7363:7364 ProofDB.DBReduction <> a2:131 var
+R7360:7361 ProofDB.DBReduction <> a1:129 var
+R7357:7358 ProofDB.DBReduction <> a0:127 var
+R7338:7346 ProofDB.DBCore <> reduction ind
+R7440:7448 ProofDB.DBParallelBase <> rtc_trans thm
+R7440:7448 ProofDB.DBParallelBase <> rtc_trans thm
+R7463:7473 ProofDB.DBParallelBase <> rtc_map_rel thm
+R7479:7487 ProofDB.DBCore <> reduction ind
+R7489:7497 ProofDB.DBCore <> reduction ind
+binder 7504:7504 <> z:133
+R7509:7515 ProofDB.DBSyntax <> TInterp constr
+R7517:7517 ProofDB.DBReduction <> z:133 var
+R7463:7473 ProofDB.DBParallelBase <> rtc_map_rel thm
+R7479:7487 ProofDB.DBCore <> reduction ind
+R7489:7497 ProofDB.DBCore <> reduction ind
+binder 7504:7504 <> z:134
+R7509:7515 ProofDB.DBSyntax <> TInterp constr
+R7517:7517 ProofDB.DBReduction <> z:134 var
+R7571:7584 ProofDB.DBCore <> red_TInterp_IT constr
+R7571:7584 ProofDB.DBCore <> red_TInterp_IT constr
+R7598:7606 ProofDB.DBParallelBase <> rtc_trans thm
+R7598:7606 ProofDB.DBParallelBase <> rtc_trans thm
+R7621:7631 ProofDB.DBParallelBase <> rtc_map_rel thm
+R7637:7645 ProofDB.DBCore <> reduction ind
+R7647:7655 ProofDB.DBCore <> reduction ind
+binder 7662:7662 <> z:135
+R7667:7673 ProofDB.DBSyntax <> TInterp constr
+R7678:7678 ProofDB.DBReduction <> z:135 var
+R7621:7631 ProofDB.DBParallelBase <> rtc_map_rel thm
+R7637:7645 ProofDB.DBCore <> reduction ind
+R7647:7655 ProofDB.DBCore <> reduction ind
+binder 7662:7662 <> z:136
+R7667:7673 ProofDB.DBSyntax <> TInterp constr
+R7678:7678 ProofDB.DBReduction <> z:136 var
+R7729:7741 ProofDB.DBCore <> red_TInterp_D constr
+R7729:7741 ProofDB.DBCore <> red_TInterp_D constr
+R7756:7766 ProofDB.DBParallelBase <> rtc_map_rel thm
+R7772:7780 ProofDB.DBCore <> reduction ind
+R7782:7790 ProofDB.DBCore <> reduction ind
+binder 7797:7797 <> z:137
+R7802:7808 ProofDB.DBSyntax <> TInterp constr
+R7816:7816 ProofDB.DBReduction <> z:137 var
+R7756:7766 ProofDB.DBParallelBase <> rtc_map_rel thm
+R7772:7780 ProofDB.DBCore <> reduction ind
+R7782:7790 ProofDB.DBCore <> reduction ind
+binder 7797:7797 <> z:138
+R7802:7808 ProofDB.DBSyntax <> TInterp constr
+R7816:7816 ProofDB.DBReduction <> z:138 var
+R7864:7876 ProofDB.DBCore <> red_TInterp_X constr
+R7864:7876 ProofDB.DBCore <> red_TInterp_X constr
+prf 7891:7903 <> red_star_TMuI
+binder 7914:7915 <> a0:139
+binder 7917:7918 <> b0:140
+binder 7920:7921 <> a1:141
+binder 7923:7924 <> b1:142
+R7946:7949 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7927:7929 ProofDB.DBParallelBase <> rtc ind
+R7944:7945 ProofDB.DBReduction <> b0:140 var
+R7941:7942 ProofDB.DBReduction <> a0:139 var
+R7931:7939 ProofDB.DBCore <> reduction ind
+R7969:7972 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7950:7952 ProofDB.DBParallelBase <> rtc ind
+R7967:7968 ProofDB.DBReduction <> b1:142 var
+R7964:7965 ProofDB.DBReduction <> a1:141 var
+R7954:7962 ProofDB.DBCore <> reduction ind
+R7973:7975 ProofDB.DBParallelBase <> rtc ind
+R8001:8004 ProofDB.DBSyntax <> TMuI constr
+R8009:8010 ProofDB.DBReduction <> b1:142 var
+R8006:8007 ProofDB.DBReduction <> b0:140 var
+R7988:7991 ProofDB.DBSyntax <> TMuI constr
+R7996:7997 ProofDB.DBReduction <> a1:141 var
+R7993:7994 ProofDB.DBReduction <> a0:139 var
+R7977:7985 ProofDB.DBCore <> reduction ind
+R8058:8066 ProofDB.DBParallelBase <> rtc_trans thm
+R8058:8066 ProofDB.DBParallelBase <> rtc_trans thm
+R8081:8091 ProofDB.DBParallelBase <> rtc_map_rel thm
+R8097:8105 ProofDB.DBCore <> reduction ind
+R8107:8115 ProofDB.DBCore <> reduction ind
+binder 8122:8122 <> z:143
+R8127:8130 ProofDB.DBSyntax <> TMuI constr
+R8132:8132 ProofDB.DBReduction <> z:143 var
+R8081:8091 ProofDB.DBParallelBase <> rtc_map_rel thm
+R8097:8105 ProofDB.DBCore <> reduction ind
+R8107:8115 ProofDB.DBCore <> reduction ind
+binder 8122:8122 <> z:144
+R8127:8130 ProofDB.DBSyntax <> TMuI constr
+R8132:8132 ProofDB.DBReduction <> z:144 var
+R8183:8193 ProofDB.DBCore <> red_TMuI_IT constr
+R8183:8193 ProofDB.DBCore <> red_TMuI_IT constr
+R8208:8218 ProofDB.DBParallelBase <> rtc_map_rel thm
+R8224:8232 ProofDB.DBCore <> reduction ind
+R8234:8242 ProofDB.DBCore <> reduction ind
+binder 8249:8249 <> z:145
+R8254:8257 ProofDB.DBSyntax <> TMuI constr
+R8262:8262 ProofDB.DBReduction <> z:145 var
+R8208:8218 ProofDB.DBParallelBase <> rtc_map_rel thm
+R8224:8232 ProofDB.DBCore <> reduction ind
+R8234:8242 ProofDB.DBCore <> reduction ind
+binder 8249:8249 <> z:146
+R8254:8257 ProofDB.DBSyntax <> TMuI constr
+R8262:8262 ProofDB.DBReduction <> z:146 var
+R8310:8319 ProofDB.DBCore <> red_TMuI_D constr
+R8310:8319 ProofDB.DBCore <> red_TMuI_D constr
+prf 8334:8345 <> red_star_TIn
+binder 8356:8357 <> a0:147
+binder 8359:8360 <> b0:148
+R8382:8385 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8363:8365 ProofDB.DBParallelBase <> rtc ind
+R8380:8381 ProofDB.DBReduction <> b0:148 var
+R8377:8378 ProofDB.DBReduction <> a0:147 var
+R8367:8375 ProofDB.DBCore <> reduction ind
+R8386:8388 ProofDB.DBParallelBase <> rtc ind
+R8410:8412 ProofDB.DBSyntax <> TIn constr
+R8414:8415 ProofDB.DBReduction <> b0:148 var
+R8401:8403 ProofDB.DBSyntax <> TIn constr
+R8405:8406 ProofDB.DBReduction <> a0:147 var
+R8390:8398 ProofDB.DBCore <> reduction ind
+R8455:8465 ProofDB.DBParallelBase <> rtc_map_rel thm
+R8471:8479 ProofDB.DBCore <> reduction ind
+R8481:8489 ProofDB.DBCore <> reduction ind
+binder 8496:8496 <> z:149
+R8501:8503 ProofDB.DBSyntax <> TIn constr
+R8505:8505 ProofDB.DBReduction <> z:149 var
+R8455:8465 ProofDB.DBParallelBase <> rtc_map_rel thm
+R8471:8479 ProofDB.DBCore <> reduction ind
+R8481:8489 ProofDB.DBCore <> reduction ind
+binder 8496:8496 <> z:150
+R8501:8503 ProofDB.DBSyntax <> TIn constr
+R8505:8505 ProofDB.DBReduction <> z:150 var
+R8553:8561 ProofDB.DBCore <> red_TIn_x constr
+R8553:8561 ProofDB.DBCore <> red_TIn_x constr
+prf 8576:8588 <> red_star_TInd
+binder 8599:8600 <> a0:151
+binder 8602:8603 <> b0:152
+binder 8605:8606 <> a1:153
+binder 8608:8609 <> b1:154
+binder 8611:8612 <> a2:155
+binder 8614:8615 <> b2:156
+binder 8617:8618 <> a3:157
+binder 8620:8621 <> b3:158
+binder 8623:8624 <> a4:159
+binder 8626:8627 <> b4:160
+binder 8629:8630 <> a5:161
+binder 8632:8633 <> b5:162
+R8655:8658 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8636:8638 ProofDB.DBParallelBase <> rtc ind
+R8653:8654 ProofDB.DBReduction <> b0:152 var
+R8650:8651 ProofDB.DBReduction <> a0:151 var
+R8640:8648 ProofDB.DBCore <> reduction ind
+R8678:8681 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8659:8661 ProofDB.DBParallelBase <> rtc ind
+R8676:8677 ProofDB.DBReduction <> b1:154 var
+R8673:8674 ProofDB.DBReduction <> a1:153 var
+R8663:8671 ProofDB.DBCore <> reduction ind
+R8701:8704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8682:8684 ProofDB.DBParallelBase <> rtc ind
+R8699:8700 ProofDB.DBReduction <> b2:156 var
+R8696:8697 ProofDB.DBReduction <> a2:155 var
+R8686:8694 ProofDB.DBCore <> reduction ind
+R8724:8727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8705:8707 ProofDB.DBParallelBase <> rtc ind
+R8722:8723 ProofDB.DBReduction <> b3:158 var
+R8719:8720 ProofDB.DBReduction <> a3:157 var
+R8709:8717 ProofDB.DBCore <> reduction ind
+R8747:8750 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8728:8730 ProofDB.DBParallelBase <> rtc ind
+R8745:8746 ProofDB.DBReduction <> b4:160 var
+R8742:8743 ProofDB.DBReduction <> a4:159 var
+R8732:8740 ProofDB.DBCore <> reduction ind
+R8770:8773 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8751:8753 ProofDB.DBParallelBase <> rtc ind
+R8768:8769 ProofDB.DBReduction <> b5:162 var
+R8765:8766 ProofDB.DBReduction <> a5:161 var
+R8755:8763 ProofDB.DBCore <> reduction ind
+R8774:8776 ProofDB.DBParallelBase <> rtc ind
+R8814:8817 ProofDB.DBSyntax <> TInd constr
+R8834:8835 ProofDB.DBReduction <> b5:162 var
+R8831:8832 ProofDB.DBReduction <> b4:160 var
+R8828:8829 ProofDB.DBReduction <> b3:158 var
+R8825:8826 ProofDB.DBReduction <> b2:156 var
+R8822:8823 ProofDB.DBReduction <> b1:154 var
+R8819:8820 ProofDB.DBReduction <> b0:152 var
+R8789:8792 ProofDB.DBSyntax <> TInd constr
+R8809:8810 ProofDB.DBReduction <> a5:161 var
+R8806:8807 ProofDB.DBReduction <> a4:159 var
+R8803:8804 ProofDB.DBReduction <> a3:157 var
+R8800:8801 ProofDB.DBReduction <> a2:155 var
+R8797:8798 ProofDB.DBReduction <> a1:153 var
+R8794:8795 ProofDB.DBReduction <> a0:151 var
+R8778:8786 ProofDB.DBCore <> reduction ind
+R8919:8927 ProofDB.DBParallelBase <> rtc_trans thm
+R8919:8927 ProofDB.DBParallelBase <> rtc_trans thm
+R8942:8952 ProofDB.DBParallelBase <> rtc_map_rel thm
+R8958:8966 ProofDB.DBCore <> reduction ind
+R8968:8976 ProofDB.DBCore <> reduction ind
+binder 8983:8983 <> z:163
+R8988:8991 ProofDB.DBSyntax <> TInd constr
+R8993:8993 ProofDB.DBReduction <> z:163 var
+R8942:8952 ProofDB.DBParallelBase <> rtc_map_rel thm
+R8958:8966 ProofDB.DBCore <> reduction ind
+R8968:8976 ProofDB.DBCore <> reduction ind
+binder 8983:8983 <> z:164
+R8988:8991 ProofDB.DBSyntax <> TInd constr
+R8993:8993 ProofDB.DBReduction <> z:164 var
+R9056:9066 ProofDB.DBCore <> red_TInd_IT constr
+R9056:9066 ProofDB.DBCore <> red_TInd_IT constr
+R9080:9088 ProofDB.DBParallelBase <> rtc_trans thm
+R9080:9088 ProofDB.DBParallelBase <> rtc_trans thm
+R9103:9113 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9119:9127 ProofDB.DBCore <> reduction ind
+R9129:9137 ProofDB.DBCore <> reduction ind
+binder 9144:9144 <> z:165
+R9149:9152 ProofDB.DBSyntax <> TInd constr
+R9157:9157 ProofDB.DBReduction <> z:165 var
+R9103:9113 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9119:9127 ProofDB.DBCore <> reduction ind
+R9129:9137 ProofDB.DBCore <> reduction ind
+binder 9144:9144 <> z:166
+R9149:9152 ProofDB.DBSyntax <> TInd constr
+R9157:9157 ProofDB.DBReduction <> z:166 var
+R9217:9226 ProofDB.DBCore <> red_TInd_D constr
+R9217:9226 ProofDB.DBCore <> red_TInd_D constr
+R9240:9248 ProofDB.DBParallelBase <> rtc_trans thm
+R9240:9248 ProofDB.DBParallelBase <> rtc_trans thm
+R9263:9273 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9279:9287 ProofDB.DBCore <> reduction ind
+R9289:9297 ProofDB.DBCore <> reduction ind
+binder 9304:9304 <> z:167
+R9309:9312 ProofDB.DBSyntax <> TInd constr
+R9320:9320 ProofDB.DBReduction <> z:167 var
+R9263:9273 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9279:9287 ProofDB.DBCore <> reduction ind
+R9289:9297 ProofDB.DBCore <> reduction ind
+binder 9304:9304 <> z:168
+R9309:9312 ProofDB.DBSyntax <> TInd constr
+R9320:9320 ProofDB.DBReduction <> z:168 var
+R9377:9386 ProofDB.DBCore <> red_TInd_P constr
+R9377:9386 ProofDB.DBCore <> red_TInd_P constr
+R9400:9408 ProofDB.DBParallelBase <> rtc_trans thm
+R9400:9408 ProofDB.DBParallelBase <> rtc_trans thm
+R9423:9433 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9439:9447 ProofDB.DBCore <> reduction ind
+R9449:9457 ProofDB.DBCore <> reduction ind
+binder 9464:9464 <> z:169
+R9469:9472 ProofDB.DBSyntax <> TInd constr
+R9483:9483 ProofDB.DBReduction <> z:169 var
+R9423:9433 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9439:9447 ProofDB.DBCore <> reduction ind
+R9449:9457 ProofDB.DBCore <> reduction ind
+binder 9464:9464 <> z:170
+R9469:9472 ProofDB.DBSyntax <> TInd constr
+R9483:9483 ProofDB.DBReduction <> z:170 var
+R9537:9546 ProofDB.DBCore <> red_TInd_s constr
+R9537:9546 ProofDB.DBCore <> red_TInd_s constr
+R9560:9568 ProofDB.DBParallelBase <> rtc_trans thm
+R9560:9568 ProofDB.DBParallelBase <> rtc_trans thm
+R9583:9593 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9599:9607 ProofDB.DBCore <> reduction ind
+R9609:9617 ProofDB.DBCore <> reduction ind
+binder 9624:9624 <> z:171
+R9629:9632 ProofDB.DBSyntax <> TInd constr
+R9646:9646 ProofDB.DBReduction <> z:171 var
+R9583:9593 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9599:9607 ProofDB.DBCore <> reduction ind
+R9609:9617 ProofDB.DBCore <> reduction ind
+binder 9624:9624 <> z:172
+R9629:9632 ProofDB.DBSyntax <> TInd constr
+R9646:9646 ProofDB.DBReduction <> z:172 var
+R9697:9706 ProofDB.DBCore <> red_TInd_i constr
+R9697:9706 ProofDB.DBCore <> red_TInd_i constr
+R9721:9731 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9737:9745 ProofDB.DBCore <> reduction ind
+R9747:9755 ProofDB.DBCore <> reduction ind
+binder 9762:9762 <> z:173
+R9767:9770 ProofDB.DBSyntax <> TInd constr
+R9787:9787 ProofDB.DBReduction <> z:173 var
+R9721:9731 ProofDB.DBParallelBase <> rtc_map_rel thm
+R9737:9745 ProofDB.DBCore <> reduction ind
+R9747:9755 ProofDB.DBCore <> reduction ind
+binder 9762:9762 <> z:174
+R9767:9770 ProofDB.DBSyntax <> TInd constr
+R9787:9787 ProofDB.DBReduction <> z:174 var
+R9835:9844 ProofDB.DBCore <> red_TInd_x constr
+R9835:9844 ProofDB.DBCore <> red_TInd_x constr
+prf 9859:9872 <> red_star_TIAll
+binder 9883:9884 <> a0:175
+binder 9886:9887 <> b0:176
+binder 9889:9890 <> a1:177
+binder 9892:9893 <> b1:178
+binder 9895:9896 <> a2:179
+binder 9898:9899 <> b2:180
+binder 9901:9902 <> a3:181
+binder 9904:9905 <> b3:182
+binder 9907:9908 <> a4:183
+binder 9910:9911 <> b4:184
+R9933:9936 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9914:9916 ProofDB.DBParallelBase <> rtc ind
+R9931:9932 ProofDB.DBReduction <> b0:176 var
+R9928:9929 ProofDB.DBReduction <> a0:175 var
+R9918:9926 ProofDB.DBCore <> reduction ind
+R9956:9959 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9937:9939 ProofDB.DBParallelBase <> rtc ind
+R9954:9955 ProofDB.DBReduction <> b1:178 var
+R9951:9952 ProofDB.DBReduction <> a1:177 var
+R9941:9949 ProofDB.DBCore <> reduction ind
+R9979:9982 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9960:9962 ProofDB.DBParallelBase <> rtc ind
+R9977:9978 ProofDB.DBReduction <> b2:180 var
+R9974:9975 ProofDB.DBReduction <> a2:179 var
+R9964:9972 ProofDB.DBCore <> reduction ind
+R10002:10005 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9983:9985 ProofDB.DBParallelBase <> rtc ind
+R10000:10001 ProofDB.DBReduction <> b3:182 var
+R9997:9998 ProofDB.DBReduction <> a3:181 var
+R9987:9995 ProofDB.DBCore <> reduction ind
+R10025:10028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10006:10008 ProofDB.DBParallelBase <> rtc ind
+R10023:10024 ProofDB.DBReduction <> b4:184 var
+R10020:10021 ProofDB.DBReduction <> a4:183 var
+R10010:10018 ProofDB.DBCore <> reduction ind
+R10029:10031 ProofDB.DBParallelBase <> rtc ind
+R10067:10071 ProofDB.DBSyntax <> TIAll constr
+R10085:10086 ProofDB.DBReduction <> b4:184 var
+R10082:10083 ProofDB.DBReduction <> b3:182 var
+R10079:10080 ProofDB.DBReduction <> b2:180 var
+R10076:10077 ProofDB.DBReduction <> b1:178 var
+R10073:10074 ProofDB.DBReduction <> b0:176 var
+R10044:10048 ProofDB.DBSyntax <> TIAll constr
+R10062:10063 ProofDB.DBReduction <> a4:183 var
+R10059:10060 ProofDB.DBReduction <> a3:181 var
+R10056:10057 ProofDB.DBReduction <> a2:179 var
+R10053:10054 ProofDB.DBReduction <> a1:177 var
+R10050:10051 ProofDB.DBReduction <> a0:175 var
+R10033:10041 ProofDB.DBCore <> reduction ind
+R10161:10169 ProofDB.DBParallelBase <> rtc_trans thm
+R10161:10169 ProofDB.DBParallelBase <> rtc_trans thm
+R10184:10194 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10200:10208 ProofDB.DBCore <> reduction ind
+R10210:10218 ProofDB.DBCore <> reduction ind
+binder 10225:10225 <> z:185
+R10230:10234 ProofDB.DBSyntax <> TIAll constr
+R10236:10236 ProofDB.DBReduction <> z:185 var
+R10184:10194 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10200:10208 ProofDB.DBCore <> reduction ind
+R10210:10218 ProofDB.DBCore <> reduction ind
+binder 10225:10225 <> z:186
+R10230:10234 ProofDB.DBSyntax <> TIAll constr
+R10236:10236 ProofDB.DBReduction <> z:186 var
+R10296:10307 ProofDB.DBCore <> red_TIAll_IT constr
+R10296:10307 ProofDB.DBCore <> red_TIAll_IT constr
+R10321:10329 ProofDB.DBParallelBase <> rtc_trans thm
+R10321:10329 ProofDB.DBParallelBase <> rtc_trans thm
+R10344:10354 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10360:10368 ProofDB.DBCore <> reduction ind
+R10370:10378 ProofDB.DBCore <> reduction ind
+binder 10385:10385 <> z:187
+R10390:10394 ProofDB.DBSyntax <> TIAll constr
+R10399:10399 ProofDB.DBReduction <> z:187 var
+R10344:10354 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10360:10368 ProofDB.DBCore <> reduction ind
+R10370:10378 ProofDB.DBCore <> reduction ind
+binder 10385:10385 <> z:188
+R10390:10394 ProofDB.DBSyntax <> TIAll constr
+R10399:10399 ProofDB.DBReduction <> z:188 var
+R10456:10466 ProofDB.DBCore <> red_TIAll_D constr
+R10456:10466 ProofDB.DBCore <> red_TIAll_D constr
+R10480:10488 ProofDB.DBParallelBase <> rtc_trans thm
+R10480:10488 ProofDB.DBParallelBase <> rtc_trans thm
+R10503:10513 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10519:10527 ProofDB.DBCore <> reduction ind
+R10529:10537 ProofDB.DBCore <> reduction ind
+binder 10544:10544 <> z:189
+R10549:10553 ProofDB.DBSyntax <> TIAll constr
+R10561:10561 ProofDB.DBReduction <> z:189 var
+R10503:10513 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10519:10527 ProofDB.DBCore <> reduction ind
+R10529:10537 ProofDB.DBCore <> reduction ind
+binder 10544:10544 <> z:190
+R10549:10553 ProofDB.DBSyntax <> TIAll constr
+R10561:10561 ProofDB.DBReduction <> z:190 var
+R10615:10625 ProofDB.DBCore <> red_TIAll_X constr
+R10615:10625 ProofDB.DBCore <> red_TIAll_X constr
+R10639:10647 ProofDB.DBParallelBase <> rtc_trans thm
+R10639:10647 ProofDB.DBParallelBase <> rtc_trans thm
+R10662:10672 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10678:10686 ProofDB.DBCore <> reduction ind
+R10688:10696 ProofDB.DBCore <> reduction ind
+binder 10703:10703 <> z:191
+R10708:10712 ProofDB.DBSyntax <> TIAll constr
+R10723:10723 ProofDB.DBReduction <> z:191 var
+R10662:10672 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10678:10686 ProofDB.DBCore <> reduction ind
+R10688:10696 ProofDB.DBCore <> reduction ind
+binder 10703:10703 <> z:192
+R10708:10712 ProofDB.DBSyntax <> TIAll constr
+R10723:10723 ProofDB.DBReduction <> z:192 var
+R10774:10784 ProofDB.DBCore <> red_TIAll_x constr
+R10774:10784 ProofDB.DBCore <> red_TIAll_x constr
+R10799:10809 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10815:10823 ProofDB.DBCore <> reduction ind
+R10825:10833 ProofDB.DBCore <> reduction ind
+binder 10840:10840 <> z:193
+R10845:10849 ProofDB.DBSyntax <> TIAll constr
+R10863:10863 ProofDB.DBReduction <> z:193 var
+R10799:10809 ProofDB.DBParallelBase <> rtc_map_rel thm
+R10815:10823 ProofDB.DBCore <> reduction ind
+R10825:10833 ProofDB.DBCore <> reduction ind
+binder 10840:10840 <> z:194
+R10845:10849 ProofDB.DBSyntax <> TIAll constr
+R10863:10863 ProofDB.DBReduction <> z:194 var
+R10911:10921 ProofDB.DBCore <> red_TIAll_P constr
+R10911:10921 ProofDB.DBCore <> red_TIAll_P constr
+prf 10936:10949 <> red_star_THyps
+binder 10960:10961 <> a0:195
+binder 10963:10964 <> b0:196
+binder 10966:10967 <> a1:197
+binder 10969:10970 <> b1:198
+binder 10972:10973 <> a2:199
+binder 10975:10976 <> b2:200
+binder 10978:10979 <> a3:201
+binder 10981:10982 <> b3:202
+binder 10984:10985 <> a4:203
+binder 10987:10988 <> b4:204
+binder 10990:10991 <> a5:205
+binder 10993:10994 <> b5:206
+R11016:11019 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10997:10999 ProofDB.DBParallelBase <> rtc ind
+R11014:11015 ProofDB.DBReduction <> b0:196 var
+R11011:11012 ProofDB.DBReduction <> a0:195 var
+R11001:11009 ProofDB.DBCore <> reduction ind
+R11039:11042 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11020:11022 ProofDB.DBParallelBase <> rtc ind
+R11037:11038 ProofDB.DBReduction <> b1:198 var
+R11034:11035 ProofDB.DBReduction <> a1:197 var
+R11024:11032 ProofDB.DBCore <> reduction ind
+R11062:11065 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11043:11045 ProofDB.DBParallelBase <> rtc ind
+R11060:11061 ProofDB.DBReduction <> b2:200 var
+R11057:11058 ProofDB.DBReduction <> a2:199 var
+R11047:11055 ProofDB.DBCore <> reduction ind
+R11085:11088 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11066:11068 ProofDB.DBParallelBase <> rtc ind
+R11083:11084 ProofDB.DBReduction <> b3:202 var
+R11080:11081 ProofDB.DBReduction <> a3:201 var
+R11070:11078 ProofDB.DBCore <> reduction ind
+R11108:11111 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11089:11091 ProofDB.DBParallelBase <> rtc ind
+R11106:11107 ProofDB.DBReduction <> b4:204 var
+R11103:11104 ProofDB.DBReduction <> a4:203 var
+R11093:11101 ProofDB.DBCore <> reduction ind
+R11131:11134 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11112:11114 ProofDB.DBParallelBase <> rtc ind
+R11129:11130 ProofDB.DBReduction <> b5:206 var
+R11126:11127 ProofDB.DBReduction <> a5:205 var
+R11116:11124 ProofDB.DBCore <> reduction ind
+R11135:11137 ProofDB.DBParallelBase <> rtc ind
+R11176:11180 ProofDB.DBSyntax <> THyps constr
+R11197:11198 ProofDB.DBReduction <> b5:206 var
+R11194:11195 ProofDB.DBReduction <> b4:204 var
+R11191:11192 ProofDB.DBReduction <> b3:202 var
+R11188:11189 ProofDB.DBReduction <> b2:200 var
+R11185:11186 ProofDB.DBReduction <> b1:198 var
+R11182:11183 ProofDB.DBReduction <> b0:196 var
+R11150:11154 ProofDB.DBSyntax <> THyps constr
+R11171:11172 ProofDB.DBReduction <> a5:205 var
+R11168:11169 ProofDB.DBReduction <> a4:203 var
+R11165:11166 ProofDB.DBReduction <> a3:201 var
+R11162:11163 ProofDB.DBReduction <> a2:199 var
+R11159:11160 ProofDB.DBReduction <> a1:197 var
+R11156:11157 ProofDB.DBReduction <> a0:195 var
+R11139:11147 ProofDB.DBCore <> reduction ind
+R11282:11290 ProofDB.DBParallelBase <> rtc_trans thm
+R11282:11290 ProofDB.DBParallelBase <> rtc_trans thm
+R11305:11315 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11321:11329 ProofDB.DBCore <> reduction ind
+R11331:11339 ProofDB.DBCore <> reduction ind
+binder 11346:11346 <> z:207
+R11351:11355 ProofDB.DBSyntax <> THyps constr
+R11357:11357 ProofDB.DBReduction <> z:207 var
+R11305:11315 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11321:11329 ProofDB.DBCore <> reduction ind
+R11331:11339 ProofDB.DBCore <> reduction ind
+binder 11346:11346 <> z:208
+R11351:11355 ProofDB.DBSyntax <> THyps constr
+R11357:11357 ProofDB.DBReduction <> z:208 var
+R11420:11431 ProofDB.DBCore <> red_THyps_IT constr
+R11420:11431 ProofDB.DBCore <> red_THyps_IT constr
+R11445:11453 ProofDB.DBParallelBase <> rtc_trans thm
+R11445:11453 ProofDB.DBParallelBase <> rtc_trans thm
+R11468:11478 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11484:11492 ProofDB.DBCore <> reduction ind
+R11494:11502 ProofDB.DBCore <> reduction ind
+binder 11509:11509 <> z:209
+R11514:11518 ProofDB.DBSyntax <> THyps constr
+R11523:11523 ProofDB.DBReduction <> z:209 var
+R11468:11478 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11484:11492 ProofDB.DBCore <> reduction ind
+R11494:11502 ProofDB.DBCore <> reduction ind
+binder 11509:11509 <> z:210
+R11514:11518 ProofDB.DBSyntax <> THyps constr
+R11523:11523 ProofDB.DBReduction <> z:210 var
+R11583:11593 ProofDB.DBCore <> red_THyps_D constr
+R11583:11593 ProofDB.DBCore <> red_THyps_D constr
+R11607:11615 ProofDB.DBParallelBase <> rtc_trans thm
+R11607:11615 ProofDB.DBParallelBase <> rtc_trans thm
+R11630:11640 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11646:11654 ProofDB.DBCore <> reduction ind
+R11656:11664 ProofDB.DBCore <> reduction ind
+binder 11671:11671 <> z:211
+R11676:11680 ProofDB.DBSyntax <> THyps constr
+R11688:11688 ProofDB.DBReduction <> z:211 var
+R11630:11640 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11646:11654 ProofDB.DBCore <> reduction ind
+R11656:11664 ProofDB.DBCore <> reduction ind
+binder 11671:11671 <> z:212
+R11676:11680 ProofDB.DBSyntax <> THyps constr
+R11688:11688 ProofDB.DBReduction <> z:212 var
+R11745:11755 ProofDB.DBCore <> red_THyps_X constr
+R11745:11755 ProofDB.DBCore <> red_THyps_X constr
+R11769:11777 ProofDB.DBParallelBase <> rtc_trans thm
+R11769:11777 ProofDB.DBParallelBase <> rtc_trans thm
+R11792:11802 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11808:11816 ProofDB.DBCore <> reduction ind
+R11818:11826 ProofDB.DBCore <> reduction ind
+binder 11833:11833 <> z:213
+R11838:11842 ProofDB.DBSyntax <> THyps constr
+R11853:11853 ProofDB.DBReduction <> z:213 var
+R11792:11802 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11808:11816 ProofDB.DBCore <> reduction ind
+R11818:11826 ProofDB.DBCore <> reduction ind
+binder 11833:11833 <> z:214
+R11838:11842 ProofDB.DBSyntax <> THyps constr
+R11853:11853 ProofDB.DBReduction <> z:214 var
+R11907:11917 ProofDB.DBCore <> red_THyps_P constr
+R11907:11917 ProofDB.DBCore <> red_THyps_P constr
+R11931:11939 ProofDB.DBParallelBase <> rtc_trans thm
+R11931:11939 ProofDB.DBParallelBase <> rtc_trans thm
+R11954:11964 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11970:11978 ProofDB.DBCore <> reduction ind
+R11980:11988 ProofDB.DBCore <> reduction ind
+binder 11995:11995 <> z:215
+R12000:12004 ProofDB.DBSyntax <> THyps constr
+R12018:12018 ProofDB.DBReduction <> z:215 var
+R11954:11964 ProofDB.DBParallelBase <> rtc_map_rel thm
+R11970:11978 ProofDB.DBCore <> reduction ind
+R11980:11988 ProofDB.DBCore <> reduction ind
+binder 11995:11995 <> z:216
+R12000:12004 ProofDB.DBSyntax <> THyps constr
+R12018:12018 ProofDB.DBReduction <> z:216 var
+R12069:12079 ProofDB.DBCore <> red_THyps_h constr
+R12069:12079 ProofDB.DBCore <> red_THyps_h constr
+R12094:12104 ProofDB.DBParallelBase <> rtc_map_rel thm
+R12110:12118 ProofDB.DBCore <> reduction ind
+R12120:12128 ProofDB.DBCore <> reduction ind
+binder 12135:12135 <> z:217
+R12140:12144 ProofDB.DBSyntax <> THyps constr
+R12161:12161 ProofDB.DBReduction <> z:217 var
+R12094:12104 ProofDB.DBParallelBase <> rtc_map_rel thm
+R12110:12118 ProofDB.DBCore <> reduction ind
+R12120:12128 ProofDB.DBCore <> reduction ind
+binder 12135:12135 <> z:218
+R12140:12144 ProofDB.DBSyntax <> THyps constr
+R12161:12161 ProofDB.DBReduction <> z:218 var
+R12209:12219 ProofDB.DBCore <> red_THyps_x constr
+R12209:12219 ProofDB.DBCore <> red_THyps_x constr
+prf 12234:12248 <> red_star_TClose
+binder 12259:12260 <> a0:219
+binder 12262:12263 <> b0:220
+binder 12265:12266 <> a1:221
+binder 12268:12269 <> b1:222
+binder 12271:12272 <> a2:223
+binder 12274:12275 <> b2:224
+R12297:12300 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12278:12280 ProofDB.DBParallelBase <> rtc ind
+R12295:12296 ProofDB.DBReduction <> b0:220 var
+R12292:12293 ProofDB.DBReduction <> a0:219 var
+R12282:12290 ProofDB.DBCore <> reduction ind
+R12320:12323 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12301:12303 ProofDB.DBParallelBase <> rtc ind
+R12318:12319 ProofDB.DBReduction <> b1:222 var
+R12315:12316 ProofDB.DBReduction <> a1:221 var
+R12305:12313 ProofDB.DBCore <> reduction ind
+R12343:12346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12324:12326 ProofDB.DBParallelBase <> rtc ind
+R12341:12342 ProofDB.DBReduction <> b2:224 var
+R12338:12339 ProofDB.DBReduction <> a2:223 var
+R12328:12336 ProofDB.DBCore <> reduction ind
+R12347:12349 ProofDB.DBParallelBase <> rtc ind
+R12380:12385 ProofDB.DBSyntax <> TClose constr
+R12393:12394 ProofDB.DBReduction <> b2:224 var
+R12390:12391 ProofDB.DBReduction <> b1:222 var
+R12387:12388 ProofDB.DBReduction <> b0:220 var
+R12362:12367 ProofDB.DBSyntax <> TClose constr
+R12375:12376 ProofDB.DBReduction <> a2:223 var
+R12372:12373 ProofDB.DBReduction <> a1:221 var
+R12369:12370 ProofDB.DBReduction <> a0:219 var
+R12351:12359 ProofDB.DBCore <> reduction ind
+R12451:12459 ProofDB.DBParallelBase <> rtc_trans thm
+R12451:12459 ProofDB.DBParallelBase <> rtc_trans thm
+R12474:12484 ProofDB.DBParallelBase <> rtc_map_rel thm
+R12490:12498 ProofDB.DBCore <> reduction ind
+R12500:12508 ProofDB.DBCore <> reduction ind
+binder 12515:12515 <> z:225
+R12520:12525 ProofDB.DBSyntax <> TClose constr
+R12527:12527 ProofDB.DBReduction <> z:225 var
+R12474:12484 ProofDB.DBParallelBase <> rtc_map_rel thm
+R12490:12498 ProofDB.DBCore <> reduction ind
+R12500:12508 ProofDB.DBCore <> reduction ind
+binder 12515:12515 <> z:226
+R12520:12525 ProofDB.DBSyntax <> TClose constr
+R12527:12527 ProofDB.DBReduction <> z:226 var
+R12581:12593 ProofDB.DBCore <> red_TClose_IT constr
+R12581:12593 ProofDB.DBCore <> red_TClose_IT constr
+R12607:12615 ProofDB.DBParallelBase <> rtc_trans thm
+R12607:12615 ProofDB.DBParallelBase <> rtc_trans thm
+R12630:12640 ProofDB.DBParallelBase <> rtc_map_rel thm
+R12646:12654 ProofDB.DBCore <> reduction ind
+R12656:12664 ProofDB.DBCore <> reduction ind
+binder 12671:12671 <> z:227
+R12676:12681 ProofDB.DBSyntax <> TClose constr
+R12686:12686 ProofDB.DBReduction <> z:227 var
+R12630:12640 ProofDB.DBParallelBase <> rtc_map_rel thm
+R12646:12654 ProofDB.DBCore <> reduction ind
+R12656:12664 ProofDB.DBCore <> reduction ind
+binder 12671:12671 <> z:228
+R12676:12681 ProofDB.DBSyntax <> TClose constr
+R12686:12686 ProofDB.DBReduction <> z:228 var
+R12737:12748 ProofDB.DBCore <> red_TClose_F constr
+R12737:12748 ProofDB.DBCore <> red_TClose_F constr
+R12763:12773 ProofDB.DBParallelBase <> rtc_map_rel thm
+R12779:12787 ProofDB.DBCore <> reduction ind
+R12789:12797 ProofDB.DBCore <> reduction ind
+binder 12804:12804 <> z:229
+R12809:12814 ProofDB.DBSyntax <> TClose constr
+R12822:12822 ProofDB.DBReduction <> z:229 var
+R12763:12773 ProofDB.DBParallelBase <> rtc_map_rel thm
+R12779:12787 ProofDB.DBCore <> reduction ind
+R12789:12797 ProofDB.DBCore <> reduction ind
+binder 12804:12804 <> z:230
+R12809:12814 ProofDB.DBSyntax <> TClose constr
+R12822:12822 ProofDB.DBReduction <> z:230 var
+R12870:12881 ProofDB.DBCore <> red_TClose_G constr
+R12870:12881 ProofDB.DBCore <> red_TClose_G constr
+prf 12896:12914 <> red_star_TCloseCase
+binder 12925:12925 <> k:231
+binder 12927:12928 <> a0:232
+binder 12930:12931 <> b0:233
+binder 12933:12934 <> a1:234
+binder 12936:12937 <> b1:235
+binder 12939:12940 <> a2:236
+binder 12942:12943 <> b2:237
+binder 12945:12946 <> a3:238
+binder 12948:12949 <> b3:239
+binder 12951:12952 <> a4:240
+binder 12954:12955 <> b4:241
+binder 12957:12958 <> a5:242
+binder 12960:12961 <> b5:243
+binder 12963:12964 <> a6:244
+binder 12966:12967 <> b6:245
+R12989:12992 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12970:12972 ProofDB.DBParallelBase <> rtc ind
+R12987:12988 ProofDB.DBReduction <> b0:233 var
+R12984:12985 ProofDB.DBReduction <> a0:232 var
+R12974:12982 ProofDB.DBCore <> reduction ind
+R13012:13015 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12993:12995 ProofDB.DBParallelBase <> rtc ind
+R13010:13011 ProofDB.DBReduction <> b1:235 var
+R13007:13008 ProofDB.DBReduction <> a1:234 var
+R12997:13005 ProofDB.DBCore <> reduction ind
+R13035:13038 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13016:13018 ProofDB.DBParallelBase <> rtc ind
+R13033:13034 ProofDB.DBReduction <> b2:237 var
+R13030:13031 ProofDB.DBReduction <> a2:236 var
+R13020:13028 ProofDB.DBCore <> reduction ind
+R13058:13061 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13039:13041 ProofDB.DBParallelBase <> rtc ind
+R13056:13057 ProofDB.DBReduction <> b3:239 var
+R13053:13054 ProofDB.DBReduction <> a3:238 var
+R13043:13051 ProofDB.DBCore <> reduction ind
+R13081:13084 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13062:13064 ProofDB.DBParallelBase <> rtc ind
+R13079:13080 ProofDB.DBReduction <> b4:241 var
+R13076:13077 ProofDB.DBReduction <> a4:240 var
+R13066:13074 ProofDB.DBCore <> reduction ind
+R13104:13107 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13085:13087 ProofDB.DBParallelBase <> rtc ind
+R13102:13103 ProofDB.DBReduction <> b5:243 var
+R13099:13100 ProofDB.DBReduction <> a5:242 var
+R13089:13097 ProofDB.DBCore <> reduction ind
+R13127:13130 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13108:13110 ProofDB.DBParallelBase <> rtc ind
+R13125:13126 ProofDB.DBReduction <> b6:245 var
+R13122:13123 ProofDB.DBReduction <> a6:244 var
+R13112:13120 ProofDB.DBCore <> reduction ind
+R13131:13133 ProofDB.DBParallelBase <> rtc ind
+R13182:13191 ProofDB.DBSyntax <> TCloseCase constr
+R13213:13214 ProofDB.DBReduction <> b6:245 var
+R13210:13211 ProofDB.DBReduction <> b5:243 var
+R13207:13208 ProofDB.DBReduction <> b4:241 var
+R13204:13205 ProofDB.DBReduction <> b3:239 var
+R13201:13202 ProofDB.DBReduction <> b2:237 var
+R13198:13199 ProofDB.DBReduction <> b1:235 var
+R13195:13196 ProofDB.DBReduction <> b0:233 var
+R13193:13193 ProofDB.DBReduction <> k:231 var
+R13146:13155 ProofDB.DBSyntax <> TCloseCase constr
+R13177:13178 ProofDB.DBReduction <> a6:244 var
+R13174:13175 ProofDB.DBReduction <> a5:242 var
+R13171:13172 ProofDB.DBReduction <> a4:240 var
+R13168:13169 ProofDB.DBReduction <> a3:238 var
+R13165:13166 ProofDB.DBReduction <> a2:236 var
+R13162:13163 ProofDB.DBReduction <> a1:234 var
+R13159:13160 ProofDB.DBReduction <> a0:232 var
+R13157:13157 ProofDB.DBReduction <> k:231 var
+R13135:13143 ProofDB.DBCore <> reduction ind
+R13309:13317 ProofDB.DBParallelBase <> rtc_trans thm
+R13309:13317 ProofDB.DBParallelBase <> rtc_trans thm
+R13332:13342 ProofDB.DBParallelBase <> rtc_map_rel thm
+R13348:13356 ProofDB.DBCore <> reduction ind
+R13358:13366 ProofDB.DBCore <> reduction ind
+binder 13373:13373 <> z:246
+R13378:13387 ProofDB.DBSyntax <> TCloseCase constr
+R13391:13391 ProofDB.DBReduction <> z:246 var
+R13332:13342 ProofDB.DBParallelBase <> rtc_map_rel thm
+R13348:13356 ProofDB.DBCore <> reduction ind
+R13358:13366 ProofDB.DBCore <> reduction ind
+binder 13373:13373 <> z:247
+R13378:13387 ProofDB.DBSyntax <> TCloseCase constr
+R13391:13391 ProofDB.DBReduction <> z:247 var
+R13457:13473 ProofDB.DBCore <> red_TCloseCase_IT constr
+R13457:13473 ProofDB.DBCore <> red_TCloseCase_IT constr
+R13487:13495 ProofDB.DBParallelBase <> rtc_trans thm
+R13487:13495 ProofDB.DBParallelBase <> rtc_trans thm
+R13510:13520 ProofDB.DBParallelBase <> rtc_map_rel thm
+R13526:13534 ProofDB.DBCore <> reduction ind
+R13536:13544 ProofDB.DBCore <> reduction ind
+binder 13551:13551 <> z:248
+R13556:13565 ProofDB.DBSyntax <> TCloseCase constr
+R13572:13572 ProofDB.DBReduction <> z:248 var
+R13510:13520 ProofDB.DBParallelBase <> rtc_map_rel thm
+R13526:13534 ProofDB.DBCore <> reduction ind
+R13536:13544 ProofDB.DBCore <> reduction ind
+binder 13551:13551 <> z:249
+R13556:13565 ProofDB.DBSyntax <> TCloseCase constr
+R13572:13572 ProofDB.DBReduction <> z:249 var
+R13635:13650 ProofDB.DBCore <> red_TCloseCase_F constr
+R13635:13650 ProofDB.DBCore <> red_TCloseCase_F constr
+R13664:13672 ProofDB.DBParallelBase <> rtc_trans thm
+R13664:13672 ProofDB.DBParallelBase <> rtc_trans thm
+R13687:13697 ProofDB.DBParallelBase <> rtc_map_rel thm
+R13703:13711 ProofDB.DBCore <> reduction ind
+R13713:13721 ProofDB.DBCore <> reduction ind
+binder 13728:13728 <> z:250
+R13733:13742 ProofDB.DBSyntax <> TCloseCase constr
+R13752:13752 ProofDB.DBReduction <> z:250 var
+R13687:13697 ProofDB.DBParallelBase <> rtc_map_rel thm
+R13703:13711 ProofDB.DBCore <> reduction ind
+R13713:13721 ProofDB.DBCore <> reduction ind
+binder 13728:13728 <> z:251
+R13733:13742 ProofDB.DBSyntax <> TCloseCase constr
+R13752:13752 ProofDB.DBReduction <> z:251 var
+R13812:13827 ProofDB.DBCore <> red_TCloseCase_G constr
+R13812:13827 ProofDB.DBCore <> red_TCloseCase_G constr
+R13841:13849 ProofDB.DBParallelBase <> rtc_trans thm
+R13841:13849 ProofDB.DBParallelBase <> rtc_trans thm
+R13864:13874 ProofDB.DBParallelBase <> rtc_map_rel thm
+R13880:13888 ProofDB.DBCore <> reduction ind
+R13890:13898 ProofDB.DBCore <> reduction ind
+binder 13905:13905 <> z:252
+R13910:13919 ProofDB.DBSyntax <> TCloseCase constr
+R13932:13932 ProofDB.DBReduction <> z:252 var
+R13864:13874 ProofDB.DBParallelBase <> rtc_map_rel thm
+R13880:13888 ProofDB.DBCore <> reduction ind
+R13890:13898 ProofDB.DBCore <> reduction ind
+binder 13905:13905 <> z:253
+R13910:13919 ProofDB.DBSyntax <> TCloseCase constr
+R13932:13932 ProofDB.DBReduction <> z:253 var
+R13989:14004 ProofDB.DBCore <> red_TCloseCase_i constr
+R13989:14004 ProofDB.DBCore <> red_TCloseCase_i constr
+R14018:14026 ProofDB.DBParallelBase <> rtc_trans thm
+R14018:14026 ProofDB.DBParallelBase <> rtc_trans thm
+R14041:14051 ProofDB.DBParallelBase <> rtc_map_rel thm
+R14057:14065 ProofDB.DBCore <> reduction ind
+R14067:14075 ProofDB.DBCore <> reduction ind
+binder 14082:14082 <> z:254
+R14087:14096 ProofDB.DBSyntax <> TCloseCase constr
+R14112:14112 ProofDB.DBReduction <> z:254 var
+R14041:14051 ProofDB.DBParallelBase <> rtc_map_rel thm
+R14057:14065 ProofDB.DBCore <> reduction ind
+R14067:14075 ProofDB.DBCore <> reduction ind
+binder 14082:14082 <> z:255
+R14087:14096 ProofDB.DBSyntax <> TCloseCase constr
+R14112:14112 ProofDB.DBReduction <> z:255 var
+R14166:14181 ProofDB.DBCore <> red_TCloseCase_Q constr
+R14166:14181 ProofDB.DBCore <> red_TCloseCase_Q constr
+R14195:14203 ProofDB.DBParallelBase <> rtc_trans thm
+R14195:14203 ProofDB.DBParallelBase <> rtc_trans thm
+R14218:14228 ProofDB.DBParallelBase <> rtc_map_rel thm
+R14234:14242 ProofDB.DBCore <> reduction ind
+R14244:14252 ProofDB.DBCore <> reduction ind
+binder 14259:14259 <> z:256
+R14264:14273 ProofDB.DBSyntax <> TCloseCase constr
+R14292:14292 ProofDB.DBReduction <> z:256 var
+R14218:14228 ProofDB.DBParallelBase <> rtc_map_rel thm
+R14234:14242 ProofDB.DBCore <> reduction ind
+R14244:14252 ProofDB.DBCore <> reduction ind
+binder 14259:14259 <> z:257
+R14264:14273 ProofDB.DBSyntax <> TCloseCase constr
+R14292:14292 ProofDB.DBReduction <> z:257 var
+R14343:14358 ProofDB.DBCore <> red_TCloseCase_b constr
+R14343:14358 ProofDB.DBCore <> red_TCloseCase_b constr
+R14373:14383 ProofDB.DBParallelBase <> rtc_map_rel thm
+R14389:14397 ProofDB.DBCore <> reduction ind
+R14399:14407 ProofDB.DBCore <> reduction ind
+binder 14414:14414 <> z:258
+R14419:14428 ProofDB.DBSyntax <> TCloseCase constr
+R14450:14450 ProofDB.DBReduction <> z:258 var
+R14373:14383 ProofDB.DBParallelBase <> rtc_map_rel thm
+R14389:14397 ProofDB.DBCore <> reduction ind
+R14399:14407 ProofDB.DBCore <> reduction ind
+binder 14414:14414 <> z:259
+R14419:14428 ProofDB.DBSyntax <> TCloseCase constr
+R14450:14450 ProofDB.DBReduction <> z:259 var
+R14498:14513 ProofDB.DBCore <> red_TCloseCase_x constr
+R14498:14513 ProofDB.DBCore <> red_TCloseCase_x constr
+prf 14528:14545 <> red_star_TCloseInd
+binder 14556:14557 <> a0:260
+binder 14559:14560 <> b0:261
+binder 14562:14563 <> a1:262
+binder 14565:14566 <> b1:263
+binder 14568:14569 <> a2:264
+binder 14571:14572 <> b2:265
+binder 14574:14575 <> a3:266
+binder 14577:14578 <> b3:267
+binder 14580:14581 <> a4:268
+binder 14583:14584 <> b4:269
+binder 14586:14587 <> a5:270
+binder 14589:14590 <> b5:271
+binder 14592:14593 <> a6:272
+binder 14595:14596 <> b6:273
+R14618:14621 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14599:14601 ProofDB.DBParallelBase <> rtc ind
+R14616:14617 ProofDB.DBReduction <> b0:261 var
+R14613:14614 ProofDB.DBReduction <> a0:260 var
+R14603:14611 ProofDB.DBCore <> reduction ind
+R14641:14644 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14622:14624 ProofDB.DBParallelBase <> rtc ind
+R14639:14640 ProofDB.DBReduction <> b1:263 var
+R14636:14637 ProofDB.DBReduction <> a1:262 var
+R14626:14634 ProofDB.DBCore <> reduction ind
+R14664:14667 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14645:14647 ProofDB.DBParallelBase <> rtc ind
+R14662:14663 ProofDB.DBReduction <> b2:265 var
+R14659:14660 ProofDB.DBReduction <> a2:264 var
+R14649:14657 ProofDB.DBCore <> reduction ind
+R14687:14690 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14668:14670 ProofDB.DBParallelBase <> rtc ind
+R14685:14686 ProofDB.DBReduction <> b3:267 var
+R14682:14683 ProofDB.DBReduction <> a3:266 var
+R14672:14680 ProofDB.DBCore <> reduction ind
+R14710:14713 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14691:14693 ProofDB.DBParallelBase <> rtc ind
+R14708:14709 ProofDB.DBReduction <> b4:269 var
+R14705:14706 ProofDB.DBReduction <> a4:268 var
+R14695:14703 ProofDB.DBCore <> reduction ind
+R14733:14736 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14714:14716 ProofDB.DBParallelBase <> rtc ind
+R14731:14732 ProofDB.DBReduction <> b5:271 var
+R14728:14729 ProofDB.DBReduction <> a5:270 var
+R14718:14726 ProofDB.DBCore <> reduction ind
+R14756:14759 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14737:14739 ProofDB.DBParallelBase <> rtc ind
+R14754:14755 ProofDB.DBReduction <> b6:273 var
+R14751:14752 ProofDB.DBReduction <> a6:272 var
+R14741:14749 ProofDB.DBCore <> reduction ind
+R14760:14762 ProofDB.DBParallelBase <> rtc ind
+R14808:14816 ProofDB.DBSyntax <> TCloseInd constr
+R14836:14837 ProofDB.DBReduction <> b6:273 var
+R14833:14834 ProofDB.DBReduction <> b5:271 var
+R14830:14831 ProofDB.DBReduction <> b4:269 var
+R14827:14828 ProofDB.DBReduction <> b3:267 var
+R14824:14825 ProofDB.DBReduction <> b2:265 var
+R14821:14822 ProofDB.DBReduction <> b1:263 var
+R14818:14819 ProofDB.DBReduction <> b0:261 var
+R14775:14783 ProofDB.DBSyntax <> TCloseInd constr
+R14803:14804 ProofDB.DBReduction <> a6:272 var
+R14800:14801 ProofDB.DBReduction <> a5:270 var
+R14797:14798 ProofDB.DBReduction <> a4:268 var
+R14794:14795 ProofDB.DBReduction <> a3:266 var
+R14791:14792 ProofDB.DBReduction <> a2:264 var
+R14788:14789 ProofDB.DBReduction <> a1:262 var
+R14785:14786 ProofDB.DBReduction <> a0:260 var
+R14764:14772 ProofDB.DBCore <> reduction ind
+R14930:14938 ProofDB.DBParallelBase <> rtc_trans thm
+R14930:14938 ProofDB.DBParallelBase <> rtc_trans thm
+R14953:14963 ProofDB.DBParallelBase <> rtc_map_rel thm
+R14969:14977 ProofDB.DBCore <> reduction ind
+R14979:14987 ProofDB.DBCore <> reduction ind
+binder 14994:14994 <> z:274
+R14999:15007 ProofDB.DBSyntax <> TCloseInd constr
+R15009:15009 ProofDB.DBReduction <> z:274 var
+R14953:14963 ProofDB.DBParallelBase <> rtc_map_rel thm
+R14969:14977 ProofDB.DBCore <> reduction ind
+R14979:14987 ProofDB.DBCore <> reduction ind
+binder 14994:14994 <> z:275
+R14999:15007 ProofDB.DBSyntax <> TCloseInd constr
+R15009:15009 ProofDB.DBReduction <> z:275 var
+R15075:15090 ProofDB.DBCore <> red_TCloseInd_IT constr
+R15075:15090 ProofDB.DBCore <> red_TCloseInd_IT constr
+R15104:15112 ProofDB.DBParallelBase <> rtc_trans thm
+R15104:15112 ProofDB.DBParallelBase <> rtc_trans thm
+R15127:15137 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15143:15151 ProofDB.DBCore <> reduction ind
+R15153:15161 ProofDB.DBCore <> reduction ind
+binder 15168:15168 <> z:276
+R15173:15181 ProofDB.DBSyntax <> TCloseInd constr
+R15186:15186 ProofDB.DBReduction <> z:276 var
+R15127:15137 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15143:15151 ProofDB.DBCore <> reduction ind
+R15153:15161 ProofDB.DBCore <> reduction ind
+binder 15168:15168 <> z:277
+R15173:15181 ProofDB.DBSyntax <> TCloseInd constr
+R15186:15186 ProofDB.DBReduction <> z:277 var
+R15249:15263 ProofDB.DBCore <> red_TCloseInd_G constr
+R15249:15263 ProofDB.DBCore <> red_TCloseInd_G constr
+R15277:15285 ProofDB.DBParallelBase <> rtc_trans thm
+R15277:15285 ProofDB.DBParallelBase <> rtc_trans thm
+R15300:15310 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15316:15324 ProofDB.DBCore <> reduction ind
+R15326:15334 ProofDB.DBCore <> reduction ind
+binder 15341:15341 <> z:278
+R15346:15354 ProofDB.DBSyntax <> TCloseInd constr
+R15362:15362 ProofDB.DBReduction <> z:278 var
+R15300:15310 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15316:15324 ProofDB.DBCore <> reduction ind
+R15326:15334 ProofDB.DBCore <> reduction ind
+binder 15341:15341 <> z:279
+R15346:15354 ProofDB.DBSyntax <> TCloseInd constr
+R15362:15362 ProofDB.DBReduction <> z:279 var
+R15422:15436 ProofDB.DBCore <> red_TCloseInd_P constr
+R15422:15436 ProofDB.DBCore <> red_TCloseInd_P constr
+R15450:15458 ProofDB.DBParallelBase <> rtc_trans thm
+R15450:15458 ProofDB.DBParallelBase <> rtc_trans thm
+R15473:15483 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15489:15497 ProofDB.DBCore <> reduction ind
+R15499:15507 ProofDB.DBCore <> reduction ind
+binder 15514:15514 <> z:280
+R15519:15527 ProofDB.DBSyntax <> TCloseInd constr
+R15538:15538 ProofDB.DBReduction <> z:280 var
+R15473:15483 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15489:15497 ProofDB.DBCore <> reduction ind
+R15499:15507 ProofDB.DBCore <> reduction ind
+binder 15514:15514 <> z:281
+R15519:15527 ProofDB.DBSyntax <> TCloseInd constr
+R15538:15538 ProofDB.DBReduction <> z:281 var
+R15595:15609 ProofDB.DBCore <> red_TCloseInd_s constr
+R15595:15609 ProofDB.DBCore <> red_TCloseInd_s constr
+R15623:15631 ProofDB.DBParallelBase <> rtc_trans thm
+R15623:15631 ProofDB.DBParallelBase <> rtc_trans thm
+R15646:15656 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15662:15670 ProofDB.DBCore <> reduction ind
+R15672:15680 ProofDB.DBCore <> reduction ind
+binder 15687:15687 <> z:282
+R15692:15700 ProofDB.DBSyntax <> TCloseInd constr
+R15714:15714 ProofDB.DBReduction <> z:282 var
+R15646:15656 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15662:15670 ProofDB.DBCore <> reduction ind
+R15672:15680 ProofDB.DBCore <> reduction ind
+binder 15687:15687 <> z:283
+R15692:15700 ProofDB.DBSyntax <> TCloseInd constr
+R15714:15714 ProofDB.DBReduction <> z:283 var
+R15768:15782 ProofDB.DBCore <> red_TCloseInd_F constr
+R15768:15782 ProofDB.DBCore <> red_TCloseInd_F constr
+R15796:15804 ProofDB.DBParallelBase <> rtc_trans thm
+R15796:15804 ProofDB.DBParallelBase <> rtc_trans thm
+R15819:15829 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15835:15843 ProofDB.DBCore <> reduction ind
+R15845:15853 ProofDB.DBCore <> reduction ind
+binder 15860:15860 <> z:284
+R15865:15873 ProofDB.DBSyntax <> TCloseInd constr
+R15890:15890 ProofDB.DBReduction <> z:284 var
+R15819:15829 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15835:15843 ProofDB.DBCore <> reduction ind
+R15845:15853 ProofDB.DBCore <> reduction ind
+binder 15860:15860 <> z:285
+R15865:15873 ProofDB.DBSyntax <> TCloseInd constr
+R15890:15890 ProofDB.DBReduction <> z:285 var
+R15941:15955 ProofDB.DBCore <> red_TCloseInd_i constr
+R15941:15955 ProofDB.DBCore <> red_TCloseInd_i constr
+R15970:15980 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15986:15994 ProofDB.DBCore <> reduction ind
+R15996:16004 ProofDB.DBCore <> reduction ind
+binder 16011:16011 <> z:286
+R16016:16024 ProofDB.DBSyntax <> TCloseInd constr
+R16044:16044 ProofDB.DBReduction <> z:286 var
+R15970:15980 ProofDB.DBParallelBase <> rtc_map_rel thm
+R15986:15994 ProofDB.DBCore <> reduction ind
+R15996:16004 ProofDB.DBCore <> reduction ind
+binder 16011:16011 <> z:287
+R16016:16024 ProofDB.DBSyntax <> TCloseInd constr
+R16044:16044 ProofDB.DBReduction <> z:287 var
+R16092:16106 ProofDB.DBCore <> red_TCloseInd_x constr
+R16092:16106 ProofDB.DBCore <> red_TCloseInd_x constr
+R16165:16172 ProofDB.DBParallelBase <> rtc_refl constr
+R16201:16203 ProofDB.DBParallelBase <> rtc ind
+R16230:16232 ProofDB.DBSyntax <> TPi constr
+R16216:16218 ProofDB.DBSyntax <> TPi constr
+R16205:16213 ProofDB.DBCore <> reduction ind
+R16201:16203 ProofDB.DBParallelBase <> rtc ind
+R16230:16232 ProofDB.DBSyntax <> TPi constr
+R16216:16218 ProofDB.DBSyntax <> TPi constr
+R16205:16213 ProofDB.DBCore <> reduction ind
+R16288:16290 ProofDB.DBParallelBase <> rtc ind
+R16314:16317 ProofDB.DBSyntax <> TLam constr
+R16303:16306 ProofDB.DBSyntax <> TLam constr
+R16292:16300 ProofDB.DBCore <> reduction ind
+R16288:16290 ProofDB.DBParallelBase <> rtc ind
+R16314:16317 ProofDB.DBSyntax <> TLam constr
+R16303:16306 ProofDB.DBSyntax <> TLam constr
+R16292:16300 ProofDB.DBCore <> reduction ind
+R16370:16372 ProofDB.DBParallelBase <> rtc ind
+R16400:16403 ProofDB.DBSyntax <> TApp constr
+R16385:16388 ProofDB.DBSyntax <> TApp constr
+R16374:16382 ProofDB.DBCore <> reduction ind
+R16370:16372 ProofDB.DBParallelBase <> rtc ind
+R16400:16403 ProofDB.DBSyntax <> TApp constr
+R16385:16388 ProofDB.DBSyntax <> TApp constr
+R16374:16382 ProofDB.DBCore <> reduction ind
+R16460:16462 ProofDB.DBParallelBase <> rtc ind
+R16492:16497 ProofDB.DBSyntax <> TSigma constr
+R16475:16480 ProofDB.DBSyntax <> TSigma constr
+R16464:16472 ProofDB.DBCore <> reduction ind
+R16460:16462 ProofDB.DBParallelBase <> rtc ind
+R16492:16497 ProofDB.DBSyntax <> TSigma constr
+R16475:16480 ProofDB.DBSyntax <> TSigma constr
+R16464:16472 ProofDB.DBCore <> reduction ind
+R16556:16558 ProofDB.DBParallelBase <> rtc ind
+R16587:16591 ProofDB.DBSyntax <> TPair constr
+R16571:16575 ProofDB.DBSyntax <> TPair constr
+R16560:16568 ProofDB.DBCore <> reduction ind
+R16556:16558 ProofDB.DBParallelBase <> rtc ind
+R16587:16591 ProofDB.DBSyntax <> TPair constr
+R16571:16575 ProofDB.DBSyntax <> TPair constr
+R16560:16568 ProofDB.DBCore <> reduction ind
+R16649:16651 ProofDB.DBParallelBase <> rtc ind
+R16675:16678 ProofDB.DBSyntax <> TFst constr
+R16664:16667 ProofDB.DBSyntax <> TFst constr
+R16653:16661 ProofDB.DBCore <> reduction ind
+R16649:16651 ProofDB.DBParallelBase <> rtc ind
+R16675:16678 ProofDB.DBSyntax <> TFst constr
+R16664:16667 ProofDB.DBSyntax <> TFst constr
+R16653:16661 ProofDB.DBCore <> reduction ind
+R16731:16733 ProofDB.DBParallelBase <> rtc ind
+R16757:16760 ProofDB.DBSyntax <> TSnd constr
+R16746:16749 ProofDB.DBSyntax <> TSnd constr
+R16735:16743 ProofDB.DBCore <> reduction ind
+R16731:16733 ProofDB.DBParallelBase <> rtc ind
+R16757:16760 ProofDB.DBSyntax <> TSnd constr
+R16746:16749 ProofDB.DBSyntax <> TSnd constr
+R16735:16743 ProofDB.DBCore <> reduction ind
+R16813:16815 ProofDB.DBParallelBase <> rtc ind
+R16845:16850 ProofDB.DBSyntax <> TConsE constr
+R16828:16833 ProofDB.DBSyntax <> TConsE constr
+R16817:16825 ProofDB.DBCore <> reduction ind
+R16813:16815 ProofDB.DBParallelBase <> rtc ind
+R16845:16850 ProofDB.DBSyntax <> TConsE constr
+R16828:16833 ProofDB.DBSyntax <> TConsE constr
+R16817:16825 ProofDB.DBCore <> reduction ind
+R16909:16911 ProofDB.DBParallelBase <> rtc ind
+R16937:16942 ProofDB.DBSyntax <> TEnumT constr
+R16924:16929 ProofDB.DBSyntax <> TEnumT constr
+R16913:16921 ProofDB.DBCore <> reduction ind
+R16909:16911 ProofDB.DBParallelBase <> rtc ind
+R16937:16942 ProofDB.DBSyntax <> TEnumT constr
+R16924:16929 ProofDB.DBSyntax <> TEnumT constr
+R16913:16921 ProofDB.DBCore <> reduction ind
+R16997:16999 ProofDB.DBParallelBase <> rtc ind
+R17025:17030 ProofDB.DBSyntax <> TESucc constr
+R17012:17017 ProofDB.DBSyntax <> TESucc constr
+R17001:17009 ProofDB.DBCore <> reduction ind
+R16997:16999 ProofDB.DBParallelBase <> rtc ind
+R17025:17030 ProofDB.DBSyntax <> TESucc constr
+R17012:17017 ProofDB.DBSyntax <> TESucc constr
+R17001:17009 ProofDB.DBCore <> reduction ind
+R17085:17087 ProofDB.DBParallelBase <> rtc ind
+R17118:17121 ProofDB.DBSyntax <> TEPi constr
+R17100:17103 ProofDB.DBSyntax <> TEPi constr
+R17089:17097 ProofDB.DBCore <> reduction ind
+R17085:17087 ProofDB.DBParallelBase <> rtc ind
+R17118:17121 ProofDB.DBSyntax <> TEPi constr
+R17100:17103 ProofDB.DBSyntax <> TEPi constr
+R17089:17097 ProofDB.DBCore <> reduction ind
+R17181:17183 ProofDB.DBParallelBase <> rtc ind
+R17225:17231 ProofDB.DBSyntax <> TSwitch constr
+R17196:17202 ProofDB.DBSyntax <> TSwitch constr
+R17185:17193 ProofDB.DBCore <> reduction ind
+R17181:17183 ProofDB.DBParallelBase <> rtc ind
+R17225:17231 ProofDB.DBSyntax <> TSwitch constr
+R17196:17202 ProofDB.DBSyntax <> TSwitch constr
+R17185:17193 ProofDB.DBCore <> reduction ind
+R17302:17304 ProofDB.DBParallelBase <> rtc ind
+R17330:17335 ProofDB.DBSyntax <> TIDesc constr
+R17317:17322 ProofDB.DBSyntax <> TIDesc constr
+R17306:17314 ProofDB.DBCore <> reduction ind
+R17302:17304 ProofDB.DBParallelBase <> rtc ind
+R17330:17335 ProofDB.DBSyntax <> TIDesc constr
+R17317:17322 ProofDB.DBSyntax <> TIDesc constr
+R17306:17314 ProofDB.DBCore <> reduction ind
+R17390:17392 ProofDB.DBParallelBase <> rtc ind
+R17417:17421 ProofDB.DBSyntax <> TIVar constr
+R17405:17409 ProofDB.DBSyntax <> TIVar constr
+R17394:17402 ProofDB.DBCore <> reduction ind
+R17390:17392 ProofDB.DBParallelBase <> rtc ind
+R17417:17421 ProofDB.DBSyntax <> TIVar constr
+R17405:17409 ProofDB.DBSyntax <> TIVar constr
+R17394:17402 ProofDB.DBCore <> reduction ind
+R17475:17477 ProofDB.DBParallelBase <> rtc ind
+R17507:17512 ProofDB.DBSyntax <> TIProd constr
+R17490:17495 ProofDB.DBSyntax <> TIProd constr
+R17479:17487 ProofDB.DBCore <> reduction ind
+R17475:17477 ProofDB.DBParallelBase <> rtc ind
+R17507:17512 ProofDB.DBSyntax <> TIProd constr
+R17490:17495 ProofDB.DBSyntax <> TIProd constr
+R17479:17487 ProofDB.DBCore <> reduction ind
+R17571:17573 ProofDB.DBParallelBase <> rtc ind
+R17601:17604 ProofDB.DBSyntax <> TIPi constr
+R17586:17589 ProofDB.DBSyntax <> TIPi constr
+R17575:17583 ProofDB.DBCore <> reduction ind
+R17571:17573 ProofDB.DBParallelBase <> rtc ind
+R17601:17604 ProofDB.DBSyntax <> TIPi constr
+R17586:17589 ProofDB.DBSyntax <> TIPi constr
+R17575:17583 ProofDB.DBCore <> reduction ind
+R17661:17663 ProofDB.DBParallelBase <> rtc ind
+R17692:17696 ProofDB.DBSyntax <> TISig constr
+R17676:17680 ProofDB.DBSyntax <> TISig constr
+R17665:17673 ProofDB.DBCore <> reduction ind
+R17661:17663 ProofDB.DBParallelBase <> rtc ind
+R17692:17696 ProofDB.DBSyntax <> TISig constr
+R17676:17680 ProofDB.DBSyntax <> TISig constr
+R17665:17673 ProofDB.DBCore <> reduction ind
+R17754:17756 ProofDB.DBParallelBase <> rtc ind
+R17788:17795 ProofDB.DBSyntax <> TIChoice constr
+R17769:17776 ProofDB.DBSyntax <> TIChoice constr
+R17758:17766 ProofDB.DBCore <> reduction ind
+R17754:17756 ProofDB.DBParallelBase <> rtc ind
+R17788:17795 ProofDB.DBSyntax <> TIChoice constr
+R17769:17776 ProofDB.DBSyntax <> TIChoice constr
+R17758:17766 ProofDB.DBCore <> reduction ind
+R17856:17858 ProofDB.DBParallelBase <> rtc ind
+R17893:17899 ProofDB.DBSyntax <> TInterp constr
+R17871:17877 ProofDB.DBSyntax <> TInterp constr
+R17860:17868 ProofDB.DBCore <> reduction ind
+R17856:17858 ProofDB.DBParallelBase <> rtc ind
+R17893:17899 ProofDB.DBSyntax <> TInterp constr
+R17871:17877 ProofDB.DBSyntax <> TInterp constr
+R17860:17868 ProofDB.DBCore <> reduction ind
+R17963:17965 ProofDB.DBParallelBase <> rtc ind
+R17993:17996 ProofDB.DBSyntax <> TMuI constr
+R17978:17981 ProofDB.DBSyntax <> TMuI constr
+R17967:17975 ProofDB.DBCore <> reduction ind
+R17963:17965 ProofDB.DBParallelBase <> rtc ind
+R17993:17996 ProofDB.DBSyntax <> TMuI constr
+R17978:17981 ProofDB.DBSyntax <> TMuI constr
+R17967:17975 ProofDB.DBCore <> reduction ind
+R18053:18055 ProofDB.DBParallelBase <> rtc ind
+R18078:18080 ProofDB.DBSyntax <> TIn constr
+R18068:18070 ProofDB.DBSyntax <> TIn constr
+R18057:18065 ProofDB.DBCore <> reduction ind
+R18053:18055 ProofDB.DBParallelBase <> rtc ind
+R18078:18080 ProofDB.DBSyntax <> TIn constr
+R18068:18070 ProofDB.DBSyntax <> TIn constr
+R18057:18065 ProofDB.DBCore <> reduction ind
+R18132:18134 ProofDB.DBParallelBase <> rtc ind
+R18178:18181 ProofDB.DBSyntax <> TInd constr
+R18147:18150 ProofDB.DBSyntax <> TInd constr
+R18136:18144 ProofDB.DBCore <> reduction ind
+R18132:18134 ProofDB.DBParallelBase <> rtc ind
+R18178:18181 ProofDB.DBSyntax <> TInd constr
+R18147:18150 ProofDB.DBSyntax <> TInd constr
+R18136:18144 ProofDB.DBCore <> reduction ind
+R18254:18256 ProofDB.DBParallelBase <> rtc ind
+R18297:18301 ProofDB.DBSyntax <> TIAll constr
+R18269:18273 ProofDB.DBSyntax <> TIAll constr
+R18258:18266 ProofDB.DBCore <> reduction ind
+R18254:18256 ProofDB.DBParallelBase <> rtc ind
+R18297:18301 ProofDB.DBSyntax <> TIAll constr
+R18269:18273 ProofDB.DBSyntax <> TIAll constr
+R18258:18266 ProofDB.DBCore <> reduction ind
+R18371:18373 ProofDB.DBParallelBase <> rtc ind
+R18418:18422 ProofDB.DBSyntax <> THyps constr
+R18386:18390 ProofDB.DBSyntax <> THyps constr
+R18375:18383 ProofDB.DBCore <> reduction ind
+R18371:18373 ProofDB.DBParallelBase <> rtc ind
+R18418:18422 ProofDB.DBSyntax <> THyps constr
+R18386:18390 ProofDB.DBSyntax <> THyps constr
+R18375:18383 ProofDB.DBCore <> reduction ind
+R18496:18498 ProofDB.DBParallelBase <> rtc ind
+R18532:18537 ProofDB.DBSyntax <> TClose constr
+R18511:18516 ProofDB.DBSyntax <> TClose constr
+R18500:18508 ProofDB.DBCore <> reduction ind
+R18496:18498 ProofDB.DBParallelBase <> rtc ind
+R18532:18537 ProofDB.DBSyntax <> TClose constr
+R18511:18516 ProofDB.DBSyntax <> TClose constr
+R18500:18508 ProofDB.DBCore <> reduction ind
+R18600:18602 ProofDB.DBParallelBase <> rtc ind
+R18659:18668 ProofDB.DBSyntax <> TCloseCase constr
+R18615:18624 ProofDB.DBSyntax <> TCloseCase constr
+R18604:18612 ProofDB.DBCore <> reduction ind
+R18600:18602 ProofDB.DBParallelBase <> rtc ind
+R18659:18668 ProofDB.DBSyntax <> TCloseCase constr
+R18615:18624 ProofDB.DBSyntax <> TCloseCase constr
+R18604:18612 ProofDB.DBCore <> reduction ind
+R18754:18756 ProofDB.DBParallelBase <> rtc ind
+R18809:18817 ProofDB.DBSyntax <> TCloseInd constr
+R18769:18777 ProofDB.DBSyntax <> TCloseInd constr
+R18758:18766 ProofDB.DBCore <> reduction ind
+R18754:18756 ProofDB.DBParallelBase <> rtc ind
+R18809:18817 ProofDB.DBSyntax <> TCloseInd constr
+R18769:18777 ProofDB.DBSyntax <> TCloseInd constr
+R18758:18766 ProofDB.DBCore <> reduction ind
+R18857:18874 ProofDB.DBReduction <> red_star_TCloseInd thm
+R18711:18729 ProofDB.DBReduction <> red_star_TCloseCase thm
+R18561:18575 ProofDB.DBReduction <> red_star_TClose thm
+R18458:18471 ProofDB.DBReduction <> red_star_THyps thm
+R18333:18346 ProofDB.DBReduction <> red_star_TIAll thm
+R18217:18229 ProofDB.DBReduction <> red_star_TInd thm
+R18096:18107 ProofDB.DBReduction <> red_star_TIn thm
+R18016:18028 ProofDB.DBReduction <> red_star_TMuI thm
+R17923:17938 ProofDB.DBReduction <> red_star_TInterp thm
+R17815:17831 ProofDB.DBReduction <> red_star_TIChoice thm
+R17716:17729 ProofDB.DBReduction <> red_star_TISig thm
+R17624:17636 ProofDB.DBReduction <> red_star_TIPi thm
+R17532:17546 ProofDB.DBReduction <> red_star_TIProd thm
+R17437:17450 ProofDB.DBReduction <> red_star_TIVar thm
+R17351:17365 ProofDB.DBReduction <> red_star_TIDesc thm
+R17262:17277 ProofDB.DBReduction <> red_star_TSwitch thm
+R17144:17156 ProofDB.DBReduction <> red_star_TEPi thm
+R17046:17060 ProofDB.DBReduction <> red_star_TESucc thm
+R16958:16972 ProofDB.DBReduction <> red_star_TEnumT thm
+R16870:16884 ProofDB.DBReduction <> red_star_TConsE thm
+R16776:16788 ProofDB.DBReduction <> red_star_TSnd thm
+R16694:16706 ProofDB.DBReduction <> red_star_TFst thm
+R16611:16624 ProofDB.DBReduction <> red_star_TPair thm
+R16517:16531 ProofDB.DBReduction <> red_star_TSigma thm
+R16423:16435 ProofDB.DBReduction <> red_star_TApp thm
+R16333:16345 ProofDB.DBReduction <> red_star_TLam thm
+R16252:16263 ProofDB.DBReduction <> red_star_TPi thm
+prf 18907:18922 <> pstep_reductions
+binder 18933:18933 <> t:288
+binder 18935:18935 <> u:289
+R18947:18950 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18938:18942 ProofDB.DBParallelBase <> pstep ind
+R18944:18944 ProofDB.DBReduction <> t:288 var
+R18946:18946 ProofDB.DBReduction <> u:289 var
+R18951:18953 ProofDB.DBParallelBase <> rtc ind
+R18967:18967 ProofDB.DBReduction <> u:289 var
+R18965:18965 ProofDB.DBReduction <> t:288 var
+R18955:18963 ProofDB.DBCore <> reduction ind
+R19065:19068 ProofDB.DBSyntax <> TApp constr
+R19071:19074 ProofDB.DBSyntax <> TLam constr
+R19045:19053 ProofDB.DBParallelBase <> rtc_trans thm
+R19114:19120 ProofDB.DBParallelBase <> rtc_one thm
+R19129:19136 ProofDB.DBCore <> red_root constr
+R19151:19157 ProofDB.DBSyntax <> product def
+R19160:19162 ProofDB.DBSyntax <> Bot def
+R19165:19171 ProofDB.DBSyntax <> carrier def
+R19174:19188 ProofDB.DBSyntax <> diagonal_motive def
+R19211:19227 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R19065:19068 ProofDB.DBSyntax <> TApp constr
+R19071:19074 ProofDB.DBSyntax <> TLam constr
+R19045:19053 ProofDB.DBParallelBase <> rtc_trans thm
+R19114:19120 ProofDB.DBParallelBase <> rtc_one thm
+R19129:19136 ProofDB.DBCore <> red_root constr
+R19211:19227 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R19275:19278 ProofDB.DBSyntax <> TFst constr
+R19281:19285 ProofDB.DBSyntax <> TPair constr
+R19255:19263 ProofDB.DBParallelBase <> rtc_trans thm
+R19324:19330 ProofDB.DBParallelBase <> rtc_one thm
+R19339:19346 ProofDB.DBCore <> red_root constr
+R19361:19367 ProofDB.DBSyntax <> product def
+R19370:19372 ProofDB.DBSyntax <> Bot def
+R19375:19381 ProofDB.DBSyntax <> carrier def
+R19384:19398 ProofDB.DBSyntax <> diagonal_motive def
+R19421:19437 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R19275:19278 ProofDB.DBSyntax <> TFst constr
+R19281:19285 ProofDB.DBSyntax <> TPair constr
+R19255:19263 ProofDB.DBParallelBase <> rtc_trans thm
+R19324:19330 ProofDB.DBParallelBase <> rtc_one thm
+R19339:19346 ProofDB.DBCore <> red_root constr
+R19421:19437 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R19485:19488 ProofDB.DBSyntax <> TSnd constr
+R19491:19495 ProofDB.DBSyntax <> TPair constr
+R19465:19473 ProofDB.DBParallelBase <> rtc_trans thm
+R19534:19540 ProofDB.DBParallelBase <> rtc_one thm
+R19549:19556 ProofDB.DBCore <> red_root constr
+R19571:19577 ProofDB.DBSyntax <> product def
+R19580:19582 ProofDB.DBSyntax <> Bot def
+R19585:19591 ProofDB.DBSyntax <> carrier def
+R19594:19608 ProofDB.DBSyntax <> diagonal_motive def
+R19631:19647 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R19485:19488 ProofDB.DBSyntax <> TSnd constr
+R19491:19495 ProofDB.DBSyntax <> TPair constr
+R19465:19473 ProofDB.DBParallelBase <> rtc_trans thm
+R19534:19540 ProofDB.DBParallelBase <> rtc_one thm
+R19549:19556 ProofDB.DBCore <> red_root constr
+R19631:19647 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R19695:19698 ProofDB.DBSyntax <> TEPi constr
+R19702:19706 ProofDB.DBSyntax <> TNilE constr
+R19675:19683 ProofDB.DBParallelBase <> rtc_trans thm
+R19741:19747 ProofDB.DBParallelBase <> rtc_one thm
+R19756:19763 ProofDB.DBCore <> red_root constr
+R19778:19784 ProofDB.DBSyntax <> product def
+R19787:19789 ProofDB.DBSyntax <> Bot def
+R19792:19798 ProofDB.DBSyntax <> carrier def
+R19801:19815 ProofDB.DBSyntax <> diagonal_motive def
+R19838:19854 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R19695:19698 ProofDB.DBSyntax <> TEPi constr
+R19702:19706 ProofDB.DBSyntax <> TNilE constr
+R19675:19683 ProofDB.DBParallelBase <> rtc_trans thm
+R19741:19747 ProofDB.DBParallelBase <> rtc_one thm
+R19756:19763 ProofDB.DBCore <> red_root constr
+R19838:19854 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R19902:19905 ProofDB.DBSyntax <> TEPi constr
+R19910:19915 ProofDB.DBSyntax <> TConsE constr
+R19882:19890 ProofDB.DBParallelBase <> rtc_trans thm
+R19959:19965 ProofDB.DBParallelBase <> rtc_one thm
+R19974:19981 ProofDB.DBCore <> red_root constr
+R19996:20002 ProofDB.DBSyntax <> product def
+R20005:20007 ProofDB.DBSyntax <> Bot def
+R20010:20016 ProofDB.DBSyntax <> carrier def
+R20019:20033 ProofDB.DBSyntax <> diagonal_motive def
+R20056:20072 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R19902:19905 ProofDB.DBSyntax <> TEPi constr
+R19910:19915 ProofDB.DBSyntax <> TConsE constr
+R19882:19890 ProofDB.DBParallelBase <> rtc_trans thm
+R19959:19965 ProofDB.DBParallelBase <> rtc_one thm
+R19974:19981 ProofDB.DBCore <> red_root constr
+R20056:20072 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20056:20072 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20056:20072 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20120:20126 ProofDB.DBSyntax <> TSwitch constr
+R20161:20166 ProofDB.DBSyntax <> TEZero constr
+R20148:20152 ProofDB.DBSyntax <> TPair constr
+R20131:20136 ProofDB.DBSyntax <> TConsE constr
+R20100:20108 ProofDB.DBParallelBase <> rtc_trans thm
+R20199:20205 ProofDB.DBParallelBase <> rtc_one thm
+R20214:20221 ProofDB.DBCore <> red_root constr
+R20236:20242 ProofDB.DBSyntax <> product def
+R20245:20247 ProofDB.DBSyntax <> Bot def
+R20250:20256 ProofDB.DBSyntax <> carrier def
+R20259:20273 ProofDB.DBSyntax <> diagonal_motive def
+R20296:20312 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20120:20126 ProofDB.DBSyntax <> TSwitch constr
+R20161:20166 ProofDB.DBSyntax <> TEZero constr
+R20148:20152 ProofDB.DBSyntax <> TPair constr
+R20131:20136 ProofDB.DBSyntax <> TConsE constr
+R20100:20108 ProofDB.DBParallelBase <> rtc_trans thm
+R20199:20205 ProofDB.DBParallelBase <> rtc_one thm
+R20214:20221 ProofDB.DBCore <> red_root constr
+R20296:20312 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20360:20366 ProofDB.DBSyntax <> TSwitch constr
+R20404:20409 ProofDB.DBSyntax <> TESucc constr
+R20390:20394 ProofDB.DBSyntax <> TPair constr
+R20371:20376 ProofDB.DBSyntax <> TConsE constr
+R20340:20348 ProofDB.DBParallelBase <> rtc_trans thm
+R20446:20452 ProofDB.DBParallelBase <> rtc_one thm
+R20461:20468 ProofDB.DBCore <> red_root constr
+R20483:20489 ProofDB.DBSyntax <> product def
+R20492:20494 ProofDB.DBSyntax <> Bot def
+R20497:20503 ProofDB.DBSyntax <> carrier def
+R20506:20520 ProofDB.DBSyntax <> diagonal_motive def
+R20543:20559 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20360:20366 ProofDB.DBSyntax <> TSwitch constr
+R20404:20409 ProofDB.DBSyntax <> TESucc constr
+R20390:20394 ProofDB.DBSyntax <> TPair constr
+R20371:20376 ProofDB.DBSyntax <> TConsE constr
+R20340:20348 ProofDB.DBParallelBase <> rtc_trans thm
+R20446:20452 ProofDB.DBParallelBase <> rtc_one thm
+R20461:20468 ProofDB.DBCore <> red_root constr
+R20543:20559 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20607:20613 ProofDB.DBSyntax <> TInterp constr
+R20619:20623 ProofDB.DBSyntax <> TIVar constr
+R20587:20595 ProofDB.DBParallelBase <> rtc_trans thm
+R20663:20669 ProofDB.DBParallelBase <> rtc_one thm
+R20678:20685 ProofDB.DBCore <> red_root constr
+R20700:20706 ProofDB.DBSyntax <> product def
+R20709:20711 ProofDB.DBSyntax <> Bot def
+R20714:20720 ProofDB.DBSyntax <> carrier def
+R20723:20737 ProofDB.DBSyntax <> diagonal_motive def
+R20760:20776 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20607:20613 ProofDB.DBSyntax <> TInterp constr
+R20619:20623 ProofDB.DBSyntax <> TIVar constr
+R20587:20595 ProofDB.DBParallelBase <> rtc_trans thm
+R20663:20669 ProofDB.DBParallelBase <> rtc_one thm
+R20678:20685 ProofDB.DBCore <> red_root constr
+R20760:20776 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20824:20830 ProofDB.DBSyntax <> TInterp constr
+R20835:20837 ProofDB.DBSyntax <> TI1 constr
+R20804:20812 ProofDB.DBParallelBase <> rtc_trans thm
+R20872:20878 ProofDB.DBParallelBase <> rtc_one thm
+R20887:20894 ProofDB.DBCore <> red_root constr
+R20909:20915 ProofDB.DBSyntax <> product def
+R20918:20920 ProofDB.DBSyntax <> Bot def
+R20923:20929 ProofDB.DBSyntax <> carrier def
+R20932:20946 ProofDB.DBSyntax <> diagonal_motive def
+R20969:20985 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R20824:20830 ProofDB.DBSyntax <> TInterp constr
+R20835:20837 ProofDB.DBSyntax <> TI1 constr
+R20804:20812 ProofDB.DBParallelBase <> rtc_trans thm
+R20872:20878 ProofDB.DBParallelBase <> rtc_one thm
+R20887:20894 ProofDB.DBCore <> red_root constr
+R20969:20985 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21033:21039 ProofDB.DBSyntax <> TInterp constr
+R21044:21048 ProofDB.DBSyntax <> TIBot constr
+R21013:21021 ProofDB.DBParallelBase <> rtc_trans thm
+R21083:21089 ProofDB.DBParallelBase <> rtc_one thm
+R21098:21105 ProofDB.DBCore <> red_root constr
+R21120:21126 ProofDB.DBSyntax <> product def
+R21129:21131 ProofDB.DBSyntax <> Bot def
+R21134:21140 ProofDB.DBSyntax <> carrier def
+R21143:21157 ProofDB.DBSyntax <> diagonal_motive def
+R21180:21196 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21033:21039 ProofDB.DBSyntax <> TInterp constr
+R21044:21048 ProofDB.DBSyntax <> TIBot constr
+R21013:21021 ProofDB.DBParallelBase <> rtc_trans thm
+R21083:21089 ProofDB.DBParallelBase <> rtc_one thm
+R21098:21105 ProofDB.DBCore <> red_root constr
+R21180:21196 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21244:21250 ProofDB.DBSyntax <> TInterp constr
+R21257:21262 ProofDB.DBSyntax <> TIProd constr
+R21224:21232 ProofDB.DBParallelBase <> rtc_trans thm
+R21305:21311 ProofDB.DBParallelBase <> rtc_one thm
+R21320:21327 ProofDB.DBCore <> red_root constr
+R21342:21348 ProofDB.DBSyntax <> product def
+R21351:21353 ProofDB.DBSyntax <> Bot def
+R21356:21362 ProofDB.DBSyntax <> carrier def
+R21365:21379 ProofDB.DBSyntax <> diagonal_motive def
+R21402:21418 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21244:21250 ProofDB.DBSyntax <> TInterp constr
+R21257:21262 ProofDB.DBSyntax <> TIProd constr
+R21224:21232 ProofDB.DBParallelBase <> rtc_trans thm
+R21305:21311 ProofDB.DBParallelBase <> rtc_one thm
+R21320:21327 ProofDB.DBCore <> red_root constr
+R21402:21418 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21466:21472 ProofDB.DBSyntax <> TInterp constr
+R21479:21482 ProofDB.DBSyntax <> TIPi constr
+R21446:21454 ProofDB.DBParallelBase <> rtc_trans thm
+R21525:21531 ProofDB.DBParallelBase <> rtc_one thm
+R21540:21547 ProofDB.DBCore <> red_root constr
+R21562:21568 ProofDB.DBSyntax <> product def
+R21571:21573 ProofDB.DBSyntax <> Bot def
+R21576:21582 ProofDB.DBSyntax <> carrier def
+R21585:21599 ProofDB.DBSyntax <> diagonal_motive def
+R21622:21638 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21466:21472 ProofDB.DBSyntax <> TInterp constr
+R21479:21482 ProofDB.DBSyntax <> TIPi constr
+R21446:21454 ProofDB.DBParallelBase <> rtc_trans thm
+R21525:21531 ProofDB.DBParallelBase <> rtc_one thm
+R21540:21547 ProofDB.DBCore <> red_root constr
+R21622:21638 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21686:21692 ProofDB.DBSyntax <> TInterp constr
+R21699:21703 ProofDB.DBSyntax <> TISig constr
+R21666:21674 ProofDB.DBParallelBase <> rtc_trans thm
+R21746:21752 ProofDB.DBParallelBase <> rtc_one thm
+R21761:21768 ProofDB.DBCore <> red_root constr
+R21783:21789 ProofDB.DBSyntax <> product def
+R21792:21794 ProofDB.DBSyntax <> Bot def
+R21797:21803 ProofDB.DBSyntax <> carrier def
+R21806:21820 ProofDB.DBSyntax <> diagonal_motive def
+R21843:21859 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21686:21692 ProofDB.DBSyntax <> TInterp constr
+R21699:21703 ProofDB.DBSyntax <> TISig constr
+R21666:21674 ProofDB.DBParallelBase <> rtc_trans thm
+R21746:21752 ProofDB.DBParallelBase <> rtc_one thm
+R21761:21768 ProofDB.DBCore <> red_root constr
+R21843:21859 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21907:21913 ProofDB.DBSyntax <> TInterp constr
+R21920:21927 ProofDB.DBSyntax <> TIChoice constr
+R21887:21895 ProofDB.DBParallelBase <> rtc_trans thm
+R21970:21976 ProofDB.DBParallelBase <> rtc_one thm
+R21985:21992 ProofDB.DBCore <> red_root constr
+R22007:22013 ProofDB.DBSyntax <> product def
+R22016:22018 ProofDB.DBSyntax <> Bot def
+R22021:22027 ProofDB.DBSyntax <> carrier def
+R22030:22044 ProofDB.DBSyntax <> diagonal_motive def
+R22067:22083 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R21907:21913 ProofDB.DBSyntax <> TInterp constr
+R21920:21927 ProofDB.DBSyntax <> TIChoice constr
+R21887:21895 ProofDB.DBParallelBase <> rtc_trans thm
+R21970:21976 ProofDB.DBParallelBase <> rtc_one thm
+R21985:21992 ProofDB.DBCore <> red_root constr
+R22067:22083 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R22131:22135 ProofDB.DBSyntax <> TIAll constr
+R22141:22145 ProofDB.DBSyntax <> TIVar constr
+R22111:22119 ProofDB.DBParallelBase <> rtc_trans thm
+R22190:22196 ProofDB.DBParallelBase <> rtc_one thm
+R22205:22212 ProofDB.DBCore <> red_root constr
+R22227:22233 ProofDB.DBSyntax <> product def
+R22236:22238 ProofDB.DBSyntax <> Bot def
+R22241:22247 ProofDB.DBSyntax <> carrier def
+R22250:22264 ProofDB.DBSyntax <> diagonal_motive def
+R22287:22303 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R22131:22135 ProofDB.DBSyntax <> TIAll constr
+R22141:22145 ProofDB.DBSyntax <> TIVar constr
+R22111:22119 ProofDB.DBParallelBase <> rtc_trans thm
+R22190:22196 ProofDB.DBParallelBase <> rtc_one thm
+R22205:22212 ProofDB.DBCore <> red_root constr
+R22287:22303 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R22351:22355 ProofDB.DBSyntax <> TIAll constr
+R22366:22370 ProofDB.DBSyntax <> TUnit constr
+R22360:22362 ProofDB.DBSyntax <> TI1 constr
+R22331:22339 ProofDB.DBParallelBase <> rtc_trans thm
+R22405:22411 ProofDB.DBParallelBase <> rtc_one thm
+R22420:22427 ProofDB.DBCore <> red_root constr
+R22442:22448 ProofDB.DBSyntax <> product def
+R22451:22453 ProofDB.DBSyntax <> Bot def
+R22456:22462 ProofDB.DBSyntax <> carrier def
+R22465:22479 ProofDB.DBSyntax <> diagonal_motive def
+R22502:22518 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R22351:22355 ProofDB.DBSyntax <> TIAll constr
+R22366:22370 ProofDB.DBSyntax <> TUnit constr
+R22360:22362 ProofDB.DBSyntax <> TI1 constr
+R22331:22339 ProofDB.DBParallelBase <> rtc_trans thm
+R22405:22411 ProofDB.DBParallelBase <> rtc_one thm
+R22420:22427 ProofDB.DBCore <> red_root constr
+R22502:22518 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R22566:22570 ProofDB.DBSyntax <> TIAll constr
+R22575:22579 ProofDB.DBSyntax <> TIBot constr
+R22546:22554 ProofDB.DBParallelBase <> rtc_trans thm
+R22618:22624 ProofDB.DBParallelBase <> rtc_one thm
+R22633:22640 ProofDB.DBCore <> red_root constr
+R22655:22661 ProofDB.DBSyntax <> product def
+R22664:22666 ProofDB.DBSyntax <> Bot def
+R22669:22675 ProofDB.DBSyntax <> carrier def
+R22678:22692 ProofDB.DBSyntax <> diagonal_motive def
+R22715:22731 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R22566:22570 ProofDB.DBSyntax <> TIAll constr
+R22575:22579 ProofDB.DBSyntax <> TIBot constr
+R22546:22554 ProofDB.DBParallelBase <> rtc_trans thm
+R22618:22624 ProofDB.DBParallelBase <> rtc_one thm
+R22633:22640 ProofDB.DBCore <> red_root constr
+R22715:22731 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R22779:22783 ProofDB.DBSyntax <> TIAll constr
+R22808:22812 ProofDB.DBSyntax <> TPair constr
+R22790:22795 ProofDB.DBSyntax <> TIProd constr
+R22759:22767 ProofDB.DBParallelBase <> rtc_trans thm
+R22855:22861 ProofDB.DBParallelBase <> rtc_one thm
+R22870:22877 ProofDB.DBCore <> red_root constr
+R22892:22898 ProofDB.DBSyntax <> product def
+R22901:22903 ProofDB.DBSyntax <> Bot def
+R22906:22912 ProofDB.DBSyntax <> carrier def
+R22915:22929 ProofDB.DBSyntax <> diagonal_motive def
+R22952:22968 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R22779:22783 ProofDB.DBSyntax <> TIAll constr
+R22808:22812 ProofDB.DBSyntax <> TPair constr
+R22790:22795 ProofDB.DBSyntax <> TIProd constr
+R22759:22767 ProofDB.DBParallelBase <> rtc_trans thm
+R22855:22861 ProofDB.DBParallelBase <> rtc_one thm
+R22870:22877 ProofDB.DBCore <> red_root constr
+R22952:22968 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23016:23020 ProofDB.DBSyntax <> TIAll constr
+R23027:23030 ProofDB.DBSyntax <> TIPi constr
+R22996:23004 ProofDB.DBParallelBase <> rtc_trans thm
+R23079:23085 ProofDB.DBParallelBase <> rtc_one thm
+R23094:23101 ProofDB.DBCore <> red_root constr
+R23116:23122 ProofDB.DBSyntax <> product def
+R23125:23127 ProofDB.DBSyntax <> Bot def
+R23130:23136 ProofDB.DBSyntax <> carrier def
+R23139:23153 ProofDB.DBSyntax <> diagonal_motive def
+R23176:23192 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23016:23020 ProofDB.DBSyntax <> TIAll constr
+R23027:23030 ProofDB.DBSyntax <> TIPi constr
+R22996:23004 ProofDB.DBParallelBase <> rtc_trans thm
+R23079:23085 ProofDB.DBParallelBase <> rtc_one thm
+R23094:23101 ProofDB.DBCore <> red_root constr
+R23176:23192 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23240:23244 ProofDB.DBSyntax <> TIAll constr
+R23267:23271 ProofDB.DBSyntax <> TPair constr
+R23251:23255 ProofDB.DBSyntax <> TISig constr
+R23220:23228 ProofDB.DBParallelBase <> rtc_trans thm
+R23314:23320 ProofDB.DBParallelBase <> rtc_one thm
+R23329:23336 ProofDB.DBCore <> red_root constr
+R23351:23357 ProofDB.DBSyntax <> product def
+R23360:23362 ProofDB.DBSyntax <> Bot def
+R23365:23371 ProofDB.DBSyntax <> carrier def
+R23374:23388 ProofDB.DBSyntax <> diagonal_motive def
+R23411:23427 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23240:23244 ProofDB.DBSyntax <> TIAll constr
+R23267:23271 ProofDB.DBSyntax <> TPair constr
+R23251:23255 ProofDB.DBSyntax <> TISig constr
+R23220:23228 ProofDB.DBParallelBase <> rtc_trans thm
+R23314:23320 ProofDB.DBParallelBase <> rtc_one thm
+R23329:23336 ProofDB.DBCore <> red_root constr
+R23411:23427 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23475:23479 ProofDB.DBSyntax <> TIAll constr
+R23505:23509 ProofDB.DBSyntax <> TPair constr
+R23486:23493 ProofDB.DBSyntax <> TIChoice constr
+R23455:23463 ProofDB.DBParallelBase <> rtc_trans thm
+R23552:23558 ProofDB.DBParallelBase <> rtc_one thm
+R23567:23574 ProofDB.DBCore <> red_root constr
+R23589:23595 ProofDB.DBSyntax <> product def
+R23598:23600 ProofDB.DBSyntax <> Bot def
+R23603:23609 ProofDB.DBSyntax <> carrier def
+R23612:23626 ProofDB.DBSyntax <> diagonal_motive def
+R23649:23665 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23475:23479 ProofDB.DBSyntax <> TIAll constr
+R23505:23509 ProofDB.DBSyntax <> TPair constr
+R23486:23493 ProofDB.DBSyntax <> TIChoice constr
+R23455:23463 ProofDB.DBParallelBase <> rtc_trans thm
+R23552:23558 ProofDB.DBParallelBase <> rtc_one thm
+R23567:23574 ProofDB.DBCore <> red_root constr
+R23649:23665 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23713:23717 ProofDB.DBSyntax <> THyps constr
+R23723:23727 ProofDB.DBSyntax <> TIVar constr
+R23693:23701 ProofDB.DBParallelBase <> rtc_trans thm
+R23774:23780 ProofDB.DBParallelBase <> rtc_one thm
+R23789:23796 ProofDB.DBCore <> red_root constr
+R23811:23817 ProofDB.DBSyntax <> product def
+R23820:23822 ProofDB.DBSyntax <> Bot def
+R23825:23831 ProofDB.DBSyntax <> carrier def
+R23834:23848 ProofDB.DBSyntax <> diagonal_motive def
+R23871:23887 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23713:23717 ProofDB.DBSyntax <> THyps constr
+R23723:23727 ProofDB.DBSyntax <> TIVar constr
+R23693:23701 ProofDB.DBParallelBase <> rtc_trans thm
+R23774:23780 ProofDB.DBParallelBase <> rtc_one thm
+R23789:23796 ProofDB.DBCore <> red_root constr
+R23871:23887 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23935:23939 ProofDB.DBSyntax <> THyps constr
+R23954:23958 ProofDB.DBSyntax <> TUnit constr
+R23944:23946 ProofDB.DBSyntax <> TI1 constr
+R23915:23923 ProofDB.DBParallelBase <> rtc_trans thm
+R23991:23997 ProofDB.DBParallelBase <> rtc_one thm
+R24006:24013 ProofDB.DBCore <> red_root constr
+R24028:24034 ProofDB.DBSyntax <> product def
+R24037:24039 ProofDB.DBSyntax <> Bot def
+R24042:24048 ProofDB.DBSyntax <> carrier def
+R24051:24065 ProofDB.DBSyntax <> diagonal_motive def
+R24088:24104 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R23935:23939 ProofDB.DBSyntax <> THyps constr
+R23954:23958 ProofDB.DBSyntax <> TUnit constr
+R23944:23946 ProofDB.DBSyntax <> TI1 constr
+R23915:23923 ProofDB.DBParallelBase <> rtc_trans thm
+R23991:23997 ProofDB.DBParallelBase <> rtc_one thm
+R24006:24013 ProofDB.DBCore <> red_root constr
+R24088:24104 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R24152:24156 ProofDB.DBSyntax <> THyps constr
+R24161:24165 ProofDB.DBSyntax <> TIBot constr
+R24132:24140 ProofDB.DBParallelBase <> rtc_trans thm
+R24206:24212 ProofDB.DBParallelBase <> rtc_one thm
+R24221:24228 ProofDB.DBCore <> red_root constr
+R24243:24249 ProofDB.DBSyntax <> product def
+R24252:24254 ProofDB.DBSyntax <> Bot def
+R24257:24263 ProofDB.DBSyntax <> carrier def
+R24266:24280 ProofDB.DBSyntax <> diagonal_motive def
+R24303:24319 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R24152:24156 ProofDB.DBSyntax <> THyps constr
+R24161:24165 ProofDB.DBSyntax <> TIBot constr
+R24132:24140 ProofDB.DBParallelBase <> rtc_trans thm
+R24206:24212 ProofDB.DBParallelBase <> rtc_one thm
+R24221:24228 ProofDB.DBCore <> red_root constr
+R24303:24319 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R24367:24371 ProofDB.DBSyntax <> THyps constr
+R24402:24406 ProofDB.DBSyntax <> TPair constr
+R24378:24383 ProofDB.DBSyntax <> TIProd constr
+R24347:24355 ProofDB.DBParallelBase <> rtc_trans thm
+R24446:24452 ProofDB.DBParallelBase <> rtc_one thm
+R24461:24468 ProofDB.DBCore <> red_root constr
+R24483:24489 ProofDB.DBSyntax <> product def
+R24492:24494 ProofDB.DBSyntax <> Bot def
+R24497:24503 ProofDB.DBSyntax <> carrier def
+R24506:24520 ProofDB.DBSyntax <> diagonal_motive def
+R24543:24559 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R24367:24371 ProofDB.DBSyntax <> THyps constr
+R24402:24406 ProofDB.DBSyntax <> TPair constr
+R24378:24383 ProofDB.DBSyntax <> TIProd constr
+R24347:24355 ProofDB.DBParallelBase <> rtc_trans thm
+R24446:24452 ProofDB.DBParallelBase <> rtc_one thm
+R24461:24468 ProofDB.DBCore <> red_root constr
+R24543:24559 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R24607:24611 ProofDB.DBSyntax <> THyps constr
+R24618:24621 ProofDB.DBSyntax <> TIPi constr
+R24587:24595 ProofDB.DBParallelBase <> rtc_trans thm
+R24672:24678 ProofDB.DBParallelBase <> rtc_one thm
+R24687:24694 ProofDB.DBCore <> red_root constr
+R24709:24715 ProofDB.DBSyntax <> product def
+R24718:24720 ProofDB.DBSyntax <> Bot def
+R24723:24729 ProofDB.DBSyntax <> carrier def
+R24732:24746 ProofDB.DBSyntax <> diagonal_motive def
+R24769:24785 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R24607:24611 ProofDB.DBSyntax <> THyps constr
+R24618:24621 ProofDB.DBSyntax <> TIPi constr
+R24587:24595 ProofDB.DBParallelBase <> rtc_trans thm
+R24672:24678 ProofDB.DBParallelBase <> rtc_one thm
+R24687:24694 ProofDB.DBCore <> red_root constr
+R24769:24785 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R24833:24837 ProofDB.DBSyntax <> THyps constr
+R24866:24870 ProofDB.DBSyntax <> TPair constr
+R24844:24848 ProofDB.DBSyntax <> TISig constr
+R24813:24821 ProofDB.DBParallelBase <> rtc_trans thm
+R24910:24916 ProofDB.DBParallelBase <> rtc_one thm
+R24925:24932 ProofDB.DBCore <> red_root constr
+R24947:24953 ProofDB.DBSyntax <> product def
+R24956:24958 ProofDB.DBSyntax <> Bot def
+R24961:24967 ProofDB.DBSyntax <> carrier def
+R24970:24984 ProofDB.DBSyntax <> diagonal_motive def
+R25007:25023 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R24833:24837 ProofDB.DBSyntax <> THyps constr
+R24866:24870 ProofDB.DBSyntax <> TPair constr
+R24844:24848 ProofDB.DBSyntax <> TISig constr
+R24813:24821 ProofDB.DBParallelBase <> rtc_trans thm
+R24910:24916 ProofDB.DBParallelBase <> rtc_one thm
+R24925:24932 ProofDB.DBCore <> red_root constr
+R25007:25023 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R25071:25075 ProofDB.DBSyntax <> THyps constr
+R25107:25111 ProofDB.DBSyntax <> TPair constr
+R25082:25089 ProofDB.DBSyntax <> TIChoice constr
+R25051:25059 ProofDB.DBParallelBase <> rtc_trans thm
+R25151:25157 ProofDB.DBParallelBase <> rtc_one thm
+R25166:25173 ProofDB.DBCore <> red_root constr
+R25188:25194 ProofDB.DBSyntax <> product def
+R25197:25199 ProofDB.DBSyntax <> Bot def
+R25202:25208 ProofDB.DBSyntax <> carrier def
+R25211:25225 ProofDB.DBSyntax <> diagonal_motive def
+R25248:25264 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R25071:25075 ProofDB.DBSyntax <> THyps constr
+R25107:25111 ProofDB.DBSyntax <> TPair constr
+R25082:25089 ProofDB.DBSyntax <> TIChoice constr
+R25051:25059 ProofDB.DBParallelBase <> rtc_trans thm
+R25151:25157 ProofDB.DBParallelBase <> rtc_one thm
+R25166:25173 ProofDB.DBCore <> red_root constr
+R25248:25264 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R25312:25315 ProofDB.DBSyntax <> TInd constr
+R25335:25337 ProofDB.DBSyntax <> TIn constr
+R25292:25300 ProofDB.DBParallelBase <> rtc_trans thm
+R25375:25381 ProofDB.DBParallelBase <> rtc_one thm
+R25390:25397 ProofDB.DBCore <> red_root constr
+R25412:25418 ProofDB.DBSyntax <> product def
+R25421:25423 ProofDB.DBSyntax <> Bot def
+R25426:25432 ProofDB.DBSyntax <> carrier def
+R25435:25449 ProofDB.DBSyntax <> diagonal_motive def
+R25472:25488 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R25312:25315 ProofDB.DBSyntax <> TInd constr
+R25335:25337 ProofDB.DBSyntax <> TIn constr
+R25292:25300 ProofDB.DBParallelBase <> rtc_trans thm
+R25375:25381 ProofDB.DBParallelBase <> rtc_one thm
+R25390:25397 ProofDB.DBCore <> red_root constr
+R25472:25488 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R25536:25545 ProofDB.DBSyntax <> TCloseCase constr
+R25564:25566 ProofDB.DBSyntax <> TIn constr
+R25516:25524 ProofDB.DBParallelBase <> rtc_trans thm
+R25604:25610 ProofDB.DBParallelBase <> rtc_one thm
+R25619:25626 ProofDB.DBCore <> red_root constr
+R25641:25647 ProofDB.DBSyntax <> product def
+R25650:25652 ProofDB.DBSyntax <> Bot def
+R25655:25661 ProofDB.DBSyntax <> carrier def
+R25664:25678 ProofDB.DBSyntax <> diagonal_motive def
+R25701:25717 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R25536:25545 ProofDB.DBSyntax <> TCloseCase constr
+R25564:25566 ProofDB.DBSyntax <> TIn constr
+R25516:25524 ProofDB.DBParallelBase <> rtc_trans thm
+R25604:25610 ProofDB.DBParallelBase <> rtc_one thm
+R25619:25626 ProofDB.DBCore <> red_root constr
+R25701:25717 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R25765:25773 ProofDB.DBSyntax <> TCloseInd constr
+R25796:25798 ProofDB.DBSyntax <> TIn constr
+R25745:25753 ProofDB.DBParallelBase <> rtc_trans thm
+R25836:25842 ProofDB.DBParallelBase <> rtc_one thm
+R25851:25858 ProofDB.DBCore <> red_root constr
+R25873:25879 ProofDB.DBSyntax <> product def
+R25882:25884 ProofDB.DBSyntax <> Bot def
+R25887:25893 ProofDB.DBSyntax <> carrier def
+R25896:25910 ProofDB.DBSyntax <> diagonal_motive def
+R25933:25949 ProofDB.DBParallelBase <> lift_one_one_zero thm
+R25765:25773 ProofDB.DBSyntax <> TCloseInd constr
+R25796:25798 ProofDB.DBSyntax <> TIn constr
+R25745:25753 ProofDB.DBParallelBase <> rtc_trans thm
+R25836:25842 ProofDB.DBParallelBase <> rtc_one thm
+R25851:25858 ProofDB.DBCore <> red_root constr
+R25933:25949 ProofDB.DBParallelBase <> lift_one_one_zero thm
+prf 25978:25994 <> epstep_reductions
+binder 26005:26005 <> t:290
+binder 26007:26007 <> u:291
+R26020:26023 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R26010:26015 ProofDB.DBEta <> epstep ind
+R26017:26017 ProofDB.DBReduction <> t:290 var
+R26019:26019 ProofDB.DBReduction <> u:291 var
+R26024:26026 ProofDB.DBParallelBase <> rtc ind
+R26040:26040 ProofDB.DBReduction <> u:291 var
+R26038:26038 ProofDB.DBReduction <> t:290 var
+R26028:26036 ProofDB.DBCore <> reduction ind
+R26116:26123 ProofDB.DBParallelBase <> rtc_step constr
+R26133:26139 ProofDB.DBCore <> red_eta constr
+R26116:26123 ProofDB.DBParallelBase <> rtc_step constr
+R26133:26139 ProofDB.DBCore <> red_eta constr

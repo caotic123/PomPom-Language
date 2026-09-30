@@ -1,0 +1,2431 @@
+DIGEST 8e4a15434a7c3bed12f1bb660f0ef5ad
+Fnameless.DBComputationPreservation
+R174:177 Stdlib.Lists.List <> <> lib
+R179:183 Stdlib.Arith.Arith <> <> lib
+R185:188 Stdlib.Bool.Bool <> <> lib
+R190:192 Stdlib.micromega.Lia <> <> lib
+R210:236 nameless.DBFullPreservation <> <> lib
+R246:258 Stdlib.Lists.List ListNotations <> mod
+ind 272:282 <> computation
+constr 312:319 <> cmp_root
+constr 377:385 <> cmp_TPi_A
+constr 463:471 <> cmp_TPi_B
+constr 549:558 <> cmp_TLam_b
+constr 632:641 <> cmp_TApp_f
+constr 721:730 <> cmp_TApp_a
+constr 810:821 <> cmp_TSigma_A
+constr 905:916 <> cmp_TSigma_B
+constr 1000:1010 <> cmp_TPair_a
+constr 1092:1102 <> cmp_TPair_b
+constr 1184:1193 <> cmp_TFst_p
+constr 1267:1276 <> cmp_TSnd_p
+constr 1350:1363 <> cmp_TConsE_tag
+constr 1459:1470 <> cmp_TConsE_E
+constr 1560:1571 <> cmp_TEnumT_E
+constr 1649:1660 <> cmp_TESucc_n
+constr 1738:1747 <> cmp_TEPi_E
+constr 1833:1842 <> cmp_TEPi_P
+constr 1928:1940 <> cmp_TSwitch_E
+constr 2044:2056 <> cmp_TSwitch_P
+constr 2160:2172 <> cmp_TSwitch_p
+constr 2276:2288 <> cmp_TSwitch_e
+constr 2392:2404 <> cmp_TIDesc_IT
+constr 2488:2498 <> cmp_TIVar_i
+constr 2574:2585 <> cmp_TIProd_A
+constr 2669:2680 <> cmp_TIProd_B
+constr 2764:2773 <> cmp_TIPi_A
+constr 2853:2862 <> cmp_TIPi_D
+constr 2942:2952 <> cmp_TISig_A
+constr 3034:3044 <> cmp_TISig_D
+constr 3126:3139 <> cmp_TIChoice_E
+constr 3227:3240 <> cmp_TIChoice_D
+constr 3328:3341 <> cmp_TInterp_IT
+constr 3439:3451 <> cmp_TInterp_D
+constr 3546:3558 <> cmp_TInterp_X
+constr 3653:3663 <> cmp_TMuI_IT
+constr 3749:3758 <> cmp_TMuI_D
+constr 3841:3849 <> cmp_TIn_x
+constr 3921:3931 <> cmp_TInd_IT
+constr 4041:4050 <> cmp_TInd_D
+constr 4157:4166 <> cmp_TInd_P
+constr 4273:4282 <> cmp_TInd_s
+constr 4389:4398 <> cmp_TInd_i
+constr 4505:4514 <> cmp_TInd_x
+constr 4621:4632 <> cmp_TIAll_IT
+constr 4738:4748 <> cmp_TIAll_D
+constr 4851:4861 <> cmp_TIAll_X
+constr 4964:4974 <> cmp_TIAll_x
+constr 5077:5087 <> cmp_TIAll_P
+constr 5190:5201 <> cmp_THyps_IT
+constr 5313:5323 <> cmp_THyps_D
+constr 5432:5442 <> cmp_THyps_X
+constr 5551:5561 <> cmp_THyps_P
+constr 5670:5680 <> cmp_THyps_h
+constr 5789:5799 <> cmp_THyps_x
+constr 5908:5920 <> cmp_TClose_IT
+constr 6016:6027 <> cmp_TClose_F
+constr 6120:6131 <> cmp_TClose_G
+constr 6224:6240 <> cmp_TCloseCase_IT
+constr 6374:6389 <> cmp_TCloseCase_F
+constr 6520:6535 <> cmp_TCloseCase_G
+constr 6666:6681 <> cmp_TCloseCase_i
+constr 6812:6827 <> cmp_TCloseCase_Q
+constr 6958:6973 <> cmp_TCloseCase_b
+constr 7104:7119 <> cmp_TCloseCase_x
+constr 7250:7265 <> cmp_TCloseInd_IT
+constr 7391:7405 <> cmp_TCloseInd_G
+constr 7528:7542 <> cmp_TCloseInd_P
+constr 7665:7679 <> cmp_TCloseInd_s
+constr 7802:7816 <> cmp_TCloseInd_F
+constr 7939:7953 <> cmp_TCloseInd_i
+constr 8076:8090 <> cmp_TCloseInd_x
+R290:293 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R286:289 nameless.DBSyntax <> term ind
+R298:301 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R294:297 nameless.DBSyntax <> term ind
+binder 330:330 <> t:3
+binder 332:332 <> u:4
+R355:358 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R346:348 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R335:343 nameless.DBCore <> root_step def
+R345:345 nameless.DBComputationPreservation <> t:3 var
+R349:352 Corelib.Init.Datatypes <> Some constr
+R354:354 nameless.DBComputationPreservation <> u:4 var
+R359:369 nameless.DBComputationPreservation <> computation:1 ind
+R373:373 nameless.DBComputationPreservation <> u:4 var
+R371:371 nameless.DBComputationPreservation <> t:3 var
+binder 396:396 <> A:5
+binder 398:398 <> B:6
+binder 400:401 <> A':7
+R420:427 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R404:414 nameless.DBComputationPreservation <> computation:1 ind
+R418:419 nameless.DBComputationPreservation <> A':7 var
+R416:416 nameless.DBComputationPreservation <> A:5 var
+R428:438 nameless.DBComputationPreservation <> computation:1 ind
+R451:453 nameless.DBSyntax <> TPi constr
+R458:458 nameless.DBComputationPreservation <> B:6 var
+R455:456 nameless.DBComputationPreservation <> A':7 var
+R441:443 nameless.DBSyntax <> TPi constr
+R447:447 nameless.DBComputationPreservation <> B:6 var
+R445:445 nameless.DBComputationPreservation <> A:5 var
+binder 482:482 <> A:8
+binder 484:484 <> B:9
+binder 486:487 <> B':10
+R506:513 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R490:500 nameless.DBComputationPreservation <> computation:1 ind
+R504:505 nameless.DBComputationPreservation <> B':10 var
+R502:502 nameless.DBComputationPreservation <> B:9 var
+R514:524 nameless.DBComputationPreservation <> computation:1 ind
+R537:539 nameless.DBSyntax <> TPi constr
+R543:544 nameless.DBComputationPreservation <> B':10 var
+R541:541 nameless.DBComputationPreservation <> A:8 var
+R527:529 nameless.DBSyntax <> TPi constr
+R533:533 nameless.DBComputationPreservation <> B:9 var
+R531:531 nameless.DBComputationPreservation <> A:8 var
+binder 569:569 <> b:11
+binder 571:572 <> b':12
+R591:598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R575:585 nameless.DBComputationPreservation <> computation:1 ind
+R589:590 nameless.DBComputationPreservation <> b':12 var
+R587:587 nameless.DBComputationPreservation <> b:11 var
+R599:609 nameless.DBComputationPreservation <> computation:1 ind
+R621:624 nameless.DBSyntax <> TLam constr
+R626:627 nameless.DBComputationPreservation <> b':12 var
+R612:615 nameless.DBSyntax <> TLam constr
+R617:617 nameless.DBComputationPreservation <> b:11 var
+binder 652:652 <> f:13
+binder 654:654 <> a:14
+binder 656:657 <> f':15
+R676:683 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R660:670 nameless.DBComputationPreservation <> computation:1 ind
+R674:675 nameless.DBComputationPreservation <> f':15 var
+R672:672 nameless.DBComputationPreservation <> f:13 var
+R684:694 nameless.DBComputationPreservation <> computation:1 ind
+R708:711 nameless.DBSyntax <> TApp constr
+R716:716 nameless.DBComputationPreservation <> a:14 var
+R713:714 nameless.DBComputationPreservation <> f':15 var
+R697:700 nameless.DBSyntax <> TApp constr
+R704:704 nameless.DBComputationPreservation <> a:14 var
+R702:702 nameless.DBComputationPreservation <> f:13 var
+binder 741:741 <> f:16
+binder 743:743 <> a:17
+binder 745:746 <> a':18
+R765:772 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R749:759 nameless.DBComputationPreservation <> computation:1 ind
+R763:764 nameless.DBComputationPreservation <> a':18 var
+R761:761 nameless.DBComputationPreservation <> a:17 var
+R773:783 nameless.DBComputationPreservation <> computation:1 ind
+R797:800 nameless.DBSyntax <> TApp constr
+R804:805 nameless.DBComputationPreservation <> a':18 var
+R802:802 nameless.DBComputationPreservation <> f:16 var
+R786:789 nameless.DBSyntax <> TApp constr
+R793:793 nameless.DBComputationPreservation <> a:17 var
+R791:791 nameless.DBComputationPreservation <> f:16 var
+binder 832:832 <> A:19
+binder 834:834 <> B:20
+binder 836:837 <> A':21
+R856:863 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R840:850 nameless.DBComputationPreservation <> computation:1 ind
+R854:855 nameless.DBComputationPreservation <> A':21 var
+R852:852 nameless.DBComputationPreservation <> A:19 var
+R864:874 nameless.DBComputationPreservation <> computation:1 ind
+R890:895 nameless.DBSyntax <> TSigma constr
+R900:900 nameless.DBComputationPreservation <> B:20 var
+R897:898 nameless.DBComputationPreservation <> A':21 var
+R877:882 nameless.DBSyntax <> TSigma constr
+R886:886 nameless.DBComputationPreservation <> B:20 var
+R884:884 nameless.DBComputationPreservation <> A:19 var
+binder 927:927 <> A:22
+binder 929:929 <> B:23
+binder 931:932 <> B':24
+R951:958 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R935:945 nameless.DBComputationPreservation <> computation:1 ind
+R949:950 nameless.DBComputationPreservation <> B':24 var
+R947:947 nameless.DBComputationPreservation <> B:23 var
+R959:969 nameless.DBComputationPreservation <> computation:1 ind
+R985:990 nameless.DBSyntax <> TSigma constr
+R994:995 nameless.DBComputationPreservation <> B':24 var
+R992:992 nameless.DBComputationPreservation <> A:22 var
+R972:977 nameless.DBSyntax <> TSigma constr
+R981:981 nameless.DBComputationPreservation <> B:23 var
+R979:979 nameless.DBComputationPreservation <> A:22 var
+binder 1021:1021 <> a:25
+binder 1023:1023 <> b:26
+binder 1025:1026 <> a':27
+R1045:1052 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1029:1039 nameless.DBComputationPreservation <> computation:1 ind
+R1043:1044 nameless.DBComputationPreservation <> a':27 var
+R1041:1041 nameless.DBComputationPreservation <> a:25 var
+R1053:1063 nameless.DBComputationPreservation <> computation:1 ind
+R1078:1082 nameless.DBSyntax <> TPair constr
+R1087:1087 nameless.DBComputationPreservation <> b:26 var
+R1084:1085 nameless.DBComputationPreservation <> a':27 var
+R1066:1070 nameless.DBSyntax <> TPair constr
+R1074:1074 nameless.DBComputationPreservation <> b:26 var
+R1072:1072 nameless.DBComputationPreservation <> a:25 var
+binder 1113:1113 <> a:28
+binder 1115:1115 <> b:29
+binder 1117:1118 <> b':30
+R1137:1144 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1121:1131 nameless.DBComputationPreservation <> computation:1 ind
+R1135:1136 nameless.DBComputationPreservation <> b':30 var
+R1133:1133 nameless.DBComputationPreservation <> b:29 var
+R1145:1155 nameless.DBComputationPreservation <> computation:1 ind
+R1170:1174 nameless.DBSyntax <> TPair constr
+R1178:1179 nameless.DBComputationPreservation <> b':30 var
+R1176:1176 nameless.DBComputationPreservation <> a:28 var
+R1158:1162 nameless.DBSyntax <> TPair constr
+R1166:1166 nameless.DBComputationPreservation <> b:29 var
+R1164:1164 nameless.DBComputationPreservation <> a:28 var
+binder 1204:1204 <> p:31
+binder 1206:1207 <> p':32
+R1226:1233 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1210:1220 nameless.DBComputationPreservation <> computation:1 ind
+R1224:1225 nameless.DBComputationPreservation <> p':32 var
+R1222:1222 nameless.DBComputationPreservation <> p:31 var
+R1234:1244 nameless.DBComputationPreservation <> computation:1 ind
+R1256:1259 nameless.DBSyntax <> TFst constr
+R1261:1262 nameless.DBComputationPreservation <> p':32 var
+R1247:1250 nameless.DBSyntax <> TFst constr
+R1252:1252 nameless.DBComputationPreservation <> p:31 var
+binder 1287:1287 <> p:33
+binder 1289:1290 <> p':34
+R1309:1316 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1293:1303 nameless.DBComputationPreservation <> computation:1 ind
+R1307:1308 nameless.DBComputationPreservation <> p':34 var
+R1305:1305 nameless.DBComputationPreservation <> p:33 var
+R1317:1327 nameless.DBComputationPreservation <> computation:1 ind
+R1339:1342 nameless.DBSyntax <> TSnd constr
+R1344:1345 nameless.DBComputationPreservation <> p':34 var
+R1330:1333 nameless.DBSyntax <> TSnd constr
+R1335:1335 nameless.DBComputationPreservation <> p:33 var
+binder 1374:1376 <> tag:35
+binder 1378:1378 <> E:36
+binder 1380:1383 <> tag':37
+R1406:1413 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1386:1396 nameless.DBComputationPreservation <> computation:1 ind
+R1402:1405 nameless.DBComputationPreservation <> tag':37 var
+R1398:1400 nameless.DBComputationPreservation <> tag:35 var
+R1414:1424 nameless.DBComputationPreservation <> computation:1 ind
+R1442:1447 nameless.DBSyntax <> TConsE constr
+R1454:1454 nameless.DBComputationPreservation <> E:36 var
+R1449:1452 nameless.DBComputationPreservation <> tag':37 var
+R1427:1432 nameless.DBSyntax <> TConsE constr
+R1438:1438 nameless.DBComputationPreservation <> E:36 var
+R1434:1436 nameless.DBComputationPreservation <> tag:35 var
+binder 1481:1483 <> tag:38
+binder 1485:1485 <> E:39
+binder 1487:1488 <> E':40
+R1507:1514 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1491:1501 nameless.DBComputationPreservation <> computation:1 ind
+R1505:1506 nameless.DBComputationPreservation <> E':40 var
+R1503:1503 nameless.DBComputationPreservation <> E:39 var
+R1515:1525 nameless.DBComputationPreservation <> computation:1 ind
+R1543:1548 nameless.DBSyntax <> TConsE constr
+R1554:1555 nameless.DBComputationPreservation <> E':40 var
+R1550:1552 nameless.DBComputationPreservation <> tag:38 var
+R1528:1533 nameless.DBSyntax <> TConsE constr
+R1539:1539 nameless.DBComputationPreservation <> E:39 var
+R1535:1537 nameless.DBComputationPreservation <> tag:38 var
+binder 1582:1582 <> E:41
+binder 1584:1585 <> E':42
+R1604:1611 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1588:1598 nameless.DBComputationPreservation <> computation:1 ind
+R1602:1603 nameless.DBComputationPreservation <> E':42 var
+R1600:1600 nameless.DBComputationPreservation <> E:41 var
+R1612:1622 nameless.DBComputationPreservation <> computation:1 ind
+R1636:1641 nameless.DBSyntax <> TEnumT constr
+R1643:1644 nameless.DBComputationPreservation <> E':42 var
+R1625:1630 nameless.DBSyntax <> TEnumT constr
+R1632:1632 nameless.DBComputationPreservation <> E:41 var
+binder 1671:1671 <> n:43
+binder 1673:1674 <> n':44
+R1693:1700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1677:1687 nameless.DBComputationPreservation <> computation:1 ind
+R1691:1692 nameless.DBComputationPreservation <> n':44 var
+R1689:1689 nameless.DBComputationPreservation <> n:43 var
+R1701:1711 nameless.DBComputationPreservation <> computation:1 ind
+R1725:1730 nameless.DBSyntax <> TESucc constr
+R1732:1733 nameless.DBComputationPreservation <> n':44 var
+R1714:1719 nameless.DBSyntax <> TESucc constr
+R1721:1721 nameless.DBComputationPreservation <> n:43 var
+binder 1758:1758 <> k:45
+binder 1760:1760 <> E:46
+binder 1762:1762 <> P:47
+binder 1764:1765 <> E':48
+R1784:1791 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1768:1778 nameless.DBComputationPreservation <> computation:1 ind
+R1782:1783 nameless.DBComputationPreservation <> E':48 var
+R1780:1780 nameless.DBComputationPreservation <> E:46 var
+R1792:1802 nameless.DBComputationPreservation <> computation:1 ind
+R1818:1821 nameless.DBSyntax <> TEPi constr
+R1828:1828 nameless.DBComputationPreservation <> P:47 var
+R1825:1826 nameless.DBComputationPreservation <> E':48 var
+R1823:1823 nameless.DBComputationPreservation <> k:45 var
+R1805:1808 nameless.DBSyntax <> TEPi constr
+R1814:1814 nameless.DBComputationPreservation <> P:47 var
+R1812:1812 nameless.DBComputationPreservation <> E:46 var
+R1810:1810 nameless.DBComputationPreservation <> k:45 var
+binder 1853:1853 <> k:49
+binder 1855:1855 <> E:50
+binder 1857:1857 <> P:51
+binder 1859:1860 <> P':52
+R1879:1886 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1863:1873 nameless.DBComputationPreservation <> computation:1 ind
+R1877:1878 nameless.DBComputationPreservation <> P':52 var
+R1875:1875 nameless.DBComputationPreservation <> P:51 var
+R1887:1897 nameless.DBComputationPreservation <> computation:1 ind
+R1913:1916 nameless.DBSyntax <> TEPi constr
+R1922:1923 nameless.DBComputationPreservation <> P':52 var
+R1920:1920 nameless.DBComputationPreservation <> E:50 var
+R1918:1918 nameless.DBComputationPreservation <> k:49 var
+R1900:1903 nameless.DBSyntax <> TEPi constr
+R1909:1909 nameless.DBComputationPreservation <> P:51 var
+R1907:1907 nameless.DBComputationPreservation <> E:50 var
+R1905:1905 nameless.DBComputationPreservation <> k:49 var
+binder 1951:1951 <> k:53
+binder 1953:1953 <> E:54
+binder 1955:1955 <> P:55
+binder 1957:1957 <> p:56
+binder 1959:1959 <> e:57
+binder 1961:1962 <> E':58
+R1981:1988 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1965:1975 nameless.DBComputationPreservation <> computation:1 ind
+R1979:1980 nameless.DBComputationPreservation <> E':58 var
+R1977:1977 nameless.DBComputationPreservation <> E:54 var
+R1989:1999 nameless.DBComputationPreservation <> computation:1 ind
+R2022:2028 nameless.DBSyntax <> TSwitch constr
+R2039:2039 nameless.DBComputationPreservation <> e:57 var
+R2037:2037 nameless.DBComputationPreservation <> p:56 var
+R2035:2035 nameless.DBComputationPreservation <> P:55 var
+R2032:2033 nameless.DBComputationPreservation <> E':58 var
+R2030:2030 nameless.DBComputationPreservation <> k:53 var
+R2002:2008 nameless.DBSyntax <> TSwitch constr
+R2018:2018 nameless.DBComputationPreservation <> e:57 var
+R2016:2016 nameless.DBComputationPreservation <> p:56 var
+R2014:2014 nameless.DBComputationPreservation <> P:55 var
+R2012:2012 nameless.DBComputationPreservation <> E:54 var
+R2010:2010 nameless.DBComputationPreservation <> k:53 var
+binder 2067:2067 <> k:59
+binder 2069:2069 <> E:60
+binder 2071:2071 <> P:61
+binder 2073:2073 <> p:62
+binder 2075:2075 <> e:63
+binder 2077:2078 <> P':64
+R2097:2104 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2081:2091 nameless.DBComputationPreservation <> computation:1 ind
+R2095:2096 nameless.DBComputationPreservation <> P':64 var
+R2093:2093 nameless.DBComputationPreservation <> P:61 var
+R2105:2115 nameless.DBComputationPreservation <> computation:1 ind
+R2138:2144 nameless.DBSyntax <> TSwitch constr
+R2155:2155 nameless.DBComputationPreservation <> e:63 var
+R2153:2153 nameless.DBComputationPreservation <> p:62 var
+R2150:2151 nameless.DBComputationPreservation <> P':64 var
+R2148:2148 nameless.DBComputationPreservation <> E:60 var
+R2146:2146 nameless.DBComputationPreservation <> k:59 var
+R2118:2124 nameless.DBSyntax <> TSwitch constr
+R2134:2134 nameless.DBComputationPreservation <> e:63 var
+R2132:2132 nameless.DBComputationPreservation <> p:62 var
+R2130:2130 nameless.DBComputationPreservation <> P:61 var
+R2128:2128 nameless.DBComputationPreservation <> E:60 var
+R2126:2126 nameless.DBComputationPreservation <> k:59 var
+binder 2183:2183 <> k:65
+binder 2185:2185 <> E:66
+binder 2187:2187 <> P:67
+binder 2189:2189 <> p:68
+binder 2191:2191 <> e:69
+binder 2193:2194 <> p':70
+R2213:2220 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2197:2207 nameless.DBComputationPreservation <> computation:1 ind
+R2211:2212 nameless.DBComputationPreservation <> p':70 var
+R2209:2209 nameless.DBComputationPreservation <> p:68 var
+R2221:2231 nameless.DBComputationPreservation <> computation:1 ind
+R2254:2260 nameless.DBSyntax <> TSwitch constr
+R2271:2271 nameless.DBComputationPreservation <> e:69 var
+R2268:2269 nameless.DBComputationPreservation <> p':70 var
+R2266:2266 nameless.DBComputationPreservation <> P:67 var
+R2264:2264 nameless.DBComputationPreservation <> E:66 var
+R2262:2262 nameless.DBComputationPreservation <> k:65 var
+R2234:2240 nameless.DBSyntax <> TSwitch constr
+R2250:2250 nameless.DBComputationPreservation <> e:69 var
+R2248:2248 nameless.DBComputationPreservation <> p:68 var
+R2246:2246 nameless.DBComputationPreservation <> P:67 var
+R2244:2244 nameless.DBComputationPreservation <> E:66 var
+R2242:2242 nameless.DBComputationPreservation <> k:65 var
+binder 2299:2299 <> k:71
+binder 2301:2301 <> E:72
+binder 2303:2303 <> P:73
+binder 2305:2305 <> p:74
+binder 2307:2307 <> e:75
+binder 2309:2310 <> e':76
+R2329:2336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2313:2323 nameless.DBComputationPreservation <> computation:1 ind
+R2327:2328 nameless.DBComputationPreservation <> e':76 var
+R2325:2325 nameless.DBComputationPreservation <> e:75 var
+R2337:2347 nameless.DBComputationPreservation <> computation:1 ind
+R2370:2376 nameless.DBSyntax <> TSwitch constr
+R2386:2387 nameless.DBComputationPreservation <> e':76 var
+R2384:2384 nameless.DBComputationPreservation <> p:74 var
+R2382:2382 nameless.DBComputationPreservation <> P:73 var
+R2380:2380 nameless.DBComputationPreservation <> E:72 var
+R2378:2378 nameless.DBComputationPreservation <> k:71 var
+R2350:2356 nameless.DBSyntax <> TSwitch constr
+R2366:2366 nameless.DBComputationPreservation <> e:75 var
+R2364:2364 nameless.DBComputationPreservation <> p:74 var
+R2362:2362 nameless.DBComputationPreservation <> P:73 var
+R2360:2360 nameless.DBComputationPreservation <> E:72 var
+R2358:2358 nameless.DBComputationPreservation <> k:71 var
+binder 2415:2416 <> IT:77
+binder 2418:2420 <> IT':78
+R2441:2448 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2423:2433 nameless.DBComputationPreservation <> computation:1 ind
+R2438:2440 nameless.DBComputationPreservation <> IT':78 var
+R2435:2436 nameless.DBComputationPreservation <> IT:77 var
+R2449:2459 nameless.DBComputationPreservation <> computation:1 ind
+R2474:2479 nameless.DBSyntax <> TIDesc constr
+R2481:2483 nameless.DBComputationPreservation <> IT':78 var
+R2462:2467 nameless.DBSyntax <> TIDesc constr
+R2469:2470 nameless.DBComputationPreservation <> IT:77 var
+binder 2509:2509 <> i:79
+binder 2511:2512 <> i':80
+R2531:2538 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2515:2525 nameless.DBComputationPreservation <> computation:1 ind
+R2529:2530 nameless.DBComputationPreservation <> i':80 var
+R2527:2527 nameless.DBComputationPreservation <> i:79 var
+R2539:2549 nameless.DBComputationPreservation <> computation:1 ind
+R2562:2566 nameless.DBSyntax <> TIVar constr
+R2568:2569 nameless.DBComputationPreservation <> i':80 var
+R2552:2556 nameless.DBSyntax <> TIVar constr
+R2558:2558 nameless.DBComputationPreservation <> i:79 var
+binder 2596:2596 <> A:81
+binder 2598:2598 <> B:82
+binder 2600:2601 <> A':83
+R2620:2627 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2604:2614 nameless.DBComputationPreservation <> computation:1 ind
+R2618:2619 nameless.DBComputationPreservation <> A':83 var
+R2616:2616 nameless.DBComputationPreservation <> A:81 var
+R2628:2638 nameless.DBComputationPreservation <> computation:1 ind
+R2654:2659 nameless.DBSyntax <> TIProd constr
+R2664:2664 nameless.DBComputationPreservation <> B:82 var
+R2661:2662 nameless.DBComputationPreservation <> A':83 var
+R2641:2646 nameless.DBSyntax <> TIProd constr
+R2650:2650 nameless.DBComputationPreservation <> B:82 var
+R2648:2648 nameless.DBComputationPreservation <> A:81 var
+binder 2691:2691 <> A:84
+binder 2693:2693 <> B:85
+binder 2695:2696 <> B':86
+R2715:2722 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2699:2709 nameless.DBComputationPreservation <> computation:1 ind
+R2713:2714 nameless.DBComputationPreservation <> B':86 var
+R2711:2711 nameless.DBComputationPreservation <> B:85 var
+R2723:2733 nameless.DBComputationPreservation <> computation:1 ind
+R2749:2754 nameless.DBSyntax <> TIProd constr
+R2758:2759 nameless.DBComputationPreservation <> B':86 var
+R2756:2756 nameless.DBComputationPreservation <> A:84 var
+R2736:2741 nameless.DBSyntax <> TIProd constr
+R2745:2745 nameless.DBComputationPreservation <> B:85 var
+R2743:2743 nameless.DBComputationPreservation <> A:84 var
+binder 2784:2784 <> A:87
+binder 2786:2786 <> D:88
+binder 2788:2789 <> A':89
+R2808:2815 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2792:2802 nameless.DBComputationPreservation <> computation:1 ind
+R2806:2807 nameless.DBComputationPreservation <> A':89 var
+R2804:2804 nameless.DBComputationPreservation <> A:87 var
+R2816:2826 nameless.DBComputationPreservation <> computation:1 ind
+R2840:2843 nameless.DBSyntax <> TIPi constr
+R2848:2848 nameless.DBComputationPreservation <> D:88 var
+R2845:2846 nameless.DBComputationPreservation <> A':89 var
+R2829:2832 nameless.DBSyntax <> TIPi constr
+R2836:2836 nameless.DBComputationPreservation <> D:88 var
+R2834:2834 nameless.DBComputationPreservation <> A:87 var
+binder 2873:2873 <> A:90
+binder 2875:2875 <> D:91
+binder 2877:2878 <> D':92
+R2897:2904 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2881:2891 nameless.DBComputationPreservation <> computation:1 ind
+R2895:2896 nameless.DBComputationPreservation <> D':92 var
+R2893:2893 nameless.DBComputationPreservation <> D:91 var
+R2905:2915 nameless.DBComputationPreservation <> computation:1 ind
+R2929:2932 nameless.DBSyntax <> TIPi constr
+R2936:2937 nameless.DBComputationPreservation <> D':92 var
+R2934:2934 nameless.DBComputationPreservation <> A:90 var
+R2918:2921 nameless.DBSyntax <> TIPi constr
+R2925:2925 nameless.DBComputationPreservation <> D:91 var
+R2923:2923 nameless.DBComputationPreservation <> A:90 var
+binder 2963:2963 <> A:93
+binder 2965:2965 <> D:94
+binder 2967:2968 <> A':95
+R2987:2994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2971:2981 nameless.DBComputationPreservation <> computation:1 ind
+R2985:2986 nameless.DBComputationPreservation <> A':95 var
+R2983:2983 nameless.DBComputationPreservation <> A:93 var
+R2995:3005 nameless.DBComputationPreservation <> computation:1 ind
+R3020:3024 nameless.DBSyntax <> TISig constr
+R3029:3029 nameless.DBComputationPreservation <> D:94 var
+R3026:3027 nameless.DBComputationPreservation <> A':95 var
+R3008:3012 nameless.DBSyntax <> TISig constr
+R3016:3016 nameless.DBComputationPreservation <> D:94 var
+R3014:3014 nameless.DBComputationPreservation <> A:93 var
+binder 3055:3055 <> A:96
+binder 3057:3057 <> D:97
+binder 3059:3060 <> D':98
+R3079:3086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3063:3073 nameless.DBComputationPreservation <> computation:1 ind
+R3077:3078 nameless.DBComputationPreservation <> D':98 var
+R3075:3075 nameless.DBComputationPreservation <> D:97 var
+R3087:3097 nameless.DBComputationPreservation <> computation:1 ind
+R3112:3116 nameless.DBSyntax <> TISig constr
+R3120:3121 nameless.DBComputationPreservation <> D':98 var
+R3118:3118 nameless.DBComputationPreservation <> A:96 var
+R3100:3104 nameless.DBSyntax <> TISig constr
+R3108:3108 nameless.DBComputationPreservation <> D:97 var
+R3106:3106 nameless.DBComputationPreservation <> A:96 var
+binder 3150:3150 <> E:99
+binder 3152:3152 <> D:100
+binder 3154:3155 <> E':101
+R3174:3181 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3158:3168 nameless.DBComputationPreservation <> computation:1 ind
+R3172:3173 nameless.DBComputationPreservation <> E':101 var
+R3170:3170 nameless.DBComputationPreservation <> E:99 var
+R3182:3192 nameless.DBComputationPreservation <> computation:1 ind
+R3210:3217 nameless.DBSyntax <> TIChoice constr
+R3222:3222 nameless.DBComputationPreservation <> D:100 var
+R3219:3220 nameless.DBComputationPreservation <> E':101 var
+R3195:3202 nameless.DBSyntax <> TIChoice constr
+R3206:3206 nameless.DBComputationPreservation <> D:100 var
+R3204:3204 nameless.DBComputationPreservation <> E:99 var
+binder 3251:3251 <> E:102
+binder 3253:3253 <> D:103
+binder 3255:3256 <> D':104
+R3275:3282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3259:3269 nameless.DBComputationPreservation <> computation:1 ind
+R3273:3274 nameless.DBComputationPreservation <> D':104 var
+R3271:3271 nameless.DBComputationPreservation <> D:103 var
+R3283:3293 nameless.DBComputationPreservation <> computation:1 ind
+R3311:3318 nameless.DBSyntax <> TIChoice constr
+R3322:3323 nameless.DBComputationPreservation <> D':104 var
+R3320:3320 nameless.DBComputationPreservation <> E:102 var
+R3296:3303 nameless.DBSyntax <> TIChoice constr
+R3307:3307 nameless.DBComputationPreservation <> D:103 var
+R3305:3305 nameless.DBComputationPreservation <> E:102 var
+binder 3352:3353 <> IT:105
+binder 3355:3355 <> D:106
+binder 3357:3357 <> X:107
+binder 3359:3361 <> IT':108
+R3382:3389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3364:3374 nameless.DBComputationPreservation <> computation:1 ind
+R3379:3381 nameless.DBComputationPreservation <> IT':108 var
+R3376:3377 nameless.DBComputationPreservation <> IT:105 var
+R3390:3400 nameless.DBComputationPreservation <> computation:1 ind
+R3420:3426 nameless.DBSyntax <> TInterp constr
+R3434:3434 nameless.DBComputationPreservation <> X:107 var
+R3432:3432 nameless.DBComputationPreservation <> D:106 var
+R3428:3430 nameless.DBComputationPreservation <> IT':108 var
+R3403:3409 nameless.DBSyntax <> TInterp constr
+R3416:3416 nameless.DBComputationPreservation <> X:107 var
+R3414:3414 nameless.DBComputationPreservation <> D:106 var
+R3411:3412 nameless.DBComputationPreservation <> IT:105 var
+binder 3462:3463 <> IT:109
+binder 3465:3465 <> D:110
+binder 3467:3467 <> X:111
+binder 3469:3470 <> D':112
+R3489:3496 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3473:3483 nameless.DBComputationPreservation <> computation:1 ind
+R3487:3488 nameless.DBComputationPreservation <> D':112 var
+R3485:3485 nameless.DBComputationPreservation <> D:110 var
+R3497:3507 nameless.DBComputationPreservation <> computation:1 ind
+R3527:3533 nameless.DBSyntax <> TInterp constr
+R3541:3541 nameless.DBComputationPreservation <> X:111 var
+R3538:3539 nameless.DBComputationPreservation <> D':112 var
+R3535:3536 nameless.DBComputationPreservation <> IT:109 var
+R3510:3516 nameless.DBSyntax <> TInterp constr
+R3523:3523 nameless.DBComputationPreservation <> X:111 var
+R3521:3521 nameless.DBComputationPreservation <> D:110 var
+R3518:3519 nameless.DBComputationPreservation <> IT:109 var
+binder 3569:3570 <> IT:113
+binder 3572:3572 <> D:114
+binder 3574:3574 <> X:115
+binder 3576:3577 <> X':116
+R3596:3603 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3580:3590 nameless.DBComputationPreservation <> computation:1 ind
+R3594:3595 nameless.DBComputationPreservation <> X':116 var
+R3592:3592 nameless.DBComputationPreservation <> X:115 var
+R3604:3614 nameless.DBComputationPreservation <> computation:1 ind
+R3634:3640 nameless.DBSyntax <> TInterp constr
+R3647:3648 nameless.DBComputationPreservation <> X':116 var
+R3645:3645 nameless.DBComputationPreservation <> D:114 var
+R3642:3643 nameless.DBComputationPreservation <> IT:113 var
+R3617:3623 nameless.DBSyntax <> TInterp constr
+R3630:3630 nameless.DBComputationPreservation <> X:115 var
+R3628:3628 nameless.DBComputationPreservation <> D:114 var
+R3625:3626 nameless.DBComputationPreservation <> IT:113 var
+binder 3674:3675 <> IT:117
+binder 3677:3677 <> D:118
+binder 3679:3681 <> IT':119
+R3702:3709 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3684:3694 nameless.DBComputationPreservation <> computation:1 ind
+R3699:3701 nameless.DBComputationPreservation <> IT':119 var
+R3696:3697 nameless.DBComputationPreservation <> IT:117 var
+R3710:3720 nameless.DBComputationPreservation <> computation:1 ind
+R3735:3738 nameless.DBSyntax <> TMuI constr
+R3744:3744 nameless.DBComputationPreservation <> D:118 var
+R3740:3742 nameless.DBComputationPreservation <> IT':119 var
+R3723:3726 nameless.DBSyntax <> TMuI constr
+R3731:3731 nameless.DBComputationPreservation <> D:118 var
+R3728:3729 nameless.DBComputationPreservation <> IT:117 var
+binder 3769:3770 <> IT:120
+binder 3772:3772 <> D:121
+binder 3774:3775 <> D':122
+R3794:3801 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3778:3788 nameless.DBComputationPreservation <> computation:1 ind
+R3792:3793 nameless.DBComputationPreservation <> D':122 var
+R3790:3790 nameless.DBComputationPreservation <> D:121 var
+R3802:3812 nameless.DBComputationPreservation <> computation:1 ind
+R3827:3830 nameless.DBSyntax <> TMuI constr
+R3835:3836 nameless.DBComputationPreservation <> D':122 var
+R3832:3833 nameless.DBComputationPreservation <> IT:120 var
+R3815:3818 nameless.DBSyntax <> TMuI constr
+R3823:3823 nameless.DBComputationPreservation <> D:121 var
+R3820:3821 nameless.DBComputationPreservation <> IT:120 var
+binder 3860:3860 <> x:123
+binder 3862:3863 <> x':124
+R3882:3889 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3866:3876 nameless.DBComputationPreservation <> computation:1 ind
+R3880:3881 nameless.DBComputationPreservation <> x':124 var
+R3878:3878 nameless.DBComputationPreservation <> x:123 var
+R3890:3900 nameless.DBComputationPreservation <> computation:1 ind
+R3911:3913 nameless.DBSyntax <> TIn constr
+R3915:3916 nameless.DBComputationPreservation <> x':124 var
+R3903:3905 nameless.DBSyntax <> TIn constr
+R3907:3907 nameless.DBComputationPreservation <> x:123 var
+binder 3942:3943 <> IT:125
+binder 3945:3945 <> D:126
+binder 3947:3947 <> P:127
+binder 3949:3949 <> s:128
+binder 3951:3951 <> i:129
+binder 3953:3953 <> x:130
+binder 3955:3957 <> IT':131
+R3978:3985 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3960:3970 nameless.DBComputationPreservation <> computation:1 ind
+R3975:3977 nameless.DBComputationPreservation <> IT':131 var
+R3972:3973 nameless.DBComputationPreservation <> IT:125 var
+R3986:3996 nameless.DBComputationPreservation <> computation:1 ind
+R4019:4022 nameless.DBSyntax <> TInd constr
+R4036:4036 nameless.DBComputationPreservation <> x:130 var
+R4034:4034 nameless.DBComputationPreservation <> i:129 var
+R4032:4032 nameless.DBComputationPreservation <> s:128 var
+R4030:4030 nameless.DBComputationPreservation <> P:127 var
+R4028:4028 nameless.DBComputationPreservation <> D:126 var
+R4024:4026 nameless.DBComputationPreservation <> IT':131 var
+R3999:4002 nameless.DBSyntax <> TInd constr
+R4015:4015 nameless.DBComputationPreservation <> x:130 var
+R4013:4013 nameless.DBComputationPreservation <> i:129 var
+R4011:4011 nameless.DBComputationPreservation <> s:128 var
+R4009:4009 nameless.DBComputationPreservation <> P:127 var
+R4007:4007 nameless.DBComputationPreservation <> D:126 var
+R4004:4005 nameless.DBComputationPreservation <> IT:125 var
+binder 4061:4062 <> IT:132
+binder 4064:4064 <> D:133
+binder 4066:4066 <> P:134
+binder 4068:4068 <> s:135
+binder 4070:4070 <> i:136
+binder 4072:4072 <> x:137
+binder 4074:4075 <> D':138
+R4094:4101 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4078:4088 nameless.DBComputationPreservation <> computation:1 ind
+R4092:4093 nameless.DBComputationPreservation <> D':138 var
+R4090:4090 nameless.DBComputationPreservation <> D:133 var
+R4102:4112 nameless.DBComputationPreservation <> computation:1 ind
+R4135:4138 nameless.DBSyntax <> TInd constr
+R4152:4152 nameless.DBComputationPreservation <> x:137 var
+R4150:4150 nameless.DBComputationPreservation <> i:136 var
+R4148:4148 nameless.DBComputationPreservation <> s:135 var
+R4146:4146 nameless.DBComputationPreservation <> P:134 var
+R4143:4144 nameless.DBComputationPreservation <> D':138 var
+R4140:4141 nameless.DBComputationPreservation <> IT:132 var
+R4115:4118 nameless.DBSyntax <> TInd constr
+R4131:4131 nameless.DBComputationPreservation <> x:137 var
+R4129:4129 nameless.DBComputationPreservation <> i:136 var
+R4127:4127 nameless.DBComputationPreservation <> s:135 var
+R4125:4125 nameless.DBComputationPreservation <> P:134 var
+R4123:4123 nameless.DBComputationPreservation <> D:133 var
+R4120:4121 nameless.DBComputationPreservation <> IT:132 var
+binder 4177:4178 <> IT:139
+binder 4180:4180 <> D:140
+binder 4182:4182 <> P:141
+binder 4184:4184 <> s:142
+binder 4186:4186 <> i:143
+binder 4188:4188 <> x:144
+binder 4190:4191 <> P':145
+R4210:4217 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4194:4204 nameless.DBComputationPreservation <> computation:1 ind
+R4208:4209 nameless.DBComputationPreservation <> P':145 var
+R4206:4206 nameless.DBComputationPreservation <> P:141 var
+R4218:4228 nameless.DBComputationPreservation <> computation:1 ind
+R4251:4254 nameless.DBSyntax <> TInd constr
+R4268:4268 nameless.DBComputationPreservation <> x:144 var
+R4266:4266 nameless.DBComputationPreservation <> i:143 var
+R4264:4264 nameless.DBComputationPreservation <> s:142 var
+R4261:4262 nameless.DBComputationPreservation <> P':145 var
+R4259:4259 nameless.DBComputationPreservation <> D:140 var
+R4256:4257 nameless.DBComputationPreservation <> IT:139 var
+R4231:4234 nameless.DBSyntax <> TInd constr
+R4247:4247 nameless.DBComputationPreservation <> x:144 var
+R4245:4245 nameless.DBComputationPreservation <> i:143 var
+R4243:4243 nameless.DBComputationPreservation <> s:142 var
+R4241:4241 nameless.DBComputationPreservation <> P:141 var
+R4239:4239 nameless.DBComputationPreservation <> D:140 var
+R4236:4237 nameless.DBComputationPreservation <> IT:139 var
+binder 4293:4294 <> IT:146
+binder 4296:4296 <> D:147
+binder 4298:4298 <> P:148
+binder 4300:4300 <> s:149
+binder 4302:4302 <> i:150
+binder 4304:4304 <> x:151
+binder 4306:4307 <> s':152
+R4326:4333 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4310:4320 nameless.DBComputationPreservation <> computation:1 ind
+R4324:4325 nameless.DBComputationPreservation <> s':152 var
+R4322:4322 nameless.DBComputationPreservation <> s:149 var
+R4334:4344 nameless.DBComputationPreservation <> computation:1 ind
+R4367:4370 nameless.DBSyntax <> TInd constr
+R4384:4384 nameless.DBComputationPreservation <> x:151 var
+R4382:4382 nameless.DBComputationPreservation <> i:150 var
+R4379:4380 nameless.DBComputationPreservation <> s':152 var
+R4377:4377 nameless.DBComputationPreservation <> P:148 var
+R4375:4375 nameless.DBComputationPreservation <> D:147 var
+R4372:4373 nameless.DBComputationPreservation <> IT:146 var
+R4347:4350 nameless.DBSyntax <> TInd constr
+R4363:4363 nameless.DBComputationPreservation <> x:151 var
+R4361:4361 nameless.DBComputationPreservation <> i:150 var
+R4359:4359 nameless.DBComputationPreservation <> s:149 var
+R4357:4357 nameless.DBComputationPreservation <> P:148 var
+R4355:4355 nameless.DBComputationPreservation <> D:147 var
+R4352:4353 nameless.DBComputationPreservation <> IT:146 var
+binder 4409:4410 <> IT:153
+binder 4412:4412 <> D:154
+binder 4414:4414 <> P:155
+binder 4416:4416 <> s:156
+binder 4418:4418 <> i:157
+binder 4420:4420 <> x:158
+binder 4422:4423 <> i':159
+R4442:4449 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4426:4436 nameless.DBComputationPreservation <> computation:1 ind
+R4440:4441 nameless.DBComputationPreservation <> i':159 var
+R4438:4438 nameless.DBComputationPreservation <> i:157 var
+R4450:4460 nameless.DBComputationPreservation <> computation:1 ind
+R4483:4486 nameless.DBSyntax <> TInd constr
+R4500:4500 nameless.DBComputationPreservation <> x:158 var
+R4497:4498 nameless.DBComputationPreservation <> i':159 var
+R4495:4495 nameless.DBComputationPreservation <> s:156 var
+R4493:4493 nameless.DBComputationPreservation <> P:155 var
+R4491:4491 nameless.DBComputationPreservation <> D:154 var
+R4488:4489 nameless.DBComputationPreservation <> IT:153 var
+R4463:4466 nameless.DBSyntax <> TInd constr
+R4479:4479 nameless.DBComputationPreservation <> x:158 var
+R4477:4477 nameless.DBComputationPreservation <> i:157 var
+R4475:4475 nameless.DBComputationPreservation <> s:156 var
+R4473:4473 nameless.DBComputationPreservation <> P:155 var
+R4471:4471 nameless.DBComputationPreservation <> D:154 var
+R4468:4469 nameless.DBComputationPreservation <> IT:153 var
+binder 4525:4526 <> IT:160
+binder 4528:4528 <> D:161
+binder 4530:4530 <> P:162
+binder 4532:4532 <> s:163
+binder 4534:4534 <> i:164
+binder 4536:4536 <> x:165
+binder 4538:4539 <> x':166
+R4558:4565 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4542:4552 nameless.DBComputationPreservation <> computation:1 ind
+R4556:4557 nameless.DBComputationPreservation <> x':166 var
+R4554:4554 nameless.DBComputationPreservation <> x:165 var
+R4566:4576 nameless.DBComputationPreservation <> computation:1 ind
+R4599:4602 nameless.DBSyntax <> TInd constr
+R4615:4616 nameless.DBComputationPreservation <> x':166 var
+R4613:4613 nameless.DBComputationPreservation <> i:164 var
+R4611:4611 nameless.DBComputationPreservation <> s:163 var
+R4609:4609 nameless.DBComputationPreservation <> P:162 var
+R4607:4607 nameless.DBComputationPreservation <> D:161 var
+R4604:4605 nameless.DBComputationPreservation <> IT:160 var
+R4579:4582 nameless.DBSyntax <> TInd constr
+R4595:4595 nameless.DBComputationPreservation <> x:165 var
+R4593:4593 nameless.DBComputationPreservation <> i:164 var
+R4591:4591 nameless.DBComputationPreservation <> s:163 var
+R4589:4589 nameless.DBComputationPreservation <> P:162 var
+R4587:4587 nameless.DBComputationPreservation <> D:161 var
+R4584:4585 nameless.DBComputationPreservation <> IT:160 var
+binder 4643:4644 <> IT:167
+binder 4646:4646 <> D:168
+binder 4648:4648 <> X:169
+binder 4650:4650 <> x:170
+binder 4652:4652 <> P:171
+binder 4654:4656 <> IT':172
+R4677:4684 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4659:4669 nameless.DBComputationPreservation <> computation:1 ind
+R4674:4676 nameless.DBComputationPreservation <> IT':172 var
+R4671:4672 nameless.DBComputationPreservation <> IT:167 var
+R4685:4695 nameless.DBComputationPreservation <> computation:1 ind
+R4717:4721 nameless.DBSyntax <> TIAll constr
+R4733:4733 nameless.DBComputationPreservation <> P:171 var
+R4731:4731 nameless.DBComputationPreservation <> x:170 var
+R4729:4729 nameless.DBComputationPreservation <> X:169 var
+R4727:4727 nameless.DBComputationPreservation <> D:168 var
+R4723:4725 nameless.DBComputationPreservation <> IT':172 var
+R4698:4702 nameless.DBSyntax <> TIAll constr
+R4713:4713 nameless.DBComputationPreservation <> P:171 var
+R4711:4711 nameless.DBComputationPreservation <> x:170 var
+R4709:4709 nameless.DBComputationPreservation <> X:169 var
+R4707:4707 nameless.DBComputationPreservation <> D:168 var
+R4704:4705 nameless.DBComputationPreservation <> IT:167 var
+binder 4759:4760 <> IT:173
+binder 4762:4762 <> D:174
+binder 4764:4764 <> X:175
+binder 4766:4766 <> x:176
+binder 4768:4768 <> P:177
+binder 4770:4771 <> D':178
+R4790:4797 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4774:4784 nameless.DBComputationPreservation <> computation:1 ind
+R4788:4789 nameless.DBComputationPreservation <> D':178 var
+R4786:4786 nameless.DBComputationPreservation <> D:174 var
+R4798:4808 nameless.DBComputationPreservation <> computation:1 ind
+R4830:4834 nameless.DBSyntax <> TIAll constr
+R4846:4846 nameless.DBComputationPreservation <> P:177 var
+R4844:4844 nameless.DBComputationPreservation <> x:176 var
+R4842:4842 nameless.DBComputationPreservation <> X:175 var
+R4839:4840 nameless.DBComputationPreservation <> D':178 var
+R4836:4837 nameless.DBComputationPreservation <> IT:173 var
+R4811:4815 nameless.DBSyntax <> TIAll constr
+R4826:4826 nameless.DBComputationPreservation <> P:177 var
+R4824:4824 nameless.DBComputationPreservation <> x:176 var
+R4822:4822 nameless.DBComputationPreservation <> X:175 var
+R4820:4820 nameless.DBComputationPreservation <> D:174 var
+R4817:4818 nameless.DBComputationPreservation <> IT:173 var
+binder 4872:4873 <> IT:179
+binder 4875:4875 <> D:180
+binder 4877:4877 <> X:181
+binder 4879:4879 <> x:182
+binder 4881:4881 <> P:183
+binder 4883:4884 <> X':184
+R4903:4910 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4887:4897 nameless.DBComputationPreservation <> computation:1 ind
+R4901:4902 nameless.DBComputationPreservation <> X':184 var
+R4899:4899 nameless.DBComputationPreservation <> X:181 var
+R4911:4921 nameless.DBComputationPreservation <> computation:1 ind
+R4943:4947 nameless.DBSyntax <> TIAll constr
+R4959:4959 nameless.DBComputationPreservation <> P:183 var
+R4957:4957 nameless.DBComputationPreservation <> x:182 var
+R4954:4955 nameless.DBComputationPreservation <> X':184 var
+R4952:4952 nameless.DBComputationPreservation <> D:180 var
+R4949:4950 nameless.DBComputationPreservation <> IT:179 var
+R4924:4928 nameless.DBSyntax <> TIAll constr
+R4939:4939 nameless.DBComputationPreservation <> P:183 var
+R4937:4937 nameless.DBComputationPreservation <> x:182 var
+R4935:4935 nameless.DBComputationPreservation <> X:181 var
+R4933:4933 nameless.DBComputationPreservation <> D:180 var
+R4930:4931 nameless.DBComputationPreservation <> IT:179 var
+binder 4985:4986 <> IT:185
+binder 4988:4988 <> D:186
+binder 4990:4990 <> X:187
+binder 4992:4992 <> x:188
+binder 4994:4994 <> P:189
+binder 4996:4997 <> x':190
+R5016:5023 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5000:5010 nameless.DBComputationPreservation <> computation:1 ind
+R5014:5015 nameless.DBComputationPreservation <> x':190 var
+R5012:5012 nameless.DBComputationPreservation <> x:188 var
+R5024:5034 nameless.DBComputationPreservation <> computation:1 ind
+R5056:5060 nameless.DBSyntax <> TIAll constr
+R5072:5072 nameless.DBComputationPreservation <> P:189 var
+R5069:5070 nameless.DBComputationPreservation <> x':190 var
+R5067:5067 nameless.DBComputationPreservation <> X:187 var
+R5065:5065 nameless.DBComputationPreservation <> D:186 var
+R5062:5063 nameless.DBComputationPreservation <> IT:185 var
+R5037:5041 nameless.DBSyntax <> TIAll constr
+R5052:5052 nameless.DBComputationPreservation <> P:189 var
+R5050:5050 nameless.DBComputationPreservation <> x:188 var
+R5048:5048 nameless.DBComputationPreservation <> X:187 var
+R5046:5046 nameless.DBComputationPreservation <> D:186 var
+R5043:5044 nameless.DBComputationPreservation <> IT:185 var
+binder 5098:5099 <> IT:191
+binder 5101:5101 <> D:192
+binder 5103:5103 <> X:193
+binder 5105:5105 <> x:194
+binder 5107:5107 <> P:195
+binder 5109:5110 <> P':196
+R5129:5136 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5113:5123 nameless.DBComputationPreservation <> computation:1 ind
+R5127:5128 nameless.DBComputationPreservation <> P':196 var
+R5125:5125 nameless.DBComputationPreservation <> P:195 var
+R5137:5147 nameless.DBComputationPreservation <> computation:1 ind
+R5169:5173 nameless.DBSyntax <> TIAll constr
+R5184:5185 nameless.DBComputationPreservation <> P':196 var
+R5182:5182 nameless.DBComputationPreservation <> x:194 var
+R5180:5180 nameless.DBComputationPreservation <> X:193 var
+R5178:5178 nameless.DBComputationPreservation <> D:192 var
+R5175:5176 nameless.DBComputationPreservation <> IT:191 var
+R5150:5154 nameless.DBSyntax <> TIAll constr
+R5165:5165 nameless.DBComputationPreservation <> P:195 var
+R5163:5163 nameless.DBComputationPreservation <> x:194 var
+R5161:5161 nameless.DBComputationPreservation <> X:193 var
+R5159:5159 nameless.DBComputationPreservation <> D:192 var
+R5156:5157 nameless.DBComputationPreservation <> IT:191 var
+binder 5212:5213 <> IT:197
+binder 5215:5215 <> D:198
+binder 5217:5217 <> X:199
+binder 5219:5219 <> P:200
+binder 5221:5221 <> h:201
+binder 5223:5223 <> x:202
+binder 5225:5227 <> IT':203
+R5248:5255 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5230:5240 nameless.DBComputationPreservation <> computation:1 ind
+R5245:5247 nameless.DBComputationPreservation <> IT':203 var
+R5242:5243 nameless.DBComputationPreservation <> IT:197 var
+R5256:5266 nameless.DBComputationPreservation <> computation:1 ind
+R5290:5294 nameless.DBSyntax <> THyps constr
+R5308:5308 nameless.DBComputationPreservation <> x:202 var
+R5306:5306 nameless.DBComputationPreservation <> h:201 var
+R5304:5304 nameless.DBComputationPreservation <> P:200 var
+R5302:5302 nameless.DBComputationPreservation <> X:199 var
+R5300:5300 nameless.DBComputationPreservation <> D:198 var
+R5296:5298 nameless.DBComputationPreservation <> IT':203 var
+R5269:5273 nameless.DBSyntax <> THyps constr
+R5286:5286 nameless.DBComputationPreservation <> x:202 var
+R5284:5284 nameless.DBComputationPreservation <> h:201 var
+R5282:5282 nameless.DBComputationPreservation <> P:200 var
+R5280:5280 nameless.DBComputationPreservation <> X:199 var
+R5278:5278 nameless.DBComputationPreservation <> D:198 var
+R5275:5276 nameless.DBComputationPreservation <> IT:197 var
+binder 5334:5335 <> IT:204
+binder 5337:5337 <> D:205
+binder 5339:5339 <> X:206
+binder 5341:5341 <> P:207
+binder 5343:5343 <> h:208
+binder 5345:5345 <> x:209
+binder 5347:5348 <> D':210
+R5367:5374 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5351:5361 nameless.DBComputationPreservation <> computation:1 ind
+R5365:5366 nameless.DBComputationPreservation <> D':210 var
+R5363:5363 nameless.DBComputationPreservation <> D:205 var
+R5375:5385 nameless.DBComputationPreservation <> computation:1 ind
+R5409:5413 nameless.DBSyntax <> THyps constr
+R5427:5427 nameless.DBComputationPreservation <> x:209 var
+R5425:5425 nameless.DBComputationPreservation <> h:208 var
+R5423:5423 nameless.DBComputationPreservation <> P:207 var
+R5421:5421 nameless.DBComputationPreservation <> X:206 var
+R5418:5419 nameless.DBComputationPreservation <> D':210 var
+R5415:5416 nameless.DBComputationPreservation <> IT:204 var
+R5388:5392 nameless.DBSyntax <> THyps constr
+R5405:5405 nameless.DBComputationPreservation <> x:209 var
+R5403:5403 nameless.DBComputationPreservation <> h:208 var
+R5401:5401 nameless.DBComputationPreservation <> P:207 var
+R5399:5399 nameless.DBComputationPreservation <> X:206 var
+R5397:5397 nameless.DBComputationPreservation <> D:205 var
+R5394:5395 nameless.DBComputationPreservation <> IT:204 var
+binder 5453:5454 <> IT:211
+binder 5456:5456 <> D:212
+binder 5458:5458 <> X:213
+binder 5460:5460 <> P:214
+binder 5462:5462 <> h:215
+binder 5464:5464 <> x:216
+binder 5466:5467 <> X':217
+R5486:5493 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5470:5480 nameless.DBComputationPreservation <> computation:1 ind
+R5484:5485 nameless.DBComputationPreservation <> X':217 var
+R5482:5482 nameless.DBComputationPreservation <> X:213 var
+R5494:5504 nameless.DBComputationPreservation <> computation:1 ind
+R5528:5532 nameless.DBSyntax <> THyps constr
+R5546:5546 nameless.DBComputationPreservation <> x:216 var
+R5544:5544 nameless.DBComputationPreservation <> h:215 var
+R5542:5542 nameless.DBComputationPreservation <> P:214 var
+R5539:5540 nameless.DBComputationPreservation <> X':217 var
+R5537:5537 nameless.DBComputationPreservation <> D:212 var
+R5534:5535 nameless.DBComputationPreservation <> IT:211 var
+R5507:5511 nameless.DBSyntax <> THyps constr
+R5524:5524 nameless.DBComputationPreservation <> x:216 var
+R5522:5522 nameless.DBComputationPreservation <> h:215 var
+R5520:5520 nameless.DBComputationPreservation <> P:214 var
+R5518:5518 nameless.DBComputationPreservation <> X:213 var
+R5516:5516 nameless.DBComputationPreservation <> D:212 var
+R5513:5514 nameless.DBComputationPreservation <> IT:211 var
+binder 5572:5573 <> IT:218
+binder 5575:5575 <> D:219
+binder 5577:5577 <> X:220
+binder 5579:5579 <> P:221
+binder 5581:5581 <> h:222
+binder 5583:5583 <> x:223
+binder 5585:5586 <> P':224
+R5605:5612 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5589:5599 nameless.DBComputationPreservation <> computation:1 ind
+R5603:5604 nameless.DBComputationPreservation <> P':224 var
+R5601:5601 nameless.DBComputationPreservation <> P:221 var
+R5613:5623 nameless.DBComputationPreservation <> computation:1 ind
+R5647:5651 nameless.DBSyntax <> THyps constr
+R5665:5665 nameless.DBComputationPreservation <> x:223 var
+R5663:5663 nameless.DBComputationPreservation <> h:222 var
+R5660:5661 nameless.DBComputationPreservation <> P':224 var
+R5658:5658 nameless.DBComputationPreservation <> X:220 var
+R5656:5656 nameless.DBComputationPreservation <> D:219 var
+R5653:5654 nameless.DBComputationPreservation <> IT:218 var
+R5626:5630 nameless.DBSyntax <> THyps constr
+R5643:5643 nameless.DBComputationPreservation <> x:223 var
+R5641:5641 nameless.DBComputationPreservation <> h:222 var
+R5639:5639 nameless.DBComputationPreservation <> P:221 var
+R5637:5637 nameless.DBComputationPreservation <> X:220 var
+R5635:5635 nameless.DBComputationPreservation <> D:219 var
+R5632:5633 nameless.DBComputationPreservation <> IT:218 var
+binder 5691:5692 <> IT:225
+binder 5694:5694 <> D:226
+binder 5696:5696 <> X:227
+binder 5698:5698 <> P:228
+binder 5700:5700 <> h:229
+binder 5702:5702 <> x:230
+binder 5704:5705 <> h':231
+R5724:5731 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5708:5718 nameless.DBComputationPreservation <> computation:1 ind
+R5722:5723 nameless.DBComputationPreservation <> h':231 var
+R5720:5720 nameless.DBComputationPreservation <> h:229 var
+R5732:5742 nameless.DBComputationPreservation <> computation:1 ind
+R5766:5770 nameless.DBSyntax <> THyps constr
+R5784:5784 nameless.DBComputationPreservation <> x:230 var
+R5781:5782 nameless.DBComputationPreservation <> h':231 var
+R5779:5779 nameless.DBComputationPreservation <> P:228 var
+R5777:5777 nameless.DBComputationPreservation <> X:227 var
+R5775:5775 nameless.DBComputationPreservation <> D:226 var
+R5772:5773 nameless.DBComputationPreservation <> IT:225 var
+R5745:5749 nameless.DBSyntax <> THyps constr
+R5762:5762 nameless.DBComputationPreservation <> x:230 var
+R5760:5760 nameless.DBComputationPreservation <> h:229 var
+R5758:5758 nameless.DBComputationPreservation <> P:228 var
+R5756:5756 nameless.DBComputationPreservation <> X:227 var
+R5754:5754 nameless.DBComputationPreservation <> D:226 var
+R5751:5752 nameless.DBComputationPreservation <> IT:225 var
+binder 5810:5811 <> IT:232
+binder 5813:5813 <> D:233
+binder 5815:5815 <> X:234
+binder 5817:5817 <> P:235
+binder 5819:5819 <> h:236
+binder 5821:5821 <> x:237
+binder 5823:5824 <> x':238
+R5843:5850 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5827:5837 nameless.DBComputationPreservation <> computation:1 ind
+R5841:5842 nameless.DBComputationPreservation <> x':238 var
+R5839:5839 nameless.DBComputationPreservation <> x:237 var
+R5851:5861 nameless.DBComputationPreservation <> computation:1 ind
+R5885:5889 nameless.DBSyntax <> THyps constr
+R5902:5903 nameless.DBComputationPreservation <> x':238 var
+R5900:5900 nameless.DBComputationPreservation <> h:236 var
+R5898:5898 nameless.DBComputationPreservation <> P:235 var
+R5896:5896 nameless.DBComputationPreservation <> X:234 var
+R5894:5894 nameless.DBComputationPreservation <> D:233 var
+R5891:5892 nameless.DBComputationPreservation <> IT:232 var
+R5864:5868 nameless.DBSyntax <> THyps constr
+R5881:5881 nameless.DBComputationPreservation <> x:237 var
+R5879:5879 nameless.DBComputationPreservation <> h:236 var
+R5877:5877 nameless.DBComputationPreservation <> P:235 var
+R5875:5875 nameless.DBComputationPreservation <> X:234 var
+R5873:5873 nameless.DBComputationPreservation <> D:233 var
+R5870:5871 nameless.DBComputationPreservation <> IT:232 var
+binder 5931:5932 <> IT:239
+binder 5934:5934 <> F:240
+binder 5936:5936 <> G:241
+binder 5938:5940 <> IT':242
+R5961:5968 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5943:5953 nameless.DBComputationPreservation <> computation:1 ind
+R5958:5960 nameless.DBComputationPreservation <> IT':242 var
+R5955:5956 nameless.DBComputationPreservation <> IT:239 var
+R5969:5979 nameless.DBComputationPreservation <> computation:1 ind
+R5998:6003 nameless.DBSyntax <> TClose constr
+R6011:6011 nameless.DBComputationPreservation <> G:241 var
+R6009:6009 nameless.DBComputationPreservation <> F:240 var
+R6005:6007 nameless.DBComputationPreservation <> IT':242 var
+R5982:5987 nameless.DBSyntax <> TClose constr
+R5994:5994 nameless.DBComputationPreservation <> G:241 var
+R5992:5992 nameless.DBComputationPreservation <> F:240 var
+R5989:5990 nameless.DBComputationPreservation <> IT:239 var
+binder 6038:6039 <> IT:243
+binder 6041:6041 <> F:244
+binder 6043:6043 <> G:245
+binder 6045:6046 <> F':246
+R6065:6072 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6049:6059 nameless.DBComputationPreservation <> computation:1 ind
+R6063:6064 nameless.DBComputationPreservation <> F':246 var
+R6061:6061 nameless.DBComputationPreservation <> F:244 var
+R6073:6083 nameless.DBComputationPreservation <> computation:1 ind
+R6102:6107 nameless.DBSyntax <> TClose constr
+R6115:6115 nameless.DBComputationPreservation <> G:245 var
+R6112:6113 nameless.DBComputationPreservation <> F':246 var
+R6109:6110 nameless.DBComputationPreservation <> IT:243 var
+R6086:6091 nameless.DBSyntax <> TClose constr
+R6098:6098 nameless.DBComputationPreservation <> G:245 var
+R6096:6096 nameless.DBComputationPreservation <> F:244 var
+R6093:6094 nameless.DBComputationPreservation <> IT:243 var
+binder 6142:6143 <> IT:247
+binder 6145:6145 <> F:248
+binder 6147:6147 <> G:249
+binder 6149:6150 <> G':250
+R6169:6176 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6153:6163 nameless.DBComputationPreservation <> computation:1 ind
+R6167:6168 nameless.DBComputationPreservation <> G':250 var
+R6165:6165 nameless.DBComputationPreservation <> G:249 var
+R6177:6187 nameless.DBComputationPreservation <> computation:1 ind
+R6206:6211 nameless.DBSyntax <> TClose constr
+R6218:6219 nameless.DBComputationPreservation <> G':250 var
+R6216:6216 nameless.DBComputationPreservation <> F:248 var
+R6213:6214 nameless.DBComputationPreservation <> IT:247 var
+R6190:6195 nameless.DBSyntax <> TClose constr
+R6202:6202 nameless.DBComputationPreservation <> G:249 var
+R6200:6200 nameless.DBComputationPreservation <> F:248 var
+R6197:6198 nameless.DBComputationPreservation <> IT:247 var
+binder 6251:6251 <> k:251
+binder 6253:6254 <> IT:252
+binder 6256:6256 <> F:253
+binder 6258:6258 <> G:254
+binder 6260:6260 <> i:255
+binder 6262:6262 <> Q:256
+binder 6264:6264 <> b:257
+binder 6266:6266 <> x:258
+binder 6268:6270 <> IT':259
+R6291:6298 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6273:6283 nameless.DBComputationPreservation <> computation:1 ind
+R6288:6290 nameless.DBComputationPreservation <> IT':259 var
+R6285:6286 nameless.DBComputationPreservation <> IT:252 var
+R6299:6309 nameless.DBComputationPreservation <> computation:1 ind
+R6342:6351 nameless.DBSyntax <> TCloseCase constr
+R6369:6369 nameless.DBComputationPreservation <> x:258 var
+R6367:6367 nameless.DBComputationPreservation <> b:257 var
+R6365:6365 nameless.DBComputationPreservation <> Q:256 var
+R6363:6363 nameless.DBComputationPreservation <> i:255 var
+R6361:6361 nameless.DBComputationPreservation <> G:254 var
+R6359:6359 nameless.DBComputationPreservation <> F:253 var
+R6355:6357 nameless.DBComputationPreservation <> IT':259 var
+R6353:6353 nameless.DBComputationPreservation <> k:251 var
+R6312:6321 nameless.DBSyntax <> TCloseCase constr
+R6338:6338 nameless.DBComputationPreservation <> x:258 var
+R6336:6336 nameless.DBComputationPreservation <> b:257 var
+R6334:6334 nameless.DBComputationPreservation <> Q:256 var
+R6332:6332 nameless.DBComputationPreservation <> i:255 var
+R6330:6330 nameless.DBComputationPreservation <> G:254 var
+R6328:6328 nameless.DBComputationPreservation <> F:253 var
+R6325:6326 nameless.DBComputationPreservation <> IT:252 var
+R6323:6323 nameless.DBComputationPreservation <> k:251 var
+binder 6400:6400 <> k:260
+binder 6402:6403 <> IT:261
+binder 6405:6405 <> F:262
+binder 6407:6407 <> G:263
+binder 6409:6409 <> i:264
+binder 6411:6411 <> Q:265
+binder 6413:6413 <> b:266
+binder 6415:6415 <> x:267
+binder 6417:6418 <> F':268
+R6437:6444 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6421:6431 nameless.DBComputationPreservation <> computation:1 ind
+R6435:6436 nameless.DBComputationPreservation <> F':268 var
+R6433:6433 nameless.DBComputationPreservation <> F:262 var
+R6445:6455 nameless.DBComputationPreservation <> computation:1 ind
+R6488:6497 nameless.DBSyntax <> TCloseCase constr
+R6515:6515 nameless.DBComputationPreservation <> x:267 var
+R6513:6513 nameless.DBComputationPreservation <> b:266 var
+R6511:6511 nameless.DBComputationPreservation <> Q:265 var
+R6509:6509 nameless.DBComputationPreservation <> i:264 var
+R6507:6507 nameless.DBComputationPreservation <> G:263 var
+R6504:6505 nameless.DBComputationPreservation <> F':268 var
+R6501:6502 nameless.DBComputationPreservation <> IT:261 var
+R6499:6499 nameless.DBComputationPreservation <> k:260 var
+R6458:6467 nameless.DBSyntax <> TCloseCase constr
+R6484:6484 nameless.DBComputationPreservation <> x:267 var
+R6482:6482 nameless.DBComputationPreservation <> b:266 var
+R6480:6480 nameless.DBComputationPreservation <> Q:265 var
+R6478:6478 nameless.DBComputationPreservation <> i:264 var
+R6476:6476 nameless.DBComputationPreservation <> G:263 var
+R6474:6474 nameless.DBComputationPreservation <> F:262 var
+R6471:6472 nameless.DBComputationPreservation <> IT:261 var
+R6469:6469 nameless.DBComputationPreservation <> k:260 var
+binder 6546:6546 <> k:269
+binder 6548:6549 <> IT:270
+binder 6551:6551 <> F:271
+binder 6553:6553 <> G:272
+binder 6555:6555 <> i:273
+binder 6557:6557 <> Q:274
+binder 6559:6559 <> b:275
+binder 6561:6561 <> x:276
+binder 6563:6564 <> G':277
+R6583:6590 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6567:6577 nameless.DBComputationPreservation <> computation:1 ind
+R6581:6582 nameless.DBComputationPreservation <> G':277 var
+R6579:6579 nameless.DBComputationPreservation <> G:272 var
+R6591:6601 nameless.DBComputationPreservation <> computation:1 ind
+R6634:6643 nameless.DBSyntax <> TCloseCase constr
+R6661:6661 nameless.DBComputationPreservation <> x:276 var
+R6659:6659 nameless.DBComputationPreservation <> b:275 var
+R6657:6657 nameless.DBComputationPreservation <> Q:274 var
+R6655:6655 nameless.DBComputationPreservation <> i:273 var
+R6652:6653 nameless.DBComputationPreservation <> G':277 var
+R6650:6650 nameless.DBComputationPreservation <> F:271 var
+R6647:6648 nameless.DBComputationPreservation <> IT:270 var
+R6645:6645 nameless.DBComputationPreservation <> k:269 var
+R6604:6613 nameless.DBSyntax <> TCloseCase constr
+R6630:6630 nameless.DBComputationPreservation <> x:276 var
+R6628:6628 nameless.DBComputationPreservation <> b:275 var
+R6626:6626 nameless.DBComputationPreservation <> Q:274 var
+R6624:6624 nameless.DBComputationPreservation <> i:273 var
+R6622:6622 nameless.DBComputationPreservation <> G:272 var
+R6620:6620 nameless.DBComputationPreservation <> F:271 var
+R6617:6618 nameless.DBComputationPreservation <> IT:270 var
+R6615:6615 nameless.DBComputationPreservation <> k:269 var
+binder 6692:6692 <> k:278
+binder 6694:6695 <> IT:279
+binder 6697:6697 <> F:280
+binder 6699:6699 <> G:281
+binder 6701:6701 <> i:282
+binder 6703:6703 <> Q:283
+binder 6705:6705 <> b:284
+binder 6707:6707 <> x:285
+binder 6709:6710 <> i':286
+R6729:6736 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6713:6723 nameless.DBComputationPreservation <> computation:1 ind
+R6727:6728 nameless.DBComputationPreservation <> i':286 var
+R6725:6725 nameless.DBComputationPreservation <> i:282 var
+R6737:6747 nameless.DBComputationPreservation <> computation:1 ind
+R6780:6789 nameless.DBSyntax <> TCloseCase constr
+R6807:6807 nameless.DBComputationPreservation <> x:285 var
+R6805:6805 nameless.DBComputationPreservation <> b:284 var
+R6803:6803 nameless.DBComputationPreservation <> Q:283 var
+R6800:6801 nameless.DBComputationPreservation <> i':286 var
+R6798:6798 nameless.DBComputationPreservation <> G:281 var
+R6796:6796 nameless.DBComputationPreservation <> F:280 var
+R6793:6794 nameless.DBComputationPreservation <> IT:279 var
+R6791:6791 nameless.DBComputationPreservation <> k:278 var
+R6750:6759 nameless.DBSyntax <> TCloseCase constr
+R6776:6776 nameless.DBComputationPreservation <> x:285 var
+R6774:6774 nameless.DBComputationPreservation <> b:284 var
+R6772:6772 nameless.DBComputationPreservation <> Q:283 var
+R6770:6770 nameless.DBComputationPreservation <> i:282 var
+R6768:6768 nameless.DBComputationPreservation <> G:281 var
+R6766:6766 nameless.DBComputationPreservation <> F:280 var
+R6763:6764 nameless.DBComputationPreservation <> IT:279 var
+R6761:6761 nameless.DBComputationPreservation <> k:278 var
+binder 6838:6838 <> k:287
+binder 6840:6841 <> IT:288
+binder 6843:6843 <> F:289
+binder 6845:6845 <> G:290
+binder 6847:6847 <> i:291
+binder 6849:6849 <> Q:292
+binder 6851:6851 <> b:293
+binder 6853:6853 <> x:294
+binder 6855:6856 <> Q':295
+R6875:6882 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6859:6869 nameless.DBComputationPreservation <> computation:1 ind
+R6873:6874 nameless.DBComputationPreservation <> Q':295 var
+R6871:6871 nameless.DBComputationPreservation <> Q:292 var
+R6883:6893 nameless.DBComputationPreservation <> computation:1 ind
+R6926:6935 nameless.DBSyntax <> TCloseCase constr
+R6953:6953 nameless.DBComputationPreservation <> x:294 var
+R6951:6951 nameless.DBComputationPreservation <> b:293 var
+R6948:6949 nameless.DBComputationPreservation <> Q':295 var
+R6946:6946 nameless.DBComputationPreservation <> i:291 var
+R6944:6944 nameless.DBComputationPreservation <> G:290 var
+R6942:6942 nameless.DBComputationPreservation <> F:289 var
+R6939:6940 nameless.DBComputationPreservation <> IT:288 var
+R6937:6937 nameless.DBComputationPreservation <> k:287 var
+R6896:6905 nameless.DBSyntax <> TCloseCase constr
+R6922:6922 nameless.DBComputationPreservation <> x:294 var
+R6920:6920 nameless.DBComputationPreservation <> b:293 var
+R6918:6918 nameless.DBComputationPreservation <> Q:292 var
+R6916:6916 nameless.DBComputationPreservation <> i:291 var
+R6914:6914 nameless.DBComputationPreservation <> G:290 var
+R6912:6912 nameless.DBComputationPreservation <> F:289 var
+R6909:6910 nameless.DBComputationPreservation <> IT:288 var
+R6907:6907 nameless.DBComputationPreservation <> k:287 var
+binder 6984:6984 <> k:296
+binder 6986:6987 <> IT:297
+binder 6989:6989 <> F:298
+binder 6991:6991 <> G:299
+binder 6993:6993 <> i:300
+binder 6995:6995 <> Q:301
+binder 6997:6997 <> b:302
+binder 6999:6999 <> x:303
+binder 7001:7002 <> b':304
+R7021:7028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7005:7015 nameless.DBComputationPreservation <> computation:1 ind
+R7019:7020 nameless.DBComputationPreservation <> b':304 var
+R7017:7017 nameless.DBComputationPreservation <> b:302 var
+R7029:7039 nameless.DBComputationPreservation <> computation:1 ind
+R7072:7081 nameless.DBSyntax <> TCloseCase constr
+R7099:7099 nameless.DBComputationPreservation <> x:303 var
+R7096:7097 nameless.DBComputationPreservation <> b':304 var
+R7094:7094 nameless.DBComputationPreservation <> Q:301 var
+R7092:7092 nameless.DBComputationPreservation <> i:300 var
+R7090:7090 nameless.DBComputationPreservation <> G:299 var
+R7088:7088 nameless.DBComputationPreservation <> F:298 var
+R7085:7086 nameless.DBComputationPreservation <> IT:297 var
+R7083:7083 nameless.DBComputationPreservation <> k:296 var
+R7042:7051 nameless.DBSyntax <> TCloseCase constr
+R7068:7068 nameless.DBComputationPreservation <> x:303 var
+R7066:7066 nameless.DBComputationPreservation <> b:302 var
+R7064:7064 nameless.DBComputationPreservation <> Q:301 var
+R7062:7062 nameless.DBComputationPreservation <> i:300 var
+R7060:7060 nameless.DBComputationPreservation <> G:299 var
+R7058:7058 nameless.DBComputationPreservation <> F:298 var
+R7055:7056 nameless.DBComputationPreservation <> IT:297 var
+R7053:7053 nameless.DBComputationPreservation <> k:296 var
+binder 7130:7130 <> k:305
+binder 7132:7133 <> IT:306
+binder 7135:7135 <> F:307
+binder 7137:7137 <> G:308
+binder 7139:7139 <> i:309
+binder 7141:7141 <> Q:310
+binder 7143:7143 <> b:311
+binder 7145:7145 <> x:312
+binder 7147:7148 <> x':313
+R7167:7174 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7151:7161 nameless.DBComputationPreservation <> computation:1 ind
+R7165:7166 nameless.DBComputationPreservation <> x':313 var
+R7163:7163 nameless.DBComputationPreservation <> x:312 var
+R7175:7185 nameless.DBComputationPreservation <> computation:1 ind
+R7218:7227 nameless.DBSyntax <> TCloseCase constr
+R7244:7245 nameless.DBComputationPreservation <> x':313 var
+R7242:7242 nameless.DBComputationPreservation <> b:311 var
+R7240:7240 nameless.DBComputationPreservation <> Q:310 var
+R7238:7238 nameless.DBComputationPreservation <> i:309 var
+R7236:7236 nameless.DBComputationPreservation <> G:308 var
+R7234:7234 nameless.DBComputationPreservation <> F:307 var
+R7231:7232 nameless.DBComputationPreservation <> IT:306 var
+R7229:7229 nameless.DBComputationPreservation <> k:305 var
+R7188:7197 nameless.DBSyntax <> TCloseCase constr
+R7214:7214 nameless.DBComputationPreservation <> x:312 var
+R7212:7212 nameless.DBComputationPreservation <> b:311 var
+R7210:7210 nameless.DBComputationPreservation <> Q:310 var
+R7208:7208 nameless.DBComputationPreservation <> i:309 var
+R7206:7206 nameless.DBComputationPreservation <> G:308 var
+R7204:7204 nameless.DBComputationPreservation <> F:307 var
+R7201:7202 nameless.DBComputationPreservation <> IT:306 var
+R7199:7199 nameless.DBComputationPreservation <> k:305 var
+binder 7276:7277 <> IT:314
+binder 7279:7279 <> G:315
+binder 7281:7281 <> P:316
+binder 7283:7283 <> s:317
+binder 7285:7285 <> F:318
+binder 7287:7287 <> i:319
+binder 7289:7289 <> x:320
+binder 7291:7293 <> IT':321
+R7314:7321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7296:7306 nameless.DBComputationPreservation <> computation:1 ind
+R7311:7313 nameless.DBComputationPreservation <> IT':321 var
+R7308:7309 nameless.DBComputationPreservation <> IT:314 var
+R7322:7332 nameless.DBComputationPreservation <> computation:1 ind
+R7362:7370 nameless.DBSyntax <> TCloseInd constr
+R7386:7386 nameless.DBComputationPreservation <> x:320 var
+R7384:7384 nameless.DBComputationPreservation <> i:319 var
+R7382:7382 nameless.DBComputationPreservation <> F:318 var
+R7380:7380 nameless.DBComputationPreservation <> s:317 var
+R7378:7378 nameless.DBComputationPreservation <> P:316 var
+R7376:7376 nameless.DBComputationPreservation <> G:315 var
+R7372:7374 nameless.DBComputationPreservation <> IT':321 var
+R7335:7343 nameless.DBSyntax <> TCloseInd constr
+R7358:7358 nameless.DBComputationPreservation <> x:320 var
+R7356:7356 nameless.DBComputationPreservation <> i:319 var
+R7354:7354 nameless.DBComputationPreservation <> F:318 var
+R7352:7352 nameless.DBComputationPreservation <> s:317 var
+R7350:7350 nameless.DBComputationPreservation <> P:316 var
+R7348:7348 nameless.DBComputationPreservation <> G:315 var
+R7345:7346 nameless.DBComputationPreservation <> IT:314 var
+binder 7416:7417 <> IT:322
+binder 7419:7419 <> G:323
+binder 7421:7421 <> P:324
+binder 7423:7423 <> s:325
+binder 7425:7425 <> F:326
+binder 7427:7427 <> i:327
+binder 7429:7429 <> x:328
+binder 7431:7432 <> G':329
+R7451:7458 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7435:7445 nameless.DBComputationPreservation <> computation:1 ind
+R7449:7450 nameless.DBComputationPreservation <> G':329 var
+R7447:7447 nameless.DBComputationPreservation <> G:323 var
+R7459:7469 nameless.DBComputationPreservation <> computation:1 ind
+R7499:7507 nameless.DBSyntax <> TCloseInd constr
+R7523:7523 nameless.DBComputationPreservation <> x:328 var
+R7521:7521 nameless.DBComputationPreservation <> i:327 var
+R7519:7519 nameless.DBComputationPreservation <> F:326 var
+R7517:7517 nameless.DBComputationPreservation <> s:325 var
+R7515:7515 nameless.DBComputationPreservation <> P:324 var
+R7512:7513 nameless.DBComputationPreservation <> G':329 var
+R7509:7510 nameless.DBComputationPreservation <> IT:322 var
+R7472:7480 nameless.DBSyntax <> TCloseInd constr
+R7495:7495 nameless.DBComputationPreservation <> x:328 var
+R7493:7493 nameless.DBComputationPreservation <> i:327 var
+R7491:7491 nameless.DBComputationPreservation <> F:326 var
+R7489:7489 nameless.DBComputationPreservation <> s:325 var
+R7487:7487 nameless.DBComputationPreservation <> P:324 var
+R7485:7485 nameless.DBComputationPreservation <> G:323 var
+R7482:7483 nameless.DBComputationPreservation <> IT:322 var
+binder 7553:7554 <> IT:330
+binder 7556:7556 <> G:331
+binder 7558:7558 <> P:332
+binder 7560:7560 <> s:333
+binder 7562:7562 <> F:334
+binder 7564:7564 <> i:335
+binder 7566:7566 <> x:336
+binder 7568:7569 <> P':337
+R7588:7595 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7572:7582 nameless.DBComputationPreservation <> computation:1 ind
+R7586:7587 nameless.DBComputationPreservation <> P':337 var
+R7584:7584 nameless.DBComputationPreservation <> P:332 var
+R7596:7606 nameless.DBComputationPreservation <> computation:1 ind
+R7636:7644 nameless.DBSyntax <> TCloseInd constr
+R7660:7660 nameless.DBComputationPreservation <> x:336 var
+R7658:7658 nameless.DBComputationPreservation <> i:335 var
+R7656:7656 nameless.DBComputationPreservation <> F:334 var
+R7654:7654 nameless.DBComputationPreservation <> s:333 var
+R7651:7652 nameless.DBComputationPreservation <> P':337 var
+R7649:7649 nameless.DBComputationPreservation <> G:331 var
+R7646:7647 nameless.DBComputationPreservation <> IT:330 var
+R7609:7617 nameless.DBSyntax <> TCloseInd constr
+R7632:7632 nameless.DBComputationPreservation <> x:336 var
+R7630:7630 nameless.DBComputationPreservation <> i:335 var
+R7628:7628 nameless.DBComputationPreservation <> F:334 var
+R7626:7626 nameless.DBComputationPreservation <> s:333 var
+R7624:7624 nameless.DBComputationPreservation <> P:332 var
+R7622:7622 nameless.DBComputationPreservation <> G:331 var
+R7619:7620 nameless.DBComputationPreservation <> IT:330 var
+binder 7690:7691 <> IT:338
+binder 7693:7693 <> G:339
+binder 7695:7695 <> P:340
+binder 7697:7697 <> s:341
+binder 7699:7699 <> F:342
+binder 7701:7701 <> i:343
+binder 7703:7703 <> x:344
+binder 7705:7706 <> s':345
+R7725:7732 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7709:7719 nameless.DBComputationPreservation <> computation:1 ind
+R7723:7724 nameless.DBComputationPreservation <> s':345 var
+R7721:7721 nameless.DBComputationPreservation <> s:341 var
+R7733:7743 nameless.DBComputationPreservation <> computation:1 ind
+R7773:7781 nameless.DBSyntax <> TCloseInd constr
+R7797:7797 nameless.DBComputationPreservation <> x:344 var
+R7795:7795 nameless.DBComputationPreservation <> i:343 var
+R7793:7793 nameless.DBComputationPreservation <> F:342 var
+R7790:7791 nameless.DBComputationPreservation <> s':345 var
+R7788:7788 nameless.DBComputationPreservation <> P:340 var
+R7786:7786 nameless.DBComputationPreservation <> G:339 var
+R7783:7784 nameless.DBComputationPreservation <> IT:338 var
+R7746:7754 nameless.DBSyntax <> TCloseInd constr
+R7769:7769 nameless.DBComputationPreservation <> x:344 var
+R7767:7767 nameless.DBComputationPreservation <> i:343 var
+R7765:7765 nameless.DBComputationPreservation <> F:342 var
+R7763:7763 nameless.DBComputationPreservation <> s:341 var
+R7761:7761 nameless.DBComputationPreservation <> P:340 var
+R7759:7759 nameless.DBComputationPreservation <> G:339 var
+R7756:7757 nameless.DBComputationPreservation <> IT:338 var
+binder 7827:7828 <> IT:346
+binder 7830:7830 <> G:347
+binder 7832:7832 <> P:348
+binder 7834:7834 <> s:349
+binder 7836:7836 <> F:350
+binder 7838:7838 <> i:351
+binder 7840:7840 <> x:352
+binder 7842:7843 <> F':353
+R7862:7869 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7846:7856 nameless.DBComputationPreservation <> computation:1 ind
+R7860:7861 nameless.DBComputationPreservation <> F':353 var
+R7858:7858 nameless.DBComputationPreservation <> F:350 var
+R7870:7880 nameless.DBComputationPreservation <> computation:1 ind
+R7910:7918 nameless.DBSyntax <> TCloseInd constr
+R7934:7934 nameless.DBComputationPreservation <> x:352 var
+R7932:7932 nameless.DBComputationPreservation <> i:351 var
+R7929:7930 nameless.DBComputationPreservation <> F':353 var
+R7927:7927 nameless.DBComputationPreservation <> s:349 var
+R7925:7925 nameless.DBComputationPreservation <> P:348 var
+R7923:7923 nameless.DBComputationPreservation <> G:347 var
+R7920:7921 nameless.DBComputationPreservation <> IT:346 var
+R7883:7891 nameless.DBSyntax <> TCloseInd constr
+R7906:7906 nameless.DBComputationPreservation <> x:352 var
+R7904:7904 nameless.DBComputationPreservation <> i:351 var
+R7902:7902 nameless.DBComputationPreservation <> F:350 var
+R7900:7900 nameless.DBComputationPreservation <> s:349 var
+R7898:7898 nameless.DBComputationPreservation <> P:348 var
+R7896:7896 nameless.DBComputationPreservation <> G:347 var
+R7893:7894 nameless.DBComputationPreservation <> IT:346 var
+binder 7964:7965 <> IT:354
+binder 7967:7967 <> G:355
+binder 7969:7969 <> P:356
+binder 7971:7971 <> s:357
+binder 7973:7973 <> F:358
+binder 7975:7975 <> i:359
+binder 7977:7977 <> x:360
+binder 7979:7980 <> i':361
+R7999:8006 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7983:7993 nameless.DBComputationPreservation <> computation:1 ind
+R7997:7998 nameless.DBComputationPreservation <> i':361 var
+R7995:7995 nameless.DBComputationPreservation <> i:359 var
+R8007:8017 nameless.DBComputationPreservation <> computation:1 ind
+R8047:8055 nameless.DBSyntax <> TCloseInd constr
+R8071:8071 nameless.DBComputationPreservation <> x:360 var
+R8068:8069 nameless.DBComputationPreservation <> i':361 var
+R8066:8066 nameless.DBComputationPreservation <> F:358 var
+R8064:8064 nameless.DBComputationPreservation <> s:357 var
+R8062:8062 nameless.DBComputationPreservation <> P:356 var
+R8060:8060 nameless.DBComputationPreservation <> G:355 var
+R8057:8058 nameless.DBComputationPreservation <> IT:354 var
+R8020:8028 nameless.DBSyntax <> TCloseInd constr
+R8043:8043 nameless.DBComputationPreservation <> x:360 var
+R8041:8041 nameless.DBComputationPreservation <> i:359 var
+R8039:8039 nameless.DBComputationPreservation <> F:358 var
+R8037:8037 nameless.DBComputationPreservation <> s:357 var
+R8035:8035 nameless.DBComputationPreservation <> P:356 var
+R8033:8033 nameless.DBComputationPreservation <> G:355 var
+R8030:8031 nameless.DBComputationPreservation <> IT:354 var
+binder 8101:8102 <> IT:362
+binder 8104:8104 <> G:363
+binder 8106:8106 <> P:364
+binder 8108:8108 <> s:365
+binder 8110:8110 <> F:366
+binder 8112:8112 <> i:367
+binder 8114:8114 <> x:368
+binder 8116:8117 <> x':369
+R8136:8143 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8120:8130 nameless.DBComputationPreservation <> computation:1 ind
+R8134:8135 nameless.DBComputationPreservation <> x':369 var
+R8132:8132 nameless.DBComputationPreservation <> x:368 var
+R8144:8154 nameless.DBComputationPreservation <> computation:1 ind
+R8184:8192 nameless.DBSyntax <> TCloseInd constr
+R8207:8208 nameless.DBComputationPreservation <> x':369 var
+R8205:8205 nameless.DBComputationPreservation <> i:367 var
+R8203:8203 nameless.DBComputationPreservation <> F:366 var
+R8201:8201 nameless.DBComputationPreservation <> s:365 var
+R8199:8199 nameless.DBComputationPreservation <> P:364 var
+R8197:8197 nameless.DBComputationPreservation <> G:363 var
+R8194:8195 nameless.DBComputationPreservation <> IT:362 var
+R8157:8165 nameless.DBSyntax <> TCloseInd constr
+R8180:8180 nameless.DBComputationPreservation <> x:368 var
+R8178:8178 nameless.DBComputationPreservation <> i:367 var
+R8176:8176 nameless.DBComputationPreservation <> F:366 var
+R8174:8174 nameless.DBComputationPreservation <> s:365 var
+R8172:8172 nameless.DBComputationPreservation <> P:364 var
+R8170:8170 nameless.DBComputationPreservation <> G:363 var
+R8167:8168 nameless.DBComputationPreservation <> IT:362 var
+scheme 272:282 <> computation_ind
+scheme 272:282 <> computation_sind
+prf 8219:8239 <> computation_reduction
+binder 8250:8250 <> t:370
+binder 8252:8252 <> u:371
+R8270:8273 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8255:8265 nameless.DBComputationPreservation <> computation ind
+R8267:8267 nameless.DBComputationPreservation <> t:370 var
+R8269:8269 nameless.DBComputationPreservation <> u:371 var
+R8274:8282 nameless.DBCore <> reduction ind
+R8286:8286 nameless.DBComputationPreservation <> u:371 var
+R8284:8284 nameless.DBComputationPreservation <> t:370 var
+prf 8368:8389 <> computation_conversion
+binder 8400:8400 <> t:372
+binder 8402:8402 <> u:373
+R8420:8423 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8405:8415 nameless.DBComputationPreservation <> computation ind
+R8417:8417 nameless.DBComputationPreservation <> t:372 var
+R8419:8419 nameless.DBComputationPreservation <> u:373 var
+R8424:8427 nameless.DBCore <> conv ind
+R8431:8431 nameless.DBComputationPreservation <> u:373 var
+R8429:8429 nameless.DBComputationPreservation <> t:372 var
+R8455:8474 nameless.DBWeakening <> reduction_conversion thm
+R8477:8497 nameless.DBComputationPreservation <> computation_reduction thm
+R8455:8474 nameless.DBWeakening <> reduction_conversion thm
+R8477:8497 nameless.DBComputationPreservation <> computation_reduction thm
+R9125:9130 nameless.DBTyping <> typing ind
+R9235:9240 nameless.DBTyping <> typing ind
+R9345:9350 nameless.DBTyping <> typing ind
+prf 9440:9463 <> computation_preservation
+binder 9474:9478 <> Gamma:374
+binder 9480:9480 <> t:375
+binder 9482:9482 <> T:376
+R9503:9506 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9487:9492 nameless.DBTyping <> typing ind
+R9494:9498 nameless.DBComputationPreservation <> Gamma:374 var
+R9500:9500 nameless.DBComputationPreservation <> t:375 var
+R9502:9502 nameless.DBComputationPreservation <> T:376 var
+binder 9514:9514 <> u:377
+R9532:9535 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9517:9527 nameless.DBComputationPreservation <> computation ind
+R9529:9529 nameless.DBComputationPreservation <> t:375 var
+R9531:9531 nameless.DBComputationPreservation <> u:377 var
+R9536:9541 nameless.DBTyping <> typing ind
+R9543:9547 nameless.DBComputationPreservation <> Gamma:374 var
+R9549:9549 nameless.DBComputationPreservation <> u:377 var
+R9551:9551 nameless.DBComputationPreservation <> T:376 var
+R9645:9648 nameless.DBCore <> conv ind
+R9645:9648 nameless.DBCore <> conv ind
+binder 9669:9669 <> u:378
+R9688:9691 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9672:9682 nameless.DBComputationPreservation <> computation ind
+R9687:9687 nameless.DBComputationPreservation <> u:378 var
+R9692:9697 nameless.DBTyping <> typing ind
+R9702:9702 nameless.DBComputationPreservation <> u:378 var
+binder 9669:9669 <> u:379
+R9688:9691 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9672:9682 nameless.DBComputationPreservation <> computation ind
+R9687:9687 nameless.DBComputationPreservation <> u:379 var
+R9692:9697 nameless.DBTyping <> typing ind
+R9702:9702 nameless.DBComputationPreservation <> u:379 var
+R9710:9715 nameless.DBTyping <> typing ind
+R9710:9715 nameless.DBTyping <> typing ind
+R9741:9747 nameless.DBTyping <> ty_conv constr
+R9741:9747 nameless.DBTyping <> ty_conv constr
+R9840:9843 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R9840:9843 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+binder 9860:9860 <> u:380
+R9879:9882 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9863:9873 nameless.DBComputationPreservation <> computation ind
+R9878:9878 nameless.DBComputationPreservation <> u:380 var
+R9883:9888 nameless.DBTyping <> typing ind
+R9893:9893 nameless.DBComputationPreservation <> u:380 var
+R9896:9900 nameless.DBSyntax <> TSort constr
+binder 9860:9860 <> u:381
+R9879:9882 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9863:9873 nameless.DBComputationPreservation <> computation ind
+R9878:9878 nameless.DBComputationPreservation <> u:381 var
+R9883:9888 nameless.DBTyping <> typing ind
+R9893:9893 nameless.DBComputationPreservation <> u:381 var
+R9896:9900 nameless.DBSyntax <> TSort constr
+R9909:9914 nameless.DBTyping <> typing ind
+R9922:9926 nameless.DBSyntax <> TSort constr
+R9909:9914 nameless.DBTyping <> typing ind
+R9922:9926 nameless.DBSyntax <> TSort constr
+R9948:9955 nameless.DBTyping <> ty_cumul constr
+R9948:9955 nameless.DBTyping <> ty_cumul constr
+R10034:10044 nameless.DBTyping <> universe_le ind
+R10034:10044 nameless.DBTyping <> universe_le ind
+R10058:10068 nameless.DBTyping <> universe_le ind
+R10058:10068 nameless.DBTyping <> universe_le ind
+binder 10093:10093 <> u:382
+R10112:10115 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10096:10106 nameless.DBComputationPreservation <> computation ind
+R10111:10111 nameless.DBComputationPreservation <> u:382 var
+R10116:10121 nameless.DBTyping <> typing ind
+R10126:10126 nameless.DBComputationPreservation <> u:382 var
+R10129:10131 nameless.DBSyntax <> TPi constr
+binder 10093:10093 <> u:383
+R10112:10115 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10096:10106 nameless.DBComputationPreservation <> computation ind
+R10111:10111 nameless.DBComputationPreservation <> u:383 var
+R10116:10121 nameless.DBTyping <> typing ind
+R10126:10126 nameless.DBComputationPreservation <> u:383 var
+R10129:10131 nameless.DBSyntax <> TPi constr
+R10143:10148 nameless.DBTyping <> typing ind
+R10156:10158 nameless.DBSyntax <> TPi constr
+R10143:10148 nameless.DBTyping <> typing ind
+R10156:10158 nameless.DBSyntax <> TPi constr
+R10183:10194 nameless.DBTyping <> ty_cumul_fun constr
+R10183:10194 nameless.DBTyping <> ty_cumul_fun constr
+R10361:10363 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10347:10355 nameless.DBCore <> root_step def
+R10364:10367 Corelib.Init.Datatypes <> Some constr
+R10361:10363 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10347:10355 nameless.DBCore <> root_step def
+R10364:10367 Corelib.Init.Datatypes <> Some constr
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+R10393:10409 nameless.DBRootPreservation <> root_preservation thm
+R10441:10446 nameless.DBTyping <> typing ind
+binder 10550:10550 <> u:384
+R10571:10574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10553:10563 nameless.DBComputationPreservation <> computation ind
+R10570:10570 nameless.DBComputationPreservation <> u:384 var
+R10575:10580 nameless.DBTyping <> typing ind
+R10585:10585 nameless.DBComputationPreservation <> u:384 var
+binder 10550:10550 <> u:385
+R10571:10574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10553:10563 nameless.DBComputationPreservation <> computation ind
+R10570:10570 nameless.DBComputationPreservation <> u:385 var
+R10575:10580 nameless.DBTyping <> typing ind
+R10585:10585 nameless.DBComputationPreservation <> u:385 var
+R10600:10610 nameless.DBComputationPreservation <> computation ind
+R10600:10610 nameless.DBComputationPreservation <> computation ind
+R10746:10756 nameless.DBComputationPreservation <> computation ind
+R10746:10756 nameless.DBComputationPreservation <> computation ind
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10788:10808 nameless.DBComputationPreservation <> computation_reduction thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R10864:10872 nameless.DBDerivedTyping <> smart_ipi thm
+R10875:10884 nameless.DBDerivedTyping <> smart_isig thm
+R10887:10899 nameless.DBDerivedTyping <> smart_ichoice thm
+R10902:10907 nameless.DBTyping <> ty_epi constr
+R10914:10925 nameless.DBDerivedTyping <> smart_switch thm
+R10928:10936 nameless.DBTyping <> ty_interp constr
+R10939:10945 nameless.DBTyping <> ty_iall constr
+R10948:10956 nameless.DBDerivedTyping <> smart_mui thm
+R10959:10969 nameless.DBDerivedTyping <> smart_close thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11185:11193 nameless.DBDerivedTyping <> smart_mui thm
+R11202:11212 nameless.DBDerivedTyping <> smart_close thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11185:11193 nameless.DBDerivedTyping <> smart_mui thm
+R11202:11212 nameless.DBDerivedTyping <> smart_close thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11185:11193 nameless.DBDerivedTyping <> smart_mui thm
+R11202:11212 nameless.DBDerivedTyping <> smart_close thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11185:11193 nameless.DBDerivedTyping <> smart_mui thm
+R11202:11212 nameless.DBDerivedTyping <> smart_close thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11185:11193 nameless.DBDerivedTyping <> smart_mui thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11185:11193 nameless.DBDerivedTyping <> smart_mui thm
+R11202:11212 nameless.DBDerivedTyping <> smart_close thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11014:11020 nameless.DBTyping <> ty_conv constr
+R11042:11050 nameless.DBDerivedTyping <> smart_app thm
+R11059:11067 nameless.DBDerivedTyping <> smart_snd thm
+R11076:11087 nameless.DBDerivedTyping <> smart_switch thm
+R11096:11105 nameless.DBDerivedTyping <> smart_hyps thm
+R11121:11129 nameless.DBDerivedTyping <> smart_ind thm
+R11138:11153 nameless.DBDerivedTyping <> smart_close_case thm
+R11162:11176 nameless.DBDerivedTyping <> smart_close_ind thm
+R11303:11307 nameless.DBTyping <> ty_pi constr
+R11303:11307 nameless.DBTyping <> ty_pi constr
+R11336:11353 nameless.DBContexts <> context_conversion thm
+R11383:11402 nameless.DBWeakening <> reduction_conversion thm
+R11336:11353 nameless.DBContexts <> context_conversion thm
+R11383:11402 nameless.DBWeakening <> reduction_conversion thm
+R11438:11445 nameless.DBTyping <> ty_sigma constr
+R11438:11445 nameless.DBTyping <> ty_sigma constr
+R11474:11491 nameless.DBContexts <> context_conversion thm
+R11521:11540 nameless.DBWeakening <> reduction_conversion thm
+R11474:11491 nameless.DBContexts <> context_conversion thm
+R11521:11540 nameless.DBWeakening <> reduction_conversion thm
+R11580:11595 nameless.DBDerivedTyping <> sigma_components thm
+R11609:11615 Corelib.Init.Logic <> eq_refl constr
+R11580:11595 nameless.DBDerivedTyping <> sigma_components thm
+R11609:11615 Corelib.Init.Logic <> eq_refl constr
+R11649:11655 nameless.DBTyping <> ty_pair constr
+R11649:11655 nameless.DBTyping <> ty_pair constr
+R11693:11699 nameless.DBTyping <> ty_conv constr
+R11719:11730 nameless.DBSubstitution <> substitution thm
+R11693:11699 nameless.DBTyping <> ty_conv constr
+R11719:11730 nameless.DBSubstitution <> substitution thm
+prf 11791:11815 <> computations_preservation
+binder 11826:11826 <> t:386
+binder 11828:11828 <> u:387
+R11850:11855 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11831:11833 nameless.DBParallelBase <> rtc ind
+R11849:11849 nameless.DBComputationPreservation <> u:387 var
+R11847:11847 nameless.DBComputationPreservation <> t:386 var
+R11835:11845 nameless.DBComputationPreservation <> computation ind
+binder 11863:11867 <> Gamma:388
+binder 11869:11869 <> T:389
+R11888:11891 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11872:11877 nameless.DBTyping <> typing ind
+R11879:11883 nameless.DBComputationPreservation <> Gamma:388 var
+R11885:11885 nameless.DBComputationPreservation <> t:386 var
+R11887:11887 nameless.DBComputationPreservation <> T:389 var
+R11892:11897 nameless.DBTyping <> typing ind
+R11899:11903 nameless.DBComputationPreservation <> Gamma:388 var
+R11905:11905 nameless.DBComputationPreservation <> u:387 var
+R11907:11907 nameless.DBComputationPreservation <> T:389 var
+R11956:11979 nameless.DBComputationPreservation <> computation_preservation thm
+R11956:11979 nameless.DBComputationPreservation <> computation_preservation thm
+R11956:11979 nameless.DBComputationPreservation <> computation_preservation thm
+R12006:12029 nameless.DBComputationPreservation <> computation_preservation thm
