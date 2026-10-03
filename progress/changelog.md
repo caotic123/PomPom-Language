@@ -1,5 +1,13 @@
 # Proposal revision changelog
 
+## 2026-10-03 - Coherence proved
+
+- Proved `coercion_coherence` and `checking_coherence` with their original statements and no axioms. The two `Conjecture` declarations in `OpenSignaturesTheorems.v` are now theorems; 46 of the 47 original claims are proved and full preservation stays refuted.
+- Added a binary relational model on closed terms (`OpenSignaturesRel*.v`): conversion-closed PERs at structurally related types, a cumulative universe tower, description functors with least fixed points, close types, a fundamental lemma for all typing rules, and adequacy for `observational_eq`.
+- Added semantic coercion graphs with name-based row retagging, their functionality, totality and composition, and realizability of every coercion derivation.
+- Compared elaborations over contexts linked by related types, so case branches with syntactically different payload types are covered.
+- Registered the new files in `Makefile` and `_CoqProject`. The audit prints `Closed under the global context` for both theorems and for the full collection.
+
 ## 2026-09-30 - Explicit annotation repair in progress
 
 - Recorded the user's choice of explicit core annotations while retaining general eta contraction.

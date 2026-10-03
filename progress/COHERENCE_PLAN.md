@@ -1,10 +1,10 @@
 # Remaining coherence proofs
 
-`coercion_coherence` and `checking_coherence` retain their original
-statements and remain conjectures. The separate full-preservation claim is now refuted;
-its false axiom was removed. Strong normalization, consistency,
-subtyping soundness, and checking/synthesis soundness are all proved
-without assumptions. The original-claim count remains 44/47.
+**Done (2026-10-03).** `coercion_coherence` and `checking_coherence` are
+proved with their original statements and no axioms, through the binary
+relational model described in [RELATIONAL_PLAN.md](RELATIONAL_PLAN.md). The
+separate full-preservation claim is refuted. The original-claim count is now
+46/47. The notes below record the infrastructure that preceded the model.
 
 ## Independent observation library
 

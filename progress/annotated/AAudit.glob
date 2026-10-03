@@ -1,4 +1,4 @@
-DIGEST da7b111886a131ddf2ca7c67ab813c20
+DIGEST 63eb543a514db3bf5fcb542ec3e260e3
 Fannotated.AAudit
 R68:88 annotated.ARegression <> <> lib
 def 103:131 <> checked_annotated_foundations
@@ -47,4 +47,12 @@ R873:917 annotated.ARegression <> annotated_source_typing thm
 R924:964 annotated.ARegression <> bad_eta_has_no_root thm
 R971:1011 annotated.ARegression <> general_eta_allowed thm
 R1018:1078 annotated.ARegression <> annotation_erasure_is_not_eta_freshness thm
-R1101:1129 annotated.AAudit <> checked_annotated_foundations def
+R1091:1123 annotated.AStructuralPreservation <> <> lib
+def 1138:1167 <> checked_annotated_preservation
+R1174:1174 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1238:1242 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1306:1306 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1176:1237 annotated.AStructuralPreservation <> structural_root_preservation thm
+R1244:1305 annotated.AStructuralPreservation <> structural_step_preservation thm
+R1328:1356 annotated.AAudit <> checked_annotated_foundations def
+R1377:1406 annotated.AAudit <> checked_annotated_preservation def

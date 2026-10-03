@@ -20,9 +20,8 @@ capture-avoiding substitution, and an alpha-equivalence setoid. Terms can be
 interned with consecutive numeric IDs; alpha-equivalent terms share an ID
 within the same table. There is no hashing. See [STABLE_IDS.md](STABLE_IDS.md).
 
-Of the **47 original metatheory statements**, forty-four have proofs with no
-axiom dependencies, two coherence claims remain conjectures, and full
-preservation is refuted. No proved claims depend on conjectures. See [PROOF_STATUS.md](PROOF_STATUS.md) for the exact dependencies.
+Of the **47 original metatheory statements**, forty-six have proofs with no
+axiom dependencies and full preservation is refuted. No conjectures remain. See [PROOF_STATUS.md](PROOF_STATUS.md) for the exact dependencies.
 Progress, conversion joinability, confluence, and label uniqueness now have
 proofs without axiom dependencies. Operational preservation, evaluation
 preservation, and close-induction preservation are now also proved independently. Weakening, type correctness, substitution, closing substitution,
@@ -34,8 +33,9 @@ The semantic model covers cumulative universes, descriptions, positive fixed
 points, closure, and all primitive operators. The fundamental theorem and
 substitution reflection transfer normalization to the original named calculus.
 Consistency and all six previously conditional claims are now closed.
-[Full preservation is refuted](OpenSignaturesEtaPolymorphism.v); both
-coherence claims remain open. The confluence proof
+[Full preservation is refuted](OpenSignaturesEtaPolymorphism.v). Both
+coherence claims are proved through a binary relational model
+([RELATIONAL_PLAN.md](RELATIONAL_PLAN.md)). The confluence proof
 adapts the archived parallel-reduction method and proves its connection to
 named terms.
 
@@ -55,10 +55,10 @@ make -C progress open-signatures
 make -C progress audit-open-signatures
 ```
 
-The audit checks the proved claims, the two open claims, and the independent
-refutation of full preservation. It checks all closed dependencies in one
-collection and prints the two open coherence assumptions separately. Compiling a
-conjecture, or a theorem depending on one, does not discharge that assumption.
+The audit checks the proved claims and the independent refutation of full
+preservation. It checks all closed dependencies in one collection and prints
+the assumptions of the two coherence theorems separately; all print
+`Closed under the global context`.
 
 See [OpenSignatures.md](OpenSignatures.md) for the module map and
 [type-rules.md](type-rules.md) for the mathematical rules.

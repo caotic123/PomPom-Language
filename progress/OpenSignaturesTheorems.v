@@ -1,10 +1,12 @@
-(* Metatheory for the revised calculus. Conjectures remain explicit;
-   derived theorems may depend on them. OpenSignaturesAudit prints the
-   assumptions of every public claim. No conjecture defines the calculus. *)
+(* Metatheory for the revised calculus. No conjectures remain: the two
+   coherence statements are proved through the binary relational model in
+   OpenSignaturesRel*.v. OpenSignaturesAudit prints the assumptions of every
+   public claim. *)
 From Stdlib Require Import List Arith String Lia FMapFacts.
 Require Export OpenSignaturesExampleTyping OpenSignaturesSubtypingSoundness OpenSignaturesLabels OpenSignaturesObservers OpenSignaturesContexts OpenSignaturesCanonical OpenSignaturesDeadTyping OpenSignaturesNamedCanonical OpenSignaturesEndless OpenSignaturesContextInclusion OpenSignaturesClosedSubstitution OpenSignaturesPayloadInversion OpenSignaturesInductionBeta OpenSignaturesPreservation OpenSignaturesNormalization OpenSignaturesObservations.
 Import ListNotations.
 Require Export OpenSignaturesEtaPolymorphism.
+Require OpenSignaturesRelElab.
 Module VarMapFacts := FMapFacts.WFacts(VarMap).
 
 (* Context validity follows directly from the core typing rules.
@@ -289,14 +291,17 @@ Theorem close_roll_unroll :
     observational_eq Gamma (CloseAt IT F G i)
       (TIn (unroll IT F G i x)) x.
 Proof. exact close_roll_unroll_proof. Qed.
-Conjecture coercion_coherence :
+(* Proved through the binary relational model: OpenSignaturesRel*.v. *)
+Theorem coercion_coherence :
   forall Gamma A B c d,
     sub Gamma A B c -> sub Gamma A B d ->
     observational_eq Gamma (arrow A B) c d.
-Conjecture checking_coherence :
+Proof. exact OpenSignaturesRelCoercion.coercion_coherence_rel. Qed.
+Theorem checking_coherence :
   forall Gamma e A t u,
     elab_check Gamma e A t -> elab_check Gamma e A u ->
     observational_eq Gamma A t u.
+Proof. exact OpenSignaturesRelElab.checking_coherence_rel. Qed.
 
 (* Symbolic example proofs use the shared weakening premise. The closed
    singleton elaboration below is independent of metatheory conjectures. *)

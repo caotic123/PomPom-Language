@@ -1,7 +1,7 @@
 (* Bind each proof at its original point of name resolution, then traverse
    the shared dependency graph once. This avoids repeatedly scanning the
    normalization proof and preserves coverage despite later module imports.
-   Only the two open coherence claims are printed separately. *)
+   The two coherence theorems are also printed separately. *)
 (* Audit the new version without importing any legacy metatheory. *)
 Require Import OpenSignatures.
 

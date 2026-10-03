@@ -7,10 +7,11 @@ weakening, substitution, beta preservation, and counterexample regressions.
 Full annotated preservation and the public migration remain unfinished.
 The counts below continue to refer to the existing named calculus.
 
-Of the 47 original claims, **44 are proved without axioms, two remain open,
-and one is refuted**. Progress, operational preservation, and full beta/eta
-strong normalization are proved. Coercion coherence and checking coherence
-remain conjectures. No proved claims depend on conjectures.
+Of the 47 original claims, **46 are proved without axioms and one is
+refuted**. Progress, operational preservation, and full beta/eta strong
+normalization are proved. Coercion coherence and checking coherence are proved
+with their original statements through a binary relational model; see
+[RELATIONAL_PLAN.md](RELATIONAL_PLAN.md). No conjectures remain.
 
 `full_preservation` is false under the current rules, including function
 cumulativity. [OpenSignaturesEtaPolymorphism.v](OpenSignaturesEtaPolymorphism.v)
@@ -337,14 +338,26 @@ branch descriptions between convertible row views.
 [OpenSignaturesDescriptionCoherence.v](OpenSignaturesDescriptionCoherence.v)
 then proves conversion of any two description-coercion outputs on every closed
 typed input, covering identity, dead, and row coercions with differing row
-views. Contextual function extensionality and open closing environments remain;
-neither original coherence theorem has been discharged. See
-[COHERENCE_PLAN.md](COHERENCE_PLAN.md).
+views. These pointwise results do not give contextual equivalence by
+themselves.
+
+The original `coercion_coherence` and `checking_coherence` are proved in
+[OpenSignaturesTheorems.v](OpenSignaturesTheorems.v) from the binary relational
+model in `OpenSignaturesRel*.v`. The model relates closed terms by a
+conversion-closed PER at structurally related types, over a cumulative universe
+tower with descriptions, least fixed points and close types. Its fundamental
+lemma covers all typing rules, and adequacy turns relatedness into
+`observational_eq`. Coercions are compared through semantic coercion graphs
+that retag sum rows by name; composition of graphs eliminates transitivity
+semantically. Elaborations are compared over contexts linked by related types,
+which covers case branches whose payload types differ syntactically. Every new
+file is closed under the global context. See
+[RELATIONAL_PLAN.md](RELATIONAL_PLAN.md).
 
 ## Remaining work
 
-The remaining conjecture declarations are `coercion_coherence` and
-`checking_coherence`. Full preservation is refuted, not counted as proved.
+No conjecture declarations remain. Full preservation is refuted, not counted
+as proved.
 No new axioms or weakened theorem premises have been used to discharge claims.
 A choice of repaired specification is still needed. The concrete theorem
 `named_computation_preservation` in
@@ -373,8 +386,8 @@ make -C progress open-signatures check-bindings check-eta-cumulativity check-eta
 rocq check -silent -Q progress '' OpenSignaturesTheorems OpenSignaturesEtaRegression OpenSignaturesEtaPolymorphism
 ```
 
-The audit covers the 44 proved claims, both open coherence claims, the
-refutation of the remaining original proposition, and supporting results.
+The audit covers the 46 proved claims, the refutation of the remaining
+original proposition, and supporting results.
 A successful build does not eliminate printed assumptions. Section theorems
 such as `progress_from_conversion` close over their explicit joinability
 premise; the public `progress` theorem supplies the proved joinability theorem.
@@ -383,5 +396,5 @@ The audit binds all 247 closed proof/definition references at their original
 points of name resolution, then checks the combined dependency graph once.
 Later module imports cannot silently change which constant is audited. The
 collection must print `Closed under the global context`; the two coherence
-conjectures are printed separately. This retains all previous coverage while
+theorems are also printed separately and print the same. This retains all previous coverage while
 reducing the measured audit compilation from about 364 seconds to 6 seconds.

@@ -1,0 +1,1548 @@
+DIGEST 40b252e7dbf3c9bcf335fbf88b26e379
+Fannotated.AMacros
+R244:247 Stdlib.Lists.List <> <> lib
+R249:253 Stdlib.Arith.Arith <> <> lib
+R255:258 Stdlib.Bool.Bool <> <> lib
+R260:262 Stdlib.micromega.Lia <> <> lib
+R280:300 annotated.AGeneration <> <> lib
+R302:321 annotated.AFunctions <> <> lib
+R331:343 Stdlib.Lists.List ListNotations <> mod
+R362:376 nameless.DBCore <> <> mod
+mod 353:357 <> RCore
+R392:415 nameless.DBDerivedTyping <> <> mod
+mod 386:387 <> DT
+R431:459 nameless.DBOperatorFormations <> <> mod
+mod 425:426 <> RO
+R475:495 nameless.DBGeneration <> <> mod
+mod 469:470 <> RG
+def 575:585 <> afamily_app
+R597:600 annotated.ASyntax <> term ind
+binder 588:589 <> IT:1
+binder 591:591 <> X:2
+binder 593:593 <> a:3
+R605:608 annotated.ASyntax <> term ind
+R613:616 annotated.ASyntax <> TApp constr
+R618:619 annotated.AMacros <> IT:1 var
+R622:626 annotated.ASyntax <> TSort constr
+R631:631 annotated.AMacros <> X:2 var
+R633:633 annotated.AMacros <> a:3 var
+def 672:679 <> adef_app
+R691:694 annotated.ASyntax <> term ind
+binder 682:683 <> IT:4
+binder 685:685 <> D:5
+binder 687:687 <> a:6
+R699:702 annotated.ASyntax <> term ind
+R707:710 annotated.ASyntax <> TApp constr
+R712:713 annotated.AMacros <> IT:4 var
+R716:721 annotated.ASyntax <> TIDesc constr
+R724:727 annotated.ASyntax <> lift def
+R733:734 annotated.AMacros <> IT:4 var
+R738:738 annotated.AMacros <> D:5 var
+R740:740 annotated.AMacros <> a:6 var
+def 777:784 <> aCloseAt
+R798:801 annotated.ASyntax <> term ind
+binder 787:788 <> IT:7
+binder 790:790 <> F:8
+binder 792:792 <> G:9
+binder 794:794 <> i:10
+R806:809 annotated.ASyntax <> term ind
+R816:819 annotated.ASyntax <> TApp constr
+R821:822 annotated.AMacros <> IT:7 var
+R825:829 annotated.ASyntax <> TSort constr
+R835:840 annotated.ASyntax <> TClose constr
+R842:843 annotated.AMacros <> IT:7 var
+R845:845 annotated.AMacros <> F:8 var
+R847:847 annotated.AMacros <> G:9 var
+R850:850 annotated.AMacros <> i:10 var
+def 882:886 <> aMuAt
+R898:901 annotated.ASyntax <> term ind
+binder 889:890 <> IT:11
+binder 892:892 <> D:12
+binder 894:894 <> i:13
+R906:909 annotated.ASyntax <> term ind
+R914:917 annotated.ASyntax <> TApp constr
+R919:920 annotated.AMacros <> IT:11 var
+R923:927 annotated.ASyntax <> TSort constr
+R933:936 annotated.ASyntax <> TMuI constr
+R938:939 annotated.AMacros <> IT:11 var
+R941:941 annotated.AMacros <> D:12 var
+R944:944 annotated.AMacros <> i:13 var
+def 958:965 <> acarrier
+R975:978 annotated.ASyntax <> term ind
+binder 968:969 <> IT:14
+binder 971:971 <> G:15
+R983:986 annotated.ASyntax <> term ind
+R991:996 annotated.ASyntax <> TClose constr
+R998:999 annotated.AMacros <> IT:14 var
+R1001:1001 annotated.AMacros <> G:15 var
+R1003:1003 annotated.AMacros <> G:15 var
+def 1017:1024 <> apayload
+R1038:1041 annotated.ASyntax <> term ind
+binder 1027:1028 <> IT:16
+binder 1030:1030 <> F:17
+binder 1032:1032 <> G:18
+binder 1034:1034 <> i:19
+R1046:1049 annotated.ASyntax <> term ind
+R1056:1062 annotated.ASyntax <> TInterp constr
+R1064:1065 annotated.AMacros <> IT:16 var
+R1068:1075 annotated.AMacros <> adef_app def
+R1077:1078 annotated.AMacros <> IT:16 var
+R1080:1080 annotated.AMacros <> F:17 var
+R1082:1082 annotated.AMacros <> i:19 var
+R1086:1093 annotated.AMacros <> acarrier def
+R1095:1096 annotated.AMacros <> IT:16 var
+R1098:1098 annotated.AMacros <> G:18 var
+def 1147:1150 <> aDef
+R1158:1161 annotated.ASyntax <> term ind
+binder 1153:1154 <> IT:20
+R1166:1169 annotated.ASyntax <> term ind
+R1174:1176 annotated.ASyntax <> TPi constr
+R1178:1179 annotated.AMacros <> IT:20 var
+R1182:1187 annotated.ASyntax <> TIDesc constr
+R1190:1193 annotated.ASyntax <> lift def
+R1199:1200 annotated.AMacros <> IT:20 var
+def 1236:1241 <> atotal
+R1251:1254 annotated.ASyntax <> term ind
+binder 1244:1245 <> IT:21
+binder 1247:1247 <> X:22
+R1259:1262 annotated.ASyntax <> term ind
+R1269:1274 annotated.ASyntax <> TSigma constr
+R1276:1277 annotated.AMacros <> IT:21 var
+R1280:1290 annotated.AMacros <> afamily_app def
+R1293:1296 annotated.ASyntax <> lift def
+R1302:1303 annotated.AMacros <> IT:21 var
+R1307:1310 annotated.ASyntax <> lift def
+R1316:1316 annotated.AMacros <> X:22 var
+R1320:1323 annotated.ASyntax <> TVar constr
+def 1341:1347 <> amotive
+R1357:1360 annotated.ASyntax <> term ind
+binder 1350:1351 <> IT:23
+binder 1353:1353 <> X:24
+R1365:1368 annotated.ASyntax <> term ind
+R1373:1375 annotated.ASyntax <> TPi constr
+R1378:1383 annotated.AMacros <> atotal def
+R1385:1386 annotated.AMacros <> IT:23 var
+R1388:1388 annotated.AMacros <> X:24 var
+R1392:1396 annotated.ASyntax <> TSort constr
+def 1492:1500 <> arec_pair
+R1510:1513 annotated.ASyntax <> term ind
+binder 1503:1504 <> IT:25
+binder 1506:1506 <> X:26
+R1518:1521 annotated.ASyntax <> term ind
+R1528:1532 annotated.ASyntax <> TPair constr
+R1535:1538 annotated.ASyntax <> lift def
+R1544:1545 annotated.AMacros <> IT:25 var
+R1553:1563 annotated.AMacros <> afamily_app def
+R1566:1569 annotated.ASyntax <> lift def
+R1576:1579 annotated.ASyntax <> lift def
+R1585:1586 annotated.AMacros <> IT:25 var
+R1591:1594 annotated.ASyntax <> lift def
+R1601:1604 annotated.ASyntax <> lift def
+R1610:1610 annotated.AMacros <> X:26 var
+R1615:1618 annotated.ASyntax <> TVar constr
+R1629:1632 annotated.ASyntax <> TVar constr
+R1638:1641 annotated.ASyntax <> TVar constr
+def 1715:1727 <> arec_codomain
+R1739:1742 annotated.ASyntax <> term ind
+binder 1730:1731 <> IT:27
+binder 1733:1733 <> X:28
+binder 1735:1735 <> P:29
+R1747:1750 annotated.ASyntax <> term ind
+R1757:1759 annotated.ASyntax <> TPi constr
+R1762:1772 annotated.AMacros <> afamily_app def
+R1775:1778 annotated.ASyntax <> lift def
+R1784:1785 annotated.AMacros <> IT:27 var
+R1789:1792 annotated.ASyntax <> lift def
+R1798:1798 annotated.AMacros <> X:28 var
+R1802:1805 annotated.ASyntax <> TVar constr
+R1816:1819 annotated.ASyntax <> TApp constr
+R1822:1827 annotated.AMacros <> atotal def
+R1830:1833 annotated.ASyntax <> lift def
+R1839:1840 annotated.AMacros <> IT:27 var
+R1844:1847 annotated.ASyntax <> lift def
+R1853:1853 annotated.AMacros <> X:28 var
+R1858:1862 annotated.ASyntax <> TSort constr
+R1868:1871 annotated.ASyntax <> lift def
+R1877:1877 annotated.AMacros <> P:29 var
+R1887:1895 annotated.AMacros <> arec_pair def
+R1897:1898 annotated.AMacros <> IT:27 var
+R1900:1900 annotated.AMacros <> X:28 var
+def 1916:1932 <> arecursive_method
+R1944:1947 annotated.ASyntax <> term ind
+binder 1935:1936 <> IT:30
+binder 1938:1938 <> X:31
+binder 1940:1940 <> P:32
+R1952:1955 annotated.ASyntax <> term ind
+R1962:1964 annotated.ASyntax <> TPi constr
+R1966:1967 annotated.AMacros <> IT:30 var
+R1970:1982 annotated.AMacros <> arec_codomain def
+R1984:1985 annotated.AMacros <> IT:30 var
+R1987:1987 annotated.AMacros <> X:31 var
+R1989:1989 annotated.AMacros <> P:32 var
+def 2053:2064 <> atail_motive
+R2071:2073 Corelib.Init.Datatypes <> nat ind
+binder 2067:2067 <> k:33
+R2087:2090 annotated.ASyntax <> term ind
+binder 2077:2079 <> tag:34
+binder 2081:2081 <> E:35
+binder 2083:2083 <> P:36
+R2095:2098 annotated.ASyntax <> term ind
+R2105:2108 annotated.ASyntax <> TLam constr
+R2111:2116 annotated.ASyntax <> TEnumT constr
+R2118:2118 annotated.AMacros <> E:35 var
+R2122:2126 annotated.ASyntax <> TSort constr
+R2128:2128 annotated.AMacros <> k:33 var
+R2136:2139 annotated.ASyntax <> TApp constr
+R2142:2147 annotated.ASyntax <> TEnumT constr
+R2150:2155 annotated.ASyntax <> TConsE constr
+R2158:2161 annotated.ASyntax <> lift def
+R2167:2169 annotated.AMacros <> tag:34 var
+R2173:2176 annotated.ASyntax <> lift def
+R2182:2182 annotated.AMacros <> E:35 var
+R2188:2192 annotated.ASyntax <> TSort constr
+R2194:2194 annotated.AMacros <> k:33 var
+R2204:2207 annotated.ASyntax <> lift def
+R2213:2213 annotated.AMacros <> P:36 var
+R2217:2222 annotated.ASyntax <> TESucc constr
+R2225:2228 annotated.ASyntax <> lift def
+R2234:2236 annotated.AMacros <> tag:34 var
+R2240:2243 annotated.ASyntax <> lift def
+R2249:2249 annotated.AMacros <> E:35 var
+R2253:2256 annotated.ASyntax <> TVar constr
+def 2317:2324 <> aproduct
+R2333:2336 annotated.ASyntax <> term ind
+binder 2327:2327 <> A:37
+binder 2329:2329 <> B:38
+R2341:2344 annotated.ASyntax <> term ind
+R2349:2354 annotated.ASyntax <> TSigma constr
+R2356:2356 annotated.AMacros <> A:37 var
+R2359:2362 annotated.ASyntax <> lift def
+R2368:2368 annotated.AMacros <> B:38 var
+def 2383:2388 <> aarrow
+R2397:2400 annotated.ASyntax <> term ind
+binder 2391:2391 <> A:39
+binder 2393:2393 <> B:40
+R2405:2408 annotated.ASyntax <> term ind
+R2413:2415 annotated.ASyntax <> TPi constr
+R2417:2417 annotated.AMacros <> A:39 var
+R2420:2423 annotated.ASyntax <> lift def
+R2429:2429 annotated.AMacros <> B:40 var
+def 2444:2447 <> abot
+R2451:2454 annotated.ASyntax <> term ind
+R2459:2464 annotated.ASyntax <> TEnumT constr
+R2466:2470 annotated.ASyntax <> TNilE constr
+def 2555:2570 <> adesc_app_binder
+R2582:2585 annotated.ASyntax <> term ind
+binder 2573:2574 <> IT:41
+binder 2576:2576 <> A:42
+binder 2578:2578 <> D:43
+R2590:2593 annotated.ASyntax <> term ind
+R2600:2603 annotated.ASyntax <> TApp constr
+R2606:2609 annotated.ASyntax <> lift def
+R2615:2615 annotated.AMacros <> A:42 var
+R2619:2624 annotated.ASyntax <> TIDesc constr
+R2627:2630 annotated.ASyntax <> lift def
+R2636:2637 annotated.AMacros <> IT:41 var
+R2642:2645 annotated.ASyntax <> lift def
+R2651:2651 annotated.AMacros <> D:43 var
+R2655:2658 annotated.ASyntax <> TVar constr
+def 2675:2695 <> adesc_app_binder_enum
+R2707:2710 annotated.ASyntax <> term ind
+binder 2698:2699 <> IT:44
+binder 2701:2701 <> E:45
+binder 2703:2703 <> D:46
+R2715:2718 annotated.ASyntax <> term ind
+R2725:2728 annotated.ASyntax <> TApp constr
+R2731:2736 annotated.ASyntax <> TEnumT constr
+R2739:2742 annotated.ASyntax <> lift def
+R2748:2748 annotated.AMacros <> E:45 var
+R2753:2758 annotated.ASyntax <> TIDesc constr
+R2761:2764 annotated.ASyntax <> lift def
+R2770:2771 annotated.AMacros <> IT:44 var
+R2776:2779 annotated.ASyntax <> lift def
+R2785:2785 annotated.AMacros <> D:46 var
+R2789:2792 annotated.ASyntax <> TVar constr
+def 2909:2922 <> ainterp_binder
+R2936:2939 annotated.ASyntax <> term ind
+binder 2925:2926 <> IT:47
+binder 2928:2928 <> A:48
+binder 2930:2930 <> D:49
+binder 2932:2932 <> X:50
+R2944:2947 annotated.ASyntax <> term ind
+R2954:2960 annotated.ASyntax <> TInterp constr
+R2963:2966 annotated.ASyntax <> lift def
+R2972:2973 annotated.AMacros <> IT:47 var
+R2977:2992 annotated.AMacros <> adesc_app_binder def
+R2994:2995 annotated.AMacros <> IT:47 var
+R2997:2997 annotated.AMacros <> A:48 var
+R2999:2999 annotated.AMacros <> D:49 var
+R3003:3006 annotated.ASyntax <> lift def
+R3012:3012 annotated.AMacros <> X:50 var
+def 3027:3045 <> ainterp_binder_enum
+R3059:3062 annotated.ASyntax <> term ind
+binder 3048:3049 <> IT:51
+binder 3051:3051 <> E:52
+binder 3053:3053 <> D:53
+binder 3055:3055 <> X:54
+R3067:3070 annotated.ASyntax <> term ind
+R3077:3083 annotated.ASyntax <> TInterp constr
+R3086:3089 annotated.ASyntax <> lift def
+R3095:3096 annotated.AMacros <> IT:51 var
+R3100:3120 annotated.AMacros <> adesc_app_binder_enum def
+R3122:3123 annotated.AMacros <> IT:51 var
+R3125:3125 annotated.AMacros <> E:52 var
+R3127:3127 annotated.AMacros <> D:53 var
+R3131:3134 annotated.ASyntax <> lift def
+R3140:3140 annotated.AMacros <> X:54 var
+def 3221:3231 <> aapp_binder
+R3247:3250 annotated.ASyntax <> term ind
+binder 3234:3235 <> IT:55
+binder 3237:3237 <> A:56
+binder 3239:3239 <> D:57
+binder 3241:3241 <> X:58
+binder 3243:3243 <> f:59
+R3255:3258 annotated.ASyntax <> term ind
+R3265:3268 annotated.ASyntax <> TApp constr
+R3271:3274 annotated.ASyntax <> lift def
+R3280:3280 annotated.AMacros <> A:56 var
+R3288:3294 annotated.ASyntax <> TInterp constr
+R3297:3300 annotated.ASyntax <> lift def
+R3306:3307 annotated.AMacros <> IT:55 var
+R3317:3320 annotated.ASyntax <> TApp constr
+R3323:3326 annotated.ASyntax <> lift def
+R3332:3332 annotated.AMacros <> A:56 var
+R3336:3341 annotated.ASyntax <> TIDesc constr
+R3344:3347 annotated.ASyntax <> lift def
+R3353:3354 annotated.AMacros <> IT:55 var
+R3359:3362 annotated.ASyntax <> lift def
+R3368:3368 annotated.AMacros <> D:57 var
+R3372:3375 annotated.ASyntax <> TVar constr
+R3388:3391 annotated.ASyntax <> lift def
+R3397:3397 annotated.AMacros <> X:58 var
+R3406:3409 annotated.ASyntax <> lift def
+R3415:3415 annotated.AMacros <> f:59 var
+R3419:3422 annotated.ASyntax <> TVar constr
+def 3506:3517 <> aiall_binder
+R3535:3538 annotated.ASyntax <> term ind
+binder 3520:3521 <> IT:60
+binder 3523:3523 <> A:61
+binder 3525:3525 <> D:62
+binder 3527:3527 <> X:63
+binder 3529:3529 <> f:64
+binder 3531:3531 <> P:65
+R3543:3546 annotated.ASyntax <> term ind
+R3553:3557 annotated.ASyntax <> TIAll constr
+R3560:3563 annotated.ASyntax <> lift def
+R3569:3570 annotated.AMacros <> IT:60 var
+R3574:3589 annotated.AMacros <> adesc_app_binder def
+R3591:3592 annotated.AMacros <> IT:60 var
+R3594:3594 annotated.AMacros <> A:61 var
+R3596:3596 annotated.AMacros <> D:62 var
+R3600:3603 annotated.ASyntax <> lift def
+R3609:3609 annotated.AMacros <> X:63 var
+R3617:3627 annotated.AMacros <> aapp_binder def
+R3629:3630 annotated.AMacros <> IT:60 var
+R3632:3632 annotated.AMacros <> A:61 var
+R3634:3634 annotated.AMacros <> D:62 var
+R3636:3636 annotated.AMacros <> X:63 var
+R3638:3638 annotated.AMacros <> f:64 var
+R3642:3645 annotated.ASyntax <> lift def
+R3651:3651 annotated.AMacros <> P:65 var
+def 3737:3748 <> ahyps_binder
+R3768:3771 annotated.ASyntax <> term ind
+binder 3751:3752 <> IT:66
+binder 3754:3754 <> A:67
+binder 3756:3756 <> D:68
+binder 3758:3758 <> X:69
+binder 3760:3760 <> P:70
+binder 3762:3762 <> h:71
+binder 3764:3764 <> f:72
+R3776:3779 annotated.ASyntax <> term ind
+R3786:3790 annotated.ASyntax <> THyps constr
+R3793:3796 annotated.ASyntax <> lift def
+R3802:3803 annotated.AMacros <> IT:66 var
+R3807:3822 annotated.AMacros <> adesc_app_binder def
+R3824:3825 annotated.AMacros <> IT:66 var
+R3827:3827 annotated.AMacros <> A:67 var
+R3829:3829 annotated.AMacros <> D:68 var
+R3833:3836 annotated.ASyntax <> lift def
+R3842:3842 annotated.AMacros <> X:69 var
+R3850:3853 annotated.ASyntax <> lift def
+R3859:3859 annotated.AMacros <> P:70 var
+R3863:3866 annotated.ASyntax <> lift def
+R3872:3872 annotated.AMacros <> h:71 var
+R3876:3886 annotated.AMacros <> aapp_binder def
+R3888:3889 annotated.AMacros <> IT:66 var
+R3891:3891 annotated.AMacros <> A:67 var
+R3893:3893 annotated.AMacros <> D:68 var
+R3895:3895 annotated.AMacros <> X:69 var
+R3897:3897 annotated.AMacros <> f:72 var
+def 3970:3984 <> ahyps_prod_pair
+R4006:4009 annotated.ASyntax <> term ind
+binder 3987:3988 <> IT:73
+binder 3990:3990 <> A:74
+binder 3992:3992 <> B:75
+binder 3994:3994 <> X:76
+binder 3996:3996 <> P:77
+binder 3998:3998 <> h:78
+binder 4000:4000 <> a:79
+binder 4002:4002 <> b:80
+R4014:4017 annotated.ASyntax <> term ind
+R4024:4028 annotated.ASyntax <> TPair constr
+R4031:4035 annotated.ASyntax <> TIAll constr
+R4037:4038 annotated.AMacros <> IT:73 var
+R4040:4040 annotated.AMacros <> A:74 var
+R4042:4042 annotated.AMacros <> X:76 var
+R4044:4044 annotated.AMacros <> a:79 var
+R4046:4046 annotated.AMacros <> P:77 var
+R4050:4053 annotated.ASyntax <> lift def
+R4060:4064 annotated.ASyntax <> TIAll constr
+R4066:4067 annotated.AMacros <> IT:73 var
+R4069:4069 annotated.AMacros <> B:75 var
+R4071:4071 annotated.AMacros <> X:76 var
+R4073:4073 annotated.AMacros <> b:80 var
+R4075:4075 annotated.AMacros <> P:77 var
+R4084:4088 annotated.ASyntax <> THyps constr
+R4090:4091 annotated.AMacros <> IT:73 var
+R4093:4093 annotated.AMacros <> A:74 var
+R4095:4095 annotated.AMacros <> X:76 var
+R4097:4097 annotated.AMacros <> P:77 var
+R4099:4099 annotated.AMacros <> h:78 var
+R4101:4101 annotated.AMacros <> a:79 var
+R4105:4109 annotated.ASyntax <> THyps constr
+R4111:4112 annotated.AMacros <> IT:73 var
+R4114:4114 annotated.AMacros <> B:75 var
+R4116:4116 annotated.AMacros <> X:76 var
+R4118:4118 annotated.AMacros <> P:77 var
+R4120:4120 annotated.AMacros <> h:78 var
+R4122:4122 annotated.AMacros <> b:80 var
+def 4179:4187 <> aepi_head
+R4194:4196 Corelib.Init.Datatypes <> nat ind
+binder 4190:4190 <> k:81
+R4210:4213 annotated.ASyntax <> term ind
+binder 4200:4202 <> tag:82
+binder 4204:4204 <> E:83
+binder 4206:4206 <> P:84
+R4218:4221 annotated.ASyntax <> term ind
+R4228:4231 annotated.ASyntax <> TApp constr
+R4234:4239 annotated.ASyntax <> TEnumT constr
+R4242:4247 annotated.ASyntax <> TConsE constr
+R4249:4251 annotated.AMacros <> tag:82 var
+R4253:4253 annotated.AMacros <> E:83 var
+R4258:4262 annotated.ASyntax <> TSort constr
+R4264:4264 annotated.AMacros <> k:81 var
+R4267:4267 annotated.AMacros <> P:84 var
+R4270:4275 annotated.ASyntax <> TEZero constr
+R4277:4279 annotated.AMacros <> tag:82 var
+R4281:4281 annotated.AMacros <> E:83 var
+def 4388:4399 <> ainstantiate
+R4413:4416 annotated.ASyntax <> term ind
+binder 4402:4403 <> IT:85
+binder 4405:4405 <> A:86
+binder 4407:4407 <> D:87
+binder 4409:4409 <> a:88
+R4421:4424 annotated.ASyntax <> term ind
+R4431:4434 annotated.ASyntax <> TApp constr
+R4436:4436 annotated.AMacros <> A:86 var
+R4439:4442 annotated.ASyntax <> lift def
+R4449:4454 annotated.ASyntax <> TIDesc constr
+R4456:4457 annotated.AMacros <> IT:85 var
+R4461:4461 annotated.AMacros <> D:87 var
+R4463:4463 annotated.AMacros <> a:88 var
+def 4477:4493 <> ainstantiate_enum
+R4507:4510 annotated.ASyntax <> term ind
+binder 4496:4497 <> IT:89
+binder 4499:4499 <> E:90
+binder 4501:4501 <> D:91
+binder 4503:4503 <> e:92
+R4515:4518 annotated.ASyntax <> term ind
+R4525:4528 annotated.ASyntax <> TApp constr
+R4531:4536 annotated.ASyntax <> TEnumT constr
+R4538:4538 annotated.AMacros <> E:90 var
+R4542:4545 annotated.ASyntax <> lift def
+R4552:4557 annotated.ASyntax <> TIDesc constr
+R4559:4560 annotated.AMacros <> IT:89 var
+R4564:4564 annotated.AMacros <> D:91 var
+R4566:4566 annotated.AMacros <> e:92 var
+def 4686:4697 <> amu_rec_body
+R4712:4715 annotated.ASyntax <> term ind
+binder 4700:4701 <> IT:93
+binder 4703:4703 <> D:94
+binder 4705:4705 <> P:95
+binder 4707:4708 <> st:96
+R4720:4723 annotated.ASyntax <> term ind
+R4730:4733 annotated.ASyntax <> TInd constr
+R4736:4739 annotated.ASyntax <> lift def
+R4745:4746 annotated.AMacros <> IT:93 var
+R4750:4753 annotated.ASyntax <> lift def
+R4759:4759 annotated.AMacros <> D:94 var
+R4763:4766 annotated.ASyntax <> lift def
+R4772:4772 annotated.AMacros <> P:95 var
+R4776:4779 annotated.ASyntax <> lift def
+R4785:4786 annotated.AMacros <> st:96 var
+R4790:4793 annotated.ASyntax <> TVar constr
+R4799:4802 annotated.ASyntax <> TVar constr
+def 4819:4829 <> amu_rec_lam
+R4844:4847 annotated.ASyntax <> term ind
+binder 4832:4833 <> IT:97
+binder 4835:4835 <> D:98
+binder 4837:4837 <> P:99
+binder 4839:4840 <> st:100
+R4852:4855 annotated.ASyntax <> term ind
+R4862:4865 annotated.ASyntax <> TLam constr
+R4867:4868 annotated.AMacros <> IT:97 var
+R4871:4883 annotated.AMacros <> arec_codomain def
+R4885:4886 annotated.AMacros <> IT:97 var
+R4889:4892 annotated.ASyntax <> TMuI constr
+R4894:4895 annotated.AMacros <> IT:97 var
+R4897:4897 annotated.AMacros <> D:98 var
+R4900:4900 annotated.AMacros <> P:99 var
+R4908:4911 annotated.ASyntax <> TLam constr
+R4920:4930 annotated.AMacros <> afamily_app def
+R4933:4936 annotated.ASyntax <> lift def
+R4942:4943 annotated.AMacros <> IT:97 var
+R4947:4950 annotated.ASyntax <> TMuI constr
+R4953:4956 annotated.ASyntax <> lift def
+R4962:4963 annotated.AMacros <> IT:97 var
+R4967:4970 annotated.ASyntax <> lift def
+R4976:4976 annotated.AMacros <> D:98 var
+R4981:4984 annotated.ASyntax <> TVar constr
+R4997:5000 annotated.ASyntax <> TApp constr
+R5003:5008 annotated.AMacros <> atotal def
+R5011:5014 annotated.ASyntax <> lift def
+R5020:5021 annotated.AMacros <> IT:97 var
+R5025:5028 annotated.ASyntax <> TMuI constr
+R5031:5034 annotated.ASyntax <> lift def
+R5040:5041 annotated.AMacros <> IT:97 var
+R5045:5048 annotated.ASyntax <> lift def
+R5054:5054 annotated.AMacros <> D:98 var
+R5060:5064 annotated.ASyntax <> TSort constr
+R5078:5081 annotated.ASyntax <> lift def
+R5087:5087 annotated.AMacros <> P:99 var
+R5091:5099 annotated.AMacros <> arec_pair def
+R5101:5102 annotated.AMacros <> IT:97 var
+R5105:5108 annotated.ASyntax <> TMuI constr
+R5110:5111 annotated.AMacros <> IT:97 var
+R5113:5113 annotated.AMacros <> D:98 var
+R5125:5136 annotated.AMacros <> amu_rec_body def
+R5138:5139 annotated.AMacros <> IT:97 var
+R5141:5141 annotated.AMacros <> D:98 var
+R5143:5143 annotated.AMacros <> P:99 var
+R5145:5146 annotated.AMacros <> st:100 var
+def 5387:5402 <> adiagonal_motive
+R5414:5417 annotated.ASyntax <> term ind
+binder 5405:5406 <> IT:101
+binder 5408:5408 <> G:102
+binder 5410:5410 <> P:103
+R5422:5425 annotated.ASyntax <> term ind
+R5432:5435 annotated.ASyntax <> TLam constr
+R5438:5443 annotated.AMacros <> atotal def
+R5445:5446 annotated.AMacros <> IT:101 var
+R5449:5456 annotated.AMacros <> acarrier def
+R5458:5459 annotated.AMacros <> IT:101 var
+R5461:5461 annotated.AMacros <> G:102 var
+R5466:5470 annotated.ASyntax <> TSort constr
+R5480:5483 annotated.ASyntax <> TApp constr
+R5492:5496 annotated.ASyntax <> subst def
+R5499:5502 annotated.ASyntax <> TFst constr
+R5505:5508 annotated.ASyntax <> lift def
+R5514:5515 annotated.AMacros <> IT:101 var
+R5533:5543 annotated.AMacros <> afamily_app def
+R5546:5549 annotated.ASyntax <> lift def
+R5556:5559 annotated.ASyntax <> lift def
+R5565:5566 annotated.AMacros <> IT:101 var
+R5587:5590 annotated.ASyntax <> lift def
+R5597:5602 annotated.ASyntax <> TClose constr
+R5605:5608 annotated.ASyntax <> lift def
+R5614:5615 annotated.AMacros <> IT:101 var
+R5619:5622 annotated.ASyntax <> lift def
+R5628:5628 annotated.AMacros <> G:102 var
+R5632:5635 annotated.ASyntax <> lift def
+R5641:5641 annotated.AMacros <> G:102 var
+R5663:5666 annotated.ASyntax <> TVar constr
+R5687:5690 annotated.ASyntax <> TVar constr
+R5707:5711 annotated.ASyntax <> subst def
+R5714:5717 annotated.ASyntax <> lift def
+R5723:5723 annotated.AMacros <> G:102 var
+R5739:5746 annotated.AMacros <> aCloseAt def
+R5749:5752 annotated.ASyntax <> lift def
+R5758:5759 annotated.AMacros <> IT:101 var
+R5763:5766 annotated.ASyntax <> TVar constr
+R5772:5775 annotated.ASyntax <> lift def
+R5781:5781 annotated.AMacros <> G:102 var
+R5785:5788 annotated.ASyntax <> TVar constr
+R5803:5807 annotated.ASyntax <> TSort constr
+R5819:5822 annotated.ASyntax <> TApp constr
+R5825:5829 annotated.ASyntax <> subst def
+R5832:5835 annotated.ASyntax <> lift def
+R5841:5841 annotated.AMacros <> G:102 var
+R5847:5850 annotated.ASyntax <> lift def
+R5856:5857 annotated.AMacros <> IT:101 var
+R5870:5874 annotated.ASyntax <> subst def
+R5877:5880 annotated.ASyntax <> lift def
+R5886:5886 annotated.AMacros <> G:102 var
+R5902:5904 annotated.ASyntax <> TPi constr
+R5907:5914 annotated.AMacros <> aCloseAt def
+R5917:5920 annotated.ASyntax <> lift def
+R5926:5927 annotated.AMacros <> IT:101 var
+R5931:5934 annotated.ASyntax <> TVar constr
+R5940:5943 annotated.ASyntax <> lift def
+R5949:5949 annotated.AMacros <> G:102 var
+R5953:5956 annotated.ASyntax <> TVar constr
+R5975:5979 annotated.ASyntax <> TSort constr
+R5995:5998 annotated.ASyntax <> TApp constr
+R6001:6004 annotated.AMacros <> aDef def
+R6007:6010 annotated.ASyntax <> lift def
+R6016:6017 annotated.AMacros <> IT:101 var
+R6032:6034 annotated.ASyntax <> TPi constr
+R6037:6040 annotated.ASyntax <> lift def
+R6046:6047 annotated.AMacros <> IT:101 var
+R6063:6065 annotated.ASyntax <> TPi constr
+R6068:6075 annotated.AMacros <> aCloseAt def
+R6078:6081 annotated.ASyntax <> lift def
+R6087:6088 annotated.AMacros <> IT:101 var
+R6092:6095 annotated.ASyntax <> TVar constr
+R6101:6104 annotated.ASyntax <> lift def
+R6110:6110 annotated.AMacros <> G:102 var
+R6114:6117 annotated.ASyntax <> TVar constr
+R6138:6142 annotated.ASyntax <> TSort constr
+R6160:6163 annotated.ASyntax <> lift def
+R6169:6169 annotated.AMacros <> P:103 var
+R6173:6176 annotated.ASyntax <> lift def
+R6182:6182 annotated.AMacros <> G:102 var
+R6195:6198 annotated.ASyntax <> TFst constr
+R6201:6204 annotated.ASyntax <> lift def
+R6210:6211 annotated.AMacros <> IT:101 var
+R6225:6235 annotated.AMacros <> afamily_app def
+R6238:6241 annotated.ASyntax <> lift def
+R6248:6251 annotated.ASyntax <> lift def
+R6257:6258 annotated.AMacros <> IT:101 var
+R6275:6278 annotated.ASyntax <> lift def
+R6285:6290 annotated.ASyntax <> TClose constr
+R6293:6296 annotated.ASyntax <> lift def
+R6302:6303 annotated.AMacros <> IT:101 var
+R6307:6310 annotated.ASyntax <> lift def
+R6316:6316 annotated.AMacros <> G:102 var
+R6320:6323 annotated.ASyntax <> lift def
+R6329:6329 annotated.AMacros <> G:102 var
+R6347:6350 annotated.ASyntax <> TVar constr
+R6367:6370 annotated.ASyntax <> TVar constr
+R6384:6387 annotated.ASyntax <> TSnd constr
+R6390:6393 annotated.ASyntax <> lift def
+R6399:6400 annotated.AMacros <> IT:101 var
+R6412:6422 annotated.AMacros <> afamily_app def
+R6425:6428 annotated.ASyntax <> lift def
+R6435:6438 annotated.ASyntax <> lift def
+R6444:6445 annotated.AMacros <> IT:101 var
+R6460:6463 annotated.ASyntax <> lift def
+R6470:6475 annotated.ASyntax <> TClose constr
+R6478:6481 annotated.ASyntax <> lift def
+R6487:6488 annotated.AMacros <> IT:101 var
+R6492:6495 annotated.ASyntax <> lift def
+R6501:6501 annotated.AMacros <> G:102 var
+R6505:6508 annotated.ASyntax <> lift def
+R6514:6514 annotated.AMacros <> G:102 var
+R6530:6533 annotated.ASyntax <> TVar constr
+R6548:6551 annotated.ASyntax <> TVar constr
+def 6732:6746 <> aclose_rec_body
+R6761:6764 annotated.ASyntax <> term ind
+binder 6749:6750 <> IT:104
+binder 6752:6752 <> G:105
+binder 6754:6754 <> P:106
+binder 6756:6757 <> st:107
+R6769:6772 annotated.ASyntax <> term ind
+R6779:6787 annotated.ASyntax <> TCloseInd constr
+R6790:6793 annotated.ASyntax <> lift def
+R6799:6800 annotated.AMacros <> IT:104 var
+R6804:6807 annotated.ASyntax <> lift def
+R6813:6813 annotated.AMacros <> G:105 var
+R6817:6820 annotated.ASyntax <> lift def
+R6826:6826 annotated.AMacros <> P:106 var
+R6830:6833 annotated.ASyntax <> lift def
+R6839:6840 annotated.AMacros <> st:107 var
+R6848:6851 annotated.ASyntax <> lift def
+R6857:6857 annotated.AMacros <> G:105 var
+R6861:6864 annotated.ASyntax <> TVar constr
+R6870:6873 annotated.ASyntax <> TVar constr
+def 6890:6903 <> aclose_rec_lam
+R6918:6921 annotated.ASyntax <> term ind
+binder 6906:6907 <> IT:108
+binder 6909:6909 <> G:109
+binder 6911:6911 <> P:110
+binder 6913:6914 <> st:111
+R6926:6929 annotated.ASyntax <> term ind
+R6936:6939 annotated.ASyntax <> TLam constr
+R6941:6942 annotated.AMacros <> IT:108 var
+R6945:6957 annotated.AMacros <> arec_codomain def
+R6959:6960 annotated.AMacros <> IT:108 var
+R6963:6970 annotated.AMacros <> acarrier def
+R6972:6973 annotated.AMacros <> IT:108 var
+R6975:6975 annotated.AMacros <> G:109 var
+R6979:6994 annotated.AMacros <> adiagonal_motive def
+R6996:6997 annotated.AMacros <> IT:108 var
+R6999:6999 annotated.AMacros <> G:109 var
+R7001:7001 annotated.AMacros <> P:110 var
+R7010:7013 annotated.ASyntax <> TLam constr
+R7022:7032 annotated.AMacros <> afamily_app def
+R7035:7038 annotated.ASyntax <> lift def
+R7044:7045 annotated.AMacros <> IT:108 var
+R7057:7062 annotated.ASyntax <> TClose constr
+R7065:7068 annotated.ASyntax <> lift def
+R7074:7075 annotated.AMacros <> IT:108 var
+R7079:7082 annotated.ASyntax <> lift def
+R7088:7088 annotated.AMacros <> G:109 var
+R7092:7095 annotated.ASyntax <> lift def
+R7101:7101 annotated.AMacros <> G:109 var
+R7106:7109 annotated.ASyntax <> TVar constr
+R7122:7125 annotated.ASyntax <> TApp constr
+R7128:7133 annotated.AMacros <> atotal def
+R7136:7139 annotated.ASyntax <> lift def
+R7145:7146 annotated.AMacros <> IT:108 var
+R7164:7169 annotated.ASyntax <> TClose constr
+R7172:7175 annotated.ASyntax <> lift def
+R7181:7182 annotated.AMacros <> IT:108 var
+R7186:7189 annotated.ASyntax <> lift def
+R7195:7195 annotated.AMacros <> G:109 var
+R7199:7202 annotated.ASyntax <> lift def
+R7208:7208 annotated.AMacros <> G:109 var
+R7222:7226 annotated.ASyntax <> TSort constr
+R7240:7243 annotated.ASyntax <> lift def
+R7250:7265 annotated.AMacros <> adiagonal_motive def
+R7267:7268 annotated.AMacros <> IT:108 var
+R7270:7270 annotated.AMacros <> G:109 var
+R7272:7272 annotated.AMacros <> P:110 var
+R7285:7293 annotated.AMacros <> arec_pair def
+R7295:7296 annotated.AMacros <> IT:108 var
+R7299:7306 annotated.AMacros <> acarrier def
+R7308:7309 annotated.AMacros <> IT:108 var
+R7311:7311 annotated.AMacros <> G:109 var
+R7323:7337 annotated.AMacros <> aclose_rec_body def
+R7339:7340 annotated.AMacros <> IT:108 var
+R7342:7342 annotated.AMacros <> G:109 var
+R7344:7344 annotated.AMacros <> P:110 var
+R7346:7347 annotated.AMacros <> st:111 var
+def 7553:7563 <> amu_payload
+R7573:7576 annotated.ASyntax <> term ind
+binder 7566:7567 <> IT:112
+binder 7569:7569 <> D:113
+R7581:7584 annotated.ASyntax <> term ind
+R7591:7597 annotated.ASyntax <> TInterp constr
+R7600:7603 annotated.ASyntax <> lift def
+R7609:7610 annotated.AMacros <> IT:112 var
+R7618:7625 annotated.AMacros <> adef_app def
+R7628:7631 annotated.ASyntax <> lift def
+R7637:7638 annotated.AMacros <> IT:112 var
+R7642:7645 annotated.ASyntax <> lift def
+R7651:7651 annotated.AMacros <> D:113 var
+R7655:7658 annotated.ASyntax <> TVar constr
+R7669:7672 annotated.ASyntax <> TMuI constr
+R7675:7678 annotated.ASyntax <> lift def
+R7684:7685 annotated.AMacros <> IT:112 var
+R7689:7692 annotated.ASyntax <> lift def
+R7698:7698 annotated.AMacros <> D:113 var
+def 7808:7815 <> amu_iall
+R7827:7830 annotated.ASyntax <> term ind
+binder 7818:7819 <> IT:114
+binder 7821:7821 <> D:115
+binder 7823:7823 <> P:116
+R7835:7838 annotated.ASyntax <> term ind
+R7845:7849 annotated.ASyntax <> TIAll constr
+R7852:7855 annotated.ASyntax <> lift def
+R7861:7862 annotated.AMacros <> IT:114 var
+R7870:7877 annotated.AMacros <> adef_app def
+R7880:7883 annotated.ASyntax <> lift def
+R7889:7890 annotated.AMacros <> IT:114 var
+R7894:7897 annotated.ASyntax <> lift def
+R7903:7903 annotated.AMacros <> D:115 var
+R7907:7910 annotated.ASyntax <> TVar constr
+R7921:7924 annotated.ASyntax <> TMuI constr
+R7927:7930 annotated.ASyntax <> lift def
+R7936:7937 annotated.AMacros <> IT:114 var
+R7941:7944 annotated.ASyntax <> lift def
+R7950:7950 annotated.AMacros <> D:115 var
+R7955:7958 annotated.ASyntax <> TVar constr
+R7964:7967 annotated.ASyntax <> lift def
+R7973:7973 annotated.AMacros <> P:116 var
+def 8054:8063 <> amu_result
+R8075:8078 annotated.ASyntax <> term ind
+binder 8066:8067 <> IT:117
+binder 8069:8069 <> D:118
+binder 8071:8071 <> P:119
+R8083:8086 annotated.ASyntax <> term ind
+R8093:8096 annotated.ASyntax <> TApp constr
+R8099:8104 annotated.AMacros <> atotal def
+R8107:8110 annotated.ASyntax <> lift def
+R8116:8117 annotated.AMacros <> IT:117 var
+R8121:8124 annotated.ASyntax <> TMuI constr
+R8127:8130 annotated.ASyntax <> lift def
+R8136:8137 annotated.AMacros <> IT:117 var
+R8141:8144 annotated.ASyntax <> lift def
+R8150:8150 annotated.AMacros <> D:118 var
+R8156:8160 annotated.ASyntax <> TSort constr
+R8170:8173 annotated.ASyntax <> lift def
+R8179:8179 annotated.AMacros <> P:119 var
+R8187:8191 annotated.ASyntax <> TPair constr
+R8194:8197 annotated.ASyntax <> lift def
+R8203:8204 annotated.AMacros <> IT:117 var
+R8214:8224 annotated.AMacros <> afamily_app def
+R8227:8230 annotated.ASyntax <> lift def
+R8237:8240 annotated.ASyntax <> lift def
+R8246:8247 annotated.AMacros <> IT:117 var
+R8260:8263 annotated.ASyntax <> lift def
+R8270:8273 annotated.ASyntax <> TMuI constr
+R8276:8279 annotated.ASyntax <> lift def
+R8285:8286 annotated.AMacros <> IT:117 var
+R8290:8293 annotated.ASyntax <> lift def
+R8299:8299 annotated.AMacros <> D:118 var
+R8305:8308 annotated.ASyntax <> TVar constr
+R8321:8324 annotated.ASyntax <> TVar constr
+R8330:8334 annotated.ASyntax <> TInMu constr
+R8337:8340 annotated.ASyntax <> lift def
+R8346:8347 annotated.AMacros <> IT:117 var
+R8351:8354 annotated.ASyntax <> lift def
+R8360:8360 annotated.AMacros <> D:118 var
+R8364:8367 annotated.ASyntax <> TVar constr
+R8373:8376 annotated.ASyntax <> TVar constr
+def 8395:8410 <> amu_ind_codomain
+R8422:8425 annotated.ASyntax <> term ind
+binder 8413:8414 <> IT:120
+binder 8416:8416 <> D:121
+binder 8418:8418 <> P:122
+R8430:8433 annotated.ASyntax <> term ind
+R8440:8442 annotated.ASyntax <> TPi constr
+R8445:8455 annotated.AMacros <> amu_payload def
+R8457:8458 annotated.AMacros <> IT:120 var
+R8460:8460 annotated.AMacros <> D:121 var
+R8464:8466 annotated.ASyntax <> TPi constr
+R8469:8476 annotated.AMacros <> amu_iall def
+R8478:8479 annotated.AMacros <> IT:120 var
+R8481:8481 annotated.AMacros <> D:121 var
+R8483:8483 annotated.AMacros <> P:122 var
+R8487:8496 annotated.AMacros <> amu_result def
+R8498:8499 annotated.AMacros <> IT:120 var
+R8501:8501 annotated.AMacros <> D:121 var
+R8503:8503 annotated.AMacros <> P:122 var
+def 8519:8532 <> amu_ind_method
+R8544:8547 annotated.ASyntax <> term ind
+binder 8535:8536 <> IT:123
+binder 8538:8538 <> D:124
+binder 8540:8540 <> P:125
+R8552:8555 annotated.ASyntax <> term ind
+R8562:8564 annotated.ASyntax <> TPi constr
+R8566:8567 annotated.AMacros <> IT:123 var
+R8570:8585 annotated.AMacros <> amu_ind_codomain def
+R8587:8588 annotated.AMacros <> IT:123 var
+R8590:8590 annotated.AMacros <> D:124 var
+R8592:8592 annotated.AMacros <> P:125 var
+def 8721:8731 <> amethod_app
+R8754:8757 annotated.ASyntax <> term ind
+binder 8734:8735 <> IT:126
+binder 8737:8737 <> D:127
+binder 8739:8739 <> P:128
+binder 8741:8742 <> st:129
+binder 8744:8744 <> i:130
+binder 8746:8747 <> xs:131
+binder 8749:8750 <> hs:132
+R8762:8765 annotated.ASyntax <> term ind
+R8772:8775 annotated.ASyntax <> TApp constr
+R8778:8782 annotated.ASyntax <> subst def
+R8784:8785 annotated.AMacros <> xs:131 var
+R8790:8794 annotated.ASyntax <> subst def
+R8796:8796 annotated.AMacros <> i:130 var
+R8801:8808 annotated.AMacros <> amu_iall def
+R8810:8811 annotated.AMacros <> IT:126 var
+R8813:8813 annotated.AMacros <> D:127 var
+R8815:8815 annotated.AMacros <> P:128 var
+R8825:8829 annotated.ASyntax <> subst def
+R8831:8832 annotated.AMacros <> xs:131 var
+R8837:8841 annotated.ASyntax <> subst def
+R8843:8843 annotated.AMacros <> i:130 var
+R8848:8857 annotated.AMacros <> amu_result def
+R8859:8860 annotated.AMacros <> IT:126 var
+R8862:8862 annotated.AMacros <> D:127 var
+R8864:8864 annotated.AMacros <> P:128 var
+R8874:8877 annotated.ASyntax <> TApp constr
+R8880:8884 annotated.ASyntax <> subst def
+R8886:8886 annotated.AMacros <> i:130 var
+R8891:8901 annotated.AMacros <> amu_payload def
+R8903:8904 annotated.AMacros <> IT:126 var
+R8906:8906 annotated.AMacros <> D:127 var
+R8917:8921 annotated.ASyntax <> subst def
+R8923:8923 annotated.AMacros <> i:130 var
+R8928:8930 annotated.ASyntax <> TPi constr
+R8933:8940 annotated.AMacros <> amu_iall def
+R8942:8943 annotated.AMacros <> IT:126 var
+R8945:8945 annotated.AMacros <> D:127 var
+R8947:8947 annotated.AMacros <> P:128 var
+R8951:8960 annotated.AMacros <> amu_result def
+R8962:8963 annotated.AMacros <> IT:126 var
+R8965:8965 annotated.AMacros <> D:127 var
+R8967:8967 annotated.AMacros <> P:128 var
+R8979:8982 annotated.ASyntax <> TApp constr
+R8984:8985 annotated.AMacros <> IT:126 var
+R8988:9003 annotated.AMacros <> amu_ind_codomain def
+R9005:9006 annotated.AMacros <> IT:126 var
+R9008:9008 annotated.AMacros <> D:127 var
+R9010:9010 annotated.AMacros <> P:128 var
+R9013:9014 annotated.AMacros <> st:129 var
+R9016:9016 annotated.AMacros <> i:130 var
+R9025:9026 annotated.AMacros <> xs:131 var
+R9033:9034 annotated.AMacros <> hs:132 var
+def 9207:9218 <> acim_payload
+R9228:9231 annotated.ASyntax <> term ind
+binder 9221:9222 <> IT:133
+binder 9224:9224 <> G:134
+R9236:9239 annotated.ASyntax <> term ind
+R9246:9253 annotated.AMacros <> apayload def
+R9256:9259 annotated.ASyntax <> lift def
+R9265:9266 annotated.AMacros <> IT:133 var
+R9270:9273 annotated.ASyntax <> TVar constr
+R9279:9282 annotated.ASyntax <> lift def
+R9288:9288 annotated.AMacros <> G:134 var
+R9292:9295 annotated.ASyntax <> TVar constr
+def 9334:9342 <> acim_iall
+R9354:9357 annotated.ASyntax <> term ind
+binder 9345:9346 <> IT:135
+binder 9348:9348 <> G:136
+binder 9350:9350 <> P:137
+R9362:9365 annotated.ASyntax <> term ind
+R9372:9376 annotated.ASyntax <> TIAll constr
+R9379:9382 annotated.ASyntax <> lift def
+R9388:9389 annotated.AMacros <> IT:135 var
+R9393:9400 annotated.AMacros <> adef_app def
+R9403:9406 annotated.ASyntax <> lift def
+R9412:9413 annotated.AMacros <> IT:135 var
+R9417:9420 annotated.ASyntax <> TVar constr
+R9426:9429 annotated.ASyntax <> TVar constr
+R9440:9447 annotated.AMacros <> acarrier def
+R9450:9453 annotated.ASyntax <> lift def
+R9459:9460 annotated.AMacros <> IT:135 var
+R9464:9467 annotated.ASyntax <> lift def
+R9473:9473 annotated.AMacros <> G:136 var
+R9478:9481 annotated.ASyntax <> TVar constr
+R9491:9494 annotated.ASyntax <> lift def
+R9501:9516 annotated.AMacros <> adiagonal_motive def
+R9518:9519 annotated.AMacros <> IT:135 var
+R9521:9521 annotated.AMacros <> G:136 var
+R9523:9523 annotated.AMacros <> P:137 var
+def 9666:9676 <> acim_result
+R9688:9691 annotated.ASyntax <> term ind
+binder 9679:9680 <> IT:138
+binder 9682:9682 <> G:139
+binder 9684:9684 <> P:140
+R9696:9699 annotated.ASyntax <> term ind
+R9706:9709 annotated.ASyntax <> TApp constr
+R9712:9716 annotated.ASyntax <> subst def
+R9719:9722 annotated.ASyntax <> TVar constr
+R9730:9734 annotated.ASyntax <> subst def
+R9737:9740 annotated.ASyntax <> TVar constr
+R9756:9763 annotated.AMacros <> aCloseAt def
+R9766:9769 annotated.ASyntax <> lift def
+R9775:9776 annotated.AMacros <> IT:138 var
+R9780:9783 annotated.ASyntax <> TVar constr
+R9789:9792 annotated.ASyntax <> lift def
+R9798:9798 annotated.AMacros <> G:139 var
+R9802:9805 annotated.ASyntax <> TVar constr
+R9818:9822 annotated.ASyntax <> TSort constr
+R9832:9835 annotated.ASyntax <> TApp constr
+R9838:9842 annotated.ASyntax <> subst def
+R9845:9848 annotated.ASyntax <> TVar constr
+R9856:9859 annotated.ASyntax <> lift def
+R9865:9866 annotated.AMacros <> IT:138 var
+R9877:9881 annotated.ASyntax <> subst def
+R9884:9887 annotated.ASyntax <> TVar constr
+R9903:9905 annotated.ASyntax <> TPi constr
+R9908:9915 annotated.AMacros <> aCloseAt def
+R9918:9921 annotated.ASyntax <> lift def
+R9927:9928 annotated.AMacros <> IT:138 var
+R9932:9935 annotated.ASyntax <> TVar constr
+R9941:9944 annotated.ASyntax <> lift def
+R9950:9950 annotated.AMacros <> G:139 var
+R9954:9957 annotated.ASyntax <> TVar constr
+R9964:9968 annotated.ASyntax <> TSort constr
+R9982:9985 annotated.ASyntax <> TApp constr
+R9988:9991 annotated.AMacros <> aDef def
+R9994:9997 annotated.ASyntax <> lift def
+R10003:10004 annotated.AMacros <> IT:138 var
+R10017:10019 annotated.ASyntax <> TPi constr
+R10022:10025 annotated.ASyntax <> lift def
+R10031:10032 annotated.AMacros <> IT:138 var
+R10046:10048 annotated.ASyntax <> TPi constr
+R10051:10058 annotated.AMacros <> aCloseAt def
+R10061:10064 annotated.ASyntax <> lift def
+R10070:10071 annotated.AMacros <> IT:138 var
+R10075:10078 annotated.ASyntax <> TVar constr
+R10084:10087 annotated.ASyntax <> lift def
+R10093:10093 annotated.AMacros <> G:139 var
+R10097:10100 annotated.ASyntax <> TVar constr
+R10119:10123 annotated.ASyntax <> TSort constr
+R10139:10142 annotated.ASyntax <> lift def
+R10148:10148 annotated.AMacros <> P:140 var
+R10152:10155 annotated.ASyntax <> TVar constr
+R10168:10171 annotated.ASyntax <> TVar constr
+R10182:10189 annotated.ASyntax <> TInClose constr
+R10192:10195 annotated.ASyntax <> lift def
+R10201:10202 annotated.AMacros <> IT:138 var
+R10206:10209 annotated.ASyntax <> TVar constr
+R10215:10218 annotated.ASyntax <> lift def
+R10224:10224 annotated.AMacros <> G:139 var
+R10228:10231 annotated.ASyntax <> TVar constr
+R10237:10240 annotated.ASyntax <> TVar constr
+def 10275:10283 <> acim_rest
+R10295:10298 annotated.ASyntax <> term ind
+binder 10286:10287 <> IT:141
+binder 10289:10289 <> G:142
+binder 10291:10291 <> P:143
+R10303:10306 annotated.ASyntax <> term ind
+R10313:10315 annotated.ASyntax <> TPi constr
+R10318:10321 annotated.ASyntax <> lift def
+R10327:10328 annotated.AMacros <> IT:141 var
+R10336:10338 annotated.ASyntax <> TPi constr
+R10341:10352 annotated.AMacros <> acim_payload def
+R10354:10355 annotated.AMacros <> IT:141 var
+R10357:10357 annotated.AMacros <> G:142 var
+R10367:10369 annotated.ASyntax <> TPi constr
+R10372:10380 annotated.AMacros <> acim_iall def
+R10382:10383 annotated.AMacros <> IT:141 var
+R10385:10385 annotated.AMacros <> G:142 var
+R10387:10387 annotated.AMacros <> P:143 var
+R10391:10401 annotated.AMacros <> acim_result def
+R10403:10404 annotated.AMacros <> IT:141 var
+R10406:10406 annotated.AMacros <> G:142 var
+R10408:10408 annotated.AMacros <> P:143 var
+def 10425:10435 <> acim_method
+R10447:10450 annotated.ASyntax <> term ind
+binder 10438:10439 <> IT:144
+binder 10441:10441 <> G:145
+binder 10443:10443 <> P:146
+R10455:10458 annotated.ASyntax <> term ind
+R10465:10467 annotated.ASyntax <> TPi constr
+R10470:10473 annotated.AMacros <> aDef def
+R10475:10476 annotated.AMacros <> IT:144 var
+R10480:10488 annotated.AMacros <> acim_rest def
+R10490:10491 annotated.AMacros <> IT:144 var
+R10493:10493 annotated.AMacros <> G:145 var
+R10495:10495 annotated.AMacros <> P:146 var
+def 10579:10590 <> acmethod_app
+R10615:10618 annotated.ASyntax <> term ind
+binder 10593:10594 <> IT:147
+binder 10596:10596 <> G:148
+binder 10598:10598 <> P:149
+binder 10600:10601 <> st:150
+binder 10603:10603 <> F:151
+binder 10605:10605 <> i:152
+binder 10607:10608 <> xs:153
+binder 10610:10611 <> hs:154
+R10623:10626 annotated.ASyntax <> term ind
+R10633:10636 annotated.ASyntax <> TApp constr
+R10639:10643 annotated.ASyntax <> subst def
+R10645:10646 annotated.AMacros <> xs:153 var
+R10651:10655 annotated.ASyntax <> subst def
+R10657:10657 annotated.AMacros <> i:152 var
+R10662:10666 annotated.ASyntax <> subst def
+R10668:10668 annotated.AMacros <> F:151 var
+R10673:10681 annotated.AMacros <> acim_iall def
+R10683:10684 annotated.AMacros <> IT:147 var
+R10686:10686 annotated.AMacros <> G:148 var
+R10688:10688 annotated.AMacros <> P:149 var
+R10699:10703 annotated.ASyntax <> subst def
+R10705:10706 annotated.AMacros <> xs:153 var
+R10711:10715 annotated.ASyntax <> subst def
+R10717:10717 annotated.AMacros <> i:152 var
+R10722:10726 annotated.ASyntax <> subst def
+R10728:10728 annotated.AMacros <> F:151 var
+R10733:10743 annotated.AMacros <> acim_result def
+R10745:10746 annotated.AMacros <> IT:147 var
+R10748:10748 annotated.AMacros <> G:148 var
+R10750:10750 annotated.AMacros <> P:149 var
+R10761:10764 annotated.ASyntax <> TApp constr
+R10767:10771 annotated.ASyntax <> subst def
+R10773:10773 annotated.AMacros <> i:152 var
+R10778:10782 annotated.ASyntax <> subst def
+R10784:10784 annotated.AMacros <> F:151 var
+R10789:10800 annotated.AMacros <> acim_payload def
+R10802:10803 annotated.AMacros <> IT:147 var
+R10805:10805 annotated.AMacros <> G:148 var
+R10817:10821 annotated.ASyntax <> subst def
+R10823:10823 annotated.AMacros <> i:152 var
+R10828:10832 annotated.ASyntax <> subst def
+R10834:10834 annotated.AMacros <> F:151 var
+R10839:10841 annotated.ASyntax <> TPi constr
+R10844:10852 annotated.AMacros <> acim_iall def
+R10854:10855 annotated.AMacros <> IT:147 var
+R10857:10857 annotated.AMacros <> G:148 var
+R10859:10859 annotated.AMacros <> P:149 var
+R10863:10873 annotated.AMacros <> acim_result def
+R10875:10876 annotated.AMacros <> IT:147 var
+R10878:10878 annotated.AMacros <> G:148 var
+R10880:10880 annotated.AMacros <> P:149 var
+R10893:10896 annotated.ASyntax <> TApp constr
+R10899:10903 annotated.ASyntax <> subst def
+R10905:10905 annotated.AMacros <> F:151 var
+R10910:10913 annotated.ASyntax <> lift def
+R10919:10920 annotated.AMacros <> IT:147 var
+R10933:10937 annotated.ASyntax <> subst def
+R10939:10939 annotated.AMacros <> F:151 var
+R10944:10946 annotated.ASyntax <> TPi constr
+R10949:10960 annotated.AMacros <> acim_payload def
+R10962:10963 annotated.AMacros <> IT:147 var
+R10965:10965 annotated.AMacros <> G:148 var
+R10979:10981 annotated.ASyntax <> TPi constr
+R10984:10992 annotated.AMacros <> acim_iall def
+R10994:10995 annotated.AMacros <> IT:147 var
+R10997:10997 annotated.AMacros <> G:148 var
+R10999:10999 annotated.AMacros <> P:149 var
+R11003:11013 annotated.AMacros <> acim_result def
+R11015:11016 annotated.AMacros <> IT:147 var
+R11018:11018 annotated.AMacros <> G:148 var
+R11020:11020 annotated.AMacros <> P:149 var
+R11035:11038 annotated.ASyntax <> TApp constr
+R11041:11044 annotated.AMacros <> aDef def
+R11046:11047 annotated.AMacros <> IT:147 var
+R11051:11059 annotated.AMacros <> acim_rest def
+R11061:11062 annotated.AMacros <> IT:147 var
+R11064:11064 annotated.AMacros <> G:148 var
+R11066:11066 annotated.AMacros <> P:149 var
+R11069:11070 annotated.AMacros <> st:150 var
+R11072:11072 annotated.AMacros <> F:151 var
+R11083:11083 annotated.AMacros <> i:152 var
+R11092:11093 annotated.AMacros <> xs:153 var
+R11100:11101 annotated.AMacros <> hs:154 var
+def 11184:11203 <> aclose_case_codomain
+R11210:11212 Corelib.Init.Datatypes <> nat ind
+binder 11206:11206 <> k:155
+R11229:11232 annotated.ASyntax <> term ind
+binder 11216:11217 <> IT:156
+binder 11219:11219 <> F:157
+binder 11221:11221 <> G:158
+binder 11223:11223 <> i:159
+binder 11225:11225 <> Q:160
+R11237:11240 annotated.ASyntax <> term ind
+R11247:11250 annotated.ASyntax <> TApp constr
+R11253:11260 annotated.AMacros <> aCloseAt def
+R11263:11266 annotated.ASyntax <> lift def
+R11272:11273 annotated.AMacros <> IT:156 var
+R11277:11280 annotated.ASyntax <> lift def
+R11286:11286 annotated.AMacros <> F:157 var
+R11290:11293 annotated.ASyntax <> lift def
+R11299:11299 annotated.AMacros <> G:158 var
+R11303:11306 annotated.ASyntax <> lift def
+R11312:11312 annotated.AMacros <> i:159 var
+R11321:11325 annotated.ASyntax <> TSort constr
+R11327:11327 annotated.AMacros <> k:155 var
+R11331:11334 annotated.ASyntax <> lift def
+R11340:11340 annotated.AMacros <> Q:160 var
+R11348:11355 annotated.ASyntax <> TInClose constr
+R11358:11361 annotated.ASyntax <> lift def
+R11367:11368 annotated.AMacros <> IT:156 var
+R11372:11375 annotated.ASyntax <> lift def
+R11381:11381 annotated.AMacros <> F:157 var
+R11385:11388 annotated.ASyntax <> lift def
+R11394:11394 annotated.AMacros <> G:158 var
+R11398:11401 annotated.ASyntax <> lift def
+R11407:11407 annotated.AMacros <> i:159 var
+R11411:11414 annotated.ASyntax <> TVar constr
+def 11505:11515 <> atotal_pair
+R11529:11532 annotated.ASyntax <> term ind
+binder 11518:11519 <> IT:161
+binder 11521:11521 <> X:162
+binder 11523:11523 <> i:163
+binder 11525:11525 <> x:164
+R11537:11540 annotated.ASyntax <> term ind
+R11547:11551 annotated.ASyntax <> TPair constr
+R11553:11554 annotated.AMacros <> IT:161 var
+R11557:11567 annotated.AMacros <> afamily_app def
+R11570:11573 annotated.ASyntax <> lift def
+R11579:11580 annotated.AMacros <> IT:161 var
+R11584:11587 annotated.ASyntax <> lift def
+R11593:11593 annotated.AMacros <> X:162 var
+R11597:11600 annotated.ASyntax <> TVar constr
+R11606:11606 annotated.AMacros <> i:163 var
+R11608:11608 annotated.AMacros <> x:164 var
+def 11622:11632 <> amotive_app
+R11646:11649 annotated.ASyntax <> term ind
+binder 11635:11636 <> IT:165
+binder 11638:11638 <> X:166
+binder 11640:11640 <> P:167
+binder 11642:11642 <> p:168
+R11654:11657 annotated.ASyntax <> term ind
+R11664:11667 annotated.ASyntax <> TApp constr
+R11670:11675 annotated.AMacros <> atotal def
+R11677:11678 annotated.AMacros <> IT:165 var
+R11680:11680 annotated.AMacros <> X:166 var
+R11684:11688 annotated.ASyntax <> TSort constr
+R11693:11693 annotated.AMacros <> P:167 var
+R11695:11695 annotated.AMacros <> p:168 var
+def 11756:11763 <> arec_app
+R11781:11784 annotated.ASyntax <> term ind
+binder 11766:11767 <> IT:169
+binder 11769:11769 <> X:170
+binder 11771:11771 <> P:171
+binder 11773:11773 <> h:172
+binder 11775:11775 <> i:173
+binder 11777:11777 <> x:174
+R11789:11792 annotated.ASyntax <> term ind
+R11799:11802 annotated.ASyntax <> TApp constr
+R11805:11815 annotated.AMacros <> afamily_app def
+R11817:11818 annotated.AMacros <> IT:169 var
+R11820:11820 annotated.AMacros <> X:170 var
+R11822:11822 annotated.AMacros <> i:173 var
+R11830:11833 annotated.ASyntax <> TApp constr
+R11836:11841 annotated.AMacros <> atotal def
+R11844:11847 annotated.ASyntax <> lift def
+R11853:11854 annotated.AMacros <> IT:169 var
+R11858:11861 annotated.ASyntax <> lift def
+R11867:11867 annotated.AMacros <> X:170 var
+R11872:11876 annotated.ASyntax <> TSort constr
+R11882:11885 annotated.ASyntax <> lift def
+R11891:11891 annotated.AMacros <> P:171 var
+R11901:11911 annotated.AMacros <> atotal_pair def
+R11914:11917 annotated.ASyntax <> lift def
+R11923:11924 annotated.AMacros <> IT:169 var
+R11928:11931 annotated.ASyntax <> lift def
+R11937:11937 annotated.AMacros <> X:170 var
+R11941:11944 annotated.ASyntax <> lift def
+R11950:11950 annotated.AMacros <> i:173 var
+R11954:11957 annotated.ASyntax <> TVar constr
+R11969:11972 annotated.ASyntax <> TApp constr
+R11974:11975 annotated.AMacros <> IT:169 var
+R11978:11990 annotated.AMacros <> arec_codomain def
+R11992:11993 annotated.AMacros <> IT:169 var
+R11995:11995 annotated.AMacros <> X:170 var
+R11997:11997 annotated.AMacros <> P:171 var
+R12000:12000 annotated.AMacros <> h:172 var
+R12002:12002 annotated.AMacros <> i:173 var
+R12005:12005 annotated.AMacros <> x:174 var
+def 12071:12078 <> ahyps_mu
+R12098:12101 annotated.ASyntax <> term ind
+binder 12081:12082 <> IT:175
+binder 12084:12084 <> D:176
+binder 12086:12086 <> P:177
+binder 12088:12089 <> st:178
+binder 12091:12091 <> i:179
+binder 12093:12094 <> xs:180
+R12106:12109 annotated.ASyntax <> term ind
+R12116:12120 annotated.ASyntax <> THyps constr
+R12122:12123 annotated.AMacros <> IT:175 var
+R12126:12133 annotated.AMacros <> adef_app def
+R12135:12136 annotated.AMacros <> IT:175 var
+R12138:12138 annotated.AMacros <> D:176 var
+R12140:12140 annotated.AMacros <> i:179 var
+R12144:12147 annotated.ASyntax <> TMuI constr
+R12149:12150 annotated.AMacros <> IT:175 var
+R12152:12152 annotated.AMacros <> D:176 var
+R12155:12155 annotated.AMacros <> P:177 var
+R12158:12168 annotated.AMacros <> amu_rec_lam def
+R12170:12171 annotated.AMacros <> IT:175 var
+R12173:12173 annotated.AMacros <> D:176 var
+R12175:12175 annotated.AMacros <> P:177 var
+R12177:12178 annotated.AMacros <> st:178 var
+R12181:12182 annotated.AMacros <> xs:180 var
+def 12196:12209 <> amu_ind_reduct
+R12229:12232 annotated.ASyntax <> term ind
+binder 12212:12213 <> IT:181
+binder 12215:12215 <> D:182
+binder 12217:12217 <> P:183
+binder 12219:12220 <> st:184
+binder 12222:12222 <> i:185
+binder 12224:12225 <> xs:186
+R12237:12240 annotated.ASyntax <> term ind
+R12247:12257 annotated.AMacros <> amethod_app def
+R12259:12260 annotated.AMacros <> IT:181 var
+R12262:12262 annotated.AMacros <> D:182 var
+R12264:12264 annotated.AMacros <> P:183 var
+R12266:12267 annotated.AMacros <> st:184 var
+R12269:12269 annotated.AMacros <> i:185 var
+R12271:12272 annotated.AMacros <> xs:186 var
+R12275:12282 annotated.AMacros <> ahyps_mu def
+R12284:12285 annotated.AMacros <> IT:181 var
+R12287:12287 annotated.AMacros <> D:182 var
+R12289:12289 annotated.AMacros <> P:183 var
+R12291:12292 annotated.AMacros <> st:184 var
+R12294:12294 annotated.AMacros <> i:185 var
+R12296:12297 annotated.AMacros <> xs:186 var
+def 12367:12377 <> ahyps_close
+R12399:12402 annotated.ASyntax <> term ind
+binder 12380:12381 <> IT:187
+binder 12383:12383 <> F:188
+binder 12385:12385 <> G:189
+binder 12387:12387 <> P:190
+binder 12389:12390 <> st:191
+binder 12392:12392 <> i:192
+binder 12394:12395 <> xs:193
+R12407:12410 annotated.ASyntax <> term ind
+R12417:12421 annotated.ASyntax <> THyps constr
+R12423:12424 annotated.AMacros <> IT:187 var
+R12427:12434 annotated.AMacros <> adef_app def
+R12436:12437 annotated.AMacros <> IT:187 var
+R12439:12439 annotated.AMacros <> F:188 var
+R12441:12441 annotated.AMacros <> i:192 var
+R12445:12452 annotated.AMacros <> acarrier def
+R12454:12455 annotated.AMacros <> IT:187 var
+R12457:12457 annotated.AMacros <> G:189 var
+R12461:12476 annotated.AMacros <> adiagonal_motive def
+R12478:12479 annotated.AMacros <> IT:187 var
+R12481:12481 annotated.AMacros <> G:189 var
+R12483:12483 annotated.AMacros <> P:190 var
+R12491:12504 annotated.AMacros <> aclose_rec_lam def
+R12506:12507 annotated.AMacros <> IT:187 var
+R12509:12509 annotated.AMacros <> G:189 var
+R12511:12511 annotated.AMacros <> P:190 var
+R12513:12514 annotated.AMacros <> st:191 var
+R12517:12518 annotated.AMacros <> xs:193 var
+def 12532:12548 <> aclose_ind_reduct
+R12570:12573 annotated.ASyntax <> term ind
+binder 12551:12552 <> IT:194
+binder 12554:12554 <> G:195
+binder 12556:12556 <> P:196
+binder 12558:12559 <> st:197
+binder 12561:12561 <> F:198
+binder 12563:12563 <> i:199
+binder 12565:12566 <> xs:200
+R12578:12581 annotated.ASyntax <> term ind
+R12588:12599 annotated.AMacros <> acmethod_app def
+R12601:12602 annotated.AMacros <> IT:194 var
+R12604:12604 annotated.AMacros <> G:195 var
+R12606:12606 annotated.AMacros <> P:196 var
+R12608:12609 annotated.AMacros <> st:197 var
+R12611:12611 annotated.AMacros <> F:198 var
+R12613:12613 annotated.AMacros <> i:199 var
+R12615:12616 annotated.AMacros <> xs:200 var
+R12619:12629 annotated.AMacros <> ahyps_close def
+R12631:12632 annotated.AMacros <> IT:194 var
+R12634:12634 annotated.AMacros <> F:198 var
+R12636:12636 annotated.AMacros <> G:195 var
+R12638:12638 annotated.AMacros <> P:196 var
+R12640:12641 annotated.AMacros <> st:197 var
+R12643:12643 annotated.AMacros <> i:199 var
+R12645:12646 annotated.AMacros <> xs:200 var
+R12670:12674 annotated.AErase <> erase def
+R12693:12702 annotated.AErasure <> erase_lift thm
+R12720:12730 annotated.AErasure <> erase_subst thm
+prf 12740:12756 <> erase_afamily_app
+binder 12767:12768 <> IT:201
+binder 12770:12770 <> X:202
+binder 12772:12772 <> a:203
+R12803:12805 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12777:12781 annotated.AErase <> erase def
+R12784:12794 annotated.AMacros <> afamily_app def
+R12796:12797 annotated.AMacros <> IT:201 var
+R12799:12799 annotated.AMacros <> X:202 var
+R12801:12801 annotated.AMacros <> a:203 var
+R12806:12813 annotated.AErase Raw TApp constr
+R12826:12830 annotated.AErase <> erase def
+R12832:12832 annotated.AMacros <> a:203 var
+R12816:12820 annotated.AErase <> erase def
+R12822:12822 annotated.AMacros <> X:202 var
+prf 12875:12888 <> erase_adef_app
+binder 12899:12900 <> IT:204
+binder 12902:12902 <> D:205
+binder 12904:12904 <> a:206
+R12932:12934 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12909:12913 annotated.AErase <> erase def
+R12916:12923 annotated.AMacros <> adef_app def
+R12925:12926 annotated.AMacros <> IT:204 var
+R12928:12928 annotated.AMacros <> D:205 var
+R12930:12930 annotated.AMacros <> a:206 var
+R12935:12942 annotated.AErase Raw TApp constr
+R12955:12959 annotated.AErase <> erase def
+R12961:12961 annotated.AMacros <> a:206 var
+R12945:12949 annotated.AErase <> erase def
+R12951:12951 annotated.AMacros <> D:205 var
+prf 13004:13017 <> erase_aCloseAt
+binder 13028:13029 <> IT:207
+binder 13031:13031 <> F:208
+binder 13033:13033 <> G:209
+binder 13035:13035 <> i:210
+R13065:13067 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13040:13044 annotated.AErase <> erase def
+R13047:13054 annotated.AMacros <> aCloseAt def
+R13056:13057 annotated.AMacros <> IT:207 var
+R13059:13059 annotated.AMacros <> F:208 var
+R13061:13061 annotated.AMacros <> G:209 var
+R13063:13063 annotated.AMacros <> i:210 var
+R13068:13078 annotated.AErase Raw CloseAt def
+R13112:13116 annotated.AErase <> erase def
+R13118:13118 annotated.AMacros <> i:210 var
+R13102:13106 annotated.AErase <> erase def
+R13108:13108 annotated.AMacros <> G:209 var
+R13092:13096 annotated.AErase <> erase def
+R13098:13098 annotated.AMacros <> F:208 var
+R13081:13085 annotated.AErase <> erase def
+R13087:13088 annotated.AMacros <> IT:207 var
+prf 13161:13171 <> erase_aMuAt
+binder 13182:13183 <> IT:211
+binder 13185:13185 <> D:212
+binder 13187:13187 <> i:213
+R13212:13214 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13192:13196 annotated.AErase <> erase def
+R13199:13203 annotated.AMacros <> aMuAt def
+R13205:13206 annotated.AMacros <> IT:211 var
+R13208:13208 annotated.AMacros <> D:212 var
+R13210:13210 annotated.AMacros <> i:213 var
+R13215:13222 annotated.AErase Raw MuAt def
+R13246:13250 annotated.AErase <> erase def
+R13252:13252 annotated.AMacros <> i:213 var
+R13236:13240 annotated.AErase <> erase def
+R13242:13242 annotated.AMacros <> D:212 var
+R13225:13229 annotated.AErase <> erase def
+R13231:13232 annotated.AMacros <> IT:211 var
+prf 13295:13308 <> erase_apayload
+binder 13319:13320 <> IT:214
+binder 13322:13322 <> F:215
+binder 13324:13324 <> G:216
+binder 13326:13326 <> i:217
+R13356:13358 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13331:13335 annotated.AErase <> erase def
+R13338:13345 annotated.AMacros <> apayload def
+R13347:13348 annotated.AMacros <> IT:214 var
+R13350:13350 annotated.AMacros <> F:215 var
+R13352:13352 annotated.AMacros <> G:216 var
+R13354:13354 annotated.AMacros <> i:217 var
+R13359:13369 annotated.AErase Raw payload def
+R13403:13407 annotated.AErase <> erase def
+R13409:13409 annotated.AMacros <> i:217 var
+R13393:13397 annotated.AErase <> erase def
+R13399:13399 annotated.AMacros <> G:216 var
+R13383:13387 annotated.AErase <> erase def
+R13389:13389 annotated.AMacros <> F:215 var
+R13372:13376 annotated.AErase <> erase def
+R13378:13379 annotated.AMacros <> IT:214 var
+prf 13452:13463 <> erase_atotal
+binder 13474:13475 <> IT:218
+binder 13477:13477 <> X:219
+R13501:13503 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13482:13486 annotated.AErase <> erase def
+R13489:13494 annotated.AMacros <> atotal def
+R13496:13497 annotated.AMacros <> IT:218 var
+R13499:13499 annotated.AMacros <> X:219 var
+R13504:13512 annotated.AErase Raw total def
+R13526:13530 annotated.AErase <> erase def
+R13532:13532 annotated.AMacros <> X:219 var
+R13515:13519 annotated.AErase <> erase def
+R13521:13522 annotated.AMacros <> IT:218 var
+R13558:13563 annotated.AMacros <> atotal def
+R13566:13576 annotated.AMacros <> afamily_app def
+R13579:13587 annotated.AErase Raw total def
+prf 13621:13633 <> erase_amotive
+binder 13644:13645 <> IT:220
+binder 13647:13647 <> X:221
+R13672:13674 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13652:13656 annotated.AErase <> erase def
+R13659:13665 annotated.AMacros <> amotive def
+R13667:13668 annotated.AMacros <> IT:220 var
+R13670:13670 annotated.AMacros <> X:221 var
+R13675:13684 annotated.AErase Raw motive def
+R13698:13702 annotated.AErase <> erase def
+R13704:13704 annotated.AMacros <> X:221 var
+R13687:13691 annotated.AErase <> erase def
+R13693:13694 annotated.AMacros <> IT:220 var
+R13732:13738 annotated.AMacros <> amotive def
+R13741:13750 annotated.AErase Raw motive def
+R13768:13779 annotated.AMacros <> erase_atotal thm
+R13768:13779 annotated.AMacros <> erase_atotal thm
+R13768:13779 annotated.AMacros <> erase_atotal thm
+prf 13806:13820 <> erase_arec_pair
+binder 13831:13832 <> IT:222
+binder 13834:13834 <> X:223
+R13861:13863 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13839:13843 annotated.AErase <> erase def
+R13846:13854 annotated.AMacros <> arec_pair def
+R13856:13857 annotated.AMacros <> IT:222 var
+R13859:13859 annotated.AMacros <> X:223 var
+R13864:13872 annotated.AErase Raw TPair constr
+R13888:13895 annotated.AErase Raw TVar constr
+R13875:13882 annotated.AErase Raw TVar constr
+R13923:13931 annotated.AMacros <> arec_pair def
+R13934:13944 annotated.AMacros <> afamily_app def
+prf 13978:13996 <> erase_arec_codomain
+binder 14007:14008 <> IT:224
+binder 14010:14010 <> X:225
+binder 14012:14012 <> P:226
+R14045:14051 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14017:14021 annotated.AErase <> erase def
+R14024:14036 annotated.AMacros <> arec_codomain def
+R14038:14039 annotated.AMacros <> IT:224 var
+R14041:14041 annotated.AMacros <> X:225 var
+R14043:14043 annotated.AMacros <> P:226 var
+R14052:14058 annotated.AErase Raw TPi constr
+R14116:14123 annotated.AErase Raw TApp constr
+R14151:14159 annotated.AErase Raw TPair constr
+R14175:14182 annotated.AErase Raw TVar constr
+R14162:14169 annotated.AErase Raw TVar constr
+R14126:14133 annotated.AErase Raw lift def
+R14140:14144 annotated.AErase <> erase def
+R14146:14146 annotated.AMacros <> P:226 var
+R14061:14068 annotated.AErase Raw TApp constr
+R14096:14103 annotated.AErase Raw TVar constr
+R14071:14078 annotated.AErase Raw lift def
+R14085:14089 annotated.AErase <> erase def
+R14091:14091 annotated.AMacros <> X:225 var
+R14214:14226 annotated.AMacros <> arec_codomain def
+R14229:14239 annotated.AMacros <> afamily_app def
+R14242:14247 annotated.AMacros <> atotal def
+R14250:14258 annotated.AMacros <> arec_pair def
+prf 14294:14316 <> erase_arecursive_method
+binder 14327:14328 <> IT:227
+binder 14330:14330 <> X:228
+binder 14332:14332 <> P:229
+R14369:14375 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14337:14341 annotated.AErase <> erase def
+R14344:14360 annotated.AMacros <> arecursive_method def
+R14362:14363 annotated.AMacros <> IT:227 var
+R14365:14365 annotated.AMacros <> X:228 var
+R14367:14367 annotated.AMacros <> P:229 var
+R14376:14395 annotated.AErase Raw recursive_method def
+R14419:14423 annotated.AErase <> erase def
+R14425:14425 annotated.AMacros <> P:229 var
+R14409:14413 annotated.AErase <> erase def
+R14415:14415 annotated.AMacros <> X:228 var
+R14398:14402 annotated.AErase <> erase def
+R14404:14405 annotated.AMacros <> IT:227 var
+R14453:14469 annotated.AMacros <> arecursive_method def
+R14472:14491 annotated.AErase Raw recursive_method def
+R14511:14529 annotated.AMacros <> erase_arec_codomain thm
+R14511:14529 annotated.AMacros <> erase_arec_codomain thm
+R14511:14529 annotated.AMacros <> erase_arec_codomain thm
+prf 14556:14573 <> erase_atail_motive
+binder 14584:14584 <> k:230
+binder 14586:14588 <> tag:231
+binder 14590:14590 <> E:232
+binder 14592:14592 <> P:233
+R14627:14633 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14597:14601 annotated.AErase <> erase def
+R14604:14615 annotated.AMacros <> atail_motive def
+R14617:14617 annotated.AMacros <> k:230 var
+R14619:14621 annotated.AMacros <> tag:231 var
+R14623:14623 annotated.AMacros <> E:232 var
+R14625:14625 annotated.AMacros <> P:233 var
+R14634:14641 annotated.AErase Raw TLam constr
+R14644:14651 annotated.AErase Raw TApp constr
+R14685:14694 annotated.AErase Raw TESucc constr
+R14697:14704 annotated.AErase Raw TVar constr
+R14654:14661 annotated.AErase Raw lift def
+R14668:14672 annotated.AErase <> erase def
+R14674:14674 annotated.AMacros <> P:233 var
+R14734:14745 annotated.AMacros <> atail_motive def
+prf 14779:14800 <> erase_adiagonal_motive
+binder 14811:14812 <> IT:234
+binder 14814:14814 <> G:235
+binder 14816:14816 <> P:236
+R14852:14854 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14821:14825 annotated.AErase <> erase def
+R14828:14843 annotated.AMacros <> adiagonal_motive def
+R14845:14846 annotated.AMacros <> IT:234 var
+R14848:14848 annotated.AMacros <> G:235 var
+R14850:14850 annotated.AMacros <> P:236 var
+R14855:14873 annotated.AErase Raw diagonal_motive def
+R14886:14890 annotated.AErase <> erase def
+R14892:14892 annotated.AMacros <> P:236 var
+R14876:14880 annotated.AErase <> erase def
+R14882:14882 annotated.AMacros <> G:235 var
+R14920:14935 annotated.AMacros <> adiagonal_motive def
+R14938:14943 annotated.AMacros <> atotal def
+R14946:14956 annotated.AMacros <> afamily_app def
+R14959:14966 annotated.AMacros <> acarrier def
+R14969:14976 annotated.AMacros <> aCloseAt def
+R14983:15001 annotated.AErase Raw diagonal_motive def
+R15048:15069 annotated.AMacros <> erase_adiagonal_motive thm

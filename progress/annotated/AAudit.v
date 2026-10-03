@@ -25,4 +25,11 @@ Definition checked_annotated_foundations :=
    @annotated.ARegression.general_eta_allowed,
    @annotated.ARegression.annotation_erasure_is_not_eta_freshness).
 
+Require annotated.AStructuralPreservation.
+
+Definition checked_annotated_preservation :=
+  (@annotated.AStructuralPreservation.structural_root_preservation,
+   @annotated.AStructuralPreservation.structural_step_preservation).
+
 Print Assumptions checked_annotated_foundations.
+Print Assumptions checked_annotated_preservation.
