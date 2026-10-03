@@ -1,10 +1,13 @@
 \newpage
 \sectiontitle{13}{Selected theorem statements and proof status}
-Of the 47 original claims, 44 have proofs without axiom dependencies,
-two coherence claims remain conjectures, and full preservation is refuted.
-No proved claims depend on conjectures. Progress, operational preservation,
-confluence, structural rules, elaboration and subtyping soundness, full
-beta/eta strong normalization, consistency, and their corollaries are proved.
+Of the 47 original claims, 46 have proofs without axiom dependencies and
+full preservation is refuted. No conjectures remain. Progress, operational
+preservation, confluence, structural rules, elaboration and subtyping
+soundness, full beta/eta strong normalization, consistency, coercion and
+checking coherence, and their corollaries are proved. Both coherence
+theorems are proved through a binary relational model on closed terms
+(\texttt{progress/OpenSignaturesRel*.v}); coercions are compared through
+semantic coercion graphs that retag rows by constructor name.
 The current rules admit the following checked counterexample:
 \[
  f=(\lambda z.\lambda B.z)(\lambda x.x),\qquad

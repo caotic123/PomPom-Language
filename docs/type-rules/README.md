@@ -18,8 +18,9 @@ must be well formed. The reference includes the eta regression examples,
 structural computation equations, concrete list/nonempty-list/tree
 instantiations, dependent function coercions, and a bibliography.
 
-Forty-four original claims have proofs without axiom dependencies, two
-coherence claims remain conjectures, and full preservation is refuted. No proved claims depend on conjectures. The PDF and its
+Forty-six original claims have proofs without axiom dependencies, including
+coercion and checking coherence, and full preservation is refuted. No
+conjectures remain. The PDF and its
 LaTeX sources distinguish these statuses; see the
 [current proof status](../../progress/PROOF_STATUS.md) for exact dependencies.
 Named binders use [stable numeric IDs and an alpha setoid](../../progress/STABLE_IDS.md).
@@ -33,7 +34,7 @@ full-preservation dependency from description views. The separate
 [polymorphic application counterexample](../../progress/OpenSignaturesEtaPolymorphism.v)
 refutes full preservation even with function cumulativity. Its false axiom
 was removed, with the exact proposition retained for reference. The two
-coherence claims remain open. Full beta/eta strong normalization
+coherence claims are proved through a binary relational model. Full beta/eta strong normalization
 is proved for every typing derivation, using the cumulative semantic model,
 positive fixed points, computability of every primitive operator, and the
 full fundamental typing theorem. Semantic environments and substitution

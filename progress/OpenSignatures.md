@@ -3,9 +3,8 @@
 This is the relational Rocq version of [type-rules.md](type-rules.md).
 The representation uses [stable numeric IDs](STABLE_IDS.md) and an
 alpha-equivalence setoid, with sequential term interning and no hashing.
-**Forty-four metatheory claims have closed proofs**, two coherence claims
-remain conjectures, and full preservation is refuted.
-No proved claims depend on conjectures. See
+**Forty-six metatheory claims have closed proofs**, including coercion and
+checking coherence, and full preservation is refuted. No conjectures remain. See
 [PROOF_STATUS.md](PROOF_STATUS.md) for dependencies and
 [PROOF_START.md](PROOF_START.md) for the first proof and acceptance check.
 
@@ -25,8 +24,8 @@ make -C progress audit-open-signatures
 The syntax, alpha setoid, core rules, elaboration, examples, and binding
 regressions are checked with Rocq 9.1.0. The full build and umbrella
 `Require Import OpenSignatures` succeed. Progress, execution preservation, and
-type correctness and full normalization are proved; two coherence obligations remain
-explicit conjectures, and full preservation has a checked counterexample. The independent
+type correctness, full normalization, and both coherence claims are proved,
+and full preservation has a checked counterexample. The independent
 `check-bindings` target imports through `OpenSignaturesExamples`.
 
 | Module | Contents |
@@ -87,11 +86,15 @@ explicit conjectures, and full preservation has a checked counterexample. The in
 | [nameless/DBFullPreservation.v](nameless/DBFullPreservation.v) | Full preservation reduced to an explicit general eta-preservation premise; the premise is refuted by `DBEtaPolymorphism.v`. |
 | [OpenSignaturesPayloadInversion.v](OpenSignaturesPayloadInversion.v) | Axiom-free inversion of close constructors. |
 | [OpenSignaturesEtaRegression.v](OpenSignaturesEtaRegression.v) | Axiom-free checks for function codomain and domain cumulativity, eta reduct typing, and distinct universes. |
-| [OpenSignaturesObservations.v](OpenSignaturesObservations.v), [OpenSignaturesObservationalLaws.v](OpenSignaturesObservationalLaws.v), [OpenSignaturesObservationalTypes.v](OpenSignaturesObservationalTypes.v) | Closing substitutions, Boolean observations, conversion adequacy, equivalence laws, and typed contextual congruence, independent of the public conjectures. |
+| [OpenSignaturesObservations.v](OpenSignaturesObservations.v), [OpenSignaturesObservationalLaws.v](OpenSignaturesObservationalLaws.v), [OpenSignaturesObservationalTypes.v](OpenSignaturesObservationalTypes.v) | Closing substitutions, Boolean observations, conversion adequacy, equivalence laws, and typed contextual congruence. |
 | [OpenSignaturesEtaPolymorphism.v](OpenSignaturesEtaPolymorphism.v), [nameless/DBEtaPolymorphism.v](nameless/DBEtaPolymorphism.v) | Axiom-free refutation of unrestricted eta/full preservation by a polymorphic application. |
 | [OpenSignaturesComputationPreservation.v](OpenSignaturesComputationPreservation.v) | Preservation for compatible computation, including binders and annotations; a separate checked repair option. |
 | [OpenSignaturesRowCoherence.v](OpenSignaturesRowCoherence.v) | Live handler uniqueness and pointwise conversion of row maps on every closed input for fixed row views. |
-| [OpenSignaturesTheorems.v](OpenSignaturesTheorems.v) | Forty-four closed claims, two coherence conjectures, and the exact refuted full-preservation proposition. |
+| [OpenSignaturesRelBase.v](OpenSignaturesRelBase.v) … [OpenSignaturesRelFundamental.v](OpenSignaturesRelFundamental.v) | Binary relational model on closed terms: conversion-closed PERs at structurally related types, cumulative universes, description functors with least fixed points, close types, and the fundamental lemma for every typing rule. |
+| [OpenSignaturesRelAdequacy.v](OpenSignaturesRelAdequacy.v) | Related terms give the same observations, hence `observational_eq`. |
+| [OpenSignaturesRelViews.v](OpenSignaturesRelViews.v), [OpenSignaturesRelGraph.v](OpenSignaturesRelGraph.v), [OpenSignaturesRelGraphFunc.v](OpenSignaturesRelGraphFunc.v), [OpenSignaturesRelGraphComp.v](OpenSignaturesRelGraphComp.v) | Semantic coercion graphs with name-based row retagging: closure, transport, functionality, totality, and composition. |
+| [OpenSignaturesRelCoercion.v](OpenSignaturesRelCoercion.v), [OpenSignaturesRelElab.v](OpenSignaturesRelElab.v) | Realizability of every coercion derivation, and elaboration coherence over contexts linked by related types. See [RELATIONAL_PLAN.md](RELATIONAL_PLAN.md). |
+| [OpenSignaturesTheorems.v](OpenSignaturesTheorems.v) | Forty-six closed claims, including both coherence theorems, and the exact refuted full-preservation proposition. |
 | [OpenSignaturesAudit.v](OpenSignaturesAudit.v) | Rule signatures and assumption checks, beginning with `context_validity`. |
 | [PROOF_START.md](PROOF_START.md) | First theorem, proof approach, and acceptance criteria. |
 
@@ -138,15 +141,16 @@ canonical forms, closure elimination, name resolution, coverage, emptiness,
 coercion typing, elaboration soundness, coherence, and concrete example
 typing. Coherence is observational and quantified over typed closing
 substitutions; it does not assert that alternative coercions are
-definitionally equal. A deterministic policy for dependent inference and
+definitionally equal. Both coherence theorems are proved through the
+binary relational model. A deterministic policy for dependent inference and
 a semantic construction relating the diagonal to reference `μᴵ` remain
 design obligations.
 
 Five current example proofs check singleton head, tail, widening, a
 compact/padded round trip, and preservation of a free payload ID. The
 binding regressions also exercise shadowing, capture avoidance, alpha
-comparison, stable lookup, and ID reuse. None uses a metatheory conjecture.
-The ten older computation proofs remain in the archive. Compiling a
-`Conjecture` validates its statement's Rocq type, not its truth.
+comparison, stable lookup, and ID reuse. The active development declares
+no metatheory conjectures. The ten older computation proofs remain in the
+archive.
 
 Function cumulativity repairs the known eta counterexamples. See the axiom-free [regressions](OpenSignaturesEtaRegression.v), the [updated rules](type-rules.md), and [remaining proof obligations](PROOF_STATUS.md).
