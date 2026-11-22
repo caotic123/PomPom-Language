@@ -1,0 +1,467 @@
+DIGEST 32559b05c73eeff49d17f29750201204
+Fannotated.ACompleteness
+R366:369 Stdlib.Lists.List <> <> lib
+R371:375 Stdlib.Arith.Arith <> <> lib
+R377:379 Stdlib.micromega.Lia <> <> lib
+R397:413 annotated.AGenAll <> <> lib
+R423:435 Stdlib.Lists.List ListNotations <> mod
+def 450:458 <> shape_TPi
+binder 460:460 <> t:1
+R471:471 annotated.ACompleteness <> t:1 var
+R478:480 annotated.ASyntax <> TPi constr
+R489:492 Corelib.Init.Logic <> True ind
+R501:505 Corelib.Init.Logic <> False ind
+def 523:534 <> shape_TSigma
+binder 536:536 <> t:3
+R547:547 annotated.ACompleteness <> t:3 var
+R554:559 annotated.ASyntax <> TSigma constr
+R568:571 Corelib.Init.Logic <> True ind
+R580:584 Corelib.Init.Logic <> False ind
+prf 598:610 <> pi_generation
+binder 621:625 <> Gamma:5
+binder 627:627 <> t:6
+binder 629:629 <> T:7
+R648:653 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R632:637 annotated.ATyping <> typing ind
+R639:643 annotated.ACompleteness <> Gamma:5 var
+R645:645 annotated.ACompleteness <> t:6 var
+R647:647 annotated.ACompleteness <> T:7 var
+R665:668 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R654:662 annotated.ACompleteness <> shape_TPi def
+R664:664 annotated.ACompleteness <> t:6 var
+R669:675 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R683:684 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 676:676 <> A:8
+binder 678:678 <> B:9
+binder 680:680 <> j:10
+binder 682:682 <> k:11
+R696:701 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R686:688 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R685:685 annotated.ACompleteness <> t:6 var
+R689:691 annotated.ASyntax <> TPi constr
+R693:693 annotated.ACompleteness <> A:8 var
+R695:695 annotated.ACompleteness <> B:9 var
+R730:733 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R702:707 annotated.ATyping <> typing ind
+R709:713 annotated.ACompleteness <> Gamma:5 var
+R715:715 annotated.ACompleteness <> A:8 var
+R718:726 annotated.AErase Raw TSort constr
+R728:728 annotated.ACompleteness <> j:10 var
+R775:780 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R734:739 annotated.ATyping <> typing ind
+R749:752 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R742:746 annotated.AErase <> erase def
+R748:748 annotated.ACompleteness <> A:8 var
+R753:757 annotated.ACompleteness <> Gamma:5 var
+R760:760 annotated.ACompleteness <> B:9 var
+R763:771 annotated.AErase Raw TSort constr
+R773:773 annotated.ACompleteness <> k:11 var
+R781:798 annotated.AComparison RC type_comparison ind
+R801:809 annotated.AErase Raw TSort constr
+R812:818 Stdlib.Arith.PeanoNat Nat max def
+R820:820 annotated.ACompleteness <> j:10 var
+R822:822 annotated.ACompleteness <> k:11 var
+R826:826 annotated.ACompleteness <> T:7 var
+prf 854:869 <> sigma_generation
+binder 880:884 <> Gamma:12
+binder 886:886 <> t:13
+binder 888:888 <> T:14
+R907:912 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R891:896 annotated.ATyping <> typing ind
+R898:902 annotated.ACompleteness <> Gamma:12 var
+R904:904 annotated.ACompleteness <> t:13 var
+R906:906 annotated.ACompleteness <> T:14 var
+R927:930 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R913:924 annotated.ACompleteness <> shape_TSigma def
+R926:926 annotated.ACompleteness <> t:13 var
+R931:937 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R945:946 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 938:938 <> A:15
+binder 940:940 <> B:16
+binder 942:942 <> j:17
+binder 944:944 <> k:18
+R961:966 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R948:950 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R947:947 annotated.ACompleteness <> t:13 var
+R951:956 annotated.ASyntax <> TSigma constr
+R958:958 annotated.ACompleteness <> A:15 var
+R960:960 annotated.ACompleteness <> B:16 var
+R995:998 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R967:972 annotated.ATyping <> typing ind
+R974:978 annotated.ACompleteness <> Gamma:12 var
+R980:980 annotated.ACompleteness <> A:15 var
+R983:991 annotated.AErase Raw TSort constr
+R993:993 annotated.ACompleteness <> j:17 var
+R1040:1045 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R999:1004 annotated.ATyping <> typing ind
+R1014:1017 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1007:1011 annotated.AErase <> erase def
+R1013:1013 annotated.ACompleteness <> A:15 var
+R1018:1022 annotated.ACompleteness <> Gamma:12 var
+R1025:1025 annotated.ACompleteness <> B:16 var
+R1028:1036 annotated.AErase Raw TSort constr
+R1038:1038 annotated.ACompleteness <> k:18 var
+R1046:1063 annotated.AComparison RC type_comparison ind
+R1066:1074 annotated.AErase Raw TSort constr
+R1077:1083 Stdlib.Arith.PeanoNat Nat max def
+R1085:1085 annotated.ACompleteness <> j:17 var
+R1087:1087 annotated.ACompleteness <> k:18 var
+R1091:1091 annotated.ACompleteness <> T:14 var
+prf 1119:1130 <> erase_pi_inv
+binder 1141:1141 <> t:19
+binder 1143:1143 <> A:20
+binder 1145:1145 <> B:21
+R1169:1174 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1155:1157 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1148:1152 annotated.AErase <> erase def
+R1154:1154 annotated.ACompleteness <> t:19 var
+R1158:1164 annotated.AErase Raw TPi constr
+R1168:1168 annotated.ACompleteness <> B:21 var
+R1166:1166 annotated.ACompleteness <> A:20 var
+R1175:1181 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1187:1188 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1182:1183 <> A':22
+binder 1185:1186 <> B':23
+R1202:1205 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1190:1192 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1189:1189 annotated.ACompleteness <> t:19 var
+R1193:1195 annotated.ASyntax <> TPi constr
+R1197:1198 annotated.ACompleteness <> A':22 var
+R1200:1201 annotated.ACompleteness <> B':23 var
+R1218:1221 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1214:1216 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1206:1210 annotated.AErase <> erase def
+R1212:1213 annotated.ACompleteness <> A':22 var
+R1217:1217 annotated.ACompleteness <> A:20 var
+R1230:1232 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1222:1226 annotated.AErase <> erase def
+R1228:1229 annotated.ACompleteness <> B':23 var
+R1233:1233 annotated.ACompleteness <> B:21 var
+R1262:1266 annotated.AErase <> erase def
+prf 1337:1351 <> erase_sigma_inv
+binder 1362:1362 <> t:24
+binder 1364:1364 <> A:25
+binder 1366:1366 <> B:26
+R1393:1398 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1376:1378 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1369:1373 annotated.AErase <> erase def
+R1375:1375 annotated.ACompleteness <> t:24 var
+R1379:1388 annotated.AErase Raw TSigma constr
+R1392:1392 annotated.ACompleteness <> B:26 var
+R1390:1390 annotated.ACompleteness <> A:25 var
+R1399:1405 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1411:1412 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1406:1407 <> A':27
+binder 1409:1410 <> B':28
+R1429:1432 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1414:1416 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1413:1413 annotated.ACompleteness <> t:24 var
+R1417:1422 annotated.ASyntax <> TSigma constr
+R1424:1425 annotated.ACompleteness <> A':27 var
+R1427:1428 annotated.ACompleteness <> B':28 var
+R1445:1448 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1441:1443 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1433:1437 annotated.AErase <> erase def
+R1439:1440 annotated.ACompleteness <> A':27 var
+R1444:1444 annotated.ACompleteness <> A:25 var
+R1457:1459 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1449:1453 annotated.AErase <> erase def
+R1455:1456 annotated.ACompleteness <> B':28 var
+R1460:1460 annotated.ACompleteness <> B:26 var
+R1489:1493 annotated.AErase <> erase def
+prf 1679:1700 <> annotated_pi_formation
+binder 1711:1715 <> Gamma:29
+binder 1717:1717 <> t:30
+binder 1719:1719 <> A:31
+binder 1721:1721 <> B:32
+binder 1723:1723 <> k:33
+R1749:1752 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1735:1737 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1728:1732 annotated.AErase <> erase def
+R1734:1734 annotated.ACompleteness <> t:30 var
+R1738:1744 annotated.AErase Raw TPi constr
+R1748:1748 annotated.ACompleteness <> B:32 var
+R1746:1746 annotated.ACompleteness <> A:31 var
+R1781:1786 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1753:1758 annotated.ATyping <> typing ind
+R1760:1764 annotated.ACompleteness <> Gamma:29 var
+R1766:1766 annotated.ACompleteness <> t:30 var
+R1769:1777 annotated.AErase Raw TSort constr
+R1779:1779 annotated.ACompleteness <> k:33 var
+R1787:1793 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1803:1804 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1794:1795 <> A':34
+binder 1797:1798 <> B':35
+binder 1800:1800 <> j:36
+binder 1802:1802 <> l:37
+R1817:1820 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1813:1815 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1805:1809 annotated.AErase <> erase def
+R1811:1812 annotated.ACompleteness <> A':34 var
+R1816:1816 annotated.ACompleteness <> A:31 var
+R1833:1838 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1829:1831 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1821:1825 annotated.AErase <> erase def
+R1827:1828 annotated.ACompleteness <> B':35 var
+R1832:1832 annotated.ACompleteness <> B:32 var
+R1868:1871 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1839:1844 annotated.ATyping <> typing ind
+R1846:1850 annotated.ACompleteness <> Gamma:29 var
+R1852:1853 annotated.ACompleteness <> A':34 var
+R1856:1864 annotated.AErase Raw TSort constr
+R1866:1866 annotated.ACompleteness <> j:36 var
+R1872:1877 annotated.ATyping <> typing ind
+R1881:1884 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1880:1880 annotated.ACompleteness <> A:31 var
+R1885:1889 annotated.ACompleteness <> Gamma:29 var
+R1892:1893 annotated.ACompleteness <> B':35 var
+R1896:1904 annotated.AErase Raw TSort constr
+R1906:1906 annotated.ACompleteness <> l:37 var
+R1959:1970 annotated.ACompleteness <> erase_pi_inv thm
+R1959:1970 annotated.ACompleteness <> erase_pi_inv thm
+R2021:2033 annotated.ACompleteness <> pi_generation thm
+R2044:2044 Corelib.Init.Logic <> I constr
+R2021:2033 annotated.ACompleteness <> pi_generation thm
+R2044:2044 Corelib.Init.Logic <> I constr
+prf 2168:2192 <> annotated_sigma_formation
+binder 2203:2207 <> Gamma:38
+binder 2209:2209 <> t:39
+binder 2211:2211 <> A:40
+binder 2213:2213 <> B:41
+binder 2215:2215 <> k:42
+R2244:2247 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2227:2229 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2220:2224 annotated.AErase <> erase def
+R2226:2226 annotated.ACompleteness <> t:39 var
+R2230:2239 annotated.AErase Raw TSigma constr
+R2243:2243 annotated.ACompleteness <> B:41 var
+R2241:2241 annotated.ACompleteness <> A:40 var
+R2276:2281 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2248:2253 annotated.ATyping <> typing ind
+R2255:2259 annotated.ACompleteness <> Gamma:38 var
+R2261:2261 annotated.ACompleteness <> t:39 var
+R2264:2272 annotated.AErase Raw TSort constr
+R2274:2274 annotated.ACompleteness <> k:42 var
+R2282:2288 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2298:2299 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2289:2290 <> A':43
+binder 2292:2293 <> B':44
+binder 2295:2295 <> j:45
+binder 2297:2297 <> l:46
+R2312:2315 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2308:2310 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2300:2304 annotated.AErase <> erase def
+R2306:2307 annotated.ACompleteness <> A':43 var
+R2311:2311 annotated.ACompleteness <> A:40 var
+R2328:2333 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2324:2326 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2316:2320 annotated.AErase <> erase def
+R2322:2323 annotated.ACompleteness <> B':44 var
+R2327:2327 annotated.ACompleteness <> B:41 var
+R2363:2366 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2334:2339 annotated.ATyping <> typing ind
+R2341:2345 annotated.ACompleteness <> Gamma:38 var
+R2347:2348 annotated.ACompleteness <> A':43 var
+R2351:2359 annotated.AErase Raw TSort constr
+R2361:2361 annotated.ACompleteness <> j:45 var
+R2367:2372 annotated.ATyping <> typing ind
+R2376:2379 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2375:2375 annotated.ACompleteness <> A:40 var
+R2380:2384 annotated.ACompleteness <> Gamma:38 var
+R2387:2388 annotated.ACompleteness <> B':44 var
+R2391:2399 annotated.AErase Raw TSort constr
+R2401:2401 annotated.ACompleteness <> l:46 var
+R2454:2468 annotated.ACompleteness <> erase_sigma_inv thm
+R2454:2468 annotated.ACompleteness <> erase_sigma_inv thm
+R2519:2534 annotated.ACompleteness <> sigma_generation thm
+R2545:2545 Corelib.Init.Logic <> I constr
+R2519:2534 annotated.ACompleteness <> sigma_generation thm
+R2545:2545 Corelib.Init.Logic <> I constr
+R2721:2727 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2729:2730 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2728:2728 <> t:47
+R2742:2745 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2738:2740 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2731:2735 annotated.AErase <> erase def
+R2737:2737 annotated.ACompleteness <> t:47 var
+R2746:2751 annotated.ATyping <> typing ind
+R2755:2755 annotated.ACompleteness <> t:47 var
+R2721:2727 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2729:2730 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2728:2728 <> t:48
+R2742:2745 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2738:2740 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2731:2735 annotated.AErase <> erase def
+R2737:2737 annotated.ACompleteness <> t:48 var
+R2746:2751 annotated.ATyping <> typing ind
+R2755:2755 annotated.ACompleteness <> t:48 var
+R2948:2950 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2940:2944 annotated.AErase <> erase def
+R2951:2957 annotated.AErase Raw TPi constr
+R2948:2950 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2940:2944 annotated.AErase <> erase def
+R2951:2957 annotated.AErase Raw TPi constr
+R2969:2974 annotated.ATyping <> typing ind
+R2982:2990 annotated.AErase Raw TSort constr
+R2969:2974 annotated.ATyping <> typing ind
+R2982:2990 annotated.AErase Raw TSort constr
+R3236:3238 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3228:3232 annotated.AErase <> erase def
+R3239:3248 annotated.AErase Raw TSigma constr
+R3236:3238 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3228:3232 annotated.AErase <> erase def
+R3239:3248 annotated.AErase Raw TSigma constr
+R3260:3265 annotated.ATyping <> typing ind
+R3273:3281 annotated.AErase Raw TSort constr
+R3260:3265 annotated.ATyping <> typing ind
+R3273:3281 annotated.AErase Raw TSort constr
+R3414:3438 annotated.ACompleteness <> annotated_sigma_formation thm
+R3123:3144 annotated.ACompleteness <> annotated_pi_formation thm
+R3590:3592 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3582:3586 annotated.AErase <> erase def
+R3590:3592 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3582:3586 annotated.AErase <> erase def
+R3663:3670 annotated.ATyping <> ty_cumul constr
+R3680:3687 annotated.ATyping <> ty_unitT constr
+R3724:3729 annotated.ATyping <> typing ind
+R3779:3785 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3787:3788 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3786:3786 <> t:49
+R3807:3810 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3796:3798 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3789:3793 annotated.AErase <> erase def
+R3795:3795 annotated.ACompleteness <> t:49 var
+R3799:3803 annotated.AErase <> erase def
+R3779:3785 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3787:3788 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3786:3786 <> t:50
+R3807:3810 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3796:3798 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3789:3793 annotated.AErase <> erase def
+R3795:3795 annotated.ACompleteness <> t:50 var
+R3799:3803 annotated.AErase <> erase def
+R3885:3892 Corelib.Init.Logic <> ex_intro constr
+R3897:3900 annotated.ASyntax <> TVar constr
+R3958:3965 Corelib.Init.Logic <> ex_intro constr
+R3970:3974 annotated.ASyntax <> TSort constr
+R4032:4039 Corelib.Init.Logic <> ex_intro constr
+R4044:4046 annotated.ASyntax <> TPi constr
+R4106:4113 Corelib.Init.Logic <> ex_intro constr
+R4118:4121 annotated.ASyntax <> TLam constr
+R4183:4190 Corelib.Init.Logic <> ex_intro constr
+R4195:4198 annotated.ASyntax <> TApp constr
+R4262:4269 Corelib.Init.Logic <> ex_intro constr
+R4274:4279 annotated.ASyntax <> TSigma constr
+R4339:4346 Corelib.Init.Logic <> ex_intro constr
+R4351:4355 annotated.ASyntax <> TPair constr
+R4419:4426 Corelib.Init.Logic <> ex_intro constr
+R4431:4434 annotated.ASyntax <> TFst constr
+R4496:4503 Corelib.Init.Logic <> ex_intro constr
+R4508:4511 annotated.ASyntax <> TSnd constr
+R4573:4580 Corelib.Init.Logic <> ex_intro constr
+R4585:4590 annotated.ASyntax <> TUnitT constr
+R4646:4653 Corelib.Init.Logic <> ex_intro constr
+R4658:4662 annotated.ASyntax <> TUnit constr
+R4718:4725 Corelib.Init.Logic <> ex_intro constr
+R4730:4733 annotated.ASyntax <> TUId constr
+R4789:4796 Corelib.Init.Logic <> ex_intro constr
+R4801:4804 annotated.ASyntax <> TTag constr
+R4862:4869 Corelib.Init.Logic <> ex_intro constr
+R4874:4879 annotated.ASyntax <> TEnumU constr
+R4935:4942 Corelib.Init.Logic <> ex_intro constr
+R4947:4951 annotated.ASyntax <> TNilE constr
+R5007:5014 Corelib.Init.Logic <> ex_intro constr
+R5019:5024 annotated.ASyntax <> TConsE constr
+R5084:5091 Corelib.Init.Logic <> ex_intro constr
+R5096:5101 annotated.ASyntax <> TEnumT constr
+R5159:5166 Corelib.Init.Logic <> ex_intro constr
+R5171:5176 annotated.ASyntax <> TEZero constr
+R5236:5243 Corelib.Init.Logic <> ex_intro constr
+R5248:5253 annotated.ASyntax <> TESucc constr
+R5315:5322 Corelib.Init.Logic <> ex_intro constr
+R5327:5330 annotated.ASyntax <> TEPi constr
+R5392:5399 Corelib.Init.Logic <> ex_intro constr
+R5404:5410 annotated.ASyntax <> TSwitch constr
+R5476:5483 Corelib.Init.Logic <> ex_intro constr
+R5488:5493 annotated.ASyntax <> TIDesc constr
+R5551:5558 Corelib.Init.Logic <> ex_intro constr
+R5563:5567 annotated.ASyntax <> TIVar constr
+R5627:5634 Corelib.Init.Logic <> ex_intro constr
+R5639:5641 annotated.ASyntax <> TI1 constr
+R5699:5706 Corelib.Init.Logic <> ex_intro constr
+R5711:5715 annotated.ASyntax <> TIBot constr
+R5773:5780 Corelib.Init.Logic <> ex_intro constr
+R5785:5790 annotated.ASyntax <> TIProd constr
+R5852:5859 Corelib.Init.Logic <> ex_intro constr
+R5864:5867 annotated.ASyntax <> TIPi constr
+R5929:5936 Corelib.Init.Logic <> ex_intro constr
+R5941:5945 annotated.ASyntax <> TISig constr
+R6007:6014 Corelib.Init.Logic <> ex_intro constr
+R6019:6026 annotated.ASyntax <> TIChoice constr
+R6088:6095 Corelib.Init.Logic <> ex_intro constr
+R6100:6106 annotated.ASyntax <> TInterp constr
+R6168:6175 Corelib.Init.Logic <> ex_intro constr
+R6180:6183 annotated.ASyntax <> TMuI constr
+R6243:6250 Corelib.Init.Logic <> ex_intro constr
+R6255:6259 annotated.ASyntax <> TInMu constr
+R6323:6330 Corelib.Init.Logic <> ex_intro constr
+R6335:6342 annotated.ASyntax <> TInClose constr
+R6408:6415 Corelib.Init.Logic <> ex_intro constr
+R6420:6423 annotated.ASyntax <> TInd constr
+R6491:6498 Corelib.Init.Logic <> ex_intro constr
+R6503:6507 annotated.ASyntax <> TIAll constr
+R6573:6580 Corelib.Init.Logic <> ex_intro constr
+R6585:6589 annotated.ASyntax <> THyps constr
+R6657:6664 Corelib.Init.Logic <> ex_intro constr
+R6669:6674 annotated.ASyntax <> TClose constr
+R6736:6743 Corelib.Init.Logic <> ex_intro constr
+R6748:6757 annotated.ASyntax <> TCloseCase constr
+R6829:6836 Corelib.Init.Logic <> ex_intro constr
+R6841:6849 annotated.ASyntax <> TCloseInd constr
+prf 6919:6941 <> annotation_completeness
+binder 6952:6956 <> Gamma:51
+binder 6958:6958 <> r:52
+binder 6960:6960 <> A:53
+R6982:6987 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6963:6971 annotated.ATyping RT typing ind
+R6973:6977 annotated.ACompleteness <> Gamma:51 var
+R6979:6979 annotated.ACompleteness <> r:52 var
+R6981:6981 annotated.ACompleteness <> A:53 var
+R6988:6994 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6996:6997 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6995:6995 <> t:54
+R7009:7012 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7005:7007 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6998:7002 annotated.AErase <> erase def
+R7004:7004 annotated.ACompleteness <> t:54 var
+R7008:7008 annotated.ACompleteness <> r:52 var
+R7013:7018 annotated.ATyping <> typing ind
+R7020:7024 annotated.ACompleteness <> Gamma:51 var
+R7026:7026 annotated.ACompleteness <> t:54 var
+R7028:7028 annotated.ACompleteness <> A:53 var
+prf 7214:7234 <> typing_iff_annotation
+binder 7245:7249 <> Gamma:55
+binder 7251:7251 <> r:56
+binder 7253:7253 <> A:57
+R7277:7281 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R7258:7266 annotated.ATyping RT typing ind
+R7268:7272 annotated.ACompleteness <> Gamma:55 var
+R7274:7274 annotated.ACompleteness <> r:56 var
+R7276:7276 annotated.ACompleteness <> A:57 var
+R7282:7288 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7290:7291 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7289:7289 <> t:58
+R7303:7306 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7299:7301 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7292:7296 annotated.AErase <> erase def
+R7298:7298 annotated.ACompleteness <> t:58 var
+R7302:7302 annotated.ACompleteness <> r:56 var
+R7307:7312 annotated.ATyping <> typing ind
+R7314:7318 annotated.ACompleteness <> Gamma:55 var
+R7320:7320 annotated.ACompleteness <> t:58 var
+R7322:7322 annotated.ACompleteness <> A:57 var
+R7366:7388 annotated.ACompleteness <> annotation_completeness thm
+R7366:7388 annotated.ACompleteness <> annotation_completeness thm
+R7422:7435 annotated.ATyping <> typing_erasure thm
+R7422:7435 annotated.ATyping <> typing_erasure thm
+R7472:7494 annotated.ACompleteness <> annotation_completeness thm

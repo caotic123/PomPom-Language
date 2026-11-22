@@ -1,0 +1,2005 @@
+DIGEST 084d659c5a7908a3c66c1da4f3359688
+Fannotated.ACfHelpers
+R260:263 Stdlib.Lists.List <> <> lib
+R265:269 Stdlib.Arith.Arith <> <> lib
+R271:274 Stdlib.Bool.Bool <> <> lib
+R276:278 Stdlib.micromega.Lia <> <> lib
+R296:311 annotated.ACfRaw <> <> lib
+R313:335 annotated.ACompleteness <> <> lib
+R345:357 Stdlib.Lists.List ListNotations <> mod
+prf 411:417 <> rf_TVar
+binder 428:428 <> x:1
+binder 430:430 <> n:2
+R439:442 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R434:437 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R433:433 annotated.ACfHelpers <> n:2 var
+R438:438 annotated.ACfHelpers <> x:1 var
+R443:451 annotated.ACfRaw <> raw_fresh def
+R453:453 annotated.ACfHelpers <> x:1 var
+R456:463 annotated.AErase Raw TVar constr
+R465:465 annotated.ACfHelpers <> n:2 var
+R503:514 Stdlib.Arith.PeanoNat Nat ltb_spec thm
+R503:514 Stdlib.Arith.PeanoNat Nat ltb_spec thm
+R534:541 annotated.AErase Raw TVar constr
+R552:559 annotated.AErase Raw lift def
+R573:584 Stdlib.Arith.PeanoNat Nat ltb_spec thm
+R534:541 annotated.AErase Raw TVar constr
+R573:584 Stdlib.Arith.PeanoNat Nat ltb_spec thm
+R623:630 annotated.AErase Raw TVar constr
+R633:640 Stdlib.Arith.PeanoNat Nat pred def
+R652:659 annotated.AErase Raw lift def
+R623:630 annotated.AErase Raw TVar constr
+R633:640 Stdlib.Arith.PeanoNat Nat pred def
+R677:688 Stdlib.Arith.PeanoNat Nat ltb_spec thm
+R691:698 Stdlib.Arith.PeanoNat Nat pred def
+R677:688 Stdlib.Arith.PeanoNat Nat ltb_spec thm
+R691:698 Stdlib.Arith.PeanoNat Nat pred def
+prf 738:745 <> rf_TSort
+binder 756:758 <> cut:3
+binder 760:760 <> k:4
+R763:771 annotated.ACfRaw <> raw_fresh def
+R773:775 annotated.ACfHelpers <> cut:3 var
+R778:786 annotated.AErase Raw TSort constr
+R788:788 annotated.ACfHelpers <> k:4 var
+R815:823 annotated.AErase Raw TSort constr
+R815:823 annotated.AErase Raw TSort constr
+prf 853:858 <> rf_TPi
+binder 869:871 <> cut:5
+binder 873:873 <> A:6
+binder 875:875 <> B:7
+R893:896 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R878:886 annotated.ACfRaw <> raw_fresh def
+R888:890 annotated.ACfHelpers <> cut:5 var
+R892:892 annotated.ACfHelpers <> A:6 var
+R916:921 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R897:905 annotated.ACfRaw <> raw_fresh def
+R908:908 Corelib.Init.Datatypes <> S constr
+R910:912 annotated.ACfHelpers <> cut:5 var
+R915:915 annotated.ACfHelpers <> B:7 var
+R922:930 annotated.ACfRaw <> raw_fresh def
+R932:934 annotated.ACfHelpers <> cut:5 var
+R937:943 annotated.AErase Raw TPi constr
+R947:947 annotated.ACfHelpers <> B:7 var
+R945:945 annotated.ACfHelpers <> A:6 var
+R998:1004 annotated.AErase Raw TPi constr
+R998:1004 annotated.AErase Raw TPi constr
+prf 1038:1044 <> rf_TLam
+binder 1055:1057 <> cut:8
+binder 1059:1059 <> b:9
+R1081:1086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1062:1070 annotated.ACfRaw <> raw_fresh def
+R1073:1073 Corelib.Init.Datatypes <> S constr
+R1075:1077 annotated.ACfHelpers <> cut:8 var
+R1080:1080 annotated.ACfHelpers <> b:9 var
+R1087:1095 annotated.ACfRaw <> raw_fresh def
+R1097:1099 annotated.ACfHelpers <> cut:8 var
+R1102:1109 annotated.AErase Raw TLam constr
+R1111:1111 annotated.ACfHelpers <> b:9 var
+R1152:1159 annotated.AErase Raw TLam constr
+R1152:1159 annotated.AErase Raw TLam constr
+prf 1190:1196 <> rf_TApp
+binder 1207:1209 <> cut:10
+binder 1211:1211 <> f:11
+binder 1213:1213 <> a:12
+R1231:1234 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1216:1224 annotated.ACfRaw <> raw_fresh def
+R1226:1228 annotated.ACfHelpers <> cut:10 var
+R1230:1230 annotated.ACfHelpers <> f:11 var
+R1250:1255 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1235:1243 annotated.ACfRaw <> raw_fresh def
+R1245:1247 annotated.ACfHelpers <> cut:10 var
+R1249:1249 annotated.ACfHelpers <> a:12 var
+R1256:1264 annotated.ACfRaw <> raw_fresh def
+R1266:1268 annotated.ACfHelpers <> cut:10 var
+R1271:1278 annotated.AErase Raw TApp constr
+R1282:1282 annotated.ACfHelpers <> a:12 var
+R1280:1280 annotated.ACfHelpers <> f:11 var
+R1333:1340 annotated.AErase Raw TApp constr
+R1333:1340 annotated.AErase Raw TApp constr
+prf 1374:1382 <> rf_TSigma
+binder 1393:1395 <> cut:13
+binder 1397:1397 <> A:14
+binder 1399:1399 <> B:15
+R1417:1420 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1402:1410 annotated.ACfRaw <> raw_fresh def
+R1412:1414 annotated.ACfHelpers <> cut:13 var
+R1416:1416 annotated.ACfHelpers <> A:14 var
+R1440:1445 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1421:1429 annotated.ACfRaw <> raw_fresh def
+R1432:1432 Corelib.Init.Datatypes <> S constr
+R1434:1436 annotated.ACfHelpers <> cut:13 var
+R1439:1439 annotated.ACfHelpers <> B:15 var
+R1446:1454 annotated.ACfRaw <> raw_fresh def
+R1456:1458 annotated.ACfHelpers <> cut:13 var
+R1461:1470 annotated.AErase Raw TSigma constr
+R1474:1474 annotated.ACfHelpers <> B:15 var
+R1472:1472 annotated.ACfHelpers <> A:14 var
+R1525:1534 annotated.AErase Raw TSigma constr
+R1525:1534 annotated.AErase Raw TSigma constr
+prf 1568:1575 <> rf_TPair
+binder 1586:1588 <> cut:16
+binder 1590:1590 <> a:17
+binder 1592:1592 <> b:18
+R1610:1613 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1595:1603 annotated.ACfRaw <> raw_fresh def
+R1605:1607 annotated.ACfHelpers <> cut:16 var
+R1609:1609 annotated.ACfHelpers <> a:17 var
+R1629:1634 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1614:1622 annotated.ACfRaw <> raw_fresh def
+R1624:1626 annotated.ACfHelpers <> cut:16 var
+R1628:1628 annotated.ACfHelpers <> b:18 var
+R1635:1643 annotated.ACfRaw <> raw_fresh def
+R1645:1647 annotated.ACfHelpers <> cut:16 var
+R1650:1658 annotated.AErase Raw TPair constr
+R1662:1662 annotated.ACfHelpers <> b:18 var
+R1660:1660 annotated.ACfHelpers <> a:17 var
+R1713:1721 annotated.AErase Raw TPair constr
+R1713:1721 annotated.AErase Raw TPair constr
+prf 1755:1761 <> rf_TFst
+binder 1772:1774 <> cut:19
+binder 1776:1776 <> p:20
+R1794:1799 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1779:1787 annotated.ACfRaw <> raw_fresh def
+R1789:1791 annotated.ACfHelpers <> cut:19 var
+R1793:1793 annotated.ACfHelpers <> p:20 var
+R1800:1808 annotated.ACfRaw <> raw_fresh def
+R1810:1812 annotated.ACfHelpers <> cut:19 var
+R1815:1822 annotated.AErase Raw TFst constr
+R1824:1824 annotated.ACfHelpers <> p:20 var
+R1865:1872 annotated.AErase Raw TFst constr
+R1865:1872 annotated.AErase Raw TFst constr
+prf 1903:1909 <> rf_TSnd
+binder 1920:1922 <> cut:21
+binder 1924:1924 <> p:22
+R1942:1947 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1927:1935 annotated.ACfRaw <> raw_fresh def
+R1937:1939 annotated.ACfHelpers <> cut:21 var
+R1941:1941 annotated.ACfHelpers <> p:22 var
+R1948:1956 annotated.ACfRaw <> raw_fresh def
+R1958:1960 annotated.ACfHelpers <> cut:21 var
+R1963:1970 annotated.AErase Raw TSnd constr
+R1972:1972 annotated.ACfHelpers <> p:22 var
+R2013:2020 annotated.AErase Raw TSnd constr
+R2013:2020 annotated.AErase Raw TSnd constr
+prf 2051:2059 <> rf_TUnitT
+binder 2070:2072 <> cut:23
+R2075:2083 annotated.ACfRaw <> raw_fresh def
+R2085:2087 annotated.ACfHelpers <> cut:23 var
+R2090:2099 annotated.AErase Raw TUnitT constr
+R2126:2135 annotated.AErase Raw TUnitT constr
+R2126:2135 annotated.AErase Raw TUnitT constr
+prf 2163:2170 <> rf_TUnit
+binder 2181:2183 <> cut:24
+R2186:2194 annotated.ACfRaw <> raw_fresh def
+R2196:2198 annotated.ACfHelpers <> cut:24 var
+R2201:2209 annotated.AErase Raw TUnit constr
+R2236:2244 annotated.AErase Raw TUnit constr
+R2236:2244 annotated.AErase Raw TUnit constr
+prf 2272:2278 <> rf_TUId
+binder 2289:2291 <> cut:25
+R2294:2302 annotated.ACfRaw <> raw_fresh def
+R2304:2306 annotated.ACfHelpers <> cut:25 var
+R2309:2316 annotated.AErase Raw TUId constr
+R2343:2350 annotated.AErase Raw TUId constr
+R2343:2350 annotated.AErase Raw TUId constr
+prf 2378:2384 <> rf_TTag
+binder 2395:2397 <> cut:26
+binder 2399:2399 <> s:27
+R2402:2410 annotated.ACfRaw <> raw_fresh def
+R2412:2414 annotated.ACfHelpers <> cut:26 var
+R2417:2424 annotated.AErase Raw TTag constr
+R2426:2426 annotated.ACfHelpers <> s:27 var
+R2453:2460 annotated.AErase Raw TTag constr
+R2453:2460 annotated.AErase Raw TTag constr
+prf 2490:2498 <> rf_TEnumU
+binder 2509:2511 <> cut:28
+R2514:2522 annotated.ACfRaw <> raw_fresh def
+R2524:2526 annotated.ACfHelpers <> cut:28 var
+R2529:2538 annotated.AErase Raw TEnumU constr
+R2565:2574 annotated.AErase Raw TEnumU constr
+R2565:2574 annotated.AErase Raw TEnumU constr
+prf 2602:2609 <> rf_TNilE
+binder 2620:2622 <> cut:29
+R2625:2633 annotated.ACfRaw <> raw_fresh def
+R2635:2637 annotated.ACfHelpers <> cut:29 var
+R2640:2648 annotated.AErase Raw TNilE constr
+R2675:2683 annotated.AErase Raw TNilE constr
+R2675:2683 annotated.AErase Raw TNilE constr
+prf 2711:2719 <> rf_TConsE
+binder 2730:2732 <> cut:30
+binder 2734:2736 <> tag:31
+binder 2738:2738 <> E:32
+R2758:2761 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2741:2749 annotated.ACfRaw <> raw_fresh def
+R2751:2753 annotated.ACfHelpers <> cut:30 var
+R2755:2757 annotated.ACfHelpers <> tag:31 var
+R2777:2782 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2762:2770 annotated.ACfRaw <> raw_fresh def
+R2772:2774 annotated.ACfHelpers <> cut:30 var
+R2776:2776 annotated.ACfHelpers <> E:32 var
+R2783:2791 annotated.ACfRaw <> raw_fresh def
+R2793:2795 annotated.ACfHelpers <> cut:30 var
+R2798:2807 annotated.AErase Raw TConsE constr
+R2813:2813 annotated.ACfHelpers <> E:32 var
+R2809:2811 annotated.ACfHelpers <> tag:31 var
+R2868:2877 annotated.AErase Raw TConsE constr
+R2868:2877 annotated.AErase Raw TConsE constr
+prf 2913:2921 <> rf_TEnumT
+binder 2932:2934 <> cut:33
+binder 2936:2936 <> E:34
+R2954:2959 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2939:2947 annotated.ACfRaw <> raw_fresh def
+R2949:2951 annotated.ACfHelpers <> cut:33 var
+R2953:2953 annotated.ACfHelpers <> E:34 var
+R2960:2968 annotated.ACfRaw <> raw_fresh def
+R2970:2972 annotated.ACfHelpers <> cut:33 var
+R2975:2984 annotated.AErase Raw TEnumT constr
+R2986:2986 annotated.ACfHelpers <> E:34 var
+R3027:3036 annotated.AErase Raw TEnumT constr
+R3027:3036 annotated.AErase Raw TEnumT constr
+prf 3067:3075 <> rf_TEZero
+binder 3086:3088 <> cut:35
+R3091:3099 annotated.ACfRaw <> raw_fresh def
+R3101:3103 annotated.ACfHelpers <> cut:35 var
+R3106:3115 annotated.AErase Raw TEZero constr
+R3142:3151 annotated.AErase Raw TEZero constr
+R3142:3151 annotated.AErase Raw TEZero constr
+prf 3179:3187 <> rf_TESucc
+binder 3198:3200 <> cut:36
+binder 3202:3202 <> n:37
+R3220:3225 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3205:3213 annotated.ACfRaw <> raw_fresh def
+R3215:3217 annotated.ACfHelpers <> cut:36 var
+R3219:3219 annotated.ACfHelpers <> n:37 var
+R3226:3234 annotated.ACfRaw <> raw_fresh def
+R3236:3238 annotated.ACfHelpers <> cut:36 var
+R3241:3250 annotated.AErase Raw TESucc constr
+R3252:3252 annotated.ACfHelpers <> n:37 var
+R3293:3302 annotated.AErase Raw TESucc constr
+R3293:3302 annotated.AErase Raw TESucc constr
+prf 3333:3339 <> rf_TEPi
+binder 3350:3352 <> cut:38
+binder 3354:3354 <> k:39
+binder 3356:3356 <> E:40
+binder 3358:3358 <> P:41
+R3376:3379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3361:3369 annotated.ACfRaw <> raw_fresh def
+R3371:3373 annotated.ACfHelpers <> cut:38 var
+R3375:3375 annotated.ACfHelpers <> E:40 var
+R3395:3400 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3380:3388 annotated.ACfRaw <> raw_fresh def
+R3390:3392 annotated.ACfHelpers <> cut:38 var
+R3394:3394 annotated.ACfHelpers <> P:41 var
+R3401:3409 annotated.ACfRaw <> raw_fresh def
+R3411:3413 annotated.ACfHelpers <> cut:38 var
+R3416:3423 annotated.AErase Raw TEPi constr
+R3429:3429 annotated.ACfHelpers <> P:41 var
+R3427:3427 annotated.ACfHelpers <> E:40 var
+R3425:3425 annotated.ACfHelpers <> k:39 var
+R3482:3489 annotated.AErase Raw TEPi constr
+R3482:3489 annotated.AErase Raw TEPi constr
+prf 3525:3534 <> rf_TSwitch
+binder 3545:3547 <> cut:42
+binder 3549:3549 <> k:43
+binder 3551:3551 <> E:44
+binder 3553:3553 <> P:45
+binder 3555:3555 <> p:46
+binder 3557:3557 <> e:47
+R3575:3578 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3560:3568 annotated.ACfRaw <> raw_fresh def
+R3570:3572 annotated.ACfHelpers <> cut:42 var
+R3574:3574 annotated.ACfHelpers <> E:44 var
+R3594:3597 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3579:3587 annotated.ACfRaw <> raw_fresh def
+R3589:3591 annotated.ACfHelpers <> cut:42 var
+R3593:3593 annotated.ACfHelpers <> P:45 var
+R3613:3616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3598:3606 annotated.ACfRaw <> raw_fresh def
+R3608:3610 annotated.ACfHelpers <> cut:42 var
+R3612:3612 annotated.ACfHelpers <> p:46 var
+R3632:3637 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3617:3625 annotated.ACfRaw <> raw_fresh def
+R3627:3629 annotated.ACfHelpers <> cut:42 var
+R3631:3631 annotated.ACfHelpers <> e:47 var
+R3638:3646 annotated.ACfRaw <> raw_fresh def
+R3648:3650 annotated.ACfHelpers <> cut:42 var
+R3653:3663 annotated.AErase Raw TSwitch constr
+R3673:3673 annotated.ACfHelpers <> e:47 var
+R3671:3671 annotated.ACfHelpers <> p:46 var
+R3669:3669 annotated.ACfHelpers <> P:45 var
+R3667:3667 annotated.ACfHelpers <> E:44 var
+R3665:3665 annotated.ACfHelpers <> k:43 var
+R3746:3756 annotated.AErase Raw TSwitch constr
+R3746:3756 annotated.AErase Raw TSwitch constr
+prf 3798:3806 <> rf_TIDesc
+binder 3817:3819 <> cut:48
+binder 3821:3822 <> IT:49
+R3841:3846 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3825:3833 annotated.ACfRaw <> raw_fresh def
+R3835:3837 annotated.ACfHelpers <> cut:48 var
+R3839:3840 annotated.ACfHelpers <> IT:49 var
+R3847:3855 annotated.ACfRaw <> raw_fresh def
+R3857:3859 annotated.ACfHelpers <> cut:48 var
+R3862:3871 annotated.AErase Raw TIDesc constr
+R3873:3874 annotated.ACfHelpers <> IT:49 var
+R3917:3926 annotated.AErase Raw TIDesc constr
+R3917:3926 annotated.AErase Raw TIDesc constr
+prf 3958:3965 <> rf_TIVar
+binder 3976:3978 <> cut:50
+binder 3980:3980 <> i:51
+R3998:4003 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3983:3991 annotated.ACfRaw <> raw_fresh def
+R3993:3995 annotated.ACfHelpers <> cut:50 var
+R3997:3997 annotated.ACfHelpers <> i:51 var
+R4004:4012 annotated.ACfRaw <> raw_fresh def
+R4014:4016 annotated.ACfHelpers <> cut:50 var
+R4019:4027 annotated.AErase Raw TIVar constr
+R4029:4029 annotated.ACfHelpers <> i:51 var
+R4070:4078 annotated.AErase Raw TIVar constr
+R4070:4078 annotated.AErase Raw TIVar constr
+prf 4109:4114 <> rf_TI1
+binder 4125:4127 <> cut:52
+R4130:4138 annotated.ACfRaw <> raw_fresh def
+R4140:4142 annotated.ACfHelpers <> cut:52 var
+R4145:4151 annotated.AErase Raw TI1 constr
+R4178:4184 annotated.AErase Raw TI1 constr
+R4178:4184 annotated.AErase Raw TI1 constr
+prf 4212:4219 <> rf_TIBot
+binder 4230:4232 <> cut:53
+R4235:4243 annotated.ACfRaw <> raw_fresh def
+R4245:4247 annotated.ACfHelpers <> cut:53 var
+R4250:4258 annotated.AErase Raw TIBot constr
+R4285:4293 annotated.AErase Raw TIBot constr
+R4285:4293 annotated.AErase Raw TIBot constr
+prf 4321:4329 <> rf_TIProd
+binder 4340:4342 <> cut:54
+binder 4344:4344 <> A:55
+binder 4346:4346 <> B:56
+R4364:4367 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4349:4357 annotated.ACfRaw <> raw_fresh def
+R4359:4361 annotated.ACfHelpers <> cut:54 var
+R4363:4363 annotated.ACfHelpers <> A:55 var
+R4383:4388 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4368:4376 annotated.ACfRaw <> raw_fresh def
+R4378:4380 annotated.ACfHelpers <> cut:54 var
+R4382:4382 annotated.ACfHelpers <> B:56 var
+R4389:4397 annotated.ACfRaw <> raw_fresh def
+R4399:4401 annotated.ACfHelpers <> cut:54 var
+R4404:4413 annotated.AErase Raw TIProd constr
+R4417:4417 annotated.ACfHelpers <> B:56 var
+R4415:4415 annotated.ACfHelpers <> A:55 var
+R4468:4477 annotated.AErase Raw TIProd constr
+R4468:4477 annotated.AErase Raw TIProd constr
+prf 4511:4517 <> rf_TIPi
+binder 4528:4530 <> cut:57
+binder 4532:4532 <> A:58
+binder 4534:4534 <> D:59
+R4552:4555 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4537:4545 annotated.ACfRaw <> raw_fresh def
+R4547:4549 annotated.ACfHelpers <> cut:57 var
+R4551:4551 annotated.ACfHelpers <> A:58 var
+R4571:4576 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4556:4564 annotated.ACfRaw <> raw_fresh def
+R4566:4568 annotated.ACfHelpers <> cut:57 var
+R4570:4570 annotated.ACfHelpers <> D:59 var
+R4577:4585 annotated.ACfRaw <> raw_fresh def
+R4587:4589 annotated.ACfHelpers <> cut:57 var
+R4592:4599 annotated.AErase Raw TIPi constr
+R4603:4603 annotated.ACfHelpers <> D:59 var
+R4601:4601 annotated.ACfHelpers <> A:58 var
+R4654:4661 annotated.AErase Raw TIPi constr
+R4654:4661 annotated.AErase Raw TIPi constr
+prf 4695:4702 <> rf_TISig
+binder 4713:4715 <> cut:60
+binder 4717:4717 <> A:61
+binder 4719:4719 <> D:62
+R4737:4740 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4722:4730 annotated.ACfRaw <> raw_fresh def
+R4732:4734 annotated.ACfHelpers <> cut:60 var
+R4736:4736 annotated.ACfHelpers <> A:61 var
+R4756:4761 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4741:4749 annotated.ACfRaw <> raw_fresh def
+R4751:4753 annotated.ACfHelpers <> cut:60 var
+R4755:4755 annotated.ACfHelpers <> D:62 var
+R4762:4770 annotated.ACfRaw <> raw_fresh def
+R4772:4774 annotated.ACfHelpers <> cut:60 var
+R4777:4785 annotated.AErase Raw TISig constr
+R4789:4789 annotated.ACfHelpers <> D:62 var
+R4787:4787 annotated.ACfHelpers <> A:61 var
+R4840:4848 annotated.AErase Raw TISig constr
+R4840:4848 annotated.AErase Raw TISig constr
+prf 4882:4892 <> rf_TIChoice
+binder 4903:4905 <> cut:63
+binder 4907:4907 <> E:64
+binder 4909:4909 <> D:65
+R4927:4930 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4912:4920 annotated.ACfRaw <> raw_fresh def
+R4922:4924 annotated.ACfHelpers <> cut:63 var
+R4926:4926 annotated.ACfHelpers <> E:64 var
+R4946:4951 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4931:4939 annotated.ACfRaw <> raw_fresh def
+R4941:4943 annotated.ACfHelpers <> cut:63 var
+R4945:4945 annotated.ACfHelpers <> D:65 var
+R4952:4960 annotated.ACfRaw <> raw_fresh def
+R4962:4964 annotated.ACfHelpers <> cut:63 var
+R4967:4978 annotated.AErase Raw TIChoice constr
+R4982:4982 annotated.ACfHelpers <> D:65 var
+R4980:4980 annotated.ACfHelpers <> E:64 var
+R5033:5044 annotated.AErase Raw TIChoice constr
+R5033:5044 annotated.AErase Raw TIChoice constr
+prf 5078:5087 <> rf_TInterp
+binder 5098:5100 <> cut:66
+binder 5102:5103 <> IT:67
+binder 5105:5105 <> D:68
+binder 5107:5107 <> X:69
+R5126:5129 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5110:5118 annotated.ACfRaw <> raw_fresh def
+R5120:5122 annotated.ACfHelpers <> cut:66 var
+R5124:5125 annotated.ACfHelpers <> IT:67 var
+R5145:5148 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5130:5138 annotated.ACfRaw <> raw_fresh def
+R5140:5142 annotated.ACfHelpers <> cut:66 var
+R5144:5144 annotated.ACfHelpers <> D:68 var
+R5164:5169 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5149:5157 annotated.ACfRaw <> raw_fresh def
+R5159:5161 annotated.ACfHelpers <> cut:66 var
+R5163:5163 annotated.ACfHelpers <> X:69 var
+R5170:5178 annotated.ACfRaw <> raw_fresh def
+R5180:5182 annotated.ACfHelpers <> cut:66 var
+R5185:5195 annotated.AErase Raw TInterp constr
+R5202:5202 annotated.ACfHelpers <> X:69 var
+R5200:5200 annotated.ACfHelpers <> D:68 var
+R5197:5198 annotated.ACfHelpers <> IT:67 var
+R5265:5275 annotated.AErase Raw TInterp constr
+R5265:5275 annotated.AErase Raw TInterp constr
+prf 5313:5319 <> rf_TMuI
+binder 5330:5332 <> cut:70
+binder 5334:5335 <> IT:71
+binder 5337:5337 <> D:72
+R5356:5359 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5340:5348 annotated.ACfRaw <> raw_fresh def
+R5350:5352 annotated.ACfHelpers <> cut:70 var
+R5354:5355 annotated.ACfHelpers <> IT:71 var
+R5375:5380 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5360:5368 annotated.ACfRaw <> raw_fresh def
+R5370:5372 annotated.ACfHelpers <> cut:70 var
+R5374:5374 annotated.ACfHelpers <> D:72 var
+R5381:5389 annotated.ACfRaw <> raw_fresh def
+R5391:5393 annotated.ACfHelpers <> cut:70 var
+R5396:5403 annotated.AErase Raw TMuI constr
+R5408:5408 annotated.ACfHelpers <> D:72 var
+R5405:5406 annotated.ACfHelpers <> IT:71 var
+R5461:5468 annotated.AErase Raw TMuI constr
+R5461:5468 annotated.AErase Raw TMuI constr
+prf 5503:5508 <> rf_TIn
+binder 5519:5521 <> cut:73
+binder 5523:5523 <> x:74
+R5541:5546 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5526:5534 annotated.ACfRaw <> raw_fresh def
+R5536:5538 annotated.ACfHelpers <> cut:73 var
+R5540:5540 annotated.ACfHelpers <> x:74 var
+R5547:5555 annotated.ACfRaw <> raw_fresh def
+R5557:5559 annotated.ACfHelpers <> cut:73 var
+R5562:5568 annotated.AErase Raw TIn constr
+R5570:5570 annotated.ACfHelpers <> x:74 var
+R5611:5617 annotated.AErase Raw TIn constr
+R5611:5617 annotated.AErase Raw TIn constr
+prf 5648:5654 <> rf_TInd
+binder 5665:5667 <> cut:75
+binder 5669:5670 <> IT:76
+binder 5672:5672 <> D:77
+binder 5674:5674 <> P:78
+binder 5676:5676 <> s:79
+binder 5678:5678 <> i:80
+binder 5680:5680 <> x:81
+R5699:5702 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5683:5691 annotated.ACfRaw <> raw_fresh def
+R5693:5695 annotated.ACfHelpers <> cut:75 var
+R5697:5698 annotated.ACfHelpers <> IT:76 var
+R5718:5721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5703:5711 annotated.ACfRaw <> raw_fresh def
+R5713:5715 annotated.ACfHelpers <> cut:75 var
+R5717:5717 annotated.ACfHelpers <> D:77 var
+R5737:5740 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5722:5730 annotated.ACfRaw <> raw_fresh def
+R5732:5734 annotated.ACfHelpers <> cut:75 var
+R5736:5736 annotated.ACfHelpers <> P:78 var
+R5756:5759 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5741:5749 annotated.ACfRaw <> raw_fresh def
+R5751:5753 annotated.ACfHelpers <> cut:75 var
+R5755:5755 annotated.ACfHelpers <> s:79 var
+R5775:5778 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5760:5768 annotated.ACfRaw <> raw_fresh def
+R5770:5772 annotated.ACfHelpers <> cut:75 var
+R5774:5774 annotated.ACfHelpers <> i:80 var
+R5794:5799 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5779:5787 annotated.ACfRaw <> raw_fresh def
+R5789:5791 annotated.ACfHelpers <> cut:75 var
+R5793:5793 annotated.ACfHelpers <> x:81 var
+R5800:5808 annotated.ACfRaw <> raw_fresh def
+R5810:5812 annotated.ACfHelpers <> cut:75 var
+R5815:5822 annotated.AErase Raw TInd constr
+R5835:5835 annotated.ACfHelpers <> x:81 var
+R5833:5833 annotated.ACfHelpers <> i:80 var
+R5831:5831 annotated.ACfHelpers <> s:79 var
+R5829:5829 annotated.ACfHelpers <> P:78 var
+R5827:5827 annotated.ACfHelpers <> D:77 var
+R5824:5825 annotated.ACfHelpers <> IT:76 var
+R5928:5935 annotated.AErase Raw TInd constr
+R5928:5935 annotated.AErase Raw TInd constr
+prf 5982:5989 <> rf_TIAll
+binder 6000:6002 <> cut:82
+binder 6004:6005 <> IT:83
+binder 6007:6007 <> D:84
+binder 6009:6009 <> X:85
+binder 6011:6011 <> x:86
+binder 6013:6013 <> P:87
+R6032:6035 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6016:6024 annotated.ACfRaw <> raw_fresh def
+R6026:6028 annotated.ACfHelpers <> cut:82 var
+R6030:6031 annotated.ACfHelpers <> IT:83 var
+R6051:6054 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6036:6044 annotated.ACfRaw <> raw_fresh def
+R6046:6048 annotated.ACfHelpers <> cut:82 var
+R6050:6050 annotated.ACfHelpers <> D:84 var
+R6070:6073 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6055:6063 annotated.ACfRaw <> raw_fresh def
+R6065:6067 annotated.ACfHelpers <> cut:82 var
+R6069:6069 annotated.ACfHelpers <> X:85 var
+R6089:6092 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6074:6082 annotated.ACfRaw <> raw_fresh def
+R6084:6086 annotated.ACfHelpers <> cut:82 var
+R6088:6088 annotated.ACfHelpers <> x:86 var
+R6108:6113 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6093:6101 annotated.ACfRaw <> raw_fresh def
+R6103:6105 annotated.ACfHelpers <> cut:82 var
+R6107:6107 annotated.ACfHelpers <> P:87 var
+R6114:6122 annotated.ACfRaw <> raw_fresh def
+R6124:6126 annotated.ACfHelpers <> cut:82 var
+R6129:6137 annotated.AErase Raw TIAll constr
+R6148:6148 annotated.ACfHelpers <> P:87 var
+R6146:6146 annotated.ACfHelpers <> x:86 var
+R6144:6144 annotated.ACfHelpers <> X:85 var
+R6142:6142 annotated.ACfHelpers <> D:84 var
+R6139:6140 annotated.ACfHelpers <> IT:83 var
+R6231:6239 annotated.AErase Raw TIAll constr
+R6231:6239 annotated.AErase Raw TIAll constr
+prf 6283:6290 <> rf_THyps
+binder 6301:6303 <> cut:88
+binder 6305:6306 <> IT:89
+binder 6308:6308 <> D:90
+binder 6310:6310 <> X:91
+binder 6312:6312 <> P:92
+binder 6314:6314 <> h:93
+binder 6316:6316 <> x:94
+R6335:6338 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6319:6327 annotated.ACfRaw <> raw_fresh def
+R6329:6331 annotated.ACfHelpers <> cut:88 var
+R6333:6334 annotated.ACfHelpers <> IT:89 var
+R6354:6357 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6339:6347 annotated.ACfRaw <> raw_fresh def
+R6349:6351 annotated.ACfHelpers <> cut:88 var
+R6353:6353 annotated.ACfHelpers <> D:90 var
+R6373:6376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6358:6366 annotated.ACfRaw <> raw_fresh def
+R6368:6370 annotated.ACfHelpers <> cut:88 var
+R6372:6372 annotated.ACfHelpers <> X:91 var
+R6392:6395 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6377:6385 annotated.ACfRaw <> raw_fresh def
+R6387:6389 annotated.ACfHelpers <> cut:88 var
+R6391:6391 annotated.ACfHelpers <> P:92 var
+R6411:6414 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6396:6404 annotated.ACfRaw <> raw_fresh def
+R6406:6408 annotated.ACfHelpers <> cut:88 var
+R6410:6410 annotated.ACfHelpers <> h:93 var
+R6430:6435 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6415:6423 annotated.ACfRaw <> raw_fresh def
+R6425:6427 annotated.ACfHelpers <> cut:88 var
+R6429:6429 annotated.ACfHelpers <> x:94 var
+R6436:6444 annotated.ACfRaw <> raw_fresh def
+R6446:6448 annotated.ACfHelpers <> cut:88 var
+R6451:6459 annotated.AErase Raw THyps constr
+R6472:6472 annotated.ACfHelpers <> x:94 var
+R6470:6470 annotated.ACfHelpers <> h:93 var
+R6468:6468 annotated.ACfHelpers <> P:92 var
+R6466:6466 annotated.ACfHelpers <> X:91 var
+R6464:6464 annotated.ACfHelpers <> D:90 var
+R6461:6462 annotated.ACfHelpers <> IT:89 var
+R6565:6573 annotated.AErase Raw THyps constr
+R6565:6573 annotated.AErase Raw THyps constr
+prf 6620:6628 <> rf_TClose
+binder 6639:6641 <> cut:95
+binder 6643:6644 <> IT:96
+binder 6646:6646 <> F:97
+binder 6648:6648 <> G:98
+R6667:6670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6651:6659 annotated.ACfRaw <> raw_fresh def
+R6661:6663 annotated.ACfHelpers <> cut:95 var
+R6665:6666 annotated.ACfHelpers <> IT:96 var
+R6686:6689 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6671:6679 annotated.ACfRaw <> raw_fresh def
+R6681:6683 annotated.ACfHelpers <> cut:95 var
+R6685:6685 annotated.ACfHelpers <> F:97 var
+R6705:6710 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6690:6698 annotated.ACfRaw <> raw_fresh def
+R6700:6702 annotated.ACfHelpers <> cut:95 var
+R6704:6704 annotated.ACfHelpers <> G:98 var
+R6711:6719 annotated.ACfRaw <> raw_fresh def
+R6721:6723 annotated.ACfHelpers <> cut:95 var
+R6726:6735 annotated.AErase Raw TClose constr
+R6742:6742 annotated.ACfHelpers <> G:98 var
+R6740:6740 annotated.ACfHelpers <> F:97 var
+R6737:6738 annotated.ACfHelpers <> IT:96 var
+R6805:6814 annotated.AErase Raw TClose constr
+R6805:6814 annotated.AErase Raw TClose constr
+prf 6852:6864 <> rf_TCloseCase
+binder 6875:6877 <> cut:99
+binder 6879:6879 <> k:100
+binder 6881:6882 <> IT:101
+binder 6884:6884 <> F:102
+binder 6886:6886 <> G:103
+binder 6888:6888 <> i:104
+binder 6890:6890 <> Q:105
+binder 6892:6892 <> b:106
+binder 6894:6894 <> x:107
+R6913:6916 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6897:6905 annotated.ACfRaw <> raw_fresh def
+R6907:6909 annotated.ACfHelpers <> cut:99 var
+R6911:6912 annotated.ACfHelpers <> IT:101 var
+R6932:6935 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6917:6925 annotated.ACfRaw <> raw_fresh def
+R6927:6929 annotated.ACfHelpers <> cut:99 var
+R6931:6931 annotated.ACfHelpers <> F:102 var
+R6951:6954 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6936:6944 annotated.ACfRaw <> raw_fresh def
+R6946:6948 annotated.ACfHelpers <> cut:99 var
+R6950:6950 annotated.ACfHelpers <> G:103 var
+R6970:6973 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6955:6963 annotated.ACfRaw <> raw_fresh def
+R6965:6967 annotated.ACfHelpers <> cut:99 var
+R6969:6969 annotated.ACfHelpers <> i:104 var
+R6989:6992 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6974:6982 annotated.ACfRaw <> raw_fresh def
+R6984:6986 annotated.ACfHelpers <> cut:99 var
+R6988:6988 annotated.ACfHelpers <> Q:105 var
+R7008:7011 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6993:7001 annotated.ACfRaw <> raw_fresh def
+R7003:7005 annotated.ACfHelpers <> cut:99 var
+R7007:7007 annotated.ACfHelpers <> b:106 var
+R7027:7032 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7012:7020 annotated.ACfRaw <> raw_fresh def
+R7022:7024 annotated.ACfHelpers <> cut:99 var
+R7026:7026 annotated.ACfHelpers <> x:107 var
+R7033:7041 annotated.ACfRaw <> raw_fresh def
+R7043:7045 annotated.ACfHelpers <> cut:99 var
+R7048:7061 annotated.AErase Raw TCloseCase constr
+R7078:7078 annotated.ACfHelpers <> x:107 var
+R7076:7076 annotated.ACfHelpers <> b:106 var
+R7074:7074 annotated.ACfHelpers <> Q:105 var
+R7072:7072 annotated.ACfHelpers <> i:104 var
+R7070:7070 annotated.ACfHelpers <> G:103 var
+R7068:7068 annotated.ACfHelpers <> F:102 var
+R7065:7066 annotated.ACfHelpers <> IT:101 var
+R7063:7063 annotated.ACfHelpers <> k:100 var
+R7183:7196 annotated.AErase Raw TCloseCase constr
+R7183:7196 annotated.AErase Raw TCloseCase constr
+prf 7248:7259 <> rf_TCloseInd
+binder 7270:7272 <> cut:108
+binder 7274:7275 <> IT:109
+binder 7277:7277 <> G:110
+binder 7279:7279 <> P:111
+binder 7281:7281 <> s:112
+binder 7283:7283 <> F:113
+binder 7285:7285 <> i:114
+binder 7287:7287 <> x:115
+R7306:7309 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7290:7298 annotated.ACfRaw <> raw_fresh def
+R7300:7302 annotated.ACfHelpers <> cut:108 var
+R7304:7305 annotated.ACfHelpers <> IT:109 var
+R7325:7328 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7310:7318 annotated.ACfRaw <> raw_fresh def
+R7320:7322 annotated.ACfHelpers <> cut:108 var
+R7324:7324 annotated.ACfHelpers <> G:110 var
+R7344:7347 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7329:7337 annotated.ACfRaw <> raw_fresh def
+R7339:7341 annotated.ACfHelpers <> cut:108 var
+R7343:7343 annotated.ACfHelpers <> P:111 var
+R7363:7366 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7348:7356 annotated.ACfRaw <> raw_fresh def
+R7358:7360 annotated.ACfHelpers <> cut:108 var
+R7362:7362 annotated.ACfHelpers <> s:112 var
+R7382:7385 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7367:7375 annotated.ACfRaw <> raw_fresh def
+R7377:7379 annotated.ACfHelpers <> cut:108 var
+R7381:7381 annotated.ACfHelpers <> F:113 var
+R7401:7404 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7386:7394 annotated.ACfRaw <> raw_fresh def
+R7396:7398 annotated.ACfHelpers <> cut:108 var
+R7400:7400 annotated.ACfHelpers <> i:114 var
+R7420:7425 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7405:7413 annotated.ACfRaw <> raw_fresh def
+R7415:7417 annotated.ACfHelpers <> cut:108 var
+R7419:7419 annotated.ACfHelpers <> x:115 var
+R7426:7434 annotated.ACfRaw <> raw_fresh def
+R7436:7438 annotated.ACfHelpers <> cut:108 var
+R7441:7453 annotated.AErase Raw TCloseInd constr
+R7468:7468 annotated.ACfHelpers <> x:115 var
+R7466:7466 annotated.ACfHelpers <> i:114 var
+R7464:7464 annotated.ACfHelpers <> F:113 var
+R7462:7462 annotated.ACfHelpers <> s:112 var
+R7460:7460 annotated.ACfHelpers <> P:111 var
+R7458:7458 annotated.ACfHelpers <> G:110 var
+R7455:7456 annotated.ACfHelpers <> IT:109 var
+R7571:7583 annotated.AErase Raw TCloseInd constr
+R7571:7583 annotated.AErase Raw TCloseInd constr
+prf 7634:7641 <> rf_lift1
+binder 7652:7652 <> x:116
+binder 7654:7654 <> A:117
+R7670:7673 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7657:7665 annotated.ACfRaw <> raw_fresh def
+R7667:7667 annotated.ACfHelpers <> x:116 var
+R7669:7669 annotated.ACfHelpers <> A:117 var
+R7674:7682 annotated.ACfRaw <> raw_fresh def
+R7685:7685 Corelib.Init.Datatypes <> S constr
+R7687:7687 annotated.ACfHelpers <> x:116 var
+R7691:7698 annotated.AErase Raw lift def
+R7704:7704 annotated.ACfHelpers <> A:117 var
+R7721:7735 annotated.ACfRaw <> raw_fresh_shift thm
+R7721:7735 annotated.ACfRaw <> raw_fresh_shift thm
+prf 7749:7756 <> rf_liftd
+binder 7767:7767 <> d:118
+binder 7769:7769 <> x:119
+binder 7771:7771 <> A:120
+R7787:7790 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7774:7782 annotated.ACfRaw <> raw_fresh def
+R7784:7784 annotated.ACfHelpers <> x:119 var
+R7786:7786 annotated.ACfHelpers <> A:120 var
+R7791:7799 annotated.ACfRaw <> raw_fresh def
+R7803:7805 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7802:7802 annotated.ACfHelpers <> d:118 var
+R7806:7806 annotated.ACfHelpers <> x:119 var
+R7810:7817 annotated.AErase Raw lift def
+R7823:7823 annotated.ACfHelpers <> A:120 var
+R7819:7819 annotated.ACfHelpers <> d:118 var
+R7866:7873 annotated.AErase Raw lift def
+R7866:7873 annotated.AErase Raw lift def
+R7898:7914 annotated.ASubstitution RB lift_lift_comm thm
+R7928:7937 Stdlib.Arith.PeanoNat Nat le_0_l thm
+R7898:7914 annotated.ASubstitution RB lift_lift_comm thm
+R7928:7937 Stdlib.Arith.PeanoNat Nat le_0_l thm
+prf 7981:7988 <> rf_lift2
+binder 7999:7999 <> x:121
+binder 8001:8001 <> A:122
+R8017:8020 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8004:8012 annotated.ACfRaw <> raw_fresh def
+R8014:8014 annotated.ACfHelpers <> x:121 var
+R8016:8016 annotated.ACfHelpers <> A:122 var
+R8021:8029 annotated.ACfRaw <> raw_fresh def
+R8032:8032 Corelib.Init.Datatypes <> S constr
+R8035:8035 Corelib.Init.Datatypes <> S constr
+R8037:8037 annotated.ACfHelpers <> x:121 var
+R8042:8049 annotated.AErase Raw lift def
+R8055:8055 annotated.ACfHelpers <> A:122 var
+R8081:8088 annotated.ACfHelpers <> rf_liftd thm
+R8081:8088 annotated.ACfHelpers <> rf_liftd thm
+prf 8111:8118 <> rf_lift3
+binder 8129:8129 <> x:123
+binder 8131:8131 <> A:124
+R8147:8150 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8134:8142 annotated.ACfRaw <> raw_fresh def
+R8144:8144 annotated.ACfHelpers <> x:123 var
+R8146:8146 annotated.ACfHelpers <> A:124 var
+R8151:8159 annotated.ACfRaw <> raw_fresh def
+R8162:8162 Corelib.Init.Datatypes <> S constr
+R8165:8165 Corelib.Init.Datatypes <> S constr
+R8168:8168 Corelib.Init.Datatypes <> S constr
+R8170:8170 annotated.ACfHelpers <> x:123 var
+R8176:8183 annotated.AErase Raw lift def
+R8189:8189 annotated.ACfHelpers <> A:124 var
+R8215:8222 annotated.ACfHelpers <> rf_liftd thm
+R8215:8222 annotated.ACfHelpers <> rf_liftd thm
+prf 8245:8252 <> rf_lift4
+binder 8263:8263 <> x:125
+binder 8265:8265 <> A:126
+R8281:8284 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8268:8276 annotated.ACfRaw <> raw_fresh def
+R8278:8278 annotated.ACfHelpers <> x:125 var
+R8280:8280 annotated.ACfHelpers <> A:126 var
+R8285:8293 annotated.ACfRaw <> raw_fresh def
+R8296:8296 Corelib.Init.Datatypes <> S constr
+R8299:8299 Corelib.Init.Datatypes <> S constr
+R8302:8302 Corelib.Init.Datatypes <> S constr
+R8305:8305 Corelib.Init.Datatypes <> S constr
+R8307:8307 annotated.ACfHelpers <> x:125 var
+R8314:8321 annotated.AErase Raw lift def
+R8327:8327 annotated.ACfHelpers <> A:126 var
+R8353:8360 annotated.ACfHelpers <> rf_liftd thm
+R8353:8360 annotated.ACfHelpers <> rf_liftd thm
+prf 8383:8394 <> rf_var_under
+binder 8405:8405 <> x:127
+binder 8407:8407 <> n:128
+R8417:8420 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8411:8413 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R8410:8410 annotated.ACfHelpers <> n:128 var
+R8414:8414 Corelib.Init.Datatypes <> S constr
+R8416:8416 annotated.ACfHelpers <> x:127 var
+R8421:8429 annotated.ACfRaw <> raw_fresh def
+R8432:8432 Corelib.Init.Datatypes <> S constr
+R8434:8434 annotated.ACfHelpers <> x:127 var
+R8438:8445 annotated.AErase Raw TVar constr
+R8447:8447 annotated.ACfHelpers <> n:128 var
+R8472:8478 annotated.ACfHelpers <> rf_TVar thm
+R8472:8478 annotated.ACfHelpers <> rf_TVar thm
+R8977:8985 annotated.ACfRaw <> raw_fresh def
+R8990:8997 annotated.AErase Raw TVar constr
+R9012:9018 annotated.ACfHelpers <> rf_TVar thm
+R9071:9079 annotated.AErase Raw arrow def
+R9082:9092 annotated.AErase Raw product def
+R9095:9101 annotated.AErase Raw Def def
+R9104:9113 annotated.AErase Raw Family def
+R9116:9122 annotated.AErase Raw Bot def
+R9125:9135 annotated.AErase Raw CloseAt def
+R9142:9149 annotated.AErase Raw MuAt def
+R9152:9162 annotated.AErase Raw carrier def
+R9165:9175 annotated.AErase Raw payload def
+R9178:9186 annotated.AErase Raw total def
+R9189:9198 annotated.AErase Raw motive def
+R9205:9224 annotated.AErase Raw recursive_method def
+R9227:9247 annotated.AErase Raw close_case_method def
+R9250:9265 annotated.AErase Raw close_motive def
+R9272:9290 annotated.AErase Raw diagonal_motive def
+R9293:9312 annotated.AErase Raw close_ind_method def
+R9315:9331 annotated.AErase Raw mu_ind_method def
+R9389:9395 annotated.ACfHelpers <> rf_TVar thm
+R9411:9418 annotated.ACfHelpers <> rf_TSort thm
+R9428:9433 annotated.ACfHelpers <> rf_TPi thm
+R9443:9449 annotated.ACfHelpers <> rf_TLam thm
+R9459:9465 annotated.ACfHelpers <> rf_TApp thm
+R9475:9483 annotated.ACfHelpers <> rf_TSigma thm
+R9493:9500 annotated.ACfHelpers <> rf_TPair thm
+R9510:9516 annotated.ACfHelpers <> rf_TFst thm
+R9526:9532 annotated.ACfHelpers <> rf_TSnd thm
+R9542:9550 annotated.ACfHelpers <> rf_TUnitT thm
+R9560:9567 annotated.ACfHelpers <> rf_TUnit thm
+R9577:9583 annotated.ACfHelpers <> rf_TUId thm
+R9593:9599 annotated.ACfHelpers <> rf_TTag thm
+R9609:9617 annotated.ACfHelpers <> rf_TEnumU thm
+R9627:9634 annotated.ACfHelpers <> rf_TNilE thm
+R9644:9652 annotated.ACfHelpers <> rf_TConsE thm
+R9662:9670 annotated.ACfHelpers <> rf_TEnumT thm
+R9680:9688 annotated.ACfHelpers <> rf_TEZero thm
+R9698:9706 annotated.ACfHelpers <> rf_TESucc thm
+R9716:9722 annotated.ACfHelpers <> rf_TEPi thm
+R9732:9741 annotated.ACfHelpers <> rf_TSwitch thm
+R9751:9759 annotated.ACfHelpers <> rf_TIDesc thm
+R9769:9776 annotated.ACfHelpers <> rf_TIVar thm
+R9786:9791 annotated.ACfHelpers <> rf_TI1 thm
+R9801:9808 annotated.ACfHelpers <> rf_TIBot thm
+R9818:9826 annotated.ACfHelpers <> rf_TIProd thm
+R9836:9842 annotated.ACfHelpers <> rf_TIPi thm
+R9852:9859 annotated.ACfHelpers <> rf_TISig thm
+R9869:9879 annotated.ACfHelpers <> rf_TIChoice thm
+R9889:9898 annotated.ACfHelpers <> rf_TInterp thm
+R9908:9914 annotated.ACfHelpers <> rf_TMuI thm
+R9924:9929 annotated.ACfHelpers <> rf_TIn thm
+R9939:9945 annotated.ACfHelpers <> rf_TInd thm
+R9955:9962 annotated.ACfHelpers <> rf_TIAll thm
+R9972:9979 annotated.ACfHelpers <> rf_THyps thm
+R9989:9997 annotated.ACfHelpers <> rf_TClose thm
+R10007:10019 annotated.ACfHelpers <> rf_TCloseCase thm
+R10029:10040 annotated.ACfHelpers <> rf_TCloseInd thm
+R10052:10059 annotated.ACfHelpers <> rf_lift1 thm
+R10069:10076 annotated.ACfHelpers <> rf_lift2 thm
+R10086:10093 annotated.ACfHelpers <> rf_lift3 thm
+R10103:10110 annotated.ACfHelpers <> rf_lift4 thm
+R10122:10136 annotated.ACfRaw <> raw_fresh_subst thm
+prf 10238:10255 <> occurs_fresh_erase
+binder 10266:10266 <> x:129
+binder 10268:10268 <> t:130
+R10289:10292 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10281:10283 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10271:10276 annotated.ASyntax <> occurs def
+R10278:10278 annotated.ACfHelpers <> x:129 var
+R10280:10280 annotated.ACfHelpers <> t:130 var
+R10284:10288 Corelib.Init.Datatypes <> false constr
+R10293:10301 annotated.ACfRaw <> raw_fresh def
+R10303:10303 annotated.ACfHelpers <> x:129 var
+R10306:10310 annotated.AErase <> erase def
+R10312:10312 annotated.ACfHelpers <> t:130 var
+R10345:10365 annotated.AFreshness <> occurs_false_iff_lift thm
+R10345:10365 annotated.AFreshness <> occurs_false_iff_lift thm
+R10406:10410 annotated.AErase <> erase def
+R10423:10432 annotated.AErasure <> erase_lift thm
+R10406:10410 annotated.AErase <> erase def
+R10423:10432 annotated.AErasure <> erase_lift thm
+def 10452:10460 <> ctx_fresh
+R10471:10477 annotated.AErase Raw ctx def
+binder 10463:10467 <> Delta:131
+binder 10480:10480 <> x:132
+binder 10494:10494 <> y:133
+binder 10496:10496 <> A:134
+R10504:10507 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10500:10502 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R10499:10499 annotated.ACfHelpers <> y:133 var
+R10503:10503 annotated.ACfHelpers <> x:132 var
+R10534:10537 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10525:10527 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10508:10516 Stdlib.Lists.List <> nth_error def
+R10524:10524 annotated.ACfHelpers <> y:133 var
+R10518:10522 annotated.ACfHelpers <> Delta:131 var
+R10528:10531 Corelib.Init.Datatypes <> Some constr
+R10533:10533 annotated.ACfHelpers <> A:134 var
+R10538:10546 annotated.ACfRaw <> raw_fresh def
+R10548:10548 annotated.ACfHelpers <> x:132 var
+R10551:10558 annotated.AErase Raw lift def
+R10568:10568 annotated.ACfHelpers <> A:134 var
+R10561:10561 Corelib.Init.Datatypes <> S constr
+R10563:10563 annotated.ACfHelpers <> y:133 var
+prf 10579:10594 <> ctx_fresh_extend
+binder 10605:10609 <> Delta:135
+binder 10611:10611 <> x:136
+binder 10613:10613 <> A:137
+R10633:10636 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10616:10624 annotated.ACfHelpers <> ctx_fresh def
+R10626:10630 annotated.ACfHelpers <> Delta:135 var
+R10632:10632 annotated.ACfHelpers <> x:136 var
+R10650:10655 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10637:10645 annotated.ACfRaw <> raw_fresh def
+R10647:10647 annotated.ACfHelpers <> x:136 var
+R10649:10649 annotated.ACfHelpers <> A:137 var
+R10656:10664 annotated.ACfHelpers <> ctx_fresh def
+R10668:10671 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10667:10667 annotated.ACfHelpers <> A:137 var
+R10672:10676 annotated.ACfHelpers <> Delta:135 var
+R10680:10680 Corelib.Init.Datatypes <> S constr
+R10682:10682 annotated.ACfHelpers <> x:136 var
+R10737:10745 Stdlib.Lists.List <> nth_error def
+R10787:10794 annotated.ACfHelpers <> rf_lift1 thm
+R10787:10794 annotated.ACfHelpers <> rf_lift1 thm
+R10822:10830 annotated.ACfRaw <> raw_fresh def
+R10835:10842 annotated.AErase Raw lift def
+R10845:10845 Corelib.Init.Datatypes <> S constr
+R10822:10830 annotated.ACfRaw <> raw_fresh def
+R10835:10842 annotated.AErase Raw lift def
+R10845:10845 Corelib.Init.Datatypes <> S constr
+R10903:10910 annotated.ACfHelpers <> rf_lift1 thm
+R10903:10910 annotated.ACfHelpers <> rf_lift1 thm
+R10943:10954 annotated.ASubstitution RB lift_fuse thm
+R10961:10961 Corelib.Init.Datatypes <> S constr
+R10971:10980 Stdlib.Arith.PeanoNat Nat le_0_l thm
+R10943:10954 annotated.ASubstitution RB lift_fuse thm
+R10961:10961 Corelib.Init.Datatypes <> S constr
+R10971:10980 Stdlib.Arith.PeanoNat Nat le_0_l thm
+prf 11048:11061 <> ctx_fresh_zero
+binder 11072:11076 <> Delta:138
+R11079:11087 annotated.ACfHelpers <> ctx_fresh def
+R11089:11093 annotated.ACfHelpers <> Delta:138 var
+def 11192:11201 <> shape_TVar
+binder 11203:11203 <> t:139
+R11214:11214 annotated.ACfHelpers <> t:139 var
+R11221:11224 annotated.ASyntax <> TVar constr
+R11231:11234 Corelib.Init.Logic <> True ind
+R11243:11247 Corelib.Init.Logic <> False ind
+def 11265:11275 <> shape_TSort
+binder 11277:11277 <> t:141
+R11288:11288 annotated.ACfHelpers <> t:141 var
+R11295:11299 annotated.ASyntax <> TSort constr
+R11306:11309 Corelib.Init.Logic <> True ind
+R11318:11322 Corelib.Init.Logic <> False ind
+def 11340:11349 <> shape_TFst
+binder 11351:11351 <> t:143
+R11362:11362 annotated.ACfHelpers <> t:143 var
+R11369:11372 annotated.ASyntax <> TFst constr
+R11383:11386 Corelib.Init.Logic <> True ind
+R11395:11399 Corelib.Init.Logic <> False ind
+def 11417:11426 <> shape_TSnd
+binder 11428:11428 <> t:145
+R11439:11439 annotated.ACfHelpers <> t:145 var
+R11446:11449 annotated.ASyntax <> TSnd constr
+R11460:11463 Corelib.Init.Logic <> True ind
+R11472:11476 Corelib.Init.Logic <> False ind
+def 11494:11505 <> shape_TEnumT
+binder 11507:11507 <> t:147
+R11518:11518 annotated.ACfHelpers <> t:147 var
+R11525:11530 annotated.ASyntax <> TEnumT constr
+R11537:11540 Corelib.Init.Logic <> True ind
+R11549:11553 Corelib.Init.Logic <> False ind
+def 11571:11582 <> shape_TIDesc
+binder 11584:11584 <> t:149
+R11595:11595 annotated.ACfHelpers <> t:149 var
+R11602:11607 annotated.ASyntax <> TIDesc constr
+R11614:11617 Corelib.Init.Logic <> True ind
+R11626:11630 Corelib.Init.Logic <> False ind
+prf 11644:11657 <> var_generation
+binder 11668:11672 <> Gamma:151
+binder 11674:11674 <> t:152
+binder 11676:11676 <> T:153
+R11695:11700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11679:11684 annotated.ATyping <> typing ind
+R11686:11690 annotated.ACfHelpers <> Gamma:151 var
+R11692:11692 annotated.ACfHelpers <> t:152 var
+R11694:11694 annotated.ACfHelpers <> T:153 var
+R11713:11716 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11701:11710 annotated.ACfHelpers <> shape_TVar def
+R11712:11712 annotated.ACfHelpers <> t:152 var
+R11717:11723 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11727:11728 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 11724:11724 <> n:154
+binder 11726:11726 <> A:155
+R11739:11742 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11730:11732 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11729:11729 annotated.ACfHelpers <> t:152 var
+R11733:11736 annotated.ASyntax <> TVar constr
+R11738:11738 annotated.ACfHelpers <> n:154 var
+R11769:11774 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11760:11762 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11743:11751 Stdlib.Lists.List <> nth_error def
+R11759:11759 annotated.ACfHelpers <> n:154 var
+R11753:11757 annotated.ACfHelpers <> Gamma:151 var
+R11763:11766 Corelib.Init.Datatypes <> Some constr
+R11768:11768 annotated.ACfHelpers <> A:155 var
+R11775:11792 annotated.AComparison RC type_comparison ind
+R11795:11802 annotated.AErase Raw lift def
+R11812:11812 annotated.ACfHelpers <> A:155 var
+R11805:11805 Corelib.Init.Datatypes <> S constr
+R11807:11807 annotated.ACfHelpers <> n:154 var
+R11815:11815 annotated.ACfHelpers <> T:153 var
+prf 11843:11857 <> sort_generation
+binder 11868:11872 <> Gamma:156
+binder 11874:11874 <> t:157
+binder 11876:11876 <> T:158
+R11895:11900 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11879:11884 annotated.ATyping <> typing ind
+R11886:11890 annotated.ACfHelpers <> Gamma:156 var
+R11892:11892 annotated.ACfHelpers <> t:157 var
+R11894:11894 annotated.ACfHelpers <> T:158 var
+R11914:11917 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11901:11911 annotated.ACfHelpers <> shape_TSort def
+R11913:11913 annotated.ACfHelpers <> t:157 var
+R11918:11924 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11926:11927 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 11925:11925 <> k:159
+R11939:11942 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11929:11931 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11928:11928 annotated.ACfHelpers <> t:157 var
+R11932:11936 annotated.ASyntax <> TSort constr
+R11938:11938 annotated.ACfHelpers <> k:159 var
+R11943:11960 annotated.AComparison RC type_comparison ind
+R11963:11971 annotated.AErase Raw TSort constr
+R11974:11974 Corelib.Init.Datatypes <> S constr
+R11976:11976 annotated.ACfHelpers <> k:159 var
+R11980:11980 annotated.ACfHelpers <> T:158 var
+prf 12008:12021 <> fst_generation
+binder 12032:12036 <> Gamma:160
+binder 12038:12038 <> t:161
+binder 12040:12040 <> T:162
+R12059:12064 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12043:12048 annotated.ATyping <> typing ind
+R12050:12054 annotated.ACfHelpers <> Gamma:160 var
+R12056:12056 annotated.ACfHelpers <> t:161 var
+R12058:12058 annotated.ACfHelpers <> T:162 var
+R12077:12080 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12065:12074 annotated.ACfHelpers <> shape_TFst def
+R12076:12076 annotated.ACfHelpers <> t:161 var
+R12081:12087 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12097:12098 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12088:12088 <> A:163
+binder 12090:12090 <> B:164
+binder 12092:12092 <> p:165
+binder 12094:12094 <> j:166
+binder 12096:12096 <> k:167
+R12113:12118 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12100:12102 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12099:12099 annotated.ACfHelpers <> t:161 var
+R12103:12106 annotated.ASyntax <> TFst constr
+R12108:12108 annotated.ACfHelpers <> A:163 var
+R12110:12110 annotated.ACfHelpers <> B:164 var
+R12112:12112 annotated.ACfHelpers <> p:165 var
+R12147:12150 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12119:12124 annotated.ATyping <> typing ind
+R12126:12130 annotated.ACfHelpers <> Gamma:160 var
+R12132:12132 annotated.ACfHelpers <> A:163 var
+R12135:12143 annotated.AErase Raw TSort constr
+R12145:12145 annotated.ACfHelpers <> j:166 var
+R12192:12197 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12151:12156 annotated.ATyping <> typing ind
+R12166:12169 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12159:12163 annotated.AErase <> erase def
+R12165:12165 annotated.ACfHelpers <> A:163 var
+R12170:12174 annotated.ACfHelpers <> Gamma:160 var
+R12177:12177 annotated.ACfHelpers <> B:164 var
+R12180:12188 annotated.AErase Raw TSort constr
+R12190:12190 annotated.ACfHelpers <> k:167 var
+R12245:12250 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12198:12203 annotated.ATyping <> typing ind
+R12205:12209 annotated.ACfHelpers <> Gamma:160 var
+R12211:12211 annotated.ACfHelpers <> p:165 var
+R12214:12223 annotated.AErase Raw TSigma constr
+R12236:12240 annotated.AErase <> erase def
+R12242:12242 annotated.ACfHelpers <> B:164 var
+R12226:12230 annotated.AErase <> erase def
+R12232:12232 annotated.ACfHelpers <> A:163 var
+R12251:12268 annotated.AComparison RC type_comparison ind
+R12271:12275 annotated.AErase <> erase def
+R12277:12277 annotated.ACfHelpers <> A:163 var
+R12280:12280 annotated.ACfHelpers <> T:162 var
+prf 12308:12321 <> snd_generation
+binder 12332:12336 <> Gamma:168
+binder 12338:12338 <> t:169
+binder 12340:12340 <> T:170
+R12359:12364 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12343:12348 annotated.ATyping <> typing ind
+R12350:12354 annotated.ACfHelpers <> Gamma:168 var
+R12356:12356 annotated.ACfHelpers <> t:169 var
+R12358:12358 annotated.ACfHelpers <> T:170 var
+R12377:12380 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12365:12374 annotated.ACfHelpers <> shape_TSnd def
+R12376:12376 annotated.ACfHelpers <> t:169 var
+R12381:12387 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12397:12398 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12388:12388 <> A:171
+binder 12390:12390 <> B:172
+binder 12392:12392 <> p:173
+binder 12394:12394 <> j:174
+binder 12396:12396 <> k:175
+R12413:12418 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12400:12402 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12399:12399 annotated.ACfHelpers <> t:169 var
+R12403:12406 annotated.ASyntax <> TSnd constr
+R12408:12408 annotated.ACfHelpers <> A:171 var
+R12410:12410 annotated.ACfHelpers <> B:172 var
+R12412:12412 annotated.ACfHelpers <> p:173 var
+R12447:12450 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12419:12424 annotated.ATyping <> typing ind
+R12426:12430 annotated.ACfHelpers <> Gamma:168 var
+R12432:12432 annotated.ACfHelpers <> A:171 var
+R12435:12443 annotated.AErase Raw TSort constr
+R12445:12445 annotated.ACfHelpers <> j:174 var
+R12492:12497 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12451:12456 annotated.ATyping <> typing ind
+R12466:12469 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R12459:12463 annotated.AErase <> erase def
+R12465:12465 annotated.ACfHelpers <> A:171 var
+R12470:12474 annotated.ACfHelpers <> Gamma:168 var
+R12477:12477 annotated.ACfHelpers <> B:172 var
+R12480:12488 annotated.AErase Raw TSort constr
+R12490:12490 annotated.ACfHelpers <> k:175 var
+R12545:12550 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12498:12503 annotated.ATyping <> typing ind
+R12505:12509 annotated.ACfHelpers <> Gamma:168 var
+R12511:12511 annotated.ACfHelpers <> p:173 var
+R12514:12523 annotated.AErase Raw TSigma constr
+R12536:12540 annotated.AErase <> erase def
+R12542:12542 annotated.ACfHelpers <> B:172 var
+R12526:12530 annotated.AErase <> erase def
+R12532:12532 annotated.ACfHelpers <> A:171 var
+R12551:12568 annotated.AComparison RC type_comparison ind
+R12571:12579 annotated.AErase Raw subst def
+R12605:12609 annotated.AErase <> erase def
+R12611:12611 annotated.ACfHelpers <> B:172 var
+R12582:12589 annotated.AErase Raw TFst constr
+R12592:12596 annotated.AErase <> erase def
+R12598:12598 annotated.ACfHelpers <> p:173 var
+R12615:12615 annotated.ACfHelpers <> T:170 var
+prf 12643:12658 <> enumt_generation
+binder 12669:12673 <> Gamma:176
+binder 12675:12675 <> t:177
+binder 12677:12677 <> T:178
+R12696:12701 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12680:12685 annotated.ATyping <> typing ind
+R12687:12691 annotated.ACfHelpers <> Gamma:176 var
+R12693:12693 annotated.ACfHelpers <> t:177 var
+R12695:12695 annotated.ACfHelpers <> T:178 var
+R12716:12719 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12702:12713 annotated.ACfHelpers <> shape_TEnumT def
+R12715:12715 annotated.ACfHelpers <> t:177 var
+R12720:12726 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12728:12729 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12727:12727 <> E:179
+R12742:12745 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12731:12733 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12730:12730 annotated.ACfHelpers <> t:177 var
+R12734:12739 annotated.ASyntax <> TEnumT constr
+R12741:12741 annotated.ACfHelpers <> E:179 var
+R12771:12776 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12746:12751 annotated.ATyping <> typing ind
+R12753:12757 annotated.ACfHelpers <> Gamma:176 var
+R12759:12759 annotated.ACfHelpers <> E:179 var
+R12761:12770 annotated.AErase Raw TEnumU constr
+R12777:12794 annotated.AComparison RC type_comparison ind
+R12797:12805 annotated.AErase Raw TSort constr
+R12810:12810 annotated.ACfHelpers <> T:178 var
+prf 12838:12853 <> idesc_generation
+binder 12864:12868 <> Gamma:180
+binder 12870:12870 <> t:181
+binder 12872:12872 <> T:182
+R12891:12896 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12875:12880 annotated.ATyping <> typing ind
+R12882:12886 annotated.ACfHelpers <> Gamma:180 var
+R12888:12888 annotated.ACfHelpers <> t:181 var
+R12890:12890 annotated.ACfHelpers <> T:182 var
+R12911:12914 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12897:12908 annotated.ACfHelpers <> shape_TIDesc def
+R12910:12910 annotated.ACfHelpers <> t:181 var
+R12915:12921 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12924:12925 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12922:12923 <> IT:183
+R12939:12942 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12927:12929 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12926:12926 annotated.ACfHelpers <> t:181 var
+R12930:12935 annotated.ASyntax <> TIDesc constr
+R12937:12938 annotated.ACfHelpers <> IT:183 var
+R12972:12977 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12943:12948 annotated.ATyping <> typing ind
+R12950:12954 annotated.ACfHelpers <> Gamma:180 var
+R12956:12957 annotated.ACfHelpers <> IT:183 var
+R12960:12968 annotated.AErase Raw TSort constr
+R12978:12995 annotated.AComparison RC type_comparison ind
+R12998:13006 annotated.AErase Raw TSort constr
+R13011:13011 annotated.ACfHelpers <> T:182 var
+def 13090:13099 <> const_type
+binder 13101:13101 <> t:184
+R13112:13112 annotated.ACfHelpers <> t:184 var
+R13123:13128 annotated.ASyntax <> TUnitT constr
+R13132:13135 annotated.ASyntax <> TUId constr
+R13139:13144 annotated.ASyntax <> TEnumU constr
+R13149:13152 Corelib.Init.Datatypes <> Some constr
+R13155:13163 annotated.AErase Raw TSort constr
+R13149:13152 Corelib.Init.Datatypes <> Some constr
+R13155:13163 annotated.AErase Raw TSort constr
+R13149:13152 Corelib.Init.Datatypes <> Some constr
+R13155:13163 annotated.AErase Raw TSort constr
+R13172:13176 annotated.ASyntax <> TUnit constr
+R13181:13184 Corelib.Init.Datatypes <> Some constr
+R13186:13195 annotated.AErase Raw TUnitT constr
+R13201:13204 annotated.ASyntax <> TTag constr
+R13211:13214 Corelib.Init.Datatypes <> Some constr
+R13216:13223 annotated.AErase Raw TUId constr
+R13229:13233 annotated.ASyntax <> TNilE constr
+R13238:13241 Corelib.Init.Datatypes <> Some constr
+R13243:13252 annotated.AErase Raw TEnumU constr
+R13263:13266 Corelib.Init.Datatypes <> None constr
+prf 13282:13300 <> constant_generation
+binder 13311:13315 <> Gamma:186
+binder 13317:13317 <> t:187
+binder 13319:13319 <> T:188
+R13338:13343 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13322:13327 annotated.ATyping <> typing ind
+R13329:13333 annotated.ACfHelpers <> Gamma:186 var
+R13335:13335 annotated.ACfHelpers <> t:187 var
+R13337:13337 annotated.ACfHelpers <> T:188 var
+binder 13351:13351 <> P:189
+R13375:13378 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13366:13368 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13354:13363 annotated.ACfHelpers <> const_type def
+R13365:13365 annotated.ACfHelpers <> t:187 var
+R13369:13372 Corelib.Init.Datatypes <> Some constr
+R13374:13374 annotated.ACfHelpers <> P:189 var
+R13379:13396 annotated.AComparison RC type_comparison ind
+R13398:13398 annotated.ACfHelpers <> P:189 var
+R13400:13400 annotated.ACfHelpers <> T:188 var
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13524:13540 annotated.AComparison RC cmp_conversion constr
+R13543:13555 annotated.AMacros RCore cv_refl constr
+R13570:13599 annotated.AComparison RC comparison_right_conversion thm
+R13570:13599 annotated.AComparison RC comparison_right_conversion thm
+R13653:13676 annotated.AComparison RC comparison_transitive thm
+R13653:13676 annotated.AComparison RC comparison_transitive thm
+R13718:13739 annotated.AComparison RC comparison_universe thm
+R13742:13751 annotated.ATyping RT ul_sort constr
+R13718:13739 annotated.AComparison RC comparison_universe thm
+R13742:13751 annotated.ATyping RT ul_sort constr
+R13777:13800 annotated.AComparison RC comparison_transitive thm
+R13777:13800 annotated.AComparison RC comparison_transitive thm
+R13842:13863 annotated.AComparison RC comparison_universe thm
+R13866:13873 annotated.ATyping RT ul_pi constr
+R13842:13863 annotated.AComparison RC comparison_universe thm
+R13866:13873 annotated.ATyping RT ul_pi constr
+prf 13928:13941 <> cmp_rigid_conv
+binder 13952:13952 <> P:190
+binder 13954:13954 <> T:191
+binder 13956:13956 <> h:192
+R13981:13986 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13959:13976 annotated.AComparison RC type_comparison ind
+R13978:13978 annotated.ACfHelpers <> P:190 var
+R13980:13980 annotated.ACfHelpers <> T:191 var
+R14010:14013 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14001:14003 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13987:13998 annotated.AMacros RG term_head def
+R14000:14000 annotated.ACfHelpers <> P:190 var
+R14004:14007 Corelib.Init.Datatypes <> Some constr
+R14009:14009 annotated.ACfHelpers <> h:192 var
+R14026:14029 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14015:14018 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14014:14014 annotated.ACfHelpers <> h:192 var
+R14019:14025 annotated.AMacros RG h_pi constr
+R14044:14047 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14031:14034 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14030:14030 annotated.ACfHelpers <> h:192 var
+R14035:14043 annotated.AMacros RG h_sort constr
+R14048:14057 annotated.AMacros RCore conv ind
+R14061:14061 annotated.ACfHelpers <> T:191 var
+R14059:14059 annotated.ACfHelpers <> P:190 var
+R14144:14161 annotated.AMacros RG conversion_head thm
+R14177:14183 Corelib.Init.Logic <> eq_refl constr
+R14144:14161 annotated.AMacros RG conversion_head thm
+R14177:14183 Corelib.Init.Logic <> eq_refl constr
+R14215:14232 annotated.AMacros RG conversion_head thm
+R14248:14254 Corelib.Init.Logic <> eq_refl constr
+R14215:14232 annotated.AMacros RG conversion_head thm
+R14248:14254 Corelib.Init.Logic <> eq_refl constr
+prf 14282:14291 <> cmp_not_pi
+binder 14302:14302 <> P:193
+binder 14304:14304 <> T:194
+binder 14306:14306 <> h:195
+binder 14308:14308 <> X:196
+binder 14310:14310 <> Y:197
+R14335:14340 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14313:14330 annotated.AComparison RC type_comparison ind
+R14332:14332 annotated.ACfHelpers <> P:193 var
+R14334:14334 annotated.ACfHelpers <> T:194 var
+R14367:14370 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14341:14350 annotated.AMacros RCore conv ind
+R14355:14361 annotated.AErase Raw TPi constr
+R14365:14365 annotated.ACfHelpers <> Y:197 var
+R14363:14363 annotated.ACfHelpers <> X:196 var
+R14352:14352 annotated.ACfHelpers <> T:194 var
+R14394:14397 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14385:14387 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14371:14382 annotated.AMacros RG term_head def
+R14384:14384 annotated.ACfHelpers <> P:193 var
+R14388:14391 Corelib.Init.Datatypes <> Some constr
+R14393:14393 annotated.ACfHelpers <> h:195 var
+R14410:14413 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14399:14402 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14398:14398 annotated.ACfHelpers <> h:195 var
+R14403:14409 annotated.AMacros RG h_pi constr
+R14414:14418 Corelib.Init.Logic <> False ind
+R14496:14513 annotated.AMacros RG conversion_head thm
+R14524:14537 annotated.AMacros RCore cv_trans constr
+R14549:14555 Corelib.Init.Logic <> eq_refl constr
+R14496:14513 annotated.AMacros RG conversion_head thm
+R14524:14537 annotated.AMacros RCore cv_trans constr
+R14549:14555 Corelib.Init.Logic <> eq_refl constr
+R14587:14604 annotated.AMacros RG conversion_head thm
+R14615:14628 annotated.AMacros RCore cv_trans constr
+R14631:14642 annotated.AMacros RCore cv_sym constr
+R14652:14658 Corelib.Init.Logic <> eq_refl constr
+R14660:14666 Corelib.Init.Logic <> eq_refl constr
+R14587:14604 annotated.AMacros RG conversion_head thm
+R14615:14628 annotated.AMacros RCore cv_trans constr
+R14631:14642 annotated.AMacros RCore cv_sym constr
+R14652:14658 Corelib.Init.Logic <> eq_refl constr
+R14660:14666 Corelib.Init.Logic <> eq_refl constr
+R14700:14717 annotated.AMacros RG conversion_head thm
+R14733:14739 Corelib.Init.Logic <> eq_refl constr
+R14700:14717 annotated.AMacros RG conversion_head thm
+R14733:14739 Corelib.Init.Logic <> eq_refl constr
+prf 14767:14779 <> cmp_not_sigma
+binder 14790:14790 <> P:198
+binder 14792:14792 <> T:199
+binder 14794:14794 <> h:200
+binder 14796:14796 <> X:201
+binder 14798:14798 <> Y:202
+R14823:14828 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14801:14818 annotated.AComparison RC type_comparison ind
+R14820:14820 annotated.ACfHelpers <> P:198 var
+R14822:14822 annotated.ACfHelpers <> T:199 var
+R14858:14861 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14829:14838 annotated.AMacros RCore conv ind
+R14843:14852 annotated.AErase Raw TSigma constr
+R14856:14856 annotated.ACfHelpers <> Y:202 var
+R14854:14854 annotated.ACfHelpers <> X:201 var
+R14840:14840 annotated.ACfHelpers <> T:199 var
+R14885:14888 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14876:14878 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14862:14873 annotated.AMacros RG term_head def
+R14875:14875 annotated.ACfHelpers <> P:198 var
+R14879:14882 Corelib.Init.Datatypes <> Some constr
+R14884:14884 annotated.ACfHelpers <> h:200 var
+R14904:14907 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14890:14893 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14889:14889 annotated.ACfHelpers <> h:200 var
+R14894:14903 annotated.AMacros RG h_sigma constr
+R14908:14912 Corelib.Init.Logic <> False ind
+R14989:15006 annotated.AMacros RG conversion_head thm
+R15017:15030 annotated.AMacros RCore cv_trans constr
+R15042:15048 Corelib.Init.Logic <> eq_refl constr
+R14989:15006 annotated.AMacros RG conversion_head thm
+R15017:15030 annotated.AMacros RCore cv_trans constr
+R15042:15048 Corelib.Init.Logic <> eq_refl constr
+R15080:15097 annotated.AMacros RG conversion_head thm
+R15108:15121 annotated.AMacros RCore cv_trans constr
+R15124:15135 annotated.AMacros RCore cv_sym constr
+R15145:15151 Corelib.Init.Logic <> eq_refl constr
+R15153:15159 Corelib.Init.Logic <> eq_refl constr
+R15080:15097 annotated.AMacros RG conversion_head thm
+R15108:15121 annotated.AMacros RCore cv_trans constr
+R15124:15135 annotated.AMacros RCore cv_sym constr
+R15145:15151 Corelib.Init.Logic <> eq_refl constr
+R15153:15159 Corelib.Init.Logic <> eq_refl constr
+R15193:15210 annotated.AMacros RG conversion_head thm
+R15221:15234 annotated.AMacros RCore cv_trans constr
+R15237:15248 annotated.AMacros RCore cv_sym constr
+R15258:15264 Corelib.Init.Logic <> eq_refl constr
+R15266:15272 Corelib.Init.Logic <> eq_refl constr
+R15193:15210 annotated.AMacros RG conversion_head thm
+R15221:15234 annotated.AMacros RCore cv_trans constr
+R15237:15248 annotated.AMacros RCore cv_sym constr
+R15258:15264 Corelib.Init.Logic <> eq_refl constr
+R15266:15272 Corelib.Init.Logic <> eq_refl constr
+def 15307:15315 <> elim_form
+binder 15317:15317 <> t:203
+R15328:15328 annotated.ACfHelpers <> t:203 var
+R15339:15342 annotated.ASyntax <> TVar constr
+R15348:15351 annotated.ASyntax <> TApp constr
+R15363:15366 annotated.ASyntax <> TFst constr
+R15376:15379 annotated.ASyntax <> TSnd constr
+R15389:15395 annotated.ASyntax <> TSwitch constr
+R15411:15414 annotated.ASyntax <> TEPi constr
+R15424:15430 annotated.ASyntax <> TInterp constr
+R15440:15444 annotated.ASyntax <> TIAll constr
+R15458:15461 annotated.ASyntax <> TInd constr
+R15479:15483 annotated.ASyntax <> THyps constr
+R15499:15508 annotated.ASyntax <> TCloseCase constr
+R15528:15536 annotated.ASyntax <> TCloseInd constr
+R15556:15559 annotated.ASyntax <> TMuI constr
+R15567:15572 annotated.ASyntax <> TClose constr
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15583:15586 Corelib.Init.Logic <> True ind
+R15597:15601 Corelib.Init.Logic <> False ind
+R15659:15676 annotated.AComparison RC type_comparison ind
+R15659:15676 annotated.AComparison RC type_comparison ind
+R15690:15699 annotated.AMacros RCore conv ind
+R15705:15711 annotated.AErase Raw TPi constr
+R15690:15699 annotated.AMacros RCore conv ind
+R15705:15711 annotated.AErase Raw TPi constr
+R15721:15725 Corelib.Init.Logic <> False ind
+R15721:15725 Corelib.Init.Logic <> False ind
+R15815:15832 annotated.AComparison RC type_comparison ind
+R15815:15832 annotated.AComparison RC type_comparison ind
+R15846:15855 annotated.AMacros RCore conv ind
+R15861:15870 annotated.AErase Raw TSigma constr
+R15846:15855 annotated.AMacros RCore conv ind
+R15861:15870 annotated.AErase Raw TSigma constr
+R15880:15884 Corelib.Init.Logic <> False ind
+R15880:15884 Corelib.Init.Logic <> False ind
+R15903:15915 annotated.ACfHelpers <> cmp_not_sigma thm
+R15744:15753 annotated.ACfHelpers <> cmp_not_pi thm
+R16028:16033 annotated.ATyping <> typing ind
+R16038:16040 annotated.ASyntax <> TPi constr
+R16028:16033 annotated.ATyping <> typing ind
+R16038:16040 annotated.ASyntax <> TPi constr
+R16112:16117 annotated.ATyping <> typing ind
+R16122:16127 annotated.ASyntax <> TSigma constr
+R16112:16117 annotated.ATyping <> typing ind
+R16122:16127 annotated.ASyntax <> TSigma constr
+R16202:16207 annotated.ATyping <> typing ind
+R16212:16215 annotated.ASyntax <> TLam constr
+R16202:16207 annotated.ATyping <> typing ind
+R16212:16215 annotated.ASyntax <> TLam constr
+R16301:16306 annotated.ATyping <> typing ind
+R16311:16315 annotated.ASyntax <> TPair constr
+R16301:16306 annotated.ATyping <> typing ind
+R16311:16315 annotated.ASyntax <> TPair constr
+R16405:16410 annotated.ATyping <> typing ind
+R16415:16419 annotated.ASyntax <> TSort constr
+R16405:16410 annotated.ATyping <> typing ind
+R16415:16419 annotated.ASyntax <> TSort constr
+R16481:16486 annotated.ATyping <> typing ind
+R16491:16496 annotated.ASyntax <> TEnumT constr
+R16481:16486 annotated.ATyping <> typing ind
+R16491:16496 annotated.ASyntax <> TEnumT constr
+R16561:16566 annotated.ATyping <> typing ind
+R16571:16576 annotated.ASyntax <> TIDesc constr
+R16561:16566 annotated.ATyping <> typing ind
+R16571:16576 annotated.ASyntax <> TIDesc constr
+R16641:16646 annotated.ATyping <> typing ind
+R16651:16656 annotated.ASyntax <> TConsE constr
+R16641:16646 annotated.ATyping <> typing ind
+R16651:16656 annotated.ASyntax <> TConsE constr
+R16727:16732 annotated.ATyping <> typing ind
+R16737:16742 annotated.ASyntax <> TEZero constr
+R16727:16732 annotated.ATyping <> typing ind
+R16737:16742 annotated.ASyntax <> TEZero constr
+R16812:16817 annotated.ATyping <> typing ind
+R16822:16827 annotated.ASyntax <> TESucc constr
+R16812:16817 annotated.ATyping <> typing ind
+R16822:16827 annotated.ASyntax <> TESucc constr
+R16903:16908 annotated.ATyping <> typing ind
+R16913:16917 annotated.ASyntax <> TIVar constr
+R16903:16908 annotated.ATyping <> typing ind
+R16913:16917 annotated.ASyntax <> TIVar constr
+R16987:16992 annotated.ATyping <> typing ind
+R16997:16999 annotated.ASyntax <> TI1 constr
+R16987:16992 annotated.ATyping <> typing ind
+R16997:16999 annotated.ASyntax <> TI1 constr
+R17061:17066 annotated.ATyping <> typing ind
+R17071:17075 annotated.ASyntax <> TIBot constr
+R17061:17066 annotated.ATyping <> typing ind
+R17071:17075 annotated.ASyntax <> TIBot constr
+R17139:17144 annotated.ATyping <> typing ind
+R17149:17154 annotated.ASyntax <> TIProd constr
+R17139:17144 annotated.ATyping <> typing ind
+R17149:17154 annotated.ASyntax <> TIProd constr
+R17231:17236 annotated.ATyping <> typing ind
+R17241:17244 annotated.ASyntax <> TIPi constr
+R17231:17236 annotated.ATyping <> typing ind
+R17241:17244 annotated.ASyntax <> TIPi constr
+R17319:17324 annotated.ATyping <> typing ind
+R17329:17333 annotated.ASyntax <> TISig constr
+R17319:17324 annotated.ATyping <> typing ind
+R17329:17333 annotated.ASyntax <> TISig constr
+R17409:17414 annotated.ATyping <> typing ind
+R17419:17426 annotated.ASyntax <> TIChoice constr
+R17409:17414 annotated.ATyping <> typing ind
+R17419:17426 annotated.ASyntax <> TIChoice constr
+R17505:17510 annotated.ATyping <> typing ind
+R17515:17519 annotated.ASyntax <> TInMu constr
+R17505:17510 annotated.ATyping <> typing ind
+R17515:17519 annotated.ASyntax <> TInMu constr
+R17603:17608 annotated.ATyping <> typing ind
+R17613:17620 annotated.ASyntax <> TInClose constr
+R17603:17608 annotated.ATyping <> typing ind
+R17613:17620 annotated.ASyntax <> TInClose constr
+R17648:17666 annotated.AGenAll <> in_close_generation thm
+R17676:17676 Corelib.Init.Logic <> I constr
+R17545:17561 annotated.AGenAll <> in_mui_generation thm
+R17571:17571 Corelib.Init.Logic <> I constr
+R17450:17467 annotated.AGenAll <> ichoice_generation thm
+R17477:17477 Corelib.Init.Logic <> I constr
+R17357:17371 annotated.AGenAll <> isig_generation thm
+R17381:17381 Corelib.Init.Logic <> I constr
+R17268:17281 annotated.AGenAll <> ipi_generation thm
+R17291:17291 Corelib.Init.Logic <> I constr
+R17178:17193 annotated.AGenAll <> iprod_generation thm
+R17203:17203 Corelib.Init.Logic <> I constr
+R17095:17109 annotated.AGenAll <> ibot_generation thm
+R17119:17119 Corelib.Init.Logic <> I constr
+R17019:17031 annotated.AGenAll <> i1_generation thm
+R17041:17041 Corelib.Init.Logic <> I constr
+R16939:16953 annotated.AGenAll <> ivar_generation thm
+R16963:16963 Corelib.Init.Logic <> I constr
+R16851:16865 annotated.AGenAll <> succ_generation thm
+R16875:16875 Corelib.Init.Logic <> I constr
+R16764:16778 annotated.AGenAll <> zero_generation thm
+R16788:16788 Corelib.Init.Logic <> I constr
+R16678:16693 annotated.AGenAll <> conse_generation thm
+R16703:16703 Corelib.Init.Logic <> I constr
+R16596:16611 annotated.ACfHelpers <> idesc_generation thm
+R16621:16621 Corelib.Init.Logic <> I constr
+R16516:16531 annotated.ACfHelpers <> enumt_generation thm
+R16541:16541 Corelib.Init.Logic <> I constr
+R16439:16453 annotated.ACfHelpers <> sort_generation thm
+R16463:16463 Corelib.Init.Logic <> I constr
+R16341:16355 annotated.AProjections <> pair_generation thm
+R16373:16379 Corelib.Init.Logic <> eq_refl constr
+R16239:16255 annotated.AGeneration <> lambda_generation thm
+R16271:16277 Corelib.Init.Logic <> eq_refl constr
+R16149:16164 annotated.ACompleteness <> sigma_generation thm
+R16174:16174 Corelib.Init.Logic <> I constr
+R16062:16074 annotated.ACompleteness <> pi_generation thm
+R16084:16084 Corelib.Init.Logic <> I constr
+prf 17722:17735 <> pi_typed_shape
+binder 17746:17750 <> Delta:205
+binder 17752:17752 <> g:206
+binder 17754:17754 <> T:207
+binder 17756:17756 <> X:208
+binder 17758:17758 <> Y:209
+R17777:17782 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17761:17766 annotated.ATyping <> typing ind
+R17768:17772 annotated.ACfHelpers <> Delta:205 var
+R17774:17774 annotated.ACfHelpers <> g:206 var
+R17776:17776 annotated.ACfHelpers <> T:207 var
+R17809:17812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17783:17792 annotated.AMacros RCore conv ind
+R17797:17803 annotated.AErase Raw TPi constr
+R17807:17807 annotated.ACfHelpers <> Y:209 var
+R17805:17805 annotated.ACfHelpers <> X:208 var
+R17794:17794 annotated.ACfHelpers <> T:207 var
+R17813:17813 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R17842:17846 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R17814:17820 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R17826:17827 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 17821:17821 <> A:210
+binder 17823:17823 <> B:211
+binder 17825:17825 <> b:212
+R17829:17831 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R17828:17828 annotated.ACfHelpers <> g:206 var
+R17832:17835 annotated.ASyntax <> TLam constr
+R17837:17837 annotated.ACfHelpers <> A:210 var
+R17839:17839 annotated.ACfHelpers <> B:211 var
+R17841:17841 annotated.ACfHelpers <> b:212 var
+R17847:17855 annotated.ACfHelpers <> elim_form def
+R17857:17857 annotated.ACfHelpers <> g:206 var
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17926:17926 Corelib.Init.Logic <> I constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+R17992:18010 annotated.ACfHelpers <> constant_generation thm
+R18022:18028 Corelib.Init.Logic <> eq_refl constr
+prf 18111:18127 <> sigma_typed_shape
+binder 18138:18142 <> Delta:213
+binder 18144:18144 <> p:214
+binder 18146:18146 <> T:215
+binder 18148:18148 <> X:216
+binder 18150:18150 <> Y:217
+R18169:18174 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18153:18158 annotated.ATyping <> typing ind
+R18160:18164 annotated.ACfHelpers <> Delta:213 var
+R18166:18166 annotated.ACfHelpers <> p:214 var
+R18168:18168 annotated.ACfHelpers <> T:215 var
+R18204:18207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18175:18184 annotated.AMacros RCore conv ind
+R18189:18198 annotated.AErase Raw TSigma constr
+R18202:18202 annotated.ACfHelpers <> Y:217 var
+R18200:18200 annotated.ACfHelpers <> X:216 var
+R18186:18186 annotated.ACfHelpers <> T:215 var
+R18208:18208 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R18242:18246 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R18209:18215 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R18223:18224 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 18216:18216 <> A:218
+binder 18218:18218 <> B:219
+binder 18220:18220 <> a:220
+binder 18222:18222 <> b:221
+R18226:18228 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18225:18225 annotated.ACfHelpers <> p:214 var
+R18229:18233 annotated.ASyntax <> TPair constr
+R18235:18235 annotated.ACfHelpers <> A:218 var
+R18237:18237 annotated.ACfHelpers <> B:219 var
+R18239:18239 annotated.ACfHelpers <> a:220 var
+R18241:18241 annotated.ACfHelpers <> b:221 var
+R18247:18255 annotated.ACfHelpers <> elim_form def
+R18257:18257 annotated.ACfHelpers <> p:214 var
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18326:18326 Corelib.Init.Logic <> I constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+R18392:18410 annotated.ACfHelpers <> constant_generation thm
+R18422:18428 Corelib.Init.Logic <> eq_refl constr
+def 18563:18573 <> in_mismatch
+binder 18575:18575 <> t:222
+R18586:18586 annotated.ACfHelpers <> t:222 var
+R18597:18600 annotated.ASyntax <> TInd constr
+R18613:18620 annotated.ASyntax <> TInClose constr
+R18636:18639 Corelib.Init.Logic <> True ind
+R18645:18654 annotated.ASyntax <> TCloseCase constr
+R18671:18675 annotated.ASyntax <> TInMu constr
+R18689:18692 Corelib.Init.Logic <> True ind
+R18698:18706 annotated.ASyntax <> TCloseInd constr
+R18721:18725 annotated.ASyntax <> TInMu constr
+R18739:18742 Corelib.Init.Logic <> True ind
+R18753:18757 Corelib.Init.Logic <> False ind
+prf 18773:18790 <> root_erasure_redex
+binder 18801:18801 <> t:224
+binder 18803:18803 <> s:225
+R18840:18845 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18831:18833 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18806:18820 annotated.AMacros RCore root_step def
+R18823:18827 annotated.AErase <> erase def
+R18829:18829 annotated.ACfHelpers <> t:224 var
+R18834:18837 Corelib.Init.Datatypes <> Some constr
+R18839:18839 annotated.ACfHelpers <> s:225 var
+R18846:18846 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R18878:18882 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R18847:18853 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R18855:18856 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 18854:18854 <> u:226
+R18869:18871 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18857:18866 annotated.AStepFunction <> aroot_step def
+R18868:18868 annotated.ACfHelpers <> t:224 var
+R18872:18875 Corelib.Init.Datatypes <> Some constr
+R18877:18877 annotated.ACfHelpers <> u:226 var
+R18883:18893 annotated.ACfHelpers <> in_mismatch def
+R18895:18895 annotated.ACfHelpers <> t:224 var
+R18938:18942 annotated.AErase <> erase def
+R18944:18958 annotated.AMacros RCore root_step def
+R19041:19045 annotated.AErase <> erase def
+R19041:19045 annotated.AErase <> erase def
+R19087:19091 annotated.AErase <> erase def
+R19182:19182 Corelib.Init.Logic <> I constr
+R19182:19182 Corelib.Init.Logic <> I constr
+R19182:19182 Corelib.Init.Logic <> I constr
+R19182:19182 Corelib.Init.Logic <> I constr
+prf 19198:19213 <> mismatch_untyped
+binder 19224:19228 <> Delta:227
+binder 19230:19230 <> t:228
+binder 19232:19232 <> T:229
+R19251:19254 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19235:19240 annotated.ATyping <> typing ind
+R19242:19246 annotated.ACfHelpers <> Delta:227 var
+R19248:19248 annotated.ACfHelpers <> t:228 var
+R19250:19250 annotated.ACfHelpers <> T:229 var
+R19268:19271 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19255:19265 annotated.ACfHelpers <> in_mismatch def
+R19267:19267 annotated.ACfHelpers <> t:228 var
+R19272:19276 Corelib.Init.Logic <> False ind
+R19392:19405 annotated.AGenAll <> ind_generation thm
+R19415:19415 Corelib.Init.Logic <> I constr
+R19392:19405 annotated.AGenAll <> ind_generation thm
+R19415:19415 Corelib.Init.Logic <> I constr
+R19489:19507 annotated.AGenAll <> in_close_generation thm
+R19518:19518 Corelib.Init.Logic <> I constr
+R19489:19507 annotated.AGenAll <> in_close_generation thm
+R19518:19518 Corelib.Init.Logic <> I constr
+R19592:19605 annotated.ACfHelpers <> cmp_rigid_conv thm
+R19616:19622 Corelib.Init.Logic <> eq_refl constr
+R19592:19605 annotated.ACfHelpers <> cmp_rigid_conv thm
+R19616:19622 Corelib.Init.Logic <> eq_refl constr
+R19688:19705 annotated.AMacros RG conversion_head thm
+R19718:19724 Corelib.Init.Logic <> eq_refl constr
+R19726:19732 Corelib.Init.Logic <> eq_refl constr
+R19688:19705 annotated.AMacros RG conversion_head thm
+R19718:19724 Corelib.Init.Logic <> eq_refl constr
+R19726:19732 Corelib.Init.Logic <> eq_refl constr
+R19800:19820 annotated.AGenAll <> close_case_generation thm
+R19830:19830 Corelib.Init.Logic <> I constr
+R19800:19820 annotated.AGenAll <> close_case_generation thm
+R19830:19830 Corelib.Init.Logic <> I constr
+R19910:19926 annotated.AGenAll <> in_mui_generation thm
+R19937:19937 Corelib.Init.Logic <> I constr
+R19910:19926 annotated.AGenAll <> in_mui_generation thm
+R19937:19937 Corelib.Init.Logic <> I constr
+R20007:20020 annotated.ACfHelpers <> cmp_rigid_conv thm
+R20031:20037 Corelib.Init.Logic <> eq_refl constr
+R20007:20020 annotated.ACfHelpers <> cmp_rigid_conv thm
+R20031:20037 Corelib.Init.Logic <> eq_refl constr
+R20103:20120 annotated.AMacros RG conversion_head thm
+R20133:20139 Corelib.Init.Logic <> eq_refl constr
+R20141:20147 Corelib.Init.Logic <> eq_refl constr
+R20103:20120 annotated.AMacros RG conversion_head thm
+R20133:20139 Corelib.Init.Logic <> eq_refl constr
+R20141:20147 Corelib.Init.Logic <> eq_refl constr
+R20215:20234 annotated.AGenAll <> close_ind_generation thm
+R20244:20244 Corelib.Init.Logic <> I constr
+R20215:20234 annotated.AGenAll <> close_ind_generation thm
+R20244:20244 Corelib.Init.Logic <> I constr
+R20322:20338 annotated.AGenAll <> in_mui_generation thm
+R20349:20349 Corelib.Init.Logic <> I constr
+R20322:20338 annotated.AGenAll <> in_mui_generation thm
+R20349:20349 Corelib.Init.Logic <> I constr
+R20419:20432 annotated.ACfHelpers <> cmp_rigid_conv thm
+R20443:20449 Corelib.Init.Logic <> eq_refl constr
+R20419:20432 annotated.ACfHelpers <> cmp_rigid_conv thm
+R20443:20449 Corelib.Init.Logic <> eq_refl constr
+R20515:20532 annotated.AMacros RG conversion_head thm
+R20545:20551 Corelib.Init.Logic <> eq_refl constr
+R20553:20559 Corelib.Init.Logic <> eq_refl constr
+R20515:20532 annotated.AMacros RG conversion_head thm
+R20545:20551 Corelib.Init.Logic <> eq_refl constr
+R20553:20559 Corelib.Init.Logic <> eq_refl constr
+prf 20589:20608 <> typed_normal_no_root
+binder 20619:20623 <> Delta:230
+binder 20625:20625 <> t:231
+binder 20627:20627 <> T:232
+binder 20629:20629 <> s:233
+R20648:20651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20632:20637 annotated.ATyping <> typing ind
+R20639:20643 annotated.ACfHelpers <> Delta:230 var
+R20645:20645 annotated.ACfHelpers <> t:231 var
+R20647:20647 annotated.ACfHelpers <> T:232 var
+R20661:20666 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20652:20658 annotated.AStepFunction <> anormal def
+R20660:20660 annotated.ACfHelpers <> t:231 var
+R20701:20704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20692:20694 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R20667:20681 annotated.AMacros RCore root_step def
+R20684:20688 annotated.AErase <> erase def
+R20690:20690 annotated.ACfHelpers <> t:231 var
+R20695:20698 Corelib.Init.Datatypes <> Some constr
+R20700:20700 annotated.ACfHelpers <> s:233 var
+R20705:20709 Corelib.Init.Logic <> False ind
+R20762:20779 annotated.ACfHelpers <> root_erasure_redex thm
+R20762:20779 annotated.ACfHelpers <> root_erasure_redex thm
+R20822:20830 annotated.AEta <> step_root constr
+R20837:20852 annotated.AStepFunction <> aroot_step_sound thm
+R20822:20830 annotated.AEta <> step_root constr
+R20837:20852 annotated.AStepFunction <> aroot_step_sound thm
+R20876:20891 annotated.ACfHelpers <> mismatch_untyped thm
+R20876:20891 annotated.ACfHelpers <> mismatch_untyped thm
+R20941:20950 annotated.ACfHelpers <> compatible ind
+R21007:21013 annotated.AStepFunction <> anormal def
+R21007:21013 annotated.AStepFunction <> anormal def
+R21021:21027 annotated.AStepFunction <> anormal def
+R21021:21027 annotated.AStepFunction <> anormal def
+R21122:21133 annotated.AEta <> step_context constr
+R21191:21204 annotated.ACfHelpers <> pi_typed_shape thm
+R21225:21244 annotated.ACfHelpers <> typed_normal_no_root thm

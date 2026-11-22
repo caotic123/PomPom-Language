@@ -1,5 +1,22 @@
 # Proposal revision changelog
 
+## 2026-10-11 - Annotated bridges, confluence modulo annotations, decision
+
+- Added `annotated/ACompleteness.v`: every raw typing derivation has an annotated term with the same erasure and type, so raw and annotated typing coincide modulo erasure.
+- Added `annotated/AStepFunction.v`: an executable annotated root computation, sound and complete for `structural_root`, and decidability of annotated reduction.
+- Added `annotated/ACfRaw.v`, `ACfHelpers.v`, and `ACfNormal.v`: typed annotated normal forms erase to raw normal forms (`typed_normal_erasure`).
+- Added `annotated/ACfConfluence.v`: confluence and conversion joinability modulo annotations, with annotated strong normalization as an explicit premise.
+- Attempted annotated strong normalization. Porting the raw untyped-candidate model fails because ill-typed annotated terms can be stuck while their erasures reduce; a typed (Kripke) model is required. The reasons are recorded in `annotated/README.md`.
+- Decision: keep the public calculus unannotated and document the annotated results. Public counts are unchanged.
+- Added `elaborated_progress` and `elaborated_evaluation` to `OpenSignaturesTheorems.v` and the public audit: closed elaborated programs make progress and evaluate to a value of their type. They are corollaries, not original claims.
+
+## 2026-10-11 - Full preservation for the annotated core
+
+- Rebuilt the annotated core and its raw dependencies under the current toolchain. The existing strengthening, general eta, root-computation, and compatible-context proofs check without axioms.
+- Added `annotated/AFullPreservation.v`: `full_preservation` for the complete annotated reduction, with all 31 root computations, general eta, and all 100 compatible positions. It also proves multistep preservation and erasure of each annotated step to one or zero raw reduction steps.
+- Added `annotated/ACriticalPair.v`: a well-typed beta/eta overlap with two distinct normal reducts of equal erasure. Annotated reduction is therefore not confluent on the nose.
+- Registered both files in `Makefile` and `annotated/AAudit.v`. The audit prints `Closed under the global context`. Public counts are unchanged; the named calculus has not been migrated.
+
 ## 2026-10-03 - Coherence proved
 
 - Proved `coercion_coherence` and `checking_coherence` with their original statements and no axioms. The two `Conjecture` declarations in `OpenSignaturesTheorems.v` are now theorems; 46 of the 47 original claims are proved and full preservation stays refuted.

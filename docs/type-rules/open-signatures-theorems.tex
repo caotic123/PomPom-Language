@@ -19,7 +19,13 @@ The hidden type of $z$ may depend on $A$ inside the eta expansion, but must
 be fixed before $B$ is bound in $f$.
 \texttt{OpenSignaturesEtaPolymorphism.v} proves this without axioms.
 The false conjecture was removed; its exact proposition remains as
-\texttt{full\_preservation\_statement}. A specification repair is required.
+\texttt{full\_preservation\_statement}. Preservation for every computation
+rule in every position, with eta kept in conversion, is proved as
+\texttt{named\_computation\_preservation}. An explicitly annotated core
+(\texttt{progress/annotated}) proves full preservation including general eta,
+and its typing coincides with the present typing modulo erasure. Its reduction
+is confluent only modulo annotations, and that result assumes its strong
+normalization, which is open. The public calculus is therefore unchanged.
 The exact dependency table is in \texttt{progress/PROOF\_STATUS.md}.
 \[
 \begin{array}{@{}ll@{}}

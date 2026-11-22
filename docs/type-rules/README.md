@@ -1,9 +1,11 @@
 # PomPom typing rules
 
-An [explicitly annotated core repair](../../progress/annotated/README.md) is
-under construction following the September 30 design decision. The PDF below
-still documents the existing named calculus and its checked counterexample;
-it will be migrated when the annotated preservation proof is complete.
+An [explicitly annotated core repair](../../progress/annotated/README.md)
+follows the September 30 design decision. Full preservation is proved for that
+core without axioms, but its strong normalization is open. On October 11 the
+user decided to keep the public calculus unannotated, so the PDF below
+documents the existing named calculus, its checked counterexample, and the
+status of the repair.
 
 ## Open signatures and parameterized closure
 

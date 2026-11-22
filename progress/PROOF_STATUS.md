@@ -1,11 +1,15 @@
 # Proof status
 
-**Annotation repair in progress (September 30):** the user selected explicit
-core annotations with general eta contraction. The new
-[annotated development](annotated/README.md) has checked typing, binding,
-weakening, substitution, beta preservation, and counterexample regressions.
-Full annotated preservation and the public migration remain unfinished.
-The counts below continue to refer to the existing named calculus.
+**Annotation repair (September 30 decision):** the user selected explicit
+core annotations with general eta contraction. Full preservation for the
+[annotated core](annotated/README.md) is proved without axioms, covering all
+primitive computations, general eta, and every compatible context. Annotated
+and raw typing coincide modulo erasure, and typed annotated normal forms erase
+to raw normal forms. Annotated reduction is confluent modulo annotations but
+not on the nose (`ACriticalPair.v`); that theorem takes annotated strong
+normalization as a premise, which is open and needs a new typed semantic
+model. **October 11 decision:** the public calculus stays unannotated. The
+counts below refer to it.
 
 Of the 47 original claims, **46 are proved without axioms and one is
 refuted**. Progress, operational preservation, and full beta/eta strong
@@ -65,6 +69,13 @@ invalidate operational preservation or normalization; neither depends on it.
 | `unroll_beta` | Two root steps. |
 | `row_position_identity` | Induction on the row and position. |
 | `singleton_source_elaborates` | Elaboration constructors and bounded, checked search for concrete typing and conversion goals. |
+
+Two corollaries for elaborated programs are proved and audited but not
+counted among the 47 original claims. A closed source program means the core
+term it elaborates to. `elaborated_progress` combines `checking_sound` with
+`progress`; `elaborated_evaluation` adds `normalization_eval` and
+`preservation_eval`, so the elaborated term evaluates to a value of the same
+type.
 
 The conversion-substitution proof avoids a substitution-algebra induction:
 `subst s k t` converts backwards to `(lambda k. t) s`, congruence changes
@@ -164,7 +175,7 @@ chains without requiring well-formed intermediate types in the smaller context.
 preservation for variables at arbitrary dependent function types, and for
 functions with a stable principal type. The polymorphic-application
 counterexample shows why this premise cannot cover arbitrary functions.
-These supporting results do not change the 44/47 proved count. See
+These supporting results do not change the 46/47 proved count. See
 [PRESERVATION_PLAN.md](PRESERVATION_PLAN.md) for the remaining argument.
 
 ## Typed factorization and normalization foundations
@@ -282,7 +293,7 @@ proves the fundamental theorem for every typing derivation, inhabits semantic
 environments, and reflects full-reduction accessibility. The named bridge
 proves the original `normalization` statement without assumptions.
 
-These models add no axioms. The original-claim count is **44/47** without
+These models add no axioms. The original-claim count is **46/47** without
 assumptions; see [NORMALIZATION_PLAN.md](NORMALIZATION_PLAN.md) for the proof map.
 
 ## Function-cumulativity repair

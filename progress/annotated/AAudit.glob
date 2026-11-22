@@ -1,4 +1,4 @@
-DIGEST 63eb543a514db3bf5fcb542ec3e260e3
+DIGEST 8bba9f88899d0253512c68224bf0051b
 Fannotated.AAudit
 R68:88 annotated.ARegression <> <> lib
 def 103:131 <> checked_annotated_foundations
@@ -54,5 +54,50 @@ R1238:1242 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')'
 R1306:1306 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
 R1176:1237 annotated.AStructuralPreservation <> structural_root_preservation thm
 R1244:1305 annotated.AStructuralPreservation <> structural_step_preservation thm
-R1328:1356 annotated.AAudit <> checked_annotated_foundations def
-R1377:1406 annotated.AAudit <> checked_annotated_preservation def
+R1318:1344 annotated.AFullPreservation <> <> lib
+def 1359:1393 <> checked_annotated_full_preservation
+R1400:1400 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1447:1451 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1506:1510 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1557:1561 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1606:1606 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1402:1446 annotated.AFullPreservation <> full_preservation thm
+R1453:1505 annotated.AFullPreservation <> full_preservation_reduces thm
+R1512:1556 annotated.AFullPreservation <> reduction_erasure thm
+R1563:1605 annotated.AFullPreservation <> reduces_erasure thm
+R1618:1640 annotated.ACriticalPair <> <> lib
+def 1655:1685 <> checked_annotated_critical_pair
+R1692:1692 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1738:1742 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1788:1792 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1851:1851 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1694:1737 annotated.ACriticalPair <> widened_redex_typing thm
+R1744:1787 annotated.ACriticalPair <> reducts_same_erasure thm
+R1794:1850 annotated.ACriticalPair <> annotated_reduction_not_confluent thm
+R1863:1885 annotated.ACompleteness <> <> lib
+R1887:1909 annotated.ACfConfluence <> <> lib
+def 1924:1948 <> checked_annotated_bridges
+R1955:1955 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2004:2008 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2055:2059 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2101:2105 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2150:2154 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2199:2203 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2245:2249 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2313:2317 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2372:2376 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2443:2443 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1957:2003 annotated.ACompleteness <> annotation_completeness thm
+R2010:2054 annotated.ACompleteness <> typing_iff_annotation thm
+R2061:2100 annotated.AStepFunction <> aroot_step_sound thm
+R2107:2149 annotated.AStepFunction <> aroot_step_complete thm
+R2156:2198 annotated.AStepFunction <> reduction_decidable thm
+R2205:2244 annotated.ACfNormal <> typed_normal_erasure thm
+R2251:2312 annotated.ACfConfluence <> normal_forms_unique_modulo_annotations thm
+R2319:2371 annotated.ACfConfluence <> confluence_modulo_annotations thm
+R2378:2442 annotated.ACfConfluence <> conversion_joinability_modulo_annotations thm
+R2465:2493 annotated.AAudit <> checked_annotated_foundations def
+R2514:2543 annotated.AAudit <> checked_annotated_preservation def
+R2564:2598 annotated.AAudit <> checked_annotated_full_preservation def
+R2619:2649 annotated.AAudit <> checked_annotated_critical_pair def
+R2670:2694 annotated.AAudit <> checked_annotated_bridges def

@@ -1,0 +1,291 @@
+DIGEST 3efcdd7dd79c23d8fc70e64bffb8f9c1
+Fannotated.ACfConfluence
+R490:493 Stdlib.Lists.List <> <> lib
+R495:499 Stdlib.Arith.Arith <> <> lib
+R517:535 annotated.ACfNormal <> <> lib
+R545:557 Stdlib.Lists.List ListNotations <> mod
+prf 567:581 <> raw_reduces_rtc
+binder 592:592 <> r:1
+binder 594:594 <> s:2
+R614:617 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R597:609 annotated.AMacros RCore reduces ind
+R613:613 annotated.ACfConfluence <> s:2 var
+R611:611 annotated.ACfConfluence <> r:1 var
+R618:623 annotated.ASubstitution RB rtc ind
+R643:643 annotated.ACfConfluence <> s:2 var
+R641:641 annotated.ACfConfluence <> r:1 var
+R625:639 annotated.AMacros RCore reduction ind
+prf 733:745 <> reduces_trans
+binder 756:756 <> t:3
+binder 758:758 <> u:4
+binder 760:760 <> v:5
+R774:777 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R763:769 annotated.AFullPreservation <> reduces ind
+R771:771 annotated.ACfConfluence <> t:3 var
+R773:773 annotated.ACfConfluence <> u:4 var
+R789:792 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R778:784 annotated.AFullPreservation <> reduces ind
+R786:786 annotated.ACfConfluence <> u:4 var
+R788:788 annotated.ACfConfluence <> v:5 var
+R793:799 annotated.AFullPreservation <> reduces ind
+R801:801 annotated.ACfConfluence <> t:3 var
+R803:803 annotated.ACfConfluence <> v:5 var
+R854:860 annotated.AFullPreservation <> reduces ind
+R854:860 annotated.AFullPreservation <> reduces ind
+R854:860 annotated.AFullPreservation <> reduces ind
+def 880:899 <> strongly_normalizing
+binder 901:901 <> t:6
+R906:908 Corelib.Init.Wf <> Acc ind
+R937:937 annotated.ACfConfluence <> t:6 var
+binder 915:915 <> u:7
+binder 917:917 <> v:8
+R922:930 annotated.AFullPreservation <> reduction def
+R932:932 annotated.ACfConfluence <> v:8 var
+R934:934 annotated.ACfConfluence <> u:7 var
+prf 947:964 <> normal_form_exists
+binder 975:975 <> t:9
+R1000:1005 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R978:997 annotated.ACfConfluence <> strongly_normalizing def
+R999:999 annotated.ACfConfluence <> t:9 var
+R1006:1012 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1014:1015 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1013:1013 <> n:10
+R1027:1030 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1016:1022 annotated.AFullPreservation <> reduces ind
+R1024:1024 annotated.ACfConfluence <> t:9 var
+R1026:1026 annotated.ACfConfluence <> n:10 var
+R1031:1037 annotated.AStepFunction <> anormal def
+R1039:1039 annotated.ACfConfluence <> n:10 var
+R1100:1118 annotated.AStepFunction <> reduction_decidable thm
+R1100:1118 annotated.AStepFunction <> reduction_decidable thm
+prf 1290:1311 <> reduces_normal_erasure
+binder 1322:1326 <> Gamma:11
+binder 1328:1328 <> t:12
+binder 1330:1330 <> A:13
+binder 1332:1332 <> n:14
+R1351:1356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1335:1340 annotated.ATyping <> typing ind
+R1342:1346 annotated.ACfConfluence <> Gamma:11 var
+R1348:1348 annotated.ACfConfluence <> t:12 var
+R1350:1350 annotated.ACfConfluence <> A:13 var
+R1368:1371 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1357:1363 annotated.AFullPreservation <> reduces ind
+R1365:1365 annotated.ACfConfluence <> t:12 var
+R1367:1367 annotated.ACfConfluence <> n:14 var
+R1381:1384 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1372:1378 annotated.AStepFunction <> anormal def
+R1380:1380 annotated.ACfConfluence <> n:14 var
+R1427:1430 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1385:1390 annotated.ASubstitution RB rtc ind
+R1419:1423 annotated.AErase <> erase def
+R1425:1425 annotated.ACfConfluence <> n:14 var
+R1409:1413 annotated.AErase <> erase def
+R1415:1415 annotated.ACfConfluence <> t:12 var
+R1392:1406 annotated.AMacros RCore reduction ind
+R1431:1440 annotated.ACfRaw <> raw_normal def
+R1443:1447 annotated.AErase <> erase def
+R1449:1449 annotated.ACfConfluence <> n:14 var
+R1509:1523 annotated.ACfConfluence <> raw_reduces_rtc thm
+R1530:1544 annotated.AFullPreservation <> reduces_erasure thm
+R1509:1523 annotated.ACfConfluence <> raw_reduces_rtc thm
+R1530:1544 annotated.AFullPreservation <> reduces_erasure thm
+R1567:1586 annotated.ACfNormal <> typed_normal_erasure thm
+R1595:1619 annotated.AFullPreservation <> full_preservation_reduces thm
+R1567:1586 annotated.ACfNormal <> typed_normal_erasure thm
+R1595:1619 annotated.AFullPreservation <> full_preservation_reduces thm
+prf 1707:1730 <> raw_normal_conversion_eq
+binder 1741:1741 <> r:15
+binder 1743:1743 <> s:16
+R1758:1761 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1746:1755 annotated.ACfRaw <> raw_normal def
+R1757:1757 annotated.ACfConfluence <> r:15 var
+R1774:1779 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1762:1771 annotated.ACfRaw <> raw_normal def
+R1773:1773 annotated.ACfConfluence <> s:16 var
+R1794:1797 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1780:1789 annotated.AMacros RCore conv ind
+R1793:1793 annotated.ACfConfluence <> s:16 var
+R1791:1791 annotated.ACfConfluence <> r:15 var
+R1799:1801 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1798:1798 annotated.ACfConfluence <> r:15 var
+R1802:1802 annotated.ACfConfluence <> s:16 var
+R1845:1867 annotated.ACfRaw RCf conversion_joinable thm
+R1845:1867 annotated.ACfRaw RCf conversion_joinable thm
+R1906:1926 annotated.ACfRaw <> raw_normal_reductions thm
+R1906:1926 annotated.ACfRaw <> raw_normal_reductions thm
+R1906:1926 annotated.ACfRaw <> raw_normal_reductions thm
+R1957:1977 annotated.ACfRaw <> raw_normal_reductions thm
+R1957:1977 annotated.ACfRaw <> raw_normal_reductions thm
+sec 2006:2022 <> ModuloAnnotations
+var 2036:2043 ModuloAnnotations typed_SN
+binder 2054:2058 <> Gamma:17
+binder 2060:2060 <> t:18
+binder 2062:2062 <> A:19
+R2081:2084 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2065:2070 annotated.ATyping <> typing ind
+R2072:2076 annotated.ACfConfluence <> Gamma:17 var
+R2078:2078 annotated.ACfConfluence <> t:18 var
+R2080:2080 annotated.ACfConfluence <> A:19 var
+R2085:2104 annotated.ACfConfluence <> strongly_normalizing def
+R2106:2106 annotated.ACfConfluence <> t:18 var
+prf 2214:2251 <> normal_forms_unique_modulo_annotations
+binder 2262:2266 <> Gamma:22
+binder 2268:2268 <> t:23
+binder 2270:2270 <> A:24
+binder 2272:2272 <> n:25
+binder 2274:2274 <> m:26
+R2295:2298 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2279:2284 annotated.ATyping <> typing ind
+R2286:2290 annotated.ACfConfluence <> Gamma:22 var
+R2292:2292 annotated.ACfConfluence <> t:23 var
+R2294:2294 annotated.ACfConfluence <> A:24 var
+R2310:2313 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2299:2305 annotated.AFullPreservation <> reduces ind
+R2307:2307 annotated.ACfConfluence <> t:23 var
+R2309:2309 annotated.ACfConfluence <> n:25 var
+R2323:2326 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2314:2320 annotated.AStepFunction <> anormal def
+R2322:2322 annotated.ACfConfluence <> n:25 var
+R2338:2341 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2327:2333 annotated.AFullPreservation <> reduces ind
+R2335:2335 annotated.ACfConfluence <> t:23 var
+R2337:2337 annotated.ACfConfluence <> m:26 var
+R2351:2356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2342:2348 annotated.AStepFunction <> anormal def
+R2350:2350 annotated.ACfConfluence <> m:26 var
+R2364:2366 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2357:2361 annotated.AErase <> erase def
+R2363:2363 annotated.ACfConfluence <> n:25 var
+R2367:2371 annotated.AErase <> erase def
+R2373:2373 annotated.ACfConfluence <> m:26 var
+R2436:2457 annotated.ACfConfluence <> reduces_normal_erasure thm
+R2436:2457 annotated.ACfConfluence <> reduces_normal_erasure thm
+R2504:2525 annotated.ACfConfluence <> reduces_normal_erasure thm
+R2504:2525 annotated.ACfConfluence <> reduces_normal_erasure thm
+R2572:2594 annotated.ACfRaw RCf reduction_confluent thm
+R2572:2594 annotated.ACfRaw RCf reduction_confluent thm
+R2640:2660 annotated.ACfRaw <> raw_normal_reductions thm
+R2640:2660 annotated.ACfRaw <> raw_normal_reductions thm
+R2640:2660 annotated.ACfRaw <> raw_normal_reductions thm
+R2692:2712 annotated.ACfRaw <> raw_normal_reductions thm
+R2692:2712 annotated.ACfRaw <> raw_normal_reductions thm
+prf 2742:2770 <> confluence_modulo_annotations
+binder 2781:2785 <> Gamma:27
+binder 2787:2787 <> t:28
+binder 2789:2789 <> A:29
+binder 2791:2791 <> u:30
+binder 2793:2793 <> v:31
+R2814:2817 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2798:2803 annotated.ATyping <> typing ind
+R2805:2809 annotated.ACfConfluence <> Gamma:27 var
+R2811:2811 annotated.ACfConfluence <> t:28 var
+R2813:2813 annotated.ACfConfluence <> A:29 var
+R2829:2832 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2818:2824 annotated.AFullPreservation <> reduces ind
+R2826:2826 annotated.ACfConfluence <> t:28 var
+R2828:2828 annotated.ACfConfluence <> u:30 var
+R2844:2849 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2833:2839 annotated.AFullPreservation <> reduces ind
+R2841:2841 annotated.ACfConfluence <> t:28 var
+R2843:2843 annotated.ACfConfluence <> v:31 var
+R2850:2856 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2861:2862 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2857:2857 <> w:32
+binder 2859:2860 <> w':33
+R2874:2877 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2863:2869 annotated.AFullPreservation <> reduces ind
+R2871:2871 annotated.ACfConfluence <> u:30 var
+R2873:2873 annotated.ACfConfluence <> w:32 var
+R2890:2893 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2878:2884 annotated.AFullPreservation <> reduces ind
+R2886:2886 annotated.ACfConfluence <> v:31 var
+R2888:2889 annotated.ACfConfluence <> w':33 var
+R2901:2903 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2894:2898 annotated.AErase <> erase def
+R2900:2900 annotated.ACfConfluence <> w:32 var
+R2904:2908 annotated.AErase <> erase def
+R2910:2911 annotated.ACfConfluence <> w':33 var
+R2968:2992 annotated.AFullPreservation <> full_preservation_reduces thm
+R2968:2992 annotated.AFullPreservation <> full_preservation_reduces thm
+R3031:3055 annotated.AFullPreservation <> full_preservation_reduces thm
+R3031:3055 annotated.AFullPreservation <> full_preservation_reduces thm
+R3092:3109 annotated.ACfConfluence <> normal_form_exists thm
+R3114:3121 annotated.ACfConfluence <> ModuloAnnotations.typed_SN var
+R3092:3109 annotated.ACfConfluence <> normal_form_exists thm
+R3114:3121 annotated.ACfConfluence <> ModuloAnnotations.typed_SN var
+R3164:3181 annotated.ACfConfluence <> normal_form_exists thm
+R3186:3193 annotated.ACfConfluence <> ModuloAnnotations.typed_SN var
+R3164:3181 annotated.ACfConfluence <> normal_form_exists thm
+R3186:3193 annotated.ACfConfluence <> ModuloAnnotations.typed_SN var
+R3288:3325 annotated.ACfConfluence <> normal_forms_unique_modulo_annotations thm
+R3345:3357 annotated.ACfConfluence <> reduces_trans thm
+R3377:3389 annotated.ACfConfluence <> reduces_trans thm
+R3288:3325 annotated.ACfConfluence <> normal_forms_unique_modulo_annotations thm
+R3345:3357 annotated.ACfConfluence <> reduces_trans thm
+R3377:3389 annotated.ACfConfluence <> reduces_trans thm
+prf 3546:3586 <> conversion_joinability_modulo_annotations
+binder 3597:3601 <> Gamma:34
+binder 3603:3603 <> t:35
+binder 3605:3605 <> u:36
+binder 3607:3607 <> A:37
+binder 3609:3609 <> B:38
+R3630:3633 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3614:3619 annotated.ATyping <> typing ind
+R3621:3625 annotated.ACfConfluence <> Gamma:34 var
+R3627:3627 annotated.ACfConfluence <> t:35 var
+R3629:3629 annotated.ACfConfluence <> A:37 var
+R3650:3653 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3634:3639 annotated.ATyping <> typing ind
+R3641:3645 annotated.ACfConfluence <> Gamma:34 var
+R3647:3647 annotated.ACfConfluence <> u:36 var
+R3649:3649 annotated.ACfConfluence <> B:38 var
+R3684:3689 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3654:3663 annotated.AMacros RCore conv ind
+R3676:3680 annotated.AErase <> erase def
+R3682:3682 annotated.ACfConfluence <> u:36 var
+R3666:3670 annotated.AErase <> erase def
+R3672:3672 annotated.ACfConfluence <> t:35 var
+R3690:3696 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3701:3702 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3697:3697 <> w:39
+binder 3699:3700 <> w':40
+R3714:3717 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3703:3709 annotated.AFullPreservation <> reduces ind
+R3711:3711 annotated.ACfConfluence <> t:35 var
+R3713:3713 annotated.ACfConfluence <> w:39 var
+R3730:3733 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3718:3724 annotated.AFullPreservation <> reduces ind
+R3726:3726 annotated.ACfConfluence <> u:36 var
+R3728:3729 annotated.ACfConfluence <> w':40 var
+R3741:3743 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3734:3738 annotated.AErase <> erase def
+R3740:3740 annotated.ACfConfluence <> w:39 var
+R3744:3748 annotated.AErase <> erase def
+R3750:3751 annotated.ACfConfluence <> w':40 var
+R3806:3823 annotated.ACfConfluence <> normal_form_exists thm
+R3828:3835 annotated.ACfConfluence <> ModuloAnnotations.typed_SN var
+R3806:3823 annotated.ACfConfluence <> normal_form_exists thm
+R3828:3835 annotated.ACfConfluence <> ModuloAnnotations.typed_SN var
+R3877:3894 annotated.ACfConfluence <> normal_form_exists thm
+R3899:3906 annotated.ACfConfluence <> ModuloAnnotations.typed_SN var
+R3877:3894 annotated.ACfConfluence <> normal_form_exists thm
+R3899:3906 annotated.ACfConfluence <> ModuloAnnotations.typed_SN var
+R4003:4024 annotated.ACfConfluence <> reduces_normal_erasure thm
+R4003:4024 annotated.ACfConfluence <> reduces_normal_erasure thm
+R4071:4092 annotated.ACfConfluence <> reduces_normal_erasure thm
+R4071:4092 annotated.ACfConfluence <> reduces_normal_erasure thm
+R4135:4158 annotated.ACfConfluence <> raw_normal_conversion_eq thm
+R4135:4158 annotated.ACfConfluence <> raw_normal_conversion_eq thm
+R4194:4207 annotated.AMacros RCore cv_trans constr
+R4217:4228 annotated.AMacros RCore cv_sym constr
+R4231:4272 nameless.DBWeakening <> reductions_conversion thm
+R4194:4207 annotated.AMacros RCore cv_trans constr
+R4217:4228 annotated.AMacros RCore cv_sym constr
+R4231:4272 nameless.DBWeakening <> reductions_conversion thm
+R4297:4310 annotated.AMacros RCore cv_trans constr
+R4297:4310 annotated.AMacros RCore cv_trans constr
+R4334:4375 nameless.DBWeakening <> reductions_conversion thm
+R4334:4375 nameless.DBWeakening <> reductions_conversion thm
+R4398:4414 annotated.ACfConfluence ModuloAnnotations <> sec
+R4436:4464 annotated.ACfConfluence <> confluence_modulo_annotations thm
+R4485:4525 annotated.ACfConfluence <> conversion_joinability_modulo_annotations thm

@@ -2,9 +2,10 @@
 
 The user selected an [annotated core repair](annotated/README.md) on September
 30 to recover full preservation while retaining general eta contraction.
-It is under construction and checked with `make -C progress annotated-core
-audit-annotated-core`; the public calculus and counts below have not yet been
-migrated.
+Full preservation is proved for the annotated core without axioms; check it
+with `make -C progress annotated-core audit-annotated-core`. Annotated strong
+normalization is open, so on October 11 the user decided to keep the public
+calculus and counts below unannotated.
 
 **Theorem 1: `context_validity` is proved** in
 [OpenSignaturesTheorems.v](OpenSignaturesTheorems.v).

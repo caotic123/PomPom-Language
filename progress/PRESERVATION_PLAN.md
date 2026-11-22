@@ -1,21 +1,27 @@
-# Full preservation: annotated repair in progress
+# Full preservation: proved for the annotated core
 
 **September 30 decision:** the user selected explicit core annotations while
-retaining general eta contraction. The repair is being implemented in
-[annotated/](annotated/README.md). Its complete annotated syntax and typing
-rules, binding algebra, erasure, weakening, substitution, type-comparison
-transport, and beta preservation are checked without axioms. A typed regression
-shows that annotations expose the counterexample's hidden binder dependency
-and reject its bad eta contraction. General eta preservation and migration of
-the public calculus are still unfinished; the original claim is not counted
-as proved by these supporting results.
+retaining general eta contraction. The repair is implemented in
+[annotated/](annotated/README.md). **Full preservation is proved for the
+annotated core without axioms** as `full_preservation` in
+[annotated/AFullPreservation.v](annotated/AFullPreservation.v). It covers all
+primitive root computations, general eta contraction, and every compatible
+context, including annotations.
+
+**October 11 decision:** the public calculus stays unannotated. Annotated
+reduction is confluent only modulo annotations, and that confluence theorem
+depends on annotated strong normalization, which is open: it needs a new
+typed semantic model. See the [annotated status](annotated/README.md#normalization-is-open).
+The original claim below is therefore still refuted and not counted as proved.
+Preservation for all computation steps in every position, with eta kept in
+conversion, is proved as `named_computation_preservation`.
 
 The original `full_preservation` proposition is **false under the current
 rules**, including the function-cumulativity repair. It is retained as
 `full_preservation_statement`, not asserted as an axiom. The independent
 [refutation](OpenSignaturesEtaPolymorphism.v) is kernel checked and imports
-no public conjectures. The original-claim status is 44 proved, two open
-coherence claims, and one refuted claim.
+no public conjectures. The original-claim status is 46 proved and one
+refuted claim.
 
 ## Counterexample
 

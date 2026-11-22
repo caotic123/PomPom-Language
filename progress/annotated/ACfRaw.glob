@@ -1,0 +1,628 @@
+DIGEST b372852cbd7f819ee8a50ce361473bc2
+Fannotated.ACfRaw
+R306:309 Stdlib.Lists.List <> <> lib
+R311:315 Stdlib.Arith.Arith <> <> lib
+R317:320 Stdlib.Bool.Bool <> <> lib
+R322:324 Stdlib.micromega.Lia <> <> lib
+R342:364 annotated.AStepFunction <> <> lib
+R375:395 nameless.DBConfluence <> <> lib
+R397:417 nameless.DBGeneration <> <> lib
+R419:440 nameless.DBCommutation <> <> lib
+R450:462 Stdlib.Lists.List ListNotations <> mod
+R479:499 nameless.DBConfluence <> <> mod
+mod 472:474 <> RCf
+R515:535 nameless.DBGeneration <> <> mod
+mod 509:510 <> RG
+def 550:558 <> raw_fresh
+binder 560:560 <> x:1
+binder 562:562 <> r:2
+R567:573 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R576:577 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 574:575 <> r0:3
+R579:581 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R578:578 annotated.ACfRaw <> r:2 var
+R582:589 annotated.AErase Raw lift def
+R595:596 annotated.ACfRaw <> r0:3 var
+R593:593 annotated.ACfRaw <> x:1 var
+def 610:619 <> raw_normal
+binder 621:621 <> r:4
+binder 633:633 <> s:5
+R636:637 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R638:652 annotated.AFullPreservation RCore reduction ind
+R656:656 annotated.ACfRaw <> s:5 var
+R654:654 annotated.ACfRaw <> r:4 var
+prf 666:679 <> raw_fresh_lift
+binder 690:690 <> x:6
+binder 692:692 <> r:7
+R695:703 annotated.ACfRaw <> raw_fresh def
+R705:705 annotated.ACfRaw <> x:6 var
+R708:715 annotated.AErase Raw lift def
+R721:721 annotated.ACfRaw <> r:7 var
+R719:719 annotated.ACfRaw <> x:6 var
+prf 775:789 <> raw_fresh_shift
+binder 800:800 <> x:8
+binder 802:802 <> A:9
+R818:821 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R805:813 annotated.ACfRaw <> raw_fresh def
+R815:815 annotated.ACfRaw <> x:8 var
+R817:817 annotated.ACfRaw <> A:9 var
+R822:830 annotated.ACfRaw <> raw_fresh def
+R833:833 Corelib.Init.Datatypes <> S constr
+R835:835 annotated.ACfRaw <> x:8 var
+R839:846 annotated.AErase Raw lift def
+R852:852 annotated.ACfRaw <> A:9 var
+R893:900 annotated.AErase Raw lift def
+R893:900 annotated.AErase Raw lift def
+R925:941 annotated.AMacroTyping RB lift_lift_comm thm
+R955:964 Stdlib.Arith.PeanoNat Nat le_0_l thm
+R925:941 annotated.AMacroTyping RB lift_lift_comm thm
+R955:964 Stdlib.Arith.PeanoNat Nat le_0_l thm
+prf 1015:1029 <> raw_fresh_subst
+binder 1040:1040 <> x:10
+binder 1042:1042 <> a:11
+binder 1044:1044 <> B:12
+R1060:1063 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1047:1055 annotated.ACfRaw <> raw_fresh def
+R1057:1057 annotated.ACfRaw <> x:10 var
+R1059:1059 annotated.ACfRaw <> a:11 var
+R1081:1086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1064:1072 annotated.ACfRaw <> raw_fresh def
+R1075:1075 Corelib.Init.Datatypes <> S constr
+R1077:1077 annotated.ACfRaw <> x:10 var
+R1080:1080 annotated.ACfRaw <> B:12 var
+R1087:1095 annotated.ACfRaw <> raw_fresh def
+R1097:1097 annotated.ACfRaw <> x:10 var
+R1100:1108 annotated.AErase Raw subst def
+R1114:1114 annotated.ACfRaw <> B:12 var
+R1110:1110 annotated.ACfRaw <> a:11 var
+R1165:1173 annotated.AErase Raw subst def
+R1165:1173 annotated.AErase Raw subst def
+R1199:1216 annotated.AMacroTyping RB lift_subst_comm thm
+R1199:1216 annotated.AMacroTyping RB lift_subst_comm thm
+prf 1274:1291 <> raw_fresh_old_lift
+binder 1302:1302 <> x:13
+binder 1304:1304 <> y:14
+binder 1306:1306 <> A:15
+R1315:1320 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1310:1313 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1309:1309 annotated.ACfRaw <> x:13 var
+R1314:1314 annotated.ACfRaw <> y:14 var
+R1321:1329 annotated.ACfRaw <> raw_fresh def
+R1331:1331 annotated.ACfRaw <> x:13 var
+R1334:1341 annotated.AErase Raw lift def
+R1351:1351 annotated.ACfRaw <> A:15 var
+R1344:1344 Corelib.Init.Datatypes <> S constr
+R1346:1346 annotated.ACfRaw <> y:14 var
+R1390:1397 annotated.AErase Raw lift def
+R1390:1397 annotated.AErase Raw lift def
+R1421:1432 annotated.AMacroTyping RB lift_fuse thm
+R1421:1432 annotated.AMacroTyping RB lift_fuse thm
+prf 1492:1510 <> raw_reduction_fresh
+binder 1521:1521 <> r:16
+binder 1523:1523 <> s:17
+R1545:1550 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1526:1540 annotated.AFullPreservation RCore reduction ind
+R1544:1544 annotated.ACfRaw <> s:17 var
+R1542:1542 annotated.ACfRaw <> r:16 var
+binder 1558:1558 <> x:18
+R1574:1577 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1561:1569 annotated.ACfRaw <> raw_fresh def
+R1571:1571 annotated.ACfRaw <> x:18 var
+R1573:1573 annotated.ACfRaw <> r:16 var
+R1578:1586 annotated.ACfRaw <> raw_fresh def
+R1588:1588 annotated.ACfRaw <> x:18 var
+R1590:1590 annotated.ACfRaw <> s:17 var
+R1638:1659 annotated.ACfRaw <> reduction_parallel thm
+R1638:1659 annotated.ACfRaw <> reduction_parallel thm
+R1694:1734 nameless.DBCommutation <> pstep_lift_inverse thm
+R1748:1754 Corelib.Init.Logic <> eq_refl constr
+R1694:1734 nameless.DBCommutation <> pstep_lift_inverse thm
+R1748:1754 Corelib.Init.Logic <> eq_refl constr
+R1815:1848 nameless.DBEta <> epstep_lift_inverse thm
+R1862:1868 Corelib.Init.Logic <> eq_refl constr
+R1815:1848 nameless.DBEta <> epstep_lift_inverse thm
+R1862:1868 Corelib.Init.Logic <> eq_refl constr
+prf 1927:1946 <> raw_reductions_fresh
+binder 1957:1957 <> r:19
+binder 1959:1959 <> s:20
+R1988:1993 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1962:1967 annotated.AMacroTyping RB rtc ind
+R1987:1987 annotated.ACfRaw <> s:20 var
+R1985:1985 annotated.ACfRaw <> r:19 var
+R1969:1983 annotated.AFullPreservation RCore reduction ind
+binder 2001:2001 <> x:21
+R2017:2020 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2004:2012 annotated.ACfRaw <> raw_fresh def
+R2014:2014 annotated.ACfRaw <> x:21 var
+R2016:2016 annotated.ACfRaw <> r:19 var
+R2021:2029 annotated.ACfRaw <> raw_fresh def
+R2031:2031 annotated.ACfRaw <> x:21 var
+R2033:2033 annotated.ACfRaw <> s:20 var
+R2082:2100 annotated.ACfRaw <> raw_reduction_fresh thm
+R2082:2100 annotated.ACfRaw <> raw_reduction_fresh thm
+R2082:2100 annotated.ACfRaw <> raw_reduction_fresh thm
+prf 2115:2135 <> raw_normal_reductions
+binder 2146:2146 <> r:22
+binder 2148:2148 <> s:23
+R2163:2168 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2151:2160 annotated.ACfRaw <> raw_normal def
+R2162:2162 annotated.ACfRaw <> r:22 var
+R2195:2198 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2169:2174 annotated.AMacroTyping RB rtc ind
+R2194:2194 annotated.ACfRaw <> s:23 var
+R2192:2192 annotated.ACfRaw <> r:22 var
+R2176:2190 annotated.AFullPreservation RCore reduction ind
+R2200:2202 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2199:2199 annotated.ACfRaw <> s:23 var
+R2203:2203 annotated.ACfRaw <> r:22 var
+prf 2303:2323 <> raw_normal_conv_fresh
+binder 2334:2334 <> x:24
+binder 2336:2336 <> r:25
+binder 2338:2338 <> s:26
+R2353:2356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2341:2350 annotated.ACfRaw <> raw_normal def
+R2352:2352 annotated.ACfRaw <> r:25 var
+R2371:2376 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2357:2366 annotated.AFullPreservation RCore conv ind
+R2370:2370 annotated.ACfRaw <> s:26 var
+R2368:2368 annotated.ACfRaw <> r:25 var
+R2390:2393 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2377:2385 annotated.ACfRaw <> raw_fresh def
+R2387:2387 annotated.ACfRaw <> x:24 var
+R2389:2389 annotated.ACfRaw <> s:26 var
+R2394:2402 annotated.ACfRaw <> raw_fresh def
+R2404:2404 annotated.ACfRaw <> x:24 var
+R2406:2406 annotated.ACfRaw <> r:25 var
+R2453:2475 annotated.ACfRaw <> conversion_joinable thm
+R2453:2475 annotated.ACfRaw <> conversion_joinable thm
+R2509:2529 annotated.ACfRaw <> raw_normal_reductions thm
+R2509:2529 annotated.ACfRaw <> raw_normal_reductions thm
+R2567:2586 annotated.ACfRaw <> raw_reductions_fresh thm
+R2567:2586 annotated.ACfRaw <> raw_reductions_fresh thm
+prf 2614:2632 <> raw_conv_fresh_join
+binder 2643:2643 <> x:27
+binder 2645:2645 <> r:28
+binder 2647:2647 <> s:29
+R2664:2667 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2650:2659 annotated.AFullPreservation RCore conv ind
+R2663:2663 annotated.ACfRaw <> s:29 var
+R2661:2661 annotated.ACfRaw <> r:28 var
+R2681:2686 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2668:2676 annotated.ACfRaw <> raw_fresh def
+R2678:2678 annotated.ACfRaw <> x:27 var
+R2680:2680 annotated.ACfRaw <> s:29 var
+R2687:2696 annotated.AFullPreservation RCore conv ind
+R2700:2700 annotated.ACfRaw <> s:29 var
+R2698:2698 annotated.ACfRaw <> r:28 var
+prf 2728:2740 <> raw_normal_pi
+binder 2751:2751 <> A:30
+binder 2753:2753 <> B:31
+R2780:2785 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2756:2765 annotated.ACfRaw <> raw_normal def
+R2768:2774 annotated.AErase Raw TPi constr
+R2778:2778 annotated.ACfRaw <> B:31 var
+R2776:2776 annotated.ACfRaw <> A:30 var
+R2798:2801 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2786:2795 annotated.ACfRaw <> raw_normal def
+R2797:2797 annotated.ACfRaw <> A:30 var
+R2802:2811 annotated.ACfRaw <> raw_normal def
+R2813:2813 annotated.ACfRaw <> B:31 var
+R2880:2894 annotated.AFullPreservation RCore red_TPi_A constr
+R2902:2916 annotated.AFullPreservation RCore red_TPi_B constr
+R2880:2894 annotated.AFullPreservation RCore red_TPi_A constr
+R2902:2916 annotated.AFullPreservation RCore red_TPi_B constr
+prf 2942:2957 <> raw_fresh_pi_inv
+binder 2968:2968 <> x:32
+binder 2970:2970 <> A:33
+binder 2972:2972 <> B:34
+R3000:3005 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2975:2983 annotated.ACfRaw <> raw_fresh def
+R2985:2985 annotated.ACfRaw <> x:32 var
+R2988:2994 annotated.AErase Raw TPi constr
+R2998:2998 annotated.ACfRaw <> B:34 var
+R2996:2996 annotated.ACfRaw <> A:33 var
+R3019:3022 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3006:3014 annotated.ACfRaw <> raw_fresh def
+R3016:3016 annotated.ACfRaw <> x:32 var
+R3018:3018 annotated.ACfRaw <> A:33 var
+R3023:3031 annotated.ACfRaw <> raw_fresh def
+R3034:3034 Corelib.Init.Datatypes <> S constr
+R3036:3036 annotated.ACfRaw <> x:32 var
+R3039:3039 annotated.ACfRaw <> B:34 var
+R3090:3097 annotated.AErase Raw lift def
+R3139:3142 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R3139:3142 Stdlib.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+prf 3226:3237 <> raw_fresh_pi
+binder 3248:3248 <> x:35
+binder 3250:3250 <> A:36
+binder 3252:3252 <> B:37
+R3268:3271 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3255:3263 annotated.ACfRaw <> raw_fresh def
+R3265:3265 annotated.ACfRaw <> x:35 var
+R3267:3267 annotated.ACfRaw <> A:36 var
+R3289:3294 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3272:3280 annotated.ACfRaw <> raw_fresh def
+R3283:3283 Corelib.Init.Datatypes <> S constr
+R3285:3285 annotated.ACfRaw <> x:35 var
+R3288:3288 annotated.ACfRaw <> B:37 var
+R3295:3303 annotated.ACfRaw <> raw_fresh def
+R3305:3305 annotated.ACfRaw <> x:35 var
+R3308:3314 annotated.AErase Raw TPi constr
+R3318:3318 annotated.ACfRaw <> B:37 var
+R3316:3316 annotated.ACfRaw <> A:36 var
+R3369:3375 annotated.AErase Raw TPi constr
+R3369:3375 annotated.AErase Raw TPi constr
+prf 3410:3419 <> raw_pi_inj
+binder 3430:3430 <> A:38
+binder 3432:3432 <> B:39
+binder 3434:3435 <> A':40
+binder 3437:3438 <> B':41
+R3468:3471 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3452:3454 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3441:3447 annotated.AErase Raw TPi constr
+R3451:3451 annotated.ACfRaw <> B:39 var
+R3449:3449 annotated.ACfRaw <> A:38 var
+R3455:3461 annotated.AErase Raw TPi constr
+R3466:3467 annotated.ACfRaw <> B':41 var
+R3463:3464 annotated.ACfRaw <> A':40 var
+R3478:3481 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3473:3475 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3472:3472 annotated.ACfRaw <> A:38 var
+R3476:3477 annotated.ACfRaw <> A':40 var
+R3483:3485 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3482:3482 annotated.ACfRaw <> B:39 var
+R3486:3487 annotated.ACfRaw <> B':41 var
+prf 3546:3562 <> raw_pi_reductions
+binder 3573:3573 <> A:42
+binder 3575:3575 <> B:43
+binder 3577:3577 <> t:44
+R3618:3623 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3580:3585 annotated.AMacroTyping RB rtc ind
+R3617:3617 annotated.ACfRaw <> t:44 var
+R3604:3610 annotated.AErase Raw TPi constr
+R3614:3614 annotated.ACfRaw <> B:43 var
+R3612:3612 annotated.ACfRaw <> A:42 var
+R3587:3601 annotated.AFullPreservation RCore reduction ind
+R3624:3630 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3636:3637 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3631:3632 <> A':45
+binder 3634:3635 <> B':46
+R3655:3658 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3639:3641 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3638:3638 annotated.ACfRaw <> t:44 var
+R3642:3648 annotated.AErase Raw TPi constr
+R3653:3654 annotated.ACfRaw <> B':46 var
+R3650:3651 annotated.ACfRaw <> A':45 var
+R3686:3689 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3659:3664 annotated.AMacroTyping RB rtc ind
+R3684:3685 annotated.ACfRaw <> A':45 var
+R3682:3682 annotated.ACfRaw <> A:42 var
+R3666:3680 annotated.AFullPreservation RCore reduction ind
+R3690:3695 annotated.AMacroTyping RB rtc ind
+R3715:3716 annotated.ACfRaw <> B':46 var
+R3713:3713 annotated.ACfRaw <> B:43 var
+R3697:3711 annotated.AFullPreservation RCore reduction ind
+R3733:3749 annotated.ACfRaw <> reduces_binary thm
+R3759:3773 annotated.ACfRaw <> reduction_pi thm
+R3751:3757 annotated.AErase Raw TPi constr
+R3733:3749 annotated.ACfRaw <> reduces_binary thm
+R3759:3773 annotated.ACfRaw <> reduction_pi thm
+R3751:3757 annotated.AErase Raw TPi constr
+prf 3900:3912 <> fresh_pi_view
+binder 3923:3923 <> x:47
+binder 3925:3925 <> s:48
+binder 3927:3927 <> X:49
+binder 3929:3929 <> Y:50
+R3958:3963 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3932:3941 annotated.AFullPreservation RCore conv ind
+R3946:3952 annotated.AErase Raw TPi constr
+R3956:3956 annotated.ACfRaw <> Y:50 var
+R3954:3954 annotated.ACfRaw <> X:49 var
+R3943:3943 annotated.ACfRaw <> s:48 var
+R3964:3964 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4006:4012 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3965:3971 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3974:3975 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3972:3973 <> s0:51
+R3976:3985 annotated.AFullPreservation RCore conv ind
+R3990:3997 annotated.AErase Raw lift def
+R4003:4004 annotated.ACfRaw <> s0:51 var
+R4001:4001 annotated.ACfRaw <> x:47 var
+R3987:3987 annotated.ACfRaw <> s:48 var
+R4013:4013 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4055:4062 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4108:4108 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4014:4020 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4023:4024 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4021:4022 <> X0:52
+R4025:4034 annotated.AFullPreservation RCore conv ind
+R4039:4046 annotated.AErase Raw lift def
+R4052:4053 annotated.ACfRaw <> X0:52 var
+R4050:4050 annotated.ACfRaw <> x:47 var
+R4036:4036 annotated.ACfRaw <> X:49 var
+R4063:4069 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4072:4073 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4070:4071 <> Y0:53
+R4074:4083 annotated.AFullPreservation RCore conv ind
+R4088:4095 annotated.AErase Raw lift def
+R4105:4106 annotated.ACfRaw <> Y0:53 var
+R4100:4100 Corelib.Init.Datatypes <> S constr
+R4102:4102 annotated.ACfRaw <> x:47 var
+R4085:4085 annotated.ACfRaw <> Y:50 var
+R4162:4171 annotated.AFullPreservation RCore conv ind
+R4192:4198 annotated.AErase Raw TPi constr
+R4174:4181 annotated.AErase Raw lift def
+R4221:4234 annotated.AFullPreservation RCore cv_trans constr
+R4244:4255 annotated.AFullPreservation RCore cv_sym constr
+R4162:4171 annotated.AFullPreservation RCore conv ind
+R4192:4198 annotated.AErase Raw TPi constr
+R4174:4181 annotated.AErase Raw lift def
+R4221:4234 annotated.AFullPreservation RCore cv_trans constr
+R4244:4255 annotated.AFullPreservation RCore cv_sym constr
+R4291:4313 annotated.ACfRaw <> conversion_joinable thm
+R4291:4313 annotated.ACfRaw <> conversion_joinable thm
+R4351:4367 annotated.ACfRaw <> raw_pi_reductions thm
+R4351:4367 annotated.ACfRaw <> raw_pi_reductions thm
+R4418:4437 annotated.ACfRaw <> raw_reductions_fresh thm
+R4449:4462 annotated.ACfRaw <> raw_fresh_lift thm
+R4418:4437 annotated.ACfRaw <> raw_reductions_fresh thm
+R4449:4462 annotated.ACfRaw <> raw_fresh_lift thm
+R4494:4509 annotated.ACfRaw <> raw_fresh_pi_inv thm
+R4520:4527 Corelib.Init.Logic <> ex_intro constr
+R4494:4509 annotated.ACfRaw <> raw_fresh_pi_inv thm
+R4520:4527 Corelib.Init.Logic <> ex_intro constr
+R4638:4679 nameless.DBWeakening <> reductions_conversion thm
+R4638:4679 nameless.DBWeakening <> reductions_conversion thm
+R4638:4679 nameless.DBWeakening <> reductions_conversion thm
+prf 4706:4723 <> raw_normal_pi_view
+binder 4734:4734 <> r:54
+binder 4736:4736 <> U:55
+binder 4738:4738 <> V:56
+R4753:4756 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4741:4750 annotated.ACfRaw <> raw_normal def
+R4752:4752 annotated.ACfRaw <> r:54 var
+R4783:4788 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4757:4766 annotated.AFullPreservation RCore conv ind
+R4771:4777 annotated.AErase Raw TPi constr
+R4781:4781 annotated.ACfRaw <> V:56 var
+R4779:4779 annotated.ACfRaw <> U:55 var
+R4768:4768 annotated.ACfRaw <> r:54 var
+R4789:4795 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4801:4802 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4796:4797 <> U':57
+binder 4799:4800 <> V':58
+R4820:4823 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4804:4806 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4803:4803 annotated.ACfRaw <> r:54 var
+R4807:4813 annotated.AErase Raw TPi constr
+R4818:4819 annotated.ACfRaw <> V':58 var
+R4815:4816 annotated.ACfRaw <> U':57 var
+R4839:4842 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4824:4833 annotated.AFullPreservation RCore conv ind
+R4837:4838 annotated.ACfRaw <> U':57 var
+R4835:4835 annotated.ACfRaw <> U:55 var
+R4843:4852 annotated.AFullPreservation RCore conv ind
+R4856:4857 annotated.ACfRaw <> V':58 var
+R4854:4854 annotated.ACfRaw <> V:56 var
+R4901:4923 annotated.ACfRaw <> conversion_joinable thm
+R4901:4923 annotated.ACfRaw <> conversion_joinable thm
+R4957:4977 annotated.ACfRaw <> raw_normal_reductions thm
+R4957:4977 annotated.ACfRaw <> raw_normal_reductions thm
+R5018:5034 annotated.ACfRaw <> raw_pi_reductions thm
+R5018:5034 annotated.ACfRaw <> raw_pi_reductions thm
+R5128:5169 nameless.DBWeakening <> reductions_conversion thm
+R5128:5169 nameless.DBWeakening <> reductions_conversion thm
+R5128:5169 nameless.DBWeakening <> reductions_conversion thm
+prf 5196:5215 <> raw_normal_sort_view
+binder 5226:5226 <> r:59
+binder 5228:5228 <> k:60
+R5243:5246 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5231:5240 annotated.ACfRaw <> raw_normal def
+R5242:5242 annotated.ACfRaw <> r:59 var
+R5273:5278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5247:5256 annotated.AFullPreservation RCore conv ind
+R5261:5269 annotated.AErase Raw TSort constr
+R5271:5271 annotated.ACfRaw <> k:60 var
+R5258:5258 annotated.ACfRaw <> r:59 var
+R5280:5282 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5279:5279 annotated.ACfRaw <> r:59 var
+R5283:5291 annotated.AErase Raw TSort constr
+R5293:5293 annotated.ACfRaw <> k:60 var
+R5335:5357 annotated.ACfRaw <> conversion_joinable thm
+R5335:5357 annotated.ACfRaw <> conversion_joinable thm
+R5391:5411 annotated.ACfRaw <> raw_normal_reductions thm
+R5391:5411 annotated.ACfRaw <> raw_normal_reductions thm
+R5449:5475 annotated.AComparison RC sort_reductions_identity thm
+R5449:5475 annotated.AComparison RC sort_reductions_identity thm
+prf 5603:5618 <> comparison_fresh
+binder 5629:5629 <> A:61
+binder 5631:5631 <> B:62
+R5656:5659 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5634:5651 annotated.AComparison RC type_comparison ind
+R5653:5653 annotated.ACfRaw <> A:61 var
+R5655:5655 annotated.ACfRaw <> B:62 var
+binder 5667:5667 <> x:63
+R5672:5672 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5782:5789 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5899:5899 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 5680:5680 <> r:64
+R5695:5698 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5683:5692 annotated.ACfRaw <> raw_normal def
+R5694:5694 annotated.ACfRaw <> r:64 var
+R5713:5721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5699:5708 annotated.AFullPreservation RCore conv ind
+R5712:5712 annotated.ACfRaw <> A:61 var
+R5710:5710 annotated.ACfRaw <> r:64 var
+R5722:5722 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5764:5768 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5723:5729 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5732:5733 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5730:5731 <> s0:65
+R5734:5743 annotated.AFullPreservation RCore conv ind
+R5748:5755 annotated.AErase Raw lift def
+R5761:5762 annotated.ACfRaw <> s0:65 var
+R5759:5759 annotated.ACfRaw <> x:63 var
+R5745:5745 annotated.ACfRaw <> B:62 var
+R5769:5777 annotated.ACfRaw <> raw_fresh def
+R5779:5779 annotated.ACfRaw <> x:63 var
+R5781:5781 annotated.ACfRaw <> r:64 var
+binder 5797:5797 <> r:66
+R5812:5815 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5800:5809 annotated.ACfRaw <> raw_normal def
+R5811:5811 annotated.ACfRaw <> r:66 var
+R5830:5838 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5816:5825 annotated.AFullPreservation RCore conv ind
+R5829:5829 annotated.ACfRaw <> B:62 var
+R5827:5827 annotated.ACfRaw <> r:66 var
+R5839:5839 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5881:5885 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5840:5846 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5849:5850 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5847:5848 <> s0:67
+R5851:5860 annotated.AFullPreservation RCore conv ind
+R5865:5872 annotated.AErase Raw lift def
+R5878:5879 annotated.ACfRaw <> s0:67 var
+R5876:5876 annotated.ACfRaw <> x:63 var
+R5862:5862 annotated.ACfRaw <> A:61 var
+R5886:5894 annotated.ACfRaw <> raw_fresh def
+R5896:5896 annotated.ACfRaw <> x:63 var
+R5898:5898 annotated.ACfRaw <> r:66 var
+R6057:6077 annotated.ACfRaw <> raw_normal_conv_fresh thm
+R6084:6091 annotated.AErase Raw lift def
+R6114:6127 annotated.ACfRaw <> raw_fresh_lift thm
+R6057:6077 annotated.ACfRaw <> raw_normal_conv_fresh thm
+R6084:6091 annotated.AErase Raw lift def
+R6114:6127 annotated.ACfRaw <> raw_fresh_lift thm
+R6142:6155 annotated.AFullPreservation RCore cv_trans constr
+R6175:6188 annotated.AFullPreservation RCore cv_trans constr
+R6142:6155 annotated.AFullPreservation RCore cv_trans constr
+R6175:6188 annotated.AFullPreservation RCore cv_trans constr
+R6225:6245 annotated.ACfRaw <> raw_normal_conv_fresh thm
+R6252:6259 annotated.AErase Raw lift def
+R6282:6295 annotated.ACfRaw <> raw_fresh_lift thm
+R6225:6245 annotated.ACfRaw <> raw_normal_conv_fresh thm
+R6252:6259 annotated.AErase Raw lift def
+R6282:6295 annotated.ACfRaw <> raw_fresh_lift thm
+R6310:6323 annotated.AFullPreservation RCore cv_trans constr
+R6343:6356 annotated.AFullPreservation RCore cv_trans constr
+R6366:6377 annotated.AFullPreservation RCore cv_sym constr
+R6310:6323 annotated.AFullPreservation RCore cv_trans constr
+R6343:6356 annotated.AFullPreservation RCore cv_trans constr
+R6366:6377 annotated.AFullPreservation RCore cv_sym constr
+R6415:6434 annotated.ACfRaw <> raw_normal_sort_view thm
+R6444:6457 annotated.AFullPreservation RCore cv_trans constr
+R6415:6434 annotated.ACfRaw <> raw_normal_sort_view thm
+R6444:6457 annotated.AFullPreservation RCore cv_trans constr
+R6415:6434 annotated.ACfRaw <> raw_normal_sort_view thm
+R6444:6457 annotated.AFullPreservation RCore cv_trans constr
+R6480:6488 annotated.AErase Raw TSort constr
+R6480:6488 annotated.AErase Raw TSort constr
+R6520:6539 annotated.ACfRaw <> raw_normal_sort_view thm
+R6549:6562 annotated.AFullPreservation RCore cv_trans constr
+R6520:6539 annotated.ACfRaw <> raw_normal_sort_view thm
+R6549:6562 annotated.AFullPreservation RCore cv_trans constr
+R6520:6539 annotated.ACfRaw <> raw_normal_sort_view thm
+R6549:6562 annotated.AFullPreservation RCore cv_trans constr
+R6585:6593 annotated.AErase Raw TSort constr
+R6585:6593 annotated.AErase Raw TSort constr
+R6626:6643 annotated.ACfRaw <> raw_normal_pi_view thm
+R6655:6668 annotated.AFullPreservation RCore cv_trans constr
+R6626:6643 annotated.ACfRaw <> raw_normal_pi_view thm
+R6655:6668 annotated.AFullPreservation RCore cv_trans constr
+R6725:6737 annotated.ACfRaw <> raw_normal_pi thm
+R6725:6737 annotated.ACfRaw <> raw_normal_pi thm
+R6775:6787 annotated.ACfRaw <> fresh_pi_view thm
+R6801:6808 Corelib.Init.Logic <> ex_intro constr
+R6775:6787 annotated.ACfRaw <> fresh_pi_view thm
+R6801:6808 Corelib.Init.Logic <> ex_intro constr
+R6844:6855 annotated.ACfRaw <> raw_fresh_pi thm
+R6844:6855 annotated.ACfRaw <> raw_fresh_pi thm
+R6871:6875 Corelib.Init.Logic <> proj2 thm
+R6893:6904 annotated.AFullPreservation RCore cv_sym constr
+R6871:6875 Corelib.Init.Logic <> proj2 thm
+R6893:6904 annotated.AFullPreservation RCore cv_sym constr
+R6929:6933 Corelib.Init.Logic <> proj1 thm
+R6955:6966 annotated.AFullPreservation RCore cv_sym constr
+R6941:6941 Corelib.Init.Datatypes <> S constr
+R6929:6933 Corelib.Init.Logic <> proj1 thm
+R6955:6966 annotated.AFullPreservation RCore cv_sym constr
+R6941:6941 Corelib.Init.Datatypes <> S constr
+R6992:7009 annotated.ACfRaw <> raw_normal_pi_view thm
+R7021:7034 annotated.AFullPreservation RCore cv_trans constr
+R6992:7009 annotated.ACfRaw <> raw_normal_pi_view thm
+R7021:7034 annotated.AFullPreservation RCore cv_trans constr
+R7093:7105 annotated.ACfRaw <> raw_normal_pi thm
+R7093:7105 annotated.ACfRaw <> raw_normal_pi thm
+R7143:7155 annotated.ACfRaw <> fresh_pi_view thm
+R7169:7176 Corelib.Init.Logic <> ex_intro constr
+R7143:7155 annotated.ACfRaw <> fresh_pi_view thm
+R7169:7176 Corelib.Init.Logic <> ex_intro constr
+R7212:7223 annotated.ACfRaw <> raw_fresh_pi thm
+R7212:7223 annotated.ACfRaw <> raw_fresh_pi thm
+R7239:7243 Corelib.Init.Logic <> proj1 thm
+R7261:7272 annotated.AFullPreservation RCore cv_sym constr
+R7239:7243 Corelib.Init.Logic <> proj1 thm
+R7261:7272 annotated.AFullPreservation RCore cv_sym constr
+R7298:7302 Corelib.Init.Logic <> proj2 thm
+R7324:7335 annotated.AFullPreservation RCore cv_sym constr
+R7310:7310 Corelib.Init.Datatypes <> S constr
+R7298:7302 Corelib.Init.Logic <> proj2 thm
+R7324:7335 annotated.AFullPreservation RCore cv_sym constr
+R7310:7310 Corelib.Init.Datatypes <> S constr
+prf 7364:7384 <> comparison_fresh_left
+binder 7395:7395 <> x:68
+binder 7397:7397 <> r:69
+binder 7399:7399 <> T:70
+R7424:7429 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7402:7419 annotated.AComparison RC type_comparison ind
+R7421:7421 annotated.ACfRaw <> r:69 var
+R7423:7423 annotated.ACfRaw <> T:70 var
+R7442:7445 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7430:7439 annotated.ACfRaw <> raw_normal def
+R7441:7441 annotated.ACfRaw <> r:69 var
+R7459:7462 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7446:7454 annotated.ACfRaw <> raw_fresh def
+R7456:7456 annotated.ACfRaw <> x:68 var
+R7458:7458 annotated.ACfRaw <> T:70 var
+R7463:7471 annotated.ACfRaw <> raw_fresh def
+R7473:7473 annotated.ACfRaw <> x:68 var
+R7475:7475 annotated.ACfRaw <> r:69 var
+R7523:7527 Corelib.Init.Logic <> proj1 thm
+R7562:7574 annotated.AFullPreservation RCore cv_refl constr
+R7584:7591 Corelib.Init.Logic <> ex_intro constr
+R7599:7611 annotated.AFullPreservation RCore cv_refl constr
+R7530:7545 annotated.ACfRaw <> comparison_fresh thm
+R7523:7527 Corelib.Init.Logic <> proj1 thm
+R7562:7574 annotated.AFullPreservation RCore cv_refl constr
+R7584:7591 Corelib.Init.Logic <> ex_intro constr
+R7599:7611 annotated.AFullPreservation RCore cv_refl constr
+R7530:7545 annotated.ACfRaw <> comparison_fresh thm
+prf 7635:7656 <> comparison_fresh_right
+binder 7667:7667 <> x:71
+binder 7669:7669 <> P:72
+binder 7671:7671 <> r:73
+R7696:7701 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7674:7691 annotated.AComparison RC type_comparison ind
+R7693:7693 annotated.ACfRaw <> P:72 var
+R7695:7695 annotated.ACfRaw <> r:73 var
+R7714:7717 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7702:7711 annotated.ACfRaw <> raw_normal def
+R7713:7713 annotated.ACfRaw <> r:73 var
+R7731:7734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7718:7726 annotated.ACfRaw <> raw_fresh def
+R7728:7728 annotated.ACfRaw <> x:71 var
+R7730:7730 annotated.ACfRaw <> P:72 var
+R7735:7743 annotated.ACfRaw <> raw_fresh def
+R7745:7745 annotated.ACfRaw <> x:71 var
+R7747:7747 annotated.ACfRaw <> r:73 var
+R7795:7799 Corelib.Init.Logic <> proj2 thm
+R7834:7846 annotated.AFullPreservation RCore cv_refl constr
+R7856:7863 Corelib.Init.Logic <> ex_intro constr
+R7871:7883 annotated.AFullPreservation RCore cv_refl constr
+R7802:7817 annotated.ACfRaw <> comparison_fresh thm
+R7795:7799 Corelib.Init.Logic <> proj2 thm
+R7834:7846 annotated.AFullPreservation RCore cv_refl constr
+R7856:7863 Corelib.Init.Logic <> ex_intro constr
+R7871:7883 annotated.AFullPreservation RCore cv_refl constr
+R7802:7817 annotated.ACfRaw <> comparison_fresh thm
+R7915:7930 annotated.ACfRaw <> comparison_fresh thm

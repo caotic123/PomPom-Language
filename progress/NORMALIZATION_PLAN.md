@@ -2,8 +2,8 @@
 
 The original unrestricted `normalization` statement in
 `OpenSignaturesTheorems.v` is proved for every typing derivation and full
-beta/eta reduction. The audit reports 44 closed claims without assumptions
-and two coherence conjectures; full preservation is separately refuted. No original statement or calculus rule was changed by
+beta/eta reduction. The audit reports 46 closed claims without assumptions;
+full preservation is separately refuted. No original statement or calculus rule was changed by
 the semantic-model work below.
 
 ## Checked components

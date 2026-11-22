@@ -1,0 +1,118 @@
+DIGEST 32852995ea4999fa725a06cf459b8428
+Fannotated.AFullPreservation
+R429:461 annotated.AStructuralPreservation <> <> lib
+R480:494 nameless.DBCore <> <> mod
+mod 471:475 <> RCore
+def 509:517 <> reduction
+R522:536 annotated.AEta <> structural_step ind
+ind 550:556 <> reduces
+constr 586:597 <> reduces_refl
+constr 625:636 <> reduces_step
+R564:567 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R560:563 annotated.ASyntax <> term ind
+R572:575 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R568:571 annotated.ASyntax <> term ind
+binder 608:608 <> t:3
+R611:617 annotated.AFullPreservation <> reduces:1 ind
+R621:621 annotated.AFullPreservation <> t:3 var
+R619:619 annotated.AFullPreservation <> t:3 var
+binder 647:647 <> t:4
+binder 649:649 <> u:5
+binder 651:651 <> v:6
+R667:670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R654:662 annotated.AFullPreservation <> reduction def
+R664:664 annotated.AFullPreservation <> t:4 var
+R666:666 annotated.AFullPreservation <> u:5 var
+R682:685 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R671:677 annotated.AFullPreservation <> reduces:1 ind
+R681:681 annotated.AFullPreservation <> v:6 var
+R679:679 annotated.AFullPreservation <> u:5 var
+R686:692 annotated.AFullPreservation <> reduces:1 ind
+R696:696 annotated.AFullPreservation <> v:6 var
+R694:694 annotated.AFullPreservation <> t:4 var
+scheme 550:556 <> reduces_ind
+scheme 550:556 <> reduces_sind
+prf 708:724 <> full_preservation
+binder 735:739 <> Gamma:7
+binder 741:741 <> t:8
+binder 743:743 <> u:9
+binder 745:745 <> A:10
+R766:769 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R750:755 annotated.ATyping <> typing ind
+R757:761 annotated.AFullPreservation <> Gamma:7 var
+R763:763 annotated.AFullPreservation <> t:8 var
+R765:765 annotated.AFullPreservation <> A:10 var
+R783:786 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R770:778 annotated.AFullPreservation <> reduction def
+R780:780 annotated.AFullPreservation <> t:8 var
+R782:782 annotated.AFullPreservation <> u:9 var
+R787:792 annotated.ATyping <> typing ind
+R794:798 annotated.AFullPreservation <> Gamma:7 var
+R800:800 annotated.AFullPreservation <> u:9 var
+R802:802 annotated.AFullPreservation <> A:10 var
+R847:874 annotated.AStructuralPreservation <> structural_step_preservation thm
+R847:874 annotated.AStructuralPreservation <> structural_step_preservation thm
+prf 906:930 <> full_preservation_reduces
+binder 941:945 <> Gamma:11
+binder 947:947 <> t:12
+binder 949:949 <> u:13
+binder 951:951 <> A:14
+R972:975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R956:961 annotated.ATyping <> typing ind
+R963:967 annotated.AFullPreservation <> Gamma:11 var
+R969:969 annotated.AFullPreservation <> t:12 var
+R971:971 annotated.AFullPreservation <> A:14 var
+R987:990 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R976:982 annotated.AFullPreservation <> reduces ind
+R984:984 annotated.AFullPreservation <> t:12 var
+R986:986 annotated.AFullPreservation <> u:13 var
+R991:996 annotated.ATyping <> typing ind
+R998:1002 annotated.AFullPreservation <> Gamma:11 var
+R1004:1004 annotated.AFullPreservation <> u:13 var
+R1006:1006 annotated.AFullPreservation <> A:14 var
+R1081:1097 annotated.AFullPreservation <> full_preservation thm
+R1081:1097 annotated.AFullPreservation <> full_preservation thm
+R1081:1097 annotated.AFullPreservation <> full_preservation thm
+R1245:1259 annotated.AFullPreservation <> RCore.reduction ind
+prf 1287:1303 <> reduction_erasure
+binder 1314:1314 <> t:15
+binder 1316:1316 <> u:16
+R1332:1337 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1319:1327 annotated.AFullPreservation <> reduction def
+R1329:1329 annotated.AFullPreservation <> t:15 var
+R1331:1331 annotated.AFullPreservation <> u:16 var
+R1355:1358 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1345:1347 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1338:1342 annotated.AErase <> erase def
+R1344:1344 annotated.AFullPreservation <> t:15 var
+R1348:1352 annotated.AErase <> erase def
+R1354:1354 annotated.AFullPreservation <> u:16 var
+R1359:1373 annotated.AFullPreservation <> reduction ind
+R1386:1390 annotated.AErase <> erase def
+R1392:1392 annotated.AFullPreservation <> u:16 var
+R1376:1380 annotated.AErase <> erase def
+R1382:1382 annotated.AFullPreservation <> t:15 var
+R1458:1480 annotated.AEta <> structural_root_erasure thm
+R1458:1480 annotated.AEta <> structural_root_erasure thm
+R1512:1527 annotated.AEta <> eta_root_erasure thm
+R1512:1527 annotated.AEta <> eta_root_erasure thm
+R1563:1567 annotated.AErase <> erase def
+R1623:1637 annotated.AEta <> structural_step ind
+R1623:1637 annotated.AEta <> structural_step ind
+prf 1799:1813 <> reduces_erasure
+binder 1824:1824 <> t:17
+binder 1826:1826 <> u:18
+R1840:1845 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1829:1835 annotated.AFullPreservation <> reduces ind
+R1837:1837 annotated.AFullPreservation <> t:17 var
+R1839:1839 annotated.AFullPreservation <> u:18 var
+R1846:1858 annotated.AFullPreservation <> reduces ind
+R1871:1875 annotated.AErase <> erase def
+R1877:1877 annotated.AFullPreservation <> u:18 var
+R1861:1865 annotated.AErase <> erase def
+R1867:1867 annotated.AFullPreservation <> t:17 var
+R1945:1961 annotated.AFullPreservation <> reduction_erasure thm
+R1945:1961 annotated.AFullPreservation <> reduction_erasure thm
+R2062:2078 annotated.AFullPreservation <> full_preservation thm
+R2099:2123 annotated.AFullPreservation <> full_preservation_reduces thm
+R2144:2160 annotated.AFullPreservation <> reduction_erasure thm

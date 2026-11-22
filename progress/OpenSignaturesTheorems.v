@@ -303,6 +303,21 @@ Theorem checking_coherence :
     observational_eq Gamma A t u.
 Proof. exact OpenSignaturesRelElab.checking_coherence_rel. Qed.
 
+(* Elaborated programs. A source program means the core term it elaborates
+   to, so these corollaries combine checking soundness with the core
+   metatheory. They are not counted among the 47 original claims. *)
+Corollary elaborated_progress :
+  forall e A t, elab_check empty_ctx e A t -> value t \/ exists u, step t u.
+Proof. intros e A t H; exact (progress _ _ (checking_sound _ _ _ _ H)). Qed.
+Corollary elaborated_evaluation :
+  forall e A t, elab_check empty_ctx e A t ->
+    exists v, eval t v /\ value v /\ typing empty_ctx v A.
+Proof.
+  intros e A t H; pose proof (checking_sound _ _ _ _ H) as Ht.
+  destruct (normalization_eval _ _ Ht) as [v [He Hv]].
+  exists v; split; [exact He|split; [exact Hv|exact (preservation_eval _ _ _ _ Ht He)]].
+Qed.
+
 (* Symbolic example proofs use the shared weakening premise. The closed
    singleton elaboration below is independent of metatheory conjectures. *)
 Theorem list_definitions_well_typed :

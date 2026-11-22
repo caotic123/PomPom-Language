@@ -340,6 +340,8 @@ Require OpenSignaturesRowViews OpenSignaturesDescriptionCoherence.
 Local Definition audited_closed_245 := @OpenSignaturesRowViews.row_view_position_transport.
 Local Definition audited_closed_246 := @OpenSignaturesDescriptionCoherence.description_conversion_identity.
 Local Definition audited_closed_247 := @OpenSignaturesDescriptionCoherence.description_coercions_closed_pointwise_coherence.
+Local Definition audited_closed_248 := @elaborated_progress.
+Local Definition audited_closed_249 := @elaborated_evaluation.
 
 Local Definition audited_closed_proofs :=
   (@audited_closed_001,
@@ -588,6 +590,8 @@ Local Definition audited_closed_proofs :=
    @audited_closed_244,
    @audited_closed_245,
    @audited_closed_246,
-   @audited_closed_247).
+   @audited_closed_247,
+   @audited_closed_248,
+   @audited_closed_249).
 
 Print Assumptions audited_closed_proofs.

@@ -15,7 +15,10 @@ ANNOTATED_SOURCES := annotated/ASyntax.v annotated/ABinding.v annotated/AErase.v
  annotated/ACloseTyping.v annotated/AContexts.v annotated/ACompatible.v \
  annotated/AContextInsertion.v annotated/AStrengthening.v \
  annotated/AEtaPreservation.v annotated/ARootBeta.v \
- annotated/AStructuralPreservation.v
+ annotated/AStructuralPreservation.v annotated/AFullPreservation.v \
+ annotated/ACriticalPair.v annotated/ACompleteness.v \
+ annotated/AStepFunction.v annotated/ACfRaw.v annotated/ACfHelpers.v \
+ annotated/ACfNormal.v annotated/ACfConfluence.v
 ANNOTATED_OBJECTS := $(ANNOTATED_SOURCES:.v=.vo)
 
 SOURCES := $(OPEN_SIGNATURE_SOURCES) $(ANNOTATED_SOURCES) annotated/AAudit.v OpenSignaturesBindingTests.v OpenSignaturesEtaRegression.v

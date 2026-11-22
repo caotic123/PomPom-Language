@@ -2,9 +2,8 @@
 
 Status: **proved**. The first of 47 statements in
 [OpenSignaturesTheorems.v](OpenSignaturesTheorems.v) has a checked proof
-with no axiom dependencies. The complete development now has forty-four closed
-claims, two coherence conjectures, and one refuted claim; no proved claims
-depend on conjectures;
+with no axiom dependencies. The complete development now has forty-six closed
+claims and one refuted claim; no conjectures remain;
 see [PROOF_STATUS.md](PROOF_STATUS.md). The first theorem is:
 
 ```coq
@@ -62,7 +61,7 @@ Use no `Admitted`, added axiom, or conditional theorem premise to close it.
 
 The principal elaboration and subtyping soundness results are now proved without
 axioms. Full beta/eta `normalization` is proved. Full preservation is refuted;
-the two coherence claims remain open. `weakening`, `substitution`, and
+both coherence claims are proved. `weakening`, `substitution`, and
 `type_correctness` are proved.
 See the dependency table in `PROOF_STATUS.md`.
 
