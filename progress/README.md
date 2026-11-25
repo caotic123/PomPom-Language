@@ -64,6 +64,18 @@ the assumptions of the two coherence theorems separately; all print
 See [OpenSignatures.md](OpenSignatures.md) for the module map and
 [type-rules.md](type-rules.md) for the mathematical rules.
 
+The condensed reference
+[docs/type-rules/calculus.pdf](../docs/type-rules/calculus.pdf) is checked
+against these sources. `OpenSignaturesDocCheckCore.v`,
+`OpenSignaturesDocCheckElab.v`, and `OpenSignaturesDocCheckRel.v` restate its
+rules, definitions, theorem statements, and examples and prove each from the
+constructor or theorem it cites, so a rule or statement that drifts from the
+document stops compiling:
+
+```sh
+make -C progress check-docs
+```
+
 All prior proof work is saved in
 [proof-archive/2026-09-24](../proof-archive/2026-09-24/README.md): the earlier
 calculus, scratch developments, unfinished open-signature progress proof,

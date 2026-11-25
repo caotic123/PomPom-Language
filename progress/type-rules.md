@@ -580,9 +580,9 @@ strong normalization and canonical forms are proved.
 Source constructor matching elaborates through `closeCaseₖ` and a
 `switchₖ` over the actual outer enumeration. Every exposed position must
 receive a branch. A source-omitted branch is compiled to `abort` only
-when elaboration constructs an empty-payload witness. An absent label in a
-compact row needs no core branch at all. Neutral descriptions or indices
-are never evidence of emptiness.
+when elaboration constructs an empty-payload witness; a label hidden by
+`'⊥` gets one from the `'⊥` rule. Neutral descriptions or indices are never
+evidence of emptiness.
 
 The resulting core has no raw source clause-list selection rule: source
 names and duplicate-clause checks are resolved before building the typed
@@ -624,20 +624,21 @@ fresh in `Γ` and both function types well formed. `Sub-conversion` requires
 both types well formed. Reusing the old coercion-free codomain rule without
 this substitution would be ill typed.
 
-### Bottom-marked branches and row alignment
+### Bottom-marked branches over a shared label set
 
-For a shared enum and branch functions `p, p′`, the initial sufficient
-inclusion check is:
+A subtype keeps every constructor label of the datatype and hides the
+constructors it excludes by giving them the empty payload `'⊥`. For a
+shared enum and branch functions `p, p′` the inclusion check is:
 
 ~~~text
-p ≼ p′  if  ∀ c : EnumT E. p c ≡ '⊥ ∨ p c ≡ p′ c
+p ≼ p′  if  ∀ c : EnumT E. p c is dead (e.g. p c ≡ '⊥) ∨ ⟦p c⟧ X ≡ ⟦p′ c⟧ X
 ~~~
 
 This is an elaboration condition, not a core subtyping relation between
 terms of function type. It preserves live branch payloads up to
 conversion; inclusion of nonempty labels alone is insufficient.
 
-More generally, use the helper judgment:
+It is expressed by the helper judgment:
 
 ~~~text
 Γ ⊢ D ≼[X] D′ ↝ q
@@ -651,27 +652,20 @@ Its permitted constructions are:
 - Convertible descriptions use identity.
 - A certified empty source uses `λ xs. abort (dead xs)`, where
   `dead : ⟦D⟧ X → ⊥` is generated or checked.
-- Exposed choices are compared by stable constructor identity. For each
-  source position, find the target position with the same identifier and
-  check that the live payload types at `X` are convertible. Generate
-  `(sourcePosition, xs) ↦ (targetPosition, xs)`.
+- Exposed choices must list the same constructor names (`ds_rows` has the
+  premise `row_names rs = row_names rt`). For each source position, a
+  live branch requires the payload types at `X` to be convertible with
+  those of the entry of the same name in the target, and generates
+  `(position, xs) ↦ (position, xs)`: since the names agree and are
+  distinct, a live constructor keeps its position.
 - A source branch with an empty-payload witness instead eliminates into
-  the whole target interpretation. It needs no matching target position.
+  the whole target interpretation.
 
 The choice rule compiles a total source-enum switch. For a live branch it
 does not generate a conversion of the payload or recursively traverse it.
 Consequently, shared constructor identity alone gives no permission to
-change its payload type.
-
-For example, if `D = 'σ Eₛ p` and `D′ = 'σ Eₜ p′`, both enums must
-have checked `NoDupEnum` witnesses. A live source branch at `a` requires
-some `ℓ,b` with:
-
-~~~text
-At Eₛ ℓ a
-At Eₜ ℓ b
-⟦p a⟧ X ≡ ⟦p′ b⟧ X : Set₀
-~~~
+change its payload type. Rows with different label sets are not related:
+a label is never dropped, only hidden.
 
 Emptiness is the judgment `Γ ⊢ dead D X ↝ d` with `d : ⟦D⟧ X → ⊥`. Its
 rules recognize `'⊥` (identity), empty choices (`λ x. fst x`), products
@@ -706,9 +700,10 @@ Different recursive arguments do not get a subtype relation merely by
 sharing constructor schemes. A deep structural conversion between their
 recursive families would be an additional feature.
 
-These conversions need not be judgmentally identity, and different local
-enums may require actual tag changes. Runtime erasure or a representation
-that avoids conversion work requires its own justification.
+These conversions are not judgmental identities: a coercion is a core
+function. With a shared label set it returns the value it was given, at the
+same position, but runtime erasure of the coercion still requires its own
+justification.
 
 Coherence is proved, not assumed: any two derivations of `Γ ⊢ A ⊑ B` give
 observationally equal coercions (`coercion_coherence`), and any two
@@ -723,7 +718,7 @@ with three independently assembled enums:
 
 ~~~text
 ListE     = consE 'nil (consE 'cons nilE)
-NonEmptyE = consE 'cons nilE
+NonEmptyE = ListE
 TreeE     = consE 'nil (consE 'cons (consE 'fork nilE))
 
 pList A : EnumT ListE → IDesc 𝟙
@@ -732,7 +727,8 @@ pTree A : EnumT TreeE → IDesc 𝟙
 
 pList A 0         = Nil
 pList A (1+0)     = Cons A
-pNE A 0           = Cons A
+pNE A 0           = '⊥
+pNE A (1+0)       = Cons A
 pTree A 0         = Nil
 pTree A (1+0)     = Cons A
 pTree A (1+(1+0)) = Fork
@@ -742,7 +738,8 @@ _non_empty A = λ _ : 𝟙. 'σ NonEmptyE (pNE A)
 _tree A      = λ _ : 𝟙. 'σ TreeE     (pTree A)
 ~~~
 
-Each `p` is an enum switch of the corresponding function type.
+Each `p` is an enum switch of the corresponding function type. A nonempty
+list keeps both labels of a list and hides `'nil` with the empty payload.
 All three definitions inhabit `Def 𝟙`. Define:
 
 ~~~text
@@ -755,7 +752,7 @@ The shape isomorphisms are:
 
 ~~~text
 List A     ≃ 𝟙 + (A × List A)
-NonEmpty A ≃ A × List A
+NonEmpty A ≃ ⊥ + (A × List A)
 Tree A     ≃ 𝟙 + (A × Tree A) + (Tree A × Tree A)
 ~~~
 
@@ -769,7 +766,7 @@ cons : A → List A → List A
 cons a xs = in (1+0, (a, xs))
 
 consNE : A → List A → NonEmpty A
-consNE a xs = in (0, (a, xs))
+consNE a xs = in (1+0, (a, xs))
 
 consTree : A → Tree A → Tree A
 consTree a xs = in (1+0, (a, xs))
@@ -779,27 +776,30 @@ singletonNE a = consNE a nil
 ~~~
 
 The three cons operations are instances of the same constructor scheme;
-an expected result type chooses the outer enum and the recursive family.
-The singleton terminates because its tail is `List A`.
+an expected result type chooses the outer definition and the recursive
+family. `consNE a xs` and `cons a xs` are the same term. No `nil` can be
+built at `NonEmpty A`: its payload would inhabit `⊥`. The singleton
+terminates because its tail is `List A`.
 
-The nonempty enum has one position, so total observation needs one branch.
-The following equations abbreviate `closeCase` followed by its enum
-switch:
+The `'nil` position of the nonempty definition has an empty payload, so
+total observation needs one written branch; elaboration supplies `abort`
+for `'nil`. The following equations abbreviate `closeCase` followed by
+its enum switch:
 
 ~~~text
 head : NonEmpty A → A
-head (in (0, (a, xs))) = a
+head (in (1+0, (a, xs))) = a
 
 tail : NonEmpty A → List A
-tail (in (0, (a, xs))) = xs
+tail (in (1+0, (a, xs))) = xs
 ~~~
 
-The generated widening aligns `'cons` at source position `0` with
-target position `1+0`:
+The generated widening discharges `'nil` and keeps `'cons` at position
+`1+0`, so it returns its argument:
 
 ~~~text
 toList : NonEmpty A → List A
-toList (in (0, (a, xs))) = in (1+0, (a, xs))
+toList (in (1+0, (a, xs))) = in (1+0, (a, xs))
 
 ⊢ NonEmpty A ⊑ List A ↝ toList
 
@@ -811,11 +811,10 @@ toList (singletonNE a) ≡ cons a nil
 No tail is traversed. For `f : List A → B` and `ne : NonEmpty A`,
 source `f ne` elaborates to `f (toList ne)`.
 
-Equivalently at the level of possible values, a nonempty outer definition
-could retain `ListE` and set its `nil` branch to `'⊥`. Its case
-elaboration supplies `abort` for that branch. The compact and padded
-representations admit generated conversions in both directions; they are
-not definitionally equal and their cons positions differ.
+A definition that drops the `'nil` label, with the one-label enum
+`consE 'cons nilE`, has the same closed values up to their position, but it
+is not related to `_list A` by these rules: the row rule requires the same
+names on both sides.
 
 The reverse `List A ⊑ NonEmpty A` check fails on the inhabited `nil`
 branch. Also, `List A ⊑ Tree A` does not follow from these rules merely

@@ -44,7 +44,7 @@ Local Ltac concrete_row :=
   split;
     [unfold row_names; cbn; repeat constructor; cbn; intuition discriminate|
      repeat (apply Forall_cons || apply Forall_nil); cbn;
-       eauto using cons_code_typing, fork_code_typing, ty_i1, ty_unitT, typing_context].
+       eauto using cons_code_typing, fork_code_typing, ty_i1, ty_ibot, ty_unitT, typing_context].
 
 Lemma list_rows_typing : forall Gamma A,
   typing Gamma A (TSort 0) -> row_input Gamma TUnitT (list_rows A).
@@ -136,7 +136,7 @@ Proof.
   intros Gamma A a xs HA Ha Hxs.
   destruct (list_definitions_from_weakening Gamma A HA) as [HL [HN _]].
   pose proof (typing_context _ _ _ HA) as Hctx.
-  eapply close_row_constructor with (rs := nonempty_rows A) (n := 0)
+  eapply close_row_constructor with (rs := nonempty_rows A) (n := 1)
     (name := "cons"%string) (D := cons_code A).
   - exact weaken.
   - repeat split; auto using ty_unitT, ty_unit.
@@ -184,8 +184,11 @@ Proof.
   - repeat split; assumption.
   - constructor; [now apply nonempty_rows_typing|exact HF|apply unit_signature_application].
   - constructor; [now apply list_rows_typing|exact HG|apply unit_signature_application].
-  - eapply rh_live with (D' := cons_code A) (n := 1);
-      [reflexivity|apply cv_refl|constructor].
+  - apply rh_dead.
+    + apply dead_bot; [|apply cv_refl]. repeat split; try assumption. now apply ty_ibot.
+    + eapply rh_live with (D' := cons_code A) (n := 1);
+        [reflexivity|apply cv_refl|constructor].
+  - reflexivity.
 Qed.
 
 End ExampleTyping.

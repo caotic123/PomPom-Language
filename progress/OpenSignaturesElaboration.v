@@ -93,8 +93,11 @@ with dead_rows : ctx -> term -> row -> term -> list term -> Prop :=
     dead Gamma IT D X d -> dead_rows Gamma IT rs X ds ->
     dead_rows Gamma IT ((name,D) :: rs) X (d :: ds).
 
-(* No mapping is needed for an impossible source label, even when the target
-   does not contain its identity. Live mappings preserve the payload. *)
+(* Handlers for the entries of a source row. A live label keeps its payload
+   and is sent to the entry of the same name in the target. A hidden label,
+   whose payload is certified empty (typically 'bot), needs no mapping.
+   ds_rows below requires source and target to list the same names, so the
+   label set is shared and a live label keeps its position. *)
 Inductive row_handlers
     (Gamma : ctx) (IT X Y : term) (target : row)
     : row -> list term -> Prop :=
@@ -123,6 +126,7 @@ Inductive desc_sub : ctx -> term -> term -> term -> term -> term -> Prop :=
     description_input Gamma IT D X -> description_input Gamma IT D' X ->
     row_view Gamma IT D rs -> row_view Gamma IT D' rt ->
     row_handlers Gamma IT X (TInterp IT D' X) rt rs handlers ->
+    row_names rs = row_names rt ->
     desc_sub Gamma IT D D' X
       (row_map 0 IT rs X (TInterp IT D' X) handlers).
 

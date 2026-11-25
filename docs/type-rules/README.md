@@ -7,7 +7,41 @@ user decided to keep the public calculus unannotated, so the PDF below
 documents the existing named calculus, its checked counterexample, and the
 status of the repair.
 
+## Condensed reference
+
+[calculus.pdf](calculus.pdf), built from the single file
+[calculus.tex](calculus.tex), states the current open-signature calculus in
+two parts. Part I is the core, presented as an extension of the type theory
+of Dagand and McBride, *Elaborating Inductive Definitions*
+([arXiv:1210.6390](https://arxiv.org/abs/1210.6390)): the rules that come
+from that paper are written in its notation, grouped as in its Figures 1, 2
+and 4, and cited; every rule that is ours or departs from the paper's is
+marked with a dagger and explained (explicit universe levels and
+cumulativity, the empty code, induction-hypothesis computation, and
+parameterized closure). Each operator's computation rules sit beside its
+typing rules, followed by reduction and conversion, observational
+equivalence, and the core metatheory. Part II is elaboration: rows,
+dead branches, coercions, source checking, and its soundness and coherence
+theorems. Each part lists its supporting lemmas and proof structure. Start
+here; the longer document below adds instantiations and citations. Build it
+with `make -C docs/type-rules calculus`.
+
+The document is checked against the Rocq sources. Its rules, definitions,
+theorem statements, and examples are restated in
+[OpenSignaturesDocCheckCore.v](../../progress/OpenSignaturesDocCheckCore.v),
+[OpenSignaturesDocCheckElab.v](../../progress/OpenSignaturesDocCheckElab.v), and
+[OpenSignaturesDocCheckRel.v](../../progress/OpenSignaturesDocCheckRel.v), each
+proved from the constructor or theorem it cites. After building the proof
+library, run `make -C docs/type-rules check`; a statement that no longer
+matches the sources fails to compile. When a rule changes, update the
+document and its restatement together.
+
 ## Open signatures and parameterized closure
+
+**Outdated since 2026-11-25.** This longer document predates the
+restriction of row coercions to a shared label set: it still shows
+`ds_rows` without the equal-names premise and a `NonEmpty` that drops the
+`nil` label. Use the condensed reference above for the current rules.
 
 The current rule reference is
 [open-signatures.pdf](open-signatures.pdf), built from

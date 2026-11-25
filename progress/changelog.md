@@ -1,5 +1,14 @@
 # Proposal revision changelog
 
+## 2026-11-25 - Subtyping by hiding constructors over a shared label set
+
+- `ds_rows` in `OpenSignaturesElaboration.v` has the new premise `row_names rs = row_names rt`: a row coercion relates only rows that list the same constructor names. A subtype hides the constructors it excludes with the empty payload `'⊥`; labels are no longer dropped. With equal, distinct names a live constructor keeps its position.
+- `row_handlers`, `dead`, `sub`, the source rules, and every statement in `OpenSignaturesTheorems.v` are unchanged. All metatheory proofs, including both coherence proofs, compile without modification; the audit still prints `Closed under the global context`.
+- `nonempty_rows` is now `[("nil", 'bot); ("cons", cons_code A)]`, so `nonempty_value` is the same term as `cons_value`, `head_term` and `tail_term` carry a dead handler for `nil`, and `to_list` returns its argument. The former `padded_*` and `to_compact` examples and `padded_roundtrip` are removed; `singleton_is_cons` is added.
+- Proof changes are confined to the examples: `OpenSignaturesExampleTyping.v`, `OpenSignaturesObservers.v` (new `hidden_nil_handler_typing`), `OpenSignaturesEndless.v` (the hidden `nil` case), and `singleton_source_elaborates` in `OpenSignaturesTheorems.v`.
+- Added the condensed reference `docs/type-rules/calculus.tex`, presented as an extension of Dagand and McBride (arXiv:1210.6390), and `OpenSignaturesDocCheck{Core,Elab,Rel}.v` with the target `check-docs`, which restate its rules, statements and examples and prove them from the sources.
+- Not yet updated: `docs/type-rules/open-signatures*.tex` and its PDF still show the earlier rule and the label-dropping `NonEmpty`.
+
 ## 2026-10-11 - Annotated bridges, confluence modulo annotations, decision
 
 - Added `annotated/ACompleteness.v`: every raw typing derivation has an annotated term with the same erasure and type, so raw and annotated typing coincide modulo erasure.

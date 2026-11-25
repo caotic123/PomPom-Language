@@ -21,9 +21,14 @@ ANNOTATED_SOURCES := annotated/ASyntax.v annotated/ABinding.v annotated/AErase.v
  annotated/ACfNormal.v annotated/ACfConfluence.v
 ANNOTATED_OBJECTS := $(ANNOTATED_SOURCES:.v=.vo)
 
-SOURCES := $(OPEN_SIGNATURE_SOURCES) $(ANNOTATED_SOURCES) annotated/AAudit.v OpenSignaturesBindingTests.v OpenSignaturesEtaRegression.v
+# Machine check of docs/type-rules/calculus.tex against these sources.
+DOC_CHECK_SOURCES := OpenSignaturesDocCheckCore.v OpenSignaturesDocCheckElab.v \
+ OpenSignaturesDocCheckRel.v
+DOC_CHECK_OBJECTS := $(DOC_CHECK_SOURCES:.v=.vo)
 
-.PHONY: all open-signatures annotated-core audit-annotated-core audit-open-signatures check-bindings check-eta-cumulativity check-eta-polymorphism
+SOURCES := $(OPEN_SIGNATURE_SOURCES) $(ANNOTATED_SOURCES) annotated/AAudit.v OpenSignaturesBindingTests.v OpenSignaturesEtaRegression.v $(DOC_CHECK_SOURCES)
+
+.PHONY: all open-signatures annotated-core audit-annotated-core audit-open-signatures check-bindings check-eta-cumulativity check-eta-polymorphism check-docs
 all: open-signatures annotated-core
 
 open-signatures: $(OPEN_SIGNATURE_OBJECTS)
@@ -38,6 +43,8 @@ check-bindings: OpenSignaturesBindingTests.vo
 check-eta-cumulativity: OpenSignaturesEtaRegression.vo
 
 check-eta-polymorphism: OpenSignaturesEtaPolymorphism.vo
+
+check-docs: $(DOC_CHECK_OBJECTS)
 
 audit-open-signatures: open-signatures
 	$(COQC) $(COQFLAGS) OpenSignaturesAudit.v

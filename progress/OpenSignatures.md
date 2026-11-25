@@ -37,7 +37,7 @@ and full preservation has a checked counterexample. The independent
 | [OpenSignaturesSubstitution.v](OpenSignaturesSubstitution.v) | Axiom-free alpha compatibility, free-variable support, binder renaming, and substitution composition. |
 | [OpenSignaturesProgress.v](OpenSignaturesProgress.v) | Reduction invariants, canonical forms, and progress parameterized only by conversion joinability; no conjectures are imported. |
 | [OpenSignaturesElaboration.v](OpenSignaturesElaboration.v) | Open signature assembly, stable constructor identities, local tag translation, empty-payload witnesses, coercion generation, and source elaboration. |
-| [OpenSignaturesExamples.v](OpenSignaturesExamples.v) | Lists, nonempty lists, trees, compact/padded rows, source examples, and five checked computations. |
+| [OpenSignaturesExamples.v](OpenSignaturesExamples.v) | Lists, nonempty lists (the `nil` label hidden by `'⊥`), trees, source examples, and five checked computations. |
 | [OpenSignaturesDerivedTyping.v](OpenSignaturesDerivedTyping.v) | Function/product formation, constant functions, abort, and unroll; weakening is explicit. |
 | [OpenSignaturesDataTyping.v](OpenSignaturesDataTyping.v) | Description payload introductions and projections. |
 | [OpenSignaturesRowTyping.v](OpenSignaturesRowTyping.v) | Row computation, tuple typing, signatures, and constructors. |
@@ -96,6 +96,7 @@ and full preservation has a checked counterexample. The independent
 | [OpenSignaturesRelCoercion.v](OpenSignaturesRelCoercion.v), [OpenSignaturesRelElab.v](OpenSignaturesRelElab.v) | Realizability of every coercion derivation, and elaboration coherence over contexts linked by related types. See [RELATIONAL_PLAN.md](RELATIONAL_PLAN.md). |
 | [OpenSignaturesTheorems.v](OpenSignaturesTheorems.v) | Forty-six closed claims, including both coherence theorems, and the exact refuted full-preservation proposition. |
 | [OpenSignaturesAudit.v](OpenSignaturesAudit.v) | Rule signatures and assumption checks, beginning with `context_validity`. |
+| [OpenSignaturesDocCheckCore.v](OpenSignaturesDocCheckCore.v), [OpenSignaturesDocCheckElab.v](OpenSignaturesDocCheckElab.v), [OpenSignaturesDocCheckRel.v](OpenSignaturesDocCheckRel.v) | Machine check of [docs/type-rules/calculus.tex](../docs/type-rules/calculus.tex): its rules, definitions, theorem statements, and examples restated and proved from the constructors and theorems they cite. Not part of `open-signatures`; build with `make check-docs`. |
 | [PROOF_START.md](PROOF_START.md) | First theorem, proof approach, and acceptance criteria. |
 
 Prior proofs, the unfinished progress development, and generated artifacts
@@ -117,9 +118,11 @@ call uses outer definition `G`. One-layer `closeCase` supports motives at
 every universe level; recursive induction is small, as in the sketch.
 
 The core has no constructor-subtyping relation. `sub` in the elaboration
-module generates a core function. Live row branches keep their payload and
-translate their tag by constructor identity. Impossible source branches
-generate empty elimination, including when no target position exists.
+module generates a core function. Row coercions require the same
+constructor names on both sides: a subtype hides the constructors it
+excludes with the empty payload `'⊥` instead of dropping their labels. Live
+row branches keep their payload and their position. Hidden source branches
+generate empty elimination.
 Dependent function coercions substitute the converted argument into the
 source codomain and choose fresh numeric binders to avoid capture.
 
@@ -146,8 +149,9 @@ binary relational model. A deterministic policy for dependent inference and
 a semantic construction relating the diagonal to reference `μᴵ` remain
 design obligations.
 
-Five current example proofs check singleton head, tail, widening, a
-compact/padded round trip, and preservation of a free payload ID. The
+Five current example proofs check singleton head, tail, that a nonempty
+singleton is the same term as the list, that widening returns its argument,
+and preservation of a free payload ID. The
 binding regressions also exercise shadowing, capture avoidance, alpha
 comparison, stable lookup, and ID reuse. The active development declares
 no metatheory conjectures. The ten older computation proofs remain in the

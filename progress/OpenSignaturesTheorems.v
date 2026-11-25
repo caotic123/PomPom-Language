@@ -506,12 +506,13 @@ Proof.
   eapply ec_conversion; [apply es_ann | exists 0; os_check 60 | apply cv_refl].
   - exists 0; os_check 60.
   - eapply ec_constructor with
-      (rs := nonempty_rows TUnitT) (n := 0) (D := cons_code TUnitT).
+      (rs := nonempty_rows TUnitT) (n := 1) (D := cons_code TUnitT).
     + repeat split; os_check 60.
     + constructor.
       * unfold row_input. split; [os_check 60|]. split.
-        -- repeat constructor; cbn; tauto.
-        -- constructor; [cbn; os_check 60 | constructor].
+        -- repeat constructor; cbn; intuition discriminate.
+        -- constructor; [cbn; os_check 60 |].
+           constructor; [cbn; os_check 60 | constructor].
       * os_check 60.
       * os_compute.
     + reflexivity.

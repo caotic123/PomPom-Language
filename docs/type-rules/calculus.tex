@@ -1,0 +1,1076 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[margin=18mm]{geometry}
+\usepackage{amsmath,amssymb,stmaryrd,mathpartir,booktabs,array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks,linkcolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\hypersetup{pdftitle={PomPom open signatures: rules and semantics},
+  pdfauthor={PomPom Language}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{3em}
+\newcommand{\Set}{\mathsf{Set}}
+\newcommand{\op}[1]{\mathsf{#1}}
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\unit}{\ast}
+\newcommand{\code}[1]{{}^{\prime}\!#1}
+\newcommand{\dprod}{\mathbin{\code{\times}}}
+\newcommand{\interp}[2]{\llbracket #1\rrbracket\,#2}
+\newcommand{\Def}{\op{Def}}
+\newcommand{\Fam}{\op{Fam}}
+\newcommand{\cl}[2]{\op{close}\,#1\,#2}
+\newcommand{\roll}{\op{in}}
+\newcommand{\jd}[2]{\Gamma\vdash #1:#2}
+\newcommand{\subt}[3]{\Gamma\vdash #1\sqsubseteq #2\rightsquigarrow #3}
+\newcommand{\dsub}[4]{\Gamma\vdash #1\preceq_{#3}#2\rightsquigarrow #4}
+\newcommand{\dead}[3]{\Gamma\vdash #1\ \op{dead}_{#2}\rightsquigarrow #3}
+\newcommand{\synth}[3]{\Gamma\vdash #1\Rightarrow #2\rightsquigarrow #3}
+\newcommand{\checkt}[3]{\Gamma\vdash #1\Leftarrow #2\rightsquigarrow #3}
+\newcommand{\rn}[1]{{\normalfont\ttfamily\footnotesize\detokenize{#1}}}
+\newcommand{\ruleof}[3]{\inferrule*[right={\rn{#1}}]{#2}{#3}}
+\newcommand{\rows}[1]{\langle #1\rangle}
+\newcommand{\abort}{\op{abort}}
+\newcommand{\unroll}{\op{unroll}}
+\newcommand{\allh}{\op{iAll}}
+\newcommand{\hyps}{\op{hyps}}
+\newcommand{\disp}{\op{dispatch}}
+\newcommand{\pos}[1]{\overline{#1}}
+\newcommand{\rto}{\longmapsto}
+\newcommand{\red}{\leadsto}
+\newcommand{\obs}{\approx}
+\newcommand{\imp}{\ \Longrightarrow\ }
+\newcommand{\ex}{\par\smallskip\textit{Example.}\ }
+\newcommand{\tg}[1]{\code{\mathsf{#1}}}
+\newcommand{\spi}{\pi}
+\newcommand{\nilE}{\op{nilE}}
+\newcommand{\consE}[2]{\op{consE}\,#1\,#2}
+\newcommand{\suc}[1]{1{+}\,#1}
+\newcommand{\valid}{\op{valid}}
+\newcommand{\pz}{\pi_0}
+\newcommand{\po}{\pi_1}
+\newcommand{\dg}{^{\dagger}}
+\newcommand{\DM}{[DM]}
+\newcommand{\ruleofd}[3]{\inferrule*[right={\rn{#1}$\dg$}]{#2}{#3}}
+\newcommand{\Part}[2]{\par\bigskip\hrule\smallskip
+ {\Large\bfseries Part #1.\quad #2}\par\smallskip\hrule\medskip}
+\begin{document}
+\begin{center}
+{\Large\bfseries PomPom open signatures: typing rules and semantics}\\[3pt]
+{\small A condensed reference for \texttt{progress/OpenSignatures*.v}
+\quad\textbullet\quad 25 November 2026}
+\end{center}
+
+The core calculus is the type theory of Dagand and McBride,
+\emph{Elaborating Inductive Definitions} (arXiv:1210.6390, Section~1; cited
+as \DM), \emph{extended}. \textbf{Part~I} gives it: the rules that come from
+\DM{} are written in that paper's notation and cited by figure, and every
+rule that is ours, or that departs from the paper's, is marked $\dg$ and
+explained where it stands. The extensions are explicit universe levels and
+cumulativity, the empty code $\code{\bot}$, computation rules for the
+induction hypotheses, and \emph{parameterized closure}.
+\textbf{Part~II} is elaboration: a source language with named constructors,
+exhaustive cases and subtyping, translated into core terms. It adds no core
+rule; each of its judgments outputs a core term, and its soundness theorems
+say that output is typed by Part~I.
+
+Labels in \rn{typewriter} are the Rocq constructor or theorem names
+(\texttt{progress/OpenSignatures*.v}). All stated theorems are proved in
+Rocq; the one refuted statement is marked. The rules, definitions, theorem
+statements and examples below are restated in Rocq and proved from the names
+they cite in \texttt{progress/OpenSignaturesDocCheck\{Core,Elab,Rel\}.v}
+(\texttt{make -C progress check-docs}); names beginning with \rn{ex_} are
+example lemmas of those files.
+
+\textbf{Conventions.} Notation is that of \DM: $(x{:}S)\to T$ and
+$(x{:}S)\times T$ are the dependent function and pair types, written $S\to T$
+and $S\times T$ when $x$ does not occur in $T$; $\pz$, $\pi_1$ are the
+projections; $\one$ is the unit type and $\unit$ its element. $k,j$ are
+universe levels, $s$ is a string, and $\pos{n}$ is the position
+$\suc{(\cdots(\suc{0}))}$ with $n$ successors. Binders are stable numeric
+IDs, contexts are finite maps, and substitution $t[s/x]$ is capture
+avoiding. An ambient index type $I:\Set_0$ is fixed and suppressed: in Rocq
+it is an explicit argument of every operator on descriptions and of the
+$\op{dead}$, $\preceq$ and handler judgments of Part~II.
+
+
+\Part{I}{The core calculus}
+%----------------------------------------------------------------------
+\section{Syntax}
+\[
+\begin{array}{@{}r@{\ }c@{\ }l@{\quad}l@{}}
+t,S,T &::=& x\mid\Set_k\mid(x{:}S)\to T\mid\lambda x.\,t\mid t\,s
+  \mid(x{:}S)\times T\mid(s,t)\mid\pz\,t\mid\po\,t
+  \mid\one\mid\unit &\text{type theory}\\
+&\mid&\op{UId}\mid\code{s}\mid\op{EnumU}\mid\nilE\mid\consE{t}{E}\mid\op{EnumT}\,E
+  \mid 0\mid\suc{n}\mid\spi^k\,E\,P\mid\op{switch}^k\,E\,P\,b\,x
+  &\text{enumerations}\\
+&\mid&\op{IDesc}\,I\mid\code{\op{var}}\,i\mid\code{\one}\mid\code{\bot}
+  \mid A\dprod B\mid\code{\Pi}\,S\,T\mid\code{\Sigma}\,S\,T
+  \mid\code{\sigma}\,E\,T\mid\interp{D}{X} &\text{descriptions}\\
+&\mid&\allh\,D\,X\,t\,P\mid\hyps\,D\,X\,P\,h\,t
+  \mid\mu\,D\mid\roll\,t\mid\op{ind}\,D\,P\,s\,i\,t &\text{fix-point, induction}\\
+&\mid&\cl{F}{G}\mid\op{closeCase}^k\,F\,G\,i\,Q\,b\,t
+  \mid\op{closeInd}\,G\,P\,s\,F\,i\,t &\text{closure}
+\end{array}
+\]
+Abbreviations are introduced below, together with the operators they
+abbreviate.
+
+%----------------------------------------------------------------------
+\section{Typing and computation rules}\label{sec:core}
+The judgments are $\Gamma\vdash\valid$ and $\Gamma\vdash t:T$ (\rn{wf},
+\rn{typing}). The groups below follow Figures 1, 2 and 4 of \DM, each with
+its purpose, its typing rules, and its \emph{root computation} rules
+$t\rto u$ (\rn{root_step}); Section~\ref{sec:dyn} closes $\rto$ into
+evaluation, full reduction and conversion $\equiv$.
+
+\textbf{Reading the cited rules.} An unmarked rule is the paper's rule. In
+this calculus it is read with three standing differences, which are not
+repeated rule by rule:
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\topsep}{2pt}
+\item \emph{Levels.} Where \DM{} writes an unsubscripted $\Set$, the rule
+ here is at $\Set_0$.
+\item \emph{Presuppositions.} What a conclusion mentions must be well
+ formed, and here that is a premise of the rule: the function or pair type in
+ the rules for application, pairing and projections; $t:\op{UId}$ and
+ $E:\op{EnumU}$ in the rules for $0$ and $\suc{n}$; $I:\Set_0$ in every rule
+ that mentions $\op{IDesc}\,I$; and $D:I\to\op{IDesc}\,I$, $i:I$ in the rule
+ for $\roll$.
+\item \emph{Annotations.} $\lambda x.\,t$ and $(s,t)$ carry no type
+ annotation (\DM: $\lambda x{:}S.\,t$ and $(s,t)_{x.T}$), and contexts hold no
+ definitions.
+\end{itemize}
+\textbf{Signatures.} As in \DM, an operator with several arguments is given
+by a signature $\op{op}:(x_1{:}S_1)\cdots(x_n{:}S_n)\to T$. It abbreviates
+the typing rule with one premise $\Gamma\vdash s_i:S_i$ per argument,
+earlier arguments being substituted for $x_1,x_2,\ldots$, and conclusion
+$\Gamma\vdash\op{op}\,s_1\cdots s_n:T$. Operators are term formers: they are
+always fully applied.
+
+\subsection{Type theory \DM{} Fig.~1}\label{sec:tt}
+The base is a Martin-L\"of type theory with $\Sigma$-types and $\Pi$-types
+and a hierarchy of universes $\Set_k$.
+
+\textbf{(a) Context validity.}
+\begin{mathpar}
+\ruleof{wf_nil}{}{\vdash\valid}
+\and
+\ruleof{wf_cons}{\Gamma\vdash\valid\\\Gamma\vdash S:\Set_k\\x\notin\Gamma}
+ {\Gamma;x{:}S\vdash\valid}
+\end{mathpar}
+\textbf{(b) Judgmental equality.} \DM{} specifies equality by three typed
+equations. Here the same three are root computation rules,
+\[
+(\lambda x.\,t)\,s\rto t[s/x]\qquad\pz\,(s,t)\rto s\qquad\po\,(s,t)\rto t
+\]
+and equality is the \emph{untyped} conversion $\equiv$ that all root
+computation rules generate (Section~\ref{sec:dyn}). It also contains
+$\eta$ for functions$\dg$, which is not a root computation.
+
+\textbf{(c) Typing judgments.} In any valid $\Gamma$: \
+$\Set_k:\Set_{k+1}$, \ $\one:\Set_k$, \ $\unit:\one$ \
+(\rn{ty_sort}, \rn{ty_unitT}, \rn{ty_unit}).
+\begin{mathpar}
+\ruleof{ty_var}{\Gamma;x{:}S;\Delta\vdash\valid}{\Gamma;x{:}S;\Delta\vdash x:S}
+\and
+\ruleofd{ty_conv}{\Gamma\vdash s:S\\\Gamma\vdash T:\Set_k\\S\equiv T}{\Gamma\vdash s:T}
+\and
+\ruleofd{ty_alpha}{\Gamma\vdash t:T\\t\equiv_\alpha t'}{\Gamma\vdash t':T}
+\\
+\ruleofd{ty_sigma}{\Gamma\vdash S:\Set_j\\\Gamma;x{:}S\vdash T:\Set_k}
+ {\Gamma\vdash(x{:}S)\times T:\Set_{\max(j,k)}}
+\and
+\ruleof{ty_pair}{\Gamma\vdash s:S\\\Gamma\vdash t:T[s/x]}
+ {\Gamma\vdash(s,t):(x{:}S)\times T}
+\\
+\ruleof{ty_fst}{\Gamma\vdash p:(x{:}S)\times T}{\Gamma\vdash\pz\,p:S}
+\and
+\ruleof{ty_snd}{\Gamma\vdash p:(x{:}S)\times T}{\Gamma\vdash\po\,p:T[\pz\,p/x]}
+\\
+\ruleofd{ty_pi}{\Gamma\vdash S:\Set_j\\\Gamma;x{:}S\vdash T:\Set_k}
+ {\Gamma\vdash(x{:}S)\to T:\Set_{\max(j,k)}}
+\and
+\ruleofd{ty_lam}{\Gamma\vdash(x{:}S)\to T:\Set_k\\\Gamma;x{:}S\vdash t:T}
+ {\Gamma\vdash\lambda x.\,t:(x{:}S)\to T}
+\\
+\ruleof{ty_app}{\Gamma\vdash f:(x{:}S)\to T\\\Gamma\vdash s:S}
+ {\Gamma\vdash f\,s:T[s/x]}
+\end{mathpar}
+In every rule that extends the context, $x\notin\Gamma$. Marked rules:
+\rn{ty_conv} has an untyped $\equiv$ with $T$ well formed, where \DM{} has
+the typed premise $\Gamma\vdash S\equiv T:\Set_k$; the two formation rules
+take the maximum of two levels, where \DM{} uses one level $k$ throughout;
+\rn{ty_lam}, whose $\lambda$ has no annotation, takes the well-formedness of
+the function type where \DM{} has $\Gamma\vdash S:\Set_k$; \rn{ty_alpha} is
+needed because binders are named IDs.
+
+\textbf{(d) Cumulativity$\dg$.} \DM{} writes $\Set_k$ ``implicitly assuming
+cumulativity of universes''. Here it is explicit: a type in $\Set_j$ is also
+in every larger universe, and a function may be used at a function type
+with a smaller domain and a larger codomain universe.
+\begin{mathpar}
+\ruleofd{ty_cumul}{\Gamma\vdash t:\Set_j\\j\le k}{\Gamma\vdash t:\Set_k}
+\and
+\ruleofd{ty_cumul_fun}{\Gamma\vdash f:(x{:}S)\to T\\\Gamma\vdash(x{:}S)\to T:\Set_j\\
+ \Gamma\vdash(x{:}S')\to T':\Set_k\\S'\le_u S\\T\le_u T'}
+ {\Gamma\vdash f:(x{:}S')\to T'}
+\\
+\ruleofd{ul_refl}{}{S\le_u S}
+\and
+\ruleofd{ul_sort}{j\le k}{\Set_j\le_u\Set_k}
+\and
+\ruleofd{ul_pi}{S'\le_u S\\T\le_u T'}{(x{:}S)\to T\le_u(x{:}S')\to T'}
+\end{mathpar}
+Cumulativity is not part of $\equiv$.
+\ex If $f:\one\to\Set_0$ then $f:\one\to\Set_1$, and if $g:\Set_1\to\Set_0$
+then $g:\Set_0\to\Set_0$, both by \rn{ty_cumul_fun}; yet
+$\Set_0\not\equiv\Set_1$ (\texttt{OpenSignaturesEtaRegression.v}). Before
+this rule was added, $\lambda x.\,f\,x$ had the type $\one\to\Set_1$ and its
+$\eta$-reduct $f$ did not
+(\texttt{proof-archive/2026-09-27-before-function-cumulativity}).
+
+\subsection{Universe of enumerations \DM{} Fig.~2}\label{sec:enum}
+This universe defines finite collections of labels. Labels are introduced
+through the type $\op{UId}$ and are used to define finite sets through the
+universe $\op{EnumU}$. To index a specific element of such a set one writes
+an $\op{EnumT}$ code. To eliminate a finite set, the small $\Pi$-type $\spi$
+builds a \emph{lookup tuple} that maps every label of the enumeration to a
+value, and the eliminator $\op{switch}$ performs the lookup.
+
+\textbf{(a) Tags.} A tag $\code{s}$ is written with a string $s$; nothing
+computes on it.
+\begin{mathpar}
+\ruleof{ty_uid}{\Gamma\vdash\valid}{\Gamma\vdash\op{UId}:\Set}
+\and
+\ruleof{ty_tag}{\Gamma\vdash\valid}{\Gamma\vdash\code{s}:\op{UId}}
+\end{mathpar}
+\textbf{(b) Enumeration.}
+\begin{mathpar}
+\ruleof{ty_enumu}{\Gamma\vdash\valid}{\Gamma\vdash\op{EnumU}:\Set}
+\and
+\ruleof{ty_nile}{\Gamma\vdash\valid}{\Gamma\vdash\nilE:\op{EnumU}}
+\and
+\ruleof{ty_conse}{\Gamma\vdash t:\op{UId}\\\Gamma\vdash E:\op{EnumU}}
+ {\Gamma\vdash\consE{t}{E}:\op{EnumU}}
+\end{mathpar}
+\textbf{(c) Index.}
+\begin{mathpar}
+\ruleof{ty_enumt}{\Gamma\vdash E:\op{EnumU}}{\Gamma\vdash\op{EnumT}\,E:\Set}
+\and
+\ruleof{ty_zero}{\Gamma\vdash\valid}{\Gamma\vdash 0:\op{EnumT}\,(\consE{t}{E})}
+\and
+\ruleof{ty_succ}{\Gamma\vdash n:\op{EnumT}\,E}
+ {\Gamma\vdash\suc{n}:\op{EnumT}\,(\consE{t}{E})}
+\end{mathpar}
+\textbf{(d) Lookup tuples and elimination.} \DM{} gives $\spi$ and
+$\op{switch}$ by their types, with motives $P:\op{EnumT}\,E\to\Set$. Here
+they carry the universe level $k$ of the motive$\dg$:
+\[
+\begin{array}{@{}r@{\ :\ }l@{\qquad}l@{}}
+\spi^k & (E{:}\op{EnumU})\,(P{:}\op{EnumT}\,E\to\Set_k)\to\Set_k & \text{\rn{ty_epi}}\\
+\op{switch}^k & (E{:}\op{EnumU})\,(P{:}\op{EnumT}\,E\to\Set_k)\to
+  \spi^k\,E\,P\to(x{:}\op{EnumT}\,E)\to P\,x & \text{\rn{ty_switch}}
+\end{array}
+\]
+and their computation rules are
+\[
+\begin{array}{@{}r@{\ \rto\ }l@{}}
+\spi^k\,\nilE\,P & \one\\
+\spi^k\,(\consE{t}{E})\,P & P\,0\times\spi^k\,E\,(\lambda n.\,P\,(\suc{n}))\\
+\op{switch}^k\,(\consE{t}{E})\,P\,(b,b_s)\,0 & b\\
+\op{switch}^k\,(\consE{t}{E})\,P\,(b,b_s)\,(\suc{n}) &
+  \op{switch}^k\,E\,(\lambda n.\,P\,(\suc{n}))\,b_s\,n
+\end{array}
+\]
+So $\spi^k\,E\,P$ has one component of type $P\,\pos{n}$ per position.
+Neither $\op{UId}$ nor $\op{EnumU}$ has an eliminator of its own: $\spi$ is
+the only recursion over a code, and $\op{switch}$ the only use of a position.
+
+\textbf{Notation} (\DM{} Examples 1 and 2). A set of labels is written by
+enumerating them, and a map out of it by giving a value for each:
+\[
+\begin{array}{@{}r@{\ :=\ }l@{}}
+\{\tg{a},\tg{b},\tg{c}\} & \consE{\tg{a}}{(\consE{\tg{b}}{(\consE{\tg{c}}{\nilE})})}\ :\ \op{EnumU}\\
+\{\tg{a}\mapsto e_a,\ \tg{b}\mapsto e_b,\ \tg{c}\mapsto e_c\} &
+ \lambda x.\,\op{switch}^k\,\{\tg{a},\tg{b},\tg{c}\}\,P\,(e_a,(e_b,(e_c,\unit)))\,x
+ \ :\ (x{:}\op{EnumT}\,\{\tg{a},\tg{b},\tg{c}\})\to P\,x
+\end{array}
+\]
+with $P$ and $k$ left implicit (\rn{ex_lookup_map}). \DM{} applies
+$\op{switch}$ to three arguments; here it is fully applied under a
+$\lambda$.
+\ex For $E=\{\tg{nil},\tg{cons}\}$ the positions are $0$ and $\suc{0}$, and
+$\spi^k\,E\,P\equiv P\,0\times(P\,(\suc{0})\times\one)$: a lookup tuple is
+$(b_0,(b_1,\unit))$. Looking up the second label,
+$\{\tg{nil}\mapsto b_0,\tg{cons}\mapsto b_1\}\,(\suc{0})$, takes three root
+steps: $\beta$, then
+$\op{switch}^k\,E\,P\,(b_0,(b_1,\unit))\,(\suc{0})\rto
+\op{switch}^k\,\{\tg{cons}\}\,(\lambda n.\,P\,(\suc{n}))\,(b_1,\unit)\,0\rto b_1$.
+
+\textbf{Empty type$\dg$.} The empty set of labels gives
+$\bot:=\op{EnumT}\,\nilE$, with no positions, and
+$\abort^k\,A\,z:=\op{switch}^k\,\nilE\,(\lambda\_.A)\,\unit\,z$ eliminates it
+into any $A:\Set_k$ (\rn{abort_typing}, Section~\ref{sec:meta}).
+
+\subsection{Universe of descriptions \DM{} Fig.~4(a)}\label{sec:desc}
+To define a datatype one gives its \emph{code}, describing its signature
+functor: which data a node stores and where its recursive children sit.
+Only the indexed universe of \DM{} is used here (their Fig.~4, not the
+non-indexed $\op{Desc}$ of Fig.~3). Children are indexed by $I$: a code is a
+$D:\op{IDesc}\,I$, and $\code{\op{var}}\,i$ marks a child at index $i$. The
+interpretation $\interp{D}{X}$ turns the code into the type of a node's
+payload, given a family $X$ for the children. Write $\Fam:=I\to\Set_0$ for
+families and $\Def:=I\to\op{IDesc}\,I$ for definitions, which give a code at
+each index (\rn{Family}, \rn{Def}).
+
+\textbf{(a) Codes.}
+\begin{mathpar}
+\ruleofd{ty_idesc}{\Gamma\vdash I:\Set_0}{\Gamma\vdash\op{IDesc}\,I:\Set_1}
+\and
+\ruleof{ty_ivar}{\Gamma\vdash i:I}{\Gamma\vdash\code{\op{var}}\,i:\op{IDesc}\,I}
+\and
+\ruleof{ty_i1}{\Gamma\vdash\valid}{\Gamma\vdash\code{\one}:\op{IDesc}\,I}
+\and
+\ruleofd{ty_ibot}{\Gamma\vdash\valid}{\Gamma\vdash\code{\bot}:\op{IDesc}\,I}
+\\
+\ruleof{ty_iprod}{\Gamma\vdash A:\op{IDesc}\,I\\\Gamma\vdash B:\op{IDesc}\,I}
+ {\Gamma\vdash A\dprod B:\op{IDesc}\,I}
+\and
+\ruleof{ty_ipi, ty_isig}{\Gamma\vdash S:\Set\\\Gamma\vdash T:S\to\op{IDesc}\,I}
+ {\Gamma\vdash\code{\Pi}\,S\,T,\ \ \code{\Sigma}\,S\,T:\op{IDesc}\,I}
+\\
+\ruleof{ty_ichoice}{\Gamma\vdash E:\op{EnumU}\\\Gamma\vdash T:\op{EnumT}\,E\to\op{IDesc}\,I}
+ {\Gamma\vdash\code{\sigma}\,E\,T:\op{IDesc}\,I}
+\end{mathpar}
+Marked rules: \DM{} has $\op{IDesc}\,I:\Set$ for $I:\Set$, where the type of
+codes is here one universe up, as their $\op{Desc}:\Set_1$; and
+$\code{\bot}$, the code of the empty payload, is added.
+
+\textbf{Interpretation.} A code is interpreted by the type former of
+the same name; $\code{\op{var}}\,i$ is the child at $i$.
+\[
+\interp{(D{:}\op{IDesc}\,I)}{(X{:}I\to\Set)}:\Set\qquad\text{\rn{ty_interp}}
+\]
+\[
+\begin{array}{@{}r@{\ \rto\ }l@{\qquad}r@{\ \rto\ }l@{}}
+\interp{\code{\op{var}}\,i}{X} & X\,i &
+\interp{A\dprod B}{X} & \interp{A}{X}\times\interp{B}{X}\\
+\interp{\code{\one}}{X} & \one &
+\interp{\code{\Pi}\,S\,T}{X} & (s{:}S)\to\interp{T\,s}{X}\\
+\interp{\code{\bot}}{X} & \bot\quad\dg &
+\interp{\code{\Sigma}\,S\,T}{X} & (s{:}S)\times\interp{T\,s}{X}\\
+\multicolumn{2}{c}{} &
+\interp{\code{\sigma}\,E\,T}{X} & (e{:}\op{EnumT}\,E)\times\interp{T\,e}{X}
+\end{array}
+\]
+A datatype definition starts with a finite choice of constructors: a
+$\code{\sigma}$ over the set of their names, with a map giving each one's
+payload. A constructor whose payload is $\code{\bot}$ is \emph{hidden}: its
+label is still in the set, but $\interp{\code{\bot}}{X}\rto\bot$ and no closed
+term has that type, so it can never be built (\rn{ex_no_bot_payload}).
+\ex Natural numbers (\DM{} Example~3, here with index type $I=\one$):
+\[
+\op{NatD}:=\lambda\_.\,\code{\sigma}\,\{\tg{zero},\tg{suc}\}\,
+ \{\tg{zero}\mapsto\code{\one},\ \tg{suc}\mapsto\code{\op{var}}\,\unit\}\ :\ \Def.
+\]
+A payload in $\interp{\op{NatD}\,\unit}{X}$ is a position paired with that
+constructor's data: $(0,\unit)$, or $(\suc{0},n)$ with $n:X\,\unit$
+(\rn{ex_nat_def}, \rn{ex_nat_payloads}).
+Interpretation computes under binders too:
+$\interp{\code{\Sigma}\,A\,(\lambda\_.\code{\op{var}}\,\unit)}{X}\equiv A\times X\,\unit$
+is one root step, then $\beta$ under the binder of the pair type (which
+evaluation does not do, but $\equiv$ does; Section~\ref{sec:dyn}).
+
+\subsection{Induction hypotheses$\dg$}\label{sec:hyps}
+Induction needs, for a payload $xs$, one hypothesis for each recursive child
+inside $xs$. In \DM{} the function $\op{iAll}$ ``computes the inductive
+hypothesis'', and its definition is left to Chapman et al.\ (2010). Here
+$\allh$ and $\hyps$ are operators with their own rules: $\allh$ computes the
+type of the collection of hypotheses, and $\hyps$ builds the collection from
+a function $h$ that gives the result at every child. For a family $X$,
+$\op{Mot}(X):=((i{:}I)\times X\,i)\to\Set_0$ is the type of motives and
+$\op{Rec}(X,P):=(i{:}I)\to(y{:}X\,i)\to P\,(i,y)$ the type of $h$
+(\rn{motive}, \rn{recursive_method}).
+\[
+\begin{array}{@{}r@{\ :\ }l@{\qquad}l@{}}
+\allh & (D{:}\op{IDesc}\,I)\,(X{:}\Fam)\,(xs{:}\interp{D}{X})\,(P{:}\op{Mot}(X))\to\Set_0
+ & \text{\rn{ty_iall}}\\
+\hyps & (D{:}\op{IDesc}\,I)\,(X{:}\Fam)\,(P{:}\op{Mot}(X))\,(h{:}\op{Rec}(X,P))\,
+ (xs{:}\interp{D}{X})\to\allh\,D\,X\,xs\,P & \text{\rn{ty_hyps}}
+\end{array}
+\]
+\textbf{Computation.} Both follow the code $D$ and the shape of the payload.
+Write $\mathcal A_D(xs)=\allh\,D\,X\,xs\,P$ and
+$\mathcal H_D(xs)=\hyps\,D\,X\,P\,h\,xs$.
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}l@{\qquad}l@{\qquad}l@{\qquad}l@{}}
+\toprule
+$D$ & $xs$ & $\mathcal A_D(xs)\rto$ & $\mathcal H_D(xs)\rto$\\
+\midrule
+$\code{\op{var}}\,i$ & $y$ & $P\,(i,y)$ & $h\,i\,y$\\
+$\code{\one}$ & $\unit$ & $\one$ & $\unit$\\
+$\code{\bot}$ & $z$ & $\one$ & $\unit$\\
+$A\dprod B$ & $(a,b)$ &
+ $\mathcal A_{A}(a)\times\mathcal A_{B}(b)$ &
+ $(\mathcal H_{A}(a),\mathcal H_{B}(b))$\\
+$\code{\Pi}\,S\,T$ & $f$ &
+ $(s{:}S)\to\mathcal A_{T\,s}(f\,s)$ & $\lambda s.\,\mathcal H_{T\,s}(f\,s)$\\
+$\code{\Sigma}\,S\,T$ & $(s,y)$ &
+ $\mathcal A_{T\,s}(y)$ & $\mathcal H_{T\,s}(y)$\\
+$\code{\sigma}\,E\,T$ & $(e,y)$ &
+ $\mathcal A_{T\,e}(y)$ & $\mathcal H_{T\,e}(y)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\ex For the two payloads of $\op{NatD}$: the $\tg{zero}$ payload $(0,\unit)$
+has no child, so its hypotheses have type $\one$ and are $\unit$; the
+$\tg{suc}$ payload $(\suc{0},n)$ has the one child $n$, so
+$\allh\,(\op{NatD}\,\unit)\,X\,(\suc{0},n)\,P$ evaluates to $P\,(\unit,n)$ and
+$\hyps\,(\op{NatD}\,\unit)\,X\,P\,h\,(\suc{0},n)$ to $h\,\unit\,n$
+(\rn{ex_nat_hyps}).
+
+\subsection{Fix-point \DM{} Fig.~4(b),(c)}\label{sec:mu}
+The codes are interpreted to build the least fix-point: $\mu D$ is the
+family whose values at index $i$ are $\roll\,xs$ for a payload $xs$ of $D\,i$
+whose children are again in $\mu D$. Its argument is a function from indices
+to codes. Its eliminator is induction. (\DM{} write $\mu^i$ and
+$\op{iinduction}$.)
+
+\textbf{(b) Fix-point.}
+\begin{mathpar}
+\ruleof{ty_mui}{\Gamma\vdash D:I\to\op{IDesc}\,I}{\Gamma\vdash\mu D:I\to\Set}
+\and
+\ruleof{ty_in_mui}{\Gamma\vdash xs:\interp{D\,i}{(\mu D)}}{\Gamma\vdash\roll\,xs:\mu D\,i}
+\end{mathpar}
+\textbf{(c) Elimination principle.}
+\[
+\begin{array}{@{}r@{\ :\ }l@{}}
+\op{ind} & (D{:}I\to\op{IDesc}\,I)\,(P{:}((i{:}I)\times\mu D\,i)\to\Set)\to{}\\
+ & \bigl((i{:}I)\,(xs{:}\interp{D\,i}{(\mu D)})\to
+   \allh\,(D\,i)\,(\mu D)\,xs\,P\to P\,(i,\roll\,xs)\bigr)\to
+   (i{:}I)\,(x{:}\mu D\,i)\to P\,(i,x)
+ \qquad\text{\rn{ty_ind}}
+\end{array}
+\]
+Its computation rule calls the step with the payload and its hypotheses,
+built by recursive calls:
+\[
+\op{ind}\,D\,P\,s\,i\,(\roll\,xs)\rto
+ s\,i\,xs\,\bigl(\hyps\,(D\,i)\,(\mu D)\,P\,
+   (\lambda j\,y.\,\op{ind}\,D\,P\,s\,j\,y)\,xs\bigr)
+\]
+\ex $\op{Nat}:=\mu\,\op{NatD}\,\unit$, with $\op{zero}:=\roll\,(0,\unit)$ and
+$\op{suc}\,n:=\roll\,(\suc{0},n)$ (\rn{ex_nat_values}). Induction on
+$\op{suc}\,n$ calls the step with the payload $(\suc{0},n)$ and the
+hypothesis $h\,\unit\,n$ of the previous example, where $h$ is the recursive
+call: the hypothesis is $\op{ind}\,\op{NatD}\,P\,s\,\unit\,n$.
+
+\subsection{Parameterized closure$\dg$}\label{sec:close}
+This subsection is the extension; nothing in it comes from \DM. In $\mu D$
+one definition describes every layer of a value. $\cl{F}{G}$ separates two
+roles: $F$ describes the \emph{outer} layer of a value, and $G$ describes
+every layer below it. So $\cl{G}{G}$ is the full datatype of $G$, and
+$\cl{F}{G}$ is a type whose root node has the shape $F$ and whose children
+are full values of $G$. Write
+\[
+C_{F,G}(i):=\cl{F}{G}\,i,\qquad X_G:=\cl{G}{G}
+\]
+(\rn{CloseAt}, \rn{carrier}): a value of $C_{F,G}(i)$ is $\roll\,xs$ with
+payload $xs:\interp{F\,i}{X_G}$.
+
+\textbf{(a) Formation and constructor.} $F$ and $G$ are unrelated: there is
+no inclusion premise.
+\begin{mathpar}
+\ruleofd{ty_close}{\Gamma\vdash F:\Def\\\Gamma\vdash G:\Def}{\Gamma\vdash\cl{F}{G}:\Fam}
+\and
+\ruleofd{ty_in_close}{\Gamma\vdash F:\Def\\\Gamma\vdash G:\Def\\\Gamma\vdash i:I\\
+ \Gamma\vdash xs:\interp{F\,i}{X_G}}
+ {\Gamma\vdash\roll\,xs:C_{F,G}(i)}
+\end{mathpar}
+\textbf{(b) Case analysis.} A value is opened one layer; the motive may live
+in any universe.
+\[
+\begin{array}{@{}r@{\ :\ }l@{}}
+\op{closeCase}^k & (F,G{:}\Def)\,(i{:}I)\,(Q{:}C_{F,G}(i)\to\Set_k)\to{}\\
+ & \bigl((xs{:}\interp{F\,i}{X_G})\to Q\,(\roll\,xs)\bigr)\to
+ (x{:}C_{F,G}(i))\to Q\,x\qquad\text{\rn{ty_close_case}}
+\end{array}
+\]
+\[
+\op{closeCase}^k\,F\,G\,i\,Q\,b\,(\roll\,xs)\rto b\,xs
+\]
+In particular
+$\unroll_{F,G,i}\,x:=\op{closeCase}^0\,F\,G\,i\,(\lambda\_.\interp{F\,i}{X_G})\,(\lambda y.y)\,x$
+returns the payload:
+$\unroll_{F,G,i}\,(\roll\,xs)\rto(\lambda y.y)\,xs\rto xs$
+(\rn{unroll_typing}, \rn{unroll_beta}, Section~\ref{sec:meta}).
+
+\textbf{(c) Elimination principle.} The scrutinee has outer definition $F$,
+but its children are values of $X_G$, with outer definition $G$. The motive
+therefore quantifies over the outer definition, and
+$P^G:=\lambda z.\,P\,G\,(\pz\,z)\,(\po\,z)$ is its instance at the children
+(\rn{diagonal_motive}). Inductive motives live in $\Set_0$.
+\[
+\begin{array}{@{}r@{\ :\ }l@{}}
+\op{closeInd} & (G{:}\Def)\,
+ \bigl(P{:}(H{:}\Def)\to(j{:}I)\to C_{H,G}(j)\to\Set_0\bigr)\to{}\\
+ & \bigl((H{:}\Def)\,(j{:}I)\,(xs{:}\interp{H\,j}{X_G})\to
+   \allh\,(H\,j)\,X_G\,xs\,P^G\to P\,H\,j\,(\roll\,xs)\bigr)\to{}\\
+ & (F{:}\Def)\,(i{:}I)\,(x{:}C_{F,G}(i))\to P\,F\,i\,x
+ \qquad\text{\rn{ty_close_ind}}
+\end{array}
+\]
+\[
+\op{closeInd}\,G\,P\,s\,F\,i\,(\roll\,xs)\rto
+ s\,F\,i\,xs\,\bigl(\hyps\,(F\,i)\,X_G\,P^G\,
+   (\lambda j\,y.\,\op{closeInd}\,G\,P\,s\,G\,j\,y)\,xs\bigr)
+\]
+The recursive call switches the outer definition from $F$ to $G$. There is
+\emph{no} rule unfolding a $\op{close}$ type, and $C_{G,G}$ is not identified
+with $\mu\,G$; the constructor $\roll$ is shared by both.
+\ex Positive numbers keep both labels of $\op{NatD}$ and hide $\tg{zero}$:
+\[
+\op{PosD}:=\lambda\_.\,\code{\sigma}\,\{\tg{zero},\tg{suc}\}\,
+ \{\tg{zero}\mapsto\code{\bot},\ \tg{suc}\mapsto\code{\op{var}}\,\unit\}.
+\]
+$C_{\op{NatD},\op{NatD}}(\unit)$ is the natural numbers again, and
+$C_{\op{PosD},\op{NatD}}(\unit)$ is the positive ones. Its values are
+$\roll\,(\suc{0},n)$ with $n$ an arbitrary natural number of
+$C_{\op{NatD},\op{NatD}}(\unit)$: the \emph{same terms} as the successors
+there, at the same position (\rn{ex_pos_values}). No closed value uses
+$\tg{zero}$, whose payload would have type $\bot$: every closed term of the
+type evaluates to such a successor (\rn{ex_pos_only_suc}). Hiding
+constructors of the outer definition while keeping the recursive one is how
+Part~II obtains subtypes.
+
+%----------------------------------------------------------------------
+\section{Evaluation, reduction and conversion}\label{sec:dyn}
+The root computations $\rto$ of Section~\ref{sec:core} generate three relations:
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}l@{\quad}l@{\quad}p{112mm}@{}}
+\toprule
+$t\to u$ & \rn{step} & \emph{Evaluation.} $\rto$ under weak contexts
+$\mathcal E::=[\,]\mid\mathcal E\,a\mid(\mathcal E,b)\mid(a,\mathcal E)\mid
+\pz\,\mathcal E\mid\po\,\mathcal E\mid\suc{\mathcal E}\mid\roll\,\mathcal E$,
+the code $E$ of $\spi$, the $E$, tuple and scrutinee of $\op{switch}$,
+the description of $\interp{-}{X}$, the description and data argument of
+$\allh$/$\hyps$, and the scrutinee of
+$\op{ind}$, $\op{closeCase}$, $\op{closeInd}$. Never under $\lambda$ or in
+an argument. $\to^*$ is \rn{eval}; \rn{next_step}/\rn{run} is a
+deterministic strategy for it.\\
+$t\red u$ & \rn{reduction} & \emph{Full reduction.} $\rto$ in every
+position, including under binders, plus
+$\lambda x.\,f\,x\red f$ $(x\notin\op{FV}(f))$.\\
+$t\equiv u$ & \rn{conv} & \emph{Conversion.} Least equivalence that is a
+congruence for every term former and contains $\to$, $\eta$ and
+$\equiv_\alpha$.\\
+\bottomrule
+\end{tabular}
+\end{center}
+\textbf{Values} (\rn{value}): $\Set_k$, function and pair types, $\lambda$, pairs,
+$\one$, $\unit$, $\op{UId}$, $\code{s}$, $\op{EnumU}$, $\nilE$, $\consE{t}{E}$,
+$\op{EnumT}\,E$, $0$, $\suc{n}$, $\op{IDesc}\,I$, all description codes,
+$\mu D$, $\mu D\,i$, $\cl{F}{G}$, $\cl{F}{G}\,i$, and $\roll\,x$.
+\ex $t=\lambda x.\,(\lambda y.y)\,x$ is a value, so it has no $\to$ step,
+but $t\red\lambda x.x$ ($\beta$ under the binder) and $t\red\lambda y.y$
+($\eta$).
+
+%----------------------------------------------------------------------
+\section{Observational equivalence}\label{sec:obs}
+Let $\mathbb B:=\op{EnumT}\,\{\tg{true},\tg{false}\}$.
+A closing substitution $\gamma$ for $\Gamma$ (\rn{closing}) assigns to each
+$x{:}A$ a closed $u$ with $\varnothing\vdash u:A\gamma$.
+\[
+\begin{array}{@{}r@{\ }c@{\ }l@{}}
+t\obs^{\varnothing}_A u &:\Leftrightarrow&
+ \varnothing\vdash t,u:A\ \wedge\ \forall\,(x{:}A\vdash c:\mathbb B),\ v\in\{0,\suc{0}\}.\
+ \ c[t/x]\to^* v\iff c[u/x]\to^* v\\[2pt]
+\Gamma\vdash t\obs_A u &:\Leftrightarrow&
+ \Gamma\vdash t,u:A\ \wedge\ \forall\gamma\text{ closing }\Gamma.\ \
+ t\gamma\obs^{\varnothing}_{A\gamma}u\gamma
+\end{array}
+\]
+(\rn{closed_observational_eq}, \rn{observational_eq}.) $\obs$ is an
+equivalence, contains typed conversion, is (on closed terms) a congruence
+for application and typed contexts, is invariant under $\equiv$ on the type, and is equivalently
+tested by closed functions $A\to\mathbb B$
+(\rn{observational_conversion}, \rn{closed_observational_congruence},
+\rn{closed_observational_context}, \rn{closed_observational_application},
+\rn{observational_type_conversion}, \rn{closed_observational_function_tests}).
+\ex For a variable $x:C_{F,G}(i)$, the terms $\roll\,(\unroll_{F,G,i}\,x)$
+and $x$ have no common reduct, so they are not convertible; but every
+closing substitution replaces $x$ by a term evaluating to some $\roll\,y$,
+after which $\unroll$ computes, so they are $\obs$
+(\rn{close_roll_unroll}).
+
+%----------------------------------------------------------------------
+\section{Core metatheory}\label{sec:meta}
+Unless noted, statements are in the \texttt{Theorems} module; the two about
+full reduction are in \texttt{ComputationPreservation} and
+\texttt{EtaPolymorphism}. The \texttt{Audit} module prints all their
+assumptions.
+
+\newcommand{\thm}[2]{\rn{#1} & $#2$\\}
+\renewcommand{\arraystretch}{1.3}
+\textbf{Structure.}\par
+\begin{tabular}{@{}l@{\quad}l@{}}
+\thm{context_validity}{\jd{t}{A}\imp\Gamma\vdash\valid}
+\thm{type_correctness}{\jd{t}{A}\imp\exists k.\ \jd{A}{\Set_k}}
+\thm{weakening}{\jd{t}{A},\ \jd{B}{\Set_k},\ x\notin\Gamma\imp\Gamma;x{:}B\vdash t:A}
+\thm{substitution}{x\notin\Gamma,\ \Gamma;x{:}A\vdash t:B,\ \jd{u}{A}\imp\jd{t[u/x]}{B[u/x]}}
+\thm{closing_substitution}{\jd{t}{A},\ \gamma\text{ closing }\Gamma\imp\varnothing\vdash t\gamma:A\gamma}
+\thm{conversion_substitution}{t\equiv u\imp t[s/x]\equiv u[s/x]}
+\end{tabular}
+
+\textbf{Reduction.}\par
+\begin{tabular}{@{}l@{\quad}l@{}}
+\thm{preservation}{\jd{t}{A},\ t\to u\imp\jd{u}{A}\quad(\text{and for }\to^*:\ \text{\rn{preservation_eval}})}
+\thm{named_computation_preservation}{\jd{t}{A},\ t\red_{\beta}u\imp\jd{u}{A}
+ \quad(\red_\beta:\ \rto\text{ in every position, no }\eta)}
+\thm{progress}{\varnothing\vdash t:A\imp\op{value}(t)\ \vee\ \exists u.\ t\to u}
+\thm{normalization}{\jd{t}{A}\imp t\text{ is strongly normalizing for }\red}
+\thm{normalization_eval}{\varnothing\vdash t:A\imp\exists v.\ t\to^*v\wedge\op{value}(v)}
+\thm{confluence}{\jd{t}{A},\ t\red^*u,\ t\red^*v\imp\exists w\equiv_\alpha w'.\ u\red^*w\wedge v\red^*w'}
+\thm{conversion_joinability}{\jd{t}{A},\ \jd{u}{A},\ t\equiv u\imp\exists w\equiv_\alpha w'.\ t\red^*w\wedge u\red^*w'}
+\thm{consistency}{\neg\exists t.\ \varnothing\vdash t:\bot}
+\thm{canonical_forms_close}{\varnothing\vdash v:C_{F,G}(i),\ \op{value}(v)\imp
+ \exists x.\ v=\roll\,x\wedge\varnothing\vdash x:\interp{F\,i}{X_G}}
+\end{tabular}
+
+Both also hold for raw terms, with the typing premises dropped
+(\rn{raw_confluence}, \rn{raw_conversion_joinability}).
+
+\textbf{Refuted} (\rn{full_preservation_refuted}): preservation for $\red$
+with $\eta$ fails:
+\[
+T=(A{:}\Set_0)\to A\to A,\quad f=(\lambda z.\lambda B.z)(\lambda x.x):\qquad
+\vdash\lambda A.\,f\,A:T,\qquad\lambda A.\,f\,A\red f,\qquad\nvdash f:T.
+\]
+Unannotated $\lambda$ lets the type of $z$ depend on $A$ only inside the
+$\eta$-expansion. $\eta$ therefore lives in $\equiv$ and $\red$ but not in
+$\to$; safety uses $\to$, and normalization/confluence of $\red$ need no
+preservation for it.
+
+\textbf{Derived core rules.} Write $\op{CI}$ for the premise
+$\jd{F,G}{\Def}\wedge\jd{i}{I}$ (\rn{close_input}).\par
+\begin{tabular}{@{}l@{\quad}l@{}}
+\thm{abort_typing}{\jd{A}{\Set_k},\ \jd{z}{\bot}\imp\jd{\abort^k\,A\,z}{A}}
+\thm{unroll_typing}{\op{CI},\ \jd{x}{C_{F,G}(i)}\imp\jd{\unroll_{F,G,i}\,x}{\interp{F\,i}{X_G}}}
+\thm{unroll_beta}{\unroll_{F,G,i}(\roll\,x)\to^*x}
+\thm{close_roll_unroll}{\op{CI},\ \jd{x}{C_{F,G}(i)}\imp\Gamma\vdash\roll\,(\unroll_{F,G,i}\,x)\obs_{C_{F,G}(i)}x
+ \quad(\text{not a conversion})}
+\end{tabular}
+
+\section{Core lemmas and proof structure}\label{sec:lemmas}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}>{\raggedright}p{26mm}@{\quad}p{140mm}@{}}
+\toprule
+Binding &
+Substitution respects $\equiv_\alpha$ and composes up to $\equiv_\alpha$;
+$\op{FV}(t\sigma)=\bigcup_{v\in\op{FV}(t)}\op{FV}(\sigma v)$; a binder may be
+renamed to any ID not free in the body; typed terms are scoped by their
+context (\rn{substitute_alpha}, \rn{substitute_compose},
+\rn{free_vars_substitute}, \rn{alpha_rename_lam/pi/sigma},
+\rn{typing_scoped}, \rn{typing_fresh_not_free}). Typing depends only on the
+context as a map, hence exchange (\rn{typing_ctx_equal},
+\rn{ctx_equal_exchange}).\\
+Nameless transport &
+The named calculus is encoded into a de Bruijn calculus
+(\texttt{nameless/DB*.v}); typing is preserved and reflected
+(\rn{typing_encoding}, \rn{typing_reflection}), and reduction commutes with
+encoding. Weakening, substitution, type correctness, preservation,
+confluence and normalization are proved there and transported back
+(\rn{named_weakening}, \rn{named_substitution}, \rn{named_preservation},
+\rn{raw_confluence}, \rn{named_full_normalization}).\\
+Conversion inversion &
+From joinability: $\equiv$ preserves rigid heads (type formers, codes, tags,
+positions, $\roll$; not $\lambda$ or pairs, because of $\eta$); equal tags
+have equal strings; enumeration codes, $\code{\sigma}$ codes and function-type
+domains are injective up to $\equiv$
+(\rn{raw_head}, \rn{conv_tags}, \rn{conv_conse}, \rn{conv_choice},
+\rn{pi_domain_conversion}); $\Set_0\not\equiv\Set_1$ and
+$\Set_1\not\le_u\Set_0$.\\
+Canonical forms &
+A value at a close type is $\roll\,x$; at $\op{EnumT}\,E$ it is $0$ or
+$\suc{n}$; at $\interp{\code{\sigma}\,E\,T}{X}$ it is a pair; a closed term
+of $\op{EnumT}\,\{\code{s_0},\ldots,\code{s_{m-1}}\}$ evaluates to some
+$\pos{n}$ with $n<m$; no value has
+type $\bot$ (\rn{close_value_shape}, \rn{enum_value_shape},
+\rn{choice_value_shape}, \rn{enum_normal_form}, \rn{bottom_no_value}).
+Progress follows from these plus joinability
+(\rn{progress_from_conversion}); consistency from normalization, preservation
+and \rn{bottom_no_value}.\\
+Normalization &
+A cumulative reducibility-candidate model of the nameless calculus:
+a cumulative tower of universes, descriptions as positive (monotone)
+functors with positive fixed points for $\mu$ and $\op{close}$,
+computability of every primitive operator, then the fundamental theorem
+(\rn{semantic_fundamental}, \rn{typing_full_normalization}).\\
+\bottomrule
+\end{tabular}
+
+
+\newpage
+\Part{II}{Elaboration into the core}
+%----------------------------------------------------------------------
+\section{Elaboration: rows, dead branches, coercions}\label{sec:elab}
+The source language has named constructors, exhaustive case and subtyping;
+all three elaborate to core terms of Part~I. Every judgment below
+\emph{outputs} a core term after $\rightsquigarrow$; none of them is used by
+a core rule. These are relations, not algorithms.
+
+\textbf{The idea: hide constructors with $\code{\bot}$.} A subtype of a
+datatype keeps \emph{all} of its constructor labels and gives the
+constructors it excludes the empty payload $\code{\bot}$. Three things then
+follow from $\bot$ being empty. The programmer cannot build a hidden
+constructor, because its payload would be a term of type $\bot$. A case
+analysis need not handle it, because the missing branch is discharged by
+$\abort$. And a coercion to a larger type never meets it, so the value passes
+through unchanged, at the same position. The rules below implement this with
+the judgment $\op{dead}$, which certifies that a payload type is empty, and
+they relate two rows only when both list the same constructor names.
+
+\subsection{Rows and signatures}
+A datatype definition starts with a finite choice of constructors
+(Section~\ref{sec:desc}). A \emph{row}
+$r=[(\ell_0,D_0),\ldots,(\ell_{n-1},D_{n-1})]$ lists constructor names with
+their payload descriptions; it denotes the $\code{\sigma}$ code over the set
+of those names, with the map sending each name to its payload (the map is
+at level $1$, with motive $\lambda\_.\op{IDesc}\,I$).
+\[
+\begin{array}{@{}l@{\qquad}l@{}}
+E_r:=\{\code{\ell_0},\ldots,\code{\ell_{n-1}}\} &
+p_r:=\{\code{\ell_0}\mapsto D_0,\ldots,\code{\ell_{n-1}}\mapsto D_{n-1}\}\\[2pt]
+\rows{r}:=\code{\sigma}\,E_r\,p_r\quad(\text{\rn{row_code}}) &
+\op{sig}(i.\,r):=\lambda i.\,\rows{r}\quad(\text{\rn{signature}})\\[2pt]
+\multicolumn{2}{@{}l@{}}{\op{RowOK}_\Gamma(r)\ :\Leftrightarrow\
+ \text{names of $r$ distinct}\ \wedge\ \forall(\ell,D)\in r.\ \jd{D}{\op{IDesc}\,I}
+ \quad(\text{\rn{row_input}})}\\[2pt]
+\multicolumn{2}{@{}l@{}}{\Gamma\vdash D\Downarrow r\ :\Leftrightarrow\
+ \op{RowOK}_\Gamma(r)\ \wedge\ \jd{D}{\op{IDesc}\,I}\ \wedge\ D\equiv\rows{r}
+ \quad(\text{\rn{row_view}})}
+\end{array}
+\]
+\textbf{Names and positions.} The constructor names of a row become the
+tags of $E_r$; core terms only ever compute with positions.
+$\op{At}(E,s,n)$ (\rn{label_at}) says that name $s$ sits at position $n$ of
+$E$: \ $\op{At}(\consE{\code{s}}{E},s,0)$ (\rn{at_here}); \
+$\op{At}(E,s,n)\Rightarrow\op{At}(\consE{t}{E},s,\suc{n})$ (\rn{at_there}); closed
+under $\equiv$ in $E$ and $n$ (\rn{at_convert}). Every entry satisfies
+$\op{At}(E_r,\ell_n,\pos{n})$, and with distinct names the position of a name
+is unique up to $\equiv$ (Section~\ref{sec:emeta}).
+
+\textbf{Handlers}, one per row entry, are assembled by a dispatcher on the
+tag:
+\[
+\begin{array}{@{}l@{}}
+\disp^{k}_{r,X,Y}(h_s):=\lambda z.\,\bigl(\op{switch}^k\,E_r\,
+  (\lambda c.\,\interp{p_r\,c}{X}\to Y)\,(h_0,(\ldots,\unit))\,(\pz\,z)\bigr)(\po\,z)
+  \quad(\text{\rn{row_map}})\\[2pt]
+\op{retag}_m:=\lambda y.\,(\pos{m},y)\qquad
+\op{exfalso}^{k}_{Y}(d):=\lambda y.\,\abort^k\,Y\,(d\,y)
+\end{array}
+\]
+\textbf{Running example.} Take $I=\one$, an element type $A:\Set_0$,
+$K_A:=\code{\Sigma}\,A\,(\lambda\_.\code{\op{var}}\,\unit)$, and the rows and
+signatures
+\[
+r_L:=[(\texttt{nil},\code{\one}),(\texttt{cons},K_A)],\quad
+r_N:=[(\texttt{nil},\code{\bot}),(\texttt{cons},K_A)],\quad
+L_A:=\op{sig}(\_.\,r_L),\quad N_A:=\op{sig}(\_.\,r_N),
+\]
+that is,
+$L_A=\lambda\_.\,\code{\sigma}\,\{\tg{nil},\tg{cons}\}\,\{\tg{nil}\mapsto\code{\one},\ \tg{cons}\mapsto K_A\}$
+and
+$N_A=\lambda\_.\,\code{\sigma}\,\{\tg{nil},\tg{cons}\}\,\{\tg{nil}\mapsto\code{\bot},\ \tg{cons}\mapsto K_A\}$:
+the same labels, with \texttt{nil} hidden. Then
+\[
+\op{List}\,A:=C_{L_A,L_A}(\unit),\qquad\op{NonEmpty}\,A:=C_{N_A,L_A}(\unit).
+\]
+Since $\interp{K_A}{X_{L_A}}\equiv A\times\op{List}\,A$, the values of
+$\op{List}\,A$ are $\op{nil}=\roll\,(0,\unit)$ and $\roll\,(\pos{1},(a,x))$,
+and the values of $\op{NonEmpty}\,A$ are $\roll\,(\pos{1},(a,x))$ only, with
+the tail $x$ a full $\op{List}\,A$ in both cases. A non-empty list is the
+same term as the corresponding list, and \texttt{cons} sits at position $1$
+in both rows: $\op{At}(E_{r_L},\texttt{cons},\pos{1})$ and
+$\op{At}(E_{r_N},\texttt{cons},\pos{1})$. Every closed term of
+$\op{NonEmpty}\,A$ evaluates to a \texttt{cons} (\rn{ex_nonempty_only_cons}).
+In the sources these are \rn{list_rows}, \rn{nonempty_rows}, \rn{list_type}
+and \rn{nonempty_type}.
+
+\subsection{Dead descriptions and description coercions}
+Standing premises of every $\op{dead}$ and $\preceq$ rule:
+$\jd{D,D'}{\op{IDesc}\,I}$ and $\jd{X}{\Fam}$ (the handler rules \rn{rh_*}
+have no typing premise of their own).
+
+\textbf{(a) Dead descriptions.} $\dead{D}{X}{d}$ certifies emptiness with a witness $d:\interp{D}{X}\to\bot$.
+\begin{mathpar}
+\ruleof{dead_bot}{D\equiv\code{\bot}}{\dead{D}{X}{\lambda z.z}}
+\and
+\ruleof{dead_nil}{D\equiv\code{\sigma}\,\nilE\,T}{\dead{D}{X}{\lambda z.\,\pz\,z}}
+\and
+\ruleof{dead_provided}{\jd{d}{\interp{D}{X}\to\bot}}{\dead{D}{X}{d}}
+\\
+\ruleof{dead_left, dead_right}{D\equiv D_0\dprod D_1\\\dead{D_m}{X}{d}}
+ {\dead{D}{X}{\lambda z.\,d(\pi_m\,z)}}
+\and
+\ruleof{dead_choice}{\Gamma\vdash D\Downarrow r\\
+ \forall j.\ \dead{D_j}{X}{d_j}}
+ {\dead{D}{X}{\disp^{0}_{r,X,\bot}(d_s)}}
+\end{mathpar}
+In \rn{dead_left} and \rn{dead_right}, $m$ is $0$ or $1$.
+
+\textbf{(b) Description coercions and handlers.} $\dsub{D}{D'}{X}{q}$
+outputs $q:\interp{D}{X}\to\interp{D'}{X}$. With $Y:=\interp{D'}{X}$:
+\begin{mathpar}
+\ruleof{ds_conv}{D\equiv D'}{\dsub{D}{D'}{X}{\lambda z.z}}
+\and
+\ruleof{ds_dead}{\dead{D}{X}{d}}{\dsub{D}{D'}{X}{\op{exfalso}^{0}_{Y}(d)}}
+\and
+\ruleof{ds_rows}{\Gamma\vdash D\Downarrow r\\\Gamma\vdash D'\Downarrow r'\\
+ \text{names}(r)=\text{names}(r')\\
+ \forall j.\ r_j\hookrightarrow_{r'}h_j}
+ {\dsub{D}{D'}{X}{\disp^{0}_{r,X,Y}(h_s)}}
+\\
+\ruleof{rh_live}{r'[m]=(\ell,D'')\\\interp{D_j}{X}\equiv\interp{D''}{X}}
+ {(\ell,D_j)\hookrightarrow_{r'}\op{retag}_m}
+\and
+\ruleof{rh_dead}{\dead{D_j}{X}{d}}
+ {(\ell,D_j)\hookrightarrow_{r'}\op{exfalso}^{0}_{Y}(d)}
+\end{mathpar}
+\rn{ds_rows} relates two rows only if they list the same constructor names.
+Each constructor of the source is then either \emph{hidden}, with a dead
+payload such as $\code{\bot}$, or \emph{live}, with the same payload type as
+in the target up to conversion. Since the names agree and are distinct, the
+$m$ of \rn{rh_live} is the position of the source entry itself: a live
+constructor keeps its position (\rn{ex_live_keeps_position}).
+\ex $\rows{r_N}\preceq_X\rows{r_L}\rightsquigarrow
+\disp^0_{r_N,X,Y}([\op{exfalso}^0_Y(\lambda z.z),\op{retag}_1])$:
+\texttt{nil} is dead by \rn{dead_bot}, and \texttt{cons} is live and stays at
+position $1$ (\rn{ex_embed_nonempty_list}). Going from $r_L$ to $r_N$ would
+need \texttt{nil}, with payload $\code{\one}$, to be dead or to have the
+payload $\code{\bot}$; it is neither, since $\code{\one}$ is not dead in a
+closable context (see the case example below). A row that drops the label,
+$[(\texttt{cons},K_A)]$, is related to neither of them: its names differ.
+
+\subsection{Type coercions}
+$\subt{A}{B}{c}$ outputs $c:A\to B$ (\rn{sub}).
+\begin{mathpar}
+\ruleof{su_conv}{\jd{A}{\Set_j}\\\jd{B}{\Set_k}\\A\equiv B}{\subt{A}{B}{\lambda x.x}}
+\and
+\ruleof{su_trans}{\subt{A}{B}{c}\\\subt{B}{C}{d}}{\subt{A}{C}{\lambda x.\,d(c\,x)}}
+\and
+\ruleof{su_bottom}{\jd{A}{\Set_k}}{\subt{\bot}{A}{\lambda z.\,\abort^k\,A\,z}}
+\\
+\ruleof{su_pi}{y\notin\Gamma\\
+ \jd{(x{:}A)\to B}{\Set_j}\\\jd{(y{:}A')\to B'}{\Set_k}\\
+ \subt{A'}{A}{c}\\
+ \Gamma;y{:}A'\vdash B[c\,y/x]\sqsubseteq B'\rightsquigarrow d}
+ {\subt{(x{:}A)\to B}{(y{:}A')\to B'}{\lambda f.\,\lambda y.\,d\,(f\,(c\,y))}}
+\\
+\ruleof{su_close}{\jd{F,H,G}{\Def}\\\jd{i}{I}\\\dsub{F\,i}{H\,i}{X_G}{q}}
+ {\subt{C_{F,G}(i)}{C_{H,G}(i)}{\lambda x.\,\roll\,(q\,(\unroll_{F,G,i}\,x))}}
+\end{mathpar}
+\rn{su_close} changes only the outer layer; the recursive definition $G$ is
+the same on both sides, so a coercion is a single retagging, not a traversal.
+\ex By \rn{su_close} and the previous example,
+$\subt{\op{NonEmpty}\,A}{\op{List}\,A}{\op{toList}}$ with
+$\op{toList}=\lambda x.\,\roll\,(\disp^0([\op{exfalso}^0(\lambda z.z),\op{retag}_1])\,(\unroll\,x))$
+(\rn{nonempty_widening}), and
+$\op{toList}\,(\roll\,(\pos{1},(a,x)))\to^*\roll\,(\pos{1},(a,x))$: the
+coercion returns the value it was given. There is no coercion the other way
+for a variable $A$: by \rn{subtyping_sound} it would be a function
+$\op{List}\,A\to\op{NonEmpty}\,A$ uniform in $A$, and none exists
+(\rn{no_uniform_list_downcast}, \rn{ex_no_list_to_nonempty_coercion}). By
+\rn{su_pi}, with \rn{su_conv} on a codomain $B$ that does not mention the
+argument (\rn{ex_function_coercion}),
+$\subt{\op{List}\,A\to B}{\op{NonEmpty}\,A\to B}
+{\lambda f.\,\lambda y.\,(\lambda x.x)\,(f\,(\op{toList}\,y))}$.
+
+\subsection{Source terms: synthesis and checking}
+\[
+e::=\op{core}(t)\mid x\mid(e:A)\mid\lambda x.\,e\mid e\,e\mid(e,e)\mid
+ \op{sig}(i.\,r)\mid\op{close}\,e\,e\mid\ell(e)\mid
+ \op{case}_Q\ e\ \op{of}\ \{\ell_j(y_j)\Rightarrow e_j\}_j
+\]
+The rules are organised bidirectionally, as the elaboration of \DM{}
+(their Section~2.1) is; the rules themselves are specific to this calculus.
+
+\textbf{(a) Type synthesis.}
+\begin{mathpar}
+\ruleof{es_var}{\Gamma\vdash\valid\\\Gamma(x)=A}{\synth{x}{A}{x}}
+\and
+\ruleof{es_ann}{\jd{A}{\Set_k}\\\checkt{e}{A}{t}}{\synth{(e:A)}{A}{t}}
+\and
+\ruleof{es_app}{\synth{f}{(x{:}A)\to B}{t}\\\checkt{a}{A}{u}}
+ {\synth{f\,a}{B[u/x]}{t\,u}}
+\\
+\ruleof{es_signature}{i\notin\Gamma\\\op{RowOK}_{\Gamma;i{:}I}(r)}
+ {\synth{\op{sig}(i.\,r)}{\Def}{\lambda i.\,\rows{r}}}
+\and
+\ruleof{es_close}{\checkt{F}{\Def}{f}\\\checkt{G}{\Def}{g}}
+ {\synth{\op{close}\,F\,G}{\Fam}{\cl{f}{g}}}
+\\
+\ruleof{es_case}{\jd{F,G}{\Def}\\\jd{i}{I}\\\synth{e}{C_{F,G}(i)}{x}\\
+ \jd{Q}{\Set_k}\\\Gamma\vdash F\,i\Downarrow r\\
+ \text{clause names distinct and}\subseteq\text{names}(r)\\
+ \forall j.\ r_j\rhd h_j}
+ {\synth{\op{case}_Q\ e\ \op{of}\ b_s}{Q}
+   {\op{closeCase}^k\,F\,G\,i\,(\lambda\_.Q)\,(\disp^{k}_{r,X_G,Q}(h_s))\,x}}
+\end{mathpar}
+\textbf{(b) Type checking.}
+\begin{mathpar}
+\ruleof{ec_core}{\jd{t}{A}}{\checkt{\op{core}(t)}{A}{t}}
+\and
+\ruleof{ec_lam}{x\notin\Gamma\\\Gamma;x{:}A\vdash e\Leftarrow B\rightsquigarrow t}
+ {\checkt{\lambda x.\,e}{(x{:}A)\to B}{\lambda x.\,t}}
+\and
+\ruleof{ec_pair}{\checkt{e}{A}{t}\\\checkt{e'}{B[t/x]}{u}}
+ {\checkt{(e,e')}{(x{:}A)\times B}{(t,u)}}
+\\
+\ruleof{ec_conversion}{\synth{e}{A}{t}\\A\equiv B}{\checkt{e}{B}{t}}
+\and
+\ruleof{ec_target_conversion}{\checkt{e}{A}{t}\\A\equiv B}{\checkt{e}{B}{t}}
+\and
+\ruleof{ec_subsumption}{\synth{e}{A}{t}\\\subt{A}{B}{c}}{\checkt{e}{B}{c\,t}}
+\\
+\ruleof{ec_constructor}{\jd{F,G}{\Def}\\\jd{i}{I}\\\Gamma\vdash F\,i\Downarrow r\\
+ r[n]=(\ell,D)\\\checkt{e}{\interp{D}{X_G}}{u}}
+ {\checkt{\ell(e)}{C_{F,G}(i)}{\roll\,(\pos{n},u)}}
+\end{mathpar}
+\textbf{(c) Case clauses.} One handler per entry $(\ell,D)$ of the row.
+\begin{mathpar}
+\ruleof{cases_live}{(\ell(y)\Rightarrow e')\in b_s\\y\notin\Gamma\\
+ \Gamma;y{:}\interp{D}{X_G}\vdash e'\Leftarrow Q\rightsquigarrow t}
+ {(\ell,D)\rhd\lambda y.\,t}
+\and
+\ruleof{cases_dead}{\ell\notin\text{names}(b_s)\\\dead{D}{X_G}{d}}
+ {(\ell,D)\rhd\op{exfalso}^{k}_{Q}(d)}
+\end{mathpar}
+\rn{es_app}, \rn{ec_lam}, \rn{ec_pair} also require their function or pair
+type well formed, and the two conversion rules require $B$ well formed.
+The expected type fixes the row, hence the position $\pos{n}$ of a named
+constructor. A case must cover every constructor of the row; an omitted one
+needs a dead witness. $\op{core}(t)$ only checks, so raw $\roll$ terms never
+have a guessed type.
+\ex The source term $\texttt{cons}((\op{core}(a),\op{core}(\op{nil})))$, a
+constructor applied to a pair, has no type of its own. Checked against
+$\op{List}\,A$ or against $\op{NonEmpty}\,A$ it elaborates to the same term
+$\roll\,(\pos{1},(a,\op{nil}))$ (\rn{ex_cons_at_list},
+\rn{ex_cons_at_nonempty}). The source term $\texttt{nil}(e)$ checks against
+$\op{List}\,A$ but not against $\op{NonEmpty}\,A$: there $e$ would have to
+check against $\interp{\code{\bot}}{X}$, and no closed $e$ does
+(\rn{ex_hidden_nil_unconstructible}). The function
+$\op{head}:=\lambda x.\,\op{case}_A\ x\ \op{of}\ \{\texttt{cons}(p)\Rightarrow\op{core}(\pz\,p)\}$
+checks against $\op{NonEmpty}\,A\to A$ with the \texttt{nil} clause omitted,
+because the payload of \texttt{nil} is dead (\rn{cases_dead} with
+\rn{dead_bot}). It elaborates to
+$\lambda x.\,\op{closeCase}^0\,N_A\,L_A\,\unit\,(\lambda\_.A)\,
+(\disp^0_{r_N,X_{L_A},A}([\op{exfalso}^0_A(\lambda z.z),\ \lambda p.\,\pz\,p]))\,x$
+(\rn{ex_head_elaborates}), and
+$\op{head}\,(\roll\,(\pos{1},(a,\op{nil})))\to^*a$ (\rn{singleton_head} at
+$A=\one$). Against
+$\op{List}\,A\to A$ the same case needs a handler for \texttt{nil}, i.e.\ a
+dead witness $d:\interp{\code{\one}}{X}\to\bot$. None exists in a context that
+has a closing substitution: $d\,\unit$ would close to a term of $\bot$
+(\rn{ex_no_dead_unit}).
+
+%----------------------------------------------------------------------
+\section{Elaboration metatheory}\label{sec:emeta}
+\renewcommand{\arraystretch}{1.3}
+\textbf{Rows.}\par
+\begin{tabular}{@{}l@{\quad}l@{}}
+\thm{row_code_typing}{\op{RowOK}_\Gamma(r)\imp\jd{\rows{r}}{\op{IDesc}\,I}}
+\thm{signature_typing}{i\notin\Gamma,\ \op{RowOK}_{\Gamma;i{:}I}(r)\imp\jd{\op{sig}(i.\,r)}{\Def}}
+\thm{row_position_identity}{r[n]=(\ell,D)\imp\op{At}(E_r,\ell,\pos{n})}
+\thm{label_resolution_unique}{\text{names distinct},\ \jd{a,b}{\op{EnumT}\,E_r},\ \op{At}(E_r,\ell,a),\ \op{At}(E_r,\ell,b)\imp a\equiv b}
+\thm{canonical_forms_named}{\varnothing\vdash t:C_{F,G}(i),\ \varnothing\vdash F\,i\Downarrow r\imp
+ \exists n,\ell,D,x.\ r[n]=(\ell,D)\wedge t\to^*\roll\,(\pos{n},x)}
+ & $\hfill\wedge\ \varnothing\vdash x:\interp{D}{X_G}$\\
+\end{tabular}
+
+\textbf{Elaboration soundness and coherence.}\par
+\begin{tabular}{@{}l@{\quad}l@{}}
+\thm{dead_sound}{\dead{D}{X}{d}\imp\jd{d}{\interp{D}{X}\to\bot}}
+\thm{dead_close_uninhabited}{\op{CI}\text{ in }\varnothing,\ \varnothing\vdash F\,i\ \op{dead}_{X_G}\rightsquigarrow d\imp
+ \neg\exists x.\ \varnothing\vdash x:C_{F,G}(i)}
+\thm{description_subtyping_sound}{\dsub{D}{D'}{X}{q}\imp\jd{q}{\interp{D}{X}\to\interp{D'}{X}}}
+\thm{subtyping_sound}{\subt{A}{B}{c}\imp\jd{c}{A\to B}}
+\thm{synthesis_sound, checking_sound}{\synth{e}{A}{t}\ \text{or}\ \checkt{e}{A}{t}\imp\jd{t}{A}}
+\thm{elaborated_evaluation}{\varnothing\vdash e\Leftarrow A\rightsquigarrow t\imp
+ \exists v.\ t\to^*v\wedge\op{value}(v)\wedge\varnothing\vdash v:A}
+\thm{coercion_coherence}{\subt{A}{B}{c},\ \subt{A}{B}{d}\imp\Gamma\vdash c\obs_{A\to B}d}
+\thm{checking_coherence}{\checkt{e}{A}{t},\ \checkt{e}{A}{u}\imp\Gamma\vdash t\obs_{A}u}
+\end{tabular}
+
+Coherence is stated with $\obs$, not $\equiv$: two coercions may differ as
+terms yet agree on all closed inputs (compare the example of
+Section~\ref{sec:obs}).
+
+Handler lists are sound as well. \rn{row_handlers_sound}: if
+$\op{RowOK}_\Gamma(r)$, $\op{RowOK}_\Gamma(r')$, $\jd{X}{\Fam}$,
+$\jd{Y}{\Set_0}$, $Y\equiv\interp{\rows{r'}}{X}$ and
+$r_j\hookrightarrow_{r'}h_j$ for all $j$, then each
+$\jd{h_j}{\interp{D_j}{X}\to Y}$. \rn{case_handlers_sound}: if
+$\op{RowOK}_\Gamma(r)$, $\jd{X}{\Fam}$, $\jd{Q}{\Set_k}$ and $r_j\rhd h_j$
+for all $j$, then $\jd{(h_0,(\ldots,\unit))}
+{\spi^k\,E_r\,(\lambda c.\,\interp{p_r\,c}{X}\to Q)}$.
+
+\section{Elaboration lemmas and proof structure}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}>{\raggedright}p{26mm}@{\quad}p{140mm}@{}}
+\toprule
+Rows &
+$\disp(h_s)\,(\pos{n},x)\equiv h_n\,x$ and $\op{retag}_m\,x\equiv(\pos{m},x)$
+(\rn{row_map_selected}, \rn{retag_handler_beta}); a closed payload of
+$\rows{r}$ converts to some $(\pos{n},x)$ (\rn{row_payload_canonical}); two views of
+one description agree on names per position with convertible payloads
+(\rn{row_view_position_transport}); on a source entry with a closed
+inhabitant every handler derivation picks some $\op{retag}_m$ with
+$r'[m]$ of the same name (\rn{row_handlers_live_at}), and $m$ is unique when
+the target names are distinct (\rn{row_position_unique}); under
+\rn{ds_rows} it is the source position. Hence any two description coercions agree
+pointwise up to $\equiv$ on closed inputs, and are the identity when
+$D\equiv D'$ (\rn{description_coercions_closed_pointwise_coherence},
+\rn{description_conversion_identity}).\\
+Relational model &
+Coherence needs more than pointwise agreement, so
+\texttt{OpenSignaturesRel*.v} builds a binary logical relation on closed
+terms: conversion-closed PERs, descriptions as relational functors with
+least fixed points, a cumulative universe tower. \rn{rel_fundamental}: every
+typed term is related to itself under related closing substitutions.
+\rn{rel_adequacy}/\rn{rel_observational}: related terms are $\obs$.
+Coercions are interpreted as semantic graphs (identity, empty source,
+contravariant function, retag-by-name, roll). Two graphs between the same
+types agree on related inputs, graphs are total, and the composite of two
+graphs is contained in a graph (\rn{Gr_func}, \rn{Gr_total}, \rn{Gr_comp});
+every
+derivation of $\sqsubseteq$ or $\preceq$ realizes one (\rn{sub_real},
+\rn{desc_real}). Functionality gives \rn{coercion_coherence}; a pairwise
+induction on elaborations gives \rn{checking_coherence}.\\
+\bottomrule
+\end{tabular}
+
+\section{The list example, as theorems}\label{sec:ex}
+For the running example, with \texttt{nil} hidden by $\code{\bot}$
+($\jd{A}{\Set_0}$ throughout):\par
+\begin{tabular}{@{}l@{\quad}l@{}}
+\thm{nonempty_widening}{\subt{\op{NonEmpty}\,A}{\op{List}\,A}{\op{toList}}}
+\thm{nonempty_cons_typing}{\jd{a}{A},\ \jd{x}{\op{List}\,A}\imp
+ \jd{\roll\,(\pos{1},(a,x))}{\op{NonEmpty}\,A}}
+\thm{ex_nonempty_only_cons}{\varnothing\vdash t:\op{NonEmpty}\,A\imp
+ \exists x.\ t\to^*\roll\,(\pos{1},x)}
+\thm{nonempty_observers_typing}{\op{head}:\op{NonEmpty}\,A\to A,\quad
+ \op{tail}:\op{NonEmpty}\,A\to\op{List}\,A}
+\thm{no_uniform_list_downcast}{\neg\exists c.\ \varnothing\vdash c:(A{:}\Set_0)\to\op{List}\,A\to\op{NonEmpty}\,A}
+\thm{self_restricted_list_empty}{\varnothing\vdash A:\Set_0\imp\neg\exists x.\ \varnothing\vdash x:C_{N_A,N_A}(\unit)}
+\end{tabular}
+
+$\op{head}$ and $\op{tail}$ are cases whose \texttt{nil} clause is
+discharged by the dead payload. The last line is the list whose tail must
+itself be non-empty: it has no closed value. The same $\op{cons}$ code is
+reused in a tree signature (\rn{reused_tree_cons_typing}).
+\end{document}

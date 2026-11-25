@@ -1,5 +1,5 @@
 From Stdlib Require Import List Arith Bool String Lia.
-Require Export OpenSignaturesExampleTyping OpenSignaturesCaseTyping.
+Require Export OpenSignaturesExampleTyping OpenSignaturesCaseTyping OpenSignaturesCoercionTyping.
 Import ListNotations.
 
 Local Ltac free_support :=
@@ -172,12 +172,30 @@ Proof.
   - pose proof (@ty_snd _ (fresh [A; list_type A]) A (list_type A) (TVar z) 0 HP Hzp) as Hsnd.
     rewrite subst_fresh in Hsnd by (apply fresh_not_free; cbn;auto). exact Hsnd.
 Qed.
+(* The handler of the hidden nil label: its payload type is empty. *)
+Lemma hidden_nil_handler_typing : forall Gamma A Y,
+  typing Gamma A (TSort 0) -> typing Gamma Y (TSort 0) ->
+  typing Gamma (dead_handler 0 Y (hidden_nil A))
+    (arrow (TInterp TUnitT TIBot (carrier TUnitT (list_def A))) Y).
+Proof.
+  intros Gamma A Y HA HY.
+  pose proof (typing_context _ _ _ HA) as Hctx.
+  destruct (list_definitions_from_weakening weaken Gamma A HA) as [HL _].
+  assert (HIT : typing Gamma TUnitT (TSort 0)) by now apply ty_unitT.
+  assert (HB : typing Gamma (TInterp TUnitT TIBot (carrier TUnitT (list_def A))) (TSort 0)).
+  { apply ty_interp; [exact HIT|now apply ty_ibot|now apply ty_close]. }
+  apply dead_handler_typing; [exact weaken|exact HB|exact HY|].
+  unfold hidden_nil. eapply (identity_for_typing weaken); [exact HB| |].
+  - apply ty_enumt, ty_nile, Hctx.
+  - apply cv_step, st_root; reflexivity.
+Qed.
 Lemma nonempty_case_function : forall Gamma A Y x h,
   typing Gamma A (TSort 0) -> typing Gamma Y (TSort 0) ->
   typing Gamma h (arrow (TInterp TUnitT (cons_code A) (carrier TUnitT (list_def A))) Y) ->
   ~ In x (free_vars A) -> ~ In x (free_vars Y) -> ~ In x (free_vars h) ->
   typing Gamma (TLam x (case_term 0 TUnitT (nonempty_def A) (list_def A) TUnit
-    Y (nonempty_rows A) [h] (TVar x))) (arrow (nonempty_type A) Y).
+    Y (nonempty_rows A) [dead_handler 0 Y (hidden_nil A); h] (TVar x)))
+    (arrow (nonempty_type A) Y).
 Proof.
   intros Gamma A Y x h HA HY Hh HxA HxY Hxh.
   pose proof (typing_context _ _ _ HA) as Hctx.
@@ -188,14 +206,16 @@ Proof.
     + now apply nonempty_rows_typing.
     + apply def_application; auto using ty_unitT, ty_unit.
     + apply unit_signature_application.
-  - constructor; [exact Hh|constructor].
+  - constructor; [now apply hidden_nil_handler_typing|].
+    constructor; [exact Hh|constructor].
   - cbn; tauto.
   - now apply nonempty_def_fresh.
   - now apply list_def_fresh.
   - cbn; tauto.
   - pose proof (cons_code_fresh A x HxA). unfold nonempty_rows, row_tuple.
     cbn [tuple map snd free_vars]. free_support.
-  - cbn [tuple free_vars]. free_support.
+  - unfold dead_handler, abort, constant, hidden_nil, identity_for.
+    cbn [tuple free_vars]. free_support.
 Qed.
 
 Lemma vars_list_parameter : forall A x, In x (vars A) -> In x (vars (list_type A)).

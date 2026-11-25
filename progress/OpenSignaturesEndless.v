@@ -54,8 +54,15 @@ Proof.
     - apply unit_signature_application. }
   destruct (canonical_named_from_rules weaken preserve normalize _ _ _ _ _ _ Ht Hrow)
     as [name [D [n [xs [Hnth [He Hxs]]]]]].
-  destruct n as [|[|n]]; cbn [nonempty_rows nth_error] in Hnth; try discriminate.
-  inversion Hnth; subst name D.
+  destruct n as [|[|n]]; cbn [nonempty_rows nth_error] in Hnth;
+    [|inversion Hnth; subst name D|destruct n; discriminate].
+  { (* The hidden nil label: its payload would inhabit the empty type. *)
+    inversion Hnth; subst name D. exfalso.
+    assert (Hbot : typing empty_ctx xs Bot).
+    { eapply ty_conv; [exact Hxs|apply ty_enumt, ty_nile, wf_nil|].
+      apply cv_step, st_root; reflexivity. }
+    destruct (normalize _ _ Hbot) as [v [Hev Hv]].
+    exact (bottom_no_value raw_join_typed _ _ (eval_typing preserve _ _ _ _ Hbot Hev) Hv). }
   pose proof (normal_evaluation _ _ Hnormal He) as E; subst t.
   assert (Hxsnormal : step_normal xs) by (eapply normal_pair_snd, normal_in; exact Hnormal).
   assert (Hendless : typing empty_ctx (endless_type A) (TSort 0)).
